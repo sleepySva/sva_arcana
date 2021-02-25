@@ -1,0 +1,21 @@
+{
+  "materialId" : 16545,
+  "materialName" : "bleuark_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "bleuark_tile5",
+  "description" : "A wall tile crafted with Atla gold.",
+  "shortdescription" : "Atlantis Wall",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "bleuark_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 133
+  }
+}

@@ -1,0 +1,626 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/bioluminescence",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 51,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A clump of little glowing mushrooms",
+      "//name" : "bioshroom1",
+      "//shortdescription" : "Glow Mushrooms",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bioshroom1",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A bush of pretty glowing flowers.",
+      "//name" : "glowbush5",
+      "//shortdescription" : "Glow Flower Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowbush5",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A glowing flower pod.",
+      "//name" : "glowflower4",
+      "//shortdescription" : "Glow Flower Pod",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowflower4",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A bed, with glowing plants grown through it.",
+      "//name" : "glowbed",
+      "//shortdescription" : "Glow Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "glowbed",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "This chest appears organic in construction.",
+      "//name" : "glowchest",
+      "//shortdescription" : "Glow Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowchest",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "There are small roots protruding from the ceiling.",
+      "//name" : "glowroot4",
+      "//shortdescription" : "Roots",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "glowroot4",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A vine that seems to emit a pleasant glow.",
+      "//name" : "glowvinelamp",
+      "//shortdescription" : "Glow Vine Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowvinelamp",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A bush of pretty glowing flowers.",
+      "//name" : "glowbush1",
+      "//shortdescription" : "Glow Flower Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowbush1",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A glowing flower pod.",
+      "//name" : "glowflower2",
+      "//shortdescription" : "Glow Flower Pod",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowflower2",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree4",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "glowtree4",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree4_orientation1",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "glowtree4",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A glowing flower pod.",
+      "//name" : "glowflower5",
+      "//shortdescription" : "Glow Flower Pod",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowflower5",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A bush of pretty glowing flowers.",
+      "//name" : "glowbush5_orientation1",
+      "//shortdescription" : "Glow Flower Bush",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "glowbush5",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "It's a glowing vine!",
+      "//name" : "biovine4",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "biovine4",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree1",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "glowtree1",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree1_orientation1",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "glowtree1",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A glowing vine. It's beautiful, but a bit eerie.",
+      "//name" : "glowvine4",
+      "//shortdescription" : "Glowing Vine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowvine4",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A glowing vine. It's beautiful, but a bit eerie.",
+      "//name" : "glowvine4_orientation1",
+      "//shortdescription" : "Glowing Vine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowvine4",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "There are small roots protruding from the ceiling.",
+      "//name" : "glowroot2",
+      "//shortdescription" : "Roots",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "glowroot2",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "It's a glowing vine!",
+      "//name" : "biovine1",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "biovine1",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A glowing vine. It's beautiful, but a bit eerie.",
+      "//name" : "glowvine5",
+      "//shortdescription" : "Glowing Vine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowvine5",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A glowing vine. It's beautiful, but a bit eerie.",
+      "//name" : "glowvine5_orientation1",
+      "//shortdescription" : "Glowing Vine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowvine5",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A clump of little glowing mushrooms",
+      "//name" : "bioshroom4",
+      "//shortdescription" : "Glow Mushrooms",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bioshroom4",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A glowing chair.",
+      "//name" : "glowchair",
+      "//shortdescription" : "Glow Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowchair",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A clump of little glowing mushrooms",
+      "//name" : "bioshroom5",
+      "//shortdescription" : "Glow Mushrooms",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bioshroom5",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A clump of little glowing mushrooms",
+      "//name" : "bioshroom3",
+      "//shortdescription" : "Glow Mushrooms",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bioshroom3",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A bush that emits a pleasant glow.",
+      "//name" : "glowbushlamp",
+      "//shortdescription" : "Glow Bush Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowbushlamp",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A bush of pretty glowing flowers.",
+      "//name" : "glowbush2",
+      "//shortdescription" : "Glow Flower Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowbush2",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A bush of pretty glowing flowers.",
+      "//name" : "glowbush3",
+      "//shortdescription" : "Glow Flower Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowbush3",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A bush of pretty glowing flowers.",
+      "//name" : "glowbush4",
+      "//shortdescription" : "Glow Flower Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowbush4",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A glowing flower pod.",
+      "//name" : "glowflower1",
+      "//shortdescription" : "Glow Flower Pod",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowflower1",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A flower that seems to emit a pleasant glow.",
+      "//name" : "glowflowerlamp",
+      "//shortdescription" : "Glow Flower Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowflowerlamp",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "There are small glowing roots protruding from the ceiling.",
+      "//name" : "glowroot1",
+      "//shortdescription" : "Roots",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "glowroot1",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "There are small roots protruding from the ceiling.",
+      "//name" : "glowroot5",
+      "//shortdescription" : "Roots",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "glowroot5",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A glowing vine. It's beautiful, but a bit eerie.",
+      "//name" : "glowvine3",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowvine3",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "A glowing vine. It's beautiful, but a bit eerie.",
+      "//name" : "glowvine1",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowvine1",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A glowing vine. It's beautiful, but a bit eerie.",
+      "//name" : "glowvine2",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowvine2",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A glowing vine. It's beautiful, but a bit eerie.",
+      "//name" : "glowvine2_orientation1",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowvine2",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A clump of little glowing mushrooms",
+      "//name" : "bioshroom2",
+      "//shortdescription" : "Glow Mushrooms",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bioshroom2",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A giant glowing mushroom table. Perfect for sitting at in the dark.",
+      "//name" : "bioshroomtable",
+      "//shortdescription" : "Glow Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bioshroomtable",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "It's a glowing vine!",
+      "//name" : "biovine2",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "biovine2",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "It's a glowing vine!",
+      "//name" : "biovine5",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "biovine5",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree2",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "glowtree2",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree2_orientation1",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "glowtree2",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "It's a glowing vine!",
+      "//name" : "biovine3",
+      "//shortdescription" : "Glow Vine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "biovine3",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree3",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "glowtree3",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "A glowing flower pod.",
+      "//name" : "glowflower3",
+      "//shortdescription" : "Glow Flower Pod",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowflower3",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree3_orientation1",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "glowtree3",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree5",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "glowtree5",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A glowing tree. It's beautiful, but a bit eerie.",
+      "//name" : "glowtree5_orientation1",
+      "//shortdescription" : "Glow Tree",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glowtree5",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "There are small roots protruding from the ceiling.",
+      "//name" : "glowroot3",
+      "//shortdescription" : "Roots",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "glowroot3",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/bioshroom1.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/glowbush5.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/glowflower4.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/glowbed.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/glowchest.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/glowroot4.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/glowvinelamp.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/glowbush1.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/glowflower2.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree4.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree4_orientation1.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/glowflower5.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/glowbush5_orientation1.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/biovine4.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree1.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree1_orientation1.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/glowvine4.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/glowvine4_orientation1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/glowroot2.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/biovine1.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/glowvine5.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/glowvine5_orientation1.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/bioshroom4.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/glowchair.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/bioshroom5.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/bioshroom3.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/glowbushlamp.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/glowbush2.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/glowbush3.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/glowbush4.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/glowflower1.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/glowflowerlamp.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/glowroot1.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/glowroot5.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/glowvine3.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/glowvine1.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/glowvine2.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/glowvine2_orientation1.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/bioshroom2.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/bioshroomtable.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/biovine2.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/biovine5.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree2.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree2_orientation1.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/biovine3.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree3.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/glowflower3.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree3_orientation1.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree5.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/glowtree5_orientation1.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/glowroot3.png"
+    }
+  },
+  "tilewidth" : 8
+}

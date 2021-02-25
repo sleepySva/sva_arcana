@@ -1,0 +1,21 @@
+{
+  "materialId" : 16543,
+  "materialName" : "bleuark_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "bleuark_tile3",
+  "description" : "A seastone flooring surfaced with Atla gold.",
+  "shortdescription" : "Seastone Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "bleuark_tile3.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 131
+  }
+}

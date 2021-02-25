@@ -1,0 +1,25 @@
+{
+  "objectName" : "springpalms_table_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A simplistic wooden table.",
+  "shortdescription" : "Springpalms Table",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "springpalms_table_1.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

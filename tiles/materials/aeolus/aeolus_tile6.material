@@ -1,0 +1,21 @@
+{
+  "materialId" : 16672,
+  "materialName" : "aeolus_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeolus_tile6",
+  "description" : "A wall made from ariostone.",
+  "shortdescription" : "Ariostone Wall",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "aeolus_tile6.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 186
+  }
+}

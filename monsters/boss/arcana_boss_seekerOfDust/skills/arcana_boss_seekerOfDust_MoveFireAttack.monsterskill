@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_boss_seekerOfDust_MoveFireAttack",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/arcana_boss_seekerOfDust/skills/arcana_boss_seekerOfDust_MoveFireAttack.lua" ],
+
+    "arcana_boss_seekerOfDust_MoveFireAttack" : {
+      "skillTime": 4,
+      "bobTime" : 2,
+      "bobHeight" : 3,
+
+      "projectileOffset" : [0, -4],
+      "fireInterval" : 0.4,
+      "projectile" : {
+        "type" : "arcana_boss_seekerOfDust_projectile_1",
+        "config" : {
+          "speed" : 40,
+          "power" : 50
+        }
+      }
+    }
+  }
+}

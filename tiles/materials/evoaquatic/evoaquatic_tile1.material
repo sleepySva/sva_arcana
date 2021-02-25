@@ -1,0 +1,21 @@
+{
+  "materialId" : 16691,
+  "materialName" : "evoaquatic_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "evoaquatic_tile1",
+  "description" : "A greenish mud tile.",
+  "shortdescription" : "Evoaquatic Mud",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "evoaquatic_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 291
+  }
+}

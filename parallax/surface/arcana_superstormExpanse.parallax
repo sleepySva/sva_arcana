@@ -1,0 +1,216 @@
+{
+  "verticalOrigin" : 0,
+  
+  "layers" : [
+    {
+      "kind" : "divider/blackrock",
+      "offset" : [0, 350],
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "parallax" : 1.199
+    },
+    {
+      "kind" : "tile/magmarock",
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "repeatY" : true,
+      "tileLimitTop" : 275,
+      "parallax" : 1.2
+    },
+    {
+      "kind" : "midnightbelow",
+      "offset" : [0, 450],
+      "noRandomOffset" : true,
+      "parallax" : [3, 3.001],
+      "nohueshift" : true
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 525],
+      "parallax" : [4, 5],
+      "minSpeed" : -10000,
+      "maxSpeed" : -10000,
+      "fadePercent" : 0.04
+    },
+	
+    {
+      "kind" : "arcana_superstormExpanse_cityscape1",
+      "offset" : [0, 450],
+      "parallax" : 6,
+      "fadePercent" : 0.10
+    },
+    {
+      "kind" : "cityships",
+      "offset" : [0, 450],
+      "parallax" : 6.999,
+      "minSpeed" : 5000000,
+      "maxSpeed" : 5000000,
+      "fadePercent" : 0.20
+    },
+    {
+      "kind" : "arcana_superstormExpanse_cityscape2",
+      "offset" : [0, 450],
+      "parallax" : 7,
+      "fadePercent" : 0.20
+    },
+    {
+      "kind" : "cityships",
+      "offset" : [0, 450],
+      "parallax" : 7.5,
+      "minSpeed" : 3000000,
+      "maxSpeed" : 3000000,
+      "fadePercent" : 0.20
+    },
+    {
+      "kind" : "arcana_superstormExpanse_cityscape3",
+      "offset" : [0, 300],
+      "parallax" : 8,
+      "fadePercent" : 0.30
+    },
+    {
+      "kind" : "arcana_superstormExpanse_cityscape4",
+      "offset" : [0, 250],
+      "parallax" : 9,
+      "fadePercent" : 0.40
+    },
+    {
+      "kind" : "arcana_superstormExpanse_cityscape5",
+      "offset" : [0, 250],
+      "parallax" : 10,
+      "fadePercent" : 0.50
+    },
+    {
+      "kind" : "cityscape6",
+      "offset" : [0, 250],
+      "parallax" : 11,
+      "fadePercent" : 0.60
+    },
+	
+    {
+      "kind" : "midnightback",
+      "offset" : [50, 200],
+      "noRandomOffset" : true,
+      "parallax" : [12, 9.001],
+      "nohueshift" : true,
+      "fadePercent" : 0.05
+    },
+    {
+      "kind" : "midnightclouds",
+      "baseCount" : 2,
+      "offset" : [0, 440],
+      "parallax" : 15
+    },
+    {
+      "kind" : "midnightclouds",
+      "baseCount" : 2,
+      "offset" : [0, 440],
+      "parallax" : 15
+    },
+    {
+      "kind" : "midnightclouds2",
+      "baseCount" : 2,
+      "offset" : [0, 400],
+      "parallax" : 20
+    },
+    {
+      "kind" : "midnightclouds2",
+      "baseCount" : 2,
+      "offset" : [0, 400],
+      "parallax" : 20
+    },
+    {
+      "kind" : "midnightclouds3",
+      "baseCount" : 2,
+      "offset" : [0, 360],
+      "parallax" : 25
+    },
+    {
+      "kind" : "midnightclouds3",
+      "baseCount" : 2,
+      "offset" : [0, 360],
+      "parallax" : 25
+    },
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 120],
+      "parallax" : 9,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.15
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 140],
+      "parallax" : 14,
+      "minSpeed" : 2000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 150],
+      "parallax" : 6,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.04
+    },
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 60],
+      "parallax" : 9,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.15
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 80],
+      "parallax" : 14,
+      "minSpeed" : 2000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 100],
+      "parallax" : 6,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.04
+    },
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 1],
+      "parallax" : 9,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.15
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 20],
+      "parallax" : 14,
+      "minSpeed" : 2000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 40],
+      "parallax" : 6,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.04
+    }
+  ]
+}

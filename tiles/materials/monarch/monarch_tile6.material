@@ -1,0 +1,21 @@
+{
+  "materialId" : 16536,
+  "materialName" : "monarch_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "monarch_tile6",
+  "description" : "A heavy grey brick tile.",
+  "shortdescription" : "Palace Heavy Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "monarch_tile6.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 123
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/naturalcave",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 3,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A mysterious wooden crate.",
+      "//name" : "woodencrate2",
+      "//shortdescription" : "Large Wooden Crate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodencrate2",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "If I look at these lights any longer, I'll probably go blind.",
+      "//name" : "floodlights",
+      "//shortdescription" : "Floodlights",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floodlights",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A mysterious wooden crate.",
+      "//name" : "woodencrate1",
+      "//shortdescription" : "Wooden Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "woodencrate1",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/woodencrate2.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/floodlights.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/woodencrate1.png"
+    }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,55 @@
+{
+	"stats" : [
+	    { "stat" : "maxHealth", "effectiveMultiplier" : 0.90 },
+		{ "stat" : "maxEnergy", "effectiveMultiplier" : 1.1 },
+		{ "stat" : "fuCharisma", "baseMultiplier" : 1.1 },
+		{ "stat" : "physicalResistance", "amount" : 0.1 },
+		{ "stat" : "electricResistance", "amount" : 0.15 },
+		{ "stat" : "fireResistance", "amount" : 0.2 },
+		{ "stat" : "mentalProtection", "amount" : 0.1},
+		{ "stat" : "poisonResistance", "amount" : -0.15 },
+		{ "stat" : "iceResistance", "amount" : -0.4 }
+		
+	],
+	"diet" : "omnivore",
+	"controlModifiers" : {
+		"speedModifier" : 1.1
+	},
+	"envEffects" : [
+		{
+			"biomes" : [ "hot" ],
+			"stats" : [
+				{ "stat" : "maxHealth", "effectiveMultiplier" : 1.2 },
+				{ "stat" : "maxEnergy", "effectiveMultiplier" : 1.2 }
+			]
+		},
+		{
+			"biomes" : [ "cold" ],
+			"stats" : [
+				{ "stat" : "maxHealth", "effectiveMultiplier" : 0.9 },
+				{ "stat" : "maxEnergy", "effectiveMultiplier" : 0.8 }
+			],
+			"controlModifiers" : {
+				"speedModifier" : 0.9
+			}
+		}
+	],
+	"weaponEffects" : [
+		{
+			"weapons" : [ "wand", "staff" ],
+			"stats" : [
+				{ "stat" : "powerMultiplier", "effectiveMultiplier" : 1.15 },
+				{ "stat" : "critChance", "amount" : 10 },
+				{ "stat" : "energyRegenPercentageRate", "effectiveMultiplier" : 1.05 }
+			]
+		},
+		{
+			"weapons" : [ "dagger" ],
+			"stats" : [
+				{ "stat" : "protection", "effectiveMultiplier" : 1.1 }
+			]
+		}
+	],
+	
+	"tech" : [ "arcana_tech_energize" ]
+}

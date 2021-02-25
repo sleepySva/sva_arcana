@@ -1,0 +1,21 @@
+{
+  "materialId" : 16561,
+  "materialName" : "hephaestus_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "hephaestus_tile3",
+  "description" : "A dry stone bridge tile.",
+  "shortdescription" : "Dry Stone Bridge",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "hephaestus_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 153
+  }
+}

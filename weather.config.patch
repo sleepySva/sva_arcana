@@ -1,0 +1,74 @@
+[
+  {
+    "op": "add",
+    "path": "/arcana_arcaneForest",
+    "value": [
+		[0.05, "rain"],
+		[0.025, "storm"],
+		[0.0125, "glowingrain"],
+		[0.0625, "drizzle"],
+		[0.85, "clear"]
+    ]
+  },
+
+  {
+    "op": "add",
+    "path": "/arcana_arcaneDesert",
+    "value": [
+		[0.05, "windstorm"],
+		[0.025, "rain"],
+		[0.0125, "glowingrain"],
+		[0.0625, "drizzle"],
+		[0.85, "clear"]
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/arcana_goldenForest",
+    "value": [
+		[0.05, "arcana_weather_chrysoFall"],
+		[0.025, "arcana_weather_chrysoFall"],
+		[0.0125, "glowingrain"],
+		[0.0625, "arcana_weather_chrysoFall"],
+		[0.85, "clear"]
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/arcana_illuminated",
+    "value": [
+		[0.05, "windstorm"],
+		[0.025, "ash"],
+		[0.0125, "glowingrain"],
+		[0.0625, "drizzle"],
+		[0.85, "clear"]
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/arcana_windswept",
+    "value": [
+		[0.05, "windstorm"],
+		[0.025, "storm"],
+		[0.0125, "duststorm"],
+		[0.0625, "drizzle"],
+		[0.85, "clear"]
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/arcana_superstormExpanse",
+    "value": [
+		[0.05, "windstorm"],
+		[0.025, "storm"],
+		[0.0125, "acidrain"],
+		[0.0625, "windstorm"],
+		[0.85, "clear"]
+    ]
+  }
+  
+]

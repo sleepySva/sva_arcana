@@ -1,0 +1,749 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/floranvillage",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 62,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A crudely made bench. It's had a lot of use during Floran hunts.",
+      "//name" : "huntingbench",
+      "//shortdescription" : "Crude Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingbench",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Floran come together at tables like these to eat flesh stew.",
+      "//name" : "florantable1",
+      "//shortdescription" : "Primitive Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florantable1",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A simple wooden chair with bone accents.",
+      "//name" : "floranchair",
+      "//shortdescription" : "Primitive Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranchair",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A string of bones to hang from the ceiling, like a morbid wind chime.",
+      "//name" : "floranceilingbones2",
+      "//shortdescription" : "Small Bone Chimes",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "floranceilingbones2",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A table made from many small bones.",
+      "//name" : "floranbonetable2",
+      "//shortdescription" : "Short Primitive Table",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonetable2",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "This entire table appears to have been carved from a single, enormous bone.",
+      "//name" : "floranbonetable1",
+      "//shortdescription" : "Large Primitive Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranbonetable1",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "There are barbaric Floran tales etched into the bone.",
+      "//name" : "floranbonedisplay2",
+      "//shortdescription" : "Bone Carving",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonedisplay2",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "The result of a successful Floran hunt.",
+      "//name" : "floranbonedisplay1",
+      "//shortdescription" : "Bone Trophy",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "floranbonedisplay1",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "It appears to be a painting of a falling leaf.",
+      "//name" : "floranpainting4",
+      "//shortdescription" : "Primitive Leaf Painting",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "floranpainting4"
+    },
+    "17" : {
+      "//description" : "It's just an armchair made of bones. No big deal.",
+      "//name" : "floranarmchair",
+      "//shortdescription" : "Primitive Armchair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranarmchair",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A couch made of leather hide and large bones.",
+      "//name" : "florancouch",
+      "//shortdescription" : "Primitive Couch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "florancouch",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A bongo drum fashioned out of leather and wood.",
+      "//name" : "florandrum4",
+      "//shortdescription" : "Tiny Bongo",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "florandrum4",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A table fashioned out a small tree topped with a slab of wood.",
+      "//name" : "floransmalltable",
+      "//shortdescription" : "Small Primitive Table",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floransmalltable",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "It looks like someone has painted glyphs onto a piece of leather.",
+      "//name" : "floranpainting2",
+      "//shortdescription" : "Primitive Glyph Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floranpainting2"
+    },
+    "21" : {
+      "//description" : "This door is strong and sustainably sourced.",
+      "//name" : "bamboodoor",
+      "//shortdescription" : "Bamboo Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bamboodoor",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "The bone frame is sort of disturbing, but that fur blanket looks mighty comfy.",
+      "//name" : "floranbed",
+      "//shortdescription" : "Primitive Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranbed",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A wood and bone shelf used for storing supplies and keepsakes.",
+      "//name" : "floranshelf",
+      "//shortdescription" : "Primitive Shelf",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranshelf",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Torches have been stuck to a sapling in lieu of a fancy chandelier.",
+      "//name" : "floranchandelier",
+      "//shortdescription" : "Primitive Chandelier",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "floranchandelier",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation1",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation2",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation3",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation4",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "left"
+    },
+    "3" : {
+      "//description" : "A wooden screen, perfect for dressing behind.",
+      "//name" : "floranscreen1",
+      "//shortdescription" : "Wooden Dressing Screen",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranscreen1",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation5",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A desk, probably belonging to the greenfinger of a Floran tribe.",
+      "//name" : "florandesk",
+      "//shortdescription" : "Primitive Desk",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florandesk",
+      "tilesetDirection" : "left"
+    },
+    "32" : {
+      "//description" : "This toilet doesn't look very leak-proof.",
+      "//name" : "florantoilet",
+      "//shortdescription" : "Primitive Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florantoilet",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A ragged fur pelt, hung from two large tusks.",
+      "//name" : "floranpelt3",
+      "//shortdescription" : "Long Black Pelt",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranpelt3"
+    },
+    "34" : {
+      "//description" : "A rack of 3 unidentified bones.",
+      "//name" : "floranbonerack",
+      "//shortdescription" : "Bone Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonerack",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "The cabinet made of leather stretched between four large tusks.",
+      "//name" : "florancabinet3",
+      "//shortdescription" : "Huge Primitive Cabinet",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "florancabinet3",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A leather screen, used in Floran food preparation.",
+      "//name" : "floranscreen2",
+      "//shortdescription" : "Leather Dressing Screen",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranscreen2",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A bench made of wood and bones. Seems... inviting?",
+      "//name" : "floranbench",
+      "//shortdescription" : "Primitive Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranbench",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A curtain, or a slab of half-dried, half-eaten meat. One of the two.",
+      "//name" : "florancurtain",
+      "//shortdescription" : "Primitive Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "florancurtain",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A curtain, or a slab of half-dried, half-eaten meat. One of the two.",
+      "//name" : "florancurtain_orientation2",
+      "//shortdescription" : "Primitive Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "florancurtain",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "The pelt of a small, snow dwelling animal.",
+      "//name" : "floranpelt5",
+      "//shortdescription" : "Small Snowy Pelt",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranpelt5",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "A curtain, or a slab of half-dried, half-eaten meat. One of the two.",
+      "//name" : "florancurtain_orientation3",
+      "//shortdescription" : "Primitive Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "florancurtain",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "It appears to be a tally chart.",
+      "//name" : "floranpainting3",
+      "//shortdescription" : "Primitive Chart Art",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "floranpainting3"
+    },
+    "42" : {
+      "//description" : "A string of bones to hang from the ceiling, like a morbid wind chime.",
+      "//name" : "floranceilingbones1",
+      "//shortdescription" : "Large Bone Chimes",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "floranceilingbones1",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A very basic cooking pot suspended over a campfire.",
+      "//name" : "floranstove",
+      "//shortdescription" : "Primitive Stove",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranstove",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A strange green light pod is hanging loosely from a curved wooden post.",
+      "//name" : "floranlamp1",
+      "//shortdescription" : "Vine Pod Lamp",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranlamp1",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A strange green light pod is hanging loosely from a curved wooden post.",
+      "//name" : "floranlamp1_orientation1",
+      "//shortdescription" : "Vine Pod Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlamp1",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A bongo drum fashioned out of leather and wood.",
+      "//name" : "florandrum1",
+      "//shortdescription" : "Medium Bongo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florandrum1",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "This door is hardly suitable for keeping the weather out.",
+      "//name" : "florandoor",
+      "//shortdescription" : "Primitive Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florandoor",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A bongo drum fashioned out of leather and wood.",
+      "//name" : "florandrum2",
+      "//shortdescription" : "Large Bongo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florandrum2",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A cabinet adorned with huge, sharp fangs.",
+      "//name" : "florancabinet1",
+      "//shortdescription" : "Large Primitive Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florancabinet1",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "The pelt of a large, snow dwelling animal.",
+      "//name" : "floranpelt4",
+      "//shortdescription" : "Large Snowy Pelt",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-24",
+      "object" : "floranpelt4"
+    },
+    "50" : {
+      "//description" : "A cooking countertop used for chopping meat.",
+      "//name" : "florantable2",
+      "//shortdescription" : "Primitive Countertop",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florantable2",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A tiny stool carved from bone.",
+      "//name" : "floranbonestool",
+      "//shortdescription" : "Primitive Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonestool",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "This painting seems to illustrate how to build a fire.",
+      "//name" : "floranpainting1",
+      "//shortdescription" : "Primitive Fire Art",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranpainting1"
+    },
+    "53" : {
+      "//description" : "An animal pelt stretched and dried between two large bones.",
+      "//name" : "florantanningrack",
+      "//shortdescription" : "Primitive Tanning Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florantanningrack",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "This pelt serves as a Floran hunter's trophy.",
+      "//name" : "floranpelt2",
+      "//shortdescription" : "Small Black Pelt",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranpelt2",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A cabinet adorned with huge, sharp fangs.",
+      "//name" : "florancabinet2",
+      "//shortdescription" : "Small Primitive Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florancabinet2",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "A Floran's idea of abstract art.",
+      "//name" : "floranpainting5",
+      "//shortdescription" : "Primitive Abstract Art",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "floranpainting5"
+    },
+    "57" : {
+      "//description" : "A storage crate made of unrefined wood and bone.",
+      "//name" : "florancrate",
+      "//shortdescription" : "Primitive Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florancrate",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "A bookcase made from the remains of Floran prey.",
+      "//name" : "floranbookcase",
+      "//shortdescription" : "Primitive Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranbookcase",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A crude painting of a Floran hunter wielding a spear.",
+      "//name" : "floranhunterpainting",
+      "//shortdescription" : "Primitive Hunter Art",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranhunterpainting"
+    },
+    "6" : {
+      "//description" : "A large pelt with thick, lustrous fur.",
+      "//name" : "floranpelt1",
+      "//shortdescription" : "Large Brown Pelt",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-24",
+      "object" : "floranpelt1"
+    },
+    "60" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation6",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation7",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A bongo drum fashioned out of leather and wood.",
+      "//name" : "florandrum3",
+      "//shortdescription" : "Small Bongo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florandrum3",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A piece of thin leather is stretched from the ceiling.",
+      "//name" : "florancorner",
+      "//shortdescription" : "Leather Support",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "florancorner",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A piece of thin leather is stretched from the ceiling.",
+      "//name" : "florancorner_orientation1",
+      "//shortdescription" : "Leather Support",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "florancorner",
+      "tilesetDirection" : "left"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/huntingbench.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/florantable1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/floranchair.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/floranceilingbones2.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonetable2.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonetable1.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonedisplay2.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonedisplay1.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting4.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/floranarmchair.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/florancouch.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/florandrum4.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/floransmalltable.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting2.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/bamboodoor.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/floranbed.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/floranshelf.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/floranchandelier.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation1.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation2.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation3.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation4.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/floranscreen1.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation5.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/florandesk.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/florantoilet.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt3.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonerack.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/florancabinet3.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/floranscreen2.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/floranbench.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/florancurtain.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/florancurtain_orientation2.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt5.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/florancurtain_orientation3.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting3.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/floranceilingbones1.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/floranstove.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/floranlamp1.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/floranlamp1_orientation1.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/florandrum1.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/florandoor.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/florandrum2.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/florancabinet1.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt4.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/florantable2.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonestool.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting1.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/florantanningrack.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt2.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/florancabinet2.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting5.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/florancrate.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/floranbookcase.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/floranhunterpainting.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt1.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation6.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation7.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/florandrum3.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/florancorner.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/florancorner_orientation1.png"
+    }
+  },
+  "tilewidth" : 8
+}

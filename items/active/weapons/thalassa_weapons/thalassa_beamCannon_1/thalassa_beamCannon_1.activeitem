@@ -1,0 +1,47 @@
+{
+  "itemName" : "thalassa_beamCannon_1",
+  "level" : 3,
+  "price" : 1000,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "The eye of the crystallized sea.",
+  "shortdescription" : "Aquamarine Eye",
+  "category" : "arcana_beamCannon",
+  "itemTags" : ["weapon","ranged","upgradeableWeapon"],
+  "twoHanded" : true,
+  "collectablesOnPickup" : { "arcana_collection_weapon_elemental" : "thalassa_beamCannon_1" },
+
+  "animation" : "thalassa_beamCannon_1.animation",
+  "animationParts" : {
+    "beamorigin" : "thalassa_beamCannon_1_origin.png",
+    "erchiuseye" : "thalassa_beamCannon_1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/erchiuseyebeam_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/erchiuseyebeam_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/erchiuseyebeam_stop.ogg" ],
+      "beamImpact" : [ "/sfx/projectiles/flame_burn.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/chain.lua"],
+
+  // "baseOffset" : [0.5, 0.75],
+  "muzzleOffset" : [0.875, 0.75],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "erchiusbeam",
+  "primaryAbility" : {
+    "name" : "Energy Beam",
+    "fireTime" : 0.2,
+    "baseDps" : 12,
+    "energyUsage" : 32,
+	"beamLength" : 24
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

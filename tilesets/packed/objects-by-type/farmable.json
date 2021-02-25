@@ -1,0 +1,940 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-type/farmable",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 78,
+  "tileheight" : 48,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Sweet, yellow corn.",
+      "//name" : "wildcornseed",
+      "//shortdescription" : "Corn Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildcornseed",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A Crystal plant. Truns out money does grow on trees.",
+      "//name" : "wildcrystalplantseed",
+      "//shortdescription" : "Crystal Plant Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildcrystalplantseed",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "Boil it, fry it, throw it at a bride. Rice! For all your culinary needs.",
+      "//name" : "wildriceseed",
+      "//shortdescription" : "Rice Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildriceseed",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "Genetically enhanced bananas. Smaller trees with bigger fruit.",
+      "//name" : "wildbananaseed",
+      "//shortdescription" : "Banana Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildbananaseed",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "Dirturchins are squidgy and kind of tasteless.",
+      "//name" : "dirturchinseed",
+      "//shortdescription" : "Dirturchin Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirturchinseed",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "The vibrant flesh of a neonmelon tastes like bubblegum.",
+      "//name" : "neonmelonseed",
+      "//shortdescription" : "Neonmelon Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "neonmelonseed",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "Automatoes! Be sure to spit out the screws.",
+      "//name" : "automatoseed",
+      "//shortdescription" : "Automato Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "automatoseed",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "Wheat, a staple crop with many uses.",
+      "//name" : "wheatseed",
+      "//shortdescription" : "Wheat Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wheatseed",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "The juicy pussplum gets its name from its creamy centre.",
+      "//name" : "wildpussplumseed",
+      "//shortdescription" : "Pussplum Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildpussplumseed",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "Coffee beans can be brewed to make a tasty beverage.",
+      "//name" : "wildcoffeeseed",
+      "//shortdescription" : "Coffee Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildcoffeeseed",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "This particular variety of space kiwi grows close to the ground.",
+      "//name" : "wildkiwiseed",
+      "//shortdescription" : "Kiwi Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildkiwiseed",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "Eggshoot, full of runny goodness.",
+      "//name" : "eggshootseed",
+      "//shortdescription" : "Eggshoot Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "eggshootseed",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Hot, hot, hot fiesta!! Extra hot to anyone but the humans.",
+      "//name" : "wildchiliseed",
+      "//shortdescription" : "Chilli Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildchiliseed",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "Feathers sprout from the top of the feathercrown and catch in the wind.",
+      "//name" : "feathercrownseed",
+      "//shortdescription" : "Feathercrown Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "feathercrownseed",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "Pineapple, make sure you cut it open first.",
+      "//name" : "wildpineappleseed",
+      "//shortdescription" : "Pineapple Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildpineappleseed",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "Not a fussy plant, wartweed grow easily under any condition.",
+      "//name" : "wartweedseed",
+      "//shortdescription" : "Wartweed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wartweedseed",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "Avesmingo, the plant of a 100 different flavours.",
+      "//name" : "wildavesmingoseed",
+      "//shortdescription" : "Avesmingo Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildavesmingoseed",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Potatoes! Boil em', mash em', stick em in a stew.",
+      "//name" : "wildpotatoseed",
+      "//shortdescription" : "Potato Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildpotatoseed",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "The coralcreep fruit looks like a sea creature.",
+      "//name" : "wildcoralcreepseed",
+      "//shortdescription" : "Coralcreep Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildcoralcreepseed",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "Automatoes! Be sure to spit out the screws.",
+      "//name" : "wildautomatoseed",
+      "//shortdescription" : "Automato Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildautomatoseed",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Grows delicious carrots, brought all the way across the stars from Earth.",
+      "//name" : "carrotseed",
+      "//shortdescription" : "Carrot Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "carrotseed",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//name" : "wildswordstoneseed",
+      "invalid" : "true"
+    },
+    "29" : {
+      "//description" : "Sugarcane is a fibrous crop with rich, sweet sap.",
+      "//name" : "sugarcaneseed",
+      "//shortdescription" : "Sugarcane Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "sugarcaneseed",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Not a fussy plant, wartweed grow easily under any condition.",
+      "//name" : "wildwartweedseed",
+      "//shortdescription" : "Wartweed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildwartweedseed",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "Grows delicious carrots, brought all the way across the stars from Earth.",
+      "//name" : "wildcarrotseed",
+      "//shortdescription" : "Carrot Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildcarrotseed",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A prickly plant with prickly fruits.",
+      "//name" : "thornplant",
+      "//shortdescription" : "Thorny Plant",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "thornplant",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "Pearlpea, I'll need to bite down hard.",
+      "//name" : "wildpearlpeaseed",
+      "//shortdescription" : "Pearlpea Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildpearlpeaseed",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "Diodia, a soft root vegetable with a coppery taste.",
+      "//name" : "wilddiodiaseed",
+      "//shortdescription" : "Diodia Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wilddiodiaseed",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "Grows boltbulb! Surprisingly soft.",
+      "//name" : "boltbulbseed",
+      "//shortdescription" : "Boltbulb Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "boltbulbseed",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "Avesmingo, the plant of a 100 different flavours.",
+      "//name" : "avesmingoseed",
+      "//shortdescription" : "Avesmingo Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avesmingoseed",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "Boltbulb! Surprisingly soft.",
+      "//name" : "wildboltbulbseed",
+      "//shortdescription" : "Boltbulb Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildboltbulbseed",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "Diodia, a soft root vegetable with a coppery taste.",
+      "//name" : "diodiaseed",
+      "//shortdescription" : "Diodia Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "diodiaseed",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "Potatoes! Boil em', mash em', stick em in a stew.",
+      "//name" : "potatoseed",
+      "//shortdescription" : "Potato Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "potatoseed",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A flower with bright red petals. Useful for making dye.",
+      "//name" : "flowerred",
+      "//shortdescription" : "Red Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flowerred",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Feathers sprout from the top of the feathercrown and catch in the wind.",
+      "//name" : "wildfeathercrownseed",
+      "//shortdescription" : "Feathercrown Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildfeathercrownseed",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "Genetically enhanced bananas. Smaller trees with bigger fruit.",
+      "//name" : "bananaseed",
+      "//shortdescription" : "Banana Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bananaseed",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "Grows crunchy beakseed. The nostril is the best part.",
+      "//name" : "wildbeakseedseed",
+      "//shortdescription" : "Beakseed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildbeakseedseed",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "Hot, hot, hot fiesta!! Extra hot to anyone but the humans.",
+      "//name" : "chiliseed",
+      "//shortdescription" : "Chilli Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "chiliseed",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "Coffee beans can be brewed to make a tasty beverage.",
+      "//name" : "coffeeseed",
+      "//shortdescription" : "Coffee Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "coffeeseed",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "The coralcreep fruit looks like a sea creature.",
+      "//name" : "coralcreepseed",
+      "//shortdescription" : "Coralcreep Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "coralcreepseed",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "Sweet, yellow corn.",
+      "//name" : "cornseed",
+      "//shortdescription" : "Corn Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cornseed",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "Currentcorn, full of acid. Not good for fleshy creatures.",
+      "//name" : "currentcornseed",
+      "//shortdescription" : "Currentcorn Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "currentcornseed",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A sweetly scented spring flower.",
+      "//name" : "flowerspring",
+      "//shortdescription" : "Spring Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flowerspring",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A flower with bright yellow petals. Useful for making dye.",
+      "//name" : "floweryellow",
+      "//shortdescription" : "Yellow Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floweryellow",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "Grapes, natures snackfood.",
+      "//name" : "grapesseed",
+      "//shortdescription" : "Grape Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "grapesseed",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "Boneboo, a good source of calcium.",
+      "//name" : "bonebooseed",
+      "//shortdescription" : "Boneboo Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bonebooseed",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "A mushroom. The farmer who plants these is a fun guy.",
+      "//name" : "mushroomseed",
+      "//shortdescription" : "Mushroom Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "mushroomseed",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "The vibrant flesh of a neonmelon tastes like bubblegum.",
+      "//name" : "wildneonmelonseed",
+      "//shortdescription" : "Neonmelon Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildneonmelonseed",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "The iris is the best part of this strange fruit.",
+      "//name" : "oculemonseed",
+      "//shortdescription" : "Oculemon Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "oculemonseed",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "Dirturchins are squidgy and kind of tasteless.",
+      "//name" : "wilddirturchinseed",
+      "//shortdescription" : "Dirturchin Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wilddirturchinseed",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "Pearlpea, you'll need to bite down hard.",
+      "//name" : "pearlpeaseed",
+      "//shortdescription" : "Pearlpea Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "pearlpeaseed",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "Pineapple, make sure you cut it open first.",
+      "//name" : "pineappleseed",
+      "//shortdescription" : "Pineapple Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "pineappleseed",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "The juicy pussplum gets its name from its creamy centre.",
+      "//name" : "pussplumseed",
+      "//shortdescription" : "Pussplum Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "pussplumseed",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "Reefpod, tastes like a crunchy smoothie with added sea water. ",
+      "//name" : "reefpodseed",
+      "//shortdescription" : "Reefpod Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "reefpodseed",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "Reefpod, tastes like a crunchy smoothie with added sea water. ",
+      "//name" : "wildreefpodseed",
+      "//shortdescription" : "Reefpod Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildreefpodseed",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "Sugarcane is a fibrous crop with rich, sweet sap.",
+      "//name" : "wildsugarcaneseed",
+      "//shortdescription" : "Sugarcane Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildsugarcaneseed",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Eggshoot, full of runny goodness.",
+      "//name" : "wildeggshootseed",
+      "//shortdescription" : "Eggshoot Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildeggshootseed",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "Tomatoes are a rich, juicy fruit. Or vegetable. One of the two.",
+      "//name" : "wildtomatoseed",
+      "//shortdescription" : "Tomato Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildtomatoseed",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "Currentcorn, full of acid. Not good for fleshy creatures.",
+      "//name" : "wildcurrentcornseed",
+      "//shortdescription" : "Currentcorn Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildcurrentcornseed",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "Toxic looking fruit, but is it all that bad?",
+      "//name" : "wildtoxictopseed",
+      "//shortdescription" : "Toxictop Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildtoxictopseed",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "Wheat, a staple crop with many uses.",
+      "//name" : "wildwheatseed",
+      "//shortdescription" : "Wheat Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildwheatseed",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//name" : "swordstoneseed",
+      "invalid" : "true"
+    },
+    "65" : {
+      "//description" : "Tomatoes are a rich, juicy fruit. Or vegetable. One of the two.",
+      "//name" : "tomatoseed",
+      "//shortdescription" : "Tomato Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tomatoseed",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "Boneboo, a good source of calcium.",
+      "//name" : "wildbonebooseed",
+      "//shortdescription" : "Boneboo Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildbonebooseed",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "The iris is the best part of this strange fruit.",
+      "//name" : "wildoculemonseed",
+      "//shortdescription" : "Oculemon Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildoculemonseed",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "Grows crunchy beakseed. The nostril is the best part.",
+      "//name" : "beakseedseed",
+      "//shortdescription" : "Beakseed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "beakseedseed",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "Boil it, fry it, throw it at a bride. Rice! For all your culinary needs.",
+      "//name" : "riceseed",
+      "//shortdescription" : "Rice Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "riceseed",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A sapling. From simple roots a tree will grow.",
+      "//name" : "sapling",
+      "//shortdescription" : "Sapling",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "sapling",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "Grapes, natures snackfood.",
+      "//name" : "wildgrapesseed",
+      "//shortdescription" : "Grape Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildgrapesseed",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "A flower with bright blue petals. Useful for making dye.",
+      "//name" : "flowerblue",
+      "//shortdescription" : "Blue Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flowerblue",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "Toxic looking fruit, but is it all that bad?",
+      "//name" : "toxictopseed",
+      "//shortdescription" : "Toxictop Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "toxictopseed",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "A plant which grows fluffy cotton buds.",
+      "//name" : "cottonseed",
+      "//shortdescription" : "Cotton Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cottonseed",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "A plant which grows fluffy cotton buds!",
+      "//name" : "wildcottonseed",
+      "//shortdescription" : "Cotton Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildcottonseed",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//description" : "What a lovely flower!",
+      "//name" : "protectorateflower",
+      "//shortdescription" : "Protectorate Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectorateflower",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "Cocoa beans can be brewed to make a tasty beverage.",
+      "//name" : "wildcocoaseed",
+      "//shortdescription" : "Cocoa Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wildcocoaseed",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "A cocoa plant. Once ripe, the pods can be turned into chocolate.",
+      "//name" : "cocoaseed",
+      "//shortdescription" : "Cocoa Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cocoaseed",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A Crystal plant. Truns out money does grow on trees.",
+      "//name" : "crystalplantseed",
+      "//shortdescription" : "Crystal Plant Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystalplantseed",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "This particular variety of space kiwi grows close to the ground.",
+      "//name" : "kiwiseed",
+      "//shortdescription" : "Kiwi Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "kiwiseed",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/wildcornseed.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/wildcrystalplantseed.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/wildriceseed.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/wildbananaseed.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/dirturchinseed.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/neonmelonseed.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/automatoseed.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/wheatseed.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/wildpussplumseed.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/wildcoffeeseed.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/wildkiwiseed.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/eggshootseed.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/wildchiliseed.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/feathercrownseed.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/wildpineappleseed.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/wartweedseed.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/wildavesmingoseed.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/wildpotatoseed.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/wildcoralcreepseed.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/wildautomatoseed.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/carrotseed.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/sugarcaneseed.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/wildwartweedseed.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/wildcarrotseed.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/thornplant.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/wildpearlpeaseed.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/wilddiodiaseed.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/boltbulbseed.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/avesmingoseed.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/wildboltbulbseed.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/diodiaseed.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/potatoseed.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/flowerred.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/wildfeathercrownseed.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/bananaseed.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/wildbeakseedseed.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/chiliseed.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/coffeeseed.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/coralcreepseed.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/cornseed.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/currentcornseed.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/flowerspring.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/floweryellow.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/grapesseed.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/bonebooseed.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/mushroomseed.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/wildneonmelonseed.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/oculemonseed.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/wilddirturchinseed.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/pearlpeaseed.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/pineappleseed.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/pussplumseed.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/reefpodseed.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/wildreefpodseed.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/wildsugarcaneseed.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/wildeggshootseed.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/wildtomatoseed.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/wildcurrentcornseed.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/wildtoxictopseed.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/wildwheatseed.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/tomatoseed.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/wildbonebooseed.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/wildoculemonseed.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/beakseedseed.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/riceseed.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/sapling.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/wildgrapesseed.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/flowerblue.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/toxictopseed.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/cottonseed.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/wildcottonseed.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/protectorateflower.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/wildcocoaseed.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/cocoaseed.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/crystalplantseed.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/kiwiseed.png"
+    }
+  },
+  "tilewidth" : 47
+}

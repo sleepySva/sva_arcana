@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/sea",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A seaweed in a flower pot.",
+      "//name" : "seaweedpot",
+      "//shortdescription" : "Seaweed Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "seaweedpot",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A seashell-shaped armchair.",
+      "//name" : "seachair",
+      "//shortdescription" : "Seashell Armchair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "seachair",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A seashell-shaped armchair.",
+      "//name" : "seachair_orientation1",
+      "//shortdescription" : "Seashell Armchair",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "seachair",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A wall mirror set in a coral frame.",
+      "//name" : "coralmirror",
+      "//shortdescription" : "Coral Mirror",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "coralmirror",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A seashell-shaped bed.",
+      "//name" : "seabed",
+      "//shortdescription" : "Seashell Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "seabed",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A cute seashell which provides light.",
+      "//name" : "sealamp",
+      "//shortdescription" : "Sea Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sealamp",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/seaweedpot.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/seachair.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/seachair_orientation1.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/coralmirror.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/seabed.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/sealamp.png"
+    }
+  },
+  "tilewidth" : 8
+}

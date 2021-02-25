@@ -1,0 +1,21 @@
+{
+  "materialId" : 16693,
+  "materialName" : "evoaquatic_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "evoaquatic_tile3",
+  "description" : "A yellowish rock tile.",
+  "shortdescription" : "Evoaquatic Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "evoaquatic_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 293
+  }
+}

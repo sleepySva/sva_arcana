@@ -1,0 +1,21 @@
+{
+  "materialId" : 16842,
+  "materialName" : "arcana_platform_aeonPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_aeonPlatform",
+  "shortdescription" : "Aeon Platform",
+  "description" : "A timeless platform.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 18,
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_aeonPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

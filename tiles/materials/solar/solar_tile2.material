@@ -1,0 +1,22 @@
+{
+  "materialId" : 16652,
+  "materialName" : "solar_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "solar_tile2",
+  "description" : "An ancient constructing material made from umberstone and solar crystal. Highly durable.",
+  "shortdescription" : "Umberstone Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 40,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "solar_tile2.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 402,
+    "radiantLight" : [150, 60, 30]
+  }
+}

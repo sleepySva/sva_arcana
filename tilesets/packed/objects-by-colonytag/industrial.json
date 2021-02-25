@@ -1,0 +1,140 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/industrial",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 11,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A metal wall light which emits a sickly orange glow.",
+      "//name" : "industriallight",
+      "//shortdescription" : "Industrial Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "industriallight",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A solid metal chair with only the slightest bit of padding.",
+      "//name" : "industrialchair",
+      "//shortdescription" : "Industrial Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "industrialchair",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A cheap bed with a sturdy metal frame. It doesn't seem very comfortable.",
+      "//name" : "industrialbed",
+      "//shortdescription" : "Industrial Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "industrialbed",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A display which appears to be connected to some sort of radar.",
+      "//name" : "industrialdisplay",
+      "//shortdescription" : "Industrial Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "industrialdisplay",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A sealed metal canister, that might be used to store hazardous liquids.",
+      "//name" : "industrialcanister",
+      "//shortdescription" : "Industrial Canister",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "industrialcanister",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A tough automated door, reinforced to be able to survive intense intergalactic conditions.",
+      "//name" : "industrialdoor",
+      "//shortdescription" : "Industrial Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "industrialdoor",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A cold metal table, built to survive turbulent trips.",
+      "//name" : "industrialtable",
+      "//shortdescription" : "Industrial Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "industrialtable",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "An old metal computer tower. Untidy cables hang out of its back.",
+      "//name" : "industrialcomputer",
+      "//shortdescription" : "Industrial Computer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "industrialcomputer",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A pressurised cargo crate, designed to withstand the conditions of space travel.",
+      "//name" : "industrialcrate",
+      "//shortdescription" : "Industrial Crate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "industrialcrate",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A wall mounted locker, complete with hazard stripes and a red light.",
+      "//name" : "industrialstoragelocker",
+      "//shortdescription" : "Industrial Storage Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "industrialstoragelocker"
+    },
+    "9" : {
+      "//name" : "industrialclassstoragelocker",
+      "invalid" : "true"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/industriallight.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/industrialchair.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/industrialbed.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/industrialdisplay.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/industrialcanister.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/industrialdoor.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/industrialtable.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/industrialcomputer.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/industrialcrate.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/industrialstoragelocker.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    }
+  },
+  "tilewidth" : 8
+}

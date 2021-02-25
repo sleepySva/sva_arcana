@@ -1,0 +1,22 @@
+{
+  "materialId" : 16728,
+  "materialName" : "cerueon_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "cerueon_tile2",
+  "description" : "A blue flower tile, looks enchanted.",
+  "shortdescription" : "Cerueon Flower Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "cerueon_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4728,
+	"radiantLight" : [20, 90, 150]
+  }
+}

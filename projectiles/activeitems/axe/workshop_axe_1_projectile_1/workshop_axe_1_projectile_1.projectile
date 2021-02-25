@@ -1,0 +1,47 @@
+{
+  "projectileName" : "workshop_axe_1_projectile_1",
+  "physics" : "boomerang",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 36,
+  
+  "image" : "workshop_axe_1_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [120, 120, 40],
+  "emitters" : ["arcana_particle_yellow"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_fire_2/arcana_explosion_fire_2.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/axe/workshop_axe_1_projectile_1/workshop_axe_1_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    }
+  ],
+  
+  "damageKind" : "default"
+ 
+}

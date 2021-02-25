@@ -1,0 +1,21 @@
+{
+  "materialId" : 16619,
+  "materialName" : "orion_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile3",
+  "description" : "A thin metal support beam, painted black.",
+  "shortdescription" : "Dark Thin Support",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 22,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 173
+  }
+}

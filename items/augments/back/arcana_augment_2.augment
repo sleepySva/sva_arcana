@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_augment_2",
+  "price" : 5000,
+  "rarity" : "Rare",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_2.png",
+  "description" : "An EPP module that boosts your total energy by a huge amount.",
+  "shortdescription" : "Arcana I, The Magician",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_1",
+    "displayName" : "The Magician",
+    "displayIcon" : "/items/augments/back/arcana_augment_2.png",
+    "effects" : [ "maxenergyboostaugment1","regenerationaugment1","rageaugment1" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

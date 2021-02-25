@@ -1,0 +1,48 @@
+{
+  "projectileName" : "horizon_shotgun_1_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 120,
+  "piercing" : true,
+  
+  "image" : "horizon_shotgun_1_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [148, 62, 145],
+  "emitters" : ["electricplasmapurple","electricplasma","defaultmagenta"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/doomexplosion/doomexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/horizon_shotgun_1_projectile_1/horizon_shotgun_1_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

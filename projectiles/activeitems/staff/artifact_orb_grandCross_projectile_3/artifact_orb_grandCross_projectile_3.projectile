@@ -1,0 +1,32 @@
+{
+  "projectileName" : "artifact_orb_grandCross_projectile_3",
+  "physics" : "laser",
+  "timeToLive" : 3,
+  "image" : "artifact_orb_grandCross_projectile_3.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [180, 180, 180],
+  "frameNumber" : 4,
+  "periodicActions" : [ ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/electricimpact2.config"
+    }
+  ],
+  "speed" : 60,
+  "power" : 30,
+  "damageKind" : "electric",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+
+  "fullbright" : true,
+  "emitters" : [ "artifact_particle_duality_2","arcana_particle_black" ],
+
+  "bounces" : 0,
+
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+
+  "controlMovement" : {
+    "maxSpeed" : 160,
+    "controlForce" : 100
+  }
+}

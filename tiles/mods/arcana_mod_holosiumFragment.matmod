@@ -1,0 +1,21 @@
+{
+  "modId" : 16804,
+  "modName" : "arcana_mod_holosiumFragment",
+  "itemDrop" : "arcana_ore_holosiumFragment",
+  "description" : "Holosium Fragment.",
+  "health" : 24,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_holosiumFragment.png",
+    "variants" : 8,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [125, 125, 125]
+  }
+}

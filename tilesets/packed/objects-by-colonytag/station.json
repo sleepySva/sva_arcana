@@ -1,0 +1,374 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/station",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 30,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A large, sleek automated hatch, made from the same materials found on the exterior of space stations.",
+      "//name" : "stationhatch",
+      "//shortdescription" : "Station Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "stationhatch",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A sleek automated door, made from the same materials found on the exterior of space stations.",
+      "//name" : "stationdoor",
+      "//shortdescription" : "Station Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationdoor",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfield",
+      "//shortdescription" : "Docking Field",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "dockingfield",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfield_orientation2",
+      "//shortdescription" : "Docking Field",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "0",
+      "object" : "dockingfield",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfield_orientation3",
+      "//shortdescription" : "Docking Field",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "0",
+      "object" : "dockingfield",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A vent typically used for keeping the air clean aboard space stations.",
+      "//name" : "stationceilingvent",
+      "//shortdescription" : "Station Ceiling Vent",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "stationceilingvent",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A long industrial looking fluorescent light.",
+      "//name" : "stationlightv",
+      "//shortdescription" : "Tall Station Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "stationlightv",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A large rotating generator, or radar, or perhaps an engine...",
+      "//name" : "stationpylon",
+      "//shortdescription" : "Station Pylon",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stationpylon",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A sleek metal bench.",
+      "//name" : "stationbench",
+      "//shortdescription" : "Station Bench",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationbench",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A panel which is designed to attach to a space structure or ship.",
+      "//name" : "stationwallpanel",
+      "//shortdescription" : "Station Wall Panel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "stationwallpanel",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A small terminal, with a compact display screen.",
+      "//name" : "stationconsole",
+      "//shortdescription" : "Station Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stationconsole",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A shipping crate, designed to ship space goods.",
+      "//name" : "stationcrate",
+      "//shortdescription" : "Station Crate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stationcrate",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A large sleek hatch that has a built-in rail connector for use with elevators.",
+      "//name" : "stationrailhatch",
+      "//shortdescription" : "Station Rail Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "stationrailhatch",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A sign with an image indicating a medical station.",
+      "//name" : "stationtradesignmedic",
+      "//shortdescription" : "Medic Station Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "stationtradesignmedic",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A sign with an image of an electronic component, indicating an electronics station.",
+      "//name" : "stationtradesignelectronics",
+      "//shortdescription" : "Electronics Station Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "stationtradesignelectronics",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A sign with an image of a gun, indicating a weapons station.",
+      "//name" : "stationtradesignweapons",
+      "//shortdescription" : "Weapons Station Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "stationtradesignweapons",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A sign with an image of food utensils, indicating a food station.",
+      "//name" : "stationtradesignfood",
+      "//shortdescription" : "Food Station Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "stationtradesignfood",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A bed which is designed to perform medical scans.",
+      "//name" : "stationmedscanner",
+      "//shortdescription" : "Station Medical Scanner",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationmedscanner",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "This guidance beacon marks the position of a landing bay.",
+      "//name" : "mechbeacon",
+      "//shortdescription" : "Landing Beacon",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "mechbeacon",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfieldsmall",
+      "//shortdescription" : "Docking Field (Small)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "dockingfieldsmall",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfieldsmall_orientation2",
+      "//shortdescription" : "Docking Field (Small)",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "dockingfieldsmall",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfieldsmall_orientation3",
+      "//shortdescription" : "Docking Field (Small)",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "dockingfieldsmall",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A screen displaying a series of space-themed photographs.",
+      "//name" : "spaceslideshow",
+      "//shortdescription" : "Space Slideshow",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-16",
+      "object" : "spaceslideshow",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A large, sleek automated door, made from the same materials found on the exterior of space stations.",
+      "//name" : "stationdoorlarge",
+      "//shortdescription" : "Station Large Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationdoorlarge",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A round heavy metal table.",
+      "//name" : "stationtable",
+      "//shortdescription" : "Station Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stationtable",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A flickering holographic display of an unidentified planet.",
+      "//name" : "stationhologram",
+      "//shortdescription" : "Station Hologram",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stationhologram",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A vending machine, there are some quality snacks in here.",
+      "//name" : "stationvendingmachine",
+      "//shortdescription" : "Station Vending Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stationvendingmachine",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A long industrial looking fluorescent light.",
+      "//name" : "stationlighth",
+      "//shortdescription" : "Wide Station Light",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stationlighth",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A curved, formal looking metal chair.",
+      "//name" : "stationchair",
+      "//shortdescription" : "Station Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stationchair",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A wall-mounted screen lit up with lots of blue text.",
+      "//name" : "stationdisplay",
+      "//shortdescription" : "Station Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "stationdisplay",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/stationhatch.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/stationdoor.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfield.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfield_orientation2.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfield_orientation3.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/stationceilingvent.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/stationlightv.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/stationpylon.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/stationbench.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/stationwallpanel.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/stationconsole.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/stationcrate.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/stationrailhatch.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/stationtradesignmedic.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/stationtradesignelectronics.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/stationtradesignweapons.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/stationtradesignfood.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/stationmedscanner.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/mechbeacon.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfieldsmall.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfieldsmall_orientation2.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfieldsmall_orientation3.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/spaceslideshow.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/stationdoorlarge.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/stationtable.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/stationhologram.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/stationvendingmachine.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/stationlighth.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/stationchair.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/stationdisplay.png"
+    }
+  },
+  "tilewidth" : 8
+}

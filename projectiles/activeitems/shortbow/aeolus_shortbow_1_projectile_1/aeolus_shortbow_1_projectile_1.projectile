@@ -1,0 +1,25 @@
+{
+  "projectileName" : "aeolus_shortbow_1_projectile_1",
+  "physics" : "arrownosticky",
+  "image" : "aeolus_shortbow_1_projectile_1.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "emitters" : [ "daggerblue" ],
+  "damageKindImage" : "icon.png",
+  "timeToLive" : 10,
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arrowexplosion/arrowexplosion.config"
+    }
+  ],
+  
+  "lightColor" : [10, 30, 40],
+  "power" : 20,
+  "knockback" : 40,
+  "knockbackDirectional" : true,
+  "damageKind" : "bow",
+  "speed" : 146
+}

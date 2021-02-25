@@ -1,0 +1,170 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "erchiuseye" : {
+        "default" : "squirm",
+        "states" : {
+          "idle" : {
+            "properties" : {
+              "lightsOff" : ["purple"]
+            }
+          },
+          "squirm" : {
+            "frames" : 8,
+            "cycle" : 1.0,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOff" : ["purple"]
+            }
+          },
+          "fire" : {
+            "frames" : 4,
+            "cycle" : 0.25,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : ["purple"]
+            }
+          }
+        }
+      },
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "erchiuseye" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.125, 0.75],
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "erchiuseye" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "squirm" : {
+              "properties" : {
+                "image" : "<partImage>:squirm.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire"
+              }
+            }
+          }
+        }
+      },
+      "beamorigin" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [0.7, 0.7],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "erchiuseye" : {
+            "idle" : {},
+            "squirm" : {},
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "beamEnd" : {},
+    "muzzle" : {}
+  },
+
+  "lights" : {
+    "purple" : {
+      "active" : false,
+      "color" : [175, 89, 210],
+      "position" : [0, 0]
+    }
+  },
+
+  "particleEmitters" : {
+    "beamCollision" : {
+      "active" : false,
+      "transformationGroups" : ["muzzle", "beamEnd"],
+      "emissionRate" : 30,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "color" : [225, 156, 244, 255],
+            "position" : [0, 0],
+            "initialVelocity" : [0, 2.0],
+            "finalVelocity" : [0, -4.0],
+            "approach" : [0, 10],
+            "fade" : 0.3,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.3,
+            "size" : 1.8,
+            "timeToLive" : 0.5,
+            "fullbright" : true,
+            "layer" : "front",
+            "collidesForeground" : false,
+            "variance" : {
+              "position" : [0.5, 0.5],
+              "initialVelocity" : [2, 2]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/dust2/dust2.animation",
+            "position" : [0, 0],
+            "initialVelocity" : [0, 2.0],
+            "finalVelocity" : [0, -2.0],
+            "approach" : [0, 10],
+            "fade" : 0.3,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.3,
+            "size" : 1,
+            "timeToLive" : 0.5,
+            "fullbright" : true,
+            "layer" : "front",
+            "collidesForeground" : false,
+            "variance" : {
+              "position" : [0.5, 0.5],
+              "initialVelocity" : [2, 2]
+            }
+          }
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fireStart" : [],
+    "fireLoop" : [],
+    "fireEnd" : [],
+    "beamImpact" : []
+  }
+}

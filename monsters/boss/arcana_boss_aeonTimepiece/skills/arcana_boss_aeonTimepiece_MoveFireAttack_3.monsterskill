@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_boss_aeonTimepiece_MoveFireAttack_3",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/arcana_boss_aeonTimepiece/skills/arcana_boss_aeonTimepiece_MoveFireAttack_3.lua" ],
+
+    "arcana_boss_aeonTimepiece_MoveFireAttack_3" : {
+      "skillTime": 4,
+      "bobTime" : 2,
+      "bobHeight" : 3,
+
+      "projectileOffset" : [0, -4],
+      "fireInterval" : 3,
+      "projectile" : {
+        "type" : "arcana_boss_aeonTimepiece_projectile_2",
+        "config" : {
+          "speed" : 12,
+          "power" : 10
+        }
+      }
+    }
+  }
+}

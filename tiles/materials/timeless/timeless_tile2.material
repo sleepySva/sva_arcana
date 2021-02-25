@@ -1,0 +1,21 @@
+{
+  "materialId" : 16722,
+  "materialName" : "timeless_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "timeless_tile2",
+  "description" : "A yellowish wood tile.",
+  "shortdescription" : "Timeless Wood",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 22,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "timeless_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1722
+  }
+}

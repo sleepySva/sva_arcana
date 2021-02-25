@@ -1,0 +1,21 @@
+{
+  "materialId" : 16637,
+  "materialName" : "glowtear_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "glowtear_tile1",
+  "description" : "A dark blue stone tile.",
+  "shortdescription" : "Tearstone",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 22,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "glowtear_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1351
+  }
+}

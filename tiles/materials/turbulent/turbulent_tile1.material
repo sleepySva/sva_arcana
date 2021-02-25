@@ -1,0 +1,21 @@
+{
+  "materialId" : 16610,
+  "materialName" : "turbulent_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "turbulent_tile1",
+  "description" : "A sea stained rock block.",
+  "shortdescription" : "Turbulent Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "turbulent_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1318
+  }
+}

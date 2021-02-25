@@ -1,0 +1,21 @@
+{
+  "modId" : 16803,
+  "modName" : "arcana_mod_magifireCrystal",
+  "itemDrop" : "elemental_crafting_magifireCrystal",
+  "description" : "Magifire crystal.",
+  "health" : 20,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_magifireCrystal.png",
+    "variants" : 8,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [100, 80, 20]
+  }
+}

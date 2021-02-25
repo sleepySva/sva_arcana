@@ -1,0 +1,22 @@
+[
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_novaStation_1",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_novaStation_1",
+	  "weatherPool" : [
+		[0.850, "clear"],
+		[0.075, "rain"],
+		[0.075, "drizzle"]
+	  ],
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 500],
+      "dungeonBaseHeight" : 500,
+	  "dungeonSurfaceHeight" : 130,
+      "ambientLightLevel" : [128, 128, 128],
+      "biome" : "arcana_superstormExpanse",
+      "musicTrack" : "/music/planetarium.ogg"
+    }
+  }
+]

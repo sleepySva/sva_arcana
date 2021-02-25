@@ -1,0 +1,21 @@
+{
+  "materialId" : 16567,
+  "materialName" : "thalassa_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "thalassa_tile3",
+  "description" : "A stone block made from aquamarine.",
+  "shortdescription" : "Aquamarine Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "thalassa_tile3.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 163
+  }
+}

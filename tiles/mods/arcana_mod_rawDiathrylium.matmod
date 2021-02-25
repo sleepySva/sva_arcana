@@ -1,0 +1,21 @@
+{
+  "modId" : 16816,
+  "modName" : "arcana_mod_rawDiathrylium",
+  "itemDrop" : "arcana_ore_rawDiathrylium",
+  "description" : "Raw diathrylium.",
+  "health" : 16,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_rawDiathrylium.png",
+    "variants" : 8,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [0, 20, 160]
+  }
+}

@@ -1,0 +1,49 @@
+{
+
+  "arcana_treasure_arcana_misc_eternalPage" : [
+    [0, {
+      "fill" : [
+        { "item" : "arcana_misc_eternalPage" }
+      ],
+      "poolRounds" : [
+        [0.2, 3],
+        [0.2, 2],
+        [0.2, 2],
+        [0.2, 2],
+        [0.2, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_treasure_paper" : [
+    [0, {
+      "fill" : [
+        { "item" : "paper" }
+      ],
+      "poolRounds" : [
+        [0.2, 4],
+        [0.2, 3],
+        [0.2, 3],
+        [0.2, 3],
+        [0.2, 2]
+      ]
+    }]
+  ],
+
+  "arcana_treasure_timeless_1" : [
+    [0, {
+      "fill" : [
+        {"pool" : "arcana_treasure_paper"},
+        {"pool" : "arcana_treasure_arcana_misc_eternalPage"}
+      ],
+      "poolRounds" : [
+        [0.5, 1],
+        [0.5, 2]
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "basicTreasure"},
+		{"weight" : 0.5, "pool" : "basicTreasure"}
+      ]
+    }]
+  ]
+}

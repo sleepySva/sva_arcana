@@ -1,0 +1,21 @@
+{
+  "materialId" : 16594,
+  "materialName" : "arcana_tile14",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile14",
+  "description" : "A composition of flowers.",
+  "shortdescription" : "Arcane Flower Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile14.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1805
+  }
+}

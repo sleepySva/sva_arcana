@@ -1,0 +1,21 @@
+{
+  "modId" : 16813,
+  "modName" : "arcana_mod_borealiteOre",
+  "itemDrop" : "arcana_ore_borealiteOre",
+  "description" : "Borealite ore.",
+  "health" : 8,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_borealiteOre.png",
+    "variants" : 8,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [60, 60, 100]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "objectName" : "monarch_chair_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A white and black palace chair.",
+  "shortdescription" : "Palace Chair",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "monarch_chair_1.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPosition" : [-4, 23],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "monarch_chair_1.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "direction" : "right",
+      "sitPosition" : [4, 23],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

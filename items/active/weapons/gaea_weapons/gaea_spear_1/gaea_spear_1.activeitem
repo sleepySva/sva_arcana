@@ -1,0 +1,41 @@
+{
+  "itemName" : "gaea_spear_1",
+  "price" : 1000,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A spear in the shape of a fist.",
+  "shortdescription" : "Superpunch",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+  "collectablesOnPickup" : { "arcana_collection_weapon_elemental" : "gaea_spear_1" },
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/spear/gaea_spear_1.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "gaea_spear_1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "poison",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.94,
+    "baseDps" : 8.6
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

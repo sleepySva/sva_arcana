@@ -1,0 +1,21 @@
+{
+  "materialId" : 16569,
+  "materialName" : "thalassa_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "thalassa_tile5",
+  "description" : "Bricks made from aquamerine stone.",
+  "shortdescription" : "Heavy Aquamarine Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "thalassa_tile5.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 165
+  }
+}

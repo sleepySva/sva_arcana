@@ -1,0 +1,23 @@
+{
+  "materialId" : 16615,
+  "materialName" : "windswept_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "windswept_tile1",
+  "description" : "A dirt block covered with lush grass.",
+  "shortdescription" : "Highland Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 8,
+  "category" : "materials",
+  "tillableMod" : 32,
+  "soil" : true,
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "windswept_tile1.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1401
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16539,
+  "materialName" : "monarch_tile9",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "monarch_tile9",
+  "description" : "A black and white stone-made fence.",
+  "shortdescription" : "Palace Stone Fence",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "monarch_tile9.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 120
+  }
+}

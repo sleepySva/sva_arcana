@@ -1,0 +1,110 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/rails",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 8,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "This door is made of some sort of bulletproof material. It has a composite rail running through it.",
+      "//name" : "outpostrailhatch",
+      "//shortdescription" : "Rail Airlock Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "outpostrailhatch",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Stops and starts rail riders",
+      "//name" : "railstop",
+      "//shortdescription" : "Rail Stop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railstop",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "This door is made of some sort of bulletproof material. It has a composite rail running through it.",
+      "//name" : "outpostrailairlock",
+      "//shortdescription" : "Rail Airlock Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostrailairlock",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Detects rail riders as they pass through",
+      "//name" : "railsensor",
+      "//shortdescription" : "Rail Sensor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railsensor",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Caps rail endpoints to send riders back the way they came",
+      "//name" : "railbumper",
+      "//shortdescription" : "Rail Bumper",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railbumper",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "Directs rail riders to different paths",
+      "//name" : "railswitch",
+      "//shortdescription" : "Rail Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railswitch",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Calls and stops rail trams",
+      "//name" : "railtramstop",
+      "//shortdescription" : "Rail Tram Stop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railtramstop",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A large sleek hatch that has a built-in rail connector for use with elevators.",
+      "//name" : "stationrailhatch",
+      "//shortdescription" : "Station Rail Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "stationrailhatch",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/outpostrailhatch.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/railstop.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/outpostrailairlock.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/railsensor.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/railbumper.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/railswitch.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/railtramstop.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/stationrailhatch.png"
+    }
+  },
+  "tilewidth" : 8
+}

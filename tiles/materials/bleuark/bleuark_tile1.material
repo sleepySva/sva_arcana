@@ -1,0 +1,21 @@
+{
+  "materialId" : 16541,
+  "materialName" : "bleuark_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "bleuark_tile1",
+  "description" : "A dark blue stone block.",
+  "shortdescription" : "Seastone Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "bleuark_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1212
+  }
+}

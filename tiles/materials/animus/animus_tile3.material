@@ -1,0 +1,21 @@
+{
+  "materialId" : 16683,
+  "materialName" : "animus_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "animus_tile3",
+  "description" : "A dark, shadowy colored wood chunk.",
+  "shortdescription" : "Animus Wood",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "animus_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 288
+  }
+}

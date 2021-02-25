@@ -1,0 +1,21 @@
+{
+  "materialId" : 16521,
+  "materialName" : "elysia_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "elysia_tile1",
+  "description" : "A carpeted wooden tile.",
+  "shortdescription" : "Resort Carpeted Timber",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "elysia_tile1.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 101
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/playerstation",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 5,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A port which modular station expansion pieces can be attached to.",
+      "//name" : "expansionslot",
+      "//shortdescription" : "Expansion Slot",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "expansionslot"
+    },
+    "1" : {
+      "//description" : "A console for monitoring the conditions inside an orbiting station.",
+      "//name" : "playerstationconsole",
+      "//shortdescription" : "Space Station Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "playerstationconsole"
+    },
+    "2" : {
+      "//description" : "A port which modular station expansion pieces can be attached to.",
+      "//name" : "expansionslothorizontal",
+      "//shortdescription" : "Horizontal Expansion Slot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "expansionslothorizontal",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Start piece background",
+      "//name" : "stationbackgroundstart",
+      "//shortdescription" : "Start piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundstart"
+    },
+    "4" : {
+      "//description" : "Mech bay piece background",
+      "//name" : "stationbackgroundmechbay",
+      "//shortdescription" : "Mech bay piece background",
+      "imagePositionX" : "-72",
+      "imagePositionY" : "-40",
+      "object" : "stationbackgroundmechbay",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/expansionslot.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/playerstationconsole.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/expansionslothorizontal.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/stationbackgroundstart.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/stationbackgroundmechbay.png"
+    }
+  },
+  "tilewidth" : 8
+}

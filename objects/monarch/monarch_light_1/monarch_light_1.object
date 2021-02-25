@@ -1,0 +1,37 @@
+{
+  "objectName" : "monarch_light_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A hanging lamp.",
+  "shortdescription" : "Hanging Stone Lamp",
+  "race" : "generic",
+  "category" : "light",
+  "price" : 100,
+  
+  "lightColor" : [160, 160, 160],
+  //"pointLight" : true,
+  //"pointBeam" : 10,
+  //"beamAmbience" : 0.15,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "monarch_light_1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "monarch_light_1.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

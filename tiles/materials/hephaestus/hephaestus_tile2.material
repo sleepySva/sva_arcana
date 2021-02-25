@@ -1,0 +1,21 @@
+{
+  "materialId" : 16560,
+  "materialName" : "hephaestus_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "hephaestus_tile2",
+  "description" : "An ancient building material fused with magifire.",
+  "shortdescription" : "Magistone Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "hephaestus_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 152
+  }
+}

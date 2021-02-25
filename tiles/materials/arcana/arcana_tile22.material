@@ -1,0 +1,21 @@
+{
+  "materialId" : 16650,
+  "materialName" : "arcana_tile22",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile22",
+  "description" : "A block of tree branches.",
+  "shortdescription" : "Tree Branch Block",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile22.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 170
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "modId" : 16811,
+  "modName" : "arcana_mod_morphosisShard",
+  "itemDrop" : "arcana_ore_morphosisShard",
+  "description" : "Morphosis shard.",
+  "health" : 10,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_morphosisShard.png",
+    "variants" : 8,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [120, 120, 30]
+  }
+}

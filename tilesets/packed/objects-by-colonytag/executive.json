@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/executive",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A beautiful executive table.",
+      "//name" : "executivetable",
+      "//shortdescription" : "Executive Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "executivetable",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "An executive chair. You'll never want to stand again.",
+      "//name" : "executivechair",
+      "//shortdescription" : "Executive Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "executivechair",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "An impenetrable executive door.",
+      "//name" : "executivedoor",
+      "//shortdescription" : "Executive Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "executivedoor",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "An executive bed. For the sleep of your life.",
+      "//name" : "executivebed",
+      "//shortdescription" : "Executive Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "executivebed",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "An executive console. So exquisite, you can't help but treat it with respect.",
+      "//name" : "executiveswitch",
+      "//shortdescription" : "Executive Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "executiveswitch",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A dazzling executive light.",
+      "//name" : "executivelight",
+      "//shortdescription" : "Executive Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "executivelight",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/executivetable.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/executivechair.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/executivedoor.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/executivebed.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/executiveswitch.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/executivelight.png"
+    }
+  },
+  "tilewidth" : 8
+}

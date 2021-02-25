@@ -1,0 +1,155 @@
+{
+  "itemName" : "magnus_staff_grandel",
+  "price" : 10000,
+  "maxStack" : 1,
+  "level" : 8,
+  "rarity" : "Legendary",
+  "description" : "Grandel, the Great Wilderness.",
+  "shortdescription" : "Grandel",
+  "category" : "staff",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+
+  "animation" : "/items/active/weapons/staff/arcana_longstaff_1.animation",
+  "animationParts" : {
+    "staff" : "magnus_staff_grandel.png",
+    "stone" : "stone.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [120, 110, 40]
+      }
+    }
+  },
+
+  "inventoryIcon" : "icon.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.8,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.5,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "elementswarm",
+  "primaryAbility" : {
+
+    "name" : "Wild Hollow",
+    "maxCastRange" : 30,
+	
+	"projectileType" : "magnus_staff_grandel_projectile_1",
+	
+	"projectileCount" : 3,
+    "projectileDistance" : 4,
+	
+    "projectileDelayFirst" : 0.8,
+    "projectileDelayEach" : 0.03,
+
+    "projectileParameters" : {
+      "baseDamage" : 24
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "altAbilityType" : "elementswarm",
+  "altAbility" : {
+
+    "name" : "Sealed Hollow",
+    "maxCastRange" : 30,
+	
+	"projectileType" : "magnus_staff_grandel_projectile_2",
+	
+	"projectileCount" : 3,
+    "projectileDistance" : 6,
+	
+    "projectileDelayFirst" : 0.8,
+    "projectileDelayEach" : 0.03,
+
+    "projectileParameters" : {
+      "baseDamage" : 26
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

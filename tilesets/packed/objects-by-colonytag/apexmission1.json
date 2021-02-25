@@ -1,0 +1,38 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/apexmission1",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A sleek red wall light.",
+      "//name" : "laboratorylight",
+      "//shortdescription" : "Laboratory Light",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "laboratorylight",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A sleek vertical doorway, perfect for secret labs.",
+      "//name" : "laboratoryverticaldoor",
+      "//shortdescription" : "Laboratory Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "laboratoryverticaldoor",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/laboratorylight.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/laboratoryverticaldoor.png"
+    }
+  },
+  "tilewidth" : 8
+}

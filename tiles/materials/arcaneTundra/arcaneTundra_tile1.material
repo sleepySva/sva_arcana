@@ -1,0 +1,21 @@
+{
+  "materialId" : 16577,
+  "materialName" : "arcaneTundra_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcaneTundra_tile1",
+  "description" : "A frozen dirt block.",
+  "shortdescription" : "Frozen Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcaneTundra_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1311
+  }
+}

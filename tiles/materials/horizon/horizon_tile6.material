@@ -1,0 +1,21 @@
+{
+  "materialId" : 16666,
+  "materialName" : "horizon_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "horizon_tile6",
+  "description" : "A dark sloped panel crafted from necroium.",
+  "shortdescription" : "Cataclysmic Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "horizon_tile6.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4901
+  }
+}

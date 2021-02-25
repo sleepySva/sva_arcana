@@ -1,0 +1,21 @@
+{
+  "materialId" : 16548,
+  "materialName" : "bleuark_tile8",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "bleuark_tile8",
+  "description" : "An Atla gold block.",
+  "shortdescription" : "Atlantis Gold Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "bleuark_tile8.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 136
+  }
+}

@@ -1,0 +1,2309 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/avian",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 195,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "avianteleporter",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "avianteleporter"
+    },
+    "1" : {
+      "//description" : "A sickly-sweet scent clings to the inside.",
+      "//name" : "lamp",
+      "//shortdescription" : "Golden Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "lamp",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "sawblade",
+      "tilesetDirection" : "right"
+    },
+    "100" : {
+      "//description" : "A statue of a great Avian hero.",
+      "//name" : "tombstatueavian_orientation1",
+      "//shortdescription" : "Avian Hero Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tombstatueavian",
+      "tilesetDirection" : "right"
+    },
+    "101" : {
+      "//description" : "Glyphs pulse ominously... what do they mean?",
+      "//name" : "screen4",
+      "//shortdescription" : "Glyph Screen",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "screen4",
+      "tilesetDirection" : "right"
+    },
+    "102" : {
+      "//description" : "A bird-shaped jar full of ash. I wanna break it.",
+      "//name" : "ashjar1",
+      "//shortdescription" : "Bird Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ashjar1",
+      "tilesetDirection" : "right"
+    },
+    "103" : {
+      "//description" : "An intricately woven wall tapestry.",
+      "//name" : "decorativewallrug1",
+      "//shortdescription" : "Colourful Tapestry",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "decorativewallrug1"
+    },
+    "104" : {
+      "//description" : "This Avian server must contain a vast amount of data.",
+      "//name" : "tribalserver",
+      "//shortdescription" : "Avian Server",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tribalserver",
+      "tilesetDirection" : "right"
+    },
+    "105" : {
+      "//description" : "A small, brittle-looking pot. It looks smashable...",
+      "//name" : "smalljar1",
+      "//shortdescription" : "Small Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smalljar1",
+      "tilesetDirection" : "right"
+    },
+    "106" : {
+      "//description" : "A carved bunny sits on top of this altar.",
+      "//name" : "altarbunny",
+      "//shortdescription" : "Bunny Altar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "altarbunny",
+      "tilesetDirection" : "left"
+    },
+    "107" : {
+      "//description" : "A pale stone altar, undecorated.",
+      "//name" : "altar1",
+      "//shortdescription" : "Stone Altar",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "altar1",
+      "tilesetDirection" : "right"
+    },
+    "108" : {
+      "//description" : "Beautiful fabrics and clothing adorn this cute little stall.",
+      "//name" : "marketstall2",
+      "//shortdescription" : "Market Clothes Stall",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "marketstall2",
+      "tilesetDirection" : "right"
+    },
+    "109" : {
+      "//description" : "This beady-eyed bird jar is made of solid gold.",
+      "//name" : "goldenjar1",
+      "//shortdescription" : "Golden Bird Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "goldenjar1",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade_orientation2",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "sawblade",
+      "tilesetDirection" : "right"
+    },
+    "110" : {
+      "//description" : "An altar sticky with old blood and feathers.",
+      "//name" : "sacrificialaltar",
+      "//shortdescription" : "Sacrificial Altar",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sacrificialaltar",
+      "tilesetDirection" : "right"
+    },
+    "111" : {
+      "//description" : "The words honour a fallen Avian.",
+      "//name" : "tombstone1",
+      "//shortdescription" : "Basic Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone1",
+      "tilesetDirection" : "right"
+    },
+    "112" : {
+      "//description" : "A trap that drops heavy boulders on unsuspecting intruders.",
+      "//name" : "bouldertrap",
+      "//shortdescription" : "Temple Boulder Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bouldertrap",
+      "tilesetDirection" : "right"
+    },
+    "113" : {
+      "//description" : "Gorgeous, vibrant feathers arranged like flowers",
+      "//name" : "feathers1",
+      "//shortdescription" : "Vibrant Feather Bundle",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "feathers1",
+      "tilesetDirection" : "right"
+    },
+    "114" : {
+      "//description" : "The crystal embedded into this fixture glows with a pale light.",
+      "//name" : "avianwaterlight",
+      "//shortdescription" : "Crystal Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "avianwaterlight",
+      "tilesetDirection" : "right"
+    },
+    "115" : {
+      "//description" : "A crumbling old pot with patterned markings. It looks smashable.",
+      "//name" : "midjar1",
+      "//shortdescription" : "Old Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "midjar1",
+      "tilesetDirection" : "right"
+    },
+    "116" : {
+      "//description" : "A beautiful lamp built from Avian crystal tech.",
+      "//name" : "triballamp",
+      "//shortdescription" : "Avian Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "triballamp"
+    },
+    "117" : {
+      "//description" : "This jar has seen better days. It looks smashable...",
+      "//name" : "birdjar1",
+      "//shortdescription" : "Fancy Temple Jar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "birdjar1",
+      "tilesetDirection" : "right"
+    },
+    "118" : {
+      "//description" : "A comfy wooden couch, the stripes help it go faster.",
+      "//name" : "woodencouch1",
+      "//shortdescription" : "Wooden Couch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodencouch1",
+      "tilesetDirection" : "right"
+    },
+    "119" : {
+      "//description" : "An Avian banner made of gorgeous silk.",
+      "//name" : "avianbanner3",
+      "//shortdescription" : "Avian Patterned Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "avianbanner3"
+    },
+    "12" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade_orientation3",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "sawblade",
+      "tilesetDirection" : "right"
+    },
+    "120" : {
+      "//description" : "A small security panel.",
+      "//name" : "consoletribalwall",
+      "//shortdescription" : "Carved Security Panel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "consoletribalwall"
+    },
+    "121" : {
+      "//description" : "Looks like a place you might store an eggcup... Do Avians eat eggs?",
+      "//name" : "tribalwallcabinet",
+      "//shortdescription" : "Carved Wall Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tribalwallcabinet",
+      "tilesetDirection" : "right"
+    },
+    "122" : {
+      "//description" : "An access panel with a bird crudely etched into the base.",
+      "//name" : "consoletribal1",
+      "//shortdescription" : "Carved Bird Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "consoletribal1",
+      "tilesetDirection" : "right"
+    },
+    "123" : {
+      "//description" : "This mask looks like my ex-wife.",
+      "//name" : "mask6",
+      "//shortdescription" : "Decorative Priest Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask6"
+    },
+    "124" : {
+      "//description" : "A statue of a bunny.",
+      "//name" : "tombstatuebunny",
+      "//shortdescription" : "Avian Bunny Statue",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstatuebunny",
+      "tilesetDirection" : "right"
+    },
+    "125" : {
+      "//description" : "A familiar-shaped jar. It looks angry and smashable.",
+      "//name" : "ashjar3",
+      "//shortdescription" : "Familiar Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ashjar3",
+      "tilesetDirection" : "right"
+    },
+    "126" : {
+      "//description" : "This emblem signifies the wild and destructive element of fire.",
+      "//name" : "fireemblem",
+      "//shortdescription" : "Avian Fire Emblem",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "fireemblem",
+      "tilesetDirection" : "right"
+    },
+    "127" : {
+      "//description" : "A carved Avian head sits atop this altar.",
+      "//name" : "altaravian",
+      "//shortdescription" : "Avian Head Altar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "altaravian",
+      "tilesetDirection" : "left"
+    },
+    "128" : {
+      "//description" : "Old system readings that seem to be out of date.",
+      "//name" : "screen1",
+      "//shortdescription" : "Data Screen",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "screen1",
+      "tilesetDirection" : "right"
+    },
+    "129" : {
+      "//description" : "A standard cloth Avian banner.",
+      "//name" : "avianbanner4",
+      "//shortdescription" : "Avian Small Banner",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "avianbanner4"
+    },
+    "13" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade_orientation4",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "sawblade"
+    },
+    "130" : {
+      "//description" : "A beautiful rustic bench.",
+      "//name" : "avianbench1",
+      "//shortdescription" : "Rustic Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "avianbench1",
+      "tilesetDirection" : "right"
+    },
+    "131" : {
+      "//description" : "A thick woven banner depicting a crescent moon.",
+      "//name" : "avianbanner2",
+      "//shortdescription" : "Avian Lunar Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "avianbanner2"
+    },
+    "132" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "133" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2_orientation2",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "134" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2_orientation3",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "135" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2_orientation4",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "136" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2_orientation5",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "137" : {
+      "//description" : "A big fancy gong. It's covered in carvings.",
+      "//name" : "birdgong2",
+      "//shortdescription" : "Fancy Avian Gong",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "birdgong2",
+      "tilesetDirection" : "right"
+    },
+    "138" : {
+      "//description" : "What an ugly jar.",
+      "//name" : "birdjar2",
+      "//shortdescription" : "Ugly Temple Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "birdjar2",
+      "tilesetDirection" : "right"
+    },
+    "139" : {
+      "//description" : "A dank old chest, fashioned from wood and iron.",
+      "//name" : "chestavian2",
+      "//shortdescription" : "Old Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestavian2",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade_orientation5",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "sawblade"
+    },
+    "140" : {
+      "//description" : "A large control panel powered by Avian crystals.",
+      "//name" : "consoletribal4",
+      "//shortdescription" : "Large Carved Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "consoletribal4",
+      "tilesetDirection" : "right"
+    },
+    "141" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "142" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation1",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "143" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation2",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "144" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation3",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "145" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation4",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "146" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation5",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "147" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation6",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "148" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation7",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "149" : {
+      "//description" : "A small tribal wall tapestry. It looks soft!",
+      "//name" : "decorativewallrug2",
+      "//shortdescription" : "Small Colourful Tapestry",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "decorativewallrug2"
+    },
+    "15" : {
+      "//description" : "An assortment of pointy things.",
+      "//name" : "marketstall3",
+      "//shortdescription" : "Market Weapon Stall",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "marketstall3",
+      "tilesetDirection" : "right"
+    },
+    "150" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "151" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation1",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "152" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation2",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "153" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation3",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "154" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation4",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "155" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation5",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "156" : {
+      "//description" : "This guy looks surprised to see me!",
+      "//name" : "mask1",
+      "//shortdescription" : "Decorative Human Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask1"
+    },
+    "157" : {
+      "//description" : "This guy looks hungry. His eyes make me uncomfortable.",
+      "//name" : "mask2",
+      "//shortdescription" : "Decorative Skull Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask2"
+    },
+    "158" : {
+      "//description" : "Yarrrr, me hearties!",
+      "//name" : "shipwheel",
+      "//shortdescription" : "Wooden Ship Wheel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "shipwheel",
+      "tilesetDirection" : "left"
+    },
+    "159" : {
+      "//description" : "Ironically, looking at this decorative sun sends a chill down my spine.",
+      "//name" : "sundecor",
+      "//shortdescription" : "Decorative Sun",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "sundecor"
+    },
+    "16" : {
+      "//description" : "A star map! It's a little primitive.",
+      "//name" : "screen3",
+      "//shortdescription" : "Star Map Screen",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "screen3",
+      "tilesetDirection" : "right"
+    },
+    "160" : {
+      "//description" : "A tall, dusty pot that smells of bird poop. Maybe it's smashable.",
+      "//name" : "talljar1",
+      "//shortdescription" : "Tall Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "talljar1",
+      "tilesetDirection" : "right"
+    },
+    "161" : {
+      "//description" : "This tomb is anonymous, engraved with the image of its occupant.",
+      "//name" : "tombstone3",
+      "//shortdescription" : "Engraved Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone3",
+      "tilesetDirection" : "right"
+    },
+    "162" : {
+      "//description" : "This tombstone has been smashed beyond repair.",
+      "//name" : "tombstone4",
+      "//shortdescription" : "Smashed Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone4",
+      "tilesetDirection" : "right"
+    },
+    "163" : {
+      "//description" : "This tombstone belongs to a warrior, fallen in battle.",
+      "//name" : "tombstone5",
+      "//shortdescription" : "Warrior's Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone5",
+      "tilesetDirection" : "right"
+    },
+    "164" : {
+      "//description" : "This tombstone belongs to a priest, fallen in battle.",
+      "//name" : "tombstone6",
+      "//shortdescription" : "Priest's Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone6",
+      "tilesetDirection" : "right"
+    },
+    "165" : {
+      "//description" : "Carved patterns surround this small cabinet.",
+      "//name" : "tribalcabinet1",
+      "//shortdescription" : "Small Carved Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tribalcabinet1",
+      "tilesetDirection" : "right"
+    },
+    "166" : {
+      "//description" : "The crystal on top of this closet appears to be broken.",
+      "//name" : "tribalcloset1",
+      "//shortdescription" : "Avian Closet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tribalcloset1",
+      "tilesetDirection" : "right"
+    },
+    "167" : {
+      "//description" : "A winged urn, perhaps believed to carry the dead into the afterlife.",
+      "//name" : "wingedurn",
+      "//shortdescription" : "Winged Urn",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wingedurn",
+      "tilesetDirection" : "right"
+    },
+    "168" : {
+      "//description" : "A winged urn, perhaps believed to carry the dead into the afterlife.",
+      "//name" : "wingedurn_orientation2",
+      "//shortdescription" : "Winged Urn",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "wingedurn",
+      "tilesetDirection" : "right"
+    },
+    "169" : {
+      "//description" : "A winged urn, perhaps believed to carry the dead into the afterlife.",
+      "//name" : "wingedurn_orientation3",
+      "//shortdescription" : "Winged Urn",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "wingedurn",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "This massive iron portcullis closes with a thud.",
+      "//name" : "bardoor3",
+      "//shortdescription" : "Large Portcullis",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bardoor3",
+      "tilesetDirection" : "right"
+    },
+    "170" : {
+      "//description" : "A winged urn, perhaps believed to carry the dead into the afterlife.",
+      "//name" : "wingedurn_orientation4",
+      "//shortdescription" : "Winged Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "wingedurn",
+      "tilesetDirection" : "right"
+    },
+    "171" : {
+      "//description" : "A winged urn, perhaps believed to carry the dead into the afterlife.",
+      "//name" : "wingedurn_orientation5",
+      "//shortdescription" : "Winged Urn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "wingedurn",
+      "tilesetDirection" : "right"
+    },
+    "172" : {
+      "//description" : "The skull on this tombstone shows that it belongs to one of the grounded.",
+      "//name" : "tombstone7",
+      "//shortdescription" : "Grounded's Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone7",
+      "tilesetDirection" : "right"
+    },
+    "173" : {
+      "//description" : "A comfortable Avian bench.",
+      "//name" : "avianbench2",
+      "//shortdescription" : "Village Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "avianbench2",
+      "tilesetDirection" : "right"
+    },
+    "174" : {
+      "//description" : "An expertly crafted Avian sarcophagus. The feather suggests it was for someone important.",
+      "//name" : "sarcoavian2",
+      "//shortdescription" : "Grand Avian Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcoavian2",
+      "tilesetDirection" : "right"
+    },
+    "175" : {
+      "//description" : "A beautifully carved door.",
+      "//name" : "tribaldoor",
+      "//shortdescription" : "Carved Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tribaldoor",
+      "tilesetDirection" : "right"
+    },
+    "176" : {
+      "//description" : "The words honour a fallen Avian.",
+      "//name" : "tombstone2",
+      "//shortdescription" : "Embossed Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone2",
+      "tilesetDirection" : "right"
+    },
+    "177" : {
+      "//description" : "The altar is covered in carvings of a winged god.",
+      "//name" : "birdaltar2",
+      "//shortdescription" : "Avian Prayer Altar",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "birdaltar2",
+      "tilesetDirection" : "right"
+    },
+    "178" : {
+      "//description" : "A large metal gong. It's so tempting to give it a smack!",
+      "//name" : "birdgong1",
+      "//shortdescription" : "Large Gong",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "birdgong1",
+      "tilesetDirection" : "right"
+    },
+    "179" : {
+      "//description" : "A lavish Avian tomb.",
+      "//name" : "tombthing4",
+      "//shortdescription" : "Lavish Avian Tomb",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tombthing4",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "Hand-made and beautiful, this bookcase is intricately carved.",
+      "//name" : "tribalbookcase1",
+      "//shortdescription" : "Large Carved Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tribalbookcase1",
+      "tilesetDirection" : "right"
+    },
+    "180" : {
+      "//description" : "A lavish bird-shaped jar. Maybe I can smash it...",
+      "//name" : "bigjar1",
+      "//shortdescription" : "Big Bird Jar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bigjar1",
+      "tilesetDirection" : "right"
+    },
+    "181" : {
+      "//description" : "I wonder what fruit they sell on this planet.",
+      "//name" : "marketstall1",
+      "//shortdescription" : "Market Fruit Stall",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "marketstall1",
+      "tilesetDirection" : "right"
+    },
+    "182" : {
+      "//description" : "An access panel with an egg etched into its base.",
+      "//name" : "consoletribal2",
+      "//shortdescription" : "Carved Egg Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "consoletribal2",
+      "tilesetDirection" : "right"
+    },
+    "183" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "templehiddentrapdoor",
+      "//shortdescription" : "Brick Hidden Trapdoor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "templehiddentrapdoor",
+      "tilesetDirection" : "right"
+    },
+    "184" : {
+      "//name" : "tentacleexperiment",
+      "invalid" : "true"
+    },
+    "185" : {
+      "//description" : "A statue honouring the history of the Avian god Kluex.",
+      "//name" : "kluexstatue1",
+      "//shortdescription" : "Kluex Winged Statue",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "kluexstatue1",
+      "tilesetDirection" : "right"
+    },
+    "186" : {
+      "//description" : "An old torn map which claims to lead to godly treasures.",
+      "//name" : "kluexmap1",
+      "//shortdescription" : "Kluex Treasure Map",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "kluexmap1"
+    },
+    "187" : {
+      "//description" : "An ancient mural depicting the gifts given by Kluex to his followers.",
+      "//name" : "kluexmural2",
+      "//shortdescription" : "Kluex Gift Mural",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "kluexmural2"
+    },
+    "188" : {
+      "//description" : "An ancient mural of the god Kluex.",
+      "//name" : "kluexmural1",
+      "//shortdescription" : "Kluex World Mural",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "kluexmural1"
+    },
+    "189" : {
+      "//description" : "A statue depicting the might of the deity Kluex.",
+      "//name" : "kluexstatue2",
+      "//shortdescription" : "Kluex Serpentine Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "kluexstatue2",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A masterfully crafted throne, fit for Kluex himself.",
+      "//name" : "birdthrone",
+      "//shortdescription" : "Avian Throne",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "birdthrone",
+      "tilesetDirection" : "right"
+    },
+    "190" : {
+      "//description" : "A statue depicting the might of the deity Kluex.",
+      "//name" : "kluexstatue2_orientation1",
+      "//shortdescription" : "Kluex Serpentine Statue",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "kluexstatue2",
+      "tilesetDirection" : "right"
+    },
+    "191" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation6",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "192" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation7",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "193" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "avianshiphatch",
+      "//shortdescription" : "Avian Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "avianshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "194" : {
+      "//description" : "Use this pressure plate wisely.",
+      "//name" : "avianpressureplate_orientation4",
+      "//shortdescription" : "Crystal Pressure Plate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "avianpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "avianshipdoorBroken",
+      "//shortdescription" : "Avian Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "avianshipdoorBroken",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A masterfully crafted throne, fit for Kluex himself.",
+      "//name" : "birdthrone_orientation1",
+      "//shortdescription" : "Avian Throne",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "birdthrone",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "This emblem signifies the strong and resilient element of earth.",
+      "//name" : "earthemblem",
+      "//shortdescription" : "Avian Earth Emblem",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "earthemblem",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "Are those... brain waves? Yes. Yes they are.",
+      "//name" : "screen5",
+      "//shortdescription" : "Brain Activity Screen",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "screen5",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A comfy wooden armchair.",
+      "//name" : "woodenarmchair1",
+      "//shortdescription" : "Wooden Armchair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "woodenarmchair1",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A small empty stall. It looks sad.",
+      "//name" : "marketstall4",
+      "//shortdescription" : "Small Empty Market Stall",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "marketstall4",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "avianshiplockerTier0",
+      "//shortdescription" : "Shiplocker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "avianshiplockerTier0"
+    },
+    "26" : {
+      "//description" : "Deep shadows stretch away from this flickering torch.",
+      "//name" : "birdgroundlantern",
+      "//shortdescription" : "Torch Stand",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "birdgroundlantern",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A stone table in typical Avian style.",
+      "//name" : "birdtable",
+      "//shortdescription" : "Temple Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "birdtable",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "Is that an Avian... or a chicken?",
+      "//name" : "windchicken",
+      "//shortdescription" : "Weathervane",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "windchicken",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A large empty stall. I bet business is slow.",
+      "//name" : "marketstall5",
+      "//shortdescription" : "Large Empty Market Stall",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "marketstall5",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//name" : "brokenavianfuelhatchTier0",
+      "invalid" : "true"
+    },
+    "30" : {
+      "//description" : "A plain stone tomb caked in dust.",
+      "//name" : "tombthing1",
+      "//shortdescription" : "Undecorated Stone Tomb",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tombthing1",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "X marks the spot.",
+      "//name" : "treasuremap",
+      "//shortdescription" : "Treasure Map",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "treasuremap",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "An expertly crafted Avian sarcophagus. I wonder what's inside.",
+      "//name" : "sarcoavian1",
+      "//shortdescription" : "Avian Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcoavian1",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "This mask looks angry.",
+      "//name" : "mask3",
+      "//shortdescription" : "Decorative Alien Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask3"
+    },
+    "34" : {
+      "//description" : "A golden duck!",
+      "//name" : "goldenducky",
+      "//shortdescription" : "Golden Ducky",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "goldenducky",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "avianshiplocker",
+      "//shortdescription" : "Shiplocker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "avianshiplocker"
+    },
+    "36" : {
+      "//description" : "A beautifully carved Avian bed.",
+      "//name" : "tribalbed2",
+      "//shortdescription" : "Avian Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tribalbed2",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A rather serious looking bird.",
+      "//name" : "mask4",
+      "//shortdescription" : "Decorative Bird Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask4"
+    },
+    "38" : {
+      "//description" : "The rack is filled with antique Avian spears.",
+      "//name" : "spearrack",
+      "//shortdescription" : "Avian Spear Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "spearrack",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A nice, spacious, wall-mounted storage solution.",
+      "//name" : "avianstoragelocker",
+      "//shortdescription" : "Avian Storage Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "avianstoragelocker"
+    },
+    "4" : {
+      "//description" : "A crystal levitates above its frame, emitting an eerie light.",
+      "//name" : "crystaltorch",
+      "//shortdescription" : "Crystal Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystaltorch",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "A support beam carved to resemble a fearsome bird.",
+      "//name" : "idolsupport",
+      "//shortdescription" : "Carved Support Beam",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "idolsupport",
+      "tilesetDirection" : "left"
+    },
+    "41" : {
+      "//description" : "An Avian banner woven with expensive silk.",
+      "//name" : "avianbanner1",
+      "//shortdescription" : "Avian Colourful Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "avianbanner1"
+    },
+    "42" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden1",
+      "//shortdescription" : "Yellow Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden1",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden1_orientation2",
+      "//shortdescription" : "Yellow Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden1",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden1_orientation3",
+      "//shortdescription" : "Yellow Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden1",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden1_orientation4",
+      "//shortdescription" : "Yellow Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden1",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden1_orientation5",
+      "//shortdescription" : "Yellow Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden1",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "An access panel with a flame carved into its base.",
+      "//name" : "consoletribal3",
+      "//shortdescription" : "Carved Flame Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "consoletribal3",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "Avians have been known to attempt to take human companions with them to the afterlife.",
+      "//name" : "sarcohuman",
+      "//shortdescription" : "Human Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcohuman",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "Huge feathers are sprouting from this small bird statue.",
+      "//name" : "featherybird",
+      "//shortdescription" : "Decorative Bird",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "featherybird",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "An oil lantern on a stand.",
+      "//name" : "oillanterntall",
+      "//shortdescription" : "Standing Oil Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "oillanterntall",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "This heavy iron portcullis opens inward.",
+      "//name" : "bardoor2sideways",
+      "//shortdescription" : "Horizontal Portcullis",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bardoor2sideways",
+      "tilesetDirection" : "left"
+    },
+    "51" : {
+      "//description" : "Is it wrong to take your bunny to the afterlife with you?",
+      "//name" : "sarcobunny",
+      "//shortdescription" : "Bunny Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcobunny",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "This book case was built to store Avian history.",
+      "//name" : "tribalbookcase2",
+      "//shortdescription" : "Small Avian Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tribalbookcase2",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A large old chest, fashioned from wood and iron.",
+      "//name" : "chestmedavian2",
+      "//shortdescription" : "Large Old Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestmedavian2",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "avianteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "avianteleporterTier0"
+    },
+    "55" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "avianshipdoor",
+      "//shortdescription" : "Avian Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "avianshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive.",
+      "//name" : "avianfuelhatch",
+      "//shortdescription" : "FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "avianfuelhatch"
+    },
+    "57" : {
+      "//description" : "A broken FTL fuel hatch. This won't do!",
+      "//name" : "brokenavianfuelhatch",
+      "//shortdescription" : "Broken FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "brokenavianfuelhatch"
+    },
+    "58" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "aviantechstation",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "aviantechstation"
+    },
+    "59" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "I swear the eye is following me around the room..",
+      "//name" : "birdgodemblem",
+      "//shortdescription" : "Avian Emblem",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "-32",
+      "object" : "birdgodemblem"
+    },
+    "60" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation2",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-40",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation3",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-40",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation4",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-32",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation5",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-32",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "A bunny-shaped jar full of ash. Maybe I can smash it.",
+      "//name" : "ashjar2",
+      "//shortdescription" : "Bunny Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ashjar2",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "This emblem signifies the tranquil and life-bringing element of water.",
+      "//name" : "wateremblem",
+      "//shortdescription" : "Avian Water Emblem",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "wateremblem",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "The ashes of Avian Stargazers are often stored in urns like this one.",
+      "//name" : "goldenurn",
+      "//shortdescription" : "Golden Urn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "goldenurn",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "This tombstone is engraved with an eye symbol",
+      "//name" : "tombstone10",
+      "//shortdescription" : "Eye Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone10",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "A ornate obsidian bookcase.",
+      "//name" : "obsidianbookcase",
+      "//shortdescription" : "Large Obsidian Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "obsidianbookcase",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "A heavy golden door with crystals set into its surface.",
+      "//name" : "birddoor",
+      "//shortdescription" : "Golden Crystal Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "birddoor"
+    },
+    "7" : {
+      "//description" : "It's a spaceship orbiting a planet.",
+      "//name" : "screen2",
+      "//shortdescription" : "Spaceship screen",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "screen2",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "A chest adorned with ancient Avian art.",
+      "//name" : "chestmedavian1",
+      "//shortdescription" : "Large Decorative Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestmedavian1",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "This looks like something I made in pottery class. Crude. I should smash it.",
+      "//name" : "talljar2",
+      "//shortdescription" : "Crude Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "talljar2",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "This heavy iron portcullis opens upwards.",
+      "//name" : "bardoor2",
+      "//shortdescription" : "Portcullis",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bardoor2",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "This tombstone looks as if it's about to fall over.",
+      "//name" : "tombstone9",
+      "//shortdescription" : "Unstable Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone9",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "These symbols signify a mass grave.",
+      "//name" : "tombstone11",
+      "//shortdescription" : "Mass Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone11",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//description" : "This emblem commemorates the Avians' first flight to the stars.",
+      "//name" : "moonemblem",
+      "//shortdescription" : "Avian Moon Emblem",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "moonemblem"
+    },
+    "76" : {
+      "//description" : "This guy seems... wise.",
+      "//name" : "mask5",
+      "//shortdescription" : "Decorative Wiseman Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask5"
+    },
+    "77" : {
+      "//description" : "A smooth cooking surface.",
+      "//name" : "tribalcounter1",
+      "//shortdescription" : "Carved Counter",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tribalcounter1",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//description" : "A solid stone bed topped with a nest of hay.",
+      "//name" : "birdbed",
+      "//shortdescription" : "Guardian's Nest",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "birdbed",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "Gorgeous, colourful feathers arranged like flowers.",
+      "//name" : "feathers2",
+      "//shortdescription" : "Colourful Feather Bundle",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "feathers2",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A red flashing light... That's usually not good.",
+      "//name" : "redalert",
+      "//shortdescription" : "Warning Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "redalert"
+    },
+    "80" : {
+      "//description" : "This tombstone belonged to one of the grounded. It's been desecrated.",
+      "//name" : "tombstone8",
+      "//shortdescription" : "Desecrated Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone8",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "This emblem signifies the free and flowing element of air.",
+      "//name" : "airemblem",
+      "//shortdescription" : "Avian Air Emblem",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "airemblem",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "I can't stand on this stone platform for long!",
+      "//name" : "templepressureplatform",
+      "//shortdescription" : "Temple Pressure Platform",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "templepressureplatform"
+    },
+    "83" : {
+      "//description" : "A chest adorned with ancient Avian art.",
+      "//name" : "chestavian1",
+      "//shortdescription" : "Decorative Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestavian1",
+      "tilesetDirection" : "right"
+    },
+    "84" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "templehiddendoor",
+      "//shortdescription" : "Brick Hidden Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "templehiddendoor",
+      "tilesetDirection" : "right"
+    },
+    "85" : {
+      "//description" : "The Avian flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagavian",
+      "//shortdescription" : "Avian Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagavian",
+      "tilesetDirection" : "right"
+    },
+    "86" : {
+      "//description" : "The Avian flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagavian_orientation1",
+      "//shortdescription" : "Avian Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagavian",
+      "tilesetDirection" : "right"
+    },
+    "87" : {
+      "//description" : "Avians have been known to attempt to take human companions with them to the afterlife. Wait a minute... I think I can hear something inside!",
+      "//name" : "sarcohumanalive",
+      "//shortdescription" : "Human Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcohumanalive",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "An open stone tomb. It smells.",
+      "//name" : "tombthing3",
+      "//shortdescription" : "Open Stone Tomb",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tombthing3",
+      "tilesetDirection" : "right"
+    },
+    "89" : {
+      "//description" : "Tick, tock, tick, tock.",
+      "//name" : "owlclock",
+      "//shortdescription" : "Owl Wall Clock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "owlclock",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A heavy metal anchor. Yarr.",
+      "//name" : "anchor",
+      "//shortdescription" : "Anchor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-40",
+      "object" : "anchor",
+      "tilesetDirection" : "right"
+    },
+    "90" : {
+      "//description" : "A Golden Egg! What!?",
+      "//name" : "goldenegg",
+      "//shortdescription" : "Golden Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "goldenegg",
+      "tilesetDirection" : "right"
+    },
+    "91" : {
+      "//description" : "An engraved Avian tomb depicting the aether.",
+      "//name" : "tombthing2",
+      "//shortdescription" : "Engraved Avian Tomb",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tombthing2",
+      "tilesetDirection" : "right"
+    },
+    "92" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "aviancaptainschair",
+      "//shortdescription" : "Avian Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "aviancaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "93" : {
+      "//description" : "An interestingly carved table.",
+      "//name" : "tribaltable",
+      "//shortdescription" : "Carved Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tribaltable",
+      "tilesetDirection" : "right"
+    },
+    "94" : {
+      "//description" : "Use this pressure plate wisely.",
+      "//name" : "avianpressureplate",
+      "//shortdescription" : "Crystal Pressure Plate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "avianpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "95" : {
+      "//description" : "Use this pressure plate wisely.",
+      "//name" : "avianpressureplate_orientation2",
+      "//shortdescription" : "Crystal Pressure Plate",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "avianpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "96" : {
+      "//description" : "Use this pressure plate wisely.",
+      "//name" : "avianpressureplate_orientation3",
+      "//shortdescription" : "Crystal Pressure Plate",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "avianpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "97" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "aviantechstationTier0",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "aviantechstationTier0"
+    },
+    "98" : {
+      "//description" : "A trap door disguised as a metal platform.",
+      "//name" : "metallictrapdoor",
+      "//shortdescription" : "Metal Trap Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "metallictrapdoor"
+    },
+    "99" : {
+      "//description" : "A statue of a great Avian hero.",
+      "//name" : "tombstatueavian",
+      "//shortdescription" : "Avian Hero Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tombstatueavian",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/avianteleporter.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/lamp.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/tombstatueavian_orientation1.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/screen4.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/ashjar1.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/decorativewallrug1.png"
+    },
+    "104" : {
+      "image" : "../../../../../tiled/packed/objects/tribalserver.png"
+    },
+    "105" : {
+      "image" : "../../../../../tiled/packed/objects/smalljar1.png"
+    },
+    "106" : {
+      "image" : "../../../../../tiled/packed/objects/altarbunny.png"
+    },
+    "107" : {
+      "image" : "../../../../../tiled/packed/objects/altar1.png"
+    },
+    "108" : {
+      "image" : "../../../../../tiled/packed/objects/marketstall2.png"
+    },
+    "109" : {
+      "image" : "../../../../../tiled/packed/objects/goldenjar1.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade_orientation2.png"
+    },
+    "110" : {
+      "image" : "../../../../../tiled/packed/objects/sacrificialaltar.png"
+    },
+    "111" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone1.png"
+    },
+    "112" : {
+      "image" : "../../../../../tiled/packed/objects/bouldertrap.png"
+    },
+    "113" : {
+      "image" : "../../../../../tiled/packed/objects/feathers1.png"
+    },
+    "114" : {
+      "image" : "../../../../../tiled/packed/objects/avianwaterlight.png"
+    },
+    "115" : {
+      "image" : "../../../../../tiled/packed/objects/midjar1.png"
+    },
+    "116" : {
+      "image" : "../../../../../tiled/packed/objects/triballamp.png"
+    },
+    "117" : {
+      "image" : "../../../../../tiled/packed/objects/birdjar1.png"
+    },
+    "118" : {
+      "image" : "../../../../../tiled/packed/objects/woodencouch1.png"
+    },
+    "119" : {
+      "image" : "../../../../../tiled/packed/objects/avianbanner3.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade_orientation3.png"
+    },
+    "120" : {
+      "image" : "../../../../../tiled/packed/objects/consoletribalwall.png"
+    },
+    "121" : {
+      "image" : "../../../../../tiled/packed/objects/tribalwallcabinet.png"
+    },
+    "122" : {
+      "image" : "../../../../../tiled/packed/objects/consoletribal1.png"
+    },
+    "123" : {
+      "image" : "../../../../../tiled/packed/objects/mask6.png"
+    },
+    "124" : {
+      "image" : "../../../../../tiled/packed/objects/tombstatuebunny.png"
+    },
+    "125" : {
+      "image" : "../../../../../tiled/packed/objects/ashjar3.png"
+    },
+    "126" : {
+      "image" : "../../../../../tiled/packed/objects/fireemblem.png"
+    },
+    "127" : {
+      "image" : "../../../../../tiled/packed/objects/altaravian.png"
+    },
+    "128" : {
+      "image" : "../../../../../tiled/packed/objects/screen1.png"
+    },
+    "129" : {
+      "image" : "../../../../../tiled/packed/objects/avianbanner4.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade_orientation4.png"
+    },
+    "130" : {
+      "image" : "../../../../../tiled/packed/objects/avianbench1.png"
+    },
+    "131" : {
+      "image" : "../../../../../tiled/packed/objects/avianbanner2.png"
+    },
+    "132" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2.png"
+    },
+    "133" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2_orientation2.png"
+    },
+    "134" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2_orientation3.png"
+    },
+    "135" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2_orientation4.png"
+    },
+    "136" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2_orientation5.png"
+    },
+    "137" : {
+      "image" : "../../../../../tiled/packed/objects/birdgong2.png"
+    },
+    "138" : {
+      "image" : "../../../../../tiled/packed/objects/birdjar2.png"
+    },
+    "139" : {
+      "image" : "../../../../../tiled/packed/objects/chestavian2.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade_orientation5.png"
+    },
+    "140" : {
+      "image" : "../../../../../tiled/packed/objects/consoletribal4.png"
+    },
+    "141" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap.png"
+    },
+    "142" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation1.png"
+    },
+    "143" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation2.png"
+    },
+    "144" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation3.png"
+    },
+    "145" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation4.png"
+    },
+    "146" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation5.png"
+    },
+    "147" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation6.png"
+    },
+    "148" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation7.png"
+    },
+    "149" : {
+      "image" : "../../../../../tiled/packed/objects/decorativewallrug2.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/marketstall3.png"
+    },
+    "150" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap.png"
+    },
+    "151" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation1.png"
+    },
+    "152" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation2.png"
+    },
+    "153" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation3.png"
+    },
+    "154" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation4.png"
+    },
+    "155" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation5.png"
+    },
+    "156" : {
+      "image" : "../../../../../tiled/packed/objects/mask1.png"
+    },
+    "157" : {
+      "image" : "../../../../../tiled/packed/objects/mask2.png"
+    },
+    "158" : {
+      "image" : "../../../../../tiled/packed/objects/shipwheel.png"
+    },
+    "159" : {
+      "image" : "../../../../../tiled/packed/objects/sundecor.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/screen3.png"
+    },
+    "160" : {
+      "image" : "../../../../../tiled/packed/objects/talljar1.png"
+    },
+    "161" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone3.png"
+    },
+    "162" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone4.png"
+    },
+    "163" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone5.png"
+    },
+    "164" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone6.png"
+    },
+    "165" : {
+      "image" : "../../../../../tiled/packed/objects/tribalcabinet1.png"
+    },
+    "166" : {
+      "image" : "../../../../../tiled/packed/objects/tribalcloset1.png"
+    },
+    "167" : {
+      "image" : "../../../../../tiled/packed/objects/wingedurn.png"
+    },
+    "168" : {
+      "image" : "../../../../../tiled/packed/objects/wingedurn_orientation2.png"
+    },
+    "169" : {
+      "image" : "../../../../../tiled/packed/objects/wingedurn_orientation3.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor3.png"
+    },
+    "170" : {
+      "image" : "../../../../../tiled/packed/objects/wingedurn_orientation4.png"
+    },
+    "171" : {
+      "image" : "../../../../../tiled/packed/objects/wingedurn_orientation5.png"
+    },
+    "172" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone7.png"
+    },
+    "173" : {
+      "image" : "../../../../../tiled/packed/objects/avianbench2.png"
+    },
+    "174" : {
+      "image" : "../../../../../tiled/packed/objects/sarcoavian2.png"
+    },
+    "175" : {
+      "image" : "../../../../../tiled/packed/objects/tribaldoor.png"
+    },
+    "176" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone2.png"
+    },
+    "177" : {
+      "image" : "../../../../../tiled/packed/objects/birdaltar2.png"
+    },
+    "178" : {
+      "image" : "../../../../../tiled/packed/objects/birdgong1.png"
+    },
+    "179" : {
+      "image" : "../../../../../tiled/packed/objects/tombthing4.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/tribalbookcase1.png"
+    },
+    "180" : {
+      "image" : "../../../../../tiled/packed/objects/bigjar1.png"
+    },
+    "181" : {
+      "image" : "../../../../../tiled/packed/objects/marketstall1.png"
+    },
+    "182" : {
+      "image" : "../../../../../tiled/packed/objects/consoletribal2.png"
+    },
+    "183" : {
+      "image" : "../../../../../tiled/packed/objects/templehiddentrapdoor.png"
+    },
+    "184" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "185" : {
+      "image" : "../../../../../tiled/packed/objects/kluexstatue1.png"
+    },
+    "186" : {
+      "image" : "../../../../../tiled/packed/objects/kluexmap1.png"
+    },
+    "187" : {
+      "image" : "../../../../../tiled/packed/objects/kluexmural2.png"
+    },
+    "188" : {
+      "image" : "../../../../../tiled/packed/objects/kluexmural1.png"
+    },
+    "189" : {
+      "image" : "../../../../../tiled/packed/objects/kluexstatue2.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/birdthrone.png"
+    },
+    "190" : {
+      "image" : "../../../../../tiled/packed/objects/kluexstatue2_orientation1.png"
+    },
+    "191" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation6.png"
+    },
+    "192" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation7.png"
+    },
+    "193" : {
+      "image" : "../../../../../tiled/packed/objects/avianshiphatch.png"
+    },
+    "194" : {
+      "image" : "../../../../../tiled/packed/objects/avianpressureplate_orientation4.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/avianshipdoorBroken.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/birdthrone_orientation1.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/earthemblem.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/screen5.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/woodenarmchair1.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/marketstall4.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/avianshiplockerTier0.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/birdgroundlantern.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/birdtable.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/windchicken.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/marketstall5.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/tombthing1.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/treasuremap.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/sarcoavian1.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/mask3.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/goldenducky.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/avianshiplocker.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/tribalbed2.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/mask4.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/spearrack.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/avianstoragelocker.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltorch.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/idolsupport.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/avianbanner1.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden1.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden1_orientation2.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden1_orientation3.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden1_orientation4.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden1_orientation5.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/consoletribal3.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/sarcohuman.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/featherybird.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/oillanterntall.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor2sideways.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/sarcobunny.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/tribalbookcase2.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/chestmedavian2.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/avianteleporterTier0.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/avianshipdoor.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/avianfuelhatch.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/brokenavianfuelhatch.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/aviantechstation.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/propeller.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/birdgodemblem.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation2.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation3.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation4.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation5.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/ashjar2.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/wateremblem.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/goldenurn.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone10.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/obsidianbookcase.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/birddoor.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/screen2.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/chestmedavian1.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/talljar2.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor2.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone9.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone11.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/moonemblem.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/mask5.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/tribalcounter1.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/birdbed.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/feathers2.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/redalert.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone8.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/airemblem.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/templepressureplatform.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/chestavian1.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/templehiddendoor.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/flagavian.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/flagavian_orientation1.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/sarcohumanalive.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/tombthing3.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/owlclock.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/anchor.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/goldenegg.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/tombthing2.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/aviancaptainschair.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/tribaltable.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/objects/avianpressureplate.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/avianpressureplate_orientation2.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/avianpressureplate_orientation3.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/objects/aviantechstationTier0.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/metallictrapdoor.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/tombstatueavian.png"
+    }
+  },
+  "tilewidth" : 8
+}

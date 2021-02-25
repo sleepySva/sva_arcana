@@ -1,0 +1,326 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/terraformer",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 26,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Transforms a planet's climate into a verdant patchwork of open meadows.",
+      "//name" : "terraformergarden",
+      "//shortdescription" : "Lush Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformergarden",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Transforms a planet's climate into a frozen landscape of snow and ice.",
+      "//name" : "terraformertundra",
+      "//shortdescription" : "Icy Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformertundra",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "Transforms an area of a planet into a hive of alien invertebrates.",
+      "//name" : "microformerhive",
+      "//shortdescription" : "Buggy Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformerhive",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "Transforms an area of a planet into an oxidized metallic grove.",
+      "//name" : "microformerrust",
+      "//shortdescription" : "Rusty Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformerrust",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "Transforms a planet's climate into a fuming volcanic hellscape.",
+      "//name" : "terraformervolcanic",
+      "//shortdescription" : "Volcanic Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformervolcanic",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "Transforms a planet's climate into a thick temperate forest.",
+      "//name" : "terraformerforest",
+      "//shortdescription" : "Wooded Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformerforest",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "Transforms a planet's climate into an arid grassland.",
+      "//name" : "terraformersavannah",
+      "//shortdescription" : "Prairie Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformersavannah",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "Transforms an area of a planet into a morass of sticky tar.",
+      "//name" : "microformertar",
+      "//shortdescription" : "Tarry Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformertar",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "Transforms a planet's climate into a sandy desert.",
+      "//name" : "terraformerdesert",
+      "//shortdescription" : "Sandy Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformerdesert",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "Transforms an area of a planet into a fleshy abomination.",
+      "//name" : "microformerflesh",
+      "//shortdescription" : "Fleshy Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformerflesh",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "Transforms an area of a planet into an overgrown wilderness.",
+      "//name" : "microformerwilderness",
+      "//shortdescription" : "Wild Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformerwilderness",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "Transforms an area of a planet into a rocky highland.",
+      "//name" : "microformeralpine",
+      "//shortdescription" : "Mountainous Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformeralpine",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Transforms a planet's climate into a chilly taiga.",
+      "//name" : "terraformersnow",
+      "//shortdescription" : "Snowy Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformersnow",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "Transforms an area of a planet into a dry waste of scattered bones.",
+      "//name" : "microformerbones",
+      "//shortdescription" : "Skeletal Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformerbones",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "Transforms an area of a planet into an ice sheet threaded with odd, protruding steam pipes.",
+      "//name" : "microformersteamspring",
+      "//shortdescription" : "Steamy Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformersteamspring",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "Transforms an area of a planet into a beautiful crystalline rock garden.",
+      "//name" : "microformergeode",
+      "//shortdescription" : "Crystalline Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformergeode",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "Transforms a planet's climate into a chill wasteland of perpetual night.",
+      "//name" : "terraformermidnight",
+      "//shortdescription" : "Dark Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformermidnight",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Transforms an area of a planet into a patch of giant flowers.",
+      "//name" : "microformergiantflowers",
+      "//shortdescription" : "Floral Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformergiantflowers",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "Transforms an area of a planet into a sticky patch of glowing mushrooms.",
+      "//name" : "microformerluminouscaves",
+      "//shortdescription" : "Glowshroom Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformerluminouscaves",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Transforms a planet's climate into an overgrown jungle.",
+      "//name" : "terraformerjungle",
+      "//shortdescription" : "Jungle Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformerjungle",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Transforms an area of a planet into a patch of spongey fungus and giant toadstools.",
+      "//name" : "microformermushrooms",
+      "//shortdescription" : "Fungal Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformermushrooms",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "Transforms an area of a planet into clumps of lidless eyeballs.",
+      "//name" : "microformereyepatch",
+      "//shortdescription" : "Ocular Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformereyepatch",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Transforms an area of a planet into a soupy slime pit.",
+      "//name" : "microformerslimecaves",
+      "//shortdescription" : "Slimy Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformerslimecaves",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "Transforms a planet's climate into a bizarrely mutated alien ecosystem.",
+      "//name" : "terraformeralien",
+      "//shortdescription" : "Mutant Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformeralien",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "Transforms a planet's climate into a dusty apocalyptic wasteland.",
+      "//name" : "terraformerscorched",
+      "//shortdescription" : "Scorched Terraformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "terraformerscorched",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "Transforms an area of a planet into a bioluminescent garden.",
+      "//name" : "microformerbioluminescence",
+      "//shortdescription" : "Glowing Microformer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "microformerbioluminescence",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/terraformergarden.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/terraformertundra.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/microformerhive.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/microformerrust.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/terraformervolcanic.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/terraformerforest.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/terraformersavannah.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/microformertar.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/terraformerdesert.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/microformerflesh.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/microformerwilderness.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/microformeralpine.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/terraformersnow.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/microformerbones.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/microformersteamspring.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/microformergeode.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/terraformermidnight.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/microformergiantflowers.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/microformerluminouscaves.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/terraformerjungle.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/microformermushrooms.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/microformereyepatch.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/microformerslimecaves.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/terraformeralien.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/terraformerscorched.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/microformerbioluminescence.png"
+    }
+  },
+  "tilewidth" : 8
+}

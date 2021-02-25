@@ -1,0 +1,37 @@
+{
+  "itemName" : "havencrest_broadsword_1",
+  "price" : 1000,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A true scholar is knowledged in all things, even combat.",
+  "shortdescription" : "Arcanium Broadsword",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+  "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "havencrest_broadsword_1" },
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/havencrest_broadsword_1.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "havencrest_broadsword_1.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.9,
+    "baseDps" : 9.8
+  },
+
+  "altAbilityType" : "risingslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

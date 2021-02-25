@@ -1,0 +1,57 @@
+{
+  "itemName" : "horizon_hammer_1",
+  "price" : 1000,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A hammer made from necroium ingots.",
+  "shortdescription" : "Retribution",
+  "tooltipKind" : "sword",
+  "category" : "hammer",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","hammer"],
+  "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "horizon_hammer_1" },
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/hammer/horizon_hammer_1.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "horizon_hammer_1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_hammer.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "arcana_abyss",
+
+  "primaryAbilityType" : "hammersmash",
+  "primaryAbility" : {
+    "fireTime" : 1.4,
+    "baseDps" : 10.8,
+    "damageConfig" : {
+      "damageSourceKind" : "arcana_abyss"
+    }
+  },
+
+  "palette" : "/items/active/weapons/colors/tier1melee.weaponcolors",
+
+  "altAbilityType" : "groundslam",
+  "altAbility" : {
+    "name" : "Abyssal Slam",
+    "damageConfig" : {
+      "damageSourceKind" : "arcana_abyss",
+	  "statusEffects" : [ "l6doomed" ]
+    },
+	"elementalConfig" : {
+      "arcana_abyss" : {}
+    },
+	"projectileType" : "arcana_explosion_plasma_1_black"
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

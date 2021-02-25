@@ -1,0 +1,98 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/fridgestorage",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 7,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A fridge. Hopefully filled with tasty, tasty treats.",
+      "//name" : "outpostfridge",
+      "//shortdescription" : "Chic Fridge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostfridge",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Ideal for storing food and keeping it fresh.",
+      "//name" : "minifridge",
+      "//shortdescription" : "Mini Fridge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "minifridge",
+      "tilesetDirection" : "left"
+    },
+    "2" : {
+      "//description" : "A fridge, good for keeping food cold.",
+      "//name" : "apexfridge",
+      "//shortdescription" : "Standard Issue Fridge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexfridge",
+      "tilesetDirection" : "left"
+    },
+    "3" : {
+      "//description" : "A contemprary style fridge, capable of extending the shelf life of food.",
+      "//name" : "scorchedcityfridge",
+      "//shortdescription" : "Stylish Fridge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "scorchedcityfridge",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Perfect for storing a lot of food and keeping it fresh.",
+      "//name" : "fridge",
+      "//shortdescription" : "Full-Size Fridge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fridge",
+      "tilesetDirection" : "left"
+    },
+    "5" : {
+      "//description" : "Perfect for storing a lot of food and keeping it fresh.",
+      "//name" : "largecooler1",
+      "//shortdescription" : "Large Cooler",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "largecooler1",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "An ice dispenser made of ice. That's ice ice, baby.",
+      "//name" : "icemachine",
+      "//shortdescription" : "Ice Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "icemachine",
+      "tilesetDirection" : "left"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/outpostfridge.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/minifridge.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/apexfridge.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/scorchedcityfridge.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/fridge.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/largecooler1.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/icemachine.png"
+    }
+  },
+  "tilewidth" : 8
+}

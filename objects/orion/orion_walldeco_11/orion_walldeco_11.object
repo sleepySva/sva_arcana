@@ -1,0 +1,25 @@
+{
+  "objectName" : "orion_walldeco_11",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A neon sign.",
+  "shortdescription" : "Neon City Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "lightColor" : [164, 118, 219],
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_walldeco_11.png:<color>",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

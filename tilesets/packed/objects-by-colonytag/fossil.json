@@ -1,0 +1,50 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/fossil",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 3,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A display stand for large fossils",
+      "//name" : "fossildisplay5",
+      "//shortdescription" : "Large Fossil Display",
+      "imagePositionX" : "0",
+      "imagePositionY" : "8",
+      "object" : "fossildisplay5",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A display stand for medium fossils",
+      "//name" : "fossildisplay3",
+      "//shortdescription" : "Medium Fossil Display",
+      "imagePositionX" : "0",
+      "imagePositionY" : "24",
+      "object" : "fossildisplay3",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A display stand for small fossils",
+      "//name" : "fossildisplay1",
+      "//shortdescription" : "Small Fossil Display",
+      "imagePositionX" : "0",
+      "imagePositionY" : "16",
+      "object" : "fossildisplay1",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/fossildisplay5.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/fossildisplay3.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/fossildisplay1.png"
+    }
+  },
+  "tilewidth" : 8
+}

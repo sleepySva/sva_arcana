@@ -1,0 +1,614 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/apexresearchlab",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 51,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Ape Flu? Sounds serious...",
+      "//name" : "apexflusign",
+      "//shortdescription" : "Ape Flu Poster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "apexflusign",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "There's nothing of interest on this shelf.",
+      "//name" : "apexcoolshelf1",
+      "//shortdescription" : "Cool Empty Shelf",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apexcoolshelf1",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A flask full of green goo.",
+      "//name" : "greenflask",
+      "//shortdescription" : "Green Flask",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greenflask",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "It's an exceptionally cool chair.",
+      "//name" : "apexcoolchair",
+      "//shortdescription" : "Cool Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexcoolchair",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "The finest security camera around.",
+      "//name" : "apexsecuritycamera",
+      "//shortdescription" : "Hi-tech Security Camera",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "apexsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "There's nothing on. Every channel just displays a picture of Big Ape.",
+      "//name" : "apextv",
+      "//shortdescription" : "Big Ape TV",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apextv",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A Miniknog locker.",
+      "//name" : "apexlocker",
+      "//shortdescription" : "Laboratory Locker",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexlocker",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "I should probably go that way.",
+      "//name" : "arrowsign",
+      "//shortdescription" : "Arrow Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arrowsign",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "Watch out! Lightning bolts!",
+      "//name" : "electricsign",
+      "//shortdescription" : "Electricity Warning Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "electricsign"
+    },
+    "17" : {
+      "//description" : "I wonder what all these buttons are for...",
+      "//name" : "apexconsolekeyboard",
+      "//shortdescription" : "Console Keyboard",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexconsolekeyboard",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A flask full of red liquid.",
+      "//name" : "redflask",
+      "//shortdescription" : "Red Flask",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "redflask",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "The pod is empty.",
+      "//name" : "apexpod2",
+      "//shortdescription" : "Empty Life Support Pod",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexpod2",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Think happy thoughts!",
+      "//name" : "apexthoughtreassign",
+      "//shortdescription" : "Reassignment Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "apexthoughtreassign"
+    },
+    "20" : {
+      "//description" : "This cupboard is sleek, but it doesn't look sturdy.",
+      "//name" : "apexcoolcupboard",
+      "//shortdescription" : "Cool Cupboard",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexcoolcupboard",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "That sure is a cool table.",
+      "//name" : "apexcooltable",
+      "//shortdescription" : "Cool Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apexcooltable",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A standard issue office chair.",
+      "//name" : "apexofficechair",
+      "//shortdescription" : "Office Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexofficechair",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "Everything looks significantly more terrifying under a microscope.",
+      "//name" : "microscope",
+      "//shortdescription" : "Microscope",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "microscope",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Vials full of various blood types. I hope they didn't take out ALL their blood.",
+      "//name" : "apexbloodbank",
+      "//shortdescription" : "Bloodbank",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexbloodbank",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A sign that reads \"Danger!\". It couldn't really send a clearer message.",
+      "//name" : "reddangersign",
+      "//shortdescription" : "Red Danger Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "reddangersign"
+    },
+    "26" : {
+      "//description" : "That big red lever should probably be left alone.",
+      "//name" : "apexconsole1",
+      "//shortdescription" : "Research Terminal",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexconsole1",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "This cool computer is making a lot of 'beep boop boop beep' noises.",
+      "//name" : "apexcoolcomputer",
+      "//shortdescription" : "Cool Computer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexcoolcomputer",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "This door is made of some sort of bulletproof material.",
+      "//name" : "apexcooldoor",
+      "//shortdescription" : "Security Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apexcooldoor",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "It seems irresponsible to leave a bunch of unlabelled chemicals unattended.",
+      "//name" : "apexcoolshelf2",
+      "//shortdescription" : "Cool Chemical Shelf",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apexcoolshelf2",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "All Hail the Great Banana!",
+      "//name" : "apexbananasign",
+      "//shortdescription" : "Banana Propaganda Poster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "apexbananasign",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "This strange lamp emits a low green light.",
+      "//name" : "apextablelamp",
+      "//shortdescription" : "Green Lamp Pod",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "apextablelamp",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A table reserved for traitors.",
+      "//name" : "apextorturebed",
+      "//shortdescription" : "Interrogation Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apextorturebed",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "33" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation2",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "34" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation3",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "35" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation4",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "36" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation5",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "37" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation6",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "38" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation7",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "39" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation8",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "4" : {
+      "//description" : "A creepy monitor. A face flickers onto the screen, almost faster than the eye can see.",
+      "//name" : "apexceilingtv",
+      "//shortdescription" : "Flickering Ceiling TV",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "apexceilingtv",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "A flask full of blue liquid.",
+      "//name" : "blueflask",
+      "//shortdescription" : "Blue Flask",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "blueflask",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "An electrically charged plasma field. It reacts to sound.",
+      "//name" : "plasmadisc",
+      "//shortdescription" : "Plasma Disc",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plasmadisc",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A wireless energy supply.",
+      "//name" : "tesla",
+      "//shortdescription" : "Wireless Generator",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tesla",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "There seems to be an Apex in there, connected to a bunch of wires and tubes.",
+      "//name" : "apexpod",
+      "//shortdescription" : "Life Support Pod",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexpod",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "Go Ape!",
+      "//name" : "apexlevel1sign",
+      "//shortdescription" : "Apex Level 01 Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "apexlevel1sign",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "Big Ape is All Seeing!",
+      "//name" : "apexapesign",
+      "//shortdescription" : "Big Ape Poster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "apexapesign",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "This desk is sleek, looks solid.",
+      "//name" : "apexcooldesk",
+      "//shortdescription" : "Cool Desk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apexcooldesk",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A brain in a jar, daydreaming.",
+      "//name" : "apexbrainjar",
+      "//shortdescription" : "Brain in a Jar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexbrainjar",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A display cycling through information about Miniknog strongholds.",
+      "//name" : "miniknogintel1",
+      "//shortdescription" : "Miniknog Intel Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "miniknogintel1",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A computer displaying information downloaded from the drone on top.",
+      "//name" : "minidronerack",
+      "//shortdescription" : "Minidrone Intel Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "minidronerack",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "It looks like a server. I wonder what kind of games could be hosted on that.",
+      "//name" : "apexcoolserver",
+      "//shortdescription" : "Cool Server",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexcoolserver",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "This cool computer is making a lot of 'beep boop boop beep' noises.",
+      "//name" : "apexcoolcomputer_orientation1",
+      "//shortdescription" : "Cool Computer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexcoolcomputer",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "It should be stocked full of science journals and lab reports.",
+      "//name" : "apexcoolbookcase",
+      "//shortdescription" : "Cool Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexcoolbookcase",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "The sign indicates something medicine-related in the vicinity.",
+      "//name" : "apexmedsign",
+      "//shortdescription" : "Medical Bay Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "apexmedsign"
+    },
+    "8" : {
+      "//description" : "The finest automated security turret around.",
+      "//name" : "apexturret",
+      "//shortdescription" : "Hi-tech Turret",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexturret",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "I think Big Ape is watching...",
+      "//name" : "apexhdtv",
+      "//shortdescription" : "Big Ape HDTV",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-24",
+      "object" : "apexhdtv",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/apexflusign.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolshelf1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/greenflask.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolchair.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/apexsecuritycamera.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/apextv.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/apexlocker.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/arrowsign.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/electricsign.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/apexconsolekeyboard.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/redflask.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/apexpod2.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/apexthoughtreassign.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolcupboard.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/apexcooltable.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/apexofficechair.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/microscope.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/apexbloodbank.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/reddangersign.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/apexconsole1.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolcomputer.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/apexcooldoor.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolshelf2.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/apexbananasign.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/apextablelamp.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/apextorturebed.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation2.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation3.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation4.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation5.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation6.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation7.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation8.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/apexceilingtv.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/blueflask.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/plasmadisc.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/tesla.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/apexpod.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/apexlevel1sign.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/apexapesign.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/apexcooldesk.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/apexbrainjar.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/miniknogintel1.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/minidronerack.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolserver.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolcomputer_orientation1.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolbookcase.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/apexmedsign.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/apexturret.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/apexhdtv.png"
+    }
+  },
+  "tilewidth" : 8
+}

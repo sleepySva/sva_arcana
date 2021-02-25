@@ -1,0 +1,21 @@
+{
+  "materialId" : 16669,
+  "materialName" : "aeolus_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeolus_tile3",
+  "description" : "A brick flooring made from ariostone.",
+  "shortdescription" : "Ariostone Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aeolus_tile3.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 183
+  }
+}

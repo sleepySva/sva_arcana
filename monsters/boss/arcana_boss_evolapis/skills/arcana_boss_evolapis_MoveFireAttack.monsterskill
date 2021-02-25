@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_boss_evolapis_MoveFireAttack",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/arcana_boss_evolapis/skills/arcana_boss_evolapis_MoveFireAttack.lua" ],
+
+    "arcana_boss_evolapis_MoveFireAttack" : {
+      "skillTime": 2,
+      "bobTime" : 2,
+      "bobHeight" : 4,
+
+      "projectileOffset" : [0, -4],
+      "fireInterval" : 0.4,
+      "projectile" : {
+        "type" : "arcana_boss_evolapis_projectile_1",
+        "config" : {
+          "speed" : 80,
+          "power" : 60
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "projectileName" : "magnus_blastRifle_testaViola_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 120,
+  "piercing" : false,
+  
+  "image" : "magnus_blastRifle_testaViola_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [148, 62, 145],
+  "emitters" : ["sparks","smoke"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_doom_1_pink/arcana_explosion_doom_1_pink.config"
+    },
+	{
+      "action" : "config",
+      "file" : "/projectiles/explosions/molotovexplosion/molotovexplosion.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "magnus_blastRifle_testaViola_projectile_2",
+        "angleAdjust" : -25,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+        "action" : "projectile",
+        "type" : "magnus_blastRifle_testaViola_projectile_2",
+        "angleAdjust" : -50,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+        "action" : "projectile",
+        "type" : "magnus_blastRifle_testaViola_projectile_2",
+        "angleAdjust" : 50,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+        "action" : "projectile",
+        "type" : "magnus_blastRifle_testaViola_projectile_2",
+        "angleAdjust" : 25,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/magnus_blastRifle_testaViola_projectile_1/magnus_blastRifle_testaViola_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16593,
+  "materialName" : "arcana_tile13",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile13",
+  "description" : "A composition of plants.",
+  "shortdescription" : "Arcane Leaf Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile13.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 1804
+  }
+}

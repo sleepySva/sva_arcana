@@ -1,0 +1,23 @@
+{
+  "materialId" : 16709,
+  "materialName" : "stahlernBadlands_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "stahlernBadlands_tile1",
+  "description" : "A dirt block.",
+  "shortdescription" : "Stahlern Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 12,
+  "category" : "materials",
+  "tillableMod" : 32,
+  "soil" : true,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "stahlernBadlands_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1401
+  }
+}

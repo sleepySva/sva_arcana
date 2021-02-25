@@ -1,0 +1,86 @@
+{
+  "itemName" : "havencrest_assaultRifle_1",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "An arcanium based rifle.",
+  "shortdescription" : "Osiri Riveter",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 6,
+
+  "inventoryIcon" : "havencrest_assaultRifle_1.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "havencrest_assaultRifle_1.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/melee/laser_weapon_swing2.ogg"]
+    }
+  },
+
+  "baseOffset" : [1.2, 0.25],
+  "muzzleOffset" : [1.8, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.06,
+    "baseDps" : 58.0,
+    "energyUsage" : 26.0,
+    "inaccuracy" : 0.04,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "havencrest_assaultRifle_1_projectile_1",
+    "projectileParameters" : {
+      "damageKind" : "shotgunbullet",
+      "knockback" : 4
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "grenadelauncher",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

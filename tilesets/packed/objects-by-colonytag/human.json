@@ -1,0 +1,2921 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/human",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 247,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Ideal for laying out battle strategies, holding meetings and snacking.",
+      "//name" : "bunkertable3",
+      "//shortdescription" : "Large Metal Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkertable3",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "humantechstationTier0",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "humantechstationTier0"
+    },
+    "10" : {
+      "//description" : "A laser made to mine through moon rock.",
+      "//name" : "lunarbaselaser",
+      "//shortdescription" : "Mining Laser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "lunarbaselaser",
+      "tilesetDirection" : "right"
+    },
+    "100" : {
+      "//description" : "A monitor displaying a task list.",
+      "//name" : "bunkertv",
+      "//shortdescription" : "Small Wall Monitor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkertv",
+      "tilesetDirection" : "right"
+    },
+    "101" : {
+      "//description" : "A monitor displaying a task list.",
+      "//name" : "bunkertv_orientation1",
+      "//shortdescription" : "Small Wall Monitor",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "bunkertv",
+      "tilesetDirection" : "right"
+    },
+    "102" : {
+      "//description" : "A monitor displaying a task list.",
+      "//name" : "bunkertv_orientation2",
+      "//shortdescription" : "Small Wall Monitor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkertv",
+      "tilesetDirection" : "right"
+    },
+    "103" : {
+      "//description" : "A monitor displaying a task list.",
+      "//name" : "bunkertv_orientation3",
+      "//shortdescription" : "Small Wall Monitor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkertv",
+      "tilesetDirection" : "right"
+    },
+    "104" : {
+      "//description" : "A television! I don't think this has worked for a long time.",
+      "//name" : "basictv",
+      "//shortdescription" : "Old Television",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "basictv",
+      "tilesetDirection" : "right"
+    },
+    "105" : {
+      "//description" : "A grand painting of two pointing figures.",
+      "//name" : "paintingcreationofpixel",
+      "//shortdescription" : "Grand Painting",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-24",
+      "object" : "paintingcreationofpixel"
+    },
+    "106" : {
+      "//description" : "A simple metal table.",
+      "//name" : "bunkertable1",
+      "//shortdescription" : "Metal Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkertable1",
+      "tilesetDirection" : "right"
+    },
+    "107" : {
+      "//description" : "If you go this way, you're sure to be exiting... something.",
+      "//name" : "prisonexitsign",
+      "//shortdescription" : "Exit Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonexitsign",
+      "tilesetDirection" : "left"
+    },
+    "108" : {
+      "//description" : "A decorative gothic corner.",
+      "//name" : "prisoncorner",
+      "//shortdescription" : "Decorative Support Beam",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisoncorner",
+      "tilesetDirection" : "right"
+    },
+    "109" : {
+      "//description" : "A decorative gothic corner.",
+      "//name" : "prisoncorner_orientation2",
+      "//shortdescription" : "Decorative Support Beam",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisoncorner",
+      "tilesetDirection" : "left"
+    },
+    "11" : {
+      "//description" : "A simple bench, save for the fact that the legs are nailed to the floor.",
+      "//name" : "prisonbench",
+      "//shortdescription" : "Metal Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonbench",
+      "tilesetDirection" : "right"
+    },
+    "110" : {
+      "//description" : "A decorative gothic corner.",
+      "//name" : "prisoncorner_orientation3",
+      "//shortdescription" : "Decorative Support Beam",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisoncorner",
+      "tilesetDirection" : "left"
+    },
+    "111" : {
+      "//description" : "A bare lightbulb hanging from a metal rod in the ceiling.",
+      "//name" : "lightbulb2",
+      "//shortdescription" : "Lightbulb",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "lightbulb2"
+    },
+    "112" : {
+      "//description" : "A sleek control console.",
+      "//name" : "lunarbaseconsole",
+      "//shortdescription" : "Lunar Base Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "lunarbaseconsole",
+      "tilesetDirection" : "right"
+    },
+    "113" : {
+      "//description" : "There were some office supplies and inmate files in this filing cabinet.",
+      "//name" : "prisonfile2",
+      "//shortdescription" : "Wide Rusty Filing Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonfile2",
+      "tilesetDirection" : "right"
+    },
+    "114" : {
+      "//description" : "A shower. Perfect for a clean getaway. If the water was actually clean.",
+      "//name" : "prisonshower",
+      "//shortdescription" : "Rusty Shower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "prisonshower",
+      "tilesetDirection" : "right"
+    },
+    "115" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "humanshipdoorBroken",
+      "//shortdescription" : "Human Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "humanshipdoorBroken",
+      "tilesetDirection" : "right"
+    },
+    "116" : {
+      "//description" : "Sterile, recycled air whirs through the fanblades at a steady pace.",
+      "//name" : "bunkervent",
+      "//shortdescription" : "Bunker Vent",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkervent"
+    },
+    "117" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbag",
+      "//shortdescription" : "Blue Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbag",
+      "tilesetDirection" : "right"
+    },
+    "118" : {
+      "//description" : "A contemporary chair.",
+      "//name" : "modernchair",
+      "//shortdescription" : "Modern Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "modernchair",
+      "tilesetDirection" : "right"
+    },
+    "119" : {
+      "//description" : "A large metal Skip full of rubble.",
+      "//name" : "miningskip",
+      "//shortdescription" : "Mining Skip",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "miningskip",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "Inmate #2162's Study Group for Criminals Who Can't Read Good",
+      "//name" : "prisonpaper3",
+      "//shortdescription" : "Event Memo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonpaper3",
+      "tilesetDirection" : "right"
+    },
+    "120" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "121" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight_orientation2",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "122" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight_orientation3",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "123" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight_orientation4",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "124" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight_orientation5",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "125" : {
+      "//description" : "A portrait of a human couple.",
+      "//name" : "paintinggothic",
+      "//shortdescription" : "Gothic Painting",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "paintinggothic"
+    },
+    "126" : {
+      "//description" : "This brightly coloured tape clearly indicates that the area is unsafe.",
+      "//name" : "hazardtapev",
+      "//shortdescription" : "Vertical Hazard Tape",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hazardtapev"
+    },
+    "127" : {
+      "//description" : "Fire in a rusted-out barrel.",
+      "//name" : "prisonbarrelfire",
+      "//shortdescription" : "Barrel Fire",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonbarrelfire",
+      "tilesetDirection" : "right"
+    },
+    "128" : {
+      "//description" : "A space heater!",
+      "//name" : "bunkerheater1",
+      "//shortdescription" : "Space Heater",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerheater1",
+      "tilesetDirection" : "right"
+    },
+    "129" : {
+      "//description" : "A stepladder.",
+      "//name" : "stepladder",
+      "//shortdescription" : "Stepladder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stepladder",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A notice written in ink.",
+      "//name" : "prisonpaper1",
+      "//shortdescription" : "Notice",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonpaper1",
+      "tilesetDirection" : "right"
+    },
+    "130" : {
+      "//description" : "A car shaped bed, for those young at heart.",
+      "//name" : "carbed",
+      "//shortdescription" : "Car Bed",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "carbed",
+      "tilesetDirection" : "right"
+    },
+    "131" : {
+      "//description" : "This door is airtight and made with incredibly strong materials.",
+      "//name" : "lunarbasedoor",
+      "//shortdescription" : "Lunar Base Blastdoor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "lunarbasedoor",
+      "tilesetDirection" : "right"
+    },
+    "132" : {
+      "//description" : "This door is airtight and made with incredibly strong materials.",
+      "//name" : "lunarbasedoor_orientation1",
+      "//shortdescription" : "Lunar Base Blastdoor",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "lunarbasedoor",
+      "tilesetDirection" : "right"
+    },
+    "133" : {
+      "//description" : "That's no moon...",
+      "//name" : "bunkerdisplay4",
+      "//shortdescription" : "Anomalous Display",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "bunkerdisplay4",
+      "tilesetDirection" : "right"
+    },
+    "134" : {
+      "//description" : "A shower. Perfect for a clean getaway.",
+      "//name" : "prisonshowerdripping",
+      "//shortdescription" : "Dripping Prison Shower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "prisonshowerdripping",
+      "tilesetDirection" : "right"
+    },
+    "135" : {
+      "//description" : "It's a chain-link fence.",
+      "//name" : "prisonfence2",
+      "//shortdescription" : "Short Chain-link Fence",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonfence2"
+    },
+    "136" : {
+      "//description" : "The paper is ripped and the words are smudged.",
+      "//name" : "prisonpaper2",
+      "//shortdescription" : "USCM Torn Memo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonpaper2",
+      "tilesetDirection" : "right"
+    },
+    "137" : {
+      "//description" : "A control panel that appears to operate lights, doors and alarms.",
+      "//name" : "prisoncontrolpanel",
+      "//shortdescription" : "Security Control Panel",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisoncontrolpanel",
+      "tilesetDirection" : "right"
+    },
+    "138" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "139" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv_orientation2",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "Looks like someone had a case of the Mondays.",
+      "//name" : "prisonmirror1",
+      "//shortdescription" : "Large Broken Mirror",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "prisonmirror1",
+      "tilesetDirection" : "right"
+    },
+    "140" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv_orientation3",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "141" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv_orientation4",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "142" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv_orientation5",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "143" : {
+      "//description" : "A surprisingly comfortable chair.",
+      "//name" : "lunarbasechair",
+      "//shortdescription" : "Lunar Base Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "lunarbasechair",
+      "tilesetDirection" : "right"
+    },
+    "144" : {
+      "//description" : "There is no need to be upset.",
+      "//name" : "bunkerposter2",
+      "//shortdescription" : "Calming Poster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bunkerposter2",
+      "tilesetDirection" : "right"
+    },
+    "145" : {
+      "//description" : "A torture bed. Terrifying! Thank goodness for the pillow.",
+      "//name" : "prisontorturebed2",
+      "//shortdescription" : "Torture Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisontorturebed2",
+      "tilesetDirection" : "right"
+    },
+    "146" : {
+      "//description" : "Some sort of solitary confinement device, maybe?",
+      "//name" : "prisonforcecell",
+      "//shortdescription" : "Force Cell",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonforcecell",
+      "tilesetDirection" : "right"
+    },
+    "147" : {
+      "//description" : "A machine used to move large amounts of mined material.",
+      "//name" : "miningbelt",
+      "//shortdescription" : "Mining Conveyer Belt",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "miningbelt",
+      "tilesetDirection" : "right"
+    },
+    "148" : {
+      "//description" : "Ouch! I shouldn't get too close to that.",
+      "//name" : "barbedwire",
+      "//shortdescription" : "Barbed Wire",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "barbedwire",
+      "tilesetDirection" : "right"
+    },
+    "149" : {
+      "//description" : "This brightly coloured tape clearly indicates that the area is unsafe.",
+      "//name" : "hazardtapeh",
+      "//shortdescription" : "Horizontal Hazard Tape",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hazardtapeh"
+    },
+    "15" : {
+      "//description" : "A crudely-drawn skull. It looks cheerful.",
+      "//name" : "prisongraffiti4",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisongraffiti4"
+    },
+    "150" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "humanshipdoor",
+      "//shortdescription" : "Human Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "humanshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "151" : {
+      "//description" : "What does USCM stand for, again?",
+      "//name" : "marinesign",
+      "//shortdescription" : "USCM Sign",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-8",
+      "object" : "marinesign"
+    },
+    "152" : {
+      "//description" : "A broken FTL fuel hatch. This won't do!",
+      "//name" : "brokenhumanfuelhatch",
+      "//shortdescription" : "Broken FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "brokenhumanfuelhatch"
+    },
+    "153" : {
+      "//description" : "This jukebox sounds great! Too bad there only seems to be one track.",
+      "//name" : "jukebox",
+      "//shortdescription" : "Jukebox",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "jukebox",
+      "tilesetDirection" : "right"
+    },
+    "154" : {
+      "//description" : "There's a book in here titled, 'How to Travel Backwards in Time for Dummies'.",
+      "//name" : "bunkerbookcase",
+      "//shortdescription" : "Metal Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerbookcase",
+      "tilesetDirection" : "right"
+    },
+    "155" : {
+      "//description" : "It's one of those drinking machines people use to make small-talk.",
+      "//name" : "watermachine",
+      "//shortdescription" : "Water Cooler",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "watermachine",
+      "tilesetDirection" : "right"
+    },
+    "156" : {
+      "//description" : "Sure seems that way, Anonymous Graffiti Artist.",
+      "//name" : "prisongraffiti2",
+      "//shortdescription" : "\"No Escape\" Graffiti",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "-16",
+      "object" : "prisongraffiti2"
+    },
+    "157" : {
+      "//description" : "The words \"get out\" have been written in blood. You can tell the writer was serious.",
+      "//name" : "prisongraffiti7",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-56",
+      "imagePositionY" : "-8",
+      "object" : "prisongraffiti7"
+    },
+    "158" : {
+      "//description" : "Someone couldn't count to 25.",
+      "//name" : "chalktally",
+      "//shortdescription" : "Tally Marks",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "chalktally"
+    },
+    "159" : {
+      "//description" : "The space heater emits a low, unpleasant hum.",
+      "//name" : "prisonradiator",
+      "//shortdescription" : "Old Radiator",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonradiator",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "160" : {
+      "//description" : "It's a large server cabinet.",
+      "//name" : "bunkerserver",
+      "//shortdescription" : "Server Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerserver",
+      "tilesetDirection" : "right"
+    },
+    "161" : {
+      "//description" : "A metallic ceiling lamp.",
+      "//name" : "bunkerceilinglight1",
+      "//shortdescription" : "Metal Ceiling Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "bunkerceilinglight1",
+      "tilesetDirection" : "right"
+    },
+    "162" : {
+      "//description" : "A normal looking toilet! Thank the stars!",
+      "//name" : "basictoilet",
+      "//shortdescription" : "Basic Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "basictoilet",
+      "tilesetDirection" : "right"
+    },
+    "163" : {
+      "//description" : "A set of lockers, perfect for storing things.",
+      "//name" : "lunarbaselocker",
+      "//shortdescription" : "Lunar Base Lockers",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "lunarbaselocker",
+      "tilesetDirection" : "right"
+    },
+    "164" : {
+      "//description" : "A generic metal barrel. It's sealed.",
+      "//name" : "metalbarrel1",
+      "//shortdescription" : "Metal Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel1",
+      "tilesetDirection" : "right"
+    },
+    "165" : {
+      "//description" : "A haunting painting of a screaming figure.",
+      "//name" : "paintingscream",
+      "//shortdescription" : "Screaming Painting",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "paintingscream"
+    },
+    "166" : {
+      "//description" : "Stay still! It can't see you if you stay still.",
+      "//name" : "bunkermotiondetector",
+      "//shortdescription" : "Motion Detector",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkermotiondetector",
+      "tilesetDirection" : "right"
+    },
+    "167" : {
+      "//description" : "Graffiti reading \"turn back\". Chances of it being adhered to: zero.",
+      "//name" : "prisongraffiti6",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongraffiti6"
+    },
+    "168" : {
+      "//description" : "This is just an electrical fire waiting to happen.",
+      "//name" : "bunkerwires",
+      "//shortdescription" : "Wires",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkerwires",
+      "tilesetDirection" : "right"
+    },
+    "169" : {
+      "//description" : "Looks like it used to be filled with medical supplies - not any more.",
+      "//name" : "prisoncabinet1",
+      "//shortdescription" : "Broken Supply Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisoncabinet1",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation1",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "170" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "171" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera_orientation1",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "172" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera_orientation2",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "173" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera_orientation3",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "174" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera_orientation4",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "175" : {
+      "//description" : "A sign that says either offline or online.",
+      "//name" : "miningpowersign",
+      "//shortdescription" : "Power Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "miningpowersign",
+      "tilesetDirection" : "right"
+    },
+    "176" : {
+      "//description" : "This mattress is filthy! I swear I just saw something crawling around inside.",
+      "//name" : "prisonmattress",
+      "//shortdescription" : "Dirty Mattress",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonmattress",
+      "tilesetDirection" : "right"
+    },
+    "177" : {
+      "//description" : "It's a turbine. Y'know, for science.",
+      "//name" : "prisonturbine",
+      "//shortdescription" : "Small Turbine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonturbine",
+      "tilesetDirection" : "right"
+    },
+    "178" : {
+      "//description" : "Looks like someone had a case of the Mondays.",
+      "//name" : "prisonmirror2",
+      "//shortdescription" : "Small Broken Mirror",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonmirror2",
+      "tilesetDirection" : "right"
+    },
+    "179" : {
+      "//description" : "The human flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghuman",
+      "//shortdescription" : "Human Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flaghuman",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation2",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "180" : {
+      "//description" : "The human flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghuman_orientation1",
+      "//shortdescription" : "Human Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flaghuman",
+      "tilesetDirection" : "right"
+    },
+    "181" : {
+      "//description" : "The sign says \"DANGER\". Wait, how do these people know my middle name?",
+      "//name" : "dangersignv",
+      "//shortdescription" : "Vertical Danger Sign",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "dangersignv"
+    },
+    "182" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2b",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2b",
+      "tilesetDirection" : "right"
+    },
+    "183" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2b_orientation1",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2b",
+      "tilesetDirection" : "right"
+    },
+    "184" : {
+      "//description" : "A solid metal table.",
+      "//name" : "bunkertable2",
+      "//shortdescription" : "Solid Metal Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkertable2",
+      "tilesetDirection" : "right"
+    },
+    "185" : {
+      "//description" : "A nice, spacious, wall-mounted storage solution.",
+      "//name" : "humanstoragelocker",
+      "//shortdescription" : "Human Storage Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "humanstoragelocker"
+    },
+    "186" : {
+      "//description" : "A metal sign that says \"HAZARD!\"",
+      "//name" : "mininghazardsign",
+      "//shortdescription" : "Mining Hazard Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "mininghazardsign"
+    },
+    "187" : {
+      "//description" : "Looks like it's mainly used for data entry. Nothing too interesting.",
+      "//name" : "bunkercomputer",
+      "//shortdescription" : "Small Computer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkercomputer",
+      "tilesetDirection" : "right"
+    },
+    "188" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "humanteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "humanteleporterTier0"
+    },
+    "189" : {
+      "//description" : "It's a chain-link fence.",
+      "//name" : "prisonfence1",
+      "//shortdescription" : "Tall Chain-link Fence",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonfence1"
+    },
+    "19" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation3",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "190" : {
+      "//description" : "A drill-mounted console.",
+      "//name" : "drillconsole",
+      "//shortdescription" : "Mining Drill Console",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "drillconsole",
+      "tilesetDirection" : "right"
+    },
+    "191" : {
+      "//description" : "A good place to stash contraband.",
+      "//name" : "prisonlocker2",
+      "//shortdescription" : "Tall Prison Locker",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonlocker2",
+      "tilesetDirection" : "right"
+    },
+    "192" : {
+      "//description" : "Looks like someone had a rough night.",
+      "//name" : "prisontoilet",
+      "//shortdescription" : "Dirty Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisontoilet",
+      "tilesetDirection" : "right"
+    },
+    "193" : {
+      "//description" : "Rusted metal grates meant for ventilation.",
+      "//name" : "prisongratev",
+      "//shortdescription" : "Vertical Metal Grates",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "prisongratev",
+      "tilesetDirection" : "right"
+    },
+    "194" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "humanteleporter",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "humanteleporter"
+    },
+    "195" : {
+      "//description" : "An old-school arcade machine. This one plays 'Super Tralgar Blaster 2'.",
+      "//name" : "arcademachine",
+      "//shortdescription" : "Arcade Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arcademachine",
+      "tilesetDirection" : "right"
+    },
+    "196" : {
+      "//description" : "USCM, huh? I wouldn't wanna be one of their prisoners.",
+      "//name" : "prisonstonesign",
+      "//shortdescription" : "USCM Penal Colony Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonstonesign",
+      "tilesetDirection" : "left"
+    },
+    "197" : {
+      "//description" : "A very famous portrait of a mysterious lady.",
+      "//name" : "paintingmonalisa",
+      "//shortdescription" : "Classic Painting",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "paintingmonalisa"
+    },
+    "198" : {
+      "//description" : "A painting of a famous, long-dead Earthling poet.",
+      "//name" : "paintingshakespeare",
+      "//shortdescription" : "Famous Poet Portrait",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "paintingshakespeare"
+    },
+    "199" : {
+      "//description" : "A beautiful painting of the night sky.",
+      "//name" : "paintingstarrynight",
+      "//shortdescription" : "Abstract Painting",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "paintingstarrynight"
+    },
+    "2" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "humanshiplocker",
+      "//shortdescription" : "Ship Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "humanshiplocker"
+    },
+    "20" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation4",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "200" : {
+      "//description" : "A bit of Glitch surrealism.",
+      "//name" : "persistenceofpixels",
+      "//shortdescription" : "Persistence of Pixels",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "persistenceofpixels"
+    },
+    "201" : {
+      "//description" : "This panel appears to monitor some obscure environmental data.",
+      "//name" : "bunkerpanel1",
+      "//shortdescription" : "Environmental Data Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bunkerpanel1",
+      "tilesetDirection" : "right"
+    },
+    "202" : {
+      "//description" : "The sign says, \"Mess Hall\".",
+      "//name" : "prisonsign2",
+      "//shortdescription" : "Mess Hall Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "prisonsign2"
+    },
+    "203" : {
+      "//description" : "This sliding door makes me feel like I'm in a sci-fi game...",
+      "//name" : "bunkerslidingdoor",
+      "//shortdescription" : "Modern Sliding Door",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bunkerslidingdoor",
+      "tilesetDirection" : "right"
+    },
+    "204" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "humanshiplockerTier0",
+      "//shortdescription" : "Ship Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "humanshiplockerTier0"
+    },
+    "205" : {
+      "//description" : "It's a map displaying a round central room branching out into several corridors.",
+      "//name" : "bunkerdisplay3",
+      "//shortdescription" : "Map Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerdisplay3",
+      "tilesetDirection" : "left"
+    },
+    "206" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "humantechstation",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "humantechstation"
+    },
+    "207" : {
+      "//description" : "A flashy electronic recruitment poster.",
+      "//name" : "bunkerpanel3",
+      "//shortdescription" : "LED Recruitment Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bunkerpanel3",
+      "tilesetDirection" : "right"
+    },
+    "208" : {
+      "//description" : "A metal crate.",
+      "//name" : "bunkercrate",
+      "//shortdescription" : "Metal Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkercrate",
+      "tilesetDirection" : "right"
+    },
+    "209" : {
+      "//description" : "A metallic ceiling lamp.",
+      "//name" : "bunkerceilinglight2",
+      "//shortdescription" : "Metal Ceiling Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "bunkerceilinglight2",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation5",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "210" : {
+      "//description" : "Dripping Basic Bath",
+      "//name" : "basicbathdripping",
+      "//shortdescription" : "Dripping Basic Bath",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "basicbathdripping",
+      "tilesetDirection" : "right"
+    },
+    "211" : {
+      "//description" : "Perfect for storing tools and equipment in!",
+      "//name" : "miningchest",
+      "//shortdescription" : "Mining Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "miningchest",
+      "tilesetDirection" : "right"
+    },
+    "212" : {
+      "//description" : "It looks like it's full of hazardous materials.",
+      "//name" : "bunkercabinet1",
+      "//shortdescription" : "Metal Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkercabinet1",
+      "tilesetDirection" : "right"
+    },
+    "213" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "left"
+    },
+    "214" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation2",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "215" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation3",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "216" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation4",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "217" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation5",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "218" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation6",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "219" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation7",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation6",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "220" : {
+      "//description" : "A shield generator. Protective!",
+      "//name" : "humangenerator",
+      "//shortdescription" : "Shield Generator",
+      "imagePositionX" : "-80",
+      "imagePositionY" : "0",
+      "object" : "humangenerator",
+      "tilesetDirection" : "right"
+    },
+    "221" : {
+      "//description" : "That's not very encouraging.",
+      "//name" : "bunkerposter1",
+      "//shortdescription" : "Motivational Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "bunkerposter1",
+      "tilesetDirection" : "right"
+    },
+    "222" : {
+      "//description" : "A good place to stash contraband.",
+      "//name" : "prisonlocker1",
+      "//shortdescription" : "Small Prison Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonlocker1",
+      "tilesetDirection" : "right"
+    },
+    "223" : {
+      "//description" : "A set of monitors displaying the feeds from security cameras. Watch out for paranormal activity.",
+      "//name" : "prisoncamerastation",
+      "//shortdescription" : "Security Camera Station",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisoncamerastation",
+      "tilesetDirection" : "right"
+    },
+    "224" : {
+      "//description" : "A cold, hard slab of metal meant to serve as a bed.",
+      "//name" : "prisonbed",
+      "//shortdescription" : "Chained Metal Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonbed",
+      "tilesetDirection" : "right"
+    },
+    "225" : {
+      "//description" : "Thick metal bars surround each cell. Chance of escape seems pretty slim.",
+      "//name" : "prisonbars",
+      "//shortdescription" : "Prison Bars",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonbars"
+    },
+    "226" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "227" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation1",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "228" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation2",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "229" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation3",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation7",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "230" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation4",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "231" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation5",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "232" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation6",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "233" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation7",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "234" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation6",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "235" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation7",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "236" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation8",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "237" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation9",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "238" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation10",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "239" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation11",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "It's entrancing. I can't look away.",
+      "//name" : "lavalamp1",
+      "//shortdescription" : "Lava Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "lavalamp1",
+      "tilesetDirection" : "right"
+    },
+    "240" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1red",
+      "//shortdescription" : "Red Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1red",
+      "tilesetDirection" : "right"
+    },
+    "241" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1blue",
+      "//shortdescription" : "Blue Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1blue",
+      "tilesetDirection" : "right"
+    },
+    "242" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent2yellow",
+      "//shortdescription" : "Yellow Basic Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent2yellow",
+      "tilesetDirection" : "right"
+    },
+    "243" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbagred",
+      "//shortdescription" : "Red Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbagred",
+      "tilesetDirection" : "right"
+    },
+    "244" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbaggreen",
+      "//shortdescription" : "Green Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbaggreen",
+      "tilesetDirection" : "right"
+    },
+    "245" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "humanshiphatch",
+      "//shortdescription" : "Human Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "humanshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "246" : {
+      "//description" : "A console for monitoring the conditions inside an orbiting station.",
+      "//name" : "playerstationconsole",
+      "//shortdescription" : "Space Station Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "playerstationconsole"
+    },
+    "25" : {
+      "//description" : "Perfect for storing a lot of food and keeping it fresh.",
+      "//name" : "fridge",
+      "//shortdescription" : "Full-Size Fridge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fridge",
+      "tilesetDirection" : "left"
+    },
+    "26" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation2",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation3",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation4",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "humancaptainschair",
+      "//shortdescription" : "Human Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "humancaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation5",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation6",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation7",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation8",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation9",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A set of three TV monitors facing in different directions.'",
+      "//name" : "bunkertv2",
+      "//shortdescription" : "USCM Television Monitors",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "bunkertv2"
+    },
+    "36" : {
+      "//description" : "Just a typical cafeteria table.",
+      "//name" : "prisontable",
+      "//shortdescription" : "Cafeteria Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisontable",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "It's a screen displaying an old medical scan.",
+      "//name" : "bunkerpanel2",
+      "//shortdescription" : "Medical Data Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bunkerpanel2",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "It scans fingerprints and matches them to personnel data.",
+      "//name" : "bunkerhandscanner",
+      "//shortdescription" : "Fingerprint Scanner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkerhandscanner",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A device to scan eyeballs and match them to personnel data.",
+      "//name" : "bunkereyescanner",
+      "//shortdescription" : "Eye Scanner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkereyescanner",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A metal fence with red and black warning stripes.",
+      "//name" : "miningfence",
+      "//shortdescription" : "Mining Railing",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "miningfence",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "The display shows a round central room branching off into several hallways.",
+      "//name" : "bunkerdisplay1",
+      "//shortdescription" : "Blueprint Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerdisplay1",
+      "tilesetDirection" : "left"
+    },
+    "41" : {
+      "//description" : "An office desk with a built-in monitor. Looks like someone was doing some coding.",
+      "//name" : "bunkerdesk",
+      "//shortdescription" : "Metal Office Desk",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkerdesk",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "It's a screen full of super top secret mission data... Boring.",
+      "//name" : "bunkerconsole4",
+      "//shortdescription" : "Wide Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole4",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "It looks like a screen full of personnel memos.",
+      "//name" : "bunkerconsole3",
+      "//shortdescription" : "Small Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole3",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "It looks like a screen full of personnel memos.",
+      "//name" : "bunkerconsole3_orientation1",
+      "//shortdescription" : "Small Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole3",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "It's full of really tempting levers but I should probably leave it alone.",
+      "//name" : "bunkerconsole1",
+      "//shortdescription" : "Command Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole1",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "The amount of data on this screen is overwhelming.",
+      "//name" : "bunkerbigpanel",
+      "//shortdescription" : "Large Monitor",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-16",
+      "object" : "bunkerbigpanel",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "Basic Bath",
+      "//name" : "basicbath",
+      "//shortdescription" : "Basic Bath",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "basicbath",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation2",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "left"
+    },
+    "5" : {
+      "//description" : "A large, industrial mining drill.",
+      "//name" : "drillmachine",
+      "//shortdescription" : "Mining Drill",
+      "imagePositionX" : "-88",
+      "imagePositionY" : "0",
+      "object" : "drillmachine",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation3",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation4",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation5",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "Nuke all the foods!",
+      "//name" : "microwave",
+      "//shortdescription" : "Microwave",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "microwave",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "This sign appears to be warning me of some danger.",
+      "//name" : "deathwarningmodern",
+      "//shortdescription" : "Death Warning Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "deathwarningmodern"
+    },
+    "55" : {
+      "//description" : "A door made of thick metal bars.",
+      "//name" : "prisondoor",
+      "//shortdescription" : "Barred Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisondoor"
+    },
+    "56" : {
+      "//description" : "A blindingly bright fluorescent light.",
+      "//name" : "bunkerlighth",
+      "//shortdescription" : "Wide Fluorescent Lamp",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerlighth",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "An uncomfortable-looking chair.",
+      "//name" : "tungstenchair",
+      "//shortdescription" : "Metal Folding Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tungstenchair",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "Some rusty old vehicle, broken beyond repair.",
+      "//name" : "recreationalvehicle",
+      "//shortdescription" : "Recreational Vehicle",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "recreationalvehicle",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A large, industrial mining drill.",
+      "//name" : "drillmachine_orientation1",
+      "//shortdescription" : "Mining Drill",
+      "imagePositionX" : "-104",
+      "imagePositionY" : "0",
+      "object" : "drillmachine",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "A bare lightbulb hanging from a metal rod in the ceiling.",
+      "//name" : "lightbulb",
+      "//shortdescription" : "Flickering Lightbulb",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "lightbulb"
+    },
+    "61" : {
+      "//description" : "This chair is egg-shaped. I'm not sure whose idea that was.",
+      "//name" : "eggchair",
+      "//shortdescription" : "Egg Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "eggchair",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "Ooh, what should I get?",
+      "//name" : "vendingmachine",
+      "//shortdescription" : "Vending Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "vendingmachine",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive.",
+      "//name" : "humanfuelhatch",
+      "//shortdescription" : "FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "humanfuelhatch"
+    },
+    "64" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1",
+      "//shortdescription" : "Green Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "The sign says, \"Cell Block\".",
+      "//name" : "prisonsign1",
+      "//shortdescription" : "Cell Block Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "prisonsign1"
+    },
+    "66" : {
+      "//description" : "The panel displays information about interacting with prisoners...",
+      "//name" : "prisonpanel",
+      "//shortdescription" : "USCM Penal Colony Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonpanel",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "It's been so long since I had a home cooked meal... or a home.",
+      "//name" : "oven1",
+      "//shortdescription" : "Basic Oven",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "oven1",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "A support beam painted with cautionary stripes. Mind your head!",
+      "//name" : "bunkercorner",
+      "//shortdescription" : "Metal Support Beam",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bunkercorner",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "A support beam painted with cautionary stripes. Mind your head!",
+      "//name" : "bunkercorner_orientation1",
+      "//shortdescription" : "Metal Support Beam",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bunkercorner",
+      "tilesetDirection" : "left"
+    },
+    "7" : {
+      "//description" : "These cosy beds can stack on top of each other.",
+      "//name" : "lunarbasebunk",
+      "//shortdescription" : "Lunar Base Bunk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "lunarbasebunk",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "A support beam painted with cautionary stripes. Mind your head!",
+      "//name" : "bunkercorner_orientation2",
+      "//shortdescription" : "Metal Support Beam",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bunkercorner",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "A support beam painted with cautionary stripes. Mind your head!",
+      "//name" : "bunkercorner_orientation3",
+      "//shortdescription" : "Metal Support Beam",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bunkercorner",
+      "tilesetDirection" : "left"
+    },
+    "72" : {
+      "//description" : "If I look at these lights any longer, I'll probably go blind.",
+      "//name" : "floodlights",
+      "//shortdescription" : "Floodlights",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floodlights",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent2",
+      "//shortdescription" : "Green Basic Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent2",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "A screen with a pie chart representing budget statistics.",
+      "//name" : "bunkerdisplay2",
+      "//shortdescription" : "Statistical Display",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "bunkerdisplay2",
+      "tilesetDirection" : "left"
+    },
+    "75" : {
+      "//description" : "A storage crate, typically used for stashing equipment and ores.",
+      "//name" : "lunarbasecrate",
+      "//shortdescription" : "Lunar Base Crate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "lunarbasecrate",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "A painting of a blonde woman standing in a clam.",
+      "//name" : "paintingbirthofvenus",
+      "//shortdescription" : "Beautiful Painting",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "paintingbirthofvenus"
+    },
+    "77" : {
+      "//description" : "A torture bed. Terrifying! Thank goodness for the pillow.",
+      "//name" : "prisontorturebed1",
+      "//shortdescription" : "Upright Torture Bed",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisontorturebed1",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//description" : "An industrial-looking metal door.",
+      "//name" : "miningdoor",
+      "//shortdescription" : "Miner's Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "miningdoor",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "The sign says \"DANGER\". Wait, how do these people know my middle name?",
+      "//name" : "dangersignh",
+      "//shortdescription" : "Horizontal Danger Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "dangersignh"
+    },
+    "8" : {
+      "//description" : "Ancient Greek marble sculpture, Venus De Pixel. Sculptor Unknown.",
+      "//name" : "venusdepixel",
+      "//shortdescription" : "Venus de Pixel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "venusdepixel",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "There were some office supplies and inmate files in this filing cabinet.",
+      "//name" : "prisonfile1",
+      "//shortdescription" : "Rusty Filing Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfile1",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "A fancy modern table to place fancy modern things on.",
+      "//name" : "moderntable",
+      "//shortdescription" : "Modern Table",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "moderntable",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "A vertical hatch doorway.",
+      "//name" : "miningverticaldoor",
+      "//shortdescription" : "Mining Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "miningverticaldoor",
+      "tilesetDirection" : "right"
+    },
+    "83" : {
+      "//description" : "These electric lanterns generate a pleasantly warm light.",
+      "//name" : "lunarbaselantern",
+      "//shortdescription" : "Lunar Base Lantern",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "lunarbaselantern"
+    },
+    "84" : {
+      "//description" : "These electric lanterns generate a pleasantly warm light.",
+      "//name" : "lunarbaselantern_orientation2",
+      "//shortdescription" : "Lunar Base Lantern",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "lunarbaselantern"
+    },
+    "85" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderh",
+      "//shortdescription" : "Horizontal Rusted Girder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongirderh"
+    },
+    "86" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderh_orientation2",
+      "//shortdescription" : "Horizontal Rusted Girder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongirderh"
+    },
+    "87" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderh_orientation3",
+      "//shortdescription" : "Horizontal Rusted Girder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongirderh"
+    },
+    "88" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderh_orientation4",
+      "//shortdescription" : "Horizontal Rusted Girder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongirderh"
+    },
+    "89" : {
+      "//description" : "Graffiti. A harsh warning. Ignore it.",
+      "//name" : "prisongraffiti3",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "prisongraffiti3"
+    },
+    "9" : {
+      "//description" : "A warning sign showing falling rocks.",
+      "//name" : "fallingrocksmodern",
+      "//shortdescription" : "Falling Rocks Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fallingrocksmodern"
+    },
+    "90" : {
+      "//description" : "Two keyboards and one monitor?",
+      "//name" : "bunkerconsole2",
+      "//shortdescription" : "Large Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole2",
+      "tilesetDirection" : "right"
+    },
+    "91" : {
+      "//description" : "Graffiti. The writer seems somewhat peeved.",
+      "//name" : "prisongraffiti5",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-8",
+      "object" : "prisongraffiti5"
+    },
+    "92" : {
+      "//description" : "A fence fashioned out of heavy metal pipes.",
+      "//name" : "prisonpipefence",
+      "//shortdescription" : "Pipe Fence",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonpipefence"
+    },
+    "93" : {
+      "//description" : "Rusted metal grates meant for ventilation.",
+      "//name" : "prisongrateh",
+      "//shortdescription" : "Horizonal Metal Grates",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongrateh",
+      "tilesetDirection" : "right"
+    },
+    "94" : {
+      "//description" : "Waz.",
+      "//name" : "prisongraffiti1",
+      "//shortdescription" : "'Waz' Graffiti",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-16",
+      "object" : "prisongraffiti1"
+    },
+    "95" : {
+      "//description" : "A machine used for breaking down rocks.",
+      "//name" : "miningcrusher",
+      "//shortdescription" : "Mining Impact Crusher",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "miningcrusher",
+      "tilesetDirection" : "right"
+    },
+    "96" : {
+      "//description" : "A blindingly bright fluorescent light.",
+      "//name" : "bunkerlightv",
+      "//shortdescription" : "Tall Fluorescent Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "bunkerlightv",
+      "tilesetDirection" : "right"
+    },
+    "97" : {
+      "//name" : "brokenhumanfuelhatchTier0",
+      "invalid" : "true"
+    },
+    "98" : {
+      "//description" : "A shiny glass panel.",
+      "//name" : "glasspanel",
+      "//shortdescription" : "Glass Panel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glasspanel",
+      "tilesetDirection" : "right"
+    },
+    "99" : {
+      "//description" : "A portrait of a woman with an earring.",
+      "//name" : "paintingpearlearring",
+      "//shortdescription" : "Subtle Painting",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "paintingpearlearring"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertable3.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/humantechstationTier0.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbaselaser.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv_orientation1.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv_orientation2.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv_orientation3.png"
+    },
+    "104" : {
+      "image" : "../../../../../tiled/packed/objects/basictv.png"
+    },
+    "105" : {
+      "image" : "../../../../../tiled/packed/objects/paintingcreationofpixel.png"
+    },
+    "106" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertable1.png"
+    },
+    "107" : {
+      "image" : "../../../../../tiled/packed/objects/prisonexitsign.png"
+    },
+    "108" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncorner.png"
+    },
+    "109" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncorner_orientation2.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbench.png"
+    },
+    "110" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncorner_orientation3.png"
+    },
+    "111" : {
+      "image" : "../../../../../tiled/packed/objects/lightbulb2.png"
+    },
+    "112" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbaseconsole.png"
+    },
+    "113" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfile2.png"
+    },
+    "114" : {
+      "image" : "../../../../../tiled/packed/objects/prisonshower.png"
+    },
+    "115" : {
+      "image" : "../../../../../tiled/packed/objects/humanshipdoorBroken.png"
+    },
+    "116" : {
+      "image" : "../../../../../tiled/packed/objects/bunkervent.png"
+    },
+    "117" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbag.png"
+    },
+    "118" : {
+      "image" : "../../../../../tiled/packed/objects/modernchair.png"
+    },
+    "119" : {
+      "image" : "../../../../../tiled/packed/objects/miningskip.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpaper3.png"
+    },
+    "120" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight.png"
+    },
+    "121" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight_orientation2.png"
+    },
+    "122" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight_orientation3.png"
+    },
+    "123" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight_orientation4.png"
+    },
+    "124" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight_orientation5.png"
+    },
+    "125" : {
+      "image" : "../../../../../tiled/packed/objects/paintinggothic.png"
+    },
+    "126" : {
+      "image" : "../../../../../tiled/packed/objects/hazardtapev.png"
+    },
+    "127" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbarrelfire.png"
+    },
+    "128" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerheater1.png"
+    },
+    "129" : {
+      "image" : "../../../../../tiled/packed/objects/stepladder.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpaper1.png"
+    },
+    "130" : {
+      "image" : "../../../../../tiled/packed/objects/carbed.png"
+    },
+    "131" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasedoor.png"
+    },
+    "132" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasedoor_orientation1.png"
+    },
+    "133" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdisplay4.png"
+    },
+    "134" : {
+      "image" : "../../../../../tiled/packed/objects/prisonshowerdripping.png"
+    },
+    "135" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfence2.png"
+    },
+    "136" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpaper2.png"
+    },
+    "137" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncontrolpanel.png"
+    },
+    "138" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv.png"
+    },
+    "139" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv_orientation2.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/prisonmirror1.png"
+    },
+    "140" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv_orientation3.png"
+    },
+    "141" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv_orientation4.png"
+    },
+    "142" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv_orientation5.png"
+    },
+    "143" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasechair.png"
+    },
+    "144" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerposter2.png"
+    },
+    "145" : {
+      "image" : "../../../../../tiled/packed/objects/prisontorturebed2.png"
+    },
+    "146" : {
+      "image" : "../../../../../tiled/packed/objects/prisonforcecell.png"
+    },
+    "147" : {
+      "image" : "../../../../../tiled/packed/objects/miningbelt.png"
+    },
+    "148" : {
+      "image" : "../../../../../tiled/packed/objects/barbedwire.png"
+    },
+    "149" : {
+      "image" : "../../../../../tiled/packed/objects/hazardtapeh.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti4.png"
+    },
+    "150" : {
+      "image" : "../../../../../tiled/packed/objects/humanshipdoor.png"
+    },
+    "151" : {
+      "image" : "../../../../../tiled/packed/objects/marinesign.png"
+    },
+    "152" : {
+      "image" : "../../../../../tiled/packed/objects/brokenhumanfuelhatch.png"
+    },
+    "153" : {
+      "image" : "../../../../../tiled/packed/objects/jukebox.png"
+    },
+    "154" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerbookcase.png"
+    },
+    "155" : {
+      "image" : "../../../../../tiled/packed/objects/watermachine.png"
+    },
+    "156" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti2.png"
+    },
+    "157" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti7.png"
+    },
+    "158" : {
+      "image" : "../../../../../tiled/packed/objects/chalktally.png"
+    },
+    "159" : {
+      "image" : "../../../../../tiled/packed/objects/prisonradiator.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken.png"
+    },
+    "160" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerserver.png"
+    },
+    "161" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerceilinglight1.png"
+    },
+    "162" : {
+      "image" : "../../../../../tiled/packed/objects/basictoilet.png"
+    },
+    "163" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbaselocker.png"
+    },
+    "164" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel1.png"
+    },
+    "165" : {
+      "image" : "../../../../../tiled/packed/objects/paintingscream.png"
+    },
+    "166" : {
+      "image" : "../../../../../tiled/packed/objects/bunkermotiondetector.png"
+    },
+    "167" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti6.png"
+    },
+    "168" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerwires.png"
+    },
+    "169" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncabinet1.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation1.png"
+    },
+    "170" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera.png"
+    },
+    "171" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera_orientation1.png"
+    },
+    "172" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera_orientation2.png"
+    },
+    "173" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera_orientation3.png"
+    },
+    "174" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera_orientation4.png"
+    },
+    "175" : {
+      "image" : "../../../../../tiled/packed/objects/miningpowersign.png"
+    },
+    "176" : {
+      "image" : "../../../../../tiled/packed/objects/prisonmattress.png"
+    },
+    "177" : {
+      "image" : "../../../../../tiled/packed/objects/prisonturbine.png"
+    },
+    "178" : {
+      "image" : "../../../../../tiled/packed/objects/prisonmirror2.png"
+    },
+    "179" : {
+      "image" : "../../../../../tiled/packed/objects/flaghuman.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation2.png"
+    },
+    "180" : {
+      "image" : "../../../../../tiled/packed/objects/flaghuman_orientation1.png"
+    },
+    "181" : {
+      "image" : "../../../../../tiled/packed/objects/dangersignv.png"
+    },
+    "182" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2b.png"
+    },
+    "183" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2b_orientation1.png"
+    },
+    "184" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertable2.png"
+    },
+    "185" : {
+      "image" : "../../../../../tiled/packed/objects/humanstoragelocker.png"
+    },
+    "186" : {
+      "image" : "../../../../../tiled/packed/objects/mininghazardsign.png"
+    },
+    "187" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercomputer.png"
+    },
+    "188" : {
+      "image" : "../../../../../tiled/packed/objects/humanteleporterTier0.png"
+    },
+    "189" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfence1.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation3.png"
+    },
+    "190" : {
+      "image" : "../../../../../tiled/packed/objects/drillconsole.png"
+    },
+    "191" : {
+      "image" : "../../../../../tiled/packed/objects/prisonlocker2.png"
+    },
+    "192" : {
+      "image" : "../../../../../tiled/packed/objects/prisontoilet.png"
+    },
+    "193" : {
+      "image" : "../../../../../tiled/packed/objects/prisongratev.png"
+    },
+    "194" : {
+      "image" : "../../../../../tiled/packed/objects/humanteleporter.png"
+    },
+    "195" : {
+      "image" : "../../../../../tiled/packed/objects/arcademachine.png"
+    },
+    "196" : {
+      "image" : "../../../../../tiled/packed/objects/prisonstonesign.png"
+    },
+    "197" : {
+      "image" : "../../../../../tiled/packed/objects/paintingmonalisa.png"
+    },
+    "198" : {
+      "image" : "../../../../../tiled/packed/objects/paintingshakespeare.png"
+    },
+    "199" : {
+      "image" : "../../../../../tiled/packed/objects/paintingstarrynight.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/humanshiplocker.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation4.png"
+    },
+    "200" : {
+      "image" : "../../../../../tiled/packed/objects/persistenceofpixels.png"
+    },
+    "201" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerpanel1.png"
+    },
+    "202" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsign2.png"
+    },
+    "203" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerslidingdoor.png"
+    },
+    "204" : {
+      "image" : "../../../../../tiled/packed/objects/humanshiplockerTier0.png"
+    },
+    "205" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdisplay3.png"
+    },
+    "206" : {
+      "image" : "../../../../../tiled/packed/objects/humantechstation.png"
+    },
+    "207" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerpanel3.png"
+    },
+    "208" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercrate.png"
+    },
+    "209" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerceilinglight2.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation5.png"
+    },
+    "210" : {
+      "image" : "../../../../../tiled/packed/objects/basicbathdripping.png"
+    },
+    "211" : {
+      "image" : "../../../../../tiled/packed/objects/miningchest.png"
+    },
+    "212" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercabinet1.png"
+    },
+    "213" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch.png"
+    },
+    "214" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation2.png"
+    },
+    "215" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation3.png"
+    },
+    "216" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation4.png"
+    },
+    "217" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation5.png"
+    },
+    "218" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation6.png"
+    },
+    "219" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation7.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation6.png"
+    },
+    "220" : {
+      "image" : "../../../../../tiled/packed/objects/humangenerator.png"
+    },
+    "221" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerposter1.png"
+    },
+    "222" : {
+      "image" : "../../../../../tiled/packed/objects/prisonlocker1.png"
+    },
+    "223" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncamerastation.png"
+    },
+    "224" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbed.png"
+    },
+    "225" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbars.png"
+    },
+    "226" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight.png"
+    },
+    "227" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation1.png"
+    },
+    "228" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation2.png"
+    },
+    "229" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation3.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation7.png"
+    },
+    "230" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation4.png"
+    },
+    "231" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation5.png"
+    },
+    "232" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation6.png"
+    },
+    "233" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation7.png"
+    },
+    "234" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation6.png"
+    },
+    "235" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation7.png"
+    },
+    "236" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation8.png"
+    },
+    "237" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation9.png"
+    },
+    "238" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation10.png"
+    },
+    "239" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation11.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/lavalamp1.png"
+    },
+    "240" : {
+      "image" : "../../../../../tiled/packed/objects/tent1red.png"
+    },
+    "241" : {
+      "image" : "../../../../../tiled/packed/objects/tent1blue.png"
+    },
+    "242" : {
+      "image" : "../../../../../tiled/packed/objects/tent2yellow.png"
+    },
+    "243" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbagred.png"
+    },
+    "244" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbaggreen.png"
+    },
+    "245" : {
+      "image" : "../../../../../tiled/packed/objects/humanshiphatch.png"
+    },
+    "246" : {
+      "image" : "../../../../../tiled/packed/objects/playerstationconsole.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/fridge.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation2.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation3.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation4.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/humancaptainschair.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation5.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation6.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation7.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation8.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation9.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv2.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/prisontable.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerpanel2.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerhandscanner.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/bunkereyescanner.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/miningfence.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdisplay1.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdesk.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole4.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole3.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole3_orientation1.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole1.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerbigpanel.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/basicbath.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation2.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/drillmachine.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation3.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation4.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation5.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/microwave.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/deathwarningmodern.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/prisondoor.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerlighth.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/tungstenchair.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/recreationalvehicle.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/drillmachine_orientation1.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/lightbulb.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/eggchair.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/vendingmachine.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/humanfuelhatch.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/tent1.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsign1.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpanel.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/oven1.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercorner.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercorner_orientation1.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasebunk.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercorner_orientation2.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercorner_orientation3.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/floodlights.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/tent2.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdisplay2.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasecrate.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/paintingbirthofvenus.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/prisontorturebed1.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/miningdoor.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/dangersignh.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/venusdepixel.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfile1.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/moderntable.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/miningverticaldoor.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbaselantern.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbaselantern_orientation2.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderh.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderh_orientation2.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderh_orientation3.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderh_orientation4.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti3.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/fallingrocksmodern.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole2.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti5.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpipefence.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/prisongrateh.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti1.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/miningcrusher.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerlightv.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/glasspanel.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/paintingpearlearring.png"
+    }
+  },
+  "tilewidth" : 8
+}

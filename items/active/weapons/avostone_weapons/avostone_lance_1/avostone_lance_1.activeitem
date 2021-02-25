@@ -1,0 +1,52 @@
+{
+  "itemName" : "avostone_lance_1",
+  "price" : 1000,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A bright spear crafted from avostone.",
+  "shortdescription" : "Star Breaker",
+  "tooltipKind" : "sword",
+  "category" : "arcana_lance",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+  "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "avostone_lance_1" },
+
+  "inventoryIcon" : "avostone_lance_1.png",
+
+  "animation" : "/items/active/weapons/melee/spear/avostone_lance_1.animation",
+  "animationParts" : {
+    "handle" : "avostone_lance_1_fullbright.png",
+    "blade" : "avostone_lance_1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 10.8
+  },
+
+  "altAbilityType" : "flurry",
+  "altAbility" : {
+	"name" : "Heavy Flurry",
+	"cooldownResetTime" : 0.4,
+    "maxCooldownTime" : 0.4,
+    "minCooldownTime" : 0.3,
+    "cooldownSwingReduction" : 0.08,
+    "energyUsage" : 11.0,
+    "cooldownTime" : 0.4
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

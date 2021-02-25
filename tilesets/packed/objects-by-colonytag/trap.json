@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/trap",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation1",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation2",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation3",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation4",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation5",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation1.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation2.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation3.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation4.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation5.png"
+    }
+  },
+  "tilewidth" : 8
+}

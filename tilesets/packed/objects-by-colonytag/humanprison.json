@@ -1,0 +1,1121 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/humanprison",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 94,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A simple bench, save for the fact that the legs are nailed to the floor.",
+      "//name" : "prisonbench",
+      "//shortdescription" : "Metal Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonbench",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Inmate #2162's Study Group for Criminals Who Can't Read Good",
+      "//name" : "prisonpaper3",
+      "//shortdescription" : "Event Memo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonpaper3",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation5",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation6",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation7",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "Just a typical cafeteria table.",
+      "//name" : "prisontable",
+      "//shortdescription" : "Cafeteria Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisontable",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A door made of thick metal bars.",
+      "//name" : "prisondoor",
+      "//shortdescription" : "Barred Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisondoor"
+    },
+    "15" : {
+      "//description" : "An uncomfortable-looking chair.",
+      "//name" : "tungstenchair",
+      "//shortdescription" : "Metal Folding Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tungstenchair",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A bare lightbulb hanging from a metal rod in the ceiling.",
+      "//name" : "lightbulb",
+      "//shortdescription" : "Flickering Lightbulb",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "lightbulb"
+    },
+    "17" : {
+      "//description" : "The sign says, \"Cell Block\".",
+      "//name" : "prisonsign1",
+      "//shortdescription" : "Cell Block Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "prisonsign1"
+    },
+    "18" : {
+      "//description" : "The panel displays information about interacting with prisoners...",
+      "//name" : "prisonpanel",
+      "//shortdescription" : "USCM Penal Colony Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonpanel",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A torture bed. Terrifying! Thank goodness for the pillow.",
+      "//name" : "prisontorturebed1",
+      "//shortdescription" : "Upright Torture Bed",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisontorturebed1",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A notice written in ink.",
+      "//name" : "prisonpaper1",
+      "//shortdescription" : "Notice",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonpaper1",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "There were some office supplies and inmate files in this filing cabinet.",
+      "//name" : "prisonfile1",
+      "//shortdescription" : "Rusty Filing Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfile1",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderh",
+      "//shortdescription" : "Horizontal Rusted Girder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongirderh"
+    },
+    "22" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderh_orientation2",
+      "//shortdescription" : "Horizontal Rusted Girder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongirderh"
+    },
+    "23" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderh_orientation3",
+      "//shortdescription" : "Horizontal Rusted Girder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongirderh"
+    },
+    "24" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderh_orientation4",
+      "//shortdescription" : "Horizontal Rusted Girder",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongirderh"
+    },
+    "25" : {
+      "//description" : "Graffiti. A harsh warning. Ignore it.",
+      "//name" : "prisongraffiti3",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "prisongraffiti3"
+    },
+    "26" : {
+      "//description" : "Graffiti. The writer seems somewhat peeved.",
+      "//name" : "prisongraffiti5",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-8",
+      "object" : "prisongraffiti5"
+    },
+    "27" : {
+      "//description" : "A fence fashioned out of heavy metal pipes.",
+      "//name" : "prisonpipefence",
+      "//shortdescription" : "Pipe Fence",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonpipefence"
+    },
+    "28" : {
+      "//description" : "Rusted metal grates meant for ventilation.",
+      "//name" : "prisongrateh",
+      "//shortdescription" : "Horizonal Metal Grates",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongrateh",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "Waz.",
+      "//name" : "prisongraffiti1",
+      "//shortdescription" : "'Waz' Graffiti",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-16",
+      "object" : "prisongraffiti1"
+    },
+    "3" : {
+      "//description" : "Looks like someone had a case of the Mondays.",
+      "//name" : "prisonmirror1",
+      "//shortdescription" : "Large Broken Mirror",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "prisonmirror1",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "If you go this way, you're sure to be exiting... something.",
+      "//name" : "prisonexitsign",
+      "//shortdescription" : "Exit Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonexitsign",
+      "tilesetDirection" : "left"
+    },
+    "31" : {
+      "//description" : "A decorative gothic corner.",
+      "//name" : "prisoncorner",
+      "//shortdescription" : "Decorative Support Beam",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisoncorner",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A decorative gothic corner.",
+      "//name" : "prisoncorner_orientation2",
+      "//shortdescription" : "Decorative Support Beam",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisoncorner",
+      "tilesetDirection" : "left"
+    },
+    "33" : {
+      "//description" : "A decorative gothic corner.",
+      "//name" : "prisoncorner_orientation3",
+      "//shortdescription" : "Decorative Support Beam",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisoncorner",
+      "tilesetDirection" : "left"
+    },
+    "34" : {
+      "//description" : "A bare lightbulb hanging from a metal rod in the ceiling.",
+      "//name" : "lightbulb2",
+      "//shortdescription" : "Lightbulb",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "lightbulb2"
+    },
+    "35" : {
+      "//description" : "There were some office supplies and inmate files in this filing cabinet.",
+      "//name" : "prisonfile2",
+      "//shortdescription" : "Wide Rusty Filing Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonfile2",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A shower. Perfect for a clean getaway. If the water was actually clean.",
+      "//name" : "prisonshower",
+      "//shortdescription" : "Rusty Shower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "prisonshower",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight_orientation2",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight_orientation3",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A crudely-drawn skull. It looks cheerful.",
+      "//name" : "prisongraffiti4",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisongraffiti4"
+    },
+    "40" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight_orientation4",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A cheap electric light.",
+      "//name" : "electriclight_orientation5",
+      "//shortdescription" : "Electric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electriclight",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "Fire in a rusted-out barrel.",
+      "//name" : "prisonbarrelfire",
+      "//shortdescription" : "Barrel Fire",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonbarrelfire",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A shower. Perfect for a clean getaway.",
+      "//name" : "prisonshowerdripping",
+      "//shortdescription" : "Dripping Prison Shower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "prisonshowerdripping",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "It's a chain-link fence.",
+      "//name" : "prisonfence2",
+      "//shortdescription" : "Short Chain-link Fence",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonfence2"
+    },
+    "45" : {
+      "//description" : "The paper is ripped and the words are smudged.",
+      "//name" : "prisonpaper2",
+      "//shortdescription" : "USCM Torn Memo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonpaper2",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A control panel that appears to operate lights, doors and alarms.",
+      "//name" : "prisoncontrolpanel",
+      "//shortdescription" : "Security Control Panel",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisoncontrolpanel",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv_orientation2",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv_orientation3",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv_orientation4",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "Rusty old girder beams - can't be too safe.",
+      "//name" : "prisongirderv_orientation5",
+      "//shortdescription" : "Vertical Rusted Girder",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "prisongirderv",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A torture bed. Terrifying! Thank goodness for the pillow.",
+      "//name" : "prisontorturebed2",
+      "//shortdescription" : "Torture Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisontorturebed2",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "Some sort of solitary confinement device, maybe?",
+      "//name" : "prisonforcecell",
+      "//shortdescription" : "Force Cell",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonforcecell",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "Ouch! I shouldn't get too close to that.",
+      "//name" : "barbedwire",
+      "//shortdescription" : "Barbed Wire",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "barbedwire",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "Sure seems that way, Anonymous Graffiti Artist.",
+      "//name" : "prisongraffiti2",
+      "//shortdescription" : "\"No Escape\" Graffiti",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "-16",
+      "object" : "prisongraffiti2"
+    },
+    "56" : {
+      "//description" : "The words \"get out\" have been written in blood. You can tell the writer was serious.",
+      "//name" : "prisongraffiti7",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-56",
+      "imagePositionY" : "-8",
+      "object" : "prisongraffiti7"
+    },
+    "57" : {
+      "//description" : "Someone couldn't count to 25.",
+      "//name" : "chalktally",
+      "//shortdescription" : "Tally Marks",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "chalktally"
+    },
+    "58" : {
+      "//description" : "The space heater emits a low, unpleasant hum.",
+      "//name" : "prisonradiator",
+      "//shortdescription" : "Old Radiator",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonradiator",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "Graffiti reading \"turn back\". Chances of it being adhered to: zero.",
+      "//name" : "prisongraffiti6",
+      "//shortdescription" : "Graffiti",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisongraffiti6"
+    },
+    "6" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation1",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "Looks like it used to be filled with medical supplies - not any more.",
+      "//name" : "prisoncabinet1",
+      "//shortdescription" : "Broken Supply Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisoncabinet1",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera_orientation1",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera_orientation2",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera_orientation3",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "A security camera. An all-seeing eye.",
+      "//name" : "prisonsecuritycamera_orientation4",
+      "//shortdescription" : "Security Camera",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonsecuritycamera",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "This mattress is filthy! I swear I just saw something crawling around inside.",
+      "//name" : "prisonmattress",
+      "//shortdescription" : "Dirty Mattress",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonmattress",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "It's a turbine. Y'know, for science.",
+      "//name" : "prisonturbine",
+      "//shortdescription" : "Small Turbine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonturbine",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "Looks like someone had a case of the Mondays.",
+      "//name" : "prisonmirror2",
+      "//shortdescription" : "Small Broken Mirror",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonmirror2",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "It's a chain-link fence.",
+      "//name" : "prisonfence1",
+      "//shortdescription" : "Tall Chain-link Fence",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonfence1"
+    },
+    "7" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation2",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "A good place to stash contraband.",
+      "//name" : "prisonlocker2",
+      "//shortdescription" : "Tall Prison Locker",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonlocker2",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "Looks like someone had a rough night.",
+      "//name" : "prisontoilet",
+      "//shortdescription" : "Dirty Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisontoilet",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "Rusted metal grates meant for ventilation.",
+      "//name" : "prisongratev",
+      "//shortdescription" : "Vertical Metal Grates",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "prisongratev",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "USCM, huh? I wouldn't wanna be one of their prisoners.",
+      "//name" : "prisonstonesign",
+      "//shortdescription" : "USCM Penal Colony Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonstonesign",
+      "tilesetDirection" : "left"
+    },
+    "74" : {
+      "//description" : "The sign says, \"Mess Hall\".",
+      "//name" : "prisonsign2",
+      "//shortdescription" : "Mess Hall Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "prisonsign2"
+    },
+    "75" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "left"
+    },
+    "76" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation2",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation3",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation4",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation5",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation3",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation6",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "An ornate gothic arch.",
+      "//name" : "prisonarch_orientation7",
+      "//shortdescription" : "Gothic Arch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonarch",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "A good place to stash contraband.",
+      "//name" : "prisonlocker1",
+      "//shortdescription" : "Small Prison Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonlocker1",
+      "tilesetDirection" : "right"
+    },
+    "83" : {
+      "//description" : "A set of monitors displaying the feeds from security cameras. Watch out for paranormal activity.",
+      "//name" : "prisoncamerastation",
+      "//shortdescription" : "Security Camera Station",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisoncamerastation",
+      "tilesetDirection" : "right"
+    },
+    "84" : {
+      "//description" : "A cold, hard slab of metal meant to serve as a bed.",
+      "//name" : "prisonbed",
+      "//shortdescription" : "Chained Metal Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonbed",
+      "tilesetDirection" : "right"
+    },
+    "85" : {
+      "//description" : "Thick metal bars surround each cell. Chance of escape seems pretty slim.",
+      "//name" : "prisonbars",
+      "//shortdescription" : "Prison Bars",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonbars"
+    },
+    "86" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "87" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation1",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation2",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "89" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation3",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A flickering light to set that creepy mood.",
+      "//name" : "prisonfloodlightBroken_orientation4",
+      "//shortdescription" : "Small Broken Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlightBroken",
+      "tilesetDirection" : "right"
+    },
+    "90" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation4",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "91" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation5",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "92" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation6",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    },
+    "93" : {
+      "//description" : "It feels like I'm on stage!",
+      "//name" : "prisonfloodlight_orientation7",
+      "//shortdescription" : "Small Floodlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonfloodlight",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbench.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpaper3.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation5.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation6.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation7.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/prisontable.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/prisondoor.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/tungstenchair.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/lightbulb.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsign1.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpanel.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/prisontorturebed1.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpaper1.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfile1.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderh.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderh_orientation2.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderh_orientation3.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderh_orientation4.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti3.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti5.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpipefence.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/prisongrateh.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti1.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/prisonmirror1.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/prisonexitsign.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncorner.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncorner_orientation2.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncorner_orientation3.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/lightbulb2.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfile2.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/prisonshower.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight_orientation2.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight_orientation3.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti4.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight_orientation4.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/electriclight_orientation5.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbarrelfire.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/prisonshowerdripping.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfence2.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/prisonpaper2.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncontrolpanel.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv_orientation2.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv_orientation3.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv_orientation4.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/prisongirderv_orientation5.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/prisontorturebed2.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/prisonforcecell.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/barbedwire.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti2.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti7.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/chalktally.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/prisonradiator.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/prisongraffiti6.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation1.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncabinet1.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera_orientation1.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera_orientation2.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera_orientation3.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsecuritycamera_orientation4.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/prisonmattress.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/prisonturbine.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/prisonmirror2.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfence1.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation2.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/prisonlocker2.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/prisontoilet.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/prisongratev.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/prisonstonesign.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/prisonsign2.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation2.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation3.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation4.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation5.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation3.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation6.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/prisonarch_orientation7.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/prisonlocker1.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/prisoncamerastation.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbed.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbars.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation1.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation2.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation3.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlightBroken_orientation4.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation4.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation5.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation6.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/prisonfloodlight_orientation7.png"
+    }
+  },
+  "tilewidth" : 8
+}

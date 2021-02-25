@@ -1,0 +1,28 @@
+{
+  "projectileName" : "arcana_throwable_boss_evolapis",
+  "image" : "arcana_throwable_boss_evolapis.png",
+  "animationCycle" : 0.05,
+  "physics" : "grenade",
+  "frameNumber" : 1,
+  "pointLight" : true,
+  "lightColor" : [100, 100, 100],
+  "speed" : 40,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+		"action" : "spawnmonster",
+		"type" : "arcana_boss_evolapis",
+		"offset": [ 0, 32 ],
+		"arguments" : { }
+	}
+  ],
+  "power" : 0.0,
+  "knockback" : 4,
+  "damageKind" : "dagger",
+  "emitters" : [ "rocketsmoke" ]
+}
+
+

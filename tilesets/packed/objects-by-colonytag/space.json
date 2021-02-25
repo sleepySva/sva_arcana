@@ -1,0 +1,74 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/space",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 5,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A legendary testament to early space travel.",
+      "//name" : "lunarlander",
+      "//shortdescription" : "Lunar Lander",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "lunarlander",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A screen displaying a series of space-themed photographs.",
+      "//name" : "spaceslideshow",
+      "//shortdescription" : "Space Slideshow",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-16",
+      "object" : "spaceslideshow",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A scientific telescope, perfect for observing the stars.",
+      "//name" : "telescope",
+      "//shortdescription" : "Astronomy Telescope",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "telescope",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A scientific telescope, perfect for observing the stars.",
+      "//name" : "telescope_orientation1",
+      "//shortdescription" : "Astronomy Telescope",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "telescope",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A panel that generates electricity from solar energy.",
+      "//name" : "solarpanel",
+      "//shortdescription" : "Solar Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "solarpanel",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/lunarlander.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/spaceslideshow.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/telescope.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/telescope_orientation1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/solarpanel.png"
+    }
+  },
+  "tilewidth" : 8
+}

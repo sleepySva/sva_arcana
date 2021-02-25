@@ -1,0 +1,21 @@
+{
+  "materialId" : 16677,
+  "materialName" : "borealite_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "borealite_tile5",
+  "description" : "A borealite beam.",
+  "shortdescription" : "Opus Deca",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "borealite_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 605
+  }
+}

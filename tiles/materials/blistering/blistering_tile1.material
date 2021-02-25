@@ -1,0 +1,21 @@
+{
+  "materialId" : 16609,
+  "materialName" : "blistering_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "blistering_tile1",
+  "description" : "A reddish cobblestone block.",
+  "shortdescription" : "Blistering Cobblestone",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "blistering_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1319
+  }
+}

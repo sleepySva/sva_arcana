@@ -1,0 +1,475 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/foundry",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 39,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "<An /'Or'/ switch. Allows you to have multiple individual inputs.>",
+      "//name" : "foundryor",
+      "//shortdescription" : "Foundry Or Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundryor",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A console with interesting looking levels and lightbulbs.",
+      "//name" : "foundryconsole",
+      "//shortdescription" : "Foundry Console",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "foundryconsole",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A container full of bubbling of molten liquid.",
+      "//name" : "ladlelarge",
+      "//shortdescription" : "Large Ladle",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "ladlelarge",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A sealed tank full of molten liquid.",
+      "//name" : "lavatanklarge",
+      "//shortdescription" : "Large Lava tank",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "lavatanklarge",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "The lava in this small fountain is superheated to brightly glow.",
+      "//name" : "foundrylight",
+      "//shortdescription" : "Foundry Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "foundrylight",
+      "tilesetDirection" : "left"
+    },
+    "13" : {
+      "//description" : "The lava in this small fountain is superheated to brightly glow.",
+      "//name" : "foundrylight_orientation1",
+      "//shortdescription" : "Foundry Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "foundrylight",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "The lava in this small fountain is superheated to brightly glow.",
+      "//name" : "foundrylight_orientation2",
+      "//shortdescription" : "Foundry Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "foundrylight",
+      "tilesetDirection" : "left"
+    },
+    "15" : {
+      "//description" : "The lava in this small fountain is superheated to brightly glow.",
+      "//name" : "foundrylight_orientation3",
+      "//shortdescription" : "Foundry Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "foundrylight",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "An industrial sized set of bellows from a foundry.",
+      "//name" : "foundrybellow",
+      "//shortdescription" : "Foundry Bellows",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "foundrybellow",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "<A timer. For when you need time to get away.>",
+      "//name" : "foundrytimer4s",
+      "//shortdescription" : "Foundry Timer (4 Sec)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrytimer4s"
+    },
+    "18" : {
+      "//description" : "<A circuit that relays signals after a set delay.>",
+      "//name" : "foundrydelay",
+      "//shortdescription" : "Foundry Delay Gate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrydelay",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A heavy metallic chair.",
+      "//name" : "foundrychair",
+      "//shortdescription" : "Heavy Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundrychair",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "<An /'And'/ switch. Requires all inputs to be /'on'/ to work.>",
+      "//name" : "foundryand",
+      "//shortdescription" : "Foundry And Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundryand",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "<A /'Not'/ switch. Inverts the input on the circuit.>",
+      "//name" : "foundrynot",
+      "//shortdescription" : "Foundry Not Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrynot",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "An XOR switch. The output will be on when exactly one of the inputs is on.",
+      "//name" : "foundryxor",
+      "//shortdescription" : "Foundry XOR Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundryxor",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A heavy metal door often used in foundries.",
+      "//name" : "foundrydoor",
+      "//shortdescription" : "Heavy Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundrydoor",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "<A timer. For when you need time to get away.>",
+      "//name" : "foundrytimer",
+      "//shortdescription" : "Foundry Timer (0.5 Sec)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrytimer"
+    },
+    "24" : {
+      "//description" : "A bed with a large lamp over it, producing considerable heat.",
+      "//name" : "foundrybed",
+      "//shortdescription" : "Foundry Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "foundrybed",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "<A timer. For when you need time to get away.>",
+      "//name" : "foundrytimer3s",
+      "//shortdescription" : "Foundry Timer (3 Sec)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrytimer3s"
+    },
+    "26" : {
+      "//description" : "<A timer. For when you need time to get away.>",
+      "//name" : "foundrytimer5s",
+      "//shortdescription" : "Foundry Timer (5 Sec)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrytimer5s"
+    },
+    "27" : {
+      "//description" : "A bright sign warning of dangerously high temperatures.",
+      "//name" : "foundrysign",
+      "//shortdescription" : "Foundry Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundrysign",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A bright sign warning of dangerously high temperatures.",
+      "//name" : "foundrysign_orientation1",
+      "//shortdescription" : "Foundry Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "foundrysign",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A metal girder, usually used for supporting ceilings.",
+      "//name" : "foundrysupport",
+      "//shortdescription" : "Foundry Support",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "foundrysupport",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "This elevator design is commonly seen in foundries.",
+      "//name" : "foundryelevatorshort",
+      "//shortdescription" : "Short Industrial Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundryelevatorshort",
+      "tilesetDirection" : "left"
+    },
+    "30" : {
+      "//description" : "A metal girder, usually used for supporting ceilings.",
+      "//name" : "foundrysupport_orientation1",
+      "//shortdescription" : "Foundry Support",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "foundrysupport",
+      "tilesetDirection" : "left"
+    },
+    "31" : {
+      "//description" : "A metal girder, usually used for supporting ceilings.",
+      "//name" : "foundrysupport_orientation2",
+      "//shortdescription" : "Foundry Support",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "foundrysupport",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A metal girder, usually used for supporting ceilings.",
+      "//name" : "foundrysupport_orientation3",
+      "//shortdescription" : "Foundry Support",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "foundrysupport",
+      "tilesetDirection" : "left"
+    },
+    "33" : {
+      "//description" : "A switch for activating foundry machinery.",
+      "//name" : "foundryswitch",
+      "//shortdescription" : "Foundry Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundryswitch"
+    },
+    "34" : {
+      "//description" : "This tank cycles the molten liquid inside to keep it from becoming stagnant.",
+      "//name" : "lavatankcascade",
+      "//shortdescription" : "Cascading Lava Tank",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "lavatankcascade",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A lamp illuminated by suspended globules of lava.",
+      "//name" : "magmalamp",
+      "//shortdescription" : "Magma Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "magmalamp",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A button fit for purpose in a foundry.",
+      "//name" : "foundrybutton",
+      "//shortdescription" : "Foundry Button",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrybutton",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A tall container full of bubbling of molten liquid.",
+      "//name" : "ladlesmall",
+      "//shortdescription" : "Small Ladle",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "ladlesmall",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A tall container full of bubbling of molten liquid.",
+      "//name" : "ladlesmall_orientation1",
+      "//shortdescription" : "Small Ladle",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "ladlesmall",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "<A Latch. You'll only need to use this if you already know what it is.>",
+      "//name" : "foundrydlatch",
+      "//shortdescription" : "Foundry Latch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrydlatch",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "<A timer. For when you need time to get away.>",
+      "//name" : "foundrytimer1s",
+      "//shortdescription" : "Foundry Timer (1 Sec)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrytimer1s"
+    },
+    "6" : {
+      "//description" : "<A timer that stays active for a set duration.>",
+      "//name" : "foundrycountdowntimer",
+      "//shortdescription" : "Foundry Countdown Timer",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrycountdowntimer",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A small tank full of molten liquid.",
+      "//name" : "lavatanksmall",
+      "//shortdescription" : "Small Lava Tank",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "lavatanksmall",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "<A timer. For when you need time to get away.>",
+      "//name" : "foundrytimer2s",
+      "//shortdescription" : "Foundry Timer (2 Sec)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "foundrytimer2s"
+    },
+    "9" : {
+      "//description" : "This elevator design is commonly seen in foundries.",
+      "//name" : "foundryelevatorlong",
+      "//shortdescription" : "Long Industrial Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundryelevatorlong",
+      "tilesetDirection" : "left"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/foundryor.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/foundryconsole.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/ladlelarge.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/lavatanklarge.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/foundrylight.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/foundrylight_orientation1.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/foundrylight_orientation2.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/foundrylight_orientation3.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/foundrybellow.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/foundrytimer4s.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/foundrydelay.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/foundrychair.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/foundryand.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/foundrynot.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/foundryxor.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/foundrydoor.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/foundrytimer.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/foundrybed.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/foundrytimer3s.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/foundrytimer5s.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/foundrysign.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/foundrysign_orientation1.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/foundrysupport.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/foundryelevatorshort.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/foundrysupport_orientation1.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/foundrysupport_orientation2.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/foundrysupport_orientation3.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/foundryswitch.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/lavatankcascade.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/magmalamp.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/foundrybutton.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/ladlesmall.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/ladlesmall_orientation1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/foundrydlatch.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/foundrytimer1s.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/foundrycountdowntimer.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/lavatanksmall.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/foundrytimer2s.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/foundryelevatorlong.png"
+    }
+  },
+  "tilewidth" : 8
+}

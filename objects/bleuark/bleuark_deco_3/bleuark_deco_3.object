@@ -1,0 +1,24 @@
+{
+  "objectName" : "bleuark_deco_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A statue completely made from atla gold.",
+  "shortdescription" : "Triton Statue",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "bleuark_deco_3.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

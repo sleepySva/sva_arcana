@@ -1,0 +1,74 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/railpoint",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 5,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Stops and starts rail riders",
+      "//name" : "railstop",
+      "//shortdescription" : "Rail Stop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railstop",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Detects rail riders as they pass through",
+      "//name" : "railsensor",
+      "//shortdescription" : "Rail Sensor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railsensor",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Caps rail endpoints to send riders back the way they came",
+      "//name" : "railbumper",
+      "//shortdescription" : "Rail Bumper",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railbumper",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Directs rail riders to different paths",
+      "//name" : "railswitch",
+      "//shortdescription" : "Rail Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railswitch",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Calls and stops rail trams",
+      "//name" : "railtramstop",
+      "//shortdescription" : "Rail Tram Stop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "railtramstop",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/railstop.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/railsensor.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/railbumper.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/railswitch.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/railtramstop.png"
+    }
+  },
+  "tilewidth" : 8
+}

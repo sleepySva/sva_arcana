@@ -1,0 +1,21 @@
+{
+  "materialId" : 16581,
+  "materialName" : "arcana_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile1",
+  "description" : "A wooden window.",
+  "shortdescription" : "Magiwood Window",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile1.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 171
+  }
+}

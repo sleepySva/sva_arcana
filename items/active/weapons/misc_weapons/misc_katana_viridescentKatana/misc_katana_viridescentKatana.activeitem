@@ -1,0 +1,43 @@
+{
+  "itemName" : "misc_katana_viridescentKatana",
+  "price" : 960,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Also known as the green sword!",
+  "shortdescription" : "Viridescent Katana",
+  "tooltipKind" : "sword",
+  "category" : "arcana_katana",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/katana/arcana_katana_combo_viridescentKatana.animation",
+  "animationParts" : {
+    "handle" : "misc_katana_viridescentKatana_fullbright.png",
+    "blade" : "misc_katana_viridescentKatana.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+	  "fire4" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_katana_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 11.0
+  },
+
+  "altAbilityType" : "parry",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,64 @@
+{
+  "itemName" : "artifact_lance_astrifer",
+  "price" : 60000,
+  "level" : 9,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A lance comparable to the brightest azure star.",
+  "shortdescription" : "Astrifer",
+  "tooltipKind" : "sword",
+  "category" : "arcana_lance",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "inventoryIcon" : "artifact_lance_astrifer.png",
+
+  "animation" : "/items/active/weapons/melee/spear/artifact_lance_astrifer.animation",
+  "animationParts" : {
+    "handle" : "artifact_lance_astrifer_fullbright.png",
+    "blade" : "artifact_lance_astrifer.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "arcana_azure",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 18.0,
+    "damageConfig" : {
+      "damageSourceKind" : "arcana_azure"
+    }
+  },
+
+  "altAbilityType" : "arcana_spear_ability_burstFlurry",
+  "altAbility" : {
+  
+	"projectileCount" : 1,
+    "projectileType" : "artifact_lance_astrifer_projectile_1",
+    "projectileParameters" : {
+      "baseDamage" : 10
+    },
+  
+	"name" : "Astral Flurry",
+	"cooldownResetTime" : 0.18,
+    "maxCooldownTime" : 0.18,
+    "minCooldownTime" : 0.18,
+    "cooldownSwingReduction" : 0.08,
+    "energyUsage" : 16.0,
+    "cooldownTime" : 0.18,
+    "damageConfig" : {
+      "damageSourceKind" : "arcana_azure"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

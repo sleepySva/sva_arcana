@@ -1,0 +1,44 @@
+{
+  "objectName" : "arcana_vendor_6",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "A store that sells a bunch of themed furniture.",
+  "shortdescription" : "Frogg Furnishing",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+  "lightColor" : [200, 100, 160],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_vendor_6.config",
+	"filter" : ["arcana_cyberpunk","arcana_core","arcana_cairene","arcana_elysia"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "arcana_vendor_6.png:<color>" }, { "image" : "arcana_vendor_6_fullbright.png:<color>", "fullbright" : true } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-56, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "arcana_vendor_6.png:<color>" }, { "image" : "arcana_vendor_6_fullbright.png:<color>", "fullbright" : true } ],
+	  "direction" : "right",
+      "imagePosition" : [-56, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

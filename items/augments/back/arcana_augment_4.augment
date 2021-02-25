@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_augment_4",
+  "price" : 5000,
+  "rarity" : "Rare",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_4.png",
+  "description" : "An EPP module that boosts your health regen by a moderate amount and makes you resistant to all element effects.",
+  "shortdescription" : "Arcana III, The Empress",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_1",
+    "displayName" : "The Empress",
+    "displayIcon" : "/items/augments/back/arcana_augment_4.png",
+    "effects" : [ "maxenergyboostaugment1","regenerationaugment1","rageaugment1" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

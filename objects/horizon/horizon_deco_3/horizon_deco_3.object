@@ -1,0 +1,58 @@
+{
+  "objectName" : "horizon_deco_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A purple life support pod.",
+  "shortdescription" : "Purple LSP",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+  
+  "lightColor" : [100, 47, 131],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "horizon_deco_3.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      
+      "direction" : "left",
+      "flipImages" : true,
+      "animationPosition" : [-16, 0],
+      "lightPosition" : [0, 5],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "horizon_deco_3.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      
+      "direction" : "right",
+      "animationPosition" : [-16, 0],
+      "lightPosition" : [0, 5],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/apexpod.ogg",
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "horizon_deco_3.png",
+    "fg" : "fullbright.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16549,
+  "materialName" : "workshop_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "workshop_tile1",
+  "description" : "A wall panel, painted in orange.",
+  "shortdescription" : "Orange Workshop Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "workshop_tile1.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4142
+  }
+}

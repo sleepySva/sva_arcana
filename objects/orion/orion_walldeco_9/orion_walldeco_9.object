@@ -1,0 +1,25 @@
+{
+  "objectName" : "orion_walldeco_9",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A neon display sign.",
+  "shortdescription" : "Neon Display Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "lightColor" : [226, 110, 255],
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_walldeco_9.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 2,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16605,
+  "materialName" : "gaea_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "gaea_tile3",
+  "description" : "A decorative florastone wall.",
+  "shortdescription" : "Florastone Wall",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "gaea_tile3.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 193
+  }
+}

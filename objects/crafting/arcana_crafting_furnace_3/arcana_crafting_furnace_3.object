@@ -1,0 +1,32 @@
+{
+  "objectName" : "arcana_crafting_furnace_3",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A modern smelter, used to produce high tier materials.",
+  "shortdescription" : "Orion Smelter",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [120, 140, 160],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_furnace_3.config",
+	"filter" : ["arcana_crafting_furnace_2", "arcana_crafting_furnace_3"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_furnace_3.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 8,
+      "animationCycle" : 1.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

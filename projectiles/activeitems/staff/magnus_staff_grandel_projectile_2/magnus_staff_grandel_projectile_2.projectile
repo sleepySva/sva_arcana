@@ -1,0 +1,60 @@
+{
+  "projectileName" : "magnus_staff_grandel_projectile_2",
+  "physics" : "laser",
+  "timeToLive" : 5,
+  "bounces" : 0,
+  "image" : "magnus_staff_grandel_projectile_2.png",
+  "animationCycle" : 0.2,
+  
+  "fullbright" : true,
+  "emitters" : ["sparks","smoke"],
+  "frameNumber" : 1,
+  "speed" : 10,
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_yellow/arcana_explosion_plasma_1_yellow.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.2,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/magnus_staff_grandel_projectile_2/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    },
+	{
+		"time" : 2.0,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "magnus_staff_grandel_projectile_1",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.9
+    }
+
+  ],
+  
+  "lightColor" : [80, 70, 20],
+  "damageKind" : "plasma",
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 40,
+    "controlForce" : 20
+  }
+}

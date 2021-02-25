@@ -1,0 +1,50 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/fenerox",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 3,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "An old, worn and dusty chair.",
+      "//name" : "dustychair",
+      "//shortdescription" : "Dusty Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "dustychair",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "An old, worn and dusty bed.",
+      "//name" : "dustybed",
+      "//shortdescription" : "Dusty Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "dustybed",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A dusty wooden table.",
+      "//name" : "dustytable",
+      "//shortdescription" : "Dusty Wooden Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "dustytable",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/dustychair.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/dustybed.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/dustytable.png"
+    }
+  },
+  "tilewidth" : 8
+}

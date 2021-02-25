@@ -1,0 +1,25 @@
+{
+  "objectName" : "empress_table_5",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A black and gold display stand.",
+  "shortdescription" : "Boutique Stand",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "empress_table_5.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

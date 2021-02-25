@@ -1,0 +1,32 @@
+{
+  "objectName" : "arcana_crafting_furnace_2",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A furnace infused with arcane magic.",
+  "shortdescription" : "Arcanium Furnace",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [90, 160, 170],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_furnace_2.config",
+	"filter" : ["arcana_crafting_furnace_2"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_furnace_2.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

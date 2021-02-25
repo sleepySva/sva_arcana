@@ -1,0 +1,271 @@
+{ "margin":0,
+ "name":"miscellaneous",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":24,
+ "tileheight":8,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/description":"Fill with air",
+         "\/\/shortdescription":"Air",
+         "clear":"true"
+        },
+     "1":
+        {
+         "\/\/description":"Paint onto the background layer to not change what the world generator put there",
+         "\/\/shortdescription":"Magic Pink Brush",
+         "clear":"false"
+        },
+     "10":
+        {
+         "\/\/description":"Paint with the default tile for the biome in either foreground or background",
+         "\/\/shortdescription":"Surface",
+         "allowOverdrawing":"true",
+         "surface":"2"
+        },
+     "11":
+        {
+         "\/\/description":"Fill with air (Overwritable)",
+         "\/\/shortdescription":"Air",
+         "allowOverdrawing":"true",
+         "clear":"true"
+        },
+     "12":
+        {
+         "\/\/description":"Connects to other dungeon parts using the same connector",
+         "\/\/shortdescription":"Red Connector",
+         "connector":"255,0,0,255"
+        },
+     "13":
+        {
+         "\/\/description":"Connects to other dungeon parts using the same connector",
+         "\/\/shortdescription":"Yellow Connector",
+         "connector":"255,255,0,255"
+        },
+     "14":
+        {
+         "\/\/description":"Connects to other dungeon parts using the same connector",
+         "\/\/shortdescription":"Green Connector",
+         "connector":"0,255,0,255"
+        },
+     "15":
+        {
+         "\/\/description":"Connects to other dungeon parts using the same connector",
+         "\/\/shortdescription":"Blue Connector",
+         "connector":"0,0,255,255"
+        },
+     "16":
+        {
+         "\/\/description":"Require that there be air in the background",
+         "\/\/shortdescription":"World Gen Must Contain Air Background",
+         "allowOverdrawing":"true",
+         "layer":"back",
+         "worldGenMustContainAir":""
+        },
+     "17":
+        {
+         "\/\/description":"Require that there be a solid tile in the background",
+         "\/\/shortdescription":"World Gen Must Contain Solid Background",
+         "allowOverdrawing":"true",
+         "layer":"back",
+         "worldGenMustContainSolid":""
+        },
+     "18":
+        {
+         "\/\/description":"Invisible Wall (Structure)",
+         "\/\/shortdescription":"Light-opaque invisible wall that players can climb",
+         "material":"metamaterial:structure"
+        },
+     "19":
+        {
+         "\/\/description":"Underwater Boundary",
+         "\/\/shortdescription":"Light-transparent invisible wall that players cannot climb. Allows liquids through.",
+         "material":"metamaterial:underwaterBoundary"
+        },
+     "2":
+        {
+         "\/\/description":"Invisible Wall (Boundary)",
+         "\/\/shortdescription":"Light-transparent invisible wall that players cannot climb",
+         "material":"metamaterial:boundary"
+        },
+     "20":
+        {
+         "\/\/description":"Zero G",
+         "\/\/shortdescription":"An unprotected area without gravity.",
+         "dungeonid":"65525",
+         "allowOverdrawing":"true"
+        },
+     "21":
+        {
+         "\/\/description":"Zero G (protected)",
+         "\/\/shortdescription":"A tile-protected area without gravity.",
+         "dungeonid":"65524",
+         "allowOverdrawing":"true"
+        },
+     "22":
+        {
+         "\/\/description":"Require that there be ocean liquid",
+         "\/\/shortdescription":"World Gen Must Contain Ocean Liquid",
+         "allowOverdrawing":"true",
+         "worldGenMustContainLiquid":""
+        },
+     "23":
+        {
+         "\/\/description":"Require that there be ocean liquid",
+         "\/\/shortdescription":"World Gen Must Contain Ocean Liquid",
+         "allowOverdrawing":"true",
+         "worldGenMustNotContainLiquid":""
+        },
+     "3":
+        {
+         "\/\/description":"The player will start here",
+         "\/\/shortdescription":"Player Start",
+         "playerstart":""
+        },
+     "4":
+        {
+         "\/\/description":"Require that there be air here",
+         "\/\/shortdescription":"World Gen Must Contain Air",
+         "allowOverdrawing":"true",
+         "worldGenMustContainAir":""
+        },
+     "5":
+        {
+         "\/\/description":"Require that there be a solid tile here",
+         "\/\/shortdescription":"World Gen Must Contain Solid",
+         "allowOverdrawing":"true",
+         "worldGenMustContainSolid":""
+        },
+     "6":
+        {
+         "\/\/description":"Place a biome item here",
+         "\/\/shortdescription":"Biome Item",
+         "biomeitems":""
+        },
+     "7":
+        {
+         "\/\/description":"Place a biome tree here",
+         "\/\/shortdescription":"Biome Tree",
+         "biometree":""
+        },
+     "8":
+        {
+         "\/\/description":"Paint with the default tile for the biome in either foreground or background",
+         "\/\/shortdescription":"Surface",
+         "allowOverdrawing":"true",
+         "surface":"0"
+        },
+     "9":
+        {
+         "\/\/description":"Paint with the default tile for the biome in either foreground or background",
+         "\/\/shortdescription":"Surface",
+         "allowOverdrawing":"true",
+         "surface":"1"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/00.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/01.png"
+        },
+     "10":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/10.png"
+        },
+     "11":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/11.png"
+        },
+     "12":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/12.png"
+        },
+     "13":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/13.png"
+        },
+     "14":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/14.png"
+        },
+     "15":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/15.png"
+        },
+     "16":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/16.png"
+        },
+     "17":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/17.png"
+        },
+     "18":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/18.png"
+        },
+     "19":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/19.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/02.png"
+        },
+     "20":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/20.png"
+        },
+     "21":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/21.png"
+        },
+     "22":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/22.png"
+        },
+     "23":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/23.png"
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/03.png"
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/04.png"
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/05.png"
+        },
+     "6":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/06.png"
+        },
+     "7":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/07.png"
+        },
+     "8":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/08.png"
+        },
+     "9":
+        {
+         "image":"..\/..\/..\/..\/tiled\/packed\/miscellaneous\/09.png"
+        }
+    },
+ "tilewidth":8
+}

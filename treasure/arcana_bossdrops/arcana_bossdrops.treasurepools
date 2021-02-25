@@ -1,0 +1,60 @@
+
+{
+
+  "arcana_bossdrops_aeonTimepiece" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 4000]},
+        {"item" : ["nanowrap", 4]},
+        {"item" : ["arcana_essence_aeonEssence", 20]}
+      ],
+      "pool" : [
+		{"weight" : 0.1, "item" : ["arcana_misc_aeonLeaf", 11]},
+		{"weight" : 0.2, "item" : ["arcana_misc_aeonLeaf", 10]},
+        {"weight" : 0.3, "item" : ["arcana_misc_aeonLeaf", 9]},
+		{"weight" : 0.4, "item" : ["arcana_misc_aeonLeaf", 8]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_bossdrops_evolapis" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["money", 2000]},
+        {"item" : ["nanowrap", 2]}
+      ],
+      "pool" : [
+		{"weight" : 0.1, "item" : ["arcana_misc_morphosisEgg", 22]},
+		{"weight" : 0.2, "item" : ["arcana_misc_morphosisEgg", 20]},
+        {"weight" : 0.3, "item" : ["arcana_misc_morphosisEgg", 18]},
+		{"weight" : 0.4, "item" : ["arcana_misc_morphosisEgg", 16]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_bossdrops_cosmoNemesis" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["money", 2000]},
+        {"item" : ["nanowrap", 2]}
+      ],
+      "pool" : [
+		{"weight" : 0.1, "item" : ["arcana_misc_cosmoTendrils", 22]},
+		{"weight" : 0.2, "item" : ["arcana_misc_cosmoTendrils", 20]},
+        {"weight" : 0.3, "item" : ["arcana_misc_cosmoTendrils", 18]},
+		{"weight" : 0.4, "item" : ["arcana_misc_cosmoTendrils", 16]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ]
+}
+
+

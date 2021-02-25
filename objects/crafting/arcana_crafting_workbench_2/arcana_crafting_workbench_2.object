@@ -1,0 +1,42 @@
+{
+  "objectName" : "arcana_crafting_workbench_2",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A magic infused workbench, allows you to create furniture and materials.",
+  "shortdescription" : "Arcanium Workstation",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [120, 140, 160],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_workbench_2.config",
+	"filter" : [
+	"arcana_crafting_workbench_1",
+	"arcana_crafting_workbench_2",
+	"arcana_aeolus",
+	"arcana_havencrest",
+	"arcana_elysia",
+	"arcana_empress",
+	"arcana_bleuark",
+	"arcana_monarch",
+	"arcana_horizon"
+	]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_workbench_2.png:<color>",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

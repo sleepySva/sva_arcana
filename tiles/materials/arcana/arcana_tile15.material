@@ -1,0 +1,21 @@
+{
+  "materialId" : 16643,
+  "materialName" : "arcana_tile15",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile15",
+  "description" : "A wooden window.",
+  "shortdescription" : "Filled Magiwood Window",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile15.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 171
+  }
+}

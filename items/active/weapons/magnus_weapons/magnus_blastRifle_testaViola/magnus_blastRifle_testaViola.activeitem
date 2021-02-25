@@ -1,0 +1,58 @@
+{
+  "itemName" : "magnus_blastRifle_testaViola",
+  "price" : 10000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Testa Viola, the Great Slaughter.",
+  "shortdescription" : "Testa Viola",
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 8,
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "magnus_blastRifle_testaViola.animation",
+  "animationParts" : {
+    "gun" : "magnus_blastRifle_testaViola.png",
+    "gunfullbright" : "fullbright.png"
+  },
+  "animationCustom" : {},
+  
+  "muzzleOffset" : [3.2, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "chargefire",
+  "primaryAbility" : {
+    "chargeLevels" : [
+      {
+        "time" : 0,
+        "energyCost" : 16,
+        "cooldown" : 0.25,
+        "projectileType" : "magnus_blastRifle_testaViola_projectile_2",
+        "projectileCount" : 1,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 6,
+        "fireSound" : "fire2"
+      },
+      {
+        "time" : 0.4,
+        "energyCost" : 38,
+        "cooldown" : 0.25,
+        "projectileType" : "magnus_blastRifle_testaViola_projectile_1",
+        "projectileCount" : 1,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 12,
+        "fireSound" : "fire"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

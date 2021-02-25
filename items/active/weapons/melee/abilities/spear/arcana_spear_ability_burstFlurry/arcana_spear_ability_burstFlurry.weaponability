@@ -1,0 +1,62 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "flurry" : [ "/sfx/melee/spear_flurry.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Burst Flurry",
+    "type" : "arcana_spear_ability_burstFlurry",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/arcana_spear_ability_burstFlurry/arcana_spear_ability_burstFlurry.lua"],
+    "class" : "Flurry",
+	
+	"projectileCount" : 1,
+    "projectileDistance" : 1.8,
+    "projectileType" : "arcana_projectile_basic_1",
+    "projectileParameters" : {
+      "baseDamage" : 10
+    },
+
+    "cooldownResetTime" : 0.4,
+    "maxCooldownTime" : 0.4,
+    "minCooldownTime" : 0.4,
+    "cooldownSwingReduction" : 0.08,
+
+    "energyUsage" : 10.0,
+    "cooldownTime" : 0.4,
+
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "baseDamage" : 6,
+      "knockback" : 12,
+      "timeout" : 0.15,
+      "timeoutGroup" : "alt"
+    },
+
+    "cycleRotationOffsets" : [0, 7.5, -7.5],
+    "stances" : {
+	    "idle" : {
+	      "armRotation" : -90,
+	      "weaponRotation" : 0,
+	      "twoHanded" : false,
+	      "weaponOffset" : [0, 0.5],
+
+	      "allowRotate" : true,
+	      "allowFlip" : true
+	    },
+      "swing" : {
+        "duration" : 0.1,
+        "armRotation" : -15,
+        "weaponRotation" : -75,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+[
+
+  {
+    "name" : "arcana_trifangle",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "trifangle"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_spinemine",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "spinemine"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_heavydrone",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "heavydrone"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_cosmostache",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "cosmostache"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_chiropterror",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "chiropterror"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_omnicannon",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [1.0, "omnicannon"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_gosmet",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [1, "gosmet"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  }
+
+]

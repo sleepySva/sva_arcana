@@ -1,0 +1,21 @@
+{
+  "materialId" : 16720,
+  "materialName" : "automated_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "automated_tile2",
+  "description" : "A panel made from scraps.",
+  "shortdescription" : "S01 Panel O",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "automated_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4720
+  }
+}

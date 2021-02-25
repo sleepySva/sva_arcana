@@ -1,0 +1,21 @@
+{
+  "projectileName" : "arcana_explosion_doom_1_pink",
+  "image" : "arcana_explosion_doom_1_pink.png",
+  "timeToLive" : 0.33,
+  "animationCycle" : 0.33,
+  "frameNumber" : 6,
+  "fullbright" : true,
+  "speed" : 0,
+  "damagePoly" : [ [-40, 0], [-25, -25], [0, -40], [25, -25], [40, 0], [25, 25], [0, 40], [-25, 25] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "lightColor" : [255, 150, 150],
+  "statusEffects" : [
+    "l6doomed"
+  ],
+  "power" : 20,
+  "damageType" : "ignoresdef",
+  "damageKind" : "default"
+}

@@ -1,0 +1,585 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/christmas",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 48,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Fairy lights that spell out 'waz', whatever that means.",
+      "//name" : "wazlights",
+      "//shortdescription" : "Waz Lights",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "wazlights"
+    },
+    "1" : {
+      "//description" : "This colourful sleigh has a big rocket engine on the back! Who needs reindeer, right?",
+      "//name" : "scifisleigh",
+      "//shortdescription" : "Holiday Rocket Sleigh",
+      "imagePositionX" : "-64",
+      "imagePositionY" : "0",
+      "object" : "scifisleigh",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A decorative red bow.",
+      "//name" : "giantbow2",
+      "//shortdescription" : "Shiny Red Bow",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "giantbow2",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A fuzzy red stocking. A little too big for anyone's foot.",
+      "//name" : "stocking1",
+      "//shortdescription" : "Red Stocking",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "stocking1",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A huge snowflake decoration.",
+      "//name" : "giantsnowflake",
+      "//shortdescription" : "Giant Snowflake",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-32",
+      "object" : "giantsnowflake",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A big, delicious red gumdrop! Yummy!",
+      "//name" : "redgumdrop1",
+      "//shortdescription" : "Big Red Gumdrop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "redgumdrop1",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A decorative red candy cane. It's crooked.",
+      "//name" : "redcandycane2",
+      "//shortdescription" : "Crooked Candy Cane",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "redcandycane2",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A set of candles.",
+      "//name" : "holidaycandles",
+      "//shortdescription" : "Festive Candles",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "holidaycandles",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A synthetic tree decorated with strings of lights and festive ornaments.",
+      "//name" : "decoratedtree",
+      "//shortdescription" : "Decorated Tree",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "decoratedtree",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "Nothing like a bit of holly to make you feel jolly!",
+      "//name" : "holly",
+      "//shortdescription" : "Decorative Holly",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "holly",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "Nothing like a bit of holly to make you feel jolly!",
+      "//name" : "holly_orientation2",
+      "//shortdescription" : "Decorative Holly",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "holly"
+    },
+    "19" : {
+      "//description" : "Nothing like a bit of holly to make you feel jolly!",
+      "//name" : "holly_orientation3",
+      "//shortdescription" : "Decorative Holly",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "holly"
+    },
+    "2" : {
+      "//description" : "A giant, delicious red gumdrop! Yummy!",
+      "//name" : "redgumdrop2",
+      "//shortdescription" : "Giant Red Gumdrop",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "redgumdrop2",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A four-sided spinning top. There are curious symbols on each side.",
+      "//name" : "dreidel",
+      "//shortdescription" : "Dreidel",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dreidel",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A big, delicious purple gumdrop! Yummy!",
+      "//name" : "purplegumdrop1",
+      "//shortdescription" : "Big Purple Gumdrop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "purplegumdrop1",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A golden ball. These are popular as holiday ornaments.",
+      "//name" : "goldball",
+      "//shortdescription" : "Gold Ball Holiday Ornament",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "goldball",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A present! It's wrapped in red paper with a gold ribbon!",
+      "//name" : "present2",
+      "//shortdescription" : "Red Present",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "present2",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A decorative red candy cane. It's broken.",
+      "//name" : "redcandycane3",
+      "//shortdescription" : "Broken Candy Cane",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "redcandycane3",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A synthetic fir tree.",
+      "//name" : "undecoratedtree",
+      "//shortdescription" : "Faux Fir Tree",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "undecoratedtree",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A small red bow.",
+      "//name" : "smallbow",
+      "//shortdescription" : "Little Red Bow",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "smallbow",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A present! It's wrapped in teal paper with a gold ribbon!",
+      "//name" : "present1",
+      "//shortdescription" : "Teal Present",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "present1",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A fuzzy red stocking. A little too big for anyone's foot.",
+      "//name" : "stocking2",
+      "//shortdescription" : "Crooked Stocking",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "stocking2",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A festive pink box with a bow on top. There's something odd about it.",
+      "//name" : "giftmonstersmallbox",
+      "//shortdescription" : "Small Unusual Gift Box",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "giftmonstersmallbox"
+    },
+    "3" : {
+      "//description" : "A giant, delicious purple gumdrop! Yummy!",
+      "//name" : "purplegumdrop2",
+      "//shortdescription" : "Giant Purple Gumdrop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "purplegumdrop2",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A present! It's wrapped in blue paper with a gold ribbon!",
+      "//name" : "present3",
+      "//shortdescription" : "Blue Present",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "present3",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A decorative green candy cane.",
+      "//name" : "greencandycane1",
+      "//shortdescription" : "Green Candy Cane",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "greencandycane1",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A decorative red candy cane.",
+      "//name" : "redcandycane1",
+      "//shortdescription" : "Red Candy Cane",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "redcandycane1",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "He sees you when you're sleeping! He knows when you're awake!",
+      "//name" : "giantsanta",
+      "//shortdescription" : "Jetpack Santa Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "giantsanta",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A decorative green candy cane. It's crooked.",
+      "//name" : "greencandycane2",
+      "//shortdescription" : "Crooked Candy Cane",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "greencandycane2",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A giant swirly lollipop! Sweet!",
+      "//name" : "lollipop1",
+      "//shortdescription" : "Giant Lollipop",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "lollipop1",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A holiday pole! It's festively striped.",
+      "//name" : "holidaypole",
+      "//shortdescription" : "Holiday Pole",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "holidaypole",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A festive pink box with a bow on top. There's something odd about it.",
+      "//name" : "giftmonsterbox",
+      "//shortdescription" : "Big Unusual Gift Box",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "giftmonsterbox"
+    },
+    "38" : {
+      "//description" : "A warm holiday glow.",
+      "//name" : "menorah",
+      "//shortdescription" : "Menorah",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "menorah",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A large pair of decorative bells. Just the thing to get one into the holiday spirit!",
+      "//name" : "giantbells",
+      "//shortdescription" : "Giant Holiday Bells",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "giantbells",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A big lollipop! Sweet!",
+      "//name" : "lollipop2",
+      "//shortdescription" : "Giant Lollipop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "lollipop2",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "For all your holiday crafting needs!",
+      "//name" : "holidaycraftingtable",
+      "//shortdescription" : "Toymaker's Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "holidaycraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A decorative red bow.",
+      "//name" : "giantbow1",
+      "//shortdescription" : "Big Red Bow",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "giantbow1",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A present! It's wrapped in green-coloured paper with a gold ribbon!",
+      "//name" : "present4",
+      "//shortdescription" : "Green Present",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "present4",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A giant, delicious green gumdrop! Yummy!",
+      "//name" : "greengumdrop2",
+      "//shortdescription" : "Giant Green Gumdrop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "greengumdrop2",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A festive pink box with a bow on top.",
+      "//name" : "bigpresent",
+      "//shortdescription" : "Big Present",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bigpresent",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A red ball adorned with a big white star! These are popular as holiday ornaments.",
+      "//name" : "redball",
+      "//shortdescription" : "Red Ball Holiday Ornament",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "redball",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A small snowflake decoration.",
+      "//name" : "smallsnowflake",
+      "//shortdescription" : "Small Snowflake",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "smallsnowflake",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A tiny synthetic fir tree.",
+      "//name" : "smallholidaytree",
+      "//shortdescription" : "Small Faux Fir Tree",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallholidaytree",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "This string of small, twinkling holiday lights is the perfect way to get festive.",
+      "//name" : "holidaylights",
+      "//shortdescription" : "Holiday Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "holidaylights",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "This string of small, twinkling holiday lights is the perfect way to get festive.",
+      "//name" : "holidaylights_orientation2",
+      "//shortdescription" : "Holiday Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "holidaylights",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "This string of small, twinkling holiday lights is the perfect way to get festive.",
+      "//name" : "holidaylights_orientation3",
+      "//shortdescription" : "Holiday Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "holidaylights",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A big, delicious green gumdrop! Yummy!",
+      "//name" : "greengumdrop1",
+      "//shortdescription" : "Big Green Gumdrop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "greengumdrop1",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A decorative green candy cane. It's crooked.",
+      "//name" : "greencandycane3",
+      "//shortdescription" : "Crooked Candy Cane",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "greencandycane3",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/wazlights.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/scifisleigh.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/giantbow2.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/stocking1.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/giantsnowflake.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/redgumdrop1.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/redcandycane2.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/holidaycandles.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/decoratedtree.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/holly.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/holly_orientation2.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/holly_orientation3.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/redgumdrop2.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/dreidel.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/purplegumdrop1.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/goldball.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/present2.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/redcandycane3.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/undecoratedtree.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/smallbow.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/present1.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/stocking2.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/giftmonstersmallbox.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/purplegumdrop2.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/present3.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/greencandycane1.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/redcandycane1.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/giantsanta.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/greencandycane2.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/lollipop1.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/holidaypole.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/giftmonsterbox.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/menorah.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/giantbells.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/lollipop2.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/holidaycraftingtable.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/giantbow1.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/present4.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/greengumdrop2.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/bigpresent.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/redball.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/smallsnowflake.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/smallholidaytree.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/holidaylights.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/holidaylights_orientation2.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/holidaylights_orientation3.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/greengumdrop1.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/greencandycane3.png"
+    }
+  },
+  "tilewidth" : 8
+}

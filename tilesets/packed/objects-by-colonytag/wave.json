@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/wave",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "An exceptionally comfortable wave chair.",
+      "//name" : "wavechair",
+      "//shortdescription" : "Wave Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wavechair",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A wave console. It has a strong curved design.",
+      "//name" : "waveswitch",
+      "//shortdescription" : "Wave Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "waveswitch",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A very hardy wave table.",
+      "//name" : "wavetable",
+      "//shortdescription" : "Wave Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wavetable",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A hollow circular lamp.",
+      "//name" : "wavelight",
+      "//shortdescription" : "Wave Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wavelight",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A very sturdy wave door.",
+      "//name" : "wavedoor",
+      "//shortdescription" : "Wave Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "wavedoor",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "An incredibly comfortable wave bed.",
+      "//name" : "wavebed",
+      "//shortdescription" : "Wave Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "wavebed",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/wavechair.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/waveswitch.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/wavetable.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/wavelight.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/wavedoor.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/wavebed.png"
+    }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16618,
+  "materialName" : "orion_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile2",
+  "description" : "A white concrete flooring tile.",
+  "shortdescription" : "White Concrete Floor",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 22,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile2.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 172
+  }
+}

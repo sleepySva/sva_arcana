@@ -1,0 +1,26 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/medical",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A bed which is designed to perform medical scans.",
+      "//name" : "stationmedscanner",
+      "//shortdescription" : "Station Medical Scanner",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationmedscanner",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/stationmedscanner.png"
+    }
+  },
+  "tilewidth" : 8
+}

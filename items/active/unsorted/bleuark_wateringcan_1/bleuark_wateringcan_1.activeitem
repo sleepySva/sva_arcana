@@ -1,0 +1,35 @@
+{
+  "itemName" : "bleuark_wateringcan_1",
+  "maxStack" : 175,
+  "rarity" : "Rare",
+  "category" : "tool",
+  "description" : "Water your crops with this fashionable watering can.",
+  "shortdescription" : "Watering Can",
+  "tooltipKind" : "base",
+  "twoHanded" : false,
+
+  "inventoryIcon" : "bleuark_wateringcan_1.png",
+
+  "animation" : "bleuark_wateringcan_1.animation",
+  "animationParts" : {
+    "wateringcan" : "bleuark_wateringcan_1.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["bleuark_wateringcan_1.lua"],
+
+  "waterTime" : 1.0,
+  "waterAngle" : 30,
+
+  "cooldownTime" : 1.0,
+
+  "projectileRate" : 0.15,
+  "projectileInaccuracy" : 0.4,
+  "projectileType" : "watersprinkledroplet",
+  "projectileParameters" : {
+    "speed" : 13,
+    "power" : 0,
+    "timeToLive" : 5,
+    "color" : [10, 255, 10]
+  }
+}

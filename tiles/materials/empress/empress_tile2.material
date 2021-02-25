@@ -1,0 +1,21 @@
+{
+  "materialId" : 16526,
+  "materialName" : "empress_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "empress_tile2",
+  "description" : "A golden patterned flooring.",
+  "shortdescription" : "Empress Gold Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "empress_tile2.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 112
+  }
+}

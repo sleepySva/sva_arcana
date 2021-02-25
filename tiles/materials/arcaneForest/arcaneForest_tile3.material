@@ -1,0 +1,21 @@
+{
+  "materialId" : 16573,
+  "materialName" : "arcaneForest_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcaneForest_tile3",
+  "description" : "A blaststone block, looks tough.",
+  "shortdescription" : "Arcane Blaststone",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcaneForest_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1303
+  }
+}

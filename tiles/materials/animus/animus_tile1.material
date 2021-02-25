@@ -1,0 +1,21 @@
+{
+  "materialId" : 16681,
+  "materialName" : "animus_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "animus_tile1",
+  "description" : "A blood colored rock.",
+  "shortdescription" : "Ketsueki Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "animus_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 281
+  }
+}

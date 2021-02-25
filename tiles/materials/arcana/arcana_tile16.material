@@ -1,0 +1,21 @@
+{
+  "materialId" : 16644,
+  "materialName" : "arcana_tile16",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile16",
+  "description" : "A brightly colored roofing tile.",
+  "shortdescription" : "Cathaya Tile",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile16.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1171
+  }
+}

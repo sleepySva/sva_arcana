@@ -1,0 +1,21 @@
+{
+  "materialId" : 16721,
+  "materialName" : "timeless_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "timeless_tile1",
+  "description" : "A yellowish stone brick tile.",
+  "shortdescription" : "Timeless Stone Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 22,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "timeless_tile1.png",
+    "variants" : 8,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1721
+  }
+}

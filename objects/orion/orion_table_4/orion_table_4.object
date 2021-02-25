@@ -1,0 +1,25 @@
+{
+  "objectName" : "orion_table_4",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A geometrical table.",
+  "shortdescription" : "Geo Table",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_table_4.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 6,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

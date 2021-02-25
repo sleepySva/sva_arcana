@@ -1,0 +1,1133 @@
+{
+  "margin" : 0,
+  "name" : "huge-objects",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 101,
+  "tileheight" : 696,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A beanstalk, it grows up to the sky. ",
+      "//name" : "beanstalk",
+      "//shortdescription" : "Beanstalk",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "beanstalk",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Bright light streaks.",
+      "//name" : "lightstreaks",
+      "//shortdescription" : "Light Streaks",
+      "imagePositionX" : "-352",
+      "imagePositionY" : "-656",
+      "object" : "lightstreaks",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "It's a collection of ship parts.",
+      "//name" : "shipyardjunk",
+      "//shortdescription" : "Shipyard Junk",
+      "imagePositionX" : "-96",
+      "imagePositionY" : "0",
+      "object" : "shipyardjunk",
+      "tilesetDirection" : "right"
+    },
+    "100" : {
+      "//description" : "Start piece background",
+      "//name" : "stationbackgroundstart",
+      "//shortdescription" : "Start piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundstart"
+    },
+    "11" : {
+      "//description" : "It's a collection of ship parts.",
+      "//name" : "shipyardjunk_orientation1",
+      "//shortdescription" : "Shipyard Junk",
+      "imagePositionX" : "-120",
+      "imagePositionY" : "0",
+      "object" : "shipyardjunk",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation3",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "01back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "01back",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//name" : "01front",
+      "invalid" : "true"
+    },
+    "15" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "03back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "03back",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "02back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "02back",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "05back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "05back",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "04back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "04back",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A bench found in the Protectorate garden. It has a plaque.",
+      "//name" : "protectorategardenbench_orientation1",
+      "//shortdescription" : "Protectorate Garden Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "protectorategardenbench",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A mysterious ancient statue.",
+      "//name" : "monolithstatue2",
+      "//shortdescription" : "Monolith Statue",
+      "imagePositionX" : "-304",
+      "imagePositionY" : "0",
+      "object" : "monolithstatue2",
+      "tilesetDirection" : "left"
+    },
+    "20" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "01bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "01bback",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "05bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "05bback",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "02bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "02bback",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "04bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "04bback",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "03bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "03bback",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A lamp illuminated by suspended globules of lava.",
+      "//name" : "magmalamp",
+      "//shortdescription" : "Magma Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "magmalamp",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "06bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "06bback",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "07back",
+      "//shortdescription" : "Protectorate Stage Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "07back",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "08bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "08bback",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "07bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "07bback",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A mysterious ancient statue.",
+      "//name" : "monolithstatue1",
+      "//shortdescription" : "Monolith Statue",
+      "imagePositionX" : "-320",
+      "imagePositionY" : "0",
+      "object" : "monolithstatue1",
+      "tilesetDirection" : "left"
+    },
+    "30" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "06back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "06back",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "08back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "08back",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A light meant to draw attention to an area.",
+      "//name" : "protectoratehalllight",
+      "//shortdescription" : "Hall Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectoratehalllight"
+    },
+    "33" : {
+      "//name" : "protectoratehalllight_orientation1",
+      "invalid" : "true"
+    },
+    "34" : {
+      "//description" : "A stage curtain from the Protectorate Academy.",
+      "//name" : "protectoratehallcurtain",
+      "//shortdescription" : "Protectorate Stage Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "protectoratehallcurtain"
+    },
+    "35" : {
+      "//description" : "A stage curtain from the Protectorate Academy.",
+      "//name" : "protectoratehallcurtain2",
+      "//shortdescription" : "Protectorate Stage Curtain",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "protectoratehallcurtain2"
+    },
+    "36" : {
+      "//description" : "The spinning wheel is used to produce clothing, fabrics and other crafting ingredients.",
+      "//name" : "craftingwheel",
+      "//shortdescription" : "^orange;Spinning Wheel^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingwheel",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//name" : "avianfossilcomplete",
+      "invalid" : "true"
+    },
+    "38" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "13bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "13bback",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "09bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "09bback",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A ridiculously tall chair",
+      "//name" : "tallchair",
+      "//shortdescription" : "Tall Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tallchair",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "14bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "14bback",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "15bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "15bback",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "12back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "12back",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "13back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "13back",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "11bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "11bback",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "12bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "12bback",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "10bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "10bback",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "09back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "09back",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A ship from the Protectorate Academy.",
+      "//name" : "protectorateship",
+      "//shortdescription" : "Protectorate Ship",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectorateship"
+    },
+    "49" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "10back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "10back",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A mysterious ancient gate.",
+      "//name" : "ancientgate",
+      "//shortdescription" : "Ancient Gate",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "ancientgate",
+      "tilesetDirection" : "left"
+    },
+    "50" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "11back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "11back",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "14back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "14back",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "15back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "15back",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "00back",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "00back",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "A set piece not designed to be used as an object.",
+      "//name" : "00bback",
+      "//shortdescription" : "Protectorate Background",
+      "imagePositionX" : "0",
+      "imagePositionY" : "40",
+      "object" : "00bback",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "This fluorescent light has seen better days.",
+      "//name" : "protectoratebrokenlight",
+      "//shortdescription" : "Broken Fluorescent Light",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "protectoratebrokenlight"
+    },
+    "56" : {
+      "//description" : "A roof top vent from the Protectorate Academy.",
+      "//name" : "protectorateroofdetail02",
+      "//shortdescription" : "Protectorate Roof Top Vent",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectorateroofdetail02"
+    },
+    "57" : {
+      "//description" : "A roof top vent from the Protectorate Academy.",
+      "//name" : "protectorateroofdetail03",
+      "//shortdescription" : "Protectorate Roof Top Vent",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectorateroofdetail03"
+    },
+    "58" : {
+      "//description" : "A roof top vent from the Protectorate Academy.",
+      "//name" : "protectorateroofdetail05",
+      "//shortdescription" : "Protectorate Roof Top Vent",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectorateroofdetail05"
+    },
+    "59" : {
+      "//description" : "A roof top vent from the Protectorate Academy.",
+      "//name" : "protectorateroofdetail04",
+      "//shortdescription" : "Protectorate Roof Top Vent",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectorateroofdetail04"
+    },
+    "6" : {
+      "//description" : "A mysterious ancient gate.",
+      "//name" : "monolithgate",
+      "//shortdescription" : "Monolith Gate",
+      "imagePositionX" : "-152",
+      "imagePositionY" : "0",
+      "object" : "monolithgate",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "What a lovely flower!",
+      "//name" : "protectorateflower",
+      "//shortdescription" : "Protectorate Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectorateflower",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//name" : "protectorateshipglitch",
+      "invalid" : "true"
+    },
+    "62" : {
+      "//name" : "protectorateshipfloran",
+      "invalid" : "true"
+    },
+    "63" : {
+      "//description" : "A simple waste bin for students.",
+      "//name" : "protectoratewastebin",
+      "//shortdescription" : "Protectorate Waste Bin",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "protectoratewastebin"
+    },
+    "64" : {
+      "//name" : "protectorateshipapex",
+      "invalid" : "true"
+    },
+    "65" : {
+      "//name" : "protectorateflyer",
+      "invalid" : "true"
+    },
+    "66" : {
+      "//name" : "protectorateshiphuman",
+      "invalid" : "true"
+    },
+    "67" : {
+      "//name" : "protectorateshiphylotl",
+      "invalid" : "true"
+    },
+    "68" : {
+      "//name" : "protectorateshipnovakid",
+      "invalid" : "true"
+    },
+    "69" : {
+      "//name" : "protectorateshipavian",
+      "invalid" : "true"
+    },
+    "7" : {
+      "//description" : "The web of the Ixodoom.",
+      "//name" : "bossweb",
+      "//shortdescription" : "Ixodoom Web",
+      "imagePositionX" : "-280",
+      "imagePositionY" : "-160",
+      "object" : "bossweb"
+    },
+    "70" : {
+      "//name" : "protectoratepoptoptoy",
+      "invalid" : "true"
+    },
+    "71" : {
+      "//name" : "protectoratepoptoptoy_orientation1",
+      "invalid" : "true"
+    },
+    "72" : {
+      "//description" : "Smoke billows from this point.",
+      "//name" : "protectoratesmokeprimer",
+      "//shortdescription" : "Smoke",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "protectoratesmokeprimer",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "Ruin organs.",
+      "//name" : "rightorgans",
+      "//shortdescription" : "Right Organs",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rightorgans",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "Ruin tentacle.",
+      "//name" : "bosstentacle",
+      "//shortdescription" : "Boss Tentacle",
+      "imagePositionX" : "-160",
+      "imagePositionY" : "-184",
+      "object" : "bosstentacle",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//name" : "signstorelosed",
+      "invalid" : "true"
+    },
+    "76" : {
+      "//description" : "A huge shattered mural.",
+      "//name" : "ancientmural4",
+      "//shortdescription" : "Ancient Mural",
+      "imagePositionX" : "-168",
+      "imagePositionY" : "-72",
+      "object" : "ancientmural4",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "A huge shattered mural.",
+      "//name" : "ancientmural6",
+      "//shortdescription" : "Ancient Mural",
+      "imagePositionX" : "-168",
+      "imagePositionY" : "-48",
+      "object" : "ancientmural6",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//description" : "A huge shattered mural.",
+      "//name" : "ancientmural2",
+      "//shortdescription" : "Ancient Mural",
+      "imagePositionX" : "-144",
+      "imagePositionY" : "-48",
+      "object" : "ancientmural2",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "A huge shattered mural.",
+      "//name" : "ancientmural5",
+      "//shortdescription" : "Ancient Mural",
+      "imagePositionX" : "-144",
+      "imagePositionY" : "-56",
+      "object" : "ancientmural5",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A gigantic bookcase that is damaged.",
+      "//name" : "librarybookcaseHUGEdamage",
+      "//shortdescription" : "Damaged Huge Bookcase",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-240",
+      "object" : "librarybookcaseHUGEdamage",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "A huge shattered mural.",
+      "//name" : "ancientmural1",
+      "//shortdescription" : "Ancient Mural",
+      "imagePositionX" : "-168",
+      "imagePositionY" : "-56",
+      "object" : "ancientmural1",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "A huge shattered mural.",
+      "//name" : "ancientmural3",
+      "//shortdescription" : "Ancient Mural",
+      "imagePositionX" : "-168",
+      "imagePositionY" : "-40",
+      "object" : "ancientmural3",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "Core piece background",
+      "//name" : "stationbackgroundcore",
+      "//shortdescription" : "Core piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundcore"
+    },
+    "83" : {
+      "//description" : "2 bend piece background",
+      "//name" : "stationbackground2bend",
+      "//shortdescription" : "2 bend piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackground2bend",
+      "tilesetDirection" : "right"
+    },
+    "84" : {
+      "//description" : "T Junction Horizontal Bottom Piece Background",
+      "//name" : "stationbackgroundtjunchorizontalbottom",
+      "//shortdescription" : "T Junction Horizontal Bottom Piece Background",
+      "imagePositionX" : "-72",
+      "imagePositionY" : "-40",
+      "object" : "stationbackgroundtjunchorizontalbottom"
+    },
+    "85" : {
+      "//description" : "Cross piece background",
+      "//name" : "stationbackgroundcross",
+      "//shortdescription" : "Cross piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundcross",
+      "tilesetDirection" : "right"
+    },
+    "86" : {
+      "//description" : "Bend bottom piece background",
+      "//name" : "stationbackgroundbendbot",
+      "//shortdescription" : "Bend bottom piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundbendbot",
+      "tilesetDirection" : "left"
+    },
+    "87" : {
+      "//description" : "Passage piece background",
+      "//name" : "stationbackgroundpassage",
+      "//shortdescription" : "Passage piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundpassage"
+    },
+    "88" : {
+      "//description" : "Bend top piece background",
+      "//name" : "stationbackgroundbendtop",
+      "//shortdescription" : "Bend top piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundbendtop",
+      "tilesetDirection" : "left"
+    },
+    "89" : {
+      "//description" : "Shaft piece background",
+      "//name" : "stationbackgroundshaft",
+      "//shortdescription" : "Shaft piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundshaft"
+    },
+    "9" : {
+      "//description" : "A gigantic bookcase that is damaged.",
+      "//name" : "librarybookcaseHUGEdamage_orientation1",
+      "//shortdescription" : "Damaged Huge Bookcase",
+      "imagePositionX" : "-80",
+      "imagePositionY" : "-240",
+      "object" : "librarybookcaseHUGEdamage",
+      "tilesetDirection" : "right"
+    },
+    "90" : {
+      "//description" : "T Junction Horizontal Top Piece Background",
+      "//name" : "stationbackgroundtjunchorizontaltop",
+      "//shortdescription" : "T Junction Horizontal Top Piece Background",
+      "imagePositionX" : "-72",
+      "imagePositionY" : "-40",
+      "object" : "stationbackgroundtjunchorizontaltop"
+    },
+    "91" : {
+      "//description" : "T Junction Vertical Piece Background",
+      "//name" : "stationbackgroundtjuncvertical",
+      "//shortdescription" : "T Junction Vertical Piece Background",
+      "imagePositionX" : "-72",
+      "imagePositionY" : "-40",
+      "object" : "stationbackgroundtjuncvertical",
+      "tilesetDirection" : "left"
+    },
+    "92" : {
+      "//description" : "Huge Core Diagonal Top Piece Background",
+      "//name" : "stationbackgroundhugecorediagtop",
+      "//shortdescription" : "Huge Core Diagonal Top Piece Background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundhugecorediagtop",
+      "tilesetDirection" : "right"
+    },
+    "93" : {
+      "//description" : "Huge Core Diagonal Bottom Piece Background",
+      "//name" : "stationbackgroundhugecorediagbot",
+      "//shortdescription" : "Huge Core Diagonal Bottom Piece Background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundhugecorediagbot",
+      "tilesetDirection" : "right"
+    },
+    "94" : {
+      "//description" : "Glass passage piece background",
+      "//name" : "stationbackgroundpassageglass",
+      "//shortdescription" : "Glass passage piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundpassageglass"
+    },
+    "95" : {
+      "//description" : "Glass shaft bottom piece background",
+      "//name" : "stationbackgroundshaftglassbottom",
+      "//shortdescription" : "Glass shaft bottom piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundshaftglassbottom"
+    },
+    "96" : {
+      "//description" : "Glass shaft top piece background",
+      "//name" : "stationbackgroundshaftglasstop",
+      "//shortdescription" : "Glass shaft top piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundshaftglasstop"
+    },
+    "97" : {
+      "//description" : "Glass passage left piece background",
+      "//name" : "stationbackgroundpassageglassleft",
+      "//shortdescription" : "Glass passage left piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundpassageglassleft"
+    },
+    "98" : {
+      "//description" : "Glass shaft piece background",
+      "//name" : "stationbackgroundshaftglass",
+      "//shortdescription" : "Glass shaft piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundshaftglass"
+    },
+    "99" : {
+      "//description" : "Glass passage right piece background",
+      "//name" : "stationbackgroundpassageglassright",
+      "//shortdescription" : "Glass passage right piece background",
+      "imagePositionX" : "-136",
+      "imagePositionY" : "-136",
+      "object" : "stationbackgroundpassageglassright"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "./../../../../tiled/packed/objects/beanstalk.png"
+    },
+    "1" : {
+      "image" : "./../../../../tiled/packed/objects/lightstreaks.png"
+    },
+    "10" : {
+      "image" : "./../../../../tiled/packed/objects/shipyardjunk.png"
+    },
+    "100" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundstart.png"
+    },
+    "11" : {
+      "image" : "./../../../../tiled/packed/objects/shipyardjunk_orientation1.png"
+    },
+    "12" : {
+      "image" : "./../../../../tiled/packed/objects/volcanictrap_orientation3.png"
+    },
+    "13" : {
+      "image" : "./../../../../tiled/packed/objects/01back.png"
+    },
+    "14" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "15" : {
+      "image" : "./../../../../tiled/packed/objects/03back.png"
+    },
+    "16" : {
+      "image" : "./../../../../tiled/packed/objects/02back.png"
+    },
+    "17" : {
+      "image" : "./../../../../tiled/packed/objects/05back.png"
+    },
+    "18" : {
+      "image" : "./../../../../tiled/packed/objects/04back.png"
+    },
+    "19" : {
+      "image" : "./../../../../tiled/packed/objects/protectorategardenbench_orientation1.png"
+    },
+    "2" : {
+      "image" : "./../../../../tiled/packed/objects/monolithstatue2.png"
+    },
+    "20" : {
+      "image" : "./../../../../tiled/packed/objects/01bback.png"
+    },
+    "21" : {
+      "image" : "./../../../../tiled/packed/objects/05bback.png"
+    },
+    "22" : {
+      "image" : "./../../../../tiled/packed/objects/02bback.png"
+    },
+    "23" : {
+      "image" : "./../../../../tiled/packed/objects/04bback.png"
+    },
+    "24" : {
+      "image" : "./../../../../tiled/packed/objects/03bback.png"
+    },
+    "25" : {
+      "image" : "./../../../../tiled/packed/objects/magmalamp.png"
+    },
+    "26" : {
+      "image" : "./../../../../tiled/packed/objects/06bback.png"
+    },
+    "27" : {
+      "image" : "./../../../../tiled/packed/objects/07back.png"
+    },
+    "28" : {
+      "image" : "./../../../../tiled/packed/objects/08bback.png"
+    },
+    "29" : {
+      "image" : "./../../../../tiled/packed/objects/07bback.png"
+    },
+    "3" : {
+      "image" : "./../../../../tiled/packed/objects/monolithstatue1.png"
+    },
+    "30" : {
+      "image" : "./../../../../tiled/packed/objects/06back.png"
+    },
+    "31" : {
+      "image" : "./../../../../tiled/packed/objects/08back.png"
+    },
+    "32" : {
+      "image" : "./../../../../tiled/packed/objects/protectoratehalllight.png"
+    },
+    "33" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "34" : {
+      "image" : "./../../../../tiled/packed/objects/protectoratehallcurtain.png"
+    },
+    "35" : {
+      "image" : "./../../../../tiled/packed/objects/protectoratehallcurtain2.png"
+    },
+    "36" : {
+      "image" : "./../../../../tiled/packed/objects/craftingwheel.png"
+    },
+    "37" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "38" : {
+      "image" : "./../../../../tiled/packed/objects/13bback.png"
+    },
+    "39" : {
+      "image" : "./../../../../tiled/packed/objects/09bback.png"
+    },
+    "4" : {
+      "image" : "./../../../../tiled/packed/objects/tallchair.png"
+    },
+    "40" : {
+      "image" : "./../../../../tiled/packed/objects/14bback.png"
+    },
+    "41" : {
+      "image" : "./../../../../tiled/packed/objects/15bback.png"
+    },
+    "42" : {
+      "image" : "./../../../../tiled/packed/objects/12back.png"
+    },
+    "43" : {
+      "image" : "./../../../../tiled/packed/objects/13back.png"
+    },
+    "44" : {
+      "image" : "./../../../../tiled/packed/objects/11bback.png"
+    },
+    "45" : {
+      "image" : "./../../../../tiled/packed/objects/12bback.png"
+    },
+    "46" : {
+      "image" : "./../../../../tiled/packed/objects/10bback.png"
+    },
+    "47" : {
+      "image" : "./../../../../tiled/packed/objects/09back.png"
+    },
+    "48" : {
+      "image" : "./../../../../tiled/packed/objects/protectorateship.png"
+    },
+    "49" : {
+      "image" : "./../../../../tiled/packed/objects/10back.png"
+    },
+    "5" : {
+      "image" : "./../../../../tiled/packed/objects/ancientgate.png"
+    },
+    "50" : {
+      "image" : "./../../../../tiled/packed/objects/11back.png"
+    },
+    "51" : {
+      "image" : "./../../../../tiled/packed/objects/14back.png"
+    },
+    "52" : {
+      "image" : "./../../../../tiled/packed/objects/15back.png"
+    },
+    "53" : {
+      "image" : "./../../../../tiled/packed/objects/00back.png"
+    },
+    "54" : {
+      "image" : "./../../../../tiled/packed/objects/00bback.png"
+    },
+    "55" : {
+      "image" : "./../../../../tiled/packed/objects/protectoratebrokenlight.png"
+    },
+    "56" : {
+      "image" : "./../../../../tiled/packed/objects/protectorateroofdetail02.png"
+    },
+    "57" : {
+      "image" : "./../../../../tiled/packed/objects/protectorateroofdetail03.png"
+    },
+    "58" : {
+      "image" : "./../../../../tiled/packed/objects/protectorateroofdetail05.png"
+    },
+    "59" : {
+      "image" : "./../../../../tiled/packed/objects/protectorateroofdetail04.png"
+    },
+    "6" : {
+      "image" : "./../../../../tiled/packed/objects/monolithgate.png"
+    },
+    "60" : {
+      "image" : "./../../../../tiled/packed/objects/protectorateflower.png"
+    },
+    "61" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "62" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "63" : {
+      "image" : "./../../../../tiled/packed/objects/protectoratewastebin.png"
+    },
+    "64" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "65" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "66" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "67" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "68" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "69" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "7" : {
+      "image" : "./../../../../tiled/packed/objects/bossweb.png"
+    },
+    "70" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "71" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "72" : {
+      "image" : "./../../../../tiled/packed/objects/protectoratesmokeprimer.png"
+    },
+    "73" : {
+      "image" : "./../../../../tiled/packed/objects/rightorgans.png"
+    },
+    "74" : {
+      "image" : "./../../../../tiled/packed/objects/bosstentacle.png"
+    },
+    "75" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "76" : {
+      "image" : "./../../../../tiled/packed/objects/ancientmural4.png"
+    },
+    "77" : {
+      "image" : "./../../../../tiled/packed/objects/ancientmural6.png"
+    },
+    "78" : {
+      "image" : "./../../../../tiled/packed/objects/ancientmural2.png"
+    },
+    "79" : {
+      "image" : "./../../../../tiled/packed/objects/ancientmural5.png"
+    },
+    "8" : {
+      "image" : "./../../../../tiled/packed/objects/librarybookcaseHUGEdamage.png"
+    },
+    "80" : {
+      "image" : "./../../../../tiled/packed/objects/ancientmural1.png"
+    },
+    "81" : {
+      "image" : "./../../../../tiled/packed/objects/ancientmural3.png"
+    },
+    "82" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundcore.png"
+    },
+    "83" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackground2bend.png"
+    },
+    "84" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundtjunchorizontalbottom.png"
+    },
+    "85" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundcross.png"
+    },
+    "86" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundbendbot.png"
+    },
+    "87" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundpassage.png"
+    },
+    "88" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundbendtop.png"
+    },
+    "89" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundshaft.png"
+    },
+    "9" : {
+      "image" : "./../../../../tiled/packed/objects/librarybookcaseHUGEdamage_orientation1.png"
+    },
+    "90" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundtjunchorizontaltop.png"
+    },
+    "91" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundtjuncvertical.png"
+    },
+    "92" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundhugecorediagtop.png"
+    },
+    "93" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundhugecorediagbot.png"
+    },
+    "94" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundpassageglass.png"
+    },
+    "95" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundshaftglassbottom.png"
+    },
+    "96" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundshaftglasstop.png"
+    },
+    "97" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundpassageglassleft.png"
+    },
+    "98" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundshaftglass.png"
+    },
+    "99" : {
+      "image" : "./../../../../tiled/packed/objects/stationbackgroundpassageglassright.png"
+    }
+  },
+  "tilewidth" : 704
+}

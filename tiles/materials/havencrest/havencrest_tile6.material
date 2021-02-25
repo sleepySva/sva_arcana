@@ -1,0 +1,21 @@
+{
+  "materialId" : 16600,
+  "materialName" : "havencrest_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "havencrest_tile6",
+  "description" : "A sandstone bridge tile.",
+  "shortdescription" : "Havencrest Bridge Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "havencrest_tile6.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 196
+  }
+}

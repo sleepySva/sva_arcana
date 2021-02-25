@@ -1,0 +1,168 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/glitchsewer",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 13,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A tank filled with an unknown substance. Probably very lethal.",
+      "//name" : "sewertank",
+      "//shortdescription" : "Sewer Tank",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "sewertank",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A barrel of sewage. Almost certainly toxic.",
+      "//name" : "sewagebarrel",
+      "//shortdescription" : "Sewage Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sewagebarrel",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A gear. Part of a well-oiled machine. Actually, it's a bit rusty.",
+      "//name" : "sewergear",
+      "//shortdescription" : "Gear",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "sewergear",
+      "tilesetDirection" : "left"
+    },
+    "11" : {
+      "//description" : "A sewer valve. It's had a funny turn.",
+      "//name" : "sewervalve",
+      "//shortdescription" : "Sewer Valve",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "sewervalve",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A sewer gauge. Nobody knows what the gauge illustrates.",
+      "//name" : "sewergauge",
+      "//shortdescription" : "Sewer Gauge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "sewergauge"
+    },
+    "2" : {
+      "//description" : "A cheaply made flood door.",
+      "//name" : "sewerflooddoor",
+      "//shortdescription" : "Sewer Flood Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sewerflooddoor"
+    },
+    "3" : {
+      "//description" : "A trash bag. What a load of rubbish.",
+      "//name" : "trashbag",
+      "//shortdescription" : "Trash Bag",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "trashbag",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A toxic waste barrel. Don't spill any!",
+      "//name" : "toxicwastebarrel",
+      "//shortdescription" : "Toxic Waste Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "toxicwastebarrel",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A sewer pipe.",
+      "//name" : "wallpipe",
+      "//shortdescription" : "Wall Pipe",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "wallpipe",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A sewer pipe.",
+      "//name" : "wallpipe_orientation1",
+      "//shortdescription" : "Wall Pipe",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "wallpipe",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A wall grate. Great.",
+      "//name" : "sewerwallgrate",
+      "//shortdescription" : "Sewer Wall Grate",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "sewerwallgrate",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A trash can. What a load of rubbish.",
+      "//name" : "trashcan",
+      "//shortdescription" : "Trash Can",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "trashcan",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "An ominous warning sign.",
+      "//name" : "poisonsign",
+      "//shortdescription" : "Wooden Warning Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "poisonsign",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/sewertank.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/sewagebarrel.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/sewergear.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/sewervalve.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/sewergauge.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/sewerflooddoor.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/trashbag.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/toxicwastebarrel.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/wallpipe.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/wallpipe_orientation1.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/sewerwallgrate.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/trashcan.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/poisonsign.png"
+    }
+  },
+  "tilewidth" : 8
+}

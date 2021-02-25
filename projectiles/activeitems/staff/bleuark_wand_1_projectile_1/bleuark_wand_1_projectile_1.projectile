@@ -1,0 +1,109 @@
+{
+  "projectileName" : "bleuark_wand_1_projectile_1",
+  "physics" : "laser",
+  "timeToLive" : 5,
+  "bounces" : 0,
+  "image" : "bleuark_wand_1_projectile_1.png",
+  "animationCycle" : 0.2,
+  
+  "fullbright" : true,
+  "emitters" : ["capturepodblue"],
+  "frameNumber" : 1,
+  "speed" : 4,
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/watersplash/watersplash.config"
+    },
+    { 
+      "action" : "liquid", 
+      "liquid" : "water", "quantity" : 3 
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.04,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/bleuark_wand_1_projectile_1/bleuark_wand_1_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    },
+	{
+		"time" : 0.8,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "bleuark_assaultRifle_1_projectile_1",
+        "angleAdjust" : -120,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+		"time" : 1.0,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "bleuark_assaultRifle_1_projectile_1",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+		"time" : 1.2,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "bleuark_assaultRifle_1_projectile_1",
+        "angleAdjust" : 120,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+		"time" : 1.4,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "bleuark_assaultRifle_1_projectile_1",
+        "angleAdjust" : -60,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+		"time" : 1.6,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "bleuark_assaultRifle_1_projectile_1",
+        "angleAdjust" : 180,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+		"time" : 1.8,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "bleuark_assaultRifle_1_projectile_1",
+        "angleAdjust" : 60,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    }
+  ],
+  
+  "lightColor" : [80, 40, 20],
+  "damageKind" : "plasma",
+  "statusEffects" : [ "wet" ],
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 28,
+    "controlForce" : 60
+  }
+}

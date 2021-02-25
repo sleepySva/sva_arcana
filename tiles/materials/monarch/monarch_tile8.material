@@ -1,0 +1,21 @@
+{
+  "materialId" : 16538,
+  "materialName" : "monarch_tile8",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "monarch_tile8",
+  "description" : "A grey brick wall tile.",
+  "shortdescription" : "Palace Wall",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "monarch_tile8.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 121
+  }
+}

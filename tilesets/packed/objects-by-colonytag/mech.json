@@ -1,0 +1,26 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/mech",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "This guidance beacon marks the position of a landing bay.",
+      "//name" : "mechbeacon",
+      "//shortdescription" : "Landing Beacon",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "mechbeacon",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/mechbeacon.png"
+    }
+  },
+  "tilewidth" : 8
+}

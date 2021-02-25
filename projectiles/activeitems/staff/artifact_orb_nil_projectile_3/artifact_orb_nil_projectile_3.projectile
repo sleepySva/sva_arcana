@@ -1,0 +1,98 @@
+{
+  "projectileName" : "artifact_orb_nil_projectile_3",
+  "physics" : "rain",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 60,
+  "piercing" : true,
+  "knockback" : 40,
+  "knockbackDirectional" : true,
+  
+  "image" : "artifact_orb_nil_projectile_3.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [60, 10, 100],
+  "emitters" : ["energyweapon"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "iceswoosh1",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "iceswoosh2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    },
+	{
+        "action" : "projectile",
+        "type" : "icestickyspikes",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.8,
+        "inheritSpeedFactor" : 0
+    }
+  ],
+  
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_plasma.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "iceswoosh1",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "iceswoosh2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/artifact_orb_nil_projectile_3/artifact_orb_nil_projectile_3_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "ice"
+ 
+}

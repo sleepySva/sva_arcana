@@ -1,0 +1,88 @@
+{
+  "itemName" : "artifact_bow_tempest",
+  "price" : 60000,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "The cyclone of the raging storm.",
+  "shortdescription" : "Tempest",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 9,
+
+  "animation" : "/items/active/weapons/bow/energybow.animation",
+  "animationParts" : {
+    "bow" : "artifact_bow_tempest.png",
+    "bowFullbright" : "artifact_bow_tempestfullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0, 0]
+      }}
+    }},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/melee/laser_weapon_swing2.ogg" ],
+      "perfectRelease" : [ "/sfx/melee/laser_weapon_swing1.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "artifact_bow_tempest_projectile_1",
+    "powerProjectileType" : "artifact_bow_tempest_projectile_2",
+    "projectileParameters" : {
+      "power" : 10.0
+    }
+  },
+
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "name" : "Cyclone Arrow",
+    "energyPerShot" : 100,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "artifact_bow_tempest_projectile_1",
+    "powerProjectileType" : "artifact_bow_tempest_projectile_2",
+    "projectileParameters" : {
+      "power" : 12,
+      "speed" : 100,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "electricportal",
+          "angleAdjust" : -50,
+          "inheritDamageFactor" : 0.2,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "electricportal",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 0.2,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "electricportal",
+          "angleAdjust" : 50,
+          "inheritDamageFactor" : 0.2,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

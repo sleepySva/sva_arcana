@@ -1,0 +1,24 @@
+{
+  "objectName" : "orion_deco_10",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "An obsidian statue.",
+  "shortdescription" : "Statue, Shinobi",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_deco_10.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

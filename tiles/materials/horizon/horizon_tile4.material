@@ -1,0 +1,22 @@
+{
+  "materialId" : 16664,
+  "materialName" : "horizon_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "horizon_tile4",
+  "description" : "A metal beam crafted from necroium.",
+  "shortdescription" : "Cataclysmic Light Beam",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "horizon_tile4.png",
+    "variants" : 2,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 604,
+    "radiantLight" : [93, 28, 105]
+  }
+}

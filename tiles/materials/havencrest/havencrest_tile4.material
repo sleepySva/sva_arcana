@@ -1,0 +1,22 @@
+{
+  "materialId" : 16598,
+  "materialName" : "havencrest_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "havencrest_tile4",
+  "description" : "A solid sandstone fence.",
+  "shortdescription" : "Sandstone Fence",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "havencrest_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 4
+  }
+}

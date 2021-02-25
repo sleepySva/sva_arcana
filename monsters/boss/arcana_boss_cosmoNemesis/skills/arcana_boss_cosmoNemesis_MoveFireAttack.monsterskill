@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_boss_cosmoNemesis_MoveFireAttack",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/arcana_boss_cosmoNemesis/skills/arcana_boss_cosmoNemesis_MoveFireAttack.lua" ],
+
+    "arcana_boss_cosmoNemesis_MoveFireAttack" : {
+      "skillTime": 4,
+      "bobTime" : 2,
+      "bobHeight" : 3,
+
+      "projectileOffset" : [0, -4],
+      "fireInterval" : 0.4,
+      "projectile" : {
+        "type" : "arcana_boss_cosmoNemesis_projectile_1",
+        "config" : {
+          "speed" : 40,
+          "power" : 50
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "objectName" : "arcana_crafting_main_1",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A table that allows you to craft various useful arcane inventions.",
+  "shortdescription" : "Magician's Table",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_main_1.config",
+	"filter" : ["arcana_crafting_main_1"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_main_1.png:<color>",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

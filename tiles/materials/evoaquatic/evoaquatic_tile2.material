@@ -1,0 +1,21 @@
+{
+  "materialId" : 16692,
+  "materialName" : "evoaquatic_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "evoaquatic_tile2",
+  "description" : "A blueish dirt tile.",
+  "shortdescription" : "Evoaquatic Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "evoaquatic_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 292
+  }
+}

@@ -1,0 +1,871 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/humanbunker",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 72,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Ideal for laying out battle strategies, holding meetings and snacking.",
+      "//name" : "bunkertable3",
+      "//shortdescription" : "Large Metal Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkertable3",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A set of three TV monitors facing in different directions.'",
+      "//name" : "bunkertv2",
+      "//shortdescription" : "USCM Television Monitors",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "bunkertv2"
+    },
+    "10" : {
+      "//description" : "It's full of really tempting levers but I should probably leave it alone.",
+      "//name" : "bunkerconsole1",
+      "//shortdescription" : "Command Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole1",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "The amount of data on this screen is overwhelming.",
+      "//name" : "bunkerbigpanel",
+      "//shortdescription" : "Large Monitor",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-16",
+      "object" : "bunkerbigpanel",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation2",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "left"
+    },
+    "14" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation3",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation4",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation5",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A blindingly bright fluorescent light.",
+      "//name" : "bunkerlighth",
+      "//shortdescription" : "Wide Fluorescent Lamp",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerlighth",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "This chair is egg-shaped. I'm not sure whose idea that was.",
+      "//name" : "eggchair",
+      "//shortdescription" : "Egg Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "eggchair",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "It's a screen displaying an old medical scan.",
+      "//name" : "bunkerpanel2",
+      "//shortdescription" : "Medical Data Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bunkerpanel2",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "Ooh, what should I get?",
+      "//name" : "vendingmachine",
+      "//shortdescription" : "Vending Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "vendingmachine",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A support beam painted with cautionary stripes. Mind your head!",
+      "//name" : "bunkercorner",
+      "//shortdescription" : "Metal Support Beam",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bunkercorner",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A support beam painted with cautionary stripes. Mind your head!",
+      "//name" : "bunkercorner_orientation1",
+      "//shortdescription" : "Metal Support Beam",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bunkercorner",
+      "tilesetDirection" : "left"
+    },
+    "23" : {
+      "//description" : "A support beam painted with cautionary stripes. Mind your head!",
+      "//name" : "bunkercorner_orientation2",
+      "//shortdescription" : "Metal Support Beam",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bunkercorner",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A support beam painted with cautionary stripes. Mind your head!",
+      "//name" : "bunkercorner_orientation3",
+      "//shortdescription" : "Metal Support Beam",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bunkercorner",
+      "tilesetDirection" : "left"
+    },
+    "25" : {
+      "//description" : "If I look at these lights any longer, I'll probably go blind.",
+      "//name" : "floodlights",
+      "//shortdescription" : "Floodlights",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floodlights",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A screen with a pie chart representing budget statistics.",
+      "//name" : "bunkerdisplay2",
+      "//shortdescription" : "Statistical Display",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "bunkerdisplay2",
+      "tilesetDirection" : "left"
+    },
+    "27" : {
+      "//description" : "The sign says \"DANGER\". Wait, how do these people know my middle name?",
+      "//name" : "dangersignh",
+      "//shortdescription" : "Horizontal Danger Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "dangersignh"
+    },
+    "28" : {
+      "//description" : "A fancy modern table to place fancy modern things on.",
+      "//name" : "moderntable",
+      "//shortdescription" : "Modern Table",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "moderntable",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "Two keyboards and one monitor?",
+      "//name" : "bunkerconsole2",
+      "//shortdescription" : "Large Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole2",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "It scans fingerprints and matches them to personnel data.",
+      "//name" : "bunkerhandscanner",
+      "//shortdescription" : "Fingerprint Scanner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkerhandscanner",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A blindingly bright fluorescent light.",
+      "//name" : "bunkerlightv",
+      "//shortdescription" : "Tall Fluorescent Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "bunkerlightv",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A shiny glass panel.",
+      "//name" : "glasspanel",
+      "//shortdescription" : "Glass Panel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glasspanel",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A monitor displaying a task list.",
+      "//name" : "bunkertv",
+      "//shortdescription" : "Small Wall Monitor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkertv",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A monitor displaying a task list.",
+      "//name" : "bunkertv_orientation1",
+      "//shortdescription" : "Small Wall Monitor",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "bunkertv",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A monitor displaying a task list.",
+      "//name" : "bunkertv_orientation2",
+      "//shortdescription" : "Small Wall Monitor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkertv",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A monitor displaying a task list.",
+      "//name" : "bunkertv_orientation3",
+      "//shortdescription" : "Small Wall Monitor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkertv",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A simple metal table.",
+      "//name" : "bunkertable1",
+      "//shortdescription" : "Metal Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkertable1",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "Sterile, recycled air whirs through the fanblades at a steady pace.",
+      "//name" : "bunkervent",
+      "//shortdescription" : "Bunker Vent",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkervent"
+    },
+    "38" : {
+      "//description" : "A contemporary chair.",
+      "//name" : "modernchair",
+      "//shortdescription" : "Modern Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "modernchair",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "This brightly coloured tape clearly indicates that the area is unsafe.",
+      "//name" : "hazardtapev",
+      "//shortdescription" : "Vertical Hazard Tape",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hazardtapev"
+    },
+    "4" : {
+      "//description" : "A device to scan eyeballs and match them to personnel data.",
+      "//name" : "bunkereyescanner",
+      "//shortdescription" : "Eye Scanner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkereyescanner",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "A space heater!",
+      "//name" : "bunkerheater1",
+      "//shortdescription" : "Space Heater",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerheater1",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "That's no moon...",
+      "//name" : "bunkerdisplay4",
+      "//shortdescription" : "Anomalous Display",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "bunkerdisplay4",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "There is no need to be upset.",
+      "//name" : "bunkerposter2",
+      "//shortdescription" : "Calming Poster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bunkerposter2",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "This brightly coloured tape clearly indicates that the area is unsafe.",
+      "//name" : "hazardtapeh",
+      "//shortdescription" : "Horizontal Hazard Tape",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hazardtapeh"
+    },
+    "44" : {
+      "//description" : "What does USCM stand for, again?",
+      "//name" : "marinesign",
+      "//shortdescription" : "USCM Sign",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-8",
+      "object" : "marinesign"
+    },
+    "45" : {
+      "//description" : "There's a book in here titled, 'How to Travel Backwards in Time for Dummies'.",
+      "//name" : "bunkerbookcase",
+      "//shortdescription" : "Metal Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerbookcase",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "It's one of those drinking machines people use to make small-talk.",
+      "//name" : "watermachine",
+      "//shortdescription" : "Water Cooler",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "watermachine",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "It's a large server cabinet.",
+      "//name" : "bunkerserver",
+      "//shortdescription" : "Server Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerserver",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A metallic ceiling lamp.",
+      "//name" : "bunkerceilinglight1",
+      "//shortdescription" : "Metal Ceiling Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "bunkerceilinglight1",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A generic metal barrel. It's sealed.",
+      "//name" : "metalbarrel1",
+      "//shortdescription" : "Metal Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel1",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "The display shows a round central room branching off into several hallways.",
+      "//name" : "bunkerdisplay1",
+      "//shortdescription" : "Blueprint Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerdisplay1",
+      "tilesetDirection" : "left"
+    },
+    "50" : {
+      "//description" : "Stay still! It can't see you if you stay still.",
+      "//name" : "bunkermotiondetector",
+      "//shortdescription" : "Motion Detector",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkermotiondetector",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "This is just an electrical fire waiting to happen.",
+      "//name" : "bunkerwires",
+      "//shortdescription" : "Wires",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkerwires",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "The sign says \"DANGER\". Wait, how do these people know my middle name?",
+      "//name" : "dangersignv",
+      "//shortdescription" : "Vertical Danger Sign",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "dangersignv"
+    },
+    "53" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2b",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2b",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2b_orientation1",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2b",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A solid metal table.",
+      "//name" : "bunkertable2",
+      "//shortdescription" : "Solid Metal Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkertable2",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "Looks like it's mainly used for data entry. Nothing too interesting.",
+      "//name" : "bunkercomputer",
+      "//shortdescription" : "Small Computer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkercomputer",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "An old-school arcade machine. This one plays 'Super Tralgar Blaster 2'.",
+      "//name" : "arcademachine",
+      "//shortdescription" : "Arcade Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arcademachine",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "This panel appears to monitor some obscure environmental data.",
+      "//name" : "bunkerpanel1",
+      "//shortdescription" : "Environmental Data Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bunkerpanel1",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "This sliding door makes me feel like I'm in a sci-fi game...",
+      "//name" : "bunkerslidingdoor",
+      "//shortdescription" : "Modern Sliding Door",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bunkerslidingdoor",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "An office desk with a built-in monitor. Looks like someone was doing some coding.",
+      "//name" : "bunkerdesk",
+      "//shortdescription" : "Metal Office Desk",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkerdesk",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "It's a map displaying a round central room branching out into several corridors.",
+      "//name" : "bunkerdisplay3",
+      "//shortdescription" : "Map Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerdisplay3",
+      "tilesetDirection" : "left"
+    },
+    "61" : {
+      "//description" : "A flashy electronic recruitment poster.",
+      "//name" : "bunkerpanel3",
+      "//shortdescription" : "LED Recruitment Panel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bunkerpanel3",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A metal crate.",
+      "//name" : "bunkercrate",
+      "//shortdescription" : "Metal Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkercrate",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A metallic ceiling lamp.",
+      "//name" : "bunkerceilinglight2",
+      "//shortdescription" : "Metal Ceiling Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "bunkerceilinglight2",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "It looks like it's full of hazardous materials.",
+      "//name" : "bunkercabinet1",
+      "//shortdescription" : "Metal Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkercabinet1",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "That's not very encouraging.",
+      "//name" : "bunkerposter1",
+      "//shortdescription" : "Motivational Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "bunkerposter1",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation6",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation7",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation8",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation9",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "It's a screen full of super top secret mission data... Boring.",
+      "//name" : "bunkerconsole4",
+      "//shortdescription" : "Wide Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole4",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation10",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "The flashing light is meant to signal that there's been some sort of emergency...",
+      "//name" : "alertlight_orientation11",
+      "//shortdescription" : "Alert Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "alertlight",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "It looks like a screen full of personnel memos.",
+      "//name" : "bunkerconsole3",
+      "//shortdescription" : "Small Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole3",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "It looks like a screen full of personnel memos.",
+      "//name" : "bunkerconsole3_orientation1",
+      "//shortdescription" : "Small Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bunkerconsole3",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertable3.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv2.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole1.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerbigpanel.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation2.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation3.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation4.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation5.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerlighth.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/eggchair.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerpanel2.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/vendingmachine.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercorner.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercorner_orientation1.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercorner_orientation2.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercorner_orientation3.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/floodlights.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdisplay2.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/dangersignh.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/moderntable.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole2.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerhandscanner.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerlightv.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/glasspanel.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv_orientation1.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv_orientation2.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertv_orientation3.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertable1.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/bunkervent.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/modernchair.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/hazardtapev.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/bunkereyescanner.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerheater1.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdisplay4.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerposter2.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/hazardtapeh.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/marinesign.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerbookcase.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/watermachine.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerserver.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerceilinglight1.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel1.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdisplay1.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/bunkermotiondetector.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerwires.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/dangersignv.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2b.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2b_orientation1.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/bunkertable2.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercomputer.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/arcademachine.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerpanel1.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerslidingdoor.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdesk.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerdisplay3.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerpanel3.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercrate.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerceilinglight2.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/bunkercabinet1.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerposter1.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation6.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation7.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation8.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation9.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole4.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation10.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/alertlight_orientation11.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole3.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerconsole3_orientation1.png"
+    }
+  },
+  "tilewidth" : 8
+}

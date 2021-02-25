@@ -1,0 +1,26 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/techmanagement",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Equip and enhance your techs at this station. \n^red;Destroyed when broken.",
+      "//name" : "techconsole",
+      "//shortdescription" : "Tech Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "techconsole",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/techconsole.png"
+    }
+  },
+  "tilewidth" : 8
+}

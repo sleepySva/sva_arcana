@@ -1,0 +1,21 @@
+{
+  "materialId" : 16649,
+  "materialName" : "arcana_tile21",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile21",
+  "description" : "A wooden wall panel.",
+  "shortdescription" : "Cathaya Panel",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile21.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 169
+  }
+}

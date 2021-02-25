@@ -1,0 +1,2389 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/trap",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 204,
+  "tileheight" : 68,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "savannahgroundspike4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "savannahgroundspike4"
+    },
+    "1" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "savannahgroundspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "savannahgroundspike3"
+    },
+    "10" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade_orientation4",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "sawblade"
+    },
+    "100" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "101" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation2",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "102" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation3",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "left"
+    },
+    "103" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation4",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "104" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation5",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "left"
+    },
+    "105" : {
+      "//description" : "Watch out!",
+      "//name" : "icestalactite1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "icestalactite1",
+      "tilesetDirection" : "right"
+    },
+    "106" : {
+      "//description" : "Watch out!",
+      "//name" : "magmaceilingspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "magmaceilingspike1",
+      "tilesetDirection" : "right"
+    },
+    "107" : {
+      "//description" : "This trap spews flames to deter invaders.",
+      "//name" : "ancientflametrap",
+      "//shortdescription" : "Ancient Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientflametrap",
+      "tilesetDirection" : "right"
+    },
+    "108" : {
+      "//description" : "This trap spews flames to deter invaders.",
+      "//name" : "ancientflametrap_orientation1",
+      "//shortdescription" : "Ancient Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ancientflametrap",
+      "tilesetDirection" : "right"
+    },
+    "109" : {
+      "//description" : "This trap spews flames to deter invaders.",
+      "//name" : "ancientflametrap_orientation2",
+      "//shortdescription" : "Ancient Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ancientflametrap",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade_orientation5",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "sawblade"
+    },
+    "110" : {
+      "//description" : "This trap spews flames to deter invaders.",
+      "//name" : "ancientflametrap_orientation3",
+      "//shortdescription" : "Ancient Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ancientflametrap",
+      "tilesetDirection" : "right"
+    },
+    "111" : {
+      "//description" : "This trap spews flames to deter invaders.",
+      "//name" : "ancientflametrap_orientation4",
+      "//shortdescription" : "Ancient Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientflametrap",
+      "tilesetDirection" : "right"
+    },
+    "112" : {
+      "//description" : "This trap spews flames to deter invaders.",
+      "//name" : "ancientflametrap_orientation5",
+      "//shortdescription" : "Ancient Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ancientflametrap",
+      "tilesetDirection" : "right"
+    },
+    "113" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation6",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "114" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation7",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "115" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation8",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "116" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation9",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "117" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation10",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "118" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation11",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "119" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation12",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "Sharp, spiky sticks. Don't fall on them.",
+      "//name" : "huntingpunjisticks1",
+      "//shortdescription" : "Large Sharp Sticks",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingpunjisticks1",
+      "tilesetDirection" : "right"
+    },
+    "120" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation13",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "121" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation6",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "122" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation7",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "123" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation8",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "124" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation9",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "125" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation10",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "126" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation11",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "127" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation12",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "128" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "icespike_orientation13",
+      "//shortdescription" : "Ice Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "icespike",
+      "tilesetDirection" : "right"
+    },
+    "129" : {
+      "//description" : "The gas released from these chutes makes you feel light as a feather.",
+      "//name" : "airbooster",
+      "//shortdescription" : "Air Booster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "airbooster",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "groundspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "groundspike3"
+    },
+    "130" : {
+      "//description" : "The gas released from these chutes makes you feel light as a feather.",
+      "//name" : "airbooster_orientation1",
+      "//shortdescription" : "Air Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "airbooster",
+      "tilesetDirection" : "right"
+    },
+    "131" : {
+      "//description" : "The gas released from these chutes makes you feel light as a feather.",
+      "//name" : "airbooster_orientation2",
+      "//shortdescription" : "Air Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "airbooster",
+      "tilesetDirection" : "right"
+    },
+    "132" : {
+      "//description" : "The gas released from these chutes makes you feel light as a feather.",
+      "//name" : "airbooster_orientation3",
+      "//shortdescription" : "Air Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "airbooster",
+      "tilesetDirection" : "right"
+    },
+    "133" : {
+      "//description" : "The gas released from these chutes makes you feel light as a feather.",
+      "//name" : "airbooster_orientation4",
+      "//shortdescription" : "Air Booster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "airbooster",
+      "tilesetDirection" : "right"
+    },
+    "134" : {
+      "//description" : "The gas released from these chutes makes you feel light as a feather.",
+      "//name" : "airbooster_orientation5",
+      "//shortdescription" : "Air Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "airbooster",
+      "tilesetDirection" : "right"
+    },
+    "135" : {
+      "//description" : "A trap that drops heavy boulders on unsuspecting intruders.",
+      "//name" : "bouldertrap",
+      "//shortdescription" : "Temple Boulder Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "bouldertrap",
+      "tilesetDirection" : "right"
+    },
+    "136" : {
+      "//name" : "bouldertrap_orientation1",
+      "invalid" : "true"
+    },
+    "137" : {
+      "//name" : "bouldertrap_orientation2",
+      "invalid" : "true"
+    },
+    "138" : {
+      "//name" : "bouldertrap_orientation3",
+      "invalid" : "true"
+    },
+    "139" : {
+      "//name" : "bouldertrap_orientation4",
+      "invalid" : "true"
+    },
+    "14" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "greengroundspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "greengroundspike2"
+    },
+    "140" : {
+      "//name" : "bouldertrap_orientation5",
+      "invalid" : "true"
+    },
+    "141" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "ancientcrystaltrap",
+      "//shortdescription" : "Ancient Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientcrystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "142" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "ancientcrystaltrap_orientation1",
+      "//shortdescription" : "Ancient Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ancientcrystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "143" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "ancientcrystaltrap_orientation2",
+      "//shortdescription" : "Ancient Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientcrystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "144" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "ancientcrystaltrap_orientation3",
+      "//shortdescription" : "Ancient Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ancientcrystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "145" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "ancientcrystaltrap_orientation4",
+      "//shortdescription" : "Ancient Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "ancientcrystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "146" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "ancientcrystaltrap_orientation5",
+      "//shortdescription" : "Ancient Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ancientcrystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "147" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "ancientcrystaltrap_orientation6",
+      "//shortdescription" : "Ancient Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientcrystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "148" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "ancientcrystaltrap_orientation7",
+      "//shortdescription" : "Ancient Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ancientcrystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "149" : {
+      "//description" : "A trap that drops heavy boulders on unsuspecting intruders.",
+      "//name" : "ancientbouldertrap",
+      "//shortdescription" : "Ancient Boulder Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "ancientbouldertrap",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "Watch out!",
+      "//name" : "icestalagmite4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "icestalagmite4",
+      "tilesetDirection" : "right"
+    },
+    "150" : {
+      "//description" : "This trap spews frost to deter invaders.",
+      "//name" : "ancienticetrap",
+      "//shortdescription" : "Ancient Ice Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancienticetrap",
+      "tilesetDirection" : "right"
+    },
+    "151" : {
+      "//description" : "This trap spews frost to deter invaders.",
+      "//name" : "ancienticetrap_orientation1",
+      "//shortdescription" : "Ancient Ice Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ancienticetrap",
+      "tilesetDirection" : "right"
+    },
+    "152" : {
+      "//description" : "This trap spews frost to deter invaders.",
+      "//name" : "ancienticetrap_orientation2",
+      "//shortdescription" : "Ancient Ice Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ancienticetrap",
+      "tilesetDirection" : "right"
+    },
+    "153" : {
+      "//description" : "This trap spews frost to deter invaders.",
+      "//name" : "ancienticetrap_orientation3",
+      "//shortdescription" : "Ancient Ice Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ancienticetrap",
+      "tilesetDirection" : "right"
+    },
+    "154" : {
+      "//description" : "This trap spews frost to deter invaders.",
+      "//name" : "ancienticetrap_orientation4",
+      "//shortdescription" : "Ancient Ice Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancienticetrap",
+      "tilesetDirection" : "right"
+    },
+    "155" : {
+      "//description" : "This trap spews frost to deter invaders.",
+      "//name" : "ancienticetrap_orientation5",
+      "//shortdescription" : "Ancient Ice Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ancienticetrap",
+      "tilesetDirection" : "right"
+    },
+    "156" : {
+      "//description" : "The gas released from these chutes increases your running speed.",
+      "//name" : "speedbooster",
+      "//shortdescription" : "Speed Booster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "speedbooster",
+      "tilesetDirection" : "right"
+    },
+    "157" : {
+      "//description" : "The gas released from these chutes increases your running speed.",
+      "//name" : "speedbooster_orientation1",
+      "//shortdescription" : "Speed Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "speedbooster",
+      "tilesetDirection" : "right"
+    },
+    "158" : {
+      "//description" : "The gas released from these chutes increases your running speed.",
+      "//name" : "speedbooster_orientation2",
+      "//shortdescription" : "Speed Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "speedbooster",
+      "tilesetDirection" : "right"
+    },
+    "159" : {
+      "//description" : "The gas released from these chutes increases your running speed.",
+      "//name" : "speedbooster_orientation3",
+      "//shortdescription" : "Speed Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "speedbooster",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "greengroundspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "greengroundspike3"
+    },
+    "160" : {
+      "//description" : "The gas released from these chutes increases your running speed.",
+      "//name" : "speedbooster_orientation4",
+      "//shortdescription" : "Speed Booster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "speedbooster",
+      "tilesetDirection" : "right"
+    },
+    "161" : {
+      "//description" : "The gas released from these chutes increases your running speed.",
+      "//name" : "speedbooster_orientation5",
+      "//shortdescription" : "Speed Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "speedbooster",
+      "tilesetDirection" : "right"
+    },
+    "162" : {
+      "//description" : "The gas released from these chutes increase your jumping power.",
+      "//name" : "jumpbooster",
+      "//shortdescription" : "Jump Booster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "jumpbooster",
+      "tilesetDirection" : "right"
+    },
+    "163" : {
+      "//description" : "The gas released from these chutes increase your jumping power.",
+      "//name" : "jumpbooster_orientation1",
+      "//shortdescription" : "Jump Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "jumpbooster",
+      "tilesetDirection" : "right"
+    },
+    "164" : {
+      "//description" : "The gas released from these chutes increase your jumping power.",
+      "//name" : "jumpbooster_orientation2",
+      "//shortdescription" : "Jump Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "jumpbooster",
+      "tilesetDirection" : "right"
+    },
+    "165" : {
+      "//description" : "The gas released from these chutes increase your jumping power.",
+      "//name" : "jumpbooster_orientation3",
+      "//shortdescription" : "Jump Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "jumpbooster",
+      "tilesetDirection" : "right"
+    },
+    "166" : {
+      "//description" : "The gas released from these chutes increase your jumping power.",
+      "//name" : "jumpbooster_orientation4",
+      "//shortdescription" : "Jump Booster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "jumpbooster",
+      "tilesetDirection" : "right"
+    },
+    "167" : {
+      "//description" : "The gas released from these chutes increase your jumping power.",
+      "//name" : "jumpbooster_orientation5",
+      "//shortdescription" : "Jump Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "jumpbooster",
+      "tilesetDirection" : "right"
+    },
+    "168" : {
+      "//description" : "The gas released from these chutes increases your destructive power.",
+      "//name" : "powerbooster",
+      "//shortdescription" : "Power Booster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "powerbooster",
+      "tilesetDirection" : "right"
+    },
+    "169" : {
+      "//description" : "The gas released from these chutes increases your destructive power.",
+      "//name" : "powerbooster_orientation1",
+      "//shortdescription" : "Power Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "powerbooster",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "magmagroundspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "magmagroundspike3",
+      "tilesetDirection" : "right"
+    },
+    "170" : {
+      "//description" : "The gas released from these chutes increases your destructive power.",
+      "//name" : "powerbooster_orientation2",
+      "//shortdescription" : "Power Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "powerbooster",
+      "tilesetDirection" : "right"
+    },
+    "171" : {
+      "//description" : "The gas released from these chutes increases your destructive power.",
+      "//name" : "powerbooster_orientation3",
+      "//shortdescription" : "Power Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "powerbooster",
+      "tilesetDirection" : "right"
+    },
+    "172" : {
+      "//description" : "The gas released from these chutes increases your destructive power.",
+      "//name" : "powerbooster_orientation4",
+      "//shortdescription" : "Power Booster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "powerbooster",
+      "tilesetDirection" : "right"
+    },
+    "173" : {
+      "//description" : "The gas released from these chutes increases your destructive power.",
+      "//name" : "powerbooster_orientation5",
+      "//shortdescription" : "Power Booster",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "powerbooster",
+      "tilesetDirection" : "right"
+    },
+    "174" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation8",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "175" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "176" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation1",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "177" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation2",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "178" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation4",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "179" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation5",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "Don't burn your feet!",
+      "//name" : "burningcoals",
+      "//shortdescription" : "Burning Coals",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "burningcoals",
+      "tilesetDirection" : "right"
+    },
+    "180" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation3",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "181" : {
+      "//description" : "A trap that drops heavy boulders on unsuspecting intruders.",
+      "//name" : "floranbouldertrap",
+      "//shortdescription" : "Floran Boulder Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "floranbouldertrap",
+      "tilesetDirection" : "right"
+    },
+    "182" : {
+      "//description" : "This device is used to rapidly freeze materials.",
+      "//name" : "freezetrap",
+      "//shortdescription" : "Cryogenic Blaster",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "freezetrap",
+      "tilesetDirection" : "right"
+    },
+    "183" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "184" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation1",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "185" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation2",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "186" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation3",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "187" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation4",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "188" : {
+      "//description" : "This trap spews a flame that empowers enemies.",
+      "//name" : "arenaflametrap_orientation5",
+      "//shortdescription" : "Arena Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "arenaflametrap",
+      "tilesetDirection" : "right"
+    },
+    "189" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "Wooden spikes. Just waiting to be decorated with the heads of your enemies!",
+      "//name" : "medievalspikes",
+      "//shortdescription" : "Wooden Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalspikes",
+      "tilesetDirection" : "right"
+    },
+    "190" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation2",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "191" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation3",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "left"
+    },
+    "192" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation4",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "193" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation5",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "left"
+    },
+    "194" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation6",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "195" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation7",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "196" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation8",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "197" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation9",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "198" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation10",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "199" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation11",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "savannahgroundspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "savannahgroundspike1"
+    },
+    "20" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "savannahgroundspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "savannahgroundspike2"
+    },
+    "200" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation12",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "201" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation13",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "202" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation6",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "203" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation7",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "Watch out!",
+      "//name" : "desertceilingspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "desertceilingspike2"
+    },
+    "22" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "thorns3",
+      "//shortdescription" : "Thorns",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "thorns3"
+    },
+    "23" : {
+      "//description" : "Watch out!",
+      "//name" : "icestalagmite2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "icestalagmite2",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade2",
+      "//shortdescription" : "Ancient Saw Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "sawblade2",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade2_orientation2",
+      "//shortdescription" : "Ancient Saw Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "sawblade2",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade2_orientation3",
+      "//shortdescription" : "Ancient Saw Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "sawblade2",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade2_orientation4",
+      "//shortdescription" : "Ancient Saw Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "sawblade2"
+    },
+    "28" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade2_orientation5",
+      "//shortdescription" : "Ancient Saw Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "sawblade2"
+    },
+    "29" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "magmagroundspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "magmagroundspike1",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "magmagroundspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "magmagroundspike2",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "groundspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "groundspike2"
+    },
+    "31" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "desertgroundspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "desertgroundspike3"
+    },
+    "32" : {
+      "//description" : "This is an old rock stalactite.",
+      "//name" : "ceilingstalactite2",
+      "//shortdescription" : "Rock Stalactite",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-24",
+      "object" : "ceilingstalactite2",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "This is an old rock stalactite.",
+      "//name" : "ceilingstalactite2_orientation1",
+      "//shortdescription" : "Rock Stalactite",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "ceilingstalactite2",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "Watch out!",
+      "//name" : "ceilingspike1",
+      "//shortdescription" : "Stalactite",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ceilingspike1"
+    },
+    "35" : {
+      "//description" : "Watch out!",
+      "//name" : "magmaceilingspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "magmaceilingspike3",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "Watch out!",
+      "//name" : "icestalactite3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "icestalactite3",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "Watch out!",
+      "//name" : "savannahceilingspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "savannahceilingspike2"
+    },
+    "38" : {
+      "//description" : "Watch out!",
+      "//name" : "ceilingspike3",
+      "//shortdescription" : "Stalactite",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ceilingspike3"
+    },
+    "39" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "4" : {
+      "//description" : "Watch out!",
+      "//name" : "desertceilingspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "desertceilingspike3"
+    },
+    "40" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation2",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "41" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation3",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "42" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation4",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "43" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation5",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "44" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation6",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "45" : {
+      "//description" : "BZZZZZZZZT, ouch.",
+      "//name" : "teslaspike_orientation7",
+      "//shortdescription" : "Tesla Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "teslaspike"
+    },
+    "46" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "desertgroundspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "desertgroundspike1"
+    },
+    "47" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "desertgroundspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "desertgroundspike2"
+    },
+    "48" : {
+      "//description" : "Sharp, spiky sticks. Don't fall on them.",
+      "//name" : "huntingpunjisticks2",
+      "//shortdescription" : "Small Sharp Sticks",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpunjisticks2",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "Watch out!",
+      "//name" : "desertceilingspike4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "desertceilingspike4"
+    },
+    "5" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "greengroundspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "greengroundspike1"
+    },
+    "50" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "thorns2",
+      "//shortdescription" : "Thorns",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "thorns2"
+    },
+    "51" : {
+      "//description" : "This is an old rock stalactite.",
+      "//name" : "ceilingstalactite3",
+      "//shortdescription" : "Rock Stalactite",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "ceilingstalactite3",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation1",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation2",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation3",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation4",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation5",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation6",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A crystal trap designed to deter invaders.",
+      "//name" : "crystaltrap_orientation7",
+      "//shortdescription" : "Carved Crystal Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystaltrap",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "This is an old rock stalactite.",
+      "//name" : "ceilingstalactite5",
+      "//shortdescription" : "Rock Stalactite",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "ceilingstalactite5",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "This is an old rock stalactite.",
+      "//name" : "ceilingstalactite1",
+      "//shortdescription" : "Rock Stalactite",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "ceilingstalactite1",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation1",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation2",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation3",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation4",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "A flame trap designed to deter invaders.",
+      "//name" : "flametrap_orientation5",
+      "//shortdescription" : "Avian Flame Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flametrap",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "thorns4",
+      "//shortdescription" : "Thorns",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "thorns4"
+    },
+    "68" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation2",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-40",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "sawblade",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation3",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-40",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation4",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-32",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation5",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-32",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "greengroundspike4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "greengroundspike4"
+    },
+    "74" : {
+      "//description" : "Ouch! I shouldn't get too close to that.",
+      "//name" : "barbedwire",
+      "//shortdescription" : "Barbed Wire",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "barbedwire",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//description" : "Watch out!",
+      "//name" : "savannahceilingspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "savannahceilingspike1"
+    },
+    "76" : {
+      "//description" : "Watch out!",
+      "//name" : "ceilingspike2",
+      "//shortdescription" : "Stalactite",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ceilingspike2"
+    },
+    "77" : {
+      "//description" : "Watch out!",
+      "//name" : "icestalactite4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "icestalactite4",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//description" : "Watch out!",
+      "//name" : "icestalagmite1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "icestalagmite1",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "groundspike4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "groundspike4"
+    },
+    "8" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade_orientation2",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "sawblade",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "groundspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "groundspike1"
+    },
+    "81" : {
+      "//description" : "Watch out!",
+      "//name" : "desertceilingspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "desertceilingspike1"
+    },
+    "82" : {
+      "//description" : "Watch out!",
+      "//name" : "greenceilingspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "greenceilingspike2"
+    },
+    "83" : {
+      "//description" : "Watch out!",
+      "//name" : "savannahceilingspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "savannahceilingspike3"
+    },
+    "84" : {
+      "//description" : "Watch out!",
+      "//name" : "ceilingspike4",
+      "//shortdescription" : "Stalactite",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "ceilingspike4"
+    },
+    "85" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "thorns1",
+      "//shortdescription" : "Thorns",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "thorns1"
+    },
+    "86" : {
+      "//description" : "Don't wanna step in those...",
+      "//name" : "desertgroundspike4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "desertgroundspike4"
+    },
+    "87" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation2",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "89" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation3",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "left"
+    },
+    "9" : {
+      "//description" : "Wow, this looks sharp!",
+      "//name" : "sawblade_orientation3",
+      "//shortdescription" : "Sawblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "sawblade",
+      "tilesetDirection" : "right"
+    },
+    "90" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation4",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "right"
+    },
+    "91" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "bonespike_orientation5",
+      "//shortdescription" : "Bone Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bonespike",
+      "tilesetDirection" : "left"
+    },
+    "92" : {
+      "//description" : "Watch out!",
+      "//name" : "icestalagmite3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "icestalagmite3",
+      "tilesetDirection" : "right"
+    },
+    "93" : {
+      "//description" : "Watch out!",
+      "//name" : "savannahceilingspike4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "savannahceilingspike4"
+    },
+    "94" : {
+      "//description" : "Watch out!",
+      "//name" : "magmaceilingspike2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "magmaceilingspike2",
+      "tilesetDirection" : "right"
+    },
+    "95" : {
+      "//description" : "Watch out!",
+      "//name" : "icestalactite2",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "icestalactite2",
+      "tilesetDirection" : "right"
+    },
+    "96" : {
+      "//description" : "This is an old rock stalactite.",
+      "//name" : "ceilingstalactite4",
+      "//shortdescription" : "Rock Stalactite",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "ceilingstalactite4",
+      "tilesetDirection" : "right"
+    },
+    "97" : {
+      "//description" : "Watch out!",
+      "//name" : "greenceilingspike4",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "greenceilingspike4"
+    },
+    "98" : {
+      "//description" : "Watch out!",
+      "//name" : "greenceilingspike1",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "greenceilingspike1"
+    },
+    "99" : {
+      "//description" : "Watch out!",
+      "//name" : "greenceilingspike3",
+      "//shortdescription" : "Sharp Spikes",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "greenceilingspike3"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/savannahgroundspike4.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/savannahgroundspike3.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade_orientation4.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/icespike.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation2.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation3.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation4.png"
+    },
+    "104" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation5.png"
+    },
+    "105" : {
+      "image" : "../../../../../tiled/packed/objects/icestalactite1.png"
+    },
+    "106" : {
+      "image" : "../../../../../tiled/packed/objects/magmaceilingspike1.png"
+    },
+    "107" : {
+      "image" : "../../../../../tiled/packed/objects/ancientflametrap.png"
+    },
+    "108" : {
+      "image" : "../../../../../tiled/packed/objects/ancientflametrap_orientation1.png"
+    },
+    "109" : {
+      "image" : "../../../../../tiled/packed/objects/ancientflametrap_orientation2.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade_orientation5.png"
+    },
+    "110" : {
+      "image" : "../../../../../tiled/packed/objects/ancientflametrap_orientation3.png"
+    },
+    "111" : {
+      "image" : "../../../../../tiled/packed/objects/ancientflametrap_orientation4.png"
+    },
+    "112" : {
+      "image" : "../../../../../tiled/packed/objects/ancientflametrap_orientation5.png"
+    },
+    "113" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation6.png"
+    },
+    "114" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation7.png"
+    },
+    "115" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation8.png"
+    },
+    "116" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation9.png"
+    },
+    "117" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation10.png"
+    },
+    "118" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation11.png"
+    },
+    "119" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation12.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpunjisticks1.png"
+    },
+    "120" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation13.png"
+    },
+    "121" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation6.png"
+    },
+    "122" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation7.png"
+    },
+    "123" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation8.png"
+    },
+    "124" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation9.png"
+    },
+    "125" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation10.png"
+    },
+    "126" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation11.png"
+    },
+    "127" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation12.png"
+    },
+    "128" : {
+      "image" : "../../../../../tiled/packed/objects/icespike_orientation13.png"
+    },
+    "129" : {
+      "image" : "../../../../../tiled/packed/objects/airbooster.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/groundspike3.png"
+    },
+    "130" : {
+      "image" : "../../../../../tiled/packed/objects/airbooster_orientation1.png"
+    },
+    "131" : {
+      "image" : "../../../../../tiled/packed/objects/airbooster_orientation2.png"
+    },
+    "132" : {
+      "image" : "../../../../../tiled/packed/objects/airbooster_orientation3.png"
+    },
+    "133" : {
+      "image" : "../../../../../tiled/packed/objects/airbooster_orientation4.png"
+    },
+    "134" : {
+      "image" : "../../../../../tiled/packed/objects/airbooster_orientation5.png"
+    },
+    "135" : {
+      "image" : "../../../../../tiled/packed/objects/bouldertrap.png"
+    },
+    "136" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "137" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "138" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "139" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/greengroundspike2.png"
+    },
+    "140" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "141" : {
+      "image" : "../../../../../tiled/packed/objects/ancientcrystaltrap.png"
+    },
+    "142" : {
+      "image" : "../../../../../tiled/packed/objects/ancientcrystaltrap_orientation1.png"
+    },
+    "143" : {
+      "image" : "../../../../../tiled/packed/objects/ancientcrystaltrap_orientation2.png"
+    },
+    "144" : {
+      "image" : "../../../../../tiled/packed/objects/ancientcrystaltrap_orientation3.png"
+    },
+    "145" : {
+      "image" : "../../../../../tiled/packed/objects/ancientcrystaltrap_orientation4.png"
+    },
+    "146" : {
+      "image" : "../../../../../tiled/packed/objects/ancientcrystaltrap_orientation5.png"
+    },
+    "147" : {
+      "image" : "../../../../../tiled/packed/objects/ancientcrystaltrap_orientation6.png"
+    },
+    "148" : {
+      "image" : "../../../../../tiled/packed/objects/ancientcrystaltrap_orientation7.png"
+    },
+    "149" : {
+      "image" : "../../../../../tiled/packed/objects/ancientbouldertrap.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/icestalagmite4.png"
+    },
+    "150" : {
+      "image" : "../../../../../tiled/packed/objects/ancienticetrap.png"
+    },
+    "151" : {
+      "image" : "../../../../../tiled/packed/objects/ancienticetrap_orientation1.png"
+    },
+    "152" : {
+      "image" : "../../../../../tiled/packed/objects/ancienticetrap_orientation2.png"
+    },
+    "153" : {
+      "image" : "../../../../../tiled/packed/objects/ancienticetrap_orientation3.png"
+    },
+    "154" : {
+      "image" : "../../../../../tiled/packed/objects/ancienticetrap_orientation4.png"
+    },
+    "155" : {
+      "image" : "../../../../../tiled/packed/objects/ancienticetrap_orientation5.png"
+    },
+    "156" : {
+      "image" : "../../../../../tiled/packed/objects/speedbooster.png"
+    },
+    "157" : {
+      "image" : "../../../../../tiled/packed/objects/speedbooster_orientation1.png"
+    },
+    "158" : {
+      "image" : "../../../../../tiled/packed/objects/speedbooster_orientation2.png"
+    },
+    "159" : {
+      "image" : "../../../../../tiled/packed/objects/speedbooster_orientation3.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/greengroundspike3.png"
+    },
+    "160" : {
+      "image" : "../../../../../tiled/packed/objects/speedbooster_orientation4.png"
+    },
+    "161" : {
+      "image" : "../../../../../tiled/packed/objects/speedbooster_orientation5.png"
+    },
+    "162" : {
+      "image" : "../../../../../tiled/packed/objects/jumpbooster.png"
+    },
+    "163" : {
+      "image" : "../../../../../tiled/packed/objects/jumpbooster_orientation1.png"
+    },
+    "164" : {
+      "image" : "../../../../../tiled/packed/objects/jumpbooster_orientation2.png"
+    },
+    "165" : {
+      "image" : "../../../../../tiled/packed/objects/jumpbooster_orientation3.png"
+    },
+    "166" : {
+      "image" : "../../../../../tiled/packed/objects/jumpbooster_orientation4.png"
+    },
+    "167" : {
+      "image" : "../../../../../tiled/packed/objects/jumpbooster_orientation5.png"
+    },
+    "168" : {
+      "image" : "../../../../../tiled/packed/objects/powerbooster.png"
+    },
+    "169" : {
+      "image" : "../../../../../tiled/packed/objects/powerbooster_orientation1.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/magmagroundspike3.png"
+    },
+    "170" : {
+      "image" : "../../../../../tiled/packed/objects/powerbooster_orientation2.png"
+    },
+    "171" : {
+      "image" : "../../../../../tiled/packed/objects/powerbooster_orientation3.png"
+    },
+    "172" : {
+      "image" : "../../../../../tiled/packed/objects/powerbooster_orientation4.png"
+    },
+    "173" : {
+      "image" : "../../../../../tiled/packed/objects/powerbooster_orientation5.png"
+    },
+    "174" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation8.png"
+    },
+    "175" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap.png"
+    },
+    "176" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation1.png"
+    },
+    "177" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation2.png"
+    },
+    "178" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation4.png"
+    },
+    "179" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation5.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/burningcoals.png"
+    },
+    "180" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation3.png"
+    },
+    "181" : {
+      "image" : "../../../../../tiled/packed/objects/floranbouldertrap.png"
+    },
+    "182" : {
+      "image" : "../../../../../tiled/packed/objects/freezetrap.png"
+    },
+    "183" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap.png"
+    },
+    "184" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation1.png"
+    },
+    "185" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation2.png"
+    },
+    "186" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation3.png"
+    },
+    "187" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation4.png"
+    },
+    "188" : {
+      "image" : "../../../../../tiled/packed/objects/arenaflametrap_orientation5.png"
+    },
+    "189" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/medievalspikes.png"
+    },
+    "190" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation2.png"
+    },
+    "191" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation3.png"
+    },
+    "192" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation4.png"
+    },
+    "193" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation5.png"
+    },
+    "194" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation6.png"
+    },
+    "195" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation7.png"
+    },
+    "196" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation8.png"
+    },
+    "197" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation9.png"
+    },
+    "198" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation10.png"
+    },
+    "199" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation11.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/savannahgroundspike1.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/savannahgroundspike2.png"
+    },
+    "200" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation12.png"
+    },
+    "201" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation13.png"
+    },
+    "202" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation6.png"
+    },
+    "203" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation7.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/desertceilingspike2.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/thorns3.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/icestalagmite2.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade2.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade2_orientation2.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade2_orientation3.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade2_orientation4.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade2_orientation5.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/magmagroundspike1.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/magmagroundspike2.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/groundspike2.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/desertgroundspike3.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingstalactite2.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingstalactite2_orientation1.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingspike1.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/magmaceilingspike3.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/icestalactite3.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/savannahceilingspike2.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingspike3.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/desertceilingspike3.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation2.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation3.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation4.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation5.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation6.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/teslaspike_orientation7.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/desertgroundspike1.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/desertgroundspike2.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpunjisticks2.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/desertceilingspike4.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/greengroundspike1.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/thorns2.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingstalactite3.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation1.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation2.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation3.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation4.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation5.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation6.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltrap_orientation7.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingstalactite5.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingstalactite1.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation1.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation2.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation3.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation4.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/flametrap_orientation5.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/thorns4.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/propeller.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation2.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation3.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation4.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation5.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/greengroundspike4.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/barbedwire.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/savannahceilingspike1.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingspike2.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/icestalactite4.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/icestalagmite1.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/groundspike4.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade_orientation2.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/groundspike1.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/desertceilingspike1.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/greenceilingspike2.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/savannahceilingspike3.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingspike4.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/thorns1.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/desertgroundspike4.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation2.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation3.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/sawblade_orientation3.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation4.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/bonespike_orientation5.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/icestalagmite3.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/savannahceilingspike4.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/objects/magmaceilingspike2.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/icestalactite2.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingstalactite4.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/objects/greenceilingspike4.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/greenceilingspike1.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/greenceilingspike3.png"
+    }
+  },
+  "tilewidth" : 72
+}

@@ -1,0 +1,23 @@
+{
+  "kind" : "artifact_particle_eternity_1",
+  "definition" : {
+    "type" : "animated",
+    "looping" : true,
+    "animation" : "/animations/arcana_animation_electric_pink/arcana_animation_electric_pink.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.425,
+    "fade" : 1,
+    "fullbright" : true,
+    "light" : [25, 92, 107],
+    "size" : 0.5,
+    "layer" : "middle",
+    "timeToLive" : 0.425,
+    "variance" : {
+      "finalVelocity" : [1.5, 1.5],
+      "rotation" : 180
+    }
+  }
+}

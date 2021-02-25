@@ -1,0 +1,85 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/serene",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A very sturdy serene door.",
+      "//name" : "serenedoor",
+      "//shortdescription" : "Serene Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "serenedoor"
+    },
+    "1" : {
+      "//description" : "An serene console. Using it is calming.",
+      "//name" : "sereneswitch",
+      "//shortdescription" : "Serene Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sereneswitch",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A very comfortable serene chair.",
+      "//name" : "serenechair",
+      "//shortdescription" : "Serene Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "serenechair",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A serene, glowing light.",
+      "//name" : "serenelight",
+      "//shortdescription" : "Serene Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "serenelight",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "An exceptionally comfortable serene bed.",
+      "//name" : "serenebed",
+      "//shortdescription" : "Serene Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "serenebed",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A hardy serene table.",
+      "//name" : "serenetable",
+      "//shortdescription" : "Serene Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "serenetable",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/serenedoor.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/sereneswitch.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/serenechair.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/serenelight.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/serenebed.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/serenetable.png"
+    }
+  },
+  "tilewidth" : 8
+}

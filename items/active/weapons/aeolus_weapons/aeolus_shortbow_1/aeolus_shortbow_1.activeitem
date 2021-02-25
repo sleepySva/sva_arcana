@@ -1,0 +1,81 @@
+{
+  "itemName" : "aeolus_shortbow_1",
+  "level" : 5,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A shortbow that fires light arrows at an extremely fast speed.",
+  "shortdescription" : "Ariostone Shortbow",
+  "tooltipKind" : "base",
+  "category" : "arcana_shortbow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+  "collectablesOnPickup" : { "arcana_collection_weapon_elemental" : "aeolus_shortbow_1" },
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/ranged/aeolus_shortbow_1.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "aeolus_shortbow_1.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/bow_loose.ogg"]
+    }
+  },
+  "baseOffset" : [0.50, 0.2],
+  "muzzleOffset" : [0.75, 0.05],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.6,
+    "baseDps" : 7.8,
+    "energyUsage" : 12,
+    "projectileCount" : 1,
+    "inaccuracy" : 0.01,
+    "fireType" : "auto",
+
+    "projectileType" : "aeolus_shortbow_1_projectile_1",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

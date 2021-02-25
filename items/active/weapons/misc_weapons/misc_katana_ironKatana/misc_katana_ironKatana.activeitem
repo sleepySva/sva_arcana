@@ -1,0 +1,34 @@
+{
+  "itemName" : "misc_katana_ironKatana",
+  "price" : 1000,
+  "level" : 2,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A sharp iron katana.",
+  "shortdescription" : "Iron Katana",
+  "tooltipKind" : "sword",
+  "category" : "arcana_katana",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/katana/arcana_katana_combo.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "misc_katana_ironKatana.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_katana_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 10.2
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

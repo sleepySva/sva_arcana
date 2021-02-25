@@ -1,0 +1,21 @@
+{
+  "materialId" : 16634,
+  "materialName" : "sanguine_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "sanguine_tile2",
+  "description" : "A reddish mud block.",
+  "shortdescription" : "Sanguine Mud",
+  "footstepSound" : "/sfx/blocks/footstep_mud.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "sanguine_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1462
+  }
+}

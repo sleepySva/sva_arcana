@@ -1,0 +1,57 @@
+{
+  "projectileName" : "bleuark_assaultRifle_1_projectile_1",
+  "physics" : "grenade",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 46,
+  "piercing" : true,
+  
+  "power" : 24.0,
+  
+  "image" : "bleuark_assaultRifle_1_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [20, 62, 145],
+  "emitters" : ["icetrailfast","drinking","capturepodblue"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/watersplash/watersplash.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/bleuark_assaultRifle_1_projectile_1/bleuark_assaultRifle_1_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma",
+  "statusEffects" : [
+    "wet"
+  ],
+  
+  "scripts" : [ "homingrocket.lua" ],
+  "controlForce" : 150,
+  "maxSpeed" : 150
+ 
+}

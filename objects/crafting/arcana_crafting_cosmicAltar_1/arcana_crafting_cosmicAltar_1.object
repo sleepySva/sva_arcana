@@ -1,0 +1,32 @@
+{
+  "objectName" : "arcana_crafting_cosmicAltar_1",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "An altar used to craft some rather suspicious items...",
+  "shortdescription" : "Cosmic Altar",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [120, 140, 160],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_cosmicAltar_1.config",
+	"filter" : ["arcana_crafting_cosmicAltar_1"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_cosmicAltar_1.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 18,
+      "animationCycle" : 1.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

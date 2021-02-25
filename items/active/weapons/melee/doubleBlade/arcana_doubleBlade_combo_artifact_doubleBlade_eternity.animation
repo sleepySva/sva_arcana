@@ -1,0 +1,200 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire4" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire5" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
+          "offset" : [0, 0.1],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
+        }
+      },
+      "handle" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>",
+          "offset" : [0, 0.1],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/doubleBlade/doubleBlade_swoosh_1/arcana_doubleBlade_swoosh_eternity.png:<frame>",
+                "offset" : [4, 0.0],
+                "damageArea" : [ [-2.25, 1.125], [0.25, 1.125], [1.625, 0.75], [2.5, 0], [2.5, -0.5], [2.125, -0.875], [1, -1.375], [-2.25, -1.375] ]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/doubleBlade/doubleBlade_swoosh_2/arcana_doubleBlade_swoosh_eternity.png:<frame>",
+                "offset" : [6.0, 1.0],
+                "damageArea" : [[-4, 1], [4.6, 1], [4.6, -2], [-4, -2]]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/doubleBlade/doubleBlade_swoosh_3/arcana_doubleBlade_swoosh_eternity.png:<frame>",
+                "offset" : [1, -0.5],
+                "damageArea" : [[-5, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+              }
+            },
+            "fire4" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/doubleBlade/doubleBlade_swoosh_4/arcana_doubleBlade_swoosh_eternity.png:<frame>",
+                "offset" : [2.0, 1.0],
+                "damageArea" : [[-4, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+              }
+            },
+            "fire5" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/doubleBlade/doubleBlade_swoosh_5/arcana_doubleBlade_swoosh_eternity.png:<frame>",
+                "offset" : [2.8, 1.0],
+                "damageArea" : [[-4, 2], [-2.0, 3], [2, 3], [3.4, 1.75], [5.4, -0.25], [5.4, -2.25], [3.4, -3.25], [0, -2.5]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "physicalswoosh" : {
+      "active" : true,
+      "transformationGroups" : ["swoosh"],
+      "offsetRegion" : [-4.0, -1.0, 5.0, 1.0],
+      "emissionRate" : 40,
+      "burstCount" : 8,
+      "particles" : [
+        { "particle" : "electricenergy"},
+        { "particle" : "artifact_particle_eternity_1"},
+        { "particle" : "electricswoosh1"},
+        { "particle" : "artifact_particle_eternity_1"},
+        { "particle" : "electricswoosh2"}
+      ]
+    },
+    "fireswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 4,
+      "particles" : [
+        { "particle" : "fireswoosh1"},
+        { "particle" : "fireswoosh2"},
+        { "particle" : "fireswoosh3"}
+      ]
+    },
+    "electricswoosh" : {
+      "active" : true,
+      "transformationGroups" : ["swoosh"],
+      "offsetRegion" : [-2.0, -1.0, 4.0, 1.0],
+      "emissionRate" : 40,
+      "burstCount" : 8,
+      "particles" : [
+        { "particle" : "electricenergy"},
+        { "particle" : "artifact_particle_eternity_1"},
+        { "particle" : "electricswoosh1"},
+        { "particle" : "artifact_particle_eternity_1"},
+        { "particle" : "electricswoosh2"}
+      ]
+    },
+    "poisonswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "poisonswoosh1"},
+        { "particle" : "poisonswoosh2"},
+        { "particle" : "fireswoosh2"}
+      ]
+    },
+    "iceswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "iceswoosh1"},
+        { "particle" : "iceswoosh2"},
+        { "particle" : "iceswoosh3"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+    "fire2" : [ ],
+    "fire3" : [ ],
+    "fire4" : [ ]
+  }
+}

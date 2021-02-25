@@ -1,0 +1,809 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/glitchvillage",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 68,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A wheelbarrow for transporting goods.",
+      "//name" : "wheelbarrow",
+      "//shortdescription" : "Wheelbarrow",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "wheelbarrow",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A cheaply made wooden door.",
+      "//name" : "villagedoor",
+      "//shortdescription" : "Village Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "villagedoor"
+    },
+    "10" : {
+      "//description" : "This cooking pot expels the odour of a hundred hearty meals.",
+      "//name" : "medievallargecookingpot",
+      "//shortdescription" : "Medieval Cooking Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievallargecookingpot",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "Ye olde counter.",
+      "//name" : "medievalcounter",
+      "//shortdescription" : "Medieval Counter",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalcounter",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A small wax candle in a holder.",
+      "//name" : "medievalcandle",
+      "//shortdescription" : "Candle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievalcandle",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A charming and well-made wooden cabinet.",
+      "//name" : "medievalcabinet",
+      "//shortdescription" : "Medieval Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalcabinet",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A keg full of juice. Mmm, juice!",
+      "//name" : "juicekeg",
+      "//shortdescription" : "Juice Keg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "juicekeg",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A neat bale of hay, ready for stacking.",
+      "//name" : "haystack",
+      "//shortdescription" : "Hay Stack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "haystack",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "An ordinary burlap sack.",
+      "//name" : "burlapsack",
+      "//shortdescription" : "Burlap Sack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "burlapsack",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A barrel. Sadly not full party hats.",
+      "//name" : "barrellarge",
+      "//shortdescription" : "Large Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "barrellarge",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A wicker basket. Maybe it's got cool stuff inside!",
+      "//name" : "wickerbasket2",
+      "//shortdescription" : "Wide Wicker Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket2"
+    },
+    "19" : {
+      "//description" : "A library sign. This way to the library!",
+      "//name" : "signlibrary",
+      "//shortdescription" : "Library Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signlibrary"
+    },
+    "2" : {
+      "//description" : "Poor dummy, I'll name him Freddie!",
+      "//name" : "targetdummy",
+      "//shortdescription" : "Target Dummy",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "targetdummy",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A library sign. This way to the library!",
+      "//name" : "signlibrary_orientation2",
+      "//shortdescription" : "Library Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signlibrary"
+    },
+    "21" : {
+      "//description" : "It's an old street lamp. It gives off a little warmth.",
+      "//name" : "medievalstreetlamp",
+      "//shortdescription" : "Medieval Street Lamp",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalstreetlamp",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "It's an old street lamp. It gives off a little warmth.",
+      "//name" : "medievalstreetlamp_orientation1",
+      "//shortdescription" : "Medieval Street Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievalstreetlamp",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A hard chair, it would get uncomfortable pretty quickly.",
+      "//name" : "medievalchair",
+      "//shortdescription" : "Medieval Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalchair",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A dirty-looking wooden cup.",
+      "//name" : "medievalcup",
+      "//shortdescription" : "Medieval Cup",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievalcup",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "There's a hole in this bucket.",
+      "//name" : "medievalbucket",
+      "//shortdescription" : "Medieval Bucket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalbucket"
+    },
+    "26" : {
+      "//description" : "Unhelpful road signs.",
+      "//name" : "crossroadssign",
+      "//shortdescription" : "Crossroads Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "crossroadssign",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A wooden wall shelf for displaying trinkets.",
+      "//name" : "medievalwallshelf",
+      "//shortdescription" : "Medieval Wall Shelf",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "medievalwallshelf",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "An extremely basic bed of hay.",
+      "//name" : "medievalcellbed",
+      "//shortdescription" : "Medieval Hay Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalcellbed",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A pile of hay. Probably not a great hiding place.",
+      "//name" : "haypile",
+      "//shortdescription" : "Hay Pile",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "haypile",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A sign advertising a place to rest your head.",
+      "//name" : "signinn",
+      "//shortdescription" : "Inn Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signinn"
+    },
+    "30" : {
+      "//description" : "Common, workshop tools used for quick repairs.",
+      "//name" : "garagetools",
+      "//shortdescription" : "Workshop Tools",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "garagetools",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A firm bed with silky sheets.",
+      "//name" : "medievalbed",
+      "//shortdescription" : "Medieval Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalbed",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "Ye olde dining room table.",
+      "//name" : "medievaltable",
+      "//shortdescription" : "Medieval Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievaltable",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A wicker basket. Maybe it's got cool stuff inside!",
+      "//name" : "wickerbasket3",
+      "//shortdescription" : "Tall Wicker Basket",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket3"
+    },
+    "34" : {
+      "//description" : "A old fashioned furnace for tempering tools.",
+      "//name" : "medievalfurnace",
+      "//shortdescription" : "Medieval Furnace",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalfurnace",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A pair of stocks. A medieval method of punishment.",
+      "//name" : "medievalstock",
+      "//shortdescription" : "Medieval Stocks",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalstock",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "An old wooden chest, still going strong.",
+      "//name" : "medievalchest",
+      "//shortdescription" : "Medieval Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalchest",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A bowl. It doesn't look very clean.",
+      "//name" : "medievalbowl",
+      "//shortdescription" : "Medieval Bowl",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalbowl"
+    },
+    "38" : {
+      "//description" : "A wicker basket. Maybe it's got cool stuff inside!",
+      "//name" : "wickerbasket4",
+      "//shortdescription" : "Handled Wicker Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket4"
+    },
+    "39" : {
+      "//description" : "Bullseye!",
+      "//name" : "target",
+      "//shortdescription" : "Target",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "target",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A sign advertising a place to rest your head.",
+      "//name" : "signinn_orientation2",
+      "//shortdescription" : "Inn Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signinn"
+    },
+    "40" : {
+      "//description" : "A rolled up bale of hay.",
+      "//name" : "hayroll",
+      "//shortdescription" : "Hay Roll",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hayroll",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A sword on a sign. It usually appears outside a weapons shop.",
+      "//name" : "signweaponshop",
+      "//shortdescription" : "Weapon Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signweaponshop"
+    },
+    "42" : {
+      "//description" : "A sword on a sign. It usually appears outside a weapons shop.",
+      "//name" : "signweaponshop_orientation2",
+      "//shortdescription" : "Weapon Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signweaponshop"
+    },
+    "43" : {
+      "//description" : "A tiny basket made of wicker.",
+      "//name" : "wickerbasket1",
+      "//shortdescription" : "Small Wicker Basket",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket1"
+    },
+    "44" : {
+      "//description" : "An outhouse! Enjoy!",
+      "//name" : "outhouse",
+      "//shortdescription" : "Outhouse",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outhouse",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A barrel. Anything could be inside!",
+      "//name" : "barrel",
+      "//shortdescription" : "Small Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "barrel",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A simple anvil, used for banging metal into shape.",
+      "//name" : "anvil",
+      "//shortdescription" : "Basic Anvil",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "anvil",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "An oil lamp. It gives off some warmth.",
+      "//name" : "medievallamp",
+      "//shortdescription" : "Medieval Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievallamp",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "It's a trough for feeding livestock.",
+      "//name" : "trough",
+      "//shortdescription" : "Trough",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "trough",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A very basic toilet.",
+      "//name" : "medievaltoilet",
+      "//shortdescription" : "Medieval Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievaltoilet",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A clear indicator of a forge.",
+      "//name" : "signforge",
+      "//shortdescription" : "Forge Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signforge"
+    },
+    "50" : {
+      "//description" : "One of these books looks out of place... I wonder...",
+      "//name" : "medievalbookcaseswitch",
+      "//shortdescription" : "Medieval Bookcase Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalbookcaseswitch",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A nicely made wooden desk.",
+      "//name" : "medievaldesk",
+      "//shortdescription" : "Medieval Desk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievaldesk",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A shop that sells freshly farmed produce.",
+      "//name" : "signproduce",
+      "//shortdescription" : "Produce Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signproduce"
+    },
+    "53" : {
+      "//description" : "A shop that sells freshly farmed produce.",
+      "//name" : "signproduce_orientation2",
+      "//shortdescription" : "Produce Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signproduce"
+    },
+    "54" : {
+      "//description" : "A simple wooden stool.",
+      "//name" : "woodenstool",
+      "//shortdescription" : "Simple Wooden Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "woodenstool",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A mechanical cash register. Ka-ching!",
+      "//name" : "medievalregister",
+      "//shortdescription" : "Cash Register",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalregister",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "A wicker basket. Maybe it's got cool stuff inside!",
+      "//name" : "wickerbasket5",
+      "//shortdescription" : "Large Wicker Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket5"
+    },
+    "57" : {
+      "//description" : "A bookcase for storing folk tales and legends...",
+      "//name" : "medievalbookcase",
+      "//shortdescription" : "Medieval Bookcase",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalbookcase",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "I sure could use some water...",
+      "//name" : "wellcover",
+      "//shortdescription" : "Well Cover",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "wellcover",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "Tools for creating pure, unadulterated deliciousness.",
+      "//name" : "kitchentools",
+      "//shortdescription" : "Kitchen Tools",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "kitchentools",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A clear indicator of a forge.",
+      "//name" : "signforge_orientation2",
+      "//shortdescription" : "Forge Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signforge"
+    },
+    "60" : {
+      "//description" : "A wooden crate.",
+      "//name" : "smallwoodencrate",
+      "//shortdescription" : "Small Wooden Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallwoodencrate",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "This dresser has a musty smell. It doesn't look very clean.",
+      "//name" : "medievaldresser",
+      "//shortdescription" : "Medieval Dresser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievaldresser",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A spade, a rake and a broom for all sorts of back-breaking farm work.",
+      "//name" : "farmtools",
+      "//shortdescription" : "Farm Tools",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "farmtools",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A wooden crate.",
+      "//name" : "largewoodencrate",
+      "//shortdescription" : "Large Wooden Crate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "largewoodencrate",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "A plate. It's gathering dust here.",
+      "//name" : "medievalplate",
+      "//shortdescription" : "Medieval Plate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalplate"
+    },
+    "65" : {
+      "//description" : "A wooden desk used by scribes.",
+      "//name" : "glitchscribe",
+      "//shortdescription" : "Scribe's Desk",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "glitchscribe",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "This chess board has custom pieces.",
+      "//name" : "glitchchess",
+      "//shortdescription" : "Themed Chess Table",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glitchchess",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "A pile of hay. Probably not a great hiding place.",
+      "//name" : "haypile_orientation2",
+      "//shortdescription" : "Hay Pile",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "haypile",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "Armour! Get yer armour here!",
+      "//name" : "signarmorshop",
+      "//shortdescription" : "Armour Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signarmorshop"
+    },
+    "8" : {
+      "//description" : "Armour! Get yer armour here!",
+      "//name" : "signarmorshop_orientation2",
+      "//shortdescription" : "Armour Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signarmorshop"
+    },
+    "9" : {
+      "//description" : "An old wooden shelf.",
+      "//name" : "medievalshelf",
+      "//shortdescription" : "Medieval Shelf",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalshelf",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/wheelbarrow.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/villagedoor.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/medievallargecookingpot.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/medievalcounter.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/medievalcandle.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/medievalcabinet.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/juicekeg.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/haystack.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/burlapsack.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/barrellarge.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket2.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/signlibrary.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/targetdummy.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/signlibrary_orientation2.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/medievalstreetlamp.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/medievalstreetlamp_orientation1.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/medievalchair.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/medievalcup.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/medievalbucket.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/crossroadssign.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/medievalwallshelf.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/medievalcellbed.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/haypile.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/signinn.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/garagetools.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/medievalbed.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/medievaltable.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket3.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/medievalfurnace.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/medievalstock.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/medievalchest.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/medievalbowl.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket4.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/target.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/signinn_orientation2.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/hayroll.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/signweaponshop.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/signweaponshop_orientation2.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket1.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/outhouse.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/barrel.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/anvil.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/medievallamp.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/trough.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/medievaltoilet.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/signforge.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/medievalbookcaseswitch.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/medievaldesk.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/signproduce.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/signproduce_orientation2.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/woodenstool.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/medievalregister.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket5.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/medievalbookcase.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/wellcover.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/kitchentools.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/signforge_orientation2.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/smallwoodencrate.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/medievaldresser.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/farmtools.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/largewoodencrate.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/medievalplate.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/glitchscribe.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/glitchchess.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/haypile_orientation2.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/signarmorshop.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/signarmorshop_orientation2.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/medievalshelf.png"
+    }
+  },
+  "tilewidth" : 8
+}

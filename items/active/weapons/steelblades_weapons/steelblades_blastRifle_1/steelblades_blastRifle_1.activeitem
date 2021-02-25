@@ -1,0 +1,60 @@
+{
+  "itemName" : "steelblades_blastRifle_1",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A blast-rifle made from verrostin. Used by the Steelblades.",
+  "shortdescription" : "Verrostin Blaster",
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 8,
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "steelblades_blastRifle_1.animation",
+  "animationParts" : {
+    "gun" : "steelblades_blastRifle_1.png",
+    "gunfullbright" : "fullbright.png"
+  },
+  "animationCustom" : {},
+  
+  "muzzleOffset" : [3.2, 0.6],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "chargefire",
+  "primaryAbility" : {
+    "chargeLevels" : [
+      {
+        "time" : 0,
+        "energyCost" : 20,
+        "cooldown" : 0.3,
+        "projectileType" : "steelblades_blastRifle_1_projectile_1",
+        "projectileCount" : 1,
+        "projectileParameters" : {
+			"speed" : 80
+		},
+        "inaccuracy" : 0,
+        "baseDamage" : 8,
+        "fireSound" : "fire2"
+      },
+      {
+        "time" : 0.4,
+        "energyCost" : 40,
+        "cooldown" : 0.3,
+        "projectileType" : "steelblades_blastRifle_1_projectile_1",
+        "projectileCount" : 1,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 16,
+        "fireSound" : "fire"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

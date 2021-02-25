@@ -1,0 +1,2141 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/floran",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 182,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Cave art depicting some large figure.",
+      "//name" : "caveart3",
+      "//shortdescription" : "Figure Cave Art",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-8",
+      "object" : "caveart3",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Cave art depicting some large figure.",
+      "//name" : "caveart3_orientation1",
+      "//shortdescription" : "Figure Cave Art",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "-8",
+      "object" : "caveart3",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "The Floran flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagfloran",
+      "//shortdescription" : "Floran Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagfloran",
+      "tilesetDirection" : "right"
+    },
+    "100" : {
+      "//description" : "A prison torture rack. It's not a stretch to say this would hurt.",
+      "//name" : "plantrack_orientation3",
+      "//shortdescription" : "Interrogation Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantrack",
+      "tilesetDirection" : "right"
+    },
+    "101" : {
+      "//description" : "A small geyser wrapped in growing vines.",
+      "//name" : "plantgeyser2",
+      "//shortdescription" : "Small Overgrown Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantgeyser2",
+      "tilesetDirection" : "right"
+    },
+    "102" : {
+      "//description" : "The cabinet made of leather stretched between four large tusks.",
+      "//name" : "florancabinet3",
+      "//shortdescription" : "Huge Primitive Cabinet",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "florancabinet3",
+      "tilesetDirection" : "right"
+    },
+    "103" : {
+      "//description" : "An empty plaque. What belongs here?",
+      "//name" : "huntingdisplay2",
+      "//shortdescription" : "Empty Plaque",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingdisplay2",
+      "tilesetDirection" : "right"
+    },
+    "104" : {
+      "//description" : "A leather screen, used in Floran food preparation.",
+      "//name" : "floranscreen2",
+      "//shortdescription" : "Leather Dressing Screen",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranscreen2",
+      "tilesetDirection" : "right"
+    },
+    "105" : {
+      "//description" : "A bench made of wood and bones. Seems... inviting?",
+      "//name" : "floranbench",
+      "//shortdescription" : "Primitive Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranbench",
+      "tilesetDirection" : "right"
+    },
+    "106" : {
+      "//description" : "A large, luminous pod hanigng from a vine.",
+      "//name" : "huntinglight3",
+      "//shortdescription" : "Vine Pod Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntinglight3",
+      "tilesetDirection" : "right"
+    },
+    "107" : {
+      "//description" : "A curtain, or a slab of half-dried, half-eaten meat. One of the two.",
+      "//name" : "florancurtain",
+      "//shortdescription" : "Primitive Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "florancurtain",
+      "tilesetDirection" : "right"
+    },
+    "108" : {
+      "//description" : "A curtain, or a slab of half-dried, half-eaten meat. One of the two.",
+      "//name" : "florancurtain_orientation2",
+      "//shortdescription" : "Primitive Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "florancurtain",
+      "tilesetDirection" : "right"
+    },
+    "109" : {
+      "//description" : "A curtain, or a slab of half-dried, half-eaten meat. One of the two.",
+      "//name" : "florancurtain_orientation3",
+      "//shortdescription" : "Primitive Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "florancurtain",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "The Floran flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagfloran_orientation1",
+      "//shortdescription" : "Floran Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagfloran",
+      "tilesetDirection" : "right"
+    },
+    "110" : {
+      "//description" : "A wooden chair overgrown with vines.",
+      "//name" : "plantchair",
+      "//shortdescription" : "Overgrown Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantchair",
+      "tilesetDirection" : "right"
+    },
+    "111" : {
+      "//description" : "A short volcanic geyser. It casts a faint glow.",
+      "//name" : "plantvolcano5",
+      "//shortdescription" : "Short Volcanic Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano5",
+      "tilesetDirection" : "right"
+    },
+    "112" : {
+      "//description" : "A small chest, made from sticks. Its security is questionable.",
+      "//name" : "chestfloran1",
+      "//shortdescription" : "Small Primitive Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestfloran1",
+      "tilesetDirection" : "right"
+    },
+    "113" : {
+      "//description" : "Sharp, spiky sticks. Don't fall on them.",
+      "//name" : "huntingpunjisticks2",
+      "//shortdescription" : "Small Sharp Sticks",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpunjisticks2",
+      "tilesetDirection" : "right"
+    },
+    "114" : {
+      "//description" : "Cave art depicting an offering.",
+      "//name" : "caveart5",
+      "//shortdescription" : "Mysterious Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "caveart5",
+      "tilesetDirection" : "right"
+    },
+    "115" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "116" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation1",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "117" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation2",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "118" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation3",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "119" : {
+      "//description" : "A Floran weapon rack. Unsurprisingly, many of the weapons are gone.",
+      "//name" : "huntingweaponrack1",
+      "//shortdescription" : "Hunting Weapon Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingweaponrack1",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A wide volcanic geyser. It's venting hot gasses.",
+      "//name" : "plantvolcano3",
+      "//shortdescription" : "Wide Volcanic Geyser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano3",
+      "tilesetDirection" : "right"
+    },
+    "120" : {
+      "//description" : "A basic bedroll on a wheeled wooden frame.",
+      "//name" : "plantbed3",
+      "//shortdescription" : "Wheeled Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed3",
+      "tilesetDirection" : "right"
+    },
+    "121" : {
+      "//description" : "A long chest, made from sticks. Its security is questionable.",
+      "//name" : "chestfloran2",
+      "//shortdescription" : "Large Primitive Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestfloran2",
+      "tilesetDirection" : "right"
+    },
+    "122" : {
+      "//description" : "It appears to be a tally chart.",
+      "//name" : "floranpainting3",
+      "//shortdescription" : "Primitive Chart Art",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "floranpainting3"
+    },
+    "123" : {
+      "//description" : "Very helpful rocks. Or could the arrow be a trick?",
+      "//name" : "huntingplatformrocks",
+      "//shortdescription" : "Arrow Etched Rocks",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "huntingplatformrocks",
+      "tilesetDirection" : "right"
+    },
+    "124" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "florancaptainschair",
+      "//shortdescription" : "Floran Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florancaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "125" : {
+      "//description" : "A string of bones to hang from the ceiling, like a morbid wind chime.",
+      "//name" : "floranceilingbones1",
+      "//shortdescription" : "Large Bone Chimes",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "floranceilingbones1",
+      "tilesetDirection" : "right"
+    },
+    "126" : {
+      "//description" : "A large cage for designed to hold Floran prisoners.",
+      "//name" : "plantcage1",
+      "//shortdescription" : "Large Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantcage1",
+      "tilesetDirection" : "right"
+    },
+    "127" : {
+      "//description" : "A very basic cooking pot suspended over a campfire.",
+      "//name" : "floranstove",
+      "//shortdescription" : "Primitive Stove",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranstove",
+      "tilesetDirection" : "right"
+    },
+    "128" : {
+      "//description" : "An ideal device for preparing traps and the like.",
+      "//name" : "huntingpressureplate",
+      "//shortdescription" : "Hunting Pressure Plate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "129" : {
+      "//description" : "A virtual reality headset.",
+      "//name" : "vrheadset",
+      "//shortdescription" : "VR Headset",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "16",
+      "object" : "vrheadset",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A small volcanic geyser. It's lighting the area faintly.",
+      "//name" : "plantvolcano2",
+      "//shortdescription" : "Large Volcanic Geyser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano2",
+      "tilesetDirection" : "right"
+    },
+    "130" : {
+      "//description" : "A virtual reality headset.",
+      "//name" : "vrheadset_orientation1",
+      "//shortdescription" : "VR Headset",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "16",
+      "object" : "vrheadset",
+      "tilesetDirection" : "right"
+    },
+    "131" : {
+      "//name" : "vrheadset_orientation2",
+      "invalid" : "true"
+    },
+    "132" : {
+      "//name" : "vrheadset_orientation3",
+      "invalid" : "true"
+    },
+    "133" : {
+      "//description" : "A strange green light pod is hanging loosely from a curved wooden post.",
+      "//name" : "floranlamp1",
+      "//shortdescription" : "Vine Pod Lamp",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranlamp1",
+      "tilesetDirection" : "right"
+    },
+    "134" : {
+      "//description" : "A strange green light pod is hanging loosely from a curved wooden post.",
+      "//name" : "floranlamp1_orientation1",
+      "//shortdescription" : "Vine Pod Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlamp1",
+      "tilesetDirection" : "right"
+    },
+    "135" : {
+      "//description" : "A bongo drum fashioned out of leather and wood.",
+      "//name" : "florandrum1",
+      "//shortdescription" : "Medium Bongo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florandrum1",
+      "tilesetDirection" : "right"
+    },
+    "136" : {
+      "//description" : "Large logs arranged as a construction staging platform.",
+      "//name" : "plantplatform2",
+      "//shortdescription" : "Large Wooden Staging",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "plantplatform2",
+      "tilesetDirection" : "right"
+    },
+    "137" : {
+      "//description" : "A glowing orb. It looks like there's room to store things inside.",
+      "//name" : "plantorb",
+      "//shortdescription" : "Glowing Orb",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantorb",
+      "tilesetDirection" : "right"
+    },
+    "138" : {
+      "//description" : "This door is hardly suitable for keeping the weather out.",
+      "//name" : "florandoor",
+      "//shortdescription" : "Primitive Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florandoor",
+      "tilesetDirection" : "right"
+    },
+    "139" : {
+      "//description" : "A bongo drum fashioned out of leather and wood.",
+      "//name" : "florandrum2",
+      "//shortdescription" : "Large Bongo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florandrum2",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A small volcanic geyser. It looks hot.",
+      "//name" : "plantvolcano1",
+      "//shortdescription" : "Small Volcanic Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano1",
+      "tilesetDirection" : "right"
+    },
+    "140" : {
+      "//description" : "A finely carved plaque with a skull on display.",
+      "//name" : "huntingtrophy2",
+      "//shortdescription" : "Shield Mounted Skull",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "huntingtrophy2"
+    },
+    "141" : {
+      "//description" : "A cabinet adorned with huge, sharp fangs.",
+      "//name" : "florancabinet1",
+      "//shortdescription" : "Large Primitive Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florancabinet1",
+      "tilesetDirection" : "right"
+    },
+    "142" : {
+      "//description" : "Cave art depicting some animals.",
+      "//name" : "caveart1",
+      "//shortdescription" : "Animal Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "caveart1",
+      "tilesetDirection" : "right"
+    },
+    "143" : {
+      "//description" : "This torch is wrapped in a plant covering.",
+      "//name" : "planttorch",
+      "//shortdescription" : "Plant Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planttorch",
+      "tilesetDirection" : "right"
+    },
+    "144" : {
+      "//description" : "This torch is wrapped in a plant covering.",
+      "//name" : "planttorch_orientation2",
+      "//shortdescription" : "Plant Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planttorch",
+      "tilesetDirection" : "right"
+    },
+    "145" : {
+      "//description" : "This torch is wrapped in a plant covering.",
+      "//name" : "planttorch_orientation3",
+      "//shortdescription" : "Plant Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planttorch",
+      "tilesetDirection" : "right"
+    },
+    "146" : {
+      "//description" : "This torch is wrapped in a plant covering.",
+      "//name" : "planttorch_orientation4",
+      "//shortdescription" : "Plant Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planttorch",
+      "tilesetDirection" : "right"
+    },
+    "147" : {
+      "//description" : "A wall mountable Floran prison bunk.",
+      "//name" : "plantbed2",
+      "//shortdescription" : "Plant Wall Bunk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed2",
+      "tilesetDirection" : "right"
+    },
+    "148" : {
+      "//description" : "A chest made from plant material. It appears to be still growing.",
+      "//name" : "chestplant1",
+      "//shortdescription" : "Small Overgrown Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestplant1",
+      "tilesetDirection" : "right"
+    },
+    "149" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "floranshipdoor",
+      "//shortdescription" : "Floran Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A fragile thin urn made from clay.",
+      "//name" : "planturn2",
+      "//shortdescription" : "Thin Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planturn2",
+      "tilesetDirection" : "right"
+    },
+    "150" : {
+      "//description" : "An arcane torture device. Best not to ask how it's used.",
+      "//name" : "planttorturedevice",
+      "//shortdescription" : "Torture Device",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "planttorturedevice",
+      "tilesetDirection" : "right"
+    },
+    "151" : {
+      "//description" : "A cooking countertop used for chopping meat.",
+      "//name" : "florantable2",
+      "//shortdescription" : "Primitive Countertop",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florantable2",
+      "tilesetDirection" : "right"
+    },
+    "152" : {
+      "//description" : "A tiny stool carved from bone.",
+      "//name" : "floranbonestool",
+      "//shortdescription" : "Primitive Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonestool",
+      "tilesetDirection" : "right"
+    },
+    "153" : {
+      "//description" : "A fragile small urn made from clay.",
+      "//name" : "planturn3",
+      "//shortdescription" : "Small Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planturn3",
+      "tilesetDirection" : "right"
+    },
+    "154" : {
+      "//description" : "This painting seems to illustrate how to build a fire.",
+      "//name" : "floranpainting1",
+      "//shortdescription" : "Primitive Fire Art",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranpainting1"
+    },
+    "155" : {
+      "//description" : "An animal pelt stretched and dried between two large bones.",
+      "//name" : "florantanningrack",
+      "//shortdescription" : "Primitive Tanning Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florantanningrack",
+      "tilesetDirection" : "right"
+    },
+    "156" : {
+      "//description" : "This pelt serves as a Floran hunter's trophy.",
+      "//name" : "floranpelt2",
+      "//shortdescription" : "Small Black Pelt",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranpelt2",
+      "tilesetDirection" : "right"
+    },
+    "157" : {
+      "//description" : "A Drysap Dispenser. The one thing standing between the Floran and a dusty demise.",
+      "//name" : "plantdrysapdispenser",
+      "//shortdescription" : "Drysap Dispenser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "plantdrysapdispenser"
+    },
+    "158" : {
+      "//description" : "A cabinet adorned with huge, sharp fangs.",
+      "//name" : "florancabinet2",
+      "//shortdescription" : "Small Primitive Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florancabinet2",
+      "tilesetDirection" : "right"
+    },
+    "159" : {
+      "//description" : "A Floran's idea of abstract art.",
+      "//name" : "floranpainting5",
+      "//shortdescription" : "Primitive Abstract Art",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "floranpainting5"
+    },
+    "16" : {
+      "//description" : "A log, smoothed for sitting on.",
+      "//name" : "plantlog",
+      "//shortdescription" : "Sitting Log",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantlog",
+      "tilesetDirection" : "right"
+    },
+    "160" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "floranshiplockerTier0",
+      "//shortdescription" : "Shiplocker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floranshiplockerTier0"
+    },
+    "161" : {
+      "//description" : "A wooden table which is overgrown with vines.",
+      "//name" : "plantvinetable",
+      "//shortdescription" : "Overgrown Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantvinetable",
+      "tilesetDirection" : "right"
+    },
+    "162" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "floranteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "floranteleporterTier0"
+    },
+    "163" : {
+      "//description" : "A storage crate made of unrefined wood and bone.",
+      "//name" : "florancrate",
+      "//shortdescription" : "Primitive Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florancrate",
+      "tilesetDirection" : "right"
+    },
+    "164" : {
+      "//description" : "Cave art depicting a tentacled being.",
+      "//name" : "caveart4",
+      "//shortdescription" : "Ambiguous Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "caveart4",
+      "tilesetDirection" : "right"
+    },
+    "165" : {
+      "//description" : "Cave art depicting a tentacled being.",
+      "//name" : "caveart4_orientation1",
+      "//shortdescription" : "Ambiguous Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "caveart4",
+      "tilesetDirection" : "right"
+    },
+    "166" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "florantechstationTier0",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "florantechstationTier0"
+    },
+    "167" : {
+      "//description" : "A bookcase made from the remains of Floran prey.",
+      "//name" : "floranbookcase",
+      "//shortdescription" : "Primitive Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranbookcase",
+      "tilesetDirection" : "right"
+    },
+    "168" : {
+      "//description" : "An empty shelving rack.",
+      "//name" : "plantshelf",
+      "//shortdescription" : "Empty Shelf",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantshelf",
+      "tilesetDirection" : "right"
+    },
+    "169" : {
+      "//description" : "A trap that drops heavy boulders on unsuspecting intruders.",
+      "//name" : "floranbouldertrap",
+      "//shortdescription" : "Floran Boulder Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "floranbouldertrap",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A large geyser, covered in plant growth.",
+      "//name" : "plantgeyser1",
+      "//shortdescription" : "Large Overgrown Geyser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantgeyser1",
+      "tilesetDirection" : "right"
+    },
+    "170" : {
+      "//description" : "A small insectile creature impaled on a hunting pike.",
+      "//name" : "ixolingpike",
+      "//shortdescription" : "Ixoling Pike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ixolingpike",
+      "tilesetDirection" : "right"
+    },
+    "171" : {
+      "//name" : "ixolingpike_orientation1",
+      "invalid" : "true"
+    },
+    "172" : {
+      "//description" : "A crude painting of a Floran hunter wielding a spear.",
+      "//name" : "floranhunterpainting",
+      "//shortdescription" : "Primitive Hunter Art",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranhunterpainting"
+    },
+    "173" : {
+      "//description" : "A display commemorating the spear of a Floran who won a hunting ceremony.",
+      "//name" : "championspeardisplay",
+      "//shortdescription" : "Champion's Spear Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "championspeardisplay",
+      "tilesetDirection" : "right"
+    },
+    "174" : {
+      "//description" : "This trophy is a spinneret from some large, web spinning creature.",
+      "//name" : "floranspinneret",
+      "//shortdescription" : "Spinneret Trophy",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranspinneret",
+      "tilesetDirection" : "right"
+    },
+    "175" : {
+      "//description" : "This trophy rack is covered in a foul web.",
+      "//name" : "floranwebbing",
+      "//shortdescription" : "Web Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranwebbing",
+      "tilesetDirection" : "right"
+    },
+    "176" : {
+      "//name" : "floranwebbing_orientation2",
+      "invalid" : "true"
+    },
+    "177" : {
+      "//name" : "floranwebbing_orientation3",
+      "invalid" : "true"
+    },
+    "178" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "floranshiphatch",
+      "//shortdescription" : "Floran Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "floranshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "179" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation6",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A retractable gate, made from a light wood.",
+      "//name" : "plantdoor2",
+      "//shortdescription" : "Retractable Wooden Gate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-32",
+      "object" : "plantdoor2",
+      "tilesetDirection" : "right"
+    },
+    "180" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation7",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "181" : {
+      "//description" : "A tribal green banner from some faraway Floran nation.",
+      "//name" : "wargroovebanner4",
+      "//shortdescription" : "Floran Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wargroovebanner4",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A desk with large cabinet drawers.",
+      "//name" : "plantcabinet2",
+      "//shortdescription" : "Large Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantcabinet2",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "florantechstation",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "florantechstation"
+    },
+    "20" : {
+      "//description" : "A small cabinet with a table top.",
+      "//name" : "plantcabinet1",
+      "//shortdescription" : "Small Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantcabinet1",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A Floran prisoner bedroll covered with a blanket.",
+      "//name" : "plantbed4",
+      "//shortdescription" : "Covered Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed4",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A Floran prisoner bedroll covered with a blanket.",
+      "//name" : "plantbed4_orientation2",
+      "//shortdescription" : "Covered Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed4",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A Floran weapon rack. All of the weapons are missing.",
+      "//name" : "huntingweaponrack2",
+      "//shortdescription" : "Empty Weapon Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingweaponrack2",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A head mounted on a round plaque. Its eyes follow you...",
+      "//name" : "huntingtrophy1",
+      "//shortdescription" : "Round Mounted Skull",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "huntingtrophy1"
+    },
+    "25" : {
+      "//description" : "A railing made of pikes tied together.",
+      "//name" : "huntingrail2",
+      "//shortdescription" : "Crooked Pike Railing",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingrail2",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "Sharp, spiky sticks. Don't fall on them.",
+      "//name" : "huntingpunjisticks1",
+      "//shortdescription" : "Large Sharp Sticks",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingpunjisticks1",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A bundle of unusually large leaves.",
+      "//name" : "huntingplatformleaves",
+      "//shortdescription" : "Leaf Bundle",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingplatformleaves",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A raised platform. Don't get stuck under it.",
+      "//name" : "huntingplatform1",
+      "//shortdescription" : "Raised Platform",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingplatform1",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A light made of vines. Or a vine made of lights?",
+      "//name" : "huntinglight2",
+      "//shortdescription" : "Small Vine Lights",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "huntinglight2",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "floranshipdoorBroken",
+      "//shortdescription" : "Floran Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranshipdoorBroken",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A Floran spear mounted on a decorative plaque.",
+      "//name" : "huntingdisplay1",
+      "//shortdescription" : "Spear on a Plaque",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingdisplay1",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A statue of a Floran. It looks like a great hunter.",
+      "//name" : "huntingbigstatue",
+      "//shortdescription" : "Large Floran Statue",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "huntingbigstatue",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A crudely made bench. It's had a lot of use during Floran hunts.",
+      "//name" : "huntingbench",
+      "//shortdescription" : "Crude Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingbench",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "Floran come together at tables like these to eat flesh stew.",
+      "//name" : "florantable1",
+      "//shortdescription" : "Primitive Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florantable1",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A table fashioned out a small tree topped with a slab of wood.",
+      "//name" : "floransmalltable",
+      "//shortdescription" : "Small Primitive Table",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floransmalltable",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A wooden screen, perfect for dressing behind.",
+      "//name" : "floranscreen1",
+      "//shortdescription" : "Wooden Dressing Screen",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranscreen1",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "The pelt of a small, snow dwelling animal.",
+      "//name" : "floranpelt5",
+      "//shortdescription" : "Small Snowy Pelt",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranpelt5",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "The pelt of a large, snow dwelling animal.",
+      "//name" : "floranpelt4",
+      "//shortdescription" : "Large Snowy Pelt",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-24",
+      "object" : "floranpelt4"
+    },
+    "38" : {
+      "//description" : "A large pelt with thick, lustrous fur.",
+      "//name" : "floranpelt1",
+      "//shortdescription" : "Large Brown Pelt",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-24",
+      "object" : "floranpelt1"
+    },
+    "39" : {
+      "//description" : "A bongo drum fashioned out of leather and wood.",
+      "//name" : "florandrum3",
+      "//shortdescription" : "Small Bongo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florandrum3",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive.",
+      "//name" : "floranfuelhatch",
+      "//shortdescription" : "FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranfuelhatch"
+    },
+    "40" : {
+      "//description" : "A piece of thin leather is stretched from the ceiling.",
+      "//name" : "florancorner",
+      "//shortdescription" : "Leather Support",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "florancorner",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A piece of thin leather is stretched from the ceiling.",
+      "//name" : "florancorner_orientation1",
+      "//shortdescription" : "Leather Support",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "florancorner",
+      "tilesetDirection" : "left"
+    },
+    "42" : {
+      "//description" : "A simple wooden chair with bone accents.",
+      "//name" : "floranchair",
+      "//shortdescription" : "Primitive Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranchair",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A string of bones to hang from the ceiling, like a morbid wind chime.",
+      "//name" : "floranceilingbones2",
+      "//shortdescription" : "Small Bone Chimes",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "floranceilingbones2",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A table made from many small bones.",
+      "//name" : "floranbonetable2",
+      "//shortdescription" : "Short Primitive Table",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonetable2",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "This entire table appears to have been carved from a single, enormous bone.",
+      "//name" : "floranbonetable1",
+      "//shortdescription" : "Large Primitive Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranbonetable1",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "There are barbaric Floran tales etched into the bone.",
+      "//name" : "floranbonedisplay2",
+      "//shortdescription" : "Bone Carving",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonedisplay2",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "The result of a successful Floran hunt.",
+      "//name" : "floranbonedisplay1",
+      "//shortdescription" : "Bone Trophy",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "floranbonedisplay1",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "An old sign to warn of deathly danger.",
+      "//name" : "deathwarning",
+      "//shortdescription" : "Old Warning Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "deathwarning"
+    },
+    "49" : {
+      "//description" : "It appears to be a painting of a falling leaf.",
+      "//name" : "floranpainting4",
+      "//shortdescription" : "Primitive Leaf Painting",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "floranpainting4"
+    },
+    "5" : {
+      "//description" : "A broken FTL fuel hatch. This won't do!",
+      "//name" : "brokenfloranfuelhatch",
+      "//shortdescription" : "Broken FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "brokenfloranfuelhatch"
+    },
+    "50" : {
+      "//description" : "It's just an armchair made of bones. No big deal.",
+      "//name" : "floranarmchair",
+      "//shortdescription" : "Primitive Armchair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranarmchair",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//name" : "brokenfloranfuelhatchTier0",
+      "invalid" : "true"
+    },
+    "52" : {
+      "//description" : "A skull on a pike. A Floran favourite.",
+      "//name" : "huntingpike2",
+      "//shortdescription" : "Skull on a Pike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpike2",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A skull on a pike. A Floran favourite.",
+      "//name" : "huntingpike2_orientation1",
+      "//shortdescription" : "Skull on a Pike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "huntingpike2",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "This organic light flickers softly.",
+      "//name" : "plantbiolight",
+      "//shortdescription" : "Organic Biolight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "plantbiolight"
+    },
+    "55" : {
+      "//description" : "This organic light flickers softly.",
+      "//name" : "plantbiolight_orientation2",
+      "//shortdescription" : "Organic Biolight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "plantbiolight"
+    },
+    "56" : {
+      "//description" : "This organic light flickers softly.",
+      "//name" : "plantbiolight_orientation3",
+      "//shortdescription" : "Organic Biolight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "plantbiolight"
+    },
+    "57" : {
+      "//description" : "A raised platform. Don't get stuck under it.",
+      "//name" : "huntingplatform2",
+      "//shortdescription" : "Ramped Platform",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingplatform2",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "A fragile wide urn made from clay.",
+      "//name" : "planturn1",
+      "//shortdescription" : "Wide Urn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "planturn1",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A light made of vines. Or a vine made of lights?",
+      "//name" : "huntinglight1",
+      "//shortdescription" : "Large Vine Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntinglight1",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A statue of a Floran. It looks like a great hunter.",
+      "//name" : "huntingchampionstatue",
+      "//shortdescription" : "Floran Champion Statue",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "huntingchampionstatue",
+      "tilesetDirection" : "left"
+    },
+    "60" : {
+      "//description" : "This door is hardly suitable for keeping the weather out.",
+      "//name" : "huntingdoor1",
+      "//shortdescription" : "Bamboo Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingdoor1",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "A door made from interlocking vines.",
+      "//name" : "plantdoor1",
+      "//shortdescription" : "Vine Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantdoor1",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A statue of a Floran holding a spear menacingly.",
+      "//name" : "huntingstatue",
+      "//shortdescription" : "Floran Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingstatue",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A couch made of leather hide and large bones.",
+      "//name" : "florancouch",
+      "//shortdescription" : "Primitive Couch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "florancouch",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "A bongo drum fashioned out of leather and wood.",
+      "//name" : "florandrum4",
+      "//shortdescription" : "Tiny Bongo",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "florandrum4",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "It looks like someone has painted glyphs onto a piece of leather.",
+      "//name" : "floranpainting2",
+      "//shortdescription" : "Primitive Glyph Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floranpainting2"
+    },
+    "66" : {
+      "//description" : "This door is strong and sustainably sourced.",
+      "//name" : "bamboodoor",
+      "//shortdescription" : "Bamboo Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bamboodoor",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "Lots of tempting buttons that should probably be left alone.",
+      "//name" : "plantpanel",
+      "//shortdescription" : "Small Wooden Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantpanel",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "A nice, spacious, wall-mounted storage solution.",
+      "//name" : "floranstoragelocker",
+      "//shortdescription" : "Floran Storage Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floranstoragelocker"
+    },
+    "69" : {
+      "//description" : "A Floran prison bedroll. It spreads out on the ground.",
+      "//name" : "plantbed1",
+      "//shortdescription" : "Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed1",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "Cave art depicting some hunters.",
+      "//name" : "caveart2",
+      "//shortdescription" : "Hunter Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "caveart2",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "Large logs assembled as a construction platform.",
+      "//name" : "plantplatform1",
+      "//shortdescription" : "Large Wooden Scaffolding",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "plantplatform1",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "Deep shadows stretch away from this menacing torch.",
+      "//name" : "skulltorch",
+      "//shortdescription" : "Skull Torch Stand",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "skulltorch",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "The bone frame is sort of disturbing, but that fur blanket looks mighty comfy.",
+      "//name" : "floranbed",
+      "//shortdescription" : "Primitive Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranbed",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "A wood and bone shelf used for storing supplies and keepsakes.",
+      "//name" : "floranshelf",
+      "//shortdescription" : "Primitive Shelf",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranshelf",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "Torches have been stuck to a sapling in lieu of a fancy chandelier.",
+      "//name" : "floranchandelier",
+      "//shortdescription" : "Primitive Chandelier",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "floranchandelier",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//description" : "A desk lamp made from a glowing plant pod.",
+      "//name" : "plantdesklamp",
+      "//shortdescription" : "Organic Desk Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantdesklamp",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "A desk lamp made from a glowing plant pod.",
+      "//name" : "plantdesklamp_orientation1",
+      "//shortdescription" : "Organic Desk Lamp",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantdesklamp",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "A skull mounted as a trophy on crossed wood planks.",
+      "//name" : "huntingtrophy3",
+      "//shortdescription" : "Cross Mounted Skull",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "huntingtrophy3"
+    },
+    "78" : {
+      "//description" : "A railing held together with bones.",
+      "//name" : "huntingrail1",
+      "//shortdescription" : "Crooked Bone Railing",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingrail1",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "A tall volcanic geyser. It's seeping lava.",
+      "//name" : "plantvolcano4",
+      "//shortdescription" : "Tall Volcanic Geyser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano4",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A study small Floran prison cage made from wood.",
+      "//name" : "plantcage2",
+      "//shortdescription" : "Small Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantcage2",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "Penguin bones on a pike arranged decoratively.",
+      "//name" : "huntingpike3",
+      "//shortdescription" : "Penguin Bones Pike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "huntingpike3",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation1",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "83" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation2",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "84" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation3",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "85" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation4",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "left"
+    },
+    "86" : {
+      "//description" : "The pod emits a natural green light.",
+      "//name" : "floranlight_orientation5",
+      "//shortdescription" : "Vine Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floranlight",
+      "tilesetDirection" : "right"
+    },
+    "87" : {
+      "//description" : "A standing torch. Illuminates the giant beast about to eat you.",
+      "//name" : "huntinggroundtorch",
+      "//shortdescription" : "Sturdy Torch Stand",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntinggroundtorch",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "A desk, probably belonging to the greenfinger of a Floran tribe.",
+      "//name" : "florandesk",
+      "//shortdescription" : "Primitive Desk",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florandesk",
+      "tilesetDirection" : "left"
+    },
+    "89" : {
+      "//description" : "This toilet doesn't look very leak-proof.",
+      "//name" : "florantoilet",
+      "//shortdescription" : "Primitive Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florantoilet",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "An old battered sign warning of falling rocks.",
+      "//name" : "fallingrocks",
+      "//shortdescription" : "Old Falling Rocks Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fallingrocks"
+    },
+    "90" : {
+      "//description" : "A ragged fur pelt, hung from two large tusks.",
+      "//name" : "floranpelt3",
+      "//shortdescription" : "Long Black Pelt",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "floranpelt3"
+    },
+    "91" : {
+      "//description" : "Some bones on a pike. How morbid.",
+      "//name" : "huntingpike1",
+      "//shortdescription" : "Bones on a Pike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpike1",
+      "tilesetDirection" : "right"
+    },
+    "92" : {
+      "//description" : "Some bones on a pike. How morbid.",
+      "//name" : "huntingpike1_orientation1",
+      "//shortdescription" : "Bones on a Pike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "huntingpike1",
+      "tilesetDirection" : "right"
+    },
+    "93" : {
+      "//description" : "A rack of 3 unidentified bones.",
+      "//name" : "floranbonerack",
+      "//shortdescription" : "Bone Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonerack",
+      "tilesetDirection" : "right"
+    },
+    "94" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "floranteleporter",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "floranteleporter"
+    },
+    "95" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "floranshiplocker",
+      "//shortdescription" : "Shiplocker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floranshiplocker"
+    },
+    "96" : {
+      "//description" : "A sinister torch made from old bones.",
+      "//name" : "skullwalltorch",
+      "//shortdescription" : "Skull Wall Torch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "skullwalltorch",
+      "tilesetDirection" : "right"
+    },
+    "97" : {
+      "//description" : "A broken cage. What could have escaped?",
+      "//name" : "plantbrokencage",
+      "//shortdescription" : "Broken Wooden Cage",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbrokencage",
+      "tilesetDirection" : "right"
+    },
+    "98" : {
+      "//description" : "A prison torture rack. It's not a stretch to say this would hurt.",
+      "//name" : "plantrack",
+      "//shortdescription" : "Interrogation Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantrack",
+      "tilesetDirection" : "right"
+    },
+    "99" : {
+      "//description" : "A prison torture rack. It's not a stretch to say this would hurt.",
+      "//name" : "plantrack_orientation2",
+      "//shortdescription" : "Interrogation Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantrack",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/caveart3.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/caveart3_orientation1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/flagfloran.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/plantrack_orientation3.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/plantgeyser2.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/florancabinet3.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/huntingdisplay2.png"
+    },
+    "104" : {
+      "image" : "../../../../../tiled/packed/objects/floranscreen2.png"
+    },
+    "105" : {
+      "image" : "../../../../../tiled/packed/objects/floranbench.png"
+    },
+    "106" : {
+      "image" : "../../../../../tiled/packed/objects/huntinglight3.png"
+    },
+    "107" : {
+      "image" : "../../../../../tiled/packed/objects/florancurtain.png"
+    },
+    "108" : {
+      "image" : "../../../../../tiled/packed/objects/florancurtain_orientation2.png"
+    },
+    "109" : {
+      "image" : "../../../../../tiled/packed/objects/florancurtain_orientation3.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/flagfloran_orientation1.png"
+    },
+    "110" : {
+      "image" : "../../../../../tiled/packed/objects/plantchair.png"
+    },
+    "111" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano5.png"
+    },
+    "112" : {
+      "image" : "../../../../../tiled/packed/objects/chestfloran1.png"
+    },
+    "113" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpunjisticks2.png"
+    },
+    "114" : {
+      "image" : "../../../../../tiled/packed/objects/caveart5.png"
+    },
+    "115" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3.png"
+    },
+    "116" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation1.png"
+    },
+    "117" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation2.png"
+    },
+    "118" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation3.png"
+    },
+    "119" : {
+      "image" : "../../../../../tiled/packed/objects/huntingweaponrack1.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano3.png"
+    },
+    "120" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed3.png"
+    },
+    "121" : {
+      "image" : "../../../../../tiled/packed/objects/chestfloran2.png"
+    },
+    "122" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting3.png"
+    },
+    "123" : {
+      "image" : "../../../../../tiled/packed/objects/huntingplatformrocks.png"
+    },
+    "124" : {
+      "image" : "../../../../../tiled/packed/objects/florancaptainschair.png"
+    },
+    "125" : {
+      "image" : "../../../../../tiled/packed/objects/floranceilingbones1.png"
+    },
+    "126" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage1.png"
+    },
+    "127" : {
+      "image" : "../../../../../tiled/packed/objects/floranstove.png"
+    },
+    "128" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpressureplate.png"
+    },
+    "129" : {
+      "image" : "../../../../../tiled/packed/objects/vrheadset.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano2.png"
+    },
+    "130" : {
+      "image" : "../../../../../tiled/packed/objects/vrheadset_orientation1.png"
+    },
+    "131" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "132" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "133" : {
+      "image" : "../../../../../tiled/packed/objects/floranlamp1.png"
+    },
+    "134" : {
+      "image" : "../../../../../tiled/packed/objects/floranlamp1_orientation1.png"
+    },
+    "135" : {
+      "image" : "../../../../../tiled/packed/objects/florandrum1.png"
+    },
+    "136" : {
+      "image" : "../../../../../tiled/packed/objects/plantplatform2.png"
+    },
+    "137" : {
+      "image" : "../../../../../tiled/packed/objects/plantorb.png"
+    },
+    "138" : {
+      "image" : "../../../../../tiled/packed/objects/florandoor.png"
+    },
+    "139" : {
+      "image" : "../../../../../tiled/packed/objects/florandrum2.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano1.png"
+    },
+    "140" : {
+      "image" : "../../../../../tiled/packed/objects/huntingtrophy2.png"
+    },
+    "141" : {
+      "image" : "../../../../../tiled/packed/objects/florancabinet1.png"
+    },
+    "142" : {
+      "image" : "../../../../../tiled/packed/objects/caveart1.png"
+    },
+    "143" : {
+      "image" : "../../../../../tiled/packed/objects/planttorch.png"
+    },
+    "144" : {
+      "image" : "../../../../../tiled/packed/objects/planttorch_orientation2.png"
+    },
+    "145" : {
+      "image" : "../../../../../tiled/packed/objects/planttorch_orientation3.png"
+    },
+    "146" : {
+      "image" : "../../../../../tiled/packed/objects/planttorch_orientation4.png"
+    },
+    "147" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed2.png"
+    },
+    "148" : {
+      "image" : "../../../../../tiled/packed/objects/chestplant1.png"
+    },
+    "149" : {
+      "image" : "../../../../../tiled/packed/objects/floranshipdoor.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/planturn2.png"
+    },
+    "150" : {
+      "image" : "../../../../../tiled/packed/objects/planttorturedevice.png"
+    },
+    "151" : {
+      "image" : "../../../../../tiled/packed/objects/florantable2.png"
+    },
+    "152" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonestool.png"
+    },
+    "153" : {
+      "image" : "../../../../../tiled/packed/objects/planturn3.png"
+    },
+    "154" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting1.png"
+    },
+    "155" : {
+      "image" : "../../../../../tiled/packed/objects/florantanningrack.png"
+    },
+    "156" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt2.png"
+    },
+    "157" : {
+      "image" : "../../../../../tiled/packed/objects/plantdrysapdispenser.png"
+    },
+    "158" : {
+      "image" : "../../../../../tiled/packed/objects/florancabinet2.png"
+    },
+    "159" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting5.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/plantlog.png"
+    },
+    "160" : {
+      "image" : "../../../../../tiled/packed/objects/floranshiplockerTier0.png"
+    },
+    "161" : {
+      "image" : "../../../../../tiled/packed/objects/plantvinetable.png"
+    },
+    "162" : {
+      "image" : "../../../../../tiled/packed/objects/floranteleporterTier0.png"
+    },
+    "163" : {
+      "image" : "../../../../../tiled/packed/objects/florancrate.png"
+    },
+    "164" : {
+      "image" : "../../../../../tiled/packed/objects/caveart4.png"
+    },
+    "165" : {
+      "image" : "../../../../../tiled/packed/objects/caveart4_orientation1.png"
+    },
+    "166" : {
+      "image" : "../../../../../tiled/packed/objects/florantechstationTier0.png"
+    },
+    "167" : {
+      "image" : "../../../../../tiled/packed/objects/floranbookcase.png"
+    },
+    "168" : {
+      "image" : "../../../../../tiled/packed/objects/plantshelf.png"
+    },
+    "169" : {
+      "image" : "../../../../../tiled/packed/objects/floranbouldertrap.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/plantgeyser1.png"
+    },
+    "170" : {
+      "image" : "../../../../../tiled/packed/objects/ixolingpike.png"
+    },
+    "171" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "172" : {
+      "image" : "../../../../../tiled/packed/objects/floranhunterpainting.png"
+    },
+    "173" : {
+      "image" : "../../../../../tiled/packed/objects/championspeardisplay.png"
+    },
+    "174" : {
+      "image" : "../../../../../tiled/packed/objects/floranspinneret.png"
+    },
+    "175" : {
+      "image" : "../../../../../tiled/packed/objects/floranwebbing.png"
+    },
+    "176" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "177" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "178" : {
+      "image" : "../../../../../tiled/packed/objects/floranshiphatch.png"
+    },
+    "179" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation6.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/plantdoor2.png"
+    },
+    "180" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation7.png"
+    },
+    "181" : {
+      "image" : "../../../../../tiled/packed/objects/wargroovebanner4.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/plantcabinet2.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/florantechstation.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/plantcabinet1.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed4.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed4_orientation2.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/huntingweaponrack2.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/huntingtrophy1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/huntingrail2.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpunjisticks1.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/huntingplatformleaves.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/huntingplatform1.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/huntinglight2.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/floranshipdoorBroken.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/huntingdisplay1.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/huntingbigstatue.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/huntingbench.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/florantable1.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/floransmalltable.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/floranscreen1.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt5.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt4.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt1.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/florandrum3.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/floranfuelhatch.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/florancorner.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/florancorner_orientation1.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/floranchair.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/floranceilingbones2.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonetable2.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonetable1.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonedisplay2.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonedisplay1.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/deathwarning.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting4.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/brokenfloranfuelhatch.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/floranarmchair.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike2.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike2_orientation1.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/plantbiolight.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/plantbiolight_orientation2.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/plantbiolight_orientation3.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/huntingplatform2.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/planturn1.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/huntinglight1.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/huntingchampionstatue.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/huntingdoor1.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/plantdoor1.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/huntingstatue.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/florancouch.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/florandrum4.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/floranpainting2.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/bamboodoor.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/plantpanel.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/floranstoragelocker.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed1.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/caveart2.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/plantplatform1.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/skulltorch.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/floranbed.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/floranshelf.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/floranchandelier.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/plantdesklamp.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/plantdesklamp_orientation1.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/huntingtrophy3.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/huntingrail1.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano4.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage2.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike3.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation1.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation2.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation3.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation4.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/floranlight_orientation5.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/huntinggroundtorch.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/florandesk.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/florantoilet.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/fallingrocks.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/floranpelt3.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike1.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike1_orientation1.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonerack.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/objects/floranteleporter.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/floranshiplocker.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/skullwalltorch.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/objects/plantbrokencage.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/plantrack.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/plantrack_orientation2.png"
+    }
+  },
+  "tilewidth" : 8
+}

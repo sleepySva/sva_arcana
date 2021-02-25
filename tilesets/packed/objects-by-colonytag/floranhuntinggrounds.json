@@ -1,0 +1,582 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/floranhuntinggrounds",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 49,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Cave art depicting some large figure.",
+      "//name" : "caveart3",
+      "//shortdescription" : "Figure Cave Art",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-8",
+      "object" : "caveart3",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Cave art depicting some large figure.",
+      "//name" : "caveart3_orientation1",
+      "//shortdescription" : "Figure Cave Art",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "-8",
+      "object" : "caveart3",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A raised platform. Don't get stuck under it.",
+      "//name" : "huntingplatform1",
+      "//shortdescription" : "Raised Platform",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingplatform1",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A light made of vines. Or a vine made of lights?",
+      "//name" : "huntinglight2",
+      "//shortdescription" : "Small Vine Lights",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "huntinglight2",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A Floran spear mounted on a decorative plaque.",
+      "//name" : "huntingdisplay1",
+      "//shortdescription" : "Spear on a Plaque",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingdisplay1",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A statue of a Floran. It looks like a great hunter.",
+      "//name" : "huntingbigstatue",
+      "//shortdescription" : "Large Floran Statue",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "huntingbigstatue",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "An old sign to warn of deathly danger.",
+      "//name" : "deathwarning",
+      "//shortdescription" : "Old Warning Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "deathwarning"
+    },
+    "15" : {
+      "//description" : "A skull on a pike. A Floran favourite.",
+      "//name" : "huntingpike2",
+      "//shortdescription" : "Skull on a Pike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpike2",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A skull on a pike. A Floran favourite.",
+      "//name" : "huntingpike2_orientation1",
+      "//shortdescription" : "Skull on a Pike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "huntingpike2",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A raised platform. Don't get stuck under it.",
+      "//name" : "huntingplatform2",
+      "//shortdescription" : "Ramped Platform",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingplatform2",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A light made of vines. Or a vine made of lights?",
+      "//name" : "huntinglight1",
+      "//shortdescription" : "Large Vine Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntinglight1",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "This door is hardly suitable for keeping the weather out.",
+      "//name" : "huntingdoor1",
+      "//shortdescription" : "Bamboo Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingdoor1",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A statue of a Floran. It looks like a great hunter.",
+      "//name" : "huntingchampionstatue",
+      "//shortdescription" : "Floran Champion Statue",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "huntingchampionstatue",
+      "tilesetDirection" : "left"
+    },
+    "20" : {
+      "//description" : "A statue of a Floran holding a spear menacingly.",
+      "//name" : "huntingstatue",
+      "//shortdescription" : "Floran Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingstatue",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "Deep shadows stretch away from this menacing torch.",
+      "//name" : "skulltorch",
+      "//shortdescription" : "Skull Torch Stand",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "skulltorch",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A skull mounted as a trophy on crossed wood planks.",
+      "//name" : "huntingtrophy3",
+      "//shortdescription" : "Cross Mounted Skull",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "huntingtrophy3"
+    },
+    "23" : {
+      "//description" : "A railing held together with bones.",
+      "//name" : "huntingrail1",
+      "//shortdescription" : "Crooked Bone Railing",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingrail1",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Penguin bones on a pike arranged decoratively.",
+      "//name" : "huntingpike3",
+      "//shortdescription" : "Penguin Bones Pike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "huntingpike3",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A standing torch. Illuminates the giant beast about to eat you.",
+      "//name" : "huntinggroundtorch",
+      "//shortdescription" : "Sturdy Torch Stand",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntinggroundtorch",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "Some bones on a pike. How morbid.",
+      "//name" : "huntingpike1",
+      "//shortdescription" : "Bones on a Pike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpike1",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Some bones on a pike. How morbid.",
+      "//name" : "huntingpike1_orientation1",
+      "//shortdescription" : "Bones on a Pike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "huntingpike1",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A sinister torch made from old bones.",
+      "//name" : "skullwalltorch",
+      "//shortdescription" : "Skull Wall Torch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "skullwalltorch",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "An empty plaque. What belongs here?",
+      "//name" : "huntingdisplay2",
+      "//shortdescription" : "Empty Plaque",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingdisplay2",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Cave art depicting some hunters.",
+      "//name" : "caveart2",
+      "//shortdescription" : "Hunter Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "caveart2",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A large, luminous pod hanigng from a vine.",
+      "//name" : "huntinglight3",
+      "//shortdescription" : "Vine Pod Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntinglight3",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A small chest, made from sticks. Its security is questionable.",
+      "//name" : "chestfloran1",
+      "//shortdescription" : "Small Primitive Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestfloran1",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "Sharp, spiky sticks. Don't fall on them.",
+      "//name" : "huntingpunjisticks2",
+      "//shortdescription" : "Small Sharp Sticks",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpunjisticks2",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "Cave art depicting an offering.",
+      "//name" : "caveart5",
+      "//shortdescription" : "Mysterious Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "caveart5",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A Floran weapon rack. Unsurprisingly, many of the weapons are gone.",
+      "//name" : "huntingweaponrack1",
+      "//shortdescription" : "Hunting Weapon Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingweaponrack1",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A long chest, made from sticks. Its security is questionable.",
+      "//name" : "chestfloran2",
+      "//shortdescription" : "Large Primitive Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestfloran2",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "Very helpful rocks. Or could the arrow be a trick?",
+      "//name" : "huntingplatformrocks",
+      "//shortdescription" : "Arrow Etched Rocks",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "huntingplatformrocks",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "An ideal device for preparing traps and the like.",
+      "//name" : "huntingpressureplate",
+      "//shortdescription" : "Hunting Pressure Plate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A finely carved plaque with a skull on display.",
+      "//name" : "huntingtrophy2",
+      "//shortdescription" : "Shield Mounted Skull",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "huntingtrophy2"
+    },
+    "39" : {
+      "//description" : "Cave art depicting some animals.",
+      "//name" : "caveart1",
+      "//shortdescription" : "Animal Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "caveart1",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "An old battered sign warning of falling rocks.",
+      "//name" : "fallingrocks",
+      "//shortdescription" : "Old Falling Rocks Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fallingrocks"
+    },
+    "40" : {
+      "//description" : "Cave art depicting a tentacled being.",
+      "//name" : "caveart4",
+      "//shortdescription" : "Ambiguous Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "caveart4",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "Cave art depicting a tentacled being.",
+      "//name" : "caveart4_orientation1",
+      "//shortdescription" : "Ambiguous Cave Art",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "caveart4",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A small insectile creature impaled on a hunting pike.",
+      "//name" : "ixolingpike",
+      "//shortdescription" : "Ixoling Pike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ixolingpike",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//name" : "ixolingpike_orientation1",
+      "invalid" : "true"
+    },
+    "44" : {
+      "//description" : "A display commemorating the spear of a Floran who won a hunting ceremony.",
+      "//name" : "championspeardisplay",
+      "//shortdescription" : "Champion's Spear Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "championspeardisplay",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "This trophy is a spinneret from some large, web spinning creature.",
+      "//name" : "floranspinneret",
+      "//shortdescription" : "Spinneret Trophy",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranspinneret",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "This trophy rack is covered in a foul web.",
+      "//name" : "floranwebbing",
+      "//shortdescription" : "Web Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranwebbing",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//name" : "floranwebbing_orientation2",
+      "invalid" : "true"
+    },
+    "48" : {
+      "//name" : "floranwebbing_orientation3",
+      "invalid" : "true"
+    },
+    "5" : {
+      "//description" : "A Floran weapon rack. All of the weapons are missing.",
+      "//name" : "huntingweaponrack2",
+      "//shortdescription" : "Empty Weapon Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingweaponrack2",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A head mounted on a round plaque. Its eyes follow you...",
+      "//name" : "huntingtrophy1",
+      "//shortdescription" : "Round Mounted Skull",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "huntingtrophy1"
+    },
+    "7" : {
+      "//description" : "A railing made of pikes tied together.",
+      "//name" : "huntingrail2",
+      "//shortdescription" : "Crooked Pike Railing",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "huntingrail2",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "Sharp, spiky sticks. Don't fall on them.",
+      "//name" : "huntingpunjisticks1",
+      "//shortdescription" : "Large Sharp Sticks",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingpunjisticks1",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A bundle of unusually large leaves.",
+      "//name" : "huntingplatformleaves",
+      "//shortdescription" : "Leaf Bundle",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingplatformleaves",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/caveart3.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/caveart3_orientation1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/huntingplatform1.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/huntinglight2.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/huntingdisplay1.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/huntingbigstatue.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/deathwarning.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike2.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike2_orientation1.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/huntingplatform2.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/huntinglight1.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/huntingdoor1.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/huntingchampionstatue.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/huntingstatue.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/skulltorch.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/huntingtrophy3.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/huntingrail1.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike3.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/huntinggroundtorch.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike1.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpike1_orientation1.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/skullwalltorch.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/huntingdisplay2.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/caveart2.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/huntinglight3.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/chestfloran1.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpunjisticks2.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/caveart5.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/huntingweaponrack1.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/chestfloran2.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/huntingplatformrocks.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpressureplate.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/huntingtrophy2.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/caveart1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/fallingrocks.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/caveart4.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/caveart4_orientation1.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/ixolingpike.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/championspeardisplay.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/floranspinneret.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/floranwebbing.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/huntingweaponrack2.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/huntingtrophy1.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/huntingrail2.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/huntingpunjisticks1.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/huntingplatformleaves.png"
+    }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,182 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/teleportmarker",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 14,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "The Hylotl flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghylotl",
+      "//shortdescription" : "Hylotl Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flaghylotl",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "The Hylotl flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghylotl_orientation1",
+      "//shortdescription" : "Hylotl Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flaghylotl",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "The Floran flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagfloran",
+      "//shortdescription" : "Floran Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagfloran",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "The Floran flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagfloran_orientation1",
+      "//shortdescription" : "Floran Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagfloran",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "The Novakid flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagnovakid",
+      "//shortdescription" : "Novakid Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagnovakid",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "The Novakid flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagnovakid_orientation1",
+      "//shortdescription" : "Novakid Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagnovakid",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "The human flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghuman",
+      "//shortdescription" : "Human Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flaghuman",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "The human flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghuman_orientation1",
+      "//shortdescription" : "Human Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flaghuman",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "An Apex flag. The symbol of the Miniknog. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagapex",
+      "//shortdescription" : "Apex Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagapex",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "An Apex flag. The symbol of the Miniknog. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagapex_orientation1",
+      "//shortdescription" : "Apex Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagapex",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "The Avian flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagavian",
+      "//shortdescription" : "Avian Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagavian",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "The Avian flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagavian_orientation1",
+      "//shortdescription" : "Avian Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagavian",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "The flag of the Glitch. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagglitch",
+      "//shortdescription" : "Glitch Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagglitch",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "The flag of the Glitch. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagglitch_orientation1",
+      "//shortdescription" : "Glitch Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagglitch",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/flaghylotl.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/flaghylotl_orientation1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/flagfloran.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/flagfloran_orientation1.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/flagnovakid.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/flagnovakid_orientation1.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/flaghuman.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/flaghuman_orientation1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/flagapex.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/flagapex_orientation1.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/flagavian.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/flagavian_orientation1.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/flagglitch.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/flagglitch_orientation1.png"
+    }
+  },
+  "tilewidth" : 8
+}

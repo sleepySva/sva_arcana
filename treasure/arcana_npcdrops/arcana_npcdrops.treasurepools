@@ -1,0 +1,44 @@
+
+{
+
+  "arcana_npcdrops_workshop_section8Elite" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 1000]},
+        {"item" : ["nanowrap", 2]},
+        {"item" : ["workshop_crafting_GS8TechChip", 1]}
+      ],
+      "pool" : [
+		{"weight" : 0.2, "item" : ["workshop_pistol_3", 1]},
+		{"weight" : 0.2, "item" : ["workshop_axe_3", 1]},
+        {"weight" : 0.2, "item" : ["money", 200]},
+        {"weight" : 0.2, "item" : ["money", 200]},
+		{"weight" : 0.2, "item" : ["money", 200]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_npcdrops_workshop_section8Officer" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["money", 200]},
+        {"item" : ["nanowrap", 1]}
+      ],
+      "pool" : [
+		{"weight" : 0.2, "item" : ["workshop_pistol_2", 1]},
+		{"weight" : 0.2, "item" : ["workshop_crafting_GS8TechChip", 1]},
+        {"weight" : 0.2, "item" : ["workshop_crafting_GS8TechChip", 1]},
+        {"weight" : 0.2, "item" : ["money", 100]},
+		{"weight" : 0.2, "item" : ["money", 100]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ]
+}
+
+

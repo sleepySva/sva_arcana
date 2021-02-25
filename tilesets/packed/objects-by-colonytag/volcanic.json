@@ -1,0 +1,110 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/volcanic",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 8,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "This sturdy chest is made from volcanic material. Heat rises from it.",
+      "//name" : "volcanicchest",
+      "//shortdescription" : "Volcanic Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "volcanicchest",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A smoke machine.",
+      "//name" : "smokemachine",
+      "//shortdescription" : "Smoke Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "smokemachine",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation1",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation2",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation3",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation4",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "Volcanic gas escapes from this opening. Hot is an understatement.",
+      "//name" : "volcanictrap_orientation5",
+      "//shortdescription" : "Natural Volcanic Geyser",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "volcanictrap",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/volcanicchest.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/smokemachine.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation2.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation3.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation4.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/volcanictrap_orientation5.png"
+    }
+  },
+  "tilewidth" : 8
+}

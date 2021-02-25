@@ -1,0 +1,200 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/slime",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 16,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A torch made of slime.",
+      "//name" : "slimetorch",
+      "//shortdescription" : "Slime Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimetorch",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A torch made of slime.",
+      "//name" : "slimetorch_orientation2",
+      "//shortdescription" : "Slime Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimetorch",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A vile bubble of slime. Yuk.",
+      "//name" : "slimeblob3",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob3"
+    },
+    "11" : {
+      "//description" : "A glob of dripping slime.",
+      "//name" : "ceilingslime2",
+      "//shortdescription" : "Dripping Slime",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "ceilingslime2",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A glob of dripping slime.",
+      "//name" : "ceilingslime3",
+      "//shortdescription" : "Dripping Slime",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "ceilingslime3",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "Sleep sweetly, suspended in slime.",
+      "//name" : "slimebed",
+      "//shortdescription" : "Slime Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "slimebed",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A glob of dripping slime.",
+      "//name" : "ceilingslime1",
+      "//shortdescription" : "Dripping Slime",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "ceilingslime1",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A blueprint encased in a vile bubble of slime.",
+      "//name" : "blueprintblob",
+      "//shortdescription" : "Blueprint Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "blueprintblob"
+    },
+    "2" : {
+      "//description" : "A torch made of slime.",
+      "//name" : "slimetorch_orientation3",
+      "//shortdescription" : "Slime Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimetorch",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A torch made of slime.",
+      "//name" : "slimetorch_orientation4",
+      "//shortdescription" : "Slime Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimetorch",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A vile bubble of slime. Yuk.",
+      "//name" : "slimeblob4",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob4"
+    },
+    "5" : {
+      "//description" : "A vile bubble of slime. Yuck.",
+      "//name" : "slimeblob1",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob1"
+    },
+    "6" : {
+      "//description" : "A vile bubble of slime. Yuk.",
+      "//name" : "slimeblob2",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob2"
+    },
+    "7" : {
+      "//description" : "A chest made of a thick slime substance.",
+      "//name" : "slimehide",
+      "//shortdescription" : "Slime Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "slimehide",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A vile bubble of slime. Yuk.",
+      "//name" : "slimeblob5",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob5"
+    },
+    "9" : {
+      "//description" : "A sticky, slimy spot to sit.",
+      "//name" : "slimechair",
+      "//shortdescription" : "Slime Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "slimechair",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/slimetorch.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/slimetorch_orientation2.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob3.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingslime2.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingslime3.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/slimebed.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingslime1.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/blueprintblob.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/slimetorch_orientation3.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/slimetorch_orientation4.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob4.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob1.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob2.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/slimehide.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob5.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/slimechair.png"
+    }
+  },
+  "tilewidth" : 8
+}

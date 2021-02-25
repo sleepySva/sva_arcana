@@ -1,0 +1,220 @@
+{
+  "type" : "arcana_monster_GS8Scout",
+  "shortdescription" : "GS8 Scout",
+  "description" : "A robot manufactured by the Workshop.",
+
+  "categories" : [ "arcana_monster_GS8Scout" ],
+  "parts" : [ "body" ],
+
+  "animation" : "arcana_monster_GS8Scout.animation",
+
+  "dropPools" : [ { "default" : "arcana_monsterdrops_GS8Scout", "bow" : "arcana_monsterdrops_GS8Scout" } ],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    
+    "damageBar" : "None", 
+
+    "behavior" : "monster",
+
+    "seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 20,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 1.6,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 20,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "workshop_pistol_1_projectile_1",
+			"projectileCount" : 8,
+            "projectileInterval" : 0.08,
+            "projectileParameters" : {
+              "speed" : 120
+            },
+            "fireOffset" : [0.0, -0.6],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.4
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "cooldown" : [5,20],
+          "parameters" : {
+            "wanderTime" : [10,40],
+            "groundDistance" : 20,
+            "ceilingDistance" : 10,
+            "xVelocity" : 8,
+            "yVelocity" : 12
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.5, 1.25],  [1.25, 0.5], [1.25, -1.0], [0.5, -1.75], [-0.5, -1.75], [-1.25, -1.0], [-1.25, 0.5], [-0.5, 1.25] ],
+      "damage" : 12,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.625, 0.9375], [1.125, 0.4375], [1.125, -0.4375], [0.625, -0.9375], [-0.625, -0.9375], [-1.125, -0.4375], [-1.125, 0.4375], [-0.625, 0.9375] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 4,
+      "airForce" : 40,
+      "flySpeed" : 15
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.5
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 80
+        },
+        "protection" : {
+          "baseValue" : 24.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.5
+        },
+        "fireResistance" : {
+          "baseValue" : 0.5
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.5
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -4],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

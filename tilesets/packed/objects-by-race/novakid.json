@@ -1,0 +1,767 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-race/novakid",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 64,
+  "tileheight" : 51,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "The Novakid flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagnovakid",
+      "//shortdescription" : "Novakid Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagnovakid",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "The Novakid flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagnovakid_orientation1",
+      "//shortdescription" : "Novakid Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagnovakid",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "novakidteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "novakidteleporterTier0"
+    },
+    "11" : {
+      "//name" : "brokennovakidfuelhatchTier0",
+      "invalid" : "true"
+    },
+    "12" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "novakidshipdoorBroken",
+      "//shortdescription" : "Broken Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "novakidshipdoorBroken",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "novakidshipdoor",
+      "//shortdescription" : "Novakid Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "novakidshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "novakidteleporter",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "novakidteleporter"
+    },
+    "15" : {
+      "//description" : "A swinging saloon door to keep those pesky tumbleweeds outside.",
+      "//name" : "saloondoor",
+      "//shortdescription" : "Saloon Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "saloondoor",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A richly-stained table fit for an old Western.",
+      "//name" : "saloontable",
+      "//shortdescription" : "Saloon Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "saloontable",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A drinks cabinet, stocked with glassware and odd-shaped bottles.",
+      "//name" : "salooncabinet",
+      "//shortdescription" : "Saloon Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "salooncabinet",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "It's a piano fit for a saloon!",
+      "//name" : "saloonpiano",
+      "//shortdescription" : "Saloon Piano",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "saloonpiano",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "An uncomfortable-looking saloon chair.",
+      "//name" : "saloonseat",
+      "//shortdescription" : "Saloon Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "saloonseat",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "novakidtechstation",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "novakidtechstation"
+    },
+    "20" : {
+      "//description" : "Eughh.",
+      "//name" : "saloonspittoon",
+      "//shortdescription" : "Saloon Spittoon",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "saloonspittoon",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "An electric wall sconce.",
+      "//name" : "saloonlight",
+      "//shortdescription" : "Saloon Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "saloonlight",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "An electric wall sconce.",
+      "//name" : "saloonlight_orientation2",
+      "//shortdescription" : "Saloon Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "saloonlight",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "An electric wall sconce.",
+      "//name" : "saloonlight_orientation3",
+      "//shortdescription" : "Saloon Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "saloonlight",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "It's a piano fit for a saloon!",
+      "//name" : "saloonpiano_orientation1",
+      "//shortdescription" : "Saloon Piano",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "saloonpiano",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "novakidshiphatch",
+      "//shortdescription" : "Novakid Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "novakidshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A decorative wooden wagon wheel.",
+      "//name" : "wagonwheel",
+      "//shortdescription" : "Wagon Wheel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "wagonwheel",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A decorative wooden wagon wheel.",
+      "//name" : "wagonwheel_orientation2",
+      "//shortdescription" : "Wagon Wheel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "wagonwheel",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A decorative wooden wagon wheel.",
+      "//name" : "wagonwheel_orientation3",
+      "//shortdescription" : "Wagon Wheel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "wagonwheel",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A decorative set of brass horns.",
+      "//name" : "frontierhatrack",
+      "//shortdescription" : "Frontier Hat Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "frontierhatrack",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive.",
+      "//name" : "novakidfuelhatch",
+      "//shortdescription" : "FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "novakidfuelhatch"
+    },
+    "30" : {
+      "//description" : "A brass, wood and copper windmill, that spins in the direction of the wind.",
+      "//name" : "frontierwindmill",
+      "//shortdescription" : "Frontier Windmill",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frontierwindmill",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A brass water pump that used to pump water, back when it was functioning.",
+      "//name" : "frontierwaterpump",
+      "//shortdescription" : "Frontier Water Pump",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "frontierwaterpump",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "An small, sturdy iron safe.",
+      "//name" : "safe",
+      "//shortdescription" : "Safe",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "safe",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A wrought iron lamp post with a gas lit flame.",
+      "//name" : "frontierlamppost",
+      "//shortdescription" : "Frontier Lamp Post",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "frontierlamppost",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A decorative iron symbol.",
+      "//name" : "frontierironsymbol",
+      "//shortdescription" : "Frontier Iron Symbol",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "frontierironsymbol",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A sturdy wooden bed with mooshi hide sheets.",
+      "//name" : "frontierbed",
+      "//shortdescription" : "Frontier Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "frontierbed",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A huge ornate vault safe.",
+      "//name" : "frontiervault",
+      "//shortdescription" : "Frontier Vault",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "frontiervault",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A polished bar top, complete with three stools.",
+      "//name" : "saloonbar",
+      "//shortdescription" : "Saloon Bar",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "saloonbar",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "left"
+    },
+    "39" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation1",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "novakidshiplocker",
+      "//shortdescription" : "Ship Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "novakidshiplocker"
+    },
+    "40" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation2",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "left"
+    },
+    "41" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation3",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation4",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "left"
+    },
+    "43" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation5",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation6",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "left"
+    },
+    "45" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation7",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation8",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "left"
+    },
+    "47" : {
+      "//description" : "A painted wooden sign for saloons.",
+      "//name" : "saloonsign_orientation9",
+      "//shortdescription" : "Saloon Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "saloonsign",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A faded poster, offering a bounty from long ago.",
+      "//name" : "wantedposter",
+      "//shortdescription" : "Wanted Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "wantedposter",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A detailed painting of a beautiful landscape.",
+      "//name" : "frontierpainting1",
+      "//shortdescription" : "Frontier Plains Painting",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "frontierpainting1",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "novakidtechstationTier0",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "novakidtechstationTier0"
+    },
+    "50" : {
+      "//description" : "A novelty cowboy picture stand.",
+      "//name" : "picturestand",
+      "//shortdescription" : "Picture Stand",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "picturestand",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A novelty cowboy picture stand.",
+      "//name" : "picturestand_orientation1",
+      "//shortdescription" : "Picture Stand",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "picturestand",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A painting of a proud mooshi against a setting sun.",
+      "//name" : "frontierpainting3",
+      "//shortdescription" : "Frontier Mooshi Painting",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "frontierpainting3",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A charming record player, playing an old tune.",
+      "//name" : "frontiergramophone",
+      "//shortdescription" : "Frontier Gramophone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "frontiergramophone",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "A strange painting of a pulled wagon.",
+      "//name" : "frontierpainting2",
+      "//shortdescription" : "Frontier Wagon Painting",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "frontierpainting2",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A hanging gas lamp with a red glass cover.",
+      "//name" : "frontierlamp",
+      "//shortdescription" : "Frontier Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "frontierlamp",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "An old-fashioned standing clock, with a polished brass pendulum.",
+      "//name" : "frontierclock",
+      "//shortdescription" : "Frontier Grandfather Clock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "frontierclock",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "An old copper and brass furnace.",
+      "//name" : "frontierfurnace",
+      "//shortdescription" : "Frontier Furnace",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "frontierfurnace",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "An old copper and brass furnace.",
+      "//name" : "frontierfurnace_orientation1",
+      "//shortdescription" : "Frontier Furnace",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frontierfurnace",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A wooden chair with mooshi hide cushioning.",
+      "//name" : "frontierchair",
+      "//shortdescription" : "Frontier Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frontierchair",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "novakidcaptainschair",
+      "//shortdescription" : "Novakid Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "novakidcaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "A rough wooden coffin. Luckily, no-one's inside!",
+      "//name" : "frontiercoffin",
+      "//shortdescription" : "Frontier Coffin",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "frontiercoffin",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "A wooden door, emblazoned with an iron emblem on both sides.",
+      "//name" : "frontierdoor",
+      "//shortdescription" : "Frontier Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frontierdoor",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A dirty-looking glass tumbler.",
+      "//name" : "saloontumbler",
+      "//shortdescription" : "Saloon Tumbler",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "saloontumbler"
+    },
+    "63" : {
+      "//description" : "A jumbled collection of leads and evidence, used to track criminals.",
+      "//name" : "peacekeepernotes",
+      "//shortdescription" : "Peacekeeper Notes",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "peacekeepernotes",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A broken FTL fuel hatch. This won't do!",
+      "//name" : "brokennovakidfuelhatch",
+      "//shortdescription" : "Broken FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "brokennovakidfuelhatch"
+    },
+    "8" : {
+      "//description" : "A nice, spacious, wall-mounted storage solution.",
+      "//name" : "novakidstoragelocker",
+      "//shortdescription" : "Novakid Storage Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "novakidstoragelocker"
+    },
+    "9" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "novakidshiplockerTier0",
+      "//shortdescription" : "Ship Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "novakidshiplockerTier0"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/flagnovakid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/flagnovakid_orientation1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/novakidteleporterTier0.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/novakidshipdoorBroken.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/novakidshipdoor.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/novakidteleporter.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/saloondoor.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/saloontable.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/salooncabinet.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/saloonpiano.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/saloonseat.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/novakidtechstation.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/saloonspittoon.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/saloonlight.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/saloonlight_orientation2.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/saloonlight_orientation3.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/saloonpiano_orientation1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/novakidshiphatch.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/wagonwheel.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/wagonwheel_orientation2.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/wagonwheel_orientation3.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/frontierhatrack.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/novakidfuelhatch.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/frontierwindmill.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/frontierwaterpump.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/safe.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/frontierlamppost.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/frontierironsymbol.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/frontierbed.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/frontiervault.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/saloonbar.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/novakidshiplocker.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation2.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation3.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation4.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation5.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation6.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation7.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation8.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/saloonsign_orientation9.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/wantedposter.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/frontierpainting1.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/novakidtechstationTier0.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/picturestand.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/picturestand_orientation1.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/frontierpainting3.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/frontiergramophone.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/frontierpainting2.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/frontierlamp.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/frontierclock.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/frontierfurnace.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/frontierfurnace_orientation1.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/frontierchair.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/novakidcaptainschair.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/frontiercoffin.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/frontierdoor.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/saloontumbler.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/peacekeepernotes.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/brokennovakidfuelhatch.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/novakidstoragelocker.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/novakidshiplockerTier0.png"
+    }
+  },
+  "tilewidth" : 51
+}

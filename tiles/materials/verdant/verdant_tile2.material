@@ -1,0 +1,21 @@
+{
+  "materialId" : 16608,
+  "materialName" : "verdant_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "verdant_tile2",
+  "description" : "A brownish rock.",
+  "shortdescription" : "Verdant Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "verdant_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1318
+  }
+}

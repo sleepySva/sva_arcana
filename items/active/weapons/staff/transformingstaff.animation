@@ -1,0 +1,400 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+	  "staff" : {
+		"default" : "staffIdle",
+		"states" : {
+		  //Staff
+		  "staffIdle" : {
+			"frames" : 1,
+			"cycle" : 1,
+			"mode" : "loop"
+		  },
+		  "transitionToMelee" : {
+			"frames" : 6,
+			"cycle" : 0.2,
+			"mode" : "transition",
+			"transition" : "meleeIdle",
+			"properties" : {
+			  "persistentSound" : "/sfx/melee/spear_twirl_loop.ogg"
+			}
+		  },
+		  //Melee
+		  "meleeIdle" : {
+			"frames" : 1,
+			"cycle" : 1,
+			"mode" : "loop"
+		  },
+		  "transitionToStaff" : {
+			"frames" : 6,
+			"cycle" : 0.2,
+			"mode" : "transition",
+			"transition" : "staffIdle",
+			"properties" : {
+			  "persistentSound" : "/sfx/melee/spear_twirl_loop.ogg"
+			}
+		  }
+		}
+	  },
+	  "swoosh" : {
+		"default" : "idle",
+		"states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+		}
+	  },
+      "charge" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "charge" : {
+            "frames" : 13,
+            "cycle" : 1.3,
+            "mode" : "transition",
+            "transition" : "spark"
+          },
+          "spark" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "charged"
+          },
+          "charged" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          },
+          "discharge" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "staff" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"]
+		},
+		"partStates" : {
+		  "staff" : {
+			"staffIdle" : {
+			  "properties" : {
+				"image" : "<partImage>:idle"
+			  }
+			},
+			"transitionToMelee" : {
+			  "properties" : {
+				"image" : "<partImage>:transitionToMelee.<frame>"
+			  }
+			},
+			"meleeIdle" : {
+			  "properties" : {
+				"image" : "<partImage>:meleeIdle"
+			  }
+			},
+			"transitionToStaff" : {
+			  "properties" : {
+				"image" : "<partImage>:transitionToStaff.<frame>"
+			  }
+			}
+		  }
+        }
+      },
+      "stone" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0.0, 0.0],
+          "focalPoint" : [0.0, 2.5],
+          "transformationGroups" : ["weapon"]
+		},
+		"partStates" : {
+		  "staff" : {
+			"staffIdle" : {
+			  "properties" : {
+				"image" : "<partImage>:idle"
+			  }
+			},
+			"transitionToMelee" : {
+			  "properties" : {
+				"image" : "<partImage>:transitionToMelee.<frame>"
+			  }
+			},
+			"meleeIdle" : {
+			  "properties" : {
+				"image" : "<partImage>:meleeIdle"
+			  }
+			},
+			"transitionToStaff" : {
+			  "properties" : {
+				"image" : "<partImage>:transitionToStaff.<frame>"
+			  }
+			}
+		  }
+        }
+      },
+	  "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/broadsword/swoosh/<elementalType>swoosh.png:<frame>",
+                "offset" : [0, 2.5],
+                "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/broadsword/swoosh2/<elementalType>swoosh.png:<frame>",
+                "offset" : [5.0, 1.0],
+                "damageArea" : [[-4, 1], [2.5, 1], [2.5, -2], [-4, -2]]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/broadsword/swoosh3/<elementalType>swoosh.png:<frame>",
+                "offset" : [3.5, 0],
+                "damageArea" : [[-4.75, 1.5], [3, 1], [3, -1], [-4.75, -1.5]]
+              }
+			}
+		  }
+		}
+	  },
+      "chargeEffect" : {
+        "properties" : {
+          "zLevel" : 2,
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [-0.125, 1.875],
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "charge" : {
+            "charge" : {
+              "properties" : {
+                "image" : "<partImage>:charging.<frame>"
+              }
+            },
+            "spark" : {
+              "properties" : {
+                "image" : "<partImage>:spark.<frame>"
+              }
+            },
+            "charged" : {
+              "properties" : {
+                "image" : "<partImage>:loop.<frame>"
+              }
+            },
+            "discharge" : {
+              "properties" : {
+                "image" : "<partImage>:discharge.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 3.0],
+      "color" : [0, 0, 0],
+      "transformationGroups" : ["weapon"]
+    }
+  },
+
+  "particleEmitters" : {
+    "physicalcharge" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10,
+      "offsetRegion" : [-0.5, 1.25, 0.5, 2.75],
+      "particles" : [
+        {"particle" : "energyblade"},
+        {"particle" : "energyblade2"}
+      ]
+    },
+    "firecharge" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10,
+      "offsetRegion" : [-0.5, 1.25, 0.5, 2.75],
+      "particles" : [
+        {"particle" : "fireswoosh1"},
+        {"particle" : "fireswoosh2"},
+        {"particle" : "fireswoosh3"}
+      ]
+    },
+    "electriccharge" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10,
+      "offsetRegion" : [-0.5, 1.25, 0.5, 2.75],
+      "particles" : [
+        {"particle" : "electricswoosh1"},
+        {"particle" : "electricswoosh2"},
+        {"particle" : "electricswoosh2"}
+      ]
+    },
+    "poisoncharge" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10,
+      "offsetRegion" : [-0.5, 1.25, 0.5, 2.75],
+      "particles" : [
+        {"particle" : "poisonswoosh1"},
+        {"particle" : "poisonswoosh2"},
+        {"particle" : "fireswoosh2"}
+      ]
+    },
+    "icecharge" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10,
+      "offsetRegion" : [-0.5, 1.25, 0.5, 2.75],
+      "particles" : [
+        {"particle" : "iceswoosh1"},
+        {"particle" : "iceswoosh2"},
+        {"particle" : "iceswoosh3"}
+      ]
+    },
+    "physicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 1,
+      "burstCount" : 1,
+      "particles" : []
+    },
+    "fireswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 4,
+      "particles" : [
+        { "particle" : "fireswoosh1"},
+        { "particle" : "fireswoosh2"},
+        { "particle" : "fireswoosh3"}
+      ]
+    },
+    "electricswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "electricswoosh1"},
+        { "particle" : "electricswoosh2"},
+        { "particle" : "electricswoosh2"}
+      ]
+    },
+    "poisonswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "poisonswoosh1"},
+        { "particle" : "poisonswoosh2"},
+        { "particle" : "fireswoosh2"}
+      ]
+    },
+    "iceswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "iceswoosh1"},
+        { "particle" : "iceswoosh2"},
+        { "particle" : "iceswoosh3"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "physicalcharge" : ["/sfx/melee/staff_charge1.ogg"],
+    "physicalfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "physicalchargedloop" : ["/sfx/melee/charge_full_hold1.ogg"],
+    "physicaldischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "physicalactivate" : ["/sfx/projectiles/plasma3.ogg"],
+
+    "firecharge" : ["/sfx/melee/staff_charge2_fire.ogg"],
+    "firefullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "firechargedloop" : ["/sfx/melee/staff_charged_fire2.ogg"],
+    "firedischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "fireactivate" : ["/sfx/melee/travelingslash_fire2.ogg"],
+
+    "icecharge" : ["/sfx/melee/staff_charge3_ice.ogg"],
+    "icefullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "icechargedloop" : ["/sfx/melee/staff_charged_ice2.ogg"],
+    "icedischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "iceactivate" : ["/sfx/melee/travelingslash_ice3.ogg", "/sfx/melee/travelingslash_ice4.ogg"],
+
+    "electriccharge" : ["/sfx/melee/staff_charge4_electric.ogg"],
+    "electricfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "electricchargedloop" : ["/sfx/melee/staff_charged_electric2.ogg"],
+    "electricdischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "electricactivate" : ["/sfx/melee/travelingslash_electric4.ogg", "/sfx/melee/travelingslash_electric5.ogg"],
+
+    "poisoncharge" : ["/sfx/melee/staff_charge1_poison.ogg"],
+    "poisonfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "poisonchargedloop" : ["/sfx/melee/staff_charged_poison2.ogg"],
+    "poisondischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "poisonactivate" : ["/sfx/melee/travelingslash_poison3.ogg"],
+
+    "zoneactivate" : ["/sfx/melee/staff_aura_activate.ogg"],
+	
+    "transform" : [ ],
+	
+	//Melee
+    "fire" : [ ],
+    "fire2" : [ ],
+    "fire3" : [ ]
+  }
+}

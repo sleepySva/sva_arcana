@@ -1,0 +1,21 @@
+{
+  "materialId" : 16532,
+  "materialName" : "monarch_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "monarch_tile2",
+  "description" : "A dark blaststone block.",
+  "shortdescription" : "Voidstone Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "monarch_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1204
+  }
+}

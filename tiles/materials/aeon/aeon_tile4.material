@@ -1,0 +1,21 @@
+{
+  "materialId" : 16726,
+  "materialName" : "aeon_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeon_tile4",
+  "description" : "A sloped panel.",
+  "shortdescription" : "Aeon Panel DEC",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 32,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aeon_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4726
+  }
+}

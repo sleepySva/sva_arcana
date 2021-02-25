@@ -1,0 +1,21 @@
+{
+  "materialId" : 16606,
+  "materialName" : "gaea_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "gaea_tile4",
+  "description" : "A florastone roofing tile.",
+  "shortdescription" : "Florastone Roofing",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "gaea_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1804
+  }
+}

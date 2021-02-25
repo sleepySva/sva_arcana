@@ -1,0 +1,163 @@
+{
+  "itemName" : "artifact_staff_duality",
+  "price" : 60000,
+  "maxStack" : 1,
+  "level" : 9,
+  "rarity" : "Essential",
+  "description" : "Bringer of the radiant light and the colorless void.",
+  "shortdescription" : "Duality",
+  "category" : "longstaff",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+
+  "animation" : "/items/active/weapons/staff/arcana_artifact_duality.animation",
+  "animationParts" : {
+    "staff" : "artifact_staff_duality.png",
+    "stone" : "stone.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [180, 180, 180]
+      }
+    }
+  },
+
+  "inventoryIcon" : "icon.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : 0,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.8,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.2,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "elementswarm",
+  "primaryAbility" : {
+
+    "name" : "Void Disorder",
+	"energyCost" : 120,
+    "maxCastRange" : 40,
+	
+	"projectileType" : ["artifact_projectile_duality_1","artifact_projectile_duality_2"],
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 10,
+    "projectileDistance" : 1,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "projectileParameters" : {
+      "baseDamage" : 80
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "altAbilityType" : "elementswarm",
+  "altAbility" : {
+
+    "name" : "Void Strings",
+	"energyCost" : 120,
+    "maxCastRange" : 120,
+	
+	"projectileType" : ["artifact_projectile_duality_3","artifact_projectile_duality_4"],
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile_delayed.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 36,
+    "projectileDistance" : 0.8,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "projectileParameters" : {
+      "baseDamage" : 100
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

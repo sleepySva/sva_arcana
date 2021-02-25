@@ -1,0 +1,22 @@
+{
+  "materialId" : 16578,
+  "materialName" : "arcaneTundra_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcaneTundra_tile2",
+  "description" : "A solid ice block sprinkled with arcane magic. Emits a faint light.",
+  "shortdescription" : "Arcane Ice",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcaneTundra_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1312,
+    "radiantLight" : [30, 60, 90]
+  }
+}

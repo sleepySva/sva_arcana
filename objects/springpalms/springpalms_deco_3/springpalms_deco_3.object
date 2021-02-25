@@ -1,0 +1,24 @@
+{
+  "objectName" : "springpalms_deco_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A banner of the village of Springpalms.",
+  "shortdescription" : "Springpalms Banner",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "springpalms_deco_3.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ]
+}

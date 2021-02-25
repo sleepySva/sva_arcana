@@ -1,0 +1,21 @@
+{
+  "materialId" : 16668,
+  "materialName" : "aeolus_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeolus_tile2",
+  "description" : "Bricks made from ariostone.",
+  "shortdescription" : "Heavy Ariostone Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aeolus_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 182
+  }
+}

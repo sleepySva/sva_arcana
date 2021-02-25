@@ -1,0 +1,3289 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-type/loungeable",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 281,
+  "tileheight" : 64,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A cold, hard slab of metal meant to serve as a bed.",
+      "//name" : "prisonbed",
+      "//shortdescription" : "Chained Metal Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonbed",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "This mattress is filthy! I swear I just saw something crawling around inside.",
+      "//name" : "prisonmattress",
+      "//shortdescription" : "Dirty Mattress",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisonmattress",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A common tungsten bed.",
+      "//name" : "tier2bed",
+      "//shortdescription" : "Tungsten Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier2bed",
+      "tilesetDirection" : "right"
+    },
+    "100" : {
+      "//description" : "A bathroom stall. Don't get stuck!",
+      "//name" : "bathroomstall",
+      "//shortdescription" : "Bathroom Stall",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bathroomstall",
+      "tilesetDirection" : "right"
+    },
+    "101" : {
+      "//description" : "A beautiful stone fountain. The water looks refreshing.",
+      "//name" : "fountain1",
+      "//shortdescription" : "Tiered Stone Fountain",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "fountain1",
+      "tilesetDirection" : "right"
+    },
+    "102" : {
+      "//description" : "A rusty chair. Don't rock back on it.",
+      "//name" : "rustchair",
+      "//shortdescription" : "Rusty Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "rustchair",
+      "tilesetDirection" : "right"
+    },
+    "103" : {
+      "//description" : "A contemporary chair.",
+      "//name" : "modernchair",
+      "//shortdescription" : "Modern Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "modernchair",
+      "tilesetDirection" : "right"
+    },
+    "104" : {
+      "//description" : "A teal blue chair.",
+      "//name" : "hylotlchair",
+      "//shortdescription" : "Blue Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlchair",
+      "tilesetDirection" : "right"
+    },
+    "105" : {
+      "//description" : "A chair made of cobblestone.",
+      "//name" : "stonechair",
+      "//shortdescription" : "Stone Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stonechair",
+      "tilesetDirection" : "right"
+    },
+    "106" : {
+      "//description" : "A chair. You sit in it. Yes.",
+      "//name" : "outpostchair",
+      "//shortdescription" : "Padded Metal Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostchair",
+      "tilesetDirection" : "right"
+    },
+    "107" : {
+      "//description" : "A bench made of wood and bones. Seems... inviting?",
+      "//name" : "floranbench",
+      "//shortdescription" : "Primitive Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranbench",
+      "tilesetDirection" : "right"
+    },
+    "108" : {
+      "//description" : "This toilet doesn't look very leak-proof.",
+      "//name" : "florantoilet",
+      "//shortdescription" : "Primitive Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "florantoilet",
+      "tilesetDirection" : "right"
+    },
+    "109" : {
+      "//description" : "A bed made of ice. In the summer, it becomes a water bed.",
+      "//name" : "icebed",
+      "//shortdescription" : "Ice Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "icebed",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A beautiful rustic bench.",
+      "//name" : "avianbench1",
+      "//shortdescription" : "Rustic Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "avianbench1",
+      "tilesetDirection" : "right"
+    },
+    "110" : {
+      "//description" : "Legend has it that if you spend the night in this bed, you'll lose consciousness.",
+      "//name" : "hylotlbed2",
+      "//shortdescription" : "Comfy Traditional Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlbed2",
+      "tilesetDirection" : "right"
+    },
+    "111" : {
+      "//description" : "A flower bed. Hope you don't have hayfever.",
+      "//name" : "giantflowerbed",
+      "//shortdescription" : "Giant Flower Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "giantflowerbed",
+      "tilesetDirection" : "right"
+    },
+    "112" : {
+      "//description" : "This chair is egg-shaped. I'm not sure whose idea that was.",
+      "//name" : "eggchair",
+      "//shortdescription" : "Egg Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "eggchair",
+      "tilesetDirection" : "right"
+    },
+    "113" : {
+      "//description" : "A log, smoothed for sitting on.",
+      "//name" : "plantlog",
+      "//shortdescription" : "Sitting Log",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantlog",
+      "tilesetDirection" : "right"
+    },
+    "114" : {
+      "//description" : "A luxurious armchair.",
+      "//name" : "woodenarmchair2",
+      "//shortdescription" : "Soft Armchair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodenarmchair2",
+      "tilesetDirection" : "right"
+    },
+    "115" : {
+      "//description" : "A pale stone altar, undecorated.",
+      "//name" : "altar1",
+      "//shortdescription" : "Stone Altar",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "altar1",
+      "tilesetDirection" : "right"
+    },
+    "116" : {
+      "//description" : "A solid stone bed topped with a nest of hay.",
+      "//name" : "birdbed",
+      "//shortdescription" : "Guardian's Nest",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "birdbed",
+      "tilesetDirection" : "right"
+    },
+    "117" : {
+      "//description" : "A frozen chair. Uncomfortable after a while.",
+      "//name" : "icechair",
+      "//shortdescription" : "Ice Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "icechair",
+      "tilesetDirection" : "right"
+    },
+    "118" : {
+      "//description" : "A car shaped bed, for those young at heart.",
+      "//name" : "carbed",
+      "//shortdescription" : "Car Bed",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "carbed",
+      "tilesetDirection" : "right"
+    },
+    "119" : {
+      "//description" : "... Another throne.",
+      "//name" : "royaltoilet",
+      "//shortdescription" : "Royal Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "royaltoilet",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A beautiful bed of rich wood and silks.",
+      "//name" : "classicbed",
+      "//shortdescription" : "Classic Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "classicbed",
+      "tilesetDirection" : "right"
+    },
+    "120" : {
+      "//description" : "A basic bench.",
+      "//name" : "bench",
+      "//shortdescription" : "Bench",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bench",
+      "tilesetDirection" : "right"
+    },
+    "121" : {
+      "//description" : "A peaceful stone fountain. The water gently flows.",
+      "//name" : "fountain2",
+      "//shortdescription" : "Stone Fountain",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "fountain2",
+      "tilesetDirection" : "right"
+    },
+    "122" : {
+      "//description" : "A beautiful flower bed. Watch out for bees!",
+      "//name" : "flowerbed1",
+      "//shortdescription" : "Flower Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flowerbed1",
+      "tilesetDirection" : "right"
+    },
+    "123" : {
+      "//description" : "An extremely basic bed of hay.",
+      "//name" : "medievalcellbed",
+      "//shortdescription" : "Medieval Hay Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalcellbed",
+      "tilesetDirection" : "right"
+    },
+    "124" : {
+      "//description" : "A coffin bed. The hottest in undead comfort.",
+      "//name" : "bonebed",
+      "//shortdescription" : "Bone Coffin Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bonebed",
+      "tilesetDirection" : "right"
+    },
+    "125" : {
+      "//description" : "A wheelbarrow for transporting goods.",
+      "//name" : "wheelbarrow",
+      "//shortdescription" : "Wheelbarrow",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "wheelbarrow",
+      "tilesetDirection" : "right"
+    },
+    "126" : {
+      "//description" : "It's an exceptionally cool chair.",
+      "//name" : "apexcoolchair",
+      "//shortdescription" : "Cool Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexcoolchair",
+      "tilesetDirection" : "right"
+    },
+    "127" : {
+      "//description" : "An outhouse! Enjoy!",
+      "//name" : "outhouse",
+      "//shortdescription" : "Outhouse",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outhouse",
+      "tilesetDirection" : "right"
+    },
+    "128" : {
+      "//description" : "A firm bed with silky sheets.",
+      "//name" : "medievalbed",
+      "//shortdescription" : "Medieval Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalbed",
+      "tilesetDirection" : "right"
+    },
+    "129" : {
+      "//description" : "A rock chair.",
+      "//name" : "cavechair",
+      "//shortdescription" : "Rock Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "cavechair",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "An alien chair. It seems alive.",
+      "//name" : "alienchair",
+      "//shortdescription" : "Alien Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "alienchair",
+      "tilesetDirection" : "right"
+    },
+    "130" : {
+      "//description" : "A high-class wooden chair, is it intended for important figures.",
+      "//name" : "hylotlclassicchair",
+      "//shortdescription" : "Traditional Fancy Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassicchair",
+      "tilesetDirection" : "right"
+    },
+    "131" : {
+      "//description" : "A beautifully carved Avian bed.",
+      "//name" : "tribalbed2",
+      "//shortdescription" : "Avian Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tribalbed2",
+      "tilesetDirection" : "right"
+    },
+    "132" : {
+      "//description" : "An adorable kennel for an adorable pet.",
+      "//name" : "kennel",
+      "//shortdescription" : "Kennel",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "kennel",
+      "tilesetDirection" : "right"
+    },
+    "133" : {
+      "//description" : "A crystal chair. Fit for a monarch.",
+      "//name" : "crystalchair",
+      "//shortdescription" : "Crystal Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "crystalchair",
+      "tilesetDirection" : "right"
+    },
+    "134" : {
+      "//description" : "A tiny stool carved from bone.",
+      "//name" : "floranbonestool",
+      "//shortdescription" : "Primitive Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbonestool",
+      "tilesetDirection" : "right"
+    },
+    "135" : {
+      "//description" : "A wall mountable Floran prison bunk.",
+      "//name" : "plantbed2",
+      "//shortdescription" : "Plant Wall Bunk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed2",
+      "tilesetDirection" : "right"
+    },
+    "136" : {
+      "//description" : "An eye chair. Not to be confused with a high chair.",
+      "//name" : "eyechair",
+      "//shortdescription" : "Eye Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "eyechair",
+      "tilesetDirection" : "right"
+    },
+    "137" : {
+      "//description" : "A Floran prisoner bedroll covered with a blanket.",
+      "//name" : "plantbed4",
+      "//shortdescription" : "Covered Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed4",
+      "tilesetDirection" : "right"
+    },
+    "138" : {
+      "//description" : "A Floran prisoner bedroll covered with a blanket.",
+      "//name" : "plantbed4_orientation2",
+      "//shortdescription" : "Covered Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed4",
+      "tilesetDirection" : "right"
+    },
+    "139" : {
+      "//description" : "A chair that anyone can sit on!",
+      "//name" : "outpostpublicchair",
+      "//shortdescription" : "Public Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostpublicchair",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "apexcaptainschair",
+      "//shortdescription" : "Apex Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexcaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "140" : {
+      "//description" : "A crystal bed, for when you want to dream of being rich.",
+      "//name" : "crystalbed",
+      "//shortdescription" : "Crystal Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "crystalbed",
+      "tilesetDirection" : "right"
+    },
+    "141" : {
+      "//description" : "A bed made of cobblestone.",
+      "//name" : "stonebed",
+      "//shortdescription" : "Stone Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stonebed",
+      "tilesetDirection" : "right"
+    },
+    "142" : {
+      "//description" : "A dining chair fit for the sort of person who enjoys caviar.",
+      "//name" : "classicchair",
+      "//shortdescription" : "Classic Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "classicchair",
+      "tilesetDirection" : "right"
+    },
+    "143" : {
+      "//description" : "A chair made of vines. Those spikes look poisonous.",
+      "//name" : "toxicchair",
+      "//shortdescription" : "Toxic Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "toxicchair",
+      "tilesetDirection" : "right"
+    },
+    "144" : {
+      "//name" : "tier5chair",
+      "invalid" : "true"
+    },
+    "145" : {
+      "//description" : "A bed adorned with eyes. Great for nightmares.",
+      "//name" : "eyebed",
+      "//shortdescription" : "Eye Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "eyebed",
+      "tilesetDirection" : "right"
+    },
+    "146" : {
+      "//description" : "A fleshy chair. About as gross as it sounds.",
+      "//name" : "fleshchair",
+      "//shortdescription" : "Flesh Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fleshchair",
+      "tilesetDirection" : "right"
+    },
+    "147" : {
+      "//description" : "A flower chair. If you enjoy sitting here, that means you like butter.",
+      "//name" : "giantflowerchair",
+      "//shortdescription" : "Giant Flower Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "giantflowerchair",
+      "tilesetDirection" : "right"
+    },
+    "148" : {
+      "//description" : "Strange oversized flowers, you can hide inside!",
+      "//name" : "flowerbox",
+      "//shortdescription" : "Strange Flower Box",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flowerbox",
+      "tilesetDirection" : "right"
+    },
+    "149" : {
+      "//description" : "A crudely made bench. It's had a lot of use during Floran hunts.",
+      "//name" : "huntingbench",
+      "//shortdescription" : "Crude Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingbench",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A simple wooden chair with bone accents.",
+      "//name" : "floranchair",
+      "//shortdescription" : "Primitive Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranchair",
+      "tilesetDirection" : "right"
+    },
+    "150" : {
+      "//description" : "A rainbow bed. Colourful and comfortable.",
+      "//name" : "rainbowbed",
+      "//shortdescription" : "Rainbow Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "rainbowbed",
+      "tilesetDirection" : "right"
+    },
+    "151" : {
+      "//description" : "A simple wooden stool.",
+      "//name" : "woodenstool",
+      "//shortdescription" : "Simple Wooden Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "woodenstool",
+      "tilesetDirection" : "right"
+    },
+    "152" : {
+      "//description" : "A bed made of rainbow wood.",
+      "//name" : "rainbowwoodbed",
+      "//shortdescription" : "Rainbow Wood Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "rainbowwoodbed",
+      "tilesetDirection" : "right"
+    },
+    "153" : {
+      "//description" : "A comfy wooden couch, the stripes help it go faster.",
+      "//name" : "woodencouch1",
+      "//shortdescription" : "Wooden Couch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodencouch1",
+      "tilesetDirection" : "right"
+    },
+    "154" : {
+      "//description" : "A rusty bed. Looks cheap and fragile.",
+      "//name" : "rustbed",
+      "//shortdescription" : "Rusty Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "rustbed",
+      "tilesetDirection" : "right"
+    },
+    "155" : {
+      "//description" : "A sandstone chair. Crumbly.",
+      "//name" : "sandstonechair",
+      "//shortdescription" : "Sandstone Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sandstonechair",
+      "tilesetDirection" : "right"
+    },
+    "156" : {
+      "//description" : "A wooden toilet. ",
+      "//name" : "woodtoilet",
+      "//shortdescription" : "Wooden Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "woodtoilet",
+      "tilesetDirection" : "right"
+    },
+    "157" : {
+      "//description" : "A bed made of rock.",
+      "//name" : "cavebed",
+      "//shortdescription" : "Rock Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "cavebed",
+      "tilesetDirection" : "right"
+    },
+    "158" : {
+      "//description" : "A bone throne. For all your royal bone needs.",
+      "//name" : "bonechair",
+      "//shortdescription" : "Bone Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bonechair",
+      "tilesetDirection" : "right"
+    },
+    "159" : {
+      "//name" : "tier10bed",
+      "invalid" : "true"
+    },
+    "16" : {
+      "//description" : "A mushroom chair. Or maybe a toadstool.",
+      "//name" : "shroomchair",
+      "//shortdescription" : "Shroom Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shroomchair",
+      "tilesetDirection" : "right"
+    },
+    "160" : {
+      "//description" : "A comfortable titanium bed. Looks pretty sleek.",
+      "//name" : "tier3bed",
+      "//shortdescription" : "Titanium Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier3bed",
+      "tilesetDirection" : "right"
+    },
+    "161" : {
+      "//description" : "A simple iron chair.",
+      "//name" : "tier1chair",
+      "//shortdescription" : "Iron Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier1chair",
+      "tilesetDirection" : "right"
+    },
+    "162" : {
+      "//description" : "A deck lounge chair with a parasol, perfect for sun weather.",
+      "//name" : "oasisbed",
+      "//shortdescription" : "Deck Lounge Chair",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "oasisbed",
+      "tilesetDirection" : "right"
+    },
+    "163" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "hylotlcaptainschair",
+      "//shortdescription" : "Hylotl Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlcaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "164" : {
+      "//description" : "Filth and rust have eaten away at this bed. Thankfully I'm not at all tired.",
+      "//name" : "wreckbed",
+      "//shortdescription" : "Wrecked Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "wreckbed",
+      "tilesetDirection" : "right"
+    },
+    "165" : {
+      "//description" : "A chair made of bamboo and leaves.",
+      "//name" : "islandchair",
+      "//shortdescription" : "Island Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "islandchair",
+      "tilesetDirection" : "right"
+    },
+    "166" : {
+      "//description" : "An uncomfortable-looking saloon chair.",
+      "//name" : "saloonseat",
+      "//shortdescription" : "Saloon Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "saloonseat",
+      "tilesetDirection" : "right"
+    },
+    "167" : {
+      "//description" : "A creepy couch, with a black painted finish.",
+      "//name" : "gothiccouch",
+      "//shortdescription" : "Gothic Couch",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "gothiccouch",
+      "tilesetDirection" : "right"
+    },
+    "168" : {
+      "//description" : "A creepy couch, with a black painted finish.",
+      "//name" : "gothiccouch_orientation1",
+      "//shortdescription" : "Gothic Couch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "gothiccouch",
+      "tilesetDirection" : "right"
+    },
+    "169" : {
+      "//description" : "An exceptionally gothic chair.",
+      "//name" : "gothicchair",
+      "//shortdescription" : "Gothic Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "gothicchair",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A beautiful stone fountain with a floral centerpiece.",
+      "//name" : "petalfountain",
+      "//shortdescription" : "Floral Fountain",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "petalfountain",
+      "tilesetDirection" : "right"
+    },
+    "170" : {
+      "//description" : "It's a piano fit for a saloon!",
+      "//name" : "saloonpiano",
+      "//shortdescription" : "Saloon Piano",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "saloonpiano",
+      "tilesetDirection" : "right"
+    },
+    "171" : {
+      "//description" : "It's a piano fit for a saloon!",
+      "//name" : "saloonpiano_orientation1",
+      "//shortdescription" : "Saloon Piano",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "saloonpiano",
+      "tilesetDirection" : "right"
+    },
+    "172" : {
+      "//description" : "A glowing chair.",
+      "//name" : "glowchair",
+      "//shortdescription" : "Glow Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glowchair",
+      "tilesetDirection" : "right"
+    },
+    "173" : {
+      "//description" : "A bed, with glowing plants grown through it.",
+      "//name" : "glowbed",
+      "//shortdescription" : "Glow Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "glowbed",
+      "tilesetDirection" : "right"
+    },
+    "174" : {
+      "//description" : "An old, worn and dusty bed.",
+      "//name" : "dustybed",
+      "//shortdescription" : "Dusty Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "dustybed",
+      "tilesetDirection" : "right"
+    },
+    "175" : {
+      "//description" : "An old, worn and dusty chair.",
+      "//name" : "dustychair",
+      "//shortdescription" : "Dusty Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "dustychair",
+      "tilesetDirection" : "right"
+    },
+    "176" : {
+      "//description" : "A traditional bed made from roots and leaves.",
+      "//name" : "swampbed",
+      "//shortdescription" : "Swamp Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "swampbed",
+      "tilesetDirection" : "right"
+    },
+    "177" : {
+      "//description" : "An unusual bed, with sides made of roots and leaf bedding.",
+      "//name" : "swampybed",
+      "//shortdescription" : "Swamp Cot",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "swampybed",
+      "tilesetDirection" : "right"
+    },
+    "178" : {
+      "//description" : "A small seat made from leaves and roots.",
+      "//name" : "swampchair",
+      "//shortdescription" : "Swamp Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "swampchair",
+      "tilesetDirection" : "right"
+    },
+    "179" : {
+      "//description" : "To some, a hammock is the very picture of luxury.",
+      "//name" : "islandhammock",
+      "//shortdescription" : "Island Hammock",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "islandhammock",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "This upholstery is bananas.",
+      "//name" : "apexarmchair",
+      "//shortdescription" : "Standard Issue Armchair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexarmchair",
+      "tilesetDirection" : "right"
+    },
+    "180" : {
+      "//description" : "Pretend you're an undead ghoul with this creepy coffin!",
+      "//name" : "gothicbed",
+      "//shortdescription" : "Gothic Bed",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "gothicbed",
+      "tilesetDirection" : "right"
+    },
+    "181" : {
+      "//description" : "Pretend you're an undead ghoul with this creepy coffin!",
+      "//name" : "gothicbed_orientation1",
+      "//shortdescription" : "Gothic Bed",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "gothicbed",
+      "tilesetDirection" : "right"
+    },
+    "182" : {
+      "//description" : "A seashell-shaped armchair.",
+      "//name" : "seachair",
+      "//shortdescription" : "Seashell Armchair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "seachair",
+      "tilesetDirection" : "right"
+    },
+    "183" : {
+      "//description" : "A seashell-shaped armchair.",
+      "//name" : "seachair_orientation1",
+      "//shortdescription" : "Seashell Armchair",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "seachair",
+      "tilesetDirection" : "right"
+    },
+    "184" : {
+      "//description" : "A bed made in a retro-futuristic style.",
+      "//name" : "retroscifibed",
+      "//shortdescription" : "Retro Pod",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "retroscifibed",
+      "tilesetDirection" : "right"
+    },
+    "185" : {
+      "//description" : "The design of this bed is based on an old Earth space shuttle.",
+      "//name" : "spaceshuttlebed",
+      "//shortdescription" : "Space Shuttle Bed",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "spaceshuttlebed",
+      "tilesetDirection" : "right"
+    },
+    "186" : {
+      "//description" : "A horizontal chair like a captain's chair on an Earth space shuttle.",
+      "//name" : "liftoffseat",
+      "//shortdescription" : "Liftoff Seat",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "liftoffseat",
+      "tilesetDirection" : "right"
+    },
+    "187" : {
+      "//description" : "A horizontal chair like a captain's chair on an Earth space shuttle.",
+      "//name" : "liftoffseat_orientation2",
+      "//shortdescription" : "Liftoff Seat",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "liftoffseat",
+      "tilesetDirection" : "right"
+    },
+    "188" : {
+      "//description" : "A horizontal chair like a captain's chair on an Earth space shuttle.",
+      "//name" : "liftoffseat_orientation3",
+      "//shortdescription" : "Liftoff Seat",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "liftoffseat",
+      "tilesetDirection" : "right"
+    },
+    "189" : {
+      "//description" : "A seashell-shaped bed.",
+      "//name" : "seabed",
+      "//shortdescription" : "Seashell Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "seabed",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A wooden chair overgrown with vines.",
+      "//name" : "plantchair",
+      "//shortdescription" : "Overgrown Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantchair",
+      "tilesetDirection" : "right"
+    },
+    "190" : {
+      "//description" : "An egg shaped chair made in a retro-futuristic style.",
+      "//name" : "retroscifichair",
+      "//shortdescription" : "Retro Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "retroscifichair",
+      "tilesetDirection" : "right"
+    },
+    "191" : {
+      "//description" : "An egg shaped chair made in a retro-futuristic style.",
+      "//name" : "retroscifichair_orientation1",
+      "//shortdescription" : "Retro Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "retroscifichair",
+      "tilesetDirection" : "right"
+    },
+    "192" : {
+      "//description" : "What's better than a bed? Two beds!",
+      "//name" : "cabinbunkbed",
+      "//shortdescription" : "Cabin Bunk Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "cabinbunkbed",
+      "tilesetDirection" : "right"
+    },
+    "193" : {
+      "//description" : "An old, hand carved rocking chair.",
+      "//name" : "cabinchair",
+      "//shortdescription" : "Cabin Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "cabinchair",
+      "tilesetDirection" : "right"
+    },
+    "194" : {
+      "//description" : "A bed supported by a framework of pipes.",
+      "//name" : "steampunkbed",
+      "//shortdescription" : "Steampunk Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "steampunkbed",
+      "tilesetDirection" : "right"
+    },
+    "195" : {
+      "//description" : "A bubbling cauldron, big enough that you could fit a whole person inside it.",
+      "//name" : "spookycauldron",
+      "//shortdescription" : "Spooky Cauldron",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "spookycauldron",
+      "tilesetDirection" : "right"
+    },
+    "196" : {
+      "//description" : "Rest in peace with this padded ornamental chair.",
+      "//name" : "spookytombchair",
+      "//shortdescription" : "Spooky Tomb Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "spookytombchair",
+      "tilesetDirection" : "right"
+    },
+    "197" : {
+      "//description" : "Rest in peace with this padded ornamental chair.",
+      "//name" : "spookytombchair_orientation1",
+      "//shortdescription" : "Spooky Tomb Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "spookytombchair",
+      "tilesetDirection" : "right"
+    },
+    "198" : {
+      "//description" : "A fancy looking armchair.",
+      "//name" : "steampunkarmchair",
+      "//shortdescription" : "Steampunk Armchair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "steampunkarmchair",
+      "tilesetDirection" : "right"
+    },
+    "199" : {
+      "//description" : "There's something disturbing about this fancy old bed.",
+      "//name" : "spookybed",
+      "//shortdescription" : "Spooky Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "spookybed",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//name" : "tier8bed",
+      "invalid" : "true"
+    },
+    "20" : {
+      "//name" : "captainschair",
+      "invalid" : "true"
+    },
+    "200" : {
+      "//name" : "outdoorsit",
+      "invalid" : "true"
+    },
+    "201" : {
+      "//description" : "A sleek fountain. The water looks refreshing.",
+      "//name" : "outdoorfountain",
+      "//shortdescription" : "Outdoor Fountain",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outdoorfountain",
+      "tilesetDirection" : "right"
+    },
+    "202" : {
+      "//description" : "A chair, built to endure the elements.",
+      "//name" : "outdoorchair",
+      "//shortdescription" : "Outdoor Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outdoorchair",
+      "tilesetDirection" : "right"
+    },
+    "203" : {
+      "//description" : "A bench, perfect for outdoors.",
+      "//name" : "outdoorbench",
+      "//shortdescription" : "Outdoor Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outdoorbench",
+      "tilesetDirection" : "right"
+    },
+    "204" : {
+      "//description" : "A smart metal stool, suitable for the outdoors.",
+      "//name" : "outdoorstool",
+      "//shortdescription" : "Outdoor Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outdoorstool",
+      "tilesetDirection" : "right"
+    },
+    "205" : {
+      "//description" : "A minimalist bed made from a refractive glass.",
+      "//name" : "prismbed",
+      "//shortdescription" : "Prism Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prismbed",
+      "tilesetDirection" : "right"
+    },
+    "206" : {
+      "//description" : "A cleanly cut chair made from refractive glass.",
+      "//name" : "prismchair",
+      "//shortdescription" : "Prism Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prismchair",
+      "tilesetDirection" : "right"
+    },
+    "207" : {
+      "//description" : "A fetching chair, made of fine wood and brass pipes.",
+      "//name" : "steamspringchair",
+      "//shortdescription" : "Steamspring Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "steamspringchair",
+      "tilesetDirection" : "right"
+    },
+    "208" : {
+      "//description" : "A comfy bed supported by a framework of pipes.",
+      "//name" : "steamspringbed",
+      "//shortdescription" : "Steamspring Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "steamspringbed",
+      "tilesetDirection" : "right"
+    },
+    "209" : {
+      "//description" : "A strange chair made from curious hexagonal pods.",
+      "//name" : "hivechair",
+      "//shortdescription" : "Hive Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hivechair",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "An exceptionally comfortable geometric chair.",
+      "//name" : "geometricchair",
+      "//shortdescription" : "Geometric Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "geometricchair",
+      "tilesetDirection" : "right"
+    },
+    "210" : {
+      "//description" : "A silk bed, resting on a strange hive-like base.",
+      "//name" : "hivebed",
+      "//shortdescription" : "Hive Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hivebed",
+      "tilesetDirection" : "right"
+    },
+    "211" : {
+      "//description" : "The standard Protectorate student bunk bed.",
+      "//name" : "protectoratedormbed",
+      "//shortdescription" : "Protectorate Bunk Bed.",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "protectoratedormbed",
+      "tilesetDirection" : "right"
+    },
+    "212" : {
+      "//description" : "A nice looking chair for cool Protectorate students.",
+      "//name" : "protectoratelobbychair",
+      "//shortdescription" : "Protectorate Lobby Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "protectoratelobbychair",
+      "tilesetDirection" : "right"
+    },
+    "213" : {
+      "//description" : "The standard Protectorate Dorm Toilet.",
+      "//name" : "protectoratedormtoilet",
+      "//shortdescription" : "Protectorate Dorm Toilet",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectoratedormtoilet",
+      "tilesetDirection" : "right"
+    },
+    "214" : {
+      "//description" : "A bench found in the Protectorate garden. It has a plaque.",
+      "//name" : "protectorategardenbench",
+      "//shortdescription" : "Protectorate Garden Bench",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "protectorategardenbench",
+      "tilesetDirection" : "right"
+    },
+    "215" : {
+      "//description" : "A bed with a large lamp over it, producing considerable heat.",
+      "//name" : "foundrybed",
+      "//shortdescription" : "Foundry Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "foundrybed",
+      "tilesetDirection" : "right"
+    },
+    "216" : {
+      "//description" : "A heavy metallic chair.",
+      "//name" : "foundrychair",
+      "//shortdescription" : "Heavy Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundrychair",
+      "tilesetDirection" : "right"
+    },
+    "217" : {
+      "//description" : "A bench found in the Protectorate.",
+      "//name" : "protectoratebench",
+      "//shortdescription" : "Protectorate Bench",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "protectoratebench",
+      "tilesetDirection" : "right"
+    },
+    "218" : {
+      "//description" : "A large hollow geode carved into a chair.",
+      "//name" : "geodechair",
+      "//shortdescription" : "Geode Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "geodechair",
+      "tilesetDirection" : "right"
+    },
+    "219" : {
+      "//description" : "A bed carved inside of a giant geode.",
+      "//name" : "geodebed",
+      "//shortdescription" : "Geode Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "geodebed",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "glitchcaptainschair",
+      "//shortdescription" : "Glitch Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "glitchcaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "220" : {
+      "//description" : "An incredibly comfortable wave bed.",
+      "//name" : "wavebed",
+      "//shortdescription" : "Wave Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "wavebed",
+      "tilesetDirection" : "right"
+    },
+    "221" : {
+      "//description" : "A comfortable doom chair.",
+      "//name" : "doomchair",
+      "//shortdescription" : "Doom Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "doomchair",
+      "tilesetDirection" : "right"
+    },
+    "222" : {
+      "//description" : "A sublime doom bed. It's a bit spiky, though.",
+      "//name" : "doombed",
+      "//shortdescription" : "Doom Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "doombed",
+      "tilesetDirection" : "right"
+    },
+    "223" : {
+      "//description" : "An exceptionally comfortable serene bed.",
+      "//name" : "serenebed",
+      "//shortdescription" : "Serene Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "serenebed",
+      "tilesetDirection" : "right"
+    },
+    "224" : {
+      "//description" : "A remarkably comfortable opulent bed.",
+      "//name" : "opulentbed",
+      "//shortdescription" : "Opulent Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "opulentbed",
+      "tilesetDirection" : "right"
+    },
+    "225" : {
+      "//description" : "A clean and sturdy bed.",
+      "//name" : "scorchedcitybed",
+      "//shortdescription" : "Stylish Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "scorchedcitybed",
+      "tilesetDirection" : "right"
+    },
+    "226" : {
+      "//description" : "An exceptionally comfortable wave chair.",
+      "//name" : "wavechair",
+      "//shortdescription" : "Wave Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wavechair",
+      "tilesetDirection" : "right"
+    },
+    "227" : {
+      "//description" : "A stylish but sturdy chair.",
+      "//name" : "scorchedcitychair",
+      "//shortdescription" : "Stylish Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "scorchedcitychair",
+      "tilesetDirection" : "right"
+    },
+    "228" : {
+      "//description" : "An executive bed. For the sleep of your life.",
+      "//name" : "executivebed",
+      "//shortdescription" : "Executive Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "executivebed",
+      "tilesetDirection" : "right"
+    },
+    "229" : {
+      "//description" : "An executive chair. You'll never want to stand again.",
+      "//name" : "executivechair",
+      "//shortdescription" : "Executive Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "executivechair",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "Another victim of this tacky polka dot print.",
+      "//name" : "apexcouch",
+      "//shortdescription" : "Standard Issue Couch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexcouch",
+      "tilesetDirection" : "right"
+    },
+    "230" : {
+      "//description" : "An incredibly comfortable opulent chair.",
+      "//name" : "opulentchair",
+      "//shortdescription" : "Opulent Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "opulentchair",
+      "tilesetDirection" : "right"
+    },
+    "231" : {
+      "//description" : "A very comfortable serene chair.",
+      "//name" : "serenechair",
+      "//shortdescription" : "Serene Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "serenechair",
+      "tilesetDirection" : "right"
+    },
+    "232" : {
+      "//description" : "A scorched bench.",
+      "//name" : "scorchedbench",
+      "//shortdescription" : "Scorched Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "scorchedbench",
+      "tilesetDirection" : "right"
+    },
+    "233" : {
+      "//description" : "A virtual reality headset.",
+      "//name" : "vrheadset",
+      "//shortdescription" : "VR Headset",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "16",
+      "object" : "vrheadset",
+      "tilesetDirection" : "right"
+    },
+    "234" : {
+      "//description" : "A virtual reality headset.",
+      "//name" : "vrheadset_orientation1",
+      "//shortdescription" : "VR Headset",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "16",
+      "object" : "vrheadset",
+      "tilesetDirection" : "right"
+    },
+    "235" : {
+      "//name" : "vrheadset_orientation2",
+      "invalid" : "true"
+    },
+    "236" : {
+      "//name" : "vrheadset_orientation3",
+      "invalid" : "true"
+    },
+    "237" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1red",
+      "//shortdescription" : "Red Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1red",
+      "tilesetDirection" : "right"
+    },
+    "238" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1blue",
+      "//shortdescription" : "Blue Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1blue",
+      "tilesetDirection" : "right"
+    },
+    "239" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent2yellow",
+      "//shortdescription" : "Yellow Basic Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent2yellow",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A comfy wooden armchair.",
+      "//name" : "woodenarmchair1",
+      "//shortdescription" : "Wooden Armchair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "woodenarmchair1",
+      "tilesetDirection" : "right"
+    },
+    "240" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbagred",
+      "//shortdescription" : "Red Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbagred",
+      "tilesetDirection" : "right"
+    },
+    "241" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbaggreen",
+      "//shortdescription" : "Green Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbaggreen",
+      "tilesetDirection" : "right"
+    },
+    "242" : {
+      "//description" : "A military tent.",
+      "//name" : "apextent",
+      "//shortdescription" : "Military Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apextent",
+      "tilesetDirection" : "right"
+    },
+    "243" : {
+      "//description" : "A bar fit for a penguin.",
+      "//name" : "penguinbarbottom",
+      "//shortdescription" : "Penguin Bar",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "penguinbarbottom",
+      "tilesetDirection" : "right"
+    },
+    "244" : {
+      "//description" : "A wobbly bar stool.",
+      "//name" : "outpostbarstool",
+      "//shortdescription" : "Urban Bar Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostbarstool",
+      "tilesetDirection" : "right"
+    },
+    "245" : {
+      "//description" : "A bench found in the Protectorate garden. It has a plaque.",
+      "//name" : "protectorategardenbench_orientation1",
+      "//shortdescription" : "Protectorate Garden Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "protectorategardenbench",
+      "tilesetDirection" : "right"
+    },
+    "246" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "novakidteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "novakidteleporterTier0"
+    },
+    "247" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "hylotlteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "hylotlteleporterTier0"
+    },
+    "248" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "teleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "teleporterTier0"
+    },
+    "249" : {
+      "//description" : "A large cage for designed to hold Floran prisoners.",
+      "//name" : "plantcage1",
+      "//shortdescription" : "Large Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantcage1",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//name" : "tier5bed",
+      "invalid" : "true"
+    },
+    "250" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "avianteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "avianteleporterTier0"
+    },
+    "251" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "floranteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "floranteleporterTier0"
+    },
+    "252" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "glitchteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "glitchteleporterTier0"
+    },
+    "253" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "humanteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "humanteleporterTier0"
+    },
+    "254" : {
+      "//description" : "A screen for modest individuals to hide behind while getting changed.",
+      "//name" : "hylotlshojiscreen",
+      "//shortdescription" : "Traditional Shoji Screen",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlshojiscreen",
+      "tilesetDirection" : "right"
+    },
+    "255" : {
+      "//description" : "A folding chair made for lounging. Looks relaxing.",
+      "//name" : "deckchair",
+      "//shortdescription" : "Deck Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "deckchair",
+      "tilesetDirection" : "right"
+    },
+    "256" : {
+      "//description" : "A sturdy wooden bed with mooshi hide sheets.",
+      "//name" : "frontierbed",
+      "//shortdescription" : "Frontier Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "frontierbed",
+      "tilesetDirection" : "right"
+    },
+    "257" : {
+      "//description" : "A charming, pastel coloured bed.",
+      "//name" : "pastelbed",
+      "//shortdescription" : "Pastel Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "pastelbed",
+      "tilesetDirection" : "right"
+    },
+    "258" : {
+      "//description" : "A small pastel coloured stool.",
+      "//name" : "pastelstool",
+      "//shortdescription" : "Pastel Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "pastelstool",
+      "tilesetDirection" : "right"
+    },
+    "259" : {
+      "//description" : "A pastel coloured chair with a heart-shaped backrest.",
+      "//name" : "pastelchair",
+      "//shortdescription" : "Pastel Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "pastelchair",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A chair made of wood and reed.",
+      "//name" : "reedchair",
+      "//shortdescription" : "Reed Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "reedchair",
+      "tilesetDirection" : "right"
+    },
+    "260" : {
+      "//description" : "A polished bar top, complete with three stools.",
+      "//name" : "saloonbar",
+      "//shortdescription" : "Saloon Bar",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "saloonbar",
+      "tilesetDirection" : "right"
+    },
+    "261" : {
+      "//description" : "A novelty cowboy picture stand.",
+      "//name" : "picturestand",
+      "//shortdescription" : "Picture Stand",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "picturestand",
+      "tilesetDirection" : "right"
+    },
+    "262" : {
+      "//description" : "A novelty cowboy picture stand.",
+      "//name" : "picturestand_orientation1",
+      "//shortdescription" : "Picture Stand",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "picturestand",
+      "tilesetDirection" : "right"
+    },
+    "263" : {
+      "//description" : "A pile of hay. Probably not a great hiding place.",
+      "//name" : "haypile_orientation2",
+      "//shortdescription" : "Hay Pile",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "haypile",
+      "tilesetDirection" : "right"
+    },
+    "264" : {
+      "//description" : "A wooden chair with mooshi hide cushioning.",
+      "//name" : "frontierchair",
+      "//shortdescription" : "Frontier Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frontierchair",
+      "tilesetDirection" : "right"
+    },
+    "265" : {
+      "//description" : "This colourful sleigh has a big rocket engine on the back! Who needs reindeer, right?",
+      "//name" : "scifisleigh",
+      "//shortdescription" : "Holiday Rocket Sleigh",
+      "imagePositionX" : "-64",
+      "imagePositionY" : "0",
+      "object" : "scifisleigh",
+      "tilesetDirection" : "right"
+    },
+    "266" : {
+      "//name" : "industrialclasschair",
+      "invalid" : "true"
+    },
+    "267" : {
+      "//description" : "A solid metal chair with only the slightest bit of padding.",
+      "//name" : "industrialchair",
+      "//shortdescription" : "Industrial Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "industrialchair",
+      "tilesetDirection" : "right"
+    },
+    "268" : {
+      "//description" : "A cheap bed with a sturdy metal frame. It doesn't seem very comfortable.",
+      "//name" : "industrialbed",
+      "//shortdescription" : "Industrial Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "industrialbed",
+      "tilesetDirection" : "right"
+    },
+    "269" : {
+      "//description" : "Equip and customise your personal mech!",
+      "//name" : "mechassemblystation",
+      "//shortdescription" : "Mech Assembly Station",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "mechassemblystation",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A fluffy two-seater couch.",
+      "//name" : "woodencouch2",
+      "//shortdescription" : "Soft Couch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodencouch2",
+      "tilesetDirection" : "right"
+    },
+    "270" : {
+      "//description" : "A curved, formal looking metal chair.",
+      "//name" : "stationchair",
+      "//shortdescription" : "Station Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stationchair",
+      "tilesetDirection" : "right"
+    },
+    "271" : {
+      "//description" : "A sleek metal bench.",
+      "//name" : "stationbench",
+      "//shortdescription" : "Station Bench",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationbench",
+      "tilesetDirection" : "right"
+    },
+    "272" : {
+      "//description" : "A modern chair design, commonly found inside spaceships.",
+      "//name" : "astrochair",
+      "//shortdescription" : "Astro Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "astrochair",
+      "tilesetDirection" : "right"
+    },
+    "273" : {
+      "//description" : "A bed which is designed to perform medical scans.",
+      "//name" : "stationmedscanner",
+      "//shortdescription" : "Station Medical Scanner",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationmedscanner",
+      "tilesetDirection" : "right"
+    },
+    "274" : {
+      "//description" : "A metal bar with with a smoothly polished surface.",
+      "//name" : "spacebarbottom",
+      "//shortdescription" : "Space Bar",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "spacebarbottom",
+      "tilesetDirection" : "right"
+    },
+    "275" : {
+      "//description" : "A legendary testament to early space travel.",
+      "//name" : "lunarlander",
+      "//shortdescription" : "Lunar Lander",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "lunarlander",
+      "tilesetDirection" : "right"
+    },
+    "276" : {
+      "//description" : "A scientific telescope, perfect for observing the stars.",
+      "//name" : "telescope",
+      "//shortdescription" : "Astronomy Telescope",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "telescope",
+      "tilesetDirection" : "right"
+    },
+    "277" : {
+      "//description" : "A scientific telescope, perfect for observing the stars.",
+      "//name" : "telescope_orientation1",
+      "//shortdescription" : "Astronomy Telescope",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "telescope",
+      "tilesetDirection" : "right"
+    },
+    "278" : {
+      "//description" : "A heavy metal chair with ergonomic cushioning.",
+      "//name" : "peacekeeperchair",
+      "//shortdescription" : "Peacekeeper Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "peacekeeperchair",
+      "tilesetDirection" : "right"
+    },
+    "279" : {
+      "//description" : "A lavishly decorated bed designed for lounging.",
+      "//name" : "egyptianbed",
+      "//shortdescription" : "Egyptian Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "egyptianbed",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A comfortable titanium chair.",
+      "//name" : "tier3chair",
+      "//shortdescription" : "Titanium Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier3chair",
+      "tilesetDirection" : "right"
+    },
+    "280" : {
+      "//description" : "A golden chair decorated with symbols.",
+      "//name" : "egyptianchair",
+      "//shortdescription" : "Egyptian Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "egyptianchair",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "Quite a dangerous chair to sit on",
+      "//name" : "frozenfirechair",
+      "//shortdescription" : "Frozen Fire Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frozenfirechair",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "An uncomfortable-looking wooden chair.",
+      "//name" : "woodenchair",
+      "//shortdescription" : "Wooden Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "woodenchair",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "Quite a dangerous chair to sit on",
+      "//name" : "frozenfirechair_orientation1",
+      "//shortdescription" : "Frozen Fire Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frozenfirechair",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A bed made of wood and reed.",
+      "//name" : "reedbed",
+      "//shortdescription" : "Reed Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "reedbed",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A chair made of rainbow wood.",
+      "//name" : "rainbowwoodchair",
+      "//shortdescription" : "Rainbow Wood Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "rainbowwoodchair",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A mushroom bed. Guaranteed to give you weird dreams.",
+      "//name" : "shroombed",
+      "//shortdescription" : "Shroom Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "shroombed",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A comfy wooden bed with a headboard.",
+      "//name" : "woodenbed2",
+      "//shortdescription" : "Wooden Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "woodenbed2",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A throne fit for royal buttocks.",
+      "//name" : "royalthrone",
+      "//shortdescription" : "Royal Throne",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "royalthrone",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//name" : "tier6bed",
+      "invalid" : "true"
+    },
+    "37" : {
+      "//description" : "A common iron bed.",
+      "//name" : "tier1bed",
+      "//shortdescription" : "Iron Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier1bed",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A table reserved for traitors.",
+      "//name" : "apextorturebed",
+      "//shortdescription" : "Interrogation Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apextorturebed",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "florancaptainschair",
+      "//shortdescription" : "Floran Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florancaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//name" : "tier9chair",
+      "invalid" : "true"
+    },
+    "40" : {
+      "//description" : "A comfortable durasteel chair.",
+      "//name" : "tier4chair",
+      "//shortdescription" : "Durasteel Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier4chair",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A sticky tar chair.",
+      "//name" : "tarchair",
+      "//shortdescription" : "Tar Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tarchair",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A basic wooden chair.",
+      "//name" : "woodchair",
+      "//shortdescription" : "Wooden Padded Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "woodchair",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A simple bench, save for the fact that the legs are nailed to the floor.",
+      "//name" : "prisonbench",
+      "//shortdescription" : "Metal Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisonbench",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A sticky, slimy spot to sit.",
+      "//name" : "slimechair",
+      "//shortdescription" : "Slime Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "slimechair",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A toilet made of swords. Risky.",
+      "//name" : "irontoilet",
+      "//shortdescription" : "Sharp Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "irontoilet",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A basic bedroll on a wheeled wooden frame.",
+      "//name" : "plantbed3",
+      "//shortdescription" : "Wheeled Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed3",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A small wooden stool.",
+      "//name" : "woodstool",
+      "//shortdescription" : "Wooden Stool",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "woodstool",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A torture bed. Terrifying! Thank goodness for the pillow.",
+      "//name" : "prisontorturebed2",
+      "//shortdescription" : "Torture Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "prisontorturebed2",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A comfortable Avian bench.",
+      "//name" : "avianbench2",
+      "//shortdescription" : "Village Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "avianbench2",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//name" : "tier7chair",
+      "invalid" : "true"
+    },
+    "50" : {
+      "//description" : "A bright, modern looking chair.",
+      "//name" : "cellchair",
+      "//shortdescription" : "Cell Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "cellchair",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation1",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation2",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation3",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "humancaptainschair",
+      "//shortdescription" : "Human Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "humancaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "Sleep sweetly, suspended in slime.",
+      "//name" : "slimebed",
+      "//shortdescription" : "Slime Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "slimebed",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "A brutal yet effective execution device.",
+      "//name" : "guillotine",
+      "//shortdescription" : "Guillotine",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "guillotine",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent2",
+      "//shortdescription" : "Green Basic Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent2",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "It's just an armchair made of bones. No big deal.",
+      "//name" : "floranarmchair",
+      "//shortdescription" : "Primitive Armchair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floranarmchair",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//name" : "tier7bed",
+      "invalid" : "true"
+    },
+    "60" : {
+      "//name" : "tier9bed",
+      "invalid" : "true"
+    },
+    "61" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1",
+      "//shortdescription" : "Green Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "Some sort of solitary confinement device, maybe?",
+      "//name" : "prisonforcecell",
+      "//shortdescription" : "Force Cell",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonforcecell",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A surprisingly comfortable chair.",
+      "//name" : "lunarbasechair",
+      "//shortdescription" : "Lunar Base Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "lunarbasechair",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "A normal looking toilet! Thank the stars!",
+      "//name" : "basictoilet",
+      "//shortdescription" : "Basic Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "basictoilet",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "A standard issue office chair.",
+      "//name" : "apexofficechair",
+      "//shortdescription" : "Office Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexofficechair",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "An iron bed made of swords. Perfect for a power nap.",
+      "//name" : "ironbed",
+      "//shortdescription" : "Sharp Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "ironbed",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "A filthy chair. Insects skitter in and out of holes in the fabric.",
+      "//name" : "wreckchair",
+      "//shortdescription" : "Wrecked Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wreckchair",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "A couch made of leather hide and large bones.",
+      "//name" : "florancouch",
+      "//shortdescription" : "Primitive Couch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "florancouch",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "A comfy chair, looks like it's meant to be nailed to the floor.",
+      "//name" : "apexcomfychair",
+      "//shortdescription" : "Standard Issue Seat",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexcomfychair",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//name" : "tier6chair",
+      "invalid" : "true"
+    },
+    "70" : {
+      "//description" : "A gloriously colourful rainbow chair.",
+      "//name" : "rainbowchair",
+      "//shortdescription" : "Rainbow Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "rainbowchair",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbag",
+      "//shortdescription" : "Blue Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbag",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "A pile of hay. Probably not a great hiding place.",
+      "//name" : "haypile",
+      "//shortdescription" : "Hay Pile",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "haypile",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "A very basic toilet.",
+      "//name" : "medievaltoilet",
+      "//shortdescription" : "Medieval Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievaltoilet",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "The bone frame is sort of disturbing, but that fur blanket looks mighty comfy.",
+      "//name" : "floranbed",
+      "//shortdescription" : "Primitive Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranbed",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//description" : "A Floran prison bedroll. It spreads out on the ground.",
+      "//name" : "plantbed1",
+      "//shortdescription" : "Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed1",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "A simple tar bed.",
+      "//name" : "tarbed",
+      "//shortdescription" : "Tar Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tarbed",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "A strong geometric bed.",
+      "//name" : "geometricbed",
+      "//shortdescription" : "Geometric Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "geometricbed",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//description" : "A comfortable durasteel bed. Looks pretty sleek.",
+      "//name" : "tier4bed",
+      "//shortdescription" : "Durasteel Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier4bed",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "A standard issue wooden dining chair.",
+      "//name" : "apexwoodenchair",
+      "//shortdescription" : "Standard Issue Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexwoodenchair",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A bed made of fresh flesh.",
+      "//name" : "fleshbed",
+      "//shortdescription" : "Flesh Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "fleshbed",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "A comfy wooden bed.",
+      "//name" : "woodenbed",
+      "//shortdescription" : "Wooden Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "woodenbed",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "novakidcaptainschair",
+      "//shortdescription" : "Novakid Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "novakidcaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//name" : "tier10chair",
+      "invalid" : "true"
+    },
+    "83" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "aviancaptainschair",
+      "//shortdescription" : "Avian Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "aviancaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "84" : {
+      "//name" : "ironthrone",
+      "invalid" : "true"
+    },
+    "85" : {
+      "//description" : "A masterfully crafted throne, fit for Kluex himself.",
+      "//name" : "birdthrone",
+      "//shortdescription" : "Avian Throne",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "birdthrone",
+      "tilesetDirection" : "right"
+    },
+    "86" : {
+      "//description" : "A masterfully crafted throne, fit for Kluex himself.",
+      "//name" : "birdthrone_orientation1",
+      "//shortdescription" : "Avian Throne",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "birdthrone",
+      "tilesetDirection" : "right"
+    },
+    "87" : {
+      "//description" : "A beautiful bed made of shiny gold.",
+      "//name" : "royalbed",
+      "//shortdescription" : "Ornate Royal Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "royalbed",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "A beautiful flower bed. Watch out for bees!",
+      "//name" : "flowerbed2",
+      "//shortdescription" : "Flower Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flowerbed2",
+      "tilesetDirection" : "right"
+    },
+    "89" : {
+      "//description" : "A wobbly bar stool.",
+      "//name" : "barstool",
+      "//shortdescription" : "Bar Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "barstool",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A simple tungsten chair.",
+      "//name" : "tier2chair",
+      "//shortdescription" : "Tungsten Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier2chair",
+      "tilesetDirection" : "right"
+    },
+    "90" : {
+      "//description" : "A cheaply-manufactured bed.",
+      "//name" : "apexbed",
+      "//shortdescription" : "Standard Issue Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apexbed",
+      "tilesetDirection" : "right"
+    },
+    "91" : {
+      "//description" : "These cosy beds can stack on top of each other.",
+      "//name" : "lunarbasebunk",
+      "//shortdescription" : "Lunar Base Bunk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "lunarbasebunk",
+      "tilesetDirection" : "right"
+    },
+    "92" : {
+      "//description" : "A basic bed. Not too comfy.",
+      "//name" : "outpostbed",
+      "//shortdescription" : "Basic Metal Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostbed",
+      "tilesetDirection" : "right"
+    },
+    "93" : {
+      "//description" : "A sandstone bed. Make sure you dust it off before use.",
+      "//name" : "sandstonebed",
+      "//shortdescription" : "Sandstone Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sandstonebed",
+      "tilesetDirection" : "right"
+    },
+    "94" : {
+      "//name" : "tier8chair",
+      "invalid" : "true"
+    },
+    "95" : {
+      "//description" : "An uncomfortable-looking chair.",
+      "//name" : "tungstenchair",
+      "//shortdescription" : "Metal Folding Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tungstenchair",
+      "tilesetDirection" : "right"
+    },
+    "96" : {
+      "//description" : "An altar sticky with old blood and feathers.",
+      "//name" : "sacrificialaltar",
+      "//shortdescription" : "Sacrificial Altar",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sacrificialaltar",
+      "tilesetDirection" : "right"
+    },
+    "97" : {
+      "//description" : "A hard chair, it would get uncomfortable pretty quickly.",
+      "//name" : "medievalchair",
+      "//shortdescription" : "Medieval Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalchair",
+      "tilesetDirection" : "right"
+    },
+    "98" : {
+      "//description" : "An alien bed. It seems to be alive.",
+      "//name" : "alienbed",
+      "//shortdescription" : "Alien Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "alienbed",
+      "tilesetDirection" : "right"
+    },
+    "99" : {
+      "//description" : "A sturdy metal chair.",
+      "//name" : "basicmetalchair",
+      "//shortdescription" : "Basic Metal Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "basicmetalchair",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbed.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/prisonmattress.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/tier2bed.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/bathroomstall.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/fountain1.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/rustchair.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/modernchair.png"
+    },
+    "104" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlchair.png"
+    },
+    "105" : {
+      "image" : "../../../../../tiled/packed/objects/stonechair.png"
+    },
+    "106" : {
+      "image" : "../../../../../tiled/packed/objects/outpostchair.png"
+    },
+    "107" : {
+      "image" : "../../../../../tiled/packed/objects/floranbench.png"
+    },
+    "108" : {
+      "image" : "../../../../../tiled/packed/objects/florantoilet.png"
+    },
+    "109" : {
+      "image" : "../../../../../tiled/packed/objects/icebed.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/avianbench1.png"
+    },
+    "110" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlbed2.png"
+    },
+    "111" : {
+      "image" : "../../../../../tiled/packed/objects/giantflowerbed.png"
+    },
+    "112" : {
+      "image" : "../../../../../tiled/packed/objects/eggchair.png"
+    },
+    "113" : {
+      "image" : "../../../../../tiled/packed/objects/plantlog.png"
+    },
+    "114" : {
+      "image" : "../../../../../tiled/packed/objects/woodenarmchair2.png"
+    },
+    "115" : {
+      "image" : "../../../../../tiled/packed/objects/altar1.png"
+    },
+    "116" : {
+      "image" : "../../../../../tiled/packed/objects/birdbed.png"
+    },
+    "117" : {
+      "image" : "../../../../../tiled/packed/objects/icechair.png"
+    },
+    "118" : {
+      "image" : "../../../../../tiled/packed/objects/carbed.png"
+    },
+    "119" : {
+      "image" : "../../../../../tiled/packed/objects/royaltoilet.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/classicbed.png"
+    },
+    "120" : {
+      "image" : "../../../../../tiled/packed/objects/bench.png"
+    },
+    "121" : {
+      "image" : "../../../../../tiled/packed/objects/fountain2.png"
+    },
+    "122" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbed1.png"
+    },
+    "123" : {
+      "image" : "../../../../../tiled/packed/objects/medievalcellbed.png"
+    },
+    "124" : {
+      "image" : "../../../../../tiled/packed/objects/bonebed.png"
+    },
+    "125" : {
+      "image" : "../../../../../tiled/packed/objects/wheelbarrow.png"
+    },
+    "126" : {
+      "image" : "../../../../../tiled/packed/objects/apexcoolchair.png"
+    },
+    "127" : {
+      "image" : "../../../../../tiled/packed/objects/outhouse.png"
+    },
+    "128" : {
+      "image" : "../../../../../tiled/packed/objects/medievalbed.png"
+    },
+    "129" : {
+      "image" : "../../../../../tiled/packed/objects/cavechair.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/alienchair.png"
+    },
+    "130" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassicchair.png"
+    },
+    "131" : {
+      "image" : "../../../../../tiled/packed/objects/tribalbed2.png"
+    },
+    "132" : {
+      "image" : "../../../../../tiled/packed/objects/kennel.png"
+    },
+    "133" : {
+      "image" : "../../../../../tiled/packed/objects/crystalchair.png"
+    },
+    "134" : {
+      "image" : "../../../../../tiled/packed/objects/floranbonestool.png"
+    },
+    "135" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed2.png"
+    },
+    "136" : {
+      "image" : "../../../../../tiled/packed/objects/eyechair.png"
+    },
+    "137" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed4.png"
+    },
+    "138" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed4_orientation2.png"
+    },
+    "139" : {
+      "image" : "../../../../../tiled/packed/objects/outpostpublicchair.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/apexcaptainschair.png"
+    },
+    "140" : {
+      "image" : "../../../../../tiled/packed/objects/crystalbed.png"
+    },
+    "141" : {
+      "image" : "../../../../../tiled/packed/objects/stonebed.png"
+    },
+    "142" : {
+      "image" : "../../../../../tiled/packed/objects/classicchair.png"
+    },
+    "143" : {
+      "image" : "../../../../../tiled/packed/objects/toxicchair.png"
+    },
+    "144" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "145" : {
+      "image" : "../../../../../tiled/packed/objects/eyebed.png"
+    },
+    "146" : {
+      "image" : "../../../../../tiled/packed/objects/fleshchair.png"
+    },
+    "147" : {
+      "image" : "../../../../../tiled/packed/objects/giantflowerchair.png"
+    },
+    "148" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbox.png"
+    },
+    "149" : {
+      "image" : "../../../../../tiled/packed/objects/huntingbench.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/floranchair.png"
+    },
+    "150" : {
+      "image" : "../../../../../tiled/packed/objects/rainbowbed.png"
+    },
+    "151" : {
+      "image" : "../../../../../tiled/packed/objects/woodenstool.png"
+    },
+    "152" : {
+      "image" : "../../../../../tiled/packed/objects/rainbowwoodbed.png"
+    },
+    "153" : {
+      "image" : "../../../../../tiled/packed/objects/woodencouch1.png"
+    },
+    "154" : {
+      "image" : "../../../../../tiled/packed/objects/rustbed.png"
+    },
+    "155" : {
+      "image" : "../../../../../tiled/packed/objects/sandstonechair.png"
+    },
+    "156" : {
+      "image" : "../../../../../tiled/packed/objects/woodtoilet.png"
+    },
+    "157" : {
+      "image" : "../../../../../tiled/packed/objects/cavebed.png"
+    },
+    "158" : {
+      "image" : "../../../../../tiled/packed/objects/bonechair.png"
+    },
+    "159" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/shroomchair.png"
+    },
+    "160" : {
+      "image" : "../../../../../tiled/packed/objects/tier3bed.png"
+    },
+    "161" : {
+      "image" : "../../../../../tiled/packed/objects/tier1chair.png"
+    },
+    "162" : {
+      "image" : "../../../../../tiled/packed/objects/oasisbed.png"
+    },
+    "163" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcaptainschair.png"
+    },
+    "164" : {
+      "image" : "../../../../../tiled/packed/objects/wreckbed.png"
+    },
+    "165" : {
+      "image" : "../../../../../tiled/packed/objects/islandchair.png"
+    },
+    "166" : {
+      "image" : "../../../../../tiled/packed/objects/saloonseat.png"
+    },
+    "167" : {
+      "image" : "../../../../../tiled/packed/objects/gothiccouch.png"
+    },
+    "168" : {
+      "image" : "../../../../../tiled/packed/objects/gothiccouch_orientation1.png"
+    },
+    "169" : {
+      "image" : "../../../../../tiled/packed/objects/gothicchair.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/petalfountain.png"
+    },
+    "170" : {
+      "image" : "../../../../../tiled/packed/objects/saloonpiano.png"
+    },
+    "171" : {
+      "image" : "../../../../../tiled/packed/objects/saloonpiano_orientation1.png"
+    },
+    "172" : {
+      "image" : "../../../../../tiled/packed/objects/glowchair.png"
+    },
+    "173" : {
+      "image" : "../../../../../tiled/packed/objects/glowbed.png"
+    },
+    "174" : {
+      "image" : "../../../../../tiled/packed/objects/dustybed.png"
+    },
+    "175" : {
+      "image" : "../../../../../tiled/packed/objects/dustychair.png"
+    },
+    "176" : {
+      "image" : "../../../../../tiled/packed/objects/swampbed.png"
+    },
+    "177" : {
+      "image" : "../../../../../tiled/packed/objects/swampybed.png"
+    },
+    "178" : {
+      "image" : "../../../../../tiled/packed/objects/swampchair.png"
+    },
+    "179" : {
+      "image" : "../../../../../tiled/packed/objects/islandhammock.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/apexarmchair.png"
+    },
+    "180" : {
+      "image" : "../../../../../tiled/packed/objects/gothicbed.png"
+    },
+    "181" : {
+      "image" : "../../../../../tiled/packed/objects/gothicbed_orientation1.png"
+    },
+    "182" : {
+      "image" : "../../../../../tiled/packed/objects/seachair.png"
+    },
+    "183" : {
+      "image" : "../../../../../tiled/packed/objects/seachair_orientation1.png"
+    },
+    "184" : {
+      "image" : "../../../../../tiled/packed/objects/retroscifibed.png"
+    },
+    "185" : {
+      "image" : "../../../../../tiled/packed/objects/spaceshuttlebed.png"
+    },
+    "186" : {
+      "image" : "../../../../../tiled/packed/objects/liftoffseat.png"
+    },
+    "187" : {
+      "image" : "../../../../../tiled/packed/objects/liftoffseat_orientation2.png"
+    },
+    "188" : {
+      "image" : "../../../../../tiled/packed/objects/liftoffseat_orientation3.png"
+    },
+    "189" : {
+      "image" : "../../../../../tiled/packed/objects/seabed.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/plantchair.png"
+    },
+    "190" : {
+      "image" : "../../../../../tiled/packed/objects/retroscifichair.png"
+    },
+    "191" : {
+      "image" : "../../../../../tiled/packed/objects/retroscifichair_orientation1.png"
+    },
+    "192" : {
+      "image" : "../../../../../tiled/packed/objects/cabinbunkbed.png"
+    },
+    "193" : {
+      "image" : "../../../../../tiled/packed/objects/cabinchair.png"
+    },
+    "194" : {
+      "image" : "../../../../../tiled/packed/objects/steampunkbed.png"
+    },
+    "195" : {
+      "image" : "../../../../../tiled/packed/objects/spookycauldron.png"
+    },
+    "196" : {
+      "image" : "../../../../../tiled/packed/objects/spookytombchair.png"
+    },
+    "197" : {
+      "image" : "../../../../../tiled/packed/objects/spookytombchair_orientation1.png"
+    },
+    "198" : {
+      "image" : "../../../../../tiled/packed/objects/steampunkarmchair.png"
+    },
+    "199" : {
+      "image" : "../../../../../tiled/packed/objects/spookybed.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "200" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "201" : {
+      "image" : "../../../../../tiled/packed/objects/outdoorfountain.png"
+    },
+    "202" : {
+      "image" : "../../../../../tiled/packed/objects/outdoorchair.png"
+    },
+    "203" : {
+      "image" : "../../../../../tiled/packed/objects/outdoorbench.png"
+    },
+    "204" : {
+      "image" : "../../../../../tiled/packed/objects/outdoorstool.png"
+    },
+    "205" : {
+      "image" : "../../../../../tiled/packed/objects/prismbed.png"
+    },
+    "206" : {
+      "image" : "../../../../../tiled/packed/objects/prismchair.png"
+    },
+    "207" : {
+      "image" : "../../../../../tiled/packed/objects/steamspringchair.png"
+    },
+    "208" : {
+      "image" : "../../../../../tiled/packed/objects/steamspringbed.png"
+    },
+    "209" : {
+      "image" : "../../../../../tiled/packed/objects/hivechair.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/geometricchair.png"
+    },
+    "210" : {
+      "image" : "../../../../../tiled/packed/objects/hivebed.png"
+    },
+    "211" : {
+      "image" : "../../../../../tiled/packed/objects/protectoratedormbed.png"
+    },
+    "212" : {
+      "image" : "../../../../../tiled/packed/objects/protectoratelobbychair.png"
+    },
+    "213" : {
+      "image" : "../../../../../tiled/packed/objects/protectoratedormtoilet.png"
+    },
+    "214" : {
+      "image" : "../../../../../tiled/packed/objects/protectorategardenbench.png"
+    },
+    "215" : {
+      "image" : "../../../../../tiled/packed/objects/foundrybed.png"
+    },
+    "216" : {
+      "image" : "../../../../../tiled/packed/objects/foundrychair.png"
+    },
+    "217" : {
+      "image" : "../../../../../tiled/packed/objects/protectoratebench.png"
+    },
+    "218" : {
+      "image" : "../../../../../tiled/packed/objects/geodechair.png"
+    },
+    "219" : {
+      "image" : "../../../../../tiled/packed/objects/geodebed.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/glitchcaptainschair.png"
+    },
+    "220" : {
+      "image" : "../../../../../tiled/packed/objects/wavebed.png"
+    },
+    "221" : {
+      "image" : "../../../../../tiled/packed/objects/doomchair.png"
+    },
+    "222" : {
+      "image" : "../../../../../tiled/packed/objects/doombed.png"
+    },
+    "223" : {
+      "image" : "../../../../../tiled/packed/objects/serenebed.png"
+    },
+    "224" : {
+      "image" : "../../../../../tiled/packed/objects/opulentbed.png"
+    },
+    "225" : {
+      "image" : "../../../../../tiled/packed/objects/scorchedcitybed.png"
+    },
+    "226" : {
+      "image" : "../../../../../tiled/packed/objects/wavechair.png"
+    },
+    "227" : {
+      "image" : "../../../../../tiled/packed/objects/scorchedcitychair.png"
+    },
+    "228" : {
+      "image" : "../../../../../tiled/packed/objects/executivebed.png"
+    },
+    "229" : {
+      "image" : "../../../../../tiled/packed/objects/executivechair.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/apexcouch.png"
+    },
+    "230" : {
+      "image" : "../../../../../tiled/packed/objects/opulentchair.png"
+    },
+    "231" : {
+      "image" : "../../../../../tiled/packed/objects/serenechair.png"
+    },
+    "232" : {
+      "image" : "../../../../../tiled/packed/objects/scorchedbench.png"
+    },
+    "233" : {
+      "image" : "../../../../../tiled/packed/objects/vrheadset.png"
+    },
+    "234" : {
+      "image" : "../../../../../tiled/packed/objects/vrheadset_orientation1.png"
+    },
+    "235" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "236" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "237" : {
+      "image" : "../../../../../tiled/packed/objects/tent1red.png"
+    },
+    "238" : {
+      "image" : "../../../../../tiled/packed/objects/tent1blue.png"
+    },
+    "239" : {
+      "image" : "../../../../../tiled/packed/objects/tent2yellow.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/woodenarmchair1.png"
+    },
+    "240" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbagred.png"
+    },
+    "241" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbaggreen.png"
+    },
+    "242" : {
+      "image" : "../../../../../tiled/packed/objects/apextent.png"
+    },
+    "243" : {
+      "image" : "../../../../../tiled/packed/objects/penguinbarbottom.png"
+    },
+    "244" : {
+      "image" : "../../../../../tiled/packed/objects/outpostbarstool.png"
+    },
+    "245" : {
+      "image" : "../../../../../tiled/packed/objects/protectorategardenbench_orientation1.png"
+    },
+    "246" : {
+      "image" : "../../../../../tiled/packed/objects/novakidteleporterTier0.png"
+    },
+    "247" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlteleporterTier0.png"
+    },
+    "248" : {
+      "image" : "../../../../../tiled/packed/objects/teleporterTier0.png"
+    },
+    "249" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "250" : {
+      "image" : "../../../../../tiled/packed/objects/avianteleporterTier0.png"
+    },
+    "251" : {
+      "image" : "../../../../../tiled/packed/objects/floranteleporterTier0.png"
+    },
+    "252" : {
+      "image" : "../../../../../tiled/packed/objects/glitchteleporterTier0.png"
+    },
+    "253" : {
+      "image" : "../../../../../tiled/packed/objects/humanteleporterTier0.png"
+    },
+    "254" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshojiscreen.png"
+    },
+    "255" : {
+      "image" : "../../../../../tiled/packed/objects/deckchair.png"
+    },
+    "256" : {
+      "image" : "../../../../../tiled/packed/objects/frontierbed.png"
+    },
+    "257" : {
+      "image" : "../../../../../tiled/packed/objects/pastelbed.png"
+    },
+    "258" : {
+      "image" : "../../../../../tiled/packed/objects/pastelstool.png"
+    },
+    "259" : {
+      "image" : "../../../../../tiled/packed/objects/pastelchair.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/reedchair.png"
+    },
+    "260" : {
+      "image" : "../../../../../tiled/packed/objects/saloonbar.png"
+    },
+    "261" : {
+      "image" : "../../../../../tiled/packed/objects/picturestand.png"
+    },
+    "262" : {
+      "image" : "../../../../../tiled/packed/objects/picturestand_orientation1.png"
+    },
+    "263" : {
+      "image" : "../../../../../tiled/packed/objects/haypile_orientation2.png"
+    },
+    "264" : {
+      "image" : "../../../../../tiled/packed/objects/frontierchair.png"
+    },
+    "265" : {
+      "image" : "../../../../../tiled/packed/objects/scifisleigh.png"
+    },
+    "266" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "267" : {
+      "image" : "../../../../../tiled/packed/objects/industrialchair.png"
+    },
+    "268" : {
+      "image" : "../../../../../tiled/packed/objects/industrialbed.png"
+    },
+    "269" : {
+      "image" : "../../../../../tiled/packed/objects/mechassemblystation.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/woodencouch2.png"
+    },
+    "270" : {
+      "image" : "../../../../../tiled/packed/objects/stationchair.png"
+    },
+    "271" : {
+      "image" : "../../../../../tiled/packed/objects/stationbench.png"
+    },
+    "272" : {
+      "image" : "../../../../../tiled/packed/objects/astrochair.png"
+    },
+    "273" : {
+      "image" : "../../../../../tiled/packed/objects/stationmedscanner.png"
+    },
+    "274" : {
+      "image" : "../../../../../tiled/packed/objects/spacebarbottom.png"
+    },
+    "275" : {
+      "image" : "../../../../../tiled/packed/objects/lunarlander.png"
+    },
+    "276" : {
+      "image" : "../../../../../tiled/packed/objects/telescope.png"
+    },
+    "277" : {
+      "image" : "../../../../../tiled/packed/objects/telescope_orientation1.png"
+    },
+    "278" : {
+      "image" : "../../../../../tiled/packed/objects/peacekeeperchair.png"
+    },
+    "279" : {
+      "image" : "../../../../../tiled/packed/objects/egyptianbed.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/tier3chair.png"
+    },
+    "280" : {
+      "image" : "../../../../../tiled/packed/objects/egyptianchair.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/frozenfirechair.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/woodenchair.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/frozenfirechair_orientation1.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/reedbed.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/rainbowwoodchair.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/shroombed.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/woodenbed2.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/royalthrone.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/tier1bed.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/apextorturebed.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/florancaptainschair.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/tier4chair.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/tarchair.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/woodchair.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbench.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/slimechair.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/irontoilet.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed3.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/woodstool.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/prisontorturebed2.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/avianbench2.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/cellchair.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation1.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation2.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation3.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/humancaptainschair.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/slimebed.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/guillotine.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/tent2.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/floranarmchair.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/tent1.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/prisonforcecell.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasechair.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/basictoilet.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/apexofficechair.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/ironbed.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/wreckchair.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/florancouch.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/apexcomfychair.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/rainbowchair.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbag.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/haypile.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/medievaltoilet.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/floranbed.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed1.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/tarbed.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/geometricbed.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/tier4bed.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/apexwoodenchair.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/fleshbed.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/woodenbed.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/novakidcaptainschair.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/aviancaptainschair.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/birdthrone.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/birdthrone_orientation1.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/royalbed.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbed2.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/barstool.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/tier2chair.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/apexbed.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasebunk.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/outpostbed.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/sandstonebed.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/tungstenchair.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/sacrificialaltar.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/objects/medievalchair.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/alienbed.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/basicmetalchair.png"
+    }
+  },
+  "tilewidth" : 72
+}

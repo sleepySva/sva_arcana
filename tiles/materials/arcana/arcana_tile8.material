@@ -1,0 +1,21 @@
+{
+  "materialId" : 16588,
+  "materialName" : "arcana_tile8",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile8",
+  "description" : "Expertly treated ornate wood.",
+  "shortdescription" : "Ornate Magiwood",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile8.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 178
+  }
+}

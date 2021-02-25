@@ -1,0 +1,25 @@
+{
+  "objectName" : "monarch_shelf_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A stone palace wall shelf.",
+  "shortdescription" : "Palace Shelf",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "monarch_shelf_1.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

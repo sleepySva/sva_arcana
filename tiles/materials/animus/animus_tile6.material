@@ -1,0 +1,21 @@
+{
+  "materialId" : 16686,
+  "materialName" : "animus_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "animus_tile6",
+  "description" : "A blood red flooring block.",
+  "shortdescription" : "Animus Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "animus_tile6.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 284
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16550,
+  "materialName" : "workshop_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "workshop_tile2",
+  "description" : "A wall panel, painted in black.",
+  "shortdescription" : "Black Workshop Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "workshop_tile2.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4141
+  }
+}

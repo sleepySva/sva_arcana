@@ -1,0 +1,21 @@
+{
+  "materialId" : 16679,
+  "materialName" : "borealite_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "borealite_tile7",
+  "description" : "A borealite beam.",
+  "shortdescription" : "Opus Kilo",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "borealite_tile7.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 607
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_tech_moderatoDash",
+  "type" : "body",
+
+  "scripts" : ["dash.lua"],
+  "animator" : "dash.animation",
+
+  "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to quickly dash! Cooldown: 0.4s",
+  "shortDescription" : "Moderato Dash",
+  "rarity" : "Uncommon",
+  "icon" : "/tech/dash.png",
+
+  "chipCost" : 4,
+
+  "maximumDoubleTapTime" : 0.25,
+  "dashControlForce" : 2000,
+  "dashSpeed" : 60,
+  "dashDuration" : 0.18,
+  "dashCooldown" : 0.4,
+  "stopAfterDash" : true,
+  "groundOnly" : true
+}

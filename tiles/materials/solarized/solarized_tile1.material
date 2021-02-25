@@ -1,0 +1,22 @@
+{
+  "materialId" : 16657,
+  "materialName" : "solarized_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "solarized_tile1",
+  "description" : "A piece of rock, covered with bright, burning grass.",
+  "shortdescription" : "Solarized Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 32,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "solarized_tile1.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 391,
+    "radiantLight" : [150, 60, 30]
+  }
+}

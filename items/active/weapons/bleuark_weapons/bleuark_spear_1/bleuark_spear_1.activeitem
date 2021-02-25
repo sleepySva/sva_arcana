@@ -1,0 +1,66 @@
+{
+  "itemName" : "bleuark_spear_1",
+  "price" : 1000,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A spear made from atla gold.",
+  "shortdescription" : "Atlantis Spear",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/spear/thalassa_spear_1.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "bleuark_spear_1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    },
+	"lights" : {
+      "glow" : {
+        "color" : [70, 60, 10]
+      }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.94,
+    "baseDps" : 10.2
+  },
+
+  "altAbilityType" : "arcana_spear_ability_burstFlurry",
+  "altAbility" : {
+  
+	"projectileCount" : 1,
+    "projectileType" : "bleuark_spear_1_projectile_1",
+    "projectileParameters" : {
+      "baseDamage" : 6
+    },
+  
+	"name" : "Atlantis Flurry",
+	"cooldownResetTime" : 0.3,
+    "maxCooldownTime" : 0.3,
+    "minCooldownTime" : 0.3,
+    "cooldownSwingReduction" : 0.08,
+    "energyUsage" : 16.0,
+    "cooldownTime" : 0.3,
+    "damageConfig" : {
+      "damageSourceKind" : "spear"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

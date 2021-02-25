@@ -1,0 +1,21 @@
+{
+  "materialId" : 16590,
+  "materialName" : "arcana_tile10",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile10",
+  "description" : "A magiwood beam. Good for building simple structures.",
+  "shortdescription" : "Magiwood Beam",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile10.png",
+    "variants" : 2,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1800
+  }
+}

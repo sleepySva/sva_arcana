@@ -1,0 +1,22 @@
+{
+  "materialId" : 16704,
+  "materialName" : "superstormExpanse_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "superstormExpanse_tile4",
+  "description" : "A glowing stone.",
+  "shortdescription" : "Boltstone",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "superstormExpanse_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 704,
+	"radiantLight" : [100, 40, 140]
+  }
+}

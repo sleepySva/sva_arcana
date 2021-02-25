@@ -1,0 +1,35 @@
+{
+  "objectName" : "orion_storage_7",
+  "colonyTags" : ["misc","storage"],
+  "rarity" : "Rare",
+  "description" : "A metal crate for storing items.",
+  "shortdescription" : "Large Magnum Crate",
+  "race" : "generic",
+  "price" : 100,
+  
+  "category" : "storage",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_storage_7.png:<color>",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/bunkercabinet_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bunkercabinet_close.ogg" ],
+  "slotCount" : 64,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

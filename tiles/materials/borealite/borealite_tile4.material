@@ -1,0 +1,21 @@
+{
+  "materialId" : 16676,
+  "materialName" : "borealite_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "borealite_tile4",
+  "description" : "A borealite beam.",
+  "shortdescription" : "Borealite Beam",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "borealite_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 604
+  }
+}

@@ -1,0 +1,677 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/aviantomb",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 56,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A crystal levitates above its frame, emitting an eerie light.",
+      "//name" : "crystaltorch",
+      "//shortdescription" : "Crystal Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystaltorch",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "I swear the eye is following me around the room..",
+      "//name" : "birdgodemblem",
+      "//shortdescription" : "Avian Emblem",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "-32",
+      "object" : "birdgodemblem"
+    },
+    "10" : {
+      "//description" : "Avians have been known to attempt to take human companions with them to the afterlife.",
+      "//name" : "sarcohuman",
+      "//shortdescription" : "Human Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcohuman",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "This heavy iron portcullis opens inward.",
+      "//name" : "bardoor2sideways",
+      "//shortdescription" : "Horizontal Portcullis",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bardoor2sideways",
+      "tilesetDirection" : "left"
+    },
+    "12" : {
+      "//description" : "Is it wrong to take your bunny to the afterlife with you?",
+      "//name" : "sarcobunny",
+      "//shortdescription" : "Bunny Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcobunny",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "This emblem signifies the tranquil and life-bringing element of water.",
+      "//name" : "wateremblem",
+      "//shortdescription" : "Avian Water Emblem",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "wateremblem",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "This tombstone is engraved with an eye symbol",
+      "//name" : "tombstone10",
+      "//shortdescription" : "Eye Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone10",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A ornate obsidian bookcase.",
+      "//name" : "obsidianbookcase",
+      "//shortdescription" : "Large Obsidian Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "obsidianbookcase",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A chest adorned with ancient Avian art.",
+      "//name" : "chestmedavian1",
+      "//shortdescription" : "Large Decorative Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestmedavian1",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "This heavy iron portcullis opens upwards.",
+      "//name" : "bardoor2",
+      "//shortdescription" : "Portcullis",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bardoor2",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "This tombstone looks as if it's about to fall over.",
+      "//name" : "tombstone9",
+      "//shortdescription" : "Unstable Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone9",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "These symbols signify a mass grave.",
+      "//name" : "tombstone11",
+      "//shortdescription" : "Mass Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone11",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "This massive iron portcullis closes with a thud.",
+      "//name" : "bardoor3",
+      "//shortdescription" : "Large Portcullis",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bardoor3",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "This emblem commemorates the Avians' first flight to the stars.",
+      "//name" : "moonemblem",
+      "//shortdescription" : "Avian Moon Emblem",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "moonemblem"
+    },
+    "21" : {
+      "//description" : "This guy seems... wise.",
+      "//name" : "mask5",
+      "//shortdescription" : "Decorative Wiseman Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask5"
+    },
+    "22" : {
+      "//description" : "This tombstone belonged to one of the grounded. It's been desecrated.",
+      "//name" : "tombstone8",
+      "//shortdescription" : "Desecrated Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone8",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "This emblem signifies the free and flowing element of air.",
+      "//name" : "airemblem",
+      "//shortdescription" : "Avian Air Emblem",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "airemblem",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A chest adorned with ancient Avian art.",
+      "//name" : "chestavian1",
+      "//shortdescription" : "Decorative Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestavian1",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "Avians have been known to attempt to take human companions with them to the afterlife. Wait a minute... I think I can hear something inside!",
+      "//name" : "sarcohumanalive",
+      "//shortdescription" : "Human Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcohumanalive",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "An open stone tomb. It smells.",
+      "//name" : "tombthing3",
+      "//shortdescription" : "Open Stone Tomb",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tombthing3",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "An engraved Avian tomb depicting the aether.",
+      "//name" : "tombthing2",
+      "//shortdescription" : "Engraved Avian Tomb",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tombthing2",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "Use this pressure plate wisely.",
+      "//name" : "avianpressureplate",
+      "//shortdescription" : "Crystal Pressure Plate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "avianpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "Use this pressure plate wisely.",
+      "//name" : "avianpressureplate_orientation2",
+      "//shortdescription" : "Crystal Pressure Plate",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "avianpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "This emblem signifies the strong and resilient element of earth.",
+      "//name" : "earthemblem",
+      "//shortdescription" : "Avian Earth Emblem",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "earthemblem",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "Use this pressure plate wisely.",
+      "//name" : "avianpressureplate_orientation3",
+      "//shortdescription" : "Crystal Pressure Plate",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "avianpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A statue of a great Avian hero.",
+      "//name" : "tombstatueavian",
+      "//shortdescription" : "Avian Hero Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tombstatueavian",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A statue of a great Avian hero.",
+      "//name" : "tombstatueavian_orientation1",
+      "//shortdescription" : "Avian Hero Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tombstatueavian",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A carved bunny sits on top of this altar.",
+      "//name" : "altarbunny",
+      "//shortdescription" : "Bunny Altar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "altarbunny",
+      "tilesetDirection" : "left"
+    },
+    "34" : {
+      "//description" : "The words honour a fallen Avian.",
+      "//name" : "tombstone1",
+      "//shortdescription" : "Basic Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone1",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A beautiful lamp built from Avian crystal tech.",
+      "//name" : "triballamp",
+      "//shortdescription" : "Avian Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "triballamp"
+    },
+    "36" : {
+      "//description" : "This mask looks like my ex-wife.",
+      "//name" : "mask6",
+      "//shortdescription" : "Decorative Priest Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask6"
+    },
+    "37" : {
+      "//description" : "A statue of a bunny.",
+      "//name" : "tombstatuebunny",
+      "//shortdescription" : "Avian Bunny Statue",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstatuebunny",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "This emblem signifies the wild and destructive element of fire.",
+      "//name" : "fireemblem",
+      "//shortdescription" : "Avian Fire Emblem",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "fireemblem",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A carved Avian head sits atop this altar.",
+      "//name" : "altaravian",
+      "//shortdescription" : "Avian Head Altar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "altaravian",
+      "tilesetDirection" : "left"
+    },
+    "4" : {
+      "//description" : "A plain stone tomb caked in dust.",
+      "//name" : "tombthing1",
+      "//shortdescription" : "Undecorated Stone Tomb",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tombthing1",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2_orientation2",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2_orientation3",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2_orientation4",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "This tile looks different from the rest.",
+      "//name" : "avianswitchhidden2_orientation5",
+      "//shortdescription" : "Blue Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "avianswitchhidden2",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "This guy looks surprised to see me!",
+      "//name" : "mask1",
+      "//shortdescription" : "Decorative Human Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask1"
+    },
+    "46" : {
+      "//description" : "This guy looks hungry. His eyes make me uncomfortable.",
+      "//name" : "mask2",
+      "//shortdescription" : "Decorative Skull Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask2"
+    },
+    "47" : {
+      "//description" : "This tomb is anonymous, engraved with the image of its occupant.",
+      "//name" : "tombstone3",
+      "//shortdescription" : "Engraved Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone3",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "This tombstone has been smashed beyond repair.",
+      "//name" : "tombstone4",
+      "//shortdescription" : "Smashed Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone4",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "This tombstone belongs to a warrior, fallen in battle.",
+      "//name" : "tombstone5",
+      "//shortdescription" : "Warrior's Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone5",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "An expertly crafted Avian sarcophagus. I wonder what's inside.",
+      "//name" : "sarcoavian1",
+      "//shortdescription" : "Avian Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcoavian1",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "This tombstone belongs to a priest, fallen in battle.",
+      "//name" : "tombstone6",
+      "//shortdescription" : "Priest's Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone6",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "The skull on this tombstone shows that it belongs to one of the grounded.",
+      "//name" : "tombstone7",
+      "//shortdescription" : "Grounded's Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone7",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "An expertly crafted Avian sarcophagus. The feather suggests it was for someone important.",
+      "//name" : "sarcoavian2",
+      "//shortdescription" : "Grand Avian Sarcophagus",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "sarcoavian2",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "The words honour a fallen Avian.",
+      "//name" : "tombstone2",
+      "//shortdescription" : "Embossed Tombstone",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tombstone2",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "A lavish Avian tomb.",
+      "//name" : "tombthing4",
+      "//shortdescription" : "Lavish Avian Tomb",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tombthing4",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "Use this pressure plate wisely.",
+      "//name" : "avianpressureplate_orientation4",
+      "//shortdescription" : "Crystal Pressure Plate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "avianpressureplate",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "This mask looks angry.",
+      "//name" : "mask3",
+      "//shortdescription" : "Decorative Alien Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask3"
+    },
+    "7" : {
+      "//description" : "A rather serious looking bird.",
+      "//name" : "mask4",
+      "//shortdescription" : "Decorative Bird Mask",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "mask4"
+    },
+    "8" : {
+      "//description" : "The rack is filled with antique Avian spears.",
+      "//name" : "spearrack",
+      "//shortdescription" : "Avian Spear Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "spearrack",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A support beam carved to resemble a fearsome bird.",
+      "//name" : "idolsupport",
+      "//shortdescription" : "Carved Support Beam",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "idolsupport",
+      "tilesetDirection" : "left"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/crystaltorch.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/birdgodemblem.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/sarcohuman.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor2sideways.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/sarcobunny.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/wateremblem.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone10.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/obsidianbookcase.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/chestmedavian1.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor2.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone9.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone11.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor3.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/moonemblem.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/mask5.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone8.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/airemblem.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/chestavian1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/sarcohumanalive.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/tombthing3.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/tombthing2.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/avianpressureplate.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/avianpressureplate_orientation2.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/earthemblem.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/avianpressureplate_orientation3.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/tombstatueavian.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/tombstatueavian_orientation1.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/altarbunny.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone1.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/triballamp.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/mask6.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/tombstatuebunny.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/fireemblem.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/altaravian.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/tombthing1.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2_orientation2.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2_orientation3.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2_orientation4.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/avianswitchhidden2_orientation5.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/mask1.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/mask2.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone3.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone4.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone5.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/sarcoavian1.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone6.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone7.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/sarcoavian2.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/tombstone2.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/tombthing4.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/avianpressureplate_orientation4.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/mask3.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/mask4.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/spearrack.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/idolsupport.png"
+    }
+  },
+  "tilewidth" : 8
+}

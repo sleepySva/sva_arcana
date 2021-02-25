@@ -1,0 +1,21 @@
+{
+  "materialId" : 16724,
+  "materialName" : "aeon_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeon_tile2",
+  "description" : "A timeless wall tile.",
+  "shortdescription" : "Aeon Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 28,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "aeon_tile2.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 724
+  }
+}

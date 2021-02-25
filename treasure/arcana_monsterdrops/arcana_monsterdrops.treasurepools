@@ -1,0 +1,24 @@
+
+{
+
+  "arcana_monsterdrops_GS8Scout" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 100]},
+        {"item" : ["workshop_crafting_dustriumConnector", 1]}
+      ],
+      "pool" : [
+		{"weight" : 0.2, "item" : ["workshop_crafting_GS8TechChip", 1]},
+		{"weight" : 0.2, "item" : ["workshop_crafting_GS8TechChip", 1]},
+        {"weight" : 0.2, "item" : ["workshop_crafting_dustriumPanel", 2]},
+        {"weight" : 0.2, "item" : ["workshop_crafting_dustriumPlate", 2]},
+		{"weight" : 0.2, "item" : ["money", 200]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ]
+}
+
+

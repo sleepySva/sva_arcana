@@ -1,0 +1,21 @@
+{
+  "materialId" : 16597,
+  "materialName" : "havencrest_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "havencrest_tile3",
+  "description" : "A decorative sandstone tile.",
+  "shortdescription" : "Decorative Sandstone",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "havencrest_tile3.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 193
+  }
+}

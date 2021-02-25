@@ -1,0 +1,381 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "movesound" : {
+        "priority" : 1,
+        "default" : "on",
+        "states" : {
+          "off" : {
+          },
+          "on" : {
+            "properties" : {
+              "persistentSound" : "/music/arctic-battle2-loop.ogg"
+            }
+          }
+        }
+      },
+
+      "movement" : {
+        "priority" : 0,
+        "default" : "visible",
+
+        "states" : {
+          "visible" : {
+            "frames" : 16,
+            "cycle" : 1.6,
+            "mode" : "loop"
+          },
+          "invisible" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "rotationGroup" : "all",
+          "zLevel" : 2
+        },
+
+        "partStates" : {
+          "movement" : {
+            "visible" : {
+              "properties" : {
+                "image" : "<partImage>:<phase>.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+
+      "pilot" : {
+        "properties" : {
+          "rotationGroup" : "all",
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "movement" : {
+            "visible" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "invisible" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "globalTagDefaults" : {
+    "phase" : "phase1"
+  },
+
+  "rotationGroups" : {
+    "all" : {
+      "angularVelocity" : 0.5
+    }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [210, 170, 160]
+    }
+  },
+
+
+  "particleEmitters" : {
+    "firecharge" : {
+      "active" : true,
+      "emissionRate" : 40,
+      "offsetRegion" : [-10, -6, 10, 6],
+      "particles" : [
+        {"particle" : "soluskatana1"},
+        {"particle" : "soluskatana1"},
+        {"particle" : "soluskatana2"}
+      ]
+    },
+    "teleport" : {
+      "emissionRate" : 10,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/penguinufoteleport/penguinufoteleport.animation",
+            "timeToLive" : 1.0,
+            "layer" : "front"
+          }
+        }
+      ]
+    },
+    "stunned" : {
+      "emissionRate" : 100,
+      "offsetRegion" : [-8, -2, 8, 2],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/electroshock/electroshock.animation",
+            "timeToLive" : 0.2,
+            "rotation" : 0,
+            "initialVelocity" : [0, 0],
+            "layer" : "front",
+            "variance" : {
+              "rotation" : 180
+            }
+          }
+        }
+      ]
+    },
+    "falling" : {
+      "emissionRate" : 100.0,
+      "offsetRegion" : [-8, 4, 8, 4],
+      "particles" : [
+        { "particle" : "fallingair" },
+        { "particle" : "fallingair" },
+        { "particle" : "fallingair" },
+        { "particle" : "fallingair" },
+        { "particle" : "fallingair" },
+        { "particle" : "fallingair" },
+        { "particle" : "fallingair" }
+      ]
+    },
+    "landing" : {
+      "emissionRate" : 1.0,
+      "offsetRegion" : [-6, -4, 6, -2],
+      "particles" : [
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" },
+        { "particle" : "dust4" }
+      ]
+    },
+    "deathPoof" : {
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/puff2c/puff2c.animation",
+            "size" : 1,
+            "angularVelocity" : 35,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [0, 0],
+            "finalVelocity" : [0, 0],
+            "approach" : [1, 1],
+            "timeToLive" : 0.4,
+            "layer" : "middle"
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz1/fizz1.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [-8, 8],
+            "finalVelocity" : [-3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [-4, 2],
+              "finalVelocity" : [-3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz1/fizz1.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [8, 8],
+            "finalVelocity" : [3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [4, 2],
+              "finalVelocity" : [3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz2/fizz2.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [-8, 8],
+            "finalVelocity" : [-3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [-4, 2],
+              "finalVelocity" : [-3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz2/fizz2.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [8, 8],
+            "finalVelocity" : [3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [4, 2],
+              "finalVelocity" : [3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz3/fizz3.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [-8, 8],
+            "finalVelocity" : [-3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [-4, 2],
+              "finalVelocity" : [-3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz3/fizz3.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [8, 8],
+            "finalVelocity" : [3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [4, 2],
+              "finalVelocity" : [3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz4/fizz4.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [-8, 8],
+            "finalVelocity" : [-3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [-4, 2],
+              "finalVelocity" : [-3, -4]
+            }
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/fizz4/fizz4.animation",
+            "size" : 1,
+            "angularVelocity" : 20,
+            "fade" : 1,
+            "destructionTime" : 1,
+            "position" : [0, 0],
+            "initialVelocity" : [8, 8],
+            "finalVelocity" : [3, -4],
+            "approach" : [15, 15],
+            "timeToLive" : 3.45,
+            "layer" : "middle",
+            "variance" : {
+              "initialVelocity" : [4, 2],
+              "finalVelocity" : [3, -4]
+            }
+          }
+        }
+      ]
+    }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  },
+
+  "sounds" : {
+    "landing" : [ "/sfx/gun/grenadeblast2.ogg" ],
+    "stunned" : [ "/sfx/npc/boss/ufo_stunned.ogg" ],
+    "teleportIn" : {
+      "pool" : [ "/sfx/npc/boss/ufo_teleport_appear.ogg" ],
+      "rangeMultiplier" : 1.5
+    },
+    "teleportOut" : {
+      "pool" : [ "/sfx/npc/boss/ufo_teleport_disappear.ogg" ],
+      "rangeMultiplier" : 1.5
+    }
+  }
+}

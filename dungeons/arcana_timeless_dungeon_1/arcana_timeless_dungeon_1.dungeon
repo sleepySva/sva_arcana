@@ -1,0 +1,74 @@
+{
+  "metadata" : {
+    "name" : "arcana_timeless_dungeon_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "arcana_timeless_dungeon_1_part_1" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 8,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_timeless_dungeon_1_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_timeless_dungeon_1_part_1.json" ]
+    },
+    {
+      "name" : "arcana_timeless_dungeon_1_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ]
+      ],
+      "def" : [ "tmx", "arcana_timeless_dungeon_1_part_2.json" ]
+    },
+    {
+      "name" : "arcana_timeless_dungeon_1_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ]
+      ],
+      "def" : [ "tmx", "arcana_timeless_dungeon_1_part_3.json" ]
+    },
+    {
+      "name" : "arcana_timeless_dungeon_1_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [2] ]
+      ],
+      "def" : [ "tmx", "arcana_timeless_dungeon_1_part_4.json" ]
+    },
+    {
+      "name" : "arcana_timeless_dungeon_1_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [2] ]
+      ],
+      "def" : [ "tmx", "arcana_timeless_dungeon_1_part_5.json" ]
+    },
+    {
+      "name" : "arcana_timeless_dungeon_1_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [2] ]
+      ],
+      "def" : [ "tmx", "arcana_timeless_dungeon_1_part_6.json" ]
+    },
+    {
+      "name" : "arcana_timeless_dungeon_1_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [2] ]
+      ],
+      "def" : [ "tmx", "arcana_timeless_dungeon_1_part_7.json" ]
+    },
+    {
+      "name" : "arcana_timeless_dungeon_1_part_top",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "arcana_timeless_dungeon_1_part_top.json" ],
+      "chance" : 0
+    }
+  ]
+}

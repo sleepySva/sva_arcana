@@ -1,0 +1,32 @@
+{
+  "objectName" : "arcana_crafting_workbench_3",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A modern crafting table, lets you craft furniture and materials.",
+  "shortdescription" : "Orion Workstation",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [120, 140, 160],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_workbench_3.config",
+	"filter" : ["arcana_crafting_workbench_1", "arcana_crafting_workbench_2", "arcana_crafting_workbench_3"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_workbench_3.png:<color>.<frame>",
+      "imagePosition" : [-24, 0],
+      "frames" : 12,
+      "animationCycle" : 1.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

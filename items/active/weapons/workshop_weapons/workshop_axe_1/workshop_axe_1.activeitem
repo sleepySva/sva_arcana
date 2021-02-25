@@ -1,0 +1,53 @@
+{
+  "itemName" : "workshop_axe_1",
+  "level" : 8,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A heavy axe, forged from dustrium.",
+  "shortdescription" : "Dustrium Axe",
+  "tooltipKind" : "sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/axe/workshop_axe_1.animation",
+  "animationParts" : {
+    "blade" : "workshop_axe_1.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+  "muzzleOffset" : [0.3, 0],
+
+  "primaryAbilityType" : "arcana_axe_ability_burstCleave",
+  "primaryAbility" : {
+  
+    "projectileType" : "workshop_axe_1_projectile_1",
+  	"projectileCount" : 2,
+    "projectileDistance" : 1.0,
+	"projectileParameters" : {
+      "baseDamage" : 16
+    },
+	
+    "fireTime" : 0.9,
+    "baseDps" : 11.0,
+    "damageConfig" : {
+      "knockback" : 40
+    }
+	
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

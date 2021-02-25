@@ -1,0 +1,24 @@
+{
+  "kind" : "arcana_particle_feather_1",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/arcana_particle_feather_1/arcana_particle_feather_1.png",
+    "size" : 0.6,
+    "color" : [255, 255, 255, 255],
+    "fade" : 0.9,
+    "initialVelocity" : [0.0, 2],
+    "finalVelocity" : [0.0, 0.0],
+    "rotation" : 0,
+    "angularVelocity" : 0,
+    "timeToLive" : 0.4,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.4,
+    "layer" : "front",
+    "variance" : {
+      "initialVelocity" : [2, 0.5],
+      "size" : 0.2,
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

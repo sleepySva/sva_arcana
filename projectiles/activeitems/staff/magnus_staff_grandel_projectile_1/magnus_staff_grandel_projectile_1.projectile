@@ -1,0 +1,98 @@
+{
+  "projectileName" : "magnus_staff_grandel_projectile_1",
+  "physics" : "laser",
+  "timeToLive" : 5,
+  "bounces" : 0,
+  "image" : "magnus_staff_grandel_projectile_1.png",
+  "animationCycle" : 0.2,
+  
+  "fullbright" : true,
+  "emitters" : ["sparks","smoke"],
+  "frameNumber" : 1,
+  "speed" : 6,
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_yellow/arcana_explosion_plasma_1_yellow.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.2,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/magnus_staff_grandel_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    },
+	{
+		"time" : 0.8,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "steelblades_sniperRifle_1_projectile_1",
+        "angleAdjust" : -120,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+		"time" : 1.0,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "steelblades_sniperRifle_1_projectile_1",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+		"time" : 1.2,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "steelblades_sniperRifle_1_projectile_1",
+        "angleAdjust" : 120,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+		"time" : 1.4,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "steelblades_sniperRifle_1_projectile_1",
+        "angleAdjust" : -60,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+		"time" : 1.6,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "steelblades_sniperRifle_1_projectile_1",
+        "angleAdjust" : 180,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+		"time" : 1.8,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "steelblades_sniperRifle_1_projectile_1",
+        "angleAdjust" : 60,
+        "inheritDamageFactor" : 0.2
+    }
+  ],
+  
+  "lightColor" : [80, 70, 20],
+  "damageKind" : "plasma",
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 30,
+    "controlForce" : 10
+  }
+}

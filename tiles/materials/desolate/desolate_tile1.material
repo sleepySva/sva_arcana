@@ -1,0 +1,21 @@
+{
+  "materialId" : 16631,
+  "materialName" : "desolate_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "desolate_tile1",
+  "description" : "A dark, smoldering rock.",
+  "shortdescription" : "Ruinous Stone",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "desolate_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1321
+  }
+}

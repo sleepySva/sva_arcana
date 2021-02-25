@@ -1,0 +1,1533 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/door",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 132,
+  "tileheight" : 80,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A cheaply made flood door.",
+      "//name" : "sewerflooddoor",
+      "//shortdescription" : "Sewer Flood Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sewerflooddoor"
+    },
+    "1" : {
+      "//description" : "A vertical hatch doorway.",
+      "//name" : "miningverticaldoor",
+      "//shortdescription" : "Mining Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "miningverticaldoor",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "This door is beautifully crafted.",
+      "//name" : "classicbardoor",
+      "//shortdescription" : "Classic Barred Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicbardoor"
+    },
+    "100" : {
+      "//description" : "A very sturdy wave door.",
+      "//name" : "wavedoor",
+      "//shortdescription" : "Wave Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "wavedoor",
+      "tilesetDirection" : "right"
+    },
+    "101" : {
+      "//description" : "A geometric door. Sturdy!",
+      "//name" : "geometricdoor",
+      "//shortdescription" : "Geometric Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "geometricdoor"
+    },
+    "102" : {
+      "//description" : "An impenetrable executive door.",
+      "//name" : "executivedoor",
+      "//shortdescription" : "Executive Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "executivedoor",
+      "tilesetDirection" : "right"
+    },
+    "103" : {
+      "//description" : "A super-strong opulent door.",
+      "//name" : "opulentdoor",
+      "//shortdescription" : "Opulent Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "opulentdoor",
+      "tilesetDirection" : "right"
+    },
+    "104" : {
+      "//description" : "A manhole cover.",
+      "//name" : "manholedoor",
+      "//shortdescription" : "Manhole Cover",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "manholedoor",
+      "tilesetDirection" : "right"
+    },
+    "105" : {
+      "//description" : "A trap door disguised as a metal platform.",
+      "//name" : "metallictrapdoor",
+      "//shortdescription" : "Metal Trap Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "metallictrapdoor"
+    },
+    "106" : {
+      "//description" : "A cleverly concealed entrance.",
+      "//name" : "secretdoor",
+      "//shortdescription" : "Secret Door",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "secretdoor",
+      "tilesetDirection" : "right"
+    },
+    "107" : {
+      "//description" : "A cleverly concealed entrance.",
+      "//name" : "secrettrapdoor",
+      "//shortdescription" : "Secret Trapdoor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "secrettrapdoor",
+      "tilesetDirection" : "right"
+    },
+    "108" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "novakidshiphatch",
+      "//shortdescription" : "Novakid Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "novakidshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "109" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "hylotlshiphatch",
+      "//shortdescription" : "Hylotl Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "hylotlshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "This door is made of some sort of bulletproof material.",
+      "//name" : "apexcooldoor",
+      "//shortdescription" : "Security Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apexcooldoor",
+      "tilesetDirection" : "right"
+    },
+    "110" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "apexshiphatch",
+      "//shortdescription" : "Apex Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "apexshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "111" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "avianshiphatch",
+      "//shortdescription" : "Avian Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "avianshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "112" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "humanshiphatch",
+      "//shortdescription" : "Human Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "humanshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "113" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "floranshiphatch",
+      "//shortdescription" : "Floran Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "floranshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "114" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "glitchshiphatch",
+      "//shortdescription" : "Glitch Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "glitchshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "115" : {
+      "//description" : "A crude wooden hatch.",
+      "//name" : "woodenverticaldoor",
+      "//shortdescription" : "Wooden Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodenverticaldoor",
+      "tilesetDirection" : "right"
+    },
+    "116" : {
+      "//description" : "A wooden door, emblazoned with an iron emblem on both sides.",
+      "//name" : "frontierdoor",
+      "//shortdescription" : "Frontier Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frontierdoor",
+      "tilesetDirection" : "right"
+    },
+    "117" : {
+      "//description" : "This door is made of some sort of bulletproof material. It has a composite rail running through it.",
+      "//name" : "outpostrailhatch",
+      "//shortdescription" : "Rail Airlock Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "outpostrailhatch",
+      "tilesetDirection" : "right"
+    },
+    "118" : {
+      "//description" : "This door is made of some sort of bulletproof material. It has a composite rail running through it.",
+      "//name" : "outpostrailairlock",
+      "//shortdescription" : "Rail Airlock Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostrailairlock",
+      "tilesetDirection" : "right"
+    },
+    "119" : {
+      "//description" : "This automated door is made of some sort of bulletproof material.",
+      "//name" : "outposthatchlarge",
+      "//shortdescription" : "Large Airlock Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "outposthatchlarge",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A rough sandstone door.",
+      "//name" : "sandstonedoor",
+      "//shortdescription" : "Sandstone Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "sandstonedoor",
+      "tilesetDirection" : "right"
+    },
+    "120" : {
+      "//name" : "industrialclassdoor",
+      "invalid" : "true"
+    },
+    "121" : {
+      "//description" : "A tough automated door, reinforced to be able to survive intense intergalactic conditions.",
+      "//name" : "industrialdoor",
+      "//shortdescription" : "Industrial Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "industrialdoor",
+      "tilesetDirection" : "right"
+    },
+    "122" : {
+      "//description" : "A large, sleek automated hatch, made from the same materials found on the exterior of space stations.",
+      "//name" : "stationhatch",
+      "//shortdescription" : "Station Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "stationhatch",
+      "tilesetDirection" : "right"
+    },
+    "123" : {
+      "//description" : "A sleek automated door, made from the same materials found on the exterior of space stations.",
+      "//name" : "stationdoor",
+      "//shortdescription" : "Station Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationdoor",
+      "tilesetDirection" : "right"
+    },
+    "124" : {
+      "//description" : "A large sleek hatch that has a built-in rail connector for use with elevators.",
+      "//name" : "stationrailhatch",
+      "//shortdescription" : "Station Rail Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "stationrailhatch",
+      "tilesetDirection" : "right"
+    },
+    "125" : {
+      "//description" : "A large, sleek automated door, made from the same materials found on the exterior of space stations.",
+      "//name" : "stationdoorlarge",
+      "//shortdescription" : "Station Large Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stationdoorlarge",
+      "tilesetDirection" : "right"
+    },
+    "126" : {
+      "//description" : "This door forms an airtight seal when closed.",
+      "//name" : "astrodoor",
+      "//shortdescription" : "Astro Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "astrodoor",
+      "tilesetDirection" : "right"
+    },
+    "127" : {
+      "//description" : "A purple door with an eye, fit for an evil cult.",
+      "//name" : "cultistdoor",
+      "//shortdescription" : "Cultist Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "cultistdoor",
+      "tilesetDirection" : "right"
+    },
+    "128" : {
+      "//description" : "An automatic door, typically used in Peacekeeper Stations.",
+      "//name" : "peacekeeperdoor",
+      "//shortdescription" : "Peacekeeper Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "peacekeeperdoor",
+      "tilesetDirection" : "right"
+    },
+    "129" : {
+      "//description" : "A crudely-made airlock door.",
+      "//name" : "cultistairlockdoor",
+      "//shortdescription" : "Cultist Airlock Door",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "cultistairlockdoor",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "glitchshipdoor",
+      "//shortdescription" : "Glitch Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "glitchshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "130" : {
+      "//description" : "A crudely-made airlock hatch.",
+      "//name" : "cultistairlockhatch",
+      "//shortdescription" : "Cultist Airlock Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "cultistairlockhatch",
+      "tilesetDirection" : "right"
+    },
+    "131" : {
+      "//description" : "A crudely-made airlock door.",
+      "//name" : "cultistairlockbossdoor",
+      "//shortdescription" : "Cultist Airlock Door",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "cultistairlockbossdoor",
+      "tilesetDirection" : "left"
+    },
+    "14" : {
+      "//description" : "A door made of cobblestone.",
+      "//name" : "stonedoor",
+      "//shortdescription" : "Stone Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stonedoor"
+    },
+    "15" : {
+      "//description" : "A huge, intimidating door.",
+      "//name" : "largecastledoor",
+      "//shortdescription" : "Large Medieval Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "largecastledoor",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "This massive iron portcullis closes with a thud.",
+      "//name" : "bardoor3",
+      "//shortdescription" : "Large Portcullis",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bardoor3",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A tar door.",
+      "//name" : "tardoor",
+      "//shortdescription" : "Tar Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tardoor"
+    },
+    "18" : {
+      "//description" : "Something isn't quite right with this dirt.",
+      "//name" : "dirttrapdoor",
+      "//shortdescription" : "Dirt Trapdoor",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-8",
+      "object" : "dirttrapdoor",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "An alien plant door.",
+      "//name" : "aliendoor",
+      "//shortdescription" : "Alien Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "aliendoor",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//name" : "tier6door",
+      "invalid" : "true"
+    },
+    "20" : {
+      "//description" : "A door of crossed blades. It looks like they can be withdrawn.",
+      "//name" : "irondoor",
+      "//shortdescription" : "Sharp Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "irondoor",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A door covered in eyes. Don't blink.",
+      "//name" : "eyedoor",
+      "//shortdescription" : "Eye Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "eyedoor",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A door that's good under pressure.",
+      "//name" : "pressuredoor",
+      "//shortdescription" : "Pressurised Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "pressuredoor",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A vertical hatch doorway.",
+      "//name" : "penguinbasedoor",
+      "//shortdescription" : "Rusty Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "penguinbasedoor",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A door made of wood and reed.",
+      "//name" : "reeddoor",
+      "//shortdescription" : "Reed Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "reeddoor"
+    },
+    "25" : {
+      "//description" : "A door made from interlocking vines.",
+      "//name" : "plantdoor1",
+      "//shortdescription" : "Vine Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantdoor1",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A retractable gate, made from a light wood.",
+      "//name" : "plantdoor2",
+      "//shortdescription" : "Retractable Wooden Gate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-32",
+      "object" : "plantdoor2",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A door with a cheerful wreath on it.",
+      "//name" : "giantflowerdoor",
+      "//shortdescription" : "Giant Flower Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "giantflowerdoor",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A strong and secure door.",
+      "//name" : "castledoor",
+      "//shortdescription" : "Medieval Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "castledoor",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "floranshipdoor",
+      "//shortdescription" : "Floran Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "floranshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//name" : "tier7door",
+      "invalid" : "true"
+    },
+    "30" : {
+      "//description" : "An inviting rainbow door.",
+      "//name" : "rainbowdoor",
+      "//shortdescription" : "Rainbow Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "rainbowdoor"
+    },
+    "31" : {
+      "//description" : "This sliding door makes me feel like I'm in a sci-fi game...",
+      "//name" : "outpostslidingdoor",
+      "//shortdescription" : "Sleek Sliding Door",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "outpostslidingdoor",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "humanshipdoor",
+      "//shortdescription" : "Human Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "humanshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A strong titanium door.",
+      "//name" : "tier3door",
+      "//shortdescription" : "Titanium Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier3door"
+    },
+    "34" : {
+      "//name" : "tier9door",
+      "invalid" : "true"
+    },
+    "35" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "avianshipdoor",
+      "//shortdescription" : "Avian Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "avianshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A sturdy airlock door.",
+      "//name" : "airlockdoor",
+      "//shortdescription" : "Pressurised Airlock Door",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "airlockdoor",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A dungeon cell door, built to hold even the strongest prisoner.",
+      "//name" : "castledungeondoor",
+      "//shortdescription" : "Medieval Cell Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "castledungeondoor",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A lightweight sliding door, advertised as being slimmer, faster, and more expensive.",
+      "//name" : "apexslidingdoor2",
+      "//shortdescription" : "Black Sliding Door",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "apexslidingdoor2",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A door made of rainbow wood.",
+      "//name" : "rainbowwooddoor",
+      "//shortdescription" : "Rainbow Wood Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "rainbowwooddoor",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//name" : "tier5door",
+      "invalid" : "true"
+    },
+    "40" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "castlehiddentrapdoor",
+      "//shortdescription" : "Hidden Brick Trapdoor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "castlehiddentrapdoor",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "This door is strong and sustainably sourced.",
+      "//name" : "bamboodoor",
+      "//shortdescription" : "Bamboo Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bamboodoor",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A barrier composed of two coiling bars.",
+      "//name" : "celldoor",
+      "//shortdescription" : "Cell Door",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "celldoor",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//name" : "tier8door",
+      "invalid" : "true"
+    },
+    "44" : {
+      "//description" : "A basic iron door.",
+      "//name" : "tier1door",
+      "//shortdescription" : "Iron Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier1door"
+    },
+    "45" : {
+      "//description" : "A cheaply made wooden door.",
+      "//name" : "villagedoor",
+      "//shortdescription" : "Village Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "villagedoor"
+    },
+    "46" : {
+      "//description" : "This heavy iron portcullis opens upwards.",
+      "//name" : "bardoor2",
+      "//shortdescription" : "Portcullis",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bardoor2",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "novakidshipdoor",
+      "//shortdescription" : "Novakid Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "novakidshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "It's some sort of electrical barrier. Looks dangerous...",
+      "//name" : "electricdoor",
+      "//shortdescription" : "Electrical Barrier",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "electricdoor",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "Door goes up... Door goes down... Door goes up... Door goes down...",
+      "//name" : "slidingdoor",
+      "//shortdescription" : "Sliding Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "slidingdoor",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A basic tungsten door.",
+      "//name" : "tier2door",
+      "//shortdescription" : "Tungsten Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier2door"
+    },
+    "50" : {
+      "//description" : "A manufactured paneled door.",
+      "//name" : "wooddoor",
+      "//shortdescription" : "Paneled Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wooddoor",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A lightweight sliding door, advertised as being slimmer, faster, and more expensive.",
+      "//name" : "apexslidingdoor1",
+      "//shortdescription" : "Light Sliding Door",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "apexslidingdoor1",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A crude wooden door. Not very secure.",
+      "//name" : "woodendoor",
+      "//shortdescription" : "Wooden Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodendoor",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A shoji screen door.",
+      "//name" : "hylotlshojidoor",
+      "//shortdescription" : "Traditional Shoji Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlshojidoor",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "castlehiddendoor",
+      "//shortdescription" : "Hidden Brick Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "castlehiddendoor",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A door made of thick metal bars.",
+      "//name" : "prisondoor",
+      "//shortdescription" : "Barred Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prisondoor"
+    },
+    "56" : {
+      "//description" : "A crude wooden gate. Not very secure.",
+      "//name" : "woodengate",
+      "//shortdescription" : "Wooden Gate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodengate",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "An industrial-looking metal door.",
+      "//name" : "miningdoor",
+      "//shortdescription" : "Miner's Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "miningdoor",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "hylotlshipdoor",
+      "//shortdescription" : "Hylotl Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A rusty door. Looks like it should lead to a creepy basement.",
+      "//name" : "rustdoor",
+      "//shortdescription" : "Rusty Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "rustdoor"
+    },
+    "6" : {
+      "//description" : "This door is almost rusted shut.",
+      "//name" : "wreckdoor",
+      "//shortdescription" : "Wrecked Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wreckdoor",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "This automated door is made of some sort of bulletproof material.",
+      "//name" : "outpostairlocklarge",
+      "//shortdescription" : "Large Airlock Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostairlocklarge",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "A secure durasteel door.",
+      "//name" : "tier4door",
+      "//shortdescription" : "Durasteel Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier4door"
+    },
+    "62" : {
+      "//description" : "This door is hardly suitable for keeping the weather out.",
+      "//name" : "florandoor",
+      "//shortdescription" : "Primitive Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florandoor",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "This sliding door makes me feel like I'm in a sci-fi game...",
+      "//name" : "bunkerslidingdoor",
+      "//shortdescription" : "Modern Sliding Door",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "bunkerslidingdoor",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "A door made of bone. Where does it lead? Hell? Or the bathroom?",
+      "//name" : "bonedoor",
+      "//shortdescription" : "Bone Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bonedoor",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "A door made of bone. Where does it lead? Hell? Or the bathroom?",
+      "//name" : "bonedoor_orientation1",
+      "//shortdescription" : "Bone Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bonedoor",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "A squishy, fleshy door.",
+      "//name" : "fleshdoor",
+      "//shortdescription" : "Flesh Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "fleshdoor"
+    },
+    "67" : {
+      "//description" : "An ice door. Don't grip the handle for too long.",
+      "//name" : "icedoor",
+      "//shortdescription" : "Ice Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "icedoor",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "A door made of mushrooms. It even has a cute mushroom handle.",
+      "//name" : "shroomdoor",
+      "//shortdescription" : "Shroom Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "shroomdoor",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "This door is hardly suitable for keeping the weather out.",
+      "//name" : "huntingdoor1",
+      "//shortdescription" : "Bamboo Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingdoor1",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A heavy golden door with crystals set into its surface.",
+      "//name" : "birddoor",
+      "//shortdescription" : "Golden Crystal Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "birddoor"
+    },
+    "70" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "apexshipdoor",
+      "//shortdescription" : "Apex Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apexshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "This door is airtight and made with incredibly strong materials.",
+      "//name" : "lunarbasedoor",
+      "//shortdescription" : "Lunar Base Blastdoor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "lunarbasedoor",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "This door is airtight and made with incredibly strong materials.",
+      "//name" : "lunarbasedoor_orientation1",
+      "//shortdescription" : "Lunar Base Blastdoor",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "lunarbasedoor",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "A beautifully carved door.",
+      "//name" : "tribaldoor",
+      "//shortdescription" : "Carved Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tribaldoor",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "This automated door is made of some sort of bulletproof material.",
+      "//name" : "outpostairlock",
+      "//shortdescription" : "Small Airlock Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostairlock",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//name" : "tier10door",
+      "invalid" : "true"
+    },
+    "76" : {
+      "//name" : "airlockdoor_orientation2",
+      "invalid" : "true"
+    },
+    "77" : {
+      "//name" : "airlockdoor_orientation3",
+      "invalid" : "true"
+    },
+    "78" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "templehiddendoor",
+      "//shortdescription" : "Brick Hidden Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "templehiddendoor",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "This heavy iron portcullis opens inward.",
+      "//name" : "bardoor2sideways",
+      "//shortdescription" : "Horizontal Portcullis",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bardoor2sideways",
+      "tilesetDirection" : "left"
+    },
+    "8" : {
+      "//description" : "I wouldn't want to find myself locked behind these thick iron bars.",
+      "//name" : "bardoor",
+      "//shortdescription" : "Iron Bar Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bardoor",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "templehiddentrapdoor",
+      "//shortdescription" : "Brick Hidden Trapdoor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "templehiddentrapdoor",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "ancienthiddenplatform",
+      "//shortdescription" : "Ancient Hidden Platform",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "ancienthiddenplatform",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "A beam of hard light creating a platform.",
+      "//name" : "ancientlightplatform",
+      "//shortdescription" : "Ancient Light Platform",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "ancientlightplatform",
+      "tilesetDirection" : "right"
+    },
+    "83" : {
+      "//description" : "An ancient-looking door.",
+      "//name" : "ancientdoor",
+      "//shortdescription" : "Ancient Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "ancientdoor",
+      "tilesetDirection" : "right"
+    },
+    "84" : {
+      "//description" : "An ancient vertical hatch doorway.",
+      "//name" : "ancientverticaldoor",
+      "//shortdescription" : "Ancient Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "ancientverticaldoor",
+      "tilesetDirection" : "right"
+    },
+    "85" : {
+      "//description" : "A swinging saloon door to keep those pesky tumbleweeds outside.",
+      "//name" : "saloondoor",
+      "//shortdescription" : "Saloon Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "saloondoor",
+      "tilesetDirection" : "right"
+    },
+    "86" : {
+      "//description" : "A gloomy wooden door.",
+      "//name" : "gothicdoor",
+      "//shortdescription" : "Gothic Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "gothicdoor",
+      "tilesetDirection" : "right"
+    },
+    "87" : {
+      "//description" : "A portcullis made of solid durasteel.",
+      "//name" : "portcullis",
+      "//shortdescription" : "Durasteel Portcullis",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-32",
+      "object" : "portcullis",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "A sleek vertical doorway, perfect for secret labs.",
+      "//name" : "laboratoryverticaldoor",
+      "//shortdescription" : "Laboratory Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "laboratoryverticaldoor",
+      "tilesetDirection" : "right"
+    },
+    "89" : {
+      "//description" : "A sturdy airlock hatch.",
+      "//name" : "airlockhatch",
+      "//shortdescription" : "Pressurised Airlock Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "airlockhatch",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A classic banana-infused wood door with a gilded handle.",
+      "//name" : "classicdoor",
+      "//shortdescription" : "Classic Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicdoor",
+      "tilesetDirection" : "right"
+    },
+    "90" : {
+      "//description" : "A sturdy wooden door, with a brass pipe frame.",
+      "//name" : "steamspringdoor",
+      "//shortdescription" : "Steamspring Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "steamspringdoor"
+    },
+    "91" : {
+      "//description" : "A smooth door made from a refractive glass.",
+      "//name" : "prismdoor",
+      "//shortdescription" : "Prism Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "prismdoor",
+      "tilesetDirection" : "left"
+    },
+    "92" : {
+      "//description" : "A sticky door made from organic hexagonal pods.",
+      "//name" : "hivedoor",
+      "//shortdescription" : "Hive Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hivedoor",
+      "tilesetDirection" : "right"
+    },
+    "93" : {
+      "//description" : "The Protectorate Academy door.",
+      "//name" : "protectoratedoor",
+      "//shortdescription" : "Protectorate Academy Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "protectoratedoor",
+      "tilesetDirection" : "right"
+    },
+    "94" : {
+      "//description" : "A heavy metal door often used in foundries.",
+      "//name" : "foundrydoor",
+      "//shortdescription" : "Heavy Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundrydoor",
+      "tilesetDirection" : "right"
+    },
+    "95" : {
+      "//description" : "A door carved from a cross section of a large geode.",
+      "//name" : "geodedoor",
+      "//shortdescription" : "Geode Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "geodedoor",
+      "tilesetDirection" : "right"
+    },
+    "96" : {
+      "//description" : "I can't stand on this stone platform for long!",
+      "//name" : "templepressureplatform",
+      "//shortdescription" : "Temple Pressure Platform",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "templepressureplatform"
+    },
+    "97" : {
+      "//description" : "A force field which can only be passed through one way.",
+      "//name" : "bossdoor",
+      "//shortdescription" : "Force Field",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bossdoor",
+      "tilesetDirection" : "right"
+    },
+    "98" : {
+      "//description" : "A very sturdy serene door.",
+      "//name" : "serenedoor",
+      "//shortdescription" : "Serene Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "serenedoor"
+    },
+    "99" : {
+      "//description" : "A creepy doom door.",
+      "//name" : "doomdoor",
+      "//shortdescription" : "Doom Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "doomdoor",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/sewerflooddoor.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/miningverticaldoor.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/classicbardoor.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/wavedoor.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/geometricdoor.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/executivedoor.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/opulentdoor.png"
+    },
+    "104" : {
+      "image" : "../../../../../tiled/packed/objects/manholedoor.png"
+    },
+    "105" : {
+      "image" : "../../../../../tiled/packed/objects/metallictrapdoor.png"
+    },
+    "106" : {
+      "image" : "../../../../../tiled/packed/objects/secretdoor.png"
+    },
+    "107" : {
+      "image" : "../../../../../tiled/packed/objects/secrettrapdoor.png"
+    },
+    "108" : {
+      "image" : "../../../../../tiled/packed/objects/novakidshiphatch.png"
+    },
+    "109" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshiphatch.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/apexcooldoor.png"
+    },
+    "110" : {
+      "image" : "../../../../../tiled/packed/objects/apexshiphatch.png"
+    },
+    "111" : {
+      "image" : "../../../../../tiled/packed/objects/avianshiphatch.png"
+    },
+    "112" : {
+      "image" : "../../../../../tiled/packed/objects/humanshiphatch.png"
+    },
+    "113" : {
+      "image" : "../../../../../tiled/packed/objects/floranshiphatch.png"
+    },
+    "114" : {
+      "image" : "../../../../../tiled/packed/objects/glitchshiphatch.png"
+    },
+    "115" : {
+      "image" : "../../../../../tiled/packed/objects/woodenverticaldoor.png"
+    },
+    "116" : {
+      "image" : "../../../../../tiled/packed/objects/frontierdoor.png"
+    },
+    "117" : {
+      "image" : "../../../../../tiled/packed/objects/outpostrailhatch.png"
+    },
+    "118" : {
+      "image" : "../../../../../tiled/packed/objects/outpostrailairlock.png"
+    },
+    "119" : {
+      "image" : "../../../../../tiled/packed/objects/outposthatchlarge.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/sandstonedoor.png"
+    },
+    "120" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "121" : {
+      "image" : "../../../../../tiled/packed/objects/industrialdoor.png"
+    },
+    "122" : {
+      "image" : "../../../../../tiled/packed/objects/stationhatch.png"
+    },
+    "123" : {
+      "image" : "../../../../../tiled/packed/objects/stationdoor.png"
+    },
+    "124" : {
+      "image" : "../../../../../tiled/packed/objects/stationrailhatch.png"
+    },
+    "125" : {
+      "image" : "../../../../../tiled/packed/objects/stationdoorlarge.png"
+    },
+    "126" : {
+      "image" : "../../../../../tiled/packed/objects/astrodoor.png"
+    },
+    "127" : {
+      "image" : "../../../../../tiled/packed/objects/cultistdoor.png"
+    },
+    "128" : {
+      "image" : "../../../../../tiled/packed/objects/peacekeeperdoor.png"
+    },
+    "129" : {
+      "image" : "../../../../../tiled/packed/objects/cultistairlockdoor.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/glitchshipdoor.png"
+    },
+    "130" : {
+      "image" : "../../../../../tiled/packed/objects/cultistairlockhatch.png"
+    },
+    "131" : {
+      "image" : "../../../../../tiled/packed/objects/cultistairlockbossdoor.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/stonedoor.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/largecastledoor.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor3.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/tardoor.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/dirttrapdoor.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/aliendoor.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/irondoor.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/eyedoor.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/pressuredoor.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/penguinbasedoor.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/reeddoor.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/plantdoor1.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/plantdoor2.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/giantflowerdoor.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/castledoor.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/floranshipdoor.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/rainbowdoor.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/outpostslidingdoor.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/humanshipdoor.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/tier3door.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/avianshipdoor.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/airlockdoor.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/castledungeondoor.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/apexslidingdoor2.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/rainbowwooddoor.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/castlehiddentrapdoor.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/bamboodoor.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/celldoor.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/tier1door.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/villagedoor.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor2.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/novakidshipdoor.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/electricdoor.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/slidingdoor.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/tier2door.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/wooddoor.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/apexslidingdoor1.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/woodendoor.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshojidoor.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/castlehiddendoor.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/prisondoor.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/woodengate.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/miningdoor.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshipdoor.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/rustdoor.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/wreckdoor.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/outpostairlocklarge.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/tier4door.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/florandoor.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerslidingdoor.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/bonedoor.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/bonedoor_orientation1.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/fleshdoor.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/icedoor.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/shroomdoor.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/huntingdoor1.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/birddoor.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/apexshipdoor.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasedoor.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/lunarbasedoor_orientation1.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/tribaldoor.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/outpostairlock.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/templehiddendoor.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor2sideways.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/bardoor.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/templehiddentrapdoor.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/ancienthiddenplatform.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/ancientlightplatform.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/ancientdoor.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/ancientverticaldoor.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/saloondoor.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/gothicdoor.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/portcullis.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/laboratoryverticaldoor.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/airlockhatch.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/classicdoor.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/steamspringdoor.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/prismdoor.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/hivedoor.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/protectoratedoor.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/objects/foundrydoor.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/geodedoor.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/templepressureplatform.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/objects/bossdoor.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/serenedoor.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/doomdoor.png"
+    }
+  },
+  "tilewidth" : 80
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16604,
+  "materialName" : "gaea_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "gaea_tile2",
+  "description" : "An ancient stone pillar made of florastone.",
+  "shortdescription" : "Florastone Pillar",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "gaea_tile2.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 192
+  }
+}

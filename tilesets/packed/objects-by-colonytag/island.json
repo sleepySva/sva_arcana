@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/island",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A tropical looking cabinet, complete with a little tree.",
+      "//name" : "islandcabinet",
+      "//shortdescription" : "Island Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "islandcabinet",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "There's a rather grim face carved into the base of this table.",
+      "//name" : "islandtable",
+      "//shortdescription" : "Island Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "islandtable",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A dancing hula girl. Aloha!",
+      "//name" : "hulagirl",
+      "//shortdescription" : "Hula Girl",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hulagirl",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "This glass lamp gives off a warm glow.",
+      "//name" : "islandlamp",
+      "//shortdescription" : "Island Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "islandlamp",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "To some, a hammock is the very picture of luxury.",
+      "//name" : "islandhammock",
+      "//shortdescription" : "Island Hammock",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "islandhammock",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A chair made of bamboo and leaves.",
+      "//name" : "islandchair",
+      "//shortdescription" : "Island Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "islandchair",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/islandcabinet.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/islandtable.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/hulagirl.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/islandlamp.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/islandhammock.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/islandchair.png"
+    }
+  },
+  "tilewidth" : 8
+}

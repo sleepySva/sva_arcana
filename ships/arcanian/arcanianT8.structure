@@ -1,0 +1,22 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : ["teleport", "planetTravel", "systemTravel"],
+      "maxFuel" : 1000,
+      "crewSize" : 12
+    }
+  },
+  "backgroundOverlays" : [
+    {
+      "image" : "arcanianT8.png",
+      "position" : [8.39, 1.75],
+      "fullbright" : true
+    },
+    {
+      "image" : "arcanianT8.png",
+      "position" : [8.39, 1.75]
+    }
+  ],
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "arcanianT8blocks.png"
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16551,
+  "materialName" : "workshop_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "workshop_tile3",
+  "description" : "An orange wall tile used by the Workshop.",
+  "shortdescription" : "Orange Workshop Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "workshop_tile3.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 142
+  }
+}

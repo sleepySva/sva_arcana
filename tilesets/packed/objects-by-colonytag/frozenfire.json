@@ -1,0 +1,38 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/frozenfire",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Quite a dangerous chair to sit on",
+      "//name" : "frozenfirechair",
+      "//shortdescription" : "Frozen Fire Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frozenfirechair",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Quite a dangerous chair to sit on",
+      "//name" : "frozenfirechair_orientation1",
+      "//shortdescription" : "Frozen Fire Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frozenfirechair",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/frozenfirechair.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/frozenfirechair_orientation1.png"
+    }
+  },
+  "tilewidth" : 8
+}

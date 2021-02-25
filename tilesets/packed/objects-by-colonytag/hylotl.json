@@ -1,0 +1,2599 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/hylotl",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 221,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A table set at kneeling height.",
+      "//name" : "hylotlshorttable",
+      "//shortdescription" : "Traditional Low Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlshorttable",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "hylotlteleporterTier0",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "hylotlteleporterTier0"
+    },
+    "10" : {
+      "//description" : "A quill and ink.",
+      "//name" : "quillandink",
+      "//shortdescription" : "Quill and Ink",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "quillandink",
+      "tilesetDirection" : "right"
+    },
+    "100" : {
+      "//description" : "A sign advertising natural soft drinks.",
+      "//name" : "softdrinksign",
+      "//shortdescription" : "Soft Drink Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "softdrinksign"
+    },
+    "101" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "hylotltechstation",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "hylotltechstation"
+    },
+    "102" : {
+      "//description" : "A framed poster from the movie \"Fiery Blade Crusader\".",
+      "//name" : "hylotlmovieposter2",
+      "//shortdescription" : "Warrior Movie Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlmovieposter2"
+    },
+    "103" : {
+      "//description" : "A small lily pad decoration.",
+      "//name" : "hylotllilydeco1",
+      "//shortdescription" : "Little Lily Pad",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "hylotllilydeco1",
+      "tilesetDirection" : "right"
+    },
+    "104" : {
+      "//description" : "A metal lily pad with a bright blue emblem.",
+      "//name" : "hylotlsymbolb",
+      "//shortdescription" : "Blue Neon Symbol",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "hylotlsymbolb"
+    },
+    "105" : {
+      "//description" : "An empty bottle of avesmingo cordial.",
+      "//name" : "smashabledrink1",
+      "//shortdescription" : "Empty Cordial Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink1",
+      "tilesetDirection" : "right"
+    },
+    "106" : {
+      "//description" : "A paper ceiling lamp.",
+      "//name" : "hylotllantern1",
+      "//shortdescription" : "Traditional Paper Lantern",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "hylotllantern1",
+      "tilesetDirection" : "right"
+    },
+    "107" : {
+      "//description" : "A bright blue alarm",
+      "//name" : "hylotlredalert",
+      "//shortdescription" : "Blue Alert",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlredalert",
+      "tilesetDirection" : "right"
+    },
+    "108" : {
+      "//description" : "A master work of craftsmanship. Beautiful.",
+      "//name" : "hylotlclassicbookcase",
+      "//shortdescription" : "Traditional Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassicbookcase",
+      "tilesetDirection" : "right"
+    },
+    "109" : {
+      "//description" : "A large antique bookcase.",
+      "//name" : "librarybookcaseG2",
+      "//shortdescription" : "Grand Ornate Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "librarybookcaseG2",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A quill and ink.",
+      "//name" : "quillandink_orientation1",
+      "//shortdescription" : "Quill and Ink",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "quillandink",
+      "tilesetDirection" : "right"
+    },
+    "110" : {
+      "//description" : "A small light that can work in water.",
+      "//name" : "floodlightsmall",
+      "//shortdescription" : "Small Flood Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floodlightsmall",
+      "tilesetDirection" : "right"
+    },
+    "111" : {
+      "//description" : "A small light that can work in water.",
+      "//name" : "floodlightsmall_orientation2",
+      "//shortdescription" : "Small Flood Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floodlightsmall",
+      "tilesetDirection" : "right"
+    },
+    "112" : {
+      "//description" : "A small light that can work in water.",
+      "//name" : "floodlightsmall_orientation3",
+      "//shortdescription" : "Small Flood Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floodlightsmall",
+      "tilesetDirection" : "right"
+    },
+    "113" : {
+      "//description" : "An empty bottle of petal nectar.",
+      "//name" : "smashabledrink4",
+      "//shortdescription" : "Empty Petal Nectar Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink4",
+      "tilesetDirection" : "right"
+    },
+    "114" : {
+      "//description" : "The Hylotl flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghylotl",
+      "//shortdescription" : "Hylotl Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flaghylotl",
+      "tilesetDirection" : "right"
+    },
+    "115" : {
+      "//description" : "The Hylotl flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghylotl_orientation1",
+      "//shortdescription" : "Hylotl Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flaghylotl",
+      "tilesetDirection" : "right"
+    },
+    "116" : {
+      "//description" : "Tenth Study in Female Hylotlgy",
+      "//name" : "tenstudiesplaque",
+      "//shortdescription" : "Nameplate",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tenstudiesplaque"
+    },
+    "117" : {
+      "//description" : "A plushie of Numi, the mascot from a Hylotl children's cartoon of the same name.",
+      "//name" : "numiplush",
+      "//shortdescription" : "Numi Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "numiplush",
+      "tilesetDirection" : "right"
+    },
+    "118" : {
+      "//description" : "A touch-screen console with all sorts of fun buttons.",
+      "//name" : "hylotlconsole",
+      "//shortdescription" : "Hi-Tech Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlconsole",
+      "tilesetDirection" : "right"
+    },
+    "119" : {
+      "//description" : "Framed calligraphy for 'leap'.",
+      "//name" : "hylotlcalligraphy4",
+      "//shortdescription" : "Hylotl \"Leap\" Calligraphy",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlcalligraphy4"
+    },
+    "12" : {
+      "//description" : "A sign that indicates the status of a pump.",
+      "//name" : "pumpsign",
+      "//shortdescription" : "Pump Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "pumpsign",
+      "tilesetDirection" : "right"
+    },
+    "120" : {
+      "//description" : "Hey, this gong has a big chip in it... oh. Oh, I see. It's a lily pad.",
+      "//name" : "hylotlclassicgong",
+      "//shortdescription" : "Traditional Gong",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassicgong",
+      "tilesetDirection" : "right"
+    },
+    "121" : {
+      "//description" : "A ornate bookcase with missing books",
+      "//name" : "librarybookcaseN2damage",
+      "//shortdescription" : "Damaged Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-72",
+      "object" : "librarybookcaseN2damage",
+      "tilesetDirection" : "right"
+    },
+    "122" : {
+      "//description" : "A sign advertising Numi, a famous mascot from a Hylotl children's cartoon.",
+      "//name" : "numisign",
+      "//shortdescription" : "Numi Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "numisign",
+      "tilesetDirection" : "right"
+    },
+    "123" : {
+      "//description" : "A traditional index filled with cards.",
+      "//name" : "index",
+      "//shortdescription" : "Card Index",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "index",
+      "tilesetDirection" : "right"
+    },
+    "124" : {
+      "//description" : "An empty bottle of dandelion root pop.",
+      "//name" : "smashabledrink2",
+      "//shortdescription" : "Empty Root Pop Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink2",
+      "tilesetDirection" : "right"
+    },
+    "125" : {
+      "//description" : "A sturdy airlock door.",
+      "//name" : "airlockdoor",
+      "//shortdescription" : "Pressurised Airlock Door",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "airlockdoor",
+      "tilesetDirection" : "right"
+    },
+    "126" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "combinationprop",
+      "//shortdescription" : "Combination Lock Prop",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "combinationprop"
+    },
+    "127" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "hylotlshiplockerTier0",
+      "//shortdescription" : "Shiplocker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "hylotlshiplockerTier0"
+    },
+    "128" : {
+      "//description" : "This machine runs a game called 'Cool Wizard Island'.",
+      "//name" : "arcadered",
+      "//shortdescription" : "Red Arcade Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arcadered",
+      "tilesetDirection" : "left"
+    },
+    "129" : {
+      "//description" : "A hologram displaying the latest trends in Hylotl fashion.",
+      "//name" : "hylotlfashionhologram",
+      "//shortdescription" : "Hylotl Fashion Hologram",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlfashionhologram",
+      "tilesetDirection" : "left"
+    },
+    "13" : {
+      "//description" : "A soft Poptop plush toy.",
+      "//name" : "poptopplush",
+      "//shortdescription" : "Poptop Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "poptopplush",
+      "tilesetDirection" : "right"
+    },
+    "130" : {
+      "//description" : "This water feature is perfect for the home, garden, or interstellar dojo.",
+      "//name" : "hylotlwaterfeature1",
+      "//shortdescription" : "Traditional Water Feature",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlwaterfeature1",
+      "tilesetDirection" : "right"
+    },
+    "131" : {
+      "//description" : "A framed poster from the movie \"Cybernetic Apocalypse\".",
+      "//name" : "hylotlmovieposter1",
+      "//shortdescription" : "Action Movie Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "hylotlmovieposter1"
+    },
+    "132" : {
+      "//description" : "This machine runs a game called 'Sleazy Burger Heroes'.",
+      "//name" : "arcadeorange",
+      "//shortdescription" : "Orange Arcade Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arcadeorange",
+      "tilesetDirection" : "left"
+    },
+    "133" : {
+      "//description" : "A big antique bookcase that has been damaged.",
+      "//name" : "librarybookcaseL2damage",
+      "//shortdescription" : "Damaged Large Bookcase",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-120",
+      "object" : "librarybookcaseL2damage",
+      "tilesetDirection" : "right"
+    },
+    "134" : {
+      "//description" : "A big antique bookcase that has been damaged.",
+      "//name" : "librarybookcaseL2damage_orientation1",
+      "//shortdescription" : "Damaged Large Bookcase",
+      "imagePositionX" : "-56",
+      "imagePositionY" : "-120",
+      "object" : "librarybookcaseL2damage",
+      "tilesetDirection" : "right"
+    },
+    "135" : {
+      "//description" : "This machine runs 'Screaming Fashion Agent'.",
+      "//name" : "arcadepurple",
+      "//shortdescription" : "Purple Arcade Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "arcadepurple",
+      "tilesetDirection" : "left"
+    },
+    "136" : {
+      "//description" : "A door that's good under pressure.",
+      "//name" : "pressuredoor",
+      "//shortdescription" : "Pressurised Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "pressuredoor",
+      "tilesetDirection" : "right"
+    },
+    "137" : {
+      "//description" : "A glass case full of plushies and toys.",
+      "//name" : "hylotlprizecounter",
+      "//shortdescription" : "Arcade Prize Counter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "hylotlprizecounter",
+      "tilesetDirection" : "right"
+    },
+    "138" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classicbanner2b",
+      "//shortdescription" : "Classic Banner Mid Symbol",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicbanner2b"
+    },
+    "139" : {
+      "//description" : "It's a very tempting lever.",
+      "//name" : "hylotlswitch",
+      "//shortdescription" : "Standard Lever",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlswitch",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "An adorable Normal Virorb plushie.",
+      "//name" : "plainorbplush",
+      "//shortdescription" : "Virorb Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plainorbplush",
+      "tilesetDirection" : "right"
+    },
+    "140" : {
+      "//description" : "A small set of lily pad wall hangings.",
+      "//name" : "hylotllilydeco2",
+      "//shortdescription" : "Tiny Lily Pads",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "hylotllilydeco2",
+      "tilesetDirection" : "right"
+    },
+    "141" : {
+      "//description" : "A poster for a unpopular Hylotl movie \"Claw of Dread\".",
+      "//name" : "hylotlstyleposter",
+      "//shortdescription" : "Comedy Movie Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "hylotlstyleposter"
+    },
+    "142" : {
+      "//description" : "A blue mailbox.",
+      "//name" : "hylotlmailbox",
+      "//shortdescription" : "Urban Mailbox",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlmailbox",
+      "tilesetDirection" : "right"
+    },
+    "143" : {
+      "//description" : "A wobbly bar stool.",
+      "//name" : "barstool",
+      "//shortdescription" : "Bar Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "barstool",
+      "tilesetDirection" : "right"
+    },
+    "144" : {
+      "//description" : "Who knows what it might activate... just press it!",
+      "//name" : "hylotlbutton",
+      "//shortdescription" : "Blue Base Button",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlbutton"
+    },
+    "145" : {
+      "//description" : "Legend has it that if you spend the night in this bed, you'll lose consciousness.",
+      "//name" : "hylotlbed2",
+      "//shortdescription" : "Comfy Traditional Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlbed2",
+      "tilesetDirection" : "right"
+    },
+    "146" : {
+      "//description" : "A big antique bookcase.",
+      "//name" : "librarybookcaseL2",
+      "//shortdescription" : "Large Ornate Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "librarybookcaseL2",
+      "tilesetDirection" : "right"
+    },
+    "147" : {
+      "//description" : "This ornate lamp flickers softly.",
+      "//name" : "ornatetorch",
+      "//shortdescription" : "Ornate Lantern",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ornatetorch",
+      "tilesetDirection" : "right"
+    },
+    "148" : {
+      "//description" : "This ornate lamp flickers softly.",
+      "//name" : "ornatetorch_orientation2",
+      "//shortdescription" : "Ornate Lantern",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ornatetorch",
+      "tilesetDirection" : "right"
+    },
+    "149" : {
+      "//description" : "This ornate lamp flickers softly.",
+      "//name" : "ornatetorch_orientation3",
+      "//shortdescription" : "Ornate Lantern",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ornatetorch",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A neon sign depicting a Hylotl head.",
+      "//name" : "neonhylotlhead",
+      "//shortdescription" : "Neon Hylotl Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "neonhylotlhead",
+      "tilesetDirection" : "right"
+    },
+    "150" : {
+      "//description" : "This ornate lamp flickers softly.",
+      "//name" : "ornatetorch_orientation4",
+      "//shortdescription" : "Ornate Lantern",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ornatetorch",
+      "tilesetDirection" : "right"
+    },
+    "151" : {
+      "//description" : "This ornate lamp flickers softly.",
+      "//name" : "ornatetorch_orientation5",
+      "//shortdescription" : "Ornate Lantern",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ornatetorch",
+      "tilesetDirection" : "left"
+    },
+    "152" : {
+      "//description" : "This ornate lamp flickers softly.",
+      "//name" : "ornatetorch_orientation6",
+      "//shortdescription" : "Ornate Lantern",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ornatetorch",
+      "tilesetDirection" : "right"
+    },
+    "153" : {
+      "//description" : "This ornate lamp flickers softly.",
+      "//name" : "ornatetorch_orientation7",
+      "//shortdescription" : "Ornate Lantern",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ornatetorch",
+      "tilesetDirection" : "right"
+    },
+    "154" : {
+      "//description" : "This used to be the classiest curtain. Now it's a bit tattered.",
+      "//name" : "classicbannertattered",
+      "//shortdescription" : "Tattered Classic Banner",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicbannertattered"
+    },
+    "155" : {
+      "//description" : "A directional light used to illuminate items on display.",
+      "//name" : "displaylight",
+      "//shortdescription" : "Display Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "displaylight",
+      "tilesetDirection" : "left"
+    },
+    "156" : {
+      "//description" : "A directional light used to illuminate items on display.",
+      "//name" : "displaylight_orientation1",
+      "//shortdescription" : "Display Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "displaylight",
+      "tilesetDirection" : "right"
+    },
+    "157" : {
+      "//description" : "A directional light used to illuminate items on display.",
+      "//name" : "displaylight_orientation2",
+      "//shortdescription" : "Display Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "displaylight",
+      "tilesetDirection" : "left"
+    },
+    "158" : {
+      "//description" : "A directional light used to illuminate items on display.",
+      "//name" : "displaylight_orientation3",
+      "//shortdescription" : "Display Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "displaylight",
+      "tilesetDirection" : "right"
+    },
+    "159" : {
+      "//description" : "A directional light used to illuminate items on display.",
+      "//name" : "displaylight_orientation4",
+      "//shortdescription" : "Display Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "displaylight",
+      "tilesetDirection" : "left"
+    },
+    "16" : {
+      "//description" : "A neon sign depicting a Hylotl head.",
+      "//name" : "neonhylotlhead_orientation1",
+      "//shortdescription" : "Neon Hylotl Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "neonhylotlhead",
+      "tilesetDirection" : "right"
+    },
+    "160" : {
+      "//description" : "A directional light used to illuminate items on display.",
+      "//name" : "displaylight_orientation5",
+      "//shortdescription" : "Display Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "displaylight",
+      "tilesetDirection" : "right"
+    },
+    "161" : {
+      "//description" : "An arcade machine running a game called 'Starbound'.",
+      "//name" : "arcadestarbound",
+      "//shortdescription" : "Starbound Arcade Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "arcadestarbound",
+      "tilesetDirection" : "left"
+    },
+    "162" : {
+      "//description" : "A banner advertising a sale. Everybody loves sales!",
+      "//name" : "salesign",
+      "//shortdescription" : "Sale Sign",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-24",
+      "object" : "salesign",
+      "tilesetDirection" : "right"
+    },
+    "163" : {
+      "//description" : "A banner advertising a sale. Everybody loves sales!",
+      "//name" : "salesign_orientation1",
+      "//shortdescription" : "Sale Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "salesign",
+      "tilesetDirection" : "left"
+    },
+    "164" : {
+      "//description" : "A banner advertising a sale. Everybody loves sales!",
+      "//name" : "salesign_orientation2",
+      "//shortdescription" : "Sale Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "salesign"
+    },
+    "165" : {
+      "//description" : "A study lamp for a library or desk. Very fancy.",
+      "//name" : "studylamp",
+      "//shortdescription" : "Study Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "studylamp",
+      "tilesetDirection" : "right"
+    },
+    "166" : {
+      "//description" : "A study lamp for a library or desk. Very fancy.",
+      "//name" : "studylamp_orientation1",
+      "//shortdescription" : "Study Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "studylamp",
+      "tilesetDirection" : "right"
+    },
+    "167" : {
+      "//description" : "A delicately designed wooden table.",
+      "//name" : "hylotlclassictable2",
+      "//shortdescription" : "Small Traditional Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassictable2",
+      "tilesetDirection" : "right"
+    },
+    "168" : {
+      "//description" : "The huge speakers pump out loud dance music.",
+      "//name" : "clubdecks",
+      "//shortdescription" : "Club Decks",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "clubdecks",
+      "tilesetDirection" : "right"
+    },
+    "169" : {
+      "//description" : "A light meant to draw attention to an area.",
+      "//name" : "eventlight",
+      "//shortdescription" : "Small Spotlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "eventlight"
+    },
+    "17" : {
+      "//description" : "A large bookcase that has been damaged.",
+      "//name" : "librarybookcaseG2damage",
+      "//shortdescription" : "Damaged Grand Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-184",
+      "object" : "librarybookcaseG2damage",
+      "tilesetDirection" : "right"
+    },
+    "170" : {
+      "//description" : "A light meant to draw attention to an area.",
+      "//name" : "eventlight_orientation1",
+      "//shortdescription" : "Small Spotlight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "eventlight"
+    },
+    "171" : {
+      "//description" : "Framed calligraphy for 'ribbit'.",
+      "//name" : "hylotlcalligraphy1",
+      "//shortdescription" : "Hylotl \"Ribbit\" Calligraphy",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlcalligraphy1"
+    },
+    "172" : {
+      "//description" : "It's a common emblem for the Hylotl. Three crystals representing their three eyes...",
+      "//name" : "hylotlemblem",
+      "//shortdescription" : "Hylotl Emblem",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlemblem",
+      "tilesetDirection" : "right"
+    },
+    "173" : {
+      "//description" : "It's a warning to anyone who cares to read it.",
+      "//name" : "hylotlwarningposter",
+      "//shortdescription" : "Warning Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "hylotlwarningposter"
+    },
+    "174" : {
+      "//description" : "A blue neon sign decorated with a seashell.",
+      "//name" : "hylotlsign1b",
+      "//shortdescription" : "Blue Shell Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "hylotlsign1b"
+    },
+    "175" : {
+      "//description" : "A high-class wooden chair, is it intended for important figures.",
+      "//name" : "hylotlclassicchair",
+      "//shortdescription" : "Traditional Fancy Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassicchair",
+      "tilesetDirection" : "right"
+    },
+    "176" : {
+      "//description" : "It's a copy of an old, famous painting.",
+      "//name" : "hylotlpainting2",
+      "//shortdescription" : "Traditional Mount Painting",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "hylotlpainting2"
+    },
+    "177" : {
+      "//description" : "The lamp emits a low, ambient blue light.",
+      "//name" : "clublampsmall",
+      "//shortdescription" : "Club Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "clublampsmall",
+      "tilesetDirection" : "right"
+    },
+    "178" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "hylotlshipdoorBroken",
+      "//shortdescription" : "Hylotl Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlshipdoorBroken",
+      "tilesetDirection" : "right"
+    },
+    "179" : {
+      "//description" : "The machine runs a game called 'Psychedelic Rodeo Melee'.",
+      "//name" : "arcadeblue",
+      "//shortdescription" : "Blue Arcade Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arcadeblue",
+      "tilesetDirection" : "left"
+    },
+    "18" : {
+      "//description" : "A small bookcase that has been damaged.",
+      "//name" : "librarybookcase",
+      "//shortdescription" : "Damaged Small Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "librarybookcase",
+      "tilesetDirection" : "right"
+    },
+    "180" : {
+      "//description" : "A neon \"open\" sign.",
+      "//name" : "opensign",
+      "//shortdescription" : "Neon Open Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "opensign"
+    },
+    "181" : {
+      "//description" : "A classic style desk.",
+      "//name" : "hylotlclassicdesk",
+      "//shortdescription" : "Classic Desk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassicdesk",
+      "tilesetDirection" : "right"
+    },
+    "182" : {
+      "//description" : "A traditional style table.",
+      "//name" : "hylotlclassictable",
+      "//shortdescription" : "Traditional Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassictable",
+      "tilesetDirection" : "right"
+    },
+    "183" : {
+      "//description" : "A poster displaying Numi, mascot from a Hylotl children's cartoon.",
+      "//name" : "numiposter",
+      "//shortdescription" : "Numi Poster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "numiposter"
+    },
+    "184" : {
+      "//description" : "A framed poster from the controversial romance film \"10 Things I Hate About Florans\".",
+      "//name" : "hylotlmovieposter3",
+      "//shortdescription" : "Romantic Movie Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlmovieposter3"
+    },
+    "185" : {
+      "//description" : "A simple striped bowl.",
+      "//name" : "hylotlbowl",
+      "//shortdescription" : "Traditional Bowl",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlbowl",
+      "tilesetDirection" : "right"
+    },
+    "186" : {
+      "//description" : "A gigantic bookcase filled with books.",
+      "//name" : "librarybookcaseHUGE",
+      "//shortdescription" : "Huge Ornate Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "librarybookcaseHUGE",
+      "tilesetDirection" : "right"
+    },
+    "187" : {
+      "//description" : "An arcade sign. There's probably an arcade nearby.",
+      "//name" : "arcadesign",
+      "//shortdescription" : "Arcade Sign",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-8",
+      "object" : "arcadesign"
+    },
+    "188" : {
+      "//description" : "A framed poster for cult hit, \"The Moleman Prophecy\".",
+      "//name" : "molemanposter",
+      "//shortdescription" : "Moleman Poster",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "molemanposter"
+    },
+    "189" : {
+      "//description" : "A very famous portrait of a mysterious lady.",
+      "//name" : "tenstudiesinfemalehylotlgy",
+      "//shortdescription" : "Studies in Female Hylotlgy",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-32",
+      "object" : "tenstudiesinfemalehylotlgy"
+    },
+    "19" : {
+      "//description" : "A blue shelf used for displaying items.",
+      "//name" : "hylotlwallshelf",
+      "//shortdescription" : "Blue Wall Shelf",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlwallshelf",
+      "tilesetDirection" : "right"
+    },
+    "190" : {
+      "//description" : "A cheery welcome sign meant for Hylotl-owned shops.",
+      "//name" : "hylotlshopsign",
+      "//shortdescription" : "Friendly Hylotl Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlshopsign",
+      "tilesetDirection" : "right"
+    },
+    "191" : {
+      "//description" : "A cheery welcome sign meant for Hylotl-owned shops.",
+      "//name" : "hylotlshopsign_orientation1",
+      "//shortdescription" : "Friendly Hylotl Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlshopsign",
+      "tilesetDirection" : "right"
+    },
+    "192" : {
+      "//description" : "An old radio, it still plays music.",
+      "//name" : "hylotlradio",
+      "//shortdescription" : "Traditional Radio",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlradio",
+      "tilesetDirection" : "right"
+    },
+    "193" : {
+      "//description" : "A very large shipping container.",
+      "//name" : "shippingcontainer",
+      "//shortdescription" : "Shipping Container",
+      "imagePositionX" : "-56",
+      "imagePositionY" : "0",
+      "object" : "shippingcontainer",
+      "tilesetDirection" : "right"
+    },
+    "194" : {
+      "//description" : "This machine runs a game called 'Stylish Thief Wasteland'.",
+      "//name" : "arcadegreen",
+      "//shortdescription" : "Green Arcade Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arcadegreen",
+      "tilesetDirection" : "left"
+    },
+    "195" : {
+      "//description" : "A squishy, adorable unicorn. What's not to love?",
+      "//name" : "unicornplush",
+      "//shortdescription" : "Unicorn Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "unicornplush",
+      "tilesetDirection" : "right"
+    },
+    "196" : {
+      "//description" : "The Captain sits here to fly the ship.",
+      "//name" : "hylotlcaptainschair",
+      "//shortdescription" : "Hylotl Captain's Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlcaptainschair",
+      "tilesetDirection" : "right"
+    },
+    "197" : {
+      "//description" : "A metal lily pad with a bright green emblem.",
+      "//name" : "hylotlsymbolg",
+      "//shortdescription" : "Green Neon Symbol",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "hylotlsymbolg"
+    },
+    "198" : {
+      "//description" : "An ornately carved bookcase.",
+      "//name" : "librarybookcaseS1",
+      "//shortdescription" : "Small Ornate Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "librarybookcaseS1",
+      "tilesetDirection" : "right"
+    },
+    "199" : {
+      "//description" : "A sign that looks like it says \"BUBBLE\"...",
+      "//name" : "hylotlsign2b",
+      "//shortdescription" : "Blue Neon Sign",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-8",
+      "object" : "hylotlsign2b"
+    },
+    "2" : {
+      "//description" : "Trusty teleporter, what would we do without you?",
+      "//name" : "hylotlteleporter",
+      "//shortdescription" : "Teleporter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "hylotlteleporter"
+    },
+    "20" : {
+      "//description" : "A garbage bin.",
+      "//name" : "hylotltrashcan",
+      "//shortdescription" : "Urban Trash Can",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotltrashcan",
+      "tilesetDirection" : "right"
+    },
+    "200" : {
+      "//description" : "Colourful lights found in clubs.",
+      "//name" : "clubceilinglightsgreen",
+      "//shortdescription" : "Green Club Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "clubceilinglightsgreen",
+      "tilesetDirection" : "right"
+    },
+    "201" : {
+      "//description" : "Colourful lights found in clubs.",
+      "//name" : "clubceilinglightsred",
+      "//shortdescription" : "Red Club Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "clubceilinglightsred",
+      "tilesetDirection" : "right"
+    },
+    "202" : {
+      "//description" : "Colourful lights found in clubs.",
+      "//name" : "clubceilinglightsyellow",
+      "//shortdescription" : "Yellow Club Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "clubceilinglightsyellow",
+      "tilesetDirection" : "right"
+    },
+    "203" : {
+      "//description" : "A rack of traditional swords.",
+      "//name" : "hylotlkatanarack",
+      "//shortdescription" : "Traditional Sword Rack",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlkatanarack",
+      "tilesetDirection" : "right"
+    },
+    "204" : {
+      "//description" : "It's a painting of a bridge over still water.",
+      "//name" : "hylotlpainting3",
+      "//shortdescription" : "Traditional Bridge Painting",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "hylotlpainting3"
+    },
+    "205" : {
+      "//description" : "A fairly big bookcase, only partially filled with books.",
+      "//name" : "librarybookcaseN2empty",
+      "//shortdescription" : "Deprived Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "librarybookcaseN2empty",
+      "tilesetDirection" : "right"
+    },
+    "206" : {
+      "//description" : "An old projector for communicating holographically.",
+      "//name" : "hologramprojector",
+      "//shortdescription" : "Hologram Projector",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hologramprojector"
+    },
+    "207" : {
+      "//description" : "An intricate handmade paper model of a Hylotl library. There's little paper bookcases inside!",
+      "//name" : "librarymodel",
+      "//shortdescription" : "Hylotl Library Model",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "librarymodel",
+      "tilesetDirection" : "right"
+    },
+    "208" : {
+      "//description" : "An ancient tome that catalogues of all the Hylotl books in the galaxy.",
+      "//name" : "librarycodex",
+      "//shortdescription" : "Ancient Library Codex",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "librarycodex",
+      "tilesetDirection" : "right"
+    },
+    "209" : {
+      "//description" : "A grand looking aquarium, with a small scale Hylotl pagoda model on top.",
+      "//name" : "pagodaaquarium",
+      "//shortdescription" : "Pagoda Aquarium",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "pagodaaquarium",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A garbage bin.",
+      "//name" : "hylotltrashcan_orientation1",
+      "//shortdescription" : "Urban Trash Can",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotltrashcan",
+      "tilesetDirection" : "right"
+    },
+    "210" : {
+      "//description" : "An old poster of some ancient Hylotl library.",
+      "//name" : "hylotllibraryposter1",
+      "//shortdescription" : "Vintage Library Poster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "hylotllibraryposter1"
+    },
+    "211" : {
+      "//description" : "An intricate handmade music box. The melody it plays is soothing.",
+      "//name" : "hylotlmusicbox",
+      "//shortdescription" : "Decorated Music Box",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlmusicbox",
+      "tilesetDirection" : "right"
+    },
+    "212" : {
+      "//description" : "A rack of traditional swords.",
+      "//name" : "hylotlkatanarack_orientation1",
+      "//shortdescription" : "Traditional Sword Rack",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlkatanarack",
+      "tilesetDirection" : "right"
+    },
+    "213" : {
+      "//description" : "An ornately carved bookcase. It's only partially filled.",
+      "//name" : "librarybookcaseS1empty",
+      "//shortdescription" : "Small Deprived Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "librarybookcaseS1empty",
+      "tilesetDirection" : "right"
+    },
+    "214" : {
+      "//description" : "A light that can switch between green and red.",
+      "//name" : "greenredlight_orientation4",
+      "//shortdescription" : "Green Red Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greenredlight",
+      "tilesetDirection" : "right"
+    },
+    "215" : {
+      "//description" : "A light that can switch between green and red.",
+      "//name" : "greenredlight_orientation5",
+      "//shortdescription" : "Green Red Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greenredlight",
+      "tilesetDirection" : "right"
+    },
+    "216" : {
+      "//description" : "A light that can switch between green and red.",
+      "//name" : "greenredlight_orientation6",
+      "//shortdescription" : "Green Red Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greenredlight",
+      "tilesetDirection" : "right"
+    },
+    "217" : {
+      "//description" : "A light that can switch between green and red.",
+      "//name" : "greenredlight_orientation7",
+      "//shortdescription" : "Green Red Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greenredlight",
+      "tilesetDirection" : "right"
+    },
+    "218" : {
+      "//description" : "A hatch suitable for a spaceship.",
+      "//name" : "hylotlshiphatch",
+      "//shortdescription" : "Hylotl Ship Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "hylotlshiphatch",
+      "tilesetDirection" : "right"
+    },
+    "219" : {
+      "//description" : "A halogen sign for the Letheia corporation.",
+      "//name" : "letheiasign",
+      "//shortdescription" : "Letheia Corp Sign",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-8",
+      "object" : "letheiasign"
+    },
+    "22" : {
+      "//description" : "A table with a studded gem motif resembling the three eyes of the Hylotl.",
+      "//name" : "hylotltable",
+      "//shortdescription" : "Hylotl Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotltable",
+      "tilesetDirection" : "right"
+    },
+    "220" : {
+      "//description" : "An arcade machine with an interactive narrative game.",
+      "//name" : "beautifulattempt",
+      "//shortdescription" : "Beautiful Attempt! Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "beautifulattempt",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A structural support beam able to withstand deep-sea pressure.",
+      "//name" : "hylotlsupportbeam",
+      "//shortdescription" : "Pressurised Support",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlsupportbeam",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A structural support beam able to withstand deep-sea pressure.",
+      "//name" : "hylotlsupportbeam_orientation1",
+      "//shortdescription" : "Pressurised Support",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlsupportbeam",
+      "tilesetDirection" : "left"
+    },
+    "25" : {
+      "//description" : "A structural support beam able to withstand deep-sea pressure.",
+      "//name" : "hylotlsupportbeam_orientation2",
+      "//shortdescription" : "Pressurised Support",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlsupportbeam",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A structural support beam able to withstand deep-sea pressure.",
+      "//name" : "hylotlsupportbeam_orientation3",
+      "//shortdescription" : "Pressurised Support",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlsupportbeam",
+      "tilesetDirection" : "left"
+    },
+    "27" : {
+      "//description" : "A sign that looks like it says \"RIBBIT\"...",
+      "//name" : "hylotlsign2g",
+      "//shortdescription" : "Green Neon Sign",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-8",
+      "object" : "hylotlsign2g"
+    },
+    "28" : {
+      "//description" : "An orange neon sign displaying what seems to be Big Ape.",
+      "//name" : "hylotlsign1o",
+      "//shortdescription" : "Orange Apex Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "hylotlsign1o"
+    },
+    "29" : {
+      "//description" : "A screen for modest individuals to hide behind while getting changed.",
+      "//name" : "hylotlshojiscreen",
+      "//shortdescription" : "Traditional Shoji Screen",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlshojiscreen",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//name" : "brokenhylotlfuelhatchTier0",
+      "invalid" : "true"
+    },
+    "30" : {
+      "//description" : "A shoji screen door.",
+      "//name" : "hylotlshojidoor",
+      "//shortdescription" : "Traditional Shoji Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlshojidoor",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A decorative wooden post with a lantern in it.",
+      "//name" : "hylotlpost",
+      "//shortdescription" : "Traditional Wooden Post",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlpost",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "Don't use your finger! This trusty sensor indicates the presence of liquids.",
+      "//name" : "hylotlliquidsensor",
+      "//shortdescription" : "Liquid Sensor",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlliquidsensor",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "Don't use your finger! This trusty sensor indicates the presence of liquids.",
+      "//name" : "hylotlliquidsensor_orientation2",
+      "//shortdescription" : "Liquid Sensor",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlliquidsensor",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "Don't use your finger! This trusty sensor indicates the presence of liquids.",
+      "//name" : "hylotlliquidsensor_orientation3",
+      "//shortdescription" : "Liquid Sensor",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlliquidsensor",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "Don't use your finger! This trusty sensor indicates the presence of liquids.",
+      "//name" : "hylotlliquidsensor_orientation4",
+      "//shortdescription" : "Liquid Sensor",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotlliquidsensor",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A large lily pad wall hanging.",
+      "//name" : "hylotllilydeco3",
+      "//shortdescription" : "Big Lily Pad",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "hylotllilydeco3",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A clock in the shape of a lily pad.",
+      "//name" : "hylotllilyclock",
+      "//shortdescription" : "Lily Pad Clock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "hylotllilyclock",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A vending machine filled with popular beverages.",
+      "//name" : "hylotldrinks",
+      "//shortdescription" : "Blue Vending Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotldrinks",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "The lily pad rotates to lock its doors.",
+      "//name" : "hylotlclassicwardrobe1",
+      "//shortdescription" : "Traditional Wardrobe",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassicwardrobe1",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A broken FTL fuel hatch. This won't do!",
+      "//name" : "brokenhylotlfuelhatch",
+      "//shortdescription" : "Broken FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "brokenhylotlfuelhatch"
+    },
+    "40" : {
+      "//description" : "A wooden cabinet. Its doors are full of etched decoration.",
+      "//name" : "hylotlclassiccabinet1",
+      "//shortdescription" : "Traditional Square Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlclassiccabinet1",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "Framed calligraphy for 'lily pad'.",
+      "//name" : "hylotlcalligraphy3",
+      "//shortdescription" : "Hylotl \"Lily\" Calligraphy",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlcalligraphy3"
+    },
+    "42" : {
+      "//description" : "A classic air hockey table. First to ten wins!",
+      "//name" : "hockeytable",
+      "//shortdescription" : "Air Hockey Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hockeytable",
+      "tilesetDirection" : "left"
+    },
+    "43" : {
+      "//description" : "A light that can switch between green and red.",
+      "//name" : "greenredlight",
+      "//shortdescription" : "Green Red Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greenredlight",
+      "tilesetDirection" : "left"
+    },
+    "44" : {
+      "//description" : "A light that can switch between green and red.",
+      "//name" : "greenredlight_orientation2",
+      "//shortdescription" : "Green Red Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greenredlight",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A light that can switch between green and red.",
+      "//name" : "greenredlight_orientation3",
+      "//shortdescription" : "Green Red Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greenredlight",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A classic football...or soccer ball, if you prefer.",
+      "//name" : "football",
+      "//shortdescription" : "Football",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "football",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A large club speaker.",
+      "//name" : "clubspeaker",
+      "//shortdescription" : "Club Speaker",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "clubspeaker",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "Colourful ceiling lights found in clubs.",
+      "//name" : "clubceilinglights",
+      "//shortdescription" : "Blue Club Lights",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "clubceilinglights",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classicbanner3",
+      "//shortdescription" : "Classic Banner Bottom",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicbanner3"
+    },
+    "5" : {
+      "//description" : "A questionably cute plushie of a Mindwurm.",
+      "//name" : "mindwurmplush",
+      "//shortdescription" : "Mindwurm Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "mindwurmplush",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classicbanner2",
+      "//shortdescription" : "Classic Banner Mid",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicbanner2"
+    },
+    "51" : {
+      "//description" : "A cuddly bear plushy. Awwwww.",
+      "//name" : "bearplush",
+      "//shortdescription" : "Bear Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bearplush",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "This machine runs a game called 'Zombie Banana Mansion'.",
+      "//name" : "arcadeyellow",
+      "//shortdescription" : "Yellow Arcade Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "arcadeyellow",
+      "tilesetDirection" : "left"
+    },
+    "53" : {
+      "//description" : "Let's play some Dance-Dance!",
+      "//name" : "arcadedance",
+      "//shortdescription" : "Dance-Dance Machine",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "arcadedance",
+      "tilesetDirection" : "left"
+    },
+    "54" : {
+      "//description" : "Let's play some Dance-Dance!",
+      "//name" : "arcadedance_orientation1",
+      "//shortdescription" : "Dance-Dance Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "arcadedance",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "Ship-based Artificial Intelligence Lattice, or S.A.I.L for short.",
+      "//name" : "hylotltechstationTier0",
+      "//shortdescription" : "S.A.I.L",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "hylotltechstationTier0"
+    },
+    "56" : {
+      "//description" : "It's a painting of a great big wave.",
+      "//name" : "hylotlpainting1",
+      "//shortdescription" : "Traditional Wave Painting",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "hylotlpainting1"
+    },
+    "57" : {
+      "//description" : "This light is meant to illuminate a display of some kind.",
+      "//name" : "displaylightbroken",
+      "//shortdescription" : "Broken Display Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "displaylightbroken",
+      "tilesetDirection" : "left"
+    },
+    "58" : {
+      "//description" : "This light is meant to illuminate a display of some kind.",
+      "//name" : "displaylightbroken_orientation1",
+      "//shortdescription" : "Broken Display Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "displaylightbroken",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "This light is meant to illuminate a display of some kind.",
+      "//name" : "displaylightbroken_orientation2",
+      "//shortdescription" : "Broken Display Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "displaylightbroken",
+      "tilesetDirection" : "left"
+    },
+    "6" : {
+      "//description" : "A sign displaying reefpods, a tasty delicacy.",
+      "//name" : "hylotlsign3g",
+      "//shortdescription" : "Green Neon Pod Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "hylotlsign3g"
+    },
+    "60" : {
+      "//description" : "This light is meant to illuminate a display of some kind.",
+      "//name" : "displaylightbroken_orientation3",
+      "//shortdescription" : "Broken Display Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "displaylightbroken",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "This light is meant to illuminate a display of some kind.",
+      "//name" : "displaylightbroken_orientation4",
+      "//shortdescription" : "Broken Display Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "displaylightbroken",
+      "tilesetDirection" : "left"
+    },
+    "62" : {
+      "//description" : "This light is meant to illuminate a display of some kind.",
+      "//name" : "displaylightbroken_orientation5",
+      "//shortdescription" : "Broken Display Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "displaylightbroken",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A light protected by a glass cage.",
+      "//name" : "underwaterlight",
+      "//shortdescription" : "Waterproof Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "underwaterlight"
+    },
+    "64" : {
+      "//description" : "A light protected by a glass cage.",
+      "//name" : "underwaterlight_orientation1",
+      "//shortdescription" : "Waterproof Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "underwaterlight"
+    },
+    "65" : {
+      "//description" : "A light protected by a glass cage.",
+      "//name" : "underwaterlight_orientation2",
+      "//shortdescription" : "Waterproof Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "underwaterlight"
+    },
+    "66" : {
+      "//description" : "A light protected by a glass cage.",
+      "//name" : "underwaterlight_orientation3",
+      "//shortdescription" : "Waterproof Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "underwaterlight"
+    },
+    "67" : {
+      "//description" : "It looks like the word 'croak', but apparently it means something completely different.",
+      "//name" : "hylotlsign2o",
+      "//shortdescription" : "Orange Neon Sign",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-8",
+      "object" : "hylotlsign2o"
+    },
+    "68" : {
+      "//description" : "It's a round window.",
+      "//name" : "porthole",
+      "//shortdescription" : "Porthole",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "porthole"
+    },
+    "69" : {
+      "//description" : "It's some sort of floor ornament. Frog spawn swirls inside.",
+      "//name" : "hylotlfloorornament",
+      "//shortdescription" : "Floor Ornament",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlfloorornament",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A tiny wall light.",
+      "//name" : "underwaterlightsmall",
+      "//shortdescription" : "Small Waterproof Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "underwaterlightsmall",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "A teal blue chair.",
+      "//name" : "hylotlchair",
+      "//shortdescription" : "Blue Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlchair",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "A cute little turtle plush.",
+      "//name" : "turtleplush",
+      "//shortdescription" : "Turtle Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "turtleplush",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "Bad Goo Plushie. A cuddly goo doll.",
+      "//name" : "badgooplush",
+      "//shortdescription" : "Bad Goo Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "badgooplush",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "Small ocean creatures swim within this sign.",
+      "//name" : "hylotlsign3b",
+      "//shortdescription" : "Blue Neon Shop Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "hylotlsign3b"
+    },
+    "74" : {
+      "//description" : "Framed calligraphy for 'pond'.",
+      "//name" : "hylotlcalligraphy5",
+      "//shortdescription" : "Hylotl \"Pond\" Calligraphy",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlcalligraphy5"
+    },
+    "75" : {
+      "//description" : "A door suitable for a spaceship.",
+      "//name" : "hylotlshipdoor",
+      "//shortdescription" : "Hylotl Ship Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlshipdoor",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "A small lamp that gives off a low red light.",
+      "//name" : "hylotllamp",
+      "//shortdescription" : "Bio-Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hylotllamp"
+    },
+    "77" : {
+      "//description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive.",
+      "//name" : "hylotlfuelhatch",
+      "//shortdescription" : "FTL Fuel Hatch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlfuelhatch"
+    },
+    "78" : {
+      "//description" : "A sturdy airlock hatch.",
+      "//name" : "airlockhatch",
+      "//shortdescription" : "Pressurised Airlock Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "airlockhatch",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "An old calligraphy painting depicting an early Hylotl warrior.",
+      "//name" : "hylotlclassicpainting1",
+      "//shortdescription" : "Hylotl Warrior Painting",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlclassicpainting1"
+    },
+    "8" : {
+      "//description" : "An empty bottle of fancy water.",
+      "//name" : "smashabledrink5",
+      "//shortdescription" : "Empty Fancy Water Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink5",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "A framed poster of a city.",
+      "//name" : "hylotlcityposter",
+      "//shortdescription" : "Hylotl City Poster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "hylotlcityposter"
+    },
+    "81" : {
+      "//description" : "A fairly big bookcase full of books.",
+      "//name" : "librarybookcaseN2",
+      "//shortdescription" : "Ornate Bookcase",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "librarybookcaseN2",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "A nice, spacious, wall-mounted storage solution.",
+      "//name" : "hylotlstoragelocker",
+      "//shortdescription" : "Hylotl Storage Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "hylotlstoragelocker"
+    },
+    "83" : {
+      "//description" : "Ka-ching!",
+      "//name" : "hylotlcashregister",
+      "//shortdescription" : "Store Cash Register",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlcashregister",
+      "tilesetDirection" : "right"
+    },
+    "84" : {
+      "//description" : "A locker. Store some stuff, why don't you?",
+      "//name" : "hylotlshiplocker",
+      "//shortdescription" : "Shiplocker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "hylotlshiplocker"
+    },
+    "85" : {
+      "//description" : "A large bronze statue of the Hylotl's home planet.",
+      "//name" : "giantglobe",
+      "//shortdescription" : "Globe Statue",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "giantglobe",
+      "tilesetDirection" : "right"
+    },
+    "86" : {
+      "//description" : "A small flickering light that can work in water.",
+      "//name" : "floodlightsmallflickering",
+      "//shortdescription" : "Small Flickering Flood Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floodlightsmallflickering",
+      "tilesetDirection" : "right"
+    },
+    "87" : {
+      "//description" : "A small flickering light that can work in water.",
+      "//name" : "floodlightsmallflickering_orientation2",
+      "//shortdescription" : "Small Flickering Flood Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floodlightsmallflickering",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "A small flickering light that can work in water.",
+      "//name" : "floodlightsmallflickering_orientation3",
+      "//shortdescription" : "Small Flickering Flood Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "floodlightsmallflickering",
+      "tilesetDirection" : "right"
+    },
+    "89" : {
+      "//description" : "A very famous self-portrait of a very famous Hylotl artist.",
+      "//name" : "selfportraitofhylotlshu",
+      "//shortdescription" : "Self-Portrait of Hylotl-Shu",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-32",
+      "object" : "selfportraitofhylotlshu"
+    },
+    "9" : {
+      "//description" : "A sign marking where a checkout line begins.",
+      "//name" : "shopline",
+      "//shortdescription" : "Checkout Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shopline",
+      "tilesetDirection" : "left"
+    },
+    "90" : {
+      "//description" : "The shelf is packed with all kinds of Hylotl goods.",
+      "//name" : "hylotlstoreshelf",
+      "//shortdescription" : "Hylotl Store Shelf",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "hylotlstoreshelf",
+      "tilesetDirection" : "right"
+    },
+    "91" : {
+      "//description" : "A green neon sign advertising furniture from a lily pad inspired design movement.",
+      "//name" : "hylotlsign1g",
+      "//shortdescription" : "Green Lily Pad Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "hylotlsign1g"
+    },
+    "92" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classicbanner1",
+      "//shortdescription" : "Classic Banner Top",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicbanner1"
+    },
+    "93" : {
+      "//description" : "A sign seeking Hylotl to collect spawn from the surface.",
+      "//name" : "hylotlsign3o",
+      "//shortdescription" : "Orange Neon Collector Sign",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "hylotlsign3o"
+    },
+    "94" : {
+      "//description" : "Framed calligraphy for 'croak'.",
+      "//name" : "hylotlcalligraphy2",
+      "//shortdescription" : "Hylotl \"Croak\" Calligraphy",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "hylotlcalligraphy2"
+    },
+    "95" : {
+      "//description" : "A tiny wall light. It's broken.",
+      "//name" : "underwaterlightsmallbroken",
+      "//shortdescription" : "Broken Waterproof Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "underwaterlightsmallbroken",
+      "tilesetDirection" : "right"
+    },
+    "96" : {
+      "//description" : "A counter that oddly resembles a Hylotl.",
+      "//name" : "hylotlcounter",
+      "//shortdescription" : "Hylotl Counter",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "hylotlcounter",
+      "tilesetDirection" : "right"
+    },
+    "97" : {
+      "//description" : "It looks like a decorative lily pad.",
+      "//name" : "hylotllilypad",
+      "//shortdescription" : "Metal Lily Pad",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "hylotllilypad",
+      "tilesetDirection" : "right"
+    },
+    "98" : {
+      "//description" : "A replica plant, it is obviously made of plastic.",
+      "//name" : "hylotlplant1",
+      "//shortdescription" : "Plastic Fake Plant",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlplant1",
+      "tilesetDirection" : "right"
+    },
+    "99" : {
+      "//description" : "An empty bottle of Oculemon nectar.",
+      "//name" : "smashabledrink3",
+      "//shortdescription" : "Empty Nectar Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink3",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshorttable.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlteleporterTier0.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/quillandink.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/softdrinksign.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/hylotltechstation.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlmovieposter2.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/hylotllilydeco1.png"
+    },
+    "104" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsymbolb.png"
+    },
+    "105" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink1.png"
+    },
+    "106" : {
+      "image" : "../../../../../tiled/packed/objects/hylotllantern1.png"
+    },
+    "107" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlredalert.png"
+    },
+    "108" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassicbookcase.png"
+    },
+    "109" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseG2.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/quillandink_orientation1.png"
+    },
+    "110" : {
+      "image" : "../../../../../tiled/packed/objects/floodlightsmall.png"
+    },
+    "111" : {
+      "image" : "../../../../../tiled/packed/objects/floodlightsmall_orientation2.png"
+    },
+    "112" : {
+      "image" : "../../../../../tiled/packed/objects/floodlightsmall_orientation3.png"
+    },
+    "113" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink4.png"
+    },
+    "114" : {
+      "image" : "../../../../../tiled/packed/objects/flaghylotl.png"
+    },
+    "115" : {
+      "image" : "../../../../../tiled/packed/objects/flaghylotl_orientation1.png"
+    },
+    "116" : {
+      "image" : "../../../../../tiled/packed/objects/tenstudiesplaque.png"
+    },
+    "117" : {
+      "image" : "../../../../../tiled/packed/objects/numiplush.png"
+    },
+    "118" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlconsole.png"
+    },
+    "119" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcalligraphy4.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/pumpsign.png"
+    },
+    "120" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassicgong.png"
+    },
+    "121" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseN2damage.png"
+    },
+    "122" : {
+      "image" : "../../../../../tiled/packed/objects/numisign.png"
+    },
+    "123" : {
+      "image" : "../../../../../tiled/packed/objects/index.png"
+    },
+    "124" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink2.png"
+    },
+    "125" : {
+      "image" : "../../../../../tiled/packed/objects/airlockdoor.png"
+    },
+    "126" : {
+      "image" : "../../../../../tiled/packed/objects/combinationprop.png"
+    },
+    "127" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshiplockerTier0.png"
+    },
+    "128" : {
+      "image" : "../../../../../tiled/packed/objects/arcadered.png"
+    },
+    "129" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlfashionhologram.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/poptopplush.png"
+    },
+    "130" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlwaterfeature1.png"
+    },
+    "131" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlmovieposter1.png"
+    },
+    "132" : {
+      "image" : "../../../../../tiled/packed/objects/arcadeorange.png"
+    },
+    "133" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseL2damage.png"
+    },
+    "134" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseL2damage_orientation1.png"
+    },
+    "135" : {
+      "image" : "../../../../../tiled/packed/objects/arcadepurple.png"
+    },
+    "136" : {
+      "image" : "../../../../../tiled/packed/objects/pressuredoor.png"
+    },
+    "137" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlprizecounter.png"
+    },
+    "138" : {
+      "image" : "../../../../../tiled/packed/objects/classicbanner2b.png"
+    },
+    "139" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlswitch.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/plainorbplush.png"
+    },
+    "140" : {
+      "image" : "../../../../../tiled/packed/objects/hylotllilydeco2.png"
+    },
+    "141" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlstyleposter.png"
+    },
+    "142" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlmailbox.png"
+    },
+    "143" : {
+      "image" : "../../../../../tiled/packed/objects/barstool.png"
+    },
+    "144" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlbutton.png"
+    },
+    "145" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlbed2.png"
+    },
+    "146" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseL2.png"
+    },
+    "147" : {
+      "image" : "../../../../../tiled/packed/objects/ornatetorch.png"
+    },
+    "148" : {
+      "image" : "../../../../../tiled/packed/objects/ornatetorch_orientation2.png"
+    },
+    "149" : {
+      "image" : "../../../../../tiled/packed/objects/ornatetorch_orientation3.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/neonhylotlhead.png"
+    },
+    "150" : {
+      "image" : "../../../../../tiled/packed/objects/ornatetorch_orientation4.png"
+    },
+    "151" : {
+      "image" : "../../../../../tiled/packed/objects/ornatetorch_orientation5.png"
+    },
+    "152" : {
+      "image" : "../../../../../tiled/packed/objects/ornatetorch_orientation6.png"
+    },
+    "153" : {
+      "image" : "../../../../../tiled/packed/objects/ornatetorch_orientation7.png"
+    },
+    "154" : {
+      "image" : "../../../../../tiled/packed/objects/classicbannertattered.png"
+    },
+    "155" : {
+      "image" : "../../../../../tiled/packed/objects/displaylight.png"
+    },
+    "156" : {
+      "image" : "../../../../../tiled/packed/objects/displaylight_orientation1.png"
+    },
+    "157" : {
+      "image" : "../../../../../tiled/packed/objects/displaylight_orientation2.png"
+    },
+    "158" : {
+      "image" : "../../../../../tiled/packed/objects/displaylight_orientation3.png"
+    },
+    "159" : {
+      "image" : "../../../../../tiled/packed/objects/displaylight_orientation4.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/neonhylotlhead_orientation1.png"
+    },
+    "160" : {
+      "image" : "../../../../../tiled/packed/objects/displaylight_orientation5.png"
+    },
+    "161" : {
+      "image" : "../../../../../tiled/packed/objects/arcadestarbound.png"
+    },
+    "162" : {
+      "image" : "../../../../../tiled/packed/objects/salesign.png"
+    },
+    "163" : {
+      "image" : "../../../../../tiled/packed/objects/salesign_orientation1.png"
+    },
+    "164" : {
+      "image" : "../../../../../tiled/packed/objects/salesign_orientation2.png"
+    },
+    "165" : {
+      "image" : "../../../../../tiled/packed/objects/studylamp.png"
+    },
+    "166" : {
+      "image" : "../../../../../tiled/packed/objects/studylamp_orientation1.png"
+    },
+    "167" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassictable2.png"
+    },
+    "168" : {
+      "image" : "../../../../../tiled/packed/objects/clubdecks.png"
+    },
+    "169" : {
+      "image" : "../../../../../tiled/packed/objects/eventlight.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseG2damage.png"
+    },
+    "170" : {
+      "image" : "../../../../../tiled/packed/objects/eventlight_orientation1.png"
+    },
+    "171" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcalligraphy1.png"
+    },
+    "172" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlemblem.png"
+    },
+    "173" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlwarningposter.png"
+    },
+    "174" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign1b.png"
+    },
+    "175" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassicchair.png"
+    },
+    "176" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlpainting2.png"
+    },
+    "177" : {
+      "image" : "../../../../../tiled/packed/objects/clublampsmall.png"
+    },
+    "178" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshipdoorBroken.png"
+    },
+    "179" : {
+      "image" : "../../../../../tiled/packed/objects/arcadeblue.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcase.png"
+    },
+    "180" : {
+      "image" : "../../../../../tiled/packed/objects/opensign.png"
+    },
+    "181" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassicdesk.png"
+    },
+    "182" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassictable.png"
+    },
+    "183" : {
+      "image" : "../../../../../tiled/packed/objects/numiposter.png"
+    },
+    "184" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlmovieposter3.png"
+    },
+    "185" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlbowl.png"
+    },
+    "186" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseHUGE.png"
+    },
+    "187" : {
+      "image" : "../../../../../tiled/packed/objects/arcadesign.png"
+    },
+    "188" : {
+      "image" : "../../../../../tiled/packed/objects/molemanposter.png"
+    },
+    "189" : {
+      "image" : "../../../../../tiled/packed/objects/tenstudiesinfemalehylotlgy.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlwallshelf.png"
+    },
+    "190" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshopsign.png"
+    },
+    "191" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshopsign_orientation1.png"
+    },
+    "192" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlradio.png"
+    },
+    "193" : {
+      "image" : "../../../../../tiled/packed/objects/shippingcontainer.png"
+    },
+    "194" : {
+      "image" : "../../../../../tiled/packed/objects/arcadegreen.png"
+    },
+    "195" : {
+      "image" : "../../../../../tiled/packed/objects/unicornplush.png"
+    },
+    "196" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcaptainschair.png"
+    },
+    "197" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsymbolg.png"
+    },
+    "198" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseS1.png"
+    },
+    "199" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign2b.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlteleporter.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/hylotltrashcan.png"
+    },
+    "200" : {
+      "image" : "../../../../../tiled/packed/objects/clubceilinglightsgreen.png"
+    },
+    "201" : {
+      "image" : "../../../../../tiled/packed/objects/clubceilinglightsred.png"
+    },
+    "202" : {
+      "image" : "../../../../../tiled/packed/objects/clubceilinglightsyellow.png"
+    },
+    "203" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlkatanarack.png"
+    },
+    "204" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlpainting3.png"
+    },
+    "205" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseN2empty.png"
+    },
+    "206" : {
+      "image" : "../../../../../tiled/packed/objects/hologramprojector.png"
+    },
+    "207" : {
+      "image" : "../../../../../tiled/packed/objects/librarymodel.png"
+    },
+    "208" : {
+      "image" : "../../../../../tiled/packed/objects/librarycodex.png"
+    },
+    "209" : {
+      "image" : "../../../../../tiled/packed/objects/pagodaaquarium.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/hylotltrashcan_orientation1.png"
+    },
+    "210" : {
+      "image" : "../../../../../tiled/packed/objects/hylotllibraryposter1.png"
+    },
+    "211" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlmusicbox.png"
+    },
+    "212" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlkatanarack_orientation1.png"
+    },
+    "213" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseS1empty.png"
+    },
+    "214" : {
+      "image" : "../../../../../tiled/packed/objects/greenredlight_orientation4.png"
+    },
+    "215" : {
+      "image" : "../../../../../tiled/packed/objects/greenredlight_orientation5.png"
+    },
+    "216" : {
+      "image" : "../../../../../tiled/packed/objects/greenredlight_orientation6.png"
+    },
+    "217" : {
+      "image" : "../../../../../tiled/packed/objects/greenredlight_orientation7.png"
+    },
+    "218" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshiphatch.png"
+    },
+    "219" : {
+      "image" : "../../../../../tiled/packed/objects/letheiasign.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/hylotltable.png"
+    },
+    "220" : {
+      "image" : "../../../../../tiled/packed/objects/beautifulattempt.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsupportbeam.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsupportbeam_orientation1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsupportbeam_orientation2.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsupportbeam_orientation3.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign2g.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign1o.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshojiscreen.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshojidoor.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlpost.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlliquidsensor.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlliquidsensor_orientation2.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlliquidsensor_orientation3.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlliquidsensor_orientation4.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/hylotllilydeco3.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/hylotllilyclock.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/hylotldrinks.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassicwardrobe1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/brokenhylotlfuelhatch.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassiccabinet1.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcalligraphy3.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/hockeytable.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/greenredlight.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/greenredlight_orientation2.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/greenredlight_orientation3.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/football.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/clubspeaker.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/clubceilinglights.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/classicbanner3.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/mindwurmplush.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/classicbanner2.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/bearplush.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/arcadeyellow.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/arcadedance.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/arcadedance_orientation1.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/hylotltechstationTier0.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlpainting1.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/displaylightbroken.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/displaylightbroken_orientation1.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/displaylightbroken_orientation2.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign3g.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/displaylightbroken_orientation3.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/displaylightbroken_orientation4.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/displaylightbroken_orientation5.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/underwaterlight.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/underwaterlight_orientation1.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/underwaterlight_orientation2.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/underwaterlight_orientation3.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign2o.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/porthole.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlfloorornament.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/underwaterlightsmall.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlchair.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/turtleplush.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/badgooplush.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign3b.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcalligraphy5.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshipdoor.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/hylotllamp.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlfuelhatch.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/airlockhatch.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlclassicpainting1.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink5.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcityposter.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/librarybookcaseN2.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlstoragelocker.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcashregister.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlshiplocker.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/giantglobe.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/floodlightsmallflickering.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/floodlightsmallflickering_orientation2.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/floodlightsmallflickering_orientation3.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/selfportraitofhylotlshu.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/shopline.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlstoreshelf.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign1g.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/classicbanner1.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlsign3o.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcalligraphy2.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/underwaterlightsmallbroken.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlcounter.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/objects/hylotllilypad.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlplant1.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink3.png"
+    }
+  },
+  "tilewidth" : 8
+}

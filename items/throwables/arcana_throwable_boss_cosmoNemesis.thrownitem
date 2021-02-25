@@ -1,0 +1,30 @@
+{
+  "itemName" : "arcana_throwable_boss_cosmoNemesis",
+  "rarity" : "Legendary",
+  "category" : "throwableItem",
+  "inventoryIcon" : "arcana_throwable_boss_cosmoNemesis.png",
+  "image" : "arcana_throwable_boss_cosmoNemesis.png",
+  "shortdescription" : "Sakura Tribute",
+  "description" : "A shadowy stone covered in cherry blossom flowers...",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 1.0,
+
+  "projectileType" : "arcana_throwable_boss_cosmoNemesis",
+  "projectileConfig" : {
+    "speed" : 40,
+    "power" : 0,
+    "knockback" : 4,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+      }
+    ]
+  }
+}

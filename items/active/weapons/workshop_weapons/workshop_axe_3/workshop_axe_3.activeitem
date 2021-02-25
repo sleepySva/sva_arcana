@@ -1,0 +1,61 @@
+{
+  "itemName" : "workshop_axe_3",
+  "level" : 8,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A heavy axe utilized by the elites of the Section 8 of the Workshop of Gears.",
+  "shortdescription" : "Gears S8E Axe",
+  "tooltipKind" : "sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/axe/workshop_axe_1.animation",
+  "animationParts" : {
+    "blade" : "workshop_axe_3.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+  "muzzleOffset" : [0.3, 0],
+
+  "primaryAbilityType" : "arcana_axe_ability_burstCleave",
+  "primaryAbility" : {
+  
+    "projectileType" : "workshop_axe_1_projectile_1",
+  	"projectileCount" : 3,
+    "projectileDistance" : 1.0,
+	"projectileParameters" : {
+		"baseDamage" : 8,
+		"emitters" : ["sparks"],
+		"speed" : 120,
+		"actionOnReap" : [
+			{
+				"action" : "config",
+				"file" : "/projectiles/explosions/arcana_explosion_plasma_1_yellow/arcana_explosion_plasma_1_yellow.config"
+			}
+		]
+    },
+	
+    "fireTime" : 0.4,
+    "baseDps" : 20.6,
+    "damageConfig" : {
+      "knockback" : 120
+    }
+	
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,856 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/mechanical",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 71,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A smashed vat, the inside is covered in dried slime... Did something break out?",
+      "//name" : "wreckvat1",
+      "//shortdescription" : "Wrecked Vat",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wreckvat1",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "It looks like an old remote terminal.",
+      "//name" : "wreckconsole3",
+      "//shortdescription" : "Wrecked Terminal",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wreckconsole3",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A pipe that comes out from the floor.",
+      "//name" : "floorpipe3",
+      "//shortdescription" : "Floor Pipe",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floorpipe3",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A pipe that comes out from the floor.",
+      "//name" : "floorpipe3_orientation1",
+      "//shortdescription" : "Floor Pipe",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floorpipe3",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A radar dish. Not to be confused with a salad dish.",
+      "//name" : "escaperadar",
+      "//shortdescription" : "Escape Radar Dish",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "escaperadar",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A radar dish. Not to be confused with a salad dish.",
+      "//name" : "escaperadar_orientation1",
+      "//shortdescription" : "Escape Radar Dish",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "escaperadar",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A machine used for breaking down rocks.",
+      "//name" : "miningcrusher",
+      "//shortdescription" : "Mining Impact Crusher",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "miningcrusher",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A small tank full of molten liquid.",
+      "//name" : "lavatanksmall",
+      "//shortdescription" : "Small Lava Tank",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "lavatanksmall",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A pipe that comes out from the floor.",
+      "//name" : "floorpipe1",
+      "//shortdescription" : "Floor Pipe",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floorpipe1",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A pipe that comes out from the floor.",
+      "//name" : "floorpipe1_orientation1",
+      "//shortdescription" : "Floor Pipe",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "floorpipe1",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "Sterile, recycled air whirs through the fanblades at a steady pace.",
+      "//name" : "bunkervent",
+      "//shortdescription" : "Bunker Vent",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bunkervent"
+    },
+    "19" : {
+      "//description" : "A container full of bubbling of molten liquid.",
+      "//name" : "ladlelarge",
+      "//shortdescription" : "Large Ladle",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "ladlelarge",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A rusted gear half-buried in the ground.",
+      "//name" : "floorgear1",
+      "//shortdescription" : "Floor Gear",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "floorgear1",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "An old input panel, probably used to be used for security.",
+      "//name" : "wreckpanel2",
+      "//shortdescription" : "Small Wrecked Panel",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wreckpanel2"
+    },
+    "21" : {
+      "//description" : "A sealed tank full of molten liquid.",
+      "//name" : "lavatanklarge",
+      "//shortdescription" : "Large Lava tank",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "lavatanklarge",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A crane. Used for lifting, or swinging from.",
+      "//name" : "outpostcrane",
+      "//shortdescription" : "Large Mechanical Crane",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-32",
+      "object" : "outpostcrane",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//name" : "roboticcraftingtable",
+      "invalid" : "true"
+    },
+    "24" : {
+      "//description" : "A space heater!",
+      "//name" : "bunkerheater1",
+      "//shortdescription" : "Space Heater",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "bunkerheater1",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A huge painted boiler, for turning freezing water into steam.",
+      "//name" : "steamboiler3",
+      "//shortdescription" : "Large Steam Boiler",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "steamboiler3",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation2",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-40",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation3",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "-40",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation4",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-32",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A large, industrial mining drill.",
+      "//name" : "drillmachine",
+      "//shortdescription" : "Mining Drill",
+      "imagePositionX" : "-88",
+      "imagePositionY" : "0",
+      "object" : "drillmachine",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation5",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "-32",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A creaky lamp post, made from brass pipes.",
+      "//name" : "brasslamppost1",
+      "//shortdescription" : "Brass Lamp Post",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "brasslamppost1",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A rusty holding tank.",
+      "//name" : "scorchedcitybrokentank",
+      "//shortdescription" : "Rusty Holding Tank",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "scorchedcitybrokentank",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "An industrial sized set of bellows from a foundry.",
+      "//name" : "foundrybellow",
+      "//shortdescription" : "Foundry Bellows",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "foundrybellow",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A radar dish. Not to be confused with a salad dish.",
+      "//name" : "outpostradardish",
+      "//shortdescription" : "Large Radar Dish",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "outpostradardish",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A radar dish. Not to be confused with a salad dish.",
+      "//name" : "outpostradardish_orientation1",
+      "//shortdescription" : "Large Radar Dish",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostradardish",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A machine used to move large amounts of mined material.",
+      "//name" : "miningbelt",
+      "//shortdescription" : "Mining Conveyer Belt",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "miningbelt",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "An old input panel. One of the keys has fallen off.",
+      "//name" : "wreckpanel1",
+      "//shortdescription" : "Wrecked Panel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wreckpanel1"
+    },
+    "38" : {
+      "//description" : "An old boiler. A dripping echoes from inside.",
+      "//name" : "wreckboiler",
+      "//shortdescription" : "Wrecked Boiler",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wreckboiler",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A tank of unknown use.",
+      "//name" : "outposttank",
+      "//shortdescription" : "Large Metal Tank",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outposttank",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A large, industrial mining drill.",
+      "//name" : "drillmachine_orientation1",
+      "//shortdescription" : "Mining Drill",
+      "imagePositionX" : "-104",
+      "imagePositionY" : "0",
+      "object" : "drillmachine",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "A wrecked turbine, completely non-operational.",
+      "//name" : "wreckturbine2",
+      "//shortdescription" : "Wrecked Turbine",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "wreckturbine2",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A pipe that comes out from the floor.",
+      "//name" : "floorpipe2",
+      "//shortdescription" : "Floor Pipe",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "floorpipe2",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A pipe that comes out from the floor.",
+      "//name" : "floorpipe2_orientation1",
+      "//shortdescription" : "Floor Pipe",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "floorpipe2",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "Scratching sounds from the inside... I think something has made a nest in there.",
+      "//name" : "wreckconsole2",
+      "//shortdescription" : "Wrecked Computer",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wreckconsole2",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A handy power generator.",
+      "//name" : "outpostgenerator",
+      "//shortdescription" : "Power Generator",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostgenerator",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "The space heater emits a low, unpleasant hum.",
+      "//name" : "prisonradiator",
+      "//shortdescription" : "Old Radiator",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonradiator",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A useful storage chest.",
+      "//name" : "podchest",
+      "//shortdescription" : "Pod Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "podchest",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "It's a turbine. Y'know, for science.",
+      "//name" : "prisonturbine",
+      "//shortdescription" : "Small Turbine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "prisonturbine",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A small rusty boiler, for turning freezing water into steam.",
+      "//name" : "steamboiler1",
+      "//shortdescription" : "Small Steam Boiler",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "steamboiler1",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A long dented boiler, for turning freezing water into steam.",
+      "//name" : "steamboiler2",
+      "//shortdescription" : "Medium Steam Boiler",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "steamboiler2",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "No chance of this thing starting up.",
+      "//name" : "wreckconsole1",
+      "//shortdescription" : "Wrecked Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wreckconsole1",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "A long dented boiler, for turning freezing water into steam.",
+      "//name" : "steamboiler2_orientation1",
+      "//shortdescription" : "Medium Steam Boiler",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "steamboiler2",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A drill-mounted console.",
+      "//name" : "drillconsole",
+      "//shortdescription" : "Mining Drill Console",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "drillconsole",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "The stale air produces little more than a creak from this old fan.",
+      "//name" : "wreckfan",
+      "//shortdescription" : "Wrecked Fan",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "wreckfan"
+    },
+    "53" : {
+      "//description" : "A gear. Part of a well-oiled machine. Actually, it's a bit rusty.",
+      "//name" : "sewergear",
+      "//shortdescription" : "Gear",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "sewergear",
+      "tilesetDirection" : "left"
+    },
+    "54" : {
+      "//description" : "A strange lamp made from wood and brass.",
+      "//name" : "steamspringlamp",
+      "//shortdescription" : "Steamspring Lamp",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "steamspringlamp",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A strange lamp made from wood and brass.",
+      "//name" : "steamspringlamp_orientation1",
+      "//shortdescription" : "Steamspring Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "steamspringlamp",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "A brass valve, rusted from years of use.",
+      "//name" : "boilervalve",
+      "//shortdescription" : "Boiler Valve",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "boilervalve",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "Perfect for storing tools and equipment in!",
+      "//name" : "miningchest",
+      "//shortdescription" : "Mining Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "miningchest",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "This tank cycles the molten liquid inside to keep it from becoming stagnant.",
+      "//name" : "lavatankcascade",
+      "//shortdescription" : "Cascading Lava Tank",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "lavatankcascade",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A sewer valve. It's had a funny turn.",
+      "//name" : "sewervalve",
+      "//shortdescription" : "Sewer Valve",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "sewervalve",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A tank filled with an unknown substance. Probably very lethal.",
+      "//name" : "sewertank",
+      "//shortdescription" : "Sewer Tank",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "sewertank",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "A tall container full of bubbling of molten liquid.",
+      "//name" : "ladlesmall",
+      "//shortdescription" : "Small Ladle",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "ladlesmall",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "A tall container full of bubbling of molten liquid.",
+      "//name" : "ladlesmall_orientation1",
+      "//shortdescription" : "Small Ladle",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "ladlesmall",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A sewer gauge. Nobody knows what the gauge illustrates.",
+      "//name" : "sewergauge",
+      "//shortdescription" : "Sewer Gauge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "sewergauge"
+    },
+    "63" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation6",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "A beautifully crafted propeller.",
+      "//name" : "propeller_orientation7",
+      "//shortdescription" : "Propeller",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "propeller",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "A nice steam powered large clock face.",
+      "//name" : "steamclock",
+      "//shortdescription" : "Steam Clock Face",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "steamclock",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "A vending machine, there are some quality snacks in here.",
+      "//name" : "stationvendingmachine",
+      "//shortdescription" : "Station Vending Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stationvendingmachine",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "A vent typically used for keeping the air clean aboard space stations.",
+      "//name" : "stationceilingvent",
+      "//shortdescription" : "Station Ceiling Vent",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "stationceilingvent",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "Ooh, what should I get?",
+      "//name" : "vendingmachine",
+      "//shortdescription" : "Vending Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "vendingmachine",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "A large rotating generator, or radar, or perhaps an engine...",
+      "//name" : "stationpylon",
+      "//shortdescription" : "Station Pylon",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stationpylon",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A couple of wrecked turbines caked in dust.",
+      "//name" : "wreckturbines",
+      "//shortdescription" : "Wrecked Turbines",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wreckturbines",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "A vending machine that appears to cook and dispense only donuts.",
+      "//name" : "peacekeepervendingmachine",
+      "//shortdescription" : "Peacekeeper Vending Machine",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "peacekeepervendingmachine",
+      "tilesetDirection" : "left"
+    },
+    "8" : {
+      "//description" : "This vending machine is empty, I guess the crew had a taste for soda.",
+      "//name" : "wreckvendingmachine",
+      "//shortdescription" : "Wrecked Vending Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wreckvendingmachine",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "Once upon a time, a couple of these things could power a whole ship.",
+      "//name" : "wreckgenerator",
+      "//shortdescription" : "Wrecked Generator",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "wreckgenerator",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/wreckvat1.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/wreckconsole3.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/floorpipe3.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/floorpipe3_orientation1.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/escaperadar.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/escaperadar_orientation1.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/miningcrusher.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/lavatanksmall.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/floorpipe1.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/floorpipe1_orientation1.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/bunkervent.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/ladlelarge.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/floorgear1.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/wreckpanel2.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/lavatanklarge.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/outpostcrane.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/bunkerheater1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/steamboiler3.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/propeller.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation2.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation3.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation4.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/drillmachine.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation5.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/brasslamppost1.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/scorchedcitybrokentank.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/foundrybellow.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/outpostradardish.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/outpostradardish_orientation1.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/miningbelt.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/wreckpanel1.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/wreckboiler.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/outposttank.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/drillmachine_orientation1.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/wreckturbine2.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/floorpipe2.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/floorpipe2_orientation1.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/wreckconsole2.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/outpostgenerator.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/prisonradiator.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/podchest.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/prisonturbine.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/steamboiler1.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/steamboiler2.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/wreckconsole1.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/steamboiler2_orientation1.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/drillconsole.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/wreckfan.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/sewergear.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/steamspringlamp.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/steamspringlamp_orientation1.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/boilervalve.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/miningchest.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/lavatankcascade.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/sewervalve.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/sewertank.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/ladlesmall.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/ladlesmall_orientation1.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/sewergauge.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation6.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/propeller_orientation7.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/steamclock.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/stationvendingmachine.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/stationceilingvent.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/vendingmachine.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/stationpylon.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/wreckturbines.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/peacekeepervendingmachine.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/wreckvendingmachine.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/wreckgenerator.png"
+    }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,22 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : [],
+      "maxFuel" : 1000,
+      "crewSize" : 2
+    }
+  },
+  "backgroundOverlays" : [
+    {
+      "image" : "arcanianT1.png",
+      "position" : [8, 14],
+      "fullbright" : true
+    },
+    {
+      "image" : "arcanianT1.png",
+      "position" : [8, 14]
+    }
+  ],
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "arcanianT1blocks.png"
+}

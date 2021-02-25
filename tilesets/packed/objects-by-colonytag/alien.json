@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/alien",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "An alien bed. It seems to be alive.",
+      "//name" : "alienbed",
+      "//shortdescription" : "Alien Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "alienbed",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "An alien table. It seems to be alive.",
+      "//name" : "alientable",
+      "//shortdescription" : "Alien Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "alientable",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "An alien chest.",
+      "//name" : "alienchest",
+      "//shortdescription" : "Alien Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "alienchest",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "An alien plant door.",
+      "//name" : "aliendoor",
+      "//shortdescription" : "Alien Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "aliendoor",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "An alien chair. It seems alive.",
+      "//name" : "alienchair",
+      "//shortdescription" : "Alien Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "alienchair",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A glowing alien plant.",
+      "//name" : "alienglowplant1",
+      "//shortdescription" : "Glowing Alien Plant",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "alienglowplant1",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/alienbed.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/alientable.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/alienchest.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/aliendoor.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/alienchair.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/alienglowplant1.png"
+    }
+  },
+  "tilewidth" : 8
+}

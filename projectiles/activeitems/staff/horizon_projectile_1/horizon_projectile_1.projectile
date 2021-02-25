@@ -1,0 +1,54 @@
+{
+  "projectileName" : "horizon_projectile_1",
+  "physics" : "rain",
+  "timeToLive" : 4,
+  "image" : "horizon_projectile_1.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [80, 30, 80],
+  "frameNumber" : 1,
+  "speed" : -3,
+  "power" : 30,
+  "damageKind" : "spear",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+
+  "fullbright" : true,
+  "emitters" : ["energyweapon"],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_plasma.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "energyblade",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "energyblade2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    }
+  ],
+
+  "bounces" : 2,
+
+  "scripts" : [ "/projectiles/activeitems/staff/horizon_projectile_1/horizon_projectile_1.lua" ],
+
+  "triggerSpeed" : 30,
+
+  "controlRotation" : {
+    "maxSpeed" : 20,
+    "controlForce" : 90,
+    "friction" : 8
+  }
+}

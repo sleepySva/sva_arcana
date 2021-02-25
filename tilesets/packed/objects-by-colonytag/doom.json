@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/doom",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A doom console. Be careful how you operate it - it's watching.",
+      "//name" : "doomswitch",
+      "//shortdescription" : "Doom Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "doomswitch",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A terrifying doom table. It watches you eat.",
+      "//name" : "doomtable",
+      "//shortdescription" : "Doom Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "doomtable",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A sublime doom bed. It's a bit spiky, though.",
+      "//name" : "doombed",
+      "//shortdescription" : "Doom Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "doombed",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A comfortable doom chair.",
+      "//name" : "doomchair",
+      "//shortdescription" : "Doom Chair",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "doomchair",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A doom light. The eye glows in the dark.",
+      "//name" : "doomlight",
+      "//shortdescription" : "Doom Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "doomlight",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A creepy doom door.",
+      "//name" : "doomdoor",
+      "//shortdescription" : "Doom Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "doomdoor",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/doomswitch.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/doomtable.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/doombed.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/doomchair.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/doomlight.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/doomdoor.png"
+    }
+  },
+  "tilewidth" : 8
+}

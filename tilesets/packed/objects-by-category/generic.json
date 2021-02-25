@@ -1,0 +1,33 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/generic",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "It's a perfectly generic item, perhaps a bit too perfect.",
+      "//name" : "perfectlygenericitem",
+      "//shortdescription" : "Perfectly Generic Item",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "perfectlygenericitem",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//name" : "extractordrill",
+      "invalid" : "true"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/perfectlygenericitem.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    }
+  },
+  "tilewidth" : 8
+}

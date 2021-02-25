@@ -1,0 +1,122 @@
+{
+  "itemName" : "artifact_wand_glorious",
+  "price" : 60000,
+  "maxStack" : 1,
+  "level" : 9,
+  "rarity" : "Essential",
+  "description" : "The burning goblet of the hottest flame.",
+  "shortdescription" : "Glorious",
+  "category" : "wand",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+
+  "animation" : "/items/active/weapons/staff/arcana_artifact_glorious.animation",
+  "animationParts" : {
+    "staff" : "artifact_wand_glorious.png",
+    "stone" : "artifact_wand_glorious_fullbright.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [220, 180, 120]
+      }
+    }
+  },
+
+  "inventoryIcon" : "icon.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : 0,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.8,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.2,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "elementswarm",
+  "primaryAbility" : {
+
+    "name" : "Pillars of Fire",
+	"energyCost" : 120,
+    "maxCastRange" : 40,
+	
+	"projectileType" : ["artifact_wand_glorious_projectile_1"],
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 2,
+    "projectileDistance" : 2,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "projectileParameters" : {
+      "baseDamage" : 12
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

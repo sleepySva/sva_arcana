@@ -1,0 +1,52 @@
+{
+  "metadata" : {
+    "name" : "arcana_workshop_dungeon_2",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_workshop_dungeon_2_part_1",
+	"arcana_workshop_dungeon_2_part_2",
+	"arcana_workshop_dungeon_2_part_3",
+	"arcana_workshop_dungeon_2_part_4"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_workshop_dungeon_2_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_2_part_1.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_2_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_2_part_2.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_2_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_2_part_3.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_2_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_2_part_4.json" ]
+    }
+
+  ]
+}

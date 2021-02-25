@@ -1,0 +1,43 @@
+{
+  "itemName" : "orion_broadsword_1",
+  "price" : 1000,
+  "level" : 8,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A high-tech broadsword.",
+  "shortdescription" : "Orion Razor",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+  "collectablesOnPickup" : { "arcana_collection_weapon_stellar" : "orion_broadsword_1" },
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/orion_broadsword_1.animation",
+  "animationParts" : {
+    "handle" : "orion_broadsword_1_fullbright.png",
+    "blade" : "orion_broadsword_1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.9,
+    "baseDps" : 11.0
+  },
+
+  "altAbilityType" : "risingslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

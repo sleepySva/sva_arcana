@@ -1,0 +1,1781 @@
+{
+  "margin" : 0,
+  "name" : "materials",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 197,
+  "tileheight" : 16,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A crystal used to power FTL technology. It's still not fully understood.",
+      "//name" : "supermatter",
+      "//shortdescription" : "Erchius Crystal",
+      "material" : "supermatter"
+    },
+    "1" : {
+      "//description" : "A light metallic tile, perfect for a research laboratory.",
+      "//name" : "lightmetal",
+      "//shortdescription" : "Light Metal",
+      "material" : "lightmetal"
+    },
+    "10" : {
+      "//description" : "Dirt, dried solid in the sun.",
+      "//name" : "drydirt",
+      "//shortdescription" : "Dry Dirt",
+      "material" : "drydirt"
+    },
+    "100" : {
+      "//description" : "Hard, cracked sand that shatters underfoot.",
+      "//name" : "drysand",
+      "//shortdescription" : "Dry Sand",
+      "material" : "drysand"
+    },
+    "101" : {
+      "//description" : "A smooth panel made of titanium.",
+      "//name" : "composite01",
+      "//shortdescription" : "Titanium Panel",
+      "material" : "composite01"
+    },
+    "102" : {
+      "//description" : "A tile with a strange blue glyph engraved in the centre.",
+      "//name" : "blueneonsymbolblock",
+      "//shortdescription" : "Blue Neon Block",
+      "material" : "blueneonsymbolblock"
+    },
+    "103" : {
+      "//description" : "Wiring hides beneath this reinforced hi-tech plated material.",
+      "//name" : "techhull1",
+      "//shortdescription" : "Reinforced Tech Block",
+      "material" : "techhull1"
+    },
+    "104" : {
+      "//description" : "A thick coil of vines. They look strong.",
+      "//name" : "vine",
+      "//shortdescription" : "Vine",
+      "material" : "vine"
+    },
+    "105" : {
+      "//description" : "Tiles made from smoothly polished stone.",
+      "//name" : "stonetiles",
+      "//shortdescription" : "Stone Tiles",
+      "material" : "stonetiles"
+    },
+    "106" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock15",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock15"
+    },
+    "107" : {
+      "//description" : "Not quite mud, not quite dirt...it's wet dirt.",
+      "//name" : "wetdirt",
+      "//shortdescription" : "Wet Dirt",
+      "material" : "wetdirt"
+    },
+    "108" : {
+      "//description" : "Coarse gravel.",
+      "//name" : "gravel",
+      "//shortdescription" : "Gravel",
+      "material" : "gravel"
+    },
+    "109" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock04",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock04"
+    },
+    "11" : {
+      "//description" : "A block made from tightly woven reeds.",
+      "//name" : "reedsmaterial",
+      "//shortdescription" : "Reed Block",
+      "material" : "reedsmaterial"
+    },
+    "110" : {
+      "//description" : "A support beam made for pressurised environments.",
+      "//name" : "pressurisedbeam",
+      "//shortdescription" : "Pressurised Beam",
+      "material" : "pressurisedbeam"
+    },
+    "111" : {
+      "//description" : "Ancient stones with intricate carvings of creatures scratched into the surface.",
+      "//name" : "temple1",
+      "//shortdescription" : "Temple Block",
+      "material" : "temple1"
+    },
+    "112" : {
+      "//description" : "A matter block. A block that matters.",
+      "//name" : "matterblock",
+      "//shortdescription" : "Matter Block",
+      "material" : "matterblock"
+    },
+    "113" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock01",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock01"
+    },
+    "114" : {
+      "//description" : "A dark-tinted panel of glass.",
+      "//name" : "blackglass",
+      "//shortdescription" : "Black Glass",
+      "material" : "blackglass"
+    },
+    "115" : {
+      "//description" : "A thick wall type developed for exposure to extreme elements.",
+      "//name" : "outpostwall2",
+      "//shortdescription" : "Outpost Thick Wall",
+      "material" : "outpostwall2"
+    },
+    "116" : {
+      "//description" : "Thick iron bars. Still strong, though decaying with rust.",
+      "//name" : "heavyironbars",
+      "//shortdescription" : "Heavy Iron Bars",
+      "material" : "heavyironbars"
+    },
+    "117" : {
+      "//description" : "Simply fabulous.",
+      "//name" : "rainbowwoodblock",
+      "//shortdescription" : "Rainbow Wood Planks",
+      "material" : "rainbowwoodblock"
+    },
+    "118" : {
+      "//description" : "Solid ice, tingly to the touch.",
+      "//name" : "ice",
+      "//shortdescription" : "Ice",
+      "material" : "ice"
+    },
+    "119" : {
+      "//description" : "Traditional looking ornate roofing.",
+      "//name" : "ornateroofing",
+      "//shortdescription" : "Ornate Roofing",
+      "material" : "ornateroofing"
+    },
+    "12" : {
+      "//description" : "Old bricks, polished to perfection.",
+      "//name" : "tombbrick5",
+      "//shortdescription" : "Smooth Tomb Brick",
+      "material" : "tombbrick5"
+    },
+    "120" : {
+      "//description" : "Tungsten chains, and not the fun kind.",
+      "//name" : "chain",
+      "//shortdescription" : "Tungsten Chain",
+      "material" : "chain"
+    },
+    "121" : {
+      "//description" : "A block made of plant matter.",
+      "//name" : "plantblock",
+      "//shortdescription" : "Plant Block",
+      "material" : "plantblock"
+    },
+    "122" : {
+      "//description" : "Some dirt packed into small bricks.",
+      "//name" : "packeddirt",
+      "//shortdescription" : "Packed Dirt",
+      "material" : "packeddirt"
+    },
+    "123" : {
+      "//description" : "Expertly treated ornate wood.",
+      "//name" : "ornatewood",
+      "//shortdescription" : "Ornate Wood",
+      "material" : "ornatewood"
+    },
+    "124" : {
+      "//description" : "Thick and sticky mud.",
+      "//name" : "mud",
+      "//shortdescription" : "Mud",
+      "material" : "mud"
+    },
+    "125" : {
+      "//description" : "Tough, gritty moon rock.",
+      "//name" : "moonrock",
+      "//shortdescription" : "Moonrock",
+      "material" : "moonrock"
+    },
+    "126" : {
+      "//description" : "An extremely hard rock found just outside the atmosphere.",
+      "//name" : "meteoriterock",
+      "//shortdescription" : "Meteorite Rock",
+      "material" : "meteoriterock"
+    },
+    "127" : {
+      "//description" : "The wood is very old and creaks in the wind.",
+      "//name" : "woodbridge",
+      "//shortdescription" : "Wooden Bridge Block",
+      "material" : "woodbridge"
+    },
+    "128" : {
+      "//description" : "Old metal encrusted with rust.",
+      "//name" : "rustymetal",
+      "//shortdescription" : "Rusty Metal",
+      "material" : "rustymetal"
+    },
+    "129" : {
+      "//description" : "Sweet smelling dark leaves and flowers.",
+      "//name" : "petalblock",
+      "//shortdescription" : "Petal Matter Block",
+      "material" : "petalblock"
+    },
+    "13" : {
+      "//description" : "Dusty and ancient bricks.",
+      "//name" : "tombbrick",
+      "//shortdescription" : "Tomb Brick",
+      "material" : "tombbrick"
+    },
+    "130" : {
+      "//description" : "Useless scrap metal, mostly remnants of outmoded technology.",
+      "//name" : "junktech",
+      "//shortdescription" : "Junk Tech",
+      "material" : "junktech"
+    },
+    "131" : {
+      "//name" : "invisible",
+      "invalid" : "true"
+    },
+    "132" : {
+      "//description" : "This alloy looks incredibly durable.",
+      "//name" : "lunarbaseblock",
+      "//shortdescription" : "Lunar Base Block",
+      "material" : "lunarbaseblock"
+    },
+    "133" : {
+      "//description" : "Eww, a fleshy looking material!",
+      "//name" : "hellstone",
+      "//shortdescription" : "Flesh Pile",
+      "material" : "hellstone"
+    },
+    "134" : {
+      "//description" : "Carefully treated wood that maintains a freshly chopped appearance.",
+      "//name" : "fullwood1",
+      "//shortdescription" : "Treated Wood",
+      "material" : "fullwood1"
+    },
+    "135" : {
+      "//description" : "A simple lattice made of wood.",
+      "//name" : "crosshatch",
+      "//shortdescription" : "Window Lattice",
+      "material" : "crosshatch"
+    },
+    "136" : {
+      "//description" : "Some hideous, foul-smelling kind of flesh.",
+      "//name" : "fleshblock",
+      "//shortdescription" : "Flesh Chunk",
+      "material" : "fleshblock"
+    },
+    "137" : {
+      "//description" : "A shimmering block of made from crystals.",
+      "//name" : "crystalblock",
+      "//shortdescription" : "Crystal Block",
+      "material" : "crystalblock"
+    },
+    "138" : {
+      "//description" : "A disgusting block of corrupted dirt.",
+      "//name" : "corruptdirt",
+      "//shortdescription" : "Corrupt Dirt",
+      "material" : "corruptdirt"
+    },
+    "139" : {
+      "//description" : "A sturdy wooden fence.",
+      "//name" : "fence",
+      "//shortdescription" : "Wooden Fence",
+      "material" : "fence"
+    },
+    "14" : {
+      "//description" : "The superdense core of a dead planet. Nearly unbreakable.",
+      "//name" : "deadcore",
+      "//shortdescription" : "Dead Core Block",
+      "material" : "deadcore"
+    },
+    "140" : {
+      "//description" : "Moondust, the thing dreams are made of.",
+      "//name" : "moondust",
+      "//shortdescription" : "Moondust",
+      "material" : "moondust"
+    },
+    "141" : {
+      "//description" : "A sleek metal wall panel.",
+      "//name" : "apexshipwall",
+      "//shortdescription" : "Wall Panel",
+      "material" : "apexshipwall"
+    },
+    "142" : {
+      "//description" : "Tough natural sandstone.",
+      "//name" : "sandstone01",
+      "//shortdescription" : "Sandstone",
+      "material" : "sandstone01"
+    },
+    "143" : {
+      "//description" : "A cloud dense enough to walk on.",
+      "//name" : "cloudblock",
+      "//shortdescription" : "Cloud",
+      "material" : "cloudblock"
+    },
+    "144" : {
+      "//description" : "These bricks look ancient. Intricate words are scratched into the surface but I can't make them out.",
+      "//name" : "temple2",
+      "//shortdescription" : "Temple Bricks",
+      "material" : "temple2"
+    },
+    "145" : {
+      "//description" : "A block made of packed plant matter.",
+      "//name" : "plantmatter",
+      "//shortdescription" : "Plant Matter",
+      "material" : "plantmatter"
+    },
+    "146" : {
+      "//description" : "A non-reflective mirror.",
+      "//name" : "mirror",
+      "//shortdescription" : "Mirror Block",
+      "material" : "mirror"
+    },
+    "147" : {
+      "//description" : "A tumbling heap of squishy eyeballs.",
+      "//name" : "eyepiles",
+      "//shortdescription" : "Pile of Eyes",
+      "material" : "eyepiles"
+    },
+    "148" : {
+      "//description" : "Wood that has been prepared for building and crafting.",
+      "//name" : "darkwood",
+      "//shortdescription" : "Timber",
+      "material" : "darkwood"
+    },
+    "149" : {
+      "//description" : "Cold, hard, concrete.",
+      "//name" : "concrete",
+      "//shortdescription" : "Concrete Block",
+      "material" : "concrete"
+    },
+    "15" : {
+      "//description" : "Solid ice, cut into block shape.",
+      "//name" : "iceblock",
+      "//shortdescription" : "Ice Block",
+      "material" : "iceblock"
+    },
+    "150" : {
+      "//description" : "Small bricks made from cobblestone.",
+      "//name" : "cobblestonebrick",
+      "//shortdescription" : "Cobblestone Brick",
+      "material" : "cobblestonebrick"
+    },
+    "151" : {
+      "//description" : "Stone rubble which appears to be debris from an old structure.",
+      "//name" : "stonerubble",
+      "//shortdescription" : "Stone Rubble",
+      "material" : "stonerubble"
+    },
+    "152" : {
+      "//description" : "An old looking stone pillar.",
+      "//name" : "pillarblock",
+      "//shortdescription" : "Pillar Block",
+      "material" : "pillarblock"
+    },
+    "153" : {
+      "//description" : "Simple roofing for a cabin.",
+      "//name" : "cabinroofing",
+      "//shortdescription" : "Cabin Roofing",
+      "material" : "cabinroofing"
+    },
+    "154" : {
+      "//description" : "A wooden log. Good for building simple structures.",
+      "//name" : "logblock",
+      "//shortdescription" : "Wooden Log",
+      "material" : "logblock"
+    },
+    "155" : {
+      "//description" : "A block of sod roofing with growing grass.",
+      "//name" : "grassy",
+      "//shortdescription" : "Sod Block",
+      "material" : "grassy"
+    },
+    "156" : {
+      "//description" : "Rough, grassy stone.",
+      "//name" : "grassyrock",
+      "//shortdescription" : "Grassy Rock",
+      "material" : "grassyrock"
+    },
+    "157" : {
+      "//description" : "This dirt is frozen solid.",
+      "//name" : "frozendirt",
+      "//shortdescription" : "Frozen Dirt",
+      "material" : "frozendirt"
+    },
+    "158" : {
+      "//description" : "This rock is glowing with bioluminescence.",
+      "//name" : "biorock",
+      "//shortdescription" : "Yellow Glow Rock",
+      "material" : "biorock"
+    },
+    "159" : {
+      "//description" : "This blue rock is faintly glowing with bioluminescence.",
+      "//name" : "biorock2",
+      "//shortdescription" : "Blue Glow Rock",
+      "material" : "biorock2"
+    },
+    "16" : {
+      "//description" : "Melting ice makes a thick slush.",
+      "//name" : "slush",
+      "//shortdescription" : "Slush",
+      "material" : "slush"
+    },
+    "160" : {
+      "//description" : "A tightly woven wicker material.",
+      "//name" : "wickersupport",
+      "//shortdescription" : "Wicker Support Block",
+      "material" : "wickersupport"
+    },
+    "161" : {
+      "//description" : "Rough and unrefined, this wood has a colourful center.",
+      "//name" : "rainbowwood",
+      "//shortdescription" : "Unrefined Rainbow Wood",
+      "material" : "rainbowwood"
+    },
+    "162" : {
+      "//description" : "Disgusting, faintly glowing toxic waste.",
+      "//name" : "waste",
+      "//shortdescription" : "Waste",
+      "material" : "waste"
+    },
+    "163" : {
+      "//description" : "A window with a frame made from solid copper.",
+      "//name" : "copperwindow",
+      "//shortdescription" : "Copper Window",
+      "material" : "copperwindow"
+    },
+    "164" : {
+      "//description" : "This copper block has a distinct gear-like imprint.",
+      "//name" : "copperblock",
+      "//shortdescription" : "Copper Gear Block",
+      "material" : "copperblock"
+    },
+    "165" : {
+      "//description" : "Roofing tiles fashioned from copper.",
+      "//name" : "copperroofing",
+      "//shortdescription" : "Copper Roofing",
+      "material" : "copperroofing"
+    },
+    "166" : {
+      "//description" : "A giant screw crafted from silver.",
+      "//name" : "silverscrew",
+      "//shortdescription" : "Silver Screw",
+      "material" : "silverscrew"
+    },
+    "167" : {
+      "//description" : "A girder designed to accommodate pressurisation changes.",
+      "//name" : "pressurisedgirder",
+      "//shortdescription" : "Pressurised Girder",
+      "material" : "pressurisedgirder"
+    },
+    "168" : {
+      "//description" : "A sewer pipe used for transporting waste.",
+      "//name" : "sewerpipe",
+      "//shortdescription" : "Sewer Pipe",
+      "material" : "sewerpipe"
+    },
+    "169" : {
+      "//description" : "A strong looking metal girder.",
+      "//name" : "girder",
+      "//shortdescription" : "Girder",
+      "material" : "girder"
+    },
+    "17" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock12",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock12"
+    },
+    "170" : {
+      "//description" : "A sturdy copper fence.",
+      "//name" : "copperfence",
+      "//shortdescription" : "Copper Fence",
+      "material" : "copperfence"
+    },
+    "171" : {
+      "//description" : "A wall support used in ship construction.",
+      "//name" : "apexshipsupport",
+      "//shortdescription" : "Ship Support",
+      "material" : "apexshipsupport"
+    },
+    "172" : {
+      "//description" : "A heavy pipe, commonly used in waste systems.",
+      "//name" : "heavypipe",
+      "//shortdescription" : "Heavy Pipe",
+      "material" : "heavypipe"
+    },
+    "173" : {
+      "//description" : "A reinforced support beam.",
+      "//name" : "outpostsupport",
+      "//shortdescription" : "Outpost Support Beam",
+      "material" : "outpostsupport"
+    },
+    "174" : {
+      "//description" : "A fragrant bundle made of flowers and leaves.",
+      "//name" : "floweryblock",
+      "//shortdescription" : "Flower Block",
+      "material" : "floweryblock"
+    },
+    "175" : {
+      "//description" : "Bricks carved from shadowy rock.",
+      "//name" : "shadowwallblock",
+      "//shortdescription" : "Shadow Bricks",
+      "material" : "shadowwallblock"
+    },
+    "176" : {
+      "//description" : "A rock as pitch black as shadow.",
+      "//name" : "shadowblock",
+      "//shortdescription" : "Shadow Rock",
+      "material" : "shadowblock"
+    },
+    "177" : {
+      "//description" : "A spiked block formed from shadowy material.",
+      "//name" : "shadowspikeblock",
+      "//shortdescription" : "Shadow Spike Block",
+      "material" : "shadowspikeblock"
+    },
+    "178" : {
+      "//description" : "I can see my reflection... it's hideous!",
+      "//name" : "lightblocker",
+      "//shortdescription" : "Glass Block",
+      "material" : "lightblocker"
+    },
+    "179" : {
+      "//description" : "A solid stone filled with small geode crystals.",
+      "//name" : "geodestone",
+      "//shortdescription" : "Geode Stone",
+      "material" : "geodestone"
+    },
+    "18" : {
+      "//description" : "...",
+      "//name" : "blackblock",
+      "//shortdescription" : "...",
+      "material" : "blackblock"
+    },
+    "180" : {
+      "//description" : "Glimmering natural geode crystals.",
+      "//name" : "geodeblock",
+      "//shortdescription" : "Geode Crystals",
+      "material" : "geodeblock"
+    },
+    "181" : {
+      "//description" : "A pile of random junk.",
+      "//name" : "junk",
+      "//shortdescription" : "Junk Pile",
+      "material" : "junk"
+    },
+    "182" : {
+      "//description" : "Pulsating brain matter.. I wonder if it's thinking.",
+      "//name" : "brainsblock",
+      "//shortdescription" : "Brains",
+      "material" : "brainsblock"
+    },
+    "183" : {
+      "//description" : "Stone bricks with a ridge carved near the top.",
+      "//name" : "ridgebrick",
+      "//shortdescription" : "Ridged Block",
+      "material" : "ridgebrick"
+    },
+    "184" : {
+      "//description" : "A slimy, bright coloured mass of jelly.",
+      "//name" : "jellyblock",
+      "//shortdescription" : "Jelly Blob",
+      "material" : "jellyblock"
+    },
+    "185" : {
+      "//description" : "Stone stepped bricks with a small ledge.",
+      "//name" : "ledgebrick",
+      "//shortdescription" : "Ledge Brick",
+      "material" : "ledgebrick"
+    },
+    "186" : {
+      "//description" : "A mass of wriggling tentacles.",
+      "//name" : "tentacleblock",
+      "//shortdescription" : "Tentacle Cluster",
+      "material" : "tentacleblock"
+    },
+    "187" : {
+      "//description" : "A large tentacle",
+      "//name" : "tentaclepipe",
+      "//shortdescription" : "Large Tentacle",
+      "material" : "tentaclepipe"
+    },
+    "188" : {
+      "//description" : "A fleshy mass with some thick, tough looking skin.",
+      "//name" : "dermisblock",
+      "//shortdescription" : "Ruin Dermis",
+      "material" : "dermisblock"
+    },
+    "189" : {
+      "//description" : "This fleshy mass looks like it was part of some creature's stomach.",
+      "//name" : "stomachblock",
+      "//shortdescription" : "Stomach Lining",
+      "material" : "stomachblock"
+    },
+    "19" : {
+      "//description" : "Freshly cut stalks of bamboo.",
+      "//name" : "bamboo",
+      "//shortdescription" : "Bamboo",
+      "material" : "bamboo"
+    },
+    "190" : {
+      "//description" : "Cheap, resilient panelling widely used for ship and station construction.",
+      "//name" : "slopedhullpanel",
+      "//shortdescription" : "Hull Panel",
+      "material" : "slopedhullpanel"
+    },
+    "191" : {
+      "//name" : "rivetedhullpanel",
+      "invalid" : "true"
+    },
+    "192" : {
+      "//description" : "A somewhat inexpensive material that can withstand most weathering.",
+      "//name" : "slopedinsetpanel",
+      "//shortdescription" : "Inset Panel",
+      "material" : "slopedinsetpanel"
+    },
+    "193" : {
+      "//description" : "Sturdy metal panelling that has been rusted with age.",
+      "//name" : "slopedrustypanel",
+      "//shortdescription" : "Rusty Panel",
+      "material" : "slopedrustypanel"
+    },
+    "194" : {
+      "//description" : "Rusted scrap metal paneling in a state of severe disrepair.",
+      "//name" : "slopedscrappanel",
+      "//shortdescription" : "Scrap Panel",
+      "material" : "slopedscrappanel"
+    },
+    "195" : {
+      "//description" : "I can see my reflection.",
+      "//name" : "slopedglasspanel",
+      "//shortdescription" : "Sloped Glass Panel",
+      "material" : "slopedglasspanel"
+    },
+    "196" : {
+      "//description" : "A curious material made of \"Hard Light\".",
+      "//name" : "slopedpolygon",
+      "//shortdescription" : "Polygon Panel",
+      "material" : "slopedpolygon"
+    },
+    "2" : {
+      "//description" : "Nicely painted brickwork.",
+      "//name" : "homewalls1",
+      "//shortdescription" : "Painted Brick",
+      "material" : "homewalls1"
+    },
+    "20" : {
+      "//description" : "A shimmering hoard of valuable treasure.",
+      "//name" : "treasurehoard",
+      "//shortdescription" : "Treasure Hoard",
+      "material" : "treasurehoard"
+    },
+    "21" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock17",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock17"
+    },
+    "22" : {
+      "//description" : "Beautiful, smooth moonstone.",
+      "//name" : "moonstone",
+      "//shortdescription" : "Moonstone",
+      "material" : "moonstone"
+    },
+    "23" : {
+      "//description" : "A solid iron block.",
+      "//name" : "ironblock",
+      "//shortdescription" : "Iron Block",
+      "material" : "ironblock"
+    },
+    "24" : {
+      "//description" : "This looks hi-tech!",
+      "//name" : "metallic",
+      "//shortdescription" : "Hi-tech Block",
+      "material" : "metallic"
+    },
+    "25" : {
+      "//description" : "Thick metal bars. Still strong, though decaying with rust.",
+      "//name" : "bars",
+      "//shortdescription" : "Metal Bars",
+      "material" : "bars"
+    },
+    "26" : {
+      "//description" : "Rough and unrefined, this wood looks freshly chopped.",
+      "//name" : "fullwood2",
+      "//shortdescription" : "Unrefined Wood",
+      "material" : "fullwood2"
+    },
+    "27" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock02",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock02"
+    },
+    "28" : {
+      "//description" : "Old wooden slats that don't let much light through.",
+      "//name" : "woodenwindow2",
+      "//shortdescription" : "Wooden Blinds",
+      "material" : "woodenwindow2"
+    },
+    "29" : {
+      "//description" : "Small stone slabs, perfect for the finer details.",
+      "//name" : "castlewalls2",
+      "//shortdescription" : "Small Stone Brick",
+      "material" : "castlewalls2"
+    },
+    "3" : {
+      "//description" : "A collection of bones tightly packed together.",
+      "//name" : "bonematerial",
+      "//shortdescription" : "Packed Bones",
+      "material" : "bonematerial"
+    },
+    "30" : {
+      "//description" : "Light seems to twist inside these purple crystals.",
+      "//name" : "purplecrystal",
+      "//shortdescription" : "Purple Crystal Block",
+      "material" : "purplecrystal"
+    },
+    "31" : {
+      "//description" : "Wall material commonly used in space outposts.",
+      "//name" : "outpost",
+      "//shortdescription" : "Outpost Wall",
+      "material" : "outpost"
+    },
+    "32" : {
+      "//description" : "A durasteel panel, specially designed to contain pressurised environments.",
+      "//name" : "pressuriseddurasteel",
+      "//shortdescription" : "Pressurised Durasteel",
+      "material" : "pressuriseddurasteel"
+    },
+    "33" : {
+      "//description" : "These bricks have worn smooth with age.",
+      "//name" : "tombbrick2",
+      "//shortdescription" : "Unmarked Tomb Brick",
+      "material" : "tombbrick2"
+    },
+    "34" : {
+      "//description" : "A whole block of solid platinum.",
+      "//name" : "platinumblock",
+      "//shortdescription" : "Platinum Block",
+      "material" : "platinumblock"
+    },
+    "35" : {
+      "//description" : "Sticky hive combs made from the remains of fallen creatures.",
+      "//name" : "hive",
+      "//shortdescription" : "Hivestone",
+      "material" : "hive"
+    },
+    "36" : {
+      "//description" : "Hard cobblestones, smooth to the touch.",
+      "//name" : "cobblestone",
+      "//shortdescription" : "Cobblestone",
+      "material" : "cobblestone"
+    },
+    "37" : {
+      "//description" : "Thick, rancid tar. Just looking at it feels sticky.",
+      "//name" : "tar",
+      "//shortdescription" : "Tar",
+      "material" : "tar"
+    },
+    "38" : {
+      "//description" : "This strange rock comes from an alien world.",
+      "//name" : "alienrock",
+      "//shortdescription" : "Alien Rock",
+      "material" : "alienrock"
+    },
+    "39" : {
+      "//description" : "These bricks have certainly survived the test of time.",
+      "//name" : "ancientblock",
+      "//shortdescription" : "Ancient Block",
+      "material" : "ancientblock"
+    },
+    "4" : {
+      "//description" : "A traditional screen panel.",
+      "//name" : "shojiscreenpanel",
+      "//shortdescription" : "Shoji Screen Panel",
+      "material" : "shojiscreenpanel"
+    },
+    "40" : {
+      "//description" : "A riveted metal wall.",
+      "//name" : "apexshipdetails",
+      "//shortdescription" : "Metal Railing",
+      "material" : "apexshipdetails"
+    },
+    "41" : {
+      "//description" : "A pile of tightly packed ash.",
+      "//name" : "ash",
+      "//shortdescription" : "Ash Pile",
+      "material" : "ash"
+    },
+    "42" : {
+      "//description" : "A cheap but effective construction material.",
+      "//name" : "asphalt",
+      "//shortdescription" : "Asphalt",
+      "material" : "asphalt"
+    },
+    "43" : {
+      "//description" : "Cheap, tacky wallpaper.",
+      "//name" : "cheapwallpaper",
+      "//shortdescription" : "Tacky Wallpaper",
+      "material" : "cheapwallpaper"
+    },
+    "44" : {
+      "//description" : "Small glyphs cover this stone.",
+      "//name" : "aztec",
+      "//shortdescription" : "Glyph Block",
+      "material" : "aztec"
+    },
+    "45" : {
+      "//description" : "An advanced synthetic Avian material with printed markings.",
+      "//name" : "aztectech",
+      "//shortdescription" : "Avian Tech Block",
+      "material" : "aztectech"
+    },
+    "46" : {
+      "//description" : "This baseboard completes the classic home look.",
+      "//name" : "baseboard",
+      "//shortdescription" : "Classic Baseboard",
+      "material" : "baseboard"
+    },
+    "47" : {
+      "//description" : "This carved brick is immeasurably old.",
+      "//name" : "ancientbrick",
+      "//shortdescription" : "Ancient Brick",
+      "material" : "ancientbrick"
+    },
+    "48" : {
+      "//name" : "brains",
+      "invalid" : "true"
+    },
+    "49" : {
+      "//description" : "Soft faded brick.",
+      "//name" : "fadedblocks",
+      "//shortdescription" : "Soft Brick",
+      "material" : "fadedblocks"
+    },
+    "5" : {
+      "//description" : "Traditional thatched roofing.",
+      "//name" : "thatch",
+      "//shortdescription" : "Thatch",
+      "material" : "thatch"
+    },
+    "50" : {
+      "//description" : "Strong stone slabs, perfect for building a castle.",
+      "//name" : "castlewalls1",
+      "//shortdescription" : "Heavy Stone Brick",
+      "material" : "castlewalls1"
+    },
+    "51" : {
+      "//description" : "Weathered roof tiles. Their shape makes me feel uneasy.",
+      "//name" : "rooftiles",
+      "//shortdescription" : "Roof Tiles",
+      "material" : "rooftiles"
+    },
+    "52" : {
+      "//description" : "Stacked natural granite bricks.",
+      "//name" : "rock14",
+      "//shortdescription" : "Granite Block",
+      "material" : "rock14"
+    },
+    "53" : {
+      "//description" : "Delightful ornate flooring.",
+      "//name" : "ornateflooring",
+      "//shortdescription" : "Ornate Flooring",
+      "material" : "ornateflooring"
+    },
+    "54" : {
+      "//description" : "Exquisite ornate roof tiles.",
+      "//name" : "ornatetiles",
+      "//shortdescription" : "Ornate Tiles",
+      "material" : "ornatetiles"
+    },
+    "55" : {
+      "//description" : "Little wormlike forms wriggle beneath the surface of this glassy stone.",
+      "//name" : "direstone",
+      "//shortdescription" : "Dire Stone",
+      "material" : "direstone"
+    },
+    "56" : {
+      "//description" : "A crudely produced set of rock bricks.",
+      "//name" : "rockbrick",
+      "//shortdescription" : "Rock Bricks",
+      "material" : "rockbrick"
+    },
+    "57" : {
+      "//description" : "A rusty old metal block.",
+      "//name" : "rustyblock",
+      "//shortdescription" : "Rusty Block",
+      "material" : "rustyblock"
+    },
+    "58" : {
+      "//description" : "Sharp rocks produced by blasts of enormous heat.",
+      "//name" : "blaststone",
+      "//shortdescription" : "Blaststone Block",
+      "material" : "blaststone"
+    },
+    "59" : {
+      "//description" : "A whole block of silver.",
+      "//name" : "silverblock",
+      "//shortdescription" : "Silver Block",
+      "material" : "silverblock"
+    },
+    "6" : {
+      "//description" : "A dark, smooth stone block.",
+      "//name" : "darksmoothstone",
+      "//shortdescription" : "Dark Smooth Stone",
+      "material" : "darksmoothstone"
+    },
+    "60" : {
+      "//description" : "Rough, unrefined limestone.",
+      "//name" : "limestone",
+      "//shortdescription" : "Limestone",
+      "material" : "limestone"
+    },
+    "61" : {
+      "//description" : "A block made of soft fungus.",
+      "//name" : "shroomblock",
+      "//shortdescription" : "Mushroom Block",
+      "material" : "shroomblock"
+    },
+    "62" : {
+      "//description" : "Magmarock. This is hot stuff.",
+      "//name" : "magmarock",
+      "//shortdescription" : "Magmarock",
+      "material" : "magmarock"
+    },
+    "63" : {
+      "//description" : "Dark and cold to the touch, these bricks seem to suck the heat from the room.",
+      "//name" : "tombbrick4",
+      "//shortdescription" : "Dark Tomb Brick",
+      "material" : "tombbrick4"
+    },
+    "64" : {
+      "//description" : "Bricks made from smoothed sandstone.",
+      "//name" : "sandstoneblock",
+      "//shortdescription" : "Sandstone Bricks",
+      "material" : "sandstoneblock"
+    },
+    "65" : {
+      "//description" : "A piece of alien striped wood. Stripey!",
+      "//name" : "alienstripedblock",
+      "//shortdescription" : "Alien Striped Wood",
+      "material" : "alienstripedblock"
+    },
+    "66" : {
+      "//description" : "These small bricks are masterfully crafted.",
+      "//name" : "tombbrick3",
+      "//shortdescription" : "Small Tomb Brick",
+      "material" : "tombbrick3"
+    },
+    "67" : {
+      "//description" : "Dusty but finely crafted bricks.",
+      "//name" : "temple3",
+      "//shortdescription" : "Small Temple Bricks",
+      "material" : "temple3"
+    },
+    "68" : {
+      "//description" : "Reminds me of the inside of a medical centre.",
+      "//name" : "plate",
+      "//shortdescription" : "Smooth Plated Block",
+      "material" : "plate"
+    },
+    "69" : {
+      "//description" : "A coloured block filled with neon gas.",
+      "//name" : "neonblock",
+      "//shortdescription" : "Neon Block",
+      "material" : "neonblock"
+    },
+    "7" : {
+      "//description" : "Small but perfectly formed bricks made from clay.",
+      "//name" : "brick",
+      "//shortdescription" : "Bricks",
+      "material" : "brick"
+    },
+    "70" : {
+      "//description" : "A solid tungsten block.",
+      "//name" : "mediummetal",
+      "//shortdescription" : "Tungsten Block",
+      "material" : "mediummetal"
+    },
+    "71" : {
+      "//description" : "This wood panelling was fashionable in a distant era.",
+      "//name" : "woodpanelling",
+      "//shortdescription" : "Wood Panelling",
+      "material" : "woodpanelling"
+    },
+    "72" : {
+      "//description" : "Sweet-smelling rock candy!",
+      "//name" : "candyblock",
+      "//shortdescription" : "Candy Block",
+      "material" : "candyblock"
+    },
+    "73" : {
+      "//description" : "A roughly woven wicker material.",
+      "//name" : "wicker",
+      "//shortdescription" : "Wicker Block",
+      "material" : "wicker"
+    },
+    "74" : {
+      "//description" : "A disgusting pile of sewage. Lovely.",
+      "//name" : "sewage",
+      "//shortdescription" : "Raw Sewage",
+      "material" : "sewage"
+    },
+    "75" : {
+      "//description" : "Dirty looking dirt.",
+      "//name" : "dirt",
+      "//shortdescription" : "Dirt",
+      "material" : "dirt"
+    },
+    "76" : {
+      "//description" : "Heavy, sticky clay.",
+      "//name" : "clay",
+      "//shortdescription" : "Clay",
+      "material" : "clay"
+    },
+    "77" : {
+      "//description" : "Solid obsidian. It is naturally black.",
+      "//name" : "obsidian",
+      "//shortdescription" : "Obsidian",
+      "material" : "obsidian"
+    },
+    "78" : {
+      "//description" : "Packed dirt, covered in moss.",
+      "//name" : "mossypackeddirt",
+      "//shortdescription" : "Mossy Packed Dirt",
+      "material" : "mossypackeddirt"
+    },
+    "79" : {
+      "//description" : "This pattern suggests caution.",
+      "//name" : "hazard",
+      "//shortdescription" : "Hazard Block",
+      "material" : "hazard"
+    },
+    "8" : {
+      "//description" : "A small throwing block that sticks to surfaces.",
+      "//name" : "throwingblock",
+      "//shortdescription" : "Throwing Block",
+      "material" : "throwingblock"
+    },
+    "80" : {
+      "//description" : "A thick mucus. It jiggles when poked.",
+      "//name" : "slime",
+      "//shortdescription" : "Slime Glob",
+      "material" : "slime"
+    },
+    "81" : {
+      "//description" : "A window with wooden panes.",
+      "//name" : "woodenwindow1",
+      "//shortdescription" : "Wooden Window",
+      "material" : "woodenwindow1"
+    },
+    "82" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock03",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock03"
+    },
+    "83" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock20",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock20"
+    },
+    "84" : {
+      "//description" : "Bricks made from coconut and mortar.",
+      "//name" : "coconutblock",
+      "//shortdescription" : "Coconut Block",
+      "material" : "coconutblock"
+    },
+    "85" : {
+      "//description" : "I can see my reflection.",
+      "//name" : "glass",
+      "//shortdescription" : "Glass Block",
+      "material" : "glass"
+    },
+    "86" : {
+      "//description" : "Old and poorly crafted blocks, crude drawings are scratched into the stone.",
+      "//name" : "temple4",
+      "//shortdescription" : "Simple Temple Blocks",
+      "material" : "temple4"
+    },
+    "87" : {
+      "//description" : "It's Silt. It's very silty.",
+      "//name" : "sand",
+      "//shortdescription" : "Loose Silt",
+      "material" : "sand"
+    },
+    "88" : {
+      "//description" : "Soft and fluffy snow.",
+      "//name" : "snow",
+      "//shortdescription" : "Snow",
+      "material" : "snow"
+    },
+    "89" : {
+      "//description" : "Some classy wallpaper, the perfect finishing touch.",
+      "//name" : "wallpaper",
+      "//shortdescription" : "Classic Wallpaper",
+      "material" : "wallpaper"
+    },
+    "9" : {
+      "//description" : "A whole block of solid gold.",
+      "//name" : "goldblock",
+      "//shortdescription" : "Gold Block",
+      "material" : "goldblock"
+    },
+    "90" : {
+      "//description" : "A traditional looking wall.",
+      "//name" : "ornatewall",
+      "//shortdescription" : "Ornate Wall",
+      "material" : "ornatewall"
+    },
+    "91" : {
+      "//description" : "Dark concrete specially designed for outposts.",
+      "//name" : "outpostwall1",
+      "//shortdescription" : "Outpost Concrete",
+      "material" : "outpostwall1"
+    },
+    "92" : {
+      "//description" : "Some naturally smooth ice.",
+      "//name" : "frozenwater",
+      "//shortdescription" : "Smooth Ice",
+      "material" : "frozenwater"
+    },
+    "93" : {
+      "//description" : "A pile of dusty old books, they're full of tales of dragons and knights.",
+      "//name" : "bookpiles",
+      "//shortdescription" : "Pile of Books",
+      "material" : "bookpiles"
+    },
+    "94" : {
+      "//description" : "Smooth metal, cold to the touch.",
+      "//name" : "smoothmetal",
+      "//shortdescription" : "Smooth Metal",
+      "material" : "smoothmetal"
+    },
+    "95" : {
+      "//description" : "Soft and warm sand.",
+      "//name" : "sand2",
+      "//shortdescription" : "Sand",
+      "material" : "sand2"
+    },
+    "96" : {
+      "//description" : "Cactus that's been fashioned into a construction block. Still prickly.",
+      "//name" : "cactiblock",
+      "//shortdescription" : "Cacti Block",
+      "material" : "cactiblock"
+    },
+    "97" : {
+      "//description" : "Webs packed tight into a solid block.",
+      "//name" : "spidersilkblock",
+      "//shortdescription" : "Spider Silk",
+      "material" : "spidersilkblock"
+    },
+    "98" : {
+      "//description" : "A large stackable toy block.",
+      "//name" : "redtoyblock",
+      "//shortdescription" : "Red Toy Block",
+      "material" : "redtoyblock"
+    },
+    "99" : {
+      "//description" : "Rough, unrefined stone.",
+      "//name" : "rock19",
+      "//shortdescription" : "Rough Stone",
+      "material" : "rock19"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "./../../../../tiled/packed/materials/supermatter.png"
+    },
+    "1" : {
+      "image" : "./../../../../tiled/packed/materials/lightmetal.png"
+    },
+    "10" : {
+      "image" : "./../../../../tiled/packed/materials/drydirt.png"
+    },
+    "100" : {
+      "image" : "./../../../../tiled/packed/materials/drysand.png"
+    },
+    "101" : {
+      "image" : "./../../../../tiled/packed/materials/composite01.png"
+    },
+    "102" : {
+      "image" : "./../../../../tiled/packed/materials/blueneonsymbolblock.png"
+    },
+    "103" : {
+      "image" : "./../../../../tiled/packed/materials/techhull1.png"
+    },
+    "104" : {
+      "image" : "./../../../../tiled/packed/materials/vine.png"
+    },
+    "105" : {
+      "image" : "./../../../../tiled/packed/materials/stonetiles.png"
+    },
+    "106" : {
+      "image" : "./../../../../tiled/packed/materials/rock15.png"
+    },
+    "107" : {
+      "image" : "./../../../../tiled/packed/materials/wetdirt.png"
+    },
+    "108" : {
+      "image" : "./../../../../tiled/packed/materials/gravel.png"
+    },
+    "109" : {
+      "image" : "./../../../../tiled/packed/materials/rock04.png"
+    },
+    "11" : {
+      "image" : "./../../../../tiled/packed/materials/reedsmaterial.png"
+    },
+    "110" : {
+      "image" : "./../../../../tiled/packed/materials/pressurisedbeam.png"
+    },
+    "111" : {
+      "image" : "./../../../../tiled/packed/materials/temple1.png"
+    },
+    "112" : {
+      "image" : "./../../../../tiled/packed/materials/matterblock.png"
+    },
+    "113" : {
+      "image" : "./../../../../tiled/packed/materials/rock01.png"
+    },
+    "114" : {
+      "image" : "./../../../../tiled/packed/materials/blackglass.png"
+    },
+    "115" : {
+      "image" : "./../../../../tiled/packed/materials/outpostwall2.png"
+    },
+    "116" : {
+      "image" : "./../../../../tiled/packed/materials/heavyironbars.png"
+    },
+    "117" : {
+      "image" : "./../../../../tiled/packed/materials/rainbowwoodblock.png"
+    },
+    "118" : {
+      "image" : "./../../../../tiled/packed/materials/ice.png"
+    },
+    "119" : {
+      "image" : "./../../../../tiled/packed/materials/ornateroofing.png"
+    },
+    "12" : {
+      "image" : "./../../../../tiled/packed/materials/tombbrick5.png"
+    },
+    "120" : {
+      "image" : "./../../../../tiled/packed/materials/chain.png"
+    },
+    "121" : {
+      "image" : "./../../../../tiled/packed/materials/plantblock.png"
+    },
+    "122" : {
+      "image" : "./../../../../tiled/packed/materials/packeddirt.png"
+    },
+    "123" : {
+      "image" : "./../../../../tiled/packed/materials/ornatewood.png"
+    },
+    "124" : {
+      "image" : "./../../../../tiled/packed/materials/mud.png"
+    },
+    "125" : {
+      "image" : "./../../../../tiled/packed/materials/moonrock.png"
+    },
+    "126" : {
+      "image" : "./../../../../tiled/packed/materials/meteoriterock.png"
+    },
+    "127" : {
+      "image" : "./../../../../tiled/packed/materials/woodbridge.png"
+    },
+    "128" : {
+      "image" : "./../../../../tiled/packed/materials/rustymetal.png"
+    },
+    "129" : {
+      "image" : "./../../../../tiled/packed/materials/petalblock.png"
+    },
+    "13" : {
+      "image" : "./../../../../tiled/packed/materials/tombbrick.png"
+    },
+    "130" : {
+      "image" : "./../../../../tiled/packed/materials/junktech.png"
+    },
+    "131" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "132" : {
+      "image" : "./../../../../tiled/packed/materials/lunarbaseblock.png"
+    },
+    "133" : {
+      "image" : "./../../../../tiled/packed/materials/hellstone.png"
+    },
+    "134" : {
+      "image" : "./../../../../tiled/packed/materials/fullwood1.png"
+    },
+    "135" : {
+      "image" : "./../../../../tiled/packed/materials/crosshatch.png"
+    },
+    "136" : {
+      "image" : "./../../../../tiled/packed/materials/fleshblock.png"
+    },
+    "137" : {
+      "image" : "./../../../../tiled/packed/materials/crystalblock.png"
+    },
+    "138" : {
+      "image" : "./../../../../tiled/packed/materials/corruptdirt.png"
+    },
+    "139" : {
+      "image" : "./../../../../tiled/packed/materials/fence.png"
+    },
+    "14" : {
+      "image" : "./../../../../tiled/packed/materials/deadcore.png"
+    },
+    "140" : {
+      "image" : "./../../../../tiled/packed/materials/moondust.png"
+    },
+    "141" : {
+      "image" : "./../../../../tiled/packed/materials/apexshipwall.png"
+    },
+    "142" : {
+      "image" : "./../../../../tiled/packed/materials/sandstone01.png"
+    },
+    "143" : {
+      "image" : "./../../../../tiled/packed/materials/cloudblock.png"
+    },
+    "144" : {
+      "image" : "./../../../../tiled/packed/materials/temple2.png"
+    },
+    "145" : {
+      "image" : "./../../../../tiled/packed/materials/plantmatter.png"
+    },
+    "146" : {
+      "image" : "./../../../../tiled/packed/materials/mirror.png"
+    },
+    "147" : {
+      "image" : "./../../../../tiled/packed/materials/eyepiles.png"
+    },
+    "148" : {
+      "image" : "./../../../../tiled/packed/materials/darkwood.png"
+    },
+    "149" : {
+      "image" : "./../../../../tiled/packed/materials/concrete.png"
+    },
+    "15" : {
+      "image" : "./../../../../tiled/packed/materials/iceblock.png"
+    },
+    "150" : {
+      "image" : "./../../../../tiled/packed/materials/cobblestonebrick.png"
+    },
+    "151" : {
+      "image" : "./../../../../tiled/packed/materials/stonerubble.png"
+    },
+    "152" : {
+      "image" : "./../../../../tiled/packed/materials/pillarblock.png"
+    },
+    "153" : {
+      "image" : "./../../../../tiled/packed/materials/cabinroofing.png"
+    },
+    "154" : {
+      "image" : "./../../../../tiled/packed/materials/logblock.png"
+    },
+    "155" : {
+      "image" : "./../../../../tiled/packed/materials/grassy.png"
+    },
+    "156" : {
+      "image" : "./../../../../tiled/packed/materials/grassyrock.png"
+    },
+    "157" : {
+      "image" : "./../../../../tiled/packed/materials/frozendirt.png"
+    },
+    "158" : {
+      "image" : "./../../../../tiled/packed/materials/biorock.png"
+    },
+    "159" : {
+      "image" : "./../../../../tiled/packed/materials/biorock2.png"
+    },
+    "16" : {
+      "image" : "./../../../../tiled/packed/materials/slush.png"
+    },
+    "160" : {
+      "image" : "./../../../../tiled/packed/materials/wickersupport.png"
+    },
+    "161" : {
+      "image" : "./../../../../tiled/packed/materials/rainbowwood.png"
+    },
+    "162" : {
+      "image" : "./../../../../tiled/packed/materials/waste.png"
+    },
+    "163" : {
+      "image" : "./../../../../tiled/packed/materials/copperwindow.png"
+    },
+    "164" : {
+      "image" : "./../../../../tiled/packed/materials/copperblock.png"
+    },
+    "165" : {
+      "image" : "./../../../../tiled/packed/materials/copperroofing.png"
+    },
+    "166" : {
+      "image" : "./../../../../tiled/packed/materials/silverscrew.png"
+    },
+    "167" : {
+      "image" : "./../../../../tiled/packed/materials/pressurisedgirder.png"
+    },
+    "168" : {
+      "image" : "./../../../../tiled/packed/materials/sewerpipe.png"
+    },
+    "169" : {
+      "image" : "./../../../../tiled/packed/materials/girder.png"
+    },
+    "17" : {
+      "image" : "./../../../../tiled/packed/materials/rock12.png"
+    },
+    "170" : {
+      "image" : "./../../../../tiled/packed/materials/copperfence.png"
+    },
+    "171" : {
+      "image" : "./../../../../tiled/packed/materials/apexshipsupport.png"
+    },
+    "172" : {
+      "image" : "./../../../../tiled/packed/materials/heavypipe.png"
+    },
+    "173" : {
+      "image" : "./../../../../tiled/packed/materials/outpostsupport.png"
+    },
+    "174" : {
+      "image" : "./../../../../tiled/packed/materials/floweryblock.png"
+    },
+    "175" : {
+      "image" : "./../../../../tiled/packed/materials/shadowwallblock.png"
+    },
+    "176" : {
+      "image" : "./../../../../tiled/packed/materials/shadowblock.png"
+    },
+    "177" : {
+      "image" : "./../../../../tiled/packed/materials/shadowspikeblock.png"
+    },
+    "178" : {
+      "image" : "./../../../../tiled/packed/materials/lightblocker.png"
+    },
+    "179" : {
+      "image" : "./../../../../tiled/packed/materials/geodestone.png"
+    },
+    "18" : {
+      "image" : "./../../../../tiled/packed/materials/blackblock.png"
+    },
+    "180" : {
+      "image" : "./../../../../tiled/packed/materials/geodeblock.png"
+    },
+    "181" : {
+      "image" : "./../../../../tiled/packed/materials/junk.png"
+    },
+    "182" : {
+      "image" : "./../../../../tiled/packed/materials/brainsblock.png"
+    },
+    "183" : {
+      "image" : "./../../../../tiled/packed/materials/ridgebrick.png"
+    },
+    "184" : {
+      "image" : "./../../../../tiled/packed/materials/jellyblock.png"
+    },
+    "185" : {
+      "image" : "./../../../../tiled/packed/materials/ledgebrick.png"
+    },
+    "186" : {
+      "image" : "./../../../../tiled/packed/materials/tentacleblock.png"
+    },
+    "187" : {
+      "image" : "./../../../../tiled/packed/materials/tentaclepipe.png"
+    },
+    "188" : {
+      "image" : "./../../../../tiled/packed/materials/dermisblock.png"
+    },
+    "189" : {
+      "image" : "./../../../../tiled/packed/materials/stomachblock.png"
+    },
+    "19" : {
+      "image" : "./../../../../tiled/packed/materials/bamboo.png"
+    },
+    "190" : {
+      "image" : "./../../../../tiled/packed/materials/slopedhullpanel.png"
+    },
+    "191" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "192" : {
+      "image" : "./../../../../tiled/packed/materials/slopedinsetpanel.png"
+    },
+    "193" : {
+      "image" : "./../../../../tiled/packed/materials/slopedrustypanel.png"
+    },
+    "194" : {
+      "image" : "./../../../../tiled/packed/materials/slopedscrappanel.png"
+    },
+    "195" : {
+      "image" : "./../../../../tiled/packed/materials/slopedglasspanel.png"
+    },
+    "196" : {
+      "image" : "./../../../../tiled/packed/materials/slopedpolygon.png"
+    },
+    "2" : {
+      "image" : "./../../../../tiled/packed/materials/homewalls1.png"
+    },
+    "20" : {
+      "image" : "./../../../../tiled/packed/materials/treasurehoard.png"
+    },
+    "21" : {
+      "image" : "./../../../../tiled/packed/materials/rock17.png"
+    },
+    "22" : {
+      "image" : "./../../../../tiled/packed/materials/moonstone.png"
+    },
+    "23" : {
+      "image" : "./../../../../tiled/packed/materials/ironblock.png"
+    },
+    "24" : {
+      "image" : "./../../../../tiled/packed/materials/metallic.png"
+    },
+    "25" : {
+      "image" : "./../../../../tiled/packed/materials/bars.png"
+    },
+    "26" : {
+      "image" : "./../../../../tiled/packed/materials/fullwood2.png"
+    },
+    "27" : {
+      "image" : "./../../../../tiled/packed/materials/rock02.png"
+    },
+    "28" : {
+      "image" : "./../../../../tiled/packed/materials/woodenwindow2.png"
+    },
+    "29" : {
+      "image" : "./../../../../tiled/packed/materials/castlewalls2.png"
+    },
+    "3" : {
+      "image" : "./../../../../tiled/packed/materials/bonematerial.png"
+    },
+    "30" : {
+      "image" : "./../../../../tiled/packed/materials/purplecrystal.png"
+    },
+    "31" : {
+      "image" : "./../../../../tiled/packed/materials/outpost.png"
+    },
+    "32" : {
+      "image" : "./../../../../tiled/packed/materials/pressuriseddurasteel.png"
+    },
+    "33" : {
+      "image" : "./../../../../tiled/packed/materials/tombbrick2.png"
+    },
+    "34" : {
+      "image" : "./../../../../tiled/packed/materials/platinumblock.png"
+    },
+    "35" : {
+      "image" : "./../../../../tiled/packed/materials/hive.png"
+    },
+    "36" : {
+      "image" : "./../../../../tiled/packed/materials/cobblestone.png"
+    },
+    "37" : {
+      "image" : "./../../../../tiled/packed/materials/tar.png"
+    },
+    "38" : {
+      "image" : "./../../../../tiled/packed/materials/alienrock.png"
+    },
+    "39" : {
+      "image" : "./../../../../tiled/packed/materials/ancientblock.png"
+    },
+    "4" : {
+      "image" : "./../../../../tiled/packed/materials/shojiscreenpanel.png"
+    },
+    "40" : {
+      "image" : "./../../../../tiled/packed/materials/apexshipdetails.png"
+    },
+    "41" : {
+      "image" : "./../../../../tiled/packed/materials/ash.png"
+    },
+    "42" : {
+      "image" : "./../../../../tiled/packed/materials/asphalt.png"
+    },
+    "43" : {
+      "image" : "./../../../../tiled/packed/materials/cheapwallpaper.png"
+    },
+    "44" : {
+      "image" : "./../../../../tiled/packed/materials/aztec.png"
+    },
+    "45" : {
+      "image" : "./../../../../tiled/packed/materials/aztectech.png"
+    },
+    "46" : {
+      "image" : "./../../../../tiled/packed/materials/baseboard.png"
+    },
+    "47" : {
+      "image" : "./../../../../tiled/packed/materials/ancientbrick.png"
+    },
+    "48" : {
+      "image" : "./../../../../tiled/packed/../packed/invalid.png"
+    },
+    "49" : {
+      "image" : "./../../../../tiled/packed/materials/fadedblocks.png"
+    },
+    "5" : {
+      "image" : "./../../../../tiled/packed/materials/thatch.png"
+    },
+    "50" : {
+      "image" : "./../../../../tiled/packed/materials/castlewalls1.png"
+    },
+    "51" : {
+      "image" : "./../../../../tiled/packed/materials/rooftiles.png"
+    },
+    "52" : {
+      "image" : "./../../../../tiled/packed/materials/rock14.png"
+    },
+    "53" : {
+      "image" : "./../../../../tiled/packed/materials/ornateflooring.png"
+    },
+    "54" : {
+      "image" : "./../../../../tiled/packed/materials/ornatetiles.png"
+    },
+    "55" : {
+      "image" : "./../../../../tiled/packed/materials/direstone.png"
+    },
+    "56" : {
+      "image" : "./../../../../tiled/packed/materials/rockbrick.png"
+    },
+    "57" : {
+      "image" : "./../../../../tiled/packed/materials/rustyblock.png"
+    },
+    "58" : {
+      "image" : "./../../../../tiled/packed/materials/blaststone.png"
+    },
+    "59" : {
+      "image" : "./../../../../tiled/packed/materials/silverblock.png"
+    },
+    "6" : {
+      "image" : "./../../../../tiled/packed/materials/darksmoothstone.png"
+    },
+    "60" : {
+      "image" : "./../../../../tiled/packed/materials/limestone.png"
+    },
+    "61" : {
+      "image" : "./../../../../tiled/packed/materials/shroomblock.png"
+    },
+    "62" : {
+      "image" : "./../../../../tiled/packed/materials/magmarock.png"
+    },
+    "63" : {
+      "image" : "./../../../../tiled/packed/materials/tombbrick4.png"
+    },
+    "64" : {
+      "image" : "./../../../../tiled/packed/materials/sandstoneblock.png"
+    },
+    "65" : {
+      "image" : "./../../../../tiled/packed/materials/alienstripedblock.png"
+    },
+    "66" : {
+      "image" : "./../../../../tiled/packed/materials/tombbrick3.png"
+    },
+    "67" : {
+      "image" : "./../../../../tiled/packed/materials/temple3.png"
+    },
+    "68" : {
+      "image" : "./../../../../tiled/packed/materials/plate.png"
+    },
+    "69" : {
+      "image" : "./../../../../tiled/packed/materials/neonblock.png"
+    },
+    "7" : {
+      "image" : "./../../../../tiled/packed/materials/brick.png"
+    },
+    "70" : {
+      "image" : "./../../../../tiled/packed/materials/mediummetal.png"
+    },
+    "71" : {
+      "image" : "./../../../../tiled/packed/materials/woodpanelling.png"
+    },
+    "72" : {
+      "image" : "./../../../../tiled/packed/materials/candyblock.png"
+    },
+    "73" : {
+      "image" : "./../../../../tiled/packed/materials/wicker.png"
+    },
+    "74" : {
+      "image" : "./../../../../tiled/packed/materials/sewage.png"
+    },
+    "75" : {
+      "image" : "./../../../../tiled/packed/materials/dirt.png"
+    },
+    "76" : {
+      "image" : "./../../../../tiled/packed/materials/clay.png"
+    },
+    "77" : {
+      "image" : "./../../../../tiled/packed/materials/obsidian.png"
+    },
+    "78" : {
+      "image" : "./../../../../tiled/packed/materials/mossypackeddirt.png"
+    },
+    "79" : {
+      "image" : "./../../../../tiled/packed/materials/hazard.png"
+    },
+    "8" : {
+      "image" : "./../../../../tiled/packed/materials/throwingblock.png"
+    },
+    "80" : {
+      "image" : "./../../../../tiled/packed/materials/slime.png"
+    },
+    "81" : {
+      "image" : "./../../../../tiled/packed/materials/woodenwindow1.png"
+    },
+    "82" : {
+      "image" : "./../../../../tiled/packed/materials/rock03.png"
+    },
+    "83" : {
+      "image" : "./../../../../tiled/packed/materials/rock20.png"
+    },
+    "84" : {
+      "image" : "./../../../../tiled/packed/materials/coconutblock.png"
+    },
+    "85" : {
+      "image" : "./../../../../tiled/packed/materials/glass.png"
+    },
+    "86" : {
+      "image" : "./../../../../tiled/packed/materials/temple4.png"
+    },
+    "87" : {
+      "image" : "./../../../../tiled/packed/materials/sand.png"
+    },
+    "88" : {
+      "image" : "./../../../../tiled/packed/materials/snow.png"
+    },
+    "89" : {
+      "image" : "./../../../../tiled/packed/materials/wallpaper.png"
+    },
+    "9" : {
+      "image" : "./../../../../tiled/packed/materials/goldblock.png"
+    },
+    "90" : {
+      "image" : "./../../../../tiled/packed/materials/ornatewall.png"
+    },
+    "91" : {
+      "image" : "./../../../../tiled/packed/materials/outpostwall1.png"
+    },
+    "92" : {
+      "image" : "./../../../../tiled/packed/materials/frozenwater.png"
+    },
+    "93" : {
+      "image" : "./../../../../tiled/packed/materials/bookpiles.png"
+    },
+    "94" : {
+      "image" : "./../../../../tiled/packed/materials/smoothmetal.png"
+    },
+    "95" : {
+      "image" : "./../../../../tiled/packed/materials/sand2.png"
+    },
+    "96" : {
+      "image" : "./../../../../tiled/packed/materials/cactiblock.png"
+    },
+    "97" : {
+      "image" : "./../../../../tiled/packed/materials/spidersilkblock.png"
+    },
+    "98" : {
+      "image" : "./../../../../tiled/packed/materials/redtoyblock.png"
+    },
+    "99" : {
+      "image" : "./../../../../tiled/packed/materials/rock19.png"
+    }
+  },
+  "tilewidth" : 16
+}

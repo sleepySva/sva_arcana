@@ -1,0 +1,25 @@
+{
+  "objectName" : "monarch_deco_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A giant black and white cube display.",
+  "shortdescription" : "Giant Abstract Cube",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "monarch_deco_1.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

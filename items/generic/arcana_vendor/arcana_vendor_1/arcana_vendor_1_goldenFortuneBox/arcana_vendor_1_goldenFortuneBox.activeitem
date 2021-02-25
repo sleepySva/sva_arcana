@@ -1,0 +1,25 @@
+{
+  "itemName" : "arcana_vendor_1_goldenFortuneBox",
+  "price" : 10000,
+  "rarity" : "Rare",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "arcana_vendor_1_goldenFortuneBox.png",
+  "description" : "Open this to recieve a mysterious reward!",
+  "shortdescription" : "Golden Fortune Box",
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "twoHanded" : true,
+  
+  "animation" : "arcana_vendor_1_goldenFortuneBox.animation",
+  "animationCustom" : {},
+  "scripts" : ["arcana_vendor_1_goldenFortuneBox.lua"],
+  
+  "fireTime" : 1.0,
+  "fireOffset" : [0.5, 0.0],
+
+  "treasure" : {
+    "pool" : "arcana_vendor_1_goldenFortuneBox",
+    "level" : 1
+  }
+}

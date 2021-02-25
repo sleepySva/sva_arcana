@@ -1,0 +1,21 @@
+{
+  "materialId" : 16591,
+  "materialName" : "arcana_tile11",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile11",
+  "description" : "A magiwood log. Good for building simple structures.",
+  "shortdescription" : "Magiwood Log",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/rowtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile11.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1799
+  }
+}

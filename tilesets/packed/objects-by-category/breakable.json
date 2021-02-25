@@ -1,0 +1,3548 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/breakable",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 310,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A highly refractive prism.",
+      "//name" : "prismrock3",
+      "//shortdescription" : "Prism Crystal",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prismrock3",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A smashable crystal. Time to get breaking bad.",
+      "//name" : "smashcrystal",
+      "//shortdescription" : "Smashable Crystal",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashcrystal"
+    },
+    "10" : {
+      "//description" : "A tall, dusty pot that smells of bird poop. Maybe it's smashable.",
+      "//name" : "talljar1",
+      "//shortdescription" : "Tall Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "talljar1",
+      "tilesetDirection" : "right"
+    },
+    "100" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2_orientation3",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    },
+    "101" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2_orientation4",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    },
+    "102" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2_orientation5",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    },
+    "103" : {
+      "//description" : "A crystalline deposit. Shiny.",
+      "//name" : "crystallinebush4",
+      "//shortdescription" : "Crystalline Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystallinebush4",
+      "tilesetDirection" : "right"
+    },
+    "104" : {
+      "//description" : "A leafy plant.",
+      "//name" : "junglebush15",
+      "//shortdescription" : "Leafy Plant",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush15",
+      "tilesetDirection" : "right"
+    },
+    "105" : {
+      "//description" : "A weird jumble of cells.",
+      "//name" : "cellstructure3",
+      "//shortdescription" : "Cell Structure",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cellstructure3"
+    },
+    "106" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush4",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush4",
+      "tilesetDirection" : "right"
+    },
+    "107" : {
+      "//name" : "hecklight2",
+      "invalid" : "true"
+    },
+    "108" : {
+      "//name" : "hecklight2_orientation2",
+      "invalid" : "true"
+    },
+    "109" : {
+      "//name" : "hecklight2_orientation3",
+      "invalid" : "true"
+    },
+    "11" : {
+      "//description" : "A wicker basket. Maybe it's got cool stuff inside!",
+      "//name" : "wickerbasket3",
+      "//shortdescription" : "Tall Wicker Basket",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket3"
+    },
+    "110" : {
+      "//name" : "hecklight2_orientation4",
+      "invalid" : "true"
+    },
+    "111" : {
+      "//description" : "A crispy coral shrub.",
+      "//name" : "embercoral2",
+      "//shortdescription" : "Ember Coral",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "embercoral2"
+    },
+    "112" : {
+      "//description" : "An icy sphere. Smash it before it melts!",
+      "//name" : "icesphere3",
+      "//shortdescription" : "Ice Sphere",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icesphere3"
+    },
+    "113" : {
+      "//description" : "It's a root.",
+      "//name" : "swamproot5",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "swamproot5",
+      "tilesetDirection" : "right"
+    },
+    "114" : {
+      "//description" : "A pile of bones, prime for smashing.",
+      "//name" : "smashbones1",
+      "//shortdescription" : "Bone Pile",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashbones1"
+    },
+    "115" : {
+      "//description" : "A patch of tall grass. Be sure to check for critters!",
+      "//name" : "tallgrass4",
+      "//shortdescription" : "Tall Grass",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tallgrass4"
+    },
+    "116" : {
+      "//description" : "A divine, colourful bush.",
+      "//name" : "colourfulbush3",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "colourfulbush3",
+      "tilesetDirection" : "right"
+    },
+    "117" : {
+      "//description" : "A crystalline deposit. Shiny.",
+      "//name" : "crystalcavebush1",
+      "//shortdescription" : "Crystalline Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystalcavebush1",
+      "tilesetDirection" : "right"
+    },
+    "118" : {
+      "//description" : "A tiny house. Who lives here?",
+      "//name" : "smallhouse6",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse6",
+      "tilesetDirection" : "right"
+    },
+    "119" : {
+      "//description" : "A snow drift.",
+      "//name" : "snowdrift4",
+      "//shortdescription" : "Snowdrift",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "snowdrift4"
+    },
+    "12" : {
+      "//description" : "A tiny clock tower. Save the clock tower!",
+      "//name" : "smallclocktower",
+      "//shortdescription" : "Tiny Clock Tower",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "smallclocktower",
+      "tilesetDirection" : "right"
+    },
+    "120" : {
+      "//description" : "A highly refractive prism.",
+      "//name" : "prismrock2",
+      "//shortdescription" : "Prism Crystal",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prismrock2",
+      "tilesetDirection" : "right"
+    },
+    "121" : {
+      "//description" : "A cluster of rusted metal. Watch out for sharp edges.",
+      "//name" : "rustbush4",
+      "//shortdescription" : "Rusty Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rustbush4",
+      "tilesetDirection" : "right"
+    },
+    "122" : {
+      "//description" : "A dark rock.",
+      "//name" : "shadowrock1",
+      "//shortdescription" : "Dark rock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shadowrock1",
+      "tilesetDirection" : "right"
+    },
+    "123" : {
+      "//description" : "A sinister light from hive.",
+      "//name" : "hivelight2",
+      "//shortdescription" : "Small Hive Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hivelight2"
+    },
+    "124" : {
+      "//description" : "A sinister light from hive.",
+      "//name" : "hivelight2_orientation2",
+      "//shortdescription" : "Small Hive Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hivelight2"
+    },
+    "125" : {
+      "//description" : "A sinister light from hive.",
+      "//name" : "hivelight2_orientation3",
+      "//shortdescription" : "Small Hive Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hivelight2"
+    },
+    "126" : {
+      "//description" : "A sinister light from hive.",
+      "//name" : "hivelight2_orientation4",
+      "//shortdescription" : "Small Hive Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "hivelight2"
+    },
+    "127" : {
+      "//description" : "A crystalline deposit. Shiny.",
+      "//name" : "crystallinebush1",
+      "//shortdescription" : "Crystalline Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystallinebush1",
+      "tilesetDirection" : "right"
+    },
+    "128" : {
+      "//description" : "A fleshy bush. Squishy.",
+      "//name" : "fleshbush5",
+      "//shortdescription" : "Flesh Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "fleshbush5",
+      "tilesetDirection" : "right"
+    },
+    "129" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush1",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush1",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A coiling plant, resembling DNA.",
+      "//name" : "dnaplant1",
+      "//shortdescription" : "DNA Plant",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dnaplant1"
+    },
+    "130" : {
+      "//description" : "Some kind of fossil, all covered in mud and rock. It's going to need careful cleaning to get it out in one piece",
+      "//name" : "dirtyfossil1",
+      "//shortdescription" : "Fossil",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirtyfossil1",
+      "tilesetDirection" : "right"
+    },
+    "131" : {
+      "//description" : "A miniature house. Don't knock too hard!",
+      "//name" : "smallhouse11",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse11",
+      "tilesetDirection" : "right"
+    },
+    "132" : {
+      "//description" : "A seashell!",
+      "//name" : "seashell7",
+      "//shortdescription" : "Seashell",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "seashell7",
+      "tilesetDirection" : "right"
+    },
+    "133" : {
+      "//description" : "This jar has seen better days. It looks smashable...",
+      "//name" : "birdjar1",
+      "//shortdescription" : "Fancy Temple Jar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "birdjar1",
+      "tilesetDirection" : "right"
+    },
+    "134" : {
+      "//description" : "A weird jumble of cells.",
+      "//name" : "cellstructure5",
+      "//shortdescription" : "Cell Structure",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cellstructure5"
+    },
+    "135" : {
+      "//description" : "A vile bubble of slime. Yuk.",
+      "//name" : "slimeblob5",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob5"
+    },
+    "136" : {
+      "//description" : "A decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassicsmall1",
+      "//shortdescription" : "Small Fancy Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "vaseclassicsmall1",
+      "tilesetDirection" : "right"
+    },
+    "137" : {
+      "//description" : "A seashell!",
+      "//name" : "seashell2",
+      "//shortdescription" : "Seashell",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "seashell2",
+      "tilesetDirection" : "right"
+    },
+    "138" : {
+      "//description" : "It's a root.",
+      "//name" : "swamproot3",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "swamproot3",
+      "tilesetDirection" : "right"
+    },
+    "139" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "iceshard4",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "iceshard4"
+    },
+    "14" : {
+      "//description" : "A flowery bush.",
+      "//name" : "springbush5",
+      "//shortdescription" : "Flowery Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "springbush5",
+      "tilesetDirection" : "right"
+    },
+    "140" : {
+      "//description" : "It's a root.",
+      "//name" : "rootbush3",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rootbush3",
+      "tilesetDirection" : "right"
+    },
+    "141" : {
+      "//description" : "A decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassicsmall2",
+      "//shortdescription" : "Small Striped Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "vaseclassicsmall2",
+      "tilesetDirection" : "right"
+    },
+    "142" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "143" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1_orientation2",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "144" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1_orientation3",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "145" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1_orientation4",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "146" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1_orientation5",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "147" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush3",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush3",
+      "tilesetDirection" : "right"
+    },
+    "148" : {
+      "//description" : "A breakable growth. Wonder what's inside.",
+      "//name" : "tentaclepopmed",
+      "//shortdescription" : "Medium Tentacle Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclepopmed"
+    },
+    "149" : {
+      "//description" : "What an ugly jar.",
+      "//name" : "birdjar2",
+      "//shortdescription" : "Ugly Temple Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "birdjar2",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A tiny basket made of wicker.",
+      "//name" : "wickerbasket1",
+      "//shortdescription" : "Small Wicker Basket",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket1"
+    },
+    "150" : {
+      "//description" : "Some kind of fossil, all covered in mud and rock. It's going to need careful cleaning to get it out in one peice",
+      "//name" : "dirtyfossil6",
+      "//shortdescription" : "Fossil",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirtyfossil6",
+      "tilesetDirection" : "right"
+    },
+    "151" : {
+      "//description" : "A seashell!",
+      "//name" : "seashell8",
+      "//shortdescription" : "Seashell",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "seashell8",
+      "tilesetDirection" : "right"
+    },
+    "152" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "iceshard5",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "iceshard5"
+    },
+    "153" : {
+      "//description" : "A colourful bush of high aesthetic value.",
+      "//name" : "colourfulbush4",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "colourfulbush4",
+      "tilesetDirection" : "right"
+    },
+    "154" : {
+      "//description" : "Little house on the prairie. Or wherever you are.",
+      "//name" : "smallhouse8",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse8",
+      "tilesetDirection" : "right"
+    },
+    "155" : {
+      "//description" : "A familiar-shaped jar. It looks angry and smashable.",
+      "//name" : "ashjar3",
+      "//shortdescription" : "Familiar Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ashjar3",
+      "tilesetDirection" : "right"
+    },
+    "156" : {
+      "//description" : "A highly refractive prism.",
+      "//name" : "prismrock1",
+      "//shortdescription" : "Prism Crystal",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prismrock1",
+      "tilesetDirection" : "right"
+    },
+    "157" : {
+      "//description" : "A shard of crystalised tar",
+      "//name" : "tarcrystal2",
+      "//shortdescription" : "Tar Shard",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tarcrystal2"
+    },
+    "158" : {
+      "//description" : "A dark rock.",
+      "//name" : "shadowrock3",
+      "//shortdescription" : "Dark rock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shadowrock3",
+      "tilesetDirection" : "right"
+    },
+    "159" : {
+      "//description" : "A leafy plant.",
+      "//name" : "junglebush13",
+      "//shortdescription" : "Leafy Plant",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush13",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "Tall, leafy reeds.",
+      "//name" : "reedseed3",
+      "//shortdescription" : "Reed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "reedseed3",
+      "tilesetDirection" : "right"
+    },
+    "160" : {
+      "//description" : "A lavish bird-shaped jar. Maybe I can smash it...",
+      "//name" : "bigjar1",
+      "//shortdescription" : "Big Bird Jar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bigjar1",
+      "tilesetDirection" : "right"
+    },
+    "161" : {
+      "//description" : "A pile of mossy stones.",
+      "//name" : "mistprimer",
+      "//shortdescription" : "Pile of Mossy Stones",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "mistprimer",
+      "tilesetDirection" : "right"
+    },
+    "162" : {
+      "//description" : "A shard of crystalised tar",
+      "//name" : "tarcrystal3",
+      "//shortdescription" : "Tar Shard",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tarcrystal3"
+    },
+    "163" : {
+      "//description" : "A cluster of rusted metal. Watch out for sharp edges.",
+      "//name" : "rustbush3",
+      "//shortdescription" : "Rusty Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rustbush3",
+      "tilesetDirection" : "right"
+    },
+    "164" : {
+      "//description" : "A cracked rock full of gold.",
+      "//name" : "goldrocksmall",
+      "//shortdescription" : "Small Gold Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "goldrocksmall"
+    },
+    "165" : {
+      "//description" : "A miniature house. Don't knock too hard!",
+      "//name" : "smallhouse7",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse7",
+      "tilesetDirection" : "right"
+    },
+    "166" : {
+      "//description" : "A fragile thin urn made from clay.",
+      "//name" : "planturn2",
+      "//shortdescription" : "Thin Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planturn2",
+      "tilesetDirection" : "right"
+    },
+    "167" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "geometricshard5",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "geometricshard5"
+    },
+    "168" : {
+      "//name" : "heckbush5",
+      "invalid" : "true"
+    },
+    "169" : {
+      "//description" : "Part of a ribcage. It won't be intact for long.",
+      "//name" : "smashbones4",
+      "//shortdescription" : "Bone Pile",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashbones4"
+    },
+    "17" : {
+      "//name" : "heckbush1",
+      "invalid" : "true"
+    },
+    "170" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush2",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush2",
+      "tilesetDirection" : "right"
+    },
+    "171" : {
+      "//description" : "A vile bubble of slime. Yuk.",
+      "//name" : "slimeblob3",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob3"
+    },
+    "172" : {
+      "//description" : "A cracked rock full of diamond.",
+      "//name" : "diamondrocksmall",
+      "//shortdescription" : "Small Diamond Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "diamondrocksmall"
+    },
+    "173" : {
+      "//description" : "Knock it down!",
+      "//name" : "bowlingpin",
+      "//shortdescription" : "Bowling Pin",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bowlingpin"
+    },
+    "174" : {
+      "//description" : "-todo-",
+      "//name" : "buglike3",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "buglike3",
+      "tilesetDirection" : "right"
+    },
+    "175" : {
+      "//description" : "A giant red flower. Pretty AND intimidating!",
+      "//name" : "giantflower4",
+      "//shortdescription" : "Giant Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "giantflower4"
+    },
+    "176" : {
+      "//description" : "Some kind of fossil, all covered in mud and rock. It's going to need careful cleaning to get it out in one peice",
+      "//name" : "dirtyfossil3",
+      "//shortdescription" : "Fossil",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirtyfossil3",
+      "tilesetDirection" : "right"
+    },
+    "177" : {
+      "//description" : "A crispy coral shrub.",
+      "//name" : "embercoral4",
+      "//shortdescription" : "Ember Coral",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "embercoral4"
+    },
+    "178" : {
+      "//name" : "heckbush4",
+      "invalid" : "true"
+    },
+    "179" : {
+      "//description" : "A crystalline deposit. Shiny.",
+      "//name" : "crystalcavebush4",
+      "//shortdescription" : "Crystalline Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystalcavebush4",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "It's a root.",
+      "//name" : "swamproot1",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "swamproot1",
+      "tilesetDirection" : "right"
+    },
+    "180" : {
+      "//description" : "An empty bottle of Oculemon nectar.",
+      "//name" : "smashabledrink3",
+      "//shortdescription" : "Empty Nectar Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink3",
+      "tilesetDirection" : "right"
+    },
+    "181" : {
+      "//description" : "-todo-",
+      "//name" : "buglike10",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "buglike10",
+      "tilesetDirection" : "right"
+    },
+    "182" : {
+      "//description" : "A vile bubble of slime. Yuk.",
+      "//name" : "slimeblob4",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob4"
+    },
+    "183" : {
+      "//description" : "Some kind of fossil, all covered in mud and rock. It's going to need careful cleaning to get it out in one peice",
+      "//name" : "dirtyfossil4",
+      "//shortdescription" : "Fossil",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirtyfossil4",
+      "tilesetDirection" : "right"
+    },
+    "184" : {
+      "//description" : "A tiny house. Who lives here?",
+      "//name" : "smallhouse1",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse1",
+      "tilesetDirection" : "right"
+    },
+    "185" : {
+      "//description" : "A shard of crystalised tar",
+      "//name" : "tarcrystal5",
+      "//shortdescription" : "Tar Shard",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tarcrystal5"
+    },
+    "186" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "frozenmistprimer",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frozenmistprimer",
+      "tilesetDirection" : "right"
+    },
+    "187" : {
+      "//description" : "Some sort of eggs.",
+      "//name" : "hivebush1",
+      "//shortdescription" : "Hive Eggs",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivebush1",
+      "tilesetDirection" : "right"
+    },
+    "188" : {
+      "//description" : "Little house on the prairie. Or wherever you are.",
+      "//name" : "smallhouse4",
+      "//shortdescription" : "Tiny Flats",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse4",
+      "tilesetDirection" : "right"
+    },
+    "189" : {
+      "//description" : "An oddly shaped egg sac.",
+      "//name" : "hivebush4",
+      "//shortdescription" : "Hive Egg Sac",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivebush4",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "iceshard2",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "iceshard2"
+    },
+    "190" : {
+      "//description" : "An empty bottle of dandelion root pop.",
+      "//name" : "smashabledrink2",
+      "//shortdescription" : "Empty Root Pop Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink2",
+      "tilesetDirection" : "right"
+    },
+    "191" : {
+      "//description" : "A bird-shaped jar full of ash. I wanna break it.",
+      "//name" : "ashjar1",
+      "//shortdescription" : "Bird Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ashjar1",
+      "tilesetDirection" : "right"
+    },
+    "192" : {
+      "//description" : "-todo-",
+      "//name" : "buglike6",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "buglike6",
+      "tilesetDirection" : "right"
+    },
+    "193" : {
+      "//description" : "A cracked rock full of gold.",
+      "//name" : "goldrock",
+      "//shortdescription" : "Gold Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "goldrock"
+    },
+    "194" : {
+      "//description" : "A dark rock.",
+      "//name" : "shadowrock4",
+      "//shortdescription" : "Dark rock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shadowrock4",
+      "tilesetDirection" : "right"
+    },
+    "195" : {
+      "//description" : "A giant red flower. Pretty AND intimidating!",
+      "//name" : "giantflower3",
+      "//shortdescription" : "Giant Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "giantflower3"
+    },
+    "196" : {
+      "//description" : "-todo-",
+      "//name" : "buglike2",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "buglike2",
+      "tilesetDirection" : "right"
+    },
+    "197" : {
+      "//description" : "A wicker basket. Maybe it's got cool stuff inside!",
+      "//name" : "wickerbasket5",
+      "//shortdescription" : "Large Wicker Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket5"
+    },
+    "198" : {
+      "//name" : "hecklight1",
+      "invalid" : "true"
+    },
+    "199" : {
+      "//name" : "hecklight1_orientation2",
+      "invalid" : "true"
+    },
+    "2" : {
+      "//description" : "This looks like something I made in pottery class. Crude. I should smash it.",
+      "//name" : "talljar2",
+      "//shortdescription" : "Crude Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "talljar2",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A large breakable capsule. Wonder what's inside.",
+      "//name" : "capsulebig",
+      "//shortdescription" : "Large Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "capsulebig"
+    },
+    "200" : {
+      "//name" : "hecklight1_orientation3",
+      "invalid" : "true"
+    },
+    "201" : {
+      "//name" : "hecklight1_orientation4",
+      "invalid" : "true"
+    },
+    "202" : {
+      "//name" : "hecklight1_orientation5",
+      "invalid" : "true"
+    },
+    "203" : {
+      "//description" : "Little house on the prairie. Or wherever you are.",
+      "//name" : "smallhouse10",
+      "//shortdescription" : "Tiny Flats",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse10",
+      "tilesetDirection" : "right"
+    },
+    "204" : {
+      "//description" : "A decorative clay pot. Wonder what's inside?",
+      "//name" : "claypot3",
+      "//shortdescription" : "Wide Clay Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "claypot3"
+    },
+    "205" : {
+      "//description" : "A crispy coral shrub.",
+      "//name" : "embercoral1",
+      "//shortdescription" : "Ember Coral",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "embercoral1"
+    },
+    "206" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "geometricshard2",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "geometricshard2"
+    },
+    "207" : {
+      "//description" : "A snow drift.",
+      "//name" : "snowdrift2",
+      "//shortdescription" : "Snowdrift",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "snowdrift2"
+    },
+    "208" : {
+      "//description" : "A decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassicmedium1",
+      "//shortdescription" : "Fancy Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "vaseclassicmedium1",
+      "tilesetDirection" : "right"
+    },
+    "209" : {
+      "//description" : "A crystalline deposit. Shiny.",
+      "//name" : "crystallinebush3",
+      "//shortdescription" : "Crystalline Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystallinebush3",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A cracked rock full of diamond.",
+      "//name" : "diamondrock",
+      "//shortdescription" : "Diamond Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "diamondrock"
+    },
+    "210" : {
+      "//description" : "A leafy plant.",
+      "//name" : "junglebush16",
+      "//shortdescription" : "Leafy Plant",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush16",
+      "tilesetDirection" : "right"
+    },
+    "211" : {
+      "//description" : "Smoke billows from this point.",
+      "//name" : "smokeprimer",
+      "//shortdescription" : "Smoke",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "smokeprimer",
+      "tilesetDirection" : "right"
+    },
+    "212" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush7",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush7",
+      "tilesetDirection" : "right"
+    },
+    "213" : {
+      "//description" : "A blueprint encased in a vile bubble of slime.",
+      "//name" : "blueprintblob",
+      "//shortdescription" : "Blueprint Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "blueprintblob"
+    },
+    "214" : {
+      "//description" : "A crumbling old pot with patterned markings. It looks smashable.",
+      "//name" : "midjar1",
+      "//shortdescription" : "Old Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "midjar1",
+      "tilesetDirection" : "right"
+    },
+    "215" : {
+      "//description" : "Tall, leafy reeds.",
+      "//name" : "reedseed5",
+      "//shortdescription" : "Reed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "reedseed5",
+      "tilesetDirection" : "right"
+    },
+    "216" : {
+      "//description" : "A coiling plant, like DNA.",
+      "//name" : "dnaplant2",
+      "//shortdescription" : "DNA Plant",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dnaplant2"
+    },
+    "217" : {
+      "//description" : "A seashell!",
+      "//name" : "seashell1",
+      "//shortdescription" : "Seashell",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "seashell1",
+      "tilesetDirection" : "right"
+    },
+    "218" : {
+      "//description" : "A colourful bush that may secretly be a Floran in disguise.",
+      "//name" : "colourfulbush5",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "colourfulbush5",
+      "tilesetDirection" : "right"
+    },
+    "219" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush6",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush6",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A shard of crystalised tar",
+      "//name" : "tarcrystal4",
+      "//shortdescription" : "Tar Shard",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tarcrystal4"
+    },
+    "220" : {
+      "//description" : "A large decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassiclarge1",
+      "//shortdescription" : "Large Striped Vase",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "vaseclassiclarge1",
+      "tilesetDirection" : "right"
+    },
+    "221" : {
+      "//description" : "A decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassicmedium2",
+      "//shortdescription" : "Classic Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "vaseclassicmedium2",
+      "tilesetDirection" : "right"
+    },
+    "222" : {
+      "//description" : "A breakable growth. Wonder what's inside.",
+      "//name" : "tentaclepopsmall",
+      "//shortdescription" : "Medium Tentacle Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclepopsmall"
+    },
+    "223" : {
+      "//description" : "A bunny-shaped jar full of ash. Maybe I can smash it.",
+      "//name" : "ashjar2",
+      "//shortdescription" : "Bunny Jar",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ashjar2",
+      "tilesetDirection" : "right"
+    },
+    "224" : {
+      "//description" : "A weird jumble of cells.",
+      "//name" : "cellstructure1",
+      "//shortdescription" : "Cell Structure",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cellstructure1"
+    },
+    "225" : {
+      "//description" : "Smoke billows from this point.",
+      "//name" : "protectoratesmokeprimer",
+      "//shortdescription" : "Smoke",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "protectoratesmokeprimer",
+      "tilesetDirection" : "right"
+    },
+    "226" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush8",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush8",
+      "tilesetDirection" : "right"
+    },
+    "227" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush10",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush10",
+      "tilesetDirection" : "right"
+    },
+    "228" : {
+      "//description" : "A seashell!",
+      "//name" : "seashell3",
+      "//shortdescription" : "Seashell",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "seashell3",
+      "tilesetDirection" : "right"
+    },
+    "229" : {
+      "//description" : "A fully intact ribcage. Not for long.",
+      "//name" : "smashbones2",
+      "//shortdescription" : "Bone Pile",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashbones2"
+    },
+    "23" : {
+      "//description" : "A small, dark vase. Looks pretty smashable.",
+      "//name" : "shadowurnsmall2",
+      "//shortdescription" : "Small Dark Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "shadowurnsmall2",
+      "tilesetDirection" : "right"
+    },
+    "230" : {
+      "//description" : "-todo-",
+      "//name" : "buglike5",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "buglike5",
+      "tilesetDirection" : "right"
+    },
+    "231" : {
+      "//description" : "-todo-",
+      "//name" : "buglike7",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "buglike7",
+      "tilesetDirection" : "right"
+    },
+    "232" : {
+      "//description" : "-todo-",
+      "//name" : "buglike8",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "buglike8",
+      "tilesetDirection" : "right"
+    },
+    "233" : {
+      "//description" : "-todo-",
+      "//name" : "buglike9",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "buglike9",
+      "tilesetDirection" : "right"
+    },
+    "234" : {
+      "//description" : "A weird jumble of cells.",
+      "//name" : "cellstructure4",
+      "//shortdescription" : "Cell Structure",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cellstructure4"
+    },
+    "235" : {
+      "//description" : "A cute, colourful bush.",
+      "//name" : "colourfulbush2",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "colourfulbush2",
+      "tilesetDirection" : "right"
+    },
+    "236" : {
+      "//description" : "A crispy coral shrub.",
+      "//name" : "embercoral3",
+      "//shortdescription" : "Ember Coral",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "embercoral3"
+    },
+    "237" : {
+      "//description" : "A crispy coral shrub.",
+      "//name" : "embercoral5",
+      "//shortdescription" : "Ember Coral",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "embercoral5"
+    },
+    "238" : {
+      "//description" : "A crystalline deposit. Shiny.",
+      "//name" : "crystalcavebush3",
+      "//shortdescription" : "Crystalline Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystalcavebush3",
+      "tilesetDirection" : "right"
+    },
+    "239" : {
+      "//description" : "A dark rock.",
+      "//name" : "shadowrock5",
+      "//shortdescription" : "Dark rock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shadowrock5",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A dark rock.",
+      "//name" : "shadowrock2",
+      "//shortdescription" : "Dark rock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shadowrock2",
+      "tilesetDirection" : "right"
+    },
+    "240" : {
+      "//description" : "A large, dark vase. Looks pretty smashable.",
+      "//name" : "shadowurnlarge2",
+      "//shortdescription" : "Large Shadow Urn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shadowurnlarge2",
+      "tilesetDirection" : "right"
+    },
+    "241" : {
+      "//description" : "A small, dark vase. Looks pretty smashable.",
+      "//name" : "shadowurnsmall1",
+      "//shortdescription" : "Small Shadow Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "shadowurnsmall1",
+      "tilesetDirection" : "right"
+    },
+    "242" : {
+      "//description" : "A fleshy bush. Squishy.",
+      "//name" : "fleshbush1",
+      "//shortdescription" : "Flesh Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "fleshbush1",
+      "tilesetDirection" : "right"
+    },
+    "243" : {
+      "//description" : "A flowery bush.",
+      "//name" : "springbush3",
+      "//shortdescription" : "Flowery Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "springbush3",
+      "tilesetDirection" : "right"
+    },
+    "244" : {
+      "//description" : "A fleshy bush. Squishy.",
+      "//name" : "fleshbush3",
+      "//shortdescription" : "Flesh Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "fleshbush3",
+      "tilesetDirection" : "right"
+    },
+    "245" : {
+      "//description" : "A fleshy bush. Squishy.",
+      "//name" : "fleshbush4",
+      "//shortdescription" : "Flesh Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "fleshbush4",
+      "tilesetDirection" : "right"
+    },
+    "246" : {
+      "//description" : "A fleshy bush. Squishy.",
+      "//name" : "fleshbush6",
+      "//shortdescription" : "Flesh Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "fleshbush6",
+      "tilesetDirection" : "right"
+    },
+    "247" : {
+      "//name" : "heckbush2",
+      "invalid" : "true"
+    },
+    "248" : {
+      "//description" : "Some kind of fossil, all covered in mud and rock. It's going to need careful cleaning to get it out in one peice",
+      "//name" : "dirtyfossil7",
+      "//shortdescription" : "Fossil",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirtyfossil7",
+      "tilesetDirection" : "right"
+    },
+    "249" : {
+      "//description" : "A giant red flower. Pretty AND intimidating!",
+      "//name" : "giantflower1",
+      "//shortdescription" : "Giant Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "giantflower1"
+    },
+    "25" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2b",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2b",
+      "tilesetDirection" : "right"
+    },
+    "250" : {
+      "//description" : "Smoke",
+      "//name" : "protectoratesmokegen",
+      "//shortdescription" : "Smoke",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "protectoratesmokegen",
+      "tilesetDirection" : "right"
+    },
+    "251" : {
+      "//description" : "A tiny communal building. Who visits it?",
+      "//name" : "smallchurch",
+      "//shortdescription" : "Tiny Building",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "smallchurch",
+      "tilesetDirection" : "right"
+    },
+    "252" : {
+      "//description" : "A miniature house. Don't knock too hard!",
+      "//name" : "smallhouse2",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse2",
+      "tilesetDirection" : "right"
+    },
+    "253" : {
+      "//description" : "A miniature house. Don't knock too hard!",
+      "//name" : "smallwindmill",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallwindmill",
+      "tilesetDirection" : "right"
+    },
+    "254" : {
+      "//name" : "heckbush3",
+      "invalid" : "true"
+    },
+    "255" : {
+      "//name" : "heckbush8",
+      "invalid" : "true"
+    },
+    "256" : {
+      "//name" : "heckbush9",
+      "invalid" : "true"
+    },
+    "257" : {
+      "//description" : "An oddly shaped egg sac.",
+      "//name" : "hivebush2",
+      "//shortdescription" : "Hive Egg Sac",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivebush2",
+      "tilesetDirection" : "right"
+    },
+    "258" : {
+      "//description" : "Some sort of eggs.",
+      "//name" : "hivebush3",
+      "//shortdescription" : "Hive Eggs",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivebush3",
+      "tilesetDirection" : "right"
+    },
+    "259" : {
+      "//description" : "An oddly shaped egg sac.",
+      "//name" : "hivebush5",
+      "//shortdescription" : "Hive Egg Sac",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivebush5",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2b_orientation1",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2b",
+      "tilesetDirection" : "right"
+    },
+    "260" : {
+      "//description" : "A pulsating, fleshy light.",
+      "//name" : "hivelight1",
+      "//shortdescription" : "Hive Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivelight1",
+      "tilesetDirection" : "right"
+    },
+    "261" : {
+      "//description" : "A pulsating, fleshy light.",
+      "//name" : "hivelight1_orientation2",
+      "//shortdescription" : "Hive Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivelight1",
+      "tilesetDirection" : "right"
+    },
+    "262" : {
+      "//description" : "A pulsating, fleshy light.",
+      "//name" : "hivelight1_orientation3",
+      "//shortdescription" : "Hive Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivelight1",
+      "tilesetDirection" : "right"
+    },
+    "263" : {
+      "//description" : "A pulsating, fleshy light.",
+      "//name" : "hivelight1_orientation4",
+      "//shortdescription" : "Hive Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivelight1",
+      "tilesetDirection" : "left"
+    },
+    "264" : {
+      "//description" : "A pulsating, fleshy light.",
+      "//name" : "hivelight1_orientation5",
+      "//shortdescription" : "Hive Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hivelight1",
+      "tilesetDirection" : "left"
+    },
+    "265" : {
+      "//description" : "An icy sphere. Smash it before it melts!",
+      "//name" : "icesphere1",
+      "//shortdescription" : "Ice Sphere",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icesphere1"
+    },
+    "266" : {
+      "//description" : "A putrid, horrible flower.",
+      "//name" : "junglebush17",
+      "//shortdescription" : "Putrid Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush17",
+      "tilesetDirection" : "right"
+    },
+    "267" : {
+      "//description" : "A putrid, horrible flower.",
+      "//name" : "junglebush18",
+      "//shortdescription" : "Putrid Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush18",
+      "tilesetDirection" : "right"
+    },
+    "268" : {
+      "//description" : "A patch of tall grass. Be sure to check for critters!",
+      "//name" : "tallgrass2",
+      "//shortdescription" : "Tall Grass",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tallgrass2"
+    },
+    "269" : {
+      "//description" : "A patch of tall grass. Be sure to check for critters!",
+      "//name" : "tallgrass3",
+      "//shortdescription" : "Tall Grass",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tallgrass3"
+    },
+    "27" : {
+      "//description" : "A coiling plant, like DNA.",
+      "//name" : "dnaplant3",
+      "//shortdescription" : "DNA Plant",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dnaplant3"
+    },
+    "270" : {
+      "//description" : "A shard of crystallised tar",
+      "//name" : "tarcrystal1",
+      "//shortdescription" : "Tar Shard",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tarcrystal1"
+    },
+    "271" : {
+      "//description" : "It's a root.",
+      "//name" : "gasprimer",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "gasprimer",
+      "tilesetDirection" : "right"
+    },
+    "272" : {
+      "//description" : "A glob of dripping slime.",
+      "//name" : "ceilingslime2",
+      "//shortdescription" : "Dripping Slime",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "ceilingslime2",
+      "tilesetDirection" : "right"
+    },
+    "273" : {
+      "//description" : "A vile bubble of slime. Yuck.",
+      "//name" : "slimeblob1",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob1"
+    },
+    "274" : {
+      "//description" : "A cracked rock full of copper.",
+      "//name" : "copperrock",
+      "//shortdescription" : "Copper Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "copperrock"
+    },
+    "275" : {
+      "//description" : "A cracked rock full of platinum.",
+      "//name" : "platinumrocksmall",
+      "//shortdescription" : "Small Platinum Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "platinumrocksmall"
+    },
+    "276" : {
+      "//description" : "A stylishly dressed snowman.",
+      "//name" : "fancysnowman",
+      "//shortdescription" : "Fancy Snowman",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fancysnowman",
+      "tilesetDirection" : "right"
+    },
+    "277" : {
+      "//description" : "A snow drift.",
+      "//name" : "snowdrift3",
+      "//shortdescription" : "Snowdrift",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "snowdrift3"
+    },
+    "278" : {
+      "//description" : "A perfect little snowman.",
+      "//name" : "snowman",
+      "//shortdescription" : "Snowman",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "snowman",
+      "tilesetDirection" : "right"
+    },
+    "279" : {
+      "//description" : "A flowery bush.",
+      "//name" : "springbush1",
+      "//shortdescription" : "Flowery Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "springbush1",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A patch of tall grass. Be sure to check for critters!",
+      "//name" : "tallgrass1",
+      "//shortdescription" : "Tall Grass",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tallgrass1"
+    },
+    "280" : {
+      "//description" : "A flowery bush.",
+      "//name" : "springbush6",
+      "//shortdescription" : "Flowery Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "springbush6",
+      "tilesetDirection" : "right"
+    },
+    "281" : {
+      "//description" : "It's a root.",
+      "//name" : "rootbush2",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rootbush2",
+      "tilesetDirection" : "right"
+    },
+    "282" : {
+      "//description" : "It's a root.",
+      "//name" : "swamproot2",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "swamproot2",
+      "tilesetDirection" : "right"
+    },
+    "283" : {
+      "//description" : "It's a root.",
+      "//name" : "swamproot4",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "swamproot4",
+      "tilesetDirection" : "right"
+    },
+    "284" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "285" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3_orientation2",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "286" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3_orientation3",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "287" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3_orientation4",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "288" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3_orientation5",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "289" : {
+      "//description" : "Smoke Primer.",
+      "//name" : "smokegen",
+      "//shortdescription" : "Smoke",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "smokegen",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A vile bubble of slime. Yuk.",
+      "//name" : "slimeblob2",
+      "//shortdescription" : "Slime Blob",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "slimeblob2"
+    },
+    "290" : {
+      "//description" : "A bird's nest with an egg in it.",
+      "//name" : "birdsnest",
+      "//shortdescription" : "Bird's Nest",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "birdsnest"
+    },
+    "291" : {
+      "//description" : "Little flapping bugs appear to be moving inside this bush.",
+      "//name" : "butterflybush",
+      "//shortdescription" : "Butterfly Bush",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "butterflybush",
+      "tilesetDirection" : "right"
+    },
+    "292" : {
+      "//description" : "A breakable capsule. Wonder what's inside.",
+      "//name" : "capsulemed",
+      "//shortdescription" : "Medium Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "capsulemed"
+    },
+    "293" : {
+      "//description" : "A decorative clay pot. Wonder what's inside?",
+      "//name" : "claypot1",
+      "//shortdescription" : "Small Clay Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "claypot1"
+    },
+    "294" : {
+      "//description" : "A cracked clay pot. Wonder what's inside?",
+      "//name" : "claypot2",
+      "//shortdescription" : "Unusual Clay Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "claypot2"
+    },
+    "295" : {
+      "//description" : "A barrel full of radioactive material.",
+      "//name" : "metalbarrel2",
+      "//shortdescription" : "Radioactive Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "metalbarrel2",
+      "tilesetDirection" : "right"
+    },
+    "296" : {
+      "//description" : "An empty bottle of avesmingo cordial.",
+      "//name" : "smashabledrink1",
+      "//shortdescription" : "Empty Cordial Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink1",
+      "tilesetDirection" : "right"
+    },
+    "297" : {
+      "//description" : "An empty bottle of fancy water.",
+      "//name" : "smashabledrink5",
+      "//shortdescription" : "Empty Fancy Water Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink5",
+      "tilesetDirection" : "right"
+    },
+    "298" : {
+      "//description" : "This ancient pot is in remarkable shape considering how old it is.",
+      "//name" : "ancientpot3",
+      "//shortdescription" : "Wide Ancient Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientpot3",
+      "tilesetDirection" : "right"
+    },
+    "299" : {
+      "//description" : "This ancient pot is in remarkable shape considering how old it is.",
+      "//name" : "ancientpot1",
+      "//shortdescription" : "Ornamental Ancient Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientpot1",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Little glowing bugs appear to be living in this bush.",
+      "//name" : "fireflybush",
+      "//shortdescription" : "Firefly Bush",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fireflybush",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "300" : {
+      "//description" : "This ancient pot is in remarkable shape considering how old it is.",
+      "//name" : "ancientpot5",
+      "//shortdescription" : "Tall Ancient Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientpot5",
+      "tilesetDirection" : "right"
+    },
+    "301" : {
+      "//description" : "This ancient pot is in remarkable shape considering how old it is.",
+      "//name" : "ancientpot4",
+      "//shortdescription" : "Decorative Ancient Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientpot4",
+      "tilesetDirection" : "right"
+    },
+    "302" : {
+      "//description" : "This ancient pot is in remarkable shape considering how old it is.",
+      "//name" : "ancientpot2",
+      "//shortdescription" : "Rounded Ancient Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ancientpot2",
+      "tilesetDirection" : "right"
+    },
+    "303" : {
+      "//description" : "This ancient pot is in remarkable shape considering how old it is.",
+      "//name" : "ancientpot6",
+      "//shortdescription" : "Small Ancient Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "ancientpot6",
+      "tilesetDirection" : "right"
+    },
+    "304" : {
+      "//description" : "A large breakable capsule. Wonder what's inside.",
+      "//name" : "capsulespace",
+      "//shortdescription" : "Surface-Mounted Capsule",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "capsulespace"
+    },
+    "305" : {
+      "//description" : "A large breakable capsule. Wonder what's inside.",
+      "//name" : "capsulespace_orientation1",
+      "//shortdescription" : "Surface-Mounted Capsule",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "capsulespace"
+    },
+    "306" : {
+      "//description" : "A large breakable capsule. Wonder what's inside.",
+      "//name" : "capsulespace_orientation2",
+      "//shortdescription" : "Surface-Mounted Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "capsulespace"
+    },
+    "307" : {
+      "//description" : "A large breakable capsule. Wonder what's inside.",
+      "//name" : "capsulespace_orientation3",
+      "//shortdescription" : "Surface-Mounted Capsule",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "capsulespace"
+    },
+    "308" : {
+      "//description" : "A toxic waste barrel. Don't spill any!",
+      "//name" : "toxicwastebarrel",
+      "//shortdescription" : "Toxic Waste Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "toxicwastebarrel",
+      "tilesetDirection" : "right"
+    },
+    "309" : {
+      "//description" : "An explosive metal barrel. It looks dangerous.",
+      "//name" : "explosivebarrel",
+      "//shortdescription" : " Explosive Barrel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "explosivebarrel",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1_orientation2",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1_orientation3",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1_orientation4",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1_orientation5",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "Some kind of fossil, all covered in mud and rock. It's going to need careful cleaning to get it out in one peice",
+      "//name" : "dirtyfossil5",
+      "//shortdescription" : "Fossil",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirtyfossil5",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "Little house on the prairie. Or wherever you are.",
+      "//name" : "smallinn",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallinn",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "geometricshard1",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "geometricshard1"
+    },
+    "38" : {
+      "//description" : "A dark vase. Looks pretty smashable.",
+      "//name" : "shadowurnmedium1",
+      "//shortdescription" : "Medium Shadow Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "shadowurnmedium1",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A cluster of rusted metal. Watch out for sharp edges.",
+      "//name" : "rustbush2",
+      "//shortdescription" : "Rusty Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rustbush2",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "An icy sphere. Smash it before it melts!",
+      "//name" : "icesphere4",
+      "//shortdescription" : "Ice Sphere",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icesphere4"
+    },
+    "40" : {
+      "//description" : "Some kind of fossil, all covered in mud and rock. It's going to need careful cleaning to get it out in one peice",
+      "//name" : "dirtyfossil2",
+      "//shortdescription" : "Fossil",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirtyfossil2",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A cracked rock full of silver.",
+      "//name" : "silverrock",
+      "//shortdescription" : "Silver Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "silverrock"
+    },
+    "42" : {
+      "//description" : "A seashell!",
+      "//name" : "seashell6",
+      "//shortdescription" : "Seashell",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "seashell6",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A large, dark vase. Looks pretty smashable.",
+      "//name" : "shadowurnlarge1",
+      "//shortdescription" : "Large Shadow Urn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shadowurnlarge1",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "geometricshard3",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "geometricshard3"
+    },
+    "45" : {
+      "//description" : "An empty bottle of petal nectar.",
+      "//name" : "smashabledrink4",
+      "//shortdescription" : "Empty Petal Nectar Bottle",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashabledrink4",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush9",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush9",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush12",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush12",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A pile of bones, prime for smashing.",
+      "//name" : "smashbones3",
+      "//shortdescription" : "Bone Pile",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smashbones3"
+    },
+    "49" : {
+      "//description" : "A small breakable capsule. Wonder what's inside.",
+      "//name" : "capsulesmall",
+      "//shortdescription" : "Small Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "capsulesmall"
+    },
+    "5" : {
+      "//description" : "Little house on the prairie. Or wherever you are.",
+      "//name" : "smallhouse3",
+      "//shortdescription" : "Tiny House",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse3",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "A large decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassiclarge2",
+      "//shortdescription" : "Large Fancy Vase",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "vaseclassiclarge2",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A dark vase. Looks pretty smashable.",
+      "//name" : "shadowurnmedium2",
+      "//shortdescription" : "Medium Shadow Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "shadowurnmedium2",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A cracked rock full of silver.",
+      "//name" : "silverrocksmall",
+      "//shortdescription" : "Small Silver Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "silverrocksmall"
+    },
+    "53" : {
+      "//description" : "A snow drift.",
+      "//name" : "snowdrift1",
+      "//shortdescription" : "Snowdrift",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "snowdrift1"
+    },
+    "54" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush5",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush5",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "Little house on the prairie. Or wherever you are.",
+      "//name" : "smallhouse5",
+      "//shortdescription" : "Tiny Flats",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse5",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "A glob of dripping slime.",
+      "//name" : "ceilingslime1",
+      "//shortdescription" : "Dripping Slime",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "ceilingslime1",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "iceshard1",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "iceshard1"
+    },
+    "58" : {
+      "//description" : "A crystalline deposit. Shiny.",
+      "//name" : "crystallinebush2",
+      "//shortdescription" : "Crystalline Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystallinebush2",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "iceshard3",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "iceshard3"
+    },
+    "6" : {
+      "//description" : "A crystalline deposit. Shiny.",
+      "//name" : "crystalcavebush2",
+      "//shortdescription" : "Crystalline Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "crystalcavebush2",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "A bush with unusual colouring.",
+      "//name" : "colourfulbush1",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "colourfulbush1",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//name" : "heckbush10",
+      "invalid" : "true"
+    },
+    "62" : {
+      "//description" : "It's a root.",
+      "//name" : "rootbush4",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rootbush4",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "Let's find out what that fossil was! Place it down and smash it open!",
+      "//name" : "fossilpod",
+      "//shortdescription" : "Fossil Pod",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "fossilpod"
+    },
+    "64" : {
+      "//description" : "It's a root.",
+      "//name" : "rootbush1",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rootbush1",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//description" : "Little house on the prairie. Or wherever you are.",
+      "//name" : "smallhouse9",
+      "//shortdescription" : "Tiny Flats",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallhouse9",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "A seashell!",
+      "//name" : "seashell5",
+      "//shortdescription" : "Seashell",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "seashell5",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "A small, brittle-looking pot. It looks smashable...",
+      "//name" : "smalljar1",
+      "//shortdescription" : "Small Pot",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smalljar1",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "A leafy plant.",
+      "//name" : "junglebush14",
+      "//shortdescription" : "Leafy Plant",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush14",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "A wicker basket. Maybe it's got cool stuff inside!",
+      "//name" : "wickerbasket2",
+      "//shortdescription" : "Wide Wicker Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket2"
+    },
+    "7" : {
+      "//description" : "A large breakable growth. Wonder what's inside.",
+      "//name" : "tentaclepopbig",
+      "//shortdescription" : "Large Tentacle Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclepopbig"
+    },
+    "70" : {
+      "//description" : "A seashell!",
+      "//name" : "seashell4",
+      "//shortdescription" : "Seashell",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "seashell4",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "geometricshard4",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "geometricshard4"
+    },
+    "72" : {
+      "//description" : "A cracked rock full of copper.",
+      "//name" : "copperrocksmall",
+      "//shortdescription" : "Small Copper Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "copperrocksmall"
+    },
+    "73" : {
+      "//description" : "It's a root.",
+      "//name" : "toxicgasprimer",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "toxicgasprimer",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "A glob of dripping slime.",
+      "//name" : "ceilingslime3",
+      "//shortdescription" : "Dripping Slime",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "ceilingslime3",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//description" : "A fragile wide urn made from clay.",
+      "//name" : "planturn1",
+      "//shortdescription" : "Wide Urn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "planturn1",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "Tall, leafy reeds.",
+      "//name" : "reedseed4",
+      "//shortdescription" : "Reed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "reedseed4",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "A cluster of rusted metal. Watch out for sharp edges.",
+      "//name" : "rustbush1",
+      "//shortdescription" : "Rusty Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rustbush1",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//name" : "heckbush7",
+      "invalid" : "true"
+    },
+    "79" : {
+      "//name" : "heckbush6",
+      "invalid" : "true"
+    },
+    "8" : {
+      "//description" : "A cracked rock full of platinum.",
+      "//name" : "platinumrock",
+      "//shortdescription" : "Platinum Rock",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "platinumrock"
+    },
+    "80" : {
+      "//description" : "Tall, leafy reeds.",
+      "//name" : "reedseed1",
+      "//shortdescription" : "Reed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "reedseed1",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "The ashes of Avian Stargazers are often stored in urns like this one.",
+      "//name" : "goldenurn",
+      "//shortdescription" : "Golden Urn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "goldenurn",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "-todo-",
+      "//name" : "buglike1",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "buglike1",
+      "tilesetDirection" : "right"
+    },
+    "83" : {
+      "//description" : "A giant red flower. Pretty AND intimidating!",
+      "//name" : "giantflower2",
+      "//shortdescription" : "Giant Flower",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "giantflower2"
+    },
+    "84" : {
+      "//description" : "A fleshy bush. Squishy.",
+      "//name" : "fleshbush2",
+      "//shortdescription" : "Flesh Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "fleshbush2",
+      "tilesetDirection" : "right"
+    },
+    "85" : {
+      "//description" : "A flowery bush.",
+      "//name" : "springbush4",
+      "//shortdescription" : "Flowery Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "springbush4",
+      "tilesetDirection" : "right"
+    },
+    "86" : {
+      "//description" : "A wicker basket. Maybe it's got cool stuff inside!",
+      "//name" : "wickerbasket4",
+      "//shortdescription" : "Handled Wicker Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wickerbasket4"
+    },
+    "87" : {
+      "//description" : "A fragile small urn made from clay.",
+      "//name" : "planturn3",
+      "//shortdescription" : "Small Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planturn3",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "A flowery bush.",
+      "//name" : "springbush2",
+      "//shortdescription" : "Flowery Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "springbush2",
+      "tilesetDirection" : "right"
+    },
+    "89" : {
+      "//description" : "-todo-",
+      "//name" : "buglike4",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "buglike4",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A tiny lamppost. Try not to kick it over.",
+      "//name" : "smalllamppost",
+      "//shortdescription" : "Tiny Lamppost",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "smalllamppost",
+      "tilesetDirection" : "right"
+    },
+    "90" : {
+      "//description" : "-todo-",
+      "//name" : "buglike4_orientation1",
+      "//shortdescription" : "Hive Bush",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "buglike4",
+      "tilesetDirection" : "right"
+    },
+    "91" : {
+      "//description" : "A weird jumble of cells.",
+      "//name" : "cellstructure2",
+      "//shortdescription" : "Cell Structure",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cellstructure2"
+    },
+    "92" : {
+      "//description" : "A coiling plant, like DNA.",
+      "//name" : "dnaplant4",
+      "//shortdescription" : "DNA Plant",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dnaplant4"
+    },
+    "93" : {
+      "//description" : "An icy sphere. Smash it before it melts!",
+      "//name" : "icesphere2",
+      "//shortdescription" : "Ice Sphere",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "icesphere2"
+    },
+    "94" : {
+      "//description" : "Some kind of fossil, all covered in mud and rock. It's going to need careful cleaning to get it out in one peice",
+      "//name" : "dirtyfossil8",
+      "//shortdescription" : "Fossil",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "dirtyfossil8",
+      "tilesetDirection" : "right"
+    },
+    "95" : {
+      "//description" : "It's a root.",
+      "//name" : "rootbush5",
+      "//shortdescription" : "Root",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "rootbush5",
+      "tilesetDirection" : "right"
+    },
+    "96" : {
+      "//description" : "Tall, leafy reeds.",
+      "//name" : "reedseed2",
+      "//shortdescription" : "Reed Seed",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "reedseed2",
+      "tilesetDirection" : "right"
+    },
+    "97" : {
+      "//description" : "A colourful bush.",
+      "//name" : "junglebush11",
+      "//shortdescription" : "Colourful Bush",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "junglebush11",
+      "tilesetDirection" : "right"
+    },
+    "98" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    },
+    "99" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2_orientation2",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/prismrock3.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/smashcrystal.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/talljar1.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2_orientation3.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2_orientation4.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2_orientation5.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/crystallinebush4.png"
+    },
+    "104" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush15.png"
+    },
+    "105" : {
+      "image" : "../../../../../tiled/packed/objects/cellstructure3.png"
+    },
+    "106" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush4.png"
+    },
+    "107" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "108" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "109" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket3.png"
+    },
+    "110" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "111" : {
+      "image" : "../../../../../tiled/packed/objects/embercoral2.png"
+    },
+    "112" : {
+      "image" : "../../../../../tiled/packed/objects/icesphere3.png"
+    },
+    "113" : {
+      "image" : "../../../../../tiled/packed/objects/swamproot5.png"
+    },
+    "114" : {
+      "image" : "../../../../../tiled/packed/objects/smashbones1.png"
+    },
+    "115" : {
+      "image" : "../../../../../tiled/packed/objects/tallgrass4.png"
+    },
+    "116" : {
+      "image" : "../../../../../tiled/packed/objects/colourfulbush3.png"
+    },
+    "117" : {
+      "image" : "../../../../../tiled/packed/objects/crystalcavebush1.png"
+    },
+    "118" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse6.png"
+    },
+    "119" : {
+      "image" : "../../../../../tiled/packed/objects/snowdrift4.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/smallclocktower.png"
+    },
+    "120" : {
+      "image" : "../../../../../tiled/packed/objects/prismrock2.png"
+    },
+    "121" : {
+      "image" : "../../../../../tiled/packed/objects/rustbush4.png"
+    },
+    "122" : {
+      "image" : "../../../../../tiled/packed/objects/shadowrock1.png"
+    },
+    "123" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight2.png"
+    },
+    "124" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight2_orientation2.png"
+    },
+    "125" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight2_orientation3.png"
+    },
+    "126" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight2_orientation4.png"
+    },
+    "127" : {
+      "image" : "../../../../../tiled/packed/objects/crystallinebush1.png"
+    },
+    "128" : {
+      "image" : "../../../../../tiled/packed/objects/fleshbush5.png"
+    },
+    "129" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush1.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/dnaplant1.png"
+    },
+    "130" : {
+      "image" : "../../../../../tiled/packed/objects/dirtyfossil1.png"
+    },
+    "131" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse11.png"
+    },
+    "132" : {
+      "image" : "../../../../../tiled/packed/objects/seashell7.png"
+    },
+    "133" : {
+      "image" : "../../../../../tiled/packed/objects/birdjar1.png"
+    },
+    "134" : {
+      "image" : "../../../../../tiled/packed/objects/cellstructure5.png"
+    },
+    "135" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob5.png"
+    },
+    "136" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassicsmall1.png"
+    },
+    "137" : {
+      "image" : "../../../../../tiled/packed/objects/seashell2.png"
+    },
+    "138" : {
+      "image" : "../../../../../tiled/packed/objects/swamproot3.png"
+    },
+    "139" : {
+      "image" : "../../../../../tiled/packed/objects/iceshard4.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/springbush5.png"
+    },
+    "140" : {
+      "image" : "../../../../../tiled/packed/objects/rootbush3.png"
+    },
+    "141" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassicsmall2.png"
+    },
+    "142" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1.png"
+    },
+    "143" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1_orientation2.png"
+    },
+    "144" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1_orientation3.png"
+    },
+    "145" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1_orientation4.png"
+    },
+    "146" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1_orientation5.png"
+    },
+    "147" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush3.png"
+    },
+    "148" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepopmed.png"
+    },
+    "149" : {
+      "image" : "../../../../../tiled/packed/objects/birdjar2.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket1.png"
+    },
+    "150" : {
+      "image" : "../../../../../tiled/packed/objects/dirtyfossil6.png"
+    },
+    "151" : {
+      "image" : "../../../../../tiled/packed/objects/seashell8.png"
+    },
+    "152" : {
+      "image" : "../../../../../tiled/packed/objects/iceshard5.png"
+    },
+    "153" : {
+      "image" : "../../../../../tiled/packed/objects/colourfulbush4.png"
+    },
+    "154" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse8.png"
+    },
+    "155" : {
+      "image" : "../../../../../tiled/packed/objects/ashjar3.png"
+    },
+    "156" : {
+      "image" : "../../../../../tiled/packed/objects/prismrock1.png"
+    },
+    "157" : {
+      "image" : "../../../../../tiled/packed/objects/tarcrystal2.png"
+    },
+    "158" : {
+      "image" : "../../../../../tiled/packed/objects/shadowrock3.png"
+    },
+    "159" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush13.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/reedseed3.png"
+    },
+    "160" : {
+      "image" : "../../../../../tiled/packed/objects/bigjar1.png"
+    },
+    "161" : {
+      "image" : "../../../../../tiled/packed/objects/mistprimer.png"
+    },
+    "162" : {
+      "image" : "../../../../../tiled/packed/objects/tarcrystal3.png"
+    },
+    "163" : {
+      "image" : "../../../../../tiled/packed/objects/rustbush3.png"
+    },
+    "164" : {
+      "image" : "../../../../../tiled/packed/objects/goldrocksmall.png"
+    },
+    "165" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse7.png"
+    },
+    "166" : {
+      "image" : "../../../../../tiled/packed/objects/planturn2.png"
+    },
+    "167" : {
+      "image" : "../../../../../tiled/packed/objects/geometricshard5.png"
+    },
+    "168" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "169" : {
+      "image" : "../../../../../tiled/packed/objects/smashbones4.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "170" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush2.png"
+    },
+    "171" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob3.png"
+    },
+    "172" : {
+      "image" : "../../../../../tiled/packed/objects/diamondrocksmall.png"
+    },
+    "173" : {
+      "image" : "../../../../../tiled/packed/objects/bowlingpin.png"
+    },
+    "174" : {
+      "image" : "../../../../../tiled/packed/objects/buglike3.png"
+    },
+    "175" : {
+      "image" : "../../../../../tiled/packed/objects/giantflower4.png"
+    },
+    "176" : {
+      "image" : "../../../../../tiled/packed/objects/dirtyfossil3.png"
+    },
+    "177" : {
+      "image" : "../../../../../tiled/packed/objects/embercoral4.png"
+    },
+    "178" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "179" : {
+      "image" : "../../../../../tiled/packed/objects/crystalcavebush4.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/swamproot1.png"
+    },
+    "180" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink3.png"
+    },
+    "181" : {
+      "image" : "../../../../../tiled/packed/objects/buglike10.png"
+    },
+    "182" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob4.png"
+    },
+    "183" : {
+      "image" : "../../../../../tiled/packed/objects/dirtyfossil4.png"
+    },
+    "184" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse1.png"
+    },
+    "185" : {
+      "image" : "../../../../../tiled/packed/objects/tarcrystal5.png"
+    },
+    "186" : {
+      "image" : "../../../../../tiled/packed/objects/frozenmistprimer.png"
+    },
+    "187" : {
+      "image" : "../../../../../tiled/packed/objects/hivebush1.png"
+    },
+    "188" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse4.png"
+    },
+    "189" : {
+      "image" : "../../../../../tiled/packed/objects/hivebush4.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/iceshard2.png"
+    },
+    "190" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink2.png"
+    },
+    "191" : {
+      "image" : "../../../../../tiled/packed/objects/ashjar1.png"
+    },
+    "192" : {
+      "image" : "../../../../../tiled/packed/objects/buglike6.png"
+    },
+    "193" : {
+      "image" : "../../../../../tiled/packed/objects/goldrock.png"
+    },
+    "194" : {
+      "image" : "../../../../../tiled/packed/objects/shadowrock4.png"
+    },
+    "195" : {
+      "image" : "../../../../../tiled/packed/objects/giantflower3.png"
+    },
+    "196" : {
+      "image" : "../../../../../tiled/packed/objects/buglike2.png"
+    },
+    "197" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket5.png"
+    },
+    "198" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "199" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/talljar2.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/capsulebig.png"
+    },
+    "200" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "201" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "202" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "203" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse10.png"
+    },
+    "204" : {
+      "image" : "../../../../../tiled/packed/objects/claypot3.png"
+    },
+    "205" : {
+      "image" : "../../../../../tiled/packed/objects/embercoral1.png"
+    },
+    "206" : {
+      "image" : "../../../../../tiled/packed/objects/geometricshard2.png"
+    },
+    "207" : {
+      "image" : "../../../../../tiled/packed/objects/snowdrift2.png"
+    },
+    "208" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassicmedium1.png"
+    },
+    "209" : {
+      "image" : "../../../../../tiled/packed/objects/crystallinebush3.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/diamondrock.png"
+    },
+    "210" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush16.png"
+    },
+    "211" : {
+      "image" : "../../../../../tiled/packed/objects/smokeprimer.png"
+    },
+    "212" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush7.png"
+    },
+    "213" : {
+      "image" : "../../../../../tiled/packed/objects/blueprintblob.png"
+    },
+    "214" : {
+      "image" : "../../../../../tiled/packed/objects/midjar1.png"
+    },
+    "215" : {
+      "image" : "../../../../../tiled/packed/objects/reedseed5.png"
+    },
+    "216" : {
+      "image" : "../../../../../tiled/packed/objects/dnaplant2.png"
+    },
+    "217" : {
+      "image" : "../../../../../tiled/packed/objects/seashell1.png"
+    },
+    "218" : {
+      "image" : "../../../../../tiled/packed/objects/colourfulbush5.png"
+    },
+    "219" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush6.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/tarcrystal4.png"
+    },
+    "220" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassiclarge1.png"
+    },
+    "221" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassicmedium2.png"
+    },
+    "222" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepopsmall.png"
+    },
+    "223" : {
+      "image" : "../../../../../tiled/packed/objects/ashjar2.png"
+    },
+    "224" : {
+      "image" : "../../../../../tiled/packed/objects/cellstructure1.png"
+    },
+    "225" : {
+      "image" : "../../../../../tiled/packed/objects/protectoratesmokeprimer.png"
+    },
+    "226" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush8.png"
+    },
+    "227" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush10.png"
+    },
+    "228" : {
+      "image" : "../../../../../tiled/packed/objects/seashell3.png"
+    },
+    "229" : {
+      "image" : "../../../../../tiled/packed/objects/smashbones2.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/shadowurnsmall2.png"
+    },
+    "230" : {
+      "image" : "../../../../../tiled/packed/objects/buglike5.png"
+    },
+    "231" : {
+      "image" : "../../../../../tiled/packed/objects/buglike7.png"
+    },
+    "232" : {
+      "image" : "../../../../../tiled/packed/objects/buglike8.png"
+    },
+    "233" : {
+      "image" : "../../../../../tiled/packed/objects/buglike9.png"
+    },
+    "234" : {
+      "image" : "../../../../../tiled/packed/objects/cellstructure4.png"
+    },
+    "235" : {
+      "image" : "../../../../../tiled/packed/objects/colourfulbush2.png"
+    },
+    "236" : {
+      "image" : "../../../../../tiled/packed/objects/embercoral3.png"
+    },
+    "237" : {
+      "image" : "../../../../../tiled/packed/objects/embercoral5.png"
+    },
+    "238" : {
+      "image" : "../../../../../tiled/packed/objects/crystalcavebush3.png"
+    },
+    "239" : {
+      "image" : "../../../../../tiled/packed/objects/shadowrock5.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/shadowrock2.png"
+    },
+    "240" : {
+      "image" : "../../../../../tiled/packed/objects/shadowurnlarge2.png"
+    },
+    "241" : {
+      "image" : "../../../../../tiled/packed/objects/shadowurnsmall1.png"
+    },
+    "242" : {
+      "image" : "../../../../../tiled/packed/objects/fleshbush1.png"
+    },
+    "243" : {
+      "image" : "../../../../../tiled/packed/objects/springbush3.png"
+    },
+    "244" : {
+      "image" : "../../../../../tiled/packed/objects/fleshbush3.png"
+    },
+    "245" : {
+      "image" : "../../../../../tiled/packed/objects/fleshbush4.png"
+    },
+    "246" : {
+      "image" : "../../../../../tiled/packed/objects/fleshbush6.png"
+    },
+    "247" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "248" : {
+      "image" : "../../../../../tiled/packed/objects/dirtyfossil7.png"
+    },
+    "249" : {
+      "image" : "../../../../../tiled/packed/objects/giantflower1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2b.png"
+    },
+    "250" : {
+      "image" : "../../../../../tiled/packed/objects/protectoratesmokegen.png"
+    },
+    "251" : {
+      "image" : "../../../../../tiled/packed/objects/smallchurch.png"
+    },
+    "252" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse2.png"
+    },
+    "253" : {
+      "image" : "../../../../../tiled/packed/objects/smallwindmill.png"
+    },
+    "254" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "255" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "256" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "257" : {
+      "image" : "../../../../../tiled/packed/objects/hivebush2.png"
+    },
+    "258" : {
+      "image" : "../../../../../tiled/packed/objects/hivebush3.png"
+    },
+    "259" : {
+      "image" : "../../../../../tiled/packed/objects/hivebush5.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2b_orientation1.png"
+    },
+    "260" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight1.png"
+    },
+    "261" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight1_orientation2.png"
+    },
+    "262" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight1_orientation3.png"
+    },
+    "263" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight1_orientation4.png"
+    },
+    "264" : {
+      "image" : "../../../../../tiled/packed/objects/hivelight1_orientation5.png"
+    },
+    "265" : {
+      "image" : "../../../../../tiled/packed/objects/icesphere1.png"
+    },
+    "266" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush17.png"
+    },
+    "267" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush18.png"
+    },
+    "268" : {
+      "image" : "../../../../../tiled/packed/objects/tallgrass2.png"
+    },
+    "269" : {
+      "image" : "../../../../../tiled/packed/objects/tallgrass3.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/dnaplant3.png"
+    },
+    "270" : {
+      "image" : "../../../../../tiled/packed/objects/tarcrystal1.png"
+    },
+    "271" : {
+      "image" : "../../../../../tiled/packed/objects/gasprimer.png"
+    },
+    "272" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingslime2.png"
+    },
+    "273" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob1.png"
+    },
+    "274" : {
+      "image" : "../../../../../tiled/packed/objects/copperrock.png"
+    },
+    "275" : {
+      "image" : "../../../../../tiled/packed/objects/platinumrocksmall.png"
+    },
+    "276" : {
+      "image" : "../../../../../tiled/packed/objects/fancysnowman.png"
+    },
+    "277" : {
+      "image" : "../../../../../tiled/packed/objects/snowdrift3.png"
+    },
+    "278" : {
+      "image" : "../../../../../tiled/packed/objects/snowman.png"
+    },
+    "279" : {
+      "image" : "../../../../../tiled/packed/objects/springbush1.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/tallgrass1.png"
+    },
+    "280" : {
+      "image" : "../../../../../tiled/packed/objects/springbush6.png"
+    },
+    "281" : {
+      "image" : "../../../../../tiled/packed/objects/rootbush2.png"
+    },
+    "282" : {
+      "image" : "../../../../../tiled/packed/objects/swamproot2.png"
+    },
+    "283" : {
+      "image" : "../../../../../tiled/packed/objects/swamproot4.png"
+    },
+    "284" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3.png"
+    },
+    "285" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3_orientation2.png"
+    },
+    "286" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3_orientation3.png"
+    },
+    "287" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3_orientation4.png"
+    },
+    "288" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3_orientation5.png"
+    },
+    "289" : {
+      "image" : "../../../../../tiled/packed/objects/smokegen.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/slimeblob2.png"
+    },
+    "290" : {
+      "image" : "../../../../../tiled/packed/objects/birdsnest.png"
+    },
+    "291" : {
+      "image" : "../../../../../tiled/packed/objects/butterflybush.png"
+    },
+    "292" : {
+      "image" : "../../../../../tiled/packed/objects/capsulemed.png"
+    },
+    "293" : {
+      "image" : "../../../../../tiled/packed/objects/claypot1.png"
+    },
+    "294" : {
+      "image" : "../../../../../tiled/packed/objects/claypot2.png"
+    },
+    "295" : {
+      "image" : "../../../../../tiled/packed/objects/metalbarrel2.png"
+    },
+    "296" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink1.png"
+    },
+    "297" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink5.png"
+    },
+    "298" : {
+      "image" : "../../../../../tiled/packed/objects/ancientpot3.png"
+    },
+    "299" : {
+      "image" : "../../../../../tiled/packed/objects/ancientpot1.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/fireflybush.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1.png"
+    },
+    "300" : {
+      "image" : "../../../../../tiled/packed/objects/ancientpot5.png"
+    },
+    "301" : {
+      "image" : "../../../../../tiled/packed/objects/ancientpot4.png"
+    },
+    "302" : {
+      "image" : "../../../../../tiled/packed/objects/ancientpot2.png"
+    },
+    "303" : {
+      "image" : "../../../../../tiled/packed/objects/ancientpot6.png"
+    },
+    "304" : {
+      "image" : "../../../../../tiled/packed/objects/capsulespace.png"
+    },
+    "305" : {
+      "image" : "../../../../../tiled/packed/objects/capsulespace_orientation1.png"
+    },
+    "306" : {
+      "image" : "../../../../../tiled/packed/objects/capsulespace_orientation2.png"
+    },
+    "307" : {
+      "image" : "../../../../../tiled/packed/objects/capsulespace_orientation3.png"
+    },
+    "308" : {
+      "image" : "../../../../../tiled/packed/objects/toxicwastebarrel.png"
+    },
+    "309" : {
+      "image" : "../../../../../tiled/packed/objects/explosivebarrel.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1_orientation2.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1_orientation3.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1_orientation4.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1_orientation5.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/dirtyfossil5.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/smallinn.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/geometricshard1.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/shadowurnmedium1.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/rustbush2.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/icesphere4.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/dirtyfossil2.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/silverrock.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/seashell6.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/shadowurnlarge1.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/geometricshard3.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/smashabledrink4.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush9.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush12.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/smashbones3.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/capsulesmall.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse3.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassiclarge2.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/shadowurnmedium2.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/silverrocksmall.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/snowdrift1.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush5.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse5.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingslime1.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/iceshard1.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/crystallinebush2.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/iceshard3.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/crystalcavebush2.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/colourfulbush1.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/rootbush4.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/fossilpod.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/rootbush1.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/smallhouse9.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/seashell5.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/smalljar1.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush14.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket2.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepopbig.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/seashell4.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/geometricshard4.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/copperrocksmall.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/toxicgasprimer.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/ceilingslime3.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/planturn1.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/reedseed4.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/rustbush1.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/platinumrock.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/reedseed1.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/goldenurn.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/buglike1.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/giantflower2.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/fleshbush2.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/springbush4.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/wickerbasket4.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/planturn3.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/springbush2.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/buglike4.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/smalllamppost.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/buglike4_orientation1.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/cellstructure2.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/dnaplant4.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/icesphere2.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/objects/dirtyfossil8.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/rootbush5.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/reedseed2.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/objects/junglebush11.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2_orientation2.png"
+    }
+  },
+  "tilewidth" : 8
+}

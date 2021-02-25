@@ -1,0 +1,25 @@
+{
+  "objectName" : "elysia_banner_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A small bright green banner.",
+  "shortdescription" : "Short Green Banner",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 50,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "elysia_banner_1.png:<color>",
+      "imagePosition" : [-0, -0],
+	  "direction" : "right",
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ]
+}

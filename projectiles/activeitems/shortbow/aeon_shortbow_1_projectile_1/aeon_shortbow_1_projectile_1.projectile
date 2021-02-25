@@ -1,0 +1,59 @@
+{
+  "projectileName" : "aeon_shortbow_1_projectile_1",
+  "physics" : "sticky",
+  "image" : "aeon_shortbow_1_projectile_1.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "emitters" : [ ],
+  "damageKindImage" : "icon.png",
+  "timeToLive" : 4,
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_yellow/arcana_explosion_plasma_1_yellow.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.2,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/shortbow/aeon_shortbow_1_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    },
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/cultistboss/energyshard/energyshard.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "lightColor" : [150, 130, 100],
+  "power" : 20,
+  "knockback" : 40,
+  "knockbackDirectional" : true,
+  "damageKind" : "bow",
+  "speed" : 70
+}

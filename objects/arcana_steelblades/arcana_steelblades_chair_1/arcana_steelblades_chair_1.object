@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_steelblades_chair_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A small metal couch.",
+  "shortdescription" : "Steelblades Couch",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "arcana_steelblades_chair_1.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPosition" : [0, 25],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "arcana_steelblades_chair_1.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "direction" : "right",
+      "sitPosition" : [4, 25],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/crafting",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 40,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A clear indicator of a forge.",
+      "//name" : "signforge",
+      "//shortdescription" : "Forge Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signforge"
+    },
+    "1" : {
+      "//description" : "A clear indicator of a forge.",
+      "//name" : "signforge_orientation2",
+      "//shortdescription" : "Forge Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signforge"
+    },
+    "10" : {
+      "//name" : "alloyfurnace",
+      "invalid" : "true"
+    },
+    "11" : {
+      "//description" : "Can be used to produce armour and weapons.",
+      "//name" : "ironanvil",
+      "//shortdescription" : "^orange;Iron Anvil^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ironanvil",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A old fashioned furnace for tempering tools.",
+      "//name" : "medievalfurnace",
+      "//shortdescription" : "Medieval Furnace",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalfurnace",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//name" : "manipulatortable",
+      "invalid" : "true"
+    },
+    "14" : {
+      "//name" : "roboticcraftingtable",
+      "invalid" : "true"
+    },
+    "15" : {
+      "//name" : "farmtable",
+      "invalid" : "true"
+    },
+    "16" : {
+      "//description" : "Just the thing for making a gift to show someone you care.",
+      "//name" : "heartforge",
+      "//shortdescription" : "Heart Forge",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "heartforge",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//name" : "furnituretable",
+      "invalid" : "true"
+    },
+    "18" : {
+      "//description" : "The anvil is used to produce armour and weapons from fabric and ores.",
+      "//name" : "craftinganvil",
+      "//shortdescription" : "^orange;Anvil^white;",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "craftinganvil",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//name" : "woodencraftingtable",
+      "invalid" : "true"
+    },
+    "2" : {
+      "//description" : "A module that adds additional high-tech combat equipment and armour to the replicator.",
+      "//name" : "manipulatoraddon",
+      "//shortdescription" : "^orange;Manipulator Addon^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "manipulatoraddon",
+      "tilesetDirection" : "left"
+    },
+    "20" : {
+      "//name" : "apothecary",
+      "invalid" : "true"
+    },
+    "21" : {
+      "//description" : "Can be used to produce materials and objects needed to build a settlement.",
+      "//name" : "craftingfurniture",
+      "//shortdescription" : "^orange;Wooden Workbench^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingfurniture",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "For all your holiday crafting needs!",
+      "//name" : "holidaycraftingtable",
+      "//shortdescription" : "Toymaker's Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "holidaycraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A simple anvil, used for banging metal into shape.",
+      "//name" : "anvil",
+      "//shortdescription" : "Basic Anvil",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "anvil",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "The apothecary is used to produce healing items and medicine.",
+      "//name" : "craftingmedical",
+      "//shortdescription" : "^orange;Apothecary^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingmedical",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//name" : "scififurnace",
+      "invalid" : "true"
+    },
+    "26" : {
+      "//description" : "One could build some very sophisticated equipment on this table.",
+      "//name" : "ironcraftingtable",
+      "//shortdescription" : "^orange;Iron Crafting Table^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "ironcraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A module that adds additional ranged equipment and armour to the replicator.",
+      "//name" : "acceleratoraddon",
+      "//shortdescription" : "^orange;Accelerator Addon^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "acceleratoraddon",
+      "tilesetDirection" : "left"
+    },
+    "28" : {
+      "//name" : "acceleratortable",
+      "invalid" : "true"
+    },
+    "29" : {
+      "//description" : "A module that adds additional melee equipment and armour to the replicator.",
+      "//name" : "separatoraddon",
+      "//shortdescription" : "^orange;Separator Addon^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "separatoraddon",
+      "tilesetDirection" : "left"
+    },
+    "3" : {
+      "//description" : "Used to turn ores and other materials into crafting ingredients.",
+      "//name" : "craftingfurnace",
+      "//shortdescription" : "^orange;Primitive Furnace^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "craftingfurnace",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//name" : "separatortable",
+      "invalid" : "true"
+    },
+    "31" : {
+      "//name" : "skyrailtable",
+      "invalid" : "true"
+    },
+    "32" : {
+      "//description" : "Used to produce items for hunting, mining and farming.",
+      "//name" : "craftingfarm",
+      "//shortdescription" : "^orange;Foraging Table^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingfarm",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "The inventor's table is used to produce various crafting stations.",
+      "//name" : "inventorstable",
+      "//shortdescription" : "^orange;Inventor's Table^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "inventorstable",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "Used to produce complex wiring components.",
+      "//name" : "wiringstation",
+      "//shortdescription" : "^orange;Wiring Station^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wiringstation",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "This machine can reorganize pixels into almost any shape.",
+      "//name" : "3dprinter",
+      "//shortdescription" : "^orange;Pixel Printer^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "3dprinter",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "Used to produce rails, rail riding items and related objects.",
+      "//name" : "railcraftingtable",
+      "//shortdescription" : "^orange;Rail Crafting Table^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "railcraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "An old copper and brass furnace.",
+      "//name" : "frontierfurnace",
+      "//shortdescription" : "Frontier Furnace",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "frontierfurnace",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "An old copper and brass furnace.",
+      "//name" : "frontierfurnace_orientation1",
+      "//shortdescription" : "Frontier Furnace",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frontierfurnace",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "Used to produce modular mech components.",
+      "//name" : "mechcraftingtable",
+      "//shortdescription" : "^orange;Mech Part Crafting Table^white;",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "mechcraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//name" : "stonefurnace",
+      "invalid" : "true"
+    },
+    "5" : {
+      "//description" : "Used to make fossil excavation tools and display cases.",
+      "//name" : "fossilstation",
+      "//shortdescription" : "^orange;Fossil Station^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "fossilstation",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Common, workshop tools used for quick repairs.",
+      "//name" : "garagetools",
+      "//shortdescription" : "Workshop Tools",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "garagetools",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "The spinning wheel is used to produce clothing, fabrics and other crafting ingredients.",
+      "//name" : "craftingwheel",
+      "//shortdescription" : "^orange;Spinning Wheel^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingwheel",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//name" : "scifianvil",
+      "invalid" : "true"
+    },
+    "9" : {
+      "//name" : "metalworkstation",
+      "invalid" : "true"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/signforge.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/signforge_orientation2.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/ironanvil.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/medievalfurnace.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/heartforge.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/craftinganvil.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/manipulatoraddon.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/craftingfurniture.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/holidaycraftingtable.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/anvil.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/craftingmedical.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/ironcraftingtable.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/acceleratoraddon.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/separatoraddon.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/craftingfurnace.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/craftingfarm.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/inventorstable.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/wiringstation.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/3dprinter.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/railcraftingtable.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/frontierfurnace.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/frontierfurnace_orientation1.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/mechcraftingtable.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/fossilstation.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/garagetools.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/craftingwheel.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,20 @@
+{
+  "materialId" : 16841,
+  "materialName" : "arcana_platform_verrostinPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_verrostinPlatform",
+  "shortdescription" : "Verrostin Platform",
+  "description" : "A durable platform made from verrostin.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_verrostinPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

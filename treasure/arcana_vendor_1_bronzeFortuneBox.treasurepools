@@ -1,0 +1,134 @@
+{
+
+  "arcana_vendor_1_bronzeFortuneBox_1" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.1, "item" : ["money", 80]},
+		{"weight" : 0.2, "item" : ["money", 60]},
+        {"weight" : 0.3, "item" : ["money", 40]},
+		{"weight" : 0.4, "item" : ["money", 20]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_vendor_1_bronzeFortuneBox_2" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.1, "item" : ["essence", 10]},
+		{"weight" : 0.2, "item" : ["essence", 8]},
+        {"weight" : 0.3, "item" : ["essence", 4]},
+		{"weight" : 0.4, "item" : ["essence", 2]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_vendor_1_bronzeFortuneBox_4" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.1, "item" : ["plantfibre", 2]},
+		{"weight" : 0.2, "item" : ["plantfibre", 2]},
+        {"weight" : 0.3, "item" : ["plantfibre", 1]},
+		{"weight" : 0.4, "item" : ["plantfibre", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_vendor_1_bronzeFortuneBox_5" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.1, "item" : ["climbingrope", 2]},
+		{"weight" : 0.2, "item" : ["climbingrope", 2]},
+        {"weight" : 0.3, "item" : ["climbingrope", 1]},
+		{"weight" : 0.4, "item" : ["climbingrope", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_vendor_1_bronzeFortuneBox_6" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.1, "item" : ["string", 2]},
+		{"weight" : 0.2, "item" : ["string", 2]},
+        {"weight" : 0.3, "item" : ["string", 1]},
+		{"weight" : 0.4, "item" : ["string", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_vendor_1_bronzeFortuneBox_7" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.1, "item" : ["bomb", 2]},
+		{"weight" : 0.2, "item" : ["bomb", 2]},
+        {"weight" : 0.3, "item" : ["bomb", 1]},
+		{"weight" : 0.4, "item" : ["bomb", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_vendor_1_bronzeFortuneBox_8" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.1, "item" : ["logblock", 2]},
+		{"weight" : 0.2, "item" : ["logblock", 2]},
+        {"weight" : 0.3, "item" : ["logblock", 1]},
+		{"weight" : 0.4, "item" : ["logblock", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_vendor_1_bronzeFortuneBox_9" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.1, "item" : ["copperbar", 2]},
+		{"weight" : 0.2, "item" : ["copperbar", 2]},
+        {"weight" : 0.3, "item" : ["copperbar", 1]},
+		{"weight" : 0.4, "item" : ["copperbar", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_vendor_1_bronzeFortuneBox" : [
+    [0, {
+      "fill" : [
+        {"pool" : "arcana_vendor_1_bronzeFortuneBox_1"},
+        {"pool" : "arcana_vendor_1_bronzeFortuneBox_2"}
+      ],
+      "poolRounds" : [
+        [1.0, 2]
+      ],
+      "pool" : [
+        {"weight" : 0.2, "pool" : "arcana_vendor_1_bronzeFortuneBox_4"},
+		{"weight" : 0.2, "pool" : "arcana_vendor_1_bronzeFortuneBox_5"},
+		{"weight" : 0.2, "pool" : "arcana_vendor_1_bronzeFortuneBox_6"},
+		{"weight" : 0.2, "pool" : "arcana_vendor_1_bronzeFortuneBox_7"},
+		{"weight" : 0.1, "pool" : "arcana_vendor_1_bronzeFortuneBox_8"},
+		{"weight" : 0.1, "pool" : "arcana_vendor_1_bronzeFortuneBox_9"}
+      ]
+    }]
+  ]
+}

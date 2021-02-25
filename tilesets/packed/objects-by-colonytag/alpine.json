@@ -1,0 +1,97 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/alpine",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 7,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A big chunk of ice.",
+      "//name" : "frozenmistprimer",
+      "//shortdescription" : "Chunk of Ice",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frozenmistprimer",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A bed made of cobblestone.",
+      "//name" : "stonebed",
+      "//shortdescription" : "Stone Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stonebed",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A door made of cobblestone.",
+      "//name" : "stonedoor",
+      "//shortdescription" : "Stone Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "stonedoor"
+    },
+    "3" : {
+      "//description" : "A chair made of cobblestone.",
+      "//name" : "stonechair",
+      "//shortdescription" : "Stone Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stonechair",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A pile of mossy stones.",
+      "//name" : "mistprimer",
+      "//shortdescription" : "Pile of Mossy Stones",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "mistprimer",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A treasure chest made of cobblestone.",
+      "//name" : "stonechest",
+      "//shortdescription" : "Stone Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stonechest",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A table made of cobblestone.",
+      "//name" : "stonetable",
+      "//shortdescription" : "Stone Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "stonetable",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/frozenmistprimer.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/stonebed.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/stonedoor.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/stonechair.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/mistprimer.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/stonechest.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/stonetable.png"
+    }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16646,
+  "materialName" : "arcana_tile18",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile18",
+  "description" : "A brightly colored roofing tile.",
+  "shortdescription" : "Gingko Tile",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile18.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1173
+  }
+}

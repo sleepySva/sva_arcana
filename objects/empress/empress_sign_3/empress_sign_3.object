@@ -1,0 +1,25 @@
+{
+  "objectName" : "empress_sign_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A gold-framed sign, advertises a boutique store branded as the Empress.",
+  "shortdescription" : "Large Empress Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "empress_sign_3.png:<color>",
+      "imagePosition" : [-16, -0],
+	  "direction" : "right",
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

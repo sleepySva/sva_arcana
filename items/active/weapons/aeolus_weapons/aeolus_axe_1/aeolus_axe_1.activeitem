@@ -1,0 +1,54 @@
+{
+  "itemName" : "aeolus_axe_1",
+  "level" : 5,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "An axe made of ariostone.",
+  "shortdescription" : "Ariostone Axe",
+  "tooltipKind" : "sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe"],
+  "collectablesOnPickup" : { "arcana_collection_weapon_elemental" : "aeolus_axe_1" },
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/axe/gaea_axe_1.animation",
+  "animationParts" : {
+    "blade" : "aeolus_axe_1.png",
+    "handle" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+  "muzzleOffset" : [0.2, 0],
+
+  "primaryAbilityType" : "arcana_axe_ability_burstCleave",
+  "primaryAbility" : {
+  
+    "projectileType" : "aeolus_axe_1_projectile_1",
+  	"projectileCount" : 5,
+    "projectileDistance" : 1.2,
+	"projectileParameters" : {
+      "baseDamage" : 6
+    },
+	
+    "fireTime" : 0.8,
+    "baseDps" : 9.6,
+    "damageConfig" : {
+      "knockback" : 30
+    }
+	
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

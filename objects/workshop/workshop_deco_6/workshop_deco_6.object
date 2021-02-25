@@ -1,0 +1,24 @@
+{
+  "objectName" : "workshop_deco_6",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A stack of weapon crates.",
+  "shortdescription" : "Workshop Weapon Stack",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "workshop_deco_6.png:<color>",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

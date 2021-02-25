@@ -1,0 +1,21 @@
+{
+  "materialId" : 16636,
+  "materialName" : "ferocious_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "ferocious_tile2",
+  "description" : "A sturdy dirt block filled with rusted materials.",
+  "shortdescription" : "Ferocious Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_ash.ogg",
+  "health" : 22,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ferocious_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1342
+  }
+}

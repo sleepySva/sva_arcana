@@ -1,0 +1,33 @@
+{
+  "projectileName" : "arcana_weather_chrysoFall_projectile_1",
+  "image" : "arcana_weather_chrysoFall_projectile_1.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  
+  "pointLight" : true,
+  "power" : 0.0,
+  "lightColor" : [134, 111, 41],
+  "emitters" : [ "sparks" ],
+  "onlyHitTerrain" : true,
+  "hydrophobic" : true,
+  
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/weather/arcana_weather_chrysoFall_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    }
+  ]
+}

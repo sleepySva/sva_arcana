@@ -1,0 +1,63 @@
+{
+  "objectName" : "arcana_vendor_4",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "Some sort of a flower shop.",
+  "shortdescription" : "Florist Vendor",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+  "lightColor" : [160, 160, 120],
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Flower Shop",
+        "subtitle" : " Get pretty flowers here!"
+      }
+    },
+    "buyFactor" : 3.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "orion_deco_11" },
+	  { "item" : "orion_deco_12" },
+	  { "item" : "arcana_misc_scarletPatch" },
+      { "item" : "arcana_flowers_blueSpectralweed" },
+      { "item" : "arcana_flowers_oceanIvy" },
+      { "item" : "arcana_flowers_orangeFluxroot" },
+      { "item" : "arcana_flowers_scentedLilac" },
+	  { "item" : "arcana_flowers_whiteDaisy" },
+	  { "item" : "arcana_flowers_wildPraire" },
+      { "item" : "arcana_flowers_windflower" },
+	  { "item" : "arcana_farmable_wildPraireSeed" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_vendor_4.png:<color>",
+      "imagePosition" : [-40, -0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [ "/objects/arcana_lua_object_chat.lua" ],
+  "scriptDelta" : 20,
+
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "Get fresh flowersss here!",
+    "Come and buy some flowersss!",
+	"Floran has seedsss and flowers for sssell, come look!",
+    "Floran sell lots and lots of flowersss, you buy."
+  ]
+}

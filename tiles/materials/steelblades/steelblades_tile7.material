@@ -1,0 +1,21 @@
+{
+  "materialId" : 16717,
+  "materialName" : "steelblades_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "steelblades_tile7",
+  "description" : "A wall panel. Looks highly durable.",
+  "shortdescription" : "Verrostin Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "steelblades_tile7.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4717
+  }
+}

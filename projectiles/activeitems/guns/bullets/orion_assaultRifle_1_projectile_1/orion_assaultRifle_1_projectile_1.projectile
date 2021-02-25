@@ -1,0 +1,48 @@
+{
+  "projectileName" : "orion_assaultRifle_1_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 130,
+  "piercing" : true,
+  
+  "image" : "orion_assaultRifle_1_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [60, 122, 145],
+  "emitters" : ["electricplasmapurple","electricplasma"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/electricimpact.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/orion_assaultRifle_1_projectile_1/orion_assaultRifle_1_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "electric"
+ 
+}

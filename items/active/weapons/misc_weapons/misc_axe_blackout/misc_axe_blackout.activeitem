@@ -1,0 +1,53 @@
+{
+  "itemName" : "misc_axe_blackout",
+  "level" : 8,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A one-handed axe.",
+  "shortdescription" : "Blackout",
+  "tooltipKind" : "sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/axe/gaea_axe_1.animation",
+  "animationParts" : {
+    "blade" : "misc_axe_blackout.png",
+    "handle" : "misc_axe_blackout_fullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+  "muzzleOffset" : [0.2, 0],
+
+  "primaryAbilityType" : "arcana_axe_ability_burstCleave",
+  "primaryAbility" : {
+  
+    "projectileType" : "misc_axe_blackout_projectile_1",
+  	"projectileCount" : 3,
+    "projectileDistance" : 1.2,
+	"projectileParameters" : {
+      "baseDamage" : 30
+    },
+	
+    "fireTime" : 0.9,
+    "baseDps" : 9.9,
+    "damageConfig" : {
+      "knockback" : 20
+    }
+	
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

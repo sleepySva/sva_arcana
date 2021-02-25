@@ -1,0 +1,21 @@
+{
+  "materialId" : 16533,
+  "materialName" : "monarch_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "monarch_tile3",
+  "description" : "A pale ash block.",
+  "shortdescription" : "Pale Ash Block",
+  "footstepSound" : "/sfx/blocks/footstep_ash.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "monarch_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1201
+  }
+}

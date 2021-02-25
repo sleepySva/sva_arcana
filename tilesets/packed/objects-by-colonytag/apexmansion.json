@@ -1,0 +1,731 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/apexmansion",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 60,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A fine china plate.",
+      "//name" : "classicplate",
+      "//shortdescription" : "Classic Plate",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicplate",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A soft scent of fruit juice lingers.",
+      "//name" : "classicglass",
+      "//shortdescription" : "Crystal Glass",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicglass",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "The classiest drape.",
+      "//name" : "classiccurtain2",
+      "//shortdescription" : "Classic Drape",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "classiccurtain2",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "The classiest drape.",
+      "//name" : "classiccurtain2_orientation2",
+      "//shortdescription" : "Classic Drape",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "classiccurtain2",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "The classiest drape.",
+      "//name" : "classiccurtain2_orientation3",
+      "//shortdescription" : "Classic Drape",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "classiccurtain2",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "The classiest drape.",
+      "//name" : "classiccurtain2_orientation4",
+      "//shortdescription" : "Classic Drape",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "classiccurtain2",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "The classiest drape.",
+      "//name" : "classiccurtain2_orientation5",
+      "//shortdescription" : "Classic Drape",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "classiccurtain2",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "This door is beautifully crafted.",
+      "//name" : "classicbardoor",
+      "//shortdescription" : "Classic Barred Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicbardoor"
+    },
+    "16" : {
+      "//description" : "A delightful hanging basket. Don't swing from it!",
+      "//name" : "flowerbasket2",
+      "//shortdescription" : "Hanging Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "flowerbasket2",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A delightful hanging basket. Don't swing from it!",
+      "//name" : "flowerbasket2_orientation2",
+      "//shortdescription" : "Hanging Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "flowerbasket2",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A delightful hanging basket. Don't swing from it!",
+      "//name" : "flowerbasket2_orientation3",
+      "//shortdescription" : "Hanging Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "flowerbasket2",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "For displaying the fanciest of items, or holding up the smallest of buildings.",
+      "//name" : "classicpillarsmall",
+      "//shortdescription" : "Small Pillar",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "classicpillarsmall",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A large decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassiclarge1",
+      "//shortdescription" : "Large Striped Vase",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "vaseclassiclarge1",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A classy chest filled with classy treasure!",
+      "//name" : "classicchest",
+      "//shortdescription" : "Classic Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "classicchest",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "It's just a wall panel.",
+      "//name" : "apexwoodpanel",
+      "//shortdescription" : "Standard Issue Wall Panel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "apexwoodpanel"
+    },
+    "22" : {
+      "//description" : "An ornate fountain - much of the water appears to be wasted.",
+      "//name" : "classicfountain",
+      "//shortdescription" : "Water Fountain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicfountain",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassicmedium1",
+      "//shortdescription" : "Fancy Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "vaseclassicmedium1",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "The sort of desk that's used exclusively for making important decisions.",
+      "//name" : "classicdesk",
+      "//shortdescription" : "Classic Desk",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicdesk",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A bookcase built to be filled with classic literature.",
+      "//name" : "classicbookcase",
+      "//shortdescription" : "Classic Bookcase",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicbookcase",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "The reason you don't play ball in the house.",
+      "//name" : "classicchina",
+      "//shortdescription" : "Classic China Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "classicchina",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A board game, with a cardboard castle and game pieces.",
+      "//name" : "fantasyboardgame",
+      "//shortdescription" : "Fantasy Board Game",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "fantasyboardgame",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A bust of an important Apex.",
+      "//name" : "apexbustmale",
+      "//shortdescription" : "Apex Male Bust",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexbustmale",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "For when you want to make a table-based statement.",
+      "//name" : "classicdiningtable",
+      "//shortdescription" : "Classic Dining Table",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "classicdiningtable",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "An appropriately glorious monument dedicated to a glorious leader.",
+      "//name" : "classicapestatue",
+      "//shortdescription" : "Big Ape Monument",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicapestatue",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "I didn't know clocks were capable of reproduction.",
+      "//name" : "grandfatherclock",
+      "//shortdescription" : "Grandfather Clock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "grandfatherclock",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "All Hail the Great Banana!",
+      "//name" : "apexstatue2",
+      "//shortdescription" : "Great Banana Statue",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexstatue2",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A beautiful flower bed. Watch out for bees!",
+      "//name" : "flowerbed2",
+      "//shortdescription" : "Flower Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flowerbed2",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "All Hail the Great Banana! The sacred fruit!",
+      "//name" : "apexstatue3",
+      "//shortdescription" : "Great Banana Lock Statue",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexstatue3",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A fancy plaque with an inscription on it.",
+      "//name" : "apexnameplate",
+      "//shortdescription" : "Fancy Plaque",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexnameplate",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A delightful hanging basket. Don't swing from it!",
+      "//name" : "flowerbasket1",
+      "//shortdescription" : "Hanging Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "flowerbasket1",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A delightful hanging basket. Don't swing from it!",
+      "//name" : "flowerbasket1_orientation2",
+      "//shortdescription" : "Hanging Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "flowerbasket1",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A delightful hanging basket. Don't swing from it!",
+      "//name" : "flowerbasket1_orientation3",
+      "//shortdescription" : "Hanging Basket",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "flowerbasket1",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A beautiful bed of rich wood and silks.",
+      "//name" : "classicbed",
+      "//shortdescription" : "Classic Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "classicbed",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A pretty iron wall sconce.",
+      "//name" : "classiclight",
+      "//shortdescription" : "Classic Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classiclight",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classiccurtain1",
+      "//shortdescription" : "Classic Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "classiccurtain1",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "A pretty iron wall sconce.",
+      "//name" : "classiclight_orientation2",
+      "//shortdescription" : "Classic Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classiclight",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A pretty iron wall sconce.",
+      "//name" : "classiclight_orientation3",
+      "//shortdescription" : "Classic Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classiclight"
+    },
+    "42" : {
+      "//description" : "Good for hosting small dinner parties.",
+      "//name" : "classictable",
+      "//shortdescription" : "Classic Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "classictable",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "It's a bust of Big Ape, Glorious Leader of the Apex.",
+      "//name" : "apexstatue1",
+      "//shortdescription" : "Big Ape Bust",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexstatue1",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "A golden candlestick with three prongs. The wax never seems to melt.",
+      "//name" : "classiccandlestick",
+      "//shortdescription" : "Classic Candlestick",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classiccandlestick",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A golden candlestick with three prongs. The wax never seems to melt.",
+      "//name" : "classiccandlestick_orientation1",
+      "//shortdescription" : "Classic Candlestick",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "classiccandlestick",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "This chandelier is made of wrought-iron. It looks expensive.",
+      "//name" : "classicchandelier",
+      "//shortdescription" : "Classic Chandelier",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-16",
+      "object" : "classicchandelier",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A large classy storage cabinet.",
+      "//name" : "classiccupboard",
+      "//shortdescription" : "Classic Cupboard",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classiccupboard",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "A classic banana-infused wood door with a gilded handle.",
+      "//name" : "classicdoor",
+      "//shortdescription" : "Classic Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicdoor",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A ceiling spotlight. Ideal lighting for fancy artwork.",
+      "//name" : "classiclightart",
+      "//shortdescription" : "Classic Ceiling Light",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "classiclightart",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classiccurtain1_orientation2",
+      "//shortdescription" : "Classic Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "classiccurtain1",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "A decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassicsmall1",
+      "//shortdescription" : "Small Fancy Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "vaseclassicsmall1",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "Acceptable whether you're wearing sweatpants and a beanie or pantaloons.",
+      "//name" : "cider",
+      "//shortdescription" : "Mulled Fruit Drink",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "cider",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A dining chair fit for the sort of person who enjoys caviar.",
+      "//name" : "classicchair",
+      "//shortdescription" : "Classic Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "classicchair",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A large decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassiclarge2",
+      "//shortdescription" : "Large Fancy Vase",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "vaseclassiclarge2",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "A beautiful flower bed. Watch out for bees!",
+      "//name" : "flowerbed1",
+      "//shortdescription" : "Flower Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flowerbed1",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassicsmall2",
+      "//shortdescription" : "Small Striped Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "vaseclassicsmall2",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "Thin hanging drapes. Quite classy.",
+      "//name" : "classiccurtain3",
+      "//shortdescription" : "Classic Thin Drape",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "classiccurtain3",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "Big ape statue with no head.",
+      "//name" : "classicapestatuenohead",
+      "//shortdescription" : "Headless Big Ape Statue",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "classicapestatuenohead",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "A fine china bowl.",
+      "//name" : "classicbowl",
+      "//shortdescription" : "Classic Bowl",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicbowl",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A fine china mug.",
+      "//name" : "classicmug",
+      "//shortdescription" : "Classic Mug",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "classicmug",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classiccurtain1_orientation3",
+      "//shortdescription" : "Classic Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "classiccurtain1",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classiccurtain1_orientation4",
+      "//shortdescription" : "Classic Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "classiccurtain1",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "The classiest curtain.",
+      "//name" : "classiccurtain1_orientation5",
+      "//shortdescription" : "Classic Curtain",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "classiccurtain1",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A decorative vase. Looks pretty smashable.",
+      "//name" : "vaseclassicmedium2",
+      "//shortdescription" : "Classic Vase",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "vaseclassicmedium2",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/classicplate.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/classicglass.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain2.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain2_orientation2.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain2_orientation3.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain2_orientation4.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain2_orientation5.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/classicbardoor.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbasket2.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbasket2_orientation2.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbasket2_orientation3.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/classicpillarsmall.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassiclarge1.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/classicchest.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/apexwoodpanel.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/classicfountain.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassicmedium1.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/classicdesk.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/classicbookcase.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/classicchina.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/fantasyboardgame.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/apexbustmale.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/classicdiningtable.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/classicapestatue.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/grandfatherclock.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/apexstatue2.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbed2.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/apexstatue3.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/apexnameplate.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbasket1.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbasket1_orientation2.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbasket1_orientation3.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/classicbed.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/classiclight.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain1.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/classiclight_orientation2.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/classiclight_orientation3.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/classictable.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/apexstatue1.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/classiccandlestick.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/classiccandlestick_orientation1.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/classicchandelier.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/classiccupboard.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/classicdoor.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/classiclightart.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain1_orientation2.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassicsmall1.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/cider.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/classicchair.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassiclarge2.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/flowerbed1.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassicsmall2.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain3.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/classicapestatuenohead.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/classicbowl.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/classicmug.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain1_orientation3.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain1_orientation4.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/classiccurtain1_orientation5.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/vaseclassicmedium2.png"
+    }
+  },
+  "tilewidth" : 8
+}

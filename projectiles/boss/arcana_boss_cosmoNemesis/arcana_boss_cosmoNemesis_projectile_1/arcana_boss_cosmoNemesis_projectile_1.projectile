@@ -1,0 +1,111 @@
+{
+  "projectileName" : "arcana_boss_cosmoNemesis_projectile_1",
+  "physics" : "sticky",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 60,
+  "piercing" : true,
+  "knockback" : 40,
+  "knockbackDirectional" : true,
+  
+  "image" : "arcana_boss_cosmoNemesis_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [160, 100, 20],
+  "emitters" : ["flames"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "fireswoosh1",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "fireswoosh2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    },
+	{
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_fire_2/arcana_explosion_fire_2.config"
+    }
+  ],
+  
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_plasma.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "fireswoosh1",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "fireswoosh2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    },
+	{
+        "action" : "projectile",
+        "type" : "fireswarmer",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_cosmoNemesis/arcana_boss_cosmoNemesis_projectile_1/arcana_boss_cosmoNemesis_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.3,
+        "destructionTime" : 0.3,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    },
+	{
+      "time" : 0.18,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "fireswarmer",
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.2,
+      "inheritSpeedFactor" : 0
+    }
+  ],
+  
+  "damageKind" : "fire"
+ 
+}

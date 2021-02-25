@@ -1,0 +1,23 @@
+{
+  "materialId" : 16633,
+  "materialName" : "sanguine_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "sanguine_tile1",
+  "description" : "A crimson grass block.",
+  "shortdescription" : "Sanguine Grass Block",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 12,
+  "category" : "materials",
+  "tillableMod" : 32,
+  "soil" : true,
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "sanguine_tile1.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1461
+  }
+}

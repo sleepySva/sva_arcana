@@ -1,0 +1,132 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/mining",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 10,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A warning sign showing falling rocks.",
+      "//name" : "fallingrocksmodern",
+      "//shortdescription" : "Falling Rocks Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fallingrocksmodern"
+    },
+    "1" : {
+      "//description" : "An old crate of Mining supplies - For every budding Miner!",
+      "//name" : "miningsupplies",
+      "//shortdescription" : "Mining Supplies Crate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "miningsupplies",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "An industrial-looking metal door.",
+      "//name" : "miningdoor",
+      "//shortdescription" : "Miner's Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "miningdoor",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A vertical hatch doorway.",
+      "//name" : "miningverticaldoor",
+      "//shortdescription" : "Mining Hatch",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "miningverticaldoor",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A large metal Skip full of rubble.",
+      "//name" : "miningskip",
+      "//shortdescription" : "Mining Skip",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "miningskip",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A machine used to move large amounts of mined material.",
+      "//name" : "miningbelt",
+      "//shortdescription" : "Mining Conveyer Belt",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "miningbelt",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Perfect for storing tools and equipment in!",
+      "//name" : "miningchest",
+      "//shortdescription" : "Mining Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "miningchest",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A machine used for breaking down rocks.",
+      "//name" : "miningcrusher",
+      "//shortdescription" : "Mining Impact Crusher",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "miningcrusher",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A metal fence with red and black warning stripes.",
+      "//name" : "miningfence",
+      "//shortdescription" : "Mining Railing",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "miningfence",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A metal sign that says \"HAZARD!\"",
+      "//name" : "mininghazardsign",
+      "//shortdescription" : "Mining Hazard Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "mininghazardsign"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/fallingrocksmodern.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/miningsupplies.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/miningdoor.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/miningverticaldoor.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/miningskip.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/miningbelt.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/miningchest.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/miningcrusher.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/miningfence.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/mininghazardsign.png"
+    }
+  },
+  "tilewidth" : 8
+}

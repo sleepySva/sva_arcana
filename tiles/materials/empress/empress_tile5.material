@@ -1,0 +1,21 @@
+{
+  "materialId" : 16529,
+  "materialName" : "empress_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "empress_tile5",
+  "description" : "A dark wall panel.",
+  "shortdescription" : "Empress Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "empress_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 116
+  }
+}

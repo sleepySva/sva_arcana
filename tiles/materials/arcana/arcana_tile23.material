@@ -1,0 +1,21 @@
+{
+  "materialId" : 16729,
+  "materialName" : "arcana_tile23",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile23",
+  "description" : "A composition of colorful plants.",
+  "shortdescription" : "Myriad Leaf Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile23.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 1823
+  }
+}

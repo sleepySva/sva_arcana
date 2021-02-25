@@ -1,0 +1,347 @@
+{
+  "name" : "arcana_stahlernBadlands",
+  "friendlyName" : "Stahlern Badlands",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.111, "scandroid" ],
+          [ 0.111, "crustoise" ],
+          [ 0.111, "crustoise" ],
+          [ 0.111, "crustoise" ],
+          [ 0.111, "cosmicintruder" ],
+          [ 0.111, "cosmicintruder" ],
+          [ 0.111, "adultpoptop" ],
+          [ 0.111, "pyromantle" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "scandroid" ],
+          [ 0.3, "scandroid" ],
+          [ 0.3, "scandroid" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      }, 
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "armadillocritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "groopcritter" ],
+          [ 1, "ravencritter" ],
+          [ 1, "wurmcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "desert"
+    }
+  },
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:arcana_arcaneDesert"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
+      "dayColors" : [ [125, 234, 255], [255, 255, 255] ],
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 81, 0],
+      "dayLightColor" : [230, 230, 220],
+      "eveningLightColor" : [160, 130, 160],
+      "nightLightColor" : [60, 40, 80]
+    }
+  ],
+
+  "mainBlock" : "stahlernBadlands_tile1",
+  "subBlocks" : [ "rustyblock", "sand2", "drydirt" ],
+  "ores" : "arcana_stahlernBadlands_ores_surface",
+
+  "parallax" : "/parallax/surface/arcana_arcaneDesert.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/desert_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/desert_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [
+	  "/music/desert-exploration1.ogg",
+	  "/music/the-peacekeepers.ogg",
+	  "/music/scorian-flow.ogg",
+	  "/music/housecleaning.ogg",
+	  "/music/vast-immortal-suns.ogg",
+	  "/music/ultramarine-loop.ogg",
+	  "/music/i-was-the-sun.ogg",
+	  "/music/desert-exploration2.ogg"
+	  ]
+    },
+    "night" : {
+      "tracks" : [
+	  "/music/i-was-the-sun.ogg",
+	  "/music/casiopeia.ogg",
+	  "/music/atlas-8bit.ogg",
+	  "/music/error-0xbfaf000.ogg",
+	  "/music/vast-immortal-suns.ogg",
+	  "/music/tranquility-base.ogg",
+	  "/music/psyche.ogg",
+	  "/music/eridanus-supervoid.ogg"
+	  ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "savannahgrass" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_stahlernBadlands_dungeon_1" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "desertChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "pebbles" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "savannahbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 35,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "cactus" ],
+        "treeFoliageList" : [ "cactusflowers", "bigflowers", "nothing" ]
+      },
+
+      // CROPS
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildbeakseedseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "desertvine"],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "pebbles" ]
+      }
+    ]
+  }
+}

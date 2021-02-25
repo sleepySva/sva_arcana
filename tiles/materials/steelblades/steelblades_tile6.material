@@ -1,0 +1,21 @@
+{
+  "materialId" : 16716,
+  "materialName" : "steelblades_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "steelblades_tile6",
+  "description" : "A wall panel. Looks highly durable.",
+  "shortdescription" : "Stahl-Verro Panel",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "steelblades_tile6.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4716
+  }
+}

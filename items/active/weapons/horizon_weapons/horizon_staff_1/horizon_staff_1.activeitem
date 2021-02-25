@@ -1,0 +1,155 @@
+{
+  "itemName" : "horizon_staff_1",
+  "price" : 2000,
+  "maxStack" : 1,
+  "level" : 8,
+  "rarity" : "Rare",
+  "description" : "You can sense the darkness flowing inside.",
+  "shortdescription" : "Sanctus",
+  "category" : "staff",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+
+  "animation" : "/items/active/weapons/staff/arcana_longstaff_1.animation",
+  "animationParts" : {
+    "staff" : "horizon_staff_1.png",
+    "stone" : "stone.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [200, 60, 220]
+      }
+    }
+  },
+
+  "inventoryIcon" : "horizon_staff_1.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.8,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.5,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "plasmabarrage",
+  "primaryAbility" : {
+
+    "name" : "Dark Momentum",
+    "maxCastRange" : 36,
+	
+	"projectileType" : "horizon_projectile_1",
+	
+	"projectileCount" : 24,
+    "projectileDistance" : 12,
+	
+    "projectileDelayFirst" : 2.0,
+    "projectileDelayEach" : 0.03,
+
+    "projectileParameters" : {
+      "baseDamage" : 24
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "altAbilityType" : "plasmabarrage",
+  "altAbility" : {
+
+    "name" : "Excelsis",
+    "maxCastRange" : 36,
+	
+	"projectileType" : "horizon_projectile_1",
+	
+	"projectileCount" : 12,
+    "projectileDistance" : 1,
+	
+    "projectileDelayFirst" : 0.8,
+    "projectileDelayEach" : 0.03,
+
+    "projectileParameters" : {
+      "baseDamage" : 26
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

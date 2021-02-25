@@ -1,0 +1,21 @@
+{
+  "materialId" : 16564,
+  "materialName" : "hephaestus_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "hephaestus_tile6",
+  "description" : "A decorative magistone pillar.",
+  "shortdescription" : "Magistone Pillar",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "hephaestus_tile6.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 156
+  }
+}

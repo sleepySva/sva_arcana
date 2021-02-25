@@ -1,0 +1,91 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/tier2",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 7,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A basic tungsten table.",
+      "//name" : "tier2table",
+      "//shortdescription" : "Tungsten Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier2table",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A basic tungsten door.",
+      "//name" : "tier2door",
+      "//shortdescription" : "Tungsten Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier2door"
+    },
+    "2" : {
+      "//description" : "A common tungsten bed.",
+      "//name" : "tier2bed",
+      "//shortdescription" : "Tungsten Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier2bed",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//name" : "tier2techchest",
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "A simple tungsten chair.",
+      "//name" : "tier2chair",
+      "//shortdescription" : "Tungsten Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier2chair",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A simple tungsten lamp.",
+      "//name" : "tier2light",
+      "//shortdescription" : "Tungsten Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier2light"
+    },
+    "6" : {
+      "//description" : "A robust tungesten lever. Demands to be pulled.",
+      "//name" : "tier2switch",
+      "//shortdescription" : "Tungsten Lever",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier2switch",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/tier2table.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/tier2door.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/tier2bed.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/tier2chair.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/tier2light.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/tier2switch.png"
+    }
+  },
+  "tilewidth" : 8
+}

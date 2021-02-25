@@ -1,0 +1,19 @@
+{
+  "ability" : {
+    "type" : "elementswarm",
+    "name" : "<elementalName> Swarm",
+    "scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
+    "class" : "ControlProjectile",
+
+    "energyCost" : 50,
+
+    "maxCastRange" : 25,
+
+    "projectileCount" : 6,
+    "projectileDistance" : 1.5,
+    "projectileType" : "<elementalType>swarmer",
+    "projectileParameters" : {
+      "baseDamage" : 35
+    }
+  }
+}

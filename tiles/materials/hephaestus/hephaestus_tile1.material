@@ -1,0 +1,21 @@
+{
+  "materialId" : 16559,
+  "materialName" : "hephaestus_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "hephaestus_tile1",
+  "description" : "An ancient flooring made with magistone.",
+  "shortdescription" : "Magistone Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "hephaestus_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 151
+  }
+}

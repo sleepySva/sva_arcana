@@ -1,0 +1,25 @@
+{
+  "objectName" : "horizon_table_2",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A dark table.",
+  "shortdescription" : "Horizon Table",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "horizon_table_2.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

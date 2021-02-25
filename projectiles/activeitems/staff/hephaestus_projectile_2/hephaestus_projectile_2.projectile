@@ -1,0 +1,29 @@
+{
+  "projectileName" : "hephaestus_projectile_2",
+  "physics" : "laser",
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "image" : "hephaestus_projectile_2.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["capturepodred","fireplasma","flames","firesparks"],
+  "frameNumber" : 1,
+  "speed" : 10,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/molotovexplosion/molotovexplosion.config"
+    }
+  ],
+  "lightColor" : [80, 40, 20],
+  "damageKind" : "fire",
+  "statusEffects" : [ "burning" ],
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 60,
+    "controlForce" : 30
+  }
+}

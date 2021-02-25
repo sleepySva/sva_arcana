@@ -1,0 +1,205 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/explorer",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 16,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Some rusty old vehicle, broken beyond repair.",
+      "//name" : "recreationalvehicle",
+      "//shortdescription" : "Recreational Vehicle",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "recreationalvehicle",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1",
+      "//shortdescription" : "Green Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1red",
+      "//shortdescription" : "Red Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1red",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent1blue",
+      "//shortdescription" : "Blue Dome Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent1blue",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent2yellow",
+      "//shortdescription" : "Yellow Basic Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent2yellow",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbagred",
+      "//shortdescription" : "Red Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbagred",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbaggreen",
+      "//shortdescription" : "Green Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbaggreen",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A military tent.",
+      "//name" : "apextent",
+      "//shortdescription" : "Military Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "apextent",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A heavy metal anchor. Yarr.",
+      "//name" : "anchor",
+      "//shortdescription" : "Anchor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-40",
+      "object" : "anchor",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A basic tent. Watch out for spacebears!",
+      "//name" : "tent2",
+      "//shortdescription" : "Green Basic Tent",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tent2",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "X marks the spot.",
+      "//name" : "treasuremap",
+      "//shortdescription" : "Treasure Map",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "treasuremap",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A large bronze statue of the Hylotl's home planet.",
+      "//name" : "giantglobe",
+      "//shortdescription" : "Globe Statue",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "giantglobe",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "It's a sleeping bag. It's not the comfiest, but it'll do.",
+      "//name" : "sleepingbag",
+      "//shortdescription" : "Blue Sleeping Bag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "sleepingbag",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A map of an unknown world.",
+      "//name" : "medievalmap",
+      "//shortdescription" : "Medieval Map",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "medievalmap"
+    },
+    "8" : {
+      "//description" : "A model of an unknown planet.",
+      "//name" : "medievalglobe",
+      "//shortdescription" : "Medieval Globe",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalglobe",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "Yarrrr, me hearties!",
+      "//name" : "shipwheel",
+      "//shortdescription" : "Wooden Ship Wheel",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "shipwheel",
+      "tilesetDirection" : "left"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/recreationalvehicle.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/tent1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/tent1red.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/tent1blue.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/tent2yellow.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbagred.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbaggreen.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/apextent.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/anchor.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/tent2.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/treasuremap.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/giantglobe.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/sleepingbag.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/medievalmap.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/medievalglobe.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/shipwheel.png"
+    }
+  },
+  "tilewidth" : 8
+}

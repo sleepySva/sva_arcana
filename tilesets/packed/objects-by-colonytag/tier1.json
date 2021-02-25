@@ -1,0 +1,187 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/tier1",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 15,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A basic iron door.",
+      "//name" : "tier1door",
+      "//shortdescription" : "Iron Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier1door"
+    },
+    "1" : {
+      "//name" : "tier1techchest",
+      "invalid" : "true"
+    },
+    "10" : {
+      "//description" : "This soft light is useful for illuminating small areas.",
+      "//name" : "tier1spotlight_orientation4",
+      "//shortdescription" : "Iron Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1spotlight",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "This soft light is useful for illuminating small areas.",
+      "//name" : "tier1spotlight_orientation5",
+      "//shortdescription" : "Iron Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1spotlight",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "This soft light is useful for illuminating small areas.",
+      "//name" : "tier1spotlight_orientation6",
+      "//shortdescription" : "Iron Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1spotlight",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "This soft light is useful for illuminating small areas.",
+      "//name" : "tier1spotlight_orientation7",
+      "//shortdescription" : "Iron Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1spotlight",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "This soft light is useful for illuminating small areas.",
+      "//name" : "tier1spotlight_orientation8",
+      "//shortdescription" : "Iron Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1spotlight",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A handy oil lantern. Careful not to spill it.",
+      "//name" : "tier1light",
+      "//shortdescription" : "Iron Lantern",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1light"
+    },
+    "3" : {
+      "//description" : "A simple iron table.",
+      "//name" : "tier1table",
+      "//shortdescription" : "Iron Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier1table",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A common iron bed.",
+      "//name" : "tier1bed",
+      "//shortdescription" : "Iron Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier1bed",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A sturdy iron lever. Perfect for pulling.",
+      "//name" : "tier1switch",
+      "//shortdescription" : "Iron Lever",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier1switch",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A simple iron chair.",
+      "//name" : "tier1chair",
+      "//shortdescription" : "Iron Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier1chair",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "This soft light is useful for illuminating small areas.",
+      "//name" : "tier1spotlight",
+      "//shortdescription" : "Iron Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1spotlight",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "This soft light is useful for illuminating small areas.",
+      "//name" : "tier1spotlight_orientation2",
+      "//shortdescription" : "Iron Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1spotlight",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "This soft light is useful for illuminating small areas.",
+      "//name" : "tier1spotlight_orientation3",
+      "//shortdescription" : "Iron Spotlight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier1spotlight",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/tier1door.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/tier1spotlight_orientation4.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/tier1spotlight_orientation5.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/tier1spotlight_orientation6.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/tier1spotlight_orientation7.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/tier1spotlight_orientation8.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/tier1light.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/tier1table.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/tier1bed.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/tier1switch.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/tier1chair.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/tier1spotlight.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/tier1spotlight_orientation2.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/tier1spotlight_orientation3.png"
+    }
+  },
+  "tilewidth" : 8
+}

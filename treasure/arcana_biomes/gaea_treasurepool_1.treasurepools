@@ -1,0 +1,36 @@
+{
+
+  "arcana_treasure_elemental_crafting_florastone" : [
+    [0, {
+      "fill" : [
+        { "item" : "elemental_crafting_florastone" }
+      ],
+      "poolRounds" : [
+        [0.1, 2],
+        [0.3, 3],
+        [0.3, 4],
+        [0.2, 5],
+        [0.1, 6]
+      ]
+    }]
+  ],
+
+  "gaea_treasure_1" : [
+    [0, {
+      "fill" : [
+        {"pool" : "valuableTreasure"},
+        {"pool" : "maybeWeaponTreasure"}
+      ],
+      "poolRounds" : [
+        [0.1, 1],
+        [0.4, 2],
+        [0.4, 3],
+        [0.1, 4]
+      ],
+      "pool" : [
+        {"weight" : 0.1, "pool" : "basicTreasure"},
+		{"weight" : 0.9, "pool" : "arcana_treasure_elemental_crafting_florastone"}
+      ]
+    }]
+  ]
+}

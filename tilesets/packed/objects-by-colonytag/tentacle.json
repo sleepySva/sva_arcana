@@ -1,0 +1,455 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/tentacle",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 37,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A large breakable growth. Wonder what's inside.",
+      "//name" : "tentaclepopbig",
+      "//shortdescription" : "Large Tentacle Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclepopbig"
+    },
+    "1" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2_orientation5",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation2",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation3",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "left"
+    },
+    "14" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation4",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation5",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "left"
+    },
+    "16" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation6",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation7",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation8",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation9",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1_orientation2",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation10",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation11",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation12",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "Don't wanna fall on one of these...",
+      "//name" : "tentaclespike_orientation13",
+      "//shortdescription" : "Tentacle Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclespike",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1_orientation2",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1_orientation3",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1_orientation4",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart1_orientation5",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart1",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A breakable growth. Wonder what's inside.",
+      "//name" : "tentaclepopmed",
+      "//shortdescription" : "Medium Tentacle Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclepopmed"
+    },
+    "3" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1_orientation3",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A breakable growth. Wonder what's inside.",
+      "//name" : "tentaclepopsmall",
+      "//shortdescription" : "Medium Tentacle Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tentaclepopsmall"
+    },
+    "31" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3_orientation2",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3_orientation3",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3_orientation4",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart3_orientation5",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart3",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "Ruin organs.",
+      "//name" : "litorgans",
+      "//shortdescription" : "Lit Organs",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "litorgans",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1_orientation4",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "This green substance has something moving inside it...",
+      "//name" : "tentaclespawner1_orientation5",
+      "//shortdescription" : "Tentacle Egg",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclespawner1",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2_orientation2",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2_orientation3",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "Something organic and slimy...",
+      "//name" : "tentaclepart2_orientation4",
+      "//shortdescription" : "Tentacle part",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "tentaclepart2",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepopbig.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2_orientation5.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation2.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation3.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation4.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation5.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation6.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation7.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation8.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation9.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1_orientation2.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation10.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation11.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation12.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespike_orientation13.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1_orientation2.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1_orientation3.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1_orientation4.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart1_orientation5.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepopmed.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1_orientation3.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepopsmall.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3_orientation2.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3_orientation3.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3_orientation4.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart3_orientation5.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/litorgans.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1_orientation4.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclespawner1_orientation5.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2_orientation2.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2_orientation3.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/tentaclepart2_orientation4.png"
+    }
+  },
+  "tilewidth" : 8
+}

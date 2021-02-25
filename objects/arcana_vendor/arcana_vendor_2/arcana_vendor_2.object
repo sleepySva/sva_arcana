@@ -1,0 +1,58 @@
+{
+  "objectName" : "arcana_vendor_2",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "A vendor selling a variety of books.",
+  "shortdescription" : "Orion Bookstore Vendor",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Bookstore",
+        "subtitle" : " New books will arrive from time to time!"
+      }
+    },
+    "buyFactor" : 4.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "arcana_codex_workshop_1-codex" },
+	  { "item" : "arcana_codex_workshop_2-codex" },
+	  { "item" : "arcana_codex_workshop_3-codex" },
+	  { "item" : "arcana_codex_misc_1-codex" },
+	  { "item" : "arcana_codex_misc_2-codex" },
+	  { "item" : "arcana_codex_aeon_1-codex" },
+	  { "item" : "arcana_codex_aeon_2-codex" },
+	  { "item" : "arcana_codex_horizon_1-codex" },
+	  { "item" : "arcana_codex_horizon_2-codex" },
+	  { "item" : "arcana_codex_guide_1-codex" },
+	  { "item" : "arcana_codex_guide_2-codex" },
+	  { "item" : "arcana_codex_chryso_1-codex" },
+	  { "item" : "arcana_codex_steelblades_1-codex" },
+	  { "item" : "arcana_codex_steelblades_2-codex" },
+	  { "item" : "arcana_codex_monarch_1-codex" },
+	  { "item" : "arcana_codex_monarch_2-codex" },
+      { "item" : "arcana_codex_havencrest_1-codex" },
+	  { "item" : "arcana_codex_havencrest_2-codex" },
+	  { "item" : "arcana_codex_havencrest_3-codex" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_vendor_2.png:<color>.<frame>",
+      "imagePosition" : [-48, -0],
+      "frames" : 8,
+      "animationCycle" : 1.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

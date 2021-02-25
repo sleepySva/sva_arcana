@@ -1,0 +1,21 @@
+{
+  "materialId" : 16540,
+  "materialName" : "monarch_tile10",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "monarch_tile10",
+  "description" : "A pale stone wall.",
+  "shortdescription" : "Holosium Wall",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "monarch_tile10.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 124
+  }
+}

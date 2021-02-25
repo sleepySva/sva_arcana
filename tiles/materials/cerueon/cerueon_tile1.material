@@ -1,0 +1,21 @@
+{
+  "materialId" : 16727,
+  "materialName" : "cerueon_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "cerueon_tile1",
+  "description" : "A blueish dirt tile, looks enchanted.",
+  "shortdescription" : "Cerueon Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "cerueon_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 727
+  }
+}

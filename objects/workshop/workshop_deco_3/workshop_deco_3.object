@@ -1,0 +1,26 @@
+{
+  "objectName" : "workshop_deco_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A system of terminals, looks complicated to the eye.",
+  "shortdescription" : "Central Terminal",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+  
+  "lightColor" : [140, 80, 30],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "workshop_deco_3.png:<color>",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

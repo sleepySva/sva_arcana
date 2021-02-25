@@ -1,0 +1,28 @@
+{
+  "projectileName" : "arcana_projectile_basic_1",
+  "physics" : "default",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 28,
+  
+  "image" : "arcana_projectile_basic_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [60, 50, 30],
+  "emitters" : ["arcana_particle_white"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  
+  "damageKind" : "default"
+ 
+}

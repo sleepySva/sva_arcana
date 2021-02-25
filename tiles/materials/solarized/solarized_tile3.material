@@ -1,0 +1,22 @@
+{
+  "materialId" : 16659,
+  "materialName" : "solarized_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "solarized_tile3",
+  "description" : "A deposite of burning crystals.",
+  "shortdescription" : "Solar Crystal Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 48,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "solarized_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 393,
+    "radiantLight" : [235, 200, 110]
+  }
+}

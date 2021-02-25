@@ -1,0 +1,62 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/neon",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 4,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A magenta street lamp post. Not the best colour for visibility, but it sure looks cool.",
+      "//name" : "neonlamppost",
+      "//shortdescription" : "Neon Lamp Post",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "neonlamppost",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "This wall ornament glows with a bold magenta light.",
+      "//name" : "neontriangle",
+      "//shortdescription" : "Neon Triangle",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "neontriangle",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A magenta hologram of a palm tree.",
+      "//name" : "neonhologram",
+      "//shortdescription" : "Neon Hologram",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "neonhologram",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "This wall ornament glows with a bold magenta light.",
+      "//name" : "neonpeacekeeperemblem",
+      "//shortdescription" : "Neon Peacekeeper Emblem",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "neonpeacekeeperemblem",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/neonlamppost.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/neontriangle.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/neonhologram.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/neonpeacekeeperemblem.png"
+    }
+  },
+  "tilewidth" : 8
+}

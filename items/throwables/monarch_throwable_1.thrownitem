@@ -1,0 +1,30 @@
+{
+  "itemName" : "monarch_throwable_1",
+  "rarity" : "Rare",
+  "category" : "throwableItem",
+  "inventoryIcon" : "monarch_throwable_1.png",
+  "image" : "monarch_throwable_1.png",
+  "shortdescription" : "Illuminated Dart",
+  "description" : "A throwing dart, emits light.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.5,
+
+  "projectileType" : "monarch_throwable_1_projectile",
+  "projectileConfig" : {
+    "speed" : 96,
+    "power" : 22,
+    "knockback" : 4,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+      }
+    ]
+  }
+}

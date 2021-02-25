@@ -1,0 +1,22 @@
+{
+  "materialId" : 16648,
+  "materialName" : "arcana_tile20",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile20",
+  "description" : "A composition of flowers.",
+  "shortdescription" : "Maple Flower Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile20.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1806,
+    "radiantLight" : [20, 10, 0]
+  }
+}

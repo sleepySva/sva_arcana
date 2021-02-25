@@ -1,0 +1,48 @@
+{
+  "objectName" : "monarch_chair_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A white and black palace bench.",
+  "shortdescription" : "Palace Bench",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "monarch_chair_3.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPositions" : [
+        // Positions from front to back.
+        [-8, 23], // Right
+        [8, 23] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "monarch_chair_3.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "direction" : "right",
+      "sitPositions" : [
+        // Positions from front to back.
+        [0, 23], // Left
+        [16, 23] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

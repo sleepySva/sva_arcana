@@ -1,0 +1,21 @@
+{
+  "materialId" : 16546,
+  "materialName" : "bleuark_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "bleuark_tile6",
+  "description" : "A support beam crafted with Atla gold and seastone.",
+  "shortdescription" : "Atlantis Support Beam",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "bleuark_tile6.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 134
+  }
+}

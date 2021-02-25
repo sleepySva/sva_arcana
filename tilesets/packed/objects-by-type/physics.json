@@ -1,0 +1,217 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-type/physics",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 17,
+  "tileheight" : 208,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Repels objects with a strong elastic force",
+      "//name" : "jumppad",
+      "//shortdescription" : "Jump Pad",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "jumppad"
+    },
+    "1" : {
+      "//description" : "This durasteel elevator will get the job done.",
+      "//name" : "durasteelelevatorlong",
+      "//shortdescription" : "Long Durasteel Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "durasteelelevatorlong",
+      "tilesetDirection" : "left"
+    },
+    "10" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfieldsmall",
+      "//shortdescription" : "Docking Field (Small)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "dockingfieldsmall",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfieldsmall_orientation2",
+      "//shortdescription" : "Docking Field (Small)",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "dockingfieldsmall",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfieldsmall_orientation3",
+      "//shortdescription" : "Docking Field (Small)",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "dockingfieldsmall",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfield",
+      "//shortdescription" : "Docking Field",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "dockingfield",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfield_orientation2",
+      "//shortdescription" : "Docking Field",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "0",
+      "object" : "dockingfield",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "This energy field can contain both atmosphere and artificial gravity.",
+      "//name" : "dockingfield_orientation3",
+      "//shortdescription" : "Docking Field",
+      "imagePositionX" : "-48",
+      "imagePositionY" : "0",
+      "object" : "dockingfield",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A crudely-made airlock door.",
+      "//name" : "cultistairlockbossdoor",
+      "//shortdescription" : "Cultist Airlock Door",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "cultistairlockbossdoor",
+      "tilesetDirection" : "left"
+    },
+    "2" : {
+      "//description" : "This durasteel elevator will get the job done.",
+      "//name" : "durasteelelevatorshort",
+      "//shortdescription" : "Short Durasteel Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "durasteelelevatorshort",
+      "tilesetDirection" : "left"
+    },
+    "3" : {
+      "//description" : "This elevator operates on an elaborate system of clockwork.",
+      "//name" : "mechanicalelevatorlong",
+      "//shortdescription" : "Long Mechanical Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "mechanicalelevatorlong",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "This simple wooden elevator operates on a pulley system.",
+      "//name" : "woodenelevatorshort",
+      "//shortdescription" : "Short Wooden Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodenelevatorshort",
+      "tilesetDirection" : "left"
+    },
+    "5" : {
+      "//description" : "This elevator operates on an elaborate system of clockwork.",
+      "//name" : "mechanicalelevatorshort",
+      "//shortdescription" : "Short Mechanical Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "mechanicalelevatorshort",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "This simple wooden elevator operates on a pulley system.",
+      "//name" : "woodenelevatorlong",
+      "//shortdescription" : "Long Wooden Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodenelevatorlong",
+      "tilesetDirection" : "left"
+    },
+    "7" : {
+      "//description" : "This elevator design is commonly seen in foundries.",
+      "//name" : "foundryelevatorlong",
+      "//shortdescription" : "Long Industrial Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundryelevatorlong",
+      "tilesetDirection" : "left"
+    },
+    "8" : {
+      "//description" : "This elevator design is commonly seen in foundries.",
+      "//name" : "foundryelevatorshort",
+      "//shortdescription" : "Short Industrial Elevator",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "foundryelevatorshort",
+      "tilesetDirection" : "left"
+    },
+    "9" : {
+      "//description" : "A force field which can only be passed through one way.",
+      "//name" : "bossdoor",
+      "//shortdescription" : "Force Field",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bossdoor",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/jumppad.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/durasteelelevatorlong.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfieldsmall.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfieldsmall_orientation2.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfieldsmall_orientation3.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfield.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfield_orientation2.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/dockingfield_orientation3.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/cultistairlockbossdoor.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/durasteelelevatorshort.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/mechanicalelevatorlong.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/woodenelevatorshort.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/mechanicalelevatorshort.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/woodenelevatorlong.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/foundryelevatorlong.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/foundryelevatorshort.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/bossdoor.png"
+    }
+  },
+  "tilewidth" : 40
+}

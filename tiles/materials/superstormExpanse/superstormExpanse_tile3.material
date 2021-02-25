@@ -1,0 +1,21 @@
+{
+  "materialId" : 16703,
+  "materialName" : "superstormExpanse_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "superstormExpanse_tile3",
+  "description" : "A piece of lightning tased dirt.",
+  "shortdescription" : "Superstorm Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "superstormExpanse_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 703
+  }
+}

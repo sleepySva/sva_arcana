@@ -1,0 +1,54 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/tools",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 5,
+  "tileheight" : 56,
+  "tileproperties" : {
+      "0" : {
+          "//name" : "peanutbutter",
+          "invalid" : "true"
+      },
+      "1" : {
+          "//name" : "ironbeacon",
+          "invalid" : "true"
+      },
+      "2" : {
+          "//name" : "robot",
+          "invalid" : "true"
+      },
+      "3" : {
+          "//name" : "decoyprincess",
+          "invalid" : "true"
+      },
+      "4" : {
+          "//description" : "A distress beacon. Who knows who might hear it?",
+          "//name" : "beaconsnow",
+          "//shortdescription" : "Distress Beacon",
+          "imagePositionX" : "-8",
+          "imagePositionY" : "0",
+          "object" : "beaconsnow",
+          "tilesetDirection" : "right"
+      }
+  },
+  "tiles" : {
+      "0" : {
+          "image" : "../../../../../tiled/packed/../packed/invalid.png"
+      },
+      "1" : {
+          "image" : "../../../../../tiled/packed/../packed/invalid.png"
+      },
+      "2" : {
+          "image" : "../../../../../tiled/packed/../packed/invalid.png"
+      },
+      "3" : {
+          "image" : "../../../../../tiled/packed/../packed/invalid.png"
+      },
+      "4" : {
+          "image" : "../../../../../tiled/packed/objects/beaconsnow.png"
+      }
+  },
+  "tilewidth" : 48
+}

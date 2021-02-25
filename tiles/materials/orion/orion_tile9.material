@@ -1,0 +1,21 @@
+{
+  "materialId" : 16625,
+  "materialName" : "orion_tile9",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile9",
+  "description" : "A sloped metal panel used by the Orion, painted dark-blue.",
+  "shortdescription" : "Orion Dark Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 26,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile9.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4151
+  }
+}

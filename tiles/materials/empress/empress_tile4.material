@@ -1,0 +1,21 @@
+{
+  "materialId" : 16528,
+  "materialName" : "empress_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "empress_tile4",
+  "description" : "A gold plated roofing.",
+  "shortdescription" : "Empress Roofing",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "empress_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 115
+  }
+}

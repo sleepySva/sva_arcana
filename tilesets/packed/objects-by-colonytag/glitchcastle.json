@@ -1,0 +1,959 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/glitchcastle",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 80,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A chequered flag bearing an emblem.",
+      "//name" : "battlestandard",
+      "//shortdescription" : "Battle Standard",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "battlestandard",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A royal glow.",
+      "//name" : "royalcandles",
+      "//shortdescription" : "Royal Candles",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "royalcandles",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A flagpole fit for topping any building.",
+      "//name" : "medievalflagpole",
+      "//shortdescription" : "Medieval Flagpole",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalflagpole",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A small clock with a pendulum. It ticks and tocks but the hands never move.",
+      "//name" : "medievalclock",
+      "//shortdescription" : "Medieval Wall Clock",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "medievalclock",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "Shiny armour stands resolute.",
+      "//name" : "medievalarmor",
+      "//shortdescription" : "Display Armour",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalarmor",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A beautifully woven banner.",
+      "//name" : "bannermedievalsmall",
+      "//shortdescription" : "Small Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "bannermedievalsmall",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A beautifully woven banner.",
+      "//name" : "bannermedievalsmall_orientation2",
+      "//shortdescription" : "Small Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "bannermedievalsmall",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A beautifully woven banner.",
+      "//name" : "bannermedievalsmall_orientation3",
+      "//shortdescription" : "Small Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "bannermedievalsmall",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "... Another throne.",
+      "//name" : "royaltoilet",
+      "//shortdescription" : "Royal Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "royaltoilet",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "Just a ceremonial shield. It wouldn't do much good in a fight.",
+      "//name" : "wallshield",
+      "//shortdescription" : "Glitch Shield Display",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "wallshield"
+    },
+    "18" : {
+      "//description" : "A royal chalice, for filling a royal mouth with royal beverages.",
+      "//name" : "royalchalice",
+      "//shortdescription" : "Royal Chalice",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "royalchalice",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "castlehiddentrapdoor",
+      "//shortdescription" : "Hidden Brick Trapdoor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "castlehiddentrapdoor",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Valuable things should be stored here.",
+      "//name" : "royalcabinet",
+      "//shortdescription" : "Royal Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "royalcabinet",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A stone fireplace. A good way to warm a cold castle.",
+      "//name" : "medievalfireplace",
+      "//shortdescription" : "Medieval Fireplace",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalfireplace",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A monarchs bookcase... let's find out what royalty reads.",
+      "//name" : "royalbookcase",
+      "//shortdescription" : "Royal Bookcase",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "royalbookcase",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A huge, intimidating door.",
+      "//name" : "largecastledoor",
+      "//shortdescription" : "Large Medieval Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "largecastledoor",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A solid iron torch with a gentle flickering flame.",
+      "//name" : "medievaltorch",
+      "//shortdescription" : "Medieval Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievaltorch",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A solid iron torch with a gentle flickering flame.",
+      "//name" : "medievaltorch_orientation2",
+      "//shortdescription" : "Medieval Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievaltorch",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A solid iron torch with a gentle flickering flame.",
+      "//name" : "medievaltorch_orientation3",
+      "//shortdescription" : "Medieval Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievaltorch",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A throne fit for royal buttocks.",
+      "//name" : "royalthrone",
+      "//shortdescription" : "Royal Throne",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "royalthrone",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Something isn't quite right with these bricks.",
+      "//name" : "castlehiddendoor",
+      "//shortdescription" : "Hidden Brick Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "castlehiddendoor",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "One of these shackles looks suspicious...",
+      "//name" : "medievalswitchshackle",
+      "//shortdescription" : "Wall Shackles",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-24",
+      "object" : "medievalswitchshackle",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "Tools used for poking at burning coals or kindling.",
+      "//name" : "fireplacetools",
+      "//shortdescription" : "Fireplace Tools",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fireplacetools",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "These display swords could be dangerous in the wrong hands.",
+      "//name" : "medievalsworddisplay",
+      "//shortdescription" : "Sword Display",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "medievalsworddisplay",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A white king from an oversized chess set.",
+      "//name" : "chessking",
+      "//shortdescription" : "White Stone King",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessking",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "These display axes look very sharp.",
+      "//name" : "medievalaxedisplay",
+      "//shortdescription" : "Axe Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "medievalaxedisplay"
+    },
+    "32" : {
+      "//description" : "These iron shackles may make escaping from prison inconvenient.",
+      "//name" : "wallshackles",
+      "//shortdescription" : "Wall Shackles",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "wallshackles",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A white queen from an oversized chess set.",
+      "//name" : "chessqueen",
+      "//shortdescription" : "White Stone Queen",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessqueen",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A fancy royal desk.",
+      "//name" : "royaldesk",
+      "//shortdescription" : "Royal Desk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "royaldesk",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "Shiny armour stands resolute. Hmm... The shield looks loose.",
+      "//name" : "medievalarmorswitch",
+      "//shortdescription" : "Suspicious Display Armour",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalarmorswitch",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A dungeon cell door, built to hold even the strongest prisoner.",
+      "//name" : "castledungeondoor",
+      "//shortdescription" : "Medieval Cell Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "castledungeondoor",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "I wonder how heavy it is.",
+      "//name" : "ballandchain",
+      "//shortdescription" : "Ball and Chain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ballandchain",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "A pressure plate, to be used wisely.",
+      "//name" : "medievalpressureplate",
+      "//shortdescription" : "Pressure Plate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalpressureplate"
+    },
+    "39" : {
+      "//description" : "A beautiful bed made of shiny gold.",
+      "//name" : "royalbed",
+      "//shortdescription" : "Ornate Royal Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "royalbed",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "This floor tile looks different from the rest.",
+      "//name" : "medievalswitchhidden",
+      "//shortdescription" : "Grey Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievalswitchhidden",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "This bell must make quite a sound.",
+      "//name" : "largebell",
+      "//shortdescription" : "Large Bell",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-40",
+      "object" : "largebell",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A strong and secure door.",
+      "//name" : "castledoor",
+      "//shortdescription" : "Medieval Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "castledoor",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A suspicious crystal with more to it than meets the eye.",
+      "//name" : "castleswitch",
+      "//shortdescription" : "Gem Switch",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "castleswitch",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A pedestal for putting your treasures on display.",
+      "//name" : "medievalpedestal",
+      "//shortdescription" : "Medieval Pedestal",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalpedestal",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "An iron chandelier. A good way to light a large room.",
+      "//name" : "medievalchandelier",
+      "//shortdescription" : "Medieval Chandelier",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "medievalchandelier",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A digital hourglass. It's stuck in a constant state.",
+      "//name" : "hourglass",
+      "//shortdescription" : "Hourglass",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hourglass",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A map of an unknown world.",
+      "//name" : "medievalmap",
+      "//shortdescription" : "Medieval Map",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "medievalmap"
+    },
+    "47" : {
+      "//description" : "Shiny armour stands armed and resolute.",
+      "//name" : "medievalarmorarmed",
+      "//shortdescription" : "Armed Display Armour",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalarmorarmed",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "This book is full of strange illustrations.",
+      "//name" : "medievalcodex",
+      "//shortdescription" : "Medieval Codex",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalcodex",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A brutal yet effective execution device.",
+      "//name" : "guillotine",
+      "//shortdescription" : "Guillotine",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "guillotine",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "This floor tile looks different from the rest.",
+      "//name" : "medievalswitchhidden_orientation2",
+      "//shortdescription" : "Grey Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievalswitchhidden",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "A beautifully woven banner.",
+      "//name" : "bannermedievallarge",
+      "//shortdescription" : "Large Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "bannermedievallarge",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A beautifully woven banner.",
+      "//name" : "bannermedievallarge_orientation2",
+      "//shortdescription" : "Large Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "bannermedievallarge",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A beautifully woven banner.",
+      "//name" : "bannermedievallarge_orientation3",
+      "//shortdescription" : "Large Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "bannermedievallarge",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "A model of an unknown planet.",
+      "//name" : "medievalglobe",
+      "//shortdescription" : "Medieval Globe",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalglobe",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "This chest itself is a treasure, let alone the contents.",
+      "//name" : "royalchest",
+      "//shortdescription" : "Royal Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "royalchest",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "A rack full of fairly dull iron swords.",
+      "//name" : "medievalweaponrack",
+      "//shortdescription" : "Medieval Weapon Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalweaponrack",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "A white pawn from an oversized chess set.",
+      "//name" : "chesspawn",
+      "//shortdescription" : "White Stone Pawn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chesspawn",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "A fancy feasting table.",
+      "//name" : "medievaldiningtable",
+      "//shortdescription" : "Royal Dining Table",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "medievaldiningtable",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "A white rook from an oversized chess set.",
+      "//name" : "chessrook",
+      "//shortdescription" : "White Stone Rook",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessrook",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A white bishop from an oversized chess set.",
+      "//name" : "chessbishop",
+      "//shortdescription" : "White Stone Bishop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessbishop",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "This floor tile looks different from the rest.",
+      "//name" : "medievalswitchhidden_orientation3",
+      "//shortdescription" : "Grey Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievalswitchhidden",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "Some shoddy wooden scaffolding.",
+      "//name" : "medievalscaffolding",
+      "//shortdescription" : "Wooden Scaffolding",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalscaffolding",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "A white knight from an oversized chess set.",
+      "//name" : "chessknight",
+      "//shortdescription" : "White Stone Knight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessknight",
+      "tilesetDirection" : "right"
+    },
+    "62" : {
+      "//description" : "A mysterious lever. I wonder what this does?",
+      "//name" : "medievalswitchlever",
+      "//shortdescription" : "Switch Lever",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalswitchlever",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "This royal decree makes note of a keep, where treasures lay under watchful guard.",
+      "//name" : "glitchdecree",
+      "//shortdescription" : "Royal Decree",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "glitchdecree"
+    },
+    "64" : {
+      "//description" : "A ceremonial horn that holds a woven banner.",
+      "//name" : "glitchhorndisplay",
+      "//shortdescription" : "Mounted Horn Banner",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "glitchhorndisplay",
+      "tilesetDirection" : "right"
+    },
+    "65" : {
+      "//name" : "glitchhorndisplay_orientation2",
+      "invalid" : "true"
+    },
+    "66" : {
+      "//name" : "glitchhorndisplay_orientation3",
+      "invalid" : "true"
+    },
+    "67" : {
+      "//description" : "A dark chequered flag bearing an emblem.",
+      "//name" : "darkbattlestandard",
+      "//shortdescription" : "Dark Battle Standard",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "darkbattlestandard",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "A darkly coloured woven banner.",
+      "//name" : "darkbannermedievallarge",
+      "//shortdescription" : "Large Dark Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "darkbannermedievallarge",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "A darkly coloured woven banner.",
+      "//name" : "darkbannermedievallarge_orientation2",
+      "//shortdescription" : "Large Dark Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "darkbannermedievallarge",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "This floor tile looks different from the rest.",
+      "//name" : "medievalswitchhidden_orientation4",
+      "//shortdescription" : "Grey Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievalswitchhidden",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "A darkly coloured woven banner.",
+      "//name" : "darkbannermedievallarge_orientation3",
+      "//shortdescription" : "Large Dark Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "darkbannermedievallarge",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "A small darkly coloured woven banner.",
+      "//name" : "darkbannermedievalsmall",
+      "//shortdescription" : "Small Dark Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "darkbannermedievalsmall",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "A small darkly coloured woven banner.",
+      "//name" : "darkbannermedievalsmall_orientation2",
+      "//shortdescription" : "Small Dark Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "darkbannermedievalsmall",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "A small darkly coloured woven banner.",
+      "//name" : "darkbannermedievalsmall_orientation3",
+      "//shortdescription" : "Small Dark Glitch Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "darkbannermedievalsmall",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "A black bishop from an oversized chess set.",
+      "//name" : "chessbishopblack",
+      "//shortdescription" : "Black Stone Bishop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessbishopblack",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//description" : "A black queen from an oversized chess set.",
+      "//name" : "chessqueenblack",
+      "//shortdescription" : "Black Stone Queen",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessqueenblack",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "A black pawn from an oversized chess set.",
+      "//name" : "chesspawnblack",
+      "//shortdescription" : "Black Stone Pawn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chesspawnblack",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "A black knight from an oversized chess set.",
+      "//name" : "chessknightblack",
+      "//shortdescription" : "Black Stone Knight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessknightblack",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//description" : "A black rook from an oversized chess set.",
+      "//name" : "chessrookblack",
+      "//shortdescription" : "Black Stone Rook",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chessrookblack",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "A black king from an oversized chess set.",
+      "//name" : "chesskingblack",
+      "//shortdescription" : "Black Stone King",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chesskingblack",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "This floor tile looks different from the rest.",
+      "//name" : "medievalswitchhidden_orientation5",
+      "//shortdescription" : "Grey Hidden Switch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "medievalswitchhidden",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "Wooden spikes. Just waiting to be decorated with the heads of your enemies!",
+      "//name" : "medievalspikes",
+      "//shortdescription" : "Wooden Spikes",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalspikes",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/battlestandard.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/royalcandles.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/medievalflagpole.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/medievalclock.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/medievalarmor.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/bannermedievalsmall.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/bannermedievalsmall_orientation2.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/bannermedievalsmall_orientation3.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/royaltoilet.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/wallshield.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/royalchalice.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/castlehiddentrapdoor.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/royalcabinet.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/medievalfireplace.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/royalbookcase.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/largecastledoor.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/medievaltorch.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/medievaltorch_orientation2.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/medievaltorch_orientation3.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/royalthrone.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/castlehiddendoor.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/medievalswitchshackle.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/fireplacetools.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/medievalsworddisplay.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/chessking.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/medievalaxedisplay.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/wallshackles.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/chessqueen.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/royaldesk.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/medievalarmorswitch.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/castledungeondoor.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/ballandchain.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/medievalpressureplate.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/royalbed.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/medievalswitchhidden.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/largebell.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/castledoor.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/castleswitch.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/medievalpedestal.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/medievalchandelier.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/hourglass.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/medievalmap.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/medievalarmorarmed.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/medievalcodex.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/guillotine.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/medievalswitchhidden_orientation2.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/bannermedievallarge.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/bannermedievallarge_orientation2.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/bannermedievallarge_orientation3.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/medievalglobe.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/royalchest.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/medievalweaponrack.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/chesspawn.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/medievaldiningtable.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/chessrook.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/chessbishop.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/medievalswitchhidden_orientation3.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/medievalscaffolding.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/chessknight.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/medievalswitchlever.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/glitchdecree.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/glitchhorndisplay.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/darkbattlestandard.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/darkbannermedievallarge.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/darkbannermedievallarge_orientation2.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/medievalswitchhidden_orientation4.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/darkbannermedievallarge_orientation3.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/darkbannermedievalsmall.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/darkbannermedievalsmall_orientation2.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/darkbannermedievalsmall_orientation3.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/chessbishopblack.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/chessqueenblack.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/chesspawnblack.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/chessknightblack.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/chessrookblack.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/chesskingblack.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/medievalswitchhidden_orientation5.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/medievalspikes.png"
+    }
+  },
+  "tilewidth" : 8
+}

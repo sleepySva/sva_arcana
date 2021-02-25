@@ -1,0 +1,85 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/geometric",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A very well-made geometric table.",
+      "//name" : "geometrictable",
+      "//shortdescription" : "Geometric Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "geometrictable",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "An geometric console. Sturdy enough to jump on.",
+      "//name" : "geometricswitch",
+      "//shortdescription" : "Geometric Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "geometricswitch",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A geometric door. Sturdy!",
+      "//name" : "geometricdoor",
+      "//shortdescription" : "Geometric Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "geometricdoor"
+    },
+    "3" : {
+      "//description" : "An exceptionally comfortable geometric chair.",
+      "//name" : "geometricchair",
+      "//shortdescription" : "Geometric Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "geometricchair",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A strong geometric bed.",
+      "//name" : "geometricbed",
+      "//shortdescription" : "Geometric Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "geometricbed",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A glowing geometric light.",
+      "//name" : "geometriclight",
+      "//shortdescription" : "Geometric Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "geometriclight",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/geometrictable.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/geometricswitch.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/geometricdoor.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/geometricchair.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/geometricbed.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/geometriclight.png"
+    }
+  },
+  "tilewidth" : 8
+}

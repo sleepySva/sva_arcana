@@ -1,0 +1,22 @@
+{
+  "materialId" : 16556,
+  "materialName" : "workshop_tile8",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "workshop_tile8",
+  "description" : "A machinery block covered in black.",
+  "shortdescription" : "Black Machinery Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "workshop_tile8.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 145,
+    "radiantLight" : [130, 80, 30]
+  }
+}

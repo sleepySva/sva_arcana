@@ -1,0 +1,67 @@
+{
+  "projectileName" : "artifact_orb_nil_projectile_2",
+  "physics" : "hover",
+  "timeToLive" : 1.0,
+  "image" : "artifact_orb_nil_projectile_2.png",
+  "animationCycle" : 0.35,
+  "lightColor" : [120, 120, 160],
+  "frameNumber" : 1,
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/artifact_orb_nil_projectile_2/artifact_orb_nil_projectile_2_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/iceimpactmute.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/ice_barrier_break1.ogg", "/sfx/projectiles/ice_barrier_break2.ogg", "/sfx/projectiles/ice_barrier_break3.ogg", "/sfx/projectiles/ice_barrier_break4.ogg", "/sfx/projectiles/ice_barrier_break5.ogg", "/sfx/projectiles/ice_barrier_break6.ogg", "/sfx/projectiles/ice_barrier_break7.ogg", "/sfx/projectiles/ice_barrier_break8.ogg", "/sfx/projectiles/ice_barrier_break9.ogg", "/sfx/projectiles/ice_barrier_break10.ogg" ]
+    },
+	{
+        "action" : "projectile",
+        "type" : "artifact_orb_nil_projectile_3",
+        "angleAdjust" : -15,
+        "inheritDamageFactor" : 1.0
+    },
+	{
+        "action" : "projectile",
+        "type" : "artifact_orb_nil_projectile_3",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 1.0
+    },
+	{
+        "action" : "projectile",
+        "type" : "artifact_orb_nil_projectile_3",
+        "angleAdjust" : 15,
+        "inheritDamageFactor" : 1.0
+    }
+  ],
+  "speed" : 6,
+  "power" : 10,
+  "damagePoly" : [],
+
+  "fullbright" : true,
+  "emitters" : [],
+
+  "damageKind" : "ice",
+  "orientationLocked" : false
+
+
+ 
+}

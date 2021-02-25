@@ -1,0 +1,38 @@
+{
+  "projectileName" : "artifact_projectile_duality_2",
+  "physics" : "default",
+  "timeToLive" : 6,
+  "bounces" : 0,
+  "image" : "artifact_projectile_duality_2.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["artifact_particle_duality_2","arcana_particle_black"],
+  "frameNumber" : 1,
+  "speed" : 18,
+  "knockback" : 18,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_black/arcana_explosion_plasma_1_black.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "action" : "particle",
+      "specification" : "arcana_arrow_black",
+      "rotate" : true,
+      "time" : 0.06,
+      "repeat" : true
+    }
+  ],
+  "lightColor" : [40, 40, 40],
+  "damageKind" : "spear",
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 80,
+    "controlForce" : 40
+  }
+}

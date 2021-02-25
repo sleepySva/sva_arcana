@@ -1,0 +1,452 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/combat",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 37,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Watch your step, this looks explosive!",
+      "//name" : "landmine",
+      "//shortdescription" : "Military Land Mine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "landmine",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A statue of a Floran. It looks like a great hunter.",
+      "//name" : "huntingchampionstatue",
+      "//shortdescription" : "Floran Champion Statue",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "huntingchampionstatue",
+      "tilesetDirection" : "left"
+    },
+    "10" : {
+      "//description" : "Just a ceremonial shield. It wouldn't do much good in a fight.",
+      "//name" : "wallshield",
+      "//shortdescription" : "Glitch Shield Display",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "wallshield"
+    },
+    "11" : {
+      "//description" : "An assortment of pointy things.",
+      "//name" : "marketstall3",
+      "//shortdescription" : "Market Weapon Stall",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "marketstall3",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A hi-tech container for guns.",
+      "//name" : "gunchest",
+      "//shortdescription" : "Gun Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "gunchest",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "These display axes look very sharp.",
+      "//name" : "medievalaxedisplay",
+      "//shortdescription" : "Axe Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "medievalaxedisplay"
+    },
+    "14" : {
+      "//description" : "Shiny armour stands resolute. Hmm... The shield looks loose.",
+      "//name" : "medievalarmorswitch",
+      "//shortdescription" : "Suspicious Display Armour",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalarmorswitch",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "The rack is filled with antique Avian spears.",
+      "//name" : "spearrack",
+      "//shortdescription" : "Avian Spear Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "spearrack",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "The finest automated security turret around.",
+      "//name" : "apexturret",
+      "//shortdescription" : "Hi-tech Turret",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexturret",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "An old, forgotten land mine. It may still be active!",
+      "//name" : "scorchedlandmine",
+      "//shortdescription" : "Rusty Land Mine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "scorchedlandmine",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "Shiny armour stands armed and resolute.",
+      "//name" : "medievalarmorarmed",
+      "//shortdescription" : "Armed Display Armour",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalarmorarmed",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "Bullseye!",
+      "//name" : "target",
+      "//shortdescription" : "Target",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "target",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Poor dummy, I'll name him Freddie!",
+      "//name" : "targetdummy",
+      "//shortdescription" : "Target Dummy",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "targetdummy",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A Floran weapon rack. Unsurprisingly, many of the weapons are gone.",
+      "//name" : "huntingweaponrack1",
+      "//shortdescription" : "Hunting Weapon Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingweaponrack1",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A sword on a sign. It usually appears outside a weapons shop.",
+      "//name" : "signweaponshop",
+      "//shortdescription" : "Weapon Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signweaponshop"
+    },
+    "22" : {
+      "//description" : "A sword on a sign. It usually appears outside a weapons shop.",
+      "//name" : "signweaponshop_orientation2",
+      "//shortdescription" : "Weapon Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signweaponshop"
+    },
+    "23" : {
+      "//description" : "A rack full of fairly dull iron swords.",
+      "//name" : "medievalweaponrack",
+      "//shortdescription" : "Medieval Weapon Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "medievalweaponrack",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Turret for your protection! Can only be placed once.",
+      "//name" : "standingturret",
+      "//shortdescription" : "Defense Turret",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "standingturret",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "Turret for your protection! Can only be placed once.",
+      "//name" : "standingturret_orientation2",
+      "//shortdescription" : "Defense Turret",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "standingturret",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "Turret for your protection! Can only be placed once.",
+      "//name" : "standingturret_orientation3",
+      "//shortdescription" : "Defense Turret",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "standingturret",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Turret for your protection! Can only be placed once.",
+      "//name" : "standingturret_orientation4",
+      "//shortdescription" : "Defense Turret",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "standingturret",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "Turret for your protection! Can only be placed once.",
+      "//name" : "standingturret_orientation5",
+      "//shortdescription" : "Defense Turret",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "standingturret",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A display commemorating the spear of a Floran who won a hunting ceremony.",
+      "//name" : "championspeardisplay",
+      "//shortdescription" : "Champion's Spear Display",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "championspeardisplay",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Armour! Get yer armour here!",
+      "//name" : "signarmorshop",
+      "//shortdescription" : "Armour Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signarmorshop"
+    },
+    "30" : {
+      "//description" : "A rack of traditional swords.",
+      "//name" : "hylotlkatanarack",
+      "//shortdescription" : "Traditional Sword Rack",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlkatanarack",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A rack of traditional swords.",
+      "//name" : "hylotlkatanarack_orientation1",
+      "//shortdescription" : "Traditional Sword Rack",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "hylotlkatanarack",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A metal sheet with a target painted on. Perfect for practicing your aim.",
+      "//name" : "shootingtarget",
+      "//shortdescription" : "Shooting Target",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shootingtarget",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A heroic red banner from some faraway nation.",
+      "//name" : "wargroovebanner1",
+      "//shortdescription" : "Cherrystone Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wargroovebanner1",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A torn blue banner from some faraway nation.",
+      "//name" : "wargroovebanner2",
+      "//shortdescription" : "Felheim Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wargroovebanner2",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "An elegant yellow banner from some faraway nation.",
+      "//name" : "wargroovebanner3",
+      "//shortdescription" : "Heavensong Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wargroovebanner3",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A tribal green banner from some faraway Floran nation.",
+      "//name" : "wargroovebanner4",
+      "//shortdescription" : "Floran Banner",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "wargroovebanner4",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Armour! Get yer armour here!",
+      "//name" : "signarmorshop_orientation2",
+      "//shortdescription" : "Armour Shop Sign",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "signarmorshop"
+    },
+    "5" : {
+      "//description" : "These display swords could be dangerous in the wrong hands.",
+      "//name" : "medievalsworddisplay",
+      "//shortdescription" : "Sword Display",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "medievalsworddisplay",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Shiny armour stands resolute.",
+      "//name" : "medievalarmor",
+      "//shortdescription" : "Display Armour",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievalarmor",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A heavy duty chest for storing weapons.",
+      "//name" : "weaponchest",
+      "//shortdescription" : "Weapon Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "weaponchest",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A Floran weapon rack. All of the weapons are missing.",
+      "//name" : "huntingweaponrack2",
+      "//shortdescription" : "Empty Weapon Rack",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "huntingweaponrack2",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A Floran spear mounted on a decorative plaque.",
+      "//name" : "huntingdisplay1",
+      "//shortdescription" : "Spear on a Plaque",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "huntingdisplay1",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/landmine.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/huntingchampionstatue.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/wallshield.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/marketstall3.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/gunchest.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/medievalaxedisplay.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/medievalarmorswitch.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/spearrack.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/apexturret.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/scorchedlandmine.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/medievalarmorarmed.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/target.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/targetdummy.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/huntingweaponrack1.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/signweaponshop.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/signweaponshop_orientation2.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/medievalweaponrack.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/standingturret.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/standingturret_orientation2.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/standingturret_orientation3.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/standingturret_orientation4.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/standingturret_orientation5.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/championspeardisplay.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/signarmorshop.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlkatanarack.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/hylotlkatanarack_orientation1.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/shootingtarget.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/wargroovebanner1.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/wargroovebanner2.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/wargroovebanner3.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/wargroovebanner4.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/signarmorshop_orientation2.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/medievalsworddisplay.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/medievalarmor.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/weaponchest.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/huntingweaponrack2.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/huntingdisplay1.png"
+    }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,38 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/sign",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+      "0" : {
+          "//description" : "A sign",
+          "//name" : "scorchedcitysign1",
+          "//shortdescription" : "Scorched City Sign",
+          "imagePositionX" : "-16",
+          "imagePositionY" : "0",
+          "object" : "scorchedcitysign1",
+          "tilesetDirection" : "right"
+      },
+      "1" : {
+          "//description" : "A sign",
+          "//name" : "scorchedcitysign1_orientation1",
+          "//shortdescription" : "Scorched City Sign",
+          "imagePositionX" : "-8",
+          "imagePositionY" : "0",
+          "object" : "scorchedcitysign1",
+          "tilesetDirection" : "right"
+      }
+  },
+  "tiles" : {
+      "0" : {
+          "image" : "../../../../../tiled/packed/objects/scorchedcitysign1.png"
+      },
+      "1" : {
+          "image" : "../../../../../tiled/packed/objects/scorchedcitysign1_orientation1.png"
+      }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16623,
+  "materialName" : "orion_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile7",
+  "description" : "A reinforced beam used by the Orion, painted white.",
+  "shortdescription" : "Orion Light Beam",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 22,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile7.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 177
+  }
+}

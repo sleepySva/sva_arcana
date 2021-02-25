@@ -1,0 +1,21 @@
+{
+  "materialId" : 16635,
+  "materialName" : "ferocious_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "ferocious_tile1",
+  "description" : "A soil mixed with wastes.",
+  "shortdescription" : "Ferocious Soil",
+  "footstepSound" : "/sfx/blocks/footstep_ash.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ferocious_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1341
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16555,
+  "materialName" : "workshop_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "workshop_tile7",
+  "description" : "A machinery block covered in orange.",
+  "shortdescription" : "Orange Machinery Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "workshop_tile7.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 146
+  }
+}

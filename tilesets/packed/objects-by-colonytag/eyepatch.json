@@ -1,0 +1,74 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/eyepatch",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 5,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "An eye chair. Not to be confused with a high chair.",
+      "//name" : "eyechair",
+      "//shortdescription" : "Eye Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "eyechair",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A door covered in eyes. Don't blink.",
+      "//name" : "eyedoor",
+      "//shortdescription" : "Eye Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "eyedoor",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A chest sealed with a piercing eye. Worth a look inside.",
+      "//name" : "eyechest",
+      "//shortdescription" : "Eye Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "eyechest",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "An eye table. Not good for people wearing skirts.",
+      "//name" : "eyetable",
+      "//shortdescription" : "Eye Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "eyetable",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A bed adorned with eyes. Great for nightmares.",
+      "//name" : "eyebed",
+      "//shortdescription" : "Eye Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "eyebed",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/eyechair.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/eyedoor.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/eyechest.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/eyetable.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/eyebed.png"
+    }
+  },
+  "tilewidth" : 8
+}

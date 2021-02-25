@@ -1,0 +1,34 @@
+{
+  "objectName" : "arcana_crafting_essenceExtractor_1",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Rare",
+  "description" : "A basic extractor for extracting arcane essence.",
+  "shortdescription" : "Wooden Essence Extractor",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "objectType" : "container",
+  "lightColor" : [90, 160, 170],
+
+  "recipeGroup" : "arcana_crafting_essenceExtractor_1",
+  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
+  "slotCount" : 2,
+  "uiConfig" : "/interface/arcana/arcana_crafting_essenceExtractor_1/arcana_crafting_essenceExtractor_1.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_essenceExtractor_1.png:<color>",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

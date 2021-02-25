@@ -1,0 +1,21 @@
+{
+  "materialId" : 16587,
+  "materialName" : "arcana_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile7",
+  "description" : "A simple flooring built on cobblestone.",
+  "shortdescription" : "Magiwood Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile7.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 177
+  }
+}

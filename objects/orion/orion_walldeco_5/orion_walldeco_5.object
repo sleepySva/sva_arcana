@@ -1,0 +1,25 @@
+{
+  "objectName" : "orion_walldeco_5",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A neon sign.",
+  "shortdescription" : "Neon Vendor Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "lightColor" : [252, 124, 205],
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_walldeco_5.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

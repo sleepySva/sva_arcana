@@ -1,0 +1,21 @@
+{
+  "modId" : 16807,
+  "modName" : "arcana_mod_pinkAquamarine",
+  "itemDrop" : "elemental_crafting_pinkAquamarine",
+  "description" : "Pink Aquamarine.",
+  "health" : 16,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_pinkAquamarine.png",
+    "variants" : 4,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [140, 60, 100]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16585,
+  "materialName" : "arcana_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile5",
+  "description" : "This wood panelling was fashionable in a distant era.",
+  "shortdescription" : "Magiwood Panelling",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile5.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 175
+  }
+}

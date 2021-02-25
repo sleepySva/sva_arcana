@@ -1,0 +1,23 @@
+{
+  "projectileName" : "monarch_throwable_1_projectile",
+  "image" : "monarch_throwable_1_projectile.png",
+  "animationCycle" : 0.05,
+  "physics" : "grenade",
+  "frameNumber" : 1,
+  "pointLight" : true,
+  "lightColor" : [100, 100, 100],
+  "speed" : 126,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 200.0,
+  "knockback" : 4,
+  "damageKind" : "dagger",
+  "emitters" : [ "daggerblue" ],
+  "damagePoly" : [ [-2, -3], [8, -3], [8, 2], [-2, 2] ]
+}
+
+

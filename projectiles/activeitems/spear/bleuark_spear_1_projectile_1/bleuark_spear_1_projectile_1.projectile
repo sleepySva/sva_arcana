@@ -1,0 +1,40 @@
+{
+  "projectileName" : "bleuark_spear_1_projectile_1",
+  "physics" : "default",
+  "timeToLive" : 7,
+  "bounces" : 0,
+  "image" : "bleuark_spear_1_projectile_1.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_white"],
+  "frameNumber" : 1,
+  "speed" : 72,
+  "knockback" : 16,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/watersplash/watersplash.config"
+    },
+    { 
+      "action" : "liquid", 
+      "liquid" : "water", "quantity" : 3 
+    }
+  ],
+  "periodicActions" : [
+    {
+      "action" : "particle",
+      "specification" : "arcana_arrow_white",
+      "rotate" : true,
+      "time" : 0.032,
+      "repeat" : true
+    }
+  ],
+
+  "lightColor" : [20, 80, 120],
+  "damageKind" : "spear",
+  "statusEffects" : [
+    "wet"
+  ]
+  
+}

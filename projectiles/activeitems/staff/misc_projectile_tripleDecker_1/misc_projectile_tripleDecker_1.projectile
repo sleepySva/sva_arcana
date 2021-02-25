@@ -1,0 +1,30 @@
+{
+  "projectileName" : "misc_projectile_tripleDecker_1",
+  "physics" : "laser",
+  "timeToLive" : 6,
+  "bounces" : 0,
+  "image" : "misc_projectile_tripleDecker_1.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["capturepodblue","largeiceswoosh","iceshockwave","iceplasma"],
+  "frameNumber" : 1,
+  "speed" : 14,
+  "knockback" : 14,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/burstexplosion/iceburstexplosion.config"
+    }
+  ],
+  "lightColor" : [50, 40, 100],
+  "damageKind" : "icespear",
+  "statusEffects" : [ "frostslow" ],
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 60,
+    "controlForce" : 30
+  }
+}

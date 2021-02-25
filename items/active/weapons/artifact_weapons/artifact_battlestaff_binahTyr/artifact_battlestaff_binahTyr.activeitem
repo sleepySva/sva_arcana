@@ -1,0 +1,279 @@
+{
+  "itemName" : "artifact_battlestaff_binahTyr",
+  "price" : 60000,
+  "maxStack" : 1,
+  "level" : 9,
+  "rarity" : "Essential",
+  "description" : "This hardened ferozium staff concentrates energy at an impressive distance.",
+  "shortdescription" : "Binah Tyr",
+  "category" : "staff",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+  "inventoryIcon" : "artifact_battlestaff_binahTyr.png:idle",
+
+  "animation" : "artifact_battlestaff_binahTyr.animation",
+  "animationParts" : {
+    "staff" : "artifact_battlestaff_binahTyr.png",
+    "stone" : "stone.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [140, 140, 140]
+      }
+    },
+
+    "sounds" : {
+      "physicalactivate" : ["/sfx/npc/boss/cultistboss_recharge.ogg"],
+      "zoneactivate" : ["/sfx/melee/giantsword_charge_full.ogg"],
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 1.4,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.5,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "plasmabladebarrage",
+  "primaryAbility" : {
+    "maxCastRange" : 30,
+
+    "projectileParameters" : {
+      "baseDamage" : 40
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, 2.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 3.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 3.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 3.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, 2.75]
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Switch Form",
+    "scripts" : ["/items/active/weapons/staff/abilities/neb-stafftomelee/neb-stafftomelee.lua"],
+	"class" : "NebStaffToMelee",
+
+    "transformCooldownTime" : 0.75,
+    "comboSteps" : 3,
+
+    "flashTime" : 0.15,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+
+    "swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [1.5, -1.0, 5.5, 1.0]
+    ],
+
+    // cooldown time multiplier for steps after the first, compounded per combo step
+    "comboSpeedFactor" : 0.9,
+
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 0.8,
+    "baseDps" : 11.5,
+
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.5,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 25
+      }
+    ],
+
+    "stances" : {
+	  "transitionToMelee" : {
+        "duration" : 0.8,
+		"armRotation" : -90,
+		"endArmRotation" : -90,
+		"weaponRotation" : 0,
+        "endWeaponRotation" : -10,
+        "weaponOffset" : [0.0, 0.0],
+        "endWeaponOffset" : [0, 0.375],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "transitionToStaff" : {
+        "duration" : 0.6,
+		"armRotation" : -90,
+		"endArmRotation" : -90,
+        "weaponRotation" : -10,
+        "endWeaponRotation" : 0,
+        "weaponOffset" : [0, 0.375],
+        "endWeaponOffset" : [0.0, 0.0],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  "meleeIdle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 0.375],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.15,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup2" : {
+        "duration" : 0.15,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire2" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait2" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup3" : {
+        "duration" : 0.15,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

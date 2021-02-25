@@ -1,0 +1,21 @@
+{
+  "materialId" : 16592,
+  "materialName" : "arcana_tile12",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile12",
+  "description" : "A solid roofing tile.",
+  "shortdescription" : "Arcane Roofing",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile12.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1803
+  }
+}

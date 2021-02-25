@@ -1,0 +1,22 @@
+{
+  "materialId" : 16582,
+  "materialName" : "arcana_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile2",
+  "description" : "A wooden fence made of magiwood.",
+  "shortdescription" : "Magiwood Fence",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 172
+  }
+}

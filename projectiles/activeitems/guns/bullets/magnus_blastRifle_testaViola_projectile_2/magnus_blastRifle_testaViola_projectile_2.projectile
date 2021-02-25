@@ -1,0 +1,48 @@
+{
+  "projectileName" : "magnus_blastRifle_testaViola_projectile_2",
+  "physics" : "rain",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 80,
+  "piercing" : false,
+  
+  "image" : "magnus_blastRifle_testaViola_projectile_2.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [148, 62, 145],
+  "emitters" : ["sparks","smoke"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_doom_1_pink/arcana_explosion_doom_1_pink.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/magnus_blastRifle_testaViola_projectile_2/magnus_blastRifle_testaViola_projectile_2_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

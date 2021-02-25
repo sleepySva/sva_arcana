@@ -1,0 +1,28 @@
+{
+  "margin" : 0,
+  "name" : "arcana_liquids",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//name" : "arcana_liquid_arcaneWater",
+      "liquid" : "arcana_liquid_arcaneWater"
+    },
+    "1" : {
+      "//name" : "arcana_liquid_illuminatedWater",
+      "liquid" : "arcana_liquid_illuminatedWater"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "arcana_liquid_arcaneWater.png"
+    },
+    "1" : {
+      "image" : "arcana_liquid_illuminatedWater.png"
+    }
+  },
+  "tilewidth" : 8
+}

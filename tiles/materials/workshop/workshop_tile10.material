@@ -1,0 +1,21 @@
+{
+  "materialId" : 16558,
+  "materialName" : "workshop_tile10",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "workshop_tile10",
+  "description" : "A blue support tile used by the Workshop.",
+  "shortdescription" : "Blue Metal Support",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "workshop_tile10.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 147
+  }
+}

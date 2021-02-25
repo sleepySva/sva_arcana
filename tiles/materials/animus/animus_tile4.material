@@ -1,0 +1,22 @@
+{
+  "materialId" : 16684,
+  "materialName" : "animus_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "animus_tile4",
+  "description" : "Strange blue crystals that emit a faint light.",
+  "shortdescription" : "Animus Crystals",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "animus_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 289,
+	"radiantLight" : [48, 161, 166]
+  }
+}

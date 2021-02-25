@@ -1,0 +1,21 @@
+{
+  "materialId" : 16602,
+  "materialName" : "havencrest_tile8",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "havencrest_tile8",
+  "description" : "A silver colored roofing tile.",
+  "shortdescription" : "Havencrest Roofing",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "havencrest_tile8.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 198
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "itemName" : "arcana_throwable_boss_evolapis",
+  "rarity" : "Legendary",
+  "category" : "throwableItem",
+  "inventoryIcon" : "arcana_throwable_boss_evolapis.png",
+  "image" : "arcana_throwable_boss_evolapis.png",
+  "shortdescription" : "Evo Abomination",
+  "description" : "A suspicious looking rock covered in green goo...",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 1.0,
+
+  "projectileType" : "arcana_throwable_boss_evolapis",
+  "projectileConfig" : {
+    "speed" : 40,
+    "power" : 0,
+    "knockback" : 4,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+      }
+    ]
+  }
+}

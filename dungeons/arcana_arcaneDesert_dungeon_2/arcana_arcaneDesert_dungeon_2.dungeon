@@ -1,0 +1,119 @@
+{
+  "metadata" : {
+    "name" : "arcana_arcaneDesert_dungeon_2",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_arcaneDesert_dungeon_2_part_1",
+	"arcana_arcaneDesert_dungeon_2_part_2"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 14,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_3.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_4.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_5.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_6.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_7" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_7.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_8",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_8" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_8.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_9",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_9" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_9.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_10",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_10" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_10.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_11",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_11" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_11.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_12",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_arcaneDesert_dungeon_2_part_12" ] ]
+      ],
+      "def" : [ "tmx", "arcana_arcaneDesert_dungeon_2_part_12.json" ]
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_arcaneDesert_dungeon_2_part_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_arcaneDesert_dungeon_2_part_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_arcaneDesert_dungeon_2_part_2.json" ] ],
+      "chance" : 0
+    }
+
+  ]
+}

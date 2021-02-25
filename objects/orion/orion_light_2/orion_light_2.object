@@ -1,0 +1,37 @@
+{
+  "objectName" : "orion_light_2",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A tiny blue lighting device.",
+  "shortdescription" : "Tiny Machinery LED",
+  "race" : "generic",
+  "category" : "light",
+  "price" : 100,
+  
+  "lightColor" : [70, 100, 100],
+  //"pointLight" : true,
+  //"pointBeam" : 10,
+  //"beamAmbience" : 0.15,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "orion_light_2.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "orion_light_2.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

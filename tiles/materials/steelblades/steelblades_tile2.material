@@ -1,0 +1,21 @@
+{
+  "materialId" : 16712,
+  "materialName" : "steelblades_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "steelblades_tile2",
+  "description" : "A durable building material made from verrostin.",
+  "shortdescription" : "Verrostin Tile",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "steelblades_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 712
+  }
+}

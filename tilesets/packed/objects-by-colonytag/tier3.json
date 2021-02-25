@@ -1,0 +1,91 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/tier3",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 7,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A stylish titanium table.",
+      "//name" : "tier3table",
+      "//shortdescription" : "Titanium Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier3table",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A glowing titanium light.",
+      "//name" : "tier3light",
+      "//shortdescription" : "Titanium Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier3light"
+    },
+    "2" : {
+      "//description" : "A titanium control console. Press all the buttons!",
+      "//name" : "tier3switch",
+      "//shortdescription" : "Titanium Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier3switch",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//name" : "tier3techchest",
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "A strong titanium door.",
+      "//name" : "tier3door",
+      "//shortdescription" : "Titanium Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier3door"
+    },
+    "5" : {
+      "//description" : "A comfortable titanium chair.",
+      "//name" : "tier3chair",
+      "//shortdescription" : "Titanium Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier3chair",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A comfortable titanium bed. Looks pretty sleek.",
+      "//name" : "tier3bed",
+      "//shortdescription" : "Titanium Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier3bed",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/tier3table.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/tier3light.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/tier3switch.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/tier3door.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/tier3chair.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/tier3bed.png"
+    }
+  },
+  "tilewidth" : 8
+}

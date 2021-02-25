@@ -1,0 +1,62 @@
+{
+  "name" : "arcana_weather_chrysoFall",
+
+  "particles" : [
+    {
+      "density" : 0.15,
+      "particle" : {
+        "type" : "ember",
+        "color" : [250, 245, 204],
+        "size" : 0.6,
+        "velocity" : [0, -0.2],
+        "timeToLive" : 10,
+		"fade" : 1,
+        "destructionAction" : "shrink",
+        "destructionTime" : 2,
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.15,
+      "particle" : {
+        "type" : "ember",
+        "color" : [250, 225, 174],
+        "size" : 0.8,
+        "velocity" : [0, -0.8],
+        "timeToLive" : 10,
+		"fade" : 1,
+        "destructionAction" : "shrink",
+        "destructionTime" : 2,
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    }
+  ],
+  
+  "projectiles" : [
+    {
+      "projectile" : "arcana_weather_chrysoFall_projectile_1",
+      "parameters" : {
+	    "timeToLive" : 20,
+		"speed" : 4,
+        "power" : 0,
+		"scripts" : ["/scripts/projectiles/sinewaveprojectile.lua"],
+		"scriptDelta" : 1,
+
+		"wavePeriod" : 0.75,
+		"waveAmplitude" : 0.75
+      },
+      "velocity" : [0, -4],
+      "ratePerX" : 0.02,
+      "spawnAboveRegion" : 30,
+      "spawnHorizontalPad" : 30,
+      "windAffectAmount" : 0.4
+    }
+  ],
+
+  "duration" : [50, 400],
+  "maximumWind" : 4.0
+}

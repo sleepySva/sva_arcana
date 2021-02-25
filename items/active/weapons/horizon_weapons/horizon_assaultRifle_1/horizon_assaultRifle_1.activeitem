@@ -1,0 +1,85 @@
+{
+  "itemName" : "horizon_assaultRifle_1",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A dark rifle made from necroium.",
+  "shortdescription" : "Anguish",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 7,
+  "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "horizon_assaultRifle_1" },
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "horizon_assaultRifle_1.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/ar4.ogg"]
+    }
+  },
+
+  "baseOffset" : [1.2, 0.25],
+  "muzzleOffset" : [3.4, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.10,
+    "baseDps" : 78.0,
+    "energyUsage" : 30.0,
+    "inaccuracy" : 0.08,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "horizon_shotgun_1_projectile_1",
+    "projectileParameters" : {
+      "damageKind" : "shotgunbullet",
+      "knockback" : 20
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

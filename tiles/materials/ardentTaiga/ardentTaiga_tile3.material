@@ -1,0 +1,21 @@
+{
+  "materialId" : 16707,
+  "materialName" : "ardentTaiga_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "ardentTaiga_tile3",
+  "description" : "A deep blue ice block.",
+  "shortdescription" : "Ardent Ice",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ardentTaiga_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 707
+  }
+}

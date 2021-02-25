@@ -1,0 +1,22 @@
+{
+  "materialId" : 16670,
+  "materialName" : "aeolus_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeolus_tile4",
+  "description" : "A beam coated with anemone wood.",
+  "shortdescription" : "Arius Construct Beam",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "aeolus_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 184,
+    "radiantLight" : [55, 184, 145]
+  }
+}

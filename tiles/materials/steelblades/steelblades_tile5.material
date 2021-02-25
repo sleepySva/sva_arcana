@@ -1,0 +1,22 @@
+{
+  "materialId" : 16715,
+  "materialName" : "steelblades_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "steelblades_tile5",
+  "description" : "A durable support beam, emits a faint yellow light.",
+  "shortdescription" : "Verrostin Beam",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "steelblades_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 715,
+    "radiantLight" : [80, 60, 20]
+  }
+}

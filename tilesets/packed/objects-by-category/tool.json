@@ -1,0 +1,90 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/tool",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 8,
+  "tileheight" : 8,
+  "tileproperties" : {
+      "0" : {
+          "//description" : "An automated soil watering solution.",
+          "//name" : "sprinkler",
+          "//shortdescription" : "Sprinkler",
+          "imagePositionX" : "-8",
+          "imagePositionY" : "0",
+          "object" : "sprinkler",
+          "tilesetDirection" : "right"
+      },
+      "1" : {
+          "//description" : "An automated soil watering solution.",
+          "//name" : "sprinkler_orientation1",
+          "//shortdescription" : "Sprinkler",
+          "imagePositionX" : "0",
+          "imagePositionY" : "0",
+          "object" : "sprinkler",
+          "tilesetDirection" : "right"
+      },
+      "2" : {
+          "//name" : "ironbeacon",
+          "invalid" : "true"
+      },
+      "3" : {
+          "//name" : "peanutbutter",
+          "invalid" : "true"
+      },
+      "4" : {
+          "//name" : "decoyprincess",
+          "invalid" : "true"
+      },
+      "5" : {
+          "//description" : "A distress beacon. Who knows who might hear it?",
+          "//name" : "beaconsnow",
+          "//shortdescription" : "Distress Beacon",
+          "imagePositionX" : "-8",
+          "imagePositionY" : "0",
+          "object" : "beaconsnow",
+          "tilesetDirection" : "right"
+      },
+      "6" : {
+          "//name" : "robot",
+          "invalid" : "true"
+      },
+      "7" : {
+          "//description" : "If you die, you will respawn at this location.",
+          "//name" : "checkpoint",
+          "//shortdescription" : "Mission Checkpoint",
+          "imagePositionX" : "-16",
+          "imagePositionY" : "0",
+          "object" : "checkpoint",
+          "tilesetDirection" : "right"
+      }
+  },
+  "tiles" : {
+      "0" : {
+          "image" : "../../../../../tiled/packed/objects/sprinkler.png"
+      },
+      "1" : {
+          "image" : "../../../../../tiled/packed/objects/sprinkler_orientation1.png"
+      },
+      "2" : {
+          "image" : "../../../../../tiled/packed/../packed/invalid.png"
+      },
+      "3" : {
+          "image" : "../../../../../tiled/packed/../packed/invalid.png"
+      },
+      "4" : {
+          "image" : "../../../../../tiled/packed/../packed/invalid.png"
+      },
+      "5" : {
+          "image" : "../../../../../tiled/packed/objects/beaconsnow.png"
+      },
+      "6" : {
+          "image" : "../../../../../tiled/packed/../packed/invalid.png"
+      },
+      "7" : {
+          "image" : "../../../../../tiled/packed/objects/checkpoint.png"
+      }
+  },
+  "tilewidth" : 8
+}

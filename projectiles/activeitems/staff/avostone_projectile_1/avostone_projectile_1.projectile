@@ -1,0 +1,29 @@
+{
+  "projectileName" : "avostone_projectile_1",
+  "physics" : "laser",
+  "timeToLive" : 4,
+  "bounces" : 1,
+  "image" : "avostone_projectile_1.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["capturepodred","arcana_particle_white"],
+  "frameNumber" : 1,
+  "speed" : 20,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [120, 40, 40],
+  "damageKind" : "fire",
+  "statusEffects" : [ "burning" ],
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 60,
+    "controlForce" : 60
+  }
+}

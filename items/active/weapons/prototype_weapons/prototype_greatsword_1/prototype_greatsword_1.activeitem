@@ -1,0 +1,34 @@
+{
+  "itemName" : "prototype_greatsword_1",
+  "price" : 1000,
+  "level" : 2,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A prototype of a weapon.",
+  "shortdescription" : "Prototype Greatsword",
+  "tooltipKind" : "sword",
+  "category" : "arcana_greatsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/greatsword/arcana_greatsword_combo.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "prototype_greatsword_1.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_greatsword_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 5.0
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

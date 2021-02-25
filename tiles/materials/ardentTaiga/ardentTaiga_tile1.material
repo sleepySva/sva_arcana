@@ -1,0 +1,21 @@
+{
+  "materialId" : 16705,
+  "materialName" : "ardentTaiga_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "ardentTaiga_tile1",
+  "description" : "An orangeish rock.",
+  "shortdescription" : "Ardent Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ardentTaiga_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 705
+  }
+}

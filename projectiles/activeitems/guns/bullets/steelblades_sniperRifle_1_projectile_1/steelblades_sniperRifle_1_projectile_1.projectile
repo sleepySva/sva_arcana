@@ -1,0 +1,29 @@
+{
+  "projectileName" : "steelblades_sniperRifle_1_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 80,
+  "piercing" : true,
+  
+  "image" : "steelblades_sniperRifle_1_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [148, 62, 145],
+  "emitters" : ["sparks","smoke"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/heavybulletexplosion/heavybulletexplosion.config"
+    }
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

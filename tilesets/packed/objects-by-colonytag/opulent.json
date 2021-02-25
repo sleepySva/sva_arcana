@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/opulent",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A remarkably comfortable opulent bed.",
+      "//name" : "opulentbed",
+      "//shortdescription" : "Opulent Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "opulentbed",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "An incredibly comfortable opulent chair.",
+      "//name" : "opulentchair",
+      "//shortdescription" : "Opulent Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "opulentchair",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "An incredibly stylish opulent table.",
+      "//name" : "opulenttable",
+      "//shortdescription" : "Opulent Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "opulenttable",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A opulent console mounted on a suspended crystal.",
+      "//name" : "opulentswitch",
+      "//shortdescription" : "Opulent Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "opulentswitch",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A super-strong opulent door.",
+      "//name" : "opulentdoor",
+      "//shortdescription" : "Opulent Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "opulentdoor",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A glowing opulent light made from crystal.",
+      "//name" : "opulentlight",
+      "//shortdescription" : "Opulent Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "opulentlight",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/opulentbed.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/opulentchair.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/opulenttable.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/opulentswitch.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/opulentdoor.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/opulentlight.png"
+    }
+  },
+  "tilewidth" : 8
+}

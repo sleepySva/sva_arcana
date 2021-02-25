@@ -1,0 +1,32 @@
+{
+  "objectName" : "arcana_crafting_anvil_2",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "An anvil infused with arcane magic.",
+  "shortdescription" : "Arcanium Anvil",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [120, 160, 160],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_anvil_2.config",
+	"filter" : ["arcana_crafting_anvil_2"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_anvil_2.png:<color>",
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

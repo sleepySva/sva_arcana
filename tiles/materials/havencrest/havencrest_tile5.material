@@ -1,0 +1,21 @@
+{
+  "materialId" : 16599,
+  "materialName" : "havencrest_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "havencrest_tile5",
+  "description" : "A bright wall panel.",
+  "shortdescription" : "Brightstill Wall Panel",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "havencrest_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4144
+  }
+}

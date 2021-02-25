@@ -1,0 +1,44 @@
+{
+  "objectName" : "workshop_console_1",
+  "colonyTags" : ["misc","wired"],
+  "rarity" : "Rare",
+  "description" : "A black console made of metal.",
+  "shortdescription" : "Small Workshop Console",
+  "race" : "generic",
+
+  "category" : "wire",
+  "price" : 70,
+
+  "lightColor" : [140, 80, 30],
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "workshop_console_1.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+
+  "animationParts" : {
+    "switch" : "workshop_console_1.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [0, 0] ]
+  
+}

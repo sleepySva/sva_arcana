@@ -1,0 +1,74 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/toxic",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 5,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A thorny table. Careful where you put your feet.",
+      "//name" : "toxictable",
+      "//shortdescription" : "Toxic Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "toxictable",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A flower that functions as a lamp. Like a sunflower, but not.",
+      "//name" : "toxiclamp2",
+      "//shortdescription" : "Hanging Toxic Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "toxiclamp2",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A toxic chest.",
+      "//name" : "toxicchest",
+      "//shortdescription" : "Toxic Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "toxicchest",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A flower that functions as a lamp. Like a sunflower, but not.",
+      "//name" : "toxiclamp1",
+      "//shortdescription" : "Toxic Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "toxiclamp1",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A chair made of vines. Those spikes look poisonous.",
+      "//name" : "toxicchair",
+      "//shortdescription" : "Toxic Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "toxicchair",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/toxictable.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/toxiclamp2.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/toxicchest.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/toxiclamp1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/toxicchair.png"
+    }
+  },
+  "tilewidth" : 8
+}

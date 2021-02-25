@@ -1,0 +1,32 @@
+[
+	{
+		"op": "add",
+		"path": "/arcana_abyss",
+		"value": {
+			"resistanceStat" : "arcana_resistance_abyss",
+			"damageNumberParticles" : {
+				"hit" : "arcana_abyssdamagenumber",
+				"stronghit" : "arcana_abyssdamagenumberstrong",
+				"weakhit" : "arcana_abyssdamagenumberweak",
+				"shieldhit" : "arcana_abyssdamagenumber",
+				"kill" : "arcana_abyssdamagenumber"
+			}
+		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/arcana_azure",
+		"value": {
+			"resistanceStat" : "arcana_resistance_azure",
+			"damageNumberParticles" : {
+				"hit" : "arcana_azuredamagenumber",
+				"stronghit" : "arcana_azuredamagenumberstrong",
+				"weakhit" : "arcana_azuredamagenumberweak",
+				"shieldhit" : "arcana_azuredamagenumber",
+				"kill" : "arcana_azuredamagenumber"
+			}
+		}
+	}
+
+]

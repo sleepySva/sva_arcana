@@ -1,0 +1,80 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/genboss",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Dispenses gas",
+      "//name" : "gasdispenser",
+      "//shortdescription" : "Gas Dispenser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "gasdispenser"
+    },
+    "1" : {
+      "//description" : "Dispenses gas",
+      "//name" : "gasdispenser_orientation2",
+      "//shortdescription" : "Gas Dispenser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "gasdispenser"
+    },
+    "2" : {
+      "//description" : "Dispenses gas",
+      "//name" : "gasdispenser_orientation3",
+      "//shortdescription" : "Gas Dispenser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "gasdispenser"
+    },
+    "3" : {
+      "//description" : "It's a spike",
+      "//name" : "largefloorspike",
+      "//shortdescription" : "Large Floor Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "largefloorspike"
+    },
+    "4" : {
+      "//description" : "Who knows what it might activate... just press it!",
+      "//name" : "wallbuttontrigger",
+      "//shortdescription" : "Small Wall Button",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "wallbuttontrigger"
+    },
+    "5" : {
+      "//description" : "It's a spike",
+      "//name" : "smallfloorspike",
+      "//shortdescription" : "Small Floor Spike",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "smallfloorspike"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/gasdispenser.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/gasdispenser_orientation2.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/gasdispenser_orientation3.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/largefloorspike.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/wallbuttontrigger.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/smallfloorspike.png"
+    }
+  },
+  "tilewidth" : 8
+}

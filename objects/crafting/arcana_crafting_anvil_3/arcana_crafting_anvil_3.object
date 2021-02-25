@@ -1,0 +1,32 @@
+{
+  "objectName" : "arcana_crafting_anvil_3",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A modern fabricator that can produce lots of unique equipment!",
+  "shortdescription" : "Orion Fabricator",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [130, 160, 180],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_anvil_3.config",
+	"filter" : ["arcana_crafting_anvil_3","arcana_crafting_anvil_2","arcana_crafting_anvil_1"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_anvil_3.png:<color>.<frame>",
+      "imagePosition" : [-40, 0],
+      "frames" : 8,
+      "animationCycle" : 1.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

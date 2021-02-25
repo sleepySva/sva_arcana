@@ -1,0 +1,21 @@
+{
+  "materialId" : 16584,
+  "materialName" : "arcana_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile4",
+  "description" : "An ornate flooring block.",
+  "shortdescription" : "Magiwood Ornate Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 174
+  }
+}

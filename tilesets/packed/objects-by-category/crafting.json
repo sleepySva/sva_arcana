@@ -1,0 +1,884 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/crafting",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 80,
+  "tileheight" : 44,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "The Novakid flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagnovakid",
+      "//shortdescription" : "Novakid Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagnovakid",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "The Novakid flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagnovakid_orientation1",
+      "//shortdescription" : "Novakid Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagnovakid",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "The Avian flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagavian_orientation1",
+      "//shortdescription" : "Avian Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagavian",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//name" : "roboticcraftingtable",
+      "invalid" : "true"
+    },
+    "12" : {
+      "//description" : "A very basic cooking pot suspended over a campfire.",
+      "//name" : "floranstove",
+      "//shortdescription" : "Primitive Stove",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranstove",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "For all your holiday crafting needs!",
+      "//name" : "holidaycraftingtable",
+      "//shortdescription" : "Toymaker's Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "holidaycraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "This machine can reorganize pixels into almost any shape.",
+      "//name" : "3dprinter",
+      "//shortdescription" : "^orange;Pixel Printer^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "3dprinter",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//name" : "stonefurnace",
+      "invalid" : "true"
+    },
+    "16" : {
+      "//description" : "A microwave. For when you're hungry enough to nuke your food.",
+      "//name" : "outpostmicrowave",
+      "//shortdescription" : "Microwave Oven",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostmicrowave",
+      "tilesetDirection" : "left"
+    },
+    "17" : {
+      "//description" : "Just the thing for making a gift to show someone you care.",
+      "//name" : "heartforge",
+      "//shortdescription" : "Heart Forge",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "heartforge",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A cooking countertop used for chopping meat.",
+      "//name" : "florantable2",
+      "//shortdescription" : "Primitive Countertop",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "florantable2",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "A old fashioned furnace for tempering tools.",
+      "//name" : "medievalfurnace",
+      "//shortdescription" : "Medieval Furnace",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "medievalfurnace",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Nuke all the foods!",
+      "//name" : "microwave",
+      "//shortdescription" : "Microwave",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "microwave",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "One could build some very sophisticated equipment on this table.",
+      "//name" : "ironcraftingtable",
+      "//shortdescription" : "^orange;Iron Crafting Table^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "ironcraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "Can be used to develop highly specialized equipment.",
+      "//name" : "researchstation",
+      "//shortdescription" : "^orange;Research Station^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "researchstation",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "The Hylotl flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghylotl",
+      "//shortdescription" : "Hylotl Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flaghylotl",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "The Hylotl flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghylotl_orientation1",
+      "//shortdescription" : "Hylotl Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flaghylotl",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "Crackling quietly, the smell of hickory smoke is delightful.",
+      "//name" : "rusticoven",
+      "//shortdescription" : "Rustic Oven",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "rusticoven",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//name" : "manipulatortable",
+      "invalid" : "true"
+    },
+    "26" : {
+      "//description" : "It's been so long since I had a home cooked meal... or a home.",
+      "//name" : "oven1",
+      "//shortdescription" : "Basic Oven",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "oven1",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Used to produce wholesome foods with a variety of effects.",
+      "//name" : "woodencookingtable",
+      "//shortdescription" : "^orange;Kitchen Counter^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "woodencookingtable",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "Compress pixels for storage.",
+      "//name" : "pixelcompressor",
+      "//shortdescription" : "^orange;Pixel Compressor^white;",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "pixelcompressor",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//name" : "acceleratortable",
+      "invalid" : "true"
+    },
+    "3" : {
+      "//name" : "scifianvil",
+      "invalid" : "true"
+    },
+    "30" : {
+      "//name" : "alloyfurnace",
+      "invalid" : "true"
+    },
+    "31" : {
+      "//description" : "Used to produce capture pods, healing stations and other pet related items.",
+      "//name" : "capturestation",
+      "//shortdescription" : "^orange;Pet Station^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "capturestation",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "Used to make fossil excavation tools and display cases.",
+      "//name" : "fossilstation",
+      "//shortdescription" : "^orange;Fossil Station^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "fossilstation",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "The refinery is used to produce raw pixels from ores.",
+      "//name" : "refinery",
+      "//shortdescription" : "^orange;Refinery^white;",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "refinery",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//name" : "scififurnace",
+      "invalid" : "true"
+    },
+    "35" : {
+      "//name" : "separatortable",
+      "invalid" : "true"
+    },
+    "36" : {
+      "//name" : "skyrailtable",
+      "invalid" : "true"
+    },
+    "37" : {
+      "//description" : "Cooks food to a reasonable standard.",
+      "//name" : "apexoven",
+      "//shortdescription" : "Standard Issue Oven",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexoven",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//description" : "Used to produce complex wiring components.",
+      "//name" : "wiringstation",
+      "//shortdescription" : "^orange;Wiring Station^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "wiringstation",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//name" : "spinningwheel",
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "The flag of the Glitch. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagglitch",
+      "//shortdescription" : "Glitch Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagglitch",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "An Apex flag. The symbol of the Miniknog. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagapex",
+      "//shortdescription" : "Apex Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagapex",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "An Apex flag. The symbol of the Miniknog. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagapex_orientation1",
+      "//shortdescription" : "Apex Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagapex",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "A frog merchant. What it really is, or what it wants, nobody knows.",
+      "//name" : "frogmerchant",
+      "//shortdescription" : "Frog Merchant",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "frogmerchant",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "A simple anvil, used for banging metal into shape.",
+      "//name" : "anvil",
+      "//shortdescription" : "Basic Anvil",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "anvil",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "This cooking pot expels the odour of a hundred hearty meals.",
+      "//name" : "medievallargecookingpot",
+      "//shortdescription" : "Medieval Cooking Pot",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "medievallargecookingpot",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "The human flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghuman",
+      "//shortdescription" : "Human Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flaghuman",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "The human flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flaghuman_orientation1",
+      "//shortdescription" : "Human Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flaghuman",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "The Floran flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagfloran",
+      "//shortdescription" : "Floran Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagfloran",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "The Floran flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagfloran_orientation1",
+      "//shortdescription" : "Floran Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagfloran",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A standard issue kitchen counter.",
+      "//name" : "apexcounter2",
+      "//shortdescription" : "Standard Issue Counter",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "apexcounter2",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "The flag of the Glitch. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagglitch_orientation1",
+      "//shortdescription" : "Glitch Flag",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "flagglitch",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//name" : "metalworkstation",
+      "invalid" : "true"
+    },
+    "51" : {
+      "//name" : "molemerchant",
+      "invalid" : "true"
+    },
+    "52" : {
+      "//description" : "A coffee machine, for the perfect pick-me-up.",
+      "//name" : "coffeemachine",
+      "//shortdescription" : "Coffee Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "coffeemachine",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "This counter seems ideal for food preparation.",
+      "//name" : "outpostcookingtable",
+      "//shortdescription" : "Chic Cooking Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outpostcookingtable",
+      "tilesetDirection" : "right"
+    },
+    "54" : {
+      "//description" : "Fire in a rusted-out barrel.",
+      "//name" : "prisonbarrelfire",
+      "//shortdescription" : "Barrel Fire",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "prisonbarrelfire",
+      "tilesetDirection" : "right"
+    },
+    "55" : {
+      "//description" : "Embers dance away from the campfire, warming the air. The heat can be used for cooking.",
+      "//name" : "campfire",
+      "//shortdescription" : "^orange;Campfire^white;",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "campfire",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//name" : "woodencraftingtable",
+      "invalid" : "true"
+    },
+    "57" : {
+      "//name" : "testfrog",
+      "invalid" : "true"
+    },
+    "58" : {
+      "//description" : "A quaint metal stove, perfect for cooking.",
+      "//name" : "cabinstove",
+      "//shortdescription" : "Cabin Stove",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "cabinstove",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A sturdy kitchen cabinet with a stove top.",
+      "//name" : "kitchenstovetop",
+      "//shortdescription" : "Kitchen Stove Top",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "kitchenstovetop",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Provides exceptional heat and a great for cooking outdoors.",
+      "//name" : "nanostove",
+      "//shortdescription" : "Nanostove",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "nanostove",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "It's a Rob Repairo, A mechanical merchant who repairs lost or broken vehicles.",
+      "//name" : "repairo",
+      "//shortdescription" : "Rob Repairo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "repairo",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//name" : "spinningwheel",
+      "invalid" : "true"
+    },
+    "62" : {
+      "//name" : "furnituretable",
+      "invalid" : "true"
+    },
+    "63" : {
+      "//name" : "apothecary",
+      "invalid" : "true"
+    },
+    "64" : {
+      "//name" : "farmtable",
+      "invalid" : "true"
+    },
+    "65" : {
+      "//description" : "Used to turn ores and other materials into crafting ingredients.",
+      "//name" : "craftingfurnace",
+      "//shortdescription" : "^orange;Primitive Furnace^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "craftingfurnace",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "The inventor's table is used to produce various crafting stations.",
+      "//name" : "inventorstable",
+      "//shortdescription" : "^orange;Inventor's Table^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "inventorstable",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "The anvil is used to produce armour and weapons from fabric and ores.",
+      "//name" : "craftinganvil",
+      "//shortdescription" : "^orange;Anvil^white;",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "craftinganvil",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "Can be used to produce materials and objects needed to build a settlement.",
+      "//name" : "craftingfurniture",
+      "//shortdescription" : "^orange;Wooden Workbench^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingfurniture",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "The spinning wheel is used to produce clothing, fabrics and other crafting ingredients.",
+      "//name" : "craftingwheel",
+      "//shortdescription" : "^orange;Spinning Wheel^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingwheel",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A station used to obtain employment beacons that call in all kinds of helpers.",
+      "//name" : "spawnerstation",
+      "//shortdescription" : "^orange;Employer's Station^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "spawnerstation",
+      "tilesetDirection" : "right"
+    },
+    "70" : {
+      "//description" : "Used to produce items for hunting, mining and farming.",
+      "//name" : "craftingfarm",
+      "//shortdescription" : "^orange;Foraging Table^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingfarm",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "The apothecary is used to produce healing items and medicine.",
+      "//name" : "craftingmedical",
+      "//shortdescription" : "^orange;Apothecary^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "craftingmedical",
+      "tilesetDirection" : "right"
+    },
+    "72" : {
+      "//description" : "A module that adds additional high-tech combat equipment and armour to the replicator.",
+      "//name" : "manipulatoraddon",
+      "//shortdescription" : "^orange;Manipulator Addon^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "manipulatoraddon",
+      "tilesetDirection" : "left"
+    },
+    "73" : {
+      "//description" : "A module that adds additional ranged equipment and armour to the replicator.",
+      "//name" : "acceleratoraddon",
+      "//shortdescription" : "^orange;Accelerator Addon^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "acceleratoraddon",
+      "tilesetDirection" : "left"
+    },
+    "74" : {
+      "//description" : "A module that adds additional melee equipment and armour to the replicator.",
+      "//name" : "separatoraddon",
+      "//shortdescription" : "^orange;Separator Addon^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "separatoraddon",
+      "tilesetDirection" : "left"
+    },
+    "75" : {
+      "//description" : "Used to produce rails, rail riding items and related objects.",
+      "//name" : "railcraftingtable",
+      "//shortdescription" : "^orange;Rail Crafting Table^white;",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "railcraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "An old copper and brass furnace.",
+      "//name" : "frontierfurnace",
+      "//shortdescription" : "Frontier Furnace",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "frontierfurnace",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "An old copper and brass furnace.",
+      "//name" : "frontierfurnace_orientation1",
+      "//shortdescription" : "Frontier Furnace",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "frontierfurnace",
+      "tilesetDirection" : "right"
+    },
+    "78" : {
+      "//description" : "A quaint metal stove, perfect for cooking.",
+      "//name" : "cabinstove_orientation1",
+      "//shortdescription" : "Cabin Stove",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "cabinstove",
+      "tilesetDirection" : "right"
+    },
+    "79" : {
+      "//description" : "Used to produce modular mech components.",
+      "//name" : "mechcraftingtable",
+      "//shortdescription" : "^orange;Mech Part Crafting Table^white;",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "mechcraftingtable",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "Can be used to produce armour and weapons.",
+      "//name" : "ironanvil",
+      "//shortdescription" : "^orange;Iron Anvil^white;",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "ironanvil",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "The Avian flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+      "//name" : "flagavian",
+      "//shortdescription" : "Avian Flag",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "flagavian",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/flagnovakid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/flagnovakid_orientation1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/flagavian_orientation1.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/floranstove.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/holidaycraftingtable.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/3dprinter.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/outpostmicrowave.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/heartforge.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/florantable2.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/medievalfurnace.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/microwave.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/ironcraftingtable.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/researchstation.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/flaghylotl.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/flaghylotl_orientation1.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/rusticoven.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/oven1.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/woodencookingtable.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/pixelcompressor.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/capturestation.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/fossilstation.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/refinery.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/apexoven.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/wiringstation.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/flagglitch.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/flagapex.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/flagapex_orientation1.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/frogmerchant.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/anvil.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/medievallargecookingpot.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/flaghuman.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/flaghuman_orientation1.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/flagfloran.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/flagfloran_orientation1.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/apexcounter2.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/flagglitch_orientation1.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/coffeemachine.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/outpostcookingtable.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/prisonbarrelfire.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/campfire.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/cabinstove.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/kitchenstovetop.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/nanostove.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/repairo.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/craftingfurnace.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/inventorstable.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/craftinganvil.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/craftingfurniture.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/craftingwheel.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/spawnerstation.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/craftingfarm.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/craftingmedical.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/manipulatoraddon.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/acceleratoraddon.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/separatoraddon.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/railcraftingtable.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/frontierfurnace.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/frontierfurnace_orientation1.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/cabinstove_orientation1.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/mechcraftingtable.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/ironanvil.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/flagavian.png"
+    }
+  },
+  "tilewidth" : 48
+}

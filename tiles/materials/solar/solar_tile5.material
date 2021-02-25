@@ -1,0 +1,22 @@
+{
+  "materialId" : 16655,
+  "materialName" : "solar_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "solar_tile5",
+  "description" : "An ancient constructing material made from umberstone. Highly durable.",
+  "shortdescription" : "Umberstone Constructor",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 40,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "solar_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 405,
+    "radiantLight" : [150, 60, 30]
+  }
+}

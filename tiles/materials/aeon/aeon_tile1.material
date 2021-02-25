@@ -1,0 +1,21 @@
+{
+  "materialId" : 16723,
+  "materialName" : "aeon_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeon_tile1",
+  "description" : "A timeless flooring tile.",
+  "shortdescription" : "Aeon Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 28,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aeon_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 723
+  }
+}

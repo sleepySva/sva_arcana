@@ -1,0 +1,21 @@
+{
+  "materialId" : 16632,
+  "materialName" : "desolate_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "desolate_tile2",
+  "description" : "A black cobblestone block.",
+  "shortdescription" : "Desolate Cobblestone",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 22,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "desolate_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1322
+  }
+}

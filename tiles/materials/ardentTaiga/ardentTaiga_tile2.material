@@ -1,0 +1,21 @@
+{
+  "materialId" : 16706,
+  "materialName" : "ardentTaiga_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "ardentTaiga_tile2",
+  "description" : "A worn, orangeish stone brick.",
+  "shortdescription" : "Ardent Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ardentTaiga_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 706
+  }
+}

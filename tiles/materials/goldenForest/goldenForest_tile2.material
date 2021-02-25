@@ -1,0 +1,21 @@
+{
+  "materialId" : 16580,
+  "materialName" : "goldenForest_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "goldenForest_tile2",
+  "description" : "A pile of golden leaves.",
+  "shortdescription" : "Golden Leaves",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "goldenForest_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1442
+  }
+}

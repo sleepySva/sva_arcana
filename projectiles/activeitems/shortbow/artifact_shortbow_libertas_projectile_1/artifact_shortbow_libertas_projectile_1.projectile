@@ -1,0 +1,55 @@
+{
+  "projectileName" : "artifact_shortbow_libertas_projectile_1",
+  "physics" : "rain",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 110,
+  "piercing" : true,
+  "knockback" : 40,
+  
+  "image" : "artifact_shortbow_libertas_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 100, 60],
+  "emitters" : ["arcana_particle_feather_1"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_feather_1/arcana_explosion_feather_1.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.033,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/shortbow/artifact_shortbow_libertas_projectile_1/artifact_shortbow_libertas_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "scripts" : ["/scripts/projectiles/sinewaveprojectile.lua"],
+  "scriptDelta" : 1,
+
+  "wavePeriod" : 1.0,
+  "waveAmplitude" : 0.75,
+  
+  "damageKind" : "bow"
+ 
+}

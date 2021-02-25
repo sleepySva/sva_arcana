@@ -1,0 +1,21 @@
+{
+  "materialId" : 16525,
+  "materialName" : "empress_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "empress_tile1",
+  "description" : "A golden patterned tile.",
+  "shortdescription" : "Empress Gold Block",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "empress_tile1.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 111
+  }
+}

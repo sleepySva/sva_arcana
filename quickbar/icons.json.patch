@@ -1,0 +1,20 @@
+[
+  {
+    "op": "add",
+    "path": "/items/arcana_quickbar_arcanaCollections",
+    "value": {
+      "label": "Arcana Collections",
+      "icon": "/quickbar/arcana_quickbar_arcanaCollections.png",
+      "action": [ "pane", "/interface/scripted/arcana_collections/arcana_collections_gui.config" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/items/arcana_quickbar_arcanaUpdates",
+    "value": {
+      "label": "Arcana Updates",
+      "icon": "/quickbar/arcana_quickbar_arcanaUpdates.png",
+      "action": [ "pane", "/interface/scripted/arcana_updates/arcana_updates_gui.config" ]
+    }
+  }
+]

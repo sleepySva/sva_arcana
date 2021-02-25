@@ -1,0 +1,48 @@
+{
+  "itemName" : "thalassa_spear_1",
+  "price" : 1000,
+  "level" : 3,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "The spear of the roaring seas.",
+  "shortdescription" : "Seatide",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+  "collectablesOnPickup" : { "arcana_collection_weapon_elemental" : "thalassa_spear_1" },
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/spear/thalassa_spear_1.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "thalassa_spear_1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    },
+	"lights" : {
+      "glow" : {
+        "color" : [100, 40, 80]
+      }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.94,
+    "baseDps" : 9.0
+  },
+
+  "altAbilityType" : "spearspin",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

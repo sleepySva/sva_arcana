@@ -1,0 +1,21 @@
+{
+  "materialId" : 16572,
+  "materialName" : "arcaneForest_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcaneForest_tile2",
+  "description" : "A blueish stone block sprinkled with arcane magic.",
+  "shortdescription" : "Arcane Cobblestone",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcaneForest_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1302
+  }
+}

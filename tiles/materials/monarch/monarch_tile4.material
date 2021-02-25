@@ -1,0 +1,21 @@
+{
+  "materialId" : 16534,
+  "materialName" : "monarch_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "monarch_tile4",
+  "description" : "A dark ash block.",
+  "shortdescription" : "Dark Ash Block",
+  "footstepSound" : "/sfx/blocks/footstep_ash.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "monarch_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1202
+  }
+}

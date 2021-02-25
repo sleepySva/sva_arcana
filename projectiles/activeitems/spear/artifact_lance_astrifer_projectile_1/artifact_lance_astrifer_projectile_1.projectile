@@ -1,0 +1,37 @@
+{
+  "projectileName" : "artifact_lance_astrifer_projectile_1",
+  "physics" : "default",
+  "timeToLive" : 7,
+  "bounces" : 0,
+  "image" : "artifact_lance_astrifer_projectile_1.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_white"],
+  "frameNumber" : 1,
+  "speed" : 80,
+  "knockback" : 20,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_white/arcana_explosion_plasma_1_white.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/astraltear_stop2.ogg" ]
+    }
+  ],
+  "periodicActions" : [
+    {
+      "action" : "particle",
+      "specification" : "arcana_arrow_white",
+      "rotate" : true,
+      "time" : 0.032,
+      "repeat" : true
+    }
+  ],
+
+  "lightColor" : [75, 180, 202],
+  "damageKind" : "arcana_azure"
+  
+}

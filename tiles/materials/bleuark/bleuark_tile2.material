@@ -1,0 +1,21 @@
+{
+  "materialId" : 16542,
+  "materialName" : "bleuark_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "bleuark_tile2",
+  "description" : "Gold-colored sand.",
+  "shortdescription" : "Golden Sand Block",
+  "footstepSound" : "/sfx/blocks/footstep_ash.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "bleuark_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1211
+  }
+}

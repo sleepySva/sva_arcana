@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_farmable_ceruleanRoll",
+  "rarity" : "Common",
+  "price" : 200,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "A roll that grows on plants? Sweet!",
+  "shortdescription" : "Cerulean Roll",
+  "foodValue" : 4.00,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

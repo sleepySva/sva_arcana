@@ -1,0 +1,194 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/astronaut",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 15,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A detailed model of an old Earth satellite.",
+      "//name" : "satellite",
+      "//shortdescription" : "Satellite Model",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "satellite",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A detailed model of the Sol system's planet Earth, the homeworld of humanity.",
+      "//name" : "earthmodel",
+      "//shortdescription" : "Earth Model",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-24",
+      "object" : "earthmodel",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A detailed model of the Sol system's largest planet, Jupiter.",
+      "//name" : "jupitermodel",
+      "//shortdescription" : "Jupiter Model",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "jupitermodel",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A detailed model of the Sol system's most distinctly ringed planet, Saturn.",
+      "//name" : "saturnmodel",
+      "//shortdescription" : "Saturn Model",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-32",
+      "object" : "saturnmodel",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A detailed model of the Sol system's red planet, Mars.",
+      "//name" : "marsmodel",
+      "//shortdescription" : "Mars Model",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-24",
+      "object" : "marsmodel",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A detailed model of the Sol system's smallest planet, Mercury.",
+      "//name" : "mercurymodel",
+      "//shortdescription" : "Mercury Model",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-24",
+      "object" : "mercurymodel",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A detailed model of the Sol system's dwarf planet, Pluto.",
+      "//name" : "plutomodel",
+      "//shortdescription" : "Pluto Model",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-24",
+      "object" : "plutomodel",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A detailed model of the Sol System's planet Venus.",
+      "//name" : "venusmodel",
+      "//shortdescription" : "Venus Model",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-24",
+      "object" : "venusmodel",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A horizontal chair like a captain's chair on an Earth space shuttle.",
+      "//name" : "liftoffseat",
+      "//shortdescription" : "Liftoff Seat",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "liftoffseat",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A horizontal chair like a captain's chair on an Earth space shuttle.",
+      "//name" : "liftoffseat_orientation2",
+      "//shortdescription" : "Liftoff Seat",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "liftoffseat",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A horizontal chair like a captain's chair on an Earth space shuttle.",
+      "//name" : "liftoffseat_orientation3",
+      "//shortdescription" : "Liftoff Seat",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "liftoffseat",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A detailed model of Sol, the yellow dwarf responsible for all life on Earth. It even casts light.",
+      "//name" : "sunmodel",
+      "//shortdescription" : "Sol Model",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-32",
+      "object" : "sunmodel",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "The design of this bed is based on an old Earth space shuttle.",
+      "//name" : "spaceshuttlebed",
+      "//shortdescription" : "Space Shuttle Bed",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "spaceshuttlebed",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A detailed model of the Sol System's planet Uranus.",
+      "//name" : "uranusmodel",
+      "//shortdescription" : "Uranus Model",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "uranusmodel",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A detailed model of the Sol system's most distant planet, Neptune.",
+      "//name" : "neptunemodel",
+      "//shortdescription" : "Neptune Model",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-32",
+      "object" : "neptunemodel",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/satellite.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/earthmodel.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/jupitermodel.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/saturnmodel.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/marsmodel.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/mercurymodel.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/plutomodel.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/venusmodel.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/liftoffseat.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/liftoffseat_orientation2.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/liftoffseat_orientation3.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/sunmodel.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/spaceshuttlebed.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/uranusmodel.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/neptunemodel.png"
+    }
+  },
+  "tilewidth" : 8
+}

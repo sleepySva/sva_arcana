@@ -1,0 +1,21 @@
+{
+  "materialId" : 16675,
+  "materialName" : "borealite_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "borealite_tile3",
+  "description" : "A borealite pillar.",
+  "shortdescription" : "Borealite Pillar",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "borealite_tile3.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 603
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "materialId" : 16629,
+  "materialName" : "orion_tile13",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile13",
+  "description" : "A blue light display panel.",
+  "shortdescription" : "Blue LED Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile13.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4051,
+    "radiantLight" : [110, 238, 255]
+  }
+}

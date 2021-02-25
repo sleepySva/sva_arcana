@@ -1,0 +1,143 @@
+{
+  "metadata" : {
+    "name" : "arcana_workshop_dungeon_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_workshop_dungeon_1_part_left",
+	"arcana_workshop_dungeon_1_part_right"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 16,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_workshop_dungeon_1_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_1.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_2.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_3.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_4.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_5.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_6.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_7" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_7.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_8",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_8" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_8.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_9" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_9.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_10",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_10" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_10.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_11",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_11" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_11.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_12",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_12" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_12.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_13",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_workshop_dungeon_1_part_13" ] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_1_part_13.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_workshop_dungeon_1_part_left.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_workshop_dungeon_1_part_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_workshop_dungeon_1_part_right.json" ] ],
+      "chance" : 0
+    }
+
+  ]
+}

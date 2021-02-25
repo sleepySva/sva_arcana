@@ -1,0 +1,86 @@
+{
+  "itemName" : "workshop_sniperRifle_1",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A dark rifle made from Dustrium.",
+  "shortdescription" : "Dustrium Sniper Rifle",
+  "tooltipKind" : "gun",
+  "category" : "sniperRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","sniperrifle"],
+  "level" : 8,
+
+  "inventoryIcon" : "workshop_sniperRifle_1.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "workshop_sniperRifle_1.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/revolver2.ogg"]
+    }
+  },
+
+  "baseOffset" : [1.0, 0.2],
+  "muzzleOffset" : [3.8, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.8,
+    "baseDps" : 9.6,
+    "energyUsage" : 36.0,
+    "inaccuracy" : 0.001,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "workshop_pistol_1_projectile_1",
+    "projectileParameters" : {
+	  "speed" : 200,
+      "knockback" : 20
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "piercingshot",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,24 @@
+{
+  "objectName" : "springpalms_deco_7",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A pile of wooden planks.",
+  "shortdescription" : "Plank Pile",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "springpalms_deco_7.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

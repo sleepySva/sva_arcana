@@ -1,0 +1,34 @@
+{
+  "itemName" : "conflagration_greatsword_1",
+  "price" : 1000,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A burning greatsword.",
+  "shortdescription" : "Fiery Greatsword",
+  "tooltipKind" : "sword",
+  "category" : "arcana_greatsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/greatsword/arcana_greatsword_combo_conflagration_greatsword_1.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "conflagration_greatsword_1.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "arcana_greatsword_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.2,
+    "baseDps" : 8.0
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

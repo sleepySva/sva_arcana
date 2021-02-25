@@ -1,0 +1,21 @@
+{
+  "materialId" : 16680,
+  "materialName" : "borealite_tile8",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "borealite_tile8",
+  "description" : "A borealite beam.",
+  "shortdescription" : "Opus Mega",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "borealite_tile8.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 608
+  }
+}

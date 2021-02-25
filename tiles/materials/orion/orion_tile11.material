@@ -1,0 +1,21 @@
+{
+  "materialId" : 16627,
+  "materialName" : "orion_tile11",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile11",
+  "description" : "A sloped metal panel composed of a mix of machinery, used by the Orion.",
+  "shortdescription" : "Orion Machinery Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 26,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile11.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4152
+  }
+}

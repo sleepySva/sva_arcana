@@ -1,0 +1,28 @@
+[
+	[
+		{ "op" : "add",
+			"path" : "/speciesShips/arcanian",
+			"value" : [
+				"/ships/arcanian/arcaniant0.structure",
+				"/ships/arcanian/arcaniant1.structure",
+				"/ships/arcanian/arcaniant2.structure",
+				"/ships/arcanian/arcaniant3.structure",
+				"/ships/arcanian/arcaniant4.structure",
+				"/ships/arcanian/arcaniant5.structure",
+				"/ships/arcanian/arcaniant6.structure",
+				"/ships/arcanian/arcaniant7.structure",
+				"/ships/arcanian/arcaniant8.structure"
+			]
+		}
+	],
+	[
+		{ "op": "test",
+			"path": "/speciesShips/fumantis"
+		},
+		
+		{ "op":"replace",
+			"path":"/speciesShips/arcanian/0",
+			"value": "/ships/fu_byos/fu_byos.structure"
+		}
+	]
+]

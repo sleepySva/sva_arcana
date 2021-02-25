@@ -1,0 +1,636 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/floranprison",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 53,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A study small Floran prison cage made from wood.",
+      "//name" : "plantcage2",
+      "//shortdescription" : "Small Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantcage2",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A wide volcanic geyser. It's venting hot gasses.",
+      "//name" : "plantvolcano3",
+      "//shortdescription" : "Wide Volcanic Geyser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano3",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "A Floran prisoner bedroll covered with a blanket.",
+      "//name" : "plantbed4",
+      "//shortdescription" : "Covered Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed4",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A Floran prisoner bedroll covered with a blanket.",
+      "//name" : "plantbed4_orientation2",
+      "//shortdescription" : "Covered Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed4",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "This organic light flickers softly.",
+      "//name" : "plantbiolight",
+      "//shortdescription" : "Organic Biolight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "plantbiolight"
+    },
+    "13" : {
+      "//description" : "This organic light flickers softly.",
+      "//name" : "plantbiolight_orientation2",
+      "//shortdescription" : "Organic Biolight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "plantbiolight"
+    },
+    "14" : {
+      "//description" : "This organic light flickers softly.",
+      "//name" : "plantbiolight_orientation3",
+      "//shortdescription" : "Organic Biolight",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "plantbiolight"
+    },
+    "15" : {
+      "//description" : "A fragile wide urn made from clay.",
+      "//name" : "planturn1",
+      "//shortdescription" : "Wide Urn",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "planturn1",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A door made from interlocking vines.",
+      "//name" : "plantdoor1",
+      "//shortdescription" : "Vine Door",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantdoor1",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "Lots of tempting buttons that should probably be left alone.",
+      "//name" : "plantpanel",
+      "//shortdescription" : "Small Wooden Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantpanel",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A Floran prison bedroll. It spreads out on the ground.",
+      "//name" : "plantbed1",
+      "//shortdescription" : "Plant Bedroll",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed1",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "Large logs assembled as a construction platform.",
+      "//name" : "plantplatform1",
+      "//shortdescription" : "Large Wooden Scaffolding",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "plantplatform1",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A small volcanic geyser. It's lighting the area faintly.",
+      "//name" : "plantvolcano2",
+      "//shortdescription" : "Large Volcanic Geyser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano2",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A desk lamp made from a glowing plant pod.",
+      "//name" : "plantdesklamp",
+      "//shortdescription" : "Organic Desk Lamp",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantdesklamp",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A desk lamp made from a glowing plant pod.",
+      "//name" : "plantdesklamp_orientation1",
+      "//shortdescription" : "Organic Desk Lamp",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantdesklamp",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A tall volcanic geyser. It's seeping lava.",
+      "//name" : "plantvolcano4",
+      "//shortdescription" : "Tall Volcanic Geyser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano4",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "A broken cage. What could have escaped?",
+      "//name" : "plantbrokencage",
+      "//shortdescription" : "Broken Wooden Cage",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbrokencage",
+      "tilesetDirection" : "right"
+    },
+    "24" : {
+      "//description" : "A prison torture rack. It's not a stretch to say this would hurt.",
+      "//name" : "plantrack",
+      "//shortdescription" : "Interrogation Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantrack",
+      "tilesetDirection" : "right"
+    },
+    "25" : {
+      "//description" : "A prison torture rack. It's not a stretch to say this would hurt.",
+      "//name" : "plantrack_orientation2",
+      "//shortdescription" : "Interrogation Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantrack",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A prison torture rack. It's not a stretch to say this would hurt.",
+      "//name" : "plantrack_orientation3",
+      "//shortdescription" : "Interrogation Rack",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantrack",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "A small geyser wrapped in growing vines.",
+      "//name" : "plantgeyser2",
+      "//shortdescription" : "Small Overgrown Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantgeyser2",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "A wooden chair overgrown with vines.",
+      "//name" : "plantchair",
+      "//shortdescription" : "Overgrown Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantchair",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A short volcanic geyser. It casts a faint glow.",
+      "//name" : "plantvolcano5",
+      "//shortdescription" : "Short Volcanic Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano5",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A small volcanic geyser. It looks hot.",
+      "//name" : "plantvolcano1",
+      "//shortdescription" : "Small Volcanic Geyser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantvolcano1",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation1",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation2",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A hanging cage designed to hold Floran prisoners.",
+      "//name" : "plantcage3_orientation3",
+      "//shortdescription" : "Suspended Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-24",
+      "object" : "plantcage3",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//description" : "A basic bedroll on a wheeled wooden frame.",
+      "//name" : "plantbed3",
+      "//shortdescription" : "Wheeled Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed3",
+      "tilesetDirection" : "right"
+    },
+    "35" : {
+      "//description" : "A large cage for designed to hold Floran prisoners.",
+      "//name" : "plantcage1",
+      "//shortdescription" : "Large Wooden Cage",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantcage1",
+      "tilesetDirection" : "right"
+    },
+    "36" : {
+      "//description" : "A virtual reality headset.",
+      "//name" : "vrheadset",
+      "//shortdescription" : "VR Headset",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "16",
+      "object" : "vrheadset",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//description" : "A virtual reality headset.",
+      "//name" : "vrheadset_orientation1",
+      "//shortdescription" : "VR Headset",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "16",
+      "object" : "vrheadset",
+      "tilesetDirection" : "right"
+    },
+    "38" : {
+      "//name" : "vrheadset_orientation2",
+      "invalid" : "true"
+    },
+    "39" : {
+      "//name" : "vrheadset_orientation3",
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "A fragile thin urn made from clay.",
+      "//name" : "planturn2",
+      "//shortdescription" : "Thin Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planturn2",
+      "tilesetDirection" : "right"
+    },
+    "40" : {
+      "//description" : "Large logs arranged as a construction staging platform.",
+      "//name" : "plantplatform2",
+      "//shortdescription" : "Large Wooden Staging",
+      "imagePositionX" : "-40",
+      "imagePositionY" : "0",
+      "object" : "plantplatform2",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A glowing orb. It looks like there's room to store things inside.",
+      "//name" : "plantorb",
+      "//shortdescription" : "Glowing Orb",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantorb",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "This torch is wrapped in a plant covering.",
+      "//name" : "planttorch",
+      "//shortdescription" : "Plant Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planttorch",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "This torch is wrapped in a plant covering.",
+      "//name" : "planttorch_orientation2",
+      "//shortdescription" : "Plant Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planttorch",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "This torch is wrapped in a plant covering.",
+      "//name" : "planttorch_orientation3",
+      "//shortdescription" : "Plant Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planttorch",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "This torch is wrapped in a plant covering.",
+      "//name" : "planttorch_orientation4",
+      "//shortdescription" : "Plant Torch",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planttorch",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "A wall mountable Floran prison bunk.",
+      "//name" : "plantbed2",
+      "//shortdescription" : "Plant Wall Bunk",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantbed2",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A chest made from plant material. It appears to be still growing.",
+      "//name" : "chestplant1",
+      "//shortdescription" : "Small Overgrown Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chestplant1",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "An arcane torture device. Best not to ask how it's used.",
+      "//name" : "planttorturedevice",
+      "//shortdescription" : "Torture Device",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "planttorturedevice",
+      "tilesetDirection" : "right"
+    },
+    "49" : {
+      "//description" : "A fragile small urn made from clay.",
+      "//name" : "planturn3",
+      "//shortdescription" : "Small Urn",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "planturn3",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A log, smoothed for sitting on.",
+      "//name" : "plantlog",
+      "//shortdescription" : "Sitting Log",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantlog",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "A Drysap Dispenser. The one thing standing between the Floran and a dusty demise.",
+      "//name" : "plantdrysapdispenser",
+      "//shortdescription" : "Drysap Dispenser",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "plantdrysapdispenser"
+    },
+    "51" : {
+      "//description" : "A wooden table which is overgrown with vines.",
+      "//name" : "plantvinetable",
+      "//shortdescription" : "Overgrown Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "plantvinetable",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "An empty shelving rack.",
+      "//name" : "plantshelf",
+      "//shortdescription" : "Empty Shelf",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantshelf",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A large geyser, covered in plant growth.",
+      "//name" : "plantgeyser1",
+      "//shortdescription" : "Large Overgrown Geyser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantgeyser1",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A retractable gate, made from a light wood.",
+      "//name" : "plantdoor2",
+      "//shortdescription" : "Retractable Wooden Gate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-32",
+      "object" : "plantdoor2",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A desk with large cabinet drawers.",
+      "//name" : "plantcabinet2",
+      "//shortdescription" : "Large Cabinet",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "plantcabinet2",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A small cabinet with a table top.",
+      "//name" : "plantcabinet1",
+      "//shortdescription" : "Small Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plantcabinet1",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage2.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano3.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed4.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed4_orientation2.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/plantbiolight.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/plantbiolight_orientation2.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/plantbiolight_orientation3.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/planturn1.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/plantdoor1.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/plantpanel.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed1.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/plantplatform1.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano2.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/plantdesklamp.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/plantdesklamp_orientation1.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano4.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/plantbrokencage.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/plantrack.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/plantrack_orientation2.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/plantrack_orientation3.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/plantgeyser2.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/plantchair.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano5.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/plantvolcano1.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation1.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation2.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage3_orientation3.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed3.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/plantcage1.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/vrheadset.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/vrheadset_orientation1.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/planturn2.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/plantplatform2.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/plantorb.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/planttorch.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/planttorch_orientation2.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/planttorch_orientation3.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/planttorch_orientation4.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/plantbed2.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/chestplant1.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/planttorturedevice.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/planturn3.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/plantlog.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/plantdrysapdispenser.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/plantvinetable.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/plantshelf.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/plantgeyser1.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/plantdoor2.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/plantcabinet2.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/plantcabinet1.png"
+    }
+  },
+  "tilewidth" : 8
+}

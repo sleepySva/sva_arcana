@@ -1,0 +1,32 @@
+{
+  "objectName" : "arcana_crafting_workbench_3_portable",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A portable version of the Orion workstation.",
+  "shortdescription" : "Portable Workstation",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [120, 140, 160],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_workbench_3.config",
+	"filter" : ["arcana_crafting_workbench_1", "arcana_crafting_workbench_2", "arcana_crafting_workbench_3"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_crafting_workbench_3_portable.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

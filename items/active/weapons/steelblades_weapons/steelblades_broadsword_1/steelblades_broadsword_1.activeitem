@@ -1,0 +1,36 @@
+{
+  "itemName" : "steelblades_broadsword_1",
+  "price" : 1000,
+  "level" : 8,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A broadsword used by the Steelblades.",
+  "shortdescription" : "Steelblades Broadsword",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "steelblades_broadsword_1.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/havencrest_broadsword_1.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "steelblades_broadsword_1.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 1.2,
+    "baseDps" : 10.8
+  },
+
+  "altAbilityType" : "risingslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

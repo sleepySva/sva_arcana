@@ -1,0 +1,21 @@
+{
+  "materialId" : 16579,
+  "materialName" : "goldenForest_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "goldenForest_tile1",
+  "description" : "A shiny golden grass block.",
+  "shortdescription" : "Golden Grass Block",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "goldenForest_tile1.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1441
+  }
+}

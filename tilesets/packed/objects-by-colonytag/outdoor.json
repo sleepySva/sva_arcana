@@ -1,0 +1,117 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/outdoor",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 9,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A smart metal stool, suitable for the outdoors.",
+      "//name" : "outdoorstool",
+      "//shortdescription" : "Outdoor Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outdoorstool",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A lamp post, with thrice the lights.",
+      "//name" : "lamppost2",
+      "//shortdescription" : "Triple Lamp Post",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "lamppost2",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "A chair, built to endure the elements.",
+      "//name" : "outdoorchair",
+      "//shortdescription" : "Outdoor Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outdoorchair",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A lamp, fit for outdoors.",
+      "//name" : "lamppost1",
+      "//shortdescription" : "Basic Lamp Post",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "lamppost1",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "A sleek fountain. The water looks refreshing.",
+      "//name" : "outdoorfountain",
+      "//shortdescription" : "Outdoor Fountain",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outdoorfountain",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A bench, perfect for outdoors.",
+      "//name" : "outdoorbench",
+      "//shortdescription" : "Outdoor Bench",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outdoorbench",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A lamp post with two lamps. Nifty!",
+      "//name" : "lamppost3",
+      "//shortdescription" : "Double Lamp Post",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "lamppost3",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//name" : "mothlamp",
+      "invalid" : "true"
+    },
+    "8" : {
+      "//description" : "Attracts moths. Moths produce silk!",
+      "//name" : "mothtrap",
+      "//shortdescription" : "Moth Trap",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "mothtrap",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/outdoorstool.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/lamppost2.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/outdoorchair.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/lamppost1.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/outdoorfountain.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/outdoorbench.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/lamppost3.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/mothtrap.png"
+    }
+  },
+  "tilewidth" : 8
+}

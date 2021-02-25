@@ -1,0 +1,32 @@
+[
+	{ "op" : "add",
+		"path" : "/species/-",
+		"value" : "arcanian"
+	},
+	{ "op" : "add",
+		"path" : "/defaultCodexes/arcanian",
+		"value" : [ "protectorate1", "protectorate2" ]
+	},
+	{ "op" : "add",
+		"path" : "/deploymentConfig/speciesStarterMechBody/arcanian",
+		"value" : "mechbodyhumanproto"
+	},
+	{
+		"op": "add",
+		"path":"/defaultBlueprints/tier1/-",
+		"value":
+			{"item":"arcana_crafting_main_1"}
+    },
+	{
+		"op": "add",
+		"path":"/defaultBlueprints/tier1/-",
+		"value":
+			{"item":"arcana_codex_guide_1-codex"}
+    },
+	{
+		"op": "add",
+		"path":"/defaultBlueprints/tier1/-",
+		"value":
+			{"item":"arcana_codex_guide_2-codex"}
+    }
+]

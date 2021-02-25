@@ -1,0 +1,21 @@
+{
+  "materialId" : 16603,
+  "materialName" : "gaea_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "gaea_tile1",
+  "description" : "An ancient stone brick block made of florastone.",
+  "shortdescription" : "Florastone Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "gaea_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 191
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "objectName" : "arcana_vendor_3",
+  "colonyTags" : ["commerce"],
+  "rarity" : "Legendary",
+  "description" : "A good source of information.",
+  "shortdescription" : "Orion Info Booth",
+  "race" : "generic",
+  "lightColor" : [46, 66, 77],
+  "category" : "furniture",
+  "price" : 200,
+ 
+  "apexDescription" : "If I'm ever lost, I can always ask the info booth lady for help.",
+  "avianDescription" : "Mami, the info booth lady, is super helpful.",
+  "floranDescription" : "Despite being a ssslimy Hylotl, info booth lady is nice and helpful.",
+  "glitchDescription" : "Appreciative. Mami at the info booth desk is lovely and helpful.",
+  "humanDescription" : "The info booth lady always has a useful tip.",
+  "novakidDescription" : "Whenever I'm in need o' some friendly help, I come here.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "arcana_vendor_3.png:idle", "fullbright" : true }, { "image" : "arcana_vendor_3lit.png:idle" } ],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 10,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "interactiveSpaces": [
+        [2, 2], [3, 2], [4, 2],
+        [2, 3], [3, 3], [4, 3]
+      ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "arcana_vendor_3.png:idle", "fullbright" : true }, { "image" : "arcana_vendor_3lit.png:idle" } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 10,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "interactiveSpaces": [
+        [1, 2], [2, 2], [3, 2],
+        [1, 3], [2, 3], [3, 3]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/hubbub.ogg",
+
+  "animation" : "arcana_vendor_3.animation",
+  "animationPosition" : [0, 0],
+  "animationParts" : {
+    "booth" : "arcana_vendor_3lit.png",
+    "sign" : "arcana_vendor_3.png"
+  },
+  "forceFinishAnimationsInInit" : false,
+
+  "scripts" : ["arcana_vendor_3.lua"],
+  "scriptDelta" : 10,
+
+  "detectArea" : [ [-8, 0], [14, 6] ],
+
+  "mouthPosition" : [-1.25, -3],
+  "chatOptions" : [
+    "Welcome to the Nova Station! Talk to me for a quick guide!",
+	"If you walk around the station, you will find a number of useful vendors.",
+    "The ^#71f2f6;Bookstore^white; to the left sells rare codexes!",
+    "The ^#71f2f6;Infinity Express^white; on the floor above sells a number of general goods.",
+    "The ^#71f2f6;Essence Exchange^white; to the right lets you exchange essence for pixels!",
+    "That ^#71f2f6;Shady Vendor^white; at the bottom is known for selling some... interesting items.",
+    "You can also find the ^#71f2f6;Flower Shop^white; right above.",
+    "A branch of the ^#71f2f6;Wheel of Fortune^white; is here as well, if you ever feel like trying your luck.",
+    "I'm well known for being informative!"
+  ]
+}

@@ -1,0 +1,1113 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_arcaneForest",
+    "value": {
+      "threatRange" : [6, 6],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_arcaneForest"],
+          "secondaryRegions" : ["garden", "forest" ],
+          "dungeons": [
+		  	  [4.0, "arcana_arcaneDesert_dungeon_2"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneForest",
+    "value": {
+      "caveLiquid": ["arcana_liquid_arcaneWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_arcaneForest"]]],
+      "subRegion" : ["giantflowers", "mushroom"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneForest_underground_1",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_arcaneWater" ],
+      "biome": [[0,["arcana_arcaneForest_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneForest_underground_2",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_arcaneWater" ],
+      "biome": [[0,["arcana_arcaneForest_underground_2"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneForest_underground_3",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_arcaneWater" ],
+      "biome": [[0,["arcana_arcaneForest_underground_3"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneForest_underground_4",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [[0,["arcana_arcaneForest_underground_4"]]],
+      "subRegion": []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_arcaneDesert",
+    "value": {
+      "threatRange" : [6, 6],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_arcaneDesert"],
+          "secondaryRegions" : ["arcana_arcaneForest", "savannah" ],
+          "dungeons": [
+			  [4.0, "arcana_arcaneDesert_dungeon_2"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneDesert",
+    "value": {
+      "caveLiquid": ["healingliquid"],
+      "caveLiquidSeedDensityRange" : [20, 20],
+      "encloseLiquids" : true,
+      "blockSelector": ["remixedPoolsSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_arcaneDesert"]]],
+      "subRegion": ["oasis","colourful"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneDesert_underground_1",
+    "value": {
+      "caveLiquid": [ "healingliquid" ],
+      "biome": [[0,["arcana_arcaneDesert_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneDesert_underground_2",
+    "value": {
+      "caveLiquid": [ "healingliquid" ],
+      "biome": [[0,["arcana_arcaneDesert_underground_2"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneDesert_underground_3",
+    "value": {
+      "caveLiquid": [ "healingliquid" ],
+      "biome": [[0,["arcana_arcaneDesert_underground_3"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneDesert_underground_4",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [[0,["arcana_arcaneDesert_underground_4"]]],
+      "subRegion": []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_arcaneTundra",
+    "value": {
+      "threatRange" : [6, 6],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_arcaneTundra"],
+          "secondaryRegions" : ["arcana_arcaneForest", "snow" ],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneTundra",
+    "value": {
+      "caveLiquid": ["arcana_liquid_arcaneWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_arcaneTundra"]]],
+      "subRegion": ["bioluminescence", "alpine", "prism", "steamspring"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_verdant",
+    "value": {
+      "threatRange" : [4, 5],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_verdant"],
+          "secondaryRegions" : ["forest","garden"],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"],
+			  [1.0, "humancamp"]
+          ]
+        }
+      }
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_verdant",
+    "value": {
+      "caveLiquid" : [ "water", "poison" ],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_verdant"]]],
+      "subRegion" : ["swamp", "giantflowers", "mushroom"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_blistering",
+    "value": {
+      "threatRange" : [2, 3],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_blistering"],
+          "secondaryRegions" : ["desert","barren"],
+          "dungeons": [
+		  	  [1.0, "arcana_arcaneDesert_dungeon_2"],
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"],
+			  [1.0, "humancamp"]
+          ]
+        }
+      }
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_blistering",
+    "value": {
+      "caveLiquid" : [ "water" ],
+      "caveLiquidSeedDensityRange" : [1, 3],
+      "encloseLiquids" : true,
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_blistering"]]],
+      "subRegion" : ["bones"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_windswept",
+    "value": {
+      "threatRange" : [5, 6],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_windswept"],
+          "secondaryRegions" : ["savannah","garden"],
+          "dungeons": [
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "novakidvillage"],
+			  [1.0, "humancamp"]
+          ]
+        }
+      }
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_windswept",
+    "value": {
+      "caveLiquid" : [ "water" ],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_windswept"]]],
+      "subRegion" : ["spring"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_turbulent",
+    "value": {
+	  "blendSize" : 30,
+      "threatRange" : [3, 4],
+      "layers": {
+        "surface" : {
+          "primaryRegion" : ["arcana_turbulent"],
+          "baseHeight" : 1150,
+          "layerLevel" : 1050
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_turbulent_floor"],
+          "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
+        }
+      }
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_turbulent",
+    "value": {
+      "oceanLiquid" : [ "water" ],
+      "blockSelector" : [ "remixedIslandsSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome": [[0,["arcana_turbulent"]]]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_turbulent_floor",
+    "value": {
+      "oceanLiquid" : [ "water" ],
+	  "oceanLevelOffset" : 1000,
+      "blockSelector" : [ "ledgesSurface" ],
+      "fgCaveSelector" : [ "emptier" ],
+      "bgCaveSelector" : [ "emptiest" ],
+      "biome": [[0,["arcana_turbulent_floor"]]]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_arcaneSea",
+    "value": {
+	  "blendSize" : 30,
+      "threatRange" : [5, 6],
+      "layers": {
+        "surface" : {
+          "primaryRegion" : ["arcana_arcaneSea"],
+          "baseHeight" : 1150,
+          "layerLevel" : 1050
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_arcaneSea_floor"],
+          "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
+        }
+      }
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneSea",
+    "value": {
+      "oceanLiquid" : [ "arcana_liquid_arcaneWater" ],
+      "blockSelector" : [ "remixedIslandsSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome": [[0,["arcana_arcaneSea"]]]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneSea_floor",
+    "value": {
+      "oceanLiquid" : [ "arcana_liquid_arcaneWater" ],
+	  "oceanLevelOffset" : 1000,
+      "blockSelector" : [ "ledgesSurface" ],
+      "fgCaveSelector" : [ "emptier" ],
+      "bgCaveSelector" : [ "emptiest" ],
+      "biome": [[0,["arcana_arcaneSea_floor"]]]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_goldenForest",
+    "value": {
+      "threatRange" : [7, 7],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_goldenForest"],
+          "secondaryRegions" : ["arcana_arcaneForest", "arcana_windswept" ],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_goldenForest",
+    "value": {
+      "caveLiquid": ["healingliquid"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_goldenForest"]]],
+      "subRegion": ["giantflowers", "mushroom", "alpine", "steamspring"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_illuminated",
+    "value": {
+      "threatRange" : [7, 7],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_illuminated"],
+          "secondaryRegions" : ["arcana_goldenForest", "arcana_arcaneTundra" ],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_illuminated_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_illuminated_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_illuminated",
+    "value": {
+      "caveLiquid": ["arcana_liquid_illuminatedWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_illuminated"]]],
+      "subRegion": ["bioluminescence", "alpine", "prism", "steamspring"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_illuminated_underground_1",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "biome": [[0,["arcana_illuminated_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_illuminated_underground_2",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "biome": [[0,["arcana_illuminated_underground_2"]]],
+      "subRegion": []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_desolate",
+    "value": {
+      "threatRange" : [7, 7],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_desolate"],
+          "secondaryRegions" : ["arcana_blistering", "arcana_arcaneTundra" ],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_desolate_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_desolate_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_desolate",
+    "value": {
+      "caveLiquid": ["arcana_liquid_illuminatedWater"],
+      "blockSelector": ["remixedIslandTowersSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_desolate"]]],
+      "subRegion": ["tar", "bones", "geode", "rust"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_desolate_underground_1",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "biome": [[0,["arcana_desolate_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_desolate_underground_2",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "biome": [[0,["arcana_desolate_underground_2"]]],
+      "subRegion": []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_sanguine",
+    "value": {
+      "threatRange" : [7, 7],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_sanguine"],
+          "secondaryRegions" : ["arcana_verdant", "arcana_desolate" ],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_desolate_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_desolate_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_sanguine",
+    "value": {
+      "caveLiquid": ["arcana_liquid_illuminatedWater"],
+      "blockSelector": ["remixedMildCanyonsSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_sanguine"]]],
+      "subRegion": ["tar", "bones", "geode", "rust"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_ferocious",
+    "value": {
+      "threatRange" : [7, 7],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_ferocious"],
+          "secondaryRegions" : ["arcana_desolate", "arcana_illuminated" ],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_ferocious_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_ferocious_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_desolate_underground_1" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_desolate_underground_2" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ferocious",
+    "value": {
+      "caveLiquid": ["arcana_liquid_illuminatedWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_ferocious"]]],
+      "subRegion": ["tar", "bones", "rust", "alpine"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ferocious_underground_1",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "biome": [[0,["arcana_ferocious_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ferocious_underground_2",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "biome": [[0,["arcana_ferocious_underground_2"]]],
+      "subRegion": []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_animus",
+    "value": {
+      "threatRange" : [7, 7],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_animus"],
+          "secondaryRegions" : ["arcana_arcaneTundra", "arcana_goldenForest" ],
+          "dungeons": [
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [4.0, "hylotlruinedcastle"], [4.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_ferocious_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_ferocious_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_animus",
+    "value": {
+      "caveLiquid": ["healingliquid"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_animus"]]],
+      "subRegion": ["giantflowers", "hive", "alpine"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_evoaquatic",
+    "value": {
+      "threatRange" : [7, 7],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_evoaquatic"],
+          "secondaryRegions" : ["arcana_animus", "arcana_verdant" ],
+          "dungeons": [
+		      [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_ferocious_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_ferocious_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_evoaquatic",
+    "value": {
+      "caveLiquid": ["healingliquid"],
+      "caveLiquidSeedDensityRange" : [10, 10],
+      "encloseLiquids" : true,
+      "blockSelector": ["remixedPoolsSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_evoaquatic"]]],
+      "subRegion": ["oasis","spring","bioluminescence"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_superstormExpanse",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_superstormExpanse"],
+          "secondaryRegions" : ["arcana_animus", "arcana_evoaquatic" ],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_ferocious_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_ferocious_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_superstormExpanse",
+    "value": {
+      "caveLiquid": ["arcana_liquid_neonWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_superstormExpanse"]]],
+      "subRegion": ["rust", "steamspring", "geode"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_ardentTaiga",
+    "value": {
+      "threatRange" : [7, 7],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_ardentTaiga"],
+          "secondaryRegions" : ["arcana_arcaneTundra", "arcana_blistering" ],
+          "dungeons": [
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_ardentTaiga_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_ardentTaiga_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ardentTaiga",
+    "value": {
+      "caveLiquid": ["arcana_liquid_illuminatedWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_ardentTaiga"]]],
+      "subRegion" : ["steamspring"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ardentTaiga_underground_1",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [[0,["arcana_ardentTaiga_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ardentTaiga_underground_2",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [[0,["arcana_ardentTaiga_underground_2"]]],
+      "subRegion": []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_stahlernBadlands",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_stahlernBadlands"],
+          "secondaryRegions" : ["arcana_ferocious", "desert" ],
+          "dungeons": [
+			  [1.0, "dungeoncrawler"], [1.0, "glitchvillage"],
+			  [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			  [1.0, "humancamp"],
+			  [1.0, "glitchsewer"], [4.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_stahlernBadlands",
+    "value": {
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_stahlernBadlands"]]],
+      "subRegion": ["tar","bones"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_timeless",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_timeless"],
+          "secondaryRegions" : ["midnight", "arcana_superstormExpanse" ],
+          "dungeons": [
+			  [8.0, "arcana_timeless_dungeon_1"],
+			  [1.0, "dungeoncrawler"], [1.0, "glitchvillage"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_ardentTaiga_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_ardentTaiga_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_timeless",
+    "value": {
+      "blockSelector": ["remixedMountainsSurface"],
+      "fgCaveSelector": ["empty"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_timeless"]]],
+      "subRegion": ["steamspring"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_automated",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_automated"],
+          "secondaryRegions" : ["scorchedcity", "arcana_superstormExpanse" ],
+          "dungeons": [
+			  [8.0, "arcana_workshop_dungeon_1"],
+			  [1.0, "dungeoncrawler"], [1.0, "glitchvillage"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_automated_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_automated_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_automated_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_automated_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_automated",
+    "value": {
+	  "caveLiquid": ["arcana_liquid_neonWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["empty"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_automated"]]],
+      "subRegion": ["tar"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_automated_underground_1",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "biome": [[0,["arcana_automated_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_automated_underground_2",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "biome": [[0,["arcana_automated_underground_2"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_automated_underground_3",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "biome": [[0,["arcana_automated_underground_3"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_automated_underground_4",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [[0,["arcana_automated_underground_4"]]],
+      "subRegion": []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_neonSea",
+    "value": {
+	  "blendSize" : 30,
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface" : {
+          "primaryRegion" : ["arcana_neonSea"],
+          "baseHeight" : 1150,
+          "layerLevel" : 1050
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_neonSea_floor"],
+          "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
+        }
+      }
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_neonSea",
+    "value": {
+      "oceanLiquid" : [ "arcana_liquid_neonWater" ],
+      "blockSelector" : [ "remixedIslandsSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome": [[0,["arcana_neonSea"]]]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_neonSea_floor",
+    "value": {
+      "oceanLiquid" : [ "arcana_liquid_neonWater" ],
+	  "oceanLevelOffset" : 1000,
+      "blockSelector" : [ "ledgesSurface" ],
+      "fgCaveSelector" : [ "emptier" ],
+      "bgCaveSelector" : [ "emptiest" ],
+      "biome": [[0,["arcana_neonSea_floor"]]]
+    }
+  }
+]

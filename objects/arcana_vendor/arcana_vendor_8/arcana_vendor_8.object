@@ -1,0 +1,64 @@
+{
+  "objectName" : "arcana_vendor_8",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "The captain of the station.",
+  "shortdescription" : "Station Vendor",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Station Vendor",
+        "subtitle" : " Tech Goods"
+      }
+    },
+    "buyFactor" : 2.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "stationtransponder" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "arcana_vendor_8.png:<color>.<frame>" }, { "image" : "arcana_vendor_8_fullbright.png:<color>.<frame>", "fullbright" : true } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-48, 0],
+      "frames" : 36,
+      "animationCycle" : 3.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "arcana_vendor_8.png:<color>.<frame>" }, { "image" : "arcana_vendor_8_fullbright.png:<color>.<frame>", "fullbright" : true } ],
+	  "direction" : "right",
+      "imagePosition" : [-48, 0],
+      "frames" : 36,
+      "animationCycle" : 3.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [ "/objects/arcana_lua_object_chat.lua" ],
+  "scriptDelta" : 20,
+
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "What do you want? Make it quick.",
+    "I'm busy at the moment, but I suppose I can make time for you.",
+    "I've got some techs if you are interested. Just don't take too long."
+  ]
+}

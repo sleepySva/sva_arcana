@@ -1,0 +1,52 @@
+{
+
+  "arcana_treasure_elemental_crafting_magifireCrystal" : [
+    [0, {
+      "fill" : [
+        { "item" : "elemental_crafting_magifireCrystal" }
+      ],
+      "poolRounds" : [
+        [0.1, 2],
+        [0.3, 3],
+        [0.3, 4],
+        [0.2, 5],
+        [0.1, 6]
+      ]
+    }]
+  ],
+  
+  "arcana_treasure_elemental_crafting_dryPlate" : [
+    [0, {
+      "fill" : [
+        { "item" : "elemental_crafting_dryPlate" }
+      ],
+      "poolRounds" : [
+        [0.1, 2],
+        [0.3, 3],
+        [0.3, 4],
+        [0.2, 5],
+        [0.1, 6]
+      ]
+    }]
+  ],
+
+  "arcana_hephaestus_treasure_1" : [
+    [0, {
+      "fill" : [
+        {"pool" : "valuableTreasure"},
+        {"pool" : "maybeWeaponTreasure"}
+      ],
+      "poolRounds" : [
+        [0.1, 1],
+        [0.4, 2],
+        [0.4, 3],
+        [0.1, 4]
+      ],
+      "pool" : [
+        {"weight" : 0.1, "pool" : "basicTreasure"},
+		{"weight" : 0.5, "pool" : "arcana_treasure_elemental_crafting_magifireCrystal"},
+		{"weight" : 0.4, "pool" : "arcana_treasure_elemental_crafting_dryPlate"}
+      ]
+    }]
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "projectileName" : "artifact_bow_tempest_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 100,
+  "piercing" : true,
+  "knockback" : 40,
+  "knockbackDirectional" : true,
+  
+  "image" : "artifact_bow_tempest_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [60, 10, 100],
+  "emitters" : ["energyweapon"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "energyblade",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "energyblade2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    },
+	{
+        "action" : "projectile",
+        "type" : "electricswarmer",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0
+    }
+  ],
+  
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_plasma.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "energyblade",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "energyblade2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    },
+	{
+        "action" : "projectile",
+        "type" : "electricswarmer",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/bow/artifact_bow_tempest_projectile_1/artifact_bow_tempest_projectile_1_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    },
+	{
+      "time" : 0.18,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "electricswarmer",
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.2,
+      "inheritSpeedFactor" : 0
+    }
+  ],
+  
+  "scripts" : ["/scripts/projectiles/sinewaveprojectile.lua"],
+  "scriptDelta" : 1,
+
+  "wavePeriod" : 0.1,
+  "waveAmplitude" : 0.1,
+  
+  "damageKind" : "bow"
+ 
+}

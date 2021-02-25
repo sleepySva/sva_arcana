@@ -1,0 +1,21 @@
+{
+  "materialId" : 16725,
+  "materialName" : "aeon_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeon_tile3",
+  "description" : "A stone wall tile.",
+  "shortdescription" : "Aeon Stone Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 28,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aeon_tile3.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4725
+  }
+}

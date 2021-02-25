@@ -1,0 +1,109 @@
+{
+  "projectileName" : "arcana_boss_evolapis_projectile_2",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 40,
+  "piercing" : true,
+  "knockback" : 40,
+  "knockbackDirectional" : true,
+  
+  "image" : "arcana_boss_evolapis_projectile_2.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [60, 200, 80],
+  "emitters" : ["poisonswoosh","poisonthrowertrail"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "poisonswoosh1",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "poisonswoosh2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    },
+	{
+      "action" : "config",
+      "file" : "/projectiles/explosions/poisonsmoke/poisonsmoke.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "poisonballoon",
+        "angleAdjust" : -20,
+        "inheritDamageFactor" : 0.8,
+        "inheritSpeedFactor" : 1
+    },
+	{
+        "action" : "projectile",
+        "type" : "poisonballoon",
+        "angleAdjust" : 20,
+        "inheritDamageFactor" : 0.8,
+        "inheritSpeedFactor" : 1
+    },
+	{
+        "action" : "projectile",
+        "type" : "poisonballoon",
+        "angleAdjust" : -40,
+        "inheritDamageFactor" : 0.8,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+        "action" : "projectile",
+        "type" : "poisonballoon",
+        "angleAdjust" : 40,
+        "inheritDamageFactor" : 0.8,
+        "inheritSpeedFactor" : 0.8
+    }
+  ],
+  
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_plasma.ogg"
+      ]
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/poisonsmoke/poisonsmoke.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_evolapis/arcana_boss_evolapis_projectile_2/arcana_boss_evolapis_projectile_2_trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.2,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "poison"
+ 
+}

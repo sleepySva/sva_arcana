@@ -1,0 +1,21 @@
+{
+  "materialId" : 16671,
+  "materialName" : "aeolus_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeolus_tile5",
+  "description" : "A beam of anemone wood.",
+  "shortdescription" : "Anemone Wood Beam",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "aeolus_tile5.png",
+    "variants" : 2,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 185
+  }
+}

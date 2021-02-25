@@ -1,0 +1,32 @@
+  // ==============================================================================================
+  //                                       CROP HARVEST POOLS
+  // ==============================================================================================
+{
+  "arcana_farmable_wildPraire" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.89, "item" : "arcana_flowers_wildPraire"},
+        {"weight" : 0.01, "item" : "arcana_farmable_wildPraireSeed"},
+        {"weight" : 0.1, "item" : "plantfibre"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
+  ],
+  
+  "arcana_farmable_ceruleanRoll" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.89, "item" : "arcana_farmable_ceruleanRoll"},
+        {"weight" : 0.01, "item" : "arcana_farmable_ceruleanRollSeed"},
+        {"weight" : 0.1, "item" : "plantfibre"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
+  ]
+}

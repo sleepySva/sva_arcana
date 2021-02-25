@@ -1,0 +1,22 @@
+{
+  "materialId" : 16638,
+  "materialName" : "glowtear_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "glowtear_tile2",
+  "description" : "A glowing cyan crystal block, emits light.",
+  "shortdescription" : "Glowtear Crystal",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 28,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "glowtear_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1352,
+    "radiantLight" : [90, 180, 180]
+  }
+}

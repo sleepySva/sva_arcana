@@ -1,0 +1,206 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/humanvillage",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 16,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Perfect for storing a lot of food and keeping it fresh.",
+      "//name" : "fridge",
+      "//shortdescription" : "Full-Size Fridge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "fridge",
+      "tilesetDirection" : "left"
+    },
+    "1" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "Basic Bath",
+      "//name" : "basicbath",
+      "//shortdescription" : "Basic Bath",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "basicbath",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "Nuke all the foods!",
+      "//name" : "microwave",
+      "//shortdescription" : "Microwave",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "microwave",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "It's been so long since I had a home cooked meal... or a home.",
+      "//name" : "oven1",
+      "//shortdescription" : "Basic Oven",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "oven1",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "A television! I don't think this has worked for a long time.",
+      "//name" : "basictv",
+      "//shortdescription" : "Old Television",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "basictv",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "A normal looking toilet! Thank the stars!",
+      "//name" : "basictoilet",
+      "//shortdescription" : "Basic Toilet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "basictoilet",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "Dripping Basic Bath",
+      "//name" : "basicbathdripping",
+      "//shortdescription" : "Dripping Basic Bath",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "basicbathdripping",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation2",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation3",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation4",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation5",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation6",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation7",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation8",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "This looks like a nice place to hide.",
+      "//name" : "curtain1_orientation9",
+      "//shortdescription" : "Curtain",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-16",
+      "object" : "curtain1",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/fridge.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/basicbath.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/microwave.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/oven1.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/basictv.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/basictoilet.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/basicbathdripping.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation2.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation3.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation4.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation5.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation6.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation7.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation8.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/curtain1_orientation9.png"
+    }
+  },
+  "tilewidth" : 8
+}

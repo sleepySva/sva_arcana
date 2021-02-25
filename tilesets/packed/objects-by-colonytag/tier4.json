@@ -1,0 +1,92 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/tier4",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 7,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A comfortable durasteel chair.",
+      "//name" : "tier4chair",
+      "//shortdescription" : "Durasteel Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier4chair",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A secure durasteel door.",
+      "//name" : "tier4door",
+      "//shortdescription" : "Durasteel Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier4door"
+    },
+    "2" : {
+      "//description" : "A comfortable durasteel bed. Looks pretty sleek.",
+      "//name" : "tier4bed",
+      "//shortdescription" : "Durasteel Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "tier4bed",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//name" : "tier4techchest",
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "A durasteel control console. Press all the buttons!",
+      "//name" : "tier4switch",
+      "//shortdescription" : "Durasteel Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tier4switch",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A glowing durasteel light.",
+      "//name" : "tier4light",
+      "//shortdescription" : "Durasteel Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "tier4light",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A solid Durasteel table.",
+      "//name" : "tier4table",
+      "//shortdescription" : "Durasteel Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "tier4table",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/tier4chair.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/tier4door.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/tier4bed.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/tier4switch.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/tier4light.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/tier4table.png"
+    }
+  },
+  "tilewidth" : 8
+}

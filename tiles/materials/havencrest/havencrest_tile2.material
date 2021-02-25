@@ -1,0 +1,21 @@
+{
+  "materialId" : 16596,
+  "materialName" : "havencrest_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "havencrest_tile2",
+  "description" : "A sandstone flooring tile.",
+  "shortdescription" : "Havencrest Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "havencrest_tile2.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 192
+  }
+}

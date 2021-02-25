@@ -1,0 +1,1243 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/outpost",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 104,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Two marker.",
+      "//name" : "number2",
+      "//shortdescription" : "Two",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number2"
+    },
+    "1" : {
+      "//description" : "A microwave. For when you're hungry enough to nuke your food.",
+      "//name" : "outpostmicrowave",
+      "//shortdescription" : "Microwave Oven",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostmicrowave",
+      "tilesetDirection" : "left"
+    },
+    "10" : {
+      "//description" : "A terminal. Useful, probably.",
+      "//name" : "outpostterminal",
+      "//shortdescription" : "Basic Terminal",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostterminal",
+      "tilesetDirection" : "right"
+    },
+    "100" : {
+      "//description" : "A hanging mech booster.",
+      "//name" : "hangingbooster",
+      "//shortdescription" : "Hanging Booster",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-32",
+      "object" : "hangingbooster"
+    },
+    "101" : {
+      "//description" : "Equip and customise your personal mech!",
+      "//name" : "mechassemblystation",
+      "//shortdescription" : "Mech Assembly Station",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "mechassemblystation",
+      "tilesetDirection" : "right"
+    },
+    "102" : {
+      "//description" : "This metal sign indicates a mech work station.",
+      "//name" : "mechsign",
+      "//shortdescription" : "Mech Sign",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-16",
+      "object" : "mechsign"
+    },
+    "103" : {
+      "//description" : "This practice target outputs a wire signal until broken.",
+      "//name" : "wiredtarget",
+      "//shortdescription" : "Wired Target",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "wiredtarget",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A control console.",
+      "//name" : "outpostconsole",
+      "//shortdescription" : "Free Standing Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostconsole",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "Five marker.",
+      "//name" : "number5",
+      "//shortdescription" : "Five",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number5"
+    },
+    "13" : {
+      "//description" : "A coffee machine, for the perfect pick-me-up.",
+      "//name" : "coffeemachine",
+      "//shortdescription" : "Coffee Machine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "coffeemachine",
+      "tilesetDirection" : "right"
+    },
+    "14" : {
+      "//description" : "This counter seems ideal for food preparation.",
+      "//name" : "outpostcookingtable",
+      "//shortdescription" : "Chic Cooking Table",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outpostcookingtable",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "A chair that anyone can sit on!",
+      "//name" : "outpostpublicchair",
+      "//shortdescription" : "Public Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostpublicchair",
+      "tilesetDirection" : "right"
+    },
+    "16" : {
+      "//description" : "A bathroom sink. Wash your hands!",
+      "//name" : "bathroomsink",
+      "//shortdescription" : "Bathroom Sink",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bathroomsink",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A bathroom urinal. Useful for some.",
+      "//name" : "bathroomurinal",
+      "//shortdescription" : "Bathroom Urinal",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bathroomurinal",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//description" : "A handy hand dryer. Hands off.",
+      "//name" : "bathroomhanddryer",
+      "//shortdescription" : "Bathroom Hand Dryer",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "bathroomhanddryer",
+      "tilesetDirection" : "right"
+    },
+    "19" : {
+      "//description" : "For all your farming and terraforming needs!",
+      "//name" : "terramart",
+      "//shortdescription" : "Terramart",
+      "imagePositionX" : "-64",
+      "imagePositionY" : "0",
+      "object" : "terramart",
+      "tilesetDirection" : "left"
+    },
+    "2" : {
+      "//description" : "A chair. You sit in it. Yes.",
+      "//name" : "outpostchair",
+      "//shortdescription" : "Padded Metal Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostchair",
+      "tilesetDirection" : "right"
+    },
+    "20" : {
+      "//description" : "A radar dish. Not to be confused with a salad dish.",
+      "//name" : "escaperadar",
+      "//shortdescription" : "Escape Radar Dish",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "escaperadar",
+      "tilesetDirection" : "right"
+    },
+    "21" : {
+      "//description" : "A radar dish. Not to be confused with a salad dish.",
+      "//name" : "escaperadar_orientation1",
+      "//shortdescription" : "Escape Radar Dish",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "escaperadar",
+      "tilesetDirection" : "right"
+    },
+    "22" : {
+      "//description" : "A metallic light fixture.",
+      "//name" : "outpostceilinglight",
+      "//shortdescription" : "Metal Light Fixture",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outpostceilinglight",
+      "tilesetDirection" : "right"
+    },
+    "23" : {
+      "//description" : "Zero marker.",
+      "//name" : "number0",
+      "//shortdescription" : "Zero",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number0"
+    },
+    "24" : {
+      "//description" : "This cabinet is where the signs come out. Maybe I can put one in?",
+      "//name" : "signdispenser",
+      "//shortdescription" : "EASEL Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "signdispenser",
+      "tilesetDirection" : "left"
+    },
+    "25" : {
+      "//description" : "A keypad.",
+      "//name" : "outpostkeypad",
+      "//shortdescription" : "Wall Mounted Keypad",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "outpostkeypad",
+      "tilesetDirection" : "right"
+    },
+    "26" : {
+      "//description" : "A basic bed. Not too comfy.",
+      "//name" : "outpostbed",
+      "//shortdescription" : "Basic Metal Bed",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostbed",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Six marker.",
+      "//name" : "number6",
+      "//shortdescription" : "Six",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number6"
+    },
+    "28" : {
+      "//description" : "A bathroom stall. Don't get stuck!",
+      "//name" : "bathroomstall",
+      "//shortdescription" : "Bathroom Stall",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bathroomstall",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "A shady looking captain.",
+      "//name" : "shipyardcaptain",
+      "//shortdescription" : "Shipyard Captain",
+      "imagePositionX" : "-56",
+      "imagePositionY" : "0",
+      "object" : "shipyardcaptain",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "A small cargo crate. No doubt it has cargo in it.",
+      "//name" : "outpostcargocrateshort",
+      "//shortdescription" : "Short Metal Cargo Crate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outpostcargocrateshort",
+      "tilesetDirection" : "right"
+    },
+    "30" : {
+      "//description" : "Floop marker.",
+      "//name" : "floop",
+      "//shortdescription" : "Floop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floop"
+    },
+    "31" : {
+      "//description" : "A shipping container. Probably doesn't contain a ship.",
+      "//name" : "outpostshippingcontainer",
+      "//shortdescription" : "Large Shipping Container",
+      "imagePositionX" : "-56",
+      "imagePositionY" : "0",
+      "object" : "outpostshippingcontainer",
+      "tilesetDirection" : "right"
+    },
+    "32" : {
+      "//description" : "A crane. Used for lifting, or swinging from.",
+      "//name" : "outpostcrane",
+      "//shortdescription" : "Large Mechanical Crane",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-32",
+      "object" : "outpostcrane",
+      "tilesetDirection" : "right"
+    },
+    "33" : {
+      "//description" : "A table. Perfect for tabletop gaming. Or eating.",
+      "//name" : "outposttable",
+      "//shortdescription" : "Basic Metal Table",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outposttable",
+      "tilesetDirection" : "right"
+    },
+    "34" : {
+      "//name" : "fossilgame",
+      "invalid" : "true"
+    },
+    "35" : {
+      "//description" : "Seven marker.",
+      "//name" : "number7",
+      "//shortdescription" : "Seven",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number7"
+    },
+    "36" : {
+      "//description" : "Eight marker.",
+      "//name" : "number8",
+      "//shortdescription" : "Eight",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number8"
+    },
+    "37" : {
+      "//description" : "Three marker.",
+      "//name" : "number3",
+      "//shortdescription" : "Three",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number3"
+    },
+    "38" : {
+      "//description" : "A monitor. But who monitors the monitor?",
+      "//name" : "outpostmonitor",
+      "//shortdescription" : "Wall Mounted Monitor",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "-8",
+      "object" : "outpostmonitor",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "A fridge. Hopefully filled with tasty, tasty treats.",
+      "//name" : "outpostfridge",
+      "//shortdescription" : "Chic Fridge",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostfridge",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Floor marker.",
+      "//name" : "floor",
+      "//shortdescription" : "Floor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floor"
+    },
+    "40" : {
+      "//description" : "A radar dish. Not to be confused with a salad dish.",
+      "//name" : "outpostradardish",
+      "//shortdescription" : "Large Radar Dish",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "outpostradardish",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "A radar dish. Not to be confused with a salad dish.",
+      "//name" : "outpostradardish_orientation1",
+      "//shortdescription" : "Large Radar Dish",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostradardish",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "This automated door is made of some sort of bulletproof material.",
+      "//name" : "outpostairlocklarge",
+      "//shortdescription" : "Large Airlock Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostairlocklarge",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "This sliding door makes me feel like I'm in a sci-fi game...",
+      "//name" : "outpostslidingdoor",
+      "//shortdescription" : "Sleek Sliding Door",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "outpostslidingdoor",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "This automated door is made of some sort of bulletproof material.",
+      "//name" : "outpostairlock",
+      "//shortdescription" : "Small Airlock Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostairlock",
+      "tilesetDirection" : "right"
+    },
+    "45" : {
+      "//description" : "A basic bench.",
+      "//name" : "bench",
+      "//shortdescription" : "Bench",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "bench",
+      "tilesetDirection" : "right"
+    },
+    "46" : {
+      "//description" : "Trash. Just trash. Or is it? Answer: yes.",
+      "//name" : "bathroomtrashquest",
+      "//shortdescription" : "Bathroom Trash",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bathroomtrashquest",
+      "tilesetDirection" : "right"
+    },
+    "47" : {
+      "//description" : "A tank of unknown use.",
+      "//name" : "outposttank",
+      "//shortdescription" : "Large Metal Tank",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outposttank",
+      "tilesetDirection" : "right"
+    },
+    "48" : {
+      "//description" : "Four marker.",
+      "//name" : "number4",
+      "//shortdescription" : "Four",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number4"
+    },
+    "49" : {
+      "//description" : "This place is selling counterfeit ship licenses.",
+      "//name" : "penguinbay",
+      "//shortdescription" : "Penguin Bay",
+      "imagePositionX" : "-56",
+      "imagePositionY" : "0",
+      "object" : "penguinbay",
+      "tilesetDirection" : "left"
+    },
+    "5" : {
+      "//description" : "Trash. Just trash. Or is it? Answer: yes.",
+      "//name" : "bathroomtrash",
+      "//shortdescription" : "Rubbish Bin",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "bathroomtrash",
+      "tilesetDirection" : "right"
+    },
+    "50" : {
+      "//description" : "A handy power generator.",
+      "//name" : "outpostgenerator",
+      "//shortdescription" : "Power Generator",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostgenerator",
+      "tilesetDirection" : "right"
+    },
+    "51" : {
+      "//description" : "A button.",
+      "//name" : "outpostbutton",
+      "//shortdescription" : "Wall Mounted Button",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "outpostbutton",
+      "tilesetDirection" : "right"
+    },
+    "52" : {
+      "//description" : "A wall light.",
+      "//name" : "outpostlamp",
+      "//shortdescription" : "LED Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "outpostlamp",
+      "tilesetDirection" : "right"
+    },
+    "53" : {
+      "//description" : "The Elegantly Automatic Sign Engineering Lithographer.",
+      "//name" : "signstore",
+      "//shortdescription" : "EASEL",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "signstore",
+      "tilesetDirection" : "left"
+    },
+    "54" : {
+      "//description" : "Nine marker.",
+      "//name" : "number9",
+      "//shortdescription" : "Nine",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "number9"
+    },
+    "55" : {
+      "//description" : "He looks busy.",
+      "//name" : "shipyardwelding",
+      "//shortdescription" : "Welding Penguin",
+      "imagePositionX" : "-80",
+      "imagePositionY" : "0",
+      "object" : "shipyardwelding",
+      "tilesetDirection" : "right"
+    },
+    "56" : {
+      "//description" : "A small monitor. But what does it display?",
+      "//name" : "outpostsmallmonitor",
+      "//shortdescription" : "Small Mounted Monitor",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "outpostsmallmonitor",
+      "tilesetDirection" : "right"
+    },
+    "57" : {
+      "//description" : "This machine runs a game called 'Mazebound64'.",
+      "//name" : "arcadegame",
+      "//shortdescription" : "Mazebound64",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arcadegame",
+      "tilesetDirection" : "right"
+    },
+    "58" : {
+      "//description" : "A crate containing cargo. What cargo? Who knows.",
+      "//name" : "outpostcargocrate",
+      "//shortdescription" : "Metal Cargo Crate",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outpostcargocrate",
+      "tilesetDirection" : "right"
+    },
+    "59" : {
+      "//description" : "A fire extinguisher. Not for fun and games.",
+      "//name" : "fireextinguisher",
+      "//shortdescription" : "Fire Extinguisher",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "fireextinguisher",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "An antenna. These are typically used to boost communication signals.",
+      "//name" : "antenna",
+      "//shortdescription" : "Antenna",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "antenna",
+      "tilesetDirection" : "right"
+    },
+    "60" : {
+      "//description" : "A vent.",
+      "//name" : "roofvent",
+      "//shortdescription" : "Roof Vent",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "roofvent",
+      "tilesetDirection" : "right"
+    },
+    "61" : {
+      "//description" : "The finest furnishings from around the universe.",
+      "//name" : "frogfurnishing",
+      "//shortdescription" : "Frögg Furnishing",
+      "imagePositionX" : "-64",
+      "imagePositionY" : "0",
+      "object" : "frogfurnishing",
+      "tilesetDirection" : "left"
+    },
+    "62" : {
+      "//description" : "A filing cabinet. Sorted.",
+      "//name" : "filingcabinet",
+      "//shortdescription" : "Filing Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "filingcabinet",
+      "tilesetDirection" : "right"
+    },
+    "63" : {
+      "//description" : "A locker of unknown ownership.",
+      "//name" : "outpostlocker",
+      "//shortdescription" : "Basic Metal Locker",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outpostlocker",
+      "tilesetDirection" : "right"
+    },
+    "64" : {
+      "//description" : "An intergalactic convenience store. It seems an ideal place to stock up.",
+      "//name" : "infinityexpress",
+      "//shortdescription" : "Infinity Express",
+      "imagePositionX" : "-88",
+      "imagePositionY" : "0",
+      "object" : "infinityexpress",
+      "tilesetDirection" : "left"
+    },
+    "65" : {
+      "//description" : "A security console. For keeping things secure.",
+      "//name" : "outpostsecurityconsole",
+      "//shortdescription" : "Standing Security Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outpostsecurityconsole",
+      "tilesetDirection" : "right"
+    },
+    "66" : {
+      "//description" : "A cabinet containing who knows what?",
+      "//name" : "outpostcabinet",
+      "//shortdescription" : "Metal Cabinet",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostcabinet",
+      "tilesetDirection" : "right"
+    },
+    "67" : {
+      "//description" : "A computer. Probably quite a good one.",
+      "//name" : "outpostpc",
+      "//shortdescription" : "Desktop PC",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostpc",
+      "tilesetDirection" : "right"
+    },
+    "68" : {
+      "//description" : "A wall light.",
+      "//name" : "outpostlight",
+      "//shortdescription" : "Simple Wall Light",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "outpostlight",
+      "tilesetDirection" : "right"
+    },
+    "69" : {
+      "//description" : "A basic desk.",
+      "//name" : "outpostdesk",
+      "//shortdescription" : "Basic Metal Desk",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "outpostdesk",
+      "tilesetDirection" : "left"
+    },
+    "7" : {
+      "//description" : "One marker.",
+      "//name" : "number1",
+      "//shortdescription" : "One",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "number1"
+    },
+    "70" : {
+      "//description" : "This teleporter makes a great demonstration and a handy return point!",
+      "//name" : "2stoptele",
+      "//shortdescription" : "2 Stop Teleshop Teleporter",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "2stoptele",
+      "tilesetDirection" : "right"
+    },
+    "71" : {
+      "//description" : "Got something rare? We've got something rarer.",
+      "//name" : "treasuredtrophies",
+      "//shortdescription" : "Treasured Trophies",
+      "imagePositionX" : "-88",
+      "imagePositionY" : "0",
+      "object" : "treasuredtrophies",
+      "tilesetDirection" : "left"
+    },
+    "72" : {
+      "//description" : "A standing desk. Good for the posture.",
+      "//name" : "outpoststandingdesk",
+      "//shortdescription" : "Standing Desk",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpoststandingdesk",
+      "tilesetDirection" : "right"
+    },
+    "73" : {
+      "//description" : "A fake plastic plant. Not a tree.",
+      "//name" : "plasticplant",
+      "//shortdescription" : "Plastic Plant",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "plasticplant",
+      "tilesetDirection" : "right"
+    },
+    "74" : {
+      "//description" : "It's a Rob Repairo, A mechanical merchant who repairs lost or broken vehicles.",
+      "//name" : "repairo",
+      "//shortdescription" : "Rob Repairo",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "repairo",
+      "tilesetDirection" : "right"
+    },
+    "75" : {
+      "//description" : "This shop offers personal teleporters in a variety of styles.",
+      "//name" : "2stopshop",
+      "//shortdescription" : "2 Stop Teleshop",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "2stopshop",
+      "tilesetDirection" : "right"
+    },
+    "76" : {
+      "//description" : "A wobbly bar stool.",
+      "//name" : "outpostbarstool",
+      "//shortdescription" : "Urban Bar Stool",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostbarstool",
+      "tilesetDirection" : "right"
+    },
+    "77" : {
+      "//description" : "A family business. Sells refined ores for crafting.",
+      "//name" : "ursaminer",
+      "//shortdescription" : "Ursa Miner",
+      "imagePositionX" : "-104",
+      "imagePositionY" : "0",
+      "object" : "ursaminer",
+      "tilesetDirection" : "left"
+    },
+    "78" : {
+      "//description" : "A family business. Sells refined ores for crafting.",
+      "//name" : "ursaminerclosed",
+      "//shortdescription" : "Ursa Miner",
+      "imagePositionX" : "-104",
+      "imagePositionY" : "0",
+      "object" : "ursaminerclosed",
+      "tilesetDirection" : "left"
+    },
+    "79" : {
+      "//description" : "This would be a neat venue for a shop.",
+      "//name" : "terramartclosed",
+      "//shortdescription" : "Closed Terra Mart",
+      "imagePositionX" : "-64",
+      "imagePositionY" : "0",
+      "object" : "terramartclosed",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A service panel.",
+      "//name" : "outpostservicepanel",
+      "//shortdescription" : "Service Panel",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "outpostservicepanel",
+      "tilesetDirection" : "right"
+    },
+    "80" : {
+      "//description" : "A cute little teddy bear.",
+      "//name" : "teddybearplush",
+      "//shortdescription" : "Teddy Bear",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "teddybearplush",
+      "tilesetDirection" : "right"
+    },
+    "81" : {
+      "//description" : "This would be a neat venue for a shop.",
+      "//name" : "frogfurnishingclosed",
+      "//shortdescription" : "Closed Frögg Furnishing",
+      "imagePositionX" : "-64",
+      "imagePositionY" : "0",
+      "object" : "frogfurnishingclosed",
+      "tilesetDirection" : "right"
+    },
+    "82" : {
+      "//description" : "This would be a neat venue for a stall.",
+      "//name" : "2stopshopclosed",
+      "//shortdescription" : "Closed 2 Stop Teleshop",
+      "imagePositionX" : "-32",
+      "imagePositionY" : "0",
+      "object" : "2stopshopclosed",
+      "tilesetDirection" : "right"
+    },
+    "83" : {
+      "//description" : "This would be a neat venue for a shop.",
+      "//name" : "penguinbayclosed",
+      "//shortdescription" : "Closed Penguin Bay",
+      "imagePositionX" : "-56",
+      "imagePositionY" : "0",
+      "object" : "penguinbayclosed",
+      "tilesetDirection" : "right"
+    },
+    "84" : {
+      "//description" : "This would be a neat venue for a stall.",
+      "//name" : "signstoreclosed",
+      "//shortdescription" : "Closed Sign Store",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "signstoreclosed",
+      "tilesetDirection" : "right"
+    },
+    "85" : {
+      "//description" : "Offers upgrades to rare weapons.",
+      "//name" : "penguinweaponshop",
+      "//shortdescription" : "Biggy's Reputable Weaponry",
+      "imagePositionX" : "-104",
+      "imagePositionY" : "0",
+      "object" : "penguinweaponshop",
+      "tilesetDirection" : "right"
+    },
+    "86" : {
+      "//description" : "This would be a neat venue for a shop.",
+      "//name" : "penguinweaponshopclosed",
+      "//shortdescription" : "Closed Biggy's Reputable Weapons",
+      "imagePositionX" : "-104",
+      "imagePositionY" : "0",
+      "object" : "penguinweaponshopclosed",
+      "tilesetDirection" : "right"
+    },
+    "87" : {
+      "//description" : "Tech lab hologram",
+      "//name" : "techlabhologram",
+      "//shortdescription" : "Tech Lab Interface",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-24",
+      "object" : "techlabhologram",
+      "tilesetDirection" : "right"
+    },
+    "88" : {
+      "//description" : "Purchase tech consoles using this interface.",
+      "//name" : "techlabconsole1",
+      "//shortdescription" : "Tech Console Dispenser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "techlabconsole1",
+      "tilesetDirection" : "right"
+    },
+    "89" : {
+      "//description" : "Equip your tech on this console.",
+      "//name" : "techlabconsole2",
+      "//shortdescription" : "Equip Tech Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "techlabconsole2",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A water cooler. The best place to find the hottest gossip.",
+      "//name" : "watercooler",
+      "//shortdescription" : "Water Cooler",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "watercooler",
+      "tilesetDirection" : "right"
+    },
+    "90" : {
+      "//description" : "Tech lab equipment.",
+      "//name" : "techlab",
+      "//shortdescription" : "Tech Lab",
+      "imagePositionX" : "-104",
+      "imagePositionY" : "0",
+      "object" : "techlab",
+      "tilesetDirection" : "right"
+    },
+    "91" : {
+      "//description" : "Tech lab scientist.",
+      "//name" : "techlabscientist",
+      "//shortdescription" : "Tech Lab Scientist",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "techlabscientist",
+      "tilesetDirection" : "right"
+    },
+    "92" : {
+      "//description" : "Tech lab scientist.",
+      "//name" : "techlabscientist_orientation1",
+      "//shortdescription" : "Tech Lab Scientist",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "techlabscientist",
+      "tilesetDirection" : "right"
+    },
+    "93" : {
+      "//description" : "Tech lab scientist shop.",
+      "//name" : "techlabscientistshop",
+      "//shortdescription" : "Tech Lab Shop",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "techlabscientistshop",
+      "tilesetDirection" : "right"
+    },
+    "94" : {
+      "//description" : "Tech lab scientist shop.",
+      "//name" : "techlabscientistshop_orientation1",
+      "//shortdescription" : "Tech Lab Shop",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "techlabscientistshop",
+      "tilesetDirection" : "right"
+    },
+    "95" : {
+      "//description" : "Offline tech console dispenser.",
+      "//name" : "techlabconsole1offline",
+      "//shortdescription" : "Tech Console Dispenser",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "techlabconsole1offline",
+      "tilesetDirection" : "right"
+    },
+    "96" : {
+      "//description" : "This would be a neat venue for a stall.",
+      "//name" : "arcadegameclosed",
+      "//shortdescription" : "Closed Mazebound64",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "arcadegameclosed",
+      "tilesetDirection" : "right"
+    },
+    "97" : {
+      "//description" : "This door is made of some sort of bulletproof material. It has a composite rail running through it.",
+      "//name" : "outpostrailhatch",
+      "//shortdescription" : "Rail Airlock Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "outpostrailhatch",
+      "tilesetDirection" : "right"
+    },
+    "98" : {
+      "//description" : "This door is made of some sort of bulletproof material. It has a composite rail running through it.",
+      "//name" : "outpostrailairlock",
+      "//shortdescription" : "Rail Airlock Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "outpostrailairlock",
+      "tilesetDirection" : "right"
+    },
+    "99" : {
+      "//description" : "This automated door is made of some sort of bulletproof material.",
+      "//name" : "outposthatchlarge",
+      "//shortdescription" : "Large Airlock Hatch",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "-8",
+      "object" : "outposthatchlarge",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/packed/objects/number2.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/packed/objects/outpostmicrowave.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/packed/objects/outpostterminal.png"
+    },
+    "100" : {
+      "image" : "../../../../../tiled/packed/objects/hangingbooster.png"
+    },
+    "101" : {
+      "image" : "../../../../../tiled/packed/objects/mechassemblystation.png"
+    },
+    "102" : {
+      "image" : "../../../../../tiled/packed/objects/mechsign.png"
+    },
+    "103" : {
+      "image" : "../../../../../tiled/packed/objects/wiredtarget.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/packed/objects/outpostconsole.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/packed/objects/number5.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/packed/objects/coffeemachine.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/packed/objects/outpostcookingtable.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/packed/objects/outpostpublicchair.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/packed/objects/bathroomsink.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/packed/objects/bathroomurinal.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/packed/objects/bathroomhanddryer.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/packed/objects/terramart.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/packed/objects/outpostchair.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/packed/objects/escaperadar.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/packed/objects/escaperadar_orientation1.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/packed/objects/outpostceilinglight.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/packed/objects/number0.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/packed/objects/signdispenser.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/packed/objects/outpostkeypad.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/packed/objects/outpostbed.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/packed/objects/number6.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/packed/objects/bathroomstall.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/packed/objects/shipyardcaptain.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/packed/objects/outpostcargocrateshort.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/packed/objects/floop.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/packed/objects/outpostshippingcontainer.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/packed/objects/outpostcrane.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/packed/objects/outposttable.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/packed/../packed/invalid.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/packed/objects/number7.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/packed/objects/number8.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/packed/objects/number3.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/packed/objects/outpostmonitor.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/packed/objects/outpostfridge.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/packed/objects/floor.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/packed/objects/outpostradardish.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/packed/objects/outpostradardish_orientation1.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/packed/objects/outpostairlocklarge.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/packed/objects/outpostslidingdoor.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/packed/objects/outpostairlock.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/packed/objects/bench.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/packed/objects/bathroomtrashquest.png"
+    },
+    "47" : {
+      "image" : "../../../../../tiled/packed/objects/outposttank.png"
+    },
+    "48" : {
+      "image" : "../../../../../tiled/packed/objects/number4.png"
+    },
+    "49" : {
+      "image" : "../../../../../tiled/packed/objects/penguinbay.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/packed/objects/bathroomtrash.png"
+    },
+    "50" : {
+      "image" : "../../../../../tiled/packed/objects/outpostgenerator.png"
+    },
+    "51" : {
+      "image" : "../../../../../tiled/packed/objects/outpostbutton.png"
+    },
+    "52" : {
+      "image" : "../../../../../tiled/packed/objects/outpostlamp.png"
+    },
+    "53" : {
+      "image" : "../../../../../tiled/packed/objects/signstore.png"
+    },
+    "54" : {
+      "image" : "../../../../../tiled/packed/objects/number9.png"
+    },
+    "55" : {
+      "image" : "../../../../../tiled/packed/objects/shipyardwelding.png"
+    },
+    "56" : {
+      "image" : "../../../../../tiled/packed/objects/outpostsmallmonitor.png"
+    },
+    "57" : {
+      "image" : "../../../../../tiled/packed/objects/arcadegame.png"
+    },
+    "58" : {
+      "image" : "../../../../../tiled/packed/objects/outpostcargocrate.png"
+    },
+    "59" : {
+      "image" : "../../../../../tiled/packed/objects/fireextinguisher.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/packed/objects/antenna.png"
+    },
+    "60" : {
+      "image" : "../../../../../tiled/packed/objects/roofvent.png"
+    },
+    "61" : {
+      "image" : "../../../../../tiled/packed/objects/frogfurnishing.png"
+    },
+    "62" : {
+      "image" : "../../../../../tiled/packed/objects/filingcabinet.png"
+    },
+    "63" : {
+      "image" : "../../../../../tiled/packed/objects/outpostlocker.png"
+    },
+    "64" : {
+      "image" : "../../../../../tiled/packed/objects/infinityexpress.png"
+    },
+    "65" : {
+      "image" : "../../../../../tiled/packed/objects/outpostsecurityconsole.png"
+    },
+    "66" : {
+      "image" : "../../../../../tiled/packed/objects/outpostcabinet.png"
+    },
+    "67" : {
+      "image" : "../../../../../tiled/packed/objects/outpostpc.png"
+    },
+    "68" : {
+      "image" : "../../../../../tiled/packed/objects/outpostlight.png"
+    },
+    "69" : {
+      "image" : "../../../../../tiled/packed/objects/outpostdesk.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/packed/objects/number1.png"
+    },
+    "70" : {
+      "image" : "../../../../../tiled/packed/objects/2stoptele.png"
+    },
+    "71" : {
+      "image" : "../../../../../tiled/packed/objects/treasuredtrophies.png"
+    },
+    "72" : {
+      "image" : "../../../../../tiled/packed/objects/outpoststandingdesk.png"
+    },
+    "73" : {
+      "image" : "../../../../../tiled/packed/objects/plasticplant.png"
+    },
+    "74" : {
+      "image" : "../../../../../tiled/packed/objects/repairo.png"
+    },
+    "75" : {
+      "image" : "../../../../../tiled/packed/objects/2stopshop.png"
+    },
+    "76" : {
+      "image" : "../../../../../tiled/packed/objects/outpostbarstool.png"
+    },
+    "77" : {
+      "image" : "../../../../../tiled/packed/objects/ursaminer.png"
+    },
+    "78" : {
+      "image" : "../../../../../tiled/packed/objects/ursaminerclosed.png"
+    },
+    "79" : {
+      "image" : "../../../../../tiled/packed/objects/terramartclosed.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/packed/objects/outpostservicepanel.png"
+    },
+    "80" : {
+      "image" : "../../../../../tiled/packed/objects/teddybearplush.png"
+    },
+    "81" : {
+      "image" : "../../../../../tiled/packed/objects/frogfurnishingclosed.png"
+    },
+    "82" : {
+      "image" : "../../../../../tiled/packed/objects/2stopshopclosed.png"
+    },
+    "83" : {
+      "image" : "../../../../../tiled/packed/objects/penguinbayclosed.png"
+    },
+    "84" : {
+      "image" : "../../../../../tiled/packed/objects/signstoreclosed.png"
+    },
+    "85" : {
+      "image" : "../../../../../tiled/packed/objects/penguinweaponshop.png"
+    },
+    "86" : {
+      "image" : "../../../../../tiled/packed/objects/penguinweaponshopclosed.png"
+    },
+    "87" : {
+      "image" : "../../../../../tiled/packed/objects/techlabhologram.png"
+    },
+    "88" : {
+      "image" : "../../../../../tiled/packed/objects/techlabconsole1.png"
+    },
+    "89" : {
+      "image" : "../../../../../tiled/packed/objects/techlabconsole2.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/packed/objects/watercooler.png"
+    },
+    "90" : {
+      "image" : "../../../../../tiled/packed/objects/techlab.png"
+    },
+    "91" : {
+      "image" : "../../../../../tiled/packed/objects/techlabscientist.png"
+    },
+    "92" : {
+      "image" : "../../../../../tiled/packed/objects/techlabscientist_orientation1.png"
+    },
+    "93" : {
+      "image" : "../../../../../tiled/packed/objects/techlabscientistshop.png"
+    },
+    "94" : {
+      "image" : "../../../../../tiled/packed/objects/techlabscientistshop_orientation1.png"
+    },
+    "95" : {
+      "image" : "../../../../../tiled/packed/objects/techlabconsole1offline.png"
+    },
+    "96" : {
+      "image" : "../../../../../tiled/packed/objects/arcadegameclosed.png"
+    },
+    "97" : {
+      "image" : "../../../../../tiled/packed/objects/outpostrailhatch.png"
+    },
+    "98" : {
+      "image" : "../../../../../tiled/packed/objects/outpostrailairlock.png"
+    },
+    "99" : {
+      "image" : "../../../../../tiled/packed/objects/outposthatchlarge.png"
+    }
+  },
+  "tilewidth" : 8
+}
