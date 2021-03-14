@@ -7,7 +7,8 @@
   "description" : "A bladed weapon created from some sort of a durable glass material.",
   "shortdescription" : "Elysian Double Blade",
   "tooltipKind" : "sword",
-  "category" : "arcana_doubleBlade",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Double Blade"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee"],
 
@@ -30,5 +31,5 @@
     "baseDps" : 4.6
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
