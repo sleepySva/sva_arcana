@@ -12,16 +12,19 @@
   "interactData" : {
     "config" : "/interface/windowconfig/vendingmachine.config",
     "paneLayoutOverride" : {
+    "close" : {
+      "position" : [161, 246]
+      },
       "windowtitle" : {
-        "title" : " ???",
-        "subtitle" : " 'Unobtainable' isn't in my dictionary."
+        "title" : "???",
+        "subtitle" : "'Unobtainable' isn't in my dictionary"
       }
     },
     "buyFactor" : 100.0,
     "sellFactor" : 0.2,
     "items" : [
 	  { "item" : "arcana_sigils_abyssSigil" },
-      { "item" : "arcana_sigils_avoSigil" },
+	  { "item" : "arcana_sigils_avoSigil" },
 	  { "item" : "arcana_sigils_azureSigil" },
 	  { "item" : "arcana_sigils_electricSigil" },
 	  { "item" : "arcana_sigils_fireSigil" },
@@ -50,7 +53,7 @@
   
   "scripts" : [ "/objects/arcana_lua_object_chat.lua" ],
   "scriptDelta" : 20,
-
+  "mouthPosition" : [1.5,-0.25],
   "chatRadius" : 10,
   "chatCooldown" : 15,
   "chatOptions" : [
