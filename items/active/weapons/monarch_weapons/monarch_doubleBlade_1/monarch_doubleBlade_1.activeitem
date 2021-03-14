@@ -7,9 +7,10 @@
   "description" : "A pale double bladed weapon.",
   "shortdescription" : "Holosium Double Blade",
   "tooltipKind" : "sword",
-  "category" : "arcana_doubleBlade",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Double Blade"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee"],
+  "itemTags" : ["weapon","melee","doubleblade"],
   "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "monarch_doubleBlade_1" },
 
   "inventoryIcon" : "icon.png",
@@ -31,5 +32,5 @@
     "baseDps" : 9.0
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
