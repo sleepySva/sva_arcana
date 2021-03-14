@@ -7,7 +7,8 @@
   "description" : "A lance comparable to the brightest azure star.",
   "shortdescription" : "Astrifer",
   "tooltipKind" : "sword",
-  "category" : "arcana_lance",
+  "category" : "spear",
+  "tooltipFields" : {"subtitle" : "Lance"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear"],
 
@@ -60,5 +61,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
