@@ -7,9 +7,10 @@
   "description" : "A battleaxe created with the timeless aeons.",
   "shortdescription" : "Sagacity",
   "tooltipKind" : "sword",
-  "category" : "arcana_battleaxe",
+  "category" : "axe",
+  "tooltipFields" : {"subtitle" : "Battleaxe"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword"],
+  "itemTags" : ["weapon","melee","battleaxe","axe"],
 
   "inventoryIcon" : "aeon_battleaxe_1.png",
 
@@ -38,5 +39,5 @@
 
   "altAbilityType" : "kunaiblast",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
