@@ -7,9 +7,10 @@
   "description" : "A greatsword made with various salvaged parts.",
   "shortdescription" : "Detritus Greatsword",
   "tooltipKind" : "sword",
-  "category" : "arcana_greatsword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Greatsword"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee"],
+  "itemTags" : ["weapon","melee","greatsword"],
 
   "inventoryIcon" : "icon.png",
 
@@ -30,5 +31,5 @@
     "baseDps" : 8.4
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
