@@ -5,26 +5,37 @@
   "description" : "A modern essence extractor for extracting azure and mirage essence.",
   "shortdescription" : "Orion Essence Extractor",
   "race" : "generic",
-  "category" : "furniture",
+  "category" : "crafting",
   "price" : 1000,
   
-  "objectType" : "container",
-  "lightColor" : [90, 160, 170],
+  "lightColor" : [30, 100, 110],
 
-  "recipeGroup" : "arcana_crafting_essenceExtractor_3",
-  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
-  "slotCount" : 2,
-  "uiConfig" : "/interface/arcana/arcana_crafting_essenceExtractor_3/arcana_crafting_essenceExtractor_3.config",
-  "frameCooldown" : 5,
-  "autoCloseCooldown" : 3600,
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_essenceExtractor_3.config",
+	"filter" : ["arcana_crafting_essenceExtractor"]
+  },
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_essenceExtractor_3.png:<color>.<frame>",
+	  "imageLayers" : [ { "image" : "arcana_crafting_essenceExtractor_3.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
       "imagePosition" : [-24, 0],
       "frames" : 4,
-      "animationCycle" : 0.6,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "arcana_crafting_essenceExtractor_3.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

@@ -348,7 +348,7 @@
 				"description" : "Superstorm Planet",
 				"smallImage" : "/celestial/system/planet_small.png",
 
-				"terrestrialType" : [ "arcana_superstormExpanse", "arcana_stahlernBadlands", "arcana_timeless", "arcana_neonSea", "arcana_automated"]
+				"terrestrialType" : [ "arcana_superstormExpanse", "arcana_stahlernBadlands", "arcana_timeless", "arcana_neonSea", "arcana_automated", "arcana_viridescent"]
 			  },
 
 			  "variationParameters" : [
@@ -1178,6 +1178,29 @@
 		"value" :
 		{
 			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_neonSea/maskie<num>.png",
+			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+			"dynamicsRange" : [1, 30]
+		}
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/terrestrialHorizonGraphics/arcana_viridescent",
+		"value" :
+		{
+			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_viridescent_<selector>.png",
+			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+			"maskRange" : [1, 25],
+			"maskPerPlanetRange" : [3, 3]
+		}
+	},
+
+	{
+		"op" : "add",
+		"path" : "/terrestrialGraphics/arcana_viridescent",
+		"value" :
+		{
+			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_viridescent/maskie<num>.png",
 			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
 			"dynamicsRange" : [1, 30]
 		}

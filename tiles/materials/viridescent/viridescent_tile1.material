@@ -1,0 +1,21 @@
+{
+  "materialId" : 16735,
+  "materialName" : "viridescent_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "viridescent_tile1",
+  "description" : "A green wood block, laced with acid.",
+  "shortdescription" : "Viridescent Wood Block",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "viridescent_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 735
+  }
+}

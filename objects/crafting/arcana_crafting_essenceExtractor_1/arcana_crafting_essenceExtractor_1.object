@@ -5,18 +5,16 @@
   "description" : "A basic extractor for extracting arcane essence.",
   "shortdescription" : "Wooden Essence Extractor",
   "race" : "generic",
-  "category" : "furniture",
+  "category" : "crafting",
   "price" : 1000,
   
-  "objectType" : "container",
   "lightColor" : [90, 160, 170],
 
-  "recipeGroup" : "arcana_crafting_essenceExtractor_1",
-  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
-  "slotCount" : 2,
-  "uiConfig" : "/interface/arcana/arcana_crafting_essenceExtractor_1/arcana_crafting_essenceExtractor_1.config",
-  "frameCooldown" : 5,
-  "autoCloseCooldown" : 3600,
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_essenceExtractor_1.config",
+	"filter" : ["arcana_crafting_essenceExtractor"]
+  },
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

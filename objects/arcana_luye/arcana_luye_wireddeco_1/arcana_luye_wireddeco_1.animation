@@ -1,0 +1,126 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "light" : {
+        "default" : "on",
+        "states" : {
+          "off" : {
+            "properties" : {
+              "particleEmittersOff" : [ "smallpoof", "bigsmoke" ]
+            }
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "smallpoof", "bigsmoke" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "bg" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "light" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.off"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>",
+                "fullbright" : false
+              }
+            }
+          }
+        }
+      },
+      "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "light" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.off"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "particleEmitters" : {
+    "smallpoof" : {
+      "emissionRate" : 1.2,
+      "emissionRateVariance" : 0.05,
+      "active" : true,
+
+      "particles" : [
+        {
+          "particle" : {
+          "type" : "animated",
+          "image" : "/animations/lightsmoke/lightsmoke.animation",
+          "size" : 1.4,
+          "opacity":0.1,
+          "color" : [200, 200, 200, 220],
+          "destructionAction" : "fade",
+          "destructionTime" : 3,
+          "initialVelocity" : [0.0, 6.0],
+          "timeToLive" : 2,
+          "layer" : "front",
+          "position" : [2, 0.5],
+		  "variance" : {
+              "initialVelocity" : [0.0, 4.0],
+              "position" : [1, 0.2]
+          }
+          }
+        }
+      ]
+    },
+    "bigsmoke" : {
+      "emissionRate" : 1.4,
+      "emissionRateVariance" : 0.05,
+      "active" : true,
+
+      "particles" : [
+        {
+          "particle" : {
+          "type" : "animated",
+          "image" : "/animations/lightsmoke/lightsmoke.animation",
+          "size" : 1.2,
+          "color" : [200, 200, 200, 180],
+          "destructionAction" : "fade",
+          "destructionTime" : 4,
+          "initialVelocity" : [0, 6],
+          "timeToLive" : 2,
+          "layer" : "front",
+          "position" : [2, 0.5],
+          "variance" : {
+              "initialVelocity" : [0.0, 4.0],
+              "position" : [1, 0.2]
+          }
+          }
+        }
+      ]
+    }
+  }
+}

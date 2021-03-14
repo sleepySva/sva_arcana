@@ -1,0 +1,21 @@
+{
+  "materialId" : 16732,
+  "materialName" : "luye_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "luye_tile2",
+  "description" : "A metal plated wall, looks fairly durable.",
+  "shortdescription" : "Luye Mechanical Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "luye_tile2.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2732
+  }
+}

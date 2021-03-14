@@ -1021,7 +1021,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_automated",
     "value": {
-	  "caveLiquid": ["arcana_liquid_neonWater"],
+	  "caveLiquid": ["arcana_liquid_viridescentAcid"],
       "blockSelector": ["remixedMildSurface"],
       "fgCaveSelector": ["empty"],
       "bgCaveSelector": ["empty"],
@@ -1033,7 +1033,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_automated_underground_1",
     "value": {
-      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "caveLiquid": [ "arcana_liquid_viridescentAcid" ],
       "biome": [[0,["arcana_automated_underground_1"]]],
       "subRegion": []
     }
@@ -1042,7 +1042,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_automated_underground_2",
     "value": {
-      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "caveLiquid": [ "arcana_liquid_viridescentAcid" ],
       "biome": [[0,["arcana_automated_underground_2"]]],
       "subRegion": []
     }
@@ -1051,7 +1051,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_automated_underground_3",
     "value": {
-      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "caveLiquid": [ "arcana_liquid_viridescentAcid" ],
       "biome": [[0,["arcana_automated_underground_3"]]],
       "subRegion": []
     }
@@ -1108,6 +1108,54 @@
       "fgCaveSelector" : [ "emptier" ],
       "bgCaveSelector" : [ "emptiest" ],
       "biome": [[0,["arcana_neonSea_floor"]]]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_viridescent",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : [ "arcana_viridescent" ],
+          "secondaryRegions" : [ "arcana_automated" ],
+          "dungeons": [
+			  [1.0, "arcana_workshop_dungeon_1"],
+			  [8.0, "arcana_viridescent_dungeon_1"],
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_automated_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_automated_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_automated_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_automated_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_viridescent",
+    "value": {
+      "caveLiquid": ["arcana_liquid_viridescentAcid"],
+      "caveLiquidSeedDensityRange" : [2, 2],
+      "encloseLiquids" : true,
+      "blockSelector": ["remixedPoolsSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_viridescent"]]],
+      "subRegion": ["giantflowers","spring"]
     }
   }
 ]

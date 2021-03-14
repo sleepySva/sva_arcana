@@ -1,0 +1,21 @@
+{
+  "materialId" : 16734,
+  "materialName" : "luye_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "luye_tile4",
+  "description" : "A rusty metal plating tile.",
+  "shortdescription" : "Luye Sloped Plating",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "luye_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 3734
+  }
+}

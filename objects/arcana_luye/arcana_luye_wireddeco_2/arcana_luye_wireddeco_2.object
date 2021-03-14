@@ -1,0 +1,41 @@
+{
+  "objectName" : "arcana_luye_wireddeco_2",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A corroded monitor.",
+  "shortdescription" : "Luye Monitor",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+  
+  "lightColor" : [80, 140, 30],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_luye_wireddeco_2.png:<color>.on",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "animation" : "arcana_luye_wireddeco_2.animation",
+  "animationParts" : {
+    "bg" : "arcana_luye_wireddeco_2.png",
+    "fg" : "arcana_luye_wireddeco_2.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

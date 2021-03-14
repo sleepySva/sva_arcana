@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_food_blackTea",
+  "rarity" : "Common",
+  "price" : 150,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_blackTea.png",
+  "description" : "A reddish, brown tea. ^blue;+20% max health for 180s.^reset;",
+  "shortdescription" : "Black Tea",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 180
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}

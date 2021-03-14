@@ -1,0 +1,72 @@
+{
+  "type" : "arcana_npc_luye_officer",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Greetings, foreigner. I wish you a safe journey.",
+            "Do not try to cause any trouble here.",
+            "Welcome to the city, foreigner.",
+			"We as the Luye have the responsibility to protect others from outside threats.",
+			"Have you tried some Luye-made tea yet? You can find them in a Luye store.",
+            "We welcome your visit as long as you don't harbor any ill intents."
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_heishe_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_heishe_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_heishe_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "luye_moonBlade_1",
+              "luye_glaive_1",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 200.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.2
+      },
+      "protection" : {
+        "baseValue" : 1.2
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

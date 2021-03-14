@@ -1,0 +1,21 @@
+{
+  "materialId" : 16731,
+  "materialName" : "luye_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "luye_tile1",
+  "description" : "A solid, metal beam.",
+  "shortdescription" : "Luye Support Beam",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "luye_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2731
+  }
+}

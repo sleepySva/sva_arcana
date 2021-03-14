@@ -7,7 +7,15 @@
         "op": "test",
         "path": "/displayDungeons"
   },
-  
+
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_viridescent_dungeon_1",
+	"value": {
+		"description" : "A city soaked with toxic waste, occupied by the Gelsemis.",
+		"icon" : "/interface/cockpit/dungeons/arcana_viridescent_dungeon_1.png"
+	}
+  },
   {
     "op": "add",
     "path": "/displayDungeons/arcana_workshop_dungeon_1",
@@ -742,6 +750,38 @@
       255,
       179,
       235
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_viridescent",
+    "value": [
+      "The ^#cfd848;viridescent^white; is a green, toxic planet filled with rivers of acidic ichor. Some ancient remains still linger, but the planet has long been inhospitable for most species.",
+      "The ^#cfd848;viridescent^white; is a green, toxic planet filled with rivers of acidic ichor. Some ancient remains still linger, but the planet has long been inhospitable for most species.",
+      "The ^#cfd848;viridescent^white; is a green, toxic planet filled with rivers of acidic ichor. Some ancient remains still linger, but the planet has long been inhospitable for most species."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_viridescent",
+    "value": "Viridescent"
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_corrodiumOre",
+    "value": {
+      "displayName": "Corrodium",
+      "icon": "/items/generic/arcana_ores/arcana_ore_corrodiumOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_viridescent",
+    "value": [
+      207,
+      216,
+      72
     ]
   }
   ]

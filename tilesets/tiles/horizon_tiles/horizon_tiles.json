@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":6,
+ "tilecount":7,
  "tileheight":8,
  "tileproperties":
     {
@@ -50,6 +50,14 @@
          "\/\/name":"horizon_tile6",
          "\/\/shortdescription":"",
          "material":"horizon_tile6"
+        },
+     "6":
+        {
+         "\/\/description":"",
+         "\/\/name":"horizon_tile6",
+         "\/\/shortdescription":"",
+         "material":"horizon_tile6",
+		 "colorVariant":"3"
         }
     },
  "tiles":
@@ -77,6 +85,10 @@
      "5":
         {
          "image":"horizon_tile6.png"
+        },
+     "6":
+        {
+         "image":"horizon_tile6_green.png"
         }
     },
  "tilewidth":8

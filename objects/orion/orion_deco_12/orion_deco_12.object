@@ -43,9 +43,10 @@
       "pixelOrigin" : [0, 44],
 
       "particle" : {
-          "type" : "ember",
+		  "type" : "animated",
+		  "animation" : "/animations/firesmoke/firesmoke.animation",
           "position" : [0, 0],
-          "size" : 1.0,
+          "size" : 0.2,
           "color" : [255, 228, 112, 255],
           "light" : [30, 10, 10],
           "fade" : 1.0,
@@ -57,7 +58,7 @@
       },
       "particleVariance" : {
         "initialVelocity" : [0.2, -0.2],
-        "size" : 1.2,
+        "size" : 0.2,
         "color" : [230, 121, 47, 255],
 		"position" : [4.0, 0.2]
       }

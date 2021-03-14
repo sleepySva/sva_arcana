@@ -1,0 +1,21 @@
+{
+  "materialId" : 16733,
+  "materialName" : "luye_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "luye_tile3",
+  "description" : "A metal plated block filled with machinary.",
+  "shortdescription" : "Luye Tech Block",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "luye_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 3733
+  }
+}

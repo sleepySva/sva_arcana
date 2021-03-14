@@ -5,23 +5,34 @@
   "description" : "An arcanium-reinforced essence extractor.",
   "shortdescription" : "Arcanium Essence Extractor",
   "race" : "generic",
-  "category" : "furniture",
+  "category" : "crafting",
   "price" : 1000,
   
-  "objectType" : "container",
-  "lightColor" : [90, 160, 170],
+  "lightColor" : [100, 80, 10],
 
-  "recipeGroup" : "arcana_crafting_essenceExtractor_2",
-  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
-  "slotCount" : 2,
-  "uiConfig" : "/interface/arcana/arcana_crafting_essenceExtractor_2/arcana_crafting_essenceExtractor_2.config",
-  "frameCooldown" : 5,
-  "autoCloseCooldown" : 3600,
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_essenceExtractor_2.config",
+	"filter" : ["arcana_crafting_essenceExtractor"]
+  },
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_essenceExtractor_2.png:<color>",
+	  "imageLayers" : [ { "image" : "arcana_crafting_essenceExtractor_2.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "arcana_crafting_essenceExtractor_2.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
       "imagePosition" : [-24, 0],
       "frames" : 1,
       "animationCycle" : 0.5,

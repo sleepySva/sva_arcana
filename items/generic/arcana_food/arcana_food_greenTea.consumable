@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_food_greenTea",
+  "rarity" : "Common",
+  "price" : 150,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_greenTea.png",
+  "description" : "Luye's traditional green tea. ^blue;gives a minor run boost for 120s.^reset;",
+  "shortdescription" : "Green Tea",
+  "effects" : [ [
+    {
+        "effect" : "runboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}

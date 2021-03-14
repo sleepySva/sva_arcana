@@ -1,0 +1,53 @@
+{
+  "objectName" : "arcana_luye_vendor_4",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A shelf of green teabags.",
+  "shortdescription" : "Luye Wall Shelf ^green;Green^reset;",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Luye Store",
+        "subtitle" : " Teabags"
+      }
+    },
+    "buyFactor" : 2.0,
+    "sellFactor" : 0.2,
+    "items" : [
+      { "item" : "arcana_teabag_greenTeabag" }
+    ]
+  },
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "arcana_luye_vendor_4.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "arcana_luye_vendor_4.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

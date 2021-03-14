@@ -1,0 +1,21 @@
+{
+  "materialId" : 16739,
+  "materialName" : "luye_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "luye_tile5",
+  "description" : "A smooth wall panel for building interior walls.",
+  "shortdescription" : "Luye Smooth Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "luye_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 39
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16737,
+  "materialName" : "viridescent_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "viridescent_tile3",
+  "description" : "A bright, green leaf block.",
+  "shortdescription" : "Viridescent Leaf Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "viridescent_tile3.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1737
+  }
+}

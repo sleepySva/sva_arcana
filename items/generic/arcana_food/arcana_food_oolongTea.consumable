@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_food_oolongTea",
+  "rarity" : "Common",
+  "price" : 150,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_oolongTea.png",
+  "description" : "A yellowish, lightly sweet tea. ^blue;+20% max energy for 180s.^reset;",
+  "shortdescription" : "Oolong Tea",
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 180
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}

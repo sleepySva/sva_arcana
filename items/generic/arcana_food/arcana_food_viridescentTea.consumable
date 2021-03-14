@@ -1,0 +1,30 @@
+{
+  "itemName" : "arcana_food_viridescentTea",
+  "rarity" : "Common",
+  "price" : 150,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_viridescentTea.png",
+  "description" : "Toxic green tea made with viridescent acid. ^blue;gives a minor run and jump boost for 240s and inflicts acidic burning.^reset;",
+  "shortdescription" : "Viridescent Tea",
+  "effects" : [ [
+    {
+        "effect" : "runboostfood",
+        "duration" : 240
+    },
+    {
+        "effect" : "jumpboostfood",
+        "duration" : 240
+    },
+    {
+        "effect" : "arcana_status_acidicBurning",
+        "duration" : 30
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}

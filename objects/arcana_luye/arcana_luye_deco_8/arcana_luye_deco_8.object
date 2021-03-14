@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_luye_deco_8",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A small fuse box.",
+  "shortdescription" : "Luye Fuse Box",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_luye_deco_8.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

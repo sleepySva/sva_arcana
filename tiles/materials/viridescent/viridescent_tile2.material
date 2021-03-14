@@ -1,0 +1,21 @@
+{
+  "materialId" : 16736,
+  "materialName" : "viridescent_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "viridescent_tile2",
+  "description" : "A rusty scrap panel tile.",
+  "shortdescription" : "Viridescent Scrap Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "viridescent_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1736
+  }
+}

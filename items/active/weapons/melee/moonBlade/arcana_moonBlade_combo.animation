@@ -1,0 +1,211 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire4" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire5" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+		  "fire6" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
+          "offset" : [0, 0.1],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
+        }
+      },
+      "handle" : {
+        "properties" : {
+          "zLevel" : 1,
+		  "fullbright" : true,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>",
+          "offset" : [0, 0.1],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+		  "fullbright" : true,
+          "centered" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/moonBlade/swoosh_1/arcana_moonBlade_swoosh_green.png:<frame>",
+                "offset" : [2.0, 1.0],
+                "damageArea" : [[-5, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/moonBlade/swoosh_4/arcana_moonBlade_swoosh_green.png:<frame>",
+                "offset" : [2.0, 1.0],
+                "damageArea" : [[-5, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/moonBlade/swoosh_5/arcana_moonBlade_swoosh_green.png:<frame>",
+                "offset" : [2.0, 1.0],
+                "damageArea" : [[-5, -1.6], [-3.0, 2], [3, 4], [4, 2.2], [6, -0.25], [6, -2.0], [4, -3.0], [0, -2.0]]
+              }
+            },
+            "fire4" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/moonBlade/swoosh_2/arcana_moonBlade_swoosh_green.png:<frame>",
+                "offset" : [2.0, 1.0],
+                "damageArea" : [[-5, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+              }
+            },
+            "fire5" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/moonBlade/swoosh_4/arcana_moonBlade_swoosh_green.png:<frame>",
+                "offset" : [2.0, 1.0],
+                "damageArea" : [[-5, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+              }
+            },
+            "fire6" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/moonBlade/swoosh_5/arcana_moonBlade_swoosh_green.png:<frame>",
+                "offset" : [2.0, 1.0],
+                "damageArea" : [[-5, -1.6], [-3.0, 2], [3, 4], [4, 2.2], [6, -0.25], [6, -2.0], [4, -3.0], [0, -2.0]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "arcana_glaive_swoosh_green" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 20,
+      "burstCount" : 2,
+      "particles" : [
+        { "particle" : "poisonswoosh1"},
+        { "particle" : "poisonswoosh2"},
+        { "particle" : "poisonswoosh3"}
+      ]
+    },
+    "fireswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 4,
+      "particles" : [
+        { "particle" : "fireswoosh1"},
+        { "particle" : "fireswoosh2"},
+        { "particle" : "fireswoosh3"}
+      ]
+    },
+    "electricswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "electricswoosh1"},
+        { "particle" : "electricswoosh2"},
+        { "particle" : "electricswoosh2"}
+      ]
+    },
+    "poisonswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "poisonswoosh1"},
+        { "particle" : "poisonswoosh2"},
+        { "particle" : "poisonswoosh3"}
+      ]
+    },
+    "iceswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "iceswoosh1"},
+        { "particle" : "iceswoosh2"},
+        { "particle" : "iceswoosh3"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+    "fire2" : [ ],
+    "fire3" : [ ],
+    "fire4" : [ ],
+	"fire5" : [ ],
+	"fire6" : [ ]
+  }
+}
