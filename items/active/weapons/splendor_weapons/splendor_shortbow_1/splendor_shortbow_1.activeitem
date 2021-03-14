@@ -7,9 +7,10 @@
   "description" : "A shortbow, shining magnificently.",
   "shortdescription" : "Splendid Shortbow",
   "tooltipKind" : "base",
-  "category" : "arcana_shortbow",
+  "category" : "bow",
+  "tooltipFields" : {"subtitle" : "Shortbow"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged"],
+  "itemTags" : ["weapon","ranged","bow","shortbow"],
 
   "inventoryIcon" : "icon.png",
 
@@ -78,5 +79,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
