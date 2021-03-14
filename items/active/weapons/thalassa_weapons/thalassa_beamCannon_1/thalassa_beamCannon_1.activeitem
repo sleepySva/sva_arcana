@@ -7,7 +7,8 @@
   "rarity" : "Uncommon",
   "description" : "The eye of the crystallized sea.",
   "shortdescription" : "Aquamarine Eye",
-  "category" : "arcana_beamCannon",
+  "category" : "uniqueWeapon",
+  "tooltipFields" : {"subtitle" : "Beam Cannon"},
   "itemTags" : ["weapon","ranged","upgradeableWeapon"],
   "twoHanded" : true,
   "collectablesOnPickup" : { "arcana_collection_weapon_elemental" : "thalassa_beamCannon_1" },
@@ -43,5 +44,5 @@
 	"beamLength" : 24
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
