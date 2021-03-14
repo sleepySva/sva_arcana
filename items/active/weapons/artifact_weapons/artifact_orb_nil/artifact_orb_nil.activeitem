@@ -6,7 +6,8 @@
   "rarity" : "Essential",
   "description" : "A device extracting power from a fragment of the Zero Mirror.",
   "shortdescription" : "Nil",
-  "category" : "arcana_orb",
+  "category" : "wand",
+  "tooltipFields" : {"subtitle" : "Orb"},
   "twoHanded" : false,
   "itemTags" : ["weapon","staff"],
   "tooltipKind" : "staff",
@@ -118,5 +119,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
