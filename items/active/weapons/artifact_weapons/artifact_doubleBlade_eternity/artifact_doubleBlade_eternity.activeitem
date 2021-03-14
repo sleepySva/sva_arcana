@@ -7,9 +7,10 @@
   "description" : "The eternal thunder that brings down divine judgement.",
   "shortdescription" : "Eternity",
   "tooltipKind" : "sword",
-  "category" : "arcana_doubleBlade",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Double Blade"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee"],
+  "itemTags" : ["weapon","melee","doubleblade"],
 
   "inventoryIcon" : "icon.png",
 
@@ -38,5 +39,5 @@
   
   "altAbilityType" : "traildash",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
