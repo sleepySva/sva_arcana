@@ -7,9 +7,10 @@
   "description" : "A golden shortbow, can instantly fire arrows.",
   "shortdescription" : "Aeon Shortbow",
   "tooltipKind" : "base",
-  "category" : "arcana_shortbow",
+  "category" : "bow",
+  "tooltipFields" : {"subtitle" : "Shortbow"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged"],
+  "itemTags" : ["weapon","ranged","bow","shortbow"],
 
   "inventoryIcon" : "icon.png",
 
@@ -76,5 +77,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
