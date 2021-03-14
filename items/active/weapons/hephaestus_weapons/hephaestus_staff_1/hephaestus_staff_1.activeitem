@@ -6,7 +6,8 @@
   "rarity" : "Common",
   "description" : "Flame-infused staff of the ancient fire.",
   "shortdescription" : "Hestia",
-  "category" : "longstaff",
+  "category" : "staff",
+  "tooltipFields" : {"subtitle" : "Longstaff"},
   "twoHanded" : true,
   "itemTags" : ["weapon","staff"],
   "tooltipKind" : "staff",
@@ -160,5 +161,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
