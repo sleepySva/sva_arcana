@@ -8,6 +8,7 @@
   "shortdescription" : "Prototype Double Blade",
   "tooltipKind" : "sword",
   "category" : "arcana_doubleBlade",
+  "tooltipFields" : {"subtitle" : "Double Blade"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee"],
 
@@ -30,5 +31,5 @@
     "baseDps" : 5.0
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
