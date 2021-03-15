@@ -7,9 +7,10 @@
   "description" : "A prototype of a weapon.",
   "shortdescription" : "Prototype Greatsword",
   "tooltipKind" : "sword",
-  "category" : "arcana_greatsword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Greatsword"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee"],
+  "itemTags" : ["weapon","melee","greatsword"],
 
   "inventoryIcon" : "icon.png",
 
@@ -30,5 +31,5 @@
     "baseDps" : 5.0
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

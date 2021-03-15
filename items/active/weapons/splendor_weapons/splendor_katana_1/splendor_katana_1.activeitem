@@ -7,9 +7,10 @@
   "description" : "A visually bright and colorful katana.",
   "shortdescription" : "Splendid Katana",
   "tooltipKind" : "sword",
-  "category" : "arcana_katana",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Katana"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee"],
+  "itemTags" : ["weapon","melee","katana"],
 
   "inventoryIcon" : "icon.png",
 
@@ -30,5 +31,5 @@
     "baseDps" : 8.6
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

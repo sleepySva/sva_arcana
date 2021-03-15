@@ -7,7 +7,8 @@
   "description" : "A moon-blade crafted from aegistalt and corrodium.",
   "shortdescription" : "Corrodium Moon Blade",
   "tooltipKind" : "sword",
-  "category" : "arcana_moonBlade",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Moon Blade"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee"],
 
@@ -39,5 +40,5 @@
     "baseDps" : 12.2
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

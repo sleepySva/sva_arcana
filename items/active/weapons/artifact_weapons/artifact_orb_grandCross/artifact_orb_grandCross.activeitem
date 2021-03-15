@@ -6,7 +6,8 @@
   "rarity" : "Essential",
   "description" : "A strange device embed with a cross.",
   "shortdescription" : "Grand Cross",
-  "category" : "arcana_orb",
+  "category" : "wand",
+  "tooltipFields" : {"subtitle" : "Orb"},
   "twoHanded" : false,
   "itemTags" : ["weapon","staff"],
   "tooltipKind" : "staff",
@@ -118,5 +119,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

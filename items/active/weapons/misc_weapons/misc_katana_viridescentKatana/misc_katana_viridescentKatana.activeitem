@@ -7,9 +7,10 @@
   "description" : "Also known as the green sword!",
   "shortdescription" : "Viridescent Katana",
   "tooltipKind" : "sword",
-  "category" : "arcana_katana",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Katana"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee"],
+  "itemTags" : ["weapon","melee","katana"],
 
   "inventoryIcon" : "icon.png",
 
@@ -39,5 +40,5 @@
 
   "altAbilityType" : "parry",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

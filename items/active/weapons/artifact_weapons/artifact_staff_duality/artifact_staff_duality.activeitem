@@ -6,7 +6,8 @@
   "rarity" : "Essential",
   "description" : "Bringer of the radiant light and the colorless void.",
   "shortdescription" : "Duality",
-  "category" : "longstaff",
+  "category" : "staff",
+  "tooltipFields" : {"subtitle" : "Longstaff"},
   "twoHanded" : true,
   "itemTags" : ["weapon","staff"],
   "tooltipKind" : "staff",
@@ -159,5 +160,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

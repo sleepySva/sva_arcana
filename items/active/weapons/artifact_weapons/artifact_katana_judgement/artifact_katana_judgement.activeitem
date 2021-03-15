@@ -7,9 +7,10 @@
   "description" : "The absolution brought by a piece of the brighter horizon.",
   "shortdescription" : "Judgement",
   "tooltipKind" : "sword",
-  "category" : "arcana_katana",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Katana"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee"],
+  "itemTags" : ["weapon","melee","katana"],
 
   "inventoryIcon" : "icon.png",
 
@@ -52,5 +53,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
