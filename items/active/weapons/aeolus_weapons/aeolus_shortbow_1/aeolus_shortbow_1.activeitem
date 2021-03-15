@@ -7,7 +7,8 @@
   "description" : "A shortbow that fires light arrows at an extremely fast speed.",
   "shortdescription" : "Ariostone Shortbow",
   "tooltipKind" : "base",
-  "category" : "arcana_shortbow",
+  "category" : "bow",
+  "tooltipFields" : {"subtitle" : "Shortbow"},
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged"],
   "collectablesOnPickup" : { "arcana_collection_weapon_elemental" : "aeolus_shortbow_1" },
@@ -77,5 +78,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

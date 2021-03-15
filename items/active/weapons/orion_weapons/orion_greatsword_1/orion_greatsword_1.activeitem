@@ -7,9 +7,10 @@
   "description" : "A high tech greatsword.",
   "shortdescription" : "Orion Greatsword",
   "tooltipKind" : "sword",
-  "category" : "arcana_greatsword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Greatsword"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee"],
+  "itemTags" : ["weapon","melee","greatsword"],
   "collectablesOnPickup" : { "arcana_collection_weapon_stellar" : "orion_greatsword_1" },
 
   "inventoryIcon" : "icon.png",
@@ -37,5 +38,5 @@
     "baseDps" : 9.4
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

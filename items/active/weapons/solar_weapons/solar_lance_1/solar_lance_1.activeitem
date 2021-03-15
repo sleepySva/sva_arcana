@@ -7,7 +7,8 @@
   "description" : "A burning lance made from solar crystals.",
   "shortdescription" : "Molten Skewer",
   "tooltipKind" : "sword",
-  "category" : "arcana_lance",
+  "category" : "spear",
+  "tooltipFields" : {"subtitle" : "Lance"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear"],
 
@@ -47,5 +48,5 @@
     "cooldownTime" : 0.4
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

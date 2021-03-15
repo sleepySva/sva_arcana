@@ -7,7 +7,8 @@
   "description" : "A bow infused with the unconfined wind.",
   "shortdescription" : "Libertas",
   "tooltipKind" : "base",
-  "category" : "arcana_shortbow",
+  "category" : "bow",
+  "tooltipFields" : {"subtitle" : "Shortbow"},
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged"],
 
@@ -80,5 +81,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
