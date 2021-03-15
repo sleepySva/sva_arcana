@@ -17,14 +17,33 @@
       "tileLimitTop" : 325,
       "parallax" : 1.2
     },
-
     {
-      "kind" : "northern",
-      "frequency" : 0.5,
-      "offset" : [0, 375],
-      "parallax" : 30,
-      "timeOfDayCorrelation" : "nightVisible",
-      "unlit" : true
+      "kind" : "arcana_illuminated_5",
+      "baseCount" : 1,
+      "offset" : [0, 30],
+      "parallax" : 2,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_illuminated_7",
+      "baseCount" : 1,
+      "offset" : [0, 10],
+      "parallax" : 3,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_illuminated_6",
+      "baseCount" : 1,
+      "offset" : [0, 530],
+      "parallax" : 4,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_illuminated_4",
+      "baseCount" : 1,
+      "offset" : [0, 270],
+      "parallax" : 8,
+      "fadePercent" : 0.3
     },
     {
       "kind" : "arcana_illuminated_4",
@@ -46,26 +65,6 @@
       "offset" : [0, 420],
       "parallax" : 12.5,
       "fadePercent" : 0.3
-    },
-    {
-      "kind" : "arcana_illuminated_2",
-      "baseCount" : 2,
-      "offset" : [0, 465],
-      "parallax" : 4,
-      "fadePercent" : 0.05
-    },
-    {
-      "kind" : "arcana_illuminated_2",
-      "baseCount" : 2,
-      "offset" : [0, 535],
-      "parallax" : 2,
-      "fadePercent" : 0.05
-    },
-    {
-      "kind" : "arcana_illuminated_2",
-      "offset" : [0, 620],
-      "parallax" : 1.5,
-      "fadePercent" : 0.05
     },
 
  // Day Clouds
