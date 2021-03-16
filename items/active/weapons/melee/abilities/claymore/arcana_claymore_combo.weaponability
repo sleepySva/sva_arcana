@@ -1,0 +1,125 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+	  "fire5" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+	  "fire6" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+	  "fire7" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+	  "fire8" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+	  "fire9" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+	  "fire10" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+	  "fire11" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ],
+	  "fire12" : [ "/sfx/melee/swing_broadsword.ogg", "/sfx/melee/swing_shortsword.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Combo Slash",
+    "type" : "arcana_claymore_combo",
+    "scripts" : ["/items/active/weapons/melee/meleecombo.lua"],
+    "class" : "MeleeCombo",
+
+    "comboSteps" : 2,
+
+    "flashTime" : 0.3,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+
+    "swooshOffsetRegions" : [
+      [4.0, 0.0, 4.0, 4.0],
+	  [4.0, 0.0, 4.0, 4.0]
+    ],
+
+    // cooldown time multiplier for steps after the first, compounded per combo step
+    "comboSpeedFactor" : 0.8,
+
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 1.0,
+    "baseDps" : 8.0,
+
+    "damageConfig" : {
+      "damageSourceKind" : "shortsword",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.4
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 6
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 6
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -70,
+        "weaponRotation" : -10,
+        "allowRotate" : true,
+        "allowFlip" : true,
+		"twoHanded" : false
+      },
+      "windup1" : {
+        "duration" : 0.4,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire1" : {
+        "duration" : 0.4,
+        "armRotation" : -15,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait1" : {
+        "duration" : 0.4,
+        "armRotation" : -15,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire2" : {
+        "duration" : 0.4,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait2" : {
+        "duration" : 0.6,
+        "armRotation" : -13,
+        "weaponRotation" : -58,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  }
+}
