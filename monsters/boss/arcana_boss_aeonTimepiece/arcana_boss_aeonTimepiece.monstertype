@@ -56,7 +56,7 @@
 
     "touchDamage" : {
       "poly" : [ [-4.0, -2.0], [0.0, -4.0], [4.0, -2.0], [4.0, 0.0], [0.0, 4.0], [-4.0, 0.0] ],
-      "damage" : 40,
+      "damage" : 60,
 
       "teamType" : "enemy",
       "damageSourceKind" : "hammer",
@@ -85,10 +85,10 @@
           "baseValue" : 1.0
         },
         "maxHealth" : {
-          "baseValue" : 6000
+          "baseValue" : 3000
         },
         "protection" : {
-          "baseValue" : 8.0
+          "baseValue" : 7.2
         },
         "healthRegen" : {
           "baseValue" : 0.0
