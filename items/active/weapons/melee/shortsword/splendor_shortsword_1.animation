@@ -21,6 +21,12 @@
             "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
           }
         }
       }
@@ -71,6 +77,13 @@
               }
             },
             "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/shortsword/swoosh2/splendor_shortsword_1_swoosh_1.png:<frame>",
+                "offset" : [1.05, 0.125],
+                "damageArea" : [[-3, 1], [3, 1], [3, -1], [-3, -1]]
+              }
+            },
+            "fire3" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/shortsword/swoosh2/splendor_shortsword_1_swoosh_1.png:<frame>",
                 "offset" : [1.05, 0.125],
@@ -148,6 +161,7 @@
 
   "sounds" : {
     "fire" : [ ],
-    "fire2" : [ ]
+    "fire2" : [ ],
+    "fire3" : [ ]
   }
 }
