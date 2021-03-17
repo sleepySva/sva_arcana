@@ -12,13 +12,25 @@
           },
           "fire" : {
             "frames" : 5,
-            "cycle" : 0.4,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
           },
           "fire2" : {
             "frames" : 5,
-            "cycle" : 0.4,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 5,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire4" : {
+            "frames" : 5,
+            "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -67,16 +79,30 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/claymore/swoosh_1/arcana_claymore_swoosh_nulla.png:<frame>",
-                "offset" : [6.0, 0.0],
-                "damageArea" : [ [-4, 6], [2, 3], [2, -3], [-4, -6], [-2, -3], [-2, 3] ]
+                "image" : "/items/active/weapons/melee/claymore/swoosh_2/arcana_claymore_swoosh_nulla.png:<frame>",
+                "offset" : [4.4, 2.6],
+                "damageArea" : [ [-4, 4], [3.8, 2.6], [3.8, -2.6], [-4, -1], [-2, -3], [-2, 3] ]
               }
             },
             "fire2" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/claymore/swoosh_1/arcana_claymore_swoosh_nulla.png:<frame>",
-                "offset" : [6.0, 0.0],
-                "damageArea" : [ [-4, 6], [2, 3], [2, -3], [-4, -6], [-2, -3], [-2, 3] ]
+                "image" : "/items/active/weapons/melee/claymore/swoosh_4/arcana_claymore_swoosh_nulla.png:<frame>",
+                "offset" : [4.4, 0.0],
+                "damageArea" : [ [-4, -6], [0.0, 1.0], [4, 6.0], [0.0, -1.0] ]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/claymore/swoosh_3/arcana_claymore_swoosh_nulla.png:<frame>",
+                "offset" : [4.4, 0.0],
+                "damageArea" : [ [-6, -4], [0.0, 1.0], [6, 4.0], [0.0, -1.0] ]
+              }
+            },
+            "fire4" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/claymore/swoosh_4/arcana_claymore_swoosh_nulla.png:<frame>",
+                "offset" : [4.4, 0.0],
+                "damageArea" : [ [-4, -6], [0.0, 1.0], [4, 6.0], [0.0, -1.0] ]
               }
             }
           }
