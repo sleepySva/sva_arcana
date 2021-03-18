@@ -13,14 +13,24 @@
 
   "inventoryIcon" : "icon.png",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "conflagration_machinePistol_1.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.6, 0.3]
+		  }
+		}
+	  }
+	},
     "sounds" : {
       "fire" : ["/sfx/gun/uzi1.ogg"]
     }

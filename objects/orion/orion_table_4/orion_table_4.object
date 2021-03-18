@@ -11,14 +11,28 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "orion_table_4.png:<color>.<frame>",
+	  "imageLayers" : [ { "image" : "orion_table_4.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
       "imagePosition" : [-16, 0],
       "frames" : 6,
-      "animationCycle" : 1.0,
+      "animationCycle" : 0.6,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
-      "collision" : "platform"
+	  "collision" : "platform"
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "orion_table_4.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
 
     }
   ]

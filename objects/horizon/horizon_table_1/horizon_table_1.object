@@ -11,7 +11,21 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "horizon_table_1.png:<color>",
+	  "imageLayers" : [ { "image" : "horizon_table_1.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "horizon_table_1.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
       "imagePosition" : [-8, 0],
       "frames" : 1,
       "animationCycle" : 0.5,

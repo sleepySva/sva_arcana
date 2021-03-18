@@ -13,14 +13,24 @@
 
   "inventoryIcon" : "workshop_pistol_2.png",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "workshop_pistol_2.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.6, 0.2]
+		  }
+		}
+	  }
+	},
     "sounds" : {
       "fire" : ["/sfx/gun/plasma_ar4.ogg"]
     }

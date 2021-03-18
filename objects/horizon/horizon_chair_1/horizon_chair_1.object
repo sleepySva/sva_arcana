@@ -14,24 +14,26 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "image" : "horizon_chair_1.png:<color>",
+	  "sitPosition" : [-4, 23],
+	  
+	  "imageLayers" : [ { "image" : "horizon_chair_1.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
       "imagePosition" : [-8, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
-      "flipImages" : true,
-      "direction" : "left",
-      "sitPosition" : [-4, 23],
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     },
     {
-      "image" : "horizon_chair_1.png:<color>",
+	  "sitPosition" : [4, 23],
+	  
+	  "imageLayers" : [ { "image" : "horizon_chair_1.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
       "imagePosition" : [-8, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
-      "direction" : "right",
-      "sitPosition" : [4, 23],
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

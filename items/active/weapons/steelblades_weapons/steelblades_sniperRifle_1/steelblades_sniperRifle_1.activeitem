@@ -13,14 +13,24 @@
 
   "inventoryIcon" : "steelblades_sniperRifle_1.png",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "steelblades_sniperRifle_1.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [1.2, 0.25]
+		  }
+		}
+	  }
+	},
     "sounds" : {
       "fire" : ["/sfx/gun/ar4.ogg"]
     }
