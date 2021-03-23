@@ -1,0 +1,308 @@
+{
+  "type" : "arcana_monster_fear",
+  "shortdescription" : "Envy",
+  "description" : "...",
+
+  "categories" : [ "arcana_monster_fear" ],
+  "parts" : [ "body" ],
+
+  "animation" : "arcana_monster_fear.animation",
+
+  "dropPools" : [],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+	"renderLayer" : "foregroundEntity",
+	"aggressive" : true,
+
+    "seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 120,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : false,
+      "keepTargetInRange" : 120,
+      "targetOutOfSightTime" : 6.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 120,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.2,
+
+            "projectileType" : "arcana_boss_hue_projectile_3",
+			"projectileCount" : 6,
+            "projectileInterval" : 0.4,
+            "projectileParameters" : {
+			  "renderLayer" : "foregroundEntity",
+              "speed" : 96,
+			  "physics" : "laser",
+			  "movementSettings" : {
+				"collisionEnabled" : false
+			  }
+            },
+            "fireOffset" : [0.0, 0.0],
+			"inaccuracy" : 0.02,
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.2
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 120,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.2,
+
+            "projectileType" : "arcana_boss_voidDeformity_projectile_3",
+			"projectileCount" : 1,
+            "projectileInterval" : 0.6,
+            "projectileParameters" : {
+			  "renderLayer" : "foregroundEntity",
+			  "physics" : "laser",
+			  "statusEffects" : [ "arcana_status_heal_4000" ],
+			  "power" : 92,
+              "speed" : 18,
+			  "movementSettings" : {
+				"collisionEnabled" : false
+			  },
+			  "damageTeam" : { "type": "indiscriminate" }
+            },
+            "fireOffset" : [0.0, 4.0],
+			"aimDirection" : [1, 0.4],
+			"inaccuracy" : 0.0,
+            "aimAtTarget" : false,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.2
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 120,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.2,
+
+            "projectileType" : "arcana_boss_voidDeformity_projectile_3",
+			"projectileCount" : 1,
+            "projectileInterval" : 0.6,
+            "projectileParameters" : {
+			  "renderLayer" : "foregroundEntity",
+			  "physics" : "laser",
+			  "statusEffects" : [ "arcana_status_heal_4000" ],
+			  "power" : 92,
+              "speed" : 18,
+			  "movementSettings" : {
+				"collisionEnabled" : false
+			  },
+			  "damageTeam" : { "type": "indiscriminate" }
+            },
+            "fireOffset" : [0.0, 4.0],
+			"aimDirection" : [-1, 0.4],
+			"inaccuracy" : 0.0,
+            "aimAtTarget" : false,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.2
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 4,
+            "maxRange" : 8
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,4],
+            "groundDistance" : 2,
+            "ceilingDistance" : 4,
+            "xVelocity" : 4,
+            "yVelocity" : 12
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.5, 1.25],  [1.25, 0.5], [1.25, -1.0], [0.5, -1.75], [-0.5, -1.75], [-1.25, -1.0], [-1.25, 0.5], [-0.5, 1.25] ],
+      "damage" : 12,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-2, -2, 2, 2],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+	  "collisionEnabled" : false,
+      "collisionPoly" : [ [0.5, 1.25],  [1.25, 0.5], [1.25, -1.0], [0.5, -1.75], [-0.5, -1.75], [-1.25, -1.0], [-1.25, 0.5], [-0.5, 1.25] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 0,
+      "runSpeed" : 0,
+      "gravityEnabled" : false,
+
+      "airFriction" : 4,
+      "airForce" : 40,
+      "flySpeed" : 0
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.2,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "knockbackStunTime" : {
+          "baseValue" : 0.2
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 480
+        },
+        "protection" : {
+          "baseValue" : 0.2
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+		
+		"physicalResistance" : {
+          "baseValue" : 0.0
+        },
+		"fireResistance" : {
+          "baseValue" : 0.0
+        },
+		"poisonResistance" : {
+          "baseValue" : 0.0
+        },
+		"iceResistance" : {
+          "baseValue" : 0.0
+        },
+		"electricResistance" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -2],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

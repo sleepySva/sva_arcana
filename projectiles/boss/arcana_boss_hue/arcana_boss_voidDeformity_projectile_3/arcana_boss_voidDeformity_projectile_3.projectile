@@ -1,0 +1,47 @@
+{
+  "projectileName" : "arcana_boss_voidDeformity_projectile_3",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 160,
+  "power" : 36,
+  
+  "image" : "arcana_boss_voidDeformity_projectile_3.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [180, 180, 180],
+  "emitters" : [ "artifact_particle_duality_1", "artifact_particle_duality_2"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_white/arcana_explosion_plasma_1_white.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_hue/arcana_boss_voidDeformity_projectile_3/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    }
+  ],
+  
+  "damageKind" : "physical"
+}

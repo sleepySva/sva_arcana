@@ -11,8 +11,8 @@
   "frameNumber" : 1,
   
   "fullbright" : true,
-  "lightColor" : [60, 50, 30],
-  "emitters" : ["arcana_particle_white"],
+  "lightColor" : [70, 120, 10],
+  "emitters" : ["arcana_particle_ember_green"],
   
   "supportsProcessing" : true,
   
@@ -25,13 +25,13 @@
   
   "periodicActions" : [
     {
-      "time" : 0.066,
+      "time" : 0.1,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
       "specification" : {
         "type" : "textured",
-        "image" : "/projectiles/activeitems/axe/gaea_axe_1_projectile_1/gaea_axe_1_projectile_1_trail.png",
+        "image" : "/projectiles/activeitems/axe/gaea_axe_1_projectile_1/trail.png",
         "position" : [0, 0],
         "layer" : "back",
         "timeToLive" : 0.0,

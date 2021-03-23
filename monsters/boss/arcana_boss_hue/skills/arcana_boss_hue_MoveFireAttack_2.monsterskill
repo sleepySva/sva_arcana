@@ -1,0 +1,26 @@
+{
+  "name" : "arcana_boss_hue_MoveFireAttack_2",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/arcana_boss_hue/skills/arcana_boss_hue_MoveFireAttack_2.lua" ],
+
+    "arcana_boss_hue_MoveFireAttack_2" : {
+      "skillTime": 6,
+      "bobTime" : 2,
+      "bobHeight" : 3,
+
+      "projectileOffset" : [-1, 4],
+	  "projectileCount" : 1,
+      "fireInterval" : 0.8,
+      "projectile" : {
+        "type" : "arcana_boss_hue_projectile_2",
+        "config" : {
+          "speed" : 18,
+          "power" : 24
+        }
+      }
+    }
+  }
+}

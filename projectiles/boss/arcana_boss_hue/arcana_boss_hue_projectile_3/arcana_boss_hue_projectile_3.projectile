@@ -1,0 +1,48 @@
+{
+  "projectileName" : "arcana_boss_hue_projectile_3",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 3,
+  "speed" : 38,
+  
+  "renderLayer" : "foregroundEntity",
+  
+  "image" : "arcana_boss_hue_projectile_3.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [110, 60, 110],
+  "emitters" : ["electricswoosh" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/heavybulletexplosion/heavybulletexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.06,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_hue/arcana_boss_hue_projectile_3/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 3.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    }
+  ],
+  
+  "damageKind" : "electric"
+}

@@ -1,0 +1,21 @@
+{
+  "kind" : "arcana_particle_ember_green_2",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1,
+    "color" : [207, 216, 72],
+    "light" : [85, 126, 27],
+    "position" : [0, 0],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fade" : 1,
+    "layer" : "middle",
+    "fullbright" : true,
+    "timeToLive" : 0.5,
+    "variance" : {
+      "initialVelocity" : [2.0, 2.0],
+      "size" : 0.5,
+      "position" : [0, 0]
+    }
+  }
+}

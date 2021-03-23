@@ -1,0 +1,63 @@
+{
+  "projectileName" : "arcana_boss_hue_projectile_2",
+  "physics" : "rain",
+  
+  "timeToLive" : 4,
+  "bounces" : 2,
+  "speed" : 160,
+  
+  "image" : "arcana_boss_hue_projectile_2.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "renderLayer" : "foregroundEntity",
+  
+  "fullbright" : true,
+  "lightColor" : [60, 110, 20],
+  "emitters" : ["poisonplasmarocket", "sparks", "poisonswoosh" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/burstexplosion/poisonburstexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_hue/arcana_boss_hue_projectile_2/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    },
+	{
+		"time" : 0.8,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "smallpoisoncloud",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.6
+    }
+  ],
+  
+  "damageKind" : "poison",
+  
+  "scripts" : ["/scripts/projectiles/sinewaveprojectile.lua"],
+  "scriptDelta" : 1,
+
+  "wavePeriod" : 16.0,
+  "waveAmplitude" : 8.00
+}

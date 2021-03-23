@@ -1,0 +1,80 @@
+{
+  "projectileName" : "arcana_boss_hue_projectile_1",
+  "physics" : "sticky",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 160,
+  
+  "image" : "arcana_boss_hue_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "renderLayer" : "foregroundEntity",
+  
+  "fullbright" : true,
+  "lightColor" : [100, 80, 20],
+  "emitters" : ["rocketsmoke", "sparks", "arrowflames" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smokeexplosion/smokeexplosion.config"
+    },
+    {
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/smallflame/smallflame.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 0.6,
+                "variance" : {
+                  "position" : [1.5, 1.5],
+                  "initialVelocity" : [1, 1],
+                  "timeToLive" : 0.15,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_hue/arcana_boss_hue_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    }
+  ],
+  
+  "damageKind" : "fire",
+  
+  "scripts" : ["/scripts/projectiles/sinewaveprojectile.lua"],
+  "scriptDelta" : 1,
+
+  "wavePeriod" : 2.0,
+  "waveAmplitude" : 1.00
+}

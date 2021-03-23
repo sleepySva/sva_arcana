@@ -1,0 +1,94 @@
+{
+  "projectileName" : "arcana_boss_hue_projectile_4",
+  "physics" : "sticky",
+  
+  "timeToLive" : 1,
+  "bounces" : -1,
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "speed" : 38,
+  
+  "renderLayer" : "foregroundEntity",
+  
+  "image" : "arcana_boss_hue_projectile_4.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [60, 80, 110],
+  "emitters" : ["iceplasmarocket" ],
+  "persistentAudio" : "/sfx/melee/spear_twirl_loop.ogg",
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/burstexplosion/iceburstexplosion.config"
+    },
+	{
+		"action" : "projectile",
+		"type" : "arcana_boss_hue_projectile_5",
+		"angleAdjust" : 60,
+		"inheritDamageFactor" : 1.0,
+		"inheritSpeedFactor" : 1
+	},
+	{
+		"action" : "projectile",
+		"type" : "arcana_boss_hue_projectile_5",
+		"angleAdjust" : 120,
+		"inheritDamageFactor" : 1.0,
+		"inheritSpeedFactor" : 1.0
+	},
+	{
+		"action" : "projectile",
+		"type" : "arcana_boss_hue_projectile_5",
+		"angleAdjust" : 180,
+		"inheritDamageFactor" : 1.0,
+		"inheritSpeedFactor" : 1
+	},
+	{
+		"action" : "projectile",
+		"type" : "arcana_boss_hue_projectile_5",
+		"angleAdjust" : 0,
+		"inheritDamageFactor" : 1.0,
+		"inheritSpeedFactor" : 1.0
+	},
+	{
+		"action" : "projectile",
+		"type" : "arcana_boss_hue_projectile_5",
+		"angleAdjust" : -60,
+		"inheritDamageFactor" : 1.0,
+		"inheritSpeedFactor" : 1.0
+	},
+	{
+		"action" : "projectile",
+		"type" : "arcana_boss_hue_projectile_5",
+		"angleAdjust" : -120,
+		"inheritDamageFactor" : 1.0,
+		"inheritSpeedFactor" : 1.0
+	}
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.4,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_hue/arcana_boss_hue_projectile_4/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    }
+  ],
+  
+  "damageKind" : "ice"
+}

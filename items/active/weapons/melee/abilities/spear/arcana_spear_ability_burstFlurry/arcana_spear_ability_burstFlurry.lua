@@ -52,7 +52,7 @@ function Flurry:createProjectiles()
         self.projectileType,
         self.firePosition(),
         activeItem.ownerEntityId(),
-        self:aimVector(),
+        (vec2.rotate(self:aimVector(), (math.random(-1,1) / 20))),
         false,
         pParams
       )

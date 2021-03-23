@@ -1,0 +1,49 @@
+{
+  "projectileName" : "arcana_boss_voidDeformity_projectile_5",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 20,
+  "power" : 36,
+  
+  "renderLayer" : "foregroundEntity",
+  
+  "image" : "arcana_boss_voidDeformity_projectile_5.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  
+  "fullbright" : true,
+  "lightColor" : [80, 80, 80],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.2,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_hue/arcana_boss_voidDeformity_projectile_5/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    }
+  ],
+  
+  "damageKind" : "physical"
+}

@@ -6,9 +6,9 @@
   "image" : "artifact_lance_astrifer_projectile_1.png",
   "animationCycle" : 0.2,
   "fullbright" : true,
-  "emitters" : ["arcana_particle_white"],
+  "emitters" : ["arcana_particle_ember_cyan"],
   "frameNumber" : 1,
-  "speed" : 80,
+  "speed" : 110,
   "knockback" : 20,
   "supportsProcessing" : true,
   "actionOnReap" : [
@@ -23,11 +23,20 @@
   ],
   "periodicActions" : [
     {
+      "time" : 0.066,
+      "repeat" : true,
       "action" : "particle",
-      "specification" : "arcana_arrow_white",
       "rotate" : true,
-      "time" : 0.032,
-      "repeat" : true
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/spear/artifact_lance_astrifer_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
     }
   ],
 

@@ -3,12 +3,15 @@
   "price" : 1000,
   "level" : 8,
   "maxStack" : 1,
-  "rarity" : "Rare",
+  "rarity" : "Legendary",
   "description" : "A moon-blade crafted from aegistalt and corrodium.",
   "shortdescription" : "Corrodium Moon Blade",
   "tooltipKind" : "sword",
   "category" : "broadsword",
-  "tooltipFields" : {"subtitle" : "Moon Blade"},
+  "tooltipFields" : {
+	"subtitle" : "^yellow;Moon Blade^#reset;",
+	"rarityLabel" : "Luye"
+  },
   "twoHanded" : true,
   "itemTags" : ["weapon","melee"],
 

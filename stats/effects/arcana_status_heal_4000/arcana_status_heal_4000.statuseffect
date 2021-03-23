@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_status_heal_4000",
+  "effectConfig" : {
+    "healAmount" : 4000,
+    "emissionRate" : 10
+  },
+  "defaultDuration" : 0.2,
+
+  "scripts" : [
+    "heal.lua"
+  ],
+
+  "animationConfig" : "heal.animation",
+
+  "label" : "Healing",
+  "icon" : "/interface/statuses/heal.png"
+}

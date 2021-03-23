@@ -8,7 +8,10 @@
   "shortdescription" : "Iustitia",
   "tooltipKind" : "sword",
   "category" : "spear",
-  "tooltipFields" : {"subtitle" : "Lance"},
+  "tooltipFields" : {
+	"subtitle" : "^yellow;Lance^#reset;",
+	"rarityLabel" : "Monarch"
+  },
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear"],
   "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "monarch_lance_1" },
@@ -21,8 +24,54 @@
     "blade" : "monarch_lance_1.png"
   },
   "animationCustom" : {
+	"animatedParts" : {
+    "parts" : {
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+		  "fullbright" : true,
+          "centered" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/glaive/swoosh_1/arcana_glaive_swoosh_physical.png:<frame>",
+                "offset" : [5.0, 0.0],
+                "damageArea" : [ [-4, 1], [5.6, 1], [5.6, -1], [-4, -1] ]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/glaive/swoosh_1/arcana_glaive_swoosh_physical.png:<frame>",
+                "offset" : [5.0, 0.0],
+                "damageArea" : [ [-4, 1], [5.6, 1], [5.6, -1], [-4, -1] ]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/glaive/swoosh_6/arcana_glaive_swoosh_physical.png:<frame>",
+                "offset" : [5.0, 0.0],
+                "damageArea" : [ [-4, 1], [6.2, 1], [6.2, -1], [-4, -1] ]
+              }
+            }
+          }
+        }
+      }
+    }
+	},
     "sounds" : {
-      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+      "fire" : [ "/sfx/melee/spear_flurry.ogg" ],
+      "fire2" : [ "/sfx/melee/spear_flurry.ogg" ],
+      "fire3" : [ "/sfx/melee/spear_flurry.ogg" ]
     }
   },
 
@@ -32,7 +81,7 @@
 
   "aimOffset" : -1.0,
 
-  "primaryAbilityType" : "spearstab",
+  "primaryAbilityType" : "arcana_lance_combo",
   "primaryAbility" : {
     "fireTime" : 1.0,
     "baseDps" : 10.4

@@ -1,0 +1,60 @@
+{
+  "projectileName" : "arcana_boss_hue_projectile_5",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : -1,
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "speed" : 52,
+  
+  "renderLayer" : "foregroundEntity",
+  
+  "image" : "arcana_boss_hue_projectile_5.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [60, 80, 110],
+  "emitters" : ["iceplasmarocket" ],
+  "persistentAudio" : "/sfx/melee/spear_twirl_loop.ogg",
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/burstexplosion/iceburstexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.4,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_hue/arcana_boss_hue_projectile_5/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    },
+	{
+      "time" : 0.4,
+      "loop" : true,
+      "action" : "projectile",
+      "type" : "icetrail",
+	  "inheritDamageFactor" : 1.0,
+      "fuzzAngle" : 360
+    }
+  ],
+  
+  "damageKind" : "ice"
+}

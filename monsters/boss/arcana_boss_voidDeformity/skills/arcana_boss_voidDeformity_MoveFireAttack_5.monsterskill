@@ -1,0 +1,26 @@
+{
+  "name" : "arcana_boss_voidDeformity_MoveFireAttack_5",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/arcana_boss_voidDeformity/skills/arcana_boss_voidDeformity_MoveFireAttack_5.lua" ],
+
+    "arcana_boss_voidDeformity_MoveFireAttack_5" : {
+      "skillTime": 4,
+      "bobTime" : 2,
+      "bobHeight" : 3,
+
+      "projectileOffset" : [0, 6],
+	  "projectileCount" : 1,
+      "fireInterval" : 0.08,
+      "projectile" : {
+        "type" : "arcana_boss_voidDeformity_projectile_5",
+        "config" : {
+          "speed" : 66,
+          "power" : 66
+        }
+      }
+    }
+  }
+}

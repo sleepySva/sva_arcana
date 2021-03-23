@@ -1,0 +1,62 @@
+{
+  "projectileName" : "arcana_boss_voidDeformity_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 160,
+  "power" : 36,
+  
+  "image" : "arcana_boss_voidDeformity_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [80, 80, 80],
+  "emitters" : [ "sparks" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_white/arcana_explosion_plasma_1_white.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_hue/arcana_boss_voidDeformity_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    },
+	{
+		"time" : 1.0,
+        "repeat" : true,
+		"action" : "projectile",
+		"type" : "arcana_boss_voidDeformity_projectile_2",
+		"angleAdjust" : 0,
+		"inheritDamageFactor" : 2.0,
+		"inheritSpeedFactor" : 0.2
+	}
+  ],
+  
+  "damageKind" : "physical",
+  
+  "scripts" : ["/scripts/projectiles/sinewaveprojectile.lua"],
+  "scriptDelta" : 1,
+
+  "wavePeriod" : 10.0,
+  "waveAmplitude" : 2.0
+}

@@ -10,7 +10,7 @@
   "category" : "spear",
   "tooltipFields" : {
 	"subtitle" : "^yellow;Lance^#reset;",
-	"rarityLabel" : "^#f965f0;Horizon^#reset;"
+	"rarityLabel" : "Horizon"
   },
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear"],
@@ -45,21 +45,21 @@
             "fire" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/glaive/swoosh_1/arcana_glaive_swoosh_purple.png:<frame>",
-                "offset" : [3.0, 0.0],
+                "offset" : [5.0, 0.0],
                 "damageArea" : [ [-4, 1], [5.6, 1], [5.6, -1], [-4, -1] ]
               }
             },
             "fire2" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/glaive/swoosh_1/arcana_glaive_swoosh_purple.png:<frame>",
-                "offset" : [3.0, 0.0],
+                "offset" : [5.0, 0.0],
                 "damageArea" : [ [-4, 1], [5.6, 1], [5.6, -1], [-4, -1] ]
               }
             },
             "fire3" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/glaive/swoosh_6/arcana_glaive_swoosh_purple.png:<frame>",
-                "offset" : [3.0, 0.0],
+                "offset" : [5.0, 0.0],
                 "damageArea" : [ [-4, 1], [6.2, 1], [6.2, -1], [-4, -1] ]
               }
             }
@@ -81,7 +81,7 @@
 
   "aimOffset" : -1.0,
 
-  "primaryAbilityType" : "arcana_glaive_ability_skewer",
+  "primaryAbilityType" : "arcana_lance_combo",
   "primaryAbility" : {
     "fireTime" : 1.0,
     "baseDps" : 10.8
