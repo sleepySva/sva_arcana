@@ -1,0 +1,21 @@
+{
+  "materialId" : 16741,
+  "materialName" : "nulla_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "nulla_tile1",
+  "description" : "A fancy black and white glass flooring tile.",
+  "shortdescription" : "Nulla Glass Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_glass.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "nulla_tile1.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 741
+  }
+}

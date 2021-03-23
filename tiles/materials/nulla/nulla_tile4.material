@@ -1,0 +1,21 @@
+{
+  "materialId" : 16744,
+  "materialName" : "nulla_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "nulla_tile4",
+  "description" : "A distorted brick tile.",
+  "shortdescription" : "Nulla Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "nulla_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 740
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16743,
+  "materialName" : "nulla_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "nulla_tile3",
+  "description" : "A grey carpet tile.",
+  "shortdescription" : "Nulla Grey Carpet",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "nulla_tile3.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 743
+  }
+}

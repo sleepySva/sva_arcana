@@ -1,0 +1,21 @@
+{
+  "materialId" : 16742,
+  "materialName" : "nulla_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "nulla_tile2",
+  "description" : "A fancy white flooring tile.",
+  "shortdescription" : "Nulla White Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "nulla_tile2.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 742
+  }
+}
