@@ -1,0 +1,29 @@
+{
+  "projectileName" : "nemesisrupturepositionerlarge",
+  "image" : "nemesisrupturepositioner.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "power" : 0,
+  "movementSettings" : {
+    "collisionEnabled" : true
+  },
+  "damageKind" : "noDamage",
+  "collisionPoly" : [ [0.0, 0.0] ],
+  "piercing" : true,
+  "speed" : 100,
+  "timeToLive" : 0.0,
+  "actionOnReap" : [
+    {
+	  "action" : "loop",
+	  "count" : 1,
+	  "body" : [
+	    {
+	      "action" : "projectile",
+	      "type" : "nemesisrupturelarge",
+	      "angle" : -90,
+	      "fuzzAngle" : 0
+	    }
+	  ]
+	}
+  ]
+}

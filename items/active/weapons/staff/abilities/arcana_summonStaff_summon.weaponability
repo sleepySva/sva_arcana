@@ -1,0 +1,20 @@
+{
+  "ability" : {
+    "type" : "arcana_summonStaff_summon",
+    "name" : "Summon",
+    "scripts" : ["/items/active/weapons/staff/abilities/arcana_summonStaff_summon.lua"],
+    "class" : "Summon",
+
+    "energyCost" : 50,
+    "maxCastRange" : 25,
+    "baseDamageFactor" : 25,
+	
+    "monsterCount" : 1,
+    "monsterDistance" : 1.0,
+    "monsterType" : "punchy",
+    "monsterParameters" : {
+		"baseDamage" : 10,
+		"level" : 1
+    }
+  }
+}

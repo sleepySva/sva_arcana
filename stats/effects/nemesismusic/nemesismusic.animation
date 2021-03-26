@@ -1,0 +1,23 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : false,
+      "emissionRate" : 7.0,
+      "particles" : [
+        {
+          "particle" : "burningdust"
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [191, 103, 2]
+    }
+  },
+  "sounds" : {
+    "burn" : [ "/music/impact-event.ogg" ]
+  }
+}

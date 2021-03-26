@@ -1,0 +1,61 @@
+{
+  "projectileName" : "nemesismeteor",
+  "image" : "nemesismeteor.png",
+  "animationCycle" : 0.3,
+  "physics" : "bullet",
+  "movementSettings" : {
+    "collisionPoly" : [ [1, -2], [-2, 0], [1, 2], [2, 0] ]
+  },
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "frameNumber" : 4,
+  "pointLight" : true,
+  "lightColor" : [255, 113, 0],
+  "renderLayer" : "Monster+10",
+  "speed" : 50,
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "type" : "fireplasmaexplosionstatus",
+          "fuzzAngle" : 0,
+          "inheritDamageFactor" : 1.0,
+          "angleAdjust" : 0
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 7,
+      "body" : [
+        {
+          "action" : "projectile",
+          "type" : "molotovflamemonster",
+          "fuzzAngle" : 180,
+          "inheritDamageFactor" : 0.7,
+          "angleAdjust" : 0
+        }
+      ]
+    },
+    {
+      "action" : "explosion",
+      "foregroundRadius" : 4,
+      "backgroundRadius" : 0,
+      "explosiveDamageAmount" : 0,
+      "delaySteps" : 2
+    }
+  ],
+  "statusEffects" : [
+    "burning"
+  ],
+  "power" : 30.0,
+  "knockback" : 20,
+  "damageKind" : "fireplasma",
+  "emitters" : [ "javelinred" ],
+
+  "persistentAudio" : "/sfx/projectiles/dragonprojectile_loop.ogg"
+}
+
+

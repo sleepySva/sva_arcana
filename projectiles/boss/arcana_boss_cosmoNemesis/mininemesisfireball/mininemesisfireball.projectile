@@ -1,0 +1,46 @@
+{
+  "projectileName" : "mininemesisfireball",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 10,
+  "image" : "mininemesisfireball.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 19,
+  "fullbright" : true,
+  "animationCycle" : 0.5,
+  "lightColor" : [84, 47, 26],
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "fireplasmaexplosionstatus",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "periodicActions" : [
+    {
+      "action" : "projectile",
+	  "time" : 0.0,
+      "repeat" : false,
+      "type" : "brightorangeglobeexplosion",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/fireball_spit.ogg" ]
+    }
+  ],
+  "emitters" : [ "fireplasma", "smoke", "flames", "fireplasma", "smoke", "flames" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "fireplasma",
+  
+  "statusEffects" : [
+    "burning"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "itemName" : "arcana_boss_cosmoNemesis_wand_1",
+  "price" : 2000,
+  "maxStack" : 1,
+  "level" : 7,
+  "rarity" : "Rare",
+  "description" : "A wand that summons cosmic flames.",
+  "shortdescription" : "Hidama",
+  "category" : "wand",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+
+  "animation" : "/items/active/weapons/staff/staff.animation",
+  "animationParts" : {
+    "staff" : "arcana_boss_cosmoNemesis_wand_1.png",
+    "stone" : "stone.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+		"stone" : {
+		  "fullbright" : true
+		}
+	  }
+	},
+	
+    "lights" : {
+      "glow" : {
+        "color" : [160, 130, 20]
+      }
+    }
+  },
+
+  "inventoryIcon" : "icon.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.8,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.5,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "elementswarm",
+  "primaryAbility" : {
+
+    "name" : "Otherworld Onibi",
+	"energyCost" : 12,
+    "maxCastRange" : 22,
+	
+	"projectileType" : "arcana_boss_cosmoNemesis_wand_1_projectile_1",
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 4,
+    "projectileDistance" : 1,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.6,
+
+    "projectileParameters" : {
+      "baseDamage" : 22,
+	  "speed" : 26
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

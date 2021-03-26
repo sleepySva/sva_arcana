@@ -1,0 +1,46 @@
+{
+  "projectileName" : "arcana_boss_cosmoNemesis_wand_1_projectile_3",
+  "physics" : "laser",
+  "timeToLive" : 4,
+  "bounces" : 1,
+  "image" : "arcana_boss_cosmoNemesis_wand_1_projectile_3.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_yellow"],
+  "frameNumber" : 1,
+  "speed" : 20,
+  "knockback" : 2,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+	{
+        "action" : "projectile",
+        "type" : "nemesisflame",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 1.0,
+        "inheritSpeedFactor" : 0.1,
+		"config" : {
+			"timeToLive" : 1
+		}
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.06,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/arcana_boss_cosmoNemesis_wand_1_projectile_3/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [140, 120, 10],
+  "damageKind" : "fire"
+}

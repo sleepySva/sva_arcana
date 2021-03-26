@@ -1,0 +1,452 @@
+{
+  "name": "cosmonemesis-teleportslam",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/entity.lua",
+	"/scripts/actions/status.lua",
+	"/scripts/actions/notification.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/behavior/bdata.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/monster.lua",
+    "/scripts/actions/sensor.lua",
+	"/scripts/actions/query.lua",
+	"/scripts/behavior.lua",
+	"/scripts/actions/projectiles.lua",
+	"/scripts/actions/world.lua"
+  ],
+  "parameters": {
+    "dashSpeed": 50,
+    "dashTime": 0.65,
+    "beaminTime": 0.5,
+    "dashControlForce": 5000,
+    "slamMovementParameters": {"gravityEnabled": true, "collisionEnabled": true, "airFriction": 0, "gravityMultiplier": 2}
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "distance",
+        "type": "action",
+        "name": "distance",
+        "parameters": {
+          "from": {"key": "self"},
+          "to": {"key": "spawn"}
+        },
+        "output": {
+          "vector": "toSpawn"
+        }
+      },
+      {
+        "title": "breakVector",
+        "type": "action",
+        "name": "breakVector",
+        "parameters": {
+          "vector": {"key": "toSpawn"}
+        },
+        "output": {
+          "x": "spawnX"
+        }
+      },
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {
+          "direction": {"key": "spawnX"}
+        },
+        "output": {
+          "direction": "dashDirection"
+        }
+      },
+      {
+        "title": "multiply",
+        "type": "action",
+        "name": "multiply",
+        "parameters": {
+          "factor": {"key": "<dashSpeed>"},
+          "number": {"key": "dashDirection"}
+        },
+        "output": {
+          "result": "dashVelocity"
+        }
+      },
+	  {
+        "title": "spawnMonster",
+        "type": "action",
+        "name": "spawnMonster",
+        "parameters": {
+          "replacement": {"value": false},
+          "type": {"value": "nemesisslamposition"}
+        }
+      },
+      {
+        "title": "findMonster",
+        "type": "action",
+        "name": "findMonster",
+        "parameters": {
+          "orderBy": {"value": "nearest"},
+          "position": {"key": "self"},
+          "range": {"value": 6000},
+          "type": {"value": "nemesisslamposition"}
+        },
+		"output": {
+          "list": "monsters"
+        }
+      },
+	  {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "each",
+          "type": "decorator",
+          "name": "each",
+          "parameters": {
+            "list": {"key": "monsters"},
+            "type": {"value": "entity"}
+          },
+          "child": {
+            "title": "succeeder",
+            "type": "decorator",
+            "name": "succeeder",
+            "parameters": {},
+            "child": {
+              "title": "sendEntityMessage",
+              "type": "action",
+              "name": "sendEntityMessage",
+              "parameters": {
+                "entity": {"key": "eachItem"},
+                "message": {"value": "despawn"}
+              }
+            }
+          }
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 1.0}
+        }
+      },
+	  {
+        "title": "entityPosition",
+        "type": "action",
+        "name": "entityPosition",
+        "parameters": {
+          "entity": {"key": "target"}
+        },
+        "output": {
+          "position": "playerPosition"
+        }
+      },
+	  {
+        "title": "spawnMonster",
+        "type": "action",
+        "name": "spawnMonster",
+        "parameters": {
+          "parameters": {"value": {"uniqueId": "nemesisslamposition"}},
+          "position": {"key": "playerPosition"},
+          "replacement": {"value": false},
+          "type": {"value": "nemesisslamposition"}
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, 25]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "slamPosition"
+        }
+      },
+	  {
+        "title": "playSound",
+        "type": "action",
+        "name": "playSound",
+        "parameters": {
+          "sound": {"value": "teleport"}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, 0.0]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "nemesisteleport"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "slamPosition"}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, 0.0]},
+          "position": {"key": "slamPosition"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "nemesisteleport"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "velocity": {"value": [0, 0]}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.5}
+        }
+      },
+	  {
+        "title": "setParticleEmitterActive",
+        "type": "action",
+        "name": "setParticleEmitterActive",
+        "parameters": {
+          "active": {"value": true},
+          "emitter": {"value": "slam"}
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0.0, 0.0]},
+          "position": {"key": "self"}
+        },
+        "output": {
+          "position": "monsterSpawn"
+        }
+      },
+	  {
+        "title": "setDamageOnTouch",
+        "type": "action",
+        "name": "setDamageOnTouch",
+        "parameters": {
+          "touchDamage": {"value": true}
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0.0, -8.0]},
+          "position": {"key": "self"}
+        },
+        "output": {
+          "position": "flyDistance"
+        }
+      },
+	  {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "flyDistance"},
+          "speed": {"value": 75},
+          "tolerance": {"value": 9}
+        }
+      },
+	  {
+        "title": "loadUniqueEntity",
+        "type": "action",
+        "name": "loadUniqueEntity",
+        "parameters": {
+          "uniqueId": {"value": "nemesisslamposition"}
+        },
+        "output": {
+          "entity": "hoverStagehand"
+        }
+      },
+      {
+        "title": "entityPosition",
+        "type": "action",
+        "name": "entityPosition",
+        "parameters": {
+          "entity": {"key": "hoverStagehand"}
+        },
+        "output": {
+          "position": "landPosition"
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0.0, 4.5]},
+          "position": {"key": "landPosition"}
+        },
+        "output": {
+          "position": "trueLandPosition"
+        }
+      },
+      {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "landPosition"},
+          "speed": {"value": 75},
+          "tolerance": {"value": 9}
+        }
+      },
+	  {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "velocity": {"value": [0, 0]}
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "trueLandPosition"}
+        }
+      },
+	  {
+        "title": "spawnMonster",
+        "type": "action",
+        "name": "spawnMonster",
+        "parameters": {
+          "replacement": {"value": false},
+          "type": {"value": "nemesisslamposition"}
+        }
+      },
+      {
+        "title": "findMonster",
+        "type": "action",
+        "name": "findMonster",
+        "parameters": {
+          "orderBy": {"value": "nearest"},
+          "position": {"key": "self"},
+          "range": {"value": 6000},
+          "type": {"value": "nemesisslamposition"}
+        },
+		"output": {
+          "list": "monsters"
+        }
+      },
+	  {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "each",
+          "type": "decorator",
+          "name": "each",
+          "parameters": {
+            "list": {"key": "monsters"},
+            "type": {"value": "entity"}
+          },
+          "child": {
+            "title": "succeeder",
+            "type": "decorator",
+            "name": "succeeder",
+            "parameters": {},
+            "child": {
+              "title": "sendEntityMessage",
+              "type": "action",
+              "name": "sendEntityMessage",
+              "parameters": {
+                "entity": {"key": "eachItem"},
+                "message": {"value": "despawn"}
+              }
+            }
+          }
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [-3.5, -3.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 35.0}},
+          "projectileType": {"value": "fireplasmaexplosionstatus"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [3.5, -3.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 35.0}},
+          "projectileType": {"value": "fireplasmaexplosionstatus"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "setDamageOnTouch",
+        "type": "action",
+        "name": "setDamageOnTouch",
+        "parameters": {
+          "touchDamage": {"value": false}
+        }
+      },
+	  {
+        "title": "setParticleEmitterActive",
+        "type": "action",
+        "name": "setParticleEmitterActive",
+        "parameters": {
+          "active": {"value": false},
+          "emitter": {"value": "slam"}
+        }
+      }
+    ]
+  }
+}

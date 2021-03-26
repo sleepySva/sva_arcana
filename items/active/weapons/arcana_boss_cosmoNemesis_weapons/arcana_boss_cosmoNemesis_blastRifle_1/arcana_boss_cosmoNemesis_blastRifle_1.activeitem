@@ -1,0 +1,62 @@
+{
+  "itemName" : "arcana_boss_cosmoNemesis_blastRifle_1",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A blast-rifle that shoots concentrated fire rounds.",
+  "shortdescription" : "Kitsunebi",
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 7,
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "arcana_boss_cosmoNemesis_blastRifle_1.animation",
+  "animationParts" : {
+    "gun" : "arcana_boss_cosmoNemesis_blastRifle_1.png",
+    "gunfullbright" : "fullbright.png"
+  },
+  "animationCustom" : {},
+  
+  "muzzleOffset" : [3.4, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "chargefire",
+  "primaryAbility" : {
+    "chargeLevels" : [
+      {
+        "time" : 0,
+        "energyCost" : 20,
+        "cooldown" : 0.16,
+        "projectileType" : "arcana_boss_cosmoNemesis_wand_1_projectile_4",
+        "projectileCount" : 1,
+        "projectileParameters" : {
+			"speed" : 80
+		},
+        "inaccuracy" : 0,
+        "baseDamage" : 10,
+        "fireSound" : "fire2"
+      },
+      {
+        "time" : 0.4,
+        "energyCost" : 40,
+        "cooldown" : 0.16,
+        "projectileType" : "arcana_boss_cosmoNemesis_wand_1_projectile_4",
+        "projectileCount" : 1,
+        "projectileParameters" : {
+			"speed" : 118
+		},
+        "inaccuracy" : 0,
+        "baseDamage" : 18,
+        "fireSound" : "fire"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

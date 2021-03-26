@@ -1,0 +1,155 @@
+{
+  "type" : "nemesismusic",
+
+  "categories" : [ "nemesismusic" ],
+  "parts" : [ "body" ],
+
+  "animation" : "nemesismusic.animation",
+
+  "dropPools" : [],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "nemesismusic",
+	
+	"damageBar" : "None",
+
+    "seeThroughLiquid" : true,
+	
+	"renderLayer" : "Projectile-200",
+
+    "touchDamage" : {
+      "poly" : [ [-4.0, -2.0], [0.0, -4.0], [4.0, -2.0], [4.0, 0.0], [0.0, 4.0], [-4.0, 0.0] ],
+      "damage" : 0,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hidden",
+      "knockback" : 0,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-8.0, -4.0, 8.0, 4.0],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+	  "collisionEnabled" : false,
+      "collisionPoly" : [ [-8.0, -4.0], [8.0, -4.0], [8.0, 4.0], [-8.0, 4.0] ],
+
+      "mass" : 4.0,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 0.1,
+      "airForce" : 420,
+      "flySpeed" : 28,
+	  
+	  "physicsEffectCategories" : [ "boss" ]
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.0,
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 999999
+        },
+        "maxHealth" : {
+          "baseValue" : 3500
+        },
+		"lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "abysseffectImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ionizedImmunity" : {
+          "baseValue" : 1.0
+        },
+		"megadamageResistance" : {
+		  "baseValue" : 1.0
+		},
+        "shadowImmunity" : {
+         "baseValue" : 1
+        },
+        "radiationburnImmunity" : { 
+          "baseValue" : 1
+        },
+        "acidicbacteriaImmunity" : { 
+          "baseValue" : 1
+        },
+		"HolyStatusImmunity" : { 
+          "baseValue" : 1
+        },
+		"invulnerable" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "cosmicintruder" }
+  }
+}

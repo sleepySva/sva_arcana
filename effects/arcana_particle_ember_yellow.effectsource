@@ -1,0 +1,21 @@
+{
+  "kind" : "arcana_particle_ember_yellow",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.1,
+    "durationVariance" : 0.02,
+    "loops" : true,
+    "start" : {
+      "particles" : [ ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "soluskatana1" ], [ "soluskatana2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [ ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "projectileName" : "nemesisruptureexplosion",
+  "image" : "nemesisruptureexplosion.png",
+  "animationCycle" : 0.3,
+  "physics" : "bullet",
+  "movementSettings" : {
+    "collisionPoly" : [ [1, -2], [-2, 0], [1, 2], [2, 0] ]
+  },
+  "damagePoly" : [ [0, 0] ],
+  "frameNumber" : 4,
+  "timeToLive" : 0.0,
+  "pointLight" : true,
+  "lightColor" : [255, 113, 0],
+  "renderLayer" : "Monster+10",
+  "speed" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "type" : "nemesisexplosion",
+          "fuzzAngle" : 0,
+          "angleAdjust" : 0
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 7,
+      "body" : [
+        {
+          "action" : "projectile",
+          "type" : "nemesisflameshort",
+          "fuzzAngle" : 180,
+          "angleAdjust" : 0
+        }
+      ]
+    },
+    {
+      "action" : "explosion",
+      "foregroundRadius" : 4,
+      "backgroundRadius" : 0,
+      "explosiveDamageAmount" : 0,
+      "delaySteps" : 2
+    },
+	{
+	  "action" : "loop",
+	  "count" : 6,
+	  "body" : [
+	    {
+	      "action" : "projectile",
+	      "type" : "nemesisthrower",
+	      "angle" : 90,
+	      "fuzzAngle" : 15
+	    }
+	  ]
+	}
+  ],
+  "statusEffects" : [
+    "burning"
+  ],
+  "power" : 500.0,
+  "knockback" : 0,
+  "damageKind" : "hidden",
+
+  "persistentAudio" : "/sfx/projectiles/dragonprojectile_loop.ogg"
+}
+
+

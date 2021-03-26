@@ -1,0 +1,230 @@
+{
+  "type" : "arcana_monster_spiritGosmet",
+  "shortdescription" : "Spirit Gosmet",
+  "description" : "These creatures have ethereal bodies that they mould into armour when threatened.",
+
+  "categories" : [ "arcana_monster_spiritGosmet" ],
+  "parts" : [ "body" ],
+
+  "animation" : "arcana_monster_spiritGosmet.animation",
+
+  "dropPools" : [],
+
+
+  "baseParameters" : {
+    "monsterClass" : "rare",
+
+    "scripts" : [
+      "/monsters/arcana_monster_kill.lua"
+    ],
+
+    "behavior" : "monster",
+	"damageTeamType" : "friendly",
+	"aggressive" : true,
+
+    "renderLayer" : "foregroundEntity",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 64,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : false,
+      "keepTargetInRange" : 64,
+      "targetOutOfSightTime" : 5.0,
+
+      "hurtTime" : 0.1,
+      "hurtWaitForGround" : false,
+
+      "damageTakenActions" : [
+      ],
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 26,
+            "minimumRange" : 4,
+            "onGround" : false,
+            "windupStopForce" : 50,
+            "windupTime" : 0.8,
+
+            "projectileType" : "flame",
+            "projectileParameters" : {
+              "speed" : 40
+            },
+            "fireOffset" : [0.0, 0.0],
+            "aimAtTarget" : true,
+            "projectileCount" : 12,
+            "projectileInterval" : 0.01,
+            "inaccuracy" : 0.0,
+            "fireState" : "fire",
+            "fireDelay" : 0.1,
+            "fireSound" : "",
+
+            "winddownState" : "",
+            "winddownTime" : 0.5
+          }
+        }
+      ],
+
+      "periodicActions" : [
+	  ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "usePathfinding" : false
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "usePathfinding" : false
+          }
+        }
+      ],
+
+      "wanderActions" : [
+      ],
+
+      "concurrentActions" : [
+	  ],
+
+      "concurrentHostileActions" : [
+	  ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.125, 1.25], [0.625, 0.75], [0.625, -0.75], [0.125, -1.25], [-0.125, -1.25], [-0.625, -0.75], [-0.625, 0.75], [-0.125, 1.25] ],
+      "damage" : 12,
+
+      "teamType" : "friendly",
+      "damageSourceKind" : "firehammer",
+      "knockback" : 20,
+      "statusEffects" : ["burning" ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionEnabled" : false,
+      "collisionPoly" : [ [0.125, 1.25], [0.625, 0.75], [0.625, -0.75], [0.125, -1.25], [-0.125, -1.25], [-0.625, -0.75], [-0.625, 0.75], [-0.125, 1.25] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 60,
+      "runSpeed" : 60,
+      "gravityEnabled" : false,
+
+      "airFriction" : 1,
+      "airForce" : 10,
+      "flySpeed" : 60
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/spacemonster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 70
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.5
+        },
+        "fireResistance" : {
+          "baseValue" : 0.5
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 0.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

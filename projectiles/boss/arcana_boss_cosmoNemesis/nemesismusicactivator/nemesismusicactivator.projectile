@@ -1,0 +1,24 @@
+{
+  "projectileName" : "nemesismusicactivator",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0.25,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "nemesismusicactivator.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+  ],
+  "power" : 0,
+  "piercing" : true,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef",
+  "damageRepeatTimeout" : 0,
+  "damagePoly" : [ [-800, -800], [-800, 800], [800, 800], [800, -800]  ],
+  "flippable" : true,
+  "statusEffects" : [
+    {"effect" : "nemesismusic", "duration" : 10},
+	{"effect" : "musicblock", "duration" : 10}
+  ]
+}

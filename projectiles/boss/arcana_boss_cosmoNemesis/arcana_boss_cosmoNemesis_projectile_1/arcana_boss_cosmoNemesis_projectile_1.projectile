@@ -1,86 +1,40 @@
 {
   "projectileName" : "arcana_boss_cosmoNemesis_projectile_1",
-  "physics" : "sticky",
-  
-  "timeToLive" : 4,
+  "physics" : "laser",
   "bounces" : 0,
-  "speed" : 60,
-  "piercing" : true,
-  "knockback" : 40,
-  "knockbackDirectional" : true,
-  
+  "timeToLive" : 5,
   "image" : "arcana_boss_cosmoNemesis_projectile_1.png",
-  "animationCycle" : 0.2,
-  "frameNumber" : 1,
-  
+  "damageKindImage" : "icon.png",
+  "speed" : 1,
+  "acceleration" : 50,
   "fullbright" : true,
-  "lightColor" : [160, 100, 20],
-  "emitters" : ["flames"],
-  
-  "supportsProcessing" : true,
-  
+  "animationCycle" : 0.5,
+  "lightColor" : [235, 126, 2],
+  "frameNumber" : 4,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
   "actionOnReap" : [
     {
-      "action" : "loop",
-      "count" : 5,
-      "body" : [
-        {
-          "action" : "particle",
-          "specification" : "fireswoosh1",
-          "time" : 0.1,
-          "repeat" : true
-        },
-        {
-          "action" : "particle",
-          "specification" : "fireswoosh2",
-          "time" : 0.1,
-          "repeat" : true
-        }
-      ]
-    },
-	{
-      "action" : "config",
-      "file" : "/projectiles/explosions/arcana_explosion_fire_2/arcana_explosion_fire_2.config"
+      "action" : "projectile",
+      "type" : "fireplasmaexplosionstatus",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
     }
   ],
-  
-  "actionOnCollide" : [
-    {
-      "action" : "sound",
-      "options" : [
-        "/sfx/gun/impact_plasma.ogg"
-      ]
-    },
-    {
-      "action" : "loop",
-      "count" : 2,
-      "body" : [
-        {
-          "action" : "particle",
-          "specification" : "fireswoosh1",
-          "time" : 0.1,
-          "repeat" : true
-        },
-        {
-          "action" : "particle",
-          "specification" : "fireswoosh2",
-          "time" : 0.1,
-          "repeat" : true
-        }
-      ]
-    },
-	{
-        "action" : "projectile",
-        "type" : "fireswarmer",
-        "angleAdjust" : 0,
-        "inheritDamageFactor" : 0.2,
-        "inheritSpeedFactor" : 0
-    }
-  ],
-  
   "periodicActions" : [
     {
-      "time" : 0.02,
+      "action" : "projectile",
+	  "time" : 0.0,
+      "repeat" : false,
+      "type" : "brightorangeglobeexplosion",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "time" : 0.01,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
@@ -89,23 +43,24 @@
         "image" : "/projectiles/boss/arcana_boss_cosmoNemesis/arcana_boss_cosmoNemesis_projectile_1/arcana_boss_cosmoNemesis_projectile_1_trail.png",
         "position" : [0, 0],
         "layer" : "back",
-        "timeToLive" : 0.3,
-        "destructionTime" : 0.3,
+        "timeToLive" : 0.2,
+        "destructionTime" : 0.2,
         "destructionAction" : "fade",
         "fullbright" : true
       }
-    },
-	{
-      "time" : 0.18,
-      "repeat" : true,
-      "action" : "projectile",
-      "type" : "fireswarmer",
-      "angleAdjust" : 0,
-      "inheritDamageFactor" : 0.2,
-      "inheritSpeedFactor" : 0
     }
   ],
+  "emitters" : [ "fireplasma", "smoke", "flames", "fireplasma", "smoke", "flames" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "fireplasma",
   
-  "damageKind" : "fire"
- 
+  "statusEffects" : [
+    "burning"
+  ],
+  
+  "scripts" : [ "/scripts/projectiles/nemesishomingprojectile.lua" ],
+  "scriptDelta" : 3,
+
+  "rotationRate" : 1.0,
+  "trackingLimit" : 200.0
 }

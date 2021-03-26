@@ -1,0 +1,85 @@
+{
+  "projectileName" : "nemesisrupturelarge",
+  "image" : "nemesisrupture",
+  "animationCycle" : 1.2,
+  "timeToLive" : 3.4,
+  "animationLoops" : false,
+  "frameNumber" : 3,
+  "fullbright" : true,
+  "lightColor" : [235, 126, 2],
+  "power" : 0.0,
+  "speed" : 0,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "damagePoly" : [ [-32, 5], [32, 5], [32, -5], [-32, -5] ],
+  "damageKind" : "noDamage",
+  "periodicActions" : [
+    {
+      "action" : "loop",
+      "count" : 1,
+	  "time" : 0.0001,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/mediumflame/mediumflame.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 0.6,
+                "variance" : {
+                  "timeToLive" : 0.15,
+                  "position" : [2.0, 2.0],
+                  "initialVelocity" : [1, 1],
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "action" : "projectile",
+	  "time" : 1.5,
+      "repeat" : false,
+      "type" : "mininemesisspawnervisible",
+      "angle" : 90,
+      "fuzzAngle" : 40
+    },
+	{
+      "action" : "projectile",
+	  "time" : 1.8,
+      "repeat" : false,
+      "type" : "mininemesisspawnervisible",
+      "fuzzAngle" : 40,
+      "angle" : 90
+    },
+	{
+      "action" : "projectile",
+	  "time" : 2.1,
+      "repeat" : false,
+      "type" : "mininemesisspawnervisible",
+      "fuzzAngle" : 40,
+      "angle" : 90
+    },
+	{
+      "action" : "projectile",
+	  "time" : 2.4,
+      "repeat" : false,
+      "type" : "mininemesisspawnervisible",
+      "fuzzAngle" : 40,
+      "angle" : 90
+    }
+  ],
+
+  "onlyHitTerrain" : true,
+  
+  "persistentAudio" : "/sfx/npc/boss/tentacleboss_tentacle_windup.ogg"
+}

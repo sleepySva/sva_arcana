@@ -1,0 +1,33 @@
+{
+  "name" : "nemesismusicstopperMoveFireAttack",
+  "label" : "CIRCLE",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/nemesismusicstopper/skills/nemesismusicstopperMoveFireAttack.lua" ],
+
+    "nemesismusicstopperMoveFireAttack" : {
+      "skillTime": 5,
+      "bobTime" : 2,
+      "bobHeight" : 3,
+
+      "projectileOffset" : [0, -4],
+      "fireInterval" : 0.5,
+      "projectile" : {
+        "type" : "spinningplasmabullet",
+        "config" : {
+          "speed" : 40,
+          "power" : 5,
+          "periodicActions" : [
+            {
+              "time" : 0,
+              "repeat" : false,
+              "action" : "sound",
+              "options" : [ "/sfx/gun/plasma_mp2.ogg" ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

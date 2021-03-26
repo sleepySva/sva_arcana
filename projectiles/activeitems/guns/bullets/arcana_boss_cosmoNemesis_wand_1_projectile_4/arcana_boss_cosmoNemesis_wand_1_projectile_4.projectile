@@ -1,0 +1,76 @@
+{
+  "projectileName" : "arcana_boss_cosmoNemesis_wand_1_projectile_4",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 100,
+  "piercing" : false,
+  
+  "image" : "arcana_boss_cosmoNemesis_wand_1_projectile_4.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [148, 62, 145],
+  "emitters" : ["sparks","smoke"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_yellow/arcana_explosion_plasma_1_yellow.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_cosmoNemesis_wand_1_projectile_2",
+        "angleAdjust" : -120,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 1
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_cosmoNemesis_wand_1_projectile_2",
+        "angleAdjust" : -155,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 1
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_cosmoNemesis_wand_1_projectile_2",
+        "angleAdjust" : 120,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 1
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_cosmoNemesis_wand_1_projectile_2",
+        "angleAdjust" : 155,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 1
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/arcana_boss_cosmoNemesis_wand_1_projectile_4/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

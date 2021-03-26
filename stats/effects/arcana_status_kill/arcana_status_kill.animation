@@ -1,0 +1,20 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 1.0,
+      "particles" : [
+        {
+          "particle" : "burningdust"
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [81, 113, 14]
+    }
+  }
+}

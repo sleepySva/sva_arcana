@@ -1,0 +1,25 @@
+{
+  "projectileName" : "nemesisflame",
+  "physics" : "grenadenobounce",
+  "bounces" : -1,
+  "timeToLive" : 15,
+  "speed" : 15,
+  "image" : "nemesisflame.png",
+  "animationCycle" : 0.8,
+  "lightColor" : [235, 126, 2],
+  "frameNumber" : 8,
+  "emitters" : [ "flames" ],
+  "piercing" : true,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smoke/smoke.config"
+    }
+  ],
+  "damageKind" : "fire",
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "statusEffects" : [
+    "burning"
+  ]
+}

@@ -28,5 +28,13 @@
 		"path":"/defaultBlueprints/tier1/-",
 		"value":
 			{"item":"arcana_codex_guide_2-codex"}
-    }
+    },
+	
+	{ 
+		"op" : "add",
+		"path" : "/statusControllerSettings/stats/musicBlockStatusImmunity",
+		"value" : {
+			"baseValue" : 1.0
+		}
+	}
 ]

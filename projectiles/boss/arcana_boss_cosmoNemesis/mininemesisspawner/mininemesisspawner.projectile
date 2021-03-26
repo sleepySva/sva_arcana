@@ -1,0 +1,31 @@
+{
+  "projectileName" : "mininemesisspawner",
+  "image" : "mininemesisspawner.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "power" : 0,
+  "movementSettings" : {
+    "collisionEnabled" : true
+  },
+  "damageKind" : "hidden",
+  "collisionPoly" : [ [0.25, 0.75], [0.625, 0.075], [0.625, -0.075], [0.25, -0.75], [-0.25, -0.75], [-0.625, -0.075], [-0.625, 0.075], [-0.25, 0.75] ],
+  "piercing" : true,
+  "speed" : 25,
+  "timeToLive" : 0.2,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+	  "time" : 0.0,
+      "repeat" : false,
+      "type" : "brightorangeglobeexplosion",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+	  "action" : "spawnmonster",
+	  "type" : "mininemesis",
+	  "level" : 6
+	}
+  ]
+}

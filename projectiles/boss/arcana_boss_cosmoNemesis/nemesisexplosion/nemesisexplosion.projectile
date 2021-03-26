@@ -1,0 +1,15 @@
+{
+  "projectileName" : "nemesisexplosion",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "damageKindImage" : "icon.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/boss/arcana_boss_cosmoNemesis/nemesisexplosion/nemesisexplosion.config"
+    }
+  ],
+  "damageKind" : "NoDamage",
+  "power" : 430.0,
+  "onlyHitTerrain" : true,
+  "timeToLive" : 0
+}
