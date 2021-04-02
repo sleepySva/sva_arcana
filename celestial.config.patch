@@ -1,1208 +1,2031 @@
 [
 
-	{
-		"op": "add",
-		"path": "/systemTypeBins/5",
-		"value": [
-		  0.1,
-		  "arcana_star_arcane"
-		]
-	},
-	{
-		"op": "add",
-		"path": "/systemTypeBins/6",
-		"value": [
-		  0.14,
-		  "arcana_star_illuminated"
-		]
-	},
-	{
-		"op": "add",
-		"path": "/systemTypeBins/7",
-		"value": [
-		  0.18,
-		  "arcana_star_superstorm"
-		]
-	},
 
+	// Regular Patch
+	[
 
-	{
-		"op":"add",
-		"path":"/systemTypes/arcana_star_arcane",
-		"value":
 		{
-			  "selectionWeight" : 1.0,
-			  "baseParameters" : {
-				"typeName" : "arcana_star_arcane",
-				"image" : "/celestial/system/arcana_star_arcane.png",
-				"twinkleTime" : [1.0, 1.5],
-				"spaceThreatLevel" : 6
-			  },
-			  "variationParameters" : [
-				{
-				  "magnitude" : 3,
-				  "description" : "Small Arcane Star",
-				  "imageScale" : 0.04,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_arcane_7px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star7px.png",
-				  "brightness" : [1, 1]
-				},
-				{
-				  "magnitude" : 5,
-				  "description" : "Medium Arcane Star",
-				  "imageScale" : 0.055,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_arcane_13px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star13px.png",
-				  "brightness" : [1, 1]
-				},
-				{
-				  "magnitude" : 7,
-				  "description" : "Large Arcane Star",
-				  "imageScale" : 0.075,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_arcane_17px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star17px.png",
-				  "brightness" : [1, 1]
-				}
-			  ],
-			  "orbitRegions" : [
-				{
-				  "regionName" : "Tier6Inner",
-				  "orbitRange" : [2, 5],
-				  "bodyProbability" : 0.5,
-				  "planetaryTypes" : [
-					{"weight" : 0.05, "item" : "Tier4"},
-					{"weight" : 0.15, "item" : "Tier5"},
-					{"weight" : 0.7, "item" : "arcana_planetary_arcane"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
+			"op": "add",
+			"path": "/systemTypeBins/5",
+			"value": [
+			  0.1,
+			  "arcana_star_arcane"
+			]
+		},
+		{
+			"op": "add",
+			"path": "/systemTypeBins/6",
+			"value": [
+			  0.14,
+			  "arcana_star_illuminated"
+			]
+		},
+		{
+			"op": "add",
+			"path": "/systemTypeBins/7",
+			"value": [
+			  0.18,
+			  "arcana_star_superstorm"
+			]
+		},
+
+
+		{
+			"op":"add",
+			"path":"/systemTypes/arcana_star_arcane",
+			"value":
+			{
+				  "selectionWeight" : 1.0,
+				  "baseParameters" : {
+					"typeName" : "arcana_star_arcane",
+					"image" : "/celestial/system/arcana_star_arcane.png",
+					"twinkleTime" : [1.0, 1.5],
+					"spaceThreatLevel" : 6
+				  },
+				  "variationParameters" : [
+					{
+					  "magnitude" : 3,
+					  "description" : "Small Arcane Star",
+					  "imageScale" : 0.04,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_arcane_7px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star7px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 5,
+					  "description" : "Medium Arcane Star",
+					  "imageScale" : 0.055,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_arcane_13px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star13px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 7,
+					  "description" : "Large Arcane Star",
+					  "imageScale" : 0.075,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_arcane_17px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star17px.png",
+					  "brightness" : [1, 1]
+					}
 				  ],
-				  "satelliteTypes" : [
-					{"weight" : 1, "item" : "Moon"}
+				  "orbitRegions" : [
+					{
+					  "regionName" : "Tier6Inner",
+					  "orbitRange" : [2, 5],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "Tier4"},
+						{"weight" : 0.15, "item" : "Tier5"},
+						{"weight" : 0.7, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Mid",
+					  "orbitRange" : [6, 7],
+					  "bodyProbability" : 0.25,
+					  "planetaryTypes" : [
+						{"weight" : 0.9, "item" : "GasGiant"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 0.1, "item" : "Moon"},
+						{"weight" : 0.05, "item" : "Tier4"},
+						{"weight" : 0.10, "item" : "Tier5"},
+						{"weight" : 0.15, "item" : "arcana_planetary_illuminated"},
+						{"weight" : 0.6, "item" : "arcana_planetary_arcane"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Outer",
+					  "orbitRange" : [8, 10],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "Tier4"},
+						{"weight" : 0.15, "item" : "Tier5"},
+						{"weight" : 0.7, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Gate",
+					  "orbitRange" : [11, 11],
+					  "bodyProbability" : 1.0,
+					  "planetaryTypes" : [
+						{"weight" : 0.2, "item" : "AncientGateway"},
+						{"weight" : 0.1, "item" : "AsteroidField"},
+						{"weight" : 0.1, "item" : "Barren"},
+						{"weight" : 0.1, "item" : "Tier5"},
+						{"weight" : 0.5, "item" : "Tier6"}
+					  ],
+					  "satelliteTypes" : []
+					}
 				  ]
-				},
-				{
-				  "regionName" : "Tier6Mid",
-				  "orbitRange" : [6, 7],
-				  "bodyProbability" : 0.25,
-				  "planetaryTypes" : [
-					{"weight" : 0.9, "item" : "GasGiant"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/systemTypes/arcana_star_illuminated",
+			"value":
+			{
+				  "selectionWeight" : 1.0,
+				  "baseParameters" : {
+					"typeName" : "arcana_star_illuminated",
+					"image" : "/celestial/system/arcana_star_illuminated.png",
+					"twinkleTime" : [1.0, 1.5],
+					"spaceThreatLevel" : 7
+				  },
+				  "variationParameters" : [
+					{
+					  "magnitude" : 3,
+					  "description" : "Small Illuminated Star",
+					  "imageScale" : 0.04,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_illuminated_7px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star7px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 5,
+					  "description" : "Medium Illuminated Star",
+					  "imageScale" : 0.055,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_illuminated_13px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star13px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 7,
+					  "description" : "Large Illuminated Star",
+					  "imageScale" : 0.075,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_illuminated_17px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star17px.png",
+					  "brightness" : [1, 1]
+					}
 				  ],
-				  "satelliteTypes" : [
-					{"weight" : 0.1, "item" : "Moon"},
-					{"weight" : 0.05, "item" : "Tier4"},
-					{"weight" : 0.10, "item" : "Tier5"},
-					{"weight" : 0.15, "item" : "arcana_planetary_illuminated"},
-					{"weight" : 0.6, "item" : "arcana_planetary_arcane"}
+				  "orbitRegions" : [
+					{
+					  "regionName" : "Tier6Inner",
+					  "orbitRange" : [2, 5],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.15, "item" : "Tier6"},
+						{"weight" : 0.7, "item" : "arcana_planetary_illuminated"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Mid",
+					  "orbitRange" : [6, 7],
+					  "bodyProbability" : 0.25,
+					  "planetaryTypes" : [
+						{"weight" : 0.9, "item" : "GasGiant"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 0.1, "item" : "Moon"},
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.10, "item" : "Tier6"},
+						{"weight" : 0.15, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.6, "item" : "arcana_planetary_illuminated"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Outer",
+					  "orbitRange" : [8, 10],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.15, "item" : "Tier6"},
+						{"weight" : 0.7, "item" : "arcana_planetary_illuminated"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Gate",
+					  "orbitRange" : [11, 11],
+					  "bodyProbability" : 1.0,
+					  "planetaryTypes" : [
+						{"weight" : 0.2, "item" : "AncientGateway"},
+						{"weight" : 0.1, "item" : "AsteroidField"},
+						{"weight" : 0.1, "item" : "Barren"},
+						{"weight" : 0.1, "item" : "Tier5"},
+						{"weight" : 0.5, "item" : "Tier6"}
+					  ],
+					  "satelliteTypes" : []
+					}
 				  ]
-				},
-				{
-				  "regionName" : "Tier6Outer",
-				  "orbitRange" : [8, 10],
-				  "bodyProbability" : 0.5,
-				  "planetaryTypes" : [
-					{"weight" : 0.05, "item" : "Tier4"},
-					{"weight" : 0.15, "item" : "Tier5"},
-					{"weight" : 0.7, "item" : "arcana_planetary_arcane"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/systemTypes/arcana_star_superstorm",
+			"value":
+			{
+				  "selectionWeight" : 1.0,
+				  "baseParameters" : {
+					"typeName" : "arcana_star_superstorm",
+					"image" : "/celestial/system/arcana_star_superstorm.png",
+					"twinkleTime" : [1.0, 1.5],
+					"spaceThreatLevel" : 8
+				  },
+				  "variationParameters" : [
+					{
+					  "magnitude" : 3,
+					  "description" : "Small Superstorm Star",
+					  "imageScale" : 0.04,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_superstorm_7px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star7px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 5,
+					  "description" : "Medium Superstorm Star",
+					  "imageScale" : 0.055,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_superstorm_13px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star13px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 7,
+					  "description" : "Large Superstorm Star",
+					  "imageScale" : 0.075,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_superstorm_17px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star17px.png",
+					  "brightness" : [1, 1]
+					}
 				  ],
-				  "satelliteTypes" : [
-					{"weight" : 1, "item" : "Moon"}
+				  "orbitRegions" : [
+					{
+					  "regionName" : "Tier6Inner",
+					  "orbitRange" : [2, 5],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.15, "item" : "Tier6"},
+						{"weight" : 0.7, "item" : "arcana_planetary_superstorm"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Mid",
+					  "orbitRange" : [6, 7],
+					  "bodyProbability" : 0.25,
+					  "planetaryTypes" : [
+						{"weight" : 0.9, "item" : "GasGiant"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 0.1, "item" : "Moon"},
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.10, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.15, "item" : "arcana_planetary_illuminated"},
+						{"weight" : 0.6, "item" : "arcana_planetary_superstorm"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Outer",
+					  "orbitRange" : [8, 10],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.15, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.7, "item" : "arcana_planetary_superstorm"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Gate",
+					  "orbitRange" : [11, 11],
+					  "bodyProbability" : 1.0,
+					  "planetaryTypes" : [
+						{"weight" : 0.2, "item" : "AncientGateway"},
+						{"weight" : 0.1, "item" : "AsteroidField"},
+						{"weight" : 0.1, "item" : "Barren"},
+						{"weight" : 0.1, "item" : "Tier5"},
+						{"weight" : 0.5, "item" : "Tier6"}
+					  ],
+					  "satelliteTypes" : []
+					}
 				  ]
-				},
-				{
-				  "regionName" : "Gate",
-				  "orbitRange" : [11, 11],
-				  "bodyProbability" : 1.0,
-				  "planetaryTypes" : [
-					{"weight" : 0.2, "item" : "AncientGateway"},
-					{"weight" : 0.1, "item" : "AsteroidField"},
-					{"weight" : 0.1, "item" : "Barren"},
-					{"weight" : 0.1, "item" : "Tier5"},
-					{"weight" : 0.5, "item" : "Tier6"}
-				  ],
-				  "satelliteTypes" : []
-				}
-			  ]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/systemTypes/arcana_star_illuminated",
-		"value":
+			}
+		},
+
 		{
-			  "selectionWeight" : 1.0,
-			  "baseParameters" : {
-				"typeName" : "arcana_star_illuminated",
-				"image" : "/celestial/system/arcana_star_illuminated.png",
-				"twinkleTime" : [1.0, 1.5],
-				"spaceThreatLevel" : 7
-			  },
-			  "variationParameters" : [
-				{
-				  "magnitude" : 3,
-				  "description" : "Small Illuminated Star",
-				  "imageScale" : 0.04,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_illuminated_7px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star7px.png",
-				  "brightness" : [1, 1]
-				},
-				{
-				  "magnitude" : 5,
-				  "description" : "Medium Illuminated Star",
-				  "imageScale" : 0.055,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_illuminated_13px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star13px.png",
-				  "brightness" : [1, 1]
-				},
-				{
-				  "magnitude" : 7,
-				  "description" : "Large Illuminated Star",
-				  "imageScale" : 0.075,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_illuminated_17px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star17px.png",
-				  "brightness" : [1, 1]
-				}
-			  ],
-			  "orbitRegions" : [
-				{
-				  "regionName" : "Tier6Inner",
-				  "orbitRange" : [2, 5],
-				  "bodyProbability" : 0.5,
-				  "planetaryTypes" : [
-					{"weight" : 0.05, "item" : "Tier5"},
-					{"weight" : 0.15, "item" : "Tier6"},
-					{"weight" : 0.7, "item" : "arcana_planetary_illuminated"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
-				  ],
-				  "satelliteTypes" : [
-					{"weight" : 1, "item" : "Moon"}
+			"op":"add",
+			"path":"/planetaryTypes/arcana_planetary_superstorm",
+			"value":
+			{
+				  "satelliteProbability" : 0.35,
+				  "maxSatelliteCount" : 2,
+
+				  "baseParameters" : {
+					"worldType" : "Terrestrial",
+					"description" : "Superstorm Planet",
+					"smallImage" : "/celestial/system/planet_small.png",
+
+					"terrestrialType" : [ "arcana_superstormExpanse", "arcana_stahlernBadlands", "arcana_timeless", "arcana_neonSea", "arcana_automated", "arcana_viridescent"]
+				  },
+
+				  "variationParameters" : [
+					{
+					  "imageScale" : 0.1,
+					  "smallImageScale" : 0.5,
+					  "worldSize" : "medium"
+					},
+					{
+					  "imageScale" : 0.125,
+					  "smallImageScale" : 0.6,
+					  "worldSize" : "large"
+					}
 				  ]
-				},
-				{
-				  "regionName" : "Tier6Mid",
-				  "orbitRange" : [6, 7],
-				  "bodyProbability" : 0.25,
-				  "planetaryTypes" : [
-					{"weight" : 0.9, "item" : "GasGiant"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
-				  ],
-				  "satelliteTypes" : [
-					{"weight" : 0.1, "item" : "Moon"},
-					{"weight" : 0.05, "item" : "Tier5"},
-					{"weight" : 0.10, "item" : "Tier6"},
-					{"weight" : 0.15, "item" : "arcana_planetary_arcane"},
-					{"weight" : 0.6, "item" : "arcana_planetary_illuminated"}
+			}
+		},
+
+		{
+			"op":"add",
+			"path":"/planetaryTypes/arcana_planetary_illuminated",
+			"value":
+			{
+				  "satelliteProbability" : 0.35,
+				  "maxSatelliteCount" : 2,
+
+				  "baseParameters" : {
+					"worldType" : "Terrestrial",
+					"description" : "Illuminated Planet",
+					"smallImage" : "/celestial/system/planet_small.png",
+
+					"terrestrialType" : [ "arcana_illuminated", "arcana_desolate", "arcana_goldenForest", "arcana_sanguine", "arcana_ferocious", "arcana_animus", "arcana_evoaquatic", "arcana_ardentTaiga"]
+				  },
+
+				  "variationParameters" : [
+					{
+					  "imageScale" : 0.1,
+					  "smallImageScale" : 0.5,
+					  "worldSize" : "medium"
+					},
+					{
+					  "imageScale" : 0.125,
+					  "smallImageScale" : 0.6,
+					  "worldSize" : "large"
+					}
 				  ]
-				},
-				{
-				  "regionName" : "Tier6Outer",
-				  "orbitRange" : [8, 10],
-				  "bodyProbability" : 0.5,
-				  "planetaryTypes" : [
-					{"weight" : 0.05, "item" : "Tier5"},
-					{"weight" : 0.15, "item" : "Tier6"},
-					{"weight" : 0.7, "item" : "arcana_planetary_illuminated"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
-				  ],
-				  "satelliteTypes" : [
-					{"weight" : 1, "item" : "Moon"}
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/arcana_planetary_arcane",
+			"value":
+			{
+				  "satelliteProbability" : 0.4,
+				  "maxSatelliteCount" : 3,
+
+				  "baseParameters" : {
+					"worldType" : "Terrestrial",
+					"description" : "Arcane Planet",
+					"smallImage" : "/celestial/system/planet_small.png",
+
+					"terrestrialType" : [ "arcana_arcaneForest", "arcana_arcaneDesert", "arcana_arcaneSea", "arcana_arcaneTundra", "arcana_blistering", "arcana_turbulent", "arcana_verdant", "arcana_windswept" ]
+				  },
+
+				  "variationParameters" : [
+					{
+					  "imageScale" : 0.1,
+					  "smallImageScale" : 0.5,
+					  "worldSize" : "medium"
+					},
+					{
+					  "imageScale" : 0.125,
+					  "smallImageScale" : 0.6,
+					  "worldSize" : "large"
+					}
 				  ]
-				},
-				{
-				  "regionName" : "Gate",
-				  "orbitRange" : [11, 11],
-				  "bodyProbability" : 1.0,
-				  "planetaryTypes" : [
-					{"weight" : 0.2, "item" : "AncientGateway"},
-					{"weight" : 0.1, "item" : "AsteroidField"},
-					{"weight" : 0.1, "item" : "Barren"},
-					{"weight" : 0.1, "item" : "Tier5"},
-					{"weight" : 0.5, "item" : "Tier6"}
-				  ],
-				  "satelliteTypes" : []
-				}
-			  ]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/systemTypes/arcana_star_superstorm",
-		"value":
-		{
-			  "selectionWeight" : 1.0,
-			  "baseParameters" : {
-				"typeName" : "arcana_star_superstorm",
-				"image" : "/celestial/system/arcana_star_superstorm.png",
-				"twinkleTime" : [1.0, 1.5],
-				"spaceThreatLevel" : 8
-			  },
-			  "variationParameters" : [
-				{
-				  "magnitude" : 3,
-				  "description" : "Small Superstorm Star",
-				  "imageScale" : 0.04,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_superstorm_7px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star7px.png",
-				  "brightness" : [1, 1]
-				},
-				{
-				  "magnitude" : 5,
-				  "description" : "Medium Superstorm Star",
-				  "imageScale" : 0.055,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_superstorm_13px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star13px.png",
-				  "brightness" : [1, 1]
-				},
-				{
-				  "magnitude" : 7,
-				  "description" : "Large Superstorm Star",
-				  "imageScale" : 0.075,
-				  "twinkleFrames" : "/celestial/stars/arcana_star_superstorm_17px.png",
-				  "twinkleBackground" : "/celestial/stars/backgrounds/star17px.png",
-				  "brightness" : [1, 1]
-				}
-			  ],
-			  "orbitRegions" : [
-				{
-				  "regionName" : "Tier6Inner",
-				  "orbitRange" : [2, 5],
-				  "bodyProbability" : 0.5,
-				  "planetaryTypes" : [
-					{"weight" : 0.05, "item" : "Tier5"},
-					{"weight" : 0.15, "item" : "Tier6"},
-					{"weight" : 0.7, "item" : "arcana_planetary_superstorm"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
-				  ],
-				  "satelliteTypes" : [
-					{"weight" : 1, "item" : "Moon"}
-				  ]
-				},
-				{
-				  "regionName" : "Tier6Mid",
-				  "orbitRange" : [6, 7],
-				  "bodyProbability" : 0.25,
-				  "planetaryTypes" : [
-					{"weight" : 0.9, "item" : "GasGiant"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
-				  ],
-				  "satelliteTypes" : [
-					{"weight" : 0.1, "item" : "Moon"},
-					{"weight" : 0.05, "item" : "Tier5"},
-					{"weight" : 0.10, "item" : "arcana_planetary_arcane"},
-					{"weight" : 0.15, "item" : "arcana_planetary_illuminated"},
-					{"weight" : 0.6, "item" : "arcana_planetary_superstorm"}
-				  ]
-				},
-				{
-				  "regionName" : "Tier6Outer",
-				  "orbitRange" : [8, 10],
-				  "bodyProbability" : 0.5,
-				  "planetaryTypes" : [
-					{"weight" : 0.05, "item" : "Tier5"},
-					{"weight" : 0.15, "item" : "arcana_planetary_arcane"},
-					{"weight" : 0.7, "item" : "arcana_planetary_superstorm"},
-					{"weight" : 0.05, "item" : "Barren"},
-					{"weight" : 0.05, "item" : "AsteroidField"}
-				  ],
-				  "satelliteTypes" : [
-					{"weight" : 1, "item" : "Moon"}
-				  ]
-				},
-				{
-				  "regionName" : "Gate",
-				  "orbitRange" : [11, 11],
-				  "bodyProbability" : 1.0,
-				  "planetaryTypes" : [
-					{"weight" : 0.2, "item" : "AncientGateway"},
-					{"weight" : 0.1, "item" : "AsteroidField"},
-					{"weight" : 0.1, "item" : "Barren"},
-					{"weight" : 0.1, "item" : "Tier5"},
-					{"weight" : 0.5, "item" : "Tier6"}
-				  ],
-				  "satelliteTypes" : []
-				}
-			  ]
-		}
-	},
+			}
+		},
 
-	{
-		"op":"add",
-		"path":"/planetaryTypes/arcana_planetary_superstorm",
-		"value":
 		{
-			  "satelliteProbability" : 0.35,
-			  "maxSatelliteCount" : 2,
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_arcaneForest",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_arcaneForest_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-			  "baseParameters" : {
-				"worldType" : "Terrestrial",
-				"description" : "Superstorm Planet",
-				"smallImage" : "/celestial/system/planet_small.png",
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_arcaneForest",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneForest/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_arcaneForest"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_arcaneDesert",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_arcaneDesert_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-				"terrestrialType" : [ "arcana_superstormExpanse", "arcana_stahlernBadlands", "arcana_timeless", "arcana_neonSea", "arcana_automated", "arcana_viridescent"]
-			  },
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_arcaneDesert",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneDesert/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_arcaneDesert"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_arcaneTundra",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_arcaneTundra_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-			  "variationParameters" : [
-				{
-				  "imageScale" : 0.1,
-				  "smallImageScale" : 0.5,
-				  "worldSize" : "medium"
-				},
-				{
-				  "imageScale" : 0.125,
-				  "smallImageScale" : 0.6,
-				  "worldSize" : "large"
-				}
-			  ]
-		}
-	},
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_arcaneTundra",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneTundra/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
+			"value":"arcana_arcaneTundra"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_arcaneTundra"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_arcaneTundra"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_verdant",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_verdant_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op":"add",
-		"path":"/planetaryTypes/arcana_planetary_illuminated",
-		"value":
 		{
-			  "satelliteProbability" : 0.35,
-			  "maxSatelliteCount" : 2,
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_verdant",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_verdant/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
+			"value":"arcana_verdant"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
+			"value":"arcana_verdant"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_verdant"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_blistering",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_blistering_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-			  "baseParameters" : {
-				"worldType" : "Terrestrial",
-				"description" : "Illuminated Planet",
-				"smallImage" : "/celestial/system/planet_small.png",
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_blistering",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_blistering/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier2/baseParameters/terrestrialType/-",
+			"value":"arcana_blistering"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
+			"value":"arcana_blistering"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_windswept",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_windswept_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-				"terrestrialType" : [ "arcana_illuminated", "arcana_desolate", "arcana_goldenForest", "arcana_sanguine", "arcana_ferocious", "arcana_animus", "arcana_evoaquatic", "arcana_ardentTaiga"]
-			  },
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_windswept",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_windswept/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
+			"value":"arcana_windswept"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_windswept"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_windswept"
+		},
+		
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_turbulent",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_turbulent_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-			  "variationParameters" : [
-				{
-				  "imageScale" : 0.1,
-				  "smallImageScale" : 0.5,
-				  "worldSize" : "medium"
-				},
-				{
-				  "imageScale" : 0.125,
-				  "smallImageScale" : 0.6,
-				  "worldSize" : "large"
-				}
-			  ]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/arcana_planetary_arcane",
-		"value":
 		{
-			  "satelliteProbability" : 0.4,
-			  "maxSatelliteCount" : 3,
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_turbulent",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_turbulent/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier2/baseParameters/terrestrialType/-",
+			"value":"arcana_turbulent"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
+			"value":"arcana_turbulent"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_arcaneSea",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_arcaneSea_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-			  "baseParameters" : {
-				"worldType" : "Terrestrial",
-				"description" : "Arcane Planet",
-				"smallImage" : "/celestial/system/planet_small.png",
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_arcaneSea",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneSea/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_goldenForest",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_goldenForest_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-				"terrestrialType" : [ "arcana_arcaneForest", "arcana_arcaneDesert", "arcana_arcaneSea", "arcana_arcaneTundra", "arcana_blistering", "arcana_turbulent", "arcana_verdant", "arcana_windswept" ]
-			  },
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_goldenForest",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_goldenForest/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_goldenForest"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_goldenForest"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_illuminated",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_illuminated_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-			  "variationParameters" : [
-				{
-				  "imageScale" : 0.1,
-				  "smallImageScale" : 0.5,
-				  "worldSize" : "medium"
-				},
-				{
-				  "imageScale" : 0.125,
-				  "smallImageScale" : 0.6,
-				  "worldSize" : "large"
-				}
-			  ]
-		}
-	},
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_illuminated",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_illuminated/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_illuminated"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_illuminated"
+		},
+		
+	{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_desolate",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_desolate_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_arcaneForest",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_arcaneForest_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_desolate",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_desolate/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_desolate"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_desolate"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_illuminated",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_illuminated_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_arcaneForest",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneForest/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneForest"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneForest"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneForest"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_arcaneDesert",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_illuminated",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_illuminated/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_arcaneDesert_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_illuminated"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_illuminated"
+		},
+		
+	{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_sanguine",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_sanguine_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_arcaneDesert",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneDesert/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneDesert"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneDesert"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneDesert"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_arcaneTundra",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_sanguine",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_sanguine/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_arcaneTundra_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_sanguine"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_sanguine"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_ferocious",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_ferocious_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_arcaneTundra",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneTundra/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneTundra"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneTundra"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneTundra"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_verdant",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_ferocious",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_ferocious/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_verdant_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_ferocious"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_ferocious"
+		},
+		
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_animus",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_animus_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_verdant",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_verdant/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
-		"value":"arcana_verdant"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
-		"value":"arcana_verdant"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_verdant"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_blistering",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_animus",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_animus/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_blistering_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_animus"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_animus"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_evoaquatic",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_evoaquatic_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_blistering",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_blistering/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier2/baseParameters/terrestrialType/-",
-		"value":"arcana_blistering"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
-		"value":"arcana_blistering"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_windswept",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_evoaquatic",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_evoaquatic/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_windswept_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_evoaquatic"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_evoaquatic"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_ardentTaiga",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_ardentTaiga_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_windswept",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_windswept/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
-		"value":"arcana_windswept"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_windswept"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_windswept"
-	},
-	
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_turbulent",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_ardentTaiga",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_ardentTaiga/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_turbulent_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op":"add",
+			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
+			"value":"arcana_ardentTaiga"
+		},
+		
+		{
+			"op":"add",
+			"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+			"value":"arcana_ardentTaiga"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_superstormExpanse",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_superstormExpanse_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_turbulent",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_turbulent/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier2/baseParameters/terrestrialType/-",
-		"value":"arcana_turbulent"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
-		"value":"arcana_turbulent"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
-		"value":"arcana_turbulent"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_arcaneSea",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_superstormExpanse",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_superstormExpanse/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_arcaneSea_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_stahlernBadlands",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_stahlernBadlands_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_arcaneSea",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneSea/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneSea"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneSea"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_arcaneSea"
-	},
-	
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_goldenForest",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_stahlernBadlands",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_stahlernBadlands/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_goldenForest_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_timeless",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_timeless_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_goldenForest",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_goldenForest/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_goldenForest"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_goldenForest"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_illuminated",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_timeless",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_timeless/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_illuminated_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_automated",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_automated_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_illuminated",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_illuminated/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_illuminated"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_illuminated"
-	},
-	
-{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_desolate",
-		"value" :
-		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_desolate_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_automated",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_automated/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_desolate",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_desolate/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_desolate"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_desolate"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_illuminated",
-		"value" :
-		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_illuminated_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_neonSea",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_neonSea_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_illuminated",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_illuminated/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_illuminated"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_illuminated"
-	},
-	
-{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_sanguine",
-		"value" :
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_neonSea",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_neonSea/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_sanguine_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_viridescent",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_viridescent_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_sanguine",
-		"value" :
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_sanguine/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_viridescent",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_viridescent/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
 		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_sanguine"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_sanguine"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_ferocious",
-		"value" :
-		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_ferocious_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
+	],
 
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_ferocious",
-		"value" :
+	// TrueSpace Patch
+	[ 
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_ferocious/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_ferocious"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_ferocious"
-	},
-	
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_animus",
-		"value" :
+		  "op": "test",
+		  "path": "/systemTypes/ClassMStar",
+		  "inverse": false
+		},
+		
+		// Planets
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_animus_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_animus",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneForest"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_animus/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_animus"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_animus"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_evoaquatic",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneForest"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_evoaquatic_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_evoaquatic",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneForest"
+		},
+		
+		// Sats
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_evoaquatic/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_evoaquatic"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_evoaquatic"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_ardentTaiga",
-		"value" :
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneForest"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_ardentTaiga_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_ardentTaiga",
-		"value" :
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneForest"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_ardentTaiga/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-		"value":"arcana_ardentTaiga"
-	},
-	
-	{
-		"op":"add",
-		"path":"/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
-		"value":"arcana_ardentTaiga"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_superstormExpanse",
-		"value" :
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneForest"
+		},
+		
+		// Planets
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_superstormExpanse_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_superstormExpanse",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneDesert"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_superstormExpanse/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_stahlernBadlands",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneDesert"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_stahlernBadlands_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_stahlernBadlands",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneDesert"
+		},
+		
+		// Sats
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_stahlernBadlands/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_timeless",
-		"value" :
+		  "op": "add",
+		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneDesert"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_timeless_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_timeless",
-		"value" :
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneDesert"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_timeless/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_automated",
-		"value" :
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneDesert"
+		},
+		
+		// Planets
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_automated_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_automated",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneTundra"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_automated/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_neonSea",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/FrostyPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneTundra"
+		},
+		
+		// Sats
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_neonSea_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_neonSea",
-		"value" :
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneTundra"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_neonSea/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
-		}
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/terrestrialHorizonGraphics/arcana_viridescent",
-		"value" :
+		  "op": "add",
+		  "path": "/satelliteTypes/FrostyNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneTundra"
+		},
+		
+		// Planets
 		{
-			"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_viridescent_<selector>.png",
-			"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
-			"maskRange" : [1, 25],
-			"maskPerPlanetRange" : [3, 3]
-		}
-	},
-
-	{
-		"op" : "add",
-		"path" : "/terrestrialGraphics/arcana_viridescent",
-		"value" :
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneSea"
+		},
 		{
-			"baseImages" : "/celestial/system/terrestrial/biomes/arcana_viridescent/maskie<num>.png",
-			"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-			"dynamicsRange" : [1, 30]
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneSea"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_arcaneSea"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/SpicyPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_blistering"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_blistering"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/SpicyNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_blistering"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_blistering"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_turbulent"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_turbulent"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_turbulent"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_turbulent"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_turbulent"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_turbulent"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_verdant"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_verdant"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_verdant"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_verdant"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_verdant"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_verdant"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_windswept"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_windswept"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_windswept"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_windswept"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_windswept"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_windswept"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_illuminated"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_illuminated"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_illuminated"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_illuminated"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_illuminated"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_illuminated"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_goldenForest"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_goldenForest"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_goldenForest"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_goldenForest"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_goldenForest"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_goldenForest"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_desolate"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_desolate"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_desolate"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_desolate"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_desolate"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_desolate"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_ferocious"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_ferocious"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_ferocious"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_ferocious"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_ferocious"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_ferocious"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_sanguine"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_sanguine"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_sanguine"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_sanguine"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_sanguine"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_sanguine"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_sanguine"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_sanguine"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_animus"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/SpicyPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_evoaquatic"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_evoaquatic"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_evoaquatic"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/SpicyNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_evoaquatic"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_evoaquatic"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_evoaquatic"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_ardentTaiga"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_ardentTaiga"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/FrostyPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_ardentTaiga"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_ardentTaiga"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_ardentTaiga"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/FrostyNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_ardentTaiga"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/FrostyPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/FrostyNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_stahlernBadlands"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_stahlernBadlands"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_stahlernBadlands"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_stahlernBadlands"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
 		}
-	}
+	]
 ]

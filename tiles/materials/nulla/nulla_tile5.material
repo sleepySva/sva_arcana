@@ -1,0 +1,21 @@
+{
+  "materialId" : 16745,
+  "materialName" : "nulla_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "nulla_tile5",
+  "description" : "A black and white palace fence tile.",
+  "shortdescription" : "Nulla Fence",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "nulla_tile5.png",
+    "variants" : 2,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 1
+  }
+}

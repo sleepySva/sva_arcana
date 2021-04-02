@@ -1,0 +1,21 @@
+{
+  "materialId" : 16843,
+  "materialName" : "arcana_platform_nullaPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_nullaPlatform",
+  "shortdescription" : "Nulla Platform",
+  "description" : "A pale platform.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 20,
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_nullaPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

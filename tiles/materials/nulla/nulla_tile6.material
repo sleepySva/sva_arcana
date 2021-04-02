@@ -1,0 +1,22 @@
+{
+  "materialId" : 16746,
+  "materialName" : "nulla_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "nulla_tile6",
+  "description" : "A composition of pale plants.",
+  "shortdescription" : "Illuminated Leaf Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "nulla_tile6.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 1804,
+	"radiantLight" : [40, 40, 40]
+  }
+}

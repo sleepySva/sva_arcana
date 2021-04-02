@@ -1,0 +1,21 @@
+{
+  "materialId" : 16748,
+  "materialName" : "nihil_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "nihil_tile2",
+  "description" : "A distorted cobblestone tile.",
+  "shortdescription" : "Nullastone",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "nihil_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 748
+  }
+}

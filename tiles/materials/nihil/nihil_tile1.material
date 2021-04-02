@@ -1,0 +1,22 @@
+{
+  "materialId" : 16747,
+  "materialName" : "nihil_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "nihil_tile1",
+  "description" : "The black void manifested as the solid earth.",
+  "shortdescription" : "Akyri Gi",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 40,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "nihil_tile1.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 747,
+	"radiantLight" : [20, 20, 20]
+  }
+}
