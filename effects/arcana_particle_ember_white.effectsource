@@ -1,0 +1,21 @@
+{
+  "kind" : "arcana_particle_ember_white",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.1,
+    "durationVariance" : 0.02,
+    "loops" : true,
+    "start" : {
+      "particles" : [ ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "arcana_particle_ember_white_1" ], [ "arcana_particle_ember_white_2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [ ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

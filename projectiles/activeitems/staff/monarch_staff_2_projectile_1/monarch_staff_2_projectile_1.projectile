@@ -1,0 +1,55 @@
+{
+  "projectileName" : "monarch_staff_2_projectile_1",
+  "physics" : "default",
+  
+  "timeToLive" : 6,
+  "bounces" : 0,
+  "speed" : 38,
+  "knockback" : 20,
+  
+  "image" : "monarch_staff_2_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [80, 80, 80],
+  "emitters" : ["arcana_particle_ember_white"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/monarch_staff_2_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "spear",
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 200,
+    "controlForce" : 160
+  }
+ 
+}

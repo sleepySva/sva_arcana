@@ -1,0 +1,164 @@
+{
+  "itemName" : "monarch_staff_2",
+  "price" : 1000,
+  "maxStack" : 1,
+  "level" : 7,
+  "rarity" : "Rare",
+  "description" : "A pale staff.",
+  "shortdescription" : "Purity",
+  "category" : "staff",
+  "tooltipFields" : {"subtitle" : "Longstaff"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+
+  "animation" : "/items/active/weapons/staff/arcana_longstaff_1.animation",
+  "animationParts" : {
+    "staff" : "monarch_staff_2.png",
+    "stone" : "stone.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [160, 160, 160]
+      }
+    }
+  },
+
+  "inventoryIcon" : "icon.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.8,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.5,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "elementswarm",
+  "primaryAbility" : {
+
+    "name" : "Lumin Bullets",
+	"energyCost" : 14,
+    "maxCastRange" : 20,
+	
+	"projectileType" : ["monarch_staff_2_projectile_1"],
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 6,
+    "projectileDistance" : 0.6,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "projectileParameters" : {
+      "baseDamage" : 22
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "altAbilityType" : "elementswarm",
+  "altAbility" : {
+
+    "name" : "Lumin Rain",
+	"energyCost" : 14,
+    "maxCastRange" : 20,
+	
+	"projectileType" : "monarch_staff_2_projectile_2",
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 1,
+    "projectileDistance" : 0.0,
+	
+    "projectileDelayFirst" : 0.01,
+    "projectileDelayEach" : 0.01,
+
+    "projectileParameters" : {
+      "baseDamage" : 10
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}
