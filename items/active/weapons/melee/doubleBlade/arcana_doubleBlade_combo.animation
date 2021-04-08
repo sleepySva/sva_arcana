@@ -139,6 +139,17 @@
         { "particle" : "arcana_particle_white"}
       ]
     },
+    "arcana_lumenswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 20,
+      "burstCount" : 2,
+      "particles" : [
+        { "particle" : "arcana_particle_white"},
+        { "particle" : "arcana_particle_white"},
+        { "particle" : "arcana_particle_white"}
+      ]
+    },
     "fireswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],

@@ -38,9 +38,9 @@ end
 function ControlProjectile:charge()
   self.weapon:setStance(self.stances.charge)
 
-  animator.playSound(self.elementalType.."charge")
+  animator.playSound("physicalcharge")
   animator.setAnimationState("charge", "charge")
-  animator.setParticleEmitterActive(self.elementalType .. "charge", true)
+  animator.setParticleEmitterActive("physicalcharge", true)
   activeItem.setCursor("/cursors/charge2.cursor")
 
   local chargeTimer = self.stances.charge.duration
@@ -52,12 +52,12 @@ function ControlProjectile:charge()
     coroutine.yield()
   end
 
-  animator.stopAllSounds(self.elementalType.."charge")
+  animator.stopAllSounds("physicalcharge")
 
   if chargeTimer <= 0 then
     self:setState(self.charged)
   else
-    animator.playSound(self.elementalType.."discharge")
+    animator.playSound("physicaldischarge")
     self:setState(self.cooldown)
   end
 end
@@ -65,9 +65,9 @@ end
 function ControlProjectile:charged()
   self.weapon:setStance(self.stances.charged)
 
-  animator.playSound(self.elementalType.."fullcharge")
-  animator.playSound(self.elementalType.."chargedloop", -1)
-  animator.setParticleEmitterActive(self.elementalType .. "charge", true)
+  animator.playSound("physicalfullcharge")
+  animator.playSound("physicalchargedloop", -1)
+  animator.setParticleEmitterActive("physicalcharge", true)
 
   local targetValid
   while self.fireMode == (self.activatingFireMode or self.abilitySlot) do
@@ -88,10 +88,10 @@ function ControlProjectile:discharge()
   activeItem.setCursor("/cursors/reticle0.cursor")
 
   if self:targetValid(activeItem.ownerAimPosition()) and status.overConsumeResource("energy", self.energyCost * self.baseDamageFactor) then
-    animator.playSound(self.elementalType.."activate")
+    animator.playSound("physicalactivate")
     self:createProjectiles()
   else
-    animator.playSound(self.elementalType.."discharge")
+    animator.playSound("physicaldischarge")
     self:setState(self.cooldown)
     return
   end
@@ -110,8 +110,8 @@ function ControlProjectile:discharge()
     coroutine.yield()
   end
 
-  animator.playSound(self.elementalType.."discharge")
-  animator.stopAllSounds(self.elementalType.."chargedloop")
+  animator.playSound("physicaldischarge")
+  animator.stopAllSounds("physicalchargedloop")
 
   self:setState(self.cooldown)
 end
@@ -121,7 +121,7 @@ function ControlProjectile:cooldown()
   self.weapon.aimAngle = 0
 
   animator.setAnimationState("charge", "discharge")
-  animator.setParticleEmitterActive(self.elementalType .. "charge", false)
+  animator.setParticleEmitterActive("physicalcharge", false)
   activeItem.setCursor("/cursors/reticle0.cursor")
 
   util.wait(self.stances.cooldown.duration, function()
@@ -213,10 +213,10 @@ end
 
 function ControlProjectile:reset()
   self.weapon:setStance(self.stances.idle)
-  animator.stopAllSounds(self.elementalType.."chargedloop")
-  animator.stopAllSounds(self.elementalType.."fullcharge")
+  animator.stopAllSounds("physicalchargedloop")
+  animator.stopAllSounds("physicalfullcharge")
   animator.setAnimationState("charge", "idle")
-  animator.setParticleEmitterActive(self.elementalType .. "charge", false)
+  animator.setParticleEmitterActive("physicalcharge", false)
   activeItem.setCursor("/cursors/reticle0.cursor")
 end
 

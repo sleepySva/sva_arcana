@@ -77,14 +77,20 @@
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "arcana_lumen",
 
   "aimOffset" : -1.0,
 
   "primaryAbilityType" : "arcana_lance_combo",
   "primaryAbility" : {
     "fireTime" : 1.0,
-    "baseDps" : 10.4
+    "baseDps" : 10.4,
+	"damageConfig" : {
+      "damageSourceKind" : "arcana_lumen",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    }
   },
 
   "altAbilityType" : "flurry",

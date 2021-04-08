@@ -27,6 +27,21 @@
 				"kill" : "arcana_azuredamagenumber"
 			}
 		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/arcana_lumen",
+		"value": {
+			"resistanceStat" : "arcana_resistance_lumen",
+			"damageNumberParticles" : {
+				"hit" : "arcana_lumendamagenumber",
+				"stronghit" : "arcana_lumendamagenumberstrong",
+				"weakhit" : "arcana_lumendamagenumberweak",
+				"shieldhit" : "arcana_lumendamagenumber",
+				"kill" : "arcana_lumendamagenumber"
+			}
+		}
 	}
 
 ]

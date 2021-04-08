@@ -1,0 +1,21 @@
+{
+  "materialId" : 16730,
+  "materialName" : "arcana_tile24",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile24",
+  "description" : "A sloped concrete tile.",
+  "shortdescription" : "Sloped Concrete Block",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile24.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4730
+  }
+}

@@ -13,7 +13,7 @@
   "tooltipKind" : "staff",
   "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "monarch_staff_1" },
 
-  "animation" : "/items/active/weapons/staff/arcana_longstaff_1.animation",
+  "animation" : "/items/active/weapons/staff/arcana_longstaff_lumen.animation",
   "animationParts" : {
     "staff" : "monarch_staff_1.png",
     "stone" : "stone.png",
@@ -77,7 +77,7 @@
     }
   },
 
-  "elementalType" : "physical",
+  "elementalType" : "arcana_lumen",
 
   "primaryAbilityType" : "elementswarm",
   "primaryAbility" : {
@@ -129,7 +129,7 @@
 	
 	"projectileType" : "monarch_staff_1_projectile_3",
 	
-	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile.lua"],
     "class" : "ControlProjectile",
 	
 	"projectileCount" : 6,

@@ -12,7 +12,7 @@
   "itemTags" : ["weapon","staff"],
   "tooltipKind" : "staff",
 
-  "animation" : "/items/active/weapons/staff/arcana_longstaff_1.animation",
+  "animation" : "/items/active/weapons/staff/arcana_longstaff_lumen.animation",
   "animationParts" : {
     "staff" : "monarch_staff_2.png",
     "stone" : "stone.png",
@@ -76,7 +76,7 @@
     }
   },
 
-  "elementalType" : "physical",
+  "elementalType" : "arcana_lumen",
 
   "primaryAbilityType" : "elementswarm",
   "primaryAbility" : {
@@ -128,7 +128,7 @@
 	
 	"projectileType" : "monarch_staff_2_projectile_2",
 	
-	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile.lua"],
     "class" : "ControlProjectile",
 	
 	"projectileCount" : 1,

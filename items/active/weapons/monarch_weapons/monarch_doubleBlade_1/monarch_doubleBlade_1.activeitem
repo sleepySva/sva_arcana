@@ -24,12 +24,18 @@
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "arcana_lumen",
 
   "primaryAbilityType" : "arcana_doubleBlade_combo",
   "primaryAbility" : {
     "fireTime" : 1.0,
-    "baseDps" : 9.0
+    "baseDps" : 9.0,
+	"damageConfig" : {
+      "damageSourceKind" : "arcana_lumen",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    }
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
