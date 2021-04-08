@@ -1,18 +1,18 @@
 {
-  "objectName" : "arcana_terraformer_illuminated",
+  "objectName" : "arcana_terraformer_superstormExpanse",
   "colonyTags" : [],
   "rarity" : "Legendary",
-  "description" : "Transforms a planet's climate into an illuminated landscape.",
-  "shortdescription" : "Illuminated Terraformer",
+  "description" : "Transforms a planet into a superstorm, endless lightning fills the skies.",
+  "shortdescription" : "SuperstormExpanse Terraformer",
   "race" : "ancient",
   "category" : "terraformer",
   "price" : 5000,
   "printable" : false,
 
-  "inventoryIcon" : "arcana_terraformer_illuminated_icon.png",
+  "inventoryIcon" : "arcana_terraformer_superstormExpanse_icon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "arcana_terraformer_illuminated_fullbright.png:inactive", "fullbright" : true }, { "image" : "terraformer.png:inactive" } ],
+      "imageLayers" : [ { "image" : "arcana_terraformer_superstormExpanse_fullbright.png:inactive", "fullbright" : true }, { "image" : "terraformer.png:inactive" } ],
       "imagePosition" : [-16, 0],
 
       "direction" : "left",
@@ -22,7 +22,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "imageLayers" : [ { "image" : "arcana_terraformer_illuminated_fullbright.png:inactive", "fullbright" : true }, { "image" : "terraformer.png:inactive" } ],
+      "imageLayers" : [ { "image" : "arcana_terraformer_superstormExpanse_fullbright.png:inactive", "fullbright" : true }, { "image" : "terraformer.png:inactive" } ],
       "imagePosition" : [-16, 0],
 
       "direction" : "right",
@@ -39,8 +39,8 @@
   "animationPosition" : [-16, 0],
   "animationParts" : {
     "base" : "terraformer.png",
-    "baseFullbright" : "arcana_terraformer_illuminated_fullbright.png",
-    "beam" : "beam/terraformer_beam_illuminated.png"
+    "baseFullbright" : "arcana_terraformer_superstormExpanse_fullbright.png",
+    "beam" : "beam/terraformer_beam_superstormExpanse.png"
   },
 
   "scripts" : ["/objects/terraformer/terraformer.lua"],
@@ -54,6 +54,6 @@
 
   "planetTypeChangeThreshold" : 0.5,
 
-  "terraformBiome" : "arcana_illuminated",
-  "terraformPlanetType" : "arcana_illuminated"
+  "terraformBiome" : "arcana_superstormExpanse",
+  "terraformPlanetType" : "arcana_superstormExpanse"
 }
