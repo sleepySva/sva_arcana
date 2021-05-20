@@ -1,0 +1,7 @@
+{
+  "builder" : "/items/buildscripts/arcana_randomitem.lua",
+  "itemName" : "arcana_randomitem",
+  "rarity" : "rare", //required. I choose 'rare' because it's only 4 bytes
+  "pool" : "sandstoneTreasure", //optional. defaults to 'desertTreasure' if no pool or pool doesn't exist 
+  "level" : 1 //optional
+}
