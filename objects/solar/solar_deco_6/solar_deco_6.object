@@ -1,0 +1,37 @@
+{
+  "objectName" : "solar_deco_6",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "A mysterious broken statue of some sort of a diety.",
+  "shortdescription" : "Ancient Statue",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "solar_deco_6.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-56, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "solar_deco_6.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "right",
+      "imagePosition" : [-56, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

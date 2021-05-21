@@ -1,0 +1,65 @@
+{
+  "itemName" : "solar_lance_2",
+  "price" : 1000,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "An ancient artifact that has lost most of its energy.",
+  "shortdescription" : "Broken Solarron",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "tooltipFields" : {"subtitle" : "Lance"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/spear/solar_lance_2.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "solar_lance_2.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "arcana_solar",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 7.2,
+    "damageConfig" : {
+      "damageSourceKind" : "arcana_solar"
+    }
+  },
+
+  "altAbilityType" : "arcana_spear_ability_burstFlurry",
+  "altAbility" : {
+  
+	"projectileCount" : 1,
+    "projectileType" : "solar_lance_2_projectile_1",
+    "projectileParameters" : {
+      "baseDamage" : 3.2
+    },
+  
+	"name" : "Broken Solar Flurry",
+	"cooldownResetTime" : 0.28,
+    "maxCooldownTime" : 0.28,
+    "minCooldownTime" : 0.28,
+    "cooldownSwingReduction" : 0.18,
+    "energyUsage" : 62.0,
+    "cooldownTime" : 0.28,
+    "damageConfig" : {
+      "damageSourceKind" : "arcana_solar"
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "A piece of pale colored leggings, crafted from holosium.",
+  "description" : "A piece of pale colored leggings, crafted from holosium. ^green;+10% Lumin res.^reset;",
   "shortdescription" : "Lepidoptera Leggings",
   "tooltipKind" : "armor",
 
@@ -33,6 +33,11 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 18
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "arcana_resistance_lumin",
+      "amount" : 0.1
     }
   ],
 

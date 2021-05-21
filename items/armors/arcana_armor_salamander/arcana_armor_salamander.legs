@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "legwear",
-  "description" : "A piece of heavy armor made from obsidian.",
+  "description" : "A piece of heavy armor made from obsidian. ^green;+20% Fire res.^reset;",
   "shortdescription" : "Salamander Leggings",
   "tooltipKind" : "armor",
 
@@ -33,6 +33,11 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 4
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "fireResistance",
+      "amount" : 0.2
     }
   ],
 

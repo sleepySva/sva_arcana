@@ -1,0 +1,156 @@
+{
+  "name" : "arcana_daybroken",
+  "friendlyName" : "Daybroken",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [ 
+          [ 1.0, "arcana_soli" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.25, "mousecritter" ],
+          [ 0.25, "squeekcritter" ],
+          [ 0.25, "deserttortoisecritter" ],
+          [ 0.25, "bowbirdcritter" ],
+          [ 0.25, "toucritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "desert"
+    }
+  },
+  
+  "mainBlock" : "cloudblock",
+  "subBlocks" : [ "solarized_tile3", "rock02", "solarized_tile2" ],
+  "ores" : "arcana_dracoRidge_ores_surface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.2,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_daybroken_dungeon_1" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 5,
+        "treeStemHueShiftMax" : 20,
+        "treeStemList" : [ "arcana_daybroken_stem_1" ],
+        "treeFoliageList" : [ "arcana_daybroken_foliage_1" ]
+      },
+
+      // CROPS
+
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildfeathercrownseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildkiwiseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "aridgrass" ],
+    "grassModDensity" : 0.4,
+
+    "ceilingGrassMod" : [ "moss" ],
+    "ceilingGrassModDensity" : 0.8,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 3,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "oasisvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "oasisChest" ]
+      }
+    ]
+  }
+}

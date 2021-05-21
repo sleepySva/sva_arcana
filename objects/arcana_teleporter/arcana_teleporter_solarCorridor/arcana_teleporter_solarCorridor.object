@@ -1,0 +1,56 @@
+{
+  "objectName" : "arcana_teleporter_solarCorridor",
+  "colonyTags" : ["ancient"],
+  "rarity" : "Legendary",
+  "category" : "other",
+  "price" : 0,
+  "printable" : false,
+
+  "description" : "A mysterious doorway leading into an unknown dimension. What could possibly go wrong?",
+  "shortdescription" : "Challenge Door",
+  "race" : "ancient",
+
+  "apexDescription" : "A strange door to find out here. To what dimension could it lead me?",
+  "avianDescription" : "An ominous door that could lead to any dimension.",
+  "floranDescription" : "Mysssterious door. Where could it lead?",
+  "glitchDescription" : "Cautious. Am I prepared to face whatever is on the other side of this gate?",
+  "humanDescription" : "A mysterious door leading into an unknown dimension. What could possibly go wrong?",
+  "hylotlDescription" : "An enigmatic doorway to an unknown destination... or a concealed opportunity?",
+  "novakidDescription" : "What's a door like this doin' out here?",
+
+  "lightColor" : [76, 60, 86],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "arcana_teleporter_solarCorridor.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+      "imagePosition" : [-16, 0],
+      "animationPosition" : [-16, 0],
+      "spaceScan" : 0.1,
+
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+
+      "lightPosition" : [0, 3],
+
+      "detectArea" : [ [-3, 0], [3, 5] ]
+    }
+  ],
+
+  "animation" : "/objects/arcana_teleporter/arcana_teleporter_solarCorridor/arcana_teleporter_solarCorridor.animation",
+  "animationParts" : {
+    "bg" : "arcana_teleporter_solarCorridor.png",
+    "fg" : "fullbright.png"
+  },
+
+  "scripts" : [ "/objects/arcana_teleporter/arcana_teleporter_solarCorridor/arcana_teleporter_solarCorridor.lua" ],
+  "scriptDelta" : 20,
+
+  "vanishTime" : 15,
+
+  "messagePlayerInterval" : 0.5,
+  "messagePlayerRange" : 30,
+
+  "health" : 10,
+  "smashOnBreak" : true
+}

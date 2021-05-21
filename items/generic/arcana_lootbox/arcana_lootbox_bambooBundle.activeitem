@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_lootbox_bambooBundle",
+  "price" : 500,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "A bundle of 400 bamboo tiles.",
+  "shortdescription" : "Bamboo Bundle",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "arcana_lootbox_bambooBundle.png",
+  "animation" : "arcana_lootbox.animation",
+  "animationCustom" : {},
+  "scripts" : ["arcana_lootbox.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "arcana_lootbox_bambooBundle",
+    "level" : 1
+  }
+}

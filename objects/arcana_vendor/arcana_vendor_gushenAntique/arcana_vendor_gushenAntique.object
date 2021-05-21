@@ -1,0 +1,110 @@
+{
+  "objectName" : "arcana_vendor_gushenAntique",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "An antique shop, looks like it's got a lot of interesting items for sale.",
+  "shortdescription" : "Gushen Antique",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+  "lightColor" : [60, 50, 50],
+
+  "offeredQuests" : [
+    "arcana_quests_gushenAntique_1",
+	"arcana_quests_gushenAntique_2",
+	"arcana_quests_gushenAntique_3",
+	"arcana_quests_gushenAntique_4",
+	"arcana_quests_gushenAntique_5"
+  ],
+  "turnInQuests" : [
+    "arcana_quests_gushenAntique_1",
+	"arcana_quests_gushenAntique_2",
+	"arcana_quests_gushenAntique_3",
+	"arcana_quests_gushenAntique_4",
+	"arcana_quests_gushenAntique_5"
+  ],
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Gushen Antique",
+        "subtitle" : " Antiques & Pots"
+      }
+    },
+    "buyFactor" : 8.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "bigjar1" },
+	  { "item" : "midjar1" },
+	  { "item" : "smalljar1" },
+	  { "item" : "talljar2" },
+	  { "item" : "goldenurn" },
+	  { "item" : "ashjar1" },
+	  { "item" : "ashjar2" },
+	  { "item" : "ashjar3" },
+	  { "item" : "birdjar1" },
+	  { "item" : "birdjar2" },
+	  { "item" : "claypot1" },
+	  { "item" : "claypot2" },
+	  { "item" : "claypot3" },
+	  { "item" : "planturn1" },
+	  { "item" : "planturn2" },
+	  { "item" : "planturn3" },
+	  { "item" : "vaseclassiclarge1" },
+	  { "item" : "vaseclassiclarge2" },
+	  { "item" : "vaseclassicmedium2" },
+	  { "item" : "vaseclassicsmall1" },
+	  { "item" : "vaseclassicsmall2" },
+	  { "item" : "wickerbasket1" },
+	  { "item" : "wickerbasket2" },
+	  { "item" : "wickerbasket3" },
+	  { "item" : "wickerbasket4" },
+	  { "item" : "wickerbasket5" },
+	  { "item" : "solar_deco_2" },
+	  { "item" : "solar_storage_1" },
+	  { "item" : "solar_deco_5" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "arcana_vendor_gushenAntique.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-72, 0],
+      "frames" : 32,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "arcana_vendor_gushenAntique.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "right",
+      "imagePosition" : [-72, 0],
+      "frames" : 32,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [ "/objects/arcana_lua_object_chat.lua" ],
+  "scriptDelta" : 20,
+  "mouthPosition" : [-2.5, -10],
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "Want to take a look? I might have some items that will interest you.",
+    "Hey, what's up?",
+	"I heard the Ancient Vault's got a lot of cool items.. I might take a stroll there later.",
+	"I have some Ancient antiques if you're interested. They don't come cheap, though.",
+    "Have you been to a Solar Corridor yet? You might get an artifact or two in there if you're lucky."
+  ]
+}

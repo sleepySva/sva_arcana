@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "Blade of the endless serpent.",
-  "shortdescription" : "Ouroburos",
+  "shortdescription" : "Ouroboros",
   "tooltipKind" : "sword",
   "category" : "broadsword",
   "tooltipFields" : {"subtitle" : "Katana"},
@@ -14,7 +14,7 @@
 
   "inventoryIcon" : "icon.png",
 
-  "animation" : "/items/active/weapons/melee/katana/arcana_katana_combo.animation",
+  "animation" : "/items/active/weapons/melee/katana/arcana_katana_combo_ouroburos.animation",
   "animationParts" : {
     "handle" : "",
     "blade" : "misc_katana_ouroburos.png"
@@ -28,7 +28,7 @@
   "primaryAbilityType" : "arcana_katana_combo",
   "primaryAbility" : {
     "fireTime" : 0.8,
-    "baseDps" : 10.1
+    "baseDps" : 9.8
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"

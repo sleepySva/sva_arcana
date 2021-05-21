@@ -1,0 +1,25 @@
+{
+  "projectileName" : "solar_fireball_3",
+  "physics" : "sticky",
+  "bounces" : -1,
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "timeToLive" : 3,
+  "image" : "solar_fireball_3.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 36,
+  "animationCycle" : 0.5,
+  "lightColor" : [84, 47, 26],
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smallregularexplosion/smallregularexplosion.config"
+    }
+  ],
+  "power" : 10,
+  "emitters" : [ "fireplasma", "smoke", "flames", "fireplasma", "smoke", "flames" ],
+  "damageKind" : "arcana_solar"
+}

@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_zhushiPlatter",
+  "rarity" : "Uncommon",
+  "price" : 320,
+  "category" : "preparedFood",
+  "inventoryIcon" : "arcana_food_zhushiPlatter.png",
+  "description" : "A traditional seasoned chicken and vegetable dish, served with a roubao. ^green;+20% max health for 270s.^reset;",
+  "shortdescription" : "Zhushi Platter",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 270
+    }
+  ] ],
+  "foodValue" : 40,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

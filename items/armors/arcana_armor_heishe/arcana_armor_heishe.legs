@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "A light armor piece crafted from aegistalt, corrodium and necroium.",
+  "description" : "A light armor piece crafted from aegistalt, corrodium and necroium. ^green;+5% Poison res.^reset;",
   "shortdescription" : "Heishe Leggings",
   "tooltipKind" : "armor",
 
@@ -33,6 +33,11 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 18
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "poisonResistance",
+      "amount" : 0.05
     }
   ],
 

@@ -18,6 +18,24 @@
         [1.0, 1]
       ]
     }]
+  ],
+  
+  "arcana_monsterdrops_soli" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 20]}
+      ],
+      "pool" : [
+		{"weight" : 0.2, "item" : ["arcana_essence_solarEssence", 1]},
+		{"weight" : 0.2, "item" : ["solar_crafting_solarCoreFragment", 1]},
+        {"weight" : 0.2, "item" : ["solar_crafting_solarCoreFragment", 1]},
+        {"weight" : 0.2, "item" : ["solar_crafting_solarCoreFragment", 1]},
+		{"weight" : 0.2, "item" : ["money", 40]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
   ]
 }
 

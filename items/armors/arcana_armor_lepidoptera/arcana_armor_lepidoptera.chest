@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "chestwear",
-  "description" : "A pale colored armor, crafted from holosium.",
+  "description" : "A pale colored armor, crafted from holosium. ^green;+10% Lumin res.^reset;",
   "shortdescription" : "Lepidoptera Shell",
   "tooltipKind" : "armor",
 
@@ -42,6 +42,11 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 20
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "arcana_resistance_lumin",
+      "amount" : 0.1
     }
   ],
 

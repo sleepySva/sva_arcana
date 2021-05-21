@@ -1,0 +1,37 @@
+{
+  "metadata" : {
+    "name" : "arcana_solarized_dungeon_3",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_solarized_dungeon_3_part_1",
+	"arcana_solarized_dungeon_3_part_2"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_solarized_dungeon_3_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_3_part_1.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_3_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_3_part_2.json" ]
+    }
+
+  ]
+}

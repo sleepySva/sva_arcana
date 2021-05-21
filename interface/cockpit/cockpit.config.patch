@@ -7,7 +7,23 @@
         "op": "test",
         "path": "/displayDungeons"
   },
-
+  
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_solarized_dungeon_3",
+	"value": {
+		"description" : "A tall oriental tower. Hostile signatures detected.",
+		"icon" : "/interface/cockpit/dungeons/arcana_solarized_dungeon_3.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_solarized_dungeon_2",
+	"value": {
+		"description" : "A small oriental town surrounded by bamboo plants and sky blue ponds.",
+		"icon" : "/interface/cockpit/dungeons/arcana_solarized_dungeon_2.png"
+	}
+  },
   {
     "op": "add",
     "path": "/displayDungeons/arcana_viridescent_dungeon_1",
@@ -127,6 +143,21 @@
     "op": "add",
     "path": "/starTypeNames/arcana_star_superstorm",
     "value": "Superstorm Star"
+  },
+  
+  {
+    "op": "add",
+    "path": "/starTypeColors/arcana_star_polar",
+    "value": [
+      70,
+      65,
+      199
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/starTypeNames/arcana_star_polar",
+    "value": "Tripolar Star"
   },
 
   {
@@ -783,6 +814,94 @@
       216,
       72
     ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_solarized",
+    "value": [
+      "The ^#ffbb79;solarized^white; is a sun soaked planet burning with fervent heat. Some ancient remains and shrines can be found, though caution is advised before heading down.",
+      "The ^#ffbb79;solarized^white; is a sun soaked planet burning with fervent heat. Some ancient remains and shrines can be found, though caution is advised before heading down.",
+      "The ^#ffbb79;solarized^white; is a sun soaked planet burning with fervent heat. Some ancient remains and shrines can be found, though caution is advised before heading down."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_solarized",
+    "value": "Solarized"
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_atumiumOre",
+    "value": {
+      "displayName": "Atumium",
+      "icon": "/items/generic/arcana_ores/arcana_ore_atumiumOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_solarized",
+    "value": [
+      255,
+      187,
+      121
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_sceantine",
+    "value": {
+      "displayName": "Sceantine",
+      "icon": "/items/generic/arcana_misc/arcana_misc_sceantine.png"
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_bambooForest",
+    "value": [
+      "The ^#597f34;bamboo forest^white; is filled with lush vegetation, and is abundant with bamboo stalks.",
+      "The ^#597f34;bamboo forest^white; is filled with lush vegetation, and is abundant with bamboo stalks.",
+      "The ^#597f34;bamboo forest^white; is filled with lush vegetation, and is abundant with bamboo stalks."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_bambooForest",
+    "value": "Bamboo Forest"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_bambooForest",
+    "value": [
+      89,
+      127,
+      52
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_aspiriteOre",
+    "value": {
+      "displayName": "Aspirite",
+      "icon": "/items/generic/arcana_ores/arcana_ore_aspiriteOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_noxionOre",
+    "value": {
+      "displayName": "Noxion",
+      "icon": "/items/generic/arcana_ores/arcana_ore_noxionOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_immoriteOre",
+    "value": {
+      "displayName": "Immorite",
+      "icon": "/items/generic/arcana_ores/arcana_ore_immoriteOre.png"
+    }
   }
   ]
 ]

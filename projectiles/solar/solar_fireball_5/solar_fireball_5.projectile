@@ -1,0 +1,103 @@
+{
+  "projectileName" : "solar_fireball_5",
+  
+  "physics" : "sticky",
+  "bounces" : -1,
+  "piercing" : true,
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "physicsCollisions" : {
+    "piece1" : {
+      "collision" : [ [-1.8, 1.8], [1.8, 1.8] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece2" : {
+      "collision" : [ [-1.8, -1.8], [1.8, -1.8] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece3" : {
+      "collision" : [ [-1.8, 1.8], [-1.8, -1.8] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece4" : {
+      "collision" : [ [1.8, 1.8], [1.8, -1.8] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    }
+  },
+  
+  "animationCycle" : 0.1,
+  "frameNumber" : 3,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  
+  "timeToLive" : 4,
+  "image" : "solar_fireball_5.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 19,
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "lightColor" : [84, 47, 26],
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smallregularexplosion/smallregularexplosion.config"
+    },
+	{
+		"action" : "projectile",
+		"type" : "solar_fireball_3",
+		"angleAdjust" : 60,
+		"inheritDamageFactor" : 1.0
+	},
+	{
+		"action" : "projectile",
+		"type" : "solar_fireball_3",
+		"angleAdjust" : 120,
+		"inheritDamageFactor" : 1.0
+	},
+	{
+		"action" : "projectile",
+		"type" : "solar_fireball_3",
+		"angleAdjust" : 180,
+		"inheritDamageFactor" : 1.0
+	},
+	{
+		"action" : "projectile",
+		"type" : "solar_fireball_3",
+		"angleAdjust" : 0,
+		"inheritDamageFactor" : 1.0
+	},
+	{
+		"action" : "projectile",
+		"type" : "solar_fireball_3",
+		"angleAdjust" : -60,
+		"inheritDamageFactor" : 1.0
+	},
+	{
+		"action" : "projectile",
+		"type" : "solar_fireball_3",
+		"angleAdjust" : -120,
+		"inheritDamageFactor" : 1.0
+	}
+  ],
+  "periodicActions" : [
+    {
+      "time" : 4.8,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/vehicle_disappear2.ogg" ]
+    }
+  ],
+  "power" : 18,
+  "emitters" : [ "fireplasma", "smoke", "flames", "fireplasma", "smoke", "flames" ],
+  "damageKind" : "arcana_solar",
+  
+  "persistentAudio" : "/sfx/projectiles/forcecage_loop.ogg"
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16752,
+  "materialName" : "polar_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "polar_tile2",
+  "description" : "A green rock found in noxion caves.",
+  "shortdescription" : "Noxion Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "polar_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1752
+  }
+}

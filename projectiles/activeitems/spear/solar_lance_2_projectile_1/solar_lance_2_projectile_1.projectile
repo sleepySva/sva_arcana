@@ -1,0 +1,42 @@
+{
+  "projectileName" : "solar_lance_2_projectile_1",
+  "physics" : "default",
+  "timeToLive" : 6,
+  "bounces" : 0,
+  "image" : "solar_lance_2_projectile_1.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : [ "flames" ],
+  "frameNumber" : 1,
+  "speed" : 72,
+  "knockback" : 20,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smallregularexplosion/smallregularexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/spear/solar_lance_2_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "lightColor" : [202, 180, 75],
+  "damageKind" : "arcana_solar"
+  
+}

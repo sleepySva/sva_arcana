@@ -1,0 +1,29 @@
+{
+  "itemName" : "arcana_augment_raven",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_raven.png",
+  "description" : "^green;Grants resistance to fall damage, +60% attack, +60% speed^reset; ^red;and -40% health.^reset;",
+  "shortdescription" : "Gilded Key - Raven",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_raven",
+    "displayName" : "Raven Booster",
+    "displayIcon" : "/items/augments/back/arcana_augment_raven.png",
+    "effects" :
+	[
+		"arcana_status_gildedRaven",
+		"arcana_status_attackPercent_60",
+		"arcana_status_runSpeed_60",
+		"arcana_status_maxHealthPercent_40_neg",
+		"nofalldamage"
+	]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

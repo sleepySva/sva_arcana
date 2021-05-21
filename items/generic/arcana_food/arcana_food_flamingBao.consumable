@@ -1,0 +1,28 @@
+{
+  "itemName" : "arcana_food_flamingBao",
+  "rarity" : "Uncommon",
+  "price" : 280,
+  "category" : "preparedFood",
+  "inventoryIcon" : "arcana_food_flamingBao.png",
+  "description" : "A burning steamed bun with barbeque meat and vegetable fillings. ^green;+20% max health and +20% attack for 90s.^reset;",
+  "shortdescription" : "Flaming Bao",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 90
+    },
+    {
+        "effect" : "ragefood",
+        "duration" : 90
+    }
+  ] ],
+  "foodValue" : 30,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

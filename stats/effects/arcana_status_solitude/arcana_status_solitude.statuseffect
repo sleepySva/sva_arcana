@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_status_solitude",
+  "effectConfig" : {
+    "minRange" : 0.5,
+
+    "damageMultiplier" : 80.0,
+    "damageProjectileType" : "arcana_status_solitude_damage",
+
+    "cooldown" : 4,
+
+    "minTriggerDamage" : -1,
+
+    "removeInWater" : false
+  },
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "arcana_status_solitude.lua"
+  ],
+
+  "label" : "Solitude",
+  "icon" : "/interface/statuses/arcana_status_solitude.png"
+}

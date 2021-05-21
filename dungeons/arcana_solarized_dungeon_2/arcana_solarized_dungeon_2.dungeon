@@ -1,0 +1,127 @@
+{
+  "metadata" : {
+    "name" : "arcana_solarized_dungeon_2",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_solarized_dungeon_2_part_left",
+	"arcana_solarized_dungeon_2_part_right"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 7,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_solarized_dungeon_2_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_1.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_2.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_3.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_4.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_5", "arcana_solarized_dungeon_2_part_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_5.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_5", "arcana_solarized_dungeon_2_part_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_6.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_7" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_7.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_8" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_8.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_9" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_9.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_10",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_10" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_10.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_11",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_solarized_dungeon_2_part_11" ] ]
+      ],
+      "def" : [ "tmx", "arcana_solarized_dungeon_2_part_11.json" ]
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_solarized_dungeon_2_part_left.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_solarized_dungeon_2_part_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_solarized_dungeon_2_part_right.json" ] ],
+      "chance" : 0
+    }
+
+  ]
+}

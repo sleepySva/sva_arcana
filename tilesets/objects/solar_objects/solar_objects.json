@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":1,
+ "tilecount":13,
  "tileheight":256,
  "tileproperties":
     {
@@ -16,14 +16,157 @@
          "imagePositionY":"0",
          "object":"solar_deco_1",
          "tilesetDirection":"right"
+        },
+     "1":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-0",
+         "imagePositionY":"0",
+         "object":"solar_light_1",
+         "tilesetDirection":"right"
+        },
+     "2":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"solar_pot_1",
+         "tilesetDirection":"right"
+        },
+     "3":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"solar_pot_2",
+         "tilesetDirection":"right"
+        },
+     "4":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-4",
+         "imagePositionY":"0",
+         "object":"solar_pot_3",
+         "tilesetDirection":"right"
+        },
+     "5":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"solar_deco_2",
+         "tilesetDirection":"right"
+        },
+     "6":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"solar_deco_3",
+         "tilesetDirection":"right"
+        },
+     "7":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"solar_deco_4",
+         "tilesetDirection":"right"
+        },
+     "8":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_teleporter_solarCorridor",
+         "tilesetDirection":"right"
+        },
+     "9":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_teleporter_solarCorridor_return",
+         "tilesetDirection":"right"
+        },
+     "10":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"solar_deco_5",
+         "tilesetDirection":"right"
+        },
+     "11":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"solar_storage_1",
+         "tilesetDirection":"right"
+        },
+     "12":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-56",
+         "imagePositionY":"0",
+         "object":"solar_deco_6",
+         "tilesetDirection":"right"
         }
-
     },
  "tiles":
     {
      "0":
         {
          "image":"solar_deco_1.png"
+        },
+     "1":
+        {
+         "image":"solar_light_1.png"
+        },
+     "2":
+        {
+         "image":"solar_pot_1.png"
+        },
+     "3":
+        {
+         "image":"solar_pot_2.png"
+        },
+     "4":
+        {
+         "image":"solar_pot_3.png"
+        },
+     "5":
+        {
+         "image":"solar_deco_2.png"
+        },
+     "6":
+        {
+         "image":"solar_deco_3.png"
+        },
+     "7":
+        {
+         "image":"solar_deco_4.png"
+        },
+     "8":
+        {
+         "image":"arcana_teleporter_solarCorridor.png"
+        },
+     "9":
+        {
+         "image":"arcana_teleporter_solarCorridor_return.png"
+        },
+     "10":
+        {
+         "image":"solar_deco_5.png"
+        },
+     "11":
+        {
+         "image":"solar_storage_1.png"
+        },
+     "12":
+        {
+         "image":"solar_deco_6.png"
         }
     },
  "tilewidth":188

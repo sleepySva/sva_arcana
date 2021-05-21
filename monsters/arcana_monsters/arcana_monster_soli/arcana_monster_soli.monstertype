@@ -1,0 +1,245 @@
+{
+  "type" : "arcana_monster_soli",
+  "shortdescription" : "Soli",
+  "description" : "A small creature burning with solar flame.",
+
+  "categories" : [ "arcana_monster_soli" ],
+  "parts" : [ "body" ],
+
+  "animation" : "arcana_monster_soli.animation",
+
+  "dropPools" : [ { "default" : "arcana_monsterdrops_soli", "bow" : "arcana_monsterdrops_soli" } ],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    
+    "damageBar" : "default", 
+
+    "behavior" : "monster",
+
+    "seeThroughLiquid" : true,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 20,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 20,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.5,
+
+            "projectileType" : "solar_fireball_1",
+			"projectileCount" : 2,
+            "projectileInterval" : 0.4,
+            "projectileParameters" : {
+              "speed" : 32
+            },
+			"inaccuracy" : 0.3,
+            "fireOffset" : [0.0, 0.75],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.5
+          }
+        },
+        {
+          "name" : "action-charge",
+          "cooldown" : 1.0,
+          "parameters" : {
+            "maximumRange" : 60,
+            "windupStopForce" : 50,
+            "windupTime" : 0.5,
+
+            "onGround" : false,
+            "wallCollide" : true,
+            "aimAtTarget" : true,
+            "chargeTime" : 0.35,
+            "chargeSpeed" : 60,
+            "chargeControlForce" : 250,
+
+            "winddownState" : ""
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 4,
+            "maxRange" : 8
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,4],
+            "groundDistance" : 5,
+            "ceilingDistance" : 4,
+            "xVelocity" : 3,
+            "yVelocity" : 6
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.5, 1.25],  [1.25, 0.5], [1.25, -1.0], [0.5, -1.75], [-0.5, -1.75], [-1.25, -1.0], [-1.25, 0.5], [-0.5, 1.25] ],
+      "damage" : 12,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-1, -1, 1, 1],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.5, 1.25],  [1.25, 0.5], [1.25, -1.0], [0.5, -1.75], [-0.5, -1.75], [-1.25, -1.0], [-1.25, 0.5], [-0.5, 1.25] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 6,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 4,
+      "airForce" : 40,
+      "flySpeed" : 16
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.4
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 100
+        },
+        "protection" : {
+          "baseValue" : 4.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "arcana_resistance_solar" : {
+          "baseValue" : 0.6
+        },
+        "fireResistance" : {
+          "baseValue" : 0.8
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceResistance" : {
+          "baseValue" : -0.2
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : 0.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 0.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -4],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id" : "arcana_quests_gushenAntique_1",
+  "prerequisites" : [],
+  "title" : "^green;Past Relics I",
+  "text" : "I've been interested in ^orange;Ancient relics^white; for some time.. If you happen to come across one, can you bring back an ^green;Ancient Bust^white; for me?",
+  "completionText" : "Well done. I've got a few more commissions if you're interested.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	  [ "rewardbag", 1 ],
+	  [ "money", 1000 ]
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      },
+      "questFailed" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "ancientbust",
+        "count" : 1,
+        "consume" : true
+      }
+    ]
+  }
+}

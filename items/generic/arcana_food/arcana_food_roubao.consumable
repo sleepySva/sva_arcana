@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_roubao",
+  "rarity" : "Common",
+  "price" : 160,
+  "category" : "preparedFood",
+  "inventoryIcon" : "arcana_food_roubao.png",
+  "description" : "A simple traditional steamed bun with pork fillings. ^green;+20% max health for 90s.^reset;",
+  "shortdescription" : "Roubao",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 90
+    }
+  ] ],
+  "foodValue" : 30,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

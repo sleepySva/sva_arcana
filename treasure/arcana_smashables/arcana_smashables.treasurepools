@@ -1,0 +1,32 @@
+
+{
+
+  "arcana_smashables_solarEssence_small" : [
+    [0, {
+      "pool" : [
+        {"weight" : 1.0, "item" : ["arcana_essence_solarEssence", 1]}
+      ]
+    }]
+  ],
+
+  "arcana_smashables_solarEssence_medium" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.5, "item" : ["arcana_essence_solarEssence", 1]},
+        {"weight" : 0.5, "item" : ["arcana_essence_solarEssence", 2]}
+      ]
+    }]
+  ],
+
+  "arcana_smashables_solarEssence_large" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.5, "item" : ["arcana_essence_solarEssence", 2]},
+        {"weight" : 0.5, "item" : ["arcana_essence_solarEssence", 3]}
+      ]
+    }]
+  ]
+ 
+}
+
+

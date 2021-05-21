@@ -1,0 +1,21 @@
+{
+  "modId" : 16822,
+  "modName" : "arcana_mod_immoriteOre",
+  "itemDrop" : "arcana_randomitem_immorite",
+  "description" : "Immorite ore.",
+  "health" : 16,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_precious.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "arcana_particle_ember_blue_1",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_immoriteOre.png",
+    "variants" : 4,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [0, 0, 220]
+  }
+}

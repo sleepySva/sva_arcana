@@ -1,0 +1,285 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_solarCorridor",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "arcana_dungeon_solarCorridor_entrance_left_1" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 7,
+    "protected" : true
+  },
+
+  "parts" : [
+
+    // ENTRANCES
+    {
+      "name" : "arcana_dungeon_solarCorridor_entrance_left_1",
+      "rules" : [
+        [ "doNotCombineWith", [ "arcana_dungeon_solarCorridor_entrance_left_1", "arcana_dungeon_solarCorridor_exit_right_1"] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_entrance_left_1.json" ],
+      "chance" : 1000
+    },
+
+    // LAYOUT ROOMS
+    {
+      "name" : "arcana_dungeon_solarCorridor_room_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_solarCorridor_room_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_room_1.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_room_2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_solarCorridor_room_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_room_2.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_room_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_solarCorridor_room_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_room_3.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_room_4",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_solarCorridor_room_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_room_4.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_room_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_solarCorridor_room_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_room_5.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_room_6",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_solarCorridor_room_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_room_6.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_room_7",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_solarCorridor_room_7" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_room_7.json" ],
+      "chance" : 500
+    },
+	
+	// EXIT
+    {
+      "name" : "arcana_dungeon_solarCorridor_exit_right_1",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [ "arcana_dungeon_solarCorridor_exit_right_1" ] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_solarCorridor_entrance_left_1", "arcana_dungeon_solarCorridor_exit_right_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_exit_right_1.json" ],
+      "chance" : 1
+    },
+
+    // END CAPS
+    {
+      "name" : "arcana_dungeon_solarCorridor_left_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_left_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_left_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_left_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_left_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_left_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_left_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_left_4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_left_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_left_5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_right_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_right_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_right_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_right_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_right_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_right_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_right_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_right_4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_right_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_right_5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_bottom_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_bottom_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_bottom_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_bottom_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_bottom_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_bottom_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_bottom_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_bottom_4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_bottom_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_bottom_5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_top_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_top_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_top_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_top_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_top_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_top_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_top_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_top_4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_solarCorridor_top_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_solarCorridor_top_5.json" ],
+      "chance" : 0
+    }
+  ]
+}

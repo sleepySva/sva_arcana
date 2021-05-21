@@ -19,7 +19,20 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_furnace_3.png:<color>.<frame>",
+	  "imageLayers" : [ { "image" : "arcana_crafting_furnace_3.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 8,
+      "animationCycle" : 1.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "arcana_crafting_furnace_3.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
       "imagePosition" : [-16, 0],
       "frames" : 8,
       "animationCycle" : 1.2,

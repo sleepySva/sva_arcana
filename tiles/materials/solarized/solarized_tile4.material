@@ -1,0 +1,21 @@
+{
+  "materialId" : 16660,
+  "materialName" : "solarized_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "solarized_tile4",
+  "description" : "An ancient building material.",
+  "shortdescription" : "Solar Ancient Material",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 38,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "solarized_tile4.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1394
+  }
+}

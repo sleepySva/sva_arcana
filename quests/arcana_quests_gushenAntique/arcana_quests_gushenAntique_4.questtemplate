@@ -1,0 +1,48 @@
+{
+  "id" : "arcana_quests_gushenAntique_4",
+  "prerequisites" : [ "arcana_quests_gushenAntique_3" ],
+  "title" : "^green;Past Relics IV",
+  "text" : "The Florans are an interesting bunch, I'm curious of what relics they have as well. I'll reward you well if you bring me a piece of ^green;Primitive Hunter Art^white; and a ^green;Champion's Spear Display^white; from ^orange;Floran settlements^white;.",
+  "completionText" : "Hmm, these aren't very special, but they hold some historical values at least.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	  [ "medkit", 5 ],
+	  [ "money", 2000 ]
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      },
+      "questFailed" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "floranhunterpainting",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "championspeardisplay",
+        "count" : 1,
+        "consume" : true
+      }
+    ]
+  }
+}

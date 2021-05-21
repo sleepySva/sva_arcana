@@ -93,9 +93,78 @@
   
   {
 	"op" : "add",
-	"path" : "/outpost/worldProperties",
+	"path" : "/arcana_dungeon_solarCorridor",
 	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "arcana_dungeon_solarCorridor",
+	  "spawningEnabled" : false,
+      "beamUpRule" : "AnywhereWithWarning",
+	  "disableDeathDrops" : true,
+
+	  "worldProperties" : {
 		"nonCombat" : false
+	  },
+
+	  "skyParameters" : {
+        "dayLength" : 10000,
+        "surfaceLevel" : 1000,
+        "spaceLevel" : 3000,
+        "seed" : -5288806180628666923,
+
+        "skyType" : "barren",
+        "skyColoring" : {
+          "mainColor" : [100, 100, 155],
+
+          "morningColors" : [[64, 78, 53, 80], [98, 82, 70, 160]],
+          "dayColors" : [[64, 78, 53, 80], [98, 82, 70, 160]],
+          "eveningColors" : [[64, 78, 53, 80], [98, 82, 70, 160]],
+          "nightColors" : [ [64, 78, 53, 80], [98, 82, 70, 160] ],
+
+          "morningLightColor" : [70, 40, 40],
+          "dayLightColor" : [70, 40, 40],
+          "eveningLightColor" : [70, 40, 40],
+          "nightLightColor" : [70, 40, 40]
+        }
+      }
+	}
+  },
+  
+  {
+	"op" : "add",
+	"path" : "/arcana_dungeon_zhushiPond",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "arcana_dungeon_zhushiPond",
+	  "seed" : 1111,
+	  "spawningEnabled" : false,
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "worldProperties" : {
+		"nonCombat" : true
+	  },
+
+	  "skyParameters" : {
+		"dayLength" : 1000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+	  
+		"skyType" : "atmospheric",
+		"skyColoring" : {
+		  "mainColor" : [255, 255, 255],
+
+		  "morningColors" : [ [115, 224, 255], [255, 255, 255] ],
+		  "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+		  "eveningColors" : [ [115, 224, 255], [255, 255, 255] ],
+		  "nightColors" : [ [115, 224, 255], [255, 255, 255] ],
+
+		  "morningLightColor" : [200, 200, 200],
+		  "dayLightColor" : [200, 200, 200],
+		  "eveningLightColor" : [200, 200, 200],
+		  "nightLightColor" : [200, 200, 200]
+        }
+      }
 	}
   }
 ]

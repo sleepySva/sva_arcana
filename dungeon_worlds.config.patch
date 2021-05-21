@@ -18,5 +18,46 @@
       "biome" : "arcana_superstormExpanse",
       "musicTrack" : "/music/planetarium.ogg"
     }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_solarCorridor",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_solarCorridor",
+	  "weatherPool" : [
+		[1.000, "clear"]
+	  ],
+      "threatLevel" : 8,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 810,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/the-deep.ogg",
+      "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_zhushiPond",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_zhushiPond",
+	  "weatherPool" : [
+		[0.850, "clear"],
+		[0.075, "rain"],
+		[0.075, "drizzle"]
+	  ],
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1140,
+	  "dungeonSurfaceHeight" : 1000,
+      "ambientLightLevel" : [128, 128, 128],
+      "biome" : "arcana_bambooForest",
+      "musicTrack" : "/music/elegy-of-the-star.ogg"
+    }
   }
 ]

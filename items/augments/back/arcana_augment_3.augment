@@ -1,19 +1,25 @@
 {
   "itemName" : "arcana_augment_3",
-  "price" : 5000,
-  "rarity" : "Rare",
+  "price" : 1000,
+  "rarity" : "Legendary",
   "tooltipKind" : "eppaugment",
   "category" : "eppAugment",
   "inventoryIcon" : "arcana_augment_3.png",
-  "description" : "An EPP module that boosts your max health by a huge amount.",
+  "description" : "^green;Grants light gravity, +40% run speed, immunity to fall damage and +20% energy.^reset;",
   "shortdescription" : "Arcana II, The High Priestess",
 
   "augment" : {
     "type" : "back",
-    "name" : "arcana_augment_1",
+    "name" : "arcana_augment_3",
     "displayName" : "The High Priestess",
     "displayIcon" : "/items/augments/back/arcana_augment_3.png",
-    "effects" : [ "maxenergyboostaugment1","regenerationaugment1","rageaugment1" ]
+    "effects" :
+	[
+		"lowgrav",
+		"arcana_status_energyPercent_20",
+		"arcana_status_runSpeed_40",
+		"nofalldamage"
+	]
   },
 
   "radioMessagesOnPickup" : [ "pickupaugment" ],

@@ -42,6 +42,21 @@
 				"kill" : "arcana_lumendamagenumber"
 			}
 		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/arcana_solar",
+		"value": {
+			"resistanceStat" : "arcana_resistance_solar",
+			"damageNumberParticles" : {
+				"hit" : "arcana_solardamagenumber",
+				"stronghit" : "arcana_solardamagenumberstrong",
+				"weakhit" : "arcana_solardamagenumberweak",
+				"shieldhit" : "arcana_solardamagenumber",
+				"kill" : "arcana_solardamagenumber"
+			}
+		}
 	}
 
 ]

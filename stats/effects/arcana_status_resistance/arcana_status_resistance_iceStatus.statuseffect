@@ -1,0 +1,12 @@
+{
+  "name" : "arcana_status_resistance_iceStatus",
+  "effectConfig" : {
+	"modifier" : 1.0,
+	"resistance" : "iceStatusImmunity"
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_resistance.lua"
+  ]
+}

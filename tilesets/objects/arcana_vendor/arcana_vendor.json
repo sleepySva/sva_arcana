@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":8,
+ "tilecount":12,
  "tileheight":256,
  "tileproperties":
     {
@@ -72,8 +72,39 @@
          "imagePositionY":"0",
          "object":"arcana_vendor_8",
          "tilesetDirection":"right"
+        },
+     "8":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"arcana_vendor_gushenAntique",
+         "tilesetDirection":"right"
+        },
+     "9":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_vendor_oreo",
+         "tilesetDirection":"right"
+        },
+     "10":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"arcana_dungeon_zhushiPond_npc_hui",
+         "tilesetDirection":"right"
+        },
+     "11":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_vendor_kucaiRestaurant",
+         "tilesetDirection":"right"
         }
-
     },
  "tiles":
     {
@@ -108,6 +139,22 @@
      "7":
         {
          "image":"arcana_vendor_8.png"
+        },
+     "8":
+        {
+         "image":"arcana_vendor_gushenAntique.png"
+        },
+     "9":
+        {
+         "image":"arcana_vendor_oreo.png"
+        },
+     "10":
+        {
+         "image":"arcana_dungeon_zhushiPond_npc_hui.png"
+        },
+     "11":
+        {
+         "image":"arcana_vendor_kucaiRestaurant.png"
         }
     },
  "tilewidth":188

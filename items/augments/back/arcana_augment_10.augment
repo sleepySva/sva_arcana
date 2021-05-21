@@ -1,0 +1,27 @@
+{
+  "itemName" : "arcana_augment_10",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_10.png",
+  "description" : "^green;Grants +20% resist to Ice and immunity to frost. Inflict ice damage to the attacker when damaged.^reset;",
+  "shortdescription" : "Arcana IX, The Hermit",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_10",
+    "displayName" : "The Hermit",
+    "displayIcon" : "/items/augments/back/arcana_augment_10.png",
+    "effects" :
+	[
+		"arcana_status_solitude",
+		"arcana_status_resistance_ice_20",
+		"arcana_status_resistance_iceStatus"
+	]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

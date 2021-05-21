@@ -1,0 +1,46 @@
+{
+  "type" : "arcana_dungeon_zhushiPond_npc_bingjiu",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+  "persistent" : true,
+  
+  "identity" : {
+    "name" : "Bingjiu",
+    "gender" : "male",
+	"species" : "hylotl",
+	"hairType" : "2",
+	"bodyDirectives" : "?replace;ffca8a=B8F4BB;e0975c=72DD7E;a85636=4AA559;6f2919=266535?replace;f32200=FFFFE7;dc1f00=FFE48E;be1b00=C1AA5C;951500=7C7135",
+	"hairDirectives" : "?replace;f7e7b2=B1F1FE;d9c189=5DD1EC;a38d59=3491AA;735e3a=196072"
+  },
+
+  "scriptConfig" : {
+  
+    "behavior" : "villager",
+
+	"dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Ah, welcome to Zhushi, traveller.",
+			"The Zhushi Pond is a small place, but it's perfect for meditating.",
+			"Oreo the panda is super adorable too! Just thinking about it makes me want to pet him.",
+			"If you're ever hungry, you can get some local specialties from Mei."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "traditionalchest", "parameters" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "traditionallegs", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

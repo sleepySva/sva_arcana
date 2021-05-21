@@ -24,7 +24,7 @@ function Flurry:update(dt, fireMode, shiftHeld)
 end
 
 function Flurry:firePosition()
-  return vec2.add(mcontroller.position(), {0.1 * 1, -0.6})
+  return vec2.add(mcontroller.position(), {0.1 * 1, -1.0})
 end
 
 function Flurry:aimVector()

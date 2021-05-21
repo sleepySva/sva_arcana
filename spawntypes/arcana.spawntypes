@@ -19,6 +19,60 @@
     }
   },
   
+  {
+    "name" : "arcana_soli",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_soli"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_solstice",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_solstice"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_tricanard",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_tricanard"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
   
   // Illuminated
   

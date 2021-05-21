@@ -1,0 +1,23 @@
+{
+  "kind" : "arcana_energy_solar",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_animation_energy_solar/arcana_animation_energy_solar.animation",
+    "initialVelocity" : [0.0, 2.0],
+    "finalVelocity" : [0.0, 0.0],
+    "approach" : [6, 6],
+    "timeToLive" : 1.0,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "fullbright" : true,
+    "light" : [134, 71, 179, 255],
+    "size" : 0.5,
+    "variance" : {
+      "position" : [0, 0],
+      "initialVelocity" : [3, 3],
+      "finalVelocity" : [3, 3],
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

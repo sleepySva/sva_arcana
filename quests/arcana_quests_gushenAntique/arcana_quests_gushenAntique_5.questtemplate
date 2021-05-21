@@ -1,0 +1,48 @@
+{
+  "id" : "arcana_quests_gushenAntique_5",
+  "prerequisites" : [ "arcana_quests_gushenAntique_4" ],
+  "title" : "^green;Past Relics V",
+  "text" : "You've done well so far, I'll give you a special reward if you can find some ^orange;Solar relics^white; for me also. These are a bit harder to find, bring me a ^green;Solar Flame Emitter^white; and a ^green;Solar Smoke Machine^white;.",
+  "completionText" : "These relics are curious indeed.. I'll examine these later myself. Here, have this old lance for your troubles, it's not of much use to me anyway. Take care now.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	  [ "solar_lance_2", 1 ],
+	  [ "money", 200 ]
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      },
+      "questFailed" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "solar_light_1",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "solar_deco_1",
+        "count" : 1,
+        "consume" : true
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id" : "arcana_quests_gushenAntique_3",
+  "prerequisites" : [ "arcana_quests_gushenAntique_2" ],
+  "title" : "^green;Past Relics III",
+  "text" : "I'm looking for some ^orange;Avian murals^white; this time. Bring me back an ^green;Kluex Gift Mural^white; and an ^green;Kluex World Mural^white;, if possible.",
+  "completionText" : "Ah, those are just what I needed. Here's your reward.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	  [ "rewardbag", 1 ],
+	  [ "money", 2000 ]
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      },
+      "questFailed" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_gushenAntique/portrait.png"} ],
+        "title" : "Shu"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "kluexmural2",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "kluexmural1",
+        "count" : 1,
+        "consume" : true
+      }
+    ]
+  }
+}

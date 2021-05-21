@@ -1,0 +1,21 @@
+{
+  "modId" : 16820,
+  "modName" : "arcana_mod_aspiriteOre",
+  "itemDrop" : "arcana_randomitem_aspirite",
+  "description" : "Aspirite ore.",
+  "health" : 16,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_precious.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "arcana_particle_ember_red_1",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_aspiriteOre.png",
+    "variants" : 4,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [220, 0, 0]
+  }
+}

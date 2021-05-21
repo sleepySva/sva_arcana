@@ -6,7 +6,7 @@
 
 		{
 			"op": "add",
-			"path": "/systemTypeBins/5",
+			"path": "/systemTypeBins/-",
 			"value": [
 			  0.1,
 			  "arcana_star_arcane"
@@ -14,7 +14,7 @@
 		},
 		{
 			"op": "add",
-			"path": "/systemTypeBins/6",
+			"path": "/systemTypeBins/-",
 			"value": [
 			  0.14,
 			  "arcana_star_illuminated"
@@ -22,10 +22,18 @@
 		},
 		{
 			"op": "add",
-			"path": "/systemTypeBins/7",
+			"path": "/systemTypeBins/-",
 			"value": [
 			  0.18,
 			  "arcana_star_superstorm"
+			]
+		},
+		{
+			"op": "add",
+			"path": "/systemTypeBins/-",
+			"value": [
+			  0.20,
+			  "arcana_star_polar"
 			]
 		},
 
@@ -338,7 +346,141 @@
 				  ]
 			}
 		},
+		
+		{
+			"op":"add",
+			"path":"/systemTypes/arcana_star_polar",
+			"value":
+			{
+				  "selectionWeight" : 1.0,
+				  "baseParameters" : {
+					"typeName" : "arcana_star_polar",
+					"image" : "/celestial/system/arcana_star_polar.png",
+					"twinkleTime" : [1.0, 1.5],
+					"spaceThreatLevel" : 8
+				  },
+				  "variationParameters" : [
+					{
+					  "magnitude" : 3,
+					  "description" : "Small Polar Star",
+					  "imageScale" : 0.04,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_polar_7px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star7px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 5,
+					  "description" : "Medium Polar Star",
+					  "imageScale" : 0.055,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_polar_13px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star13px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 7,
+					  "description" : "Large Polar Star",
+					  "imageScale" : 0.075,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_polar_17px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star17px.png",
+					  "brightness" : [1, 1]
+					}
+				  ],
+				  "orbitRegions" : [
+					{
+					  "regionName" : "Tier6Inner",
+					  "orbitRange" : [2, 5],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.10, "item" : "Tier6"},
+						{"weight" : 0.75, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Mid",
+					  "orbitRange" : [6, 7],
+					  "bodyProbability" : 0.25,
+					  "planetaryTypes" : [
+						{"weight" : 0.9, "item" : "GasGiant"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 0.1, "item" : "Moon"},
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.10, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.10, "item" : "arcana_planetary_illuminated"},
+						{"weight" : 0.65, "item" : "arcana_planetary_polar"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Outer",
+					  "orbitRange" : [8, 10],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.10, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.75, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Gate",
+					  "orbitRange" : [11, 11],
+					  "bodyProbability" : 1.0,
+					  "planetaryTypes" : [
+						{"weight" : 0.2, "item" : "AncientGateway"},
+						{"weight" : 0.1, "item" : "AsteroidField"},
+						{"weight" : 0.1, "item" : "Barren"},
+						{"weight" : 0.1, "item" : "Tier5"},
+						{"weight" : 0.5, "item" : "Tier6"}
+					  ],
+					  "satelliteTypes" : []
+					}
+				  ]
+			}
+		},
 
+		{
+			"op":"add",
+			"path":"/planetaryTypes/arcana_planetary_polar",
+			"value":
+			{
+				  "satelliteProbability" : 0.35,
+				  "maxSatelliteCount" : 2,
+
+				  "baseParameters" : {
+					"worldType" : "Terrestrial",
+					"description" : "Polar Planet",
+					"smallImage" : "/celestial/system/planet_small.png",
+
+					"terrestrialType" : [ "arcana_solarized", "arcana_bambooForest", "snow"]
+				  },
+
+				  "variationParameters" : [
+					{
+					  "imageScale" : 0.1,
+					  "smallImageScale" : 0.5,
+					  "worldSize" : "medium"
+					},
+					{
+					  "imageScale" : 0.125,
+					  "smallImageScale" : 0.6,
+					  "worldSize" : "large"
+					}
+				  ]
+			}
+		},
+		
 		{
 			"op":"add",
 			"path":"/planetaryTypes/arcana_planetary_superstorm",
@@ -555,24 +697,6 @@
 		},
 		
 		{
-			"op":"add",
-			"path":"/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
-			"value":"arcana_verdant"
-		},
-		
-		{
-			"op":"add",
-			"path":"/planetaryTypes/Tier4/baseParameters/terrestrialType/-",
-			"value":"arcana_verdant"
-		},
-		
-		{
-			"op":"add",
-			"path":"/planetaryTypes/Tier5/baseParameters/terrestrialType/-",
-			"value":"arcana_verdant"
-		},
-		
-		{
 			"op" : "add",
 			"path" : "/terrestrialHorizonGraphics/arcana_blistering",
 			"value" :
@@ -670,18 +794,6 @@
 				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
 				"dynamicsRange" : [1, 30]
 			}
-		},
-		
-		{
-			"op":"add",
-			"path":"/planetaryTypes/Tier2/baseParameters/terrestrialType/-",
-			"value":"arcana_turbulent"
-		},
-		
-		{
-			"op":"add",
-			"path":"/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
-			"value":"arcana_turbulent"
 		},
 		
 		{
@@ -1159,6 +1271,52 @@
 				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
 				"dynamicsRange" : [1, 30]
 			}
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_solarized",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_solarized_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
+
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_solarized",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_solarized/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_bambooForest",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_bambooForest_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
+
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_bambooForest",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_bambooForest/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
 		}
 	],
 
@@ -1173,11 +1331,6 @@
 		// Planets
 		{
 		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneForest"
-		},
-		{
-		  "op": "add",
 		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_arcaneForest"
 		},
@@ -1188,11 +1341,6 @@
 		},
 		
 		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneForest"
-		},
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
@@ -1210,16 +1358,6 @@
 		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_arcaneDesert"
 		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneDesert"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneDesert"
-		},
 		
 		// Sats
 		{
@@ -1227,23 +1365,8 @@
 		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_arcaneDesert"
 		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneDesert"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneDesert"
-		},
 		
 		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneTundra"
-		},
 		{
 		  "op": "add",
 		  "path": "/planetaryTypes/FrostyPlanet/baseParameters/terrestrialType/-",
@@ -1251,11 +1374,6 @@
 		},
 		
 		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneTundra"
-		},
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/FrostyNSat/baseParameters/terrestrialType/-",
@@ -1270,11 +1388,6 @@
 		},
 		{
 		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneSea"
-		},
-		{
-		  "op": "add",
 		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_arcaneSea"
 		},
@@ -1283,11 +1396,6 @@
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_arcaneSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_arcaneSea"
 		},
 		{
@@ -1323,31 +1431,11 @@
 		// Planets
 		{
 		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_turbulent"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_turbulent"
-		},
-		{
-		  "op": "add",
 		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_turbulent"
 		},
 		
 		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_turbulent"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_turbulent"
-		},
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
@@ -1357,11 +1445,6 @@
 		// Planets
 		{
 		  "op": "add",
-		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_verdant"
-		},
-		{
-		  "op": "add",
 		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_verdant"
 		},
@@ -1372,11 +1455,6 @@
 		},
 		
 		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_verdant"
-		},
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
@@ -1391,31 +1469,11 @@
 		// Planets
 		{
 		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_windswept"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_windswept"
-		},
-		{
-		  "op": "add",
 		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_windswept"
 		},
 		
 		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_windswept"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_windswept"
-		},
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
@@ -1425,68 +1483,28 @@
 		// Planets
 		{
 		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_illuminated"
-		},
-		{
-		  "op": "add",
 		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_illuminated"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_illuminated"
 		},
 		
 		// Sats
 		{
 		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_illuminated"
-		},
-		{
-		  "op": "add",
 		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_illuminated"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_illuminated"
 		},
 		
 		// Planets
 		{
 		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_goldenForest"
-		},
-		{
-		  "op": "add",
 		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_goldenForest"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_goldenForest"
 		},
 		
 		// Sats
 		{
 		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_goldenForest"
-		},
-		{
-		  "op": "add",
 		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_goldenForest"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_goldenForest"
 		},
 		
@@ -1496,31 +1514,11 @@
 		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_desolate"
 		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_desolate"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_desolate"
-		},
 		
 		// Sats
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_desolate"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_desolate"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_desolate"
 		},
 		
@@ -1530,16 +1528,6 @@
 		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_ferocious"
 		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_ferocious"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_ferocious"
-		},
 		
 		// Sats
 		{
@@ -1547,58 +1535,18 @@
 		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_ferocious"
 		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_ferocious"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_ferocious"
-		},
 		
 		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_sanguine"
-		},
 		{
 		  "op": "add",
 		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_sanguine"
 		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_sanguine"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_sanguine"
-		},
 		
 		// Sats
 		{
 		  "op": "add",
-		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_sanguine"
-		},
-		{
-		  "op": "add",
 		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_sanguine"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_sanguine"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_sanguine"
 		},
 		
@@ -1608,26 +1556,6 @@
 		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_animus"
 		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_animus"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_animus"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_animus"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_animus"
-		},
 		
 		// Sats
 		{
@@ -1635,397 +1563,165 @@
 		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_animus"
 		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_evoaquatic"
+		},
+		
+		// Sats
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_animus"
+		  "value": "arcana_evoaquatic"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_ardentTaiga"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_ardentTaiga"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_superstormExpanse"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_neonSea"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
 		},
 		{
 		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_animus"
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
 		},
+		
+		// Sats
 		{
 		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_animus"
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_timeless"
 		},
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_animus"
+		  "value": "arcana_timeless"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_automated"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_stahlernBadlands"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_stahlernBadlands"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_viridescent"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_bambooForest"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_bambooForest"
 		},
 		
 		// Planets
 		{
 		  "op": "add",
 		  "path": "/planetaryTypes/SpicyPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_evoaquatic"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_evoaquatic"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_evoaquatic"
+		  "value": "arcana_solarized"
 		},
 		
 		// Sats
 		{
 		  "op": "add",
 		  "path": "/satelliteTypes/SpicyNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_evoaquatic"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_evoaquatic"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_evoaquatic"
-		},
-		
-		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_ardentTaiga"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_ardentTaiga"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/FrostyPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_ardentTaiga"
-		},
-		
-		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_ardentTaiga"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_ardentTaiga"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/FrostyNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_ardentTaiga"
-		},
-		
-		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		
-		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_superstormExpanse"
-		},
-		
-		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		
-		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_neonSea"
-		},
-		
-		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/FrostyPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		
-		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/FrostyNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_timeless"
-		},
-		
-		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_automated"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_automated"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_automated"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_automated"
-		},
-		
-		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_automated"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_automated"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_automated"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_automated"
-		},
-		
-		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/HotPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_stahlernBadlands"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_stahlernBadlands"
-		},
-		
-		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/HotNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_stahlernBadlands"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_stahlernBadlands"
-		},
-		
-		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/IradPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		
-		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/IradNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
-		},
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_viridescent"
+		  "value": "arcana_solarized"
 		}
 	]
 ]

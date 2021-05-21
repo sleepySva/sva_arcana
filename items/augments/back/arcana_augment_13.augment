@@ -1,0 +1,27 @@
+{
+  "itemName" : "arcana_augment_13",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_13.png",
+  "description" : "^green;Grants +20% resist to Electric, immunity to electrified and +60% energy.^reset;",
+  "shortdescription" : "Arcana XII, The Hanged Man",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_13",
+    "displayName" : "The Hanged Man",
+    "displayIcon" : "/items/augments/back/arcana_augment_13.png",
+    "effects" :
+	[
+		"arcana_status_energyPercent_60",
+		"arcana_status_resistance_electric_20",
+		"arcana_status_resistance_electricStatus"
+	]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

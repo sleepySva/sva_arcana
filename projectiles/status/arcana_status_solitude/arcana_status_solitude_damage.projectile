@@ -1,0 +1,16 @@
+{
+  "projectileName" : "arcana_status_solitude_damage",
+  "image" : "arcana_status_solitude_damage.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "timeToLive" : 0.75,
+  "power" : 5.0,
+  "damageKind" : "ice",
+  "piercing" : true,
+  "damagePoly" : [ [-30, 0], [-20, -20], [0, -30], [20, -20], [30, 0], [20, 20], [0, 30], [-20, 20] ],
+  "statusEffects" : [
+    "frostslow"
+  ]
+}

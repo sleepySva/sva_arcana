@@ -1,0 +1,21 @@
+{
+  "materialId" : 16751,
+  "materialName" : "polar_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "polar_tile1",
+  "description" : "A red rock found in aspirite caves.",
+  "shortdescription" : "Aspirite Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "polar_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1751
+  }
+}

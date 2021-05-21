@@ -1,0 +1,136 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "portal" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {},
+          "open" : {
+            "frames" : 4,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "on"
+          },
+          "close" : {
+            "frames" : 4,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "off"
+          },
+          "vanish" : {
+            "frames" : 8,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "gone"
+          },
+          "gone" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "bg" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "portal" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.off",
+                "fullbright" : true
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.on",
+                "fullbright" : true
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.open.<frame>",
+                "fullbright" : true
+              }
+            },
+
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.close.<frame>",
+                "fullbright" : true
+              }
+            },
+
+            "vanish" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.vanish.<frame>",
+                "fullbright" : true
+              }
+            },
+
+            "gone" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+      "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "portal" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.off"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.on"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.open.<frame>"
+              }
+            },
+
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.close.<frame>"
+              }
+            },
+
+            "vanish" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.vanish.<frame>"
+              }
+            },
+
+            "gone" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "on" : [],
+    "off" : []
+  }
+}

@@ -17,8 +17,21 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_anvil_1.png:<color>",
-      "imagePosition" : [-32, 0],
+	  "imageLayers" : [ { "image" : "arcana_crafting_anvil_1.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "arcana_crafting_anvil_1.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-40, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 

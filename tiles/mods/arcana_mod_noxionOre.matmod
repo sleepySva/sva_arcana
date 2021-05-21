@@ -1,0 +1,21 @@
+{
+  "modId" : 16821,
+  "modName" : "arcana_mod_noxionOre",
+  "itemDrop" : "arcana_randomitem_noxion",
+  "description" : "Noxion ore.",
+  "health" : 16,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_precious.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "arcana_particle_ember_green_1",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_noxionOre.png",
+    "variants" : 4,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [0, 220, 0]
+  }
+}

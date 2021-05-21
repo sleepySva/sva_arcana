@@ -1,0 +1,45 @@
+{
+  "objectName" : "arcana_crafting_augment_4",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Essential",
+  "description" : "A golden augment station from the Aurea Order.",
+  "shortdescription" : "^#dfcf4e;Aureate Augment Station^reset;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1000,
+  
+  "lightColor" : [80, 70, 40],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_augment_4.config",
+	"filter" : ["arcana_crafting_augment_4","arcana_crafting_augment_3"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "arcana_crafting_augment_4.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "arcana_crafting_augment_4.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

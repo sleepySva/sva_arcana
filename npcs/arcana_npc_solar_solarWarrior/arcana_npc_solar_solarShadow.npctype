@@ -1,0 +1,97 @@
+{
+  "type" : "arcana_npc_solar_solarShadow",
+  "baseType" : "hostile",
+  
+  "levelVariance" : [8.0, 8.0],
+  
+  "dropPools" : [ "arcana_monsterdrops_soli" ],
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  
+      "attack" : {
+        "default" : {
+          "default" : [
+		  
+            "...",
+            "...",
+			"...",
+			"...",
+			"...",
+			"...",
+            "...",
+            "..."
+			
+          ]
+        }
+      }
+	  
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "darkdisguisehead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "darkdisguisechest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "darkdisguiselegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+	        "back" : [
+              { "name" : "arcana_back_solarFlames", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+			  "npcpetcapturepod",
+              "npcdagger",
+              "npcaxe",
+              "npcshortsword",
+              "npcbroadsword",
+              "npchammer",
+              "npcspear",
+              "npcassaultrifle",
+              "npcpistol",
+              "npcmachinepistol",
+              "npcshotgun",
+              "npcsniperrifle"
+            ],
+			"sheathedprimary" : [ 
+              { "name" : "npcbroadsword" }
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 140.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.2
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "arcana_resistance_solar" : {
+        "baseValue" : 0.2
+      },
+      "fireResistance" : {
+        "baseValue" : 0.2
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceResistance" : {
+        "baseValue" : -0.2
+      }
+    }
+  }
+}

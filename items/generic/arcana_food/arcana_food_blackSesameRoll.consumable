@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_blackSesameRoll",
+  "rarity" : "Common",
+  "price" : 100,
+  "category" : "preparedFood",
+  "inventoryIcon" : "arcana_food_blackSesameRoll.png",
+  "description" : "A simple roll filled with sweet black sesame. ^green;+20% max health for 60s.^reset;",
+  "shortdescription" : "Black Sesame Roll",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 60
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

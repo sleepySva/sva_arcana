@@ -1,0 +1,21 @@
+{
+  "materialId" : 16754,
+  "materialName" : "polar_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "polar_tile4",
+  "description" : "A bamboo tile.",
+  "shortdescription" : "Bamboo Stalk",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "polar_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4
+  }
+}

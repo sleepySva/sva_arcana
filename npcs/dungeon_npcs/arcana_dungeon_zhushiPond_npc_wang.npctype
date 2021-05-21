@@ -1,0 +1,59 @@
+{
+  "type" : "arcana_dungeon_zhushiPond_npc_wang",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+  "persistent" : true,
+  
+  "identity" : {
+    "name" : "Wang",
+    "gender" : "male",
+	"species" : "human",
+	"hairType" : "male51",
+	"bodyDirectives" : "?replace;ffe2c5=ffe9d3;ffc181=ffc181;d39c6c=d39c6c;c7815b=b97551",
+	"hairDirectives" : "?replace;d9c189=525252;a38d59=363636;735e3a=161616"
+  },
+
+  "scriptConfig" : {
+  
+	"behavior" : "villager",
+	
+    "offeredQuests" : [
+		"arcana_quests_wang_1"
+	],
+    "turnInQuests" : [
+		"arcana_quests_wang_1"
+	],
+	
+    "behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [4.0, 8.0],
+      "wanderTime" : [0.25, 0.5],
+      "wanderDistance" : 10
+    },
+
+	"dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I've taken up fishing lately, it's good for passing time.",
+			"The pond doesn't have a lot of fishes, though.",
+			"I've heard of a cool fish called Imperviray that's coated in Impervium, I want to catch it someday."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "traineechest", "parameters" : { "colorIndex" : 1 } } ],
+            "legs" : [ { "name" : "traineelegs", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "headarmour",
-  "description" : "A casual clothing piece worn by the Gelsemis.",
+  "description" : "A casual clothing piece worn by the Gelsemis. ^green;+10% Poison res.^reset;",
   "shortdescription" : "Lushe Branches",
   "tooltipKind" : "armor",
 
@@ -34,6 +34,11 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 2
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "poisonResistance",
+      "amount" : 0.10
     }
   ],
   
