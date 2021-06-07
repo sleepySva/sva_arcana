@@ -1,0 +1,98 @@
+{
+  "itemName" : "misc_machinePistol_koelSteel",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A special rapid firing machine pistol used by Koel Industry's outpost guards.",
+  "shortdescription" : "Koel Steel",
+  "tooltipKind" : "gun",
+  "category" : "machinePistol",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","machinepistol"],
+  "level" : 6,
+
+  "inventoryIcon" : "misc_machinePistol_koelSteel.png",
+
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "misc_machinePistol_koelSteel.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_blue.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.4, 0.2]
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.0, -0.4]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/plasma_pistol4.ogg"]
+    }
+  },
+
+  "baseOffset" : [0.4, 0.2],
+  "muzzleOffset" : [2.0, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "ice",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.14,
+    "baseDps" : 7.4,
+    "energyUsage" : 48.0,
+    "inaccuracy" : 0.004,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "misc_machinePistol_koelSteel_projectile_1",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,46 @@
+{
+  "projectileName" : "evolapisbubble",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 4,
+  "image" : "evolapisbubble.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 20,
+  "fullbright" : true,
+  "animationCycle" : 0.5,
+  "lightColor" : [80, 110, 50],
+  "frameNumber" : 4,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+	  "action" : "projectile",
+	  "type" : "evolapispoisonthrower",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "evolapisslimeexplosion",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "emitters" : [ "poisonplasma" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "poison",
+  
+  "statusEffects" : [
+    "weakpoison"
+  ],
+  
+  "scripts" : [ "/scripts/projectiles/nemesishomingprojectile.lua" ],
+  "scriptDelta" : 3,
+
+  "rotationRate" : 1.5,
+  "trackingLimit" : 1000.0
+}

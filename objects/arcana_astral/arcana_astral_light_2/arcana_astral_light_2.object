@@ -1,0 +1,58 @@
+{
+  "objectName" : "arcana_astral_light_2",
+  "colonyTags" : ["light"],
+  "rarity" : "Rare",
+  "description" : "A golden hanging lamp.",
+  "shortdescription" : "Astral Hanging Lamp",
+  "race" : "generic",
+
+  "category" : "light",
+  "price" : 60,
+  "lightColor" : [90, 160, 180],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "arcana_astral_light_2.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "arcana_astral_light_2.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "arcana_astral_light_2.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

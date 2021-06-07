@@ -1,0 +1,42 @@
+{
+  "projectileName" : "evolapisbubblerising",
+  "physics" : "flame",
+  "bounces" : 0,
+  "timeToLive" : 5,
+  "image" : "evolapisbubble.png",
+  "damageKindImage" : "icon.png",
+  "acceleration" : 100,
+  "speed" : 0,
+  "fullbright" : true,
+  "animationCycle" : 0.5,
+  "lightColor" : [80, 110, 50],
+  "frameNumber" : 4,
+  "renderLayer" : "ForegroundEntity",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+	  "action" : "projectile",
+	  "type" : "evolapispoisonthrower",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "evolapisslimeexplosion",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "emitters" : [ "poisonplasma" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "poison",
+  
+  "statusEffects" : [
+    "weakpoison"
+  ]
+}

@@ -25,6 +25,32 @@
         {"weight" : 0.5, "item" : ["arcana_essence_solarEssence", 3]}
       ]
     }]
+  ],
+  
+  "arcana_smashables_azureEssence_small" : [
+    [0, {
+      "pool" : [
+        {"weight" : 1.0, "item" : ["arcana_essence_azureEssence", 1]}
+      ]
+    }]
+  ],
+
+  "arcana_smashables_azureEssence_medium" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.5, "item" : ["arcana_essence_azureEssence", 1]},
+        {"weight" : 0.5, "item" : ["arcana_essence_azureEssence", 2]}
+      ]
+    }]
+  ],
+
+  "arcana_smashables_azureEssence_large" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.5, "item" : ["arcana_essence_azureEssence", 2]},
+        {"weight" : 0.5, "item" : ["arcana_essence_azureEssence", 3]}
+      ]
+    }]
   ]
  
 }

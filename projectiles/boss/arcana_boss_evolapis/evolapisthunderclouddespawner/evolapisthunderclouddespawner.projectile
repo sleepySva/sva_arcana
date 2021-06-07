@@ -1,0 +1,18 @@
+{
+  "projectileName" : "evolapisthunderclouddespawner",
+  "image" : "evolapisthunderclouddespawner.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "lightColor" : [0, 0, 0],
+  "speed" : 0,
+  "timeToLive" : 0.1,
+  "power" : 0.5,
+  "damagePoly" : [ [1000, 1000], [-1000, -1000], [-1000, 1000], [1000, -1000] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageTeam" : { "type" : "friendly" },
+  "damageType" : "IgnoresDef",
+  "damageKind" : "hidden",
+  "periodicActions" : []
+}

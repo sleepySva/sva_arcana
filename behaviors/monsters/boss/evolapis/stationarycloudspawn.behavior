@@ -1,0 +1,425 @@
+{
+  "name": "evolapis-stationarycloudspawn",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/time.lua",
+    "/scripts/actions/evolapisMovement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/projectiles.lua"
+  ],
+  "parameters": {
+    "beaminTime": 0.0,
+    "jumpVelocity": 0,
+    "stopForce": 0,
+    "stopTime": 0,
+    "projectileAngleStep": 0.0,
+    "projectileCount": 1,
+    "projectileInterval": 0.5,
+    "startAngle": -1.56
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+	  {
+        "title": "entityPosition",
+        "type": "action",
+        "name": "entityPosition",
+        "parameters": {
+          "entity": {"key": "target"}
+        },
+        "output": {
+          "position": "playerPosition"
+        }
+      },
+      {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, 30]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "flyDistance"
+        }
+      },
+	  {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "flyDistance"},
+          "tolerance": {"value": 4}
+        }
+      },
+      {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "x": {"value": 0},
+          "y": {"key": "<jumpVelocity>"}
+        }
+      },
+      {
+        "title": "distance",
+        "type": "action",
+        "name": "distance",
+        "parameters": {
+          "from": {"key": "self"},
+          "to": {"key": "spawn"}
+        },
+        "output": {
+          "x": "toSpawn"
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": 1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "controlApproachVelocity",
+            "type": "action",
+            "name": "controlApproachVelocity",
+            "parameters": {
+              "force": {"key": "<stopForce>"},
+              "velocity": {"value": [0, 0]}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"value": -1},
+                      "number": {"key": "toSpawn"}
+                    },
+                    "output": {
+                      "result": "rotationDirection"
+                    }
+                  },
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"key": "<projectileAngleStep>"},
+                      "number": {"key": "rotationDirection"}
+                    },
+                    "output": {
+                      "result": "rotationAngle"
+                    }
+                  },
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"key": "toSpawn"},
+                      "number": {"key": "<startAngle>"}
+                    },
+                    "output": {
+                      "result": "startAngle"
+                    }
+                  },
+                  {
+                    "title": "vecRotate",
+                    "type": "action",
+                    "name": "vecRotate",
+                    "parameters": {
+                      "angle": {"key": "startAngle"},
+                      "vector": {"value": ["toSpawn", 0]}
+                    },
+                    "output": {
+                      "vector": "aimVector"
+                    }
+                  },
+                  {
+                    "title": "repeater",
+                    "type": "decorator",
+                    "name": "repeater",
+                    "parameters": {
+                      "maxLoops": {"key": "<projectileCount>"},
+                      "untilSuccess": {"value": false}
+                    },
+                    "child": {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+					    {
+                          "title": "entityPosition",
+                          "type": "action",
+                          "name": "entityPosition",
+                          "parameters": {
+                            "entity": {"key": "target"}
+                          },
+                          "output": {
+                            "position": "playerPosition"
+                          }
+                        },
+	                    {
+                          "title": "offsetPosition",
+                          "type": "action",
+                          "name": "offsetPosition",
+                          "parameters": {
+                            "offset": {"value": [50, 30]},
+                            "position": {"key": "playerPosition"}
+                          },
+                          "output": {
+                            "position": "fireBallPosition"
+                          }
+                        },
+						{
+                          "title": "flyToPosition",
+                          "type": "action",
+                          "name": "flyToPosition",
+                          "parameters": {
+                            "position": {"key": "fireBallPosition"},
+                            "tolerance": {"value": 4}
+                          }
+                        },
+                        {
+                          "title": "timer",
+                          "type": "action",
+                          "name": "timer",
+                          "parameters": {
+                            "time": {"value": "<projectileInterval>"}
+                          }
+                        },
+                        {
+                          "title": "vecRotate",
+                          "type": "action",
+                          "name": "vecRotate",
+                          "parameters": {
+                            "angle": {"key": "rotationAngle"},
+                            "vector": {"key": "aimVector"}
+                          },
+                          "output": {
+                            "vector": "aimVector"
+                          }
+                        },
+                        {
+                          "title": "vecMultiply",
+                          "type": "action",
+                          "name": "vecMultiply",
+                          "parameters": {
+                            "first": {"key": "aimVector"},
+                            "second": {"value": [2, 2]}
+                          },
+                          "output": {
+                            "vector": "spawnOffset"
+                          }
+                        },
+                        {
+                          "title": "offsetPosition",
+                          "type": "action",
+                          "name": "offsetPosition",
+                          "parameters": {
+                            "offset": {"key": "spawnOffset"},
+                            "position": {"key": "self"}
+                          },
+                          "output": {
+                            "position": "spawnPosition"
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [1, 0]},
+                            "offset": {"value": [-1.5, -1.5]},
+                            "position": {"key": "self"},
+                            "projectileConfig": {"value": {"power" : 25.0}},
+                            "projectileType": {"value": "evolapispoisonelementcloudlingering"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+						{
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [-1, 0]},
+                            "offset": {"value": [1.5, -1.5]},
+                            "position": {"key": "self"},
+                            "projectileConfig": {"value": {"power" : 25.0}},
+                            "projectileType": {"value": "evolapispoisonelementcloudlingering"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+						{
+                          "title": "setVelocity",
+                          "type": "action",
+                          "name": "setVelocity",
+                          "parameters": {
+                            "velocity": {"value": [0, 0]}
+                          }
+                        },
+                        {
+                          "title": "playSound",
+                          "type": "action",
+                          "name": "playSound",
+                          "parameters": {
+                            "sound": {"value": "fire"}
+                          }
+                        },
+						{
+                          "title": "offsetPosition",
+                          "type": "action",
+                          "name": "offsetPosition",
+                          "parameters": {
+                            "offset": {"value": [-50, 30]},
+                            "position": {"key": "playerPosition"}
+                          },
+                          "output": {
+                            "position": "fireBallPosition"
+                          }
+                        },
+						{
+                          "title": "flyToPosition",
+                          "type": "action",
+                          "name": "flyToPosition",
+                          "parameters": {
+                            "position": {"key": "fireBallPosition"},
+                            "tolerance": {"value": 4}
+                          }
+                        },
+						{
+                          "title": "timer",
+                          "type": "action",
+                          "name": "timer",
+                          "parameters": {
+                            "time": {"value": "<projectileInterval>"}
+                          }
+                        },
+                        {
+                          "title": "vecRotate",
+                          "type": "action",
+                          "name": "vecRotate",
+                          "parameters": {
+                            "angle": {"key": "rotationAngle"},
+                            "vector": {"key": "aimVector"}
+                          },
+                          "output": {
+                            "vector": "aimVector"
+                          }
+                        },
+                        {
+                          "title": "vecMultiply",
+                          "type": "action",
+                          "name": "vecMultiply",
+                          "parameters": {
+                            "first": {"key": "aimVector"},
+                            "second": {"value": [2, 2]}
+                          },
+                          "output": {
+                            "vector": "spawnOffset"
+                          }
+                        },
+                        {
+                          "title": "offsetPosition",
+                          "type": "action",
+                          "name": "offsetPosition",
+                          "parameters": {
+                            "offset": {"key": "spawnOffset"},
+                            "position": {"key": "self"}
+                          },
+                          "output": {
+                            "position": "spawnPosition"
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [1, 0]},
+                            "offset": {"value": [-1.5, -1.5]},
+                            "position": {"key": "self"},
+                            "projectileConfig": {"value": {"power" : 25.0}},
+                            "projectileType": {"value": "evolapispoisonelementcloudlingering"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+						{
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [-1, 0]},
+                            "offset": {"value": [1.5, -1.5]},
+                            "position": {"key": "self"},
+                            "projectileConfig": {"value": {"power" : 25.0}},
+                            "projectileType": {"value": "evolapispoisonelementcloudlingering"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+						{
+                          "title": "setVelocity",
+                          "type": "action",
+                          "name": "setVelocity",
+                          "parameters": {
+                            "velocity": {"value": [0, 0]}
+                          }
+                        },
+                        {
+                          "title": "playSound",
+                          "type": "action",
+                          "name": "playSound",
+                          "parameters": {
+                            "sound": {"value": "fire"}
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": 1.0}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

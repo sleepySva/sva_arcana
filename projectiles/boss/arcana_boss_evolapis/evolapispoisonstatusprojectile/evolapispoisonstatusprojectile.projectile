@@ -1,0 +1,30 @@
+{
+  "projectileName" : "evolapispoisonstatusprojectile",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0.25,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "evolapispoisonstatusprojectile.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 25,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "poisongas"
+        }
+      ]
+    }
+  ],
+  "power" : 0,
+  "piercing" : true,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef",
+  "damagePoly" : [ [-80, -80], [-80, 80], [80, 80], [80, -80]  ],
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" }
+}

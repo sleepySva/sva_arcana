@@ -1,0 +1,30 @@
+{
+  "projectileName" : "evolapisbubbleaimer",
+  "image" : "evolapisbubbleaimer.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "power" : 0,
+  "movementSettings" : {
+    "collisionEnabled" : true
+  },
+  "damageKind" : "noDamage",
+  "collisionPoly" : [ [0.0, 0.0] ],
+  "piercing" : true,
+  "speed" : 0,
+  "timeToLive" : 0.0,
+  "actionOnReap" : [
+    {
+	  "action" : "loop",
+	  "count" : 1,
+	  "body" : [
+	    {
+	      "action" : "projectile",
+	      "type" : "evolapisbubble",
+		  "inheritDamageFactor" : 1.0,
+	      "angle" : 0,
+	      "fuzzAngle" : 999999
+	    }
+	  ]
+	}
+  ]
+}

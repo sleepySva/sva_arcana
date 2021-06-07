@@ -1,0 +1,402 @@
+{
+  "name": "evolapis-phase4",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/math.lua",
+	"/scripts/actions/entity.lua",
+	"/scripts/actions/world.lua",
+	"/scripts/actions/status.lua",
+	"/scripts/actions/monster.lua",
+    "/scripts/actions/projectiles.lua",
+	"/scripts/behavior.lua"
+  ],
+  "parameters": {
+    "beaminTime": 0.0,
+    "jumpVelocity": 0,
+    "stopForce": 0,
+    "stopTime": 0,
+    "projectileAngleStep": 0.0,
+    "repeatCount": 999999999,
+    "projectileInterval": 0.5,
+    "startAngle": -1.56
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+	  {
+        "title": "setResourcePercentage",
+        "type": "action",
+        "name": "setResourcePercentage",
+        "parameters": {
+          "percentage": {"value": 0.15},
+          "resource": {"value": "health"}
+        }
+      },
+	  {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "x": {"value": 0},
+          "y": {"key": "<jumpVelocity>"}
+        }
+      },
+	  {
+        "title": "playSound",
+        "type": "action",
+        "name": "playSound",
+        "parameters": {
+          "sound": {"value": "flyup"}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, -1.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "evolapispoisonstatusprojectile"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.7}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, -1.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "evolapispoisonstatusprojectile"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.6}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, -1.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "evolapispoisonstatusprojectile"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.5}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, -1.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "evolapispoisonstatusprojectile"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.4}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, -1.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "evolapispoisonstatusprojectile"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.3}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, -1.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "evolapispoisonstatusprojectile"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.2}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, -1.5]},
+          "position": {"key": "self"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "evolapispoisonstatusprojectile"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 1.0}
+        }
+      },
+      {
+        "title": "setResourcePercentage",
+        "type": "action",
+        "name": "setResourcePercentage",
+        "parameters": {
+          "percentage": {"value": 0.15},
+          "resource": {"value": "health"}
+        }
+      },
+      {
+        "title": "distance",
+        "type": "action",
+        "name": "distance",
+        "parameters": {
+          "from": {"key": "self"},
+          "to": {"key": "spawn"}
+        },
+        "output": {
+          "x": "toSpawn"
+        }
+      },
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {
+          "direction": {"key": "toSpawn"}
+        },
+        "output": {
+          "direction": "toSpawn"
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": 1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "controlApproachVelocity",
+            "type": "action",
+            "name": "controlApproachVelocity",
+            "parameters": {
+              "force": {"key": "<stopForce>"},
+              "velocity": {"value": [0, 0]}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"value": -1},
+                      "number": {"key": "toSpawn"}
+                    },
+                    "output": {
+                      "result": "rotationDirection"
+                    }
+                  },
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"key": "<projectileAngleStep>"},
+                      "number": {"key": "rotationDirection"}
+                    },
+                    "output": {
+                      "result": "rotationAngle"
+                    }
+                  },
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"key": "toSpawn"},
+                      "number": {"key": "<startAngle>"}
+                    },
+                    "output": {
+                      "result": "startAngle"
+                    }
+                  },
+                  {
+                    "title": "vecRotate",
+                    "type": "action",
+                    "name": "vecRotate",
+                    "parameters": {
+                      "angle": {"key": "startAngle"},
+                      "vector": {"value": ["toSpawn", 0]}
+                    },
+                    "output": {
+                      "vector": "aimVector"
+                    }
+                  },
+                  {
+                    "title": "repeater",
+                    "type": "decorator",
+                    "name": "repeater",
+                    "parameters": {
+                      "maxLoops": {"key": "<repeatCount>"},
+                      "untilSuccess": {"value": false}
+                    },
+                    "child": {
+                      "title": "Reset",
+                      "type": "composite",
+                      "name": "randomize",
+                      "parameters": {},
+                      "children": [
+						{
+                          "title": "evolapis-teleportbarrageup",
+                          "type": "module",
+                          "name": "evolapis-teleportbarrageup",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-teleportbarrageleft",
+                          "type": "module",
+                          "name": "evolapis-teleportbarrageleft",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-teleportbarrageright",
+                          "type": "module",
+                          "name": "evolapis-teleportbarrageright",
+                          "parameters": {}
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": 0.0}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0.0, -40.0]},
+          "position": {"key": "self"}
+        },
+        "output": {
+          "position": "returnPosition"
+        }
+      },
+	  {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "returnPosition"},
+          "tolerance": {"value": 3}
+        }
+      }
+    ]
+  }
+}

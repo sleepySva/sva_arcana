@@ -1,0 +1,49 @@
+{
+  "projectileName" : "evolapiscloudspawner",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 0.9,
+  "damageKindImage" : "icon.png",
+  "image" : "evolapiscloudspawner.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "fullbright" : true,
+  "supportsProcessing" : true,
+  "piercing" : true,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0.0,
+	  "action" : "projectile",
+	  "repeat" : false,
+	  "type" : "evolapispoisonelementcloud",
+	  "inheritDamageFactor" : 2.5,
+	  "speed" : 0
+	},
+    {
+      "time" : 0.1,
+	  "action" : "projectile",
+	  "type" : "poisonthrower",
+	  "inheritDamageFactor" : 2.5,
+	  "speed" : 0
+	},
+	{
+      "time" : 0.25,
+	  "action" : "projectile",
+	  "type" : "evolapispoisonelementcloud",
+	  "inheritDamageFactor" : 2.5,
+	  "speed" : 0
+	}
+  ],
+  "damageKind" : "poisonplasma",
+
+  "emitters" : [ "poisonplasma" ],
+  "statusEffects" : [
+    {"effect" : "weakpoison"}
+  ],
+
+  "power" : 25,
+  "speed" : 50
+}

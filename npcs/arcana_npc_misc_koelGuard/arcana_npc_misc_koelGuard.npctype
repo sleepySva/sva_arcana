@@ -1,0 +1,53 @@
+{
+  "type" : "arcana_npc_misc_koelGuard",
+  "baseType" : "villageguard",
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "humantier1head", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "chest" : [
+              { "name" : "humantier6mchest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "apextier4pants", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+			  "npcassaultrifle",
+              "npcshotgun",
+              "npcsniperrifle"
+            ],
+            "sheathedprimary" : [
+              "misc_machinePistol_koelSteel"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 120.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

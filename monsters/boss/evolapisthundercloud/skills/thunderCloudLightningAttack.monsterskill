@@ -1,0 +1,29 @@
+{
+  "name" : "thunderCloudLightningAttack",
+  "label" : "PULSE CANNON",
+  "image" : "/monsters/generated/ground/skills/icon.png",
+
+  "parameters" : {
+    "scripts" : [ "/monsters/boss/evolapisthundercloud/skills/thunderCloudLightningAttack.lua" ],
+
+    "thunderCloudLightningAttack" : {
+      "cooldownTime" : 10,
+
+      "projectile" : {
+        "type" : "evolapisinvisibleprojectile",
+        "config" : {
+          "speed" : 0.1,
+          "power" : 35,
+          "actionOnReap" : [
+            {
+              "action" : "projectile",
+              "type" : "evolapislightning",
+              "inheritDamageFactor" : 1,
+              "direction" : [0.0, -1.0]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

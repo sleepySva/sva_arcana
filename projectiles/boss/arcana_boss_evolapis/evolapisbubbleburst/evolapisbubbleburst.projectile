@@ -1,0 +1,109 @@
+{
+  "projectileName" : "evolapisbubbleburst",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "evolapisbubbleburst.png",
+  "renderLayer" : "ForegroundEntity",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "poisonplasmaexplosionstatus",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 195
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 165
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 210
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 150
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 225
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 135
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 240
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 120
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 255
+    },
+	{
+      "action" : "projectile",
+      "type" : "evolapisbubblepositioner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 105
+    }
+  ],
+  "power" : 0,
+  "piercing" : false,
+  "damageKind" : "poison",
+  "damagePoly" : [ [-0, -0], [-0, 0], [0, 0], [0, -0]  ],
+  "flippable" : true,
+  "statusEffects" : [
+    "weakpoison"
+  ]
+}

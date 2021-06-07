@@ -1,0 +1,50 @@
+{
+  "projectileName" : "evolapisspikeghostly",
+  "image" : "evolapisspike.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [150, 130, 100],
+  "frameNumber" : 1,
+  "flippable" : false,
+  "fullbright" : true,
+  "damageKindImage" : "icon.png",
+  "physics" : "laser",
+  "emitters" : [ ],
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "poisonplasmaexplosionstatus",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_evolapis/evolapisspike/evolapisspike.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "damagePoly" : [ [-8, 0], [2, 3], [8, 0], [2, -3] ],
+  "damageKind" : "slash",
+  "statusEffects" : [
+    "weakpoison"
+  ],
+
+  "speed" : 60,
+  "timeToLive" : 5
+}

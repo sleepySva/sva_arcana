@@ -7,11 +7,6 @@
   "shortdescription" : "Evo Abomination",
   "description" : "A suspicious looking rock covered in green goo...",
 
-  "tooltipFields" : {
-	"subtitle" : "^#c569e6;Summon Item^#reset;",
-	"rarityLabel" : "Boss"
-  },
-  
   "ammoUsage" : 1,
 
   "edgeTrigger" : true,
@@ -20,7 +15,7 @@
 
   "projectileType" : "arcana_throwable_boss_evolapis",
   "projectileConfig" : {
-    "speed" : 40,
+    "speed" : 0,
     "power" : 0,
     "knockback" : 4,
     "periodicActions" : [

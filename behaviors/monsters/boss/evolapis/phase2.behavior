@@ -1,0 +1,675 @@
+{
+  "name": "evolapis-phase2",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/time.lua",
+    "/scripts/actions/evolapisMovement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/math.lua",
+	"/scripts/actions/entity.lua",
+	"/scripts/actions/world.lua",
+	"/scripts/actions/status.lua",
+	"/scripts/actions/monster.lua",
+    "/scripts/actions/projectiles.lua"
+  ],
+  "parameters": {
+    "beaminTime": 0.0,
+    "jumpVelocity": 0,
+    "stopForce": 0,
+    "stopTime": 0,
+    "projectileAngleStep": 0.0,
+    "repeatCount": 999999999,
+    "projectileInterval": 0.5,
+    "startAngle": -1.56
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0.0, 5.0]},
+          "position": {"key": "self"}
+        },
+        "output": {
+          "position": "flyDistance"
+        }
+      },
+	  {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "flyDistance"},
+          "tolerance": {"value": 4.5}
+        }
+      },
+      {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "x": {"value": 0},
+          "y": {"key": "<jumpVelocity>"}
+        }
+      },
+      {
+        "title": "distance",
+        "type": "action",
+        "name": "distance",
+        "parameters": {
+          "from": {"key": "self"},
+          "to": {"key": "spawn"}
+        },
+        "output": {
+          "x": "toSpawn"
+        }
+      },
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {
+          "direction": {"key": "toSpawn"}
+        },
+        "output": {
+          "direction": "toSpawn"
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": 1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "controlApproachVelocity",
+            "type": "action",
+            "name": "controlApproachVelocity",
+            "parameters": {
+              "force": {"key": "<stopForce>"},
+              "velocity": {"value": [0, 0]}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"value": -1},
+                      "number": {"key": "toSpawn"}
+                    },
+                    "output": {
+                      "result": "rotationDirection"
+                    }
+                  },
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"key": "<projectileAngleStep>"},
+                      "number": {"key": "rotationDirection"}
+                    },
+                    "output": {
+                      "result": "rotationAngle"
+                    }
+                  },
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"key": "toSpawn"},
+                      "number": {"key": "<startAngle>"}
+                    },
+                    "output": {
+                      "result": "startAngle"
+                    }
+                  },
+                  {
+                    "title": "vecRotate",
+                    "type": "action",
+                    "name": "vecRotate",
+                    "parameters": {
+                      "angle": {"key": "startAngle"},
+                      "vector": {"value": ["toSpawn", 0]}
+                    },
+                    "output": {
+                      "vector": "aimVector"
+                    }
+                  },
+                  {
+                    "title": "repeater",
+                    "type": "decorator",
+                    "name": "repeater",
+                    "parameters": {
+                      "maxLoops": {"key": "<repeatCount>"},
+                      "untilSuccess": {"value": false}
+                    },
+                    "child": {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+					    {
+                          "title": "entityPosition",
+                          "type": "action",
+                          "name": "entityPosition",
+                          "parameters": {
+                            "entity": {"key": "target"}
+                          },
+                          "output": {
+                            "position": "playerPosition"
+                          }
+                        },
+	                    {
+                          "title": "offsetPosition",
+                          "type": "action",
+                          "name": "offsetPosition",
+                          "parameters": {
+                            "offset": {"value": [0.0, 5.0]},
+                            "position": {"key": "self"}
+                          },
+                          "output": {
+                            "position": "doNothingPosition"
+                          }
+                        },
+						{
+                          "title": "flyToPosition",
+                          "type": "action",
+                          "name": "flyToPosition",
+                          "parameters": {
+                            "position": {"key": "doNothingPosition"},
+                            "tolerance": {"value": 4.5}
+                          }
+                        },
+                        {
+                          "title": "vecRotate",
+                          "type": "action",
+                          "name": "vecRotate",
+                          "parameters": {
+                            "angle": {"key": "rotationAngle"},
+                            "vector": {"key": "aimVector"}
+                          },
+                          "output": {
+                            "vector": "aimVector"
+                          }
+                        },
+                        {
+                          "title": "vecMultiply",
+                          "type": "action",
+                          "name": "vecMultiply",
+                          "parameters": {
+                            "first": {"key": "aimVector"},
+                            "second": {"value": [2, 2]}
+                          },
+                          "output": {
+                            "vector": "spawnOffset"
+                          }
+                        },
+                        {
+                          "title": "offsetPosition",
+                          "type": "action",
+                          "name": "offsetPosition",
+                          "parameters": {
+                            "offset": {"key": "spawnOffset"},
+                            "position": {"key": "self"}
+                          },
+                          "output": {
+                            "position": "spawnPosition"
+                          }
+                        },
+						{
+                          "title": "evolapis-barrageleft",
+                          "type": "module",
+                          "name": "evolapis-barrageleft",
+                          "parameters": {}
+                        },
+                        {
+                          "title": "evolapis-barrageup",
+                          "type": "module",
+                          "name": "evolapis-barrageup",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-barrageright",
+                          "type": "module",
+                          "name": "evolapis-barrageright",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-barrageup",
+                          "type": "module",
+                          "name": "evolapis-barrageup",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-barrageleft",
+                          "type": "module",
+                          "name": "evolapis-barrageleft",
+                          "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+						{
+                          "title": "evolapis-bombcloudspawn",
+                          "type": "module",
+                          "name": "evolapis-bombcloudspawn",
+                          "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+						{
+                          "title": "evolapis-stationarycloudspawn",
+                          "type": "module",
+                          "name": "evolapis-stationarycloudspawn",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-poisonswarm",
+                          "type": "module",
+                          "name": "evolapis-poisonswarm",
+                          "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+						{
+                          "title": "evolapis-barrageright",
+                          "type": "module",
+                          "name": "evolapis-barrageright",
+                          "parameters": {}
+                        },
+                        {
+                          "title": "evolapis-barrageup",
+                          "type": "module",
+                          "name": "evolapis-barrageup",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-barrageleft",
+                          "type": "module",
+                          "name": "evolapis-barrageleft",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-barrageup",
+                          "type": "module",
+                          "name": "evolapis-barrageup",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-barrageright",
+                          "type": "module",
+                          "name": "evolapis-barrageright",
+                          "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+						{
+                          "title": "evolapis-bombcloudspawn",
+                          "type": "module",
+                          "name": "evolapis-bombcloudspawn",
+                          "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+						{
+                          "title": "evolapis-stationarycloudspawnreversed",
+                          "type": "module",
+                          "name": "evolapis-stationarycloudspawnreversed",
+                          "parameters": {}
+                        },
+						{
+                          "title": "evolapis-poisonswarm",
+                          "type": "module",
+                          "name": "evolapis-poisonswarm",
+                          "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "evolapis-phase3",
+                                    "type": "module",
+                                    "name": "evolapis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": 0.0}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0.0, -40.0]},
+          "position": {"key": "self"}
+        },
+        "output": {
+          "position": "returnPosition"
+        }
+      },
+	  {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "returnPosition"},
+          "tolerance": {"value": 3}
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "name": "evolapis-dashright",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/entity.lua",
+	"/scripts/actions/status.lua",
+	"/scripts/actions/notification.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/behavior/bdata.lua",
+    "/scripts/actions/evolapisMovement.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/monster.lua",
+    "/scripts/actions/sensor.lua",
+	"/scripts/actions/query.lua",
+	"/scripts/behavior.lua",
+	"/scripts/actions/projectiles.lua",
+	"/scripts/actions/world.lua"
+  ],
+  "parameters": {
+    "dashSpeed": 50,
+    "dashTime": 0.65,
+    "beaminTime": 0.5,
+    "dashControlForce": 5000,
+    "slamMovementParameters": {"gravityEnabled": true, "collisionEnabled": true, "airFriction": 0, "gravityMultiplier": 2}
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "distance",
+        "type": "action",
+        "name": "distance",
+        "parameters": {
+          "from": {"key": "self"},
+          "to": {"key": "spawn"}
+        },
+        "output": {
+          "vector": "toSpawn"
+        }
+      },
+      {
+        "title": "breakVector",
+        "type": "action",
+        "name": "breakVector",
+        "parameters": {
+          "vector": {"key": "toSpawn"}
+        },
+        "output": {
+          "x": "spawnX"
+        }
+      },
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {
+          "direction": {"key": "spawnX"}
+        },
+        "output": {
+          "direction": "dashDirection"
+        }
+      },
+      {
+        "title": "multiply",
+        "type": "action",
+        "name": "multiply",
+        "parameters": {
+          "factor": {"key": "<dashSpeed>"},
+          "number": {"key": "dashDirection"}
+        },
+        "output": {
+          "result": "dashVelocity"
+        }
+      },
+	  {
+        "title": "entityPosition",
+        "type": "action",
+        "name": "entityPosition",
+        "parameters": {
+          "entity": {"key": "target"}
+        },
+        "output": {
+          "position": "playerPosition"
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [-15, 0]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "dashPosition"
+        }
+      },
+	  {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "dashPosition"},
+          "tolerance": {"value": 4}
+        }
+      },
+	  {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "velocity": {"value": [0, 0]}
+        }
+      },
+	  {
+        "title": "setParticleEmitterActive",
+        "type": "action",
+        "name": "setParticleEmitterActive",
+        "parameters": {
+          "active": {"value": true},
+          "emitter": {"value": "slam"}
+        }
+      },
+	  {
+        "title": "setDamageOnTouch",
+        "type": "action",
+        "name": "setDamageOnTouch",
+        "parameters": {
+          "touchDamage": {"value": true}
+        }
+      },
+	  {
+        "title": "playSound",
+        "type": "action",
+        "name": "playSound",
+        "parameters": {
+          "sound": {"value": "dash"}
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [41.5, 0.0]},
+          "position": {"key": "self"}
+        },
+        "output": {
+          "position": "flyDistance"
+        }
+      },
+	  {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "flyDistance"},
+          "speed": {"value": 150},
+          "tolerance": {"value": 18}
+        }
+      },
+	  {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "velocity": {"value": [0, 0]}
+        }
+      },
+	  {
+        "title": "setDamageOnTouch",
+        "type": "action",
+        "name": "setDamageOnTouch",
+        "parameters": {
+          "touchDamage": {"value": false}
+        }
+      },
+	  {
+        "title": "setParticleEmitterActive",
+        "type": "action",
+        "name": "setParticleEmitterActive",
+        "parameters": {
+          "active": {"value": false},
+          "emitter": {"value": "slam"}
+        }
+      }
+    ]
+  }
+}

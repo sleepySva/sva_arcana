@@ -1,0 +1,91 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_misc_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "arcana_dungeon_misc_1_part_left","arcana_dungeon_misc_1_part_right" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 3,
+    "protected" : false
+  },
+
+  "parts" : [
+
+    // ENTRANCES
+    {
+      "name" : "arcana_dungeon_misc_1_part_1",
+      "rules" : [
+        [ "doNotCombineWith", [ "arcana_dungeon_misc_1_part_1","arcana_dungeon_misc_1_part_1_a","arcana_dungeon_misc_1_part_1_b" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_1_part_1.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "arcana_dungeon_misc_1_part_1_a",
+      "rules" : [
+        [ "doNotCombineWith", [ "arcana_dungeon_misc_1_part_1","arcana_dungeon_misc_1_part_1_a","arcana_dungeon_misc_1_part_1_b" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_1_part_1_a.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "arcana_dungeon_misc_1_part_1_b",
+      "rules" : [
+        [ "doNotCombineWith", [ "arcana_dungeon_misc_1_part_1","arcana_dungeon_misc_1_part_1_a","arcana_dungeon_misc_1_part_1_b" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_1_part_1_b.json" ],
+      "chance" : 1000
+    },
+
+    // LAYOUT ROOMS
+    {
+      "name" : "arcana_dungeon_misc_1_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_misc_1_part_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_1_part_2.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_1_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_1_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_1_part_3.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_1_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_1_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_1_part_4.json" ],
+      "chance" : 500
+    },
+
+    // END CAPS
+    {
+      "name" : "arcana_dungeon_misc_1_part_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_1_part_left.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_misc_1_part_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_1_part_right.json" ],
+      "chance" : 0
+    }
+  ]
+}

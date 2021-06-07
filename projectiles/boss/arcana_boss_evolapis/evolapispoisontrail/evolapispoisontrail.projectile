@@ -1,0 +1,35 @@
+{
+  "projectileName" : "evolapispoisontrail",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 4.0,
+  "damageKindImage" : "icon.png",
+  "image" : "evolapispoisontrail.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "fullbright" : true,
+  "supportsProcessing" : true,
+  "piercing" : true,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "damagePoly" : [ [0, 0] ],
+  "periodicActions" : [
+    {
+      "time" : 0.05,
+	  "action" : "projectile",
+	  "type" : "evolapispoisonthrower",
+	  "inheritDamageFactor" : 1.0,
+	  "speed" : 0
+	}
+  ],
+  "damageKind" : "poison",
+
+  "emitters" : [ "poisonplasma" ],
+  "statusEffects" : [
+    {"effect" : "weakpoison"}
+  ],
+
+  "power" : 25,
+  "speed" : 40
+}

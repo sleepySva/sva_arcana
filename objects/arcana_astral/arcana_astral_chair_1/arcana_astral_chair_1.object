@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_astral_chair_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "An ornate chair covered with a piece of soft fabric.",
+  "shortdescription" : "Astral Chair",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 80,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "arcana_astral_chair_1.png:<color>",
+      "sitCoverImage" : "/objects/arcana_astral/arcana_astral_chair_1/cover.png",
+      "imagePosition" : [-16, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPosition" : [0, 21],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "arcana_astral_chair_1.png:<color>",
+      "sitCoverImage" : "/objects/arcana_astral/arcana_astral_chair_1/cover.png",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+
+      "sitPosition" : [0, 21],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

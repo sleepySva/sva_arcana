@@ -1,0 +1,28 @@
+{
+  "itemName" : "arcana_augment_15",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_15.png",
+  "description" : "^green;Grants immunity to burning, swim boost, +10% max health and +10% max energy.^reset;",
+  "shortdescription" : "Arcana XIV, Temperance",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_15",
+    "displayName" : "Temperance",
+    "displayIcon" : "/items/augments/back/arcana_augment_15.png",
+    "effects" :
+	[
+		"arcana_status_energyPercent_10",
+		"arcana_status_maxHealthPercent_10",
+		"arcana_status_resistance_fireStatus",
+		"swimboostcola"
+	]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

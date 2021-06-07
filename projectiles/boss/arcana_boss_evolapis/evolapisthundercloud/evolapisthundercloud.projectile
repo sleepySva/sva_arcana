@@ -1,0 +1,41 @@
+{
+  "projectileName" : "evolapisthundercloud",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 2.5,
+  "image" : "evolapisthundercloud.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 0,
+  "fullbright" : true,
+  "animationCycle" : 0.5,
+  "lightColor" : [80, 110, 50],
+  "frameNumber" : 3,
+  "animationLoops" : false,
+  "renderLayer" : "ForegroundEntity",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/weather/evolapisthunder.ogg" ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "spawnmonster",
+      "type" : "evolapisthundercloud",
+	  "level" : 6
+    }
+  ],
+  "emitters" : [ "poisonplasma" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "poison",
+  
+  "statusEffects" : [
+    "weakpoison"
+  ],
+  "damagePoly" : [ [0, 0] ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16844,
+  "materialName" : "arcana_platform_atlantisPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_atlantisPlatform",
+  "shortdescription" : "Atlantis Platform",
+  "description" : "A golden platform found in the ocean ruins.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 12,
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_atlantisPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

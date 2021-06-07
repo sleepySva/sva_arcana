@@ -1,0 +1,28 @@
+{
+  "projectileName" : "evolapislightning",
+  "physics" : "laser",
+  "timeToLive" : 3,
+  "image" : "evolapislightning.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "actionOnCollide" : [],
+  "speed" : 70,
+  "power" : 70,
+  "piercing" : true,
+  "damageKind" : "electric",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "poisonplasmaexplosionstatus",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+
+  "fullbright" : true,
+
+  "bounces" : 0
+}

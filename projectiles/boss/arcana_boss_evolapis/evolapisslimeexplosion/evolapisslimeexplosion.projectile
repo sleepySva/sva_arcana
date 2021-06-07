@@ -1,0 +1,23 @@
+{
+  "projectileName" : "evolapisslimeexplosion",
+  "image" : "evolapisslimeexplosion.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 5,
+  "speed" : 0,
+  "damagePoly" : [ [0, 0] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "poison",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+   "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/poisonorb_break1.ogg" ]
+    }
+  ]
+}
