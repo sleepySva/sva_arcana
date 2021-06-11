@@ -26,6 +26,16 @@
         {"weight" : 0.4, "item" : ["arcana_essence_vileEssence", 1]}
       ]
     }]
+  ],
+  
+  "arcana_randomitem_geodestone" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.6, "item" : ["geode", 1]},
+        {"weight" : 0.2, "item" : ["cobblestonematerial", 1]},
+		{"weight" : 0.2, "item" : ["geodestone", 1]}
+      ]
+    }]
   ]
  
 }

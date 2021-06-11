@@ -1,0 +1,22 @@
+{
+  "materialId" : 16769,
+  "materialName" : "astral_tile9",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile9",
+  "description" : "An ancient constructing material made from azurium. Highly durable.",
+  "shortdescription" : "Azurium Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 40,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile9.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1769,
+    "radiantLight" : [35, 130, 160]
+  }
+}

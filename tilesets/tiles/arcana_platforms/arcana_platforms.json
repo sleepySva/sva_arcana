@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":2,
+ "tilecount":4,
  "tileheight":8,
  "tileproperties":
     {
@@ -22,6 +22,20 @@
          "\/\/name":"arcana_platform_aeonPlatform",
          "\/\/shortdescription":"",
          "material":"arcana_platform_aeonPlatform"
+        },
+     "2":
+        {
+         "\/\/description":"",
+         "\/\/name":"arcana_platform_nullaPlatform",
+         "\/\/shortdescription":"",
+         "material":"arcana_platform_nullaPlatform"
+        },
+     "3":
+        {
+         "\/\/description":"",
+         "\/\/name":"arcana_platform_atlantisPlatform",
+         "\/\/shortdescription":"",
+         "material":"arcana_platform_atlantisPlatform"
         }
     },
  "tiles":
@@ -33,6 +47,14 @@
      "1":
         {
          "image":"arcana_platform_aeonPlatform.png"
+        },
+     "2":
+        {
+         "image":"arcana_platform_nullaPlatform.png"
+        },
+     "3":
+        {
+         "image":"arcana_platform_atlantisPlatform.png"
         }
     },
  "tilewidth":8

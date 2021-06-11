@@ -7,7 +7,15 @@
         "op": "test",
         "path": "/displayDungeons"
   },
-  
+
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_azureSea_dungeon_1",
+	"value": {
+		"description" : "Golden underwater ruins can be found deep in the ocean.",
+		"icon" : "/interface/cockpit/dungeons/arcana_azureSea_dungeon_1.png"
+	}
+  },
   {
     "op": "add",
     "path": "/displayDungeons/arcana_solarized_dungeon_3",
@@ -902,6 +910,47 @@
       "displayName": "Immorite",
       "icon": "/items/generic/arcana_ores/arcana_ore_immoriteOre.png"
     }
+  },
+  
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_azureSea",
+    "value": [
+      "Sunken, gold temples remain at the bottom of the ^#40a2b7;the Azure Sea^white;.",
+      "Sunken, gold temples remain at the bottom of the ^#40a2b7;the Azure Sea^white;.",
+      "Sunken, gold temples remain at the bottom of the ^#40a2b7;the Azure Sea^white;."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_oceanite",
+    "value": {
+      "displayName": "Oceanite",
+      "icon": "/items/generic/arcana_misc/arcana_misc_oceanite.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_geodestone",
+    "value": {
+      "displayName": "Geode",
+      "icon": "/items/active/unsorted/geode/geodeicon.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_azureSea",
+    "value": "Azure Sea"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_azureSea",
+    "value": [
+      64,
+      162,
+      182
+    ]
   }
   ]
 ]

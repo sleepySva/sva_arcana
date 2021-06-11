@@ -19,10 +19,18 @@
 		{ "op": "test",
 			"path": "/speciesShips/fumantis"
 		},
-		
 		{ "op":"replace",
 			"path":"/speciesShips/arcanian/0",
 			"value": "/ships/fu_byos/fu_byos.structure"
+		}
+	],
+	[
+		{ "op": "test",
+			"path" : "/speciesShips/novakid/9"
+		},
+		{ "op": "add",
+			"path":"/speciesShips/arcanian/-",
+			"value": "/ships/byos/byos.structure"
 		}
 	]
 ]

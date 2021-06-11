@@ -1,0 +1,126 @@
+{
+  "name" : "arcana_azureSea_foliage_1",
+  "shape" : "arcana_azureSea",
+
+  "dropConfig" : {
+    "drops" : [
+      [ { "item" : "sapling" }, { "item" : "coconut", "count" : 3 } ]
+    ],
+    
+    "particles" : {
+      "breakTree" : {
+        "density" : 3,
+        "options" : [
+          {
+            "type" : "ember",
+            "color" : [55, 55, 13],
+            "timeToLive" : 10,
+            "initialVelocity" : [0, 5],
+            "finalVelocity" : [0, -20],
+            "approach" : [0, 5],
+            "variance" : {
+              "timeToLive" : 3.0,
+              "initialVelocity" : [1.0, 1.0]
+            }
+          },
+          {
+            "type" : "ember",
+            "color" : [73, 77, 22],
+            "timeToLive" : 10,
+            "initialVelocity" : [0, 5],
+            "finalVelocity" : [0, -20],
+            "approach" : [0, 5],
+            "variance" : {
+              "timeToLive" : 3.0,
+              "initialVelocity" : [1.0, 1.0]
+            }
+          },
+          {
+            "type" : "ember",
+            "color" : [97, 111, 34],
+            "timeToLive" : 10,
+            "initialVelocity" : [0, 5],
+            "finalVelocity" : [0, -20],
+            "approach" : [0, 5],
+            "variance" : {
+              "timeToLive" : 3.0,
+              "initialVelocity" : [1.0, 1.0]
+            }
+          }
+        ]
+      },
+      "hitGround" : {
+        "density" : 3,
+        "options" : [
+          {
+            "type" : "ember",
+            "color" : [55, 55, 13],
+            "timeToLive" : 10,
+            "initialVelocity" : [0, 5],
+            "finalVelocity" : [0, -20],
+            "approach" : [0, 5],
+            "variance" : {
+              "timeToLive" : 3.0,
+              "initialVelocity" : [1.0, 1.0]
+            }
+          },
+          {
+            "type" : "ember",
+            "color" : [73, 77, 22],
+            "timeToLive" : 10,
+            "initialVelocity" : [0, 5],
+            "finalVelocity" : [0, -20],
+            "approach" : [0, 5],
+            "variance" : {
+              "timeToLive" : 3.0,
+              "initialVelocity" : [1.0, 1.0]
+            }
+          },
+          {
+            "type" : "ember",
+            "color" : [97, 111, 34],
+            "timeToLive" : 10,
+            "initialVelocity" : [0, 5],
+            "finalVelocity" : [0, -20],
+            "approach" : [0, 5],
+            "variance" : {
+              "timeToLive" : 3.0,
+              "initialVelocity" : [1.0, 1.0]
+            }
+          }
+        ]
+      }
+    }
+  },
+
+
+  "crownLeaves" : {
+    "crown1" : {
+      "image" : "",
+      "backimage" : "crown1.png",
+      "attachment" : {
+        "bx" : -54,
+        "by" : -5
+      }
+    },
+    "crown2" : {
+      "image" : "",
+      "backimage" : "crown2.png",
+      "attachment" : {
+        "bx" : -53,
+        "by" : -8
+
+      }
+    },
+    "crown3" : {
+      "image" : "",
+      "backimage" : "crown3.png",
+      "attachment" : {
+        "bx" : -54,
+        "by" : -5
+      }
+    }
+  },
+  "branchLeaves" : {
+  }
+}

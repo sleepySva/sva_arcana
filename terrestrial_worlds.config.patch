@@ -1328,5 +1328,53 @@
         }
       }
     }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_azureSea",
+    "value": {
+	  "blendSize" : 30,
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface" : {
+          "primaryRegion" : ["arcana_azureSea"],
+          "baseHeight" : 1150,
+          "layerLevel" : 1050
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_azureSea_floor"],
+          "dungeons" : [
+		    [4.0, "arcana_azureSea_dungeon_1"],
+			[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]
+		  ]
+        }
+      }
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_azureSea",
+    "value": {
+      "oceanLiquid" : [ "water" ],
+      "blockSelector" : [ "remixedIslandsSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome": [[0,["arcana_azureSea"]]]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_azureSea_floor",
+    "value": {
+      "oceanLiquid" : [ "water" ],
+	  "oceanLevelOffset" : 1000,
+      "blockSelector" : [ "ledgesSurface" ],
+      "fgCaveSelector" : [ "emptier" ],
+      "bgCaveSelector" : [ "emptiest" ],
+      "biome": [[0,["arcana_azureSea_floor"]]]
+    }
   }
 ]
