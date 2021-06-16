@@ -71,6 +71,52 @@
   // Planets
 
   [
+  
+  // Planets
+  {
+    "op": "replace",
+    "path": "/threatLevelColor",
+	"value": {
+		"default" : [
+		  [0, 165, 213], //TL 1
+		  [0, 213, 160], //TL 2
+		  [0, 213, 60 ], //TL 3
+		  [60, 213, 0 ], //TL 4
+		  [180, 213, 0], //TL 5
+		  [213, 195, 0], //TL 6
+		  [213, 140, 0], //TL 7
+		  [194, 160, 83], //TL 8
+		  [191, 63, 179], //TL 9
+		  [180, 180, 180] //TL 10
+		],
+		"moon" : [
+		  [160, 160, 160]
+		]
+	}
+  },
+  {
+    "op": "replace",
+    "path": "/threatLevelText",
+	"value": {
+		"default" : [
+		  "Low",
+		  "Moderate",
+		  "Risky",
+		  "Dangerous",
+		  "Extreme",
+		  "Inconceivable",
+		  "Unreal",
+		  "Auric",
+		  "Phantasmal",
+		  "Terminal"
+		],
+		"moon" : [
+		  "Unknown"
+		]
+	}
+  },
+  
+  // Objects
   {
     "op": "replace",
     "path": "/objectThreatColors",
@@ -88,7 +134,6 @@
 		]
 	}
   },
-  
   {
     "op": "replace",
     "path": "/objectThreatText",
