@@ -1,0 +1,99 @@
+{
+  "itemName" : "azure_sniperRifle_1",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An azurium sniper rifle, designed for clean eliminations.",
+  "shortdescription" : "^#4b92a9;Furud Modular^reset;",
+  "tooltipKind" : "gun",
+  "category" : "sniperRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","sniperrifle"],
+  "level" : 8,
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_blue.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.9, 0.3]
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [-0.4, -0.6]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/silenced-gun-2.ogg"]
+    }
+  },
+
+  "baseOffset" : [0.9, 0.3],
+  "muzzleOffset" : [3.6, 0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "arcana_azure",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 2.0,
+    "baseDps" : 11.8,
+    "energyUsage" : 50.0,
+    "inaccuracy" : 0.0,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "azure_assaultRifle_1_projectile_1",
+    "projectileParameters" : {
+	  "speed" : 186,
+      "knockback" : 40
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.06,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

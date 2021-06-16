@@ -1,0 +1,80 @@
+{
+  "type" : "arcana_npc_workshop_section8Officer",
+  "baseType" : "hostile",
+  
+  "levelVariance" : [8.0, 8.0],
+  
+  "dropPools" : [ "arcana_npcdrops_workshop_section8Officer" ],
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  
+      "attack" : {
+        "default" : {
+          "default" : [
+		  
+            "I would advise you to surrender now!",
+            "Intruder!",
+			"You can't be here!",
+			"You wouldn't want to fight me!",
+			"This is a restricted area!"
+			
+          ]
+        }
+      }
+	  
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_gearsS8_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_gearsS8_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_gearsS8_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "workshop_axe_2",
+			  "workshop_axe_4",
+			  "workshop_sniperRifle_1",
+			  "workshop_pistol_2"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 160.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.1
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "electricStatusImmunity" : {
+        "baseValue" : 0.0
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16764,
+  "materialName" : "astral_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile4",
+  "description" : "An Arcanian sandstone support material.",
+  "shortdescription" : "Astral Sandstone Beam",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1067
+  }
+}

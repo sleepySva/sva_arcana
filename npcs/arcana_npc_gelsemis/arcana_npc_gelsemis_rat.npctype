@@ -1,0 +1,76 @@
+{
+  "type" : "arcana_npc_gelsemis_rat",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "What's up?",
+            "Don't mess around, alright?",
+            "What do you want?",
+			"I don't have anything to do with you, foreigner.",
+			"Hey. Everything good?",
+            "What are you staring at?",
+			"Oh, hello there."
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+		    "head" : [
+              { "name" : "bandithat2", "parameters" : { "colorIndex" : 1 } },
+			  { "name" : "bandithat1", "parameters" : { "colorIndex" : 1 } },
+			  { "name" : "gasmaskhead", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "apextier2chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "apextier2pants", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 180.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.2
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

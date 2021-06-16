@@ -1,5 +1,6 @@
 [
-  
+
+  // Nova Station
   {
 	"op" : "add",
 	"path" : "/arcana_dungeon_novaStation_1",
@@ -90,7 +91,8 @@
 	  }
 	}
   },
-  
+
+  // Solar Corridor
   {
 	"op" : "add",
 	"path" : "/arcana_dungeon_solarCorridor",
@@ -128,7 +130,8 @@
       }
 	}
   },
-  
+
+  // Zhushi Pond
   {
 	"op" : "add",
 	"path" : "/arcana_dungeon_zhushiPond",
@@ -165,6 +168,42 @@
 		  "nightLightColor" : [200, 200, 200]
         }
       }
+	}
+  },
+
+  // Arcanian Explorer Ship
+  {
+	"op" : "add",
+	"path" : "/arcana_dungeon_arcanianExplorerShip",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "arcana_dungeon_arcanianExplorerShip",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
 	}
   }
 ]

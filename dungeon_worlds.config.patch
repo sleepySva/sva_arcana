@@ -59,5 +59,25 @@
       "biome" : "arcana_bambooForest",
       "musicTrack" : "/music/elegy-of-the-star.ogg"
     }
+  },
+  
+  {
+    "op": "add",
+    "path": "/arcana_dungeon_arcanianExplorerShip",
+    "value": {
+      "primaryDungeon": "arcana_dungeon_arcanianExplorerShip",
+      "threatLevel": 1,
+      "gravity": 0,
+      "airless": true,
+      "worldSize" : [1200, 600],
+      "dungeonBaseHeight" : 200,
+      "dungeonSurfaceHeight" : 200,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+      "musicTrack": "/music/azure.ogg",
+      "environmentStatusEffects": [ "biomeairless", "dontstarve" ],
+      "worldEdgeForceRegions": "TopAndBottom",
+      "biome": "space"
+    }
   }
 ]

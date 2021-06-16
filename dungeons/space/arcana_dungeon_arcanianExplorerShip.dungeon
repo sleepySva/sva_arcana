@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_arcanianExplorerShip",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "arcana_dungeon_arcanianExplorerShip" ],
+    "gravity" : 80,
+	"breathable" : true,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_dungeon_arcanianExplorerShip",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_arcanianExplorerShip.json" ]
+    }
+  ]
+}

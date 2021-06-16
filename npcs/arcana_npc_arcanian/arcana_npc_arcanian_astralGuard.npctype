@@ -1,0 +1,58 @@
+{
+  "type" : "arcana_npc_arcanian_astralGuard",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Welcome! Make yourself at home.",
+            "Stay at ease, traveller. I'll keep track of any potential dangers around here.",
+            "Don't worry, traveller. You're safe here under our guard.",
+			"We have many libraries in the offworld Havencrest settlements, many of our scholars also reside there.",
+			"You should visit our star obvervatories, they're quite fascinating.",
+            "Greetings, stranger. I hope you will have a pleasant stay here."
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_astromancer_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_astromancer_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_astromancer_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "azure_assaultRifle_1",
+              "azure_assaultRifle_2",
+              "azure_shotgun_1",
+              "azure_sniperRifle_1"
+            ],
+            "sheathedprimary" : [
+              "azure_machinePistol_1",
+              "azure_machinePistol_2",
+			  "azure_machinePistol_3",
+			  "azure_pistol_1",
+			  "azure_pistol_2"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

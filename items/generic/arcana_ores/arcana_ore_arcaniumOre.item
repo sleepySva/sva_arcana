@@ -1,11 +1,12 @@
 {
   "itemName" : "arcana_ore_arcaniumOre",
-  "price" : 100,
+  "price" : 110,
   "rarity" : "Legendary",
   "category" : "craftingMaterial",
   "inventoryIcon" : "arcana_ore_arcaniumOre.png",
   "description" : "An arcanium ore, can be used for smelting.",
   "shortdescription" : "Arcanium Ore",
   "itemTags" : [ "reagent" ],
-  "collectablesOnPickup" : { "arcana_collection_mineral" : "arcana_ore_arcaniumOre" }
+  "collectablesOnPickup" : { "arcana_collection_mineral" : "arcana_ore_arcaniumOre" },
+  "radioMessagesOnPickup" : [ "arcana_radiomessage_pickup_arcaniumOre" ]
 }

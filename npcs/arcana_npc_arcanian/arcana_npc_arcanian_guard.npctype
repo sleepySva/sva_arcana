@@ -1,0 +1,101 @@
+{
+  "type" : "arcana_npc_arcanian_guard",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Greetings, adventurer. I wish you a safe journey.",
+            "Welcome to the oasis of the Arcane, traveller.",
+            "Hello there, what otherworldly knowledge have you to share?",
+			"The oasis is open to foreign faces, but watch your step before the sacred springs.",
+			"As a protector of the city of scholars, I must stay sharp at all times.",
+            "Hello, traveller! I hope you will enjoy your stay here at the oasis."
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_scholar_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_scholar_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_scholar_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ]
+          },
+          {
+		  	"head" : [
+              { "name" : "arcana_armor_scholar_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcanianoutfit1chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_scholar_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 200.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.2
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "arcana_resistance_azure" : {
+        "baseValue" : 0.6
+      },
+      "fireResistance" : {
+        "baseValue" : 0.2
+      },
+      "iceResistance" : {
+        "baseValue" : 0.2
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16845,
+  "materialName" : "arcana_platform_astralPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_astralPlatform",
+  "shortdescription" : "Astral Platform",
+  "description" : "A platform carefully crafted with sandstone and composite materials.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 8,
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_astralPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "objectName" : "arcana_astral_wireddeco_7",
+  "colonyTags" : ["light"],
+  "rarity" : "Rare",
+  "description" : "A large fuse box powered with an Azurium fuse cell.",
+  "shortdescription" : "Astral Fuse Box",
+  "race" : "generic",
+
+  "category" : "light",
+  "price" : 150,
+  "lightColor" : [10, 10, 20],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "arcana_astral_wireddeco_7.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 0],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "arcana_astral_wireddeco_7.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/arcana_light_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "light" : {
+          "states" : {
+            "on" : {
+              "frames" : 8,
+              "cycle" : 0.8,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "arcana_astral_wireddeco_7.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

@@ -1,0 +1,58 @@
+{
+  "type" : "arcana_npc_arcanian_astralVillager",
+  "baseType" : "villager",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The Azure Deserts are barren, but we are blessed by the water of the oasis.",
+            "Do you travel around a lot? It's so cool to go to new planets!",
+            "What brings you here, traveller?",
+			"We are grateful for the desert springs, without them we would have never flourished.",
+			"Some of our most knowledgeable scholars are invested in the science of the stars, you should meet them someday!",
+            "Welcome, traveller! What otherworldly news do you have to share?"
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "arcana_armor_oceanite_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_oceanite_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_oceanite_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_oceanite_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "bedouinchest" }
+            ],
+            "legs" : [
+              { "name" : "bedouinlegs" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type" : "arcana_npc_gelsemis_villager",
+  "baseType" : "villager",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hello, foreigner. What brings you here?",
+            "The Viridescent is a dangerous place to be, you should be careful.",
+            "Many of us respect the Luye for protecting us, the Gelsemis.",
+			"Even the most toxic air would be cleansed by the scent of the viridescent tea leaves.",
+			"You should try a cup of viridescent tea sometime. It's quite refreshing.",
+            "Welcome to our city, foreigner. You should visit the Luye Association if you haven't already.",
+			"Oh, hello there."
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+		    "head" : [
+              { "name" : "arcana_armor_lushe_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_lushe_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_lushe_legs", "parameters" : { "colorIndex" : 1 } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "monkchest", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "legs" : [
+              { "name" : "monklegs", "parameters" : { "colorIndex" : [1] } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "hylotltier5mchest", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "legs" : [
+              { "name" : "hylotltier5mpants", "parameters" : { "colorIndex" : [1] } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "traditionalchest", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "legs" : [
+              { "name" : "traditionallegs", "parameters" : { "colorIndex" : [1] } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_lushe_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_lushe_legs", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 120.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.2
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

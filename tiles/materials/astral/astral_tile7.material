@@ -1,0 +1,21 @@
+{
+  "materialId" : 16767,
+  "materialName" : "astral_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile7",
+  "description" : "An Arcanian composite material used to build complex structures.",
+  "shortdescription" : "Astral Sloped Panel ^blue;Ocean^reset;",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile7.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4767
+  }
+}

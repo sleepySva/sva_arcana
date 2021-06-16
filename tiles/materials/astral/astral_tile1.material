@@ -1,0 +1,21 @@
+{
+  "materialId" : 16761,
+  "materialName" : "astral_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile1",
+  "description" : "An Arcanian flooring material made from sandstone.",
+  "shortdescription" : "Astral Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1061
+  }
+}

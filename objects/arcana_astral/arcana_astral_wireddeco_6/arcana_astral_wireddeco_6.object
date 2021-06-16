@@ -1,0 +1,81 @@
+{
+  "objectName" : "arcana_astral_wireddeco_6",
+  "colonyTags" : ["light"],
+  "rarity" : "Rare",
+  "description" : "An Azurium power core, it's best to not touch it if you don't know what you're doing.",
+  "shortdescription" : "Astral Power Core",
+  "race" : "generic",
+
+  "category" : "light",
+  "price" : 280,
+  "lightColor" : [10, 10, 20],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "arcana_astral_wireddeco_6.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 0],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
+    },
+    {
+      "image" : "arcana_astral_wireddeco_6.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/terraformer_small_loop.ogg",
+  "soundEffectRangeMultiplier" : 1.0,
+  
+  "animation" : "/objects/arcana_console_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "switchState" : {
+          "states" : {
+            "on" : {
+              "frames" : 16,
+              "cycle" : 1.6,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/floodlights_on.ogg" ],
+      "off" : [ "/sfx/objects/floodlights_off.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "arcana_astral_wireddeco_6.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "defaultSwitchState" : true,
+  "interactive" : true,
+
+  "outputNodes" : [ [0, 0] ]
+}

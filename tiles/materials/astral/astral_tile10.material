@@ -1,0 +1,21 @@
+{
+  "materialId" : 16770,
+  "materialName" : "astral_tile10",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile10",
+  "description" : "An gray material made from a flexible metallic texile.",
+  "shortdescription" : "Metallic Fabric ^#626262;Ashen^reset;",
+  "footstepSound" : "/sfx/blocks/footstep_ash.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile10.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1000
+  }
+}

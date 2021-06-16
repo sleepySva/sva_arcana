@@ -1,0 +1,21 @@
+{
+  "materialId" : 16762,
+  "materialName" : "astral_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile2",
+  "description" : "An Arcanian flooring material, covered with blue carpet.",
+  "shortdescription" : "Astral Carpet Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1062
+  }
+}

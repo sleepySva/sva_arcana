@@ -1,0 +1,53 @@
+{
+  "type" : "arcana_npc_arcanian_astralCrew",
+  "baseType" : "villager",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Welcome to our ship! I hope you like it here.",
+            "Do you travel around a lot? It's so cool to go to new planets!",
+            "I love travelling! Do you like to explore new stars as well?",
+			"As a ship crew, I get to visit lots of cool stars!",
+			"You should visit one of our settlements someday!",
+            "I heard that our uniform was made by the Aurea Order, it looks so smooth!"
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "arcana_armor_arcka_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_arcka_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          },
+          {
+            "head" : [
+              { "name" : "arcana_armor_arcka_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_arcka_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_arcka_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

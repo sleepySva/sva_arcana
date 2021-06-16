@@ -1,0 +1,21 @@
+{
+  "materialId" : 16763,
+  "materialName" : "astral_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile3",
+  "description" : "An Arcanian sandstone building material.",
+  "shortdescription" : "Astral Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1063
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type" : "arcana_npc_arcanian_astralPilot",
+  "baseType" : "villager",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Welcome aboard, traveller.",
+            "Greetings, traveller! I'm one of the pilots on this ship.",
+            "What brings you here, traveller?",
+			"Feel free to look around the ship while you're here!",
+			"You can look around, but don't touch anything that you're not supposed to though.",
+            "Are you a pilot as well? It's exciting to travel to new stars, isn't it?"
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_starwalker_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_starwalker_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_starwalker_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

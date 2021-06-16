@@ -1,0 +1,29 @@
+[
+  {
+    "op": "add",
+    "path": "/arcana_dungeon_arcanianExplorerShip",
+    "value": {
+      "warpAction": "InstanceWorld:arcana_dungeon_arcanianExplorerShip",
+      "threatLevel": 1,
+      "skyParameters": {
+        "seed": 0,
+        "horizonClouds": false,
+        "horizonImages": [
+          {
+            "left": "/celestial/system/ships/shiphorizonleft.png",
+            "right": "/celestial/system/ships/shiphorizonright.png"
+          }
+        ]
+      },
+      "moving": true,
+      "speed": 15,
+      "orbitRange": [1, 1],
+      "lifeTime": [1500, 2100],
+      "parameters": {
+        "icon": "/celestial/system/ships/arcana_ship_arcanian.png",
+        "displayName": "Arcanian Explorer Ship",
+        "description": "A friendly small Arcanian ship. Its captain has initiated communications and invited you for a visit."
+      }
+    }
+  }
+]

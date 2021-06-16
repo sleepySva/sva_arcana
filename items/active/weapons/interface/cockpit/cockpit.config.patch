@@ -1,0 +1,956 @@
+[
+
+  // More Planet Info Patch
+  [
+  
+  {
+        "op": "test",
+        "path": "/displayDungeons"
+  },
+
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_azureSea_dungeon_1",
+	"value": {
+		"description" : "Golden underwater ruins can be found deep in the ocean.",
+		"icon" : "/interface/cockpit/dungeons/arcana_azureSea_dungeon_1.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_solarized_dungeon_3",
+	"value": {
+		"description" : "A tall oriental tower. Hostile signatures detected.",
+		"icon" : "/interface/cockpit/dungeons/arcana_solarized_dungeon_3.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_solarized_dungeon_2",
+	"value": {
+		"description" : "A small oriental town surrounded by bamboo plants and sky blue ponds.",
+		"icon" : "/interface/cockpit/dungeons/arcana_solarized_dungeon_2.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_viridescent_dungeon_1",
+	"value": {
+		"description" : "A city soaked with toxic waste, occupied by the Gelsemis.",
+		"icon" : "/interface/cockpit/dungeons/arcana_viridescent_dungeon_1.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_workshop_dungeon_1",
+	"value": {
+		"description" : "An industrial compound supervised by Secion 8 of the Workshop of Gears.",
+		"icon" : "/interface/cockpit/dungeons/arcana_workshop_dungeon_1.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_timeless_dungeon_1",
+	"value": {
+		"description" : "What appears to be an ancient clocktower. Hostile life signatures detected.",
+		"icon" : "/interface/cockpit/dungeons/arcana_timeless_dungeon_1.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_arcaneDesert_dungeon_2",
+	"value": {
+		"description" : "A small Havencrest village, harboring Arcanians.",
+		"icon" : "/interface/cockpit/dungeons/arcana_arcaneDesert_dungeon_2.png"
+	}
+  }
+  
+  ],
+  
+  
+  // Planets
+
+  [
+  {
+    "op": "replace",
+    "path": "/objectThreatColors",
+	"value": {
+		"unavailable" : [213, 50, 0],
+		"available" : [
+			[0, 213, 50], // <T3
+			[0, 165, 213], // T3
+			[140, 213, 0 ], // T4
+			[213, 140, 0], // T5
+			[180, 50, 0], // T6
+			[104, 42, 42], // T7
+			[132, 122, 123], // T8
+			[194, 14, 90] // T9
+		]
+	}
+  },
+  
+  {
+    "op": "replace",
+    "path": "/objectThreatText",
+	"value": {
+		"unavailable" : "REQUIRES MECH TO DEPLOY",
+		"available" : [
+			"None", // <T3, friendly encounters
+			"Low", // T3
+			"Moderate", // T4
+			"Dangerous", // T5
+			"Extreme", // T6
+			"Brutal", // T7
+			"Merciless", // T8
+			"Diabolical" // T9
+		],
+		"friendly" : "None"
+	}
+  },
+
+  {
+    "op": "add",
+    "path": "/starTypeColors/arcana_star_arcane",
+    "value": [
+      107,
+      255,
+      233
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/starTypeNames/arcana_star_arcane",
+    "value": "Arcane Star"
+  },
+  
+  {
+    "op": "add",
+    "path": "/starTypeColors/arcana_star_illuminated",
+    "value": [
+      188,
+      188,
+      188
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/starTypeNames/arcana_star_illuminated",
+    "value": "Illuminated Star"
+  },
+  
+  {
+    "op": "add",
+    "path": "/starTypeColors/arcana_star_superstorm",
+    "value": [
+      100,
+      50,
+      169
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/starTypeNames/arcana_star_superstorm",
+    "value": "Superstorm Star"
+  },
+  
+  {
+    "op": "add",
+    "path": "/starTypeColors/arcana_star_polar",
+    "value": [
+      70,
+      65,
+      199
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/starTypeNames/arcana_star_polar",
+    "value": "Tripolar Star"
+  },
+
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_arcaneForest",
+    "value": [
+      "^#49a193;The Arcane Forest ^white;glows with ancient magic.",
+      "^#49a193;The Arcane Forest ^white;glows with ancient magic.",
+      "^#49a193;The Arcane Forest ^white;glows with ancient magic."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_arcaniumOre",
+    "value": {
+      "displayName": "Arcanium",
+      "icon": "/items/generic/arcana_ores/arcana_ore_arcaniumOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_arcaneForest",
+    "value": "Arcane Forest"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_arcaneForest",
+    "value": [
+      73,
+      161,
+      147
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_arcaneDesert",
+    "value": [
+      "^#e09a7a;The Arcane Desert ^white;glows with ancient magic.",
+      "^#e09a7a;The Arcane Desert ^white;glows with ancient magic.",
+      "^#e09a7a;The Arcane Desert ^white;glows with ancient magic."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_magifireCrystal",
+    "value": {
+      "displayName": "Magifire Crystal",
+      "icon": "/items/generic/elemental_crafting/elemental_crafting_magifireCrystal.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_arcaneDesert",
+    "value": "Arcane Desert"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_arcaneDesert",
+    "value": [
+      224,
+      154,
+      122
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_arcaneTundra",
+    "value": [
+      "^#bcb7ec;The Arcane Tundra ^white;glows with ancient magic.",
+      "^#bcb7ec;The Arcane Tundra ^white;glows with ancient magic.",
+      "^#bcb7ec;The Arcane Tundra ^white;glows with ancient magic."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_arcaneTundra",
+    "value": "Arcane Tundra"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_arcaneTundra",
+    "value": [
+      188,
+      183,
+      236
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_verdant",
+    "value": [
+      "^#b9dd46;The Verdant ^white;hosts an abundance of vegetation and overgrownths.",
+      "^#b9dd46;The Verdant ^white;hosts an abundance of vegetation and overgrownths.",
+      "^#b9dd46;The Verdant ^white;hosts an abundance of vegetation and overgrownths."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_verdant",
+    "value": "Verdant"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_verdant",
+    "value": [
+      185,
+      221,
+      70
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_blistering",
+    "value": [
+      "^#dd6f52;The Blistering ^white;is covered with the desert heat. Old ruins of the ancient fire are scattered here.",
+      "^#dd6f52;The Blistering ^white;is covered with the desert heat. Old ruins of the ancient fire are scattered here.",
+      "^#dd6f52;The Blistering ^white;is covered with the desert heat. Old ruins of the ancient fire are scattered here."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_blistering",
+    "value": "Blistering"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_blistering",
+    "value": [
+      221,
+      111,
+      82
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_windswept",
+    "value": [
+      "Lush highlands and old ruins can be seen in ^#bce279;the Windswept^white;.",
+      "Lush highlands and old ruins can be seen in ^#bce279;the Windswept^white;.",
+      "Lush highlands and old ruins can be seen in ^#bce279;the Windswept^white;."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_windswept",
+    "value": "Windswept"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_windswept",
+    "value": [
+      188,
+      226,
+      121
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_florastone",
+    "value": {
+      "displayName": "Florastone",
+      "icon": "/items/generic/elemental_crafting/elemental_crafting_florastone.png"
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_turbulent",
+    "value": [
+      "Aquamarine crystals glows in the center of ^#4c77ca;the Turbulent sea^white;.",
+      "Aquamarine crystals glows in the center of ^#4c77ca;the Turbulent sea^white;.",
+      "Aquamarine crystals glows in the center of ^#4c77ca;the Turbulent sea^white;."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_pinkAquamarine",
+    "value": {
+      "displayName": "Pink Aquamarine",
+      "icon": "/items/generic/elemental_crafting/elemental_crafting_pinkAquamarine.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_turbulent",
+    "value": "Turbulent"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_turbulent",
+    "value": [
+      76,
+      119,
+      202
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_arcaneSea",
+    "value": [
+      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Arcane Sea^white;.",
+      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Arcane Sea^white;.",
+      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Arcane Sea^white;."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_atlaGoldOre",
+    "value": {
+      "displayName": "Atla Gold",
+      "icon": "/items/generic/arcana_ores/arcana_ore_atlaGoldOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_arcaneSea",
+    "value": "Arcane Sea"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_arcaneSea",
+    "value": [
+      62,
+      156,
+      232
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_goldenForest",
+    "value": [
+      "Bright golden trees shine in the mysterious ^#facc5d;Golden Forest^white;.",
+      "Bright golden trees shine in the mysterious ^#facc5d;Golden Forest^white;.",
+      "Bright golden trees shine in the mysterious ^#facc5d;Golden Forest^white;."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_goldenForest",
+    "value": "Golden Forest"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_goldenForest",
+    "value": [
+      250,
+      204,
+      93
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_illuminated",
+    "value": [
+      "Old fortresses and palaces are detected in this ^#e3e6f1;Illuminated^white; planet.",
+      "Old fortresses and palaces are detected in this ^#e3e6f1;Illuminated^white; planet.",
+      "Old fortresses and palaces are detected in this ^#e3e6f1;Illuminated^white; planet."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_holosiumFragment",
+    "value": {
+      "displayName": "Holosium Fragment",
+      "icon": "/items/generic/arcana_ores/arcana_ore_holosiumFragment.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_illuminated",
+    "value": "Illuminated"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_illuminated",
+    "value": [
+      227,
+      230,
+      241
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_desolate",
+    "value": [
+      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;desolate^white; planet.",
+      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;desolate^white; planet.",
+      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;desolate^white; planet."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_necroiumFragment",
+    "value": {
+      "displayName": "Necroium Fragment",
+      "icon": "/items/generic/arcana_ores/arcana_ore_necroiumFragment.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_desolate",
+    "value": "Desolate"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_desolate",
+    "value": [
+      151,
+      61,
+      197
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_sanguine",
+    "value": [
+      "Dark hills covered in crimson vegetation are scattered in this ^#f1505c;sanguine^white; planet.",
+      "Dark hills covered in crimson vegetation are scattered in this ^#f1505c;sanguine^white; planet.",
+      "Dark hills covered in crimson vegetation are scattered in this ^#f1505c;sanguine^white; planet."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_avostone",
+    "value": {
+      "displayName": "Avostone",
+      "icon": "/items/generic/arcana_misc/arcana_misc_avostone.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_sanguine",
+    "value": "Sanguine"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_sanguine",
+    "value": [
+      241,
+      80,
+      92
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_ferocious",
+    "value": [
+      "The ^#a17a7e;ferocious^white; is an abandoned wasteland, occupied only by scavengers and outlaws.",
+      "The ^#a17a7e;ferocious^white; is an abandoned wasteland, occupied only by scavengers and outlaws.",
+      "The ^#a17a7e;ferocious^white; is an abandoned wasteland, occupied only by scavengers and outlaws."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_ferocious",
+    "value": "Ferocious"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_ferocious",
+    "value": [
+      161,
+      122,
+      126
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_animus",
+    "value": [
+      "Restless spirits roams in the ever shifting ^#ab0927;animus^white; hills.",
+      "Restless spirits roams in the ever shifting ^#ab0927;animus^white; hills.",
+      "Restless spirits roams in the ever shifting ^#ab0927;animus^white; hills."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_animaOre",
+    "value": {
+      "displayName": "Anima",
+      "icon": "/items/generic/arcana_ores/arcana_ore_animaOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_animus",
+    "value": "Animus"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_animus",
+    "value": [
+      171,
+      9,
+      39
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_evoaquatic",
+    "value": [
+      "Living organisms strive in this liquid filled ^#63864f;evoaquatic^white; planet. This appears to be a suitable ecosystem for most beings.",
+      "Living organisms strive in this liquid filled ^#63864f;evoaquatic^white; planet. This appears to be a suitable ecosystem for most beings.",
+      "Living organisms strive in this liquid filled ^#63864f;evoaquatic^white; planet. This appears to be a suitable ecosystem for most beings."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_morphosisShard",
+    "value": {
+      "displayName": "Morphosis",
+      "icon": "/items/generic/arcana_ores/arcana_ore_morphosisShard.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_evoaquatic",
+    "value": "Evoaquatic"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_evoaquatic",
+    "value": [
+      99,
+      134,
+      79
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_ardentTaiga",
+    "value": [
+      "The ^#c0527a;ardent taiga^white; is filled with a vast quantity of icy frost and broken down mechanism leftovers.",
+      "The ^#c0527a;ardent taiga^white; is filled with a vast quantity of icy frost and broken down mechanism leftovers.",
+      "The ^#c0527a;ardent taiga^white; is filled with a vast quantity of icy frost and broken down mechanism leftovers."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_borealiteOre",
+    "value": {
+      "displayName": "Borealite",
+      "icon": "/items/generic/arcana_ores/arcana_ore_borealiteOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_ardentTaiga",
+    "value": "Ardent Taiga"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_ardentTaiga",
+    "value": [
+      192,
+      82,
+      122
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_superstormExpanse",
+    "value": [
+      "The ^#c750d9;superstorm expanse^white; is a lightning filled planet that brings down constant thunder without mercy.",
+      "The ^#c750d9;superstorm expanse^white; is a lightning filled planet that brings down constant thunder without mercy.",
+      "The ^#c750d9;superstorm expanse^white; is a lightning filled planet that brings down constant thunder without mercy."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_thoriumOre",
+    "value": {
+      "displayName": "Eletrolite",
+      "icon": "/items/generic/arcana_ores/arcana_ore_thoriumOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_superstormExpanse",
+    "value": "Superstorm Expanse"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_superstormExpanse",
+    "value": [
+      199,
+      80,
+      217
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_stahlernBadlands",
+    "value": [
+      "The ^#b97027;stahlern badlands^white; is a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands.",
+      "The ^#b97027;stahlern badlands^white; is a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands.",
+      "The ^#b97027;stahlern badlands^white; is a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_verrostinOre",
+    "value": {
+      "displayName": "Verrostin",
+      "icon": "/items/generic/arcana_ores/arcana_ore_verrostinOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_stahlernBadlands",
+    "value": "Stahlern Badlands"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_stahlernBadlands",
+    "value": [
+      185,
+      112,
+      39
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_timeless",
+    "value": [
+      "The ^#9c6a21;timeless^white; is a planet frozen in time, forever clouded in darkness. Combat preparations are recommended before venturing into the planet's clocktowers.",
+      "The ^#9c6a21;timeless^white; is a planet frozen in time, forever clouded in darkness. Combat preparations are recommended before venturing into the planet's clocktowers.",
+      "The ^#9c6a21;timeless^white; is a planet frozen in time, forever clouded in darkness. Combat preparations are recommended before venturing into the planet's clocktowers."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_timeless",
+    "value": "Timeless"
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_rawDiathrylium",
+    "value": {
+      "displayName": "Diathrylium",
+      "icon": "/items/generic/arcana_ores/arcana_ore_rawDiathrylium.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_timeless",
+    "value": [
+      156,
+      106,
+      33
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_automated",
+    "value": [
+      "The ^#64646a;automated^white; is a machine filled planet occupied by the Workshop. Combat preparations are recommended before venturing into this planet.",
+      "The ^#64646a;automated^white; is a machine filled planet occupied by the Workshop. Combat preparations are recommended before venturing into this planet.",
+      "The ^#64646a;automated^white; is a machine filled planet occupied by the Workshop. Combat preparations are recommended before venturing into this planet."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_rawDustrium",
+    "value": {
+      "displayName": "Dustrium",
+      "icon": "/items/generic/workshop_crafting/workshop_crafting_rawDustrium.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_automated",
+    "value": "Automated"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_automated",
+    "value": [
+      100,
+      100,
+      106
+    ]
+  },
+
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_neonSea",
+    "value": [
+      "The ^#ffb3eb;neon sea^white; is a planet drowned in bright, neon water.",
+      "The ^#ffb3eb;neon sea^white; is a planet drowned in bright, neon water.",
+      "The ^#ffb3eb;neon sea^white; is a planet drowned in bright, neon water."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_neonSea",
+    "value": "Neon Sea"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_neonSea",
+    "value": [
+      255,
+      179,
+      235
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_viridescent",
+    "value": [
+      "The ^#cfd848;viridescent^white; is a green, toxic planet filled with rivers of acidic ichor. Some ancient remains still linger, but the planet has long been inhospitable for most species.",
+      "The ^#cfd848;viridescent^white; is a green, toxic planet filled with rivers of acidic ichor. Some ancient remains still linger, but the planet has long been inhospitable for most species.",
+      "The ^#cfd848;viridescent^white; is a green, toxic planet filled with rivers of acidic ichor. Some ancient remains still linger, but the planet has long been inhospitable for most species."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_viridescent",
+    "value": "Viridescent"
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_corrodiumOre",
+    "value": {
+      "displayName": "Corrodium",
+      "icon": "/items/generic/arcana_ores/arcana_ore_corrodiumOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_viridescent",
+    "value": [
+      207,
+      216,
+      72
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_solarized",
+    "value": [
+      "The ^#ffbb79;solarized^white; is a sun soaked planet burning with fervent heat. Some ancient remains and shrines can be found, though caution is advised before heading down.",
+      "The ^#ffbb79;solarized^white; is a sun soaked planet burning with fervent heat. Some ancient remains and shrines can be found, though caution is advised before heading down.",
+      "The ^#ffbb79;solarized^white; is a sun soaked planet burning with fervent heat. Some ancient remains and shrines can be found, though caution is advised before heading down."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_solarized",
+    "value": "Solarized"
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_atumiumOre",
+    "value": {
+      "displayName": "Atumium",
+      "icon": "/items/generic/arcana_ores/arcana_ore_atumiumOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_solarized",
+    "value": [
+      255,
+      187,
+      121
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_sceantine",
+    "value": {
+      "displayName": "Sceantine",
+      "icon": "/items/generic/arcana_misc/arcana_misc_sceantine.png"
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_bambooForest",
+    "value": [
+      "The ^#597f34;bamboo forest^white; is filled with lush vegetation, and is abundant with bamboo stalks.",
+      "The ^#597f34;bamboo forest^white; is filled with lush vegetation, and is abundant with bamboo stalks.",
+      "The ^#597f34;bamboo forest^white; is filled with lush vegetation, and is abundant with bamboo stalks."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_bambooForest",
+    "value": "Bamboo Forest"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_bambooForest",
+    "value": [
+      89,
+      127,
+      52
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_aspiriteOre",
+    "value": {
+      "displayName": "Aspirite",
+      "icon": "/items/generic/arcana_ores/arcana_ore_aspiriteOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_noxionOre",
+    "value": {
+      "displayName": "Noxion",
+      "icon": "/items/generic/arcana_ores/arcana_ore_noxionOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_immoriteOre",
+    "value": {
+      "displayName": "Immorite",
+      "icon": "/items/generic/arcana_ores/arcana_ore_immoriteOre.png"
+    }
+  },
+  
+  
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_azureSea",
+    "value": [
+      "Sunken, gold temples remain at the bottom of the ^#40a2b7;the Azure Sea^white;.",
+      "Sunken, gold temples remain at the bottom of the ^#40a2b7;the Azure Sea^white;.",
+      "Sunken, gold temples remain at the bottom of the ^#40a2b7;the Azure Sea^white;."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_oceanite",
+    "value": {
+      "displayName": "Oceanite",
+      "icon": "/items/generic/arcana_misc/arcana_misc_oceanite.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_geodestone",
+    "value": {
+      "displayName": "Geode",
+      "icon": "/items/active/unsorted/geode/geodeicon.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_azureSea",
+    "value": "Azure Sea"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_azureSea",
+    "value": [
+      64,
+      162,
+      182
+    ]
+  }
+  ]
+]
