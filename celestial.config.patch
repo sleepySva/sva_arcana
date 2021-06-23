@@ -463,7 +463,7 @@
 					"description" : "Polar Planet",
 					"smallImage" : "/celestial/system/planet_small.png",
 
-					"terrestrialType" : [ "arcana_solarized", "arcana_bambooForest", "arcana_azureSea"]
+					"terrestrialType" : [ "arcana_solarized", "arcana_bambooForest", "arcana_azureSea", "arcana_azureDesert"]
 				  },
 
 				  "variationParameters" : [
@@ -1340,6 +1340,29 @@
 				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
 				"dynamicsRange" : [1, 30]
 			}
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_azureDesert",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_azureDesert_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
+
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_azureDesert",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_azureDesert/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
 		}
 	],
 
@@ -1759,6 +1782,20 @@
 		  "op": "add",
 		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_azureSea"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_azureDesert"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_azureDesert"
 		}
 	]
 ]

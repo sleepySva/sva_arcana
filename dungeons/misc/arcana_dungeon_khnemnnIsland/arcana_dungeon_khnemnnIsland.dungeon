@@ -1,0 +1,27 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_khnemnnIsland",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_dungeon_khnemnnIsland"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_dungeon_khnemnnIsland",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_khnemnnIsland.json" ]
+    }
+  ]
+}

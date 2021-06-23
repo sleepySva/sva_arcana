@@ -11,13 +11,46 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_astral_deco_13.png:<color>",
+      "image" : "arcana_astral_deco_13.png:<color>",
       "imagePosition" : [-24, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
+	  
+	  "direction" : "left",
+      "flipImages" : true,
 
-      "spaceScan" : 0.1,
-      "anchors" : []
+      "spaces" :  [
+		  [3, 5],
+		  [2, 5],
+		  [1, 6],
+		  [0, 6],
+		  [-1, 7],
+		  [-2, 8],
+		  [-3, 9]
+	  ],
+      "anchors" : [],
+	  "collision" : "solid"
+
+    },
+    {
+      "image" : "arcana_astral_deco_13.png:<color>",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "direction" : "right",
+
+      "spaces" :  [
+		  [-3, 5],
+		  [-2, 5],
+		  [-1, 6],
+		  [0, 6],
+		  [1, 7],
+		  [2, 8],
+		  [3, 9]
+	  ],
+      "anchors" : [],
+	  "collision" : "solid"
 
     }
   ]

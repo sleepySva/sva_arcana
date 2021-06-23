@@ -130,7 +130,9 @@
 			[180, 50, 0], // T6
 			[104, 42, 42], // T7
 			[132, 122, 123], // T8
-			[194, 14, 90] // T9
+			[194, 14, 90], // T9
+			[88, 88, 88], // T10
+			[88, 88, 88] // ????????
 		]
 	}
   },
@@ -147,7 +149,9 @@
 			"Extreme", // T6
 			"Brutal", // T7
 			"Merciless", // T8
-			"Diabolical" // T9
+			"Diabolical", // T9
+			"Ancient", // T10
+			"Ancient" // ???????????????
 		],
 		"friendly" : "None"
 	}
@@ -213,6 +217,7 @@
     "value": "Tripolar Star"
   },
 
+  // Arcane Forest
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneForest",
@@ -245,6 +250,7 @@
     ]
   },
   
+  // Arcane Desert
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneDesert",
@@ -277,6 +283,7 @@
     ]
   },
   
+  // Arcane Tundra
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneTundra",
@@ -301,6 +308,7 @@
     ]
   },
   
+  // Verdant
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_verdant",
@@ -325,6 +333,7 @@
     ]
   },
   
+  // Blistering
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_blistering",
@@ -349,6 +358,7 @@
     ]
   },
   
+  // Windswept
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_windswept",
@@ -380,7 +390,8 @@
       "icon": "/items/generic/elemental_crafting/elemental_crafting_florastone.png"
     }
   },
-  
+
+  // Turbulent
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_turbulent",
@@ -412,7 +423,8 @@
       202
     ]
   },
-  
+
+  // Arcane Sea
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneSea",
@@ -444,7 +456,8 @@
       232
     ]
   },
-  
+
+  // Golden Forest
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_goldenForest",
@@ -468,7 +481,8 @@
       93
     ]
   },
-  
+
+  // Illuminated
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_illuminated",
@@ -500,7 +514,8 @@
       241
     ]
   },
-  
+
+  // Desolate
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_desolate",
@@ -532,7 +547,8 @@
       197
     ]
   },
-  
+
+  // Sanguine
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_sanguine",
@@ -564,7 +580,8 @@
       92
     ]
   },
-  
+
+  // Ferocious
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_ferocious",
@@ -588,7 +605,8 @@
       126
     ]
   },
-  
+
+  // Animus
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_animus",
@@ -620,7 +638,8 @@
       39
     ]
   },
-  
+
+  // Evoaquatic
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_evoaquatic",
@@ -652,7 +671,8 @@
       79
     ]
   },
-  
+
+  // Ardent Taiga
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_ardentTaiga",
@@ -684,7 +704,8 @@
       122
     ]
   },
-  
+
+  // Superstorm Expanse
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_superstormExpanse",
@@ -717,6 +738,7 @@
     ]
   },
   
+  // Stahlern Badlands
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_stahlernBadlands",
@@ -748,7 +770,8 @@
       39
     ]
   },
-  
+
+  // Timeless
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_timeless",
@@ -780,7 +803,8 @@
       33
     ]
   },
-  
+
+  // Automated
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_automated",
@@ -813,6 +837,7 @@
     ]
   },
 
+  // Neon Sea
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_neonSea",
@@ -837,6 +862,7 @@
     ]
   },
   
+  // Viridescent
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_viridescent",
@@ -869,6 +895,7 @@
     ]
   },
   
+  // Solarized
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_solarized",
@@ -909,6 +936,7 @@
     }
   },
   
+  // Bamboo Forest
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_bambooForest",
@@ -932,6 +960,8 @@
       52
     ]
   },
+  
+  // Aspirite, Noxion, Immorite
   {
     "op": "add",
     "path": "/displayOres/arcana_mod_aspiriteOre",
@@ -957,7 +987,7 @@
     }
   },
   
-  
+  // Azure Sea
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_azureSea",
@@ -996,6 +1026,40 @@
       162,
       182
     ]
+  },
+  
+  // Azure Desert
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_azureDesert",
+    "value": [
+      "^#c2a053;The Azure Desert^reset; is a starry planet primarily occupied by Arcanian settlers and scholars.",
+      "^#c2a053;The Azure Desert^reset; is a starry planet primarily occupied by Arcanian settlers and scholars.",
+      "^#c2a053;The Azure Desert^reset; is a starry planet primarily occupied by Arcanian settlers and scholars."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_azureDesert",
+    "value": "Azure Desert"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_azureDesert",
+    "value": [
+      194,
+      160,
+      83
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_azuriumOre",
+    "value": {
+      "displayName": "Azurium",
+      "icon": "/items/generic/arcana_ores/arcana_ore_azuriumOre.png"
+    }
   }
+  
   ]
 ]

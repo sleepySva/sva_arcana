@@ -1,0 +1,175 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_astralCorridor",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "arcana_dungeon_astralCorridor_entrance_1" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 6,
+    "protected" : true
+  },
+
+  "parts" : [
+
+    // ENTRANCES
+    {
+      "name" : "arcana_dungeon_astralCorridor_entrance_1",
+      "rules" : [
+        [ "doNotCombineWith", [ "arcana_dungeon_astralCorridor_entrance_1", "arcana_dungeon_astralCorridor_exit_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_entrance_1.json" ],
+      "chance" : 1000
+    },
+
+    // LAYOUT ROOMS
+    {
+      "name" : "arcana_dungeon_astralCorridor_room_1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_astralCorridor_room_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_room_1.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_room_2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_astralCorridor_room_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_room_2.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_room_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_astralCorridor_room_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_room_3.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_room_4",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_astralCorridor_room_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_room_4.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_room_5",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_astralCorridor_room_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_room_5.json" ],
+      "chance" : 500
+    },
+	
+	// EXIT
+    {
+      "name" : "arcana_dungeon_astralCorridor_exit_1",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [ "arcana_dungeon_astralCorridor_exit_1" ] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_astralCorridor_entrance_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_exit_1.json" ],
+      "chance" : 1
+    },
+
+    // END LEFT
+    {
+      "name" : "arcana_dungeon_astralCorridor_left_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_left_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_left_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_left_2.json" ],
+      "chance" : 0
+    },
+
+    // END RIGHT
+    {
+      "name" : "arcana_dungeon_astralCorridor_right_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_right_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_right_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_right_2.json" ],
+      "chance" : 0
+    },
+	
+
+    // END BOTTOM
+    {
+      "name" : "arcana_dungeon_astralCorridor_bottom_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_bottom_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_bottom_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_bottom_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_bottom_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_bottom_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_astralCorridor_bottom_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_bottom_4.json" ],
+      "chance" : 0
+    },
+
+    // END TOP
+    {
+      "name" : "arcana_dungeon_astralCorridor_top_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralCorridor_top_1.json" ],
+      "chance" : 0
+    }
+  ]
+}

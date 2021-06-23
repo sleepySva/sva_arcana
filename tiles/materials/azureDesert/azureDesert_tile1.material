@@ -1,0 +1,21 @@
+{
+  "materialId" : 16771,
+  "materialName" : "azureDesert_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "azureDesert_tile1",
+  "description" : "A dry sand block that has been hardened with time.",
+  "shortdescription" : "Hardened Sand",
+  "footstepSound" : "/sfx/blocks/footstep_sand2.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "azureDesert_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2771
+  }
+}

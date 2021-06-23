@@ -1376,5 +1376,49 @@
       "bgCaveSelector" : [ "emptiest" ],
       "biome": [[0,["arcana_azureSea_floor"]]]
     }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_azureDesert",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : [ "arcana_azureDesert" ],
+          "secondaryRegions" : [ "arcana_bambooForest" ],
+          "dungeons": [
+			  [1.0, "novakidvillage"],
+			  [1.0, "humancamp"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_aspiriteCave" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_noxionCave" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_immoriteCave" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_ancientCave" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_azureDesert",
+    "value": {
+      "caveLiquid": ["water"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_azureDesert"]]],
+      "subRegion": ["steamspring","oasis"]
+    }
   }
 ]

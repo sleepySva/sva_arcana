@@ -42,6 +42,26 @@
   
   {
     "op" : "add",
+    "path" : "/arcana_dungeon_astralCorridor",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_astralCorridor",
+	  "weatherPool" : [
+		[1.000, "clear"]
+	  ],
+      "threatLevel" : 8,
+      "gravity" : 80,
+      "worldSize" : [2800, 2100],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 810,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/ocean-exploration2.ogg",
+      "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  
+  {
+    "op" : "add",
     "path" : "/arcana_dungeon_zhushiPond",
     "value" : {
       "primaryDungeon" : "arcana_dungeon_zhushiPond",
@@ -58,6 +78,46 @@
       "ambientLightLevel" : [128, 128, 128],
       "biome" : "arcana_bambooForest",
       "musicTrack" : "/music/elegy-of-the-star.ogg"
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_astralObservatory",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_astralObservatory",
+	  "weatherPool" : [
+		[0.850, "clear"],
+		[0.075, "rain"],
+		[0.075, "drizzle"]
+	  ],
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [876, 2000],
+      "dungeonBaseHeight" : 1240,
+	  "dungeonSurfaceHeight" : 1000,
+      "ambientLightLevel" : [128, 128, 128],
+      "biome" : "arcana_azureDesert",
+      "musicTrack" : "/music/azure.ogg"
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_khnemnnIsland",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_khnemnnIsland",
+	  "weatherPool" : [
+		[1.000, "drizzle"]
+	  ],
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [876, 2000],
+      "dungeonBaseHeight" : 1240,
+	  "dungeonSurfaceHeight" : 1000,
+      "ambientLightLevel" : [128, 128, 128],
+      "biome" : "arcana_azureDesert",
+      "musicTrack" : "/music/forsaken-grotto.ogg"
     }
   },
   

@@ -130,6 +130,45 @@
       }
 	}
   },
+  
+  // Astral Corridor
+  {
+	"op" : "add",
+	"path" : "/arcana_dungeon_astralCorridor",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "arcana_dungeon_astralCorridor",
+	  "spawningEnabled" : false,
+      "beamUpRule" : "AnywhereWithWarning",
+	  "disableDeathDrops" : true,
+
+	  "worldProperties" : {
+		"nonCombat" : false
+	  },
+
+	  "skyParameters" : {
+        "dayLength" : 10000,
+        "surfaceLevel" : 1000,
+        "spaceLevel" : 3000,
+        "seed" : -5288806180628666923,
+
+        "skyType" : "barren",
+        "skyColoring" : {
+          "mainColor" : [100, 100, 155],
+
+          "morningColors" : [[64, 68, 73, 80], [98, 72, 90, 160]],
+          "dayColors" : [[64, 68, 73, 80], [98, 72, 90, 160]],
+          "eveningColors" : [[64, 68, 73, 80], [98, 72, 90, 160]],
+          "nightColors" : [[64, 68, 73, 80], [98, 72, 90, 160]],
+
+          "morningLightColor" : [40, 50, 90],
+		  "dayLightColor" : [40, 50, 90],
+		  "eveningLightColor" : [40, 50, 90],
+		  "nightLightColor" : [40, 50, 90]
+        }
+      }
+	}
+  },
 
   // Zhushi Pond
   {
@@ -171,6 +210,86 @@
 	}
   },
 
+  // Astral Observatory
+  {
+	"op" : "add",
+	"path" : "/arcana_dungeon_astralObservatory",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "arcana_dungeon_astralObservatory",
+	  "seed" : 1111,
+	  "spawningEnabled" : false,
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "worldProperties" : {
+		"nonCombat" : true
+	  },
+
+	  "skyParameters" : {
+		"dayLength" : 380,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+	  
+		"skyType" : "atmospheric",
+		"skyColoring" : {
+		  "mainColor" : [255, 255, 255],
+
+		  "morningColors" : [ [3, 90, 92], [250, 138, 77] ],
+		  "dayColors" : [ [255, 186, 116], [255, 255, 255] ],
+		  "eveningColors" : [ [3, 90, 92], [250, 138, 77] ],
+		  "nightColors" : [ [24, 38, 73, 80], [58, 42, 90, 160] ],
+
+		  "morningLightColor" : [180, 120, 120],
+		  "dayLightColor" : [200, 200, 200],
+		  "eveningLightColor" : [180, 120, 120],
+		  "nightLightColor" : [40, 50, 90]
+        }
+      }
+	}
+  },
+  
+  // Khnemnn Island
+  {
+	"op" : "add",
+	"path" : "/arcana_dungeon_khnemnnIsland",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "arcana_dungeon_khnemnnIsland",
+	  "seed" : 1111,
+	  "spawningEnabled" : false,
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "worldProperties" : {
+		"nonCombat" : false
+	  },
+
+	  "skyParameters" : {
+		"dayLength" : 1000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+	  
+		"skyType" : "atmospheric",
+		"skyColoring" : {
+		  "mainColor" : [255, 255, 255],
+
+		  "morningColors" : [ [3, 90, 92], [250, 138, 77] ],
+		  "dayColors" : [ [255, 186, 116], [255, 255, 255] ],
+		  "eveningColors" : [ [3, 90, 92], [250, 138, 77] ],
+		  "nightColors" : [ [24, 38, 73, 80], [58, 42, 90, 160] ],
+
+		  "morningLightColor" : [180, 120, 120],
+		  "dayLightColor" : [200, 200, 200],
+		  "eveningLightColor" : [180, 120, 120],
+		  "nightLightColor" : [40, 50, 90]
+        }
+      }
+	}
+  },
+  
   // Arcanian Explorer Ship
   {
 	"op" : "add",

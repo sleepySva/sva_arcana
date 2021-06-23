@@ -1,0 +1,27 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_astralObservatory",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_dungeon_astralObservatory"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_dungeon_astralObservatory",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_astralObservatory.json" ]
+    }
+  ]
+}

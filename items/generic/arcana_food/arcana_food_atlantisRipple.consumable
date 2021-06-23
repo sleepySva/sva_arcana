@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_food_atlantisRipple",
+  "rarity" : "Rare",
+  "price" : 400,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_atlantisRipple.png",
+  "description" : "An azure cerulean blueberry drink reminiscent of the ocean waves. ^green;Grants swim boost for 360s.^reset;",
+  "shortdescription" : "Atlantis Ripple",
+  "effects" : [ [
+    {
+        "effect" : "swimboostcola",
+        "duration" : 360
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}

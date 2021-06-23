@@ -1,0 +1,21 @@
+{
+  "materialId" : 16772,
+  "materialName" : "azureDesert_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "azureDesert_tile2",
+  "description" : "Sand that has been sprinkled with the element of Azure.",
+  "shortdescription" : "Auzre Sand",
+  "footstepSound" : "/sfx/blocks/footstep_sand2.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "azureDesert_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2770
+  }
+}

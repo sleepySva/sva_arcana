@@ -4,12 +4,35 @@
 		"value" : [
 			[ 0, [
 			  { "item": { "name": "fabric" } },
-			  { "item": { "name": "string" }, "rarity": 0.5 },
-			  { "item": { "name": "bluedye" }, "rarity": 0.5 },
-			  { "item": { "name": "yellowdye" }, "rarity": 0.5 },
+			  { "item": { "name": "string" }, "rarity": 0.6 },
+			  { "item": { "name": "bluedye" }, "rarity": 0.6 },
+			  { "item": { "name": "yellowdye" }, "rarity": 0.6 },
 			  { "item": { "name": "arcana_armor_starwalker_head" }, "rarity": 0.5 },
 			  { "item": { "name": "arcana_armor_starwalker_chest" }, "rarity": 0.5 },
 			  { "item": { "name": "arcana_armor_starwalker_legs" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	// Astral Pottery Merchant
+	{ "op" : "add", "path" : "/arcana_merchantpool_astralMerchantPottery",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "smalljar1" }, "rarity": 0.6 },
+			  { "item": { "name": "birdjar1" }, "rarity": 0.6 },
+			  { "item": { "name": "lamp" }, "rarity": 0.6 },
+			  { "item": { "name": "goldenurn" }, "rarity": 0.6 },
+			  { "item": { "name": "arcana_astral_deco_6" }, "rarity": 0.8 },
+			  { "item": { "name": "arcana_astral_deco_7" }, "rarity": 0.8 },
+			  { "item": { "name": "arcana_astral_walldeco_3" }, "rarity": 0.8 },
+			  { "item": { "name": "midjar1" }, "rarity": 0.2 },
+			  { "item": { "name": "talljar1" }, "rarity": 0.2 },
+			  { "item": { "name": "wingedurn" }, "rarity": 0.2 },
+			  { "item": { "name": "ashjar3" }, "rarity": 0.2 },
+			  { "item": { "name": "ashjar2" }, "rarity": 0.2 },
+			  { "item": { "name": "birdgong1" }, "rarity": 0.2 },
+			  { "item": { "name": "birdjar2" }, "rarity": 0.2 },
+			  { "item": { "name": "bigjar1" }, "rarity": 0.2 }
 			] ]
 		]
 	}

@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":12,
+ "tilecount":15,
  "tileheight":256,
  "tileproperties":
     {
@@ -104,6 +104,30 @@
          "imagePositionY":"0",
          "object":"arcana_vendor_kucaiRestaurant",
          "tilesetDirection":"right"
+        },
+     "12":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_dungeon_astralObservatory_npc_cassidy",
+         "tilesetDirection":"right"
+        },
+     "13":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"arcana_vendor_atlantisBar",
+         "tilesetDirection":"right"
+        },
+     "14":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"arcana_dungeon_astralObservatory_npc_ankhu",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -155,6 +179,18 @@
      "11":
         {
          "image":"arcana_vendor_kucaiRestaurant.png"
+        },
+     "12":
+        {
+         "image":"arcana_dungeon_astralObservatory_npc_cassidy.png"
+        },
+     "13":
+        {
+         "image":"arcana_vendor_atlantisBar.png"
+        },
+     "14":
+        {
+         "image":"arcana_dungeon_astralObservatory_npc_ankhu.png"
         }
     },
  "tilewidth":188

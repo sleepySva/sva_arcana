@@ -1,0 +1,50 @@
+{
+  "id" : "arcana_quests_ankhu_1",
+  "prerequisites" : [],
+  "title" : "^green;Hunting The Lykoi^reset;",
+  "text" : "This is something that I would usually leave the guards to take care of, but we're shorthanded at the moment. A group of Lykoi bandits have been spotted on the nearby ^orange;Khnemnn Island^reset;, It would be a great favor if you can quell them to keep the Observatory safe.",
+  "completionText" : "You have my upmost gratitude, traveller. The residents of the Observatory can now rest at peace with those bandits gone.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	  [ "money", 4000 ],
+	  [ "goldbar", 10 ],
+	  [ "medkit", 2 ]
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+  
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_ankhu/portrait.png"} ],
+        "title" : "Archivist Ankhu"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_quests_ankhu/portrait.png"} ],
+        "title" : "Archivist Ankhu"
+      }
+    },
+	
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Archivist Ankhu^reset; to travel to ^orange;Khnemnn Island^reset;",
+      "findGoal" : "Defeat the ^orange;Lykoi bandits^reset;",
+      "turnIn" : "Return to ^orange;Archivist Ankhu^reset; at the ^orange;Astral Observatory^reset;"
+    },
+	
+    "warpEntityUid" : "arcana_dungeon_astralObservatory_npc_ankhu",
+    "warpAction" : "instanceworld:arcana_dungeon_khnemnnIsland",
+    "warpDialog" : "/interface/confirmation/arcana_confirmation_teleport.config:khnemnIsland",
+	
+    "goalTrigger" : "proximity",
+    "proximityRange" : 20,
+	
+    "goalEntityUid" : "arcana_goal_khnemnnIsland",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+	
+    "turnInEntityUid" : "arcana_dungeon_astralObservatory_npc_ankhu"
+  }
+}

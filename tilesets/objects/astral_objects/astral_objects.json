@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":50,
+ "tilecount":55,
  "tileheight":256,
  "tileproperties":
     {
@@ -408,6 +408,46 @@
          "imagePositionY":"0",
          "object":"arcana_astral_door_2",
          "tilesetDirection":"right"
+        },
+     "50":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-0",
+         "imagePositionY":"0",
+         "object":"arcana_astral_door_3",
+         "tilesetDirection":"right"
+        },
+     "51":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_astral_storage_8",
+         "tilesetDirection":"right"
+        },
+     "52":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_teleporter_astralCorridor",
+         "tilesetDirection":"right"
+        },
+     "53":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_teleporter_astralCorridor_return",
+         "tilesetDirection":"right"
+        },
+     "54":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"arcana_astral_telescope_1",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -611,6 +651,26 @@
      "49":
         {
          "image":"arcana_astral_door_2.png"
+        },
+     "50":
+        {
+         "image":"arcana_astral_door_3.png"
+        },
+     "51":
+        {
+         "image":"arcana_astral_storage_8.png"
+        },
+     "52":
+        {
+         "image":"arcana_teleporter_astralCorridor.png"
+        },
+     "53":
+        {
+         "image":"arcana_teleporter_astralCorridor_return.png"
+        },
+     "54":
+        {
+         "image":"arcana_astral_telescope_1.png"
         }
     },
  "tilewidth":188
