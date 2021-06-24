@@ -38,6 +38,24 @@
   },
   
   {
+    "name" : "arcana_azureGolem",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_azureGolem"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
     "name" : "arcana_solstice",
 
     "spawnParameters" : {

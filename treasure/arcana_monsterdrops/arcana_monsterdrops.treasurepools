@@ -23,17 +23,34 @@
   "arcana_monsterdrops_soli" : [
     [0, {
 	  "fill" : [
-	    {"item" : ["money", 20]}
+	    {"item" : ["money", 60]}
       ],
       "pool" : [
 		{"weight" : 0.2, "item" : ["arcana_essence_solarEssence", 1]},
 		{"weight" : 0.2, "item" : ["solar_crafting_solarCoreFragment", 1]},
         {"weight" : 0.2, "item" : ["solar_crafting_solarCoreFragment", 1]},
         {"weight" : 0.2, "item" : ["solar_crafting_solarCoreFragment", 1]},
-		{"weight" : 0.2, "item" : ["money", 40]}
+		{"weight" : 0.2, "item" : ["money", 80]}
       ],
       "poolRounds" : [
         [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_monsterdrops_azureGolem" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 60]}
+      ],
+      "pool" : [
+		{"weight" : 0.2, "item" : ["arcana_essence_azureEssence", 1]},
+		{"weight" : 0.6, "item" : ["arcana_misc_lapisShard", 1]},
+		{"weight" : 0.2, "item" : ["money", 80]}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+		[0.4, 2]
       ]
     }]
   ]

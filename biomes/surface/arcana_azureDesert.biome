@@ -20,6 +20,12 @@
       {
         "select" : 1,
         "pool" : [
+          [ 1.0, "arcana_azureGolem" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
           [ 0.4, "sunskipper" ],
           [ 0.3, "goldbuck" ],
           [ 0.3, "sandclown" ]
@@ -165,10 +171,19 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+        "distribution" : "/biomes/distributions.config:uncommon",
 
         "type" : "microdungeon",
-        "microdungeons" : [ "desertmicrodungeons" ]
+        "microdungeons" : [ "steamspringmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingLower",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_azureDesert_dungeon_2" ]
       },
       {
         "mode" : "floor",

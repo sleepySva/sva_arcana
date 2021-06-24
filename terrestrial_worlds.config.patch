@@ -1386,11 +1386,12 @@
       "layers": {
         "surface": {
           "primaryRegion" : [ "arcana_azureDesert" ],
-          "secondaryRegions" : [ "arcana_bambooForest" ],
+          "secondaryRegions" : [],
           "dungeons": [
+		      [4.0, "arcana_azureDesert_dungeon_1"],
 			  [1.0, "novakidvillage"],
 			  [1.0, "humancamp"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"]
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "aviannativevillage"],  [1.0, "avianairship"]
           ]
         },
 		
@@ -1418,7 +1419,7 @@
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_azureDesert"]]],
-      "subRegion": ["steamspring","oasis"]
+      "subRegion": ["oasis"]
     }
   }
 ]
