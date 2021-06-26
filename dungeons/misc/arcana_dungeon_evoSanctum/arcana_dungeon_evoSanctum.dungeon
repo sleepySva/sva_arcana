@@ -1,0 +1,27 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_evoSanctum",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_dungeon_evoSanctum"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_dungeon_evoSanctum",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_evoSanctum.json" ]
+    }
+  ]
+}

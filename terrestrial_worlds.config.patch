@@ -754,11 +754,10 @@
       "layers": {
         "surface": {
           "primaryRegion" : ["arcana_evoaquatic"],
-          "secondaryRegions" : ["arcana_animus", "arcana_verdant" ],
+          "secondaryRegions" : [ "arcana_verdant" ],
           "dungeons": [
+			  [4.0, "arcana_dungeon_evoSanctum"],
 		      [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
-			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
 			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
 			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
           ]
@@ -787,7 +786,7 @@
       "caveLiquidSeedDensityRange" : [10, 10],
       "encloseLiquids" : true,
       "blockSelector": ["remixedPoolsSurface"],
-      "fgCaveSelector": ["surfaceCaves"],
+      "fgCaveSelector": ["denseCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_evoaquatic"]]],
       "subRegion": ["oasis","spring","bioluminescence"]

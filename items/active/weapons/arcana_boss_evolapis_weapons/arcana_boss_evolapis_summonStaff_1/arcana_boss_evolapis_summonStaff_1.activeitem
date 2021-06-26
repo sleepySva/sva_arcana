@@ -1,0 +1,126 @@
+{
+  "itemName" : "arcana_boss_evolapis_summonStaff_1",
+  "price" : 1120,
+  "maxStack" : 1,
+  "level" : 7,
+  "rarity" : "Rare",
+  "description" : "A jade plasma staff forged from the primordial powers.",
+  "shortdescription" : "^#1e9a79;Sinornis^reset;",
+  "category" : "staff",
+  "tooltipFields" : {
+	"subtitle" : "^yellow;Summon Staff^#reset;"
+  },
+  "twoHanded" : true,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "staff" : "body.png",
+    "stone" : "fullbright.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [70, 130, 90]
+      }
+    }
+  },
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.8,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.5,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "elementswarm",
+  "primaryAbility" : {
+
+    "name" : "Summon Primopods",
+	"energyCost" : 200,
+    "maxCastRange" : 18,
+	
+	"monsterType" : "arcana_monster_primopod",
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/arcana_summonStaff_summon.lua"],
+    "class" : "ControlProjectile",
+	
+	"monsterCount" : 3,
+    "monsterDistance" : 2,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "monsterParameters" : {
+		"level" : 7,
+		"aggressive" : true
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

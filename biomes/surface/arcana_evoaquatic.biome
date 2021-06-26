@@ -46,6 +46,8 @@
         "pool" : [
           [ 1, "frogcritter" ],
           [ 1, "birdcritter" ],
+		  [ 1, "tinycrocodilecritter" ],
+		  [ 1, "tortoisecritter" ],
           [ 1, "fireflyspawner" ],
           [ 1, "chevcritter" ],
           [ 1, "fireflyspawner" ],
@@ -113,10 +115,10 @@
 
   "ambientNoises" : {
     "day" : {
-      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+      "tracks" : [ "/sfx/environmental/jungle_day.ogg", "/sfx/environmental/jungle_day2.ogg" ]
     },
     "night" : {
-      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+      "tracks" : [ "/sfx/environmental/jungle_night.ogg", "/sfx/environmental/jungle_night2.ogg" ]
     }
   },
 
@@ -132,6 +134,9 @@
   "surfacePlaceables" : {
     "grassMod" : [ "colourfulgrass" ],
     "grassModDensity" : 0.8,
+	
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.8,
 
     "items" : [
       {

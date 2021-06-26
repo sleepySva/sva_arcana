@@ -1,0 +1,20 @@
+{
+  "kind" : "arcana_particle_smoke_green",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_animation_smoke_green/arcana_animation_smoke_green.animation",
+    "position" : [0, 0],
+	"fullbright" : true,
+    "finalVelocity" : [0, 4],
+    "approach" : [0, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.85,
+    "fade" : 1,
+    "size" : 1.3,
+    "layer" : "back",
+    "timeToLive" : 0.25,
+    "variance" : {
+      "initialVelocity" : [3.0, 3.0]
+    }
+  }
+}

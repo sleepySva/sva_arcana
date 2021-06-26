@@ -91,6 +91,24 @@
     }
   },
   
+  {
+    "name" : "arcana_solarTaroni",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_solarTaroni"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
   
   // Illuminated
   

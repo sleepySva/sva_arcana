@@ -1,0 +1,42 @@
+{
+  "itemName" : "arcana_boss_evolapis_spear_1",
+  "price" : 1120,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A jade plasma fork-spear forged from the primordial powers.",
+  "shortdescription" : "^#1e9a79;Titanosa^reset;",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+  
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 1.04,
+    "baseDps" : 14.0
+  },
+
+  "altAbilityType" : "spearspin",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,12 +1,12 @@
 {
-  "type" : "taroni_solar",
+  "type" : "arcana_monster_solarTaroni",
   "shortdescription" : "Solar Taroni",
   "description" : "A solarized Taroni, throws fireballs.",
 
-  "categories" : [ "taroni_solar" ],
+  "categories" : [ "arcana_monster_solarTaroni" ],
   "parts" : [ "body" ],
 
-  "animation" : "taroni_solar.animation",
+  "animation" : "arcana_monster_solarTaroni.animation",
 
   "dropPools" : [ { "default" : "taroniTreasure", "bow" : "taroniHunting" } ],
 
@@ -28,7 +28,7 @@
       "damage" : 13,
 
       "teamType" : "enemy",
-      "damageSourceKind" : "firehammer",
+      "damageSourceKind" : "arcana_solar",
       "knockback" : 40,
       "statusEffects" : [ "burning" ]
     },

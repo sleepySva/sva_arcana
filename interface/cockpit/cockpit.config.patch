@@ -7,7 +7,15 @@
         "op": "test",
         "path": "/displayDungeons"
   },
-
+  
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_dungeon_evoSanctum",
+	"value": {
+		"description" : "A crystal cave inhabited by some poptops.",
+		"icon" : "/interface/cockpit/dungeons/arcana_dungeon_evoSanctum.png"
+	}
+  },
   {
     "op": "add",
     "path": "/displayDungeons/arcana_azureDesert_dungeon_1",

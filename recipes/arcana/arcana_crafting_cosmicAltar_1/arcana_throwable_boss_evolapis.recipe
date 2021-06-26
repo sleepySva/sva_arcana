@@ -1,10 +1,10 @@
 {
   "input" : [
-    { "item" : "evoaquatic_tile1", "count" : 40 },
-    { "item" : "evoaquatic_tile2", "count" : 40 },
+    { "item" : "evoaquatic_tile1", "count" : 60 },
+    { "item" : "evoaquatic_tile2", "count" : 60 },
 	{ "item" : "arcana_essence_illuminatedEssence", "count" : 10 }
   ],
   "output" : { "item" : "arcana_throwable_boss_evolapis", "count" : 1 },
-  "duration" : 0.4,
-  "groups"  : [ "arcana_crafting_cosmicAltar_1" ]
+  "duration" : 0.8,
+  "groups"  : [ "arcana_crafting_cosmicAltar_1", "arcana_crafting_cosmicAltar_1_main" ]
 }

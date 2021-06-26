@@ -1,0 +1,161 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.08,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "blade" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 10,
+            "cycle" : 0.6,
+            "mode" : "loop"
+		  },
+          "fire" : {
+            "frames" : 10,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "handle" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 10,
+            "cycle" : 0.6,
+            "mode" : "loop"
+		  },
+          "fire" : {
+            "frames" : 10,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+	 
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "offset" : [0.0, 1.0],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]]
+        },
+        "partStates" : {
+          "blade" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
+              }
+            },
+			"fire" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
+              }
+            }
+          }
+        }
+      },
+      "handle" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+		  "fullbright" : true,
+          "offset" : [0.0, 1.0], // Same as blade offset
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "blade" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
+              }
+            },
+			"fire" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
+              }
+            }
+          }
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+		  "fullbright" : true,
+          "offset" : [4.0, 0.0],
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/spear/swoosh/<elementalType>swoosh.png:<frame>",
+                "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "physicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 1,
+      "burstCount" : 1,
+      "particles" : []
+    },
+    "blade" : {
+      "active" : true,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.4, 1.0, 0.4, 5.0],
+      "emissionRate" : 3,
+      "particles" : [
+        { "particle" : "arcana_particle_ember_cyan_1"},
+        { "particle" : "arcana_particle_ember_cyan_2"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ]
+  }
+}
