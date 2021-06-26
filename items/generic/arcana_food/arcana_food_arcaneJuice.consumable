@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_food_arcaneJuice",
+  "rarity" : "Rare",
+  "price" : 360,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_arcaneJuice.png",
+  "description" : "A space colored juice made of arcane essence. ^green;Grants glowing for 360s.^reset;",
+  "shortdescription" : "Arcane Juice",
+  "effects" : [ [
+    {
+        "effect" : "glow",
+        "duration" : 360
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}
