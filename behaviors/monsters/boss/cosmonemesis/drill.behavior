@@ -460,7 +460,7 @@
         "type": "action",
         "name": "offsetPosition",
         "parameters": {
-          "offset": {"value": [0.0, -80.0]},
+          "offset": {"value": [0.0, -50.0]},
           "position": {"key": "self"}
         },
         "output": {
@@ -487,6 +487,15 @@
         }
       },
 	  {
+        "title": "addEphemeralEffect",
+        "type": "action",
+        "name": "addEphemeralEffect",
+        "parameters": {
+          "duration": {"value": 20},
+          "name": {"value": "invulnerable"}
+        }
+      },
+	  {
         "title": "setVelocity",
         "type": "action",
         "name": "setVelocity",
@@ -506,71 +515,24 @@
         }
       },
 	  {
-        "title": "spawnProjectile",
+        "title": "offsetPosition",
         "type": "action",
-        "name": "spawnProjectile",
+        "name": "offsetPosition",
         "parameters": {
-          "aimVector": {"value": [0, 0]},
-          "offset": {"value": [0.0, 0.0]},
-          "position": {"key": "playerPosition"},
-          "projectileConfig": {"value": {"power" : 0.0}},
-          "projectileType": {"value": "nemesisrupturepositioner"},
-          "scalePower": {"value": true},
-          "sourceEntity": {"key": "self"},
-          "trackSource": {"value": false}
-        }
-      },
-	  {
-        "title": "timer",
-        "type": "action",
-        "name": "timer",
-        "parameters": {
-          "time": {"value": 1.0}
-        }
-      },
-	  {
-        "title": "entityPosition",
-        "type": "action",
-        "name": "entityPosition",
-        "parameters": {
-          "entity": {"key": "target"}
+          "offset": {"value": [0, -50]},
+          "position": {"key": "playerPosition"}
         },
         "output": {
-          "position": "playerPosition"
+          "position": "followPosition"
         }
       },
 	  {
-        "title": "spawnProjectile",
+        "title": "setPosition",
         "type": "action",
-        "name": "spawnProjectile",
+        "name": "setPosition",
         "parameters": {
-          "aimVector": {"value": [0, 0]},
-          "offset": {"value": [0.0, 0.0]},
-          "position": {"key": "playerPosition"},
-          "projectileConfig": {"value": {"power" : 0.0}},
-          "projectileType": {"value": "nemesisrupturepositioner"},
-          "scalePower": {"value": true},
-          "sourceEntity": {"key": "self"},
-          "trackSource": {"value": false}
-        }
-      },
-	  {
-        "title": "timer",
-        "type": "action",
-        "name": "timer",
-        "parameters": {
-          "time": {"value": 1.0}
-        }
-      },
-	  {
-        "title": "entityPosition",
-        "type": "action",
-        "name": "entityPosition",
-        "parameters": {
-          "entity": {"key": "target"}
-        },
-        "output": {
-          "position": "playerPosition"
+          "footPosition": {"value": false},
+          "position": {"key": "followPosition"}
         }
       },
 	  {
@@ -608,6 +570,27 @@
         }
       },
 	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, -50]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "followPosition"
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "followPosition"}
+        }
+      },
+	  {
         "title": "spawnProjectile",
         "type": "action",
         "name": "spawnProjectile",
@@ -642,6 +625,27 @@
         }
       },
 	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, -50]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "followPosition"
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "followPosition"}
+        }
+      },
+	  {
         "title": "spawnProjectile",
         "type": "action",
         "name": "spawnProjectile",
@@ -676,6 +680,27 @@
         }
       },
 	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, -50]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "followPosition"
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "followPosition"}
+        }
+      },
+	  {
         "title": "spawnProjectile",
         "type": "action",
         "name": "spawnProjectile",
@@ -707,6 +732,137 @@
         },
         "output": {
           "position": "playerPosition"
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, -50]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "followPosition"
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "followPosition"}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, 0.0]},
+          "position": {"key": "playerPosition"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "nemesisrupturepositioner"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 1.0}
+        }
+      },
+	  {
+        "title": "entityPosition",
+        "type": "action",
+        "name": "entityPosition",
+        "parameters": {
+          "entity": {"key": "target"}
+        },
+        "output": {
+          "position": "playerPosition"
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, -50]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "followPosition"
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "followPosition"}
+        }
+      },
+	  {
+        "title": "spawnProjectile",
+        "type": "action",
+        "name": "spawnProjectile",
+        "parameters": {
+          "aimVector": {"value": [0, 0]},
+          "offset": {"value": [0.0, 0.0]},
+          "position": {"key": "playerPosition"},
+          "projectileConfig": {"value": {"power" : 0.0}},
+          "projectileType": {"value": "nemesisrupturepositioner"},
+          "scalePower": {"value": true},
+          "sourceEntity": {"key": "self"},
+          "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 1.0}
+        }
+      },
+	  {
+        "title": "entityPosition",
+        "type": "action",
+        "name": "entityPosition",
+        "parameters": {
+          "entity": {"key": "target"}
+        },
+        "output": {
+          "position": "playerPosition"
+        }
+      },
+	  {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, -50]},
+          "position": {"key": "playerPosition"}
+        },
+        "output": {
+          "position": "followPosition"
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "followPosition"}
         }
       },
 	  {
@@ -899,6 +1055,14 @@
           "scalePower": {"value": true},
           "sourceEntity": {"key": "self"},
           "trackSource": {"value": false}
+        }
+      },
+	  {
+        "title": "removeEphemeralEffect",
+        "type": "action",
+        "name": "removeEphemeralEffect",
+        "parameters": {
+          "name": {"value": "invulnerable"}
         }
       },
 	  {
