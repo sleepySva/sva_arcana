@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_lunar_deco_14",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A pretty cherry blossom plant.",
+  "shortdescription" : "Sakura Plant",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 80,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_lunar_deco_14.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

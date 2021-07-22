@@ -1,0 +1,25 @@
+{
+  "projectileName" : "lunar_katana_2_projectile_1",
+  "image" : "lunar_katana_2_projectile_1.png",
+  "physics" : "rain",
+  "frameNumber" : 3,
+  "animationCycle" : 0.3,
+  "lightColor" : [160, 50, 50],
+  "power" : 2,
+  "speed" : 0,
+  "timeToLive" : 2.0,
+  "bounces" : -1,
+  "knockback" : 0,
+  "knockbackDirectional" : true,
+  "orientationLocked" : true,
+  "damagePoly" : [ [2, 4],  [2, -4],  [-2, -4],  [-2, 4] ],
+  "piercing" : true,
+  "damageKind" : "arcana_lunar",
+  "emitters" : [ "arcana_particle_ember_indigo" ],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/fire_out.ogg" ]
+    }
+  ]
+}

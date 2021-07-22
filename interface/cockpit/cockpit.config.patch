@@ -7,12 +7,36 @@
         "op": "test",
         "path": "/displayDungeons"
   },
-  
+ 
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_eminsnow_dungeon_4",
+	"value": {
+		"description" : "An ^orange;ancient shrine^reset; containing a mysterious warp gate.",
+		"icon" : "/interface/cockpit/dungeons/arcana_eminsnow_dungeon_4.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_eminsnow_dungeon_3",
+	"value": {
+		"description" : "An ^orange;oriental town^reset; of the Hylotl Tsukikage clan.",
+		"icon" : "/interface/cockpit/dungeons/arcana_eminsnow_dungeon_3.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_eminsnow_dungeon_2",
+	"value": {
+		"description" : "An ^orange;oriental castle ruin^reset;, a powerful ^red;ancient presence^reset; is detected within.",
+		"icon" : "/interface/cockpit/dungeons/arcana_eminsnow_dungeon_2.png"
+	}
+  },
   {
     "op": "add",
     "path": "/displayDungeons/arcana_dungeon_evoSanctum",
 	"value": {
-		"description" : "A crystal cave inhabited by some poptops.",
+		"description" : "A ^orange;crystal cave^reset; inhabited by some poptops.",
 		"icon" : "/interface/cockpit/dungeons/arcana_dungeon_evoSanctum.png"
 	}
   },
@@ -1075,7 +1099,64 @@
       "displayName": "Azurium",
       "icon": "/items/generic/arcana_ores/arcana_ore_azuriumOre.png"
     }
-  }
+  },
   
+  // Eminsnow
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_eminsnow",
+    "value": [
+      "The planet known as the ^#7a6be1;Eminsnow^reset; is a snowy planet engulfed in winter frost. Settlements of the Hylotl Tsukikage clan can be commonly found here.",
+      "The planet known as the ^#7a6be1;Eminsnow^reset; is a snowy planet engulfed in winter frost. Settlements of the Hylotl Tsukikage clan can be commonly found here.",
+      "The planet known as the ^#7a6be1;Eminsnow^reset; is a snowy planet engulfed in winter frost. Settlements of the Hylotl Tsukikage clan can be commonly found here."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_eminsnow",
+    "value": "Eminsnow"
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_luminariumOre",
+    "value": {
+      "displayName": "Luminarium",
+      "icon": "/items/generic/arcana_ores/arcana_ore_luminariumOre.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_eminsnow",
+    "value": [
+      122,
+      107,
+      225
+    ]
+  },
+  
+  // Senbonzakura
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_senbonzakura",
+    "value": [
+      "The ^#da96b7;Senbonzakura^reset; planet is filled with lush vegetation and cherry blossom trees. Good for building and constructing settlements.",
+      "The ^#da96b7;Senbonzakura^reset; planet is filled with lush vegetation and cherry blossom trees. Good for building and constructing settlements.",
+      "The ^#da96b7;Senbonzakura^reset; planet is filled with lush vegetation and cherry blossom trees. Good for building and constructing settlements."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_senbonzakura",
+    "value": "Senbonzakura"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_senbonzakura",
+    "value": [
+      240,
+      149,
+      175
+    ]
+  }
   ]
 ]

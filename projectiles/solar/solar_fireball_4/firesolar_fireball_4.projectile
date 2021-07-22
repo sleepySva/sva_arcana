@@ -1,0 +1,67 @@
+{
+  "projectileName" : "firesolar_fireball_4",
+  
+  "physics" : "sticky",
+  "bounces" : -1,
+  "piercing" : true,
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "physicsCollisions" : {
+    "piece1" : {
+      "collision" : [ [-0.8, 0.8], [0.8, 0.8] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece2" : {
+      "collision" : [ [-0.8, -0.8], [0.8, -0.8] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece3" : {
+      "collision" : [ [-0.8, 0.8], [-0.8, -0.8] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece4" : {
+      "collision" : [ [0.8, 0.8], [0.8, -0.8] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["npc", "vehicle", "itemdrop", "projectile"]
+    }
+  },
+  
+  "animationCycle" : 0.1,
+  "frameNumber" : 3,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  
+  "timeToLive" : 4,
+  "image" : "solar_fireball_4.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 19,
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "lightColor" : [84, 47, 26],
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smallregularexplosion/smallregularexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 4.8,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/vehicle_disappear2.ogg" ]
+    }
+  ],
+  "power" : 14,
+  "emitters" : [ "fireplasma", "smoke", "flames", "fireplasma", "smoke", "flames" ],
+  "damageKind" : "arcana_solar",
+  
+  "persistentAudio" : "/sfx/projectiles/forcecage_loop.ogg"
+}

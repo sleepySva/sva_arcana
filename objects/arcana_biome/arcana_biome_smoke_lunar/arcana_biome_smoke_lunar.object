@@ -1,0 +1,60 @@
+{
+  "objectName" : "arcana_biome_smoke_lunar",
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "breakable",
+
+  "description" : "Smoke Primer.",
+  "shortdescription" : "Smoke",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "arcana_biome_smoke_lunar.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "arcana_biome_smoke_lunar.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  "particleEmitter" : {
+    "emissionRate" : 0.25,
+    "emissionVariance" : 0.12,
+    "pixelOrigin" : [0, 0],
+
+    "particle" : {
+      "type" : "textured",
+      "image" : "/animations/arcana_animation_poof_lunar/arcana_animation_poof_lunar.png",
+      "size" : 3.2,
+      "destructionAction" : "fade",
+      "destructionTime" : 3,
+      "initialVelocity" : [0.0, 1.0],
+      "timeToLive" : 12.0,
+      "layer" : "front",
+      "position" : [2, 3],
+      "collidesForeground" : false
+    },
+    "particleVariance" : {
+      "initialVelocity" : [1.2, 3.4],
+	  "timeToLive" : 10.0,
+      "position" : [1, 1],
+      "rotation" : 90,
+      "size" : 1.2
+    }
+  },
+
+  "smashOnBreak" : true,
+
+  "biomePlaced" : true
+}

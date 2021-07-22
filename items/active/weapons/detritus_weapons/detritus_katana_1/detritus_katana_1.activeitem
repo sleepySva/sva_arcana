@@ -1,0 +1,39 @@
+{
+  "itemName" : "detritus_katana_1",
+  "price" : 800,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A crude tachi made with various salvaged parts.",
+  "shortdescription" : "^#5a5f84;Detritus Tachi^reset;",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Tachi"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","katana"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_tachi_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 8.4,
+	"damageConfig" : {
+	  "damageSourceKind" : "broadsword"
+	}
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

@@ -1,0 +1,22 @@
+{
+  "materialId" : 16789,
+  "materialName" : "lunar_tile16",
+  "particleColor" : [244, 147, 184, 255],
+  "itemDrop" : "lunar_tile16",
+  "description" : "A block of pink leaves.",
+  "shortdescription" : "Sakura Leaf Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 2,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile16.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 3516,
+    "radiantLight" : [46, 22, 38]
+  }
+}

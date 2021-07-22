@@ -1,0 +1,71 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "swordCharge" : {
+        "active" : false,
+        "transformationGroups" : ["weapon"],
+        "emissionRate" : 30,
+        "offsetRegion" : [-0.75, 0.0, 0.75, 5.5],
+        "particles" : [
+          { "particle" : "arcana_particle_ember_indigo_1"},
+          { "particle" : "arcana_particle_ember_indigo_2"}
+        ]
+      }
+	},
+    "sounds" : {
+      "dashCharge" : [ "/sfx/melee/charge_traildash3.ogg" ],
+      "dashFire" : [ "/sfx/melee/travelingslash_fire3.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Serpentine Strike",
+    "type" : "arcana_tachi_ability_serpentineStrike",
+    "scripts" : ["/items/active/weapons/melee/abilities/katana/arcana_tachi_ability_serpentineStrike/arcana_tachi_ability_serpentineStrike.lua"],
+    "class" : "serpentineStrike",
+
+    "cooldownTime" : 0.4,
+    "energyUsage" : 240,
+
+    "dashTime" : 0.2,
+    "dashSpeed" : 160,
+
+    "trailInterval" : 1.0,
+    "projectileParameters" : {
+      "power" : 1,
+      "timeToLive" : 2.0
+    },
+    "projectileOffset" : [0, -1.5],
+    "projectileType" : "firetrail",
+
+    "damageConfig" : {
+      "damageSourceKind" : "arcana_lunar_slash",
+      "statusEffects" : [ ],
+      "baseDamage" : 12,
+      "knockback" : 0,
+      "timeout" : 0.5,
+      "timeoutGroup" : "alt"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : 155,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "dash" : {
+        "armRotation" : 45,
+        "weaponRotation" : 135,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

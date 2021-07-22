@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_lunar_deco_9",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A stall filled with herb plants.",
+  "shortdescription" : "Herb Stall",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 140,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_lunar_deco_9.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

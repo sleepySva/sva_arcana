@@ -1,0 +1,314 @@
+{
+  "name": "solarspawnminiongroup",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/world.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/boss/guardian.lua",
+    "/scripts/behavior/bdata.lua"
+  ],
+  "parameters": {
+    "spawns": {},
+    "spawnMin": null,
+    "spawnMax": null,
+    "minionGroup": "minions"
+  },
+  "root": {
+    "title": "succeeder",
+    "type": "decorator",
+    "name": "succeeder",
+    "parameters": {},
+    "child": {
+      "title": "sequence",
+      "type": "composite",
+      "name": "sequence",
+      "parameters": {},
+      "children": [
+        {
+          "title": "sequence",
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": "succeeder",
+              "type": "decorator",
+              "name": "succeeder",
+              "parameters": {},
+              "child": {
+                "title": "filter",
+                "type": "decorator",
+                "name": "filter",
+                "parameters": {
+                  "list": {"value": "<minionGroup>"},
+                  "type": {"value": "entity"}
+                },
+                "child": {
+                  "title": "entityExists",
+                  "type": "action",
+                  "name": "entityExists",
+                  "parameters": {
+                    "entity": {"key": "filterItem"}
+                  }
+                }
+              }
+            },
+            {
+              "title": "succeeder",
+              "type": "decorator",
+              "name": "succeeder",
+              "parameters": {},
+              "child": {
+                "title": "filter",
+                "type": "decorator",
+                "name": "filter",
+                "parameters": {
+                  "list": {"key": "allMinions"},
+                  "type": {"value": "entity"}
+                },
+                "child": {
+                  "title": "entityExists",
+                  "type": "action",
+                  "name": "entityExists",
+                  "parameters": {
+                    "entity": {"key": "filterItem"}
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "selector",
+          "type": "composite",
+          "name": "selector",
+          "parameters": {},
+          "children": [
+            {
+              "title": "inverter",
+              "type": "decorator",
+              "name": "inverter",
+              "parameters": {},
+              "child": {
+                "title": "listGet",
+                "type": "action",
+                "name": "listGet",
+                "parameters": {
+                  "list": {"key": "<minionGroup>"}
+                }
+              }
+            },
+            {
+              "title": "failer",
+              "type": "decorator",
+              "name": "failer",
+              "parameters": {},
+              "child": {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": -1},
+                      "success": {"value": 1}
+                    },
+                    "children": [
+                      {
+                        "title": "animate",
+                        "type": "action",
+                        "name": "animate",
+                        "parameters": {
+                          "fallback": {"value": "deactivate"},
+                          "state": {"value": "activate"},
+                          "type": {"value": "body"}
+                        }
+                      },
+                      {
+                        "title": "animate",
+                        "type": "action",
+                        "name": "animate",
+                        "parameters": {
+                          "fallback": {"value": "deactivate"},
+                          "state": {"value": "activate"},
+                          "type": {"value": "head"}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 1}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 1}
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "setVelocity",
+          "type": "action",
+          "name": "setVelocity",
+          "parameters": {
+            "velocity": {"value": [0, 0]}
+          }
+        },
+        {
+          "title": "parallel",
+          "type": "composite",
+          "name": "parallel",
+          "parameters": {
+            "fail": {"value": -1},
+            "success": {"value": 1}
+          },
+          "children": [
+            {
+              "title": "animate",
+              "type": "action",
+              "name": "animate",
+              "parameters": {
+                "fallback": {"value": "deactivate"},
+                "state": {"value": "activate"},
+                "type": {"value": "body"}
+              }
+            },
+            {
+              "title": "animate",
+              "type": "action",
+              "name": "animate",
+              "parameters": {
+                "fallback": {"value": "deactivate"},
+                "state": {"value": "activate"},
+                "type": {"value": "head"}
+              }
+            },
+            {
+              "title": "animate",
+              "type": "action",
+              "name": "animate",
+              "parameters": {
+                "fallback": {"value": "close"},
+                "state": {"value": "open"},
+                "type": {"value": "righthand"}
+              }
+            },
+            {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "timer",
+                  "type": "action",
+                  "name": "timer",
+                  "parameters": {
+                    "time": {"value": 0.5}
+                  }
+                },
+                {
+                  "title": "spawnMinionGroup",
+                  "type": "action",
+                  "name": "spawnMinionGroup",
+                  "parameters": {
+                    "minions": {"key": "<spawns>"},
+                    "spawnMax": {"key": "<spawnMax>"},
+                    "spawnMin": {"key": "<spawnMin>"}
+                  },
+                  "output": {
+                    "minions": "newMinions"
+                  }
+                },
+                {
+                  "title": "each",
+                  "type": "decorator",
+                  "name": "each",
+                  "parameters": {
+                    "list": {"key": "newMinions"},
+                    "type": {"value": "entity"}
+                  },
+                  "child": {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "listPush",
+                        "type": "action",
+                        "name": "listPush",
+                        "parameters": {
+                          "entity": {"key": "eachItem"},
+                          "list": {"key": "<minionGroup>"}
+                        },
+                        "output": {
+                          "list": "<minionGroup>"
+                        }
+                      },
+                      {
+                        "title": "listPush",
+                        "type": "action",
+                        "name": "listPush",
+                        "parameters": {
+                          "entity": {"key": "eachItem"},
+                          "list": {"key": "allMinions"}
+                        },
+                        "output": {
+                          "list": "allMinions"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "listClear",
+                  "type": "action",
+                  "name": "listClear",
+                  "parameters": {},
+                  "output": {
+                    "list": "newMinions"
+                  }
+                },
+                {
+                  "title": "timer",
+                  "type": "action",
+                  "name": "timer",
+                  "parameters": {
+                    "time": {"value": 0.6}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "timer",
+          "type": "action",
+          "name": "timer",
+          "parameters": {
+            "time": {"value": 0.5}
+          }
+        }
+      ]
+    }
+  }
+}

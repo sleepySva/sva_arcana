@@ -392,9 +392,8 @@
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
 						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.10, "item" : "Tier6"},
-						{"weight" : 0.75, "item" : "arcana_planetary_polar"},
-						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "Tier6"},
+						{"weight" : 0.85, "item" : "arcana_planetary_polar"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
@@ -411,11 +410,10 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 0.1, "item" : "Moon"},
 						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.10, "item" : "arcana_planetary_arcane"},
-						{"weight" : 0.10, "item" : "arcana_planetary_illuminated"},
-						{"weight" : 0.65, "item" : "arcana_planetary_polar"}
+						{"weight" : 0.05, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.05, "item" : "arcana_planetary_illuminated"},
+						{"weight" : 0.85, "item" : "arcana_planetary_polar"}
 					  ]
 					},
 					{
@@ -424,8 +422,8 @@
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
 						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.10, "item" : "arcana_planetary_arcane"},
-						{"weight" : 0.75, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.05, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.80, "item" : "arcana_planetary_polar"},
 						{"weight" : 0.05, "item" : "Barren"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
@@ -463,7 +461,7 @@
 					"description" : "Polar Planet",
 					"smallImage" : "/celestial/system/planet_small.png",
 
-					"terrestrialType" : [ "arcana_solarized", "arcana_bambooForest", "arcana_azureSea", "arcana_azureDesert"]
+					"terrestrialType" : [ "arcana_solarized", "arcana_bambooForest", "arcana_azureSea", "arcana_azureDesert", "arcana_eminsnow", "arcana_senbonzakura"]
 				  },
 
 				  "variationParameters" : [
@@ -1325,7 +1323,7 @@
 			"value" :
 			{
 				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_azureSea_<selector>.png",
-				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/ocean/<mask>_<selector>.png",
 				"maskRange" : [1, 25],
 				"maskPerPlanetRange" : [3, 3]
 			}
@@ -1337,8 +1335,8 @@
 			"value" :
 			{
 				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_azureSea/maskie<num>.png",
-				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
-				"dynamicsRange" : [1, 30]
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/ocean/<num>.png",
+				"dynamicsRange" : [1, 20]
 			}
 		},
 		
@@ -1360,6 +1358,52 @@
 			"value" :
 			{
 				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_azureDesert/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_eminsnow",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_eminsnow_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
+
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_eminsnow",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_eminsnow/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_senbonzakura",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_senbonzakura_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
+
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_senbonzakura",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_senbonzakura/maskie<num>.png",
 				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
 				"dynamicsRange" : [1, 30]
 			}
@@ -1774,6 +1818,20 @@
 		{
 		  "op": "add",
 		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_senbonzakura"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_senbonzakura"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
 		  "value": "arcana_azureSea"
 		},
 		
@@ -1796,6 +1854,20 @@
 		  "op": "add",
 		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_azureDesert"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_eminsnow"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_eminsnow"
 		}
 	]
 ]

@@ -1,0 +1,437 @@
+{
+  "name": "solarguardian-beamspin",
+  "description": "",
+  "scripts": [
+    "/scripts/behavior.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/boss/guardian.lua",
+    "/scripts/actions/world.lua"
+  ],
+  "parameters": {
+    "angularSpeed": 0.5,
+    "windup": 1,
+    "duration": 6.0,
+    "maxLength": 50
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setNumber",
+        "type": "action",
+        "name": "setNumber",
+        "parameters": {
+          "number": {"value": 0}
+        },
+        "output": {
+          "number": "rightAngle"
+        }
+      },
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {},
+        "output": {
+          "direction": "face"
+        }
+      },
+      {
+        "title": "faceDirection",
+        "type": "action",
+        "name": "faceDirection",
+        "parameters": {
+          "direction": {"key": "face"}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": 1}
+        },
+        "children": [
+          {
+            "title": "animate",
+            "type": "action",
+            "name": "animate",
+            "parameters": {
+              "fallback": {"value": "close"},
+              "state": {"value": "open"},
+              "type": {"value": "lefthand"}
+            }
+          },
+          {
+            "title": "animate",
+            "type": "action",
+            "name": "animate",
+            "parameters": {
+              "fallback": {"value": "close"},
+              "state": {"value": "open"},
+              "type": {"value": "righthand"}
+            }
+          },
+          {
+            "title": "animate",
+            "type": "action",
+            "name": "animate",
+            "parameters": {
+              "fallback": {"value": "deactivate"},
+              "state": {"value": "activate"},
+              "type": {"value": "body"}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": -1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": "<windup>"}
+                    }
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "add",
+                        "type": "action",
+                        "name": "add",
+                        "parameters": {
+                          "addend": {"value": 3.14},
+                          "number": {"key": "rightAngle"}
+                        },
+                        "output": {
+                          "result": "leftAngle"
+                        }
+                      },
+                      {
+                        "title": "rotateGuardianHand",
+                        "type": "action",
+                        "name": "rotateGuardianHand",
+                        "parameters": {
+                          "angle": {"key": "rightAngle"},
+                          "handPart": {"value": "righthand"}
+                        }
+                      },
+                      {
+                        "title": "rotateGuardianHand",
+                        "type": "action",
+                        "name": "rotateGuardianHand",
+                        "parameters": {
+                          "angle": {"key": "leftAngle"},
+                          "handPart": {"value": "lefthand"}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": -1},
+                  "success": {"value": 1}
+                },
+                "children": [
+                  {
+                    "title": "animate",
+                    "type": "action",
+                    "name": "animate",
+                    "parameters": {
+                      "fallback": {"value": "deactivate"},
+                      "state": {"value": "activate"},
+                      "type": {"value": "head"}
+                    }
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "playSound",
+                        "type": "action",
+                        "name": "playSound",
+                        "parameters": {
+                          "loops": {"value": 0},
+                          "sound": {"value": "beamWindup"}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.5}
+                        }
+                      },
+                      {
+                        "title": "playSound",
+                        "type": "action",
+                        "name": "playSound",
+                        "parameters": {
+                          "loops": {"value": 0},
+                          "sound": {"value": "beamStart"}
+                        }
+                      },
+                      {
+                        "title": "parallel",
+                        "type": "composite",
+                        "name": "parallel",
+                        "parameters": {
+                          "fail": {"value": -1},
+                          "success": {"value": 1}
+                        },
+                        "children": [
+                          {
+                            "title": "loopSound",
+                            "type": "action",
+                            "name": "loopSound",
+                            "parameters": {
+                              "sound": {"value": "beamLoop"}
+                            }
+                          },
+                          {
+                            "title": "parallel",
+                            "type": "composite",
+                            "name": "parallel",
+                            "parameters": {
+                              "fail": {"value": -1},
+                              "success": {"value": -1}
+                            },
+                            "children": [
+                              {
+                                "title": "controlModifiers",
+                                "type": "action",
+                                "name": "controlModifiers",
+                                "parameters": {
+                                  "modifiers": {"value": {"speedModifier": 0.5}}
+                                }
+                              },
+                              {
+                                "title": "sequence",
+                                "type": "composite",
+                                "name": "sequence",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "multiply",
+                                    "type": "action",
+                                    "name": "multiply",
+                                    "parameters": {
+                                      "factor": {"key": "dt"},
+                                      "number": {"key": "<angularSpeed>"}
+                                    },
+                                    "output": {
+                                      "result": "delta"
+                                    }
+                                  },
+                                  {
+                                    "title": "multiply",
+                                    "type": "action",
+                                    "name": "multiply",
+                                    "parameters": {
+                                      "factor": {"key": "delta"},
+                                      "number": {"key": "face"}
+                                    },
+                                    "output": {
+                                      "result": "delta"
+                                    }
+                                  },
+                                  {
+                                    "title": "add",
+                                    "type": "action",
+                                    "name": "add",
+                                    "parameters": {
+                                      "addend": {"key": "delta"},
+                                      "number": {"key": "rightAngle"}
+                                    },
+                                    "output": {
+                                      "result": "rightAngle"
+                                    }
+                                  },
+                                  {
+                                    "title": "add",
+                                    "type": "action",
+                                    "name": "add",
+                                    "parameters": {
+                                      "addend": {"value": 3.14},
+                                      "number": {"key": "rightAngle"}
+                                    },
+                                    "output": {
+                                      "result": "leftAngle"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "title": "entityPosition",
+                                "type": "action",
+                                "name": "entityPosition",
+                                "parameters": {
+                                  "entity": {"key": "target"}
+                                },
+                                "output": {
+                                  "position": "targetPosition"
+                                }
+                              },
+                              {
+                                "title": "guardianApproach",
+                                "type": "action",
+                                "name": "guardianApproach",
+                                "parameters": {
+                                  "innerRange": {"value": 2},
+                                  "outerRange": {"value": 12.5},
+                                  "position": {"key": "targetPosition"}
+                                }
+                              },
+                              {
+                                "title": "faceDirection",
+                                "type": "action",
+                                "name": "faceDirection",
+                                "parameters": {
+                                  "direction": {"key": "face"}
+                                }
+                              },
+                              {
+                                "title": "runner",
+                                "type": "action",
+                                "name": "runner",
+                                "parameters": {}
+                              }
+                            ]
+                          },
+                          {
+                            "title": "timer",
+                            "type": "action",
+                            "name": "timer",
+                            "parameters": {
+                              "time": {"value": "<duration>"}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "title": "playSound",
+                        "type": "action",
+                        "name": "playSound",
+                        "parameters": {
+                          "loops": {"value": 0},
+                          "sound": {"value": "beamWinddown"}
+                        }
+                      },
+                      {
+                        "title": "runner",
+                        "type": "action",
+                        "name": "runner",
+                        "parameters": {}
+                      }
+                    ]
+                  },
+                  {
+                    "title": "guardianBeam",
+                    "type": "action",
+                    "name": "guardianBeam",
+                    "parameters": {
+                      "angle": {"key": "rightAngle"},
+                      "beamType": {"value": "damage"},
+                      "bounces": {"value": 0},
+                      "damagePart": {"value": "shortrightbeam"},
+                      "duration": {"key": "<duration>"},
+                      "handPart": {"value": "righthand"},
+                      "maxLength": {"key": "<maxLength>"},
+                      "offset": {"value": [0, 0]},
+                      "power": {"value": 10}
+                    }
+                  },
+                  {
+                    "title": "guardianBeam",
+                    "type": "action",
+                    "name": "guardianBeam",
+                    "parameters": {
+                      "angle": {"key": "leftAngle"},
+                      "beamType": {"value": "damage"},
+                      "bounces": {"value": 0},
+                      "damagePart": {"value": "shortleftbeam"},
+                      "duration": {"key": "<duration>"},
+                      "handPart": {"value": "lefthand"},
+                      "maxLength": {"key": "<maxLength>"},
+                      "offset": {"value": [0, 0]},
+                      "power": {"value": 10}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "rotateGuardianHand",
+            "type": "action",
+            "name": "rotateGuardianHand",
+            "parameters": {
+              "angle": {"key": "rightAngle"},
+              "handPart": {"value": "righthand"}
+            }
+          },
+          {
+            "title": "rotateGuardianHand",
+            "type": "action",
+            "name": "rotateGuardianHand",
+            "parameters": {
+              "angle": {"key": "leftAngle"},
+              "handPart": {"value": "lefthand"}
+            }
+          },
+          {
+            "title": "timer",
+            "type": "action",
+            "name": "timer",
+            "parameters": {
+              "time": {"value": 0.6}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

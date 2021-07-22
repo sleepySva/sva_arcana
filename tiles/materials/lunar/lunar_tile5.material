@@ -1,0 +1,22 @@
+{
+  "materialId" : 16777,
+  "materialName" : "lunar_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile5",
+  "description" : "A dark wooden flooring tile, made from kuromatsu wood.",
+  "shortdescription" : "Kuromatsu Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile5.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 777
+  }
+}

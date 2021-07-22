@@ -1,0 +1,22 @@
+{
+  "materialId" : 16776,
+  "materialName" : "lunar_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile4",
+  "description" : "A dark timber, prepared with kuromatsu wood.",
+  "shortdescription" : "Kuromatsu Timber",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 776
+  }
+}

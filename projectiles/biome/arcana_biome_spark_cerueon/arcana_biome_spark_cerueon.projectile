@@ -1,0 +1,58 @@
+{
+  "projectileName" : "arcana_biome_spark_cerueon",
+  "physics" : "laser",
+  "timeToLive" : 10,
+  "bounces" : 0,
+  "piercing" : true,
+  "image" : "arcana_biome_spark_cerueon.png",
+  "fullbright" : true,
+  "emitters" : [],
+  
+  "windupFrames" : 10,
+  "frameNumber" : 1,
+  "winddownFrames" : 10,
+  "animationCycle" : 0.6,
+  
+  "speed" : 4,
+  "knockback" : 0,
+  "supportsProcessing" : true,
+  
+  "damagePoly" : [],
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.06,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/biome/arcana_biome_spark_cerueon/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 4.0,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"size" : 0.8,
+		"renderLayer" : "foregroundEntity"
+      }
+    }
+  ],
+
+  "lightColor" : [150, 120, 172],
+  "damageKind" : "arcana_lunar",
+ 
+  "scripts" : ["/scripts/projectiles/arcana_sinewaveprojectile_random.lua"],
+  "scriptDelta" : 1,
+
+  "wavePeriod" : 16.0,
+  "waveAmplitude" : 2.00
+  
+}

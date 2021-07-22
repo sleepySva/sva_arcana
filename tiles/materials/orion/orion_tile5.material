@@ -6,7 +6,7 @@
   "description" : "A pipe-like metal support tile.",
   "shortdescription" : "Pipebeam Connector",
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
-  "health" : 22,
+  "health" : 12,
   "category" : "materials",
 
   "renderTemplate" : "/tiles/girdertemplate.config",
@@ -16,6 +16,6 @@
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : false,
-    "zLevel" : 175
+    "zLevel" : 1100
   }
 }

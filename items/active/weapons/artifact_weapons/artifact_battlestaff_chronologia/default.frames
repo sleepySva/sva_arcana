@@ -1,0 +1,35 @@
+{
+  "frameGrid" : {
+    "size" : [19, 62],
+    "dimensions" : [12, 1],
+    "names" : [
+      [
+	  "idle",
+	  "transitionToMelee.1",
+	  "transitionToMelee.2",
+	  "transitionToMelee.3",
+	  "transitionToMelee.4",
+	  "transitionToMelee.5",
+	  "transitionToMelee.6",
+	  "transitionToMelee.7",
+	  "transitionToMelee.8",
+	  "transitionToMelee.9",
+	  "transitionToMelee.10",
+	  "meleeIdle"
+	  ]
+    ]
+  },
+
+  "aliases" : {
+    "transitionToStaff.1" : "transitionToMelee.10",
+    "transitionToStaff.2" : "transitionToMelee.9",
+	"transitionToStaff.3" : "transitionToMelee.8",
+	"transitionToStaff.4" : "transitionToMelee.7",
+	"transitionToStaff.5" : "transitionToMelee.6",
+	"transitionToStaff.6" : "transitionToMelee.5",
+	"transitionToStaff.7" : "transitionToMelee.4",
+	"transitionToStaff.8" : "transitionToMelee.3",
+	"transitionToStaff.9" : "transitionToMelee.2",
+	"transitionToStaff.10" : "transitionToMelee.1"
+  }
+}

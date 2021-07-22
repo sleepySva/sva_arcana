@@ -1,0 +1,51 @@
+{
+  "itemName" : "lunar_katana_1",
+  "price" : 1600,
+  "level" : 8,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A katana forged from luminarium, can perform swift strikes in mere moments.",
+  "shortdescription" : "^#8f82e9;Gekko Tachi^reset;",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Tachi"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","katana"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+	  "fire4" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+	  "shingetsu_sound" : [ "/sfx/melee/laser_weapon_swing2.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "arcana_lunar",
+
+  "primaryAbilityType" : "arcana_tachi_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 12.2,
+	"damageConfig" : {
+	  "damageSourceKind" : "arcana_lunar_slash"
+	}
+  },
+
+  "altAbilityType" : "arcana_tachi_ability_shingetsu",
+  "altAbility" : {
+	"projectileType" : "lunar_katana_1_projectile_1"
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

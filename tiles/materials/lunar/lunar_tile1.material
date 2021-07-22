@@ -1,0 +1,22 @@
+{
+  "materialId" : 16773,
+  "materialName" : "lunar_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile1",
+  "description" : "A dark ornate wooden fence, crafted by the Tsukuyomi clan.",
+  "shortdescription" : "Kuromatsu Fence",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 10
+  }
+}

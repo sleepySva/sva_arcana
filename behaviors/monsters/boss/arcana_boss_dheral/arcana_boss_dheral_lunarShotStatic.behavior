@@ -1,0 +1,284 @@
+{
+  "name": "arcana_boss_dheral_lunarShotStatic",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/behavior/bdata.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/projectiles.lua"
+  ],
+  "parameters": {
+    "windupTime": 0.6,
+	"attackTime": 0.4
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "playSound",
+        "type": "action",
+        "name": "playSound",
+        "parameters": {
+          "sound": {"value": "lunarShot_windup"}
+        }
+      },
+      {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 2}
+        }
+      },
+      {
+        "title": "sequence",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": "listClear",
+            "type": "action",
+            "name": "listClear",
+            "parameters": {},
+            "output": {
+              "list": "plasmaoffsets"
+            }
+          },
+          {
+            "title": "listPush",
+            "type": "action",
+            "name": "listPush",
+            "parameters": {
+              "list": {"key": "plasmaoffsets"},
+              "vec2": {"value": [0, 0]}
+            },
+            "output" : {
+              "list" : "plasmaoffsets"
+            }
+          },
+          {
+            "title": "listPush",
+            "type": "action",
+            "name": "listPush",
+            "parameters": {
+              "list": {"key": "plasmaoffsets"},
+              "vec2": {"value": [0, 0]}
+            },
+            "output" : {
+              "list" : "plasmaoffsets"
+            }
+          },
+          {
+            "title": "listPush",
+            "type": "action",
+            "name": "listPush",
+            "parameters": {
+              "list": {"key": "plasmaoffsets"},
+              "vec2": {"value": [0, 0]}
+            },
+            "output" : {
+              "list" : "plasmaoffsets"
+            }
+          },
+          {
+            "title": "listPush",
+            "type": "action",
+            "name": "listPush",
+            "parameters": {
+              "list": {"key": "plasmaoffsets"},
+              "vec2": {"value": [0, 0]}
+            },
+            "output" : {
+              "list" : "plasmaoffsets"
+            }
+          },
+          {
+            "title": "listShuffle",
+            "type": "action",
+            "name": "listShuffle",
+            "parameters": {
+              "list": {"key": "plasmaoffsets"}
+            },
+            "output": {
+              "list": "plasmaoffsets"
+            }
+          }
+        ]
+      },
+      {
+        "title": "repeater",
+        "type": "decorator",
+        "name": "repeater",
+        "parameters": {
+          "maxLoops": {"value": 1},
+          "untilSuccess": {"value": false}
+        },
+        "child": {
+          "title": "each",
+          "type": "decorator",
+          "name": "each",
+          "parameters": {
+            "list": {"key": "plasmaoffsets"},
+            "type": {"value": "vec2"}
+          },
+          "child": {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "setAnimationState",
+                "type": "action",
+                "name": "setAnimationState",
+                "parameters": {
+                  "state": {"value": "windup"},
+                  "type": {"value": "body"}
+                }
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": "<windupTime>"}
+                }
+              },
+              {
+                "title": "setAnimationState",
+                "type": "action",
+                "name": "setAnimationState",
+                "parameters": {
+                  "state": {"value": "attack"},
+                  "type": {"value": "body"}
+                }
+              },
+              {
+                "title": "playSound",
+                "type": "action",
+                "name": "playSound",
+                "parameters": {
+                  "sound": {"value": "lunarShot"}
+                }
+              },
+              {
+                "title": "offsetPosition",
+                "type": "action",
+                "name": "offsetPosition",
+                "parameters": {
+                  "offset": {"key": "eachItem"},
+                  "position": {"key": "self"}
+                },
+                "output": {
+                  "position": "plasmaPosition"
+                }
+              },
+              {
+                "title": "entityPosition",
+                "type": "action",
+                "name": "entityPosition",
+                "parameters": {
+                  "entity": {"key": "target"}
+                },
+                "output": {
+                  "position": "targetPosition"
+                }
+              },
+              {
+                "title": "distance",
+                "type": "action",
+                "name": "distance",
+                "parameters": {
+                  "from": {"key": "plasmaPosition"},
+                  "to": {"key": "targetPosition"}
+                },
+                "output": {
+                  "vector": "aimVector"
+                }
+              },
+              {
+                "title": "spawnTargetedProjectile",
+                "type": "action",
+                "name": "spawnTargetedProjectile",
+                "parameters": {
+                  "aimVector": {"key": "aimVector"},
+                  "parameters": {"value": {}},
+                  "position": {"key": "plasmaPosition"},
+                  "projectileType": {"value": "arcana_boss_dheral_projectile_1"},
+                  "target": {"key": "target"},
+                  "trackSource": {"value": true}
+                }
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": "<attackTime>"}
+                }
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "listPop",
+                    "type": "action",
+                    "name": "listPop",
+                    "parameters": {
+                      "list": {"key": "targets"}
+                    },
+                    "output": {
+                      "list": "targets",
+                      "entity": "cycledTarget"
+                    }
+                  },
+                  {
+                    "title": "listPushBack",
+                    "type": "action",
+                    "name": "listPushBack",
+                    "parameters": {
+                      "entity": {"key": "cycledTarget"},
+                      "list": {"key": "targets"}
+                    },
+                    "output" : {
+                      "list": "targets"
+                    }
+                  },
+                  {
+                    "title": "listGet",
+                    "type": "action",
+                    "name": "listGet",
+                    "parameters": {
+                      "list": {"key": "targets"}
+                    },
+                    "output": {
+                      "entity": "target"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 2}
+        }
+      }
+    ]
+  }
+}

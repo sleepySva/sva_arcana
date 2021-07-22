@@ -1,0 +1,41 @@
+{
+  "projectileName" : "solarbubblespawner",
+  "image" : "solarbubblespawner.png",
+  "animationCycle" : 0.3,
+  "physics" : "bullet",
+  "movementSettings" : {
+    "collisionPoly" : [ [1, -2], [-2, 0], [1, 2], [2, 0] ]
+  },
+  "damagePoly" : [ [0, 0] ],
+  "frameNumber" : 4,
+  "pointLight" : true,
+  "lightColor" : [0, 0, 0],
+  "renderLayer" : "Monster+10",
+  "speed" : 70,
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "type" : "solarbubbleburst",
+          "fuzzAngle" : 0,
+          "inheritDamageFactor" : 1.0,
+          "angleAdjust" : 0
+        }
+      ]
+    }
+  ],
+  "statusEffects" : [
+    "burning"
+  ],
+  "power" : 20.0,
+  "knockback" : 20,
+  "damageKind" : "arcana_solar",
+  "emitters" : [],
+
+  "persistentAudio" : "/sfx/projectiles/dragonprojectile_loop.ogg"
+}
+
+

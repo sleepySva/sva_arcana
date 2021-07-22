@@ -53,6 +53,22 @@
 		[0.4, 2]
       ]
     }]
+  ],
+  
+  "arcana_monsterdrops_lunarPoptop" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 60]}
+      ],
+      "pool" : [
+		{"weight" : 0.8, "item" : ["arcana_flowers_cherryBlossom", 1]},
+		{"weight" : 0.2, "item" : ["money", 80]}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+		[0.4, 2]
+      ]
+    }]
   ]
 }
 

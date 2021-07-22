@@ -1420,5 +1420,119 @@
       "biome": [[0,["arcana_azureDesert"]]],
       "subRegion": ["oasis"]
     }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_eminsnow",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : [ "arcana_eminsnow" ],
+          "secondaryRegions" : [ "arcana_eminsnowForest" ],
+          "dungeons": [
+		      [3.0, "arcana_eminsnow_dungeon_2"],
+			  [4.0, "arcana_eminsnow_dungeon_3"],
+			  [2.0, "arcana_eminsnow_dungeon_4"],
+			  [1.0, "novakidvillage"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "apexcamp"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_aspiriteCave" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_noxionCave" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_immoriteCave" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_ancientCave" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_eminsnow",
+    "value": {
+      "caveLiquid": ["water"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_eminsnow"]]],
+      "subRegion": ["arcana_cerueonFields"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_cerueonFields",
+    "value": {
+	  "caveLiquid": ["healingliquid"],
+      "blockSelector": ["remixedIslandTowersSurface"],
+      "fgCaveSelector": ["empty"],
+      "bgCaveSelector": ["empty"],
+	  "bgOreSelector": ["richVeins"],
+      "biome": [[0,["arcana_cerueonFields"]]]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_eminsnowForest",
+    "value": {
+	  "caveLiquid": ["water"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["empty"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_eminsnowForest"]]]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_senbonzakura",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : [ "arcana_senbonzakura" ],
+          "secondaryRegions" : [ "arcana_eminsnowForest" ],
+          "dungeons": [
+			  [4.0, "arcana_eminsnow_dungeon_3"],
+			  [2.0, "arcana_eminsnow_dungeon_4"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "apexcamp"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_aspiriteCave" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_noxionCave" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_immoriteCave" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_ancientCave" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_senbonzakura",
+    "value": {
+      "caveLiquid": ["water"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_senbonzakura"]]],
+      "subRegion": []
+    }
   }
 ]

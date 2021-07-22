@@ -1,0 +1,214 @@
+{
+  "type" : "arcana_npc_misc_winterFroggMerchant",
+  "baseType" : "merchant",
+  
+  "nameGen" : [ "/species/shadownamegen.config:names", "/species/shadownamegen.config:names" ],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+    
+    "reactions" : {
+      "spontaneous" : [
+        [1.0, "sit", { "timeRange" : [0.6,0.2]}],
+        [1.0, "wander", { "timeRange" : [0.2, 0.6] }]
+      ]
+    },
+    
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      }
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      "categories" : {
+        "hylotl" : [ "frogmerchant" ]
+      },
+      "buyFactorRange" : [ 0.9, 1.2 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 7,
+      "behaviorConfig" : { "sleep" : false },
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Frogg Merchant",
+          "subtitle" : "  Penny-wise polliwog peddler"
+        }
+      }
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/frog.config:tagCriteria",
+          "enclosedArea" : "/dialog/frog.config:enclosedArea",
+          "otherDeed" : "/dialog/frog.config:otherDeed",
+          "severe" : "/dialog/frog.config:severe",
+          "final" : "/dialog/frog.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/frog.config:beacon",
+          "rent" : "/dialog/frog.config:rent"
+        }
+      },
+
+      "converse" : "/dialog/frog.config:hail",
+      "accuse" : "/dialog/frog.config:accuse",
+      "alert" : "/dialog/frog.config:alert",
+
+      "merchant" : {
+        "start" : "/dialog/frog.config:start",
+        "end" : "/dialog/frog.config:end",
+        "follow" : "/dialog/frog.config:follow",
+        "welcome" : "/dialog/frog.config:welcome",
+        "tout" : "/dialog/frog.config:tout"
+      },
+
+      "flee" : {
+        "helpme" : "/dialog/frog.config:helpme",
+        "helpthem" : "/dialog/frog.config:helpthem",
+        "encourage" : "/dialog/frog.config:encourage",
+        "safe" : "/dialog/frog.config:safe"
+      }
+    }
+  },
+
+  "items" : {
+    "hylotl" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_winterFroggSuit_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_winterFroggSuit_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_winterFroggSuit_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "boilerback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "electricStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.8
+      },
+      "iceResistance" : {
+        "baseValue" : 0.8
+      },
+      "arcana_resistance_lunar" : {
+        "baseValue" : 0.8
+      }
+    }
+  }
+}

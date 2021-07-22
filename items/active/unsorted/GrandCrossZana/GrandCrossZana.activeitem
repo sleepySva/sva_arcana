@@ -1,0 +1,57 @@
+{
+	"itemName" : "FD|GrandCrossZana",
+	"price" : 0,
+	"maxStack" : 1,
+	"rarity" : "Essential",
+	"description" : "The unique gunblade weapon that have mana inside, unlock power by Skill Menu Item from FutaraDragon race",
+	"shortdescription" : "Grand Cross ^#ffb800;Zână^reset;",
+	"tooltipKind" : "base",
+	"level" : 10,
+	"category" : "customskill",
+	"twoHanded" : true,
+	"itemTags" : ["customskill","range","dragonskill","uniquecustomweapon","uniqueWeapon"],
+	
+	"inventoryIcon" : "GrandCrossZanaIcon.png",
+	"animation" : "GrandCrossZana.animation",
+	"animationParts" : {
+		"Gun" : "GrandCrossZana.png"
+	},
+	"animationCustom" : { },
+
+	"scripts" : ["GrandCrossZana.lua"],
+	
+	"skillSetting" : {
+		"EventFrame" : [
+		]
+	},
+
+    "stances" : {
+		"idle" : {
+			"resetAim" : true,
+			"duration" : 0.1,
+			"armRotation" : 270,
+			"weaponRotation" : 0,
+			"twoHanded" : true,
+
+			"allowRotate" : false,
+			"allowFlip" : true,
+			
+			"animationStates" : {
+			  "Gun" : "idle"
+			}
+		},
+		"fire" : {
+			"duration" : 0,
+			"armRotation" : 0,
+			"weaponRotation" : 0,
+			"twoHanded" : true,
+
+			"allowRotate" : true,
+			"allowFlip" : true,
+			
+			"animationStates" : {
+			  "Gun" : "idle"
+			}
+		}
+	}
+}

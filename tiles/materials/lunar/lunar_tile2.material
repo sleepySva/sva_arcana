@@ -1,0 +1,22 @@
+{
+  "materialId" : 16774,
+  "materialName" : "lunar_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile2",
+  "description" : "A dark ornate wooden window tile, crafted by the Tsukuyomi clan.",
+  "shortdescription" : "Kuromatsu Window",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile2.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 11
+  }
+}

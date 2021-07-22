@@ -1,0 +1,96 @@
+{
+  "projectileName" : "arcana_boss_dheral_projectile_6",
+  "physics" : "sticky",
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "image" : "arcana_boss_dheral_projectile_6.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_ember_indigo"],
+  "frameNumber" : 1,
+  "speed" : 40,
+  "knockback" : 20,
+  "supportsProcessing" : true,
+  
+  "power" : 30,  
+
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_white/arcana_explosion_plasma_1_white.config"
+    },
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_projectile_3",
+          "angle" : 90,
+          "fuzzAngle" : 180
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_projectile_5",
+          "angle" : 90,
+          "fuzzAngle" : 180
+        }
+      ]
+    },
+	{
+		"action" : "spawnmonster",
+		"type" : "spookit",
+		"offset": [ -1, -1 ],
+		"level" : 6,
+		"arguments" : { }
+	},
+	{
+		"action" : "spawnmonster",
+		"type" : "firespookit",
+		"offset": [ 1, -1 ],
+		"level" : 6,
+		"arguments" : { }
+	},
+	{
+		"action" : "spawnmonster",
+		"type" : "arcana_monster_lunarSpookit",
+		"offset": [ 0, 1 ],
+		"level" : 6,
+		"arguments" : { }
+	},
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/astraltear_stop2.ogg" ]
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_dheral/arcana_boss_dheral_projectile_6/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "lightColor" : [150, 120, 222],
+  "damageKind" : "arcana_lunar"
+  
+}

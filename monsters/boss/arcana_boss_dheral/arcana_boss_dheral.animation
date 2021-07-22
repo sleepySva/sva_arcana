@@ -1,0 +1,342 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "movesound" : {
+        "priority" : 1,
+        "default" : "on",
+        "states" : {
+          "off" : {
+          },
+          "on" : {
+            "properties" : {
+              "persistentSound" : "/music/event-horizon.ogg",
+			  "persistentSoundRangeMultiplier" : 100.0
+            }
+          }
+        }
+      },
+      "body" : {
+        "priority" : 1,
+        "default" : "idle",
+        "states" : {
+          "teleport_out" : {
+            "frames" : 8,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "invisible"
+          },
+          "teleport_in" : {
+            "frames" : 8,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "invisible" : {
+            "frames" : 2,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "idle" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "windup" : {
+            "frames" : 11,
+            "cycle" : 0.6,
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/kluexboss_phase1.ogg"
+            }
+          },
+          "attack" : {
+            "frames" : 7,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "arm" : {
+        "priority" : 1,
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {
+            "frames" : 1,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+          "startup" : {
+            "frames" : 7,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+          "windup" : {
+            "frames" : 1,
+            "cycle" : 1.0,
+            "properties" : {
+            }
+          },
+          "attack" : {
+            "frames" : 1,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 4,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 8,
+            "cycle" : 0.8
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [-1.0, 0.0],
+          "transformationGroups" : [ "all", "body" ]
+        },
+        "partStates" : {
+          "body" : {
+            "teleport_out" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.teleport_out.<frame>"
+              }
+            },
+            "teleport_in" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.teleport_in.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.windup.<frame>"
+              }
+            },
+            "attack" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.fire.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "body_fullbright" : {
+        "properties" : {
+          "zLevel" : 4,
+          "centered" : true,
+          "offset" : [-1.0, 0.0],
+          "transformationGroups" : [ "all", "body" ],
+          "fullbright" : true
+        },
+        "partStates" : {
+          "body" : {
+            "teleport_out" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.teleport_out.<frame>"
+              }
+            },
+            "teleport_in" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.teleport_in.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.windup.<frame>"
+              }
+            },
+            "attack" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.fire.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "arm" : {
+        "properties" : {
+          "zLevel" : 5,
+          "centered" : true,
+          "offset" : [5.0, 0.0],
+          "transformationGroups" : [ "all", "arm" ]
+        },
+        "partStates" : {
+          "arm" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.startup.<frame>"
+              }
+            },
+            "startup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.startup.<frame>"
+              }
+            },		  
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            },
+            "attack" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "arm_fullbright" : {
+        "properties" : {
+          "zLevel" : 6,
+          "centered" : true,
+          "offset" : [5.0, 0.0],
+          "transformationGroups" : [ "all", "arm" ],
+          "fullbright" : true
+        },
+        "partStates" : {
+          "arm" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.startup.<frame>"
+              }
+            },
+            "startup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.startup.<frame>"
+              }
+            },	
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            },
+            "attack" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "globalTagDefaults" : {
+    "colorState" : "lunar"
+  },
+
+  "transformationGroups" : {
+    "all" : {"interpolated" : true},
+    "body" : {"interpolated" : true},
+	"arm" : {"interpolated" : true}
+  },
+
+  "particleEmitters" : {
+    "damage" : {
+      "emissionRate" : 0.7,
+      "particles" : [
+      ]
+    },
+    "body" : {
+      "active" : true,
+      "emissionRate" : 2,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [
+        { "particle" : "arcana_particle_ember_indigo_1" },
+        { "particle" : "arcana_particle_ember_indigo_2" },
+        { "particle" : "arcana_particle_smoke_lunar" },
+        { "particle" : "arcana_particle_flame_small_lunar" }
+      ]
+    },
+    "destroy" : {
+      "offsetRegion" : [-3.5, -2.75, 3.5, 5.0],
+      "burstCount" : 15,
+      "particles" : [
+        { "particle" : "dust2" },
+        { "particle" : "dust2" },
+        { "particle" : "arcana_particle_boss_dheral_crystal" },
+        { "particle" : "arcana_particle_boss_dheral_shard" }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "turnHostile" : [  ],
+    "deathPuff" : [ "/sfx/npc/boss/kluexboss_death.ogg" ],
+    "lunarShot_windup" : [ "/sfx/melee/charge_up5.ogg" ],
+    "lunarShot" : [ "/sfx/melee/giantsword_charge_full.ogg" ]
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16786,
+  "materialName" : "lunar_tile14",
+  "particleColor" : [244, 147, 184, 255],
+  "itemDrop" : "lunar_tile14",
+  "description" : "A block of sakura petals.",
+  "shortdescription" : "Sakura Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 2,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile14.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 3515
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "type" : "arcana_boss_solarGuardian",
+  "shortdescription" : "Solar Guardian",
+  "categories" : [ "arcana_boss_solarGuardian" ],
+  "parts" : [ "lefthand", "swoosh", "righthand", "body", "head", "hip", "legs", "shield" ],
+
+  "animation" : "arcana_boss_solarGuardian.animation",
+  "reversed" : false,
+
+  "dropPools" : [
+    {
+      "default" : "arcana_bossdrops_solarGuardian"
+    }
+  ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/boss/arcana_boss_solarGuardian/arcana_boss_solarGuardian.lua"
+    ],
+    "animationScripts" : [
+      "/items/active/effects/chain.lua"
+    ],
+    "animationCustom" : {
+      "sounds" : {
+        // "groundHazardWindup" : [ "/sfx/npc/boss/kluexboss_lavaplume.ogg" ],
+        "groundHazardLoop" : [ "/sfx/npc/boss/guardian_floorhazard_fire_loop.ogg" ],
+        "groundHazardWinddown" : [ "/sfx/npc/boss/guardian_floorhazard_fire_end.ogg" ],
+        "dashSwoosh" : [ "/sfx/gun/rocket_fire1.ogg" ]
+      }
+    },
+
+    "behavior" : "solarguardian",
+    "elementalType" : "fire",
+
+    "handBeam" : {
+      "startSegmentImage" : "/monsters/boss/arcana_boss_solarGuardian/beams/<element>beamstart.png:<beamFrame>",
+      "segmentImage" : "/monsters/boss/arcana_boss_solarGuardian/beams/<element>beam.png:<beamFrame>",
+      "endSegmentImage" : "/monsters/boss/arcana_boss_solarGuardian/beams/<element>beamend.png:<beamFrame>",
+      "segmentSize" : 0.48,
+      "overdrawLength" : 0.2,
+      "taper" : 0,
+      "waveform" : {
+        "frequency" : 2.5,
+        "amplitude" : 0.125,
+        "movement" : 50.0
+      },
+      "fullbright" : true
+    },
+    "spawnBeam" : {
+      "startSegmentImage" : "/monsters/boss/arcana_boss_solarGuardian/beams/spawnbeamstart.png",
+      "segmentImage" : "/monsters/boss/arcana_boss_solarGuardian/beams/spawnbeam.png",
+      "endSegmentImage" : "/monsters/boss/arcana_boss_solarGuardian/beams/spawnbeamend.png",
+      "segmentSize" : 0.48,
+      "overdrawLength" : 0.2,
+      "taper" : 0,
+      "waveform" : {
+        "frequency" : 5.0,
+        "amplitude" : 0.0625,
+        "movement" : 15.0
+      },
+      "fullbright" : true
+    },
+
+    "renderLayer" : "Projectile-100",
+
+    "damageBar" : "None",
+
+    "metaBoundBox" : [-80, -50, 80, 50],
+    "scale" : 1.0,
+
+    "selfDamagePoly" : [ [3.0, 3], [3.0, -3], [-3.0, -3], [-3.0, 3] ],
+
+    "animationDamageParts" : {
+      "righthand" : {
+        "anchorPart" : "righthand",
+        "checkLineCollision" : true,
+        "bounces" : 0,
+        "damageSource" : {
+          "line" : [ [0, -0.5], [0, -100]],
+          "damage" : 30,
+          "damageSourceKind" : "arcana_solar",
+          "teamType" : "enemy",
+          "teamNumber" : 2
+        }
+      },
+      "bouncingbeam" : {
+        "anchorPart" : "righthand",
+        "checkLineCollision" : true,
+        "bounces" : 10,
+        "damageSource" : {
+          "line" : [ [0, -0.5], [0, -250]],
+          "damage" : 30,
+          "damageSourceKind" : "arcana_solar",
+          "teamType" : "enemy",
+          "teamNumber" : 2
+        }
+      },
+      "lefthand" : {
+        "anchorPart" : "lefthand",
+        "checkLineCollision" : true,
+        "bounces" : 0,
+        "damageSource" : {
+          "line" : [ [-1.0, -0.25], [-1.0, -100]],
+          "damage" : 30,
+          "damageSourceKind" : "arcana_solar",
+          "teamType" : "enemy",
+          "teamNumber" : 2
+        }
+      },
+      "shortrightbeam" : {
+        "anchorPart" : "righthand",
+        "checkLineCollision" : true,
+        "bounces" : 0,
+        "damageSource" : {
+          "line" : [ [0, -0.5], [0, -250.5]],
+          "damage" : 30,
+          "damageSourceKind" : "arcana_solar",
+          "teamType" : "enemy",
+          "teamNumber" : 2
+        }
+      },
+      "shortleftbeam" : {
+        "anchorPart" : "lefthand",
+        "checkLineCollision" : true,
+        "bounces" : 0,
+        "damageSource" : {
+          "line" : [ [-1.0, -0.25], [-1.0, -250.25]],
+          "damage" : 30,
+          "damageSourceKind" : "arcana_solar",
+          "teamType" : "enemy",
+          "teamNumber" : 2
+        }
+      },
+      "weapon" : {
+        "anchorPart" : "swoosh",
+        "damageSource" : {
+          "poly" : [ [-0.75, 0.875], [0.75, 0.875], [1.5, 0.0], [1.5, -0.5], [0.75, -1.25], [-0.75, -1.25], [-1.25, -0.75], [-1.25, 0.25] ],
+          "damage" : 30,
+          "damageSourceKind" : "firehammer",
+          "teamType" : "enemy",
+          "teamNumber" : 2,
+          "knockback" : [40, 0]
+        }
+      }
+    },
+
+    "movementSettings" : {
+      "gravityEnabled" : false,
+      "collisionPoly" : [ [3, 3], [3, -3], [-3, -3], [-3, 3] ],
+      "mass" : 1.0,
+      "flySpeed" : 0,
+      "airFriction" : 999.0,
+      "airForce" : 0.0,
+      "physicsEffectCategories" : ["boss"]
+    },
+
+    "knockoutTime" : 0.1,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "deathPoof",
+
+    "touchDamage" : {
+      "poly" : [ [-5, -13.5], [5, -13.5], [5, 5], [-5, 5] ],
+      "damage" : 20,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "stone",
+		"damageFlashColor" : "ff0000=0"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 5500
+        },
+        "protection" : {
+          "baseValue" : 0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricResistance" : {
+          "baseValue" : 0.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0,
+          "maxValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 1.0
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8]
+  }
+}

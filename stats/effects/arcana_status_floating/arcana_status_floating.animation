@@ -1,0 +1,47 @@
+{
+  "particleEmitters" : {
+    "feathers" : {
+      "enabled" : true,
+      "emissionRate" : 7.0,
+      "particles" : [
+        {
+          "particle" : "feathers"
+        },
+        {
+          "particle" : "feathers"
+        },
+        {
+          "particle" : "feathers"
+        },
+        {
+          "particle" : "feathers"
+        },
+        {
+          "particle" : "feathers"
+        },
+        {
+          "particle" : "feathers"
+        },
+        {
+          "particle" : "feathers"
+        },
+        {
+          "particle" : "feathers"
+        },
+        {
+          "particle" : "feathers"
+        }
+        //TODO: Make this not stupid by allowing an amount to burstParticleEmitter
+      ]
+    },
+    "hover" : {
+      "enabled" : true,
+      "emissionRate" : 30.0,
+      "particles" : [
+        {
+          "particle" : "levitationair"
+        }
+      ]
+    }
+  }
+}

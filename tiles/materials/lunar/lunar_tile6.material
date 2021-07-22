@@ -1,0 +1,22 @@
+{
+  "materialId" : 16778,
+  "materialName" : "lunar_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile6",
+  "description" : "A carpet tile dyed with the signature Lunar purple.",
+  "shortdescription" : "Lunar Carpet Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_ash.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile6.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 778
+  }
+}

@@ -1,0 +1,69 @@
+{
+	"animatedParts" : {
+		"stateTypes" : {
+			"Gun" : {
+				"default" : "idle",
+				"states" : {
+					"hide" : {
+						"frames" : 1
+					},
+					"idle" : {
+						"frames" : 1,
+						"mode" : "end"
+					},
+					"firemain" : {
+						"frames" : 1,
+						"mode" : "end"
+					},
+					"firesub" : {
+						"frames" : 1,
+						"mode" : "end"
+					}
+				}
+			}
+		},
+		"parts" : {
+			"Gun" : {
+				"properties" : {
+				    "centered" : true,
+				    "offset" : [0.125, 0.75],
+				    "transformationGroups" : ["weapon"]
+				},
+				"partStates" : {
+				    "Gun" : {
+						"hide" : {
+						},
+						"idle" : {
+						    "properties" : {
+								"image" : "GrandCrossZana.png:0"
+						    }
+						},
+						"firemain" : {
+						    "properties" : {
+								"offset" : [0.025, 0.75],
+								"image" : "GrandCrossZana.png:0"
+						    }
+						},
+						"firesub" : {
+						    "properties" : {
+								"offset" : [0.025, 0.75],
+								"image" : "GrandCrossZana.png:0"
+						    }
+						}
+				    }
+				}
+			}
+		}
+	},
+	
+	"transformationGroups" : {
+		"weapon" : {}
+	},
+	"sounds" : {
+		"WeaponReady" : [ "GrandCrossZanaWeaponReady.ogg" ],
+		"HomingShoot" : [ "GrandCrossZanaNormalBulletHomingShot.ogg" ],
+		"HomingHit" : [ "GrandCrossZanaNormalBulletHomingHit.ogg" ],
+		"Shoot" : [ "GrandCrossZanaNormalBulletShot.ogg" ],
+		"Hit" : [ "GrandCrossZanaNormalBulletHit.ogg" ]
+	}
+}

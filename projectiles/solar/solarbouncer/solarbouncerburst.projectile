@@ -1,0 +1,53 @@
+{
+  "projectileName" : "solarbouncerburst",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "solarbouncerburst.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "brightorangeglobeexplosion",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbouncer",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbouncer",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbouncer",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbouncer",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "power" : 25,
+  "piercing" : false,
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-0, -0], [-0, 0], [0, 0], [0, -0]  ],
+  "flippable" : true
+}

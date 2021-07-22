@@ -1,0 +1,109 @@
+{
+  "name": "arcana_boss_dheral_lunarQuickShot",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/query.lua",
+    "/scripts/behavior/bdata.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/projectiles.lua"
+  ],
+  "parameters": {
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "repeater",
+        "type": "decorator",
+        "name": "repeater",
+        "parameters": {
+          "maxLoops": {"value": 6},
+          "untilSuccess": {"value": false}
+        },
+		"child": {
+		  "title": "sequence",
+		  "type": "composite",
+		  "name": "sequence",
+		  "parameters": {},
+		  "children": [
+			{
+              "title": "entityPosition",
+              "type": "action",
+              "name": "entityPosition",
+              "parameters": {
+                "entity": {"key": "target"}
+              },
+              "output": {
+                "position": "targetPosition"
+              }
+            },
+            {
+              "title": "distance",
+              "type": "action",
+              "name": "distance",
+              "parameters": {
+                "from": {"key": "self"},
+                "to": {"key": "targetPosition"}
+              },
+              "output": {
+                "vector": "aimVector"
+              }
+            },
+            {
+              "title": "random",
+              "type": "action",
+              "name": "random",
+              "parameters": {
+                "max": {"value": 0.8},
+                "min": {"value": -0.8}
+              },
+              "output": {
+                "number": "angleOffset"
+              }
+            },
+            {
+              "title": "vecRotate",
+              "type": "action",
+              "name": "vecRotate",
+              "parameters": {
+                "angle": {"key": "angleOffset"},
+                "vector": {"key": "aimVector"}
+              },
+              "output": {
+                "vector": "aimVector"
+			  }
+            },
+            {
+              "title": "spawnTargetedProjectile",
+              "type": "action",
+              "name": "spawnTargetedProjectile",
+              "parameters": {
+                "aimVector": {"key": "aimVector"},
+                "parameters": {"value": {}},
+                "position": {"key": "self"},
+                "projectileType": {"value": "arcana_boss_dheral_projectile_4"},
+                "target": {"key": "target"},
+                "trackSource": {"value": true}
+              }
+            },
+            {
+              "title": "timer",
+              "type": "action",
+              "name": "timer",
+              "parameters": {
+                "time": {"value": 0.2}
+              }
+            }
+		  ]
+		}
+      }
+    ]
+  }
+}

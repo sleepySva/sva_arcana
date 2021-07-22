@@ -1,0 +1,22 @@
+{
+  "materialId" : 16790,
+  "materialName" : "lunar_tile17",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile17",
+  "description" : "An ancient constructing material made from luminarium. Highly durable.",
+  "shortdescription" : "Luinarium Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 38,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile17.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1769,
+    "radiantLight" : [97, 38, 148]
+  }
+}

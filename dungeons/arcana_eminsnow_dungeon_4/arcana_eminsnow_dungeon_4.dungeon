@@ -1,0 +1,28 @@
+{
+  "metadata" : {
+    "name" : "arcana_eminsnow_dungeon_4",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_eminsnow_dungeon_4_part_1"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_eminsnow_dungeon_4_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_4_part_1.json" ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "materialId" : 16788,
+  "materialName" : "lunar_tile15",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile15",
+  "description" : "Eh?... What is this alien material? Horizontal ornate wood? Impossible!",
+  "shortdescription" : "Kuromatsu Ornate Wood ^green;H^reset;",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile15.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2781
+  }
+}

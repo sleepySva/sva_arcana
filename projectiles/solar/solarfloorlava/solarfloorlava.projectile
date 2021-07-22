@@ -1,0 +1,33 @@
+{
+  "projectileName" : "solarfloorlava",
+  "image" : "solarfloorlava.png",
+  "animationCycle" : 0.8,
+  "physics" : "illusion",
+  "movementSettings" : {
+    "collisionPoly" : [ [4, 1], [4, -1], [-4, -1], [-4, 1] ]
+  },
+  "frameNumber" : 8,
+  "pointLight" : false,
+  "lightColor" : [200, 150, 100],
+  "fullbright" : true,
+  "speed" : 10,
+  "power" : 25.0,
+  "bounces" : -1,
+  "timeToLive" : 6,
+  "orientationLocked" : true,
+
+  "piercing" : true,
+  "flippable" : true,
+  "damagePoly" : [ [-32, -8], [-32, 2], [32, 2], [32, -8] ],
+  "damageKind" : "fire",
+  "statusEffects" : [
+    "burning"
+  ],
+
+  "scripts" : [ "solarfloorlava.lua" ],
+  "scriptDelta" : 1,
+
+  "clientEntityMode" : "ClientSlaveOnly",
+
+  "persistentAudio" : "/sfx/npc/boss/kluexboss_floorlava.ogg"
+}

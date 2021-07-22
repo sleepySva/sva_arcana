@@ -1,0 +1,81 @@
+{
+  "projectileName" : "arcana_boss_dheral_projectile_5",
+  
+  "physics" : "gas",
+  "bounces" : -1,
+  "piercing" : true,
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "animationCycle" : 0.6,
+  "frameNumber" : 4,
+  "windupFrames" : 14,
+  "winddownFrames" : 4,
+  
+  "timeToLive" : 3.0,
+  "image" : "arcana_boss_dheral_projectile_5.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 0,
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "lightColor" : [84, 47, 126],
+  
+  "onlyHitTerrain" : true,
+  
+  "boundBox" : [-24, -24, 24, 24],
+  "physicsForces" : {
+    "pull" : {
+      "type" : "RadialForceRegion",
+      "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop"],
+      "outerRadius" : 24,
+      "innerRadius" : 3,
+      "targetRadialVelocity" : -40,
+      "controlForce" : 220
+    }
+  },
+  
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 16,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "ember",
+            "size" : 1.5,
+            "color" : [170, 150, 190, 255],
+            "fade" : 0.9,
+            "approach" : [30, 30],
+            "light" : [160, 40, 40],
+            "timeToLive" : 0.5,
+            "layer" : "middle",
+            "variance" : {
+              "position" : [6.0, 6.0],
+              "finalVelocity" : [3.0, 3.0],
+              "size" : 0.5,
+              "timeToLive" : 0.3,
+              "fade" : 0.3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 4.8,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/vehicle_disappear2.ogg" ]
+    }
+  ],
+  "power" : 0,
+  "emitters" : [],
+  "damageKind" : "arcana_lunar",
+  
+  "persistentAudio" : "/sfx/projectiles/forcecage_loop.ogg"
+}

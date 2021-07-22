@@ -1,0 +1,288 @@
+{
+  "name": "solarguardian-targeteddash",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/boss/guardian.lua"
+  ],
+  "parameters": {
+    "dashCount": 5,
+    "dashSpeed": 0,
+    "controlParameters": {},
+    "windupTime": 0.5,
+    "dashTime": 0.4
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "repeater",
+        "type": "decorator",
+        "name": "repeater",
+        "parameters": {
+          "maxLoops": {"key": "<dashCount>"},
+          "untilSuccess": {"value": false}
+        },
+        "child": {
+          "title": "parallel",
+          "type": "composite",
+          "name": "parallel",
+          "parameters": {
+            "fail": {"value": 1},
+            "success": {"value": 1}
+          },
+          "children": [
+            {
+              "title": "animate",
+              "type": "action",
+              "name": "animate",
+              "parameters": {
+                "fallback": {"value": "deactivate"},
+                "state": {"value": "activate"},
+                "type": {"value": "body"}
+              }
+            },
+            {
+              "title": "animate",
+              "type": "action",
+              "name": "animate",
+              "parameters": {
+                "fallback": {"value": "deactivate"},
+                "state": {"value": "activate"},
+                "type": {"value": "head"}
+              }
+            },
+            {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "timer",
+                  "type": "action",
+                  "name": "timer",
+                  "parameters": {
+                    "time": {"value": "<windupTime>"}
+                  }
+                },
+                {
+                  "title": "animate",
+                  "type": "action",
+                  "name": "animate",
+                  "parameters": {
+                    "fallback": {"value": "invisible"},
+                    "state": {"value": "active"},
+                    "type": {"value": "swoosh"}
+                  }
+                }
+              ]
+            },
+            {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "playSound",
+                  "type": "action",
+                  "name": "playSound",
+                  "parameters": {
+                    "loops": {"value": 0},
+                    "sound": {"value": "quickDashWindup"}
+                  }
+                },
+                {
+                  "title": "timer",
+                  "type": "action",
+                  "name": "timer",
+                  "parameters": {
+                    "time": {"value": "<windupTime>"}
+                  }
+                },
+                {
+                  "title": "playSound",
+                  "type": "action",
+                  "name": "playSound",
+                  "parameters": {
+                    "loops": {"value": 0},
+                    "sound": {"value": "quickDashSwoosh"}
+                  }
+                },
+                {
+                  "title": "loopSound",
+                  "type": "action",
+                  "name": "loopSound",
+                  "parameters": {
+                    "sound": {"value": "quickDashLoop"}
+                  }
+                }
+              ]
+            },
+            {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "parallel",
+                  "type": "composite",
+                  "name": "parallel",
+                  "parameters": {
+                    "fail": {"value": -1},
+                    "success": {"value": -1}
+                  },
+                  "children": [
+                    {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "entityDirection",
+                          "type": "action",
+                          "name": "entityDirection",
+                          "parameters": {
+                            "entity": {"key": "self"},
+                            "target": {"key": "target"}
+                          },
+                          "output": {
+                            "direction": "targetDir",
+                            "vector": "toTarget"
+                          }
+                        },
+                        {
+                          "title": "faceDirection",
+                          "type": "action",
+                          "name": "faceDirection",
+                          "parameters": {
+                            "direction": {"key": "targetDir"}
+                          }
+                        },
+                        {
+                          "title": "vecAngle",
+                          "type": "action",
+                          "name": "vecAngle",
+                          "parameters": {
+                            "vector": {"key": "toTarget"}
+                          },
+                          "output": {
+                            "angle": "targetAngle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"value": "<windupTime>"}
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "parallel",
+                  "type": "composite",
+                  "name": "parallel",
+                  "parameters": {
+                    "fail": {"value": -1},
+                    "success": {"value": -1}
+                  },
+                  "children": [
+                    {
+                      "title": "controlParameters",
+                      "type": "action",
+                      "name": "controlParameters",
+                      "parameters": {
+                        "parameters": {"key": "<controlParameters>"}
+                      }
+                    },
+                    {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "vecRotate",
+                          "type": "action",
+                          "name": "vecRotate",
+                          "parameters": {
+                            "angle": {"key": "targetAngle"},
+                            "vector": {"value": [1, 0]}
+                          },
+                          "output": {
+                            "vector": "toTarget"
+                          }
+                        },
+                        {
+                          "title": "vecMultiply",
+                          "type": "action",
+                          "name": "vecMultiply",
+                          "parameters": {
+                            "first": {"key": "toTarget"},
+                            "number": {"key": "<dashSpeed>"}
+                          },
+                          "output": {
+                            "vector": "dashVelocity"
+                          }
+                        },
+                        {
+                          "title": "setVelocity",
+                          "type": "action",
+                          "name": "setVelocity",
+                          "parameters": {
+                            "velocity": {"key": "dashVelocity"}
+                          }
+                        },
+                        {
+                          "title": "timer",
+                          "type": "action",
+                          "name": "timer",
+                          "parameters": {
+                            "time": {"value": "<dashTime>"}
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "guardianStab",
+              "type": "action",
+              "name": "guardianStab",
+              "parameters": {
+                "angle": {"key": "targetAngle"},
+                "offset": {"value": [3.0, 0]},
+                "stabLength": {"value": 37},
+                "windup": {"key": "<windupTime>"},
+                "windupLength": {"value": 3}
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 1}
+        }
+      }
+    ]
+  }
+}

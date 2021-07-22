@@ -1,0 +1,52 @@
+{
+  "projectileName" : "solarbubblepositioner",
+  "physics" : "flame",
+  "bounces" : 0,
+  "timeToLive" : 0.7,
+  "image" : "solarbubble.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 80,
+  "piercing" : true,
+  "fullbright" : true,
+  "animationCycle" : 0.5,
+  "lightColor" : [84, 47, 26],
+  "frameNumber" : 4,
+  "renderLayer" : "ForegroundEntity",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0.001,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/particles/monsters/cultistbosssphere/cultistbosssphere.png",
+        "position" : [0, 0],
+        "layer" : "front",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "solarbubble",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.3,
+      "angleAdjust" : 0
+    }
+  ],
+  "emitters" : [ "fireplasma" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "arcana_solar",
+  "damagePoly" : [ [0, 0] ],
+  
+  "statusEffects" : [
+  ]
+}

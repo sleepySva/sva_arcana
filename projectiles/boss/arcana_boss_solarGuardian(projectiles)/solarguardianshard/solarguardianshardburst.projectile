@@ -1,0 +1,119 @@
+{
+  "projectileName" : "solarguardianshardburst",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "solarguardianshard.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "fireplasmaexplosion",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarguardianshard",
+      "fuzzAngle" : 999,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "power" : 0,
+  "piercing" : false,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-0, -0], [-0, 0], [0, 0], [0, -0]  ],
+  "flippable" : true
+}

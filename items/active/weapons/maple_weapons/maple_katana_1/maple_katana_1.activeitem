@@ -1,0 +1,39 @@
+{
+  "itemName" : "maple_katana_1",
+  "price" : 180,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A simple maple colored tachi made with copper, iron and orange dye.",
+  "shortdescription" : "^#cb6249;Maple Tachi^reset;",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Tachi"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","katana"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_tachi_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 9.2,
+	"damageConfig" : {
+	  "damageSourceKind" : "broadsword"
+	}
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

@@ -1,0 +1,657 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "movement" : {
+        "priority" : 1,
+        "default" : "idle",
+        "states" : {
+          "idle" : {}
+        }
+      },
+      "body" : {
+        "priority" : 2,
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "activate" : {
+            "frames" : 5,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "active"
+          },
+          "active" : {},
+          "deactivate" : {
+            "frames" : 5,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "head" : {
+        "priority" : 2,
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "activate" : {
+            "frames" : 5,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "active"
+          },
+          "active" : {},
+          "deactivate" : {
+            "frames" : 5,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "righthand" : {
+        "priority" : 2,
+        "default" : "closed",
+        "states" : {
+          "closed" : {},
+          "open" : {
+            "frames" : 5,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "opened",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/kluexboss_phase1.ogg",
+              "immediateSoundRangeMultiplier" : 1.0
+            }
+          },
+          "opened" : {},
+          "close" : {
+            "frames" : 4,
+            "cycle" : 0.35,
+            "mode" : "transition",
+            "transition" : "closed",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/kluexboss_phase1.ogg",
+              "immediateSoundRangeMultiplier" : 1.0
+            }
+          }
+        }
+      },
+      "lefthand" : {
+        "priority" : 2,
+        "default" : "closed",
+        "states" : {
+          "closed" : {},
+          "open" : {
+            "frames" : 5,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "opened"
+          },
+          "opened" : {},
+          "close" : {
+            "frames" : 4,
+            "cycle" : 0.35,
+            "mode" : "transition",
+            "transition" : "closed"
+          }
+        }
+      },
+      "swoosh" : {
+        "priority" : 3,
+        "default" : "invisible",
+        "states" : {
+          "invisible" : {},
+          "active" : {
+            "frames" : 2,
+            "cycle" : 0.1,
+            "mode" : "loop"
+          }
+        }
+      },
+      "shield" : {
+        "priority" : 4,
+        "default" : "invisible",
+        "states" : {
+          "invisible" : {},
+          "active" : {
+            "frames" : 2,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "hit" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "active",
+            "frameProperties" : {
+              "immediateSound" : [ "/sfx/npc/boss/cultistboss_shield.ogg", "", "", "" ]
+            }
+          },
+          "pierce" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "off"
+          },
+          "off" : {
+            "frames" : 2,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 4,
+        "default" : "none",
+        "states" : {
+          "none" : { },
+          "stunned" : { }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "zLevel" : 5,
+          "centered" : true,
+          "offset" : [0.0, 0.25],
+          "transformationGroups" : ["all"],
+          "rhanchor" : [-2.375, -0.25],
+          "lhanchor" : [2.375, -0.25],
+          "rlanchor" : [-0.75, -3.0],
+          "llanchor" : [0.75, -3.0],
+          "image" : "<partImage>:idle.1"
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "bodyfullbright" : {
+        "properties" : {
+          "zLevel" : 4,
+          "centered" : true,
+          "anchorPart" : "body",
+          "image" : "<partImage>:idle.1",
+          "fullbright" : true
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "head" : {
+        "properties" : {
+          "zLevel" : 7,
+          "centered" : true,
+          "offset" : [0.0, 0.25],
+          "transformationGroups" : ["all"],
+          "image" : "<partImage>:idle.1"
+        },
+        "partStates" : {
+          "head" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "headfullbright" : {
+        "properties" : {
+          "zLevel" : 6,
+          "centered" : true,
+          "anchorPart" : "head",
+          "image" : "<partImage>:idle.1",
+          "fullbright" : true
+        },
+        "partStates" : {
+          "head" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "hip" : {
+        "properties" : {
+          "zLevel" : 8,
+          "centered" : true,
+          "offset" : [0.0, 0.25],
+          "transformationGroups" : ["all"],
+          "image" : "<partImage>:idle.1"
+        }
+      },
+      "righthand" : {
+        "properties" : {
+          "zLevel" : 10,
+          "centered" : true,
+          "offset" : [3.800, -1.7],
+          "rotationCenter" : [0.0, 3.8],
+          "projectileSource" : [0.0, -0.5],
+          "beamSource" : [0.0, -0.5],
+          "beamEnd" : [0.0, -250.0],
+          "transformationGroups" : ["all", "righthand"]
+        },
+        "partStates" : {
+          "righthand" : {
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:closed.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame><rhflip>"
+              }
+            },
+            "opened" : {
+              "properties" : {
+                "image" : "<partImage>:opened.<frame><rhflip>"
+              }
+            },
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:close.<frame><rhflip>"
+              }
+            }
+          }
+        }
+      },
+      "righthandfullbright" : {
+        "properties" : {
+          "zLevel" : 11,
+          "centered" : true,
+          "anchorPart" : "righthand",
+          "fullbright" : true
+        },
+        "partStates" : {
+          "righthand" : {
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:closed.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame><rhflip>"
+              }
+            },
+            "opened" : {
+              "properties" : {
+                "image" : "<partImage>:opened.<frame><rhflip>"
+              }
+            },
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:close.<frame><rhflip>"
+              }
+            }
+          }
+        }
+      },
+      "lefthand" : {
+        "properties" : {
+          "zLevel" : 8,
+          "centered" : true,
+          "offset" : [-3.575, -1.7],
+          "rotationCenter" : [-1.0, 3.3],
+          "projectileSource" : [-1.0, -0.25],
+          "beamSource" : [0.0, -0.5],
+          "beamEnd" : [-1.0, -80.0],
+          "transformationGroups" : ["all", "lefthand"]
+        },
+        "partStates" : {
+          "lefthand" : {
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:closed.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame><lhflip>"
+              }
+            },
+            "opened" : {
+              "properties" : {
+                "image" : "<partImage>:opened.<frame><lhflip>"
+              }
+            },
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:close.<frame><lhflip>"
+              }
+            }
+          }
+        }
+      },
+      "lefthandfullbright" : {
+        "properties" : {
+          "zLevel" : 9,
+          "centered" : true,
+          "anchorPart" : "lefthand",
+          "fullbright" : true
+        },
+        "partStates" : {
+          "lefthand" : {
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:closed.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame><lhflip>"
+              }
+            },
+            "opened" : {
+              "properties" : {
+                "image" : "<partImage>:opened.<frame><lhflip>"
+              }
+            },
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:close.<frame><lhflip>"
+              }
+            }
+          }
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : 12,
+          "centered" : true,
+          "anchorPart" : "lefthand",
+          "fullbright" : true
+        },
+        "partStates" : {
+          "swoosh" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "rightleg" : {
+        "properties" : {
+          "zLevel" : 11,
+          "centered" : true,
+          "offset" : [0.0, 0.25],
+          "rotationCenter" : [-0.75, -2.0],
+          "transformationGroups" : ["all", "rightleg"],
+          "image" : "<partImage>:idle.1"
+        }
+      },
+      "leftleg" : {
+        "properties" : {
+          "zLevel" : 3,
+          "centered" : true,
+          "offset" : [0.0, 0.25],
+          "rotationCenter" : [0.75, -3.0],
+          "transformationGroups" : ["all", "leftleg"],
+          "image" : "<partImage>:idle.1"
+        }
+      },
+      "shield" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+		  "anchorPart" : "body",
+          "transformationGroups" : [ "all", "shield" ]
+        },
+        "partStates" : {
+          "shield" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "hit" : {
+              "properties" : {
+                "image" : "<partImage>:hit.<frame>"
+              }
+            },
+            "pierce" : {
+              "properties" : {
+                "image" : "<partImage>:pierce.<frame>"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "shieldfullbright" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "fullbright" : true,
+          "anchorPart" : "shield"
+        },
+        "partStates" : {
+          "shield" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "hit" : {
+              "properties" : {
+                "image" : "<partImage>:hit.<frame>"
+              }
+            },
+            "pierce" : {
+              "properties" : {
+                "image" : "<partImage>:pierce.<frame>"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "globalTagDefaults" : {
+    "rhflip" : "",
+    "lhflip" : ""
+  },
+
+  "transformationGroups" : {
+    "all" : {"interpolated" : true},
+    "leftleg" : {"interpolated" : true},
+    "rightleg" : {"interpolated": true},
+    "lefthand" : {"interpolated" : true},
+    "righthand" : {"interpolated" : true},
+    "shield" : {"interpolated" : true}
+  },
+
+  "particleEmitters" : {
+    "deathPoof" : {
+      "emissionRate" : 1.0,
+      "offsetRegion" : [-5, -9, 5, 5],
+      "particles" : [
+      ]
+    },
+	"aura" : {
+      "active" : true,
+      "emissionRate" : 300,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "size" : 1.0,
+            "color" : [255, 210, 138, 255],
+            "position" : [0, 0],
+            "initialVelocity" : [0, 6.0],
+            "light" : [255, 210, 138],
+            "timeToLive" : 0.8,
+            "destructionAction" : "fade",
+            "destructionTime" : 0.2,
+            "layer" : "front",
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [0, 2.0],
+              "size" : 1.0,
+			  "position" : [6, 6]
+            }
+          }
+        }
+      ]
+    },
+    "wallCollision" : {
+      "emissionRate" : 1.0,
+      "offsetRegion" : [2.0, 3.0, 2.5, -4.0],
+      "burstCount" : 4,
+      "particles" : [
+        { "particle" : "dust4" },
+        { "particle" : "dust2", "count" : 5 }
+      ]
+    },
+    "groundCollision" : {
+      "emissionRate" : 1.0,
+      "offsetRegion" : [-2.5, -3.5, 2.5, -4.0],
+      "burstCount" : 2,
+      "particles" : [
+        { "particle" : "dust4" },
+        { "particle" : "dust2", "count" : 5 }
+      ]
+    },
+    "ceilingCollision" : {
+      "emissionRate" : 1.0,
+      "offsetRegion" : [-2.5, 3.5, 2.5, 4.0],
+      "burstCount" : 2,
+      "particles" : [
+        { "particle" : "dust4" },
+        { "particle" : "dust2", "count" : 5 }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
+    "wallCollision" : [ "/sfx/gun/grenadeblast2.ogg" ],
+    "groundCollision" : [ "/sfx/gun/grenadeblast2.ogg" ],
+    "ceilingCollision" : [ "/sfx/gun/grenadeblast2.ogg" ],
+    "groundBounce" : [ "/sfx/gun/grenadeblast1.ogg" ],
+    "beamWindup" : [ "/sfx/npc/boss/crystalboss_beamin.ogg" ],
+    "beamStart" : [ ],
+    "beamLoop" : [ "/sfx/npc/boss/crystalboss_beam.ogg" ],
+    "beamWinddown" : [ "/sfx/npc/boss/crystalboss_beamout.ogg" ],
+    "doubleBeamPrepare" : [ "/sfx/melee/staff_charge1_fire.ogg" ],
+    "beamPrepare" : [ "/sfx/melee/staff_charge1_fire.ogg" ],
+    "groundHazardWindup" : [ ],
+    "groundHazardStart" : [ ],
+    "groundHazardLoop" : [ "/sfx/npc/boss/guardian_floorhazard_loop.ogg" ],
+    "groundHazardWinddown" : [ "/sfx/melee/rocketspear_stop_fire.ogg" ],
+    "fireWindup" : [ "/sfx/melee/charge_up1.ogg" ],
+    "rapidFire" : [ "/sfx/gun/dragonhead_fire1.ogg" ],
+    "burstFire" : [ "/sfx/gun/dragonhead_charged_fire4.ogg" ],
+    "singleFire" : [ "/sfx/gun/dragonhead_charged_fire1.ogg" ],
+    "dashWindup" : [ "/sfx/npc/boss/guardian_stab_windup1.ogg" ],
+    "dashSwoosh" : [ "/sfx/gun/plasma_sniper4.ogg" ],
+    "dashLoop" : [ "/sfx/npc/boss/cultistboss_dash_loop.ogg" ],
+    "quickDashWindup" : [ "/sfx/tech/mech_activate1.ogg" ],
+    "quickDashSwoosh" : [ "/sfx/npc/boss/cultistboss_sphere_attack.ogg" ],
+    "quickDashLoop" : [ ],
+    "stabWindup" : [ "/sfx/npc/boss/solarguardian_stab_windup.ogg" ],
+    "stabSwoosh" : [ "/sfx/npc/boss/cultistboss_sphere_attack.ogg" ],
+    "stabLoop" : [ "/sfx/npc/boss/cultistboss_dash_loop.ogg" ],
+    "shieldBreak" : [ "/sfx/npc/boss/guardian_shield_drop1.ogg" ],
+    "shieldRestore" : [ "/sfx/melee/giantsword_charge_full.ogg" ],
+    "spawnMinion" : [ "/sfx/tech/mech_activate1.ogg" ],
+    "deathFade" : [ "/sfx/npc/boss/guardian_death_fade.ogg" ],
+    "deathShrink" : [ "/sfx/npc/boss/guardian_death_shrink.ogg" ]
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

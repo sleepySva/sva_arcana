@@ -1,0 +1,22 @@
+{
+  "projectileName" : "tricanardspawner",
+  "image" : "tricanardspawner.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "power" : 0,
+  "movementSettings" : {
+    "collisionEnabled" : true
+  },
+  "damageKind" : "hidden",
+  "collisionPoly" : [ [0.25, 0.75], [0.625, 0.075], [0.625, -0.075], [0.25, -0.75], [-0.25, -0.75], [-0.625, -0.075], [-0.625, 0.075], [-0.25, 0.75] ],
+  "piercing" : true,
+  "speed" : 0,
+  "timeToLive" : 0.0,
+  "actionOnReap" : [
+	{
+	  "action" : "spawnmonster",
+	  "type" : "arcana_monster_tricanardsummoned",
+	  "level" : 8
+	}
+  ]
+}

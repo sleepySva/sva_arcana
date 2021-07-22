@@ -1,0 +1,91 @@
+{
+  "projectileName" : "solarbubbleburst",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "solarbubblespawner.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "solarbubblepositioner",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 180
+    }
+  ],
+  "power" : 25,
+  "piercing" : false,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-0, -0], [-0, 0], [0, 0], [0, -0]  ],
+  "flippable" : true
+}

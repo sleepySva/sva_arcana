@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_status_floating",
+  "effectConfig" : {
+    "maxHoverHeight" : 4,
+    "hoverSpeedMultiplier" : 16,
+    "hoverAcceleration" : 20,
+    "bobInterval" : 2,
+    "bobAmount" : 0.3,
+    "fallSpeedLimit" : 0,
+    "protectionBonus" : 5
+  },
+  "defaultDuration" : 20,
+
+  "scripts" : [
+    "arcana_status_floating.lua"
+  ],
+
+  "animationConfig" : "arcana_status_floating.animation",
+
+  "label" : "Levitation",
+  "icon" : "/interface/statuses/levitate.png"
+}

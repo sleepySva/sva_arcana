@@ -1,0 +1,17 @@
+{
+	"projectileName" : "GrandCrossZanaNormalBulletHomingShot2",
+	"image" : "GrandCrossZana_Homing_Shot_Effect_2.png",
+	"fullbright": true,
+	"renderLayer" : "FrontParticle",
+	"timeToLive" : 0.5,
+	"frameNumber" : 16,
+	"animationCycle" : 0.5,
+	"animationLoops" : false,
+	"flippable" : true,
+	"orientationLocked" : true,
+	"onlyHitTerrain" : true,
+	"speed" : 0,
+	"damageType" : "NoDamage",
+	"teamType" : "ghostly",
+	"scripts" : [ "GrandCrossZanaNormalBulletHomingShot.lua" ]
+}

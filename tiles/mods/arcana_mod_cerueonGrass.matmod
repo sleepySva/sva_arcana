@@ -1,0 +1,16 @@
+{
+  "modId" : 16827,
+  "modName" : "arcana_mod_cerueonGrass",
+  "description" : "A mysterious cerulean-colored grass is growing here.",
+  "footstepSound" : "/sfx/blocks/footstep_grass.ogg",
+  "grass" : true,
+  "health" : 0,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_cerueonGrass.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

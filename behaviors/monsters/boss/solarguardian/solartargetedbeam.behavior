@@ -1,0 +1,418 @@
+{
+  "name": "solarguardian-targetedbeam",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/boss/guardian.lua"
+  ],
+  "parameters": {
+    "handPart": "righthand",
+    "aimTime": 1.5,
+    "duration": 2,
+    "angularSpeed": 1,
+    "damagePart": "righthand",
+    "beamType": "damage",
+    "bounces": 0,
+    "track": true
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": 1}
+        },
+        "children": [
+          {
+            "title": "animate",
+            "type": "action",
+            "name": "animate",
+            "parameters": {
+              "fallback": {"value": "close"},
+              "state": {"value": "open"},
+              "type": {"value": "<handPart>"}
+            }
+          },
+          {
+            "title": "animate",
+            "type": "action",
+            "name": "animate",
+            "parameters": {
+              "fallback": {"value": "deactivate"},
+              "state": {"value": "activate"},
+              "type": {"value": "body"}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "playSound",
+                "type": "action",
+                "name": "playSound",
+                "parameters": {
+                  "loops": {"value": 0},
+                  "sound": {"value": "beamPrepare"}
+                }
+              },
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": -1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": "<aimTime>"}
+                    }
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "entityDirection",
+                        "type": "action",
+                        "name": "entityDirection",
+                        "parameters": {
+                          "entity": {"key": "self"},
+                          "target": {"key": "target"}
+                        },
+                        "output": {
+                          "direction": "targetDir"
+                        }
+                      },
+                      {
+                        "title": "faceDirection",
+                        "type": "action",
+                        "name": "faceDirection",
+                        "parameters": {
+                          "direction": {"key": "targetDir"}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "entityPosition",
+                        "type": "action",
+                        "name": "entityPosition",
+                        "parameters": {
+                          "entity": {"key": "target"}
+                        },
+                        "output": {
+                          "position": "targetPosition"
+                        }
+                      },
+                      {
+                        "title": "distance",
+                        "type": "action",
+                        "name": "distance",
+                        "parameters": {
+                          "from": {"key": "self"},
+                          "to": {"key": "targetPosition"}
+                        },
+                        "output": {
+                          "vector": "toTarget",
+                          "x": "targetDir"
+                        }
+                      },
+                      {
+                        "title": "vecAngle",
+                        "type": "action",
+                        "name": "vecAngle",
+                        "parameters": {
+                          "vector": {"key": "toTarget"}
+                        },
+                        "output": {
+                          "angle": "aimAngle"
+                        }
+                      },
+                      {
+                        "title": "rotateGuardianHand",
+                        "type": "action",
+                        "name": "rotateGuardianHand",
+                        "parameters": {
+                          "angle": {"key": "aimAngle"},
+                          "handPart": {"value": "righthand"}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "succeeder",
+                "type": "decorator",
+                "name": "succeeder",
+                "parameters": {},
+                "child": {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "inverter",
+                      "type": "decorator",
+                      "name": "inverter",
+                      "parameters": {},
+                      "child": {
+                        "title": "optional",
+                        "type": "decorator",
+                        "name": "optional",
+                        "parameters": {
+                          "shouldRun": {"key": "<track>"}
+                        },
+                        "child": {
+                          "title": "success",
+                          "type": "action",
+                          "name": "success",
+                          "parameters": {}
+                        }
+                      }
+                    },
+                    {
+                      "title": "parallel",
+                      "type": "composite",
+                      "name": "parallel",
+                      "parameters": {
+                        "fail": {"value": -1},
+                        "success": {"value": -1}
+                      },
+                      "children": [
+                        {
+                          "title": "timer",
+                          "type": "action",
+                          "name": "timer",
+                          "parameters": {
+                            "time": {"value": 0.1}
+                          }
+                        },
+                        {
+                          "title": "rotateGuardianHand",
+                          "type": "action",
+                          "name": "rotateGuardianHand",
+                          "parameters": {
+                            "angle": {"key": "aimAngle"},
+                            "handPart": {"value": "righthand"}
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": -1},
+                  "success": {"value": 1}
+                },
+                "children": [
+                  {
+                    "title": "animate",
+                    "type": "action",
+                    "name": "animate",
+                    "parameters": {
+                      "fallback": {"value": "deactivate"},
+                      "state": {"value": "activate"},
+                      "type": {"value": "head"}
+                    }
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "playSound",
+                        "type": "action",
+                        "name": "playSound",
+                        "parameters": {
+                          "loops": {"value": 0},
+                          "sound": {"value": "beamWindup"}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.5}
+                        }
+                      },
+                      {
+                        "title": "playSound",
+                        "type": "action",
+                        "name": "playSound",
+                        "parameters": {
+                          "loops": {"value": 0},
+                          "sound": {"value": "beamStart"}
+                        }
+                      },
+                      {
+                        "title": "parallel",
+                        "type": "composite",
+                        "name": "parallel",
+                        "parameters": {
+                          "fail": {"value": -1},
+                          "success": {"value": 1}
+                        },
+                        "children": [
+                          {
+                            "title": "loopSound",
+                            "type": "action",
+                            "name": "loopSound",
+                            "parameters": {
+                              "sound": {"value": "beamLoop"}
+                            }
+                          },
+                          {
+                            "title": "timer",
+                            "type": "action",
+                            "name": "timer",
+                            "parameters": {
+                              "time": {"value": "<duration>"}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "title": "playSound",
+                        "type": "action",
+                        "name": "playSound",
+                        "parameters": {
+                          "loops": {"value": 0},
+                          "sound": {"value": "beamWinddown"}
+                        }
+                      },
+                      {
+                        "title": "runner",
+                        "type": "action",
+                        "name": "runner",
+                        "parameters": {}
+                      }
+                    ]
+                  },
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": -1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                        "child": {
+                          "title": "optional",
+                          "type": "decorator",
+                          "name": "optional",
+                          "parameters": {
+                            "shouldRun": {"key": "<track>"}
+                          },
+                          "child": {
+                            "title": "entityPosition",
+                            "type": "action",
+                            "name": "entityPosition",
+                            "parameters": {
+                              "entity": {"key": "target"}
+                            },
+                            "output": {
+                              "position": "targetPosition"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "title": "guardianBeamArc",
+                        "type": "action",
+                        "name": "guardianBeamArc",
+                        "parameters": {
+                          "angularSpeed": {"key": "<angularSpeed>"},
+                          "beamType": {"value": "<beamType>"},
+                          "bounces": {"key": "<bounces>"},
+                          "damagePart": {"value": "<damagePart>"},
+                          "duration": {"key": "<duration>"},
+                          "handPart": {"value": "righthand"},
+                          "targetPosition": {"key": "targetPosition"}
+                        },
+                        "output": {
+                          "angle": "aimAngle"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "rotateGuardianHand",
+            "type": "action",
+            "name": "rotateGuardianHand",
+            "parameters": {
+              "angle": {"key": "aimAngle"},
+              "handPart": {"value": "righthand"}
+            }
+          },
+          {
+            "title": "timer",
+            "type": "action",
+            "name": "timer",
+            "parameters": {
+              "time": {"value": 0.6}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

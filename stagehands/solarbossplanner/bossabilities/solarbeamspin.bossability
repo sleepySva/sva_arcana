@@ -1,0 +1,23 @@
+{
+  "name" : "solarbeamSpin",
+  "preconditions" : [
+    ["Ability", "StaticAbility"]
+  ],
+  "postconditions" : [
+    ["Ability", "MovingAbility"],
+    ["!Ability", "StaticAbility"]
+  ],
+  "statemodifiers" : [
+    ["!WeaponEquipped"],
+    ["Ability", "CloseRange"]
+  ],
+
+  "sequenceActions" : [
+    {
+      "name" : "solarguardian-beamspin",
+      "parameters" : {
+        "angularSpeed" : 0.6
+      }
+    }
+  ]
+}

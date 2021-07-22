@@ -62,6 +62,26 @@
   
   {
     "op" : "add",
+    "path" : "/arcana_dungeon_lunarCorridor",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_lunarCorridor",
+	  "weatherPool" : [
+		[1.000, "clear"]
+	  ],
+      "threatLevel" : 8,
+      "gravity" : 80,
+      "worldSize" : [2800, 2100],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 810,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/drosera.ogg",
+      "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  
+  {
+    "op" : "add",
     "path" : "/arcana_dungeon_zhushiPond",
     "value" : {
       "primaryDungeon" : "arcana_dungeon_zhushiPond",

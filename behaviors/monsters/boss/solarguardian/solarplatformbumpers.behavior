@@ -1,0 +1,219 @@
+{
+  "name": "solarguardian-bumpers",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/movement.lua",
+    "/scripts/behavior/bdata.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/boss/guardian.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/position.lua"
+  ],
+  "parameters": {
+    "positions": [],
+    "projectileType": "solarbouncerburst"
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "listShuffle",
+        "type": "action",
+        "name": "listShuffle",
+        "parameters": {
+          "list": {"key": "<positions>"}
+        },
+        "output": {
+          "list": "positions"
+        }
+      },
+      {
+        "title": "each",
+        "type": "decorator",
+        "name": "each",
+        "parameters": {
+          "list": {"key": "positions"},
+          "type": {"value": "position"}
+        },
+        "child": {
+          "title": "sequence",
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": "setVelocity",
+              "type": "action",
+              "name": "setVelocity",
+              "parameters": {
+                "velocity": {"value": [0, 0]}
+              }
+            },
+            {
+              "title": "setDirection",
+              "type": "action",
+              "name": "setDirection",
+              "parameters": {},
+              "output": {
+                "direction": "direction"
+              }
+            },
+            {
+              "title": "faceDirection",
+              "type": "action",
+              "name": "faceDirection",
+              "parameters": {
+                "direction": {"key": "direction"}
+              }
+            },
+            {
+              "title": "vecAngle",
+              "type": "action",
+              "name": "vecAngle",
+              "parameters": {
+                "vector": {"value": ["direction", 0]}
+              },
+              "output": {
+                "angle": "handAngle"
+              }
+            },
+            {
+              "title": "parallel",
+              "type": "composite",
+              "name": "parallel",
+              "parameters": {
+                "fail": {"value": -1},
+                "success": {"value": 1}
+              },
+              "children": [
+                {
+                  "title": "animate",
+                  "type": "action",
+                  "name": "animate",
+                  "parameters": {
+                    "fallback": {"value": "close"},
+                    "state": {"value": "open"},
+                    "type": {"value": "righthand"}
+                  }
+                },
+                {
+                  "title": "animate",
+                  "type": "action",
+                  "name": "animate",
+                  "parameters": {
+                    "fallback": {"value": "deactivate"},
+                    "state": {"value": "activate"},
+                    "type": {"value": "head"}
+                  }
+                },
+                {
+                  "title": "animate",
+                  "type": "action",
+                  "name": "animate",
+                  "parameters": {
+                    "fallback": {"value": "deactivate"},
+                    "state": {"value": "activate"},
+                    "type": {"value": "body"}
+                  }
+                },
+                {
+                  "title": "failer",
+                  "type": "decorator",
+                  "name": "failer",
+                  "parameters": {},
+                  "child": {
+                    "title": "rotateGuardianHand",
+                    "type": "action",
+                    "name": "rotateGuardianHand",
+                    "parameters": {
+                      "angle": {"key": "handAngle"},
+                      "handPart": {"value": "righthand"},
+                      "offset": {"value": [0, 0]}
+                    }
+                  }
+                },
+                {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"value": 1}
+                      }
+                    },
+                    {
+                      "title": "vecMultiply",
+                      "type": "action",
+                      "name": "vecMultiply",
+                      "parameters": {
+                        "first": {"value": ["direction", 0]},
+                        "second": {"value": [5, 5]}
+                      },
+                      "output": {
+                        "vector": "direction"
+                      }
+                    },
+                    {
+                      "title": "offsetPosition",
+                      "type": "action",
+                      "name": "offsetPosition",
+                      "parameters": {
+                        "offset": {"key": "direction"},
+                        "position": {"key": "self"}
+                      },
+                      "output": {
+                        "position": "aimPosition"
+                      }
+                    },
+                    {
+                      "title": "guardianHandProjectile",
+                      "type": "action",
+                      "name": "guardianHandProjectile",
+                      "parameters": {
+                        "aimPosition": {"key": "aimPosition"},
+                        "fixedDistance": {"value": false},
+                        "fuzzAimPosition": {"value": 0},
+                        "fuzzAngle": {"value": 0},
+                        "fuzzSpeed": {"value": 0},
+                        "handPart": {"value": "righthand"},
+                        "projectileCount": {"value": 1},
+                        "projectileParameters": {"value": {}},
+                        "projectileType": {"value": "<projectileType>"}
+                      }
+                    },
+                    {
+                      "title": "playSound",
+                      "type": "action",
+                      "name": "playSound",
+                      "parameters": {
+                        "loops": {"value": 0},
+                        "sound": {"value": "singleFire"}
+                      }
+                    },
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"value": 0.5}
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

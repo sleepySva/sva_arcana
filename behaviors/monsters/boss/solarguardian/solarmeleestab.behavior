@@ -1,0 +1,255 @@
+{
+  "name": "solarguardian-meleestab",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/boss/guardian.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/math.lua"
+  ],
+  "parameters": {
+    "windupTime": 2.5
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": 1}
+        },
+        "children": [
+          {
+            "title": "animate",
+            "type": "action",
+            "name": "animate",
+            "parameters": {
+              "fallback": {"value": "deactivate"},
+              "state": {"value": "activate"},
+              "type": {"value": "body"}
+            }
+          },
+          {
+            "title": "animate",
+            "type": "action",
+            "name": "animate",
+            "parameters": {
+              "fallback": {"value": "deactivate"},
+              "state": {"value": "activate"},
+              "type": {"value": "head"}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": "<windupTime>"}
+                }
+              },
+              {
+                "title": "animate",
+                "type": "action",
+                "name": "animate",
+                "parameters": {
+                  "fallback": {"value": "invisible"},
+                  "state": {"value": "active"},
+                  "type": {"value": "swoosh"}
+                }
+              }
+            ]
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "playSound",
+                "type": "action",
+                "name": "playSound",
+                "parameters": {
+                  "loops": {"value": 0},
+                  "sound": {"value": "stabWindup"}
+                }
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": "<windupTime>"}
+                }
+              },
+              {
+                "title": "playSound",
+                "type": "action",
+                "name": "playSound",
+                "parameters": {
+                  "loops": {"value": 0},
+                  "sound": {"value": "stabSwoosh"}
+                }
+              },
+              {
+                "title": "loopSound",
+                "type": "action",
+                "name": "loopSound",
+                "parameters": {
+                  "sound": {"value": "stabLoop"}
+                }
+              }
+            ]
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": -1},
+                  "success": {"value": 1}
+                },
+                "children": [
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": -1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "entityPosition",
+                        "type": "action",
+                        "name": "entityPosition",
+                        "parameters": {
+                          "entity": {"key": "target"}
+                        },
+                        "output": {
+                          "position": "targetPosition"
+                        }
+                      },
+                      {
+                        "title": "guardianApproach",
+                        "type": "action",
+                        "name": "guardianApproach",
+                        "parameters": {
+                          "innerRange": {"value": 10},
+                          "outerRange": {"value": 14},
+                          "position": {"key": "targetPosition"}
+                        }
+                      },
+                      {
+                        "title": "sequence",
+                        "type": "composite",
+                        "name": "sequence",
+                        "parameters": {},
+                        "children": [
+                          {
+                            "title": "entityDirection",
+                            "type": "action",
+                            "name": "entityDirection",
+                            "parameters": {
+                              "entity": {"key": "self"},
+                              "target": {"key": "target"}
+                            },
+                            "output": {
+                              "direction": "targetDir",
+                              "vector": "toTarget"
+                            }
+                          },
+                          {
+                            "title": "faceDirection",
+                            "type": "action",
+                            "name": "faceDirection",
+                            "parameters": {
+                              "direction": {"key": "targetDir"}
+                            }
+                          },
+                          {
+                            "title": "vecAngle",
+                            "type": "action",
+                            "name": "vecAngle",
+                            "parameters": {
+                              "vector": {"key": "toTarget"}
+                            },
+                            "output": {
+                              "angle": "targetAngle"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "title": "runner",
+                        "type": "action",
+                        "name": "runner",
+                        "parameters": {}
+                      }
+                    ]
+                  },
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": "<windupTime>"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": 0.5}
+                }
+              }
+            ]
+          },
+          {
+            "title": "guardianStab",
+            "type": "action",
+            "name": "guardianStab",
+            "parameters": {
+              "angle": {"key": "targetAngle"},
+              "offset": {"value": [3.0, 0]},
+              "stabLength": {"value": 37},
+              "windup": {"key": "<windupTime>"},
+              "windupLength": {"value": 3.0}
+            }
+          }
+        ]
+      },
+      {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.25}
+        }
+      }
+    ]
+  }
+}

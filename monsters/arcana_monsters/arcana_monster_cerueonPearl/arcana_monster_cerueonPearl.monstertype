@@ -97,8 +97,8 @@
           "name" : "wander-fly",
           "parameters" : {
             "wanderTime" : [2,4],
-            "groundDistance" : 2,
-            "ceilingDistance" : 4,
+            "groundDistance" : 6,
+            "ceilingDistance" : 6,
             "xVelocity" : 4,
             "yVelocity" : 12
           }
@@ -180,6 +180,12 @@
         },
         "physicalResistance" : {
           "baseValue" : 0.8
+        },
+        "arcana_resistance_azure" : {
+          "baseValue" : 0.6
+        },
+        "arcana_resistance_lunar" : {
+          "baseValue" : 0.6
         },
         "fireResistance" : {
           "baseValue" : 0.8

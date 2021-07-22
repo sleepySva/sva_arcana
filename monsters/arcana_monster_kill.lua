@@ -94,7 +94,7 @@ function init()
 
   monster.setAnimationParameter("chains", config.getParameter("chains"))
   
-  status.addEphemeralEffect("arcana_status_kill", 6)
+  status.addEphemeralEffect("arcana_status_kill", config.getParameter("killTime") or 6)
 end
 
 function update(dt)

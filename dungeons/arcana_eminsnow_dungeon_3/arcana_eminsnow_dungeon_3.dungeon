@@ -1,0 +1,111 @@
+{
+  "metadata" : {
+    "name" : "arcana_eminsnow_dungeon_3",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_eminsnow_dungeon_3_part_left",
+	"arcana_eminsnow_dungeon_3_part_right"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 9,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_1.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_2", "arcana_eminsnow_dungeon_3_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_2.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_2", "arcana_eminsnow_dungeon_3_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_3.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_4.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_5.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_6.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_7" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_7.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_8" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_8.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_eminsnow_dungeon_3_part_9" ] ]
+      ],
+      "def" : [ "tmx", "arcana_eminsnow_dungeon_3_part_9.json" ]
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_eminsnow_dungeon_3_part_left.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_eminsnow_dungeon_3_part_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_eminsnow_dungeon_3_part_right.json" ] ],
+      "chance" : 0
+    }
+
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "projectileName" : "firesolar_fireball_2",
+  "physics" : "grenade",
+  "timeToLive" : 3,
+  "image" : "solar_fireball_2.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 40,
+  "animationCycle" : 0.5,
+  "lightColor" : [124, 47, 26],
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smallregularexplosion/smallregularexplosion.config"
+    }
+  ],
+  "power" : 10,
+  "emitters" : [ "fireplasma", "smoke", "flames", "fireplasma", "smoke", "flames" ],
+  "damageKind" : "arcana_solar"
+}

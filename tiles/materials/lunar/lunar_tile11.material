@@ -1,0 +1,22 @@
+{
+  "materialId" : 16783,
+  "materialName" : "lunar_tile11",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile11",
+  "description" : "A dark ornate roofing tile.",
+  "shortdescription" : "Kuromatsu Ornate Roofing",
+  "footstepSound" : "/sfx/blocks/footstep_rooftile.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile11.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2785
+  }
+}

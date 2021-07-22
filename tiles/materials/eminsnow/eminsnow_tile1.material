@@ -1,0 +1,23 @@
+{
+  "materialId" : 16787,
+  "materialName" : "eminsnow_tile1",
+  "particleColor" : [245, 249, 250, 255],
+  "itemDrop" : "eminsnow_tile1",
+  "description" : "Soft and fluffy snowy dirt.",
+  "shortdescription" : "Eminsnow Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 4,
+  "category" : "materials",
+  "tillableMod" : 32,
+  "soil" : true,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "eminsnow_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2420
+  }
+}

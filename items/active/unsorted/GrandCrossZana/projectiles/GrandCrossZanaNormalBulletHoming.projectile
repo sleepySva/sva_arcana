@@ -1,0 +1,15 @@
+{
+	"projectileName" : "GrandCrossZanaNormalBulletHoming",
+	"image" : "GrandCrossZana_Homing.png",
+	"fullbright": true,
+	"renderLayer" : "FrontParticle",
+	"speed" : 70,
+	"flippable" : true,
+	"orientationLocked" : false,
+	"damageKind" : "electricplasmabullet",
+	"physics" : "laser",
+	"timeToLive" : 0.7,
+	"onlyHitTerrain" : false,
+	"lightColor" : [50, 50, 50],
+	"scripts" : [ "GrandCrossZanaNormalBulletHoming.lua" ]
+}

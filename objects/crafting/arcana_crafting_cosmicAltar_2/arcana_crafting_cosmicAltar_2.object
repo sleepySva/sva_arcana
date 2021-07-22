@@ -1,0 +1,45 @@
+{
+  "objectName" : "arcana_crafting_cosmicAltar_2",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Essential",
+  "description" : "An altar made with Aureola bars, for manifesting ancient materials and weapondry.",
+  "shortdescription" : "^#dfcf4e;Arcana Altar^reset;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1000,
+  
+  "lightColor" : [160, 150, 120],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_crafting_cosmicAltar_2.config",
+	"filter" : ["arcana_crafting_cosmicAltar_1", "arcana_crafting_cosmicAltar_2"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "arcana_crafting_cosmicAltar_2.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 2.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "arcana_crafting_cosmicAltar_2.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 2.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

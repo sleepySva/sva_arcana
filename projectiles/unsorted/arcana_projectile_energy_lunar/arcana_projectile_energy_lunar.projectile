@@ -1,0 +1,19 @@
+{
+  "projectileName" : "arcana_projectile_energy_lunar",
+  "speed" : 20,
+  "bounces" : 1,
+  "physics" : "grenade",
+  "image" : "arcana_projectile_energy_lunar.png",
+  "animationCycle" : 0.5,
+  "power" : 0,
+  "frameNumber" : 1,
+  "damageKind" : "hidden",
+  "actionOnReap" : [
+    {
+      "action" : "item",
+      "name" : "arcana_essence_lunarEssence"
+    }
+  ],
+
+  "emitters" : [ "arcana_particle_energy_trail_lunar" ]
+}

@@ -31,6 +31,21 @@
 	
 	{
 		"op": "add",
+		"path": "/arcana_lunar",
+		"value": {
+			"resistanceStat" : "arcana_resistance_lunar",
+			"damageNumberParticles" : {
+				"hit" : "arcana_lunardamagenumber",
+				"stronghit" : "arcana_lunardamagenumberstrong",
+				"weakhit" : "arcana_lunardamagenumberweak",
+				"shieldhit" : "arcana_lunardamagenumber",
+				"kill" : "arcana_lunardamagenumber"
+			}
+		}
+	},
+	
+	{
+		"op": "add",
 		"path": "/arcana_lumen",
 		"value": {
 			"resistanceStat" : "arcana_resistance_lumen",

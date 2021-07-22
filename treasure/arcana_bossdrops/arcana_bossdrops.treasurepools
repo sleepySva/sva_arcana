@@ -1,6 +1,23 @@
 
 {
 
+  "arcana_bossdrops_dheral" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_essence_lunarEssence", 10]}
+      ],
+      "pool" : [
+		{"weight" : 0.1, "item" : ["arcana_misc_lunarInsignia", 2]},
+		{"weight" : 0.2, "item" : ["arcana_misc_lunarInsignia", 3]},
+        {"weight" : 0.3, "item" : ["arcana_misc_lunarInsignia", 3]},
+		{"weight" : 0.4, "item" : ["arcana_misc_lunarInsignia", 2]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
   "arcana_bossdrops_aeonTimepiece" : [
     [0, {
 	  "fill" : [
@@ -50,6 +67,24 @@
 		{"weight" : 0.2, "item" : ["arcana_misc_cosmoTendrils", 20]},
         {"weight" : 0.3, "item" : ["arcana_misc_cosmoTendrils", 18]},
 		{"weight" : 0.4, "item" : ["arcana_misc_cosmoTendrils", 16]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_bossdrops_solarGuardian" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["solarguardianrecept-codex", 1]},
+        {"item" : ["arcana_essence_solarEssence", 10]}
+      ],
+      "pool" : [
+		{"weight" : 0.1, "item" : ["arcana_misc_solarMedallion", 2]},
+		{"weight" : 0.2, "item" : ["arcana_misc_solarMedallion", 3]},
+        {"weight" : 0.3, "item" : ["arcana_misc_solarMedallion", 3]},
+		{"weight" : 0.4, "item" : ["arcana_misc_solarMedallion", 2]}
       ],
       "poolRounds" : [
         [1.0, 1]

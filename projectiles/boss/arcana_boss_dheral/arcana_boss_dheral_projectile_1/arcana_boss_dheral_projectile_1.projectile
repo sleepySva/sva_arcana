@@ -1,0 +1,62 @@
+{
+  "projectileName" : "arcana_boss_dheral_projectile_1",
+  "image" : "body.png",
+  "animationCycle" : 0.4,
+  "lightColor" : [170, 150, 190],
+  "frameNumber" : 8,
+  "fullbright" : true,
+  "damageKindImage" : "icon.png",
+  "physics" : "default",
+  "emitters" : [ ],
+  
+  "power" : 24,
+  
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 10,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "ember",
+            "size" : 1.5,
+            "color" : [170, 150, 190, 255],
+            "fade" : 0.9,
+            "approach" : [30, 30],
+            "light" : [160, 40, 40],
+            "timeToLive" : 0.5,
+            "layer" : "middle",
+            "variance" : {
+              "position" : [2.5, 2.5],
+              "finalVelocity" : [3.0, 3.0],
+              "size" : 0.5,
+              "timeToLive" : 0.3,
+              "fade" : 0.3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "plasma",
+
+  "speed" : 10,
+  "timeToLive" : 1.5,
+  
+  "secondaryProjectile" : "arcana_boss_dheral_projectile_2",
+  
+  "explosionAction" : {
+    "action" : "actions",
+    "list" : [
+      {
+        "action" : "projectile",
+        "inheritDamageFactor" : 1,
+        "type" : "arcana_explosion_pulse_1_lunar"
+      }
+    ]
+  },
+  "scripts" : [ "arcana_boss_dheral_projectile_1.lua" ],
+  "scriptDelta" : 1
+}

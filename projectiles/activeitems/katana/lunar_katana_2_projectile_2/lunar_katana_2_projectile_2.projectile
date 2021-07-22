@@ -1,0 +1,21 @@
+{
+  "projectileName" : "lunar_katana_2_projectile_2",
+  "image" : "lunar_katana_2_projectile_2.png",
+  "physics" : "gas",
+  "frameNumber" : 3,
+  "animationCycle" : 0.3,
+  "lightColor" : [160, 50, 50],
+  "power" : 2,
+  "speed" : 0,
+  "timeToLive" : 0.3,
+  "bounces" : -1,
+  "knockback" : 0,
+  "knockbackDirectional" : true,
+  "orientationLocked" : true,
+  "damagePoly" : [ [8, 16],  [8, -16],  [-8, -16],  [-8, 16] ],
+  "piercing" : true,
+  "damageKind" : "arcana_lunar",
+  "emitters" : [ "arcana_particle_ember_indigo" ],
+  "actionOnReap" : [
+  ]
+}

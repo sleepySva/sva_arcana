@@ -1,0 +1,34 @@
+{
+  "name" : "solarplatformBumpers",
+  "preconditions" : [
+    ["!FloorIn", [[0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0]]],
+    ["Ability", "StaticAbility"],
+    ["!Move"]
+  ],
+  "postconditions" : [
+    ["!Ability", "StaticAbility"],
+    ["Ability", "MovingAbility"],
+    ["Move"]
+  ],
+  "statemodifiers" : [
+    ["Ability", "LongRange"]
+  ],
+  "objectives" : [
+    ["Move"]
+  ],
+
+  "actions" : [ "solarguardian-bumpers" ], // actions to apply the binding to
+  "behaviorHandler" : "bumpersHandler",
+
+  "projectileType" : "solarbouncerburst",
+
+  "sequenceActions" : [
+    {
+      "name" : "solarguardian-bumpers",
+      "parameters" : {
+        "projectileType" : null,
+        "positions" : null
+      }
+    }
+  ]
+}

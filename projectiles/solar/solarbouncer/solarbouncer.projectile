@@ -1,0 +1,36 @@
+{
+  "projectileName" : "solarbouncer",
+  "image" : "solarbouncer.png",
+  "animationCycle" : 1,
+  "frameNumber" : 23,
+  "damageKindImage" : "icon.png",
+  "physics" : "laser",
+  "timeToLive" : 14,
+  "power" : 20,
+  "speed" : 20,
+  "piercing" : true,
+  "flippable" : true,
+  "bounces" : -1,
+  "fullbright" : true,
+  "emitters" : [],
+  "lightColor" : [84, 47, 26],
+  "actionOnReap" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/fireball_spit.ogg" ]
+    },
+    {
+      "action" : "projectile",
+	  "time" : 0.0,
+      "repeat" : false,
+      "type" : "brightorangeglobeexplosion",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "arcana_solar"
+}

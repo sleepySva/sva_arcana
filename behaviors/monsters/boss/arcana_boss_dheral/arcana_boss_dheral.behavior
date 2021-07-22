@@ -1,0 +1,456 @@
+{
+  "name": "arcana_boss_dheral",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/entity.lua",
+	"/scripts/behavior.lua",
+    "/scripts/behavior/bdata.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/projectiles.lua",
+    "/scripts/actions/pets.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/actions/monster.lua",
+    "/scripts/actions/animator.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setDying",
+        "type": "action",
+        "name": "setDying",
+        "parameters": {
+          "shouldDie": {"value": false}
+        }
+      },
+      {
+        "title": "setNumber",
+        "type": "action",
+        "name": "setNumber",
+        "parameters": {
+          "number": {"value": 0}
+        },
+        "output": {
+          "number": "heading"
+        }
+      },
+      {
+        "title": "offsetPosition",
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [0, 8]},
+          "position": {"key": "spawn"}
+        },
+        "output": {
+          "position": "hover"
+        }
+      },
+      {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "hover"},
+          "tolerance": {"value": 1}
+        }
+      },
+      {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "velocity": {"value": [0, 0]}
+        }
+      },
+      {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 1}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "monster-targeting",
+            "type": "module",
+            "name": "monster-targeting",
+            "parameters": {
+              "targetQueryRange": {"value": 80},
+              "keepTargetInRange": {"value": 100},
+              "targetEntityTypes": {"value": ["player"]},
+              "keepTargetInSight": {"value": true},
+              "queryTargets": {"value": true},
+              "targetOnDamage": {"value": true},
+              "targetOutOfSightTime": {"value": 1}
+            }
+          },
+          {
+            "title": "Spiderboss",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "resourcePercentage",
+                    "type": "action",
+                    "name": "resourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 0},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "Reset",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "setDamageBar",
+                        "type": "action",
+                        "name": "setDamageBar",
+                        "parameters": {
+                          "type": {"value": "Special"}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.8}
+                        }
+                      },
+                      {
+                        "title": "setAggressive",
+                        "type": "action",
+                        "name": "setAggressive",
+                        "parameters": {
+                          "aggressive": {"value": true}
+                        }
+                      },
+					  {
+					    "title": "setAnimationState",
+					    "type": "action",
+					    "name": "setAnimationState",
+					    "parameters": {
+						  "state": {"value": "startup"},
+						  "type": {"value": "arm"}
+					    }
+					  },
+                      {
+                        "title": "repeater",
+                        "type": "decorator",
+                        "name": "repeater",
+                        "parameters": {
+                          "maxLoops": {"value": -1},
+                          "untilSuccess": {"value": false}
+                        },
+						"child": {
+						  "title": "parallel",
+						  "type": "composite",
+						  "name": "parallel",
+						  "parameters": {
+						    "fail": {"value": -1},
+							"success": {"value": -1}
+						  },
+                          "children": [
+						    {
+                              "title": "sequence",
+                              "type": "composite",
+                              "name": "sequence",
+                              "parameters": {},
+                              "children": [
+                                {
+                                  "title": "arcana_boss_dheral_lunarShotStatic",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lunarShotStatic",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lunarTeleport",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lunarTeleport",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lunarQuickShot",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lunarQuickShot",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lunarSummonStatic",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lunarSummonStatic",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lunarTeleport",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lunarTeleport",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lunarTeleport",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lunarTeleport",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lunarSummonStatic",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lunarSummonStatic",
+                                  "parameters": {}
+                                }
+                              ]
+							},
+						    {
+                              "title": "sequence",
+                              "type": "composite",
+                              "name": "sequence",
+                              "parameters": {},
+							  "children": [
+								{
+								  "title": "vecRotate",
+								  "type": "action",
+								  "name": "vecRotate",
+								  "parameters": {
+									"angle": {"key": "heading"},
+									"vector": {"value": [1, 0]}
+								  },
+								  "output": {
+									"vector": "headingDirection"
+								  }
+								},
+								{
+								  "title": "faceEntity",
+								  "type": "action",
+								  "name": "faceEntity",
+								  "parameters": {
+									"entity": {"key": "target"},
+									"headingDirection": {"key": "headingDirection"}
+								  }
+								},
+								{
+								  "title": "rotateTransformationGroup",
+								  "type": "action",
+								  "name": "rotateTransformationGroup",
+								  "parameters": {
+									"angle": {"value": 0.01},
+									"transformationGroup": {"value": "arm"}
+								  }
+								}
+							  ]
+							}
+						  ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "resourcePercentage",
+                      "type": "action",
+                      "name": "resourcePercentage",
+                      "parameters": {
+                        "percentage": {"value": 0},
+                        "resource": {"value": "health"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": -1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "controlParameters",
+                        "type": "action",
+                        "name": "controlParameters",
+                        "parameters": {
+                          "parameters": {"value": {"gravityEnabled": true}}
+                        }
+                      },
+                      {
+                        "title": "dynamic",
+                        "type": "composite",
+                        "name": "dynamic",
+                        "parameters": {},
+                        "children": [
+                          {
+                            "title": "onGround",
+                            "type": "action",
+                            "name": "onGround",
+                            "parameters": {}
+                          },
+                          {
+                            "title": "runner",
+                            "type": "action",
+                            "name": "runner",
+                            "parameters": {}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+					"name": "spawnProjectile",
+					"parameters": {
+					  "angle": {"value": 0},
+					  "offset": {"value": [0, 0]},
+					  "position": {"key": "self"},
+					  "projectileConfig": {"value": {}},
+					  "projectileType": {"value": "arcana_boss_dheral_projectile_death_spawner"},
+					  "scalePower": {"value": false},
+					  "sourceEntity": {"key": "self"},
+					  "trackSource": {"value": false}
+					}
+				  },
+                  {
+                    "title": "setDying",
+                    "type": "action",
+                    "name": "setDying",
+                    "parameters": {
+                      "shouldDie": {"value": true}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "setAggressive",
+                    "type": "action",
+                    "name": "setAggressive",
+                    "parameters": {
+                      "aggressive": {"value": false}
+                    }
+                  },
+                  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": [0, 8]},
+                      "position": {"key": "spawn"}
+                    },
+                    "output": {
+                      "position": "hover"
+                    }
+                  },
+                  {
+                    "title": "flyToPosition",
+                    "type": "action",
+                    "name": "flyToPosition",
+                    "parameters": {
+                      "position": {"key": "hover"},
+                      "tolerance": {"value": 1}
+                    }
+                  },
+                  {
+                    "title": "setVelocity",
+                    "type": "action",
+                    "name": "setVelocity",
+                    "parameters": {
+                      "velocity": {"value": [0, 0]}
+                    }
+                  },
+                  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "idle"},
+                      "type": {"value": "body"}
+                    }
+                  },
+                  {
+                    "title": "setDamageBar",
+                    "type": "action",
+                    "name": "setDamageBar",
+                    "parameters": {
+                      "type": {"value": "Special"}
+                    }
+                  },
+                  {
+                    "title": "setResourcePercentage",
+                    "type": "action",
+                    "name": "setResourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 1},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "runner",
+                    "type": "action",
+                    "name": "runner",
+                    "parameters": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

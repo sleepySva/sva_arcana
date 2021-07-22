@@ -1,0 +1,22 @@
+{
+  "kind" : "arcana_particle_boss_dheral_shard",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/arcana_boss_dheral/arcana_particle_boss_dheral_shard/body.png",
+    "initialVelocity" : [0.0, 20.0],
+    "finalVelocity" : [0.0, -60.0],
+    "approach" : [0.3, 40],
+    "destructionAction" : "fade",
+    "destructionTime" : 0.5,
+    "timeToLive" : 1.0,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "variance" : {
+      "position" : [1, 1],
+      "initialVelocity" : [8, 3],
+      "finalVelocity" : [0, 20],
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

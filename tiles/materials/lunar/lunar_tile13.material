@@ -1,0 +1,22 @@
+{
+  "materialId" : 16785,
+  "materialName" : "lunar_tile13",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "lunar_tile13",
+  "description" : "An ornate ceiling tile commonly found in buildings of Lunar villages.",
+  "shortdescription" : "Kuromatsu Ceiling Tile",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lunar_tile13.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2784
+  }
+}

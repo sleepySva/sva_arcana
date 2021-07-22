@@ -1,0 +1,31 @@
+{
+  "name" : "solarminionTriggerGroup",
+  "preconditions" : [
+    ["!Minion", "minion"],
+    ["Ability", "MovingAbility"]
+  ],
+  "postconditions" : [
+    ["Minion", "minion"],
+    ["Ability", "StaticAbility"],
+    ["!Ability", "MovingAbility"]
+  ],
+  "statemodifiers" : [
+    ["Ability", "LongRange"]
+  ],
+  "objectives" : [
+    ["Minion", "minion"]
+  ],
+
+  "actions" : [ "spawnminiongroup" ], // actions to apply the binding to
+  "behaviorHandler" : "solarminionTriggerGroupHandler",
+
+  "sequenceActions" : [
+    {
+      "name" : "spawnminiongroup",
+      "parameters" : {
+        "spawns" : null, // populated by minionTriggerGroupHandler
+        "minionGroup" : {"key": "triggerMinions"}
+      }
+    }
+  ]
+}

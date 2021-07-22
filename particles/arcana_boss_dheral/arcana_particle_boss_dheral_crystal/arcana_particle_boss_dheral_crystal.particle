@@ -1,0 +1,24 @@
+{
+  "kind" : "arcana_particle_boss_dheral_crystal",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/arcana_boss_dheral/arcana_particle_boss_dheral_crystal/body.png",
+    "size" : 0.7,
+    "initialVelocity" : [0.0, 30.0],
+    "finalVelocity" : [0.0, -50.0],
+    "approach" : [0.3, 40],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "timeToLive" : 1.0,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "variance" : {
+      "position" : [1, 1],
+      "size" : 0.5,
+      "initialVelocity" : [15, 3],
+      "finalVelocity" : [0, 20],
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

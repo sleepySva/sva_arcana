@@ -1,0 +1,15 @@
+{
+	"projectileName" : "GrandCrossZanaNormalBullet",
+	"image" : "GrandCrossZana_Bullet.png",
+	"fullbright": true,
+	"renderLayer" : "FrontParticle",
+	"speed" : 180,
+	"flippable" : true,
+	"orientationLocked" : false,
+	"damageKind" : "fire",
+	"physics" : "laser",
+	"timeToLive" : 0.2,
+	"onlyHitTerrain" : false,
+	"lightColor" : [50, 50, 50],
+	"scripts" : [ "GrandCrossZanaNormalBullet.lua" ]
+}
