@@ -17,7 +17,7 @@
     "spawnHeight": 0.625,
     "projectileCount": 8,
     "duration": 12,
-    "windup": 1
+    "windup": 1.0
   },
   "root": {
     "title": "sequence",
@@ -205,15 +205,7 @@
                     "name": "sequence",
                     "parameters": {},
                     "children": [
-                      {
-                        "title": "timer",
-                        "type": "action",
-                        "name": "timer",
-                        "parameters": {
-                          "time": {"key": "windup"}
-                        }
-                      },
-                      {
+					  {
                         "title": "spawnFloorProjectiles",
                         "type": "action",
                         "name": "spawnFloorProjectiles",
@@ -228,6 +220,14 @@
                         },
                         "output": {
                           "projectiles": "lavaProjectiles"
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"key": "windup"}
                         }
                       },
 					  {
