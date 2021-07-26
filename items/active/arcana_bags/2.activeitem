@@ -1,0 +1,16 @@
+{
+  "itemName" : "arcana_bag_essence",
+  "shortdescription" : "^#ff0;Essence Storage^reset;",
+  "description" : "This storage is used for storing various different types of essence.",
+  "price" : 500,
+  "tooltipKind" : "base",
+  "rarity" : "essential",
+  "tooltipFields" : {"rarityLabel":"Unique","subtitle":"Inventory"},
+  "category" : "tool",
+  "radioMessagesOnPickup" : [ "arcana_bag2" ],
+  "itemTags" : ["tool","bag","inventory"],
+  "scripts" : ["bag.lua"],
+  "bagType" : 2,
+  "inventoryIcon" : "2.png",
+  "bagCursor" : "/cursors/chest"
+}

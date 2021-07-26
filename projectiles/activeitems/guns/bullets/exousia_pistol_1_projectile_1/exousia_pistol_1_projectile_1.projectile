@@ -11,7 +11,7 @@
   "frameNumber" : 1,
   
   "fullbright" : true,
-  "lightColor" : [200, 60, 60],
+  "lightColor" : [240, 70, 60],
   "emitters" : [ "arcana_particle_ember_red" ],
   
   "supportsProcessing" : true,
@@ -25,7 +25,7 @@
   
   "periodicActions" : [
     {
-      "time" : 0.01,
+      "time" : 0.001,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,

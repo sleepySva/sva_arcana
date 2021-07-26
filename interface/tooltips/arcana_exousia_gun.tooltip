@@ -1,0 +1,133 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/arcana_exousia_gun_header.png",
+    "fileBody" : "/interface/tooltips/arcana_exousia_gun_body.png",
+    "fileFooter" : "/interface/tooltips/arcana_exousia_gun_footer.png"
+  },
+  "levelTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [9, 168],
+    "hAnchor" : "left",
+    "value" : "Tier:"
+  },
+  "levelLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [36, 168],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "handednessLabel" : {
+    "type" : "label",
+	"fontSize" : 6.8,
+	"color" : [160, 160, 160],
+    "position" : [90, 168],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "damageKindImage" : {
+    "type" : "image",
+    "position" : [122, 132],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [70, 143],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [60, 60],
+    "minSize" : [60, 60]
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+	"color" : [160, 160, 160],
+    "position" : [9, 117],
+    "wrapWidth" : 126,
+    "hAnchor" : "left",
+    "vAnchor" : "top"
+  },
+  "damagePerShotTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [9, 76],
+    "hAnchor" : "left",
+    "value" : "Damage:"
+  },
+  "damagePerShotLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [130, 76],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "speedTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [9, 67],
+    "hAnchor" : "left",
+    "value" : "Firing Rate:"
+  },
+  "speedLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [130, 67],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerShotTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [9, 58],
+    "hAnchor" : "left",
+    "value" : "Energy Per Shot:"
+  },
+  "energyPerShotLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [130, 58],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [9, 49],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [130, 49],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "rarityLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [9, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [97, 23],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [110, 23],
+    "hAnchor" : "left",
+    "value" : "tree"
+  }
+}

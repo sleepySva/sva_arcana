@@ -1,0 +1,16 @@
+{
+  "itemName" : "arcana_bag_spell",
+  "shortdescription" : "^#ff0;Velvet Pouch^reset;",
+  "description" : "This small velvet pouch can store many small items in it, such as seeds and herbs.",
+  "price" : 500,
+  "tooltipKind" : "base",
+  "rarity" : "essential",
+  "tooltipFields" : {"rarityLabel":"Unique","subtitle":"Inventory"},
+  "category" : "tool",
+  "radioMessagesOnPickup" : [ "arcana_bag1" ],
+  "itemTags" : ["tool","bag","inventory"],
+  "scripts" : ["bag.lua"],
+  "bagType" : 1,
+  "inventoryIcon" : "1.png",
+  "bagCursor" : "/cursors/chest"
+}
