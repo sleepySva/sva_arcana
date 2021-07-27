@@ -28,17 +28,17 @@ end
 function init2(b)
   bagType = b
   AI = root.assetJson("/arcana_bags.config:"..b) or {"a","a"}
-  if status.statusProperty("arcana_bag_"..bagType) == nil then status.setStatusProperty("arcana_bag_"..bagType,{}) end
+  if player.getProperty("arcana_bag_"..bagType) == nil then player.setProperty("arcana_bag_"..bagType,{}) end
 
   for foo = 1, slots do
-    widget.setItemSlotItem("_"..foo, status.statusProperty("arcana_bag_"..bagType)["_"..foo] or nil)
+    widget.setItemSlotItem("_"..foo, player.getProperty("arcana_bag_"..bagType)["_"..foo] or nil)
   end
 end
 function changeTab(_,a) widget.setText("title","^#ff0,shadow;"..title[a+1]) init2(a) end
 function setBagSlot(data,key)
-local pos = status.statusProperty("arcana_bag_"..bagType)
+local pos = player.getProperty("arcana_bag_"..bagType)
 pos[key] = data
-status.setStatusProperty("arcana_bag_"..bagType, pos)
+player.setProperty("arcana_bag_"..bagType, pos)
 end
 
 function uninit() widget.playSound(s) end
