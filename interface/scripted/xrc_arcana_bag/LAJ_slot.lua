@@ -12,10 +12,10 @@ function itemHasTags(e) for _,r in pairs(AI) do if root.itemHasTag(e.name,r) the
 
 
 --https://steamcommunity.com/sharedfiles/filedetails/?id=1258008544
---And Shattered Alchemy
+--https://steamcommunity.com/workshop/filedetails/?id=1945946369
 function leftClickSlot(slot)
   local bag = bagType
-  widget.setItemSlotItem(slot, status.statusProperty("arcana_bag_"..bag)[""..slot])
+  widget.setItemSlotItem(slot, player.getProperty("arcana_bag_"..bag)[""..slot])
   if player.swapSlotItem() then
 	if has_value() then
       if widget.itemSlotItem(slot) then
