@@ -1,9 +1,9 @@
 {
   "background" : {
     "type" : "background",
-    "fileHeader" : "/interface/tooltips/arcana_exousia_gun_header.png",
-    "fileBody" : "/interface/tooltips/arcana_exousia_gun_body.png",
-    "fileFooter" : "/interface/tooltips/arcana_exousia_gun_footer.png"
+    "fileHeader" : "/interface/tooltips/arcana_gun_exousia_header.png",
+    "fileBody" : "/interface/tooltips/arcana_gun_exousia_body.png",
+    "fileFooter" : "/interface/tooltips/arcana_gun_exousia_footer.png"
   },
   "levelTitleLabel" : {
     "type" : "label",
@@ -110,23 +110,24 @@
     "centered" : true,
     "wrapWidth" : 126
   },
-  "rarityLabel" : {
+  "exousiaLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 23],
+	"color" : [160, 160, 160],
+    "position" : [9, 14],
     "hAnchor" : "left",
     "centered" : true,
-    "wrapWidth" : 126
+    "value" : "Exousian Empire"
   },
   "moneyIcon" : {
     "type" : "image",
-    "position" : [97, 23],
+    "position" : [97, 14],
     "file" : "/interface/money.png"
   },
   "priceLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [110, 23],
+    "position" : [110, 14],
     "hAnchor" : "left",
     "value" : "tree"
   }
