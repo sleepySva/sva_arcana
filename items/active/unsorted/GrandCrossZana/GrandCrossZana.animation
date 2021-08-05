@@ -1,4 +1,7 @@
 {
+	"globalTagDefaults" : {
+		"WeaponColor" : ""
+	},
 	"animatedParts" : {
 		"stateTypes" : {
 			"Gun" : {
@@ -35,19 +38,19 @@
 						},
 						"idle" : {
 						    "properties" : {
-								"image" : "GrandCrossZana.png:0"
+								"image" : "GrandCrossZana.png:0<WeaponColor>"
 						    }
 						},
 						"firemain" : {
 						    "properties" : {
 								"offset" : [0.025, 0.75],
-								"image" : "GrandCrossZana.png:0"
+								"image" : "GrandCrossZana.png:0<WeaponColor>"
 						    }
 						},
 						"firesub" : {
 						    "properties" : {
 								"offset" : [0.025, 0.75],
-								"image" : "GrandCrossZana.png:0"
+								"image" : "GrandCrossZana.png:0<WeaponColor>"
 						    }
 						}
 				    }

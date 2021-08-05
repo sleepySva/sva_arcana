@@ -1,0 +1,123 @@
+{
+  "projectileName" : "exousia_grenadeLauncher_1_projectile_1",
+  "physics" : "grenade",
+  "bounces" : -1,
+  "timeToLive" : 2,
+  "pointLight" : true,
+  "lightColor" : [100, 20, 10],
+  "image" : "body.png",
+  "fullbright" : true,
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config"
+    },
+    {
+      "action" : "loop",
+      "count" : 4,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/smoke/smoke.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 0.6,
+                "variance" : {
+                  "position" : [1.5, 1.5],
+                  "initialVelocity" : [1, 1],
+                  "timeToLive" : 0.15,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        },
+        {
+          "action" : "spark"
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 4,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/mediumflame/mediumflame.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 0.6,
+                "variance" : {
+                  "position" : [1.5, 1.5],
+                  "initialVelocity" : [1, 1],
+                  "timeToLive" : 0.15,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 4,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/smallflame/smallflame.animation",
+                "approach" : [0.5, 0.5],
+                "timeToLive" : 0.6,
+                "variance" : {
+                  "position" : [1.5, 1.5],
+                  "initialVelocity" : [1, 1],
+                  "timeToLive" : 0.15,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 6,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+			{
+			  "action" : "projectile",
+			  "type" : "molotovflame",
+			  "fuzzAngle" : 180,
+			  "inheritDamageFactor" : 0.1,
+			  "angleAdjust" : 0
+			}
+          ]
+        }
+      ]
+    }
+  ],
+  "power" : 46,
+  "damageType" : "NoDamage",
+  "damageKind" : "fireplasma",
+  "statusEffects" : [
+    "burning"
+  ]
+}

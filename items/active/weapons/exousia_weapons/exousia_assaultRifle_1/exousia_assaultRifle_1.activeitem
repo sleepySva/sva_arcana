@@ -3,8 +3,8 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A standard assault rifle used by Exousian Vanguards.",
-  "shortdescription" : "^#c63422;EIA1^reset; Vanguard Rifle",
+  "description" : "A standard assault rifle used by Exousian Frontliners.",
+  "shortdescription" : "^#c63422;EIA1^reset; Frontliner Rifle",
   "tooltipKind" : "arcana_gun_exousia",
   "category" : "assaultRifle",
   "twoHanded" : true,
@@ -53,7 +53,7 @@
     "class" : "GunFire",
 
     "fireTime" : 0.14,
-    "baseDps" : 13.0,
+    "baseDps" : 14.2,
     "energyUsage" : 56.0,
     "inaccuracy" : 0.004,
 
@@ -93,8 +93,6 @@
       }
     }
   },
-  
-  "altAbilityType" : "grenadelauncher",
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

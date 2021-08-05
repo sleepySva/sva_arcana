@@ -7,7 +7,8 @@ function init()
   self.goal = vec2.add(self.spawn, {0, 2})
 
   self.speed = 2
-  self.sinkSpeed = 2
+  self.sinkSpeed = 0.4
+  self.sinkSpeedTime = 1
 
   message.setHandler("sink", function(_, _)
     self.sinking = true
@@ -18,12 +19,13 @@ function update(dt)
   -- Clear lava if source dies
   if not world.entityExists(projectile.sourceEntity()) then
     self.sinking = true
-    self.sinkSpeed = 10
+    self.sinkSpeed = 0.4
+	self.sinkSpeedTime = 10
   end
 
   local height = mcontroller.localBoundBox()[4] - mcontroller.localBoundBox()[2]
-  local sinkTime = self.sinkSpeed / height
-  if projectile.timeToLive() <= sinkTime then
+  local sinkTime = self.sinkSpeedTime
+  if projectile.timeToLive() <= 10.0 then
     self.sinking = true
   end
 

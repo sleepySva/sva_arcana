@@ -13,15 +13,14 @@
   "speed" : 10,
   "power" : 25.0,
   "bounces" : -1,
-  "timeToLive" : 6,
+  "timeToLive" : 11,
   "orientationLocked" : true,
 
   "piercing" : true,
   "flippable" : true,
   "damagePoly" : [ [-32, -8], [-32, 2], [32, 2], [32, -8] ],
-  "damageKind" : "fire",
+  "damageKind" : "arcana_solar",
   "statusEffects" : [
-    "burning"
   ],
 
   "scripts" : [ "solarfloorlava.lua" ],

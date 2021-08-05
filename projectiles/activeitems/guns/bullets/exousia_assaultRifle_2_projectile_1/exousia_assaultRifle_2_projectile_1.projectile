@@ -1,0 +1,54 @@
+{
+  "projectileName" : "exousia_assaultRifle_2_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 2,
+  "bounces" : 0,
+  "speed" : 116,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [240, 70, 60],
+  "emitters" : [ "arcana_particle_ember_red" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_red/arcana_explosion_bullet_red.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.001,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/exousia_assaultRifle_2_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma",
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : "60",
+  "rotationRate" : 1.0,
+  "trackingLimit" : 40
+ 
+}

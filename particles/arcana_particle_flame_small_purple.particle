@@ -1,0 +1,20 @@
+{
+  "kind" : "arcana_particle_flame_small_purple",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_animation_flame_small_purple/arcana_animation_flame_small_purple.animation",
+    "position" : [0, 0],
+	"fullbright" : true,
+    "finalVelocity" : [0, 3],
+    "approach" : [0, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.0,
+    "fade" : 1,
+    "size" : 0.5,
+    "layer" : "back",
+    "timeToLive" : 0.3,
+    "variance" : {
+      "initialVelocity" : [2.0, 2.0]
+    }
+  }
+}
