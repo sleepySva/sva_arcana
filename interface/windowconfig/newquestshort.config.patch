@@ -1,0 +1,55 @@
+[
+    [{
+        "op": "test",
+        "path": "/paneLayout/lblQuestBody/wrapWidth",
+        "value": 187
+    },{
+        "op": "replace",
+        "path": "/paneLayout/lblQuestBody/wrapWidth",
+        "value": 196
+    }],
+    [{
+        "op": "test",
+        "path": "/paneLayout/lblQuestBody/fontSize",
+        "inverse": true
+    },{
+        "op": "add",
+        "path": "/paneLayout/lblQuestBody/fontSize",
+        "value": 7.2
+    }],
+    [{
+        "op": "test",
+        "path": "/paneLayout/portraitTitle/fontSize",
+        "value": 8
+    },{
+        "op": "replace",
+        "path": "/paneLayout/portraitTitle/fontSize",
+        "value": 7.2
+    }],
+    [{
+        "op": "test",
+        "path": "/paneLayout/portraitTitle/charLimit",
+	"value" : 13
+    },{
+        "op": "remove",
+        "path": "/paneLayout/portraitTitle/charLimit"
+    }],
+    [{
+        "op": "test",
+        "path": "/paneLayout/portraitTitle/vAnchor",
+        "inverse": true
+    },{
+        "op": "add",
+        "path": "/paneLayout/portraitTitle/vAnchor",
+        "value": "top"
+    }],
+    [{
+        "op": "test",
+        "path": "/paneLayout/portraitTitle/wrapWidth",
+        "inverse": true
+    },{
+        "op": "add",
+        "path": "/paneLayout/portraitTitle/wrapWidth",
+        "value": 38
+    }]
+]
