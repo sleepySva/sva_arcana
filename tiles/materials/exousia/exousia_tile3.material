@@ -1,0 +1,21 @@
+{
+  "materialId" : 16863,
+  "materialName" : "exousia_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile3",
+  "description" : "A minimalistic red and white flooring tile used to construct composite structures.",
+  "shortdescription" : "Exousian Flooring W^#c3483a;R^reset;^#a0a0a0;B^reset;",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile3.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1808
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16872,
+  "materialName" : "exousia_tile12",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile12",
+  "description" : "A plated wall panel crafted from Exoslate composites.",
+  "shortdescription" : "Exoslate Plated Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile12.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1817
+  }
+}

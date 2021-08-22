@@ -1,21 +1,50 @@
 {
+  "title" : {
+    "type" : "label",
+    "position" : [80, 202],
+    "hAnchor" : "mid",
+	"fontSize" : 7.2,
+    "value" : ""
+  },
+  "subTitle" : {
+    "type" : "label",
+    "position" : [80, 194],
+    "hAnchor" : "mid",
+	"fontSize" : 7.2,
+    "color" : [185, 181, 178],
+    "value" : ""
+  },
+  "titleIcon" : {
+    "type" : "itemslot",
+    "position" : [168, 188],
+    "callback" : "null",
+    "iconMode" : true,
+    "backingImage" : "/interface/inventory/portrait.png",
+    "showRarity" : false,
+    "showBackingImageWhenFull" : true
+  },
   "background" : {
     "type" : "background",
     "fileHeader" : "/interface/tooltips/arcana_gun_exousia_header.png",
     "fileBody" : "/interface/tooltips/arcana_gun_exousia_body.png",
     "fileFooter" : "/interface/tooltips/arcana_gun_exousia_footer.png"
   },
+  "header" : {
+    "type" : "image",
+    "position" : [0, 193],
+    "file" : "/interface/tooltips/arcana_gun_exousia_header.png"
+  },
   "levelTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 168],
+    "position" : [19, 176],
     "hAnchor" : "left",
     "value" : "Tier:"
   },
   "levelLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [36, 168],
+    "position" : [46, 176],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
@@ -23,14 +52,14 @@
     "type" : "label",
 	"fontSize" : 6.8,
 	"color" : [160, 160, 160],
-    "position" : [90, 168],
+    "position" : [98, 176],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [122, 132],
+    "position" : [179, 177],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -38,17 +67,17 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [70, 143],
+    "position" : [80, 151],
     "file" : "",
     "centered" : true,
-    "maxSize" : [60, 60],
-    "minSize" : [60, 60]
+    "maxSize" : [50, 40],
+    "minSize" : [50, 40]
   },
   "descriptionLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
 	"color" : [160, 160, 160],
-    "position" : [9, 117],
+    "position" : [19, 127],
     "wrapWidth" : 122,
     "hAnchor" : "left",
     "vAnchor" : "top"
@@ -56,56 +85,56 @@
   "damagePerShotTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 76],
+    "position" : [19, 78],
     "hAnchor" : "left",
     "value" : "Damage:"
   },
   "damagePerShotLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [130, 76],
+    "position" : [140, 78],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "speedTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 67],
+    "position" : [19, 69],
     "hAnchor" : "left",
     "value" : "Firing Rate:"
   },
   "speedLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [130, 67],
+    "position" : [140, 69],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "energyPerShotTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 58],
+    "position" : [19, 60],
     "hAnchor" : "left",
     "value" : "Energy Per Shot:"
   },
   "energyPerShotLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [130, 58],
+    "position" : [140, 60],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "altAbilityTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 49],
+    "position" : [19, 51],
     "hAnchor" : "left",
     "value" : ""
   },
   "altAbilityLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [130, 49],
+    "position" : [140, 51],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
@@ -114,20 +143,20 @@
     "type" : "label",
 	"fontSize" : 7.2,
 	"color" : [160, 160, 160],
-    "position" : [9, 14],
+    "position" : [11, 14],
     "hAnchor" : "left",
     "centered" : true,
     "value" : "Exousian Empire"
   },
   "moneyIcon" : {
     "type" : "image",
-    "position" : [97, 14],
+    "position" : [115, 14],
     "file" : "/interface/money.png"
   },
   "priceLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [110, 14],
+    "position" : [128, 14],
     "hAnchor" : "left",
     "value" : "tree"
   }

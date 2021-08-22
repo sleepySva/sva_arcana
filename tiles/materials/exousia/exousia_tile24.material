@@ -1,0 +1,21 @@
+{
+  "materialId" : 16884,
+  "materialName" : "exousia_tile24",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile24",
+  "description" : "A sloped gray glass tile.",
+  "shortdescription" : "Exousian Gray Glass",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile24.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 119
+  }
+}

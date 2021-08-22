@@ -1,0 +1,21 @@
+{
+  "materialId" : 16873,
+  "materialName" : "exousia_tile13",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile13",
+  "description" : "A vented wall panel crafted from Exoslate composites.",
+  "shortdescription" : "Exoslate Vented Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile13.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1816
+  }
+}

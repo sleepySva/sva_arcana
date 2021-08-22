@@ -1,0 +1,21 @@
+{
+  "materialId" : 16870,
+  "materialName" : "exousia_tile10",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile10",
+  "description" : "A durable white machinary crafted from Enartz composites.",
+  "shortdescription" : "Enartz Machinery Tile",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile10.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1819
+  }
+}

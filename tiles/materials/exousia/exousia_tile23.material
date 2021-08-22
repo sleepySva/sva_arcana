@@ -1,0 +1,21 @@
+{
+  "materialId" : 16883,
+  "materialName" : "exousia_tile23",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile23",
+  "description" : "A sloped red glass tile.",
+  "shortdescription" : "Exousian Red Glass",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile23.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 120
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16861,
+  "materialName" : "exousia_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile1",
+  "description" : "A minimalistic while tile, often used in Exousian modern structures.",
+  "shortdescription" : "Exousian White Tile",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile1.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1810
+  }
+}

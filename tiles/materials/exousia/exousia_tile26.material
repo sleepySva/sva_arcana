@@ -1,0 +1,21 @@
+{
+  "materialId" : 16886,
+  "materialName" : "exousia_tile26",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile26",
+  "description" : "A sloped black metal frame.",
+  "shortdescription" : "Exoslate Frame",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile26.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 129
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16875,
+  "materialName" : "exousia_tile15",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile15",
+  "description" : "A durable sloped panel tile, used to construct complex buildings.",
+  "shortdescription" : "Composite Enartz Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile15.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4830
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16874,
+  "materialName" : "exousia_tile14",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile14",
+  "description" : "A durable plating tile crafted from Exoslate composites.",
+  "shortdescription" : "Exoslate Plating",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile14.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1815
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16864,
+  "materialName" : "exousia_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile4",
+  "description" : "A minimalistic black and white flooring tile used to construct composite structures.",
+  "shortdescription" : "Exousian Flooring W^#a0a0a0;R^reset;^#373737;B^reset;",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1807
+  }
+}

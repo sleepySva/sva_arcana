@@ -1,0 +1,21 @@
+{
+  "materialId" : 16879,
+  "materialName" : "exousia_tile19",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile19",
+  "description" : "A durable white smooth panel tile, used to construct complex buildings.",
+  "shortdescription" : "Smooth Enartz Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile19.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4826
+  }
+}

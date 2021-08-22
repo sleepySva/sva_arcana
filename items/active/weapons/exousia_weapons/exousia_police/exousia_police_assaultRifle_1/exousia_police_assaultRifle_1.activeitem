@@ -1,0 +1,129 @@
+{
+  "itemName" : "exousia_police_assaultRifle_1",
+  "price" : 960,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A light plasma assault rifle used by Exousian policing units. Consumes more energy.",
+  "shortdescription" : "^#c63422;EPF^reset; Roteline Carbine",
+  "tooltipKind" : "arcana_gun_exousia",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 7,
+
+  "inventoryIcon" : "body.png:default.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_red.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.8, 0.3] //Same as baseOffset
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.3]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/erchiuseyebeam_start.ogg"]
+    }
+  },
+
+  "baseOffset" : [0.8, 0.3],
+  "muzzleOffset" : [3.0, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.18,
+    "baseDps" : 12.6,
+    "energyUsage" : 60.0,
+    "inaccuracy" : 0.016,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "exousia_police_assaultRifle_1_projectile_1",
+    "projectileParameters" : {
+      "knockback" : 16
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "altAbilityType" : "arcana_ranged_ability_chargedShot",
+  "altAbility" : {
+	"name" : "Plasmic Blast",
+    "chargeLevels" : [
+      {
+        "time" : 0.0,
+        "energyCost" : 20,
+        "cooldown" : 0.40,
+        "projectileType" : "exousia_police_assaultRifle_1_projectile_1",
+        "projectileCount" : 1,
+        "spreadAngle" : 10,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 2,
+        "fireSound" : "fire"
+      },
+      {
+        "time" : 0.8,
+        "energyCost" : 80,
+        "cooldown" : 1.20,
+        "projectileType" : "exousia_police_assaultRifle_1_projectile_1",
+        "projectileCount" : 1,
+        "spreadAngle" : 10,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 8,
+        "fireSound" : "fire"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

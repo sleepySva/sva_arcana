@@ -1,0 +1,21 @@
+{
+  "materialId" : 16871,
+  "materialName" : "exousia_tile11",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile11",
+  "description" : "A patterned smooth wall crafted from Enartz composites.",
+  "shortdescription" : "Enartz Smooth Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile11.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1818
+  }
+}

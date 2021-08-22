@@ -1,0 +1,21 @@
+{
+  "materialId" : 16885,
+  "materialName" : "exousia_tile25",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile25",
+  "description" : "A sloped white metal frame.",
+  "shortdescription" : "Enartz Frame",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile25.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 130
+  }
+}

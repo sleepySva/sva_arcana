@@ -1,0 +1,21 @@
+{
+  "materialId" : 16869,
+  "materialName" : "exousia_tile9",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile9",
+  "description" : "A durable plating tile crafted from Enartz composites.",
+  "shortdescription" : "Enartz Plating",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile9.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1820
+  }
+}

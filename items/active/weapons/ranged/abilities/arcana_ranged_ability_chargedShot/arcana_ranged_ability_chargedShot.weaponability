@@ -1,0 +1,70 @@
+{
+  "ability" : {
+    "type" : "arcana_ranged_ability_chargedShot",
+    "name" : "Charged Shot",
+    "scripts" : ["/items/active/weapons/ranged/abilities/arcana_ranged_ability_chargedShot/arcana_ranged_ability_chargedShot.lua"],
+    "class" : "ChargeFire",
+
+    "chargeLevels" : [
+      // this is just a template; let implementing weapons overwrite this with real config
+
+      // {
+      //   "time" : 0,
+      //   "energyCost" : 5,
+      //   "cooldown" : 0.1,
+      //   "projectileType" : "chargeshotsmall",
+      //   "projectileParameters" : {},
+      //   "inaccuracy" : 0.02,
+      //   "baseDamage" : 0.75,
+      //   "fireSound" : "fire"
+      // },
+      // {
+      //   "time" : 1.0,
+      //   "energyCost" : 40,
+      //   "cooldown" : 0.5,
+      //   "projectileType" : "chargeshotlarge",
+      //   "projectileParameters" : {},
+      //   "inaccuracy" : 0,
+      //   "baseDamage" : 12,
+      //   "fireSound" : "fire2"
+      // }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}
