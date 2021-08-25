@@ -14,9 +14,11 @@
       "/monsters/monster.lua"
     ],
     
-    "damageBar" : "None", 
+    "damageBar" : "default", 
 
     "behavior" : "monster",
+	
+	"aggressive" : true,
 
     "seeThroughLiquid" : false,
     "behaviorConfig" : {
@@ -46,7 +48,7 @@
 
             "projectileType" : "energyshard",
 			"projectileCount" : 3,
-            "projectileInterval" : 0.4,
+            "projectileInterval" : 0.3,
             "projectileParameters" : {
               "speed" : 60,
 			   "actionOnReap" : [
@@ -138,7 +140,7 @@
 
     "bodyMaterialKind" : "organic",
 
-    "knockoutTime" : 0.3,
+    "knockoutTime" : 0.2,
     "knockoutAnimationStates" : {
       "damage" : "stunned"
     },
@@ -161,13 +163,13 @@
 
       "stats" : {
         "knockbackStunTime" : {
-          "baseValue" : 0.5
+          "baseValue" : 0.4
         },
         "knockbackThreshold" : {
-          "baseValue" : 9
+          "baseValue" : 20
         },
         "maxHealth" : {
-          "baseValue" : 200
+          "baseValue" : 180
         },
         "protection" : {
           "baseValue" : 4.0
@@ -182,10 +184,7 @@
           "baseValue" : 0.8
         },
         "arcana_resistance_azure" : {
-          "baseValue" : 0.6
-        },
-        "arcana_resistance_lunar" : {
-          "baseValue" : 0.6
+          "baseValue" : 0.8
         },
         "fireResistance" : {
           "baseValue" : 0.8
@@ -200,7 +199,7 @@
           "baseValue" : 1.0
         },
         "electricResistance" : {
-          "baseValue" : -0.5
+          "baseValue" : -0.8
         },
         "electricStatusImmunity" : {
           "baseValue" : 0.0

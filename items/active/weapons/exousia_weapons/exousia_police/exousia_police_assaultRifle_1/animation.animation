@@ -23,7 +23,11 @@
             "frames" : 3,
             "cycle" : 0.8,
             "mode" : "transition",
-            "transition" : "fullcharge"
+            "transition" : "fullcharge",
+            "properties" : {
+              "persistentSound" : "/sfx/gun/dragonhead_charge2.ogg",
+              "persistentSoundStopTime" : 0.5
+            }
           },
           "fullcharge" : {
             "frames" : 4,

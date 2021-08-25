@@ -37,7 +37,8 @@
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/erchiuseyebeam_start.ogg"]
+      "fire" : ["/sfx/gun/erchiuseyebeam_start.ogg"],
+	  "fire_charged" : ["/sfx/gun/mech_teslastream_fire4.ogg"]
     }
   },
 
@@ -120,7 +121,7 @@
         "projectileParameters" : {},
         "inaccuracy" : 0,
         "baseDamage" : 8,
-        "fireSound" : "fire"
+        "fireSound" : "fire_charged"
       }
     ]
   },
