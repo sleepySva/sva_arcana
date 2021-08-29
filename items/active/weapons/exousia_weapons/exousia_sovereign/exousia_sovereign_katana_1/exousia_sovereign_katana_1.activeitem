@@ -1,14 +1,14 @@
 {
   "itemName" : "exousia_sovereign_katana_1",
-  "price" : 1200,
+  "price" : 3600,
   "level" : 9,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "...",
-  "shortdescription" : "^#c63422;CRW^reset; Dunamis",
+  "description" : "The katana of might and power.",
+  "shortdescription" : "^#c63422;CRW^reset; Blade of Dunamis",
   "tooltipKind" : "arcana_gun_exousia",
   "category" : "broadsword",
-  "tooltipFields" : {"subtitle" : "Tachi"},
+  "tooltipFields" : {"subtitle" : "Exousian Artifact"},
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","katana"],
 
@@ -45,7 +45,7 @@
   "altAbilityType" : "arcana_tachi_ability_shingetsu",
   "altAbility" : {
 	"projectileType" : "exousia_katana_1_projectile_2",
-	"name" : "Red Cleave"
+	"name" : "Revering Cleave"
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
