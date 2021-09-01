@@ -1,0 +1,20 @@
+{
+  "materialId" : 16847,
+  "materialName" : "arcana_platform_exoslatePlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_exoslatePlatform",
+  "shortdescription" : "Exoslate Platform",
+  "description" : "A dark platform made with exoslate.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_exoslatePlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}
