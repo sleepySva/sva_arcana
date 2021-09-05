@@ -1,0 +1,24 @@
+{
+  "kind" : "arcana_particle_electric_red_1",
+  "definition" : {
+    "type" : "animated",
+    "looping" : true,
+    "animation" : "/animations/arcana_animation_electric_red/arcana_animation_electric_red.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 1.2,
+    "fade" : 1,
+    "fullbright" : true,
+    "light" : [135, 22, 27],
+    "size" : 0.8,
+    "layer" : "middle",
+    "timeToLive" : 0.425,
+    "variance" : {
+	  "size" : 0.4,
+      "finalVelocity" : [4.0, 4.0],
+      "rotation" : 180
+    }
+  }
+}

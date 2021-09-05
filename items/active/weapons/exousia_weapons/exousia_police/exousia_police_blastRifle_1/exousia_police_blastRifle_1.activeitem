@@ -1,0 +1,117 @@
+{
+  "itemName" : "exousia_police_blastRifle_1",
+  "price" : 960,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A plasma charge rifle used by Exousian policing units. Consumes more energy.",
+  "shortdescription" : "^#c63422;EPF^reset; Roteline Charge Rifle",
+  "tooltipKind" : "arcana_gun_exousia",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 8,
+
+  "inventoryIcon" : "body.png:default.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_red.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.9, 0.3] //Same as baseOffset
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.3]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/erchiuseyebeam_start.ogg"],
+	  "fire_charged" : ["/sfx/gun/mech_teslastream_fire4.ogg"]
+    }
+  },
+
+  "baseOffset" : [0.9, 0.3],
+  "muzzleOffset" : [3.0, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_ranged_ability_chargedShot",
+  "primaryAbility" : {
+	"name" : "Plasmic Blast",
+	
+    "fireTime" : 0.6,
+    "baseDps" : 8.0,
+    "energyUsage" : 40.0,
+	
+    "chargeLevels" : [
+      {
+        "time" : 0.0,
+        "energyCost" : 20,
+        "cooldown" : 0.10,
+        "projectileType" : "exousia_police_assaultRifle_1_projectile_1",
+        "projectileCount" : 1,
+        "spreadAngle" : 10,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 2,
+        "fireSound" : "fire"
+      },
+      {
+        "time" : 0.4,
+        "energyCost" : 40,
+        "cooldown" : 0.20,
+        "projectileType" : "exousia_police_assaultRifle_1_projectile_2",
+        "projectileCount" : 1,
+        "spreadAngle" : 8,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 8,
+        "fireSound" : "fire_charged"
+      }
+    ],
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

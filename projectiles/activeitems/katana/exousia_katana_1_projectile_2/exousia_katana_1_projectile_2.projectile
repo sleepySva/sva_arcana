@@ -12,9 +12,16 @@
   "bounces" : 0,
   "flippable" : true,
   "damageKind" : "plasma",
-  "emitters" : [ "arcana_particle_ember_red" ],
+  "emitters" : [ "arcana_particle_ember_red", "arcana_particle_electric_red"],
   "lightColor" : [100, 30, 120],
   "fullbright" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_red_energy/arcana_explosion_bullet_red_energy.config"
+    }
+  ],
   
   "periodicActions" : [
     {

@@ -1,0 +1,25 @@
+{
+  "kind" : "arcana_particle_electric_red",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.008,
+    "durationVariance" : 0.004,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ "arcana_particle_electric_red_1" ], [ "arcana_particle_electric_red_2" ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "arcana_particle_electric_red_1" ], [ "arcana_particle_electric_red_2" ], [ "arcana_particle_electric_red_2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ "arcana_particle_electric_red_1" ], [ "arcana_particle_electric_red_2" ], [ "arcana_particle_electric_red_2" ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

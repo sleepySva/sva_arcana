@@ -80,9 +80,9 @@ function ChargeFire:cooldown(duration)
 
   local progress = 0
   util.wait(duration, function()
-    local from = self.stances.cooldown.weaponoffset or {0,0}
-    local to = self.stances.idle.weaponoffset or {0,0}
-    self.weapon.weaponoffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+    local from = self.stances.cooldown.weaponOffset or {0,0}
+    local to = self.stances.idle.weaponOffset or {0,0}
+    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
 
     self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.weaponRotation, self.stances.idle.weaponRotation))
     self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.armRotation, self.stances.idle.armRotation))
@@ -120,7 +120,7 @@ function ChargeFire:fireProjectile()
 end
 
 function ChargeFire:firePosition()
-  return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleoffset))
+  return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
 
 function ChargeFire:aimVector(angleAdjust, inaccuracy)

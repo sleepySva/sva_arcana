@@ -1,0 +1,49 @@
+{
+  "objectName" : "arcana_exousia_modern_chair_1",
+  "colonyTags" : ["misc","exousian_modern"],
+  "rarity" : "Rare",
+  "category" : "furniture",
+  "price" : 360,
+  "description" : "A modern Exousian couch.",
+  "shortdescription" : "Modern Couch",
+  "race" : "generic",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>",
+      "sitCoverImage" : "/objects/arcana_exousia/arcana_exousia_modern/arcana_exousia_modern_chair_1/cover.png",
+      "imagePosition" : [-16, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-10, 22], // Right
+        [3, 22] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>",
+      "sitCoverImage" : "/objects/arcana_exousia/arcana_exousia_modern/arcana_exousia_modern_chair_1/cover.png",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-2, 22], // Left
+        [11, 22] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}
