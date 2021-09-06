@@ -1,0 +1,42 @@
+[
+	{
+		"op":"test",
+		"path":"/itemList/schema/listTemplate/itemName/wrapWidth",
+		"value":66
+	},
+	{
+		"op":"replace",
+		"path":"/itemList/schema/listTemplate/itemName/wrapWidth",
+		"value":82
+	},
+	{
+		"op":"replace",
+		"path":"/itemList/schema/listTemplate/count/position",
+		"value":[137, 7]
+	},
+	{
+		"op":"replace",
+		"path":"/itemList/schema/memberSize",
+		"value":[145, 22]
+	},
+	{
+		"op":"replace",
+		"path":"/title/position",
+		"value":[73, 33]
+	},
+	{
+		"op":"replace",
+		"path":"/background/size",
+		"value":[154, 38]
+	},
+	{
+		"op":"add",
+		"path":"/itemList/schema/listTemplate/itemName/fontSize",
+		"value":7.2
+	},
+	{
+		"op":"add",
+		"path":"/itemList/schema/listTemplate/count/fontSize",
+		"value":7.2
+	}
+]

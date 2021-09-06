@@ -1,0 +1,60 @@
+[
+    {
+        "op": "remove",
+        "path": "/orientations/0/collisionSpaces"
+    },
+    {
+        "op": "add",
+        "path": "/orientations/0/spaceScan",
+        "value": 0.1
+    },
+    {
+        "op": "replace",
+        "path": "/category",
+        "value": "storage"
+    },
+    {
+        "op": "add",
+        "path": "/objectType",
+        "value": "container"
+    },
+    {
+        "op": "add",
+        "path": "/tooltipKind",
+        "value": "container"
+    },
+    {
+        "op": "add",
+        "path": "/openSounds",
+        "value": [
+            "/sfx/objects/chest_medium_open.ogg"
+        ]
+    },
+    {
+        "op": "add",
+        "path": "/closeSounds",
+        "value": [
+            "/sfx/objects/chest_medium_close.ogg"
+        ]
+    },
+    {
+        "op": "add",
+        "path": "/slotCount",
+        "value": 16
+    },
+    {
+        "op": "add",
+        "path": "/uiConfig",
+        "value": "/interface/chests/chest<slots>.config"
+    },
+    {
+        "op": "add",
+        "path": "/frameCooldown",
+        "value": 5
+    },
+    {
+        "op": "add",
+        "path": "/autoCloseCooldown",
+        "value": 3600
+    }
+]
