@@ -1,0 +1,21 @@
+{
+  "materialId" : 16887,
+  "materialName" : "exousia_tile27",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile27",
+  "description" : "A glass window.",
+  "shortdescription" : "Unlit Window",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile27.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1
+  }
+}
