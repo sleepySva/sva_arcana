@@ -6,23 +6,16 @@
   "shortdescription" : "^#ecb297;Arcanium Workstation^reset;",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1000,
+  "price" : 1200,
   
   "lightColor" : [120, 140, 160],
 
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
-    "config" : "/interface/windowconfig/arcana_crafting_workbench_2.config",
+    "config" : "/interface/arcana/arcana_crafting_workbench/arcana_crafting_workbench_2.config",
 	"filter" : [
 	"arcana_crafting_workbench_1",
-	"arcana_crafting_workbench_2",
-	"arcana_aeolus",
-	"arcana_havencrest",
-	"arcana_elysia",
-	"arcana_empress",
-	"arcana_bleuark",
-	"arcana_monarch",
-	"arcana_horizon"
+	"arcana_crafting_workbench_2"
 	]
   },
 

@@ -1,0 +1,38 @@
+{
+  "projectileName" : "animuseye",
+  "image" : "animuseye.png",
+  "animationCycle" : 0.3,
+  "animationLoops" : false,
+  "frameNumber" : 5,
+  "timeToLive" : 1.0,
+  "flippable" : false,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "renderLayer" : "ForegroundEntity",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "animuseyetransform",
+	  "inheritDamageFactor" : 0.0
+	}
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/melee/astraltear2.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hidden",
+
+  "speed" : 0.0
+}

@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_exousia_science_deco_4",
+  "colonyTags" : ["misc", "exousia_science"],
+  "rarity" : "Rare",
+  "description" : "A case that is storing a couple of Exousian rifles.",
+  "shortdescription" : "Rifle Case",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 180,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : ["bottom"]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : ["bottom"]
+
+    }
+  ]
+}

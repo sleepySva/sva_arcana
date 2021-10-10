@@ -1,0 +1,53 @@
+{
+  "projectileName" : "timepiecetimebomb",
+  "physics" : "laser",
+  "timeToLive" : 1.705,
+  "image" : "timepiecetimebomb.png",
+  "animationCycle" : 1.5,
+  "frameNumber" : 27,
+  "windupFrames" : 0,
+  "winddownFrames" : 0,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+  ],
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "timepiecetimebombexplosion",
+	  "inheritDamageFactor" : 0.0
+	},
+	{
+	  "action" : "projectile",
+	  "type" : "timepiecetimebombexplosion",
+	  "inheritDamageFactor" : 0.0
+	},
+	{
+	  "action" : "projectile",
+	  "type" : "timepiecetimebombexplosion",
+	  "inheritDamageFactor" : 0.0
+	},
+	{
+	  "action" : "projectile",
+	  "type" : "timepiecetimebombexplosionburst",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  "speed" : 0,
+  "power" : 0,
+  
+  "renderLayer" : "Projectile-200",
+
+  "onlyHitTerrain" : true,
+  "persistentStatusEffects" : [],
+  "statusEffectArea" : [ [0, 0] ],
+
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "emitters" : [],
+
+  "piercing" : true,
+  "bounces" : -1,
+  "persistentAudio" : "/sfx/statuseffects/timefreeze_loop.ogg"
+}

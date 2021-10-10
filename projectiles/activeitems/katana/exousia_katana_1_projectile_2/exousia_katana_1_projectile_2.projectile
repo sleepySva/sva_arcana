@@ -20,6 +20,34 @@
     {
       "action" : "config",
       "file" : "/projectiles/explosions/arcana_explosion_bullet_red_energy/arcana_explosion_bullet_red_energy.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "exousia_katana_1_projectile_3",
+        "angleAdjust" : -45,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.7
+    },
+	{
+        "action" : "projectile",
+        "type" : "exousia_katana_1_projectile_3",
+        "angleAdjust" : 45,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.7
+    },
+	{
+        "action" : "projectile",
+        "type" : "exousia_katana_1_projectile_3",
+        "angleAdjust" : 135,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.7
+    },
+	{
+        "action" : "projectile",
+        "type" : "exousia_katana_1_projectile_3",
+        "angleAdjust" : 225,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.7
     }
   ],
   

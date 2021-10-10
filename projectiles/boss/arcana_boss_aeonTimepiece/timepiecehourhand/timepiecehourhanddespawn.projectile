@@ -1,0 +1,33 @@
+{
+  "projectileName" : "timepiecehourhanddespawn",
+  "image" : "timepiecehourhanddespawn.png",
+  "animationCycle" : 0.3,
+  "animationLoops" : false,
+  "lightColor" : [0, 0, 0],
+  "frameNumber" : 11,
+  "timeToLive" : 1.0,
+  "flippable" : false,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/vehicle_disappear1.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hammer",
+
+  "speed" : 0.0
+}

@@ -1,11 +1,11 @@
 {
   "itemName" : "exousia_sovereign_katana_1",
-  "price" : 3600,
+  "price" : 10000,
   "level" : 9,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "The katana of might and power.",
-  "shortdescription" : "^#c63422;CRW^reset; Blade of Dunamis",
+  "description" : "The sword of the Emperor's might and power.",
+  "shortdescription" : "^yellow;Dawnbreaker^reset;",
   "tooltipKind" : "arcana_gun_exousia",
   "category" : "broadsword",
   "tooltipFields" : {"subtitle" : "Exousian Artifact"},
@@ -21,11 +21,12 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-	  "fire4" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-	  "shingetsu_sound" : [ "/sfx/melee/laser_weapon_swing2.ogg" ]
+      "fire" : [ "/sfx/melee/charge_traildash1.ogg", "/sfx/melee/charge_traildash2.ogg", "/sfx/melee/charge_traildash3.ogg" ],
+      "fire2" : [ "/sfx/melee/charge_traildash1.ogg", "/sfx/melee/charge_traildash2.ogg", "/sfx/melee/charge_traildash3.ogg" ],
+      "fire3" : [ "/sfx/melee/charge_traildash1.ogg", "/sfx/melee/charge_traildash2.ogg", "/sfx/melee/charge_traildash3.ogg" ],
+	  "fire4" : [ "/sfx/melee/charge_traildash1.ogg", "/sfx/melee/charge_traildash2.ogg", "/sfx/melee/charge_traildash3.ogg" ],
+	  "fire5" : [ "/sfx/melee/charge_traildash1.ogg", "/sfx/melee/charge_traildash2.ogg", "/sfx/melee/charge_traildash3.ogg" ],
+	  "shingetsu_sound" : [ "/sfx/melee/charge_traildash1.ogg", "/sfx/melee/charge_traildash2.ogg", "/sfx/melee/charge_traildash3.ogg" ]
     }
   },
 
@@ -33,7 +34,7 @@
 
   "elementalType" : "physical",
 
-  "primaryAbilityType" : "arcana_tachi_combo",
+  "primaryAbilityType" : "arcana_nodachi_combo",
   "primaryAbility" : {
     "fireTime" : 1.1,
     "baseDps" : 13.0,
@@ -45,7 +46,7 @@
   "altAbilityType" : "arcana_tachi_ability_shingetsu",
   "altAbility" : {
 	"projectileType" : "exousia_katana_1_projectile_2",
-	"name" : "Revering Cleave"
+	"name" : "Severing Cleave"
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"

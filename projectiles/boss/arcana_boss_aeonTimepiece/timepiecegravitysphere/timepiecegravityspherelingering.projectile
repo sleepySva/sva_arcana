@@ -1,0 +1,51 @@
+{
+  "projectileName" : "timepiecegravityspherelingering",
+  "image" : "timepiecegravitysphere.png",
+  "animationCycle" : 0.3,
+  "physics" : "illusion",
+  "frameNumber" : 3,
+  "windupFrames" : 2,
+  "winddownFrames" : 2,
+  "pointLight" : false,
+  "speed" : 0,
+  "power" : 0.0,
+  "fullbright" : true,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+
+  "bounces" : -1,
+  "piercing" : true,
+
+  "timeToLive" : 1.0,
+
+  "orientationLocked" : true,
+
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hidden",
+
+  "boundBox" : [-150, -150, 150, 150],
+  "physicsForces" : {
+    "vacuum" : {
+      "type" : "RadialForceRegion",
+      "outerRadius" : 150,
+      "innerRadius" : 1,
+      "targetRadialVelocity" : -65,
+      "controlForce" : 10000,
+      "categoryWhitelist" : ["player"]
+    }
+  },
+
+  "clientEntityMode" : "ClientSlaveOnly",
+
+  "scripts" : ["timepiecegravitysphere.lua"],
+
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/tech/vehicle_disappear1.ogg" ]
+    }
+  ],
+
+  "persistentAudio" : "/sfx/projectiles/gravitymine_loop.ogg"
+}

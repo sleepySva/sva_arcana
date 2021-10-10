@@ -1,0 +1,42 @@
+{
+  "projectileName" : "timepiecespearbouncing",
+  "physics" : "laser",
+  
+  "timeToLive" : 21,
+  "bounces" : -1,
+  "speed" : 25,
+  "piercing" : true,
+  "knockback" : 50,
+  "movementSettings" : {
+  },
+  
+  "image" : "timepiecespear.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "timepiecespearleaving",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
+    }
+  ],
+  
+  "damageKind" : "hammer"
+ 
+}

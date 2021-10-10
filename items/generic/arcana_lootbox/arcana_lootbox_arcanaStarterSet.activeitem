@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_lootbox_arcanaStarterSet",
+  "price" : 1000,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "A bundle of Arcana starter items to help with your journey. 'Ad astra per aspera'.",
+  "shortdescription" : "Arcana Starter Set",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "arcana_lootbox_arcanaStarterSet.png",
+  "animation" : "arcana_lootbox.animation",
+  "animationCustom" : {},
+  "scripts" : ["arcana_lootbox.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "arcana_lootbox_arcanaStarterSet",
+    "level" : 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "objectName" : "arcana_exousia_crafting_3",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A special armory for crafting Exousia weapon and armor parts.",
+  "shortdescription" : "^#c63422;Exousia Armory^reset;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1400,
+  
+  "lightColor" : [120, 120, 110],
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/arcana/arcana_crafting_anvil/arcana_exousia_crafting_2.config",
+	"filter" : ["arcana_exousia_crafting_2"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-40, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-40, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

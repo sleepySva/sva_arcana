@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_food_zinnofeurTea",
+  "rarity" : "Common",
+  "price" : 150,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_zinnofeurTea.png",
+  "description" : "Fiery red tea made with zinnofeur leaves. ^green;gives a +10% attack boost for 120s.^reset;",
+  "shortdescription" : "Zinnofeur Tea",
+  "effects" : [ [
+    {
+        "effect" : "rageaugment1",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}

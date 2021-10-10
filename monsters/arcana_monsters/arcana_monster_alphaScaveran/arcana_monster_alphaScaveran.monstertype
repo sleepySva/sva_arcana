@@ -1,0 +1,235 @@
+{
+  "type" : "arcana_monster_alphaScaveran",
+  "shortdescription" : "Alpha Scaveran",
+  "description" : "An evolved scaveran, has far better physical resistance but less elemental resistance.",
+
+  "categories" : [ "arcana_monster_alphaScaveran" ],
+  "parts" : [ "body" ],
+
+  "animation" : "arcana_monster_alphaScaveran.animation",
+
+  "dropPools" : [ { "default" : "scaveranTreasure", "bow" : "scaveranHunting" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 30,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 60,
+      "targetOutOfSightTime" : 2.5,
+
+      "foundTargetActions" : [ { "name" : "action-aggrohop" } ],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 15,
+            "minimumRange" : 5,
+            "windupState" : "fire",
+            "windupTime" : 0.3,
+
+            "projectileType" : "bloodvomit",
+            "fireOffset" : [2.5, 0.5],
+            "aimAtTarget" : true,
+            "projectileCount" : 3,
+            "projectileInterval" : 0.01,
+            "fireSound" : "fire",
+
+            "fireState" : "",
+            "winddownState" : "",
+            "winddownTime" : 2
+          }
+        },
+        {
+          "name" : "action-hop",
+          "cooldown" : [0.5, 3.5],
+          "parameters" : {
+            "verticalSpeed" : 16,
+            "horizontalSpeed" : 26,
+            "hopSequence" : 4,
+            "timeBetweenHops" : 0.0,
+            "windupTime" : 0.05,
+            "landTime" : 0.05,
+            "hopAwayFromWall" : true,
+            "hopSound" : "hop"
+          }
+        }
+      ],
+
+      "periodicActions" : [
+        {
+          "name" : "action-hop",
+          "cooldown" : [0.5, 3.5],
+          "parameters" : {
+            "verticalSpeed" : 16,
+            "horizontalSpeed" : 16,
+            "hopSequence" : 2,
+            "timeBetweenHops" : 0.0,
+            "windupTime" : 0.05,
+            "landTime" : 0.05,
+            "hopAwayFromWall" : true
+          }
+        }
+      ],
+
+      "approachActions" : [
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "action-hop",
+          "cooldown" : [0.5, 3.5],
+          "parameters" : {
+            "verticalSpeed" : 16,
+            "horizontalSpeed" : 32,
+            "hopSequence" : 4,
+            "timeBetweenHops" : 0.0,
+            "windupTime" : 0.05,
+            "landTime" : 0.05,
+            "hopAwayFromWall" : true,
+            "hopSound" : "hop"
+          }
+        }
+      ],
+
+      "wanderActions" : [
+      ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.8125, 1.25], [1.3125, 0.75],  [1.3125, -0.85], [0.8125, -1.35],  [-0.8125, -1.35], [-1.3125, -0.85],  [-1.3125, 0.75], [-0.8125, 1.25] ],
+      "damage" : 9,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 40,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.8125, 1.25], [1.3125, 0.75],  [1.3125, -0.85], [0.8125, -1.35],  [-0.8125, -1.35], [-1.3125, -0.85],  [-1.3125, 0.75], [-0.8125, 1.25] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 4,
+      "runSpeed" : 6,
+
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 56.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 20
+        },
+        "maxHealth" : {
+          "baseValue" : 90
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 2.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.9
+        },
+        "fireResistance" : {
+          "baseValue" : -0.6
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : -0.6
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.6
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : -0.6
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 0.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

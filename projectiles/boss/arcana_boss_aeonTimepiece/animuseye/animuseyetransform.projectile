@@ -1,0 +1,32 @@
+{
+  "projectileName" : "animuseyetransform",
+  "image" : "animuseyetransform.png",
+  "animationCycle" : 0.3,
+  "animationLoops" : false,
+  "frameNumber" : 6,
+  "timeToLive" : 0.3,
+  "flippable" : false,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "renderLayer" : "ForegroundEntity",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "animusghoulspawn",
+	  "inheritDamageFactor" : 0.0
+	}
+  ],
+  "periodicActions" : [
+  ],
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hidden",
+
+  "speed" : 0.0
+}

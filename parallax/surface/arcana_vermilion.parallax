@@ -1,0 +1,320 @@
+{
+  "verticalOrigin" : 0,
+  
+  "layers" : [
+    {
+      "kind" : "divider/dirt",
+      "offset" : [0, 400],
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "parallax" : 1.199
+    },
+    {
+      "kind" : "tile/dirt",
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "repeatY" : true,
+      "tileLimitTop" : 325,
+      "parallax" : 1.2
+    },
+
+    {
+      "kind" : "arcana_vermilion_grassbelow1",
+      "offset" : [0, 190],
+      "parallax" : [1.8, 2]
+    },
+    {
+      "kind" : "arcana_vermilion_grassbelow2",
+      "offset" : [0, 190],
+      "parallax" : [1.8001, 2]
+    },
+    {
+      "kind" : "arcana_vermilion_grassbelow3",
+      "offset" : [0, 190],
+      "parallax" : [1.8002, 2]
+    },
+    {
+      "kind" : "arcana_vermilion_grassbelow3",
+      "offset" : [0, 330],
+      "parallax" : [1.8, 2]
+    },
+    {
+      "kind" : "arcana_vermilion_grass1",
+      "offset" : [0, 50],
+      "parallax" : [1.8, 2]
+    },
+    {
+      "kind" : "arcana_vermilion_gardentrees1",
+      "offset" : [0, 50],
+      "parallax" : [1.81, 2]
+    },
+    {
+      "kind" : "arcana_vermilion_grass2",
+      "offset" : [0, 50],
+      "parallax" : [2, 2.2]
+    },
+    {
+      "kind" : "arcana_vermilion_grass3",
+      "offset" : [0, 50],
+      "parallax" : [3, 2.4]
+    },
+    {
+      "kind" : "arcana_vermilion_grass4",
+      "offset" : [0, 50],
+      "parallax" : [4, 2.8]
+    },
+    {
+      "kind" : "arcana_vermilion_grassrare",
+      "baseCount" : 4,
+      "offset" : [0, 50],
+      "parallax" : [4.5, 3]
+    },
+    {
+      "kind" : "arcana_vermilion_gardentrees2",
+      "offset" : [0, 30],
+      "parallax" : [4.51, 3.2]
+    },
+    {
+      "kind" : "arcana_vermilion_grass5",
+      "offset" : [0, 50],
+      "parallax" : [5, 3.4]
+    },
+    {
+      "kind" : "arcana_vermilion_grass6",
+      "offset" : [0, 50],
+      "parallax" : [6, 3.6]
+    },
+    {
+      "kind" : "arcana_vermilion_grass7",
+      "offset" : [0, 50],
+      "parallax" : [7, 3.8],
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "arcana_vermilion_grass8",
+      "offset" : [0, 50],
+      "parallax" : [8, 4],
+      "fadePercent" : 0.1
+    },
+    {
+      "kind" : "arcana_vermilion_grass9",
+      "baseCount" : 1,
+      "offset" : [0, 41],
+      "parallax" : [8, 4.2],
+      "fadePercent" : 0.1
+    },
+    {
+      "kind" : "arcana_vermilion_grass9",
+      "baseCount" : 1,
+      "offset" : [0, 28],
+      "parallax" : [8.4, 4.3],
+      "fadePercent" : 0.2
+    },
+    {
+      "kind" : "arcana_vermilion_grassgreen",
+      "baseCount" : 1,
+      "offset" : [0, 450],
+      "parallax" : [8.4, 4.3]
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 525],
+      "parallax" : [4, 5],
+      "minSpeed" : -10000,
+      "maxSpeed" : -10000,
+      "fadePercent" : 0.04
+    },
+	
+    {
+      "kind" : "arcana_vermilion_cityscape1",
+      "offset" : [0, 120],
+      "parallax" : 6,
+      "fadePercent" : 0.02
+    },
+    {
+      "kind" : "arcana_vermilion_cityscape7",
+      "offset" : [0, 120],
+      "parallax" : 6,
+      "fadePercent" : 0.02
+    },
+    {
+      "kind" : "cityships",
+      "offset" : [0, 40],
+      "parallax" : 6.999,
+      "minSpeed" : 3000,
+      "maxSpeed" : 9000,
+      "fadePercent" : 0.5
+    },
+    {
+      "kind" : "arcana_vermilion_cityscape2",
+      "offset" : [0, 200],
+      "parallax" : 7,
+      "fadePercent" : 0.03
+    },
+    {
+      "kind" : "cityships",
+      "offset" : [0, 100],
+      "parallax" : 6.999,
+      "minSpeed" : 5000,
+      "maxSpeed" : 13000,
+      "fadePercent" : 0.10
+    },
+    {
+      "kind" : "arcana_vermilion_cityscape3",
+      "offset" : [0, 200],
+      "parallax" : 8,
+      "fadePercent" : 0.03
+    },
+    {
+      "kind" : "arcana_vermilion_cityscape4",
+      "offset" : [0, 150],
+      "parallax" : 9,
+      "fadePercent" : 0.03
+    },
+    {
+      "kind" : "arcana_vermilion_cityscape5",
+      "offset" : [0, 150],
+      "parallax" : 10,
+      "fadePercent" : 0.04
+    },
+    {
+      "kind" : "arcana_vermilion_cityscape5",
+      "offset" : [0, 150],
+      "parallax" : 10,
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "arcana_vermilion_cityscape6",
+      "offset" : [0, 110],
+      "parallax" : 11,
+      "fadePercent" : 0.06
+    },
+	
+    {
+      "kind" : "midnightback",
+      "offset" : [50, 200],
+      "noRandomOffset" : true,
+      "parallax" : [12, 9.001],
+      "nohueshift" : true,
+      "fadePercent" : 0.05
+    },
+    {
+      "kind" : "midnightclouds",
+      "baseCount" : 2,
+      "offset" : [0, 440],
+      "parallax" : 15
+    },
+    {
+      "kind" : "midnightclouds",
+      "baseCount" : 2,
+      "offset" : [0, 440],
+      "parallax" : 15
+    },
+    {
+      "kind" : "midnightclouds2",
+      "baseCount" : 2,
+      "offset" : [0, 400],
+      "parallax" : 20
+    },
+    {
+      "kind" : "midnightclouds2",
+      "baseCount" : 2,
+      "offset" : [0, 400],
+      "parallax" : 20
+    },
+    {
+      "kind" : "midnightclouds3",
+      "baseCount" : 2,
+      "offset" : [0, 360],
+      "parallax" : 25
+    },
+    {
+      "kind" : "midnightclouds3",
+      "baseCount" : 2,
+      "offset" : [0, 360],
+      "parallax" : 25
+    },
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 120],
+      "parallax" : 9,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.15
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 140],
+      "parallax" : 14,
+      "minSpeed" : 2000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 150],
+      "parallax" : 6,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.04
+    },
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 60],
+      "parallax" : 9,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.15
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 80],
+      "parallax" : 14,
+      "minSpeed" : 2000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 100],
+      "parallax" : 6,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.04
+    },
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 1],
+      "parallax" : 9,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.15
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 20],
+      "parallax" : 14,
+      "minSpeed" : 2000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 40],
+      "parallax" : 6,
+      "minSpeed" : 5000,
+      "maxSpeed" : 10000,
+      "fadePercent" : 0.04
+    }
+  ]
+}

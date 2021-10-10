@@ -1,0 +1,82 @@
+{
+  "projectileName" : "animusgravityballburst",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "animusgravityballburst.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 41
+    },
+	{
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 81
+    },
+	{
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 121
+    },
+	{
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 161
+    },
+	{
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 201
+    },
+	{
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : -41
+    },
+	{
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : -81
+    },
+	{
+      "action" : "projectile",
+      "type" : "animusgravityball",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : -121
+    }
+  ],
+  "power" : 0,
+  "piercing" : false,
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-0, -0], [-0, 0], [0, 0], [0, -0]  ],
+  "flippable" : true,
+  "damageTeam" : { "type" : "enemy" }
+}

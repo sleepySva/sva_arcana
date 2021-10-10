@@ -1,0 +1,49 @@
+{
+  "objectName" : "arcana_exousia_modern_chair_3",
+  "colonyTags" : ["misc","exousia_modern"],
+  "rarity" : "Rare",
+  "category" : "furniture",
+  "price" : 260,
+  "description" : "A modern Exousian office couch.",
+  "shortdescription" : "Office Couch",
+  "race" : "generic",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>",
+      "sitCoverImage" : "/objects/arcana_exousia/arcana_exousia_modern/arcana_exousia_modern_chair_3/cover.png",
+      "imagePosition" : [-16, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-6, 22], // Right
+        [6, 22] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>",
+      "sitCoverImage" : "/objects/arcana_exousia/arcana_exousia_modern/arcana_exousia_modern_chair_3/cover.png",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-6, 22], // Right
+        [6, 22] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}

@@ -1,0 +1,20 @@
+{
+  "name" : "arcana_status_energyDrain",
+  "blockingStat" : "arcana_status_energyDrain_immunity",
+
+  "effectConfig" : {
+    "directives" : "fade=3bcc84=0.2",
+    "tickRate" : 20,
+    "energyRegenRate" : 0.1
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "arcana_status_energyDrain.lua"
+  ],
+
+  "animationConfig" : "arcana_status_energyDrain.animation",
+
+  "label" : "Arcane Drain",
+  "icon" : "/interface/statuses/arcana_status_energyDrain.png"
+}

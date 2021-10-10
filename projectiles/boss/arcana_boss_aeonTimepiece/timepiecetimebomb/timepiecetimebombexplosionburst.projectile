@@ -1,0 +1,59 @@
+{
+  "projectileName" : "timepiecetimebombexplosionburst",
+  "physics" : "laser",
+  "timeToLive" : 0.2,
+  "image" : "timepiecetimebombexplosion.png",
+  "animationCycle" : 0.8,
+  "frameNumber" : 12,
+  "windupFrames" : 3,
+  "winddownFrames" : 0,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/statuseffects/timefreeze_start.ogg" ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "animusgravityballburst",
+	  "inheritDamageFactor" : 1.0
+	},
+    {
+      "time" : 0.01,
+      "repeat" : false,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_aeonTimepiece/timepiecetimebomb/timepiecetimebombfade.png",
+        "position" : [0, 0],
+        "layer" : "front",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "speed" : 0,
+  "power" : 0,
+  
+  "renderLayer" : "Projectile-200",
+
+  "onlyHitTerrain" : true,
+  "persistentStatusEffects" : [ "timepieceexplosionburn" ],
+  "statusEffectArea" : [ [-6.0, 0], [-4.0, -4.0], [0, -6.0], [4.0, -4.0], [6.0, 0], [4.0, 4.0], [0, 6.0], [-4.0, 4.0] ],
+
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "emitters" : [],
+
+  "piercing" : true,
+  "bounces" : -1
+}

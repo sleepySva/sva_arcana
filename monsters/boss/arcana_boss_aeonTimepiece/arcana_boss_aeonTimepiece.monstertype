@@ -3,7 +3,7 @@
   "shortdescription" : "Aeon Timepiece",
 
   "categories" : [ "arcana_boss_aeonTimepiece" ],
-  "parts" : [ "body", "pilot" ],
+  "parts" : [ "body" ],
 
   "animation" : "arcana_boss_aeonTimepiece.animation",
   "reversed" : false,
@@ -12,37 +12,25 @@
 
   "baseParameters" : {
     "scripts" : [
-      "/monsters/boss/bossMonster.lua",
-      "/monsters/simpleRangedAttack.lua",
-      "/scripts/stateMachine.lua",
-      "/scripts/util.lua",
-      "/scripts/vec2.lua",
-
-      "/monsters/boss/arcana_boss_aeonTimepiece/idleState.lua",
-      "/monsters/boss/arcana_boss_aeonTimepiece/dieState.lua"
+      "/monsters/monster.lua"
     ],
+	
+	"renderLayer" : "Projectile-300",
+	
+	"behavior" : "aeontimepiece",
+	
+	"damageBar" : "None",
+	
+	"persistent" : true,
 
-    "skills" : ["arcana_boss_aeonTimepiece_MoveFireAttack", "arcana_boss_aeonTimepiece_MoveFireAttack_2", "arcana_boss_aeonTimepiece_MoveFireAttack_3"],
-    "skillCount" : 3,
-
-    "phases" : [
-      {
-        "skills" : ["arcana_boss_aeonTimepiece_MoveFireAttack_3", "arcana_boss_aeonTimepiece_MoveFireAttack", "arcana_boss_aeonTimepiece_MoveFireAttack_2", "arcana_boss_aeonTimepiece_MoveFireAttack", "arcana_boss_aeonTimepiece_MoveFireAttack_2"]
-      }
-    ],
-
-    "queryTargetDistance" : 50.0,
-    "switchTargetDistance" : 10.0,
-    "keepTargetInSight" : false,
-
-    "cruiseDistance" : 28,
+    "seeThroughLiquid" : true,
 
     "metaBoundBox" : [-8.0, -4.0, 8.0, 4.0],
     "scale" : 1.0,
 
     "movementSettings" : {
       "gravityEnabled" : false,
-      "collisionPoly" : [ [-8.0, -4.0], [8.0, -4.0], [8.0, 4.0], [-8.0, 4.0] ],
+      "collisionPoly" : [ [-8.0, -8.0], [8.0, -8.0], [8.0, 8.0], [-8.0, 8.0] ],
 
       "mass" : 4.0,
       "flySpeed" : 6,
@@ -60,6 +48,7 @@
 
       "teamType" : "enemy",
       "damageSourceKind" : "hammer",
+	  "knockback" : 100,
       "statusEffects" : [ ]
     },
 
@@ -79,21 +68,24 @@
 
       "stats" : {
         "knockbackStunTime" : {
-          "baseValue" : 0.2
+          "baseValue" : 0.0
         },
         "grit" : {
           "baseValue" : 1.0
         },
         "maxHealth" : {
-          "baseValue" : 3000
+          "baseValue" : 20000
         },
         "protection" : {
-          "baseValue" : 7.2
+          "baseValue" : 0.0
         },
         "healthRegen" : {
           "baseValue" : 0.0
         },
         "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"lavaImmunity" : {
           "baseValue" : 1.0
         },
         "iceStatusImmunity" : {
@@ -105,6 +97,9 @@
         "poisonStatusImmunity" : {
           "baseValue" : 1.0
         },
+		"timepieceexplosionburnStatusImmunity" : {
+          "baseValue" : 1.0
+        },
         "specialStatusImmunity" : {
           "baseValue" : 1.0
         },
@@ -113,6 +108,30 @@
         },
         "stunImmunity" : {
           "baseValue" : 1.0
+        },
+		"abysseffectImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ionizedImmunity" : {
+          "baseValue" : 1.0
+        },
+		"megadamageResistance" : {
+		  "baseValue" : 1.0
+		},
+        "shadowImmunity" : {
+         "baseValue" : 1
+        },
+        "radiationburnImmunity" : { 
+          "baseValue" : 1
+        },
+        "acidicbacteriaImmunity" : { 
+          "baseValue" : 1
+        },
+		"HolyStatusImmunity" : { 
+          "baseValue" : 1
+        },
+		"aeontimefreezeplayerStatusImmunity" : { 
+          "baseValue" : 1
         },
         "powerMultiplier" : {
           "baseValue" : 1.2
@@ -128,62 +147,12 @@
         "health" : {
           "maxStat" : "maxHealth",
           "deltaStat" : "healthRegen",
-          "defaultPercentage" : 100
+          "defaultPercentage" : 0
         }
       }
     },
 
     "mouthOffset" : [0, 0],
-    "feetOffset" : [0, 0],
-
-    "beamSourceOffset" : [0, -5.5],
-    "targetYOffsetRange" : [18.0, 22.0],
-
-    "attackTime" : 5.0,
-    "fireInterval" : 0.6,
-    "cooldownTime" : 0.25,
-
-    "projectiles" : {
-      "deathexplosion" : {
-        "type" : "regularexplosionknockback",
-        "config" : {
-          "speed" : 0.1,
-          "power" : 2,
-
-          "actionOnReap" : [
-            {
-              "action" : "config",
-              "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
-            }
-          ]
-        },
-
-        "fireTime" : 8.0,
-        "fireInterval" : 0.2,
-        "cooldown" : 0.1
-      },
-
-      "blockbreaker" : {
-        "type" : "invisibleprojectile",
-        "config" : {
-          "speed" : 0.1,
-          "power" : 0,
-
-          "actionOnReap" : [
-            {
-              "action" : "explosion",
-              "foregroundRadius" : 6,
-              "backgroundRadius" : 0,
-              "explosiveDamageAmount" : 100,
-              "delaySteps" : 1
-            }
-          ]
-        },
-
-        "fireTime" : 0.2,
-        "fireInterval" : 0.1,
-        "cooldown" : 0.1
-      }
-    }
+    "feetOffset" : [0, 0]
   }
 }

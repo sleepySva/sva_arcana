@@ -1,0 +1,44 @@
+{
+  "projectileName" : "timepieceminutehand",
+  "image" : "timepieceminutehand.png",
+  "animationCycle" : 1.0,
+  "lightColor" : [0, 0, 0],
+  "frameNumber" : 1,
+  "timeToLive" : 12,
+  "flippable" : false,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 50,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "timepieceminutehanddespawn",
+	  "inheritDamageFactor" : 0.0
+	}
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+	  "action" : "projectile",
+	  "type" : "arcana_boss_aeonTimepiece_projectile_1_positioner_2",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  "damagePoly" : [ [0, 14], [0, 0], [100, 14], [0, -14], [100, -14], [100, 0] ],
+  "damageKind" : "hammer",
+
+  "speed" : 0.2,
+
+  "scripts" : [ "/scripts/projectiles/rotatingprojectile.lua" ],
+  "scriptDelta" : 3,
+
+  "rotationRate" : 6.26,
+  "trackingLimit" : 200.0,
+  "persistentAudio" : "/sfx/statuseffects/timefreeze_loop.ogg"
+}

@@ -1,0 +1,33 @@
+{
+  "projectileName" : "animuseyepositioner",
+  "physics" : "laser",
+  
+  "timeToLive" : 0.033,
+  "bounces" : 0,
+  "speed" : 300,
+  "piercing" : true,
+  
+  "image" : "animuseyepositioner.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+	  "action" : "projectile",
+	  "type" : "animuseye2",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "plasma"
+ 
+}

@@ -1,0 +1,33 @@
+{
+  "projectileName" : "arcana_boss_aeonTimepiece_projectile_1_positioner_2",
+  "physics" : "laser",
+  
+  "timeToLive" : 0.033,
+  "bounces" : 0,
+  "speed" : 300,
+  "piercing" : true,
+  
+  "image" : "arcana_boss_aeonTimepiece_projectile_1_positioner_2.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+	  "action" : "projectile",
+	  "type" : "arcana_boss_aeonTimepiece_projectile_1_slow",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "plasma"
+ 
+}

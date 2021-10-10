@@ -246,8 +246,8 @@
     "op": "add",
     "path": "/starTypeColors/arcana_star_polar",
     "value": [
-      70,
-      65,
+      115,
+      185,
       199
     ]
   },
@@ -255,6 +255,21 @@
     "op": "add",
     "path": "/starTypeNames/arcana_star_polar",
     "value": "Tripolar Star"
+  },
+  
+  {
+    "op": "add",
+    "path": "/starTypeColors/arcana_star_mirage",
+    "value": [
+      255,
+      100,
+      174
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/starTypeNames/arcana_star_mirage",
+    "value": "Mirage Star"
   },
 
   // Arcane Forest
@@ -1157,6 +1172,55 @@
       149,
       175
     ]
+  },
+  
+  // Vermilion
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_vermilion",
+    "value": [
+      "The ^#ce3d2a;Vermilion^reset; planet is full of cities occupied of the Exousian Empire, and contains deposits of Rufescite.",
+      "The ^#ce3d2a;Vermilion^reset; planet is full of cities occupied of the Exousian Empire, and contains deposits of Rufescite.",
+      "The ^#ce3d2a;Vermilion^reset; planet is full of cities occupied of the Exousian Empire, and contains deposits of Rufescite."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_vermilion",
+    "value": "Vermilion"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_vermilion",
+    "value": [
+      206,
+      61,
+      42
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_enartzFragment",
+    "value": {
+      "displayName": "Enartz",
+      "icon": "/items/generic/arcana_ores/arcana_ore_enartzFragment.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_exoslateFragment",
+    "value": {
+      "displayName": "Exoslate",
+      "icon": "/items/generic/arcana_ores/arcana_ore_exoslateFragment.png"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_rufescite",
+    "value": {
+      "displayName": "Rufescite",
+      "icon": "/items/generic/arcana_ores/arcana_misc_rufescite.png"
+    }
   }
   ]
 ]

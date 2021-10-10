@@ -1,0 +1,224 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 12
+          },
+          "fly" : {
+            "frames" : 12,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/npc/monsters/erchiusghost_loop.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          },
+          "invulnerable" : {
+            "frames" : 12,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/npc/monsters/spookit_invulnerable_combined.ogg",
+              "persistentSoundStopTime" : 0.15
+            }
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 1
+          }
+        }
+      },
+      "releaseParticles" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "releaseParticles" ]
+            }
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+              "particleEmittersOn" : [ "releaseParticles" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+		  "fullbright" : true,
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, 0.125]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "fly" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "invulnerable" : {
+              "properties" : {
+                "image" : "<partImage>:invulnerable.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [0, 0, 0],
+      "pointLight" : true
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : { "interpolated" : true }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0,
+      "directives" : "fade=ffffff;0.5"
+    }
+  },
+
+  "particleEmitters" : {
+    "erchius" : {
+      "active" : true,
+      "emissionRate" : 200,
+      "offsetRegion" : [-6.5, -8.0, 6.5, 5.0],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "size" : 1.5,
+            "color" : [255, 7, 0, 255],
+            "position" : [0, 0],
+            "initialVelocity" : [0, 6.0],
+            "light" : [0, 0, 0],
+            "timeToLive" : 0.8,
+            "destructionAction" : "fade",
+            "destructionTime" : 0.2,
+            "layer" : "front",
+            "fullbright" : true,
+            "variance" : {
+              "initialVelocity" : [0, 2.0],
+              "size" : 1.0
+            }
+          }
+        }
+      ]
+    },
+    "spookparticles" : {
+      "active" : false,
+      "emissionRate" : 0,
+      "offsetRegion" : [ -0.625, -1.25, 0.625, 1.25 ],
+      "particles" : [
+        { "particle" : "lightgreyphaseparticle" },
+        { "particle" : "darkgreyphaseparticle" }
+      ]
+    },
+    "behindGroundEmitter" : {
+	  "active" : false,
+      "emissionRate" : 0,
+      "offsetRegion" : [ -0.625, -1.25, 0.625, 1.25 ],
+      "particles" : [
+        { "particle" : "lightgreyphaseparticle" },
+        { "particle" : "darkgreyphaseparticle" }
+      ]
+    },
+    "groundBurstEmitter" : {
+      "offsetRegion" : [ -0.625, -1.25, 0.625, 1.25 ],
+      "particles" : [
+        { "particle" : "darkgreyphaseparticle" }
+      ]
+    },
+    "deathPoof" : {
+      "particles" : [
+        { "particle" : "monstersplosion" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathfizz1left" },
+        { "particle" : "deathfizz1right" },
+        { "particle" : "deathfizz2left" },
+        { "particle" : "deathfizz2right" },
+        { "particle" : "deathfizz3left" },
+        { "particle" : "deathfizz3right" },
+        { "particle" : "deathfizz4left" },
+        { "particle" : "deathfizz4right" }
+      ]
+    },
+    "captureParticles" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "releaseParticles" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "teleportOut" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "teleportIn" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "levelUp" : {
+      "particles" : [
+        { "particle" : "monsterlevelup" }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ]
+  }
+}

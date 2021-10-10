@@ -1,0 +1,21 @@
+{
+  "modId" : 16829,
+  "modName" : "arcana_mod_enartzFragment",
+  "itemDrop" : "arcana_ore_enartzFragment",
+  "description" : "An enartz fragment.",
+  "health" : 24,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_enartzFragment.png",
+    "variants" : 4,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [100, 100, 80]
+  }
+}

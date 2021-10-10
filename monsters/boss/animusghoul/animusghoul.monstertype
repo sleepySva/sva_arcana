@@ -1,0 +1,220 @@
+{
+  "type" : "animusghoul",
+  "shortdescription" : "Animus Ghoul",
+  "description" : "A vision of the Dark Future that awaits every world. It can only exist for a short time before dissipating.",
+
+  "categories" : [ "animusghoul" ],
+  "parts" : [ "body" ],
+
+  "animation" : "animusghoul.animation",
+
+  "dropPools" : [],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "renderLayer" : "foregroundEntity",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 200,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 200,
+      "targetOutOfSightTime" : 1.0,
+
+      "hurtTime" : 0.0,
+      "hurtWaitForGround" : false,
+
+      "damageTakenActions" : [
+        
+      ],
+
+      // Special hook for behavior during the invulnerable action
+      // If this behavior succeeds, invulnerability ends
+      "invulnerableActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "usePathfinding" : false,
+            "flyState" : ""
+          }
+        }
+      ],
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+      
+      "hostileActions" : [
+	  ],
+
+      "periodicActions" : [ ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "usePathfinding" : false
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "usePathfinding" : false
+          }
+        }
+      ],
+
+      "wanderActions" : [],
+
+      "concurrentActions" : []
+    },
+
+    "touchDamage" : {
+      "poly" : [ [1, 3], [3, 1], [3, -1], [1, -3], [-1, -3], [-3, -1], [-3, 1], [-1, 3] ],
+      "damage" : 50,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hidden",
+      "knockback" : 0,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionEnabled" : false,
+      "collisionPoly" : [ [0, 0] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 0.5,
+      "airForce" : 10,
+      "flySpeed" : 10
+    },
+
+    "bodyMaterialKind" : "metal",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "metal"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 999999
+        },
+        "protection" : {
+          "baseValue" : 999999
+        },
+        "healthRegen" : {
+          "baseValue" : 999999
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+		"fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"fireResistance" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"iceResistance" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"electricResistance" : {
+          "baseValue" : 1.0
+        },
+		"physicalResistance" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"poisonResistance" : {
+          "baseValue" : 1.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+		"arcana_resistance_solar" : {
+          "baseValue" : 1.0
+        },
+		"timepieceexplosionburnStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"aeontimefreezeStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"aeontimefreezeplayerStatusImmunity" : { 
+          "baseValue" : 1
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "spookit" }
+  }
+}

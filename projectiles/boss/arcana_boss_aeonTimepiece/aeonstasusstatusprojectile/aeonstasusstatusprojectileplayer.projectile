@@ -1,0 +1,22 @@
+{
+  "projectileName" : "aeonstasusstatusprojectileplayer",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 1.0,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "aeonstasusstatusprojectile.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+  ],
+  "power" : 0,
+  "piercing" : true,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef",
+  "damagePoly" : [ [-100, -100], [-100, 100], [100, 100], [100, -100]  ],
+  "flippable" : true,
+  "statusEffects" : [
+    {"effect" : "aeontimefreezeplayer", "duration" : 4.4}
+  ]
+}

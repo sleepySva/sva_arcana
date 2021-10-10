@@ -1,6 +1,26 @@
 
 {
 
+  "arcana_dungeonloots_exousianTech" : [
+    [0, {
+	  "fill" : [
+	    {"weight" : 1.0, "pool" : "basicTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_misc_behestDongle", 1]},
+		{"weight" : 1.0, "item" : ["arcana_misc_preceptDongle", 1]},
+        {"weight" : 1.0, "item" : ["arcana_misc_nanoweave", 1]},
+		{"weight" : 1.0, "item" : ["wire", 2]},
+		{"weight" : 1.0, "item" : ["wire", 4]}
+      ],
+      "poolRounds" : [
+        [1.0, 1],
+		[1.0, 2],
+		[1.0, 3]
+      ]
+    }]
+  ],
+
   "arcana_dungeonloots_corridor" : [
     [0, {
       "pool" : [
@@ -14,7 +34,7 @@
 		{"weight" : 1.0, "item" : ["arcana_terraformer_desolate", 1]},
 		{"weight" : 1.0, "item" : ["arcana_terraformer_evoaquatic", 1]},
 		{"weight" : 1.0, "item" : ["arcana_terraformer_ferocious", 1]},
-		{"weight" : 1.0, "item" : ["arcana_terraformer_goldenforest", 1]},
+		{"weight" : 1.0, "item" : ["arcana_terraformer_goldenForest", 1]},
 		{"weight" : 1.0, "item" : ["arcana_terraformer_illuminated", 1]},
 		{"weight" : 1.0, "item" : ["arcana_terraformer_sanguine", 1]},
 		{"weight" : 1.0, "item" : ["arcana_terraformer_stahlernBadlands", 1]},

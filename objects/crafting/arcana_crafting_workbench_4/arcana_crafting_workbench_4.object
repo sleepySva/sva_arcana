@@ -6,14 +6,14 @@
   "shortdescription" : "^#dfcf4e;Aurelian Workstation^reset;",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1000,
+  "price" : 1600,
   
   "lightColor" : [100, 100, 40],
-
+  
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
-    "config" : "/interface/windowconfig/arcana_crafting_workbench_4.config",
-	"filter" : ["arcana_crafting_workbench_1", "arcana_crafting_workbench_2", "arcana_crafting_workbench_3", "arcana_crafting_workbench_4"]
+    "config" : "/interface/arcana/arcana_crafting_workbench/arcana_crafting_workbench_4.config",
+	"filter" : ["arcana_crafting_workbench_1", "arcana_crafting_workbench_2", "arcana_crafting_workbench_3", "arcana_crafting_workbench_4", "arcana_exousia_crafting_1"]
   },
 
   "inventoryIcon" : "icon.png",

@@ -1,0 +1,154 @@
+{
+  "type" : "timepiecespearhoming",
+
+  "categories" : [ "timepiecespearhoming" ],
+  "parts" : [ "body" ],
+
+  "animation" : "timepiecespearhoming.animation",
+
+  "dropPools" : [ ],
+  
+  "damageBar" : "None",
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/boss/timepiecespearhoming/timepiecespearhoming.lua"
+    ],
+	
+	"renderLayer" : "ForegroundEntity",
+
+    "attack" : {
+      "projectileType" : "timepiecespearslow",
+      "projectileParameters" : {
+	    "power" : 35,
+        "actionOnReap" : [
+        ]
+      },
+      "fireCount" : 1,
+      "fireInterval" : 0.0,
+      "trackTarget" : true,
+      "burstCount" : 1,
+      "fixedDistance" : false,
+      "fuzzAngle" : 0,
+      "fuzzSpeed" : 0,
+      "fuzzAimPosition" : 0,
+      "cooldown" : 0
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.0, 0.0] ],
+      "damage" : 0,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hidden",
+      "knockback" : 0,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.0, 0.0] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 2,
+      "airForce" : 10,
+      "flySpeed" : 12,
+      "physicsEffectCategories" : ["rangedminion", "monster"]
+    },
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "metal"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 999999999
+        },
+        "maxHealth" : {
+          "baseValue" : 10000
+        },
+        "protection" : {
+          "baseValue" : 999999
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 1.0
+        },
+        "fireResistance" : {
+          "baseValue" : 1.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceResistance" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricResistance" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "guardianminion" }
+  }
+}

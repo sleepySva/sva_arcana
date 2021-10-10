@@ -1,0 +1,21 @@
+{
+  "materialId" : 16891,
+  "materialName" : "volcanicCave_tile1",
+  "particleColor" : [245, 249, 250, 255],
+  "itemDrop" : "volcanicCave_tile1",
+  "description" : "A reddish volcanic rock.",
+  "shortdescription" : "Volcanic Rock",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "volcanicCave_tile1.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2889
+  }
+}

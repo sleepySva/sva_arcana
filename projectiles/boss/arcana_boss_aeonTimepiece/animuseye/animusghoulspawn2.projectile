@@ -1,0 +1,40 @@
+{
+  "projectileName" : "animusghoulspawn2",
+  "image" : "animusghoulspawn2.png",
+  "animationCycle" : 0.7,
+  "animationLoops" : false,
+  "frameNumber" : 9,
+  "timeToLive" : 1.0,
+  "flippable" : true,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "renderLayer" : "ForegroundEntity",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+    {
+	  "action" : "spawnmonster",
+	  "type" : "animusghoulswarming",
+	  "level" : 6,
+	  "offset": [ 0, 0 ],
+	  "arguments" : { }
+	}
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/npc/monsters/monster_grow.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hidden",
+
+  "speed" : 0.0
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16892,
+  "materialName" : "exousia_tile30",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile30",
+  "description" : "A large metal pipe.",
+  "shortdescription" : "Enartz Pipe V",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 9,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile30.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2890
+  }
+}

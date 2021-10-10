@@ -1,0 +1,41 @@
+{
+  "projectileName" : "timepiecespearslow",
+  "physics" : "laser",
+  
+  "timeToLive" : 7,
+  "bounces" : 0,
+  "speed" : 1,
+  "acceleration" : 15,
+  "piercing" : true,
+  "knockback" : 50,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  
+  "renderLayer" : "ForegroundEntity",
+  
+  "image" : "timepiecespear.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
+    }
+  ],
+  
+  "damageKind" : "hammer"
+ 
+}

@@ -1,0 +1,82 @@
+{
+  "projectileName" : "timepiecespearburst2",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "timepiecespearburst.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 61
+    },
+	{
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 101
+    },
+	{
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 141
+    },
+	{
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 181
+    },
+	{
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 221
+    },
+	{
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 261
+    },
+	{
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 301
+    },
+	{
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 341
+    },
+	{
+      "action" : "projectile",
+      "type" : "timepiecespearpositioner2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 381
+    }
+  ],
+  "power" : 0,
+  "piercing" : false,
+  "damageKind" : "hidden",
+  "damagePoly" : [ [-0, -0], [-0, 0], [0, 0], [0, -0]  ],
+  "flippable" : true,
+  "damageTeam" : { "type" : "enemy" }
+}

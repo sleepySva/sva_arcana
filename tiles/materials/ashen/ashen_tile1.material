@@ -1,0 +1,23 @@
+{
+  "materialId" : 16890,
+  "materialName" : "ashen_tile1",
+  "particleColor" : [245, 249, 250, 255],
+  "itemDrop" : "ashen_tile1",
+  "description" : "An ash-colored stony material. Its surface is unexpectedly smooth.",
+  "shortdescription" : "Ashmarble",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+  "tillableMod" : 32,
+  "soil" : true,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ashen_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2890
+  }
+}

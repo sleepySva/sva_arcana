@@ -1,0 +1,33 @@
+{
+  "projectileName" : "timepiecehourglassexplodingunfreeze",
+  "image" : "timepiecehourglassexploding.png",
+  "animationCycle" : 0.4,
+  "animationLoops" : false,
+  "frameNumber" : 12,
+  "timeToLive" : 0.5,
+  "flippable" : false,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "renderLayer" : "ForegroundEntity",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hidden",
+
+  "speed" : 0.0
+}

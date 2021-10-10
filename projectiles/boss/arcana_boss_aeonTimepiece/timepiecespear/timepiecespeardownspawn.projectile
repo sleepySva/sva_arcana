@@ -1,0 +1,37 @@
+{
+  "projectileName" : "timepiecespeardownspawn",
+  "image" : "timepiecespeardownspawn.png",
+  "animationCycle" : 0.3,
+  "animationLoops" : false,
+  "frameNumber" : 8,
+  "timeToLive" : 0.3,
+  "flippable" : false,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+    {
+	  "action" : "spawnmonster",
+	  "type" : "timepiecespeardown",
+	  "level" : 1
+	}
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/melee/giantsword_charge_full.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hidden",
+
+  "speed" : 0.0
+}

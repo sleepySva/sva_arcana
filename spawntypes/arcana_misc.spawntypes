@@ -124,6 +124,41 @@
     "monsterParameters" : {
       "aggressive" : true
     }
+  },
+  
+  {
+    "name" : "arcana_firebobot",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [1.0, "firebobot"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  {
+    "name" : "arcana_firelilodon",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [1.0, "firelilodon"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
   }
 
 ]

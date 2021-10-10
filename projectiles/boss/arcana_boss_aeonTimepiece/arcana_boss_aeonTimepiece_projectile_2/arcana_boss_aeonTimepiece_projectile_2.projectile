@@ -4,7 +4,7 @@
   
   "timeToLive" : 4,
   "bounces" : 0,
-  "speed" : 12,
+  "speed" : 15,
   "piercing" : true,
   
   "image" : "arcana_boss_aeonTimepiece_projectile_2.png",
@@ -24,8 +24,8 @@
     },
 	{
 		"action" : "spawnmonster",
-		"type" : "arcana_monster_timekeeper",
-		"level" : 4,
+		"type" : "arcana_monster_timekeepersummoned",
+		"level" : 6,
 		"offset": [ 0, 0 ],
 		"arguments" : { }
 	}
@@ -50,6 +50,6 @@
     }
   ],
   
-  "damageKind" : "plasma"
+  "damageKind" : "hidden"
  
 }

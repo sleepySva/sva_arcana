@@ -9,13 +9,13 @@
   "health" : 14,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/girdertemplate.config",
   "renderParameters" : {
     "texture" : "exousia_tile5.png",
     "variants" : 1,
     "lightTransparent" : false,
-    "occludesBelow" : true,
+    "occludesBelow" : false,
     "multiColored" : false,
-    "zLevel" : 1806
+    "zLevel" : 806
   }
 }

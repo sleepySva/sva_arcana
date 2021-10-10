@@ -1,0 +1,60 @@
+{
+  "projectileName" : "arcana_boss_aeonTimepiece_projectile_1_burst",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0.1,
+  "speed" : 1,
+  "damageKindImage" : "icon.png",
+  "image" : "arcana_boss_aeonTimepiece_projectile_1_burst.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/gun/plasma_pistol1.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_aeonTimepiece_projectile_3",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "arcana_boss_aeonTimepiece_projectile_3",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : -25
+    },
+	{
+      "action" : "projectile",
+      "type" : "arcana_boss_aeonTimepiece_projectile_3",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 25
+    },
+	{
+      "action" : "projectile",
+      "type" : "arcana_boss_aeonTimepiece_projectile_3",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 50
+    },
+	{
+      "action" : "projectile",
+      "type" : "arcana_boss_aeonTimepiece_projectile_3",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : -50
+    }
+  ],
+  "power" : 0,
+  "piercing" : true,
+  "damageKind" : "default",
+  "damageType" : "ignoresdef",
+  "damagePoly" : [ [0, 0] ],
+  "flippable" : true
+}

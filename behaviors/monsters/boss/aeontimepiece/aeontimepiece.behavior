@@ -1,0 +1,2165 @@
+{
+  "name": "aeontimepiece",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/actions/monster.lua",
+    "/scripts/actions/animator.lua",
+	"/scripts/actions/projectiles.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+	  {
+        "title": "setFlag",
+        "type": "action",
+        "name": "setFlag",
+        "parameters": {
+          "name": {"value": "antioneshot"}
+        }
+      },
+      {
+        "title": "setDying",
+        "type": "action",
+        "name": "setDying",
+        "parameters": {
+          "shouldDie": {"value": false}
+        }
+      },
+	  {
+        "title": "setAnimationState",
+        "type": "action",
+        "name": "setAnimationState",
+        "parameters": {
+          "state": {"value": "idle"},
+          "type": {"value": "body"}
+        }
+      },
+      {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "velocity": {"value": [0, 0]}
+        }
+      },
+	  {
+        "title": "setDamageBar",
+        "type": "action",
+        "name": "setDamageBar",
+        "parameters": {
+          "type": {"value": "None"}
+        }
+      },
+	  {
+        "title": "removeEphemeralEffect",
+        "type": "action",
+        "name": "removeEphemeralEffect",
+        "parameters": {
+          "name": {"value": "timefreeze"}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "monster-targeting",
+            "type": "module",
+            "name": "monster-targeting",
+            "parameters": {
+              "targetQueryRange": {"value": 3000},
+              "keepTargetInRange": {"value": 3000},
+              "targetEntityTypes": {"value": ["player"]},
+              "keepTargetInSight": {"value": true},
+              "queryTargets": {"value": true},
+              "targetOnDamage": {"value": true},
+              "targetOutOfSightTime": {"value": 10}
+            }
+          },
+          {
+            "title": "Spiderboss",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "resourcePercentage",
+                    "type": "action",
+                    "name": "resourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 0},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "Reset",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+					  {
+                        "title": "setResourcePercentage",
+                        "type": "action",
+                        "name": "setResourcePercentage",
+                        "parameters": {
+                          "percentage": {"value": 1},
+                          "resource": {"value": "health"}
+                        }
+                      },
+                      {
+                        "title": "setDamageBar",
+                        "type": "action",
+                        "name": "setDamageBar",
+                        "parameters": {
+                          "type": {"value": "Special"}
+                        }
+                      },
+                      {
+                        "title": "setAggressive",
+                        "type": "action",
+                        "name": "setAggressive",
+                        "parameters": {
+                          "aggressive": {"value": true}
+                        }
+                      },
+					  {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "fly"},
+                          "type": {"value": "body"}
+                        }
+                      },
+					  {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.5}
+                        }
+                      },
+					  {
+                        "title": "timepiece-exitbarrier",
+                        "type": "module",
+                        "name": "timepiece-exitbarrier",
+                        "parameters": {}
+                      },
+					  {
+                        "title": "timepiece-gravitysphere",
+                        "type": "module",
+                        "name": "timepiece-gravitysphere",
+                        "parameters": {}
+                      },
+					  {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 2.0}
+                        }
+                      },
+                      {
+                        "title": "repeater",
+                        "type": "decorator",
+                        "name": "repeater",
+                        "parameters": {
+                          "maxLoops": {"value": -1},
+                          "untilSuccess": {"value": false}
+                        },
+                        "child": {
+                          "title": "sequence",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+							{
+                              "title": "timepiece-clockhands",
+                              "type": "module",
+                              "name": "timepiece-clockhands",
+                              "parameters": {}
+                            },
+							{
+                              "title": "succeeder",
+                              "type": "decorator",
+                              "name": "succeeder",
+                              "parameters": {},
+                              "child": {
+                                "title": "sequence",
+                                "type": "composite",
+                                "name": "sequence",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "inverter",
+                                    "type": "decorator",
+                                    "name": "inverter",
+                                    "parameters": {},
+                                    "child": {
+                                      "title": "resourcePercentage",
+                                      "type": "action",
+                                      "name": "resourcePercentage",
+                                      "parameters": {
+                                        "percentage": {"value": 0.75},
+                                        "resource": {"value": "health"}
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "title": "randomize",
+                                    "type": "composite",
+                                    "name": "randomize",
+                                    "parameters": {},
+                                    "children": [
+                                      {
+                                        "title": "timepiece-keeperburst",
+                                        "type": "module",
+                                        "name": "timepiece-keeperburst",
+                                        "parameters": {}
+                                      },
+									  {
+                                        "title": "timepiece-keeperburst",
+                                        "type": "module",
+                                        "name": "timepiece-keeperburst",
+                                        "parameters": {}
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+							{
+                              "title": "timepiece-timebombs",
+                              "type": "module",
+                              "name": "timepiece-timebombs",
+                              "parameters": {}
+                            },
+							{
+                              "title": "succeeder",
+                              "type": "decorator",
+                              "name": "succeeder",
+                              "parameters": {},
+                              "child": {
+                                "title": "sequence",
+                                "type": "composite",
+                                "name": "sequence",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "inverter",
+                                    "type": "decorator",
+                                    "name": "inverter",
+                                    "parameters": {},
+                                    "child": {
+                                      "title": "resourcePercentage",
+                                      "type": "action",
+                                      "name": "resourcePercentage",
+                                      "parameters": {
+                                        "percentage": {"value": 0.75},
+                                        "resource": {"value": "health"}
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "title": "randomize",
+                                    "type": "composite",
+                                    "name": "randomize",
+                                    "parameters": {},
+                                    "children": [
+                                      {
+                                        "title": "timepiece-keeperburst",
+                                        "type": "module",
+                                        "name": "timepiece-keeperburst",
+                                        "parameters": {}
+                                      },
+									  {
+                                        "title": "timepiece-keeperburst",
+                                        "type": "module",
+                                        "name": "timepiece-keeperburst",
+                                        "parameters": {}
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+							{
+                              "title": "timepiece-wallspears",
+                              "type": "module",
+                              "name": "timepiece-wallspears",
+                              "parameters": {}
+                            },
+							{
+                              "title": "timepiece-wallspearsup",
+                              "type": "module",
+                              "name": "timepiece-wallspearsup",
+                              "parameters": {}
+                            },
+							{
+                              "title": "timepiece-wallspearsright",
+                              "type": "module",
+                              "name": "timepiece-wallspearsright",
+                              "parameters": {}
+                            },
+							{
+                              "title": "timepiece-wallspearsdown",
+                              "type": "module",
+                              "name": "timepiece-wallspearsdown",
+                              "parameters": {}
+                            },
+							{
+                              "title": "timepiece-wallspearsactivate",
+                              "type": "module",
+                              "name": "timepiece-wallspearsactivate",
+                              "parameters": {}
+                            },
+							{
+                              "title": "succeeder",
+                              "type": "decorator",
+                              "name": "succeeder",
+                              "parameters": {},
+                              "child": {
+                                "title": "sequence",
+                                "type": "composite",
+                                "name": "sequence",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "inverter",
+                                    "type": "decorator",
+                                    "name": "inverter",
+                                    "parameters": {},
+                                    "child": {
+                                      "title": "resourcePercentage",
+                                      "type": "action",
+                                      "name": "resourcePercentage",
+                                      "parameters": {
+                                        "percentage": {"value": 0.75},
+                                        "resource": {"value": "health"}
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "title": "randomize",
+                                    "type": "composite",
+                                    "name": "randomize",
+                                    "parameters": {},
+                                    "children": [
+                                      {
+                                        "title": "timepiece-keeperburst",
+                                        "type": "module",
+                                        "name": "timepiece-keeperburst",
+                                        "parameters": {}
+                                      },
+									  {
+                                        "title": "timepiece-keeperburst",
+                                        "type": "module",
+                                        "name": "timepiece-keeperburst",
+                                        "parameters": {}
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "resourcePercentage",
+                      "type": "action",
+                      "name": "resourcePercentage",
+                      "parameters": {
+                        "percentage": {"value": 0},
+                        "resource": {"value": "health"}
+                      }
+                    }
+                  },
+				  {
+                    "title": "setVelocity",
+                    "type": "action",
+                    "name": "setVelocity",
+                    "parameters": {
+                      "velocity": {"value": [0, 0]}
+                    }
+                  },
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": -1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "controlParameters",
+                        "type": "action",
+                        "name": "controlParameters",
+                        "parameters": {
+                          "parameters": {"value": {"gravityEnabled": false}}
+                        }
+                      }
+                    ]
+                  },
+				  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "idle"},
+                      "type": {"value": "body"}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.1}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearX"
+                    }
+                  },
+				  {
+                    "title": "random",
+                    "type": "action",
+                    "name": "random",
+                    "parameters": {
+                      "max": {"value": 10},
+                      "min": {"value": -10}
+                    },
+                    "output": {
+                      "number": "spearY"
+                    }
+                  },
+				  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": ["spearX", "spearY"]},
+                      "position": {"key": "self"}
+                    },
+                    "output": {
+                      "position": "spearPosition"
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [1, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "spearPosition"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "fireplasmaexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+	              {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "timepiecebarrier"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "timepiecestatusrenewer"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "timepiecestatusrenewer"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "timepiecestatusrenewer2"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "timepiecestatusrenewer2"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "animusghoulswarming"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "animusghoulswarming"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "animusghoul"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "animusghoul"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [0, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "self"},
+                      "projectileConfig": {"value": {"power" : 1.0}},
+                      "projectileType": {"value": "timepiecetriggerexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "arcana_monster_timekeepersummoned"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "arcana_monster_timekeepersummoned"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "title": "setDying",
+                    "type": "action",
+                    "name": "setDying",
+                    "parameters": {
+                      "shouldDie": {"value": true}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "setAggressive",
+                    "type": "action",
+                    "name": "setAggressive",
+                    "parameters": {
+                      "aggressive": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "removeEphemeralEffect",
+                    "type": "action",
+                    "name": "removeEphemeralEffect",
+                    "parameters": {
+                      "name": {"value": "timefreeze"}
+                    }
+                  },
+	              {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "timepiecebarrier"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "timepiecestatusrenewer"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "timepiecestatusrenewer"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "timepiecestatusrenewer2"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "timepiecestatusrenewer2"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "animusghoul"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "animusghoul"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "animusghoulswarming"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "animusghoulswarming"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnMonster",
+                    "type": "action",
+                    "name": "spawnMonster",
+                    "parameters": {
+                      "position": {"key": "self"},
+                      "replacement": {"value": false},
+                      "type": {"value": "arcana_monster_timekeepersummoned"}
+                    }
+                  },
+				  {
+                    "title": "findMonster",
+                    "type": "action",
+                    "name": "findMonster",
+                    "parameters": {
+                      "orderBy": {"value": "nearest"},
+                      "position": {"key": "self"},
+                      "range": {"value": 6000},
+                      "type": {"value": "arcana_monster_timekeepersummoned"}
+                    },
+		            "output": {
+                      "list": "monsters"
+                    }
+                  },
+	              {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "each",
+                      "type": "decorator",
+                      "name": "each",
+                        "parameters": {
+                        "list": {"key": "monsters"},
+                        "type": {"value": "entity"}
+                      },
+                      "child": {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                          "child": {
+                          "title": "sendEntityMessage",
+                          "type": "action",
+                          "name": "sendEntityMessage",
+                          "parameters": {
+                            "entity": {"key": "eachItem"},
+                            "message": {"value": "despawn"}
+                          }
+                        }
+                      }
+                    }
+                  },
+				  {
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [0, 0]},
+                      "angle": {"value": 0},
+                      "offset": {"value": [0, 0]},
+                      "position": {"key": "self"},
+                      "projectileConfig": {"value": {"power" : 1.0}},
+                      "projectileType": {"value": "timepiecetriggerexplosion"},
+                      "scalePower": {"value": false},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "idle"},
+                      "type": {"value": "body"}
+                    }
+                  },
+				  {
+                    "title": "setVelocity",
+                    "type": "action",
+                    "name": "setVelocity",
+                    "parameters": {
+                      "velocity": {"value": [0, 0]}
+                    }
+                  },
+                  {
+                    "title": "setDamageBar",
+                    "type": "action",
+                    "name": "setDamageBar",
+                    "parameters": {
+                      "type": {"value": "None"}
+                    }
+                  },
+                  {
+                    "title": "setResourcePercentage",
+                    "type": "action",
+                    "name": "setResourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 1},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "runner",
+                    "type": "action",
+                    "name": "runner",
+                    "parameters": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

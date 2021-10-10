@@ -1,0 +1,35 @@
+{
+  "projectileName" : "timepiecebarriervertical",
+  "image" : "timepiecebarriervertical.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 2,
+  "windupFrames" : 0,
+  "fullbright" : true,
+  "intangibleWindup" : true,
+  "damagePoly" : [ [100.0, 15.0], [-100.0, 15.0], [-100.0, -15.0], [100.0, -15.0] ],
+  "animationLoops" : true,
+  "flippable" : true,
+  "damageKind" : "falling",
+  "damageRepeatTimeout" : 0.0,
+  /*
+  "statusEffects" : [
+  ],
+  */
+
+  "movementSettings" : {
+    "bounceFactor" : 1.0,
+    "collisionPoly" : [ [0.0, 0.0] ]
+  },
+  "knockback" : 50,
+  "bounces" : -1,
+  "speed" : 0,
+  "piercing" : true,
+  "timeToLive" : 14.0,
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "timepiecebarrierverticaldespawn",
+	  "inheritDamageFactor" : 0.0
+	}
+  ]
+}

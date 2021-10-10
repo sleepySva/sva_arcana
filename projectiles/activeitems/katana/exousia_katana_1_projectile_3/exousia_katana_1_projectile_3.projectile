@@ -1,0 +1,49 @@
+{
+  "projectileName" : "exousia_katana_1_projectile_3",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 3,
+  "image" : "exousia_katana_1_projectile_3.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 26,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "power" : 6,
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  "piercing" : false,
+  
+  "emitters" : [ "arcana_particle_ember_red" ],
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/katana/exousia_katana_1_projectile_3/trail.png",
+        "position" : [0, 0],
+        "layer" : "front",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 400,
+  "rotationRate" : 4.0,
+  "trackingLimit" : 400
+}

@@ -1,0 +1,43 @@
+{
+  "projectileName" : "timepiecetimebombspawn",
+  "physics" : "laser",
+  "timeToLive" : 0.2,
+  "image" : "timepiecetimebombspawn.png",
+  "animationCycle" : 0.8,
+  "frameNumber" : 12,
+  "windupFrames" : 3,
+  "winddownFrames" : 0,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/melee/giantsword_charge_full.ogg" ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "timepiecetimebomb",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  "speed" : 0,
+  "power" : 0,
+  
+  "renderLayer" : "Projectile-200",
+
+  "onlyHitTerrain" : true,
+  "persistentStatusEffects" : [],
+  "statusEffectArea" : [ [0, 0] ],
+
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "emitters" : [],
+
+  "piercing" : true,
+  "bounces" : -1
+}

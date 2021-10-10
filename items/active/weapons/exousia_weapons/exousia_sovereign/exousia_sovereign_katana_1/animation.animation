@@ -33,6 +33,12 @@
             "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "idle"
+          },
+          "fire5" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
           }
         }
       },
@@ -67,6 +73,12 @@
             "cycle" : 0.6,
             "mode" : "transition",
             "transition" : "idle"
+          },
+          "fire5" : {
+            "frames" : 1,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "idle"
           }
         }
       },
@@ -97,6 +109,12 @@
             "transition" : "idle"
           },
           "fire4" : {
+            "frames" : 1,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire5" : {
             "frames" : 1,
             "cycle" : 0.6,
             "mode" : "transition",
@@ -142,6 +160,11 @@
               "properties" : {
                 "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
               }
+            },
+            "fire5" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
+              }
             }
           }
         }
@@ -178,6 +201,11 @@
               }
             },
             "fire4" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
+              }
+            },
+            "fire5" : {
               "properties" : {
                 "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
               }
@@ -228,6 +256,13 @@
                 "offset" : [3.2, 2.5],
                 "damageArea" : [[-3, 3], [3, 2], [5.0, 1], [5.0, -1], [4.0, -2], [3, -2.8], [-3.4, -2.8], [0, 0], [0, 2], [-3, 3]]
               }
+            },
+            "fire5" : {
+              "properties" : {
+                "image" : "swoosh_5.png:<frame>",
+                "offset" : [-2.0, 2.8],
+                "damageArea" : [[-9.0, -2], [0, -1], [9.0, -2], [0.0, -3], [-9.0, -2]]
+              }
             }
           }
         }
@@ -257,6 +292,7 @@
     "fire" : [ ],
     "fire2" : [ ],
     "fire3" : [ ],
-    "fire4" : [ ]
+    "fire4" : [ ],
+	"fire5" : [ ]
   }
 }

@@ -1,0 +1,33 @@
+{
+  "projectileName" : "timepiecespearleaving",
+  "physics" : "laser",
+  
+  "timeToLive" : 5,
+  "bounces" : 0,
+  "speed" : 50,
+  "acceleration" : 50,
+  "piercing" : true,
+  "knockback" : 50,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  
+  "image" : "timepiecespear.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "hammer"
+ 
+}

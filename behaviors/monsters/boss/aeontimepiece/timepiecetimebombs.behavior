@@ -1,0 +1,242 @@
+{
+  "name": "timepiece-timebombs",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/projectiles.lua"
+  ],
+  "parameters": {
+    "beaminTime": 0.0,
+    "jumpVelocity": 0,
+    "stopForce": 0,
+    "stopTime": 0,
+    "projectileAngleStep": 0.0,
+    "bombCount": 5,
+    "projectileInterval": 0.5,
+    "startAngle": 0
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "x": {"value": 0},
+          "y": {"key": "<jumpVelocity>"}
+        }
+      },
+      {
+        "title": "distance",
+        "type": "action",
+        "name": "distance",
+        "parameters": {
+          "from": {"key": "self"},
+          "to": {"key": "spawn"}
+        },
+        "output": {
+          "x": "toSpawn"
+        }
+      },
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {
+          "direction": {"key": "toSpawn"}
+        },
+        "output": {
+          "direction": "toSpawn"
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": 1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "controlApproachVelocity",
+            "type": "action",
+            "name": "controlApproachVelocity",
+            "parameters": {
+              "force": {"key": "<stopForce>"},
+              "velocity": {"value": [0, 0]}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"value": -1},
+                      "number": {"key": "toSpawn"}
+                    },
+                    "output": {
+                      "result": "rotationDirection"
+                    }
+                  },
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"key": "<projectileAngleStep>"},
+                      "number": {"key": "rotationDirection"}
+                    },
+                    "output": {
+                      "result": "rotationAngle"
+                    }
+                  },
+                  {
+                    "title": "multiply",
+                    "type": "action",
+                    "name": "multiply",
+                    "parameters": {
+                      "factor": {"key": "toSpawn"},
+                      "number": {"key": "<startAngle>"}
+                    },
+                    "output": {
+                      "result": "startAngle"
+                    }
+                  },
+                  {
+                    "title": "vecRotate",
+                    "type": "action",
+                    "name": "vecRotate",
+                    "parameters": {
+                      "angle": {"key": "startAngle"},
+                      "vector": {"value": ["toSpawn", 0]}
+                    },
+                    "output": {
+                      "vector": "aimVector"
+                    }
+                  },
+                  {
+                    "title": "repeater",
+                    "type": "decorator",
+                    "name": "repeater",
+                    "parameters": {
+                      "maxLoops": {"key": "<bombCount>"},
+                      "untilSuccess": {"value": false}
+                    },
+                    "child": {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "vecRotate",
+                          "type": "action",
+                          "name": "vecRotate",
+                          "parameters": {
+                            "angle": {"key": "rotationAngle"},
+                            "vector": {"key": "aimVector"}
+                          },
+                          "output": {
+                            "vector": "aimVector"
+                          }
+                        },
+                        {
+                          "title": "vecMultiply",
+                          "type": "action",
+                          "name": "vecMultiply",
+                          "parameters": {
+                            "first": {"key": "aimVector"},
+                            "second": {"value": [0, 0]}
+                          },
+                          "output": {
+                            "vector": "spawnOffset"
+                          }
+                        },
+                        {
+                          "title": "offsetPosition",
+                          "type": "action",
+                          "name": "offsetPosition",
+                          "parameters": {
+                            "offset": {"key": "spawnOffset"},
+                            "position": {"key": "self"}
+                          },
+                          "output": {
+                            "position": "spawnPosition"
+                          }
+                        },
+						{
+                          "title": "entityPosition",
+                          "type": "action",
+                          "name": "entityPosition",
+                          "parameters": {
+                            "entity": {"key": "target"}
+                          },
+                          "output": {
+                            "position": "playerPosition"
+                          }
+                        },
+						{
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [1, 0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [0, 0]},
+                            "position": {"key": "playerPosition"},
+                            "projectileConfig": {"value": {"power" : 23.0}},
+                            "projectileType": {"value": "timepiecetimebombspawn"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+						{
+                          "title": "timer",
+                          "type": "action",
+                          "name": "timer",
+                          "parameters": {
+                            "time": {"value": 1.3}
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": 2.0}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

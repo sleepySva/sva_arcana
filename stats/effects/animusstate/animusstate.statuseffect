@@ -1,0 +1,20 @@
+{
+  "name" : "animusstate",
+  "blockingStat" : "animusstateStatusImmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 2.5,
+
+  "scripts" : [
+    "animusstate.lua"
+  ],
+
+  "animationConfig" : "animusstate.animation",
+
+  "label" : "Animus State",
+  "icon" : "/interface/statuses/arcana_status_hidden.png",
+
+  "sounds" : {
+    "timefreeze_start" : [ "/sfx/statuseffects/timefreeze_start.ogg" ],
+    "timefreeze_loop" : [ "/sfx/statuseffects/timefreeze_loop.ogg" ]
+  }
+}

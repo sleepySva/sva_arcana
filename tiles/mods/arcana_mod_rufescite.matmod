@@ -1,0 +1,21 @@
+{
+  "modId" : 16831,
+  "modName" : "arcana_mod_rufescite",
+  "itemDrop" : "arcana_misc_rufescite",
+  "description" : "A rufescite ore brimming with a vermilion glow.",
+  "health" : 24,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_rufescite.png",
+    "variants" : 4,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [139, 72, 30]
+  }
+}

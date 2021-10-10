@@ -36,7 +36,14 @@
 			  "arcana_star_polar"
 			]
 		},
-
+		{
+			"op": "add",
+			"path": "/systemTypeBins/-",
+			"value": [
+			  0.28,
+			  "arcana_star_mirage"
+			]
+		},
 
 		{
 			"op":"add",
@@ -443,6 +450,130 @@
 						{"weight" : 0.5, "item" : "Tier6"}
 					  ],
 					  "satelliteTypes" : []
+					}
+				  ]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/systemTypes/arcana_star_mirage",
+			"value":
+			{
+				  "selectionWeight" : 1.0,
+				  "baseParameters" : {
+					"typeName" : "arcana_star_mirage",
+					"image" : "/celestial/system/arcana_star_mirage.png",
+					"twinkleTime" : [1.0, 1.5],
+					"spaceThreatLevel" : 8
+				  },
+				  "variationParameters" : [
+					{
+					  "magnitude" : 5,
+					  "description" : "Medium Mirage Star",
+					  "imageScale" : 0.055,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_mirage_15px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star13px.png",
+					  "brightness" : [1, 1]
+					},
+					{
+					  "magnitude" : 7,
+					  "description" : "Large Mirage Star",
+					  "imageScale" : 0.075,
+					  "twinkleFrames" : "/celestial/stars/arcana_star_mirage_19px.png",
+					  "twinkleBackground" : "/celestial/stars/backgrounds/star17px.png",
+					  "brightness" : [1, 1]
+					}
+				  ],
+				  "orbitRegions" : [
+					{
+					  "regionName" : "Tier6Inner",
+					  "orbitRange" : [2, 5],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.05, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.85, "item" : "arcana_planetary_mirage"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Mid",
+					  "orbitRange" : [6, 7],
+					  "bodyProbability" : 0.25,
+					  "planetaryTypes" : [
+						{"weight" : 0.9, "item" : "GasGiant"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 0.05, "item" : "Tier5"},
+						{"weight" : 0.05, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.05, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.85, "item" : "arcana_planetary_mirage"}
+					  ]
+					},
+					{
+					  "regionName" : "Tier6Outer",
+					  "orbitRange" : [8, 10],
+					  "bodyProbability" : 0.5,
+					  "planetaryTypes" : [
+						{"weight" : 0.05, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.05, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.80, "item" : "arcana_planetary_mirage"},
+						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.05, "item" : "AsteroidField"}
+					  ],
+					  "satelliteTypes" : [
+						{"weight" : 1, "item" : "Moon"}
+					  ]
+					},
+					{
+					  "regionName" : "Gate",
+					  "orbitRange" : [11, 11],
+					  "bodyProbability" : 1.0,
+					  "planetaryTypes" : [
+						{"weight" : 0.2, "item" : "AncientGateway"},
+						{"weight" : 0.1, "item" : "AsteroidField"},
+						{"weight" : 0.1, "item" : "Barren"},
+						{"weight" : 0.1, "item" : "arcana_planetary_mirage"},
+						{"weight" : 0.5, "item" : "arcana_planetary_mirage"}
+					  ],
+					  "satelliteTypes" : []
+					}
+				  ]
+			}
+		},
+
+		{
+			"op":"add",
+			"path":"/planetaryTypes/arcana_planetary_mirage",
+			"value":
+			{
+				  "satelliteProbability" : 0.35,
+				  "maxSatelliteCount" : 2,
+
+				  "baseParameters" : {
+					"worldType" : "Terrestrial",
+					"description" : "Mirage Planet",
+					"smallImage" : "/celestial/system/planet_small.png",
+
+					"terrestrialType" : [ "arcana_vermilion", "arcana_desolate", "magma", "arctic" ]
+				  },
+
+				  "variationParameters" : [
+					{
+					  "imageScale" : 0.1,
+					  "smallImageScale" : 0.5,
+					  "worldSize" : "medium"
+					},
+					{
+					  "imageScale" : 0.125,
+					  "smallImageScale" : 0.6,
+					  "worldSize" : "large"
 					}
 				  ]
 			}
@@ -1407,6 +1538,29 @@
 				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
 				"dynamicsRange" : [1, 30]
 			}
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_vermilion",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_vermilion_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
+
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_vermilion",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_vermilion/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
 		}
 	],
 
@@ -1868,6 +2022,33 @@
 		  "op": "add",
 		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_eminsnow"
+		},
+		
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_senbonzakura"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_senbonzakura"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_vermilion"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_vermilion"
 		}
 	]
 ]

@@ -1,0 +1,44 @@
+{
+  "projectileName" : "arcana_boss_aeonTimepiece_projectile_1_slow",
+  "physics" : "laser",
+  
+  "timeToLive" : 5,
+  "bounces" : 0,
+  "speed" : 10,
+  "piercing" : true,
+  
+  "image" : "arcana_boss_aeonTimepiece_projectile_1_slow.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : ["sparks","smoke"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_aeonTimepiece/arcana_boss_aeonTimepiece_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

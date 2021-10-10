@@ -1,0 +1,38 @@
+{
+  "projectileName" : "timepiecehourglassunfreeze",
+  "image" : "timepiecehourglass.png",
+  "animationCycle" : 0.7,
+  "animationLoops" : false,
+  "frameNumber" : 12,
+  "timeToLive" : 1.4,
+  "flippable" : false,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "renderLayer" : "ForegroundEntity",
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+	{
+	  "action" : "projectile",
+	  "type" : "timepiecehourglassexplodingunfreeze",
+	  "inheritDamageFactor" : 0.0
+	}
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/npc/monsters/monster_grow.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hidden",
+
+  "speed" : 0.0
+}

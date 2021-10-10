@@ -1534,5 +1534,86 @@
       "biome": [[0,["arcana_senbonzakura"]]],
       "subRegion": []
     }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_vermilion",
+    "value": {
+      "threatRange" : [8, 8],
+      "layers": {
+        "surface": {
+          "primaryRegion" : [ "arcana_vermilion" ],
+          "secondaryRegions" : [],
+          "dungeons": [
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "apexcamp"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_volcanicCave" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_ashenCave" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_vermilion_underground_2" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_ancientCave" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_vermilion",
+    "value": {
+      "caveLiquid": ["water"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_vermilion"]]],
+      "subRegion": ["arcana_ashen"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ashen",
+    "value": {
+      "caveLiquid": ["water"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_ashen"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_volcanicCave",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [[0,["arcana_volcanicCave"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ashenCave",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [[0,["arcana_ashenCave"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_vermilion_underground_2",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [[0,["arcana_vermilion_underground_2"]]],
+      "subRegion": []
+    }
   }
 ]

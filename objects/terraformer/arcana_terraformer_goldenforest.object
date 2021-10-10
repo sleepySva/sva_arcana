@@ -1,5 +1,5 @@
 {
-  "objectName" : "arcana_terraformer_goldenforest",
+  "objectName" : "arcana_terraformer_goldenForest",
   "colonyTags" : [],
   "rarity" : "Legendary",
   "description" : "Transforms a planet's climate into a golden paradise.",
@@ -9,10 +9,10 @@
   "price" : 5000,
   "printable" : false,
 
-  "inventoryIcon" : "arcana_terraformer_goldenforest_icon.png",
+  "inventoryIcon" : "arcana_terraformer_goldenForest_icon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "arcana_terraformer_goldenforest_fullbright.png:inactive", "fullbright" : true }, { "image" : "terraformer.png:inactive" } ],
+      "imageLayers" : [ { "image" : "arcana_terraformer_goldenForest_fullbright.png:inactive", "fullbright" : true }, { "image" : "terraformer.png:inactive" } ],
       "imagePosition" : [-16, 0],
 
       "direction" : "left",
@@ -22,7 +22,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "imageLayers" : [ { "image" : "arcana_terraformer_goldenforest_fullbright.png:inactive", "fullbright" : true }, { "image" : "terraformer.png:inactive" } ],
+      "imageLayers" : [ { "image" : "arcana_terraformer_goldenForest_fullbright.png:inactive", "fullbright" : true }, { "image" : "terraformer.png:inactive" } ],
       "imagePosition" : [-16, 0],
 
       "direction" : "right",
@@ -39,8 +39,8 @@
   "animationPosition" : [-16, 0],
   "animationParts" : {
     "base" : "terraformer.png",
-    "baseFullbright" : "arcana_terraformer_goldenforest_fullbright.png",
-    "beam" : "beam/terraformer_beam_goldenforest.png"
+    "baseFullbright" : "arcana_terraformer_goldenForest_fullbright.png",
+    "beam" : "beam/terraformer_beam_goldenForest.png"
   },
 
   "scripts" : ["/objects/terraformer/terraformer.lua"],
@@ -54,6 +54,6 @@
 
   "planetTypeChangeThreshold" : 0.5,
 
-  "terraformBiome" : "arcana_goldenforest",
-  "terraformPlanetType" : "arcana_goldenforest"
+  "terraformBiome" : "arcana_goldenForest",
+  "terraformPlanetType" : "arcana_goldenForest"
 }

@@ -22,14 +22,13 @@
     [0, {
 	  "fill" : [
 	    {"item" : ["money", 4000]},
-        {"item" : ["nanowrap", 4]},
-        {"item" : ["arcana_essence_aeonEssence", 20]}
+        {"item" : ["arcana_misc_aeonLeaf", 10]},
+        {"item" : ["arcana_essence_aeonEssence", 20]},
+		{"item" : ["timepiecereceipt-codex", 1]}
       ],
       "pool" : [
-		{"weight" : 0.1, "item" : ["arcana_misc_aeonLeaf", 11]},
-		{"weight" : 0.2, "item" : ["arcana_misc_aeonLeaf", 10]},
-        {"weight" : 0.3, "item" : ["arcana_misc_aeonLeaf", 9]},
-		{"weight" : 0.4, "item" : ["arcana_misc_aeonLeaf", 8]}
+		{"weight" : 0.5, "item" : ["arcana_head_infinityHelm", 1]},
+		{"weight" : 0.5, "item" : ["arcana_back_aeonCape", 1]}
       ],
       "poolRounds" : [
         [1.0, 1]

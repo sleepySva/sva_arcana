@@ -1,0 +1,19 @@
+{
+  "projectileName" : "arcana_projectile_flame_ashen",
+  "image" : "arcana_projectile_flame_ashen.png",
+  "physics" : "flame",
+  "animationCycle" : 1.05,
+  "animationLoops" : false,
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "frameNumber" : 12,
+  "power" : 0,
+  "speed" : 10,
+  "timeToLive" : 1,
+  "bounces" : 4,
+  "piercing" : false,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "lightColor" : [255, 180, 0],
+  "damageKind" : "poison",
+  "statusEffects" : [],
+  "hydrophobic" : true
+}

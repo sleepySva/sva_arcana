@@ -1,0 +1,153 @@
+{
+  "type" : "timepiecebarrier",
+
+  "categories" : [ "timepiecebarrier" ],
+  "parts" : [ "body" ],
+
+  "animation" : "timepiecebarrier.animation",
+
+  "dropPools" : [],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+	
+	"damageBar" : "None",
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+      "targetQueryRange" : 300,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : false,
+      "keepTargetInRange" : 300,
+      "targetOutOfSightTime" : 999999999
+    },
+
+    "touchDamage" : {
+      "poly" : [ [5.5, 2.0], [-5.5, 2.0], [-5.5, -2.0], [5.5, -2.0] ],
+      "damage" : 0,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "falling",
+      "knockback" : 20,
+
+      "damageRepeatTimeout" : 0.0,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+	  "gravityEnabled" : false,
+      "collisionPoly" : [ [0.0, 0.0] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 0,
+      "runSpeed" : 0,
+
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 35.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "aggressive" : true,
+
+    "bodyMaterialKind" : "metal",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "metal"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 999999
+        },
+        "protection" : {
+          "baseValue" : 999999
+        },
+        "healthRegen" : {
+          "baseValue" : 999999
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+		"fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"physicalResistance" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+		"arcana_resistance_solar" : {
+          "baseValue" : 1.0
+        },
+		"timepieceexplosionburnStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"aeontimefreezeStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"aeontimefreezeplayerStatusImmunity" : { 
+          "baseValue" : 1
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8]
+  }
+}

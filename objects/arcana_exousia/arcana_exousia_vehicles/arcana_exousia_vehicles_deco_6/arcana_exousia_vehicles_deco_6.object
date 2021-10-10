@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_exousia_vehicles_deco_6",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A modern sports car manufactured by the Schreiten company.",
+  "shortdescription" : "Schreiten Lupus W",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 620,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-48, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-48, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "projectileName" : "timepiecebarrierhorizontal",
+  "image" : "timepiecebarrierhorizontal.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 2,
+  "windupFrames" : 0,
+  "winddownFrames" : 0,
+  "fullbright" : true,
+  "intangibleWindup" : true,
+  "damagePoly" : [ [0.0, 0.0] ],
+  "animationLoops" : true,
+  "flippable" : true,
+  "damageKind" : "hidden",
+  /*
+  "statusEffects" : [
+  ],
+  */
+
+  "movementSettings" : {
+    "bounceFactor" : 1.0,
+    "collisionPoly" : [ [0.0, 0.0] ]
+  },
+  "physicsCollisions" : {
+    "piece1" : {
+      "collision" : [ [0.0, -2.0], [6.0, -1.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player"]
+    },
+    "piece2" : {
+      "collision" : [ [6.0, 1.0], [0.0, 2.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player"]
+    },
+    "piece3" : {
+      "collision" : [ [0.0, -2.0], [-6.0, -1.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player"]
+    },
+    "piece4" : {
+      "collision" : [ [-6.0, 1.0], [0.0, 2.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player"]
+    }
+  },
+  "bounces" : -1,
+  "speed" : 0,
+  "piercing" : true,
+  "timeToLive" : 25.0,
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "timepiecebarrierhorizontaldespawn",
+	  "inheritDamageFactor" : 0.0
+	}
+  ],
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ]
+}

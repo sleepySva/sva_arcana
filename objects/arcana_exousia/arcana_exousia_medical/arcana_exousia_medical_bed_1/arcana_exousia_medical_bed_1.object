@@ -1,0 +1,63 @@
+{
+  "objectName" : "arcana_exousia_medical_bed_1",
+  "colonyTags" : ["medical","exousia_medical"],
+  "rarity" : "Rare",
+  "description" : "A bed which is designed to perform medical scans.",
+  "shortdescription" : "Exousian Medical Scanner",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 175,
+  "lightColor" : [120, 90, 40],
+
+  "apexDescription" : "This medical bed looks like a place I could rest a minute.",
+  "avianDescription" : "Laying on this bed surrounded by these scanners would make me quite uncomfortable.",
+  "floranDescription" : "Fancy lightsss all around this metal bed.",
+  "glitchDescription" : "Curious. I wonder if this medical bed can account for Glitch anatomy.",
+  "humanDescription" : "Looks like some sort of medical scanner bed, but I guess it's still a place to lay down.",
+  "hylotlDescription" : "This medical bed was likely designed to assist doctors or researchers.",
+  "novakidDescription" : "Some fancy lookin' bed surrounded by bright lights.",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/arcana_exousia/arcana_exousia_medical/arcana_exousia_medical_bed_1/cover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "regeneration1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>" } ],
+      "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      
+      "lightPosition" : [0, 0],
+      
+      "sitPosition" : [4, 11],
+        
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left",
+      "collision" : "platform"
+    },
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "imagePosition" : [-32, 0],
+      
+      "lightPosition" : [0, 0],
+      
+      "sitPosition" : [4, 11],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "collision" : "platform"
+    }
+    
+  ]
+}

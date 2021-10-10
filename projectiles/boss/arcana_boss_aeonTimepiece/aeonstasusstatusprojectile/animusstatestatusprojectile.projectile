@@ -1,0 +1,23 @@
+{
+  "projectileName" : "animusstatestatusprojectile",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0.25,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "aeonstasusstatusprojectile.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "actionOnReap" : [
+  ],
+  "power" : 0,
+  "piercing" : true,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef",
+  "damagePoly" : [ [-20, -20], [-20, 20], [20, 20], [20, -20]  ],
+  "flippable" : true,
+  "damageTeam" : { "type" : "friendly" },
+  "statusEffects" : [
+    {"effect" : "animusstate", "duration" : 1}
+  ]
+}

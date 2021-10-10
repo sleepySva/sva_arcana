@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_astral_chair_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A comfotable chair found in Atlantis bars.",
+  "shortdescription" : "Atlantis Chair",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 140,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>" } ],
+      "sitCoverImage" : "/objects/arcana_astral/arcana_astral_chair_3/cover.png",
+      "imagePosition" : [-16, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPosition" : [0, 21],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>" } ],
+      "sitCoverImage" : "/objects/arcana_astral/arcana_astral_chair_3/cover.png",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+
+      "sitPosition" : [0, 21],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

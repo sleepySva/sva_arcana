@@ -1,0 +1,36 @@
+{
+  "projectileName" : "animusgravityball",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 10,
+  "image" : "animusgravityball.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 15,
+  "animationCycle" : 1.5,
+  "frameNumber" : 17,
+  "power" : 25,
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  "piercing" : true,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_aeonTimepiece/animusgravityball/animustrail.png",
+        "position" : [0, 0],
+        "layer" : "front",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ]
+}

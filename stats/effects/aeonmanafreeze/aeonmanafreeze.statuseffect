@@ -1,0 +1,25 @@
+{
+  "name" : "aeonmanafreeze",
+  "blockingStat" : "aeontimefreezeplayerStatusImmunity",
+
+  "effectConfig" : {
+    "directives" : "fade=AAAAFF=0.3",
+    "movementModifiers" : {
+      "speedModifier" : 1.0,
+      "airJumpModifier" : 1.0
+    },
+    "tickRate" : 20,
+    "energyCost" : 200.0,
+    "healthDamage" : 0
+  },
+  "defaultDuration" : 21,
+
+  "scripts" : [
+    "aeonmanafreeze.lua"
+  ],
+
+  "animationConfig" : "aeonmanafreeze.animation",
+
+  "label" : "",
+  "icon" : "/assetmissing.png"
+}

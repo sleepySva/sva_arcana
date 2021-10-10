@@ -1,0 +1,38 @@
+{
+  "projectileName" : "timepieceminutehandspawn",
+  "image" : "timepieceminutehandspawn.png",
+  "animationCycle" : 0.3,
+  "animationLoops" : false,
+  "lightColor" : [0, 0, 0],
+  "frameNumber" : 10,
+  "timeToLive" : 1.0,
+  "flippable" : false,
+  "fullbright" : true,
+  "piercing" : true,
+  "knockback" : 0,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "emitters" : [ ],
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "actionOnReap" : [
+    {
+	  "action" : "projectile",
+	  "type" : "timepieceminutehand",
+	  "inheritDamageFactor" : 1.0
+	}
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/melee/giantsword_charge_full.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [0, 0] ],
+  "damageKind" : "hammer",
+
+  "speed" : 0.0
+}

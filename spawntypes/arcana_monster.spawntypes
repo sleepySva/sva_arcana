@@ -128,6 +128,60 @@
   },
   
   {
+    "name" : "arcana_exospider",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_exospider"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_alphaScaveran",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_alphaScaveran"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_alphaRingram",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_alphaRingram"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
     "name" : "arcana_solarTaroni",
 
     "spawnParameters" : {

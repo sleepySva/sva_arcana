@@ -1,0 +1,21 @@
+{
+  "modId" : 16830,
+  "modName" : "arcana_mod_exoslateFragment",
+  "itemDrop" : "arcana_ore_exoslateFragment",
+  "description" : "An exoslate fragment.",
+  "health" : 24,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_exoslateFragment.png",
+    "variants" : 4,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [100, 40, 20]
+  }
+}

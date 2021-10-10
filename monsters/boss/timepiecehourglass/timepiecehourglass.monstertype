@@ -1,0 +1,158 @@
+{
+  "type" : "timepiecehourglass",
+
+  "categories" : [ "timepiecehourglass" ],
+  "parts" : [ "body" ],
+
+  "animation" : "timepiecehourglass.animation",
+  "reversed" : false,
+
+  "dropPools" : [],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+	
+	"renderLayer" : "ForegroundEntity",
+	
+	"behavior" : "timepiecehourglass",
+	
+	"damageBar" : "None",
+
+    "seeThroughLiquid" : true,
+
+    "metaBoundBox" : [-8.0, -4.0, 8.0, 4.0],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "gravityEnabled" : false,
+      "collisionPoly" : [ [-8.0, -8.0], [8.0, -8.0], [8.0, 8.0], [-8.0, 8.0] ],
+
+      "mass" : 4.0,
+      "flySpeed" : 6,
+      "airForce" : 200.0,
+      "physicsEffectCategories" : ["boss"]
+    },
+
+    "knockoutTime" : 0.1,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "deathPoof",
+
+    "touchDamage" : {
+      "poly" : [ [-4.0, -2.0], [0.0, -4.0], [4.0, -2.0], [4.0, 0.0], [0.0, 4.0], [-4.0, 0.0] ],
+      "damage" : 60,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+	  "knockback" : 100,
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 999999
+        },
+        "protection" : {
+          "baseValue" : 999999
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"timepieceexplosionburnStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+		"abysseffectImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ionizedImmunity" : {
+          "baseValue" : 1.0
+        },
+		"megadamageResistance" : {
+		  "baseValue" : 1.0
+		},
+        "shadowImmunity" : {
+         "baseValue" : 1
+        },
+        "radiationburnImmunity" : { 
+          "baseValue" : 1
+        },
+        "acidicbacteriaImmunity" : { 
+          "baseValue" : 1
+        },
+		"HolyStatusImmunity" : { 
+          "baseValue" : 1
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+		"physicalResistance" : {
+          "baseValue" : 1.0
+        },
+		"invulnerable" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0,
+          "maxValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 0
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, 0]
+  }
+}

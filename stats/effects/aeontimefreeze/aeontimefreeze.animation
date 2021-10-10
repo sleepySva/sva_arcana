@@ -1,0 +1,18 @@
+{
+  "particleEmitters" : {
+    "numerals" : {
+      "enabled" : true,
+      "emissionRate" : 4.0,
+      "particles" : [
+        { "particle" : "numerals2" },
+        { "particle" : "numerals4" },
+        { "particle" : "numerals6" },
+        { "particle" : "numerals8" }
+      ]
+    }
+  },
+  "sounds" : {
+    "timefreeze_start" : [ "/sfx/statuseffects/timefreeze_start.ogg" ],
+    "timefreeze_loop" : [ "/sfx/statuseffects/timefreeze_loop.ogg" ]
+  }
+}
