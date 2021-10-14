@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":42,
+ "tilecount":43,
  "tileheight":256,
  "tileproperties":
     {
@@ -344,8 +344,15 @@
          "imagePositionY":"-0",
          "object":"arcana_luye_deco_7",
          "tilesetDirection":"right"
+        },
+     "42":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"-0",
+         "object":"arcana_luye_vendor_6",
+         "tilesetDirection":"right"
         }
-
     },
  "tiles":
     {
@@ -516,6 +523,10 @@
      "41":
         {
          "image":"arcana_luye_deco_7.png"
+        },
+     "42":
+        {
+         "image":"arcana_luye_vendor_6.png"
         }
     },
  "tilewidth":188

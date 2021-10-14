@@ -1,0 +1,159 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+	
+	  "staff": {
+		"default" : "idle",
+        "states" : {
+          "idle" : {
+			"frames" : 16,
+            "cycle" : 1.6,
+            "mode" : "loop"
+		  }
+		}
+	  },
+	  
+      "charge" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+		  },
+          "charge" : {
+            "frames" : 13,
+            "cycle" : 0.9,
+            "mode" : "transition",
+            "transition" : "spark"
+          },
+          "spark" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "charged"
+          },
+          "charged" : {
+            "frames" : 4,
+            "cycle" : 0.3,
+            "mode" : "loop"
+          },
+          "discharge" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "staff" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "offset" : [1.0, 2.0],
+          "transformationGroups" : ["weapon"]
+        },
+		
+        "partStates" : {
+          "staff" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "stone" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [1.0, 2.0],
+          "focalPoint" : [0.0, 2.5],
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "staff" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "chargeEffect" : {
+        "properties" : {
+          "zLevel" : 2,
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [1.2, 1.4],
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "charge" : {
+            "charge" : {
+              "properties" : {
+                "image" : "<partImage>:charging.<frame>"
+              }
+            },
+            "spark" : {
+              "properties" : {
+                "image" : "<partImage>:spark.<frame>"
+              }
+            },
+            "charged" : {
+              "properties" : {
+                "image" : "<partImage>:loop.<frame>"
+              }
+            },
+            "discharge" : {
+              "properties" : {
+                "image" : "<partImage>:discharge.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {}
+  },
+
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [1.0, 2.0],
+      "color" : [20, 40, 90],
+      "transformationGroups" : ["weapon"]
+    }
+  },
+
+  "particleEmitters" : {
+    "physicalcharge" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10,
+      "offsetRegion" : [0.0, 2.25, 2.0, 2.75],
+      "particles" : [
+        {"particle" : "soluskatana1"},
+        {"particle" : "soluskatana1"},
+        {"particle" : "soluskatana2"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "physicalcharge" : ["/sfx/melee/staff_charge1.ogg"],
+    "physicalfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "physicalchargedloop" : ["/sfx/melee/charge_full_hold1.ogg"],
+    "physicaldischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "physicalactivate" : ["/sfx/projectiles/plasma3.ogg"],
+    "zoneactivate" : ["/sfx/melee/staff_aura_activate.ogg"]
+  }
+}

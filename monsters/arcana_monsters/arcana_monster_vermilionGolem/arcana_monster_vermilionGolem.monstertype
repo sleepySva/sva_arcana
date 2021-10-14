@@ -1,0 +1,234 @@
+{
+  "type" : "arcana_monster_vermilionGolem",
+  "shortdescription" : "Vermilion Golem",
+  "description" : "A golem variant that has absorbed the vermilion flames, primarily found in Vermilion planets.",
+
+  "categories" : [ "arcana_monster_vermilionGolem" ],
+  "parts" : [ "body" ],
+
+  "animation" : "arcana_monster_vermilionGolem.animation",
+
+  "dropPools" : [ { "default" : "arcana_monsterdrops_vermilionGolem" } ],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    
+    "damageBar" : "default", 
+
+    "behavior" : "monster",
+
+	"aggressive" : true,
+
+    "seeThroughLiquid" : true,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 20,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 26,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 1.6,
+
+            "projectileType" : "artifact_orb_perpetuityEye_projectile_2",
+			"projectileCount" : 4,
+            "projectileInterval" : 0.2,
+            "projectileParameters" : {
+			  "renderLayer" : "ForegroundEntity+10"
+            },
+			"inaccuracy" : 0.2,
+            "fireOffset" : [0.2, -1.4],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.5
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 4,
+            "maxRange" : 8
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,4],
+            "groundDistance" : 8,
+            "ceilingDistance" : 8,
+            "xVelocity" : 4,
+            "yVelocity" : 10
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-1.0, -1.0], [1.0, -1.0], [1.0, 1.0], [-1.0, 1.0] ],
+      "damage" : 12,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "firebarrier",
+      "knockback" : 10,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-2, -2, 2, 2],
+    "scale" : 1.4,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-1.0, -1.0], [1.0, -1.0], [1.0, 1.0], [-1.0, 1.0] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 10,
+      "gravityEnabled" : false,
+
+      "airFriction" : 1,
+      "airForce" : 20,
+      "flySpeed" : 12
+    },
+
+    "bodyMaterialKind" : "stone",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+	
+	"powerLevelFunction" : "spaceMonsterLevelPowerMultiplier",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "stone"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 60
+        },
+        "maxHealth" : {
+          "baseValue" : 90
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 2.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.9
+        },
+        "fireResistance" : {
+          "baseValue" : 0.9
+        },
+        "iceResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricResistance" : {
+          "baseValue" : 0.9
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.9
+        },
+        "arcana_resistance_lumen" : {
+          "baseValue" : 0.9
+        },
+        "arcana_resistance_abyss" : {
+          "baseValue" : 0.9
+        },
+        "arcana_resistance_azure" : {
+          "baseValue" : -0.5
+        },
+        "arcana_resistance_solar" : {
+          "baseValue" : 0.9
+        },
+        "arcana_resistance_lunar" : {
+          "baseValue" : -0.5
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -4],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

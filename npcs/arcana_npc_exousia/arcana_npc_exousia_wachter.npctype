@@ -1,0 +1,84 @@
+{
+  "type" : "arcana_npc_exousia_wachter",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_exousia_wachter_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_exousia_wachter_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_exousia_wachter_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "arcana_back_whiteNanoweaveCape", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "exousia_police_assaultRifle_1",
+              "exousia_police_shotgun_1"
+            ]
+          },
+          {
+			"head" : [
+              { "name" : "arcana_armor_exousia_wachter_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_exousia_wachter_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_exousia_wachter_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "arcana_back_whiteNanoweaveCape", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "exousia_police_pistol_1"
+            ],
+            "alt" : [
+              { "name" : "arcana_shield_suppressionShield" }
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "jumpModifier" : {
+        "baseValue" : 1.2
+      },
+      "maxHealth" : {
+        "baseValue" : 220.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 30.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 3.2
+      },
+      "protection" : {
+        "baseValue" : 1.6
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 40.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

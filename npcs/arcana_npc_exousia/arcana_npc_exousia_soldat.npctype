@@ -1,0 +1,77 @@
+{
+  "type" : "arcana_npc_exousia_soldat",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_exousia_soldat_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_exousia_soldat_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_exousia_soldat_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "arcana_back_nanoweaveCape", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "exousia_imperialArmy_1_assaultRifle_1",
+              "exousia_imperialArmy_1_shotgun_1",
+			  "exousia_imperialArmy_1_sniperRifle_1",
+			  "exousia_imperialArmy_1_broadsword_1"
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_exousia_soldat_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_exousia_soldat_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "arcana_back_nanoweaveCape", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "exousia_imperialArmy_1_assaultRifle_1",
+              "exousia_imperialArmy_1_shotgun_1",
+			  "exousia_imperialArmy_1_sniperRifle_1",
+			  "exousia_imperialArmy_1_broadsword_1"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "jumpModifier" : {
+        "baseValue" : 1.2
+      },
+      "maxHealth" : {
+        "baseValue" : 180.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 40.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 3.6
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 20.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

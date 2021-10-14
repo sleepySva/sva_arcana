@@ -1,0 +1,62 @@
+{
+  "projectileName" : "artifact_orb_perpetuityEye_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 1,
+  "acceleration" : 40,
+  "piercing" : true,
+  "knockback" : 10,
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
+    },
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/artifact_orb_perpetuityEye_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "hammer",
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 400,
+  "rotationRate" : 3.0,
+  "trackingLimit" : 400
+ 
+}

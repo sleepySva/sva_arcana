@@ -1,0 +1,75 @@
+{
+  "type" : "arcana_npc_exousia_nordwolf",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "winterscarfhead", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_exousia_nordwolf_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_exousia_nordwolf_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "arcana_back_nanoweaveCape", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "exousia_imperialArmy_3_lance_1",
+              "exousia_imperialArmy_3_katana_1",
+			  "exousia_imperialArmy_3_sniperRifle_1"
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_exousia_nordwolf_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_exousia_nordwolf_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "arcana_back_nanoweaveCape", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "exousia_imperialArmy_3_lance_1",
+              "exousia_imperialArmy_3_katana_1",
+			  "exousia_imperialArmy_3_sniperRifle_1"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "jumpModifier" : {
+        "baseValue" : 1.4
+      },
+      "maxHealth" : {
+        "baseValue" : 160.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 40.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 3.8
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 10.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}
