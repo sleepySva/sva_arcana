@@ -953,7 +953,7 @@
       "layers": {
         "surface": {
           "primaryRegion" : ["arcana_timeless"],
-          "secondaryRegions" : ["midnight", "arcana_superstormExpanse" ],
+          "secondaryRegions" : [],
           "dungeons": [
 			  [8.0, "arcana_timeless_dungeon_1"],
 			  [1.0, "dungeoncrawler"], [1.0, "glitchvillage"],
@@ -980,11 +980,11 @@
     "op": "add",
     "path": "/regionTypes/arcana_timeless",
     "value": {
-      "blockSelector": ["remixedMountainsSurface"],
+      "blockSelector": ["remixedSpikesSurface2","remixedSpikesSurface"],
       "fgCaveSelector": ["empty"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_timeless"]]],
-      "subRegion": ["steamspring"]
+      "subRegion": ["steamspring","arcana_cerueonFields"]
     }
   },
   
@@ -1545,8 +1545,9 @@
           "primaryRegion" : [ "arcana_vermilion" ],
           "secondaryRegions" : [],
           "dungeons": [
-			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
-			  [1.0, "apexcamp"]
+			  [4.0, "arcana_vermilion_dungeon_1"],
+			  [4.0, "arcana_vermilion_dungeon_2"],
+			  [1.0, "avianairship"]
           ]
         },
 		

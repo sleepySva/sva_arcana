@@ -55,6 +55,24 @@
     }]
   ],
   
+  "arcana_monsterdrops_vermilionGolem" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 160]},
+		{"item" : ["corefragmentore", 1]}
+      ],
+      "pool" : [
+		{"weight" : 0.6, "item" : ["arcana_essence_vermilionEssence", 6]},
+		{"weight" : 0.2, "item" : ["arcana_essence_vermilionEssence", 7]},
+		{"weight" : 0.2, "item" : ["arcana_essence_vermilionEssence", 8]}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+		[0.4, 2]
+      ]
+    }]
+  ],
+  
   "arcana_monsterdrops_lunarPoptop" : [
     [0, {
 	  "fill" : [

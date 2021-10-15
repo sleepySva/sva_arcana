@@ -1,0 +1,21 @@
+{
+  "materialId" : 16738,
+  "materialName" : "aeon_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeon_tile5",
+  "description" : "A durable material found in Timeless structures.",
+  "shortdescription" : "Chrono Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aeon_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4000
+  }
+}

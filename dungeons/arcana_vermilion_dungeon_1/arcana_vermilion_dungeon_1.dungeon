@@ -1,0 +1,546 @@
+{
+  "metadata" : {
+    "name" : "arcana_vermilion_dungeon_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_vermilion_dungeon_1_part_left",
+	"arcana_vermilion_dungeon_1_part_right"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 300,
+    "extendSurfaceFreeSpace" : 200,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_vermilion_dungeon_1_part_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_1_part_1.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_vermilion_dungeon_1_part_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_1_part_2.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_vermilion_dungeon_1_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_1_part_3.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_vermilion_dungeon_1_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_1_part_4.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_vermilion_dungeon_1_part_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_1_part_5.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_vermilion_dungeon_1_part_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_1_part_6.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_vermilion_dungeon_1_part_7" ] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_1_part_7.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_vermilion_dungeon_1_part_8" ] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_1_part_8.json" ]
+    },
+	
+	// CONNECTORS
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_3.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_4.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_5.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_6",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_6.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_7",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_7.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_8",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_8.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_9",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_9.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_1_10",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_1_10.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_2_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_2_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_2_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_2_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_2_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_2_3.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_2_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_2_4.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_3_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_3_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_3_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_3_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_3_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_3_3.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_3_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_3_4.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_3_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_3_5.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_4_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_4_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_4_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_4_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_4_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_4_3.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_4_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_4_4.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_4_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_4_5.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_4_6",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_4_6.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_4_7",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_4_7.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_4_8",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_4_8.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_5_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_5_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_5_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_5_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_5_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_5_3.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_5_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_5_4.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_6_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_6_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_6_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_6_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_6_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_6_3.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_6_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_6_4.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_6_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_6_5.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_6_6",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_6_6.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_6_7",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_6_7.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_6_8",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_6_8.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_7_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_7_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_7_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_7_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_7_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_7_3.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_7_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_7_4.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_7_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_7_5.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_7_6",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_7_6.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_7_7",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_7_7.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_7_8",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_7_8.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_8_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_8_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_8_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_8_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_8_3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_8_3.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_8_4",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_8_4.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_8_5",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_8_5.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_8_6",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_8_6.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_8_7",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_8_7.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_connector_8_8",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_connector_8_8.json" ] ],
+      "chance" : 0
+    },
+	
+	// ENTRANCES
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_part_left.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_1_part_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_vermilion_dungeon_1_part_right.json" ] ],
+      "chance" : 0
+    }
+  ]
+}

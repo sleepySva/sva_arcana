@@ -1,0 +1,22 @@
+{
+  "materialId" : 16893,
+  "materialName" : "exousia_tile31",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile31",
+  "description" : "A chainlink fence.",
+  "shortdescription" : "Chainlink Fence",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile31.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 60
+  }
+}

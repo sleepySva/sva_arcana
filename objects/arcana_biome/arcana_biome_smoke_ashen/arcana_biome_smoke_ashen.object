@@ -61,13 +61,13 @@
 
   "inputNodes" : [ [0, 0] ],
 
-  "inactiveLightColor" : [0, 0, 0], // light color to emit when the object is 'off'
-  "activeLightColor" : [0, 0, 0], // light color to emit when the object is 'on'
+  "inactiveLightColor" : [0, 0, 0],
+  "activeLightColor" : [0, 0, 0],
 
-  "fireTime" : 0.4, // rate of fire
-  "fireTimeVariance" : 0.3, // variation in rate of fire
-  "projectile" : "arcana_biome_smoke_ashen", // name of projectile (required)
-  "projectileConfig" : { // extra configuration overrides for projectile
+  "fireTime" : 0.4,
+  "fireTimeVariance" : 0.3,
+  "projectile" : "arcana_projectile_flame_ashen",
+  "projectileConfig" : {
     "power" : 0,
     "damageType" : "Environment"
   },

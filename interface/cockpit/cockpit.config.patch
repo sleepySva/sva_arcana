@@ -7,7 +7,23 @@
         "op": "test",
         "path": "/displayDungeons"
   },
- 
+
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_vermilion_dungeon_2",
+	"value": {
+		"description" : "An Exousian ship looming in the skies.",
+		"icon" : "/interface/cockpit/dungeons/arcana_vermilion_dungeon_2.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_vermilion_dungeon_1",
+	"value": {
+		"description" : "A small city under the rule of the Exousian Empire.",
+		"icon" : "/interface/cockpit/dungeons/arcana_vermilion_dungeon_1.png"
+	}
+  },
   {
     "op": "add",
     "path": "/displayDungeons/arcana_eminsnow_dungeon_4",
@@ -1219,7 +1235,7 @@
     "path": "/displayOres/arcana_mod_rufescite",
     "value": {
       "displayName": "Rufescite",
-      "icon": "/items/generic/arcana_ores/arcana_misc_rufescite.png"
+      "icon": "/items/generic/arcana_misc/arcana_misc_rufescite.png"
     }
   }
   ]

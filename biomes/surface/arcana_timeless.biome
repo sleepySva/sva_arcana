@@ -93,7 +93,7 @@
   ],
 
   "mainBlock" : "timeless_tile1",
-  "subBlocks" : [ "timeless_tile2", "moonrock", "stonerubble" ],
+  "subBlocks" : [ "timeless_tile2", "moonrock", "stonerubble", "cerueon_tile1", "cerueon_tile2", "rustyblock" ],
   "ores" : "arcana_timeless_ores_surface",
 
   "parallax" : "/parallax/surface/arcana_timeless.parallax",
@@ -109,16 +109,16 @@
 
   "musicTrack" : {
     "day" : {
-      "tracks" : [ "/music/gravitational-collapse.ogg", "/music/the-eternal-tide.ogg", "/music/casiopeia.ogg" ]
+      "tracks" : [ "/music/aeon.ogg", "/music/bright-blue-fog.ogg", "/music/the-apex.ogg", "/music/casiopeia.ogg" ]
     },
     "night" : {
-      "tracks" : [ "/music/gravitational-collapse.ogg", "/music/the-eternal-tide.ogg", "/music/casiopeia.ogg" ]
+      "tracks" : [ "/music/aeon.ogg", "/music/bright-blue-fog.ogg", "/music/the-apex.ogg", "/music/casiopeia.ogg" ]
     }
   },
 
   "surfacePlaceables" : {
-    "grassMod" : [ "blackash" ],
-    "grassModDensity" : 0.7,
+    "grassMod" : [ "arcana_mod_goldenGrass" ],
+    "grassModDensity" : 0.8,
 
     "items" : [
       {
@@ -255,15 +255,15 @@
       },
       {
         "mode" : "floor",
-        "priority" : 1.0,
+        "priority" : 2.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:rareClumpyLarge",
+        "distribution" : "/biomes/distributions.config:denseLarge",
 
         "type" : "tree",
-        "treeFoliageHueShiftMax" : 180,
-        "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "ashy", "coal", "magma", "lava" ],
-        "treeFoliageList" : [ "" ]
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "aeon" ],
+        "treeFoliageList" : []
       },
       {
         "mode" : "floor",

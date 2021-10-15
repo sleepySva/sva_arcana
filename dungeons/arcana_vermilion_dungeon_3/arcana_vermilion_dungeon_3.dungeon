@@ -1,0 +1,107 @@
+{
+  "metadata" : {
+    "name" : "arcana_vermilion_dungeon_3",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_vermilion_dungeon_3_part_1",
+	"arcana_vermilion_dungeon_3_part_2",
+	"arcana_vermilion_dungeon_3_part_3",
+	"arcana_vermilion_dungeon_3_part_4",
+	"arcana_vermilion_dungeon_3_part_5",
+	"arcana_vermilion_dungeon_3_part_6",
+	"arcana_vermilion_dungeon_3_part_7",
+	"arcana_vermilion_dungeon_3_part_8",
+	"arcana_vermilion_dungeon_3_part_9",
+	"arcana_vermilion_dungeon_3_part_10",
+	"arcana_vermilion_dungeon_3_part_11"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_1.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_2.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_3.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_4.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_5.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_6.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_7.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_8.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_9.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_10",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_10.json" ]
+    },
+    {
+      "name" : "arcana_vermilion_dungeon_3_part_11",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_vermilion_dungeon_3_part_11.json" ]
+    }
+  ]
+}
