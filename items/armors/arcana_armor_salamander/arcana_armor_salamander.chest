@@ -1,12 +1,12 @@
 {
   "itemName" : "arcana_armor_salamander_chest",
-  "price" : 1000,
+  "price" : 900,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "chestwear",
-  "description" : "A piece of heavy armor made from obsidian. ^green;+20% Fire res.^reset;",
-  "shortdescription" : "Salamander Chestplate",
+  "description" : "A piece of heavy armor made from obsidian. ^green;+10% Fire res.^reset;",
+  "shortdescription" : "Aneides Chestplate",
   "tooltipKind" : "armor",
 
   "maleFrames" : {
@@ -26,7 +26,7 @@
     {
       "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 1.26
     },
     {
       "levelFunction" : "standardArmorLevelProtectionMultiplier",
@@ -46,13 +46,13 @@
     {
       "levelFunction" : "arcana_multiplier_static",
       "stat" : "fireResistance",
-      "amount" : 0.2
+      "amount" : 0.1
     }
   ],
 
   "colorOptions" : [
     // BLACK
-    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
+    { "ffca8a" : "b472b1", "e0975c" : "634678", "a85636" : "2b2752", "6f2919" : "181722" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

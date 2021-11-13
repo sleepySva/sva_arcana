@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "An armor piece exhibiting a faint Cosmo aura.",
+  "description" : "An armor piece exhibiting a faint Cosmo aura. ^green;+5% Fire Res.^reset;",
   "shortdescription" : "Catalytic Leggings",
   "tooltipKind" : "armor",
 
@@ -32,7 +32,12 @@
     {
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 18
+      "amount" : 20
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "fireResistance",
+      "amount" : 0.05
     }
   ],
 

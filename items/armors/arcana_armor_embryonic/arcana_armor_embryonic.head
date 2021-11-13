@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "headarmour",
-  "description" : "An armor piece exhibiting a faint green aura.",
+  "description" : "An armor piece exhibiting a faint green aura. ^green;+5% Poison Res.^reset;",
   "shortdescription" : "Embryonic Helm",
   "tooltipKind" : "armor",
 
@@ -18,7 +18,7 @@
     {
       "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.12
+      "baseMultiplier" : 1.13
     },
     {
       "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
@@ -33,7 +33,12 @@
     {
       "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 16
+      "amount" : 17
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "poisonResistance",
+      "amount" : 0.05
     }
   ],
   

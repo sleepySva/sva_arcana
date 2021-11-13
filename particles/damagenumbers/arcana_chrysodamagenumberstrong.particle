@@ -1,0 +1,23 @@
+{
+  "kind" : "arcana_chrysodamagenumberstrong",
+  "definition" : {
+    "type" : "text",
+    "text" : "^shadow;$dmg$",
+    "color" : [247, 213, 64, 255],
+    "light" : [120, 120, 20],
+    "fullbright" : true,
+    "initialVelocity" : [0.0, 0.0],
+    "finalVelocity" : [0.0, 0.0],
+    "size" : 1.4,
+    "approach" : [3, 30],
+    "angularVelocity" : 20,
+    "timeToLive" : 0.7,
+    "layer" : "front",
+    "destructionAction" : "fade",
+    "destructionTime" : 1.5,
+    "variance" : {
+      "initialVelocity" : [1.0, 1.0]
+    },
+    "flippable" : false
+  }
+}

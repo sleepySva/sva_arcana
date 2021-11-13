@@ -24,7 +24,8 @@
 
       "flipImages" : true,
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
     },
     {
       "image" : "arcana_astral_wireddeco_7.png:<color>.on",
@@ -34,7 +35,8 @@
       "direction" : "right",
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
     }
   ],
 

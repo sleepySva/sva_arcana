@@ -14,7 +14,7 @@
     "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : " Bookstore",
-        "subtitle" : " New books will arrive with time!"
+        "subtitle" : " New books will arrive from time to time!"
       }
     },
     "buyFactor" : 4.0,
@@ -56,10 +56,23 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_vendor_2.png:<color>.<frame>",
-      "imagePosition" : [-48, -0],
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-48, 0],
       "frames" : 8,
-      "animationCycle" : 1.6,
+      "animationCycle" : 4.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "right",
+      "imagePosition" : [-48, 0],
+      "frames" : 8,
+      "animationCycle" : 4.0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

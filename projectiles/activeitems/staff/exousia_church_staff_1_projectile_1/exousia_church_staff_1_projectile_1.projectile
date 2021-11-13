@@ -1,0 +1,74 @@
+{
+  "projectileName" : "exousia_church_staff_1_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : -10,
+  "acceleration" : 10,
+  "piercing" : false,
+  "knockback" : 30,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [248, 122, 80],
+  "emitters" : [ "arcana_particle_flame_large_red", "arcana_particle_ember_red_lingering" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_red_energy/arcana_explosion_bullet_red_energy.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "artifact_orb_perpetuityEye_projectile_2",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.8,
+		"config" : {
+			"timeToLive" : 2
+		}
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
+    },
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/exousia_church_staff_1_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "fire",
+  
+  "statusEffects" : [ "burning" ],
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 80,
+    "controlForce" : 60
+  }
+}

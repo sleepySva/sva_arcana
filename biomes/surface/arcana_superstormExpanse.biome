@@ -2,6 +2,8 @@
   "name" : "arcana_superstormExpanse",
   "friendlyName" : "Superstorm Expanse",
 
+  "statusEffects" : [ "arcana_status_supercharged" ],
+
   "spawnProfile" : {
     "groups" : [
       {
@@ -59,7 +61,7 @@
   },
 
   // hue shift options
-  "hueShiftOptions" : [-180, -135, -90, -45, 0, 45, 90, 135, 180],
+  "hueShiftOptions" : [0, 5, 10],
 
   "weather" : [
     [0, [
@@ -73,12 +75,12 @@
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [197, 48, 174], [253, 161, 96] ],
-      "dayColors" : [ [142, 66, 235], [225, 155, 255] ],
+      "dayColors" : [ [152, 66, 235], [145, 185, 255] ],
       "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
       "nightColors" : [ [34, 28, 63, 80], [58, 32, 80, 160] ],
 
       "morningLightColor" : [140, 71, 0],
-      "dayLightColor" : [220, 140, 220],
+      "dayLightColor" : [230, 210, 190],
       "eveningLightColor" : [180, 120, 120],
       "nightLightColor" : [40, 20, 60]
     }

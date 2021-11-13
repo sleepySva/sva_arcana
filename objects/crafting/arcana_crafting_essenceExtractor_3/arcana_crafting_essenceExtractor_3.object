@@ -2,7 +2,7 @@
   "objectName" : "arcana_crafting_essenceExtractor_3",
   "colonyTags" : ["crafting"],
   "rarity" : "Legendary",
-  "description" : "A modern essence extractor for extracting azure and mirage essence.",
+  "description" : "A modern essence extractor for extracting higher essence.",
   "shortdescription" : "^#63c7e9;Orion Essence Extractor^reset;",
   "race" : "generic",
   "category" : "crafting",
@@ -12,7 +12,7 @@
 
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
-    "config" : "/interface/windowconfig/arcana_crafting_essenceExtractor_3.config",
+    "config" : "/interface/arcana/arcana_crafting_essenceExtractor/arcana_crafting_essenceExtractor_3.config",
 	"filter" : ["arcana_crafting_essenceExtractor"]
   },
 

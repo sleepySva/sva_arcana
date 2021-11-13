@@ -1,0 +1,23 @@
+{
+  "materialId" : 16897,
+  "materialName" : "ambersoil_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "ambersoil_tile1",
+  "description" : "A yellowish soil found in Ambersoil biomes.",
+  "shortdescription" : "Ambersoil Dirt",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 6,
+  "category" : "materials",
+  "tillableMod" : 32,
+  "soil" : true,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ambersoil_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1300
+  }
+}

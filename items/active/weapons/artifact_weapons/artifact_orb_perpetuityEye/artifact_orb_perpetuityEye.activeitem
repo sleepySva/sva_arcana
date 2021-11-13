@@ -40,7 +40,7 @@
       "allowFlip" : true
     },
     "charge" : {
-      "duration" : 0.8,
+      "duration" : 0.4,
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : false,
@@ -57,7 +57,7 @@
       "allowFlip" : true
     },
     "discharge" : {
-      "duration" : 0.5,
+      "duration" : 0.4,
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : false,
@@ -66,7 +66,7 @@
       "allowFlip" : true
     },
     "cooldown" : {
-      "duration" : 0.2,
+      "duration" : 0.1,
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : false,
@@ -82,7 +82,7 @@
   "primaryAbility" : {
 
     "name" : "Twelve Holy Spears",
-	"energyCost" : 120,
+	"energyCost" : 90,
     "maxCastRange" : 40,
 	
 	"projectileType" : ["artifact_orb_perpetuityEye_projectile_1"],
@@ -97,7 +97,7 @@
     "projectileDelayEach" : 0.06,
 
     "projectileParameters" : {
-      "baseDamage" : 12
+      "baseDamage" : 14
     },
 
     "stances" : {

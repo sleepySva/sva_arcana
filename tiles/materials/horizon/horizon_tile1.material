@@ -3,10 +3,10 @@
   "materialName" : "horizon_tile1",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "horizon_tile1",
-  "description" : "A dark rune block.",
-  "shortdescription" : "Horizon Rune Block",
+  "description" : "A dark roofing tile.",
+  "shortdescription" : "Horizon Roofing Tile",
   "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
-  "health" : 18,
+  "health" : 12,
   "category" : "materials",
 
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
@@ -16,7 +16,6 @@
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : true,
-    "zLevel" : 601,
-    "radiantLight" : [93, 28, 105]
+    "zLevel" : 601
   }
 }

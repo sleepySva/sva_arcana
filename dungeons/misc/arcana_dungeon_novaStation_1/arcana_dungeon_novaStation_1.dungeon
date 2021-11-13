@@ -4,7 +4,7 @@
     "species" : "generic",
     "rules" : [
     ],
-    "anchor" : [ "arcana_dungeon_novaStation_1" ],
+    "anchor" : [ "arcana_dungeon_novaStation" ],
     "gravity" : 80,
     "maxRadius" : 1000000,
     "maxParts" : 100,
@@ -13,11 +13,11 @@
 
   "parts" : [
     {
-      "name" : "arcana_dungeon_novaStation_1",
+      "name" : "arcana_dungeon_novaStation",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_novaStation_1.json" ]
+      "def" : [ "tmx", "arcana_dungeon_novaStation.json" ]
     }
   ]
 }

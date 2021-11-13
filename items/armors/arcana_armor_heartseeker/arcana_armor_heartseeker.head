@@ -1,12 +1,12 @@
 {
   "itemName" : "arcana_armor_heartseeker_head",
-  "price" : 1000,
+  "price" : 4000,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
-  "rarity" : "Legendary",
+  "rarity" : "Essential",
   "category" : "headarmour",
   "description" : "An ancient armor forged with red aspirite. ^green;Grants minor health regeneration.^reset;",
-  "shortdescription" : "Heartseeker Headgear",
+  "shortdescription" : "Heartseeker's Adulation",
   "tooltipKind" : "armor",
 
   "maleFrames" : "head.png",
@@ -28,7 +28,7 @@
     {
       "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 8
+      "amount" : 6
     },
     {
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",

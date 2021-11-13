@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headarmour",
-  "description" : "A dark lit futuristic helmet.",
+  "description" : "A dark lit futuristic helmet. ^red;-10% Eletric resistance.^reset;",
   "shortdescription" : "Sleepwalker Helmet",
   "tooltipKind" : "armor",
 
@@ -18,12 +18,12 @@
     {
       "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.16
+      "baseMultiplier" : 1.10
     },
     {
       "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.2
+      "amount" : 0.1
     },
     {
       "levelFunction" : "manipulatorArmorLevelMaxEnergyMultiplier",
@@ -34,6 +34,11 @@
       "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 26
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "electricResistance",
+      "amount" : -0.1
     }
   ],
   

@@ -1,9 +1,9 @@
 {
   "itemName" : "havencrest_assaultRifle_1",
-  "price" : 1000,
+  "price" : 800,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "An arcanium based rifle.",
+  "description" : "An arcanium forged rifle.",
   "shortdescription" : "Osiri Riveter",
   "tooltipKind" : "gun",
   "category" : "assaultRifle",
@@ -11,23 +11,38 @@
   "itemTags" : ["weapon","ranged","assaultrifle"],
   "level" : 6,
 
-  "inventoryIcon" : "havencrest_assaultRifle_1.png",
+  "inventoryIcon" : "body.png",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "havencrest_assaultRifle_1.png",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_blue.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.8, 0.2]
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.8, -0.6]
+		  }
+		}
+	  }
+	},
     "sounds" : {
-      "fire" : ["/sfx/melee/laser_weapon_swing2.ogg"]
+      "fire" : ["/sfx/gun/plasma_mp1.ogg"]
     }
   },
 
-  "baseOffset" : [1.2, 0.25],
-  "muzzleOffset" : [1.8, 0.5],
+  "baseOffset" : [0.8, 0.2],
+  "muzzleOffset" : [1.6, 0.5],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -37,12 +52,12 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.06,
-    "baseDps" : 40.2,
-    "energyUsage" : 26.0,
-    "inaccuracy" : 0.04,
+    "fireTime" : 0.3,
+    "baseDps" : 9.2,
+    "energyUsage" : 58.0,
+    "inaccuracy" : 0.02,
 
-    "projectileCount" : 1,
+    "projectileCount" : 2,
     "fireType" : "auto",
 
     "projectileType" : "havencrest_assaultRifle_1_projectile_1",
@@ -79,8 +94,6 @@
       }
     }
   },
-
-  "altAbilityType" : "grenadelauncher",
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

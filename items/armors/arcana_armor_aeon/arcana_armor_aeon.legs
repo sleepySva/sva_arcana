@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "The hand of hour, cold as the celestial moon.",
+  "description" : "The hand of hour, cold as the celestial moon. ^green;+2% Physical and Lunar Res.^reset;",
   "shortdescription" : "Aeon's Hour",
   "tooltipKind" : "armor",
 
@@ -33,6 +33,16 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 32
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "physicalResistance",
+      "amount" : 0.02
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "arcana_resistance_lunar",
+      "amount" : 0.02
     }
   ],
 

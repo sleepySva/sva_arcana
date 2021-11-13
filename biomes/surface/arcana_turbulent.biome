@@ -84,10 +84,10 @@
   ],
 
   "mainBlock" : "turbulent_tile1",
-  "subBlocks" : [ "sandstone01" ],
+  "subBlocks" : [ "sandstone01", "rockbrick", "shadowblock"],
   "ores" : "arcana_turbulent_ores_surface",
 
-  "parallax" : "/parallax/surface/ocean.parallax",
+  "parallax" : "/parallax/surface/arcana_turbulent.parallax",
 
   "ambientNoises" : {
     "day" : {
@@ -167,18 +167,17 @@
           }
         ]
       },
-
       {
         "mode" : "floor",
-        "priority" : 0.5,
+        "priority" : 1.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:denseMedium",
 
         "type" : "tree",
         "treeFoliageHueShiftMax" : 180,
         "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "coconut" ],
-        "treeFoliageList" : [ "cocopalm" ]
+        "treeStemList" : [ "ashy", "coal", "magma", "lava" ],
+        "treeFoliageList" : [ "" ]
       },
       {
         "mode" : "floor",

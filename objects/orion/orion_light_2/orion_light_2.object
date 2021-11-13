@@ -5,33 +5,56 @@
   "description" : "A tiny blue lighting device.",
   "shortdescription" : "Tiny Machinery LED",
   "race" : "generic",
-  "category" : "light",
-  "price" : 100,
   
-  "lightColor" : [70, 100, 100],
-  //"pointLight" : true,
-  //"pointBeam" : 10,
-  //"beamAmbience" : 0.15,
+  "category" : "light",
+  "price" : 110,
+  "lightColor" : [90, 120, 130],
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
       "image" : "orion_light_2.png:<color>.<frame>",
       "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 0],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "orion_light_2.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 0],
+
+      "direction" : "right",
 
       "spaceScan" : 0.1,
-      "anchors" : [ "background" ]
+      "anchors" : [ "top" ]
     }
   ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
   
-  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
   "animationParts" : {
-    "light" : "orion_light_2.png"
+    "bg" : "orion_light_2.png",
+    "fg" : "fullbright.png"
   },
   "animationPosition" : [0, 0],
 
   "scripts" : [ "/objects/wired/light/light.lua" ],
   "scriptDelta" : 60,
+  
+  "interactive" : false,
 
   "inputNodes" : [ [0, 0] ]
 }

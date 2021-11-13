@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "The hand of minute, hot as the celestial sun.",
+  "description" : "The hand of minute, hot as the celestial sun. ^green;+2% Physical and Solar Res.^reset;",
   "shortdescription" : "Aeon's Minute",
   "tooltipKind" : "armor",
 
@@ -42,6 +42,16 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 32
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "physicalResistance",
+      "amount" : 0.02
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "arcana_resistance_solar",
+      "amount" : 0.02
     }
   ],
 

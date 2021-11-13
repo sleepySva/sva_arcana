@@ -1,6 +1,44 @@
 
 {
 
+  "arcana_dungeonloots_verdantTreasure" : [
+    [0, {
+	  "fill" : [
+		{"pool" : "oasisTreasure"},
+		{"pool" : "toxicTreasure"},
+	    {"pool" : "basicTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["gaea_chakram_1", 1]},
+		{"weight" : 1.0, "item" : ["gaea_boomerang_1", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_dungeonloots_verdantKey" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["arcana_key_verdantKey", 1]},
+		{"item" : ["floweryblock", 10]},
+		{"item" : ["plantmatter", 10]},
+		{"item" : ["petalblock", 10]},
+	    {"pool" : "basicTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["plantfibre", 2]},
+		{"weight" : 1.0, "item" : ["plantfibre", 4]},
+        {"weight" : 1.0, "item" : ["plantfibre", 6]},
+		{"weight" : 1.0, "item" : ["plantfibre", 8]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
   "arcana_dungeonloots_exousianTech" : [
     [0, {
 	  "fill" : [

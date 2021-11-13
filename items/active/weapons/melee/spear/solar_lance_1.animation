@@ -81,7 +81,7 @@
       "offsetRegion" : [3.5, -1.0, 8.5, 1.0],
       "particles" : [ ]
     },
-    "fireswoosh" : {
+    "arcana_solarswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
       "emissionRate" : 60,
@@ -93,45 +93,6 @@
         { "particle" : "fireswoosh1"},
         { "particle" : "fireswoosh2"},
         { "particle" : "fireswoosh3"}
-      ]
-    },
-    "electricswoosh" : {
-      "active" : false,
-      "transformationGroups" : ["swoosh"],
-      "emissionRate" : 60,
-      "offsetRegion" : [3.5, -1.0, 8.5, 1.0],
-      "particles" : [
-        { "particle" : "electricswoosh1"},
-        { "particle" : "electricswoosh2"},
-        { "particle" : "electricswoosh2"}
-      ]
-    },
-    "iceswoosh" : {
-      "active" : false,
-      "transformationGroups" : ["swoosh"],
-      "emissionRate" : 60,
-      "offsetRegion" : [3.5, -1.0, 8.5, 1.0],
-      "particles" : [
-        { "particle" : "iceswoosh1"},
-        { "particle" : "iceswoosh2"},
-        { "particle" : "iceswoosh3"},
-        { "particle" : "iceswoosh1"},
-        { "particle" : "iceswoosh2"},
-        { "particle" : "iceswoosh3"}
-      ]
-    },
-    "poisonswoosh" : {
-      "active" : false,
-      "transformationGroups" : ["swoosh"],
-      "emissionRate" : 60,
-      "offsetRegion" : [3.5, -1.0, 8.5, 1.0],
-      "particles" : [
-        { "particle" : "poisonswoosh1"},
-        { "particle" : "poisonswoosh2"},
-        { "particle" : "fireswoosh2"},
-        { "particle" : "poisonswoosh1"},
-        { "particle" : "poisonswoosh2"},
-        { "particle" : "fireswoosh2"}
       ]
     }
   },

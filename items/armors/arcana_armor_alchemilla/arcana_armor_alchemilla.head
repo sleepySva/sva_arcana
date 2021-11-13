@@ -1,11 +1,11 @@
 {
   "itemName" : "arcana_armor_alchemilla_head",
-  "price" : 1000,
+  "price" : 1100,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
-  "rarity" : "Rare",
+  "rarity" : "Common",
   "category" : "headarmour",
-  "description" : "A light circlet.",
+  "description" : "A light circlet. ^green;+5% Poison and Ice res.^reset;",
   "shortdescription" : "Alchemilla Circlet",
   "tooltipKind" : "armor",
 
@@ -13,33 +13,43 @@
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
 
-  "level" : 6,
+  "level" : 2,
   "leveledStatusEffects" : [
     {
-      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.1
+      "baseMultiplier" : 1.15
     },
     {
-      "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
       "stat" : "protection",
       "amount" : 0.3
     },
     {
-      "levelFunction" : "manipulatorArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 1
+      "amount" : 4
     },
     {
-      "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 11
+      "amount" : 3
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "poisonResistance",
+      "amount" : 0.05
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "iceResistance",
+      "amount" : 0.05
     }
   ],
   
   "colorOptions" : [
     // BLACK
-    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
+    { "ffca8a" : "84c332", "e0975c" : "629223", "a85636" : "3b4f21", "6f2919" : "17290d" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

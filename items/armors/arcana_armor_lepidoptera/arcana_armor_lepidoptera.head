@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "headarmour",
-  "description" : "A pale colored helm, crafted from holosium. ^green;+10% Lumin res.^reset;",
+  "description" : "A pale colored helm, crafted from holosium. ^green;+10% Lumin res.^reset; ^red;-10% Abyss res.^reset;",
   "shortdescription" : "Lepidoptera Helmet",
   "tooltipKind" : "armor",
 
@@ -37,8 +37,13 @@
     },
     {
       "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_lumin",
+      "stat" : "arcana_resistance_lumen",
       "amount" : 0.1
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "arcana_resistance_abyss",
+      "amount" : -0.1
     }
   ],
   

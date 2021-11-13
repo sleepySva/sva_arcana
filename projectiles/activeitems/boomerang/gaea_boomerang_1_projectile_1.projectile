@@ -1,0 +1,37 @@
+{
+  "projectileName" : "gaea_boomerang_1_projectile_1",
+  "image" : "gaea_boomerang_1_projectile_1.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 8,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "flippable" : false,
+  "orientationLocked" : true,
+  "actionOnReap" : [ ],
+  "periodicActions" : [
+    {
+      "time" : 0.05,
+      "loop" : true,
+      "action" : "projectile",
+      "type" : "poisontrail",
+      "fuzzAngle" : 360
+   }
+  ],
+  "damagePoly" : [[-8, 4], [-4, 8], [4, 8], [8, 4], [8, -4], [4, -8], [-4, -8], [-8, -4]],
+  
+  "power" : 5.0,
+  "speed" : 60,
+  "damageKind" : "poison",
+  "statusEffects" : [
+    "weakpoison"
+  ],
+  
+  "physics" : "laser",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 5,
+  "emitters" : [ "poisonplasmarocket" ],
+  "persistentAudio" : "/sfx/melee/spear_twirl_loop.ogg",
+
+  "scripts" : [ "/scripts/projectiles/boomerangprojectile.lua" ]
+}

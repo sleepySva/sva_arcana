@@ -1,0 +1,61 @@
+{
+  "projectileName" : "exousia_imperialArmy_3_sniperRifle_3_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 140,
+  "acceleration" : 60,
+  "piercing" : true,
+  "knockback" : 60,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [248, 122, 80],
+  "emitters" : [ "arcana_particle_flame_large_red", "arcana_particle_ember_red_lingering" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_red_energy/arcana_explosion_bullet_red_energy.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
+    },
+    {
+      "time" : 0.03,
+      "repeat" : true,
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_red_energy/arcana_explosion_bullet_red_energy.config"
+    },
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/exousia_imperialArmy_3_sniperRifle_3/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "hammer"
+}

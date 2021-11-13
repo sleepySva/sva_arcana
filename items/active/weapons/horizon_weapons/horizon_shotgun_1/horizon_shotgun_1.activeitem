@@ -49,17 +49,17 @@
     "class" : "GunFire",
 
     "fireTime" : 0.9,
-    "baseDps" : 19.8,
-    "energyUsage" : 30.0,
+    "baseDps" : 17.2,
+    "energyUsage" : 60.0,
     "inaccuracy" : 0.13,
 
     "projectileCount" : 3,
     "fireType" : "auto",
 
-    "projectileType" : "horizon_shotgun_1_projectile_1",
+    "projectileType" : "horizon_assaultRifle_3_projectile_1",
     "projectileParameters" : {
-      "damageKind" : "shotgunbullet",
-      "knockback" : 26
+      "damageKind" : "arcana_abyss",
+      "knockback" : 16
     },
     "stances" : {
       "idle" : {
@@ -90,8 +90,6 @@
       }
     }
   },
-
-  "altAbilityType" : "grenadelauncher",
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

@@ -7,13 +7,13 @@
       "layers": {
         "surface": {
           "primaryRegion" : ["arcana_arcaneForest"],
-          "secondaryRegions" : ["garden", "forest" ],
+          "secondaryRegions" : [],
           "dungeons": [
-		  	  [4.0, "arcana_arcaneDesert_dungeon_2"],
+			  [1.0, "arcana_verdant_dungeon_2"],
+		  	  [3.0, "arcana_arcaneDesert_dungeon_2"],
+			  [4.0, "arcana_arcaneForest_dungeon_2"],
 			  [1.0, "arcana_solarized_dungeon_2"],
-			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
-			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"]
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"]
           ]
         },
 		
@@ -221,17 +221,17 @@
       "layers": {
         "surface": {
           "primaryRegion" : ["arcana_verdant"],
-          "secondaryRegions" : ["forest","garden"],
+          "secondaryRegions" : [],
           "dungeons": [
 			  [1.0, "arcana_solarized_dungeon_2"],
-			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "arcana_arcaneForest_dungeon_2"],
+			  [6.0, "arcana_verdant_dungeon_2"],
 			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
-			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
-			  [1.0, "glitchsewer"], [1.0, "novakidvillage"],
-			  [1.0, "humancamp"]
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"]
           ]
+        },
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_verdantUnderground" ]
         }
       }
     }
@@ -246,7 +246,30 @@
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_verdant"]]],
-      "subRegion" : ["swamp", "giantflowers", "mushroom"]
+      "subRegion" : ["arcana_jadeMorass"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_verdantUnderground",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_viridescentAcid" ],
+      "biome": [[0,["arcana_verdantUnderground"]]],
+      "subRegion": ["minivillageunderground"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_jadeMorass",
+    "value": {
+	  "caveLiquid" : [ "swampwater" ],
+      "caveLiquidSeedDensityRange" : [20, 20],
+      "encloseLiquids" : true,
+      "fillMicrodungeons" : true,
+      "blockSelector" : [ "remixedSwampySurface" ],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_jadeMorass"]]]
     }
   },
   
@@ -332,10 +355,6 @@
           "primaryRegion" : ["arcana_turbulent"],
           "baseHeight" : 1150,
           "layerLevel" : 1050
-        },
-        "subsurface" : {
-          "primaryRegion" : ["arcana_turbulent_floor"],
-          "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
         }
       }
     }
@@ -346,7 +365,7 @@
     "path": "/regionTypes/arcana_turbulent",
     "value": {
       "oceanLiquid" : [ "water" ],
-      "blockSelector" : [ "remixedIslandsSurface" ],
+      "blockSelector" : [ "remixedIslandTowersSurface" ],
       "fgCaveSelector" : [ "empty" ],
       "bgCaveSelector" : [ "empty" ],
       "biome": [[0,["arcana_turbulent"]]]
@@ -422,7 +441,7 @@
           "secondaryRegions" : ["arcana_arcaneForest", "arcana_windswept" ],
           "dungeons": [
 			  [1.0, "arcana_solarized_dungeon_2"],
-			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "arcana_arcaneForest_dungeon_2"],
 			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
 			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
 			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
@@ -562,7 +581,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_desolate",
     "value": {
-      "caveLiquid": ["arcana_liquid_illuminatedWater"],
+      "caveLiquid": ["arcana_liquid_ruinousWater"],
       "blockSelector": ["remixedIslandTowersSurface"],
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
@@ -574,7 +593,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_desolate_underground_1",
     "value": {
-      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "caveLiquid": [ "arcana_liquid_ruinousWater" ],
       "biome": [[0,["arcana_desolate_underground_1"]]],
       "subRegion": []
     }
@@ -583,7 +602,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_desolate_underground_2",
     "value": {
-      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "caveLiquid": [ "arcana_liquid_ruinousWater" ],
       "biome": [[0,["arcana_desolate_underground_2"]]],
       "subRegion": []
     }
@@ -627,8 +646,8 @@
     "op": "add",
     "path": "/regionTypes/arcana_sanguine",
     "value": {
-      "caveLiquid": ["arcana_liquid_illuminatedWater"],
-      "blockSelector": ["remixedMildCanyonsSurface"],
+      "caveLiquid": ["arcana_liquid_ruinousWater"],
+      "blockSelector": ["remixedSpikesSurface2","remixedSpikesSurface"],
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_sanguine"]]],
@@ -674,7 +693,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_ferocious",
     "value": {
-      "caveLiquid": ["arcana_liquid_illuminatedWater"],
+      "caveLiquid": ["arcana_liquid_ruinousWater"],
       "blockSelector": ["remixedMildSurface"],
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
@@ -686,7 +705,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_ferocious_underground_1",
     "value": {
-      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "caveLiquid": [ "arcana_liquid_ruinousWater" ],
       "biome": [[0,["arcana_ferocious_underground_1"]]],
       "subRegion": []
     }
@@ -695,7 +714,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_ferocious_underground_2",
     "value": {
-      "caveLiquid": [ "arcana_liquid_illuminatedWater" ],
+      "caveLiquid": [ "arcana_liquid_ruinousWater" ],
       "biome": [[0,["arcana_ferocious_underground_2"]]],
       "subRegion": []
     }
@@ -711,10 +730,9 @@
           "primaryRegion" : ["arcana_animus"],
           "secondaryRegions" : ["arcana_arcaneTundra", "arcana_goldenForest" ],
           "dungeons": [
-			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [4.0, "hylotlruinedcastle"], [4.0, "hylotlcity"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
-			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+			  [1.0, "arcana_arcaneForest_dungeon_2"],
+			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"]
           ]
         },
 		
@@ -756,10 +774,10 @@
           "primaryRegion" : ["arcana_evoaquatic"],
           "secondaryRegions" : [ "arcana_verdant" ],
           "dungeons": [
+			  [1.0, "arcana_verdant_dungeon_2"],
 			  [4.0, "arcana_dungeon_evoSanctum"],
-		      [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
-			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+			  [1.0, "arcana_arcaneForest_dungeon_2"],
+		      [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"]
           ]
         },
 		
@@ -801,12 +819,10 @@
       "layers": {
         "surface": {
           "primaryRegion" : ["arcana_superstormExpanse"],
-          "secondaryRegions" : ["arcana_animus", "arcana_evoaquatic" ],
+          "secondaryRegions" : [],
           "dungeons": [
-			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
-			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
-			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+		      [8.0, "arcana_superstormExpanse_dungeon_1"],
+			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"]
           ]
         },
 		
@@ -956,8 +972,8 @@
           "secondaryRegions" : [],
           "dungeons": [
 			  [8.0, "arcana_timeless_dungeon_1"],
-			  [1.0, "dungeoncrawler"], [1.0, "glitchvillage"],
-			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+			  [1.0, "dungeoncrawler"],
+			  [1.0, "glitchsewer"]
           ]
         },
 		
@@ -1304,12 +1320,11 @@
           "primaryRegion" : [ "arcana_bambooForest" ],
           "secondaryRegions" : [ "arcana_solarized" ],
           "dungeons": [
+			  [1.0, "arcana_verdant_dungeon_2"],
 			  [4.0, "arcana_solarized_dungeon_2"], [2.0, "arcana_solarized_dungeon_3"],
-			  [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			  [1.0, "arcana_arcaneForest_dungeon_2"],
 			  [1.0, "novakidvillage"],
-			  [1.0, "humancamp"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"]
+			  [1.0, "humancamp"]
           ]
         },
 		
@@ -1501,8 +1516,10 @@
           "primaryRegion" : [ "arcana_senbonzakura" ],
           "secondaryRegions" : [ "arcana_eminsnowForest" ],
           "dungeons": [
+			  [1.0, "arcana_verdant_dungeon_2"],
 			  [4.0, "arcana_eminsnow_dungeon_3"],
 			  [2.0, "arcana_eminsnow_dungeon_4"],
+			  [1.0, "arcana_arcaneForest_dungeon_2"],
 			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
 			  [1.0, "apexcamp"]
           ]

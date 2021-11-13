@@ -19,19 +19,55 @@
     "handle" : "fullbright.png",
     "blade" : "horizon_broadsword_1.png"
   },
-  "animationCustom" : { },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "arcana_abyssSwordCharge" : {
+        "active" : false,
+        "transformationGroups" : ["weapon"],
+        "emissionRate" : 30,
+        "offsetRegion" : [-0.75, 0.0, 0.75, 5.5],
+        "particles" : [
+          { "particle" : "electricswoosh1"},
+          { "particle" : "electricswoosh2"},
+          { "particle" : "electricswoosh2"}
+        ]
+      }
+	},
+    "sounds" : {
+      "arcana_abyssTrailDashCharge" : [ "/sfx/melee/charge_traildash3.ogg" ],
+      "arcana_abyssTrailDashFire" : [ "/sfx/melee/travelingslash_electric1.ogg", "/sfx/melee/travelingslash_electric2.ogg", "/sfx/melee/travelingslash_electric3.ogg" ]
+    }
+  },
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "electric",
+  "elementalType" : "arcana_abyss",
 
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime" : 0.9,
-    "baseDps" : 10.8
+    "baseDps" : 10.8,
+	"damageConfig" : {
+	  "damageSourceKind" : "arcana_abyss_slash"
+	}
   },
 
   "altAbilityType" : "traildash",
+  "altAbility" : {
+	"elementalConfig" : {
+      "arcana_abyss" : {
+        "projectileType" : "electrictrail"
+      }
+    },
+    "damageConfig" : {
+      "damageSourceKind" : "arcana_abyss_slash",
+      "statusEffects" : [ ],
+      "baseDamage" : 4,
+      "knockback" : 2,
+      "timeout" : 0.5,
+      "timeoutGroup" : "alt"
+    }
+  },
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

@@ -18,22 +18,43 @@
       "parallax" : 1.2
     },
     {
-      "kind" : "midnightbelow",
-      "offset" : [0, 450],
+      "kind" : "midnight1",
+      "offset" : [0, 350],
       "noRandomOffset" : true,
       "parallax" : [3, 3.001],
+      "directives" : "?saturation=-20?brightness=-10",
       "nohueshift" : true
     },
     {
-      "kind" : "clouds1",
-      "baseCount" : 2,
-      "offset" : [0, 525],
-      "parallax" : [4, 5],
-      "minSpeed" : -10000,
-      "maxSpeed" : -10000,
-      "fadePercent" : 0.04
+      "kind" : "midnight1",
+      "offset" : [100, 400],
+      "noRandomOffset" : true,
+      "parallax" : [3, 3.003],
+      "directives" : "?saturation=-25?brightness=-10",
+      "nohueshift" : true
     },
-	
+    {
+      "kind" : "midnight2",
+      "offset" : [0, 225],
+      "noRandomOffset" : true,
+      "parallax" : [4, 4.001],
+      "directives" : "?saturation=-20?brightness=-10",
+      "nohueshift" : true,
+      "fadePercent" : 0.02
+    },
+    {
+      "kind" : "midnight3",
+      "offset" : [0, 140],
+      "parallax" : [5, 5],
+      "directives" : "?saturation=-25?brightness=-10",
+      "nohueshift" : true
+    },
+    {
+      "kind" : "cityscape0",
+      "offset" : [0, 350],
+      "parallax" : 5.8,
+      "fadePercent" : 0.0
+    },
     {
       "kind" : "arcana_superstormExpanse_cityscape1",
       "offset" : [0, 350],
@@ -55,36 +76,28 @@
       "fadePercent" : 0.10
     },
     {
-      "kind" : "cityships",
-      "offset" : [0, 350],
-      "parallax" : 6.999,
-      "minSpeed" : 5000,
-      "maxSpeed" : 10000,
-      "fadePercent" : 0.20
-    },
-    {
       "kind" : "arcana_superstormExpanse_cityscape3",
       "offset" : [0, 200],
       "parallax" : 8,
-      "fadePercent" : 0.20
+      "fadePercent" : 0.10
     },
     {
       "kind" : "arcana_superstormExpanse_cityscape4",
       "offset" : [0, 150],
       "parallax" : 9,
-      "fadePercent" : 0.20
+      "fadePercent" : 0.10
     },
     {
       "kind" : "arcana_superstormExpanse_cityscape5",
       "offset" : [0, 150],
       "parallax" : 10,
-      "fadePercent" : 0.30
+      "fadePercent" : 0.20
     },
     {
       "kind" : "cityscape6",
       "offset" : [0, 150],
       "parallax" : 11,
-      "fadePercent" : 0.30
+      "fadePercent" : 0.20
     },
 	
     {

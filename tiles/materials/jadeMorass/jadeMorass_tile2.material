@@ -1,0 +1,22 @@
+{
+  "materialId" : 16899,
+  "materialName" : "jadeMorass_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "jadeMorass_tile2",
+  "description" : "Glowing green crystals found in Jade Morass biomes.",
+  "shortdescription" : "Jade Crystal Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "jadeMorass_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2900,
+	"radiantLight" : [50, 110, 10]
+  }
+}

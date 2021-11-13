@@ -1,0 +1,21 @@
+{
+  "name" : "arcana_sanguine",
+  "blockingStat" : "specialStatusImmunity",
+
+  "effectConfig" : {
+    "activateDelay" : 0.1,
+    "deactivateDelay" : 0.1,
+    "triggerDamageThreshold" : 10,
+    "explosionDamageAmount" : 120
+  },
+  "defaultDuration" : 4,
+
+  "scripts" : [
+    "arcana_sanguine.lua"
+  ],
+
+  "animationConfig" : "arcana_sanguine.animation",
+
+  "label" : "Sanguine",
+  "icon" : "/interface/statuses/doomed.png"
+}

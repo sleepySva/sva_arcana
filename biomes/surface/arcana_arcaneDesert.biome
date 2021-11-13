@@ -2,6 +2,8 @@
   "name" : "arcana_arcaneDesert",
   "friendlyName" : "Arcane Desert",
 
+  "statusEffects" : [ "arcana_status_energyDrain" ],
+
   "spawnProfile" : {
     "groups" : [
       {
@@ -96,8 +98,8 @@
     }
   ],
 
-  "mainBlock" : "arcaneDesert_tile1",
-  "subBlocks" : [ "arcaneDesert_tile2", "arcaneDesert_tile3", "sandstone01" ],
+  "mainBlock" : "arcaneDesert_tile3",
+  "subBlocks" : [ "arcaneDesert_tile2", "arcaneDesert_tile1", "sandstone01", "cobblestone"],
   "ores" : "arcana_arcaneDesert_ores_surface",
 
   "parallax" : "/parallax/surface/arcana_arcaneDesert.parallax",

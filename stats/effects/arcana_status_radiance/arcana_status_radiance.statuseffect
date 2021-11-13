@@ -1,0 +1,16 @@
+{
+  "name" : "arcana_status_radiance",
+  "blockingStat" : "arcana_status_radiance_immunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 8,
+
+  "scripts" : [
+    "arcana_status_radiance.lua"
+  ],
+
+  "animationConfig" : "arcana_status_radiance.animation",
+
+  "label" : "Radiance",
+  "icon" : "/interface/statuses/glow.png"
+}

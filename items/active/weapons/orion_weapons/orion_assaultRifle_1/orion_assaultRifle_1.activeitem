@@ -1,34 +1,48 @@
 {
   "itemName" : "orion_assaultRifle_1",
-  "price" : 1000,
+  "price" : 900,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high tech rifle used by the Orion.",
-  "shortdescription" : "Orion Assault Rifle",
+  "description" : "A standard Orion rifle for combating robotic enemies. ^green;Inflicts Eletrified.^reset; ^red;No knockback.^reset;",
+  "shortdescription" : "^#bbbdce;OC^reset; Voltaic Rifle",
   "tooltipKind" : "gun",
   "category" : "assaultRifle",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","assaultrifle"],
   "level" : 8,
-  "collectablesOnPickup" : { "arcana_collection_weapon_stellar" : "orion_assaultRifle_1" },
 
-  "inventoryIcon" : "icon.png",
+  "inventoryIcon" : "body.png:default.1",
 
-  "animation" : "/items/active/weapons/ranged/orion_assaultRifle_1.animation",
+  "animation" : "animation.animation",
   "animationParts" : {
-    "butt" : "orion_assaultRifle_1_fullbright.png",
-    "middle" : "orion_assaultRifle_1.png",
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_red.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.7, 0.2] //Same as baseOffset
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.3]
+		  }
+		}
+	  }
+	},
     "sounds" : {
-      "fire" : ["/sfx/gun/ar4.ogg"]
+      "fire" : ["/sfx/gun/plasma_mp2.ogg"]
     }
   },
 
-  "baseOffset" : [0, 0],
-  "muzzleOffset" : [0, 0.5],
+  "baseOffset" : [0.7, 0.2],
+  "muzzleOffset" : [3.1, 0.3],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -38,18 +52,17 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.10,
-    "baseDps" : 30.4,
-    "energyUsage" : 28.0,
-    "inaccuracy" : 0.06,
+    "fireTime" : 0.24,
+    "baseDps" : 12.8,
+    "energyUsage" : 48.0,
+    "inaccuracy" : 0.01,
 
-    "projectileCount" : 1,
+    "projectileCount" : 2,
     "fireType" : "auto",
 
     "projectileType" : "orion_assaultRifle_1_projectile_1",
     "projectileParameters" : {
-      "damageKind" : "electric",
-      "knockback" : 20
+      "knockback" : 0
     },
     "stances" : {
       "idle" : {
@@ -62,17 +75,17 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "duration" : 0.05,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -80,8 +93,6 @@
       }
     }
   },
-
-  "altAbilityType" : "grenadelauncher",
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

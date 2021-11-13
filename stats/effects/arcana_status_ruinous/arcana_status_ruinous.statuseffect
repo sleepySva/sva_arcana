@@ -1,0 +1,21 @@
+{
+  "name" : "arcana_status_ruinous",
+  "blockingStat" : "specialStatusImmunity",
+
+  "effectConfig" : {
+    "activateDelay" : 0.1,
+    "deactivateDelay" : 0.1,
+    "triggerDamageThreshold" : 900,
+    "explosionDamageAmount" : 80
+  },
+  "defaultDuration" : 2,
+
+  "scripts" : [
+    "arcana_status_ruinous.lua"
+  ],
+
+  "animationConfig" : "arcana_status_ruinous.animation",
+
+  "label" : "Ruinous",
+  "icon" : "/interface/statuses/doomed.png"
+}

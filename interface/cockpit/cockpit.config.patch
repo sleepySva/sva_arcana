@@ -7,7 +7,66 @@
         "op": "test",
         "path": "/displayDungeons"
   },
-
+  
+  // Misc
+  {
+    "op": "add",
+    "path": "/wordsList",
+	"value": {
+		"arcana_arcaneForest" : { "word" : "arcana_arcaneForest", "friendlyWord" : " Arcane Forest" },
+		"arcana_arcaneDesert" : { "word" : "arcana_arcaneDesert", "friendlyWord" : " Arcane Desert" },
+		"arcana_arcaneTundra" : { "word" : "arcana_arcaneTundra", "friendlyWord" : " Arcane Tundra" },
+		"arcana_arcaneSea" : { "word" : "arcana_arcaneSea", "friendlyWord" : " Arcane Sea" },
+		"arcana_blistering" : { "word" : "arcana_blistering", "friendlyWord" : " Blistering" },
+		"arcana_turbulent" : { "word" : "arcana_turbulent", "friendlyWord" : " Turbulent" },
+		"arcana_verdant" : { "word" : "arcana_verdant", "friendlyWord" : " Arcane Verdant" },
+		"arcana_windswept" : { "word" : "arcana_windswept", "friendlyWord" : " Windswept" },
+		
+		"arcana_illuminated" : { "word" : "arcana_illuminated", "friendlyWord" : " Illuminated" },
+		"arcana_desolate" : { "word" : "arcana_desolate", "friendlyWord" : " Desolate" },
+		"arcana_goldenForest" : { "word" : "arcana_goldenForest", "friendlyWord" : " Golden Forest" },
+		"arcana_sanguine" : { "word" : "arcana_sanguine", "friendlyWord" : " Sanguine" },
+		"arcana_ferocious" : { "word" : "arcana_ferocious", "friendlyWord" : " Ferocious" },
+		"arcana_animus" : { "word" : "arcana_animus", "friendlyWord" : " Animus" },
+		"arcana_evoaquatic" : { "word" : "arcana_evoaquatic", "friendlyWord" : " Evoaquatic" },
+		"arcana_ardentTaiga" : { "word" : "arcana_ardentTaiga", "friendlyWord" : " Ardent Taiga" },
+		
+		"arcana_superstormExpanse" : { "word" : "superstormExpanse", "friendlyWord" : " Superstorm Expanse" },
+		"arcana_neonSea" : { "word" : "arcana_neonSea", "friendlyWord" : " Neon Sea" },
+		"arcana_stahlernBadlands" : { "word" : "arcana_stahlernBadlands", "friendlyWord" : " Stahlern Badlands" },
+		"arcana_timeless" : { "word" : "arcana_timeless", "friendlyWord" : " Timeless" },
+		"arcana_automated" : { "word" : "arcana_automated", "friendlyWord" : " Automated" },
+		"arcana_viridescent" : { "word" : "arcana_viridescent", "friendlyWord" : " Viridescent" },
+		
+		"arcana_solarized" : { "word" : "arcana_solarized", "friendlyWord" : " Solarized" },
+		"arcana_bambooForest" : { "word" : "arcana_bambooForest", "friendlyWord" : " Bamboo Forest" },
+		"arcana_azureDesert" : { "word" : "arcana_azureDesert", "friendlyWord" : " Azure Desert" },
+		"arcana_azureSea" : { "word" : "arcana_azureSea", "friendlyWord" : " Azure Sea" },
+		"arcana_eminsnow" : { "word" : "arcana_eminsnow", "friendlyWord" : " Eminsnow" },
+		"arcana_senbonzakura" : { "word" : "arcana_senbonzakura", "friendlyWord" : " Senbonzakura" },
+		
+		"arcana_vermilion" : { "word" : "arcana_vermilion", "friendlyWord" : " Vermilion" }
+	}
+  },
+  
+  // Weathers
+  {
+    "op": "add",
+    "path": "/weatherThreatValues",
+	"value": {
+		"arcana_weather_ruinousStorm" : 3.5
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayWeathers/arcana_weather_ruinousStorm",
+	"value": {
+		"displayName" : "Ruinous Storm",
+		"icon" : "/interface/cockpit/weather/arcana_weather_ruinousStorm.png"
+	}
+  },
+  
+  // Dungeons
   {
     "op": "add",
     "path": "/displayDungeons/arcana_vermilion_dungeon_2",
@@ -100,7 +159,7 @@
     "op": "add",
     "path": "/displayDungeons/arcana_workshop_dungeon_1",
 	"value": {
-		"description" : "An industrial compound supervised by Secion 8 of the Workshop of Gears.",
+		"description" : "An industrial compound supervised by Section 8 of the Workshop of Gears.",
 		"icon" : "/interface/cockpit/dungeons/arcana_workshop_dungeon_1.png"
 	}
   },
@@ -114,10 +173,34 @@
   },
   {
     "op": "add",
+    "path": "/displayDungeons/arcana_superstormExpanse_dungeon_1",
+	"value": {
+		"description" : "A floating fort-like structure. High Electric energy are detected within.",
+		"icon" : "/interface/cockpit/dungeons/arcana_superstormExpanse_dungeon_1.png"
+	}
+  },
+  {
+    "op": "add",
     "path": "/displayDungeons/arcana_arcaneDesert_dungeon_2",
 	"value": {
 		"description" : "A small Havencrest village, harboring Arcanians.",
 		"icon" : "/interface/cockpit/dungeons/arcana_arcaneDesert_dungeon_2.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_arcaneForest_dungeon_2",
+	"value": {
+		"description" : "An arcane treehouse village is detected here.",
+		"icon" : "/interface/cockpit/dungeons/arcana_arcaneForest_dungeon_2.png"
+	}
+  },
+   {
+    "op": "add",
+    "path": "/displayDungeons/arcana_verdant_dungeon_2",
+	"value": {
+		"description" : "An old temple covered with vegetation can be seen within this planet.",
+		"icon" : "/interface/cockpit/dungeons/arcana_verdant_dungeon_2.png"
 	}
   }
   

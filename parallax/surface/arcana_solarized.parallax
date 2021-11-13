@@ -3,21 +3,29 @@
 
   "layers" : [
     {
-      "kind" : "divider/rock",
-      "offset" : [0, 380],
-      "nohueshift" : true,
-      "lightMapped" : true,
-      "parallax" : 1.07
-    },
-    {
       "kind" : "tile/rock",
       "nohueshift" : true,
       "lightMapped" : true,
       "repeatY" : true,
-      "tileLimitTop" : 280,
+      "tileLimitTop" : 330,
       "parallax" : 1.08
     },
-
+    {
+      "kind" : "divider/rock",
+      "offset" : [0, 410],
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "parallax" : 1.08
+    },
+    {
+      "kind" : "arcana_solarized_volcanic2",
+      "offset" : [0, 600],
+      "parallax" : [1.2, 1.0],
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 2.00,
+      "nohueshift" : true
+    },
     {
       "kind" : "ocean1",
       "offset" : [0, 278],
@@ -83,13 +91,19 @@
     },
     {
       "kind" : "oceanglow",
-      "offset" : [0, 230],
+      "offset" : [0, 290],
       "parallax" : [8.01, 1.231],
       "directives" : "hueshift=-180",
       "nohueshift" : true
     },
     {
-      "kind" : "volcanic1",
+      "kind" : "cityscape0",
+      "offset" : [0, 590],
+      "parallax" : [8.01, 1.231],
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_solarized_volcanic1",
       "offset" : [0, 510],
       "parallax" : [8, 6.6],
       "directives" : "",
@@ -98,8 +112,8 @@
       "nohueshift" : true
     },
     {
-      "kind" : "volcanic2",
-      "offset" : [0, 340],
+      "kind" : "arcana_solarized_volcanic2",
+      "offset" : [0, 480],
       "parallax" : [8, 6.8],
       "directives" : "",
       "fadePercent" : 0.04,
@@ -111,7 +125,7 @@
       "offset" : [0, 400],
       "parallax" : [9, 7.4],
       "directives" : "",
-      "fadePercent" : 0.25,
+      "fadePercent" : 0.2,
 	  "size" : 1.20,
       "nohueshift" : true
     },
@@ -120,16 +134,16 @@
       "offset" : [0, 450],
       "parallax" : [8, 7],
       "directives" : "",
-      "fadePercent" : 0.10,
+      "fadePercent" : 0.1,
 	  "size" : 1.20,
       "nohueshift" : true
     },
     {
-      "kind" : "volcanic1",
+      "kind" : "arcana_solarized_volcanic1",
       "offset" : [0, 400],
       "parallax" : [8, 7.4],
       "directives" : "",
-      "fadePercent" : 0.25,
+      "fadePercent" : 0.2,
 	  "size" : 1.0,
       "nohueshift" : true
     },

@@ -4,8 +4,8 @@
   "level" : 8,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high tech greatsword.",
-  "shortdescription" : "Orion Greatsword",
+  "description" : "A high tech greatsword. ^green;Inflicts Eletrified.^reset;",
+  "shortdescription" : "^#bbbdce;OC^reset; Voltaic Engraver",
   "tooltipKind" : "sword",
   "category" : "broadsword",
   "tooltipFields" : {"subtitle" : "Greatsword"},
@@ -17,8 +17,8 @@
 
   "animation" : "/items/active/weapons/melee/greatsword/arcana_greatsword_combo_orion_greatsword_1.animation",
   "animationParts" : {
-    "handle" : "orion_greatsword_1_fullbright.png",
-    "blade" : "orion_greatsword_1.png"
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -35,7 +35,11 @@
   "primaryAbilityType" : "arcana_greatsword_combo",
   "primaryAbility" : {
     "fireTime" : 1.1,
-    "baseDps" : 9.4
+    "baseDps" : 9.4,
+	"damageConfig" : {
+	  "damageSourceKind" : "electricbroadsword",
+	  "statusEffects" : [ "electrified" ]
+	}
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"

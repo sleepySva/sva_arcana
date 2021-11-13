@@ -1,0 +1,21 @@
+{
+  "materialId" : 16896,
+  "materialName" : "glowtearUnderground_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "glowtearUnderground_tile2",
+  "description" : "A solid soil found in Glowtear Undergrounds.",
+  "shortdescription" : "Glowspectral Soil",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "glowtearUnderground_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1300
+  }
+}

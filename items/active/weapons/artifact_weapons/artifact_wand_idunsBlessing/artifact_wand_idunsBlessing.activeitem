@@ -1,0 +1,121 @@
+{
+  "itemName" : "artifact_wand_idunsBlessing",
+  "price" : 100,
+  "maxStack" : 1,
+  "level" : 1,
+  "rarity" : "Essential",
+  "description" : "A device that formerly brings fruits of rejuvenation.",
+  "shortdescription" : "^yellow;Lost Idun's Blessing^reset;",
+  "category" : "wand",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","wand"],
+  "tooltipKind" : "staff",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "staff" : "body.png",
+    "stone" : "fullbright.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [120, 120, 10]
+      }
+    }
+  },
+
+  "inventoryIcon" : "body.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.6,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.4,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "arcana_chryso",
+
+  "primaryAbilityType" : "elementswarm",
+  "primaryAbility" : {
+
+    "name" : "Lost Benediction",
+	"energyCost" : 60,
+    "maxCastRange" : 40,
+	
+	"projectileType" : "artifact_orb_perpetuityEye_projectile_3",
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile_delayed.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 8,
+    "projectileDistance" : 2,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "projectileParameters" : {
+      "baseDamage" : 12
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

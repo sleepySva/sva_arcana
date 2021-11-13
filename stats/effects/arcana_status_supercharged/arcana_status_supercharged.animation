@@ -1,0 +1,26 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 5.0,
+      "particles" : [
+        {
+          "particle" : "electricswoosh1"
+        },
+        {
+          "particle" : "electricswoosh2"
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [120, 50, 170]
+    }
+  },
+  "sounds" : {
+    "burn" : [ "/sfx/projectiles/electric_barrier_shock1.ogg" ]
+  }
+}

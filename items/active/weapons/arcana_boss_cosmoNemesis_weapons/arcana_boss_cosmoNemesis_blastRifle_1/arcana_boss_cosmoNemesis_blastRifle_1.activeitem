@@ -31,28 +31,28 @@
     "chargeLevels" : [
       {
         "time" : 0,
-        "energyCost" : 20,
-        "cooldown" : 0.16,
+        "energyCost" : 100,
+        "cooldown" : 0.6,
         "projectileType" : "arcana_boss_cosmoNemesis_wand_1_projectile_4",
         "projectileCount" : 1,
         "projectileParameters" : {
 			"speed" : 80
 		},
         "inaccuracy" : 0,
-        "baseDamage" : 10,
+        "baseDamage" : 4,
         "fireSound" : "fire2"
       },
       {
         "time" : 0.4,
-        "energyCost" : 40,
-        "cooldown" : 0.16,
+        "energyCost" : 160,
+        "cooldown" : 0.8,
         "projectileType" : "arcana_boss_cosmoNemesis_wand_1_projectile_4",
         "projectileCount" : 1,
         "projectileParameters" : {
-			"speed" : 118
+			"speed" : 110
 		},
         "inaccuracy" : 0,
-        "baseDamage" : 18,
+        "baseDamage" : 8,
         "fireSound" : "fire"
       }
     ]

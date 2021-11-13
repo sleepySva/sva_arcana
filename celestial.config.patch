@@ -89,9 +89,8 @@
 					  "orbitRange" : [2, 5],
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
-						{"weight" : 0.05, "item" : "Tier4"},
-						{"weight" : 0.15, "item" : "Tier5"},
-						{"weight" : 0.7, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.10, "item" : "Tier5"},
+						{"weight" : 0.80, "item" : "arcana_planetary_arcane"},
 						{"weight" : 0.05, "item" : "Barren"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
@@ -110,10 +109,9 @@
 					  ],
 					  "satelliteTypes" : [
 						{"weight" : 0.1, "item" : "Moon"},
-						{"weight" : 0.05, "item" : "Tier4"},
 						{"weight" : 0.10, "item" : "Tier5"},
-						{"weight" : 0.15, "item" : "arcana_planetary_illuminated"},
-						{"weight" : 0.6, "item" : "arcana_planetary_arcane"}
+						{"weight" : 0.05, "item" : "arcana_planetary_illuminated"},
+						{"weight" : 0.75, "item" : "arcana_planetary_arcane"}
 					  ]
 					},
 					{
@@ -121,9 +119,8 @@
 					  "orbitRange" : [8, 10],
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
-						{"weight" : 0.05, "item" : "Tier4"},
 						{"weight" : 0.15, "item" : "Tier5"},
-						{"weight" : 0.7, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.75, "item" : "arcana_planetary_arcane"},
 						{"weight" : 0.05, "item" : "Barren"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
@@ -138,9 +135,8 @@
 					  "planetaryTypes" : [
 						{"weight" : 0.2, "item" : "AncientGateway"},
 						{"weight" : 0.1, "item" : "AsteroidField"},
-						{"weight" : 0.1, "item" : "Barren"},
 						{"weight" : 0.1, "item" : "Tier5"},
-						{"weight" : 0.5, "item" : "Tier6"}
+						{"weight" : 0.6, "item" : "arcana_planetary_arcane"}
 					  ],
 					  "satelliteTypes" : []
 					}
@@ -192,10 +188,8 @@
 					  "orbitRange" : [2, 5],
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
-						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.15, "item" : "Tier6"},
-						{"weight" : 0.7, "item" : "arcana_planetary_illuminated"},
-						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.10, "item" : "Tier6"},
+						{"weight" : 0.85, "item" : "arcana_planetary_illuminated"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
@@ -213,10 +207,8 @@
 					  ],
 					  "satelliteTypes" : [
 						{"weight" : 0.1, "item" : "Moon"},
-						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.10, "item" : "Tier6"},
-						{"weight" : 0.15, "item" : "arcana_planetary_arcane"},
-						{"weight" : 0.6, "item" : "arcana_planetary_illuminated"}
+						{"weight" : 0.10, "item" : "arcana_planetary_arcane"},
+						{"weight" : 0.8, "item" : "arcana_planetary_illuminated"}
 					  ]
 					},
 					{
@@ -224,10 +216,8 @@
 					  "orbitRange" : [8, 10],
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
-						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.15, "item" : "Tier6"},
-						{"weight" : 0.7, "item" : "arcana_planetary_illuminated"},
-						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.10, "item" : "Tier6"},
+						{"weight" : 0.85, "item" : "arcana_planetary_illuminated"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
@@ -241,9 +231,7 @@
 					  "planetaryTypes" : [
 						{"weight" : 0.2, "item" : "AncientGateway"},
 						{"weight" : 0.1, "item" : "AsteroidField"},
-						{"weight" : 0.1, "item" : "Barren"},
-						{"weight" : 0.1, "item" : "Tier5"},
-						{"weight" : 0.5, "item" : "Tier6"}
+						{"weight" : 0.7, "item" : "arcana_planetary_illuminated"}
 					  ],
 					  "satelliteTypes" : []
 					}
@@ -295,9 +283,7 @@
 					  "orbitRange" : [2, 5],
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
-						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.15, "item" : "Tier6"},
-						{"weight" : 0.7, "item" : "arcana_planetary_superstorm"},
+						{"weight" : 0.9, "item" : "arcana_planetary_superstorm"},
 						{"weight" : 0.05, "item" : "Barren"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
@@ -316,10 +302,8 @@
 					  ],
 					  "satelliteTypes" : [
 						{"weight" : 0.1, "item" : "Moon"},
-						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.10, "item" : "arcana_planetary_arcane"},
-						{"weight" : 0.15, "item" : "arcana_planetary_illuminated"},
-						{"weight" : 0.6, "item" : "arcana_planetary_superstorm"}
+						{"weight" : 0.10, "item" : "arcana_planetary_illuminated"},
+						{"weight" : 0.80, "item" : "arcana_planetary_superstorm"}
 					  ]
 					},
 					{
@@ -327,10 +311,7 @@
 					  "orbitRange" : [8, 10],
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
-						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.15, "item" : "arcana_planetary_arcane"},
-						{"weight" : 0.7, "item" : "arcana_planetary_superstorm"},
-						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.95, "item" : "arcana_planetary_superstorm"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
@@ -344,9 +325,7 @@
 					  "planetaryTypes" : [
 						{"weight" : 0.2, "item" : "AncientGateway"},
 						{"weight" : 0.1, "item" : "AsteroidField"},
-						{"weight" : 0.1, "item" : "Barren"},
-						{"weight" : 0.1, "item" : "Tier5"},
-						{"weight" : 0.5, "item" : "Tier6"}
+						{"weight" : 0.7, "item" : "arcana_planetary_illuminated"}
 					  ],
 					  "satelliteTypes" : []
 					}
@@ -398,9 +377,7 @@
 					  "orbitRange" : [2, 5],
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
-						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.05, "item" : "Tier6"},
-						{"weight" : 0.85, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.95, "item" : "arcana_planetary_polar"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
@@ -417,10 +394,9 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 0.05, "item" : "Tier5"},
 						{"weight" : 0.05, "item" : "arcana_planetary_arcane"},
 						{"weight" : 0.05, "item" : "arcana_planetary_illuminated"},
-						{"weight" : 0.85, "item" : "arcana_planetary_polar"}
+						{"weight" : 0.90, "item" : "arcana_planetary_polar"}
 					  ]
 					},
 					{
@@ -429,8 +405,7 @@
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
 						{"weight" : 0.05, "item" : "Tier5"},
-						{"weight" : 0.05, "item" : "arcana_planetary_arcane"},
-						{"weight" : 0.80, "item" : "arcana_planetary_polar"},
+						{"weight" : 0.85, "item" : "arcana_planetary_polar"},
 						{"weight" : 0.05, "item" : "Barren"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
@@ -445,9 +420,7 @@
 					  "planetaryTypes" : [
 						{"weight" : 0.2, "item" : "AncientGateway"},
 						{"weight" : 0.1, "item" : "AsteroidField"},
-						{"weight" : 0.1, "item" : "Barren"},
-						{"weight" : 0.1, "item" : "Tier5"},
-						{"weight" : 0.5, "item" : "Tier6"}
+						{"weight" : 0.7, "item" : "arcana_planetary_polar"}
 					  ],
 					  "satelliteTypes" : []
 					}
@@ -522,9 +495,7 @@
 					  "bodyProbability" : 0.5,
 					  "planetaryTypes" : [
 						{"weight" : 0.05, "item" : "arcana_planetary_polar"},
-						{"weight" : 0.05, "item" : "arcana_planetary_polar"},
-						{"weight" : 0.80, "item" : "arcana_planetary_mirage"},
-						{"weight" : 0.05, "item" : "Barren"},
+						{"weight" : 0.90, "item" : "arcana_planetary_mirage"},
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
@@ -538,9 +509,7 @@
 					  "planetaryTypes" : [
 						{"weight" : 0.2, "item" : "AncientGateway"},
 						{"weight" : 0.1, "item" : "AsteroidField"},
-						{"weight" : 0.1, "item" : "Barren"},
-						{"weight" : 0.1, "item" : "arcana_planetary_mirage"},
-						{"weight" : 0.5, "item" : "arcana_planetary_mirage"}
+						{"weight" : 0.7, "item" : "arcana_planetary_mirage"}
 					  ],
 					  "satelliteTypes" : []
 					}

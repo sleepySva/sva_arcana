@@ -1,0 +1,50 @@
+{
+  "type" : "arcana_dungeon_novaStation_npc_cindy",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+  "persistent" : true,
+  
+  "identity" : {
+    "name" : "Cindy",
+    "gender" : "female",
+	"species" : "novakid",
+	"hairType" : "fem3"
+  },
+
+  "scriptConfig" : {
+  
+	"behavior" : "villager",
+	
+    "behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [4.0, 8.0],
+      "wanderTime" : [0.25, 0.5],
+      "wanderDistance" : 4
+    },
+
+	"dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Oh hi! What's up?",
+			"The weather is nice today, though I'm feeling lazy already.",
+			"Want to rest here with me? We can watch clouds together!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "novatier3chest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "sweatervestlegs", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

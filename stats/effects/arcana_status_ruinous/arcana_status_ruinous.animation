@@ -1,0 +1,23 @@
+{
+  "particleEmitters" : {
+    "sparks" : {
+      "enabled" : true,
+      "emissionRate" : 25.0,
+      "burstCount" : 20,
+      "particles" : [
+        { "particle" : "arcana_particle_flame_large_black" },
+        { "particle" : "arcana_particle_flame_large_black_front" }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [210, 1, 190]
+    }
+  },
+  "sounds" : {
+    "burn" : [ "/sfx/projectiles/flame_burning.ogg" ]
+  }
+}

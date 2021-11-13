@@ -1,6 +1,8 @@
 {
   "name" : "arcana_desolate",
   "friendlyName" : "Desolate",
+  
+  "statusEffects" : [ "arcana_status_radiance" ],
 
   "spawnProfile" : {
     "groups" : [
@@ -75,7 +77,7 @@
 
   "weather" : [
     [0, [
-      "/weather.config:midnight"
+      "/weather.config:arcana_desolate"
     ]]
   ],
 
@@ -97,10 +99,10 @@
   ],
 
   "mainBlock" : "desolate_tile2",
-  "subBlocks" : [ "desolate_tile1", "obsidian" ],
+  "subBlocks" : [ "desolate_tile1", "obsidian", "stonerubble"],
   "ores" : "arcana_desolate_ores_surface",
 
-  "parallax" : "/parallax/surface/midnight.parallax",
+  "parallax" : "/parallax/surface/arcana_desolate.parallax",
 
   "ambientNoises" : {
     "day" : {

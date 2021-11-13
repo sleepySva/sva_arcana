@@ -1,0 +1,25 @@
+{
+  "projectileName" : "cosmoNemesisSpawner",
+  "image" : "cosmoNemesisSpawner.png",
+  "animationCycle" : 0.05,
+  "timeToLive" : 0,
+  "bounces" : 0,
+  "physics" : "flame",
+  "frameNumber" : 1,
+  "speed" : 0,
+  "actionOnReap" : [
+	{
+		"action" : "spawnmonster",
+		"type" : "arcana_boss_cosmoNemesis",
+		"level" : 6,
+		"offset": [ 0, 0 ],
+		"arguments" : { }
+	}
+  ],
+  "power" : 0.0,
+  "knockback" : 4,
+  "damageKind" : "hidden",
+  "emitters" : []
+}
+
+

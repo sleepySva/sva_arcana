@@ -1,0 +1,157 @@
+{
+  "itemName" : "exousia_imperialArmy_2_broadsword_1",
+  "price" : 10000,
+  "level" : 9,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "Only war can sustain this blade's thirst. ^green;Inflicts Sanguine.^reset; ^red;-40% Max HP while holding.^reset;",
+  "shortdescription" : "^yellow;Sanguinecre^reset;",
+  "tooltipKind" : "arcana_gun_exousia",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "body.png:active.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handleFullbright" : "fullbright.png",
+	"muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "risingSwoosh" : {
+          "properties" : {
+            "fullbright" : true
+          }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+	  "upswing" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fireStart" : [ "/sfx/tech/tech_jetpack_thrust1.ogg" ],
+      "fireLoop" : [ "/sfx/melee/rocketspear_loop_fire.ogg" ],
+      "fireEnd" : [ "/sfx/melee/rocketspear_stop_fire.ogg" ]
+    }
+  },
+
+  "scripts" : ["/scripts/arcana_energymeleeweapon_itemStatus.lua"],
+  "itemStatus" : "arcana_status_maxHealthPercent_40_neg",
+  "activeTime" : 4.0,
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "arcana_sanguine_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.2,
+    "baseDps" : 13.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "broadsword",
+	  "statusEffects" : [ "arcana_sanguine" ]
+	},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 60,
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup1" : {
+        "duration" : 0.2,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.15,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup2" : {
+        "duration" : 0.25,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire2" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait2" : {
+        "duration" : 0.02,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup3" : {
+        "duration" : 0.05,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  "aimOffset" : 0.0,
+  "altAbilityType" : "flamethrowersword",
+  "altAbility" : {
+    "baseDps" : 11.0,
+	"projectileParameters" : {
+      "speed" : 40
+    }
+  },
+  
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

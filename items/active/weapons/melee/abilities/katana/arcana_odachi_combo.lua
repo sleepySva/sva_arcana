@@ -212,7 +212,7 @@ function MeleeCombo:damageAmount()
 end
 
 
-function MeleeCombo:spawnProjectile(angleAdjust)
+function MeleeCombo:spawnProjectile()
   local position = vec2.add(mcontroller.position(), {self.secondaryProjectileOffset[1] * self.weapon.aimDirection, self.secondaryProjectileOffset[2]})
   local params = {
     powerMultiplier = activeItem.ownerPowerMultiplier(),

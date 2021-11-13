@@ -2,7 +2,7 @@
   "objectName" : "arcana_vendor_8",
   "colonyTags" : ["misc","commerce"],
   "rarity" : "Legendary",
-  "description" : "The captain of the station.",
+  "description" : "The head of the Nova Station, Nyx.",
   "shortdescription" : "Station Vendor",
   "race" : "generic",
   "category" : "furniture",
@@ -31,8 +31,8 @@
 	  "direction" : "left",
 	  "flipImages" : true,
       "imagePosition" : [-48, 0],
-      "frames" : 36,
-      "animationCycle" : 3.6,
+      "frames" : 16,
+      "animationCycle" : 4.0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
@@ -42,8 +42,8 @@
       "imageLayers" : [ { "image" : "arcana_vendor_8.png:<color>.<frame>" }, { "image" : "arcana_vendor_8_fullbright.png:<color>.<frame>", "fullbright" : true } ],
 	  "direction" : "right",
       "imagePosition" : [-48, 0],
-      "frames" : 36,
-      "animationCycle" : 3.6,
+      "frames" : 16,
+      "animationCycle" : 4.0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

@@ -2,6 +2,8 @@
   "name" : "arcana_arcaneSea",
   "friendlyName" : "Arcane Sea",
 
+  "statusEffects" : [ "arcana_status_energyDrain" ],
+
   "spawnProfile" : {
     "groups" : [
       {
@@ -87,7 +89,7 @@
   "subBlocks" : [ "bleuark_tile1" ],
   "ores" : "arcana_arcaneSea_ores_surface",
 
-  "parallax" : "/parallax/surface/ocean.parallax",
+  "parallax" : "/parallax/surface/arcana_arcaneSea.parallax",
 
   "ambientNoises" : {
     "day" : {

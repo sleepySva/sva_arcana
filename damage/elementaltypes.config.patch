@@ -1,6 +1,21 @@
 [
 	{
 		"op": "add",
+		"path": "/arcana_chryso",
+		"value": {
+			"resistanceStat" : "arcana_resistance_chryso",
+			"damageNumberParticles" : {
+				"hit" : "arcana_chrysodamagenumber",
+				"stronghit" : "arcana_chrysodamagenumberstrong",
+				"weakhit" : "arcana_chrysodamagenumberweak",
+				"shieldhit" : "arcana_chrysodamagenumber",
+				"kill" : "arcana_chrysodamagenumber"
+			}
+		}
+	},
+
+	{
+		"op": "add",
 		"path": "/arcana_abyss",
 		"value": {
 			"resistanceStat" : "arcana_resistance_abyss",

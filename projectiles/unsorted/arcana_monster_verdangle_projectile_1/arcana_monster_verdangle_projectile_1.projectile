@@ -1,0 +1,63 @@
+{
+  "projectileName" : "arcana_monster_verdangle_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 2,
+  "speed" : 30,
+  
+  "image" : "arcana_monster_verdangle_projectile_1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "renderLayer" : "foregroundEntity",
+  
+  "fullbright" : true,
+  "lightColor" : [80, 190, 20],
+  "emitters" : ["poisonplasmarocket", "poisonswoosh" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/burstexplosion/poisonburstexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.04,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/unsorted/arcana_monster_verdangle_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "shrink",
+        "fullbright" : false
+      }
+    },
+	{
+		"time" : 0.2,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "arcana_projectile_flame_poison",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 0.8
+    }
+  ],
+  
+  "damageKind" : "poison",
+  
+  "scripts" : ["/scripts/projectiles/sinewaveprojectile.lua"],
+  "scriptDelta" : 1,
+
+  "wavePeriod" : 1.0,
+  "waveAmplitude" : 0.1
+}

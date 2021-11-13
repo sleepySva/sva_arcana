@@ -41,24 +41,23 @@
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "arcana_abyss",
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.04,
-    "baseDps" : 74.0,
-    "energyUsage" : 30.0,
-    "inaccuracy" : 0.08,
+    "baseDps" : 50.0,
+    "energyUsage" : 60.0,
+    "inaccuracy" : 0.06,
 
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "horizon_shotgun_1_projectile_1",
+    "projectileType" : "horizon_assaultRifle_3_projectile_1",
     "projectileParameters" : {
-      "damageKind" : "shotgunbullet",
-      "knockback" : 14
+      "knockback" : 12
     },
     "stances" : {
       "idle" : {

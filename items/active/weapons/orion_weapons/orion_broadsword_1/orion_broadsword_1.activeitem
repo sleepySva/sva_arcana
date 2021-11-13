@@ -1,11 +1,11 @@
 {
   "itemName" : "orion_broadsword_1",
-  "price" : 1000,
+  "price" : 900,
   "level" : 8,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high-tech broadsword.",
-  "shortdescription" : "Orion Razor",
+  "description" : "A high-tech broadsword used by the Orion. ^green;Inflicts Eletrified.^reset;",
+  "shortdescription" : "^#bbbdce;OC^reset; Voltaic Razor",
   "tooltipKind" : "sword",
   "category" : "broadsword",
   "twoHanded" : true,
@@ -16,8 +16,8 @@
 
   "animation" : "/items/active/weapons/melee/broadsword/orion_broadsword_1.animation",
   "animationParts" : {
-    "handle" : "orion_broadsword_1_fullbright.png",
-    "blade" : "orion_broadsword_1.png"
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -34,7 +34,11 @@
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime" : 0.9,
-    "baseDps" : 11.0
+    "baseDps" : 11.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "electricbroadsword",
+	  "statusEffects" : [ "electrified" ]
+	}
   },
 
   "altAbilityType" : "risingslash",

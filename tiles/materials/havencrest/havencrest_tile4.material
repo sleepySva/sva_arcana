@@ -10,13 +10,13 @@
   "category" : "materials",
 
   "blocksLiquidFlow" : false,
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/columntemplate.config",
   "renderParameters" : {
     "texture" : "havencrest_tile4.png",
-    "variants" : 5,
+    "variants" : 2,
     "lightTransparent" : true,
     "occludesBelow" : false,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 4
   }
 }

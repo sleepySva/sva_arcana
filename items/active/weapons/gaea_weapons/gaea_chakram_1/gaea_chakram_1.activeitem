@@ -1,0 +1,81 @@
+{
+  "itemName" : "gaea_chakram_1",
+  "price" : 2000,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "category" : "chakram",
+  "description" : "A special chakram found in Verdant Sanctums. ^green;Inflicts poisoned.^reset;",
+  "shortdescription" : "Verdant Chakram",
+  "tooltipKind" : "base",
+  "twoHanded" : false,
+  "itemTags" : ["weapon"],
+
+  "inventoryIcon" : "gaea_chakram_1.png",
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "chakram" : "gaea_chakram_1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "throw" : [ "/sfx/melee/swing_dagger.ogg" ]
+    }
+  },
+  "scripts" : ["/items/active/weapons/boomerang/boomerang.lua"],
+  "fireOffset" : [1.25, 0.5],
+
+  "cooldownTime" : 0.6,
+
+  "projectileType" : "gaea_chakram_1_projectile_1",
+  "projectileParameters" : {
+    "knockback" : 2,
+    "power" : 5,
+    "damageRepeatTimeout" : 0.2,
+
+    "returnOnHit" : false,
+    "pickupDistance" : 1.0,
+
+    "hoverMaxDistance" : 16,
+    "hoverTime" : 0.8
+  },
+  "level" : 5,
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -20,
+      "animationState" : {
+        "weapon" : "visible"
+      },
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "windup" : {
+      "duration" : 0.1,
+      "transition" : "throw",
+      "transitionFunction" : "fire",
+      "armRotation" : 70,
+      "animationState" : {
+        "weapon" : "visible"
+      },
+      "allowRotate" : false,
+      "allowFlip" : false
+    },
+    "throw" : {
+      "armRotation" : 0,
+      "animationState" : {
+        "weapon" : "hidden"
+      },
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "catch" : {
+      "duration" : 0.2,
+      "transition" : "idle",
+      "armRotation" : 60,
+      "animationState" : {
+        "weapon" : "visible"
+      },
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  }
+}

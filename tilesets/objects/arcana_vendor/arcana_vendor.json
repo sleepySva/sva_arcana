@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":15,
+ "tilecount":16,
  "tileheight":256,
  "tileproperties":
     {
@@ -128,6 +128,14 @@
          "imagePositionY":"0",
          "object":"arcana_dungeon_astralObservatory_npc_ankhu",
          "tilesetDirection":"right"
+        },
+     "15":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"arcana_dungeon_novaStation_npc_jezper",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -191,6 +199,10 @@
      "14":
         {
          "image":"arcana_dungeon_astralObservatory_npc_ankhu.png"
+        },
+     "15":
+        {
+         "image":"arcana_dungeon_novaStation_npc_jezper.png"
         }
     },
  "tilewidth":188

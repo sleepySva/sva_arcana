@@ -1,0 +1,45 @@
+{
+  "projectileName" : "gaea_chakram_1_projectile_1",
+  "image" : "gaea_chakram_1_projectile_1.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 8,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [30, 160, 10],
+  "pointLight" : true,
+  "flippable" : false,
+  "orientationLocked" : true,
+  "emitters" : [ "poisonthrowertrail" ],
+  "actionOnReap" : [ ],
+  "statusEffects" : ["weakpoison"],
+  "damagePoly" : [[-8, 4], [-4, 8], [4, 8], [8, 4], [8, -4], [4, -8], [-4, -8], [-8, -4]],
+  "power" : 5.0,
+  "speed" : 60,
+  "damageKind" : "poison",
+  "physics" : "laser",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 5,
+  
+  "periodicActions" : [
+    {
+      "time" : 0.06,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/chakram/gaea_chakram_1_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "persistentAudio" : "/sfx/melee/spear_twirl_loop.ogg",
+
+  "scripts" : [ "/projectiles/activeitems/chakram/hoverchakramprojectile.lua" ]
+}

@@ -1,11 +1,11 @@
 {
   "itemName" : "workshop_axe_3",
   "level" : 8,
-  "price" : 1000,
+  "price" : 2100,
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A heavy axe utilized by the elites of the Section 8 of the Workshop of Gears.",
-  "shortdescription" : "^#ffa93d;Gears S8E Axe^reset;",
+  "shortdescription" : "^#ffa93d;WGS8^reset; Produtar Prototype E",
   "tooltipKind" : "sword",
   "category" : "axe",
   "twoHanded" : false,
@@ -38,9 +38,9 @@
   	"projectileCount" : 3,
     "projectileDistance" : 1.0,
 	"projectileParameters" : {
-		"baseDamage" : 8,
+		"baseDamage" : 6,
 		"emitters" : ["sparks"],
-		"speed" : 120,
+		"speed" : 110,
 		"actionOnReap" : [
 			{
 				"action" : "config",
@@ -50,9 +50,9 @@
     },
 	
     "fireTime" : 0.4,
-    "baseDps" : 20.6,
+    "baseDps" : 20.0,
     "damageConfig" : {
-      "knockback" : 120
+      "knockback" : 80
     }
 	
   },

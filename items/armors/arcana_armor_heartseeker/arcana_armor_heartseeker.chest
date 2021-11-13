@@ -1,12 +1,12 @@
 {
   "itemName" : "arcana_armor_heartseeker_chest",
-  "price" : 1000,
+  "price" : 4000,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
-  "rarity" : "Legendary",
+  "rarity" : "Essential",
   "category" : "chestwear",
   "description" : "An ancient armor forged with red aspirite. ^green;Grants minor health regeneration.^reset;",
-  "shortdescription" : "Heartseeker Suit",
+  "shortdescription" : "Heartseeker's Aspiration",
   "tooltipKind" : "armor",
 
   "maleFrames" : {
@@ -36,7 +36,7 @@
     {
       "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 12
+      "amount" : 10
     },
     {
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",

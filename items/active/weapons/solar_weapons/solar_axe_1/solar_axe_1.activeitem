@@ -26,7 +26,7 @@
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "fire",
+  "elementalType" : "arcana_solar",
 
   "aimOffset" : -1.0,
   "muzzleOffset" : [0.3, 0],
@@ -42,9 +42,10 @@
     },
 	
     "fireTime" : 0.9,
-    "baseDps" : 10.8,
+    "baseDps" : 11.4,
     "damageConfig" : {
-      "knockback" : 30
+      "knockback" : 30,
+	  "damageSourceKind" : "arcana_solar"
     }
 	
   },

@@ -2,6 +2,8 @@
   "name" : "arcana_timeless",
   "friendlyName" : "Timeless",
 
+  "statusEffects" : [ "arcana_status_supercharged" ],
+
   "spawnProfile" : {
     "groups" : [
       {
@@ -109,10 +111,10 @@
 
   "musicTrack" : {
     "day" : {
-      "tracks" : [ "/music/aeon.ogg", "/music/bright-blue-fog.ogg", "/music/the-apex.ogg", "/music/casiopeia.ogg" ]
+      "tracks" : [ "/music/aeon.ogg", "/music/bright-blue-fog.ogg", "/music/the-apex.ogg", "/music/casiopeia.ogg", "/music/Tick_Tock.ogg" ]
     },
     "night" : {
-      "tracks" : [ "/music/aeon.ogg", "/music/bright-blue-fog.ogg", "/music/the-apex.ogg", "/music/casiopeia.ogg" ]
+      "tracks" : [ "/music/aeon.ogg", "/music/bright-blue-fog.ogg", "/music/the-apex.ogg", "/music/casiopeia.ogg", "/music/Tick_Tock.ogg" ]
     }
   },
 

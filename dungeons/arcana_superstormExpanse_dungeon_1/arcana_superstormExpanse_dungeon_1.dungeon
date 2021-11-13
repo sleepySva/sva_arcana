@@ -1,0 +1,185 @@
+{
+  "metadata" : {
+    "name" : "arcana_superstormExpanse_dungeon_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_superstormExpanse_dungeon_1_entrance"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 28,
+    "extendSurfaceFreeSpace" : 200,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_entrance",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_entrance" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_entrance.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_1.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_2.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_3.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_4.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_5.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_6.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_7" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_7.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_8",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_8" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_8.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_9",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_9" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_9.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_10",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_10" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_10.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_11",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_11" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_11.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_12",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+        [ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_part_12" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_part_12.json" ],
+	  "chance" : 500
+    },
+	
+	// EXIT
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_end",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [ "arcana_superstormExpanse_dungeon_1_end" ] ],
+		[ "doNotConnectToPart", [ "arcana_superstormExpanse_dungeon_1_entrance", "arcana_superstormExpanse_dungeon_1_end" ] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_1_end.json" ],
+      "chance" : 1
+    },
+
+	
+	// CONNECTORS
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_top",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_superstormExpanse_dungeon_1_part_top.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_bottom",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_superstormExpanse_dungeon_1_part_bottom.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_superstormExpanse_dungeon_1_part_left.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_1_part_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_superstormExpanse_dungeon_1_part_right.json" ] ],
+      "chance" : 0
+    }
+  ]
+}

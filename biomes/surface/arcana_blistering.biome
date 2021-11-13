@@ -88,7 +88,7 @@
   ],
 
   "mainBlock" : "blistering_tile1",
-  "subBlocks" : [ "arcaneDesert_tile1", "rock14" ],
+  "subBlocks" : [ "obsidian", "rock14", "stonerubble" ],
   "ores" : "arcana_blistering_ores_surface",
 
   "parallax" : "/parallax/surface/arcana_blistering.parallax",
@@ -252,7 +252,7 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:rareClumpyLarge",
+        "distribution" : "/biomes/distributions.config:denseLarge",
 
         "type" : "tree",
         "treeFoliageHueShiftMax" : 180,
@@ -269,9 +269,9 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildchiliseed" ] ],
+            "pool" : [ [1, "wildbeakseedseed" ] ],
             "parameters" : {
-              "startingStage" : 4
+              "startingStage" : 3
             }
           }
         ]

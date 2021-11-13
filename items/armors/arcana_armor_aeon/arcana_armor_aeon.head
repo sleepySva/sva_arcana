@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headarmour",
-  "description" : "The zero aeon, bright as the azure stars.",
+  "description" : "The zero aeon, bright as the azure stars. ^green;+2% Physical and Azure Res.^reset;",
   "shortdescription" : "Aeon's Zero",
   "tooltipKind" : "armor",
 
@@ -33,7 +33,17 @@
     {
       "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 32
+      "amount" : 30
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "physicalResistance",
+      "amount" : 0.02
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "arcana_resistance_azure",
+      "amount" : 0.02
     }
   ],
   

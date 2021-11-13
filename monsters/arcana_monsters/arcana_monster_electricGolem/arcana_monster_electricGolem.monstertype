@@ -1,0 +1,310 @@
+{
+  "type" : "arcana_monster_electricGolem",
+  "shortdescription" : "Electric Golem",
+  "description" : "A golem variant that forms in the Superstorm Expanses.",
+
+  "categories" : [ "arcana_monster_electricGolem" ],
+  "parts" : [ "body" ],
+
+  "animation" : "arcana_monster_electricGolem.animation",
+
+  "dropPools" : [ { "default" : "arcana_monsterdrops_electricGolem" } ],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    
+    "damageBar" : "default", 
+
+    "behavior" : "monster",
+
+	"aggressive" : true,
+
+    "seeThroughLiquid" : true,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 30,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-spawncompanions",
+          "cooldown" : 8.0,
+          "parameters" : {
+			"maxCount": 3,
+			"monsterType": "minidrone"
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 28,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "energyfist",
+			"projectileCount" : 6,
+            "projectileInterval" : 0.1,
+            "projectileParameters" : {
+			  "renderLayer" : "ForegroundEntity+10",
+			  "movementSettings" : {
+				"collisionEnabled" : false
+			  }
+            },
+			"inaccuracy" : 0.2,
+            "fireOffset" : [0.2, -1.4],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.4
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 28,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "apebossmissile",
+			"projectileCount" : 8,
+            "projectileInterval" : 0.3,
+            "projectileParameters" : {
+			  "speed" : 10,
+			  "acceleration" : 20,
+			  "supportsProcessing" : true,
+			  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+			  "scriptDelta" : 1,
+  
+			  "homingDistance" : 100,
+			  "rotationRate" : 0.4,
+			  "trackingLimit" : 100
+            },
+			"inaccuracy" : 0.4,
+            "fireOffset" : [0.2, -1.4],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.4
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 9.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 40,
+            "minimumRange" : 3,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "balllightning",
+			"projectileCount" : 20,
+            "projectileInterval" : 0.1,
+            "projectileParameters" : {
+			  "speed" : 1,
+			  "acceleration" : 8
+            },
+			"inaccuracy" : 0.8,
+            "fireOffset" : [0.2, -1.4],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "",
+            "winddownTime" : 0.4
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 4,
+            "maxRange" : 8
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,6],
+            "groundDistance" : 8,
+            "ceilingDistance" : 8,
+            "xVelocity" : 4,
+            "yVelocity" : 10
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-1.0, -1.0], [1.0, -1.0], [1.0, 1.0], [-1.0, 1.0] ],
+      "damage" : 12,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "electric",
+      "knockback" : 10,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-2, -2, 2, 2],
+    "scale" : 1.4,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-1.0, -1.5], [1.0, -1.5], [1.0, 1.5], [-1.0, 1.5] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 5,
+      "runSpeed" : 11,
+      "gravityEnabled" : false,
+
+      "airFriction" : 1,
+      "airForce" : 20,
+      "flySpeed" : 13
+    },
+
+    "bodyMaterialKind" : "stone",
+
+    "knockoutTime" : 0.0,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+	
+	"powerLevelFunction" : "spaceMonsterLevelPowerMultiplier",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "stone"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 60
+        },
+        "maxHealth" : {
+          "baseValue" : 520
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 2.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.5
+        },
+        "fireResistance" : {
+          "baseValue" : 0.5
+        },
+        "iceResistance" : {
+          "baseValue" : 0.5
+        },
+        "electricResistance" : {
+          "baseValue" : -1.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 1.0
+        },
+        "arcana_resistance_lumen" : {
+          "baseValue" : 0.5
+        },
+        "arcana_resistance_abyss" : {
+          "baseValue" : 0.5
+        },
+        "arcana_resistance_azure" : {
+          "baseValue" : 0.5
+        },
+        "arcana_resistance_solar" : {
+          "baseValue" : 0.5
+        },
+        "arcana_resistance_lunar" : {
+          "baseValue" : 0.5
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -4],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

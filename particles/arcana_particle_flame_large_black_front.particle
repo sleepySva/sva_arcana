@@ -1,0 +1,19 @@
+{
+  "kind" : "arcana_particle_flame_large_black_front",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_animation_flame_large_black/arcana_animation_flame_large_black.animation",
+    "approach" : [0.5, 0.5],
+    "timeToLive" : 0.6,
+    "light" : [20, 20, 20],
+    "layer" : "front",
+    "destructionAction" : "fade",
+    "destructionTime" : 0.5,
+    "variance" : {
+        "position" : [1.5, 1.5],
+        "initialVelocity" : [1, 1],
+        "timeToLive" : 0.15,
+        "rotation" : 180
+    }
+  }
+}

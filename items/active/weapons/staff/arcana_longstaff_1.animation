@@ -114,6 +114,16 @@
         {"particle" : "energyblade2"}
       ]
     },
+    "arcana_abysscharge" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10,
+      "offsetRegion" : [-0.5, 3.25, 0.5, 4.75],
+      "particles" : [
+        {"particle" : "energyblade"},
+        {"particle" : "energyblade2"}
+      ]
+    },
     "firecharge" : {
       "active" : false,
       "transformationGroups" : ["weapon"],
@@ -166,6 +176,12 @@
     "physicalchargedloop" : ["/sfx/melee/charge_full_hold1.ogg"],
     "physicaldischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
     "physicalactivate" : ["/sfx/projectiles/plasma3.ogg"],
+	
+    "arcana_abysscharge" : ["/sfx/melee/staff_charge4_electric.ogg"],
+    "arcana_abyssfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "arcana_abysschargedloop" : ["/sfx/melee/staff_charged_electric2.ogg"],
+    "arcana_abyssdischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "arcana_abyssactivate" : ["/sfx/melee/travelingslash_electric4.ogg", "/sfx/melee/travelingslash_electric5.ogg"],
 
     "firecharge" : ["/sfx/melee/staff_charge2_fire.ogg"],
     "firefullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
