@@ -14,6 +14,13 @@ function itemHasTags(e) for _,r in pairs(AI) do if root.itemHasTag(e.name,r) the
 --https://steamcommunity.com/sharedfiles/filedetails/?id=1258008544
 --https://steamcommunity.com/workshop/filedetails/?id=1945946369
 function leftClickSlot(slot)
+ if ish then
+  if widget.itemSlotItem(slot) then
+   player.giveItem(widget.itemSlotItem(slot))
+   widget.setItemSlotItem(slot)
+   setBagSlot(widget.itemSlotItem(slot),slot)
+   return end
+ end
   local bag = bagType
   widget.setItemSlotItem(slot, player.getProperty("arcana_bag_"..bag)[""..slot])
   if player.swapSlotItem() then
