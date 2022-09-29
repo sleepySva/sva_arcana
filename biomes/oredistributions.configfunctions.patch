@@ -29,6 +29,15 @@
   
   {
     "op": "add",
+    "path": "/arcana_arcaneTundra_ores_surface",
+    "value": [
+    [0.5, [ [ "coal", 1.00 ], [ "copper", 0.60 ], [ "silver", 1.00 ], [ "gold", 0.00 ], [ "diamond", 0.00 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 0.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.00 ], [ "violium", 0.00 ], [ "solarium", 0.00 ], [ "arcana_mod_borealiteOre", 0.80 ], [ "arcana_mod_magifireCrystal", 0.00 ] ] ],
+    [5.5, [ [ "coal", 1.00 ], [ "copper", 0.60 ], [ "silver", 1.00 ], [ "gold", 0.00 ], [ "diamond", 0.00 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 0.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.00 ], [ "violium", 0.00 ], [ "solarium", 0.00 ], [ "arcana_mod_borealiteOre", 0.80 ], [ "arcana_mod_magifireCrystal", 0.00 ] ] ]
+	]
+  },
+  
+  {
+    "op": "add",
     "path": "/arcana_arcaneDesert_ores_surface",
     "value": [
     [0.5, [ [ "coal", 1.00 ], [ "copper", 0.60 ], [ "silver", 0.00 ], [ "gold", 0.60 ], [ "diamond", 0.00 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 0.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.00 ], [ "violium", 0.00 ], [ "solarium", 0.00 ], [ "arcana_mod_arcaniumOre", 0.80 ], [ "arcana_mod_magifireCrystal", 0.80 ] ] ],
@@ -94,8 +103,8 @@
     "op": "add",
     "path": "/arcana_illuminated_ores_surface",
     "value": [
-    [0.5, [ [ "coal", 0.60 ], [ "copper", 0.00 ], [ "silver", 1.00 ], [ "gold", 0.00 ], [ "diamond", 0.10 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 1.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.80 ], [ "violium", 0.00 ], [ "solarium", 0.00 ], [ "arcana_mod_ariostone", 0.60 ], [ "arcana_mod_holosiumFragment", 1.0 ] ] ],
-    [5.5, [ [ "coal", 0.60 ], [ "copper", 0.00 ], [ "silver", 1.00 ], [ "gold", 0.00 ], [ "diamond", 0.10 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 1.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.80 ], [ "violium", 0.00 ], [ "solarium", 0.00 ], [ "arcana_mod_ariostone", 0.60 ], [ "arcana_mod_holosiumFragment", 1.0 ] ] ]
+    [0.5, [ [ "coal", 0.60 ], [ "copper", 0.00 ], [ "silver", 1.00 ], [ "gold", 0.00 ], [ "diamond", 0.10 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 1.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.80 ], [ "violium", 0.00 ], [ "solarium", 0.00 ], [ "arcana_mod_renatineFragment", 0.70 ], [ "arcana_mod_holosiumFragment", 1.0 ] ] ],
+    [5.5, [ [ "coal", 0.60 ], [ "copper", 0.00 ], [ "silver", 1.00 ], [ "gold", 0.00 ], [ "diamond", 0.10 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 1.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.80 ], [ "violium", 0.00 ], [ "solarium", 0.00 ], [ "arcana_mod_renatineFragment", 0.70 ], [ "arcana_mod_holosiumFragment", 1.0 ] ] ]
 	]
   },
   
@@ -355,6 +364,34 @@
     "path": "/arcana_ashen_ores_surface",
     "value": [
     [0.5, [ [ "coal", 0.60 ], [ "copper", 0.00 ], [ "silver", 0.00 ], [ "gold", 0.00 ], [ "diamond", 0.05 ], [ "corefragment", 0.30 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 0.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.00 ], [ "violium", 0.00 ], [ "arcana_mod_rufescite", 0.00 ], [ "arcana_mod_enartzFragment", 0.90 ], [ "arcana_mod_exoslateFragment", 0.10 ] ] ]
+	]
+  },
+  {
+    "op": "add",
+    "path": "/arcana_ruinous_ores_surface",
+    "value": [
+    [0.5, [ [ "coal", 0.60 ], [ "copper", 0.50 ], [ "silver", 0.40 ], [ "gold", 0.30 ], [ "diamond", 0.05 ], [ "corefragment", 0.20 ], [ "iron", 1.00 ], [ "tungsten", 0.00 ], [ "titanium", 0.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.90 ], [ "violium", 0.90 ], [ "arcana_mod_holosiumFragment", 1.00 ], [ "arcana_mod_necroiumFragment", 1.00 ], [ "arcana_mod_chromaOre", 0.10 ] ] ]
+	]
+  },
+  {
+    "op": "add",
+    "path": "/arcana_ruinousCave_ores",
+    "value": [
+    [0.5, [ [ "coal", 1.00 ], [ "copper", 0.70 ], [ "silver", 0.60 ], [ "gold", 0.50 ], [ "diamond", 0.05 ], [ "corefragment", 0.40 ], [ "iron", 1.00 ], [ "tungsten", 0.00 ], [ "titanium", 0.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 1.00 ], [ "violium", 1.00 ], [ "arcana_mod_holosiumFragment", 1.00 ], [ "arcana_mod_necroiumFragment", 1.00 ], [ "arcana_mod_chromaOre", 0.90 ] ] ]
+	]
+  },
+  {
+    "op": "add",
+    "path": "/arcana_nightmist_ores_surface",
+    "value": [
+    [0.5, [ [ "coal", 0.50 ], [ "copper", 0.00 ], [ "silver", 0.80 ], [ "gold", 0.00 ], [ "diamond", 0.05 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 0.60 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.60 ], [ "violium", 0.60 ], [ "arcana_mod_holosiumFragment", 0.00 ], [ "arcana_mod_necroiumFragment", 0.00 ], [ "arcana_mod_chromaOre", 0.00 ] ] ]
+	]
+  },
+  {
+    "op": "add",
+    "path": "/arcana_empyrean_ores_surface",
+    "value": [
+    [0.5, [ [ "coal", 0.50 ], [ "copper", 0.50 ], [ "silver", 0.50 ], [ "gold", 1.20 ], [ "diamond", 0.05 ], [ "corefragment", 0.00 ], [ "iron", 0.00 ], [ "tungsten", 0.00 ], [ "titanium", 0.00 ], [ "durasteel", 0.00 ], [ "aegisalt", 0.00 ], [ "ferozium", 0.00 ], [ "violium", 0.00 ], [ "arcana_mod_holosiumFragment", 0.00 ], [ "arcana_mod_necroiumFragment", 0.00 ], [ "arcana_mod_chromaOre", 0.00 ] ] ]
 	]
   }
   ]

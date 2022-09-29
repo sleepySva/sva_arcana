@@ -18,10 +18,37 @@
       "parallax" : 1.2
     },
     {
+      "kind" : "godrays",
+      "offset" : [0, 10],
+      "parallax" : [1.0, 1.2],
+      "minSpeed" : 1000,
+      "maxSpeed" : 3000,
+      "unlit" : false
+    },
+    {
+      "kind" : "godrays",
+      "offset" : [0, 10],
+      "parallax" : [1.2, 1.4],
+      "minSpeed" : 1000,
+      "maxSpeed" : 3000,
+      "unlit" : false
+    },
+    {
+      "kind" : "godrays",
+      "offset" : [0, 0],
+      "parallax" : [1.4, 1.6],
+      "minSpeed" : 1000,
+      "maxSpeed" : 3000,
+      "directives" : "?brightness=-10",
+      "unlit" : true
+    },
+    {
       "kind" : "arcana_illuminated_5",
       "baseCount" : 1,
       "offset" : [0, 30],
       "parallax" : 2,
+      "minSpeed" : 1000,
+      "maxSpeed" : 5000,
       "fadePercent" : 0.0
     },
     {
@@ -29,13 +56,22 @@
       "baseCount" : 1,
       "offset" : [0, 10],
       "parallax" : 3,
+      "minSpeed" : 1000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_illuminated_6",
+      "baseCount" : 1,
+      "offset" : [0, 630],
+      "parallax" : 4,
       "fadePercent" : 0.0
     },
     {
       "kind" : "arcana_illuminated_6",
       "baseCount" : 1,
       "offset" : [0, 530],
-      "parallax" : 4,
+      "parallax" : 5,
       "fadePercent" : 0.0
     },
     {

@@ -1,0 +1,42 @@
+{
+  "type" : "arcana_npc_romantic_butler",
+  "baseType" : "villager",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "How may I help you, traveller?",
+            "Please don't hesitate to ask if you need anything.",
+            "What is the matter, traveller?",
+			"Please let me know if you require my service.",
+			"Would you like a cup of tea, traveller?",
+            "I will serve you as best I can."
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "arcana_armor_butler_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_butler_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -13,5 +13,35 @@
     "monsterParameters" : {
       "aggressive" : false
     }
+  },
+  {
+    "name" : "arcana_birdcritter",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+
+    "spawnChance" : 0.02,
+    "monsterType" : "birdcritter",
+    "monsterParameters" : {
+      "aggressive" : false
+    }
+  },
+  {
+    "name" : "arcana_owlcritter",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+
+    "spawnChance" : 0.02,
+    "monsterType" : "owlcritter",
+    "monsterParameters" : {
+      "aggressive" : false
+    }
   }
 ]

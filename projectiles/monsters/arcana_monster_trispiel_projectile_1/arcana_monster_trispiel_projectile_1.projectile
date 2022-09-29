@@ -1,0 +1,17 @@
+{
+  "projectileName" : "arcana_monster_trispiel_projectile_1",
+  "image" : "boltguide.png",
+  "physics" : "hover",
+  "frameNumber" : 4,
+  "animationCycle" : 0.5,
+  "animationLoops" : true,
+  "fullbright" : true,
+  "power" : 8,
+  "speed" : 0,
+  "timeToLive" : 5,
+  "bounces" : -1,
+  "piercing" : true,
+  "damageKind" : "arcana_light",
+
+  "scripts" : [ "boltguide.lua" ]
+}

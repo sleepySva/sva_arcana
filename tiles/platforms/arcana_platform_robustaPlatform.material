@@ -1,0 +1,20 @@
+{
+  "materialId" : 16849,
+  "materialName" : "arcana_platform_robustaPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_robustaPlatform",
+  "shortdescription" : "Robusta Platform",
+  "description" : "A dark wooden platform.",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_robustaPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "projectileName" : "arcana_explosion_empowerment",
+  "image" : "body.png",
+  "timeToLive" : 0.1,
+  "animationCycle" : 0.1,
+  "frameNumber" : 6,
+  "fullbright" : true,
+  "speed" : 0,
+  "light" : [170, 170, 150],
+  "damagePoly" : [ [-40, 0], [-25, -25], [0, -40], [25, -25], [40, 0], [25, 25], [0, 40], [-25, 25] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "renderLayer" : "Player+200",
+  "statusEffects" : [
+  ],
+  "power" : 10,
+  "damageKind" : "arcana_light"
+}

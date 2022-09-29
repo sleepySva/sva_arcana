@@ -1,0 +1,25 @@
+{
+  "itemName" : "arcana_augment_supercharged",
+  "price" : 2100,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_supercharged.png",
+  "description" : "^green;Grants Supercharged immunity. Useful as a Superstorm EPP replacement.^reset;",
+  "shortdescription" : "EPA - Superstorm",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_supercharged",
+    "displayName" : "EPA - Superstorm",
+    "displayIcon" : "/items/augments/back/arcana_augment_supercharged.png",
+    "effects" :
+	[
+		"arcana_status_supercharged_immunity"
+	]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

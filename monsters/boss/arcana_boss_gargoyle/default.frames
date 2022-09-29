@@ -1,0 +1,33 @@
+{
+  "frameGrid" : {
+    "size" : [121, 121],
+    "dimensions" : [14, 10],
+    "names" : [
+      [ null, "red.idle.1", "red.idle.2", "red.idle.3", "red.idle.4", "red.idle.5", "red.idle.6", "red.idle.7", "red.idle.8", "red.idle.9", "red.idle.10", "red.idle.11", "red.idle.12" ],
+      [ null, "red.attack.1", "red.attack.2", "red.attack.3", "red.attack.4", "red.attack.5", "red.attack.6", null, "red.attack.7", "red.attack.8", "red.attack.9", "red.attack.10", "red.attack.11", "red.attack.12"],
+      [ null, "yellow.idle.1", "yellow.idle.2", "yellow.idle.3", "yellow.idle.4", "yellow.idle.5", "yellow.idle.6", "yellow.idle.7", "yellow.idle.8", "yellow.idle.9", "yellow.idle.10", "yellow.idle.11", "yellow.idle.12" ],
+      [ null, "yellow.attack.1", "yellow.attack.2", "yellow.attack.3", "yellow.attack.4", "yellow.attack.5", "yellow.attack.6", null, "yellow.attack.7", "yellow.attack.8", "yellow.attack.9", "yellow.attack.10", "yellow.attack.11", "yellow.attack.12"],
+      [ null, "blue.idle.1", "blue.idle.2", "blue.idle.3", "blue.idle.4", "blue.idle.5", "blue.idle.6", "blue.idle.7", "blue.idle.8", "blue.idle.9", "blue.idle.10", "blue.idle.11", "blue.idle.12" ],
+      [ null, "blue.attack.1", "blue.attack.2", "blue.attack.3", "blue.attack.4", "blue.attack.5", "blue.attack.6", null, "blue.attack.7", "blue.attack.8", "blue.attack.9", "blue.attack.10", "blue.attack.11", "blue.attack.12"],
+      [ null, "red.spinwindup.1", "red.spinwindup.2", "red.spinwindup.3", "red.spinwindup.4", "red.spinwindup.5", "red.spinwindup.6", "red.spinwindup.7", "red.spinwindup.8", "red.spinwindup.9", "red.spinwindup.10", "red.spinwindup.11", "red.spinwindup.12" ],
+      [ null, "red.spin.1", "red.spin.2", "red.spin.3", "red.spin.4", "red.spin.5", "red.spin.6", "red.spin.7", "red.spin.8", "red.spin.9", "red.spin.10", "red.spin.11", "red.spin.12" ],
+      [ null, "red.spinwinddown.1", "red.spinwinddown.2", "red.spinwinddown.3", "red.spinwinddown.4", "red.spinwinddown.5", "red.spinwinddown.6", "red.spinwinddown.7", "red.spinwinddown.8", "red.spinwinddown.9", "red.spinwinddown.10", "red.spinwinddown.11", "red.spinwinddown.12" ],
+      [ "red.spinwinddown.13", "red.spinwinddown.14", "red.spinwinddown.15", "red.spinwinddown.16", "red.spinwinddown.17" ]
+    ]
+  },
+  "aliases" : {
+    "red.colorwindup.1" : "red.attack.1", "yellow.colorwindup.1" : "yellow.attack.1", "blue.colorwindup.1" : "blue.attack.1",
+    "red.colorwindup.2" : "red.attack.2", "yellow.colorwindup.2" : "yellow.attack.2", "blue.colorwindup.2" : "blue.attack.2",
+    "red.colorwindup.3" : "red.attack.3", "yellow.colorwindup.3" : "yellow.attack.3", "blue.colorwindup.3" : "blue.attack.3",
+    "red.colorwindup.4" : "red.attack.4", "yellow.colorwindup.4" : "yellow.attack.4", "blue.colorwindup.4" : "blue.attack.4",
+    "red.colorwindup.5" : "red.attack.5", "yellow.colorwindup.5" : "yellow.attack.5", "blue.colorwindup.5" : "blue.attack.5",
+    "red.colorwindup.6" : "red.attack.6", "yellow.colorwindup.6" : "yellow.attack.6", "blue.colorwindup.6" : "blue.attack.6",
+
+    "red.colorwinddown.1" : "red.attack.7", "yellow.colorwinddown.1" : "yellow.attack.7", "blue.colorwinddown.1" : "blue.attack.7",
+    "red.colorwinddown.2" : "red.attack.8", "yellow.colorwinddown.2" : "yellow.attack.8", "blue.colorwinddown.2" : "blue.attack.8",
+    "red.colorwinddown.3" : "red.attack.9", "yellow.colorwinddown.3" : "yellow.attack.9", "blue.colorwinddown.3" : "blue.attack.9",
+    "red.colorwinddown.4" : "red.attack.10", "yellow.colorwinddown.4" : "yellow.attack.10", "blue.colorwinddown.4" : "blue.attack.10",
+    "red.colorwinddown.5" : "red.attack.11", "yellow.colorwinddown.5" : "yellow.attack.11", "blue.colorwinddown.5" : "blue.attack.11",
+    "red.colorwinddown.6" : "red.attack.12", "yellow.colorwinddown.6" : "yellow.attack.12", "blue.colorwinddown.6" : "blue.attack.12"
+  }
+}

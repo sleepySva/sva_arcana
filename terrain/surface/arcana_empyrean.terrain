@@ -1,0 +1,46 @@
+{
+  "name" : "arcana_empyrean",
+
+  //jags
+  "type" : "displacement",
+  "xType" : "perlin",
+  "xOctaves" : 2,
+  "xFreq" : 0.58,
+  "xAmp" : 10,
+  "xXInfluence" : 0.3,
+  "xYInfluence" : 0.5,
+  "yType" : "perlin",
+  "yOctaves" : 1,
+  "yFreq" : 0.1,
+  "yAmp" : 3,
+  "yYInfluence" : 0,
+
+  "source" : {
+    "type" : "max",
+
+    "sources" : [
+      {
+        //big ones
+        "type" : "perlin",
+        "function" : "perlin",
+        "octaves" : 2,
+        "freq" : 0.012,
+        "amp" : 1,
+        "bias" : -0.4,
+        "xInfluence" : 0.5,
+        "yInfluence" : 1.0
+      },
+      {
+        //small ones
+        "type" : "perlin",
+        "function" : "perlin",
+        "octaves" : 1,
+        "freq" : 0.025,
+        "amp" : 1,
+        "bias" : -0.45,
+        "xInfluence" : 0.8,
+        "yInfluence" : 1.0
+      }
+    ]
+  }
+}

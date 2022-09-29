@@ -1,0 +1,21 @@
+{
+  "projectileName" : "lunar_katana_2_projectile_3",
+  "image" : "body.png",
+  "physics" : "gas",
+  "frameNumber" : 3,
+  "animationCycle" : 0.1,
+  "lightColor" : [40, 20, 20],
+  "power" : 2,
+  "speed" : 0,
+  "timeToLive" : 0.1,
+  "bounces" : -1,
+  "knockback" : 0,
+  "knockbackDirectional" : true,
+  "orientationLocked" : true,
+  "damagePoly" : [ [8, 9],  [8, -9],  [-8, -9],  [-8, 9] ],
+  "piercing" : true,
+  "damageKind" : "default",
+  "emitters" : [],
+  "actionOnReap" : [
+  ]
+}

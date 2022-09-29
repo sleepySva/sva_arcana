@@ -1,0 +1,64 @@
+{
+  "objectName" : "aeolus_trap_1",
+  "colonyTags" : ["avian","avianairship","mechanical"],
+  "rarity" : "Common",
+  "price" : 180,
+  "description" : "A beautifully crafted propeller.",
+  "shortdescription" : "Propeller",
+  "race" : "avian",
+  "category" : "trap",
+
+  "apexDescription" : "An enormous propeller.",
+  "avianDescription" : "They may not be wings, but propellers like these keep Avian airships aloft.",
+  "floranDescription" : "Ssspinny machine make ships fly.",
+  "glitchDescription" : "Observant. These propellers must spin very quickly to keep an entire ship in the air.",
+  "humanDescription" : "The propeller is very loud.",
+  "hylotlDescription" : "Loud and obnoxious but fit for purpose.",
+  "novakidDescription" : "That's one massive propeller. I guess it's for keepin' airships runnin'.",
+
+  "inventoryIcon" : "propellericon.png",
+  "orientations" : [
+    {
+      "image" : "propeller.png:<color>.<frame>",
+      "imagePosition" : [-24, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      "frames" : 4,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "touchDamage" : {
+        "poly" : [ [-3.0, 2.0], [-3.0, 3.0], [4.0, 3.0], [4.0, 2.0] ],
+        "damage" : 65,
+
+        "damageType" : "Environment",
+        "damageSourceKind" : "slash"
+      }
+    },
+    {
+      "image" : "propeller.png:<color>.<frame>",
+      "imagePosition" : [-24, 0],
+      "direction" : "right",
+      "frames" : 4,
+      "animationCycle" : 0.2,
+      
+	  "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "touchDamage" : {
+        "poly" : [ [-3.0, 2.0], [-3.0, 3.0], [4.0, 3.0], [4.0, 2.0] ],
+        "damage" : 65,
+
+        "damageType" : "Environment",
+        "damageSourceKind" : "slash"
+      }
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/propeller.ogg",
+
+  "smashOnBreak" : true,
+  "smashParticles" : [ { "count" : 3, "particle" : "steelshard" }, { "count" : 10, "particle" : "woodshard" } ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16321,
+  "materialName" : "aurea_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aurea_tile6",
+  "description" : "A durable sloped panel tile, used to construct complex buildings.",
+  "shortdescription" : "Complex Ancient Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile6.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4823
+  }
+}

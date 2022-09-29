@@ -2,8 +2,6 @@
   "type" : "arcana_npc_workshop_section8Elite",
   "baseType" : "hostile",
   
-  "levelVariance" : [8.0, 8.0],
-  
   "dropPools" : [ "arcana_npcdrops_workshop_section8Elite" ],
 
   "scriptConfig" : {
@@ -55,6 +53,12 @@
   },
   
   "statusControllerSettings" : {    
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+  
     "stats" : {
       "maxHealth" : {
         "baseValue" : 280.0
@@ -76,6 +80,9 @@
       },
       "poisonStatusImmunity" : {
         "baseValue" : 1.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.6
       }
     }
   }

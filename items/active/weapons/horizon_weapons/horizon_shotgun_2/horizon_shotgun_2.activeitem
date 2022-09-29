@@ -1,0 +1,95 @@
+{
+  "itemName" : "horizon_shotgun_2",
+  "price" : 2400,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A special fire cannon.",
+  "shortdescription" : "^#847d8b;Pyrocraze Wrath^reset;",
+  "tooltipKind" : "gun",
+  "category" : "shotgun",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","shotgun"],
+  "level" : 8,
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [1.2, 0.25]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/flamethrower_start.ogg"]
+    }
+  },
+
+  "baseOffset" : [1.2, 0.25],
+  "muzzleOffset" : [2.2, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.4,
+    "baseDps" : 14.0,
+    "energyUsage" : 50.0,
+    "inaccuracy" : 0.12,
+
+    "projectileCount" : 3,
+    "fireType" : "auto",
+
+    "projectileType" : "arcana_projectile_bouncer_fire",
+    "projectileParameters" : {
+      "damageKind" : "fire",
+	  "speed" : 86,
+      "knockback" : 30
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.10,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

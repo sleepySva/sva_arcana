@@ -1,44 +1,41 @@
 {
   "objectName" : "arcana_crafting_furnace_4",
   "colonyTags" : ["crafting"],
-  "rarity" : "Essential",
-  "description" : "A smelter that can process just about everything, made with Aureola bars.",
-  "shortdescription" : "^#dfcf4e;Auric Smelter^reset;",
+  "rarity" : "Legendary",
+  "description" : "Replacement",
+  "shortdescription" : "Replacement",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1600,
+  "price" : 1,
   
-  "lightColor" : [100, 90, 60],
-
-  "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_furnace/arcana_crafting_furnace_4.config",
-	"filter" : ["arcana_crafting_furnace_2", "arcana_crafting_furnace_3", "arcana_crafting_furnace_4", "craftingfurnace", "craftingfurnace2", "craftingfurnace3"]
-  },
-
+  "breakDropOptions" : [
+	[ [ "arcana_crafting_furnace_2", 1, { } ] ]
+  ],
+  "printable" : false,
   "inventoryIcon" : "icon.png",
+  
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "arcana_crafting_furnace_4.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+	  "image" : "body.png:<color>.<frame>",
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-16, 0],
-      "frames" : 20,
-      "animationCycle" : 2.0,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
 
     },
 	{
-	  "imageLayers" : [ { "image" : "arcana_crafting_furnace_4.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+	  "image" : "body.png:<color>.<frame>",
       "direction" : "right",
-      "imagePosition" : [-16, 0],
-      "frames" : 20,
-      "animationCycle" : 2.0,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
 
     }
   ]

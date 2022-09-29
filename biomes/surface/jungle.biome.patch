@@ -1,0 +1,14 @@
+[
+	{ 
+	  "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+		"mode" : "floor",
+		"priority" : 4.0,
+		"variants" : 1,
+		"distribution" : "/biomes/distributions.config:rare",
+		"type" : "microdungeon",
+		"microdungeons" : [ "arcana_dungeon_general_lush" ]
+	  }
+	}
+]

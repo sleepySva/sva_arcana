@@ -1,44 +1,41 @@
 {
   "objectName" : "arcana_crafting_essenceExtractor_4",
   "colonyTags" : ["crafting"],
-  "rarity" : "Essential",
-  "description" : "The ultimate essence extractor that can extract most types of essence from materials.",
-  "shortdescription" : "^#dfcf4e;Gilded Essence Extractor^reset;",
+  "rarity" : "Legendary",
+  "description" : "Replacement",
+  "shortdescription" : "Replacement",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 2800,
+  "price" : 1,
   
-  "lightColor" : [100, 100, 40],
-
-  "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_essenceExtractor/arcana_crafting_essenceExtractor_4.config",
-	"filter" : ["arcana_crafting_essenceExtractor"]
-  },
-
+  "breakDropOptions" : [
+	[ [ "arcana_crafting_essenceExtractor_1", 1, { } ] ]
+  ],
+  "printable" : false,
   "inventoryIcon" : "icon.png",
+  
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+	  "image" : "body.png:<color>.<frame>",
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-24, 0],
-      "frames" : 4,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
       "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
 
     },
 	{
-	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+	  "image" : "body.png:<color>.<frame>",
       "direction" : "right",
-      "imagePosition" : [-24, 0],
-      "frames" : 4,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
       "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
 
     }
   ]

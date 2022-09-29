@@ -1,0 +1,21 @@
+{
+  "kind" : "arcana_particle_ember_pink",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.06,
+    "durationVariance" : 0.02,
+    "loops" : true,
+    "start" : {
+      "particles" : [ ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "arcana_particle_ember_pink_1" ], [ "arcana_particle_ember_pink_2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [ ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

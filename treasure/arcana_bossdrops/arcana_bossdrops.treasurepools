@@ -1,6 +1,24 @@
 
 {
 
+  "arcana_bossdrops_myriadTerror" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["money", 4000]},
+        {"item" : ["arcana_misc_myriadCrystal", 2]}
+      ],
+      "pool" : [
+		{"weight" : 0.1, "item" : ["arcana_misc_myriadCrystal", 2]},
+		{"weight" : 0.2, "item" : ["arcana_misc_myriadCrystal", 2]},
+        {"weight" : 0.3, "item" : ["arcana_misc_myriadCrystal", 1]},
+		{"weight" : 0.4, "item" : ["arcana_misc_myriadCrystal", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
   "arcana_bossdrops_dheral" : [
     [0, {
 	  "fill" : [
@@ -21,11 +39,12 @@
   "arcana_bossdrops_aeonTimepiece" : [
     [0, {
 	  "fill" : [
-	    {"item" : ["money", 4000]},
+	    {"item" : ["money", 26000]},
         {"item" : ["arcana_misc_aeonLeaf", 10]},
+        {"item" : ["arcana_misc_aeonCore", 1]},
+		{"item" : ["arcana_misc_eternalPage", 20]},
         {"item" : ["arcana_essence_aeonEssence", 20]},
-		{"item" : ["arcana_aeon_deco_2", 1]},
-		{"item" : ["timepiecereceipt-codex", 1]}
+		{"item" : ["arcana_aeon_deco_2", 1]}
       ],
       "pool" : [
 		{"weight" : 0.5, "item" : ["arcana_head_infinityHelm", 1]},
@@ -40,7 +59,7 @@
   "arcana_bossdrops_evolapis" : [
     [0, {
 	  "fill" : [
-        {"item" : ["money", 2000]},
+        {"item" : ["money", 14000]},
         {"item" : ["nanowrap", 2]}
       ],
       "pool" : [
@@ -58,9 +77,8 @@
   "arcana_bossdrops_cosmoNemesis" : [
     [0, {
 	  "fill" : [
-        {"item" : ["money", 2000]},
-        {"item" : ["nanowrap", 2]},
-		{"item" : ["nemesisrecept-codex", 1]}
+        {"item" : ["money", 14000]},
+        {"item" : ["nanowrap", 2]}
       ],
       "pool" : [
 		{"weight" : 0.1, "item" : ["arcana_misc_cosmoTendrils", 22]},
@@ -77,7 +95,6 @@
   "arcana_bossdrops_solarGuardian" : [
     [0, {
 	  "fill" : [
-		{"item" : ["solarguardianrecept-codex", 1]},
         {"item" : ["arcana_essence_solarEssence", 10]}
       ],
       "pool" : [

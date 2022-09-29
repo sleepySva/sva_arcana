@@ -1,6 +1,6 @@
 {
   "itemName" : "monarch_parasol_2",
-  "price" : 500,
+  "price" : 300,
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "tool",
@@ -15,10 +15,10 @@
   "animationParts" : { },
   "animationCustom" : { },
 
-  "scripts" : ["monarch_parasol_2.lua"],
+  "scripts" : ["lua.lua"],
 
   "idleRotation" : -45,
-  "activeRotation" : 65,
+  "activeRotation" : -10,
   "switchTime" : 0.3,
   "fallingParameters" : {
     "airForce" : 30,

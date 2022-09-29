@@ -1,0 +1,59 @@
+{
+  "type" : "arcana_tenant_butler",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"],
+      "graduation" : {
+        "nextNpcType" : [
+          [0.25, "crewmemberchemistblue"],
+          [0.25, "crewmemberchemistgreen"],
+          [0.25, "crewmemberchemistyellow"],
+          [0.25, "crewmemberchemistorange"]
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "apex" : {
+          "default" : [
+            "This suit is to protect me from local contamination. You probably shouldn't touch me.",
+            "I've seen the kind of diseases that the MiniKnog researches. Nasty stuff.",
+            "The universe is full of deadly bacteria! I'm safer in this suit."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "I'm doing research into alien bacteria. I used to be stationed elsewhere.",
+            "Back on Earth, we'd cured most diseases. I hope that data wasn't lost...",
+            "Bacteria is everywhere! I'm concerned about infection."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "hazmathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "hazmatchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "hazmatback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "hazmatlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

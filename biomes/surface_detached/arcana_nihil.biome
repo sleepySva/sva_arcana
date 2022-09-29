@@ -25,15 +25,15 @@
   },
 
   "mainBlock" : "nihil_tile1",
-  "subBlocks" : [ "nihil_tile2" ],
+  "subBlocks" : [ "nihil_tile2", "hive" ],
   "ores" : "arcana_illuminated_ores_surface",
 
   "surfacePlaceables" : {
-    "grassMod" : [ "hivegrass" ],
+    "grassMod" : [ "arcana_mod_lumenGrass" ],
     "grassModDensity" : 0.9,
 
     "ceilingGrassMod" : [ "hiveceilinggrass" ],
-    "ceilingGrassModDensity" : 0.9,
+    "ceilingGrassModDensity" : 0.7,
 
     "items" : [
       {
@@ -66,6 +66,18 @@
       },
       {
         "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "nihil" ],
+        "treeFoliageList" : [ "nihil" ]
+      },
+      {
+        "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
@@ -86,8 +98,8 @@
   },
 
   "undergroundPlaceables" : {
-    "grassMod" : [ "hivegrass" ],
-    "grassModDensity" : 0.9,
+    "grassMod" : [ "arcana_mod_lumenGrass" ],
+    "grassModDensity" : 0.8,
 
     "ceilingGrassMod" : [ "hiveceilinggrass" ],
     "ceilingGrassModDensity" : 0.9,
@@ -111,13 +123,28 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "arcana_nihil_bush_1",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
         "distribution" : "/biomes/distributions.config:scatteredLarge",
 
         "type" : "tree",
         "treeFoliageHueShiftMax" : 0,
         "treeStemHueShiftMax" : 0,
-        "treeStemList" : [ "hive" ],
-        "treeFoliageList" : [ "hive" ]
+        "treeStemList" : [ "nihil" ],
+        "treeFoliageList" : [ "nihil" ]
       },
       {
         "mode" : "ceiling",

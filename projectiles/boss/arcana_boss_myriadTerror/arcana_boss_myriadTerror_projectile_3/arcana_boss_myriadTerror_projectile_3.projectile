@@ -1,0 +1,49 @@
+{
+  "projectileName" : "arcana_boss_myriadTerror_projectile_3",
+  "physics" : "default",
+  "timeToLive" : 7,
+  "bounces" : 0,
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_ember_indigo"],
+  "frameNumber" : 1,
+  "speed" : 80,
+  "knockback" : 20,
+  "supportsProcessing" : true,
+  
+  "power" : 24,  
+
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_white/arcana_explosion_plasma_1_white.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/astraltear_stop2.ogg" ]
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_myriadTerror/arcana_boss_myriadTerror_projectile_3/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "lightColor" : [150, 120, 172],
+  "damageKind" : "poison"
+  
+}

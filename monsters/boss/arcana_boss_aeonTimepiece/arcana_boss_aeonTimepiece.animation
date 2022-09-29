@@ -92,7 +92,7 @@
       "body" : {
         "properties" : {
           "zLevel" : 1,
-		  "fullbright" : true,
+		  "fullbright" : false,
           "transformationGroups" : [ "body" ],
           "offset" : [0.0, 0.0]
         },
@@ -136,7 +136,10 @@
       "eyes" : {
         "properties" : {
           "zLevel" : 2,
-          "anchorPart" : "body"
+          "anchorPart" : "body",
+		  "fullbright" : true,
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, 0.0]
         },
         "partStates" : {
           "body" : {

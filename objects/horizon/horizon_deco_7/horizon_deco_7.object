@@ -1,0 +1,39 @@
+{
+  "objectName" : "horizon_deco_7",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A special furnace redesigned from an Arcanium Furnace, used by the Horizon to efficiently smelt Necroium.",
+  "shortdescription" : "Necroium Furnace",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 800,
+  
+  "lightColor" : [140, 90, 140],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

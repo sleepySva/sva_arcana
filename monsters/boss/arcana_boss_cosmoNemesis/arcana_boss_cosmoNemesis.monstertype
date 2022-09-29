@@ -79,6 +79,9 @@
         "knockbackStunTime" : {
           "baseValue" : 0.0
         },
+		"physicalResistance" : {
+          "baseValue" : 0.3
+        },
         "knockbackThreshold" : {
           "baseValue" : 999999
         },
@@ -91,14 +94,23 @@
         "fireStatusImmunity" : {
           "baseValue" : 1.0
         },
+		"fireResistance" : {
+          "baseValue" : 0.8
+        },
         "iceStatusImmunity" : {
           "baseValue" : 1.0
+        },
+		"iceResistance" : {
+          "baseValue" : -0.5
         },
         "electricStatusImmunity" : {
           "baseValue" : 1.0
         },
         "poisonStatusImmunity" : {
           "baseValue" : 1.0
+        },
+		"poisonResistance" : {
+          "baseValue" : -0.3
         },
         "specialStatusImmunity" : {
           "baseValue" : 1.0

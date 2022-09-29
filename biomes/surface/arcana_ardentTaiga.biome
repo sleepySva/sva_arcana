@@ -50,8 +50,8 @@
           [ 1, "crystalbirdcritter" ],
           [ 1, "snowflakescritter" ],
           [ 1, "snowymolecritter" ],
-          [ 1, "snorecritter" ],
-          [ 1, "hollowcritter" ]
+          [ 1, "birdcritter" ],
+          [ 1, "birdcritter" ]
         ]
       }
     ],
@@ -64,7 +64,7 @@
 
   "weather" : [
     [0, [
-      "/weather.config:tundra"
+      "/weather.config:snow"
     ]]
   ],
 
@@ -76,12 +76,12 @@
       "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
       "dayColors" : [ [245, 228, 200], [255, 235, 220] ],
       "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
-      "nightColors" : [ [24, 38, 153, 80], [58, 42, 170, 160] ],
+      "nightColors" : [ [44, 58, 153, 80], [78, 62, 170, 160] ],
 
       "morningLightColor" : [140, 71, 0],
       "dayLightColor" : [250, 240, 230],
       "eveningLightColor" : [160, 120, 180],
-      "nightLightColor" : [40, 20, 160]
+      "nightLightColor" : [100, 80, 140]
     },
     {
       // sunny pink day, pink/peach sunrise and blue/pink sunset
@@ -90,20 +90,20 @@
       "morningColors" : [ [197, 48, 174], [253, 161, 96] ],
       "dayColors" : [ [245, 226, 207], [255, 235, 220] ],
       "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
-      "nightColors" : [ [24, 38, 153, 80], [58, 42, 170, 160] ],
+      "nightColors" : [ [44, 58, 153, 80], [78, 62, 170, 160] ],
 
       "morningLightColor" : [140, 71, 0],
       "dayLightColor" : [250, 240, 230],
       "eveningLightColor" : [180, 120, 120],
-      "nightLightColor" : [40, 20, 160]
+      "nightLightColor" : [100, 80, 140]
     }
   ],
 
   "mainBlock" : "ardentTaiga_tile3",
-  "subBlocks" : [ "ardentTaiga_tile2", "ardentTaiga_tile1", "ardentTaiga_tile4" ],
+  "subBlocks" : [ "ardentTaiga_tile2", "ardentTaiga_tile1", "snow" ],
   "ores" : "arcana_arcaneForest_ores_surface",
 
-  "parallax" : "/parallax/surface/snow.parallax",
+  "parallax" : "/parallax/surface/arcana_ardentTaiga.parallax",
 
   "ambientNoises" : {
     "day" : {
@@ -125,7 +125,7 @@
 
   "surfacePlaceables" : {
     "grassMod" : [ "snow" ],
-    "grassModDensity" : 1,
+    "grassModDensity" : 0.9,
 
     "items" : [
       {
@@ -162,17 +162,12 @@
       },
       {
         "mode" : "floor",
-        "priority" : 1.0,
+        "priority" : 3.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:scatteredSmall",
+        "distribution" : "/biomes/distributions.config:denseSmall",
 
-        "type" : "object",
-        "objectSets" : [
-          {
-            "pool" : [ [0.35, "iceshard1" ], [0.35, "iceshard2" ], [0.35, "iceshard3" ], [0.35, "iceshard4" ], [0.35, "iceshard5" ] ],
-            "parameters" : { }
-          }
-        ]
+        "type" : "grass",
+        "grasses" : [ "grass", "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
       },
       {
         "mode" : "floor",
@@ -192,19 +187,10 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:uncommon",
+        "distribution" : "/biomes/distributions.config:rare",
 
         "type" : "microdungeon",
         "microdungeons" : [ "arcana_ardentTaiga_dungeon_1" ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 1,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
-
-        "type" : "microdungeon",
-        "microdungeons" : [ "tundramicrodungeons" ]
       },
       {
         "mode" : "floor",
@@ -312,13 +298,13 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:scatteredSmall",
+        "distribution" : "/biomes/distributions.config:denseMedium",
 
         "type" : "tree",
         "treeFoliageHueShiftMax" : 90,
         "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "snowpinetree", "snowbirch", "snowcocoa", "snowfleshy", "snowgrumpy", "snowmetal", "snowpine", "snowslimey", "snowsomething", "snowspikey", "snowtwisted", "snowwood" ],
-        "treeFoliageList" : [ "snowpine", "snowblank", "snowscraggy", "snowleafy", "snowfrumpy", "snowredleaves", "snowgreenleaves" ]
+        "treeStemList" : [ "snowpinetree", "snowcocoa", "snowfleshy", "snowgrumpy", "snowpine", "snowslimey", "snowsomething", "snowspikey", "snowtwisted", "snowwood" ],
+        "treeFoliageList" : [ "snowpine", "snowscraggy", "snowleafy", "snowfrumpy" ]
       },
       {
         "mode" : "floor",
@@ -343,7 +329,7 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "arcana_farmable_ceruleanRollSeed_wild" ] ],
+            "pool" : [ [1, "arcana_farmable_wintercornSeed_wild" ] ],
             "parameters" : {
               "startingStage" : 3
             }

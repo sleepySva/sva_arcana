@@ -1,0 +1,27 @@
+{
+  "projectileName" : "arcana_monster_paintlin_projectile_1",
+  "image" : "body.png",
+  "physics" : "rain",
+  "animationCycle" : 0.5,
+  "frameNumber" : 5,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/monsters/arcana_monster_paintlin_projectile_1/explosion.config"
+    },
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : null,
+      "newMod" : "arcana_mod_bluePaint",
+      "radius" : 1
+    }
+  ],
+  "power" : 6.0,
+  "speed" : 50,
+  "damageKind" : "default",
+  "statusEffects" : [
+    "colorblue"
+  ]
+}

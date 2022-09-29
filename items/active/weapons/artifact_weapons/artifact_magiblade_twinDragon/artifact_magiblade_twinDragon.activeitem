@@ -1,0 +1,94 @@
+{
+  "itemName" : "artifact_magiblade_twinDragon",
+  "price" : 2700,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A magiblade that is infused with both Fire and Ice magic.",
+  "shortdescription" : "Twin Dragon",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Magiblade"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "spinSwoosh" : {
+          "properties" : {
+            "zLevel" : 1,
+            "centered" : true,
+            "transformationGroups" : ["swoosh"],
+            "offset" : [0, 0],
+            "fullbright" : true,
+            "damageArea" : [ [-5.75, 1.75], [-1.75, 5.75], [1.75, 5.75], [5.75, 1.75], [5.75, -1.75], [1.75, -5.75], [-1.75, -5.75], [-5.75, -1.75] ]
+          },
+          "partStates" : {
+            "spinSwoosh" : {
+              "idle" : {
+                "properties" : {
+                  "image" : ""
+                }
+              },
+              "spin" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/artifact_weapons/artifact_magiblade_twinDragon/spinswoosh.png:<frame>"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "arcana_magiblade_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.6,
+    "baseDps" : 8.6,
+	
+    "stepDamageConfig" : [
+      {
+		"damageSourceKind" : "firebroadsword"
+      },
+      {
+		"damageSourceKind" : "icebroadsword"
+      },
+      {
+		"damageSourceKind" : "firebroadsword"
+      },
+      {
+		"damageSourceKind" : "icebroadsword"
+      }
+    ]
+  },
+  
+  "altAbilityType" : "spearspin",
+  "altAbility" : {
+    "spinRate" : -1750,
+    "damageConfig" : {
+      "damageSourceKind" : "firebroadsword",
+      "statusEffects" : [ ],
+    	"baseDamage" : 4,
+    	"knockbackMode" : "none",
+    	"knockback" : 8,
+    	"timeout" : 0.1,
+    	"timeoutGroup" : "alt"
+    }
+  },
+  
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

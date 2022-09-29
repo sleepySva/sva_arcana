@@ -1,0 +1,21 @@
+{
+  "modId" : 16833,
+  "modName" : "arcana_mod_chromaOre",
+  "itemDrop" : "arcana_throwable_noveltyStar",
+  "description" : "Such vibrant colors... what is this?",
+  "health" : 20,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_chromaOre.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [102, 44, 86]
+  }
+}

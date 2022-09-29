@@ -1,0 +1,16 @@
+{
+  "itemName" : "arcana_auricDye",
+  "price" : 25,
+  "rarity" : "Legendary",
+  "category" : "clothingDye",
+  "inventoryIcon" : "arcana_auricdye.png",
+  "description" : "This coloured dye can be applied to a piece of armour or clothing with a right-click.",
+  "shortdescription" : "Auric Dye",
+
+  "dyeDirectives" : { "ffca8a" : "ae9f2b", "e0975c" : "ae9f2b", "a85636" : "6a4d0e", "6f2919" : "442f06" },
+  "dyeColorIndex" : false,
+
+  "radioMessagesOnPickup" : [ "pickupdye" ],
+
+  "scripts" : [ "/scripts/augments/dye.lua" ]
+}

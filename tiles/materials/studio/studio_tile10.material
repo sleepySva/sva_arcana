@@ -1,0 +1,22 @@
+{
+  "materialId" : 16314,
+  "materialName" : "studio_tile10",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile10",
+  "description" : "An ornate Robusta fence.",
+  "shortdescription" : "Studio Robusta Fence",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 4,
+  "category" : "materials",
+  "blocksLiquidFlow" : false,
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile10.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 300
+  }
+}

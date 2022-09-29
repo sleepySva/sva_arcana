@@ -1,0 +1,92 @@
+{
+  "projectileName" : "arcana_projectile_misc_cat",
+  "physics" : "laser",
+  "timeToLive" : 4,
+  "image" : "body.png",
+  "animationCycle" : 0.3,
+  "lightColor" : [120, 60, 30],
+  "frameNumber" : 1,
+  "actionOnCollide" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/fireimpact.config"
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 4,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "sleep"
+        }
+      ]
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/dust2/dust2.animation",
+            "initialVelocity" : [0.0, 7.0],
+            "finalVelocity" : [0.0, 3.0],
+            "approach" : [0.3, 60],
+            "timeToLive" : 0.7,
+            "layer" : "back",
+            "size" : 0.8,
+            "collidesForeground" : true,
+            "variance" : {
+            "position" : [0.5, 0.5],
+            "size" : 0.2,
+            "initialVelocity" : [5, 3],
+            "finalVelocity" : [0, 0],
+            "rotation" : 180,
+            "angularVelocity" : 180
+            }
+          }
+        }
+      ]
+    },
+    {
+      "action" : "particle",
+      "specification" : "astraltearsparkle1",
+      "time" : 0.1,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "astraltearsparkle2",
+      "time" : 0.1,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "astraltearsparkle3",
+      "time" : 0.1,
+      "repeat" : true
+    }
+  ],  
+  "speed" : 80,
+  "power" : 30,
+  "piercing" : false,
+  "damageKind" : "arcana_lunar",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "statusEffects" : [ "staffslow" ],
+
+  "fullbright" : true,
+  "emitters" : [ "tinyrocketsmoke" ],
+
+  "bounces" : 1,
+
+  "scripts" : [ "/projectiles/activeitems/staff/elementbouncer/bouncespikes.lua" ],
+
+  "spikeProjectile" : "electricelementcloud",
+  "spikeDamageFactor" : 0.1
+}

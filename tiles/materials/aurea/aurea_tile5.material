@@ -1,0 +1,21 @@
+{
+  "materialId" : 16320,
+  "materialName" : "aurea_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aurea_tile5",
+  "description" : "A durable white smooth panel tile, used to construct complex buildings.",
+  "shortdescription" : "Minimal Ark Panel B",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4820
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "type" : "arcana_npc_mistRider",
+  "baseType" : "merchant",
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common"]
+    },
+
+    "merchant" : {
+      "categories" : {
+        "override": [ "arcana_merchantpool_mistRider" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 8,
+      "storeRadius" : -1,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Mist Rider's Wares",
+          "subtitle" : "  Sells misc items"
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Welcome to my shop.",
+              "See anything you like?",
+              "What can I do ya for?"
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Enticing. Traveller, come hither, and browse my wares.",
+              "Furtive. Cogs and gears only go so far, young one.",
+              "Tantalising. My wares are wondrous and strange."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Farewell, traveller.",
+              "I hope to see you more in future.",
+              "Courage to you!"
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Cordial. Farewell, traveller.",
+              "Convivial. I hope to see you more in future.",
+              "Kindly. Courage to you!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "arcana_armor_mistRider_chest" ],
+            "legs" : [ "arcana_armor_mistRider_legs" ],
+            "head" : [ "arcana_armor_mistRider_head" ],
+            "back" : [
+              { "name" : "raggedcapeback", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

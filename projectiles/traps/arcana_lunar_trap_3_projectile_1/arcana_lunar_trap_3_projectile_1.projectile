@@ -1,0 +1,69 @@
+{
+  "projectileName" : "arcana_lunar_trap_3_projectile_1",
+  "physics" : "laser",
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "piercing" : false,
+  "image" : "body.png",
+  "fullbright" : true,
+  "emitters" : [],
+  
+  "windupFrames" : 10,
+  "frameNumber" : 1,
+  "winddownFrames" : 10,
+  "animationCycle" : 0.1,
+  
+  "boundBox" : [-6, -18, 6, 6],
+  "physicsForces" : {
+    "pull" : {
+      "type" : "RadialForceRegion",
+      "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop"],
+      "outerRadius" : 18,
+      "innerRadius" : 1.0,
+      "targetRadialVelocity" : -11,
+      "controlForce" : 800
+    }
+  },
+  
+  "speed" : 8,
+  "acceleration" : 2,
+  "knockback" : 0,
+  "supportsProcessing" : true,
+  
+  "onlyHitTerrain" : true,
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.06,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/traps/arcana_lunar_trap_3_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 2.0,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"size" : 0.8,
+		"renderLayer" : "foregroundEntity"
+      }
+    }
+  ],
+
+  "lightColor" : [150, 120, 172],
+  "damageKind" : "arcana_lunar",
+  "damagePoly" : [ [-4, 4], [4, 4], [4, -4], [-4, -4], [-4, 4] ],
+  "statusEffects" : [
+  ]
+  
+}

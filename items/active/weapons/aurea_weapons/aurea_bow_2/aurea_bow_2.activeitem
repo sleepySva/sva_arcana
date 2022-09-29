@@ -1,0 +1,101 @@
+{
+  "itemName" : "aurea_bow_2",
+  "price" : 900,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "A light-infused Gilten bow.",
+  "shortdescription" : "^#c0ab5e;Arclight^reset;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 4,
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "bow" : "body.png",
+    "bowFullbright" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0, 0]
+      }}
+    }},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/melee/laser_weapon_swing2.ogg" ],
+      "perfectRelease" : [ "/sfx/melee/laser_weapon_swing1.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "cooldownTime" : 0.1,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_projectile_scouteye",
+    "powerProjectileType" : "arcana_projectile_scouteye",
+    "projectileParameters" : {
+      "power" : 18.0,
+      "speed" : 120,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 1.0,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "name" : "Tri-Shot",
+    "energyPerShot" : 80,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_projectile_scouteye",
+    "powerProjectileType" : "arcana_projectile_scouteye",
+    "projectileParameters" : {
+      "power" : 10.5,
+      "speed" : 110,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : -4,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : 4,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

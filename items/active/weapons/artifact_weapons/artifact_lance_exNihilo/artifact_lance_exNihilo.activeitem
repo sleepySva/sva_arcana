@@ -1,0 +1,94 @@
+{
+  "itemName" : "artifact_lance_exNihilo",
+  "price" : 0,
+  "level" : 9,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A strong power surges from within.",
+  "shortdescription" : "^yellow;Ex Nihilo^#reset;",
+  "tooltipKind" : "arcana_gun_exousia",
+  "category" : "spear",
+  "tooltipFields" : {
+	"subtitle" : "^yellow;Lance^#reset;",
+	"rarityLabel" : "Artifact"
+  },
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "inventoryIcon" : "body.png",
+  
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/spear_flurry.ogg" ],
+      "fire2" : [ "/sfx/melee/spear_flurry.ogg" ],
+      "fire3" : [ "/sfx/melee/spear_flurry.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "arcana_lance_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 16.0
+  },
+
+  "altAbilityType" : "arcana_spear_ability_dashFlurry",
+  "altAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/arcana_spear_ability_dashFlurry/arcana_spear_ability_dashFlurry.lua"],
+	
+	"boostSpeed" : 40,
+    "boostForce" : 40,
+	
+	"name" : "Ein Sof Ohr",
+	"cooldownResetTime" : 0.06,
+    "maxCooldownTime" : 0.08,
+    "minCooldownTime" : 0.04,
+    "cooldownSwingReduction" : 0.04,
+    "energyUsage" : 60,
+    "cooldownTime" : 0.06,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "baseDamage" : 3,
+      "knockback" : 10,
+      "timeout" : 0.06,
+      "timeoutGroup" : "alt"
+    },
+
+    "cycleRotationOffsets" : [0, 5.5, -5.5],
+    "stances" : {
+	    "idle" : {
+	      "armRotation" : -90,
+	      "weaponRotation" : 0,
+	      "twoHanded" : false,
+	      "weaponOffset" : [0, 0.5],
+
+	      "allowRotate" : true,
+	      "allowFlip" : true
+	    },
+      "swing" : {
+        "duration" : 0.06,
+        "armRotation" : -15,
+        "weaponRotation" : -75,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 0.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

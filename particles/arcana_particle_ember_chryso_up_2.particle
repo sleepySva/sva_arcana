@@ -1,0 +1,23 @@
+{
+  "kind" : "arcana_particle_ember_chryso_up_2",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1,
+    "color" : [253, 173, 77],
+    "light" : [128, 72, 40],
+    "finalVelocity" : [0, 4],
+    "approach" : [0, 50],
+    "position" : [0, 0],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fade" : 1,
+    "layer" : "back",
+    "fullbright" : false,
+    "timeToLive" : 0.5,
+    "variance" : {
+      "initialVelocity" : [2.0, 2.0],
+      "size" : 0.5,
+      "position" : [0, 0]
+    }
+  }
+}

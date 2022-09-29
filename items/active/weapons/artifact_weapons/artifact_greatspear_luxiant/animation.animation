@@ -1,0 +1,413 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "inactivefire" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "inactivefire2" : {
+            "frames" : 5,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "inactivefire3" : {
+            "frames" : 5,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "inactivefire4" : {
+            "frames" : 5,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "inactivefire5" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "inactivefire6" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "inactivefire7" : {
+            "frames" : 5,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "activefire" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "activefire2" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "activefire3" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "activefire4" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "activefire5" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "activefire6" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "activefire7" : {
+            "frames" : 6,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "sword" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+			"mode" : "loop",
+            "properties" : {
+              "lightsOff" : ["glow"],
+              "particleEmittersOff" : ["blade"]
+            }
+          },
+          "extend" : {
+            "frames" : 2,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "active",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "immediateSound" : "/sfx/tools/energypickaxe_start.ogg"
+            }
+          },
+          "active" : {
+            "frames" : 8,
+            "cycle" : 0.4,
+			"mode" : "loop",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "persistentSound" : "/sfx/tools/energypickaxe_idle.ogg"
+            }
+          },
+          "retract" : {
+            "frames" : 2,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "inactive",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "immediateSound" : "/sfx/tools/energypickaxe_stop2.ogg"
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "sword" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
+          "offset" : [0, 2.8],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
+        },
+        "partStates" : {
+          "sword" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:extend.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage>:retract.<frame>?<directives>?<bladeDirectives>"
+              }
+            }
+          }
+        }
+      },
+	  
+      "swordfullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+		  "fullbright" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>",
+          "offset" : [0, 2.8],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "sword" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:extend.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage>:retract.<frame>?<directives>?<bladeDirectives>"
+              }
+            }
+          }
+        }
+      },
+	  
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+		  "fullbright" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "inactivefire" : {
+              "properties" : {
+                "image" : "swoosh_1.png:<frame>",
+                "offset" : [0.6, 2.5],
+                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+              }
+            },
+            "inactivefire2" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [8.2, 0.0],
+                "damageArea" : [ [-6, 1], [4.8, 1], [4.8, -1], [-6, -1] ]
+              }
+            },
+            "inactivefire3" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [8.2, 0.0],
+                "damageArea" : [ [-6, 1], [4.8, 1], [4.8, -1], [-6, -1] ]
+              }
+            },
+            "inactivefire4" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [8.2, 0.0],
+                "damageArea" : [ [-6, 1], [4.8, 1], [4.8, -1], [-6, -1] ]
+              }
+            },
+            "inactivefire5" : {
+              "properties" : {
+                "image" : "swoosh_5.png:<frame>",
+                "offset" : [0.6, 2.5],
+                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+              }
+            },
+            "inactivefire6" : {
+              "properties" : {
+                "image" : "swoosh_6.png:<frame>",
+                "offset" : [0.6, -2.6],
+                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+              }
+            },
+            "inactivefire7" : {
+              "properties" : {
+                "image" : "swoosh_7.png:<frame>",
+                "offset" : [8.6, 0.0],
+                "damageArea" : [ [-6, 1], [5.8, 1], [5.8, -1], [-6, -1] ]
+              }
+            },
+            "activefire" : {
+              "properties" : {
+                "image" : "swoosh_1.png:<frame>",
+                "offset" : [0.6, 2.5],
+                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+              }
+            },
+            "activefire2" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [8.2, 0.0],
+                "damageArea" : [ [-6, 1], [4.8, 1], [4.8, -1], [-6, -1] ]
+              }
+            },
+            "activefire3" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [8.2, 0.0],
+                "damageArea" : [ [-6, 1], [4.8, 1], [4.8, -1], [-6, -1] ]
+              }
+            },
+            "activefire4" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [8.2, 0.0],
+                "damageArea" : [ [-6, 1], [4.8, 1], [4.8, -1], [-6, -1] ]
+              }
+            },
+            "activefire5" : {
+              "properties" : {
+                "image" : "swoosh_5.png:<frame>",
+                "offset" : [0.6, 2.5],
+                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+              }
+            },
+            "activefire6" : {
+              "properties" : {
+                "image" : "swoosh_6.png:<frame>",
+                "offset" : [0.6, -2.6],
+                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+              }
+            },
+            "activefire7" : {
+              "properties" : {
+                "image" : "swoosh_7.png:<frame>",
+                "offset" : [8.6, 0.0],
+                "damageArea" : [ [-6, 1], [5.8, 1], [5.8, -1], [-6, -1] ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "inactivephysicalswoosh" : {
+      "active" : false,
+      "particles" : []
+    },
+    "activephysicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 20,
+      "burstCount" : 6,
+      "particles" : [
+        { "particle" : "soluskatana1"},
+        { "particle" : "soluskatana2"}
+      ]
+    },
+    "inactivearcana_lightswoosh" : {
+      "active" : false,
+      "particles" : []
+    },
+    "activearcana_lightswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 20,
+      "burstCount" : 6,
+      "particles" : [
+        { "particle" : "soluskatana1"},
+        { "particle" : "soluskatana2"}
+      ]
+    },
+    "blade" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.5, 3.0, 0.5, 8.5],
+      "emissionRate" : 8,
+      "particles" : [
+        { "particle" : "soluskatana1"},
+        { "particle" : "soluskatana2"},
+		{ "particle" : "arcana_particle_ember_light_1"},
+		{ "particle" : "arcana_particle_ember_light_1"}
+      ]
+    }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "position" : [0, 2.0],
+      "color" : [120, 120, 40],
+      "transformationGroups" : ["weapon"]
+    }
+  },
+
+  "sounds" : {
+    "inactivefire" : [ "/sfx/melee/swing_broadsword_fire2.ogg" ],
+    "inactivefire2" : [ "/sfx/melee/swing_axe_fire1.ogg" ],
+    "inactivefire3" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	"inactivefire4" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	"inactivefire5" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	"inactivefire6" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	"inactivefire7" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+    "activefire" : [ "/sfx/melee/swing_broadsword_fire2.ogg" ],
+    "activefire2" : [ "/sfx/melee/swing_axe_fire1.ogg" ],
+    "activefire3" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	"activefire4" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	"activefire5" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	"activefire6" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	"activefire7" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+    "empower" : [ "/sfx/gun/boom-deep-distant-loud.ogg" ],
+    "slash" : [ "/sfx/melee/swing_axe_fire3.ogg" ]
+  }
+}

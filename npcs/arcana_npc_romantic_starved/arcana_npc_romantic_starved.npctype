@@ -1,0 +1,49 @@
+{
+  "type" : "arcana_npc_romantic_starved",
+  "baseType" : "villager",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "So... hungry...",
+            "Traveller... can you spare some food?",
+            "Please, traveller... do you have any food?",
+			"It's... cold...",
+			"You... you must have some food for us...",
+            "You are not one of the nobles, are you?"
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "merchantchest", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "craftsmenchest", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "peasantchest", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "novakidfancychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "merchantlegs", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "craftsmenlegs", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "peasantlegs", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "novakidfancypants", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "novakidjacketpants", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

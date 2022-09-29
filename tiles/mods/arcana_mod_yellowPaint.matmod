@@ -1,0 +1,16 @@
+{
+  "modId" : 16836,
+  "modName" : "arcana_mod_yellowPaint",
+  "description" : "A layer of paint smeared onto the ground.",
+  "footstepSound" : "/sfx/blocks/footstep_mud.ogg",
+  "grass" : true,
+  "health" : 0,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_yellowPaint.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

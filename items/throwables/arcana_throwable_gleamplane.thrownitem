@@ -1,0 +1,30 @@
+{
+  "itemName" : "arcana_throwable_gleamplane",
+  "rarity" : "Common",
+  "price" : 400,
+  "category" : "throwableItem",
+  "inventoryIcon" : "arcana_throwable_gleamplane.png",
+  "image" : "arcana_throwable_gleamplane.png",
+  "shortdescription" : "Gleamplane",
+  "description" : "A paper plane! Will it fly?",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "arcana_throwable_gleamplane",
+  "projectileConfig" : {
+    "speed" : 35,
+    "power" : 0,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+      }
+    ]
+  }
+}

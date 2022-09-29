@@ -3,19 +3,19 @@
   "materialName" : "ardentTaiga_tile4",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "ardentTaiga_tile4",
-  "description" : "A deep blue chunk of wood.",
-  "shortdescription" : "Ardent Wood",
-  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
-  "health" : 6,
+  "description" : "A red maple-like leaf block.",
+  "shortdescription" : "Ardent Leaves",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 4,
   "category" : "materials",
 
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {
     "texture" : "ardentTaiga_tile4.png",
-    "variants" : 5,
+    "variants" : 10,
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : true,
-    "zLevel" : 708
+    "zLevel" : 1805
   }
 }

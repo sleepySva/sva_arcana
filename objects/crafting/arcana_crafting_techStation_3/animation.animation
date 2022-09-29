@@ -1,0 +1,133 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "stage_3",
+        "states" : {
+          "stage_1" : {
+            "frames" : 1,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "stage_2" : {
+            "frames" : 1,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "stage_3" : {
+            "frames" : 1,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          },
+          "stage_4" : {
+            "frames" : 1,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chassis" : {
+        "properties" : {
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {  
+            "stage_1" : {
+              "properties" : {
+                "image" : "1_fullbright.png:<color>.<frame>"
+              }
+            },
+			
+            "stage_2" : {
+              "properties" : {
+                "image" : "2_fullbright.png:<color>.<frame>"
+              }
+            },
+
+            "stage_3" : {
+              "properties" : {
+                "image" : "3_fullbright.png:<color>.<frame>"
+              }
+            },
+
+            "stage_4" : {
+              "properties" : {
+                "image" : "4_fullbright.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "light" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "stage_1" : {
+              "properties" : {
+                "image" : "1.png:<color>.<frame>"
+              }
+            },
+
+            "stage_2" : {
+              "properties" : {
+                "image" : "2.png:<color>.<frame>"
+              }
+            },
+
+            "stage_3" : {
+              "properties" : {
+                "image" : "3.png:<color>.<frame>"
+              }
+            },
+
+            "stage_4" : {
+              "properties" : {
+                "image" : "4.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "lights" : {
+    "scifiglow" : {
+      "active" : false,
+      "position" : [0, 1],
+      "color" : [76, 125, 153],
+      "flickerPeriod" : 0.8,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1.0,
+      "flickerPeriodVariance" : 0.0,
+      "flickerIntensityVariance" : 0.0
+    }
+  },
+  
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

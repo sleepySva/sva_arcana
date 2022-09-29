@@ -1,0 +1,386 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 1,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 12,
+            "cycle" : 1.2,
+            "mode" : "loop"
+          },
+          "colorwindup" : {
+            "frames" : 6,
+            "cycle" : 0.4,
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/kluexboss_phase1.ogg"
+            }
+          },
+          "colorwinddown" : {
+            "frames" : 6,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "attack" : {
+            "frames" : 12,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fastattack" : {
+            "frames" : 12,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "spinwindup" : {
+            "frames" : 12,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "spin"
+          },
+          "spin" : {
+            "frames" : 12,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "spinwinddown" : {
+            "frames" : 17,
+            "cycle" : 1.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "lava" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "windup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fire",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/kluexboss_lavaplume.ogg"
+            }
+          },
+          "fire" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "winddown" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "none"
+          }
+        }
+      },
+      "vortex" : {
+        "priority" : 1,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "spin" : {
+            "frames" : 8,
+            "cycle" : 0.25,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/npc/boss/kluexboss_vortex_windy.ogg",
+              "persistentSoundStopTime" : 2
+            }
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 4,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 12,
+            "cycle" : 1.2
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [0.0, 1.0],
+          "transformationGroups" : [ "body" ],
+          "image" : "<partImage>"
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            },
+            "colorwindup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.colorwindup.<frame>"
+              }
+            },
+            "colorwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.colorwinddown.<frame>"
+              }
+            },
+            "fastattack" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.attack.<frame>"
+              }
+            },
+            "attack" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.attack.<frame>"
+              }
+            },
+            "spinwindup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.spinwindup.<frame>"
+              }
+            },
+            "spin" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.spin.<frame>"
+              }
+            },
+            "spinwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.spinwinddown.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "bodyfullbright" : {
+        "properties" : {
+          "zLevel" : 4,
+          "centered" : true,
+          "offset" : [0.0, 1.0],
+          "transformationGroups" : [ "body" ],
+          "image" : "<partImage>",
+          "fullbright" : true
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            },
+            "colorwindup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.colorwindup.<frame>"
+              }
+            },
+            "colorwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.colorwinddown.<frame>"
+              }
+            },
+            "fastattack" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.attack.<frame>"
+              }
+            },
+            "attack" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.attack.<frame>"
+              }
+            },
+            "spinwindup" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.spinwindup.<frame>"
+              }
+            },
+            "spin" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.spin.<frame>"
+              }
+            },
+            "spinwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.spinwinddown.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:<colorState>.idle.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "lavaplume" : {
+        "properties" : {
+          "zLevel" : 3,
+          "centered" : true,
+          "offset" : [0.0, -8.0],
+          "fullbright" : true,
+          "transformationGroups" : [ "body" ]
+        },
+        "partStates" : {
+          "lava" : {
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>",
+                "damageArea" : [ [-1.0, 8.0], [1.0, 8.0], [1.0, -8.0], [-1.0, -8.0] ]
+              }
+            },
+            "winddown" : {
+              "properties" : {
+                "image" : "<partImage>:winddown.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "spinvortex" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "fullbright" : true,
+          "transformationGroups" : [ "body" ]
+        },
+        "partStates" : {
+          "vortex" : {
+            "spin" : {
+              "properties" : {
+                "image" : "<partImage>:spin.<frame>",
+                "damageArea" : [ [0.765, 1.875], [1.875, 0.765], [1.875, -0.765], [0.765, -1.875], [-0.765, -1.875], [-1.875, -0.765], [-1.875, 0.765], [-0.765, 1.875] ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "globalTagDefaults" : {
+    "colorState" : "red"
+  },
+
+  "transformationGroups" : {
+    "body" : {"interpolated" : true}
+  },
+
+  "particleEmitters" : {
+    "damage" : {
+      "emissionRate" : 0.7,
+      "particles" : [
+      ]
+    },
+    "windleft" : {
+      "emissionRate" : 200.0,
+      "offsetRegion" : [-32, -5, -32.0, 40],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "streak",
+            "size" : 1.0,
+            "color" : [220, 220, 220, 200],
+            "fade" : 0.9,
+            "position" : [0.0, 0.0],
+            "initialVelocity" : [64.0, 0.0],
+            "finalVelocity" : [0, 0.0],
+            "destructionTime" : 0.0,
+            "approach" : [0, 10],
+            "timeToLive" : 0.5,
+            "length" : 10.0,
+            "variance" : {
+              "initialVelocity" : [3.0, 1.0]
+            }
+          }
+        }
+      ]
+    },
+    "windright" : {
+      "emissionRate" : 200.0,
+      "offsetRegion" : [32.0, -5, 32, 40],
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "streak",
+            "size" : 1.0,
+            "color" : [220, 220, 220, 200],
+            "fade" : 0.9,
+            "position" : [0.0, 0.0],
+            "initialVelocity" : [-64.0, 0.0],
+            "finalVelocity" : [0, 0.0],
+            "destructionTime" : 0.0,
+            "approach" : [0, 10],
+            "timeToLive" : 0.5,
+            "length" : 10.0,
+            "variance" : {
+              "initialVelocity" : [-3.0, 1.0]
+            }
+          }
+        }
+      ]
+    },
+    "destroy" : {
+      "offsetRegion" : [-3.5, -2.75, 3.5, 5.0],
+      "burstCount" : 15,
+      "particles" : [
+        { "particle" : "dust2" },
+        { "particle" : "dust2" },
+        { "particle" : "kluexstatueshard" },
+        { "particle" : "kluexcrystalshard" },
+        { "particle" : "kluexcrystal" }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "turnHostile" : [  ],
+    "deathPuff" : [ "/sfx/npc/boss/kluexboss_death.ogg" ],
+    "preparePlasma" : [ "/sfx/melee/charge_up5.ogg" ],
+    "plasmaAttack" : [ "/sfx/melee/giantsword_charge_full.ogg" ],
+    "prepareFire" : [ ],
+    "spawnPlatforms" : [ ],
+    "prepareIce" : [ ],
+    "spawnIceEruptions" : [ "/sfx/melee/travelingslash_ice1.ogg" ],
+    "prepareWind" : [ "/sfx/melee/charge_up8.ogg" ],
+    "windFire" : [ "/sfx/gun/plasma_sniper4.ogg" ]
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

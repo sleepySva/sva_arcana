@@ -1,0 +1,71 @@
+{
+  "projectileName" : "artifact_orb_perpetuityEye_projectile_4",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 2,
+  "acceleration" : 16,
+  "piercing" : false,
+  "knockback" : 16,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : [ "arcana_particle_smoke_chryso" ],
+  
+  "renderLayer" : "Player+1",
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_yellow/arcana_explosion_plasma_1_chryso.config"
+    },
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 1,
+      "type" : "artifact_wand_idunsBlessing_projectile_2",
+      "angle" : 0,
+      "fuzzAngle" : 0
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_explosion_windup.ogg" ]
+    },
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/artifact_orb_perpetuityEye_projectile_4/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "arcana_chryso",
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 200,
+  "rotationRate" : 0.5,
+  "trackingLimit" : 200
+ 
+}

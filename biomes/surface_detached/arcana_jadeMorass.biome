@@ -104,9 +104,21 @@
         "type" : "tree",
         "treeFoliageHueShiftMax" : 180,
         "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "weeping" ],
-        "treeFoliageList" : [ "weepingleaves" ]
-      },     
+        "treeStemList" : [ "deadtree1" ],
+        "treeFoliageList" : [ "deadleaves", "deadmoss" ]
+      },   
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "twisty", "woody", "oldwood", "crackly", "palmlike" ],
+        "treeFoliageList" : [ "lushy", "junglepalm", "jungly", "jungleleaf" ]
+      },
       {
         "mode" : "floor",
         "priority" : 3.0,

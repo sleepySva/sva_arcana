@@ -3,8 +3,8 @@
   "materialName" : "glowtearUnderground_tile1",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "glowtearUnderground_tile1",
-  "description" : "A large glowing blue rock found in Glowtear Undergrounds.",
-  "shortdescription" : "Glowspectral Stone",
+  "description" : "A large glowing rock found in Gleaming Basin.",
+  "shortdescription" : "Gleamstone",
   "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
   "health" : 10,
   "category" : "materials",
@@ -12,11 +12,10 @@
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {
     "texture" : "glowtearUnderground_tile1.png",
-    "variants" : 5,
+    "variants" : 12,
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : true,
-    "zLevel" : 2300,
-	"radiantLight" : [20, 60, 120]
+    "zLevel" : 2300
   }
 }

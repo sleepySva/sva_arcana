@@ -1,0 +1,17 @@
+{
+  "modId" : 16834,
+  "modName" : "arcana_mod_lumenGrass",
+  "description" : "A patch of pale, glowing grass.",
+  "footstepSound" : "/sfx/blocks/footstep_grass.ogg",
+  "grass" : true,
+  "health" : 0,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_lumenGrass.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [60, 60, 60]
+  }
+}

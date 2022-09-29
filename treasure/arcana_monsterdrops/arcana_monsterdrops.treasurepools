@@ -1,5 +1,38 @@
 
 {
+
+  "arcana_monsterdrops_pigmentPowder" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 150]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_monsterdrops_pigmentPowder", 1]},
+		{"weight" : 1.0, "item" : ["arcana_monsterdrops_pigmentPowder", 1]},
+        {"weight" : 1.0, "item" : ["arcana_monsterdrops_pigmentPowder", 2]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_monsterdrops_trispiel" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["arcana_essence_lightEssence", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_codex_gilten_1-codex", 1]},
+		{"weight" : 1.0, "item" : ["arcana_codex_gilten_2-codex", 1]},
+        {"weight" : 1.0, "item" : ["arcana_codex_gilten_3-codex", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
   "arcana_monsterdrops_electricGolem" : [
     [0, {
 	  "fill" : [

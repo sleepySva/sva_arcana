@@ -1,9 +1,9 @@
 {
   "itemName" : "misc_katana_ouroburos",
-  "price" : 1000,
+  "price" : 1400,
   "level" : 6,
   "maxStack" : 1,
-  "rarity" : "Rare",
+  "rarity" : "Legendary",
   "description" : "Blade of the endless serpent.",
   "shortdescription" : "Ouroboros",
   "tooltipKind" : "sword",
@@ -28,7 +28,50 @@
   "primaryAbilityType" : "arcana_katana_combo",
   "primaryAbility" : {
     "fireTime" : 0.9,
-    "baseDps" : 8.4
+    "baseDps" : 8.8
+  },
+  
+  "altAbilityType" : "arcana_tachi_ability_serpentineStrike",
+  "altAbility" : {
+	"name" : "Dash Slash",
+	
+    "cooldownTime" : 0.8,
+    "energyUsage" : 160,
+	
+	"projectileType" : "lunar_katana_2_projectile_3",
+    "projectileParameters" : {
+      "power" : 5,
+	  "timeToLive" : 0.1
+    },
+    "projectileOffset" : [0, 0.0],
+	"trailInterval" : 2.0,
+	
+	"damageConfig" : {
+	  "damageSourceKind" : "default"
+	},
+	
+	"dashTime" : 0.16,
+    "dashSpeed" : 160,
+	
+    "stances" : {
+      "windup" : {
+        "duration" : 0.04,
+        "armRotation" : -45,
+        "weaponRotation" : 155,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "dash" : {
+        "armRotation" : 45,
+        "weaponRotation" : 135,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"

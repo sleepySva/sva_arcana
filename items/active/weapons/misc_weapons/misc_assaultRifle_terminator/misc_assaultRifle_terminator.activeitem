@@ -1,0 +1,110 @@
+{
+  "itemName" : "misc_assaultRifle_terminator",
+  "price" : 2100,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Nothing can escape the end of time and space.",
+  "shortdescription" : "Terminator",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 7,
+
+  "inventoryIcon" : "body.png:default.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_purple.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [1.2, 0.2] //Same as baseOffset
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.3]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/plasma_pistol4.ogg"]
+    }
+  },
+
+  "baseOffset" : [1.2, 0.2],
+  "muzzleOffset" : [3.4, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.3,
+    "baseDps" : 11.8,
+    "energyUsage" : 60.0,
+    "inaccuracy" : 0.004,
+
+    "projectileCount" : 1,
+    "fireType" : "burst",
+	"burstCount" : 3,
+    "burstTime" : 0.1,
+
+    "projectileType" : ["robotshock"],
+    "projectileParameters" : {
+      "knockback" : 16,
+	  "speed" : 82
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "altAbilityType" : "guidedrocket",
+  "altAbility" : {
+	"elementalConfig" : {
+      "physical" : { "projectileType" : "misc_assaultRifle_terminator_projectile_1" }
+    },
+	"energyUsage" : 148.0,
+	"name" : "Storm of The End"
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

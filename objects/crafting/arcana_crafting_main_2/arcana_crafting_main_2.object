@@ -2,30 +2,40 @@
   "objectName" : "arcana_crafting_main_2",
   "colonyTags" : ["crafting"],
   "rarity" : "Legendary",
-  "description" : "An arcanium crafting table, lets you craft various useful arcane inventions.",
-  "shortdescription" : "^#ecb297;Academician's Table^reset;",
+  "description" : "Replacement",
+  "shortdescription" : "Replacement",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1200,
+  "price" : 1,
   
-  "lightColor" : [120, 140, 160],
-
-  "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_2.config",
-	"filter" : ["arcana_crafting_main_1", "arcana_crafting_main_2"]
-  },
-
+  "breakDropOptions" : [
+	[ [ "arcana_crafting_main_1", 1, { } ] ]
+  ],
+  "printable" : false,
   "inventoryIcon" : "icon.png",
+  
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_main_2.png:<color>",
-      "imagePosition" : [-32, 0],
+	  "image" : "body.png:<color>.<frame>",
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-0, 0],
       "frames" : 1,
-      "animationCycle" : 0.5,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
+
+    },
+	{
+	  "image" : "body.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
 
     }
   ]

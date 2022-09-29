@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_farmable_wintercorn",
+  "rarity" : "Common",
+  "price" : 220,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "A special type of frosty corn, found commonly in Arcane Tundra planets. ^green;Takes a long time to rot.^reset;",
+  "shortdescription" : "Wintercorn",
+  "foodValue" : 2.00,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 10.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

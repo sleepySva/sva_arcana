@@ -1,0 +1,62 @@
+{
+  "name" : "arcana_weather_lightDrizzle",
+
+  "particles" : [
+    {
+      "density" : 0.01,
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/rain/1.png",
+        "velocity" : [0, -35.5],
+        "approach" : [15, 15],
+        "angularVelocity" : 0,
+        "timeToLive" : 20,
+        "destructionAction" : "Image",
+        "destructionTime" : 0.1,
+        "destructionImage" : "/particles/splash/1.png",
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.01,
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/rain/2.png",
+        "velocity" : [0, -25.5],
+        "approach" : [15, 15],
+        "angularVelocity" : 0,
+        "timeToLive" : 20,
+        "destructionAction" : "Image",
+        "destructionTime" : 0.1,
+        "destructionImage" : "/particles/splash/1.png",
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.01,
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/rain/3.png",
+        "velocity" : [0, -20.5],
+        "approach" : [15, 15],
+        "angularVelocity" : 0,
+        "timeToLive" : 20,
+        "destructionAction" : "Image",
+        "destructionTime" : 0.1,
+        "destructionImage" : "/particles/splash/1.png",
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    }
+  ],
+
+  "duration" : [50, 400],
+  "lightningFrequency" : 0.00,
+  "maximumWind" : 4.0,
+  "weatherNoises" : [ "/sfx/weather/rain_light.ogg" ]
+}

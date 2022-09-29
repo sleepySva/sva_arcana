@@ -1,0 +1,62 @@
+{
+  "type" : "arcana_npc_miniknogScout",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1],
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/scientist.config:attack"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "visorhead" }, { "name" : "miniknoghead" }, "" ],
+            "chest" : [ { "name" : "miniknogchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "miniknogpants", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [
+              "npcassaultrifle",
+              "npcmachinepistol"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {  
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 140.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.4
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 12.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.2
+      },
+      "iceResistance" : {
+        "baseValue" : 0.2
+      }
+    }
+  }
+}

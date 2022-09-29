@@ -1,0 +1,32 @@
+{
+  "projectileName" : "arcana_projectile_scouteye",
+  "physics" : "rain",
+  "timeToLive" : 0.01,
+  "image" : "body.png",
+  "animationCycle" : 0.5,
+  "lightColor" : [0, 0, 0],
+  "frameNumber" : 1,
+  
+  "actionOnCollide" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/fireimpact.config"
+    }
+  ],
+  "actionOnReap" : [
+  ],
+  "periodicActions" : [
+  ],  
+  
+  "speed" : 0,
+  "power" : 0,
+  "piercing" : false,
+  "damageKind" : "physical",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "statusEffects" : [],
+
+  "fullbright" : true,
+  "emitters" : [],
+  
+  "onlyHitTerrain": true
+}

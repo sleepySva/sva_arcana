@@ -1,0 +1,23 @@
+{
+  "ability" : {
+    "type" : "arcana_staff_ability_spellBurst",
+    "name" : "Spell Burst",
+    "scripts" : ["/items/active/weapons/staff/abilities/arcana_staff_ability_spellBurst/arcana_staff_ability_spellBurst.lua"],
+    "class" : "ControlProjectile",
+
+    "energyCost" : 80,
+
+    "maxCastRange" : 120,
+
+    "projectileCount" : 7,
+    "projectileDistance" : 3,
+    "projectileType" : "arcana_spell_ice_iceSplinter_projectile_1",
+    "projectileParameters" : {
+      "baseDamage" : 40
+    },
+
+	"projectileOffset" : [0,0],
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.15
+  }
+}

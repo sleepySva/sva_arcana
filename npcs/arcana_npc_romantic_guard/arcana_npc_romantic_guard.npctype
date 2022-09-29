@@ -1,0 +1,48 @@
+{
+  "type" : "arcana_npc_romantic_guard",
+  "baseType" : "villageguard",
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_pearlKnight_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_pearlKnight_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_pearlKnight_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "soulseeker",
+              "durasteelassaultrifle"
+            ],
+            "sheathedprimary" : [
+              "durasteelrevolver"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 120.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

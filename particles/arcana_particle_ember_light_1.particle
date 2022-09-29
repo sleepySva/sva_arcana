@@ -1,0 +1,28 @@
+{
+  "kind" : "arcana_particle_ember_light_1",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_animation_ember_light_1/arcana_animation_ember_light_1.animation",
+    "size" : 1.0,
+    "initialVelocity" : [0, 1.6],
+    "finalVelocity" : [0, 0.8],
+    "timeToLive" : 0.2,
+	"fade" : 1,
+    "destructionAction" : "shrink",
+    "destructionTime" : 2,
+    "collidesForeground" : true,
+    "collidesLiquid" : true,
+    "ignoreWind" : false,
+	
+    "layer" : "back",
+	"fullbright" : true,
+	"light" : [60, 60, 10],
+	
+    "variance" : {
+      "initialVelocity" : [0, 0.4],
+      "finalVelocity" : [0, 0.2],
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "itemName" : "conflagration_machinePistol_1",
-  "price" : 1000,
+  "price" : 700,
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "description" : "A molten machine pistol.",
-  "shortdescription" : "Magma Pistol",
+  "shortdescription" : "^orange;TI^reset; Angus Pistol",
   "tooltipKind" : "gun",
   "category" : "machinePistol",
   "twoHanded" : false,
@@ -37,7 +37,7 @@
   },
 
   "baseOffset" : [0.6, 0.3],
-  "muzzleOffset" : [2.1, 0.2],
+  "muzzleOffset" : [1.6, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -47,9 +47,9 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.2,
-    "baseDps" : 8.0,
-    "energyUsage" : 18.0,
+    "fireTime" : 0.18,
+    "baseDps" : 12.0,
+    "energyUsage" : 24.0,
     "inaccuracy" : 0.008,
 
     "projectileCount" : 1,

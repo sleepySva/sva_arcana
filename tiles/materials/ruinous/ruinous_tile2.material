@@ -1,0 +1,21 @@
+{
+  "materialId" : 16740,
+  "materialName" : "ruinous_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "ruinous_tile2",
+  "description" : "A stone brick block that has been tainted by ruinous water.",
+  "shortdescription" : "Ruinous Stone Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ruinous_tile2.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1299
+  }
+}

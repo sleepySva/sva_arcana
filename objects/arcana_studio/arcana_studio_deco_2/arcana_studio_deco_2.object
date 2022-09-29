@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_studio_deco_2",
+  "colonyTags" : ["misc","arcana_studio"],
+  "rarity" : "Rare",
+  "description" : "A wooden studio planter box.",
+  "shortdescription" : "Studio Plant Box",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 110,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

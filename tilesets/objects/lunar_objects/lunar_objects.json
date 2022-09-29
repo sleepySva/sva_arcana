@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":57,
+ "tilecount":58,
  "tileheight":256,
  "tileproperties":
     {
@@ -464,6 +464,14 @@
          "imagePositionY":"0",
          "object":"arcana_teleporter_lunarCorridor_return",
          "tilesetDirection":"right"
+        },
+     "57":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"arcana_lunar_trap_3",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -695,6 +703,10 @@
      "56":
         {
          "image":"arcana_teleporter_lunarCorridor_return.png"
+        },
+     "57":
+        {
+         "image":"arcana_lunar_trap_3.png"
         }
     },
  "tilewidth":188

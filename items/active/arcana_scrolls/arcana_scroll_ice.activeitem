@@ -1,0 +1,23 @@
+{
+  "itemName" : "arcana_scroll_ice",
+  "price" : 2000,
+  "level" : 1,
+  "maxStack" : 8,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "A magic scroll that can teach you a random spell upon usage.",
+  "shortdescription" : "^#1276e5;~ ^reset;Ice Scroll^#1276e5; ~^reset;",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "arcana_scroll_ice.png",
+  "animation" : "arcana_scroll_ice.animation",
+  "scripts" : ["arcana_lootbox.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "arcana_scroll_ice",
+    "level" : 1
+  }
+}

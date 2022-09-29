@@ -1,0 +1,110 @@
+{
+  "objectName" : "arcana_crafting_techStation_3",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A modern assembly station for creating tech materials.",
+  "shortdescription" : "^#bbbdce;Basic Tech Station^reset;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 2700,
+  
+  "breakDropOptions" : [],
+  "printable" : false,
+  
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
+
+  "interactAction" : "OpenCraftingInterface",
+
+  "animation" : "animation.animation",
+  "animationPosition" : [0, 19],
+  "placementImage" : "2.png:default.default",
+  "placementImagePosition" : [-36, -0],    
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 2,
+  "inventoryIcon" : "3_icon.png",
+  
+  "upgradeStages" : [
+
+    {
+      "animationState" : "stage_3",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "3_icon.png",
+        "placementImage" : "3.png:default.default",
+        "placementImagePosition" : [-36, -0],
+
+	    "description" : "A modern assembly station for creating tech materials.",
+	    "shortdescription" : "^#bbbdce;Basic Tech Station^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_techStation/arcana_crafting_techStation_3.config",
+		"filter" : ["arcana_crafting_techStation_3"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
+			{ "item" : "wire", "count" : 16 },
+			{ "item" : "siliconboard", "count" : 8 },
+			{ "item" : "smallbattery", "count" : 4 },
+			{ "item" : "battery", "count" : 2 },
+			{ "item" : "salvagearm", "count" : 16 },
+			{ "item" : "salvagetier4", "count" : 8 },
+			{ "item" : "salvagetier5", "count" : 4 },
+			{ "item" : "salvagetier6", "count" : 2 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+    {
+      "animationState" : "stage_4",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "4_icon.png",
+        "placementImage" : "4.png:default.default",
+        "placementImagePosition" : [-36, -0],
+		"rarity" : "Essential",		
+
+	    "description" : "An advanced station for creating high-tech goods.",
+	    "shortdescription" : "^#dfcf4e;Advanced Tech Station^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_techStation/arcana_crafting_techStation_4.config",
+		"filter" : ["arcana_crafting_techStation_3", "arcana_crafting_techStation_4"]
+	  },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+  
+  "orientations" : [
+    {
+	  "image" : "3.png:<color>.<frame>",
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-36, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "image" : "3.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-36, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

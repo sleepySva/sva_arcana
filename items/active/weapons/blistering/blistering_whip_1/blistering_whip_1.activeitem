@@ -1,0 +1,64 @@
+{
+  "itemName" : "blistering_whip_1",
+  "price" : 1500,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A molten whip found in the Blistering Sanctums. ^green;Inflicts burning.^reset;",
+  "shortdescription" : "Blistering Whip",
+  "tooltipKind" : "sword",
+  "category" : "whip",
+  "twoHanded" : true,
+  "itemTags" : ["weapon"],
+
+  "inventoryIcon" : "energywhip.png:idle",
+  "animation" : "whip.animation",
+  "animationParts" : {
+    "weapon" : "energywhip.png",
+    "weaponFullbright" : "energywhipfullbright.png"
+  },
+  "animationCustom" : {
+    "lights" : { "glow" : {
+      "active" : true,
+      "position" : [0.75, 0.5],
+      "color" : [110, 83, 30]
+    }},
+    "particleEmitters" : { "crack" : { "particles" : [ ]}},
+    "sounds" : {
+      "swing" : [ "/sfx/melee/energywhip_swing1.ogg", "/sfx/melee/energywhip_swing2.ogg", "/sfx/melee/energywhip_swing3.ogg" ],
+      "crack" : [ "/sfx/melee/energywhip_impact1.ogg", "/sfx/melee/energywhip_impact2.ogg", "/sfx/melee/energywhip_impact3.ogg" ]
+    }
+  },
+
+  "chain" : {
+    "startOffset" : [0.625, 0],
+    "length" : [3, 12],
+    "segmentImage" : "/items/active/weapons/blistering/blistering_whip_1/beam.png",
+    "endSegmentImage" : "/items/active/weapons/blistering/blistering_whip_1/beamend.png",
+    "segmentSize" : 0.375,
+    "fullbright" : true
+  },
+
+  "scripts" : [ "whip.lua" ],
+
+  "primaryAbilityType" : "whipcrack",
+  "primaryAbility" : {
+    "fireTime" : 0.6,
+    "chainDps" : 5.4,
+    "crackDps" : 8.2,
+
+    "damageConfig" : {
+      "damageSourceKind" : "fire"
+    },
+
+    "projectileType" : "blistering_whip_1_projectile_1"
+  },
+
+  "altAbilityType" : "energyorb",
+  "altAbility" : {
+    "name" : "Molten Orb",
+    "projectileType" : "blistering_whip_1_projectile_2"
+  },
+
+  "builder" : "/items/buildscripts/buildwhip.lua"
+}

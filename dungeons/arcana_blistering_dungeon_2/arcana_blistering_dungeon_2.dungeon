@@ -1,0 +1,100 @@
+{
+  "metadata" : {
+    "name" : "arcana_blistering_dungeon_2",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_blistering_dungeon_2_part_top"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_blistering_dungeon_2_part_top",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_blistering_dungeon_2_part_top" ] ]
+      ],
+      "def" : [ "tmx", "arcana_blistering_dungeon_2_part_top.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "arcana_blistering_dungeon_2_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "arcana_blistering_dungeon_2_part_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_blistering_dungeon_2_part_1.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "arcana_blistering_dungeon_2_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "arcana_blistering_dungeon_2_part_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_blistering_dungeon_2_part_2.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "arcana_blistering_dungeon_2_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "arcana_blistering_dungeon_2_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_blistering_dungeon_2_part_3.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "arcana_blistering_dungeon_2_part_end",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_blistering_dungeon_2_part_end","arcana_blistering_dungeon_2_part_top" ] ]
+      ],
+      "def" : [ "tmx", "arcana_blistering_dungeon_2_part_end.json" ],
+	  "chance" : 500
+    },
+	
+	// CONNECTORS
+    {
+      "name" : "arcana_blistering_dungeon_2_part_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_blistering_dungeon_2_part_left.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_blistering_dungeon_2_part_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_blistering_dungeon_2_part_right.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_blistering_dungeon_2_part_top_1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_blistering_dungeon_2_part_top_1.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_blistering_dungeon_2_part_bottom",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_blistering_dungeon_2_part_bottom.json" ] ],
+      "chance" : 0
+    }
+  ]
+}

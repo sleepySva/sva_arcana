@@ -1,6 +1,6 @@
 {
   "itemName" : "arcana_lootbox_thinBambooBundle",
-  "price" : 500,
+  "price" : 600,
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "Legendary",
@@ -11,6 +11,9 @@
 
   "inventoryIcon" : "arcana_lootbox_thinBambooBundle.png",
   "animation" : "arcana_lootbox.animation",
+  "animationParts" : {
+	"gun" : "arcana_lootbox_thinBambooBundle.png"
+  },
   "animationCustom" : {},
   "scripts" : ["arcana_lootbox.lua"],
 

@@ -1,0 +1,39 @@
+{
+  "projectileName" : "arcana_monster_paintlin_projectile_4",
+  "image" : "blank.png",
+  "physics" : "rain",
+  "animationCycle" : 0.5,
+  "frameNumber" : 5,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  
+  "timeToLive" : 0.0,
+  
+  "actionOnReap" : [
+    {
+		"action" : "option",
+		"options" : [
+			{
+			  "action" : "projectile",
+			  "inheritDamageFactor" : 1.0,
+			  "type" : "arcana_monster_paintlin_projectile_1"
+			},
+			{
+			  "action" : "projectile",
+			  "inheritDamageFactor" : 1.0,
+			  "type" : "arcana_monster_paintlin_projectile_2"
+			},
+			{
+			  "action" : "projectile",
+			  "inheritDamageFactor" : 1.0,
+			  "type" : "arcana_monster_paintlin_projectile_3"
+			}
+		]
+	}
+  ],
+  "power" : 0.0,
+  "speed" : 50,
+  "damageKind" : "default",
+  
+  "onlyHitTerrain" : true
+}

@@ -130,10 +130,24 @@
   },
 
   "surfacePlaceables" : {
-    "grassMod" : [ "grass" ],
-    "grassModDensity" : 0.3,
+    "grassMod" : [ "colourfulgrass" ],
+    "grassModDensity" : 0.8,
 
     "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "scorchedbench" ], [0.2, "dumpster" ], [0.2, "scorchedcitybrokenchair" ], [0.2, "woodenutilitypole1" ], [0.2, "scorchedcitybrokentraficlights" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
       {
         "mode" : "floor",
         "priority" : 0.0,

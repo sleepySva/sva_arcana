@@ -1,0 +1,23 @@
+{
+  "itemName" : "arcana_scroll_chryso",
+  "price" : 3000,
+  "level" : 1,
+  "maxStack" : 8,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "An ancient fragmented scroll that can teach you a random spell upon usage.",
+  "shortdescription" : "^#ffd735;~ ^reset;Chryso Scroll^#ffd735; ~^reset;",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "arcana_scroll_chryso.png",
+  "animation" : "arcana_scroll_chryso.animation",
+  "scripts" : ["arcana_lootbox.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "arcana_scroll_ice",
+    "level" : 1
+  }
+}

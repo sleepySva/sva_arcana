@@ -1,0 +1,21 @@
+{
+  "materialId" : 16307,
+  "materialName" : "studio_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile3",
+  "description" : "A smooth wooden wall panel made for modern studios.",
+  "shortdescription" : "Studio Robusta Panel",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1308
+  }
+}

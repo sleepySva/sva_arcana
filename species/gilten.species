@@ -1,0 +1,223 @@
+{
+  "kind" : "gilten",
+	"charCreationTooltip" : {
+	"title" : "Gilten",
+	"subTitle" : "Au",
+	"description" : "Residing in sky-bound arks, the ^#c0ab5e;Gilten^reset; are draco-humanoids that worship the divine Light of the Aeon. Possessing affinities harnessed from the Light, the Gilten are naturally resilient against basic elements, but weak from physical strikes."
+  },
+  "nameGen" : [ "/species/giltenmalenamegen.config:names", "/species/giltenfemalenamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/arcanianhurt_male1.ogg", "/sfx/humanoid/arcanianhurt_female1.ogg" ],
+  "charGenTextLabels" : [ "Skin colour", "Hair style", "Shirt", "Legwear", "Fragment", "Hair colour", "Shirt colour", "Legwear colour", "GILTEN", "Personality" ],
+  "skull" : "/humanoid/gilten/dead.png",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffea63FF?replace=31a6ffFF=f5bc00FF",
+  "defaultBlueprints" : {
+    "tier1" : [
+	    
+// Anvil
+      { "item" : "humantier1head" },
+      { "item" : "humantier1chest" },
+      { "item" : "humantier1pants" },
+      { "item" : "humantier2head" },
+      { "item" : "humantier2chest" },
+      { "item" : "humantier2pants" },
+      { "item" : "arcaniansword" },
+      { "item" : "ironshortsword" },
+      { "item" : "ironbroadsword" },
+      { "item" : "tungstenaxe" },
+      { "item" : "tungstenhammer" },
+// Anvil2
+      { "item" : "humantier3head" },
+      { "item" : "humantier3chest" },
+      { "item" : "humantier3pants" },
+      { "item" : "humantier4head" },
+      { "item" : "humantier4chest" },
+      { "item" : "humantier4pants" },
+      { "item" : "titaniumdagger" },
+      { "item" : "titaniumspear" },
+      { "item" : "durasteelbroadsword" },
+      { "item" : "durasteelshortsword" },
+// Anvil3
+      { "item" : "humantier5ahead" },
+      { "item" : "humantier5achest" },
+      { "item" : "humantier5apants" },
+      { "item" : "humantier6ahead" },
+      { "item" : "humantier6achest" },
+      { "item" : "humantier6apants" },
+      { "item" : "humantier5mhead" },
+      { "item" : "humantier5mchest" },
+      { "item" : "humantier5mpants" },
+      { "item" : "humantier6mhead" },
+      { "item" : "humantier6mchest" },
+      { "item" : "humantier6mpants" },
+      { "item" : "humantier5shead" },
+      { "item" : "humantier5schest" },
+      { "item" : "humantier5spants" },
+      { "item" : "humantier6shead" },
+      { "item" : "humantier6schest" },
+      { "item" : "humantier6spants" },
+      { "item" : "aegisaltpistol" },
+      { "item" : "aegisaltbow" },
+      { "item" : "feroziumwand" },
+      { "item" : "feroziumstaff" },
+      { "item" : "violiumshortsword" },
+      { "item" : "violiumbroadsword" },
+// Furniture Table 2
+      { "item" : "humanstoragelocker" }
+// Spinning Wheel
+	  ]
+  },
+  
+  "headOptionAsHairColor" : true,
+  "altOptionAsFacialMask" : true,
+  "hairColorAsBodySubColor" : true,
+  
+  "genders" : [
+    {
+      "name" : "male",
+      "image" : "/interface/title/giltenmaleico.png",
+      "characterImage" : "/interface/title/giltenmale.png",
+      "hair" : [ "fem1", "fem2", "fem3", "fem4", "fem5", "fem6", "fem7", "fem8", "fem9", "fem10", "fem11", "fem12", "fem13", "fem14", "fem15", "fem16", "fem17", "fem18", "fem19", "fem20" ],
+      "shirt" : [ "arcana_armor_disciple_chest", "arcana_armor_disciple_alt_chest" ],
+      "pants" : [ "arcana_armor_disciple_legs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "shard",
+      "facialMask" : [ "0", "1", "2", "3", "4", "5", "6" ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/giltenfemico.png",
+      "characterImage" : "/interface/title/giltenfemale.png",
+      "hair" : [ "fem1", "fem2", "fem3", "fem4", "fem5", "fem6", "fem7", "fem8", "fem9", "fem10", "fem11", "fem12", "fem13", "fem14", "fem15", "fem16", "fem17", "fem18", "fem19", "fem20", "fem21", "fem22", "fem23" ],
+      "shirt" : [ "arcana_armor_disciple_chest", "arcana_armor_disciple_alt_chest" ],
+      "pants" : [ "arcana_armor_disciple_legs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "shard",
+      "facialMask" : [ "0", "1", "2", "3", "4", "5", "6" ]
+    }
+  ],
+  "bodyColor" : [
+    { "ffe2c5" : "f0cb41", "ffc181" : "e9bf25", "d39c6c" : "bd9609", "c7815b" : "926a19" },
+    { "ffe2c5" : "c8c8c8", "ffc181" : "b6b6b6", "d39c6c" : "959595", "c7815b" : "7c7b7a" },
+	{ "ffe2c5" : "ffddba", "ffc181" : "ffd7ae", "d39c6c" : "deac78", "c7815b" : "c88f6c" },
+	{ "ffe2c5" : "dedede", "ffc181" : "d3d0cd", "d39c6c" : "b6aea5", "c7815b" : "87837e" },
+	{ "ffe2c5" : "a8a8a8", "ffc181" : "989898", "d39c6c" : "7a7a7a", "c7815b" : "575756" },
+    { "ffe2c5" : "fbe1aa", "ffc181" : "f2cd7f", "d39c6c" : "c9a163", "c7815b" : "ab7740" },
+    { "ffe2c5" : "c5ad98", "ffc181" : "a47a59", "d39c6c" : "865d40", "c7815b" : "66412e" },
+    { "ffe2c5" : "e1b98d", "ffc181" : "c88959", "d39c6c" : "9e6a4d", "c7815b" : "784930" },
+    { "ffe2c5" : "c9b181", "ffc181" : "ac8348", "d39c6c" : "87633f", "c7815b" : "694c31" },
+    { "ffe2c5" : "e8cebc", "ffc181" : "cfa97d", "d39c6c" : "ae774b", "c7815b" : "804e34" },
+    { "ffe2c5" : "d8c484", "ffc181" : "bda47d", "d39c6c" : "8e7b52", "c7815b" : "6b4e33" },
+    { "ffe2c5" : "8a7053", "ffc181" : "6e5c49", "d39c6c" : "4f4639", "c7815b" : "382c24" },
+    { "ffe2c5" : "d5a26c", "ffc181" : "bc854d", "d39c6c" : "86693f", "c7815b" : "643d22" },
+    { "ffe2c5" : "e3c898", "ffc181" : "d7b06c", "d39c6c" : "9b7e53", "c7815b" : "875f3a" },
+    { "ffe2c5" : "d9bea2", "ffc181" : "c9a27a", "d39c6c" : "92755c", "c7815b" : "7d5844" }
+  ],
+  "undyColor" : [
+    { "dc1f00" : "4d76ad", "be1b00" : "395187", "951500" : "20325b" },
+    { "dc1f00" : "7c41b8", "be1b00" : "6c2f90", "951500" : "471962" },
+    { "dc1f00" : "c63442", "be1b00" : "9b2724", "951500" : "6a1210" },
+    { "dc1f00" : "eaa245", "be1b00" : "b47020", "951500" : "834a0c" },
+    { "dc1f00" : "e3e13a", "be1b00" : "a8a614", "951500" : "848008" },
+    { "dc1f00" : "6ab841", "be1b00" : "45902f", "951500" : "296219" },
+    { "dc1f00" : "535353", "be1b00" : "363636", "951500" : "111111" },
+    { "dc1f00" : "e6e6e6", "be1b00" : "979797", "951500" : "6f6f6f" },
+    { "dc1f00" : "9e9e9e", "be1b00" : "6e6e6e", "951500" : "434343" },
+    { "dc1f00" : "f794f8", "be1b00" : "d355c1", "951500" : "b72c95" }
+  ],
+  "hairColor" : [
+  
+    // Gold
+    { "d9c189" : "e9d325", "a38d59" : "c59a16", "735e3a" : "8e6e05" },
+    // Soft Maple
+    { "d9c189" : "fbcc88", "a38d59" : "f0ac49", "735e3a" : "c87326" },
+    // Fantasy Purple
+    { "d9c189" : "b69ad3", "a38d59" : "7277a8", "735e3a" : "3d4271" },
+    // Fantasy Blue
+    { "d9c189" : "8edbc8", "a38d59" : "7098a4", "735e3a" : "355862" },
+    // Maple
+    { "d9c189" : "fb9244", "a38d59" : "d0683f", "735e3a" : "a84115" },
+    // Soft Silver
+    { "d9c189" : "fbfbfb", "a38d59" : "d7d7d7", "735e3a" : "a7a7a7" },
+    // Soft Brown
+    { "d9c189" : "a9786c", "a38d59" : "8f5c4f", "735e3a" : "6d4339" },
+    // Soft Dark Brown
+    { "d9c189" : "715c57", "a38d59" : "524441", "735e3a" : "403a38" },
+	// Soft Aquamarine
+    { "d9c189" : "a1cee5", "a38d59" : "8da8cb", "735e3a" : "4a7fad" },
+	// Soft Black
+    { "d9c189" : "3c3431", "a38d59" : "292321", "735e3a" : "1e1a19" },
+	// Soft Gray
+    { "d9c189" : "625653", "a38d59" : "47413f", "735e3a" : "312e2e" },
+	// Soft Dark Blue
+    { "d9c189" : "54588f", "a38d59" : "474a5e", "735e3a" : "363840" },
+	// Soft Purple
+    { "d9c189" : "78517c", "a38d59" : "3f3747", "735e3a" : "3f3747" },
+	// Soft Strong Blue
+    { "d9c189" : "7777bf", "a38d59" : "5f5fa1", "735e3a" : "39397c" },
+	
+    //LIGHT RED
+    { "d9c189" : "E86D46", "a38d59" : "D1422E", "735e3a" : "96201B" },
+    //RED
+    { "d9c189" : "CD1C38", "a38d59" : "982441", "735e3a" : "69243F" },
+    //DARK RED
+    { "d9c189" : "ad2716", "a38d59" : "8f1f1b", "735e3a" : "731a1a" },
+    //RUSTY RED
+    { "d9c189" : "BE471B", "a38d59" : "9B2F0C", "735e3a" : "702710" },
+    //BROWN
+    { "d9c189" : "7d3c1c", "a38d59" : "4d240b", "735e3a" : "2d1606" },
+    //LIGHT BROWN
+    { "d9c189" : "7f5a39", "a38d59" : "5b3523", "735e3a" : "3b1f15" },
+    //DIRTY ORANGE
+    { "d9c189" : "a6671d", "a38d59" : "915622", "735e3a" : "743e1d" },
+    //ORANGE
+    { "d9c189" : "efa838", "a38d59" : "be6d1d", "735e3a" : "834012" },
+    //DIRTY BLONDE
+    { "d9c189" : "eaa758", "a38d59" : "cd8b3d", "735e3a" : "93682c" },
+    //YELLOW
+    { "d9c189" : "e6e756", "a38d59" : "c7ac3f", "735e3a" : "a9882f" },
+    //BLONDE
+    { "d9c189" : "f1d992", "a38d59" : "daba5e", "735e3a" : "b59a4d" },
+    //LIGHT YELLOW
+    { "d9c189" : "f2eba3", "a38d59" : "dcd28c", "735e3a" : "c2b677" },
+    //LIGHT GREEN
+    { "d9c189" : "A7D13D", "a38d59" : "83AD22", "735e3a" : "6B880B" },
+    //GREEN
+    { "d9c189" : "4ece61", "a38d59" : "34ae47", "735e3a" : "228a38" },
+    //DARK GREEN
+    { "d9c189" : "3b7f44", "a38d59" : "2e6a38", "735e3a" : "1d4b28" },
+    //TORQUOISE
+    { "d9c189" : "5BD5B6", "a38d59" : "4AA9AD", "735e3a" : "237082" },
+    //LIGHT TURQUOISE
+    { "d9c189" : "49E193", "a38d59" : "3BA380", "735e3a" : "197C81" },
+    //LIGHT BLUE
+    { "d9c189" : "61BCDE", "a38d59" : "5381CC", "735e3a" : "2C489E" },
+    //BLUE
+    { "d9c189" : "5d8bc7", "a38d59" : "4d55b0", "735e3a" : "2e2a73" },
+    //DARK BLUE
+    { "d9c189" : "425879", "a38d59" : "343965", "735e3a" : "242247" },
+    //DARK PURPLE
+    { "d9c189" : "7f3b6d", "a38d59" : "6a2e53", "735e3a" : "4b1d30" },
+    //PURPLE
+    { "d9c189" : "653b7f", "a38d59" : "562e6a", "735e3a" : "3f1d4b" },
+    //HOT PINK
+    { "d9c189" : "cd72d9", "a38d59" : "ac4da6", "735e3a" : "913b86" },
+    //PINK
+    { "d9c189" : "D26BA4", "a38d59" : "A54669", "735e3a" : "89334D" },
+    //LIGHT PURPLE
+    { "d9c189" : "ad68e2", "a38d59" : "8d41b0", "735e3a" : "6a2980" },
+    //BROWN GREY
+    { "d9c189" : "50422f", "a38d59" : "36261e", "735e3a" : "170f0d" },
+    // DARK GREY
+    { "d9c189" : "525252", "a38d59" : "363636", "735e3a" : "161616" },
+    // GREY
+    { "d9c189" : "74726f", "a38d59" : "53504d", "735e3a" : "2a251e" },
+    // GREY BLUE
+    { "d9c189" : "6f6d85", "a38d59" : "525269", "735e3a" : "3e4352" },
+    // LIGHT GREY
+    { "d9c189" : "b8b8b8", "a38d59" : "828282", "735e3a" : "555555" },
+    // WHITE
+    { "d9c189" : "eaeaea", "a38d59" : "b8b8b8", "735e3a" : "828282" }
+  ]
+}

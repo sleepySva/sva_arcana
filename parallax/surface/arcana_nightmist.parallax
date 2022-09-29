@@ -1,0 +1,290 @@
+{
+  "verticalOrigin" : -15,
+
+  "layers" : [
+    {
+      "kind" : "divider/dirt",
+      "offset" : [0, 475],
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "parallax" : 1.07
+    },
+    {
+      "kind" : "tile/desert",
+      "nohueshift" : true,
+      "lightMapped" : true,
+      "repeatY" : true,
+      "tileLimitTop" : 375,
+      "parallax" : 1.075
+    },
+    {
+      "kind" : "arcana_amorous_2",
+      "offset" : [0, 410],
+      "parallax" : [1.6, 1.6],
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_amorous_2",
+      "offset" : [0, 310],
+      "parallax" : [1.7, 1.7],
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_amorous_2",
+      "offset" : [0, 210],
+      "parallax" : [1.8, 1.8],
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "godrays",
+      "offset" : [0, 80],
+      "parallax" : 1.111
+    },
+    {
+      "kind" : "godrays",
+      "offset" : [0, 80],
+      "parallax" : 1.211
+    },
+    {
+      "kind" : "arcana_verdant_junglelargetree",
+      "offset" : [0, 90],
+      "parallax" : 2.3,
+      "directives" : "?saturation=-10?brightness=-35",
+      "lightMapped" : true
+    },
+    {
+      "kind" : "arcana_verdant_junglelargetree",
+      "offset" : [0, 90],
+      "directives" : "?saturation=-10?brightness=-40",
+      "parallax" : 2.36
+    },
+    {
+      "kind" : "arcana_verdant_junglesmalltree",
+      "offset" : [0, 90],
+      "directives" : "?saturation=-10?brightness=-45",
+      "parallax" : 2.4
+    }, 
+    {
+      "kind" : "arcana_verdant_junglesmalltree",
+      "offset" : [0, 100],
+      "directives" : "?saturation=-10?brightness=-50",
+      "parallax" : 2.46
+    }, 
+	{
+      "kind" : "arcana_verdant_junglecanopy",
+      "offset" : [0, -345],
+      "parallax" : 2.0,
+      "directives" : "?saturation=-0?brightness=-30",
+      "lightMapped" : true
+    },
+	{
+      "kind" : "arcana_verdant_junglecanopy",
+      "offset" : [0, -335],
+      "parallax" : 2.1,
+      "directives" : "?saturation=-0?brightness=-40"
+    },
+	{
+      "kind" : "arcana_verdant_junglecanopy",
+      "offset" : [0, -325],
+      "parallax" : 2.2,
+      "directives" : "?saturation=-0?brightness=-50"
+    },
+    {
+      "kind" : "junglefront",
+      "offset" : [0, 380],
+      "parallax" : [2.0, 2.1],
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_amorous_2",
+      "offset" : [0, 170],
+      "parallax" : [2, 2.1],
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_amorous_2",
+      "offset" : [0, 120],
+      "parallax" : [3, 4.1],
+      "directives" : "",
+      "fadePercent" : 0.2,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_amorous_2",
+      "offset" : [0, 80],
+      "parallax" : [3, 4.2],
+      "directives" : "",
+      "fadePercent" : 0.2,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_amorous_2",
+      "offset" : [0, 40],
+      "parallax" : [3, 5.0],
+      "directives" : "",
+      "fadePercent" : 0.3,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "midnightclouds",
+      "offset" : [0, 120],
+      "parallax" : [3, 2.31],
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "junglefront",
+      "offset" : [0, 220],
+      "parallax" : [3, 2.31],
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_arcaneDesert_2",
+      "offset" : [0, 130],
+      "parallax" : [3, 2.31],
+      "minSpeed" : 4000,
+      "maxSpeed" : 6000,
+      "directives" : "",
+      "fadePercent" : 0.1,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_amorous_3",
+      "offset" : [0, -120],
+      "parallax" : [3, 2.31],
+      "minSpeed" : 3000,
+      "maxSpeed" : 5000,
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+
+// Night Clouds
+
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 240],
+      "parallax" : 9,
+      "minSpeed" : 1000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 280],
+      "parallax" : 14,
+      "minSpeed" : 500,
+      "maxSpeed" : 2500,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 300],
+      "parallax" : 6,
+      "minSpeed" : 1000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    },
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 120],
+      "parallax" : 9,
+      "minSpeed" : 1000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 160],
+      "parallax" : 14,
+      "minSpeed" : 500,
+      "maxSpeed" : 2500,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 200],
+      "parallax" : 6,
+      "minSpeed" : 1000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    },
+    {
+      "kind" : "clouds3",
+      "baseCount" : 2,
+      "offset" : [0, 2],
+      "parallax" : 9,
+      "minSpeed" : 1000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    },
+    {
+      "kind" : "clouds2",
+      "baseCount" : 2,
+      "offset" : [0, 40],
+      "parallax" : 14,
+      "minSpeed" : 500,
+      "maxSpeed" : 2500,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    },
+    {
+      "kind" : "clouds1",
+      "baseCount" : 2,
+      "offset" : [0, 80],
+      "parallax" : 6,
+      "minSpeed" : 1000,
+      "maxSpeed" : 5000,
+      "fadePercent" : 0.0,
+      "unlit" : false,
+      "timeOfDayCorrelation" : "nightCloudVisible"
+    }
+
+  ]
+}

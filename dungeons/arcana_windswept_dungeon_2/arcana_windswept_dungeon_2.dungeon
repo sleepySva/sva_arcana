@@ -1,0 +1,132 @@
+{
+  "metadata" : {
+    "name" : "arcana_windswept_dungeon_2",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_windswept_dungeon_2_entrance"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "extendSurfaceFreeSpace" : 400,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_windswept_dungeon_2_entrance",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_entrance" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_entrance.json" ],
+	  "chance" : 1000
+    },
+	
+	// CONNECTORS
+    {
+      "name" : "arcana_windswept_dungeon_2_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_part_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_part_1.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_part_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_part_2.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_part_3.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_part_4.json" ],
+	  "chance" : 500
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_middle",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_middle", "arcana_windswept_dungeon_2_entrance" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_middle.json" ],
+	  "chance" : 400
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_part_middle_1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_part_middle_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_part_middle_1.json" ],
+	  "chance" : 300
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_part_middle_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_part_middle_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_part_middle_2.json" ],
+	  "chance" : 300
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_right",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_right" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_right.json" ],
+	  "chance" : 200
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_part_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_part_5.json" ],
+	  "chance" : 200
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_part_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_part_6.json" ],
+	  "chance" : 200
+    },
+    {
+      "name" : "arcana_windswept_dungeon_2_top",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_windswept_dungeon_2_top" ] ]
+      ],
+      "def" : [ "tmx", "arcana_windswept_dungeon_2_top.json" ],
+	  "chance" : 0
+    }
+  ]
+}

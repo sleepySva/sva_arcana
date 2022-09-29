@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_farmable_amberplum",
+  "rarity" : "Common",
+  "price" : 210,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "A shiny plum that is suprisingly delicious and has a honey-like taste to it. ^green;Takes slightly longer to rot.^reset;",
+  "shortdescription" : "Amberplum",
+  "foodValue" : 2.00,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 3.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

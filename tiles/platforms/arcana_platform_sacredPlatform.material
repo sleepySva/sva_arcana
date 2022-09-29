@@ -1,0 +1,20 @@
+{
+  "materialId" : 16851,
+  "materialName" : "arcana_platform_sacredPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_sacredPlatform",
+  "shortdescription" : "Sacred Platform",
+  "description" : "An ornate stone platform that has embraced the Sacred Wind's touch for eons.",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_sacredPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

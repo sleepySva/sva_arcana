@@ -1,0 +1,104 @@
+{
+  "itemName" : "artifact_greatspear_luxiant",
+  "price" : 10000,
+  "level" : 9,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "Luxiant, the spear of light that pierces through the darkness. ^yellow;Alt unlocks the blade's power.^reset;",
+  "shortdescription" : "^yellow;Luxiant^#reset;",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "tooltipFields" : {
+	"subtitle" : "Greatspear"
+  },
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "inventoryIcon" : "body.png:active.1",
+  
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "swordfullbright" : "fullbright.png",
+    "sword" : "body.png"
+  },
+  
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/spear_flurry.ogg" ],
+      "fire2" : [ "/sfx/melee/spear_flurry.ogg" ],
+      "fire3" : [ "/sfx/melee/spear_flurry.ogg" ],
+	  "fire4" : [ "/sfx/melee/spear_flurry.ogg" ],
+	  "fire5" : [ "/sfx/melee/spear_flurry.ogg" ],
+	  "fire6" : [ "/sfx/melee/spear_flurry.ogg" ],
+	  "fire7" : [ "/sfx/melee/spear_flurry.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/aurea_weapons/aurea_greatsword_1/weapon.lua"],
+
+  "elementalType" : "arcana_light",
+
+  "primaryAbilityType" : "arcana_greatspear_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.6,
+    "baseDps" : 11.2,
+	"damageConfig" : {
+	  "damageSourceKind" : "arcana_light_slash"
+	},
+	"animKeyPrefix" : "inactive"
+  },
+
+  "inactiveBaseDps" : 8.8,
+  "inactiveDamageSourceKind" : "arcana_light_slash",
+  "activeBaseDps" : 15.0,
+  "activeDamageSourceKind" : "arcana_light_slash",
+  
+  "altAbility" : {
+    "name" : "Light, Unchained",
+    "type" : "empowerment",
+    "scripts" : ["/items/active/weapons/artifact_weapons/artifact_greatspear_luxiant/empowerment.lua"],
+    "class" : "Empowerment",
+
+    "energyPerSecond" : 40,
+
+    "projectileOffset" : [1, 0],
+    "projectileType" : "aurea_greatsword_1_projectile_1",
+	"explosionType" : "arcana_explosion_empowerment",
+    "baseDamage" : 24,
+
+    "cooldownTime" : 1.0,
+
+    "stances" : {
+      "empower" : {
+        "durationBefore" : 0.2,
+        "durationAfter" : 0.5,
+        "armRotation" : 90,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "windup" : {
+        "duration" : 0.6,
+        "armRotation" : 70,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

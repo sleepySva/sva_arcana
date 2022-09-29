@@ -1,0 +1,21 @@
+{
+  "materialId" : 16308,
+  "materialName" : "studio_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile4",
+  "description" : "A smooth wooden beam made for modern studios.",
+  "shortdescription" : "Studio Robusta Beam",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1310
+  }
+}

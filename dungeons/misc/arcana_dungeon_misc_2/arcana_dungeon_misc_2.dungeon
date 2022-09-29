@@ -1,0 +1,167 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_misc_2",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "arcana_dungeon_misc_2_part_left","arcana_dungeon_misc_2_part_right" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 20,
+    "protected" : true
+  },
+
+  "parts" : [
+
+    // ENTRANCES
+    {
+      "name" : "arcana_dungeon_misc_2_part_5",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "doNotCombineWith", [ "arcana_dungeon_misc_2_part_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_5.json" ],
+      "chance" : 1000
+    },
+
+    // LAYOUT ROOMS
+    {
+      "name" : "arcana_dungeon_misc_2_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_1.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_2.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_3.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_4.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_bottom_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_1.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_bottom_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_2.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_bottom_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_3.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_bottom_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_4.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_bottom_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_5.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_bottom_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_6.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_end",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "arcana_dungeon_misc_2_part_bottom_end", "arcana_dungeon_misc_2_part_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_end.json" ],
+      "chance" : 100
+    },
+
+    // END CAPS
+    {
+      "name" : "arcana_dungeon_misc_2_part_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_left.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_right.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_left.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_dungeon_misc_2_part_bottom_right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [] ]
+      ],
+      "def" : [ "tmx", "arcana_dungeon_misc_2_part_bottom_right.json" ],
+      "chance" : 0
+    }
+  ]
+}

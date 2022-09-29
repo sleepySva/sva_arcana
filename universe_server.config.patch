@@ -32,5 +32,40 @@
 			"path":"/speciesShips/arcanian/-",
 			"value": "/ships/byos/byos.structure"
 		}
+	],
+	
+	[
+		{ "op" : "add",
+			"path" : "/speciesShips/gilten",
+			"value" : [
+				"/ships/gilten/t0.structure",
+				"/ships/gilten/t1.structure",
+				"/ships/gilten/t2.structure",
+				"/ships/gilten/t3.structure",
+				"/ships/gilten/t4.structure",
+				"/ships/gilten/t5.structure",
+				"/ships/gilten/t6.structure",
+				"/ships/gilten/t7.structure",
+				"/ships/gilten/t8.structure"
+			]
+		}
+	],
+	[
+		{ "op": "test",
+			"path": "/speciesShips/fumantis"
+		},
+		{ "op":"replace",
+			"path":"/speciesShips/gilten/0",
+			"value": "/ships/fu_byos/fu_byos.structure"
+		}
+	],
+	[
+		{ "op": "test",
+			"path" : "/speciesShips/novakid/9"
+		},
+		{ "op": "add",
+			"path":"/speciesShips/gilten/-",
+			"value": "/ships/byos/byos.structure"
+		}
 	]
 ]

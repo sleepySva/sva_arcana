@@ -105,7 +105,7 @@
 
   "mainBlock" : "arcaneTundra_tile2",
   "subBlocks" : [ "arcaneTundra_tile1", "snow", "frozenwater" ],
-  "ores" : "arcana_arcaneForest_ores_surface",
+  "ores" : "arcana_arcaneTundra_ores_surface",
 
   "parallax" : "/parallax/surface/arcana_arcaneTundra.parallax",
 
@@ -341,7 +341,7 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildeggshootseed" ] ],
+            "pool" : [ [1, "arcana_farmable_wintercornSeed_wild" ] ],
             "parameters" : {
               "startingStage" : 3
             }

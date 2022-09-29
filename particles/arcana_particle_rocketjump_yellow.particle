@@ -1,0 +1,18 @@
+{
+  "kind" : "arcana_particle_rocketjump_yellow",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_animation_rocketjump_yellow/arcana_animation_rocketjump_yellow.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [20, 20],
+    "fade" : 1,
+    "size" : 1,
+    "layer" : "back",
+    "timeToLive" : 0.3,
+    "variance" : {
+      "initialVelocity" : [4, 4],
+      "finalVelocity" : [0, 0]
+    }
+  }
+}

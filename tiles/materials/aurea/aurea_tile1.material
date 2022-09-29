@@ -1,0 +1,21 @@
+{
+  "materialId" : 16316,
+  "materialName" : "aurea_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aurea_tile1",
+  "description" : "A durable sloped panel tile, used to construct complex buildings.",
+  "shortdescription" : "Complex Ark Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4830
+  }
+}

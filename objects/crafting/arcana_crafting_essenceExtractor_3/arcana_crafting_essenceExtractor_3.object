@@ -2,43 +2,40 @@
   "objectName" : "arcana_crafting_essenceExtractor_3",
   "colonyTags" : ["crafting"],
   "rarity" : "Legendary",
-  "description" : "A modern essence extractor for extracting higher essence.",
-  "shortdescription" : "^#63c7e9;Orion Essence Extractor^reset;",
+  "description" : "Replacement",
+  "shortdescription" : "Replacement",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1400,
+  "price" : 1,
   
-  "lightColor" : [30, 100, 110],
-
-  "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_essenceExtractor/arcana_crafting_essenceExtractor_3.config",
-	"filter" : ["arcana_crafting_essenceExtractor"]
-  },
-
+  "breakDropOptions" : [
+	[ [ "arcana_crafting_essenceExtractor_1", 1, { } ] ]
+  ],
+  "printable" : false,
   "inventoryIcon" : "icon.png",
+  
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "arcana_crafting_essenceExtractor_3.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+	  "image" : "body.png:<color>.<frame>",
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-24, 0],
-      "frames" : 4,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
       "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
 
     },
 	{
-	  "imageLayers" : [ { "image" : "arcana_crafting_essenceExtractor_3.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+	  "image" : "body.png:<color>.<frame>",
       "direction" : "right",
-      "imagePosition" : [-24, 0],
-      "frames" : 4,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
       "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
 
     }
   ]

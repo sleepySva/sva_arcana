@@ -1,10 +1,10 @@
 {
   "itemName" : "conflagration_sniperRifle_1",
-  "price" : 1000,
+  "price" : 800,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A molten sniper rifle.",
-  "shortdescription" : "Magma Rifle",
+  "description" : "A molten rifle.",
+  "shortdescription" : "^orange;TI^reset; Gelbvieh Rifle",
   "tooltipKind" : "gun",
   "category" : "sniperRifle",
   "twoHanded" : true,
@@ -26,7 +26,7 @@
 	  "parts" : {
 	    "fullbright" : {
 		  "properties" : {
-		    "offset" : [0.9, 0.3]
+		    "offset" : [0.6, 0.3]
 		  }
 		}
 	  }
@@ -36,8 +36,8 @@
     }
   },
 
-  "baseOffset" : [0.9, 0.3],
-  "muzzleOffset" : [3.1, 0.2],
+  "baseOffset" : [0.6, 0.3],
+  "muzzleOffset" : [2.6, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -48,8 +48,8 @@
     "class" : "GunFire",
 
     "fireTime" : 1.0,
-    "baseDps" : 8.2,
-    "energyUsage" : 24.0,
+    "baseDps" : 5.2,
+    "energyUsage" : 30.0,
     "inaccuracy" : 0.008,
 
     "projectileCount" : 1,

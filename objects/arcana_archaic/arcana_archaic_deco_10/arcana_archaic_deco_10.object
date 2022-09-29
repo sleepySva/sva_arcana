@@ -1,0 +1,26 @@
+{
+  "objectName" : "arcana_archaic_deco_10",
+  "colonyTags" : ["misc","arcana_archaic","nature"],
+  "rarity" : "Common",
+  "description" : "A tall golden plant embedded in a stone plant pot.",
+  "shortdescription" : "Tall Golden Plant",
+  "race" : "gilten",
+  "category" : "decorative",
+  "price" : 180,
+  
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

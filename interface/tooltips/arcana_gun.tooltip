@@ -8,14 +8,14 @@
   "levelTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 168],
+    "position" : [11, 188],
     "hAnchor" : "left",
     "value" : "Tier:"
   },
   "levelLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [36, 168],
+    "position" : [38, 188],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
@@ -23,14 +23,14 @@
     "type" : "label",
 	"fontSize" : 6.8,
 	"color" : [160, 160, 160],
-    "position" : [90, 168],
+    "position" : [100, 188],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [122, 132],
+    "position" : [140, 132],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -38,74 +38,74 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [70, 143],
+    "position" : [80, 153],
     "file" : "",
     "centered" : true,
-    "maxSize" : [60, 60],
+    "maxSize" : [80, 70],
     "minSize" : [60, 60]
   },
   "descriptionLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
 	"color" : [160, 160, 160],
-    "position" : [9, 117],
-    "wrapWidth" : 122,
+    "position" : [11, 117],
+    "wrapWidth" : 140,
     "hAnchor" : "left",
     "vAnchor" : "top"
   },
   "damagePerShotTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 76],
+    "position" : [11, 76],
     "hAnchor" : "left",
     "value" : "Damage:"
   },
   "damagePerShotLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [130, 76],
+    "position" : [148, 76],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "speedTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 67],
+    "position" : [11, 67],
     "hAnchor" : "left",
     "value" : "Firing Rate:"
   },
   "speedLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [130, 67],
+    "position" : [148, 67],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "energyPerShotTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 58],
+    "position" : [11, 58],
     "hAnchor" : "left",
     "value" : "Energy Per Shot:"
   },
   "energyPerShotLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [130, 58],
+    "position" : [148, 58],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "altAbilityTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 49],
+    "position" : [11, 49],
     "hAnchor" : "left",
     "value" : ""
   },
   "altAbilityLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [130, 49],
+    "position" : [148, 49],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
@@ -113,20 +113,20 @@
   "rarityLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [9, 23],
+    "position" : [11, 23],
     "hAnchor" : "left",
     "centered" : true,
     "wrapWidth" : 126
   },
   "moneyIcon" : {
     "type" : "image",
-    "position" : [97, 23],
+    "position" : [115, 23],
     "file" : "/interface/money.png"
   },
   "priceLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [110, 23],
+    "position" : [128, 23],
     "hAnchor" : "left",
     "value" : "tree"
   }

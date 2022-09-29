@@ -15,25 +15,11 @@
       "body" : [
         {
           "action" : "particle",
-          "specification" : {
-            "type" : "animated",
-            "animation" : "/animations/statuseffects/frozen/frozen.animation",
-            "initialVelocity" : [0.0, 7.0],
-            "finalVelocity" : [0.0, 3.0],
-            "approach" : [0.3, 60],
-            "timeToLive" : 0.7,
-            "layer" : "back",
-            "size" : 0.4,
-            "collidesForeground" : true,
-            "variance" : {
-            "position" : [0.5, 0.5],
-            "size" : 0.1,
-            "initialVelocity" : [5, 3],
-            "finalVelocity" : [0, 0],
-            "rotation" : 180,
-            "angularVelocity" : 180
-            }
-          }
+          "specification" : "arcana_particle_ember_chryso_up_1"
+        },
+        {
+          "action" : "particle",
+          "specification" : "arcana_particle_ember_chryso_up_2"
         }
       ]
     }

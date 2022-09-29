@@ -1,0 +1,43 @@
+{
+  "particleEmitters" : {
+    "rocketParticles" : {
+      "emissionRate" : 50.0,
+      "particles" : [
+        {
+          "particle" : "rocketjump",
+          "offset" : [0, -0.5]
+        },
+        {
+          "particle" : "arcana_particle_ember_cyan_1",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "arcana_particle_ember_cyan_2",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "arcana_particle_ember_cyan_1",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "arcana_particle_ember_cyan_2",
+          "offset" : [0.15, 0]
+        },
+        {
+          "particle" : "arcana_particle_ember_cyan_1",
+          "offset" : [0.15, 0]
+        },
+        {
+          "particle" : "arcana_particle_ember_cyan_2",
+          "offset" : [0.15, 0]
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "charge" : [ "/sfx/tech/tech_rocketjump_charge2.ogg" ],
+    "chargeLoop" : [ ],
+    "boost" : [ "/sfx/tech/tech_rocketjump_release.ogg" ]
+  }
+}

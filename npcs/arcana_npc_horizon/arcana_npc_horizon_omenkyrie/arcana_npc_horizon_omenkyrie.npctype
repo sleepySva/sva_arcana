@@ -1,0 +1,119 @@
+{
+  "type" : "arcana_npc_horizon_omenkyrie",
+  "baseType" : "hostile",
+  
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Impending judgement will consume you.",
+            "All will come to an end.",
+            "The end is near.",
+            "Your resistance is futile.",
+            "...Perish."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_omenkyrie_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_omenkyrie_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_omenkyrie_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+	        "back" : [
+              { "name" : "arcana_back_horizonOmenkyrieCape", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "horizon_katana_1_npc"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "innateStatusEffects" : ["thorns"],
+  
+  "movementParameters" : {
+    "mass" : 1.0,
+    "runSpeed" : 16.0
+  },
+  
+  "statusControllerSettings" : {  
+	
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "jumpModifier" : {
+        "baseValue" : 1.2
+      },
+      "maxHealth" : {
+        "baseValue" : 300.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 80.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 3.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 40.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "electricStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "fireResistance" : {
+        "baseValue" : 0.9
+      },
+      "iceResistance" : {
+        "baseValue" : 0.9
+      },
+      "poisonResistance" : {
+        "baseValue" : 0.9
+      },
+      "electricResistance" : {
+        "baseValue" : 0.9
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.9
+      },
+      "arcana_resistance_light" : {
+        "baseValue" : -1.0
+      },
+      "arcana_resistance_abyss" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "projectileName" : "artifact_wand_idunsBlessing_projectile_2",
+  "physics" : "wallsticky",
+  "timeToLive" : 4,
+  "image" : "artifact_wand_idunsBlessing_projectile_2.png",
+  "animationCycle" : 0.5,
+  "animationLoops" : false,
+  "lightColor" : [100, 100, 10],
+  "frameNumber" : 5,
+    "periodicActions" : [
+    {
+      "time" : 0.4,
+      "action" : "loop",
+      "count" : 3,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "arcana_particle_ember_chryso_up_1"
+        },
+        {
+          "action" : "particle",
+          "specification" : "arcana_particle_ember_chryso_up_2"
+        }
+      ]
+    }
+  ],  
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 4,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "soluskatana1"
+        }
+      ]
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/ice_barrier_break1.ogg", "/sfx/projectiles/ice_barrier_break2.ogg", "/sfx/projectiles/ice_barrier_break3.ogg", "/sfx/projectiles/ice_barrier_break4.ogg", "/sfx/projectiles/ice_barrier_break5.ogg", "/sfx/projectiles/ice_barrier_break6.ogg", "/sfx/projectiles/ice_barrier_break7.ogg", "/sfx/projectiles/ice_barrier_break8.ogg", "/sfx/projectiles/ice_barrier_break9.ogg", "/sfx/projectiles/ice_barrier_break10.ogg" ]
+    }
+  ],
+  
+  "speed" : 0,
+  "power" : 20,
+  "damageKind" : "arcana_light",
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageRepeatTimeout" : 0.5,
+
+  "fullbright" : true,
+  "emitters" : [],
+
+  "bounces" : -1,
+  "piercing" : true
+}

@@ -13,6 +13,12 @@
         ]
       },
       {
+        "select" : 1,
+        "pool" : [
+          [ 1.0, "arcana_ariomutt" ]
+        ]
+      },
+      {
         "select" : 2,
         "pool" : [
           [ 0.4, "butterbee" ],
@@ -25,7 +31,7 @@
         "pool" : "nightTerrors"
       },
       {
-        "select" : 1,
+        "select" : 2,
         "pool" : "generatedGround"
       },
       {
@@ -50,7 +56,7 @@
     }
   },
 
-  "hueShiftOptions" : [-30, -25, -20],
+  "hueShiftOptions" : [-20, -18],
 
   "weather" : [
     [0, [
@@ -69,9 +75,9 @@
       "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
 
       "morningLightColor" : [140, 71, 0],
-      "dayLightColor" : [200, 200, 200],
+      "dayLightColor" : [170, 160, 220],
       "eveningLightColor" : [160, 120, 180],
-      "nightLightColor" : [40, 20, 60]
+      "nightLightColor" : [70, 50, 90]
     }
   ],
 
@@ -178,10 +184,19 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:uncommon",
+        "distribution" : "/biomes/distributions.config:rare",
 
         "type" : "microdungeon",
         "microdungeons" : [ "arcana_windswept_dungeon_1" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_dungeon_general_lush" ]
       },
 
 
@@ -199,6 +214,49 @@
 
       // GRASS and TREES and PLANTS
 
+
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "desertrocks",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "savannahgreenbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "baobabnew" ],
+        "treeFoliageList" : [ "baobab" ]
+      },
       {
         "mode" : "floor",
         "priority" : 3.0,
@@ -303,7 +361,23 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildpearlpeaseed" ] ],
+            "pool" : [ [1, "arcana_farmable_windflowerSeed_wild" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcornseed" ] ],
             "parameters" : {
               "startingStage" : 4
             }
@@ -314,7 +388,7 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:surfaceCrops",
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
 
         "type" : "object",
         "objectSets" : [

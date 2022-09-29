@@ -1,6 +1,113 @@
 
 {
 
+  "arcana_dungeonloots_blisteringTreasure" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["arcana_tech_burningDash", 1]},
+		{"item" : ["arcana_lootbox_legendaryTreasure_T4", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["blistering_whip_1", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_dungeonloots_windsweptTreasure" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["arcana_tech_quickFlight", 1]},
+		{"item" : ["arcana_lootbox_legendaryTreasure_T4", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["elemental_crafting_anemoneWood", 6]},
+		{"weight" : 1.0, "item" : ["elemental_crafting_anemoneWood", 7]},
+		{"weight" : 1.0, "item" : ["elemental_crafting_anemoneWood", 8]},
+		{"weight" : 1.0, "item" : ["elemental_crafting_anemoneWood", 9]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_dungeonloots_empyreanTreasure" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["arcana_aurea_crafting_1", 1]}
+      ]
+    }]
+  ],
+
+  "arcana_dungeonloots_archaicTreasure" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["arcana_tech_goldenFlight", 1]},
+		{"item" : ["arcana_misc_arkFragment", 6]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_misc_arkFragment", 6]},
+		{"weight" : 1.0, "item" : ["arcana_misc_arkFragment", 7]},
+		{"weight" : 1.0, "item" : ["arcana_misc_arkFragment", 8]},
+		{"weight" : 1.0, "item" : ["arcana_misc_arkFragment", 9]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_dungeonloots_arkFragment" : [
+    [0, {
+	  "fill" : [
+		{"pool" : "apexbaseRareTreasure"},
+		{"pool" : "valuableTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["spaceplasmarifle", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_dungeonloots_apexWeaponTreasure" : [
+    [0, {
+	  "fill" : [
+		{"pool" : "apexbaseRareTreasure"},
+		{"pool" : "valuableTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["spaceplasmarifle", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_dungeonloots_gleamlightTreasure" : [
+    [0, {
+	  "fill" : [
+		{"pool" : "basicChestTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 0.2, "item" : ["arcana_throwable_gleamplane", 6]},
+		{"weight" : 0.2, "item" : ["arcana_throwable_gleamplane", 8]},
+		{"weight" : 0.2, "item" : ["arcana_throwable_gleamplane", 10]},
+		{"weight" : 0.2, "item" : ["arcana_gleamdye", 1]},
+		{"weight" : 0.2, "item" : ["arcana_gleamdye", 2]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
   "arcana_dungeonloots_verdantTreasure" : [
     [0, {
 	  "fill" : [

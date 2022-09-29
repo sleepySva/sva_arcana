@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":11,
+ "tilecount":13,
  "tileheight":256,
  "tileproperties":
     {
@@ -96,6 +96,22 @@
          "imagePositionY":"0",
          "object":"aeolus_table_1",
          "tilesetDirection":"right"
+        },
+     "11":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"aeolus_trap_1",
+         "tilesetDirection":"right"
+        },
+     "12":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"aeolus_trap_2",
+         "tilesetDirection":"right"
         }
 
     },
@@ -144,6 +160,14 @@
      "10":
         {
          "image":"aeolus_table_1.png"
+        },
+     "11":
+        {
+         "image":"aeolus_trap_1.png"
+        },
+     "12":
+        {
+         "image":"aeolus_trap_2.png"
         }
     },
  "tilewidth":188

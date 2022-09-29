@@ -4,7 +4,7 @@
   
   "timeToLive" : 4,
   "bounces" : 0,
-  "speed" : 100,
+  "speed" : 130,
   "piercing" : false,
   
   "image" : "steelblades_blastRifle_1_projectile_1.png",
@@ -26,7 +26,7 @@
   
   "periodicActions" : [
     {
-      "time" : 0.02,
+      "time" : 0.01,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
@@ -37,7 +37,7 @@
         "layer" : "back",
         "timeToLive" : 0.0,
         "destructionTime" : 1.0,
-        "destructionAction" : "fade",
+        "destructionAction" : "shrink",
         "fullbright" : true
       }
     }

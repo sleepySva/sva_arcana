@@ -1,0 +1,39 @@
+{
+  "projectileName" : "arcana_weather_largeFog_projectile_1",
+  "image" : "fogprimer.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 3,
+      "body" : [
+        {
+          "action" : "option",
+          "options" : [
+            {
+              "action" : "particle",
+              "specification" : {
+                "type" : "animated",
+                "animation" : "/animations/fog/fog.animation",
+                "size" : 3.0,
+                "timeToLive" : 40.0,
+                "variance" : {
+                  "position" : [3, 0],
+				  "size" : 1.0,
+                  "rotation" : 180
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "onlyHitTerrain" : true,
+  "power" : 0.0,
+  "damageKind" : "default"
+}

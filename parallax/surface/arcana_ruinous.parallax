@@ -19,15 +19,74 @@
     },
     {
       "kind" : "arcana_ruinous_oceanglow",
-      "offset" : [0, 1],
+      "offset" : [0, 0],
       "parallax" : [1.0, 1.0],
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_ruinous_2",
+      "offset" : [0, -1],
+      "parallax" : [1.0, 1.0],
+      "minSpeed" : 7000,
+      "maxSpeed" : 9000,
+      "directives" : "",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "godrays",
+      "offset" : [0, 20],
+      "parallax" : [1.0, 1.2],
+      "unlit" : false
+    },
+    {
+      "kind" : "godrays",
+      "offset" : [0, 20],
+      "parallax" : [1.2, 1.4],
+      "unlit" : false
+    },
+    {
+      "kind" : "godrays",
+      "offset" : [0, 10],
+      "parallax" : [1.4, 1.6],
+      "directives" : "?brightness=-10",
+      "unlit" : true
+    },
+    {
+      "kind" : "arcana_ruinous_1",
+      "offset" : [0, 180],
+      "parallax" : [3, 3.1],
+      "directives" : "",
+	  "repeatY" : true,
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_ruinous_1",
+      "offset" : [0, 180],
+      "parallax" : [3.2, 2.1],
+      "directives" : "",
+	  "repeatY" : true,
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
       "nohueshift" : true
     },
     {
       "kind" : "arcana_desolate_1",
       "offset" : [0, 180],
-      "parallax" : [3, 4.1],
-      "directives" : "",
+      "parallax" : [3, 2.2],
+      "directives" : "?saturation=-10",
+      "fadePercent" : 0.0,
+	  "size" : 1.0,
+      "nohueshift" : true
+    },
+    {
+      "kind" : "arcana_desolate_1",
+      "offset" : [0, 180],
+      "parallax" : [3, 2.3],
+      "directives" : "?saturation=-20",
       "fadePercent" : 0.0,
 	  "size" : 1.0,
       "nohueshift" : true
@@ -46,7 +105,7 @@
       "offset" : [0, 80],
       "parallax" : [3, 5.1],
       "directives" : "",
-      "fadePercent" : 0.1,
+      "fadePercent" : 0.0,
 	  "size" : 1.0,
       "nohueshift" : true
     },

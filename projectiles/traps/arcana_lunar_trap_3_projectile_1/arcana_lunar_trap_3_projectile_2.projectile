@@ -1,0 +1,54 @@
+{
+  "projectileName" : "arcana_lunar_trap_3_projectile_2",
+  "physics" : "sticky",
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "piercing" : false,
+  "image" : "body.png",
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_ember_cyan"],
+  
+  "windupFrames" : 10,
+  "frameNumber" : 1,
+  "winddownFrames" : 10,
+  "animationCycle" : 0.1,
+  
+  "speed" : 3,
+  "knockback" : 0,
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "actionOnReap" : [
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.06,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/traps/arcana_lunar_trap_3_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"size" : 0.8,
+		"renderLayer" : "foregroundEntity"
+      }
+    }
+  ],
+
+  "lightColor" : [80, 130, 152],
+  "damageKind" : "arcana_lunar",
+  "damagePoly" : [ [-4, 4], [4, 4], [4, -4], [-4, -4], [-4, 4] ],
+  "statusEffects" : [
+    {"effect" : "arcana_status_windswept", "duration" : 3}
+  ]
+  
+}

@@ -1,0 +1,51 @@
+{
+  "particleEmitters" : {
+    "rocketParticles" : {
+      "emissionRate" : 50.0,
+      "particles" : [
+        {
+          "particle" : "arcana_particle_rocketjump_yellow",
+          "offset" : [0, -0.5]
+        },
+        {
+          "particle" : "soluskatana1",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "soluskatana2",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "soluskatana1",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "soluskatana2",
+          "offset" : [0.15, 0]
+        },
+        {
+          "particle" : "soluskatana1",
+          "offset" : [0.15, 0]
+        },
+        {
+          "particle" : "soluskatana2",
+          "offset" : [0.15, 0]
+        },
+        {
+          "particle" : "sparks",
+          "offset" : [0.15, 0]
+        },
+        {
+          "particle" : "sparks",
+          "offset" : [-0.15, 0]
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "charge" : [ "/sfx/tech/tech_rocketjump_charge2.ogg" ],
+    "chargeLoop" : [ ],
+    "boost" : [ "/sfx/tech/tech_rocketjump_release.ogg" ]
+  }
+}

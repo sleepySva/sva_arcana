@@ -2,8 +2,8 @@
   "objectName" : "horizon_deco_2",
   "colonyTags" : ["misc"],
   "rarity" : "Rare",
-  "description" : "A metal support.",
-  "shortdescription" : "Horizon Support",
+  "description" : "A barricade.",
+  "shortdescription" : "Horizon Small Barricade",
   "race" : "generic",
   "category" : "decorative",
   "price" : 100,
@@ -14,23 +14,23 @@
 	  "imageLayers" : [ { "image" : "horizon_deco_2.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-8, 0],
+      "imagePosition" : [-16, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "top" ]
+      "anchors" : [ "bottom" ]
 
     },
 	{
 	  "imageLayers" : [ { "image" : "horizon_deco_2.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
       "direction" : "right",
-      "imagePosition" : [-8, 0],
+      "imagePosition" : [-16, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "top" ]
+      "anchors" : [ "bottom" ]
 
     }
   ]

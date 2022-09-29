@@ -1,0 +1,49 @@
+{
+  "objectName" : "arcana_archaic_chair_2",
+  "colonyTags" : ["arcana_archaic"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 160,
+  "printable" : false,
+  "description" : "An ornate Gilten-made wooden bench.",
+  "shortdescription" : "Archaic Wooden Bench",
+  "race" : "gilten",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+	  "sitCoverImage" : "/objects/arcana_archaic/arcana_archaic_chair_2/cover.png",
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        [-11, 21], // Right
+        [2, 21] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+	  "sitCoverImage" : "/objects/arcana_archaic/arcana_archaic_chair_2/cover.png",
+
+      "direction" : "right",
+
+      "sitPositions" : [
+        [-3, 21], // Left
+        [10, 21] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

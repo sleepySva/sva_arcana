@@ -2,6 +2,82 @@
   // unique monsters
 
   {
+    "name" : "arcana_mudmidge",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "all",
+      "time" : "all"
+    },
+    "spawnChance" : 0.1,
+    "monsterType" : "arcana_monster_mudmidge",
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  {
+    "name" : "arcana_paintlin",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "all",
+      "time" : "all"
+    },
+    "spawnChance" : 0.1,
+    "monsterType" : "arcana_monster_paintlin",
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  {
+    "name" : "arcana_ariomutt",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "all",
+      "time" : "all"
+    },
+    "spawnChance" : 0.1,
+    "monsterType" : "arcana_monster_ariomutt",
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+
+  {
+    "name" : "arcana_abyssTentablob",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "all",
+      "time" : "all"
+    },
+    "spawnChance" : 0.1,
+    "monsterType" : "arcana_monster_abyssTentablob",
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_mistBat",
+
+    "spawnParameters" : {
+      "area" : "ceiling",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 3],
+    "spawnChance" : 0.04,
+    "monsterType" : [
+      [1, "arcana_monster_mistBat"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : false
+    }
+  },
+
+  {
     "name" : "arcana_lunarSpookit",
 
     "spawnParameters" : {
@@ -121,6 +197,42 @@
     "spawnChance" : 0.01,
     "monsterType" : [
       [1, "arcana_monster_tricanard"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_trispiel",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_trispiel"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_skeleton",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [2, 3],
+    "spawnChance" : 0.2,
+    "monsterType" : [
+      [1, "arcana_monster_skeleton"]
     ],
     "monsterParameters" : {
       "aggressive" : true

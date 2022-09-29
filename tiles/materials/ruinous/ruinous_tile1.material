@@ -1,0 +1,24 @@
+{
+  "materialId" : 16710,
+  "materialName" : "ruinous_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "ruinous_tile1",
+  "description" : "A soil that has been tainted by ruinous water.",
+  "shortdescription" : "Ruinous Soil",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 8,
+  "category" : "materials",
+  "tillableMod" : 32,
+  "soil" : true,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ruinous_tile1.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1300,
+	"radiantLight" : [2, 0, 3]
+  }
+}

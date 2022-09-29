@@ -1,0 +1,16 @@
+{
+  "itemName" : "arcana_gleamdye",
+  "price" : 25,
+  "rarity" : "Legendary",
+  "category" : "clothingDye",
+  "inventoryIcon" : "arcana_gleamdye.png",
+  "description" : "This coloured dye can be applied to a piece of armour or clothing with a right-click.",
+  "shortdescription" : "Gleam Dye",
+
+  "dyeDirectives" : { "ffca8a" : "534726", "e0975c" : "393025", "a85636" : "1d1f24", "6f2919" : "05060a" },
+  "dyeColorIndex" : false,
+
+  "radioMessagesOnPickup" : [ "pickupdye" ],
+
+  "scripts" : [ "/scripts/augments/dye.lua" ]
+}

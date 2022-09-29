@@ -1,0 +1,127 @@
+{
+  "metadata" : {
+    "name" : "arcana_amorous_dungeon_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_amorous_dungeon_1_left",
+	"arcana_amorous_dungeon_1_right"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 8,
+    "extendSurfaceFreeSpace" : 400,
+    "protected" : false
+  },
+
+  "parts" : [
+	
+    {
+      "name" : "arcana_amorous_dungeon_1_outer_7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_outer_7", "arcana_amorous_dungeon_1_outer_4"] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_outer_4.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "arcana_amorous_dungeon_1_outer_8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_outer_8", "arcana_amorous_dungeon_1_outer_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_outer_5.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "arcana_amorous_dungeon_1_outer_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_outer_1" ] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_outer_1.json" ],
+	  "chance" : 900
+    },
+	
+    {
+      "name" : "arcana_amorous_dungeon_1_center",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_center" ] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_center.json" ],
+	  "chance" : 500
+    },
+	
+	
+    {
+      "name" : "arcana_amorous_dungeon_1_outer_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_outer_2" ] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_outer_2.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "arcana_amorous_dungeon_1_outer_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_outer_3" ] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_outer_3.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "arcana_amorous_dungeon_1_outer_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_outer_6" ] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_outer_6.json" ],
+	  "chance" : 100
+    },
+	
+	
+	
+    {
+      "name" : "arcana_amorous_dungeon_1_outer_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_outer_4" ] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_outer_4.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "arcana_amorous_dungeon_1_outer_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "arcana_amorous_dungeon_1_outer_5" ] ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_outer_5.json" ],
+	  "chance" : 1
+    },
+	
+    {
+      "name" : "arcana_amorous_dungeon_1_left",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_left.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "arcana_amorous_dungeon_1_right",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "arcana_amorous_dungeon_1_right.json" ],
+	  "chance" : 0
+    }
+  ]
+}

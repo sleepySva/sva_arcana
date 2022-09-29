@@ -6,27 +6,163 @@
   "shortdescription" : "^#9e6b55;Magician's Table^reset;",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1000,
+  "price" : 1200,
+  
+  "breakDropOptions" : [],
+  "printable" : false,
+  
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
 
   "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_1.config",
-	"filter" : ["arcana_crafting_main_1"]
-  },
 
-  "inventoryIcon" : "icon.png",
+  "animation" : "animation.animation",
+  "animationPosition" : [0, 19],
+  "placementImage" : "1.png:default.default",
+  "placementImagePosition" : [-32, -0],    
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 4,
+  "inventoryIcon" : "1_icon.png",
+  
+  "upgradeStages" : [
+    {
+      "animationState" : "stage_1",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "1_icon.png",
+        "placementImage" : "1.png:default.default",
+        "placementImagePosition" : [-32, -0],    
+
+	    "description" : "A table that allows you to craft various useful arcane inventions.",
+	    "shortdescription" : "^#9e6b55;Magician's Table^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_1.config",
+		"filter" : ["arcana_crafting_main_1"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_ore_arcaniumOre", "count" : 10 },
+			{ "item" : "arcana_essence_arcaneEssence", "count" : 10 },
+			{ "item" : "battery", "count" : 1 },
+			{ "item" : "refinedaegisalt", "count" : 4 },
+			{ "item" : "refinedferozium", "count" : 4 },
+			{ "item" : "refinedviolium", "count" : 4 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "stage_2",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "2_icon.png",
+        "placementImage" : "2.png:default.default",
+        "placementImagePosition" : [-32, -0],    
+
+	    "description" : "An arcanium crafting table, lets you craft various useful arcane inventions.",
+	    "shortdescription" : "^#3ec7dd;Academician's Table^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_2.config",
+		"filter" : ["arcana_crafting_main_1", "arcana_crafting_main_2"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_thoriumBar", "count" : 10 },
+			{ "item" : "orion_crafting_enhancedBattery", "count" : 1 },
+			{ "item" : "orion_crafting_jupiterCell", "count" : 1 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "stage_3",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "3_icon.png",
+        "placementImage" : "3.png:default.default",
+        "placementImagePosition" : [-32, -0],
+
+	    "description" : "An advanced crafting table, lets you craft various useful Orion inventions.",
+	    "shortdescription" : "^#bbbdce;Cyberneticist's Table^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_3.config",
+		"filter" : ["arcana_crafting_main_1", "arcana_crafting_main_2", "arcana_crafting_main_3"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
+			{ "item" : "inventorstable", "count" : 1 },
+			{ "item" : "craftingfurnace", "count" : 1 },
+			{ "item" : "craftingfarm", "count" : 1 },
+			{ "item" : "craftinganvil", "count" : 1 },
+			{ "item" : "craftingfurniture", "count" : 1 },
+			{ "item" : "craftingmedical", "count" : 1 },
+			{ "item" : "woodencookingtable", "count" : 1 },
+			{ "item" : "craftingwheel", "count" : 1 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+    {
+      "animationState" : "stage_4",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "4_icon.png",
+        "placementImage" : "4.png:default.default",
+        "placementImagePosition" : [-32, -0],
+		"rarity" : "Essential",		
+
+	    "description" : "The most capable inventing table of all, made from Aureola bars.",
+	    "shortdescription" : "^#dfcf4e;Artificer's Table^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_4.config",
+		"filter" : ["arcana_crafting_main_1", "arcana_crafting_main_2", "arcana_crafting_main_3", "arcana_crafting_main_4","inventorstable", "inventorstable2", "inventorstable3", "arcana_exousia"]
+	  },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+  
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_main_1.png:<color>",
+	  "image" : "1.png:<color>.<frame>",
+      "direction" : "left",
+	  "flipImages" : true,
       "imagePosition" : [-32, 0],
       "frames" : 1,
-      "animationCycle" : 0.5,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "image" : "1.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
 
     }
-  ],
-  
-  "radioMessagesOnPickup" : [ "arcana_radiomessage_pickup_main_1" ]
+  ]
 }

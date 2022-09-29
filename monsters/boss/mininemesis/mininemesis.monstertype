@@ -169,26 +169,68 @@
         "knockbackThreshold" : {
           "baseValue" : 9
         },
+		"physicalResistance" : {
+          "baseValue" : 0.3
+        },
         "maxHealth" : {
           "baseValue" : 250
         },
-        "protection" : {
-          "baseValue" : 0.0
+        "lavaImmunity" : {
+          "baseValue" : 1.0
         },
-        "healthRegen" : {
-          "baseValue" : 0.0
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"fireResistance" : {
+          "baseValue" : 0.8
         },
         "iceStatusImmunity" : {
-          "baseValue" : 0.0
+          "baseValue" : 1.0
+        },
+		"iceResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"poisonResistance" : {
+          "baseValue" : -0.3
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
         },
         "powerMultiplier" : {
           "baseValue" : 1.0
         },
-        "poisonStatusImmunity" : {
-          "baseValue" : 0.0
-        },
-		"lavaImmunity" : {
+        "abysseffectImmunity" : {
           "baseValue" : 1.0
+        },
+        "ionizedImmunity" : {
+          "baseValue" : 1.0
+        },
+		"megadamageResistance" : {
+		  "baseValue" : 1.0
+		},
+        "shadowImmunity" : {
+         "baseValue" : 1
+        },
+        "radiationburnImmunity" : { 
+          "baseValue" : 1
+        },
+        "acidicbacteriaImmunity" : { 
+          "baseValue" : 1
+        },
+		"HolyStatusImmunity" : { 
+          "baseValue" : 1
         }
       },
 

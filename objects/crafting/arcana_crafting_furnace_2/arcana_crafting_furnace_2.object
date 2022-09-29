@@ -3,26 +3,131 @@
   "colonyTags" : ["crafting"],
   "rarity" : "Legendary",
   "description" : "A furnace infused with arcane magic.",
-  "shortdescription" : "^#ecb297;Arcanium Furnace^reset;",
+  "shortdescription" : "^#3ec7dd;Arcanium Furnace^reset;",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1200,
+  "price" : 1600,
   
-  "lightColor" : [90, 160, 170],
+  "breakDropOptions" : [],
+  "printable" : false,
+  
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
 
   "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_furnace/arcana_crafting_furnace_2.config",
-	"filter" : ["arcana_crafting_furnace_2"]
-  },
 
-  "inventoryIcon" : "icon.png",
+  "animation" : "animation.animation",
+  "animationPosition" : [0, 19],
+  "placementImage" : "2.png:default.default",
+  "placementImagePosition" : [-16, -0],    
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 3,
+  "inventoryIcon" : "2_icon.png",
+  
+  "upgradeStages" : [
+    {
+      "animationState" : "stage_2",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "2_icon.png",
+        "placementImage" : "2.png:default.default",
+        "placementImagePosition" : [-16, -0],    
+
+		"description" : "A furnace infused with arcane magic.",
+		"shortdescription" : "^#3ec7dd;Arcanium Furnace^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_furnace/arcana_crafting_furnace_2.config",
+		"filter" : ["arcana_crafting_furnace_2"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_thoriumBar", "count" : 16 },
+			{ "item" : "wire", "count" : 4 },
+			{ "item" : "orion_crafting_enhancedBattery", "count" : 1 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "stage_3",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "3_icon.png",
+        "placementImage" : "3.png:default.default",
+        "placementImagePosition" : [-16, -0],
+
+		"description" : "A modern smelter, used to produce high tier materials.",
+		"shortdescription" : "^#bbbdce;Orion Smelter^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_furnace/arcana_crafting_furnace_3.config",
+		"filter" : ["arcana_crafting_furnace_2", "arcana_crafting_furnace_3"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
+			{ "item" : "dirtmaterial", "count" : 10 },
+			{ "item" : "darkwoodmaterial", "count" : 10 },
+			{ "item" : "cobblestonematerial", "count" : 10 },
+			{ "item" : "plantmatter", "count" : 10 },
+			{ "item" : "sand2", "count" : 10 },
+			{ "item" : "sandstonematerial", "count" : 10 },
+			{ "item" : "snow", "count" : 10 },
+			{ "item" : "magmarock", "count" : 10 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+    {
+      "animationState" : "stage_4",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "4_icon.png",
+        "placementImage" : "4.png:default.default",
+        "placementImagePosition" : [-16, -0],
+		"rarity" : "Essential",		
+
+	    "description" : "A smelter that can process just about everything, made with Aureola bars.",
+	    "shortdescription" : "^#dfcf4e;Auric Smelter^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_furnace/arcana_crafting_furnace_4.config",
+		"filter" : ["arcana_crafting_furnace_2", "arcana_crafting_furnace_3", "arcana_crafting_furnace_4"]
+	  },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+  
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_furnace_2.png:<color>",
+	  "image" : "2.png:<color>.<frame>",
+      "direction" : "left",
+	  "flipImages" : true,
       "imagePosition" : [-16, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "image" : "2.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

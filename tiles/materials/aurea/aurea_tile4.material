@@ -1,0 +1,22 @@
+{
+  "materialId" : 16319,
+  "materialName" : "aurea_tile4",
+  "particleColor" : [200, 200, 110, 255],
+  "itemDrop" : "aurea_tile4",
+  "description" : "A Gilten glass barrier.",
+  "shortdescription" : "Ark Barrier",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 7,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 1001,
+	"radiantLight" : [63, 63, 3]
+  }
+}

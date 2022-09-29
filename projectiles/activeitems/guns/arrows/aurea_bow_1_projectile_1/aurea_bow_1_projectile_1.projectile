@@ -1,0 +1,73 @@
+{
+  "projectileName" : "aurea_bow_1_projectile_1",
+  "physics" : "default",
+  "bounces" : 0,
+  "periodicActions" : [
+    {
+      "action" : "particle",
+      "specification" : "soluskatana1",
+      "time" : 0.05,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "soluskatana2",
+      "time" : 0.07,
+      "repeat" : true
+    },
+    {
+      "time" : 0.001,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/arrows/aurea_bow_1_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_plasma.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "soluskatana1",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "soluskatana2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    }
+  ],
+  "image" : "body.png",
+  "animationCycle" : 0.1,
+  "frameNumber" : 2,
+  "lightColor" : [160, 160, 90],
+  "fullbright" : true,
+  "emitters" : [],
+  "timeToLive" : 6,
+  "damagePoly" : [ [-10, 0], [2, 4], [10, 0], [2, -4] ],
+  "power" : 20,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "damageKind" : "arcana_light"
+}

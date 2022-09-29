@@ -1,0 +1,107 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "attack" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "windup" : {
+            "frames" : 3,
+            "cycle" : 0.25,
+            "mode" : "end"
+          },
+          "extend" : {
+            "frames" : 1,
+            "cycle" : 0.01,
+            "mode" : "end"
+          },
+          "fire" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "weapon" : {
+        "properties" : {
+          "transformationGroups" : ["weapon"],
+          "centered" : true,
+          "zLevel" : 0
+        },
+
+        "partStates" : {
+          "attack" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:extend.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire"
+              }
+            }
+          }
+        }
+      },
+      "weaponFullbright" : {
+        "properties" : {
+          "transformationGroups" : ["weapon"],
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "attack" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:extend.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "endpoint" : {}
+  },
+
+  "particleEmitters" : {
+    "crack" : {
+      "transformationGroups" : ["endpoint"],
+      "particles" : []
+    }
+  },
+  "sounds" : {
+    "swing" : [ ],
+    "crack" : [ ]
+  }
+}

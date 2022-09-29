@@ -1,0 +1,22 @@
+{
+  "materialId" : 16756,
+  "materialName" : "horizon_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "horizon_tile7",
+  "description" : "An enhanced purple glass panel.",
+  "shortdescription" : "Horizon Sloped Glass",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "horizon_tile7.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 4001,
+	"radiantLight" : [32, 10, 33]
+  }
+}

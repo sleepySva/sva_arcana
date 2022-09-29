@@ -188,19 +188,19 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
 
         "type" : "microdungeon",
         "microdungeons" : [ "encounterdungeons" ]
       },
       {
         "mode" : "floor",
-        "priority" : 1,
+        "priority" : 4.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+        "distribution" : "/biomes/distributions.config:rare",
 
         "type" : "microdungeon",
-        "microdungeons" : [ "encounterdungeons" ]
+        "microdungeons" : [ "arcana_dungeon_general_lush" ]
       },
       {
         "mode" : "floor",

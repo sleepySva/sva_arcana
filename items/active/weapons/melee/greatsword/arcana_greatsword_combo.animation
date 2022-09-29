@@ -12,25 +12,19 @@
           },
           "fire" : {
             "frames" : 3,
-            "cycle" : 0.4,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
           },
           "fire2" : {
             "frames" : 5,
-            "cycle" : 0.4,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
           },
           "fire3" : {
             "frames" : 5,
-            "cycle" : 0.4,
-            "mode" : "transition",
-            "transition" : "idle"
-          },
-          "fire4" : {
-            "frames" : 5,
-            "cycle" : 0.4,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -44,7 +38,7 @@
           "zLevel" : 0,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
-          "offset" : [0, 1.875],
+          "offset" : [0, 2.0],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0],
           "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
@@ -55,7 +49,7 @@
           "zLevel" : 1,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>?<directives>",
-          "offset" : [0, 1.875],
+          "offset" : [0, 2.0],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0]
         }
@@ -77,30 +71,23 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/greatsword/greatsword_swoosh_1/physicalswoosh.png:<frame>",
-                "offset" : [-2, 2.5],
-                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [5, 1.75], [7, -0.25], [7, -2.25], [5, -3.25], [0, -2.5]]
+                "image" : "swoosh_1.png:<frame>",
+                "offset" : [-0.2, 2.5],
+                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [6, 1.75], [9, -0.25], [9, -2.25], [6, -3.25], [0, -2.5]]
               }
             },
             "fire2" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/greatsword/greatsword_swoosh_2/physicalswoosh.png:<frame>",
-                "offset" : [6.0, 1.0],
-                "damageArea" : [[-4, 1], [6, 1], [6, -2], [-4, -2]]
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [-0.2, -2.5],
+                "damageArea" : [[-4, -2], [-2.0, -3], [0, -3], [6, -1.75], [9, 0.25], [9, 2.25], [6, 3.25], [0, 2.5]]
               }
             },
             "fire3" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/greatsword/greatsword_swoosh_3/physicalswoosh.png:<frame>",
-                "offset" : [0, -0.5],
-                "damageArea" : [[-5, 2], [-2.0, 3], [2, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
-              }
-            },
-            "fire4" : {
-              "properties" : {
-                "image" : "/items/active/weapons/melee/greatsword/greatsword_swoosh_4/physicalswoosh.png:<frame>",
-                "offset" : [3.5, 1.0],
-                "damageArea" : [[-4, 2], [-2.0, 3], [2, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+                "image" : "swoosh_3.png:<frame>",
+                "offset" : [4.2, 0.2],
+                "damageArea" : [[-6, 2], [-3.0, 3], [1, 3], [6, 1.75], [9, -0.25], [9, -2.25], [6, -3.25], [0, -2.5]]
               }
             }
           }
@@ -121,9 +108,8 @@
       "emissionRate" : 20,
       "burstCount" : 2,
       "particles" : [
-        { "particle" : "arcana_particle_white"},
-        { "particle" : "arcana_particle_white"},
-        { "particle" : "arcana_particle_white"}
+        { "particle" : "arcana_particle_ember_cyan_1"},
+        { "particle" : "arcana_particle_ember_cyan_2"}
       ]
     },
     "fireswoosh" : {
@@ -175,7 +161,6 @@
   "sounds" : {
     "fire" : [ ],
     "fire2" : [ ],
-    "fire3" : [ ],
-    "fire4" : [ ]
+    "fire3" : [ ]
   }
 }

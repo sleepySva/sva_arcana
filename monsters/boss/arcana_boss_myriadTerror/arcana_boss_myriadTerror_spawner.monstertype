@@ -1,0 +1,171 @@
+{
+  "type" : "arcana_boss_myriadTerror_spawner",
+
+  "categories" : [ "arcana_boss_myriadTerror" ],
+  "parts" : [ "body" ],
+
+  "animation" : "animation.animation",
+
+  "dropPools" : [ "arcana_bossdrops_myriadTerror" ],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "arcana_boss_myriadTerror",
+	
+	"damageBar" : "None",
+	
+	"persistent" : true,
+
+    "seeThroughLiquid" : true,
+	
+	"renderLayer" : "Projectile-200",
+
+    "touchDamage" : {
+      "poly" : [ [-2.0, -2.0], [0.0, -2.0], [2.0, -2.0], [2.0, 0.0], [0.0, 2.0], [-2.0, 0.0] ],
+      "damage" : 20,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+      "knockback" : 80,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-2.0, -2.0, 2.0, 2.0],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+	  "collisionEnabled" : false,
+      "collisionPoly" : [ [-2.0, -2.0], [2.0, -2.0], [2.0, 2.0], [-2.0, 2.0] ],
+
+      "mass" : 4.0,
+      "walkSpeed" : 4,
+      "runSpeed" : 14,
+      "gravityEnabled" : false,
+
+      "airFriction" : 0.1,
+      "airForce" : 420,
+      "flySpeed" : 40,
+	  
+	  "physicsEffectCategories" : [ "boss" ]
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.0,
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 999999
+        },
+        "maxHealth" : {
+          "baseValue" : 2200
+        },
+		"grit" : {
+          "baseValue" : 1.0
+        },
+		"lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+		"physicalResistance" : {
+          "baseValue" : 0.3
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"fireResistance" : {
+          "baseValue" : 0.3
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"iceResistance" : {
+          "baseValue" : 0.3
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"electricResistance" : {
+          "baseValue" : 0.3
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"poisonResistance" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "abysseffectImmunity" : {
+          "baseValue" : 1.0
+        },
+        "ionizedImmunity" : {
+          "baseValue" : 1.0
+        },
+		"megadamageResistance" : {
+		  "baseValue" : 1.0
+		},
+        "shadowImmunity" : {
+         "baseValue" : 1
+        },
+        "radiationburnImmunity" : { 
+          "baseValue" : 1
+        },
+        "acidicbacteriaImmunity" : { 
+          "baseValue" : 1
+        },
+		"HolyStatusImmunity" : { 
+          "baseValue" : 1
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -4],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

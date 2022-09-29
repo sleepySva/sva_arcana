@@ -1,0 +1,22 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : [],
+      "maxFuel" : 1000,
+      "crewSize" : 2
+    }
+  },
+  "backgroundOverlays" : [
+    {
+      "image" : "t1.png",
+      "position" : [8, 0],
+      "fullbright" : true
+    },
+    {
+      "image" : "t1lit.png",
+      "position" : [8, 0]
+    }
+  ],
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "t0blocks.png"
+}

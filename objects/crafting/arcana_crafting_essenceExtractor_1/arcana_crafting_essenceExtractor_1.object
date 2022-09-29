@@ -1,28 +1,162 @@
 {
   "objectName" : "arcana_crafting_essenceExtractor_1",
   "colonyTags" : ["crafting"],
-  "rarity" : "Rare",
+  "rarity" : "Legendary",
   "description" : "A basic extractor for extracting arcane essence.",
   "shortdescription" : "^#9e6b55;Wooden Essence Extractor^reset;",
   "race" : "generic",
   "category" : "crafting",
   "price" : 1000,
   
-  "lightColor" : [90, 160, 170],
+  "breakDropOptions" : [],
+  "printable" : false,
+  
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
 
   "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_essenceExtractor/arcana_crafting_essenceExtractor_1.config",
-	"filter" : ["arcana_crafting_essenceExtractor"]
-  },
 
-  "inventoryIcon" : "icon.png",
+  "animation" : "animation.animation",
+  "animationPosition" : [4, 15],
+  "placementImage" : "1.png:default.default",
+  "placementImagePosition" : [-24, -0],    
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 4,
+  "inventoryIcon" : "1_icon.png",
+  
+  "upgradeStages" : [
+    {
+      "animationState" : "stage_1",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "1_icon.png",
+        "placementImage" : "1.png:default.default",
+        "placementImagePosition" : [-24, -0],    
+
+        "description" : "A basic extractor for extracting arcane essence.",
+        "shortdescription" : "^#9e6b55;Wooden Essence Extractor^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_essenceExtractor/arcana_crafting_essenceExtractor_1.config",
+		"filter" : ["arcana_crafting_essenceExtractor"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_arcaniumBar", "count" : 8 },
+			{ "item" : "syntheticmaterial", "count" : 2 },
+			{ "item" : "battery", "count" : 1 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "stage_2",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "2_icon.png",
+        "placementImage" : "2.png:default.default",
+        "placementImagePosition" : [-24, -0],    
+
+        "description" : "An arcanium-reinforced essence extractor.",
+        "shortdescription" : "^#3ec7dd;Arcanium Essence Extractor^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_essenceExtractor/arcana_crafting_essenceExtractor_2.config",
+		"filter" : ["arcana_crafting_essenceExtractor"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_thoriumBar", "count" : 8 },
+			{ "item" : "orion_crafting_ursaplate", "count" : 8 },
+			{ "item" : "orion_crafting_enhancedBattery", "count" : 1 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "stage_3",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "3_icon.png",
+        "placementImage" : "3.png:default.default",
+        "placementImagePosition" : [-24, -0],
+
+        "description" : "A modern essence extractor for extracting higher essence.",
+        "shortdescription" : "^#bbbdce;Orion Essence Extractor^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_essenceExtractor/arcana_crafting_essenceExtractor_3.config",
+		"filter" : ["arcana_crafting_essenceExtractor"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
+			{ "item" : "arcana_essence_fireEssence", "count" : 10 },
+			{ "item" : "arcana_essence_iceEssence", "count" : 10 },
+			{ "item" : "arcana_essence_windEssence", "count" : 10 },
+			{ "item" : "arcana_essence_electricEssence", "count" : 10 },
+			{ "item" : "arcana_essence_aquaEssence", "count" : 10 },
+			{ "item" : "arcana_essence_intimaEssence", "count" : 10 },
+			{ "item" : "arcana_essence_poisonEssence", "count" : 10 },
+			{ "item" : "arcana_essence_vileEssence", "count" : 10 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+    {
+      "animationState" : "stage_4",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "4_icon.png",
+        "placementImage" : "4.png:default.default",
+        "placementImagePosition" : [-24, -0],
+		"rarity" : "Essential",		
+
+        "description" : "The ultimate essence extractor that can extract most types of essence from materials.",
+        "shortdescription" : "^#dfcf4e;Gilded Essence Extractor^reset;",
+		"lightColor" : [100, 100, 40]
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_essenceExtractor/arcana_crafting_essenceExtractor_4.config",
+		"filter" : ["arcana_crafting_essenceExtractor"]
+	  },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+  
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_essenceExtractor_1.png:<color>",
+	  "image" : "1.png:<color>.<frame>",
+      "direction" : "left",
+	  "flipImages" : true,
       "imagePosition" : [-24, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "image" : "1.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

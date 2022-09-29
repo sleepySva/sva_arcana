@@ -1,0 +1,35 @@
+{
+  "metadata" : {
+    "name" : "arcana_superstormExpanse_dungeon_2",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"arcana_superstormExpanse_dungeon_2_part_1",
+	"arcana_superstormExpanse_dungeon_2_part_2"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_superstormExpanse_dungeon_2_part_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_2_part_1.json" ]
+    },
+    {
+      "name" : "arcana_superstormExpanse_dungeon_2_part_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_2_part_2.json" ]
+    }
+  ]
+}

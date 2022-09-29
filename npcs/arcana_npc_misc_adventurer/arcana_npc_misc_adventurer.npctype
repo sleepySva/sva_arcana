@@ -1,0 +1,116 @@
+{
+  "type" : "arcana_npc_misc_adventurer",
+  "baseType" : "villageguard",
+  
+  "matchColorIndices" : false,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "aviantier2head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "aviantier6shead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "novatier6shead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "pipehat", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hazmathead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "househathead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "boxmanhathead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "goldarmorhead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier1head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier2head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier3head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "novakidtier1head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "novakidtier2head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "hylotltier1head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "hylotltier2head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "apextier1head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "apextier2head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier1head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier2head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier6ahead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "buccaneerhead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "copperarmorhead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "chest" : [
+              { "name" : "hylotltier6achest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "hylotltier6mchest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "aviantier2chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "aviantier6schest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier1chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier2chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier3chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "novakidtier1chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "novakidtier2chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "hylotltier1chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "hylotltier2chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "apextier1chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "apextier2chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier1chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier2chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier6achest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "buccaneerchest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "copperarmorchest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "novatier6spants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "novatier5mpants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "aviantier2pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "aviantier6spants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier1pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier2pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "humantier3pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "novakidtier1pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "novakidtier2pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "hylotltier1pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "hylotltier2pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "apextier1pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "apextier2pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier1pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier2pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "florantier6apants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "buccaneerlegs", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+			  { "name" : "copperarmorpants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+			  "npcassaultrifle",
+              "npcshotgun",
+              "npcsniperrifle"
+            ],
+            "sheathedprimary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+			  "npcassaultrifle",
+              "npcshotgun",
+              "npcsniperrifle",
+			  "arcana_spell_ice_shiveringShot",
+			  "arcana_spell_fire_blisteringShot"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 190.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.6
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

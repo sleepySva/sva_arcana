@@ -1,0 +1,20 @@
+{
+  "materialId" : 16848,
+  "materialName" : "arcana_platform_necroiumPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_necroiumPlatform",
+  "shortdescription" : "Necroium Platform",
+  "description" : "A crude platform crafted from necroium.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_necroiumPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

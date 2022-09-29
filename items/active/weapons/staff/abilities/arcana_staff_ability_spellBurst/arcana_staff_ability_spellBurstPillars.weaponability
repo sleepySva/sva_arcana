@@ -1,0 +1,33 @@
+{
+  "animationCustom" : {
+    "sounds" : {
+      "impact" : [ "/sfx/gun/grenadeblast_ice2.ogg" ]
+    }
+  },
+  "ability" : {
+    "type" : "arcana_staff_ability_spellBurstPillars",
+    "name" : "Spell Burst",
+    "scripts" : ["/items/active/weapons/staff/abilities/arcana_staff_ability_spellBurstPillars/arcana_staff_ability_spellBurstPillars.lua"],
+    "class" : "ControlProjectile",
+
+    "energyCost" : 80,
+
+    "maxCastRange" : 120,
+
+    "projectileCount" : 7,
+    "projectileDistance" : 3,
+    "projectileType" : "arcana_spell_ice_iceSplinter_projectile_1",
+    "projectileParameters" : {
+      "baseDamage" : 40
+    },
+	
+    "pillarBaseDistance" : 2,
+    "pillarVerticalTolerance" : [-8, 0], // vertical offset from *player* position
+    "pillarMaxHeight" : 4,
+    "pillarDuration" : 2.0,
+
+	"projectileOffset" : [0,0],
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.15
+  }
+}

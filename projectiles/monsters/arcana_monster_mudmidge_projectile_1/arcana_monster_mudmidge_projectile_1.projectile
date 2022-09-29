@@ -1,0 +1,51 @@
+{
+  "projectileName" : "arcana_monster_mudmidge_projectile_1",
+  "image" : "body.png",
+  "physics" : "rain",
+  "animationCycle" : 0.5,
+  "frameNumber" : 15,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  
+  "timeToLive" : 3.0,
+  
+  "lightColor" : [70, 50, 30],
+  
+  "actionOnReap" : [
+    {
+	    "action" : "loop",
+		"count" : 3,
+		"body" : [
+		    {
+				"action" : "option",
+				"options" : [
+					{
+					  "action" : "projectile",
+					  "inheritDamageFactor" : 0.2,
+					  "inheritSpeedFactor" : 0.8,
+					  "type" : "arcana_monster_paintlin_projectile_1",
+					  "fuzzAngle" : 180
+					},
+					{
+					  "action" : "projectile",
+					  "inheritDamageFactor" : 0.2,
+					  "inheritSpeedFactor" : 0.8,
+					  "type" : "arcana_monster_paintlin_projectile_2",
+					  "fuzzAngle" : 180
+					},
+					{
+					  "action" : "projectile",
+					  "inheritDamageFactor" : 0.2,
+					  "inheritSpeedFactor" : 0.8,
+					  "type" : "arcana_monster_paintlin_projectile_3",
+					  "fuzzAngle" : 180
+					}
+				]
+			}
+		]
+	}
+  ],
+  "power" : 12.0,
+  "speed" : 50,
+  "damageKind" : "default"
+}

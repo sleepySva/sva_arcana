@@ -1,0 +1,21 @@
+{
+  "projectileName" : "arcana_spell_ice_icySlash_projectile_1",
+  "image" : "body.png",
+  "animationCycle" : 0.3,
+  "timeToLive" : 0.3,
+  "frameNumber" : 5,
+  "speed" : 50,
+  "orientationLocked" : true,
+  "damagePoly" : [ [-40, 24.5], [3.5, 24.5], [15.5, 21.5], [28.5, 15.5], [36.5, 7.5], [40.5, -1.5], [40.5, -12.5], [32.5, -24.5], [-12, -24.5] ],
+  "animationLoops" : true,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "icebroadsword",
+  "emitters" : [ ],
+  "lightColor" : [40, 150, 220],
+  "fullbright" : true,
+  "statusEffects" : ["arcana_status_shivery"],
+  "knockback" : 14,
+  "knockbackDirectional" : true
+}

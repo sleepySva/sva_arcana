@@ -1,9 +1,9 @@
 {
   "itemName" : "steelblades_shotgun_1",
-  "price" : 1000,
+  "price" : 920,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A shotgun made from verrostin. Used by the Steelblades.",
+  "description" : "A simple shogun used by the Steelbladess.",
   "shortdescription" : "Verrostin Demolisher",
   "tooltipKind" : "gun",
   "category" : "shotgun",
@@ -11,23 +11,38 @@
   "itemTags" : ["weapon","ranged","shotgun"],
   "level" : 8,
 
-  "inventoryIcon" : "steelblades_shotgun_1.png",
+  "inventoryIcon" : "body.png:default.1",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "animation.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "steelblades_shotgun_1.png",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_yellow.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.7, 0.2] //Same as baseOffset
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.3]
+		  }
+		}
+	  }
+	},
     "sounds" : {
-      "fire" : ["/sfx/gun/shotgun1.ogg"]
+      "fire" : ["/sfx/gun/plasma_pistol4.ogg"]
     }
   },
 
-  "baseOffset" : [1.2, 0.25],
-  "muzzleOffset" : [2.0, 0.2],
+  "baseOffset" : [0.7, 0.2],
+  "muzzleOffset" : [1.6, 0.2],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -38,18 +53,17 @@
     "class" : "GunFire",
 
     "fireTime" : 1.0,
-    "baseDps" : 18.0,
-    "energyUsage" : 54.0,
-    "inaccuracy" : 0.08,
+    "baseDps" : 13.0,
+    "energyUsage" : 48.0,
+    "inaccuracy" : 0.1,
 
-    "projectileCount" : 3,
+    "projectileCount" : 7,
     "fireType" : "auto",
 
-    "projectileType" : "steelblades_sniperRifle_1_projectile_1",
+    "projectileType" : "steelblades_sniperRifle_1_projectile_2",
     "projectileParameters" : {
-      "damageKind" : "shotgunbullet",
-	  "speed" : 120,
-      "knockback" : 28
+	  "speed" : 110,
+      "knockback" : 16
     },
     "stances" : {
       "idle" : {
@@ -62,17 +76,17 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "duration" : 0.05,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
         "twoHanded" : true,
 
         "allowRotate" : false,

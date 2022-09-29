@@ -1,0 +1,25 @@
+{
+  "projectileName" : "arcana_boss_myriadTerror_projectile_death_spawner",
+  "image" : "arcana_boss_myriadTerror_projectile_death_spawner.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "animationLoops" : true,
+  "fullbright" : true,
+  "flippable" : true,
+  "damageKind" : "plasma",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/boss/arcana_boss_myriadTerror/arcana_boss_myriadTerror_projectile_death/arcana_boss_myriadTerror_projectile_death.config"
+    }
+  ],
+  "timeToLive" : 1.2,
+
+  "lightColor" : [225, 225, 225],
+  "pointLight" : true,
+
+  "piercing" : true,
+  "bounces" : -1,
+  "power" : 0,
+  "speed" : 0
+}

@@ -1,0 +1,34 @@
+{
+  "objectName" : "giltenfuelhatch",
+  "colonyTags" : ["gilten"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "container",
+  "description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive.",
+  "shortdescription" : "FTL Fuel Hatch",
+  "race" : "gilten",
+  "lightColor" : [61, 88, 102],
+  "inventoryIcon" : "icon.png",
+  
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+      "imagePosition" : [-8, -16],
+      "frames" : 4,
+      "animationCycle" : 0.7,
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  "hasWindowIcon" : false,
+  "recipeGroup" : "fuel",
+  "slotCount" : 6,
+  "uiConfig" : "/interface/fuel/fuel.config",
+  "autoCloseCooldown" : 3600,
+  "frameCooldown" : 5,
+  "itemTags" : [ "newfuelhatch" ],
+  "scripts" : ["/stagehands/radiomessage.lua"],
+  "scriptDelta" : 30,
+  "broadcastArea" : [-5, -5, 5, 5],
+  "radioMessage" : "fuel"
+}

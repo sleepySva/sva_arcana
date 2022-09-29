@@ -3,7 +3,7 @@
 	"charCreationTooltip" : {
 	"title" : "Arcanian",
 	"subTitle" : "SiO2",
-	"description" : "A race of desert dwellers, hardened by the rough nature of their environment. They evolved to a natural sense of the arcane. Now resting in their oases, they pursue matters of the arcane and scholarly."
+	"description" : "The ^#50c5b5;Arcanians^reset; are a race of desert dwellers, hardened by the rough nature of their environment. They evolved to a natural sense of the arcane. Now resting in their oases, they pursue matters of the arcane and scholarly."
   },
   "nameGen" : [ "/species/arcanianmalenamegen.config:names", "/species/arcanianfemalenamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/arcanianhurt_male1.ogg", "/sfx/humanoid/arcanianhurt_female1.ogg" ],
@@ -80,8 +80,8 @@
       "image" : "/interface/title/arcanianmaleico.png",
       "characterImage" : "/interface/title/arcanianmale.png",
       "hair" : [ "fem1", "fem2", "fem3", "fem4", "fem5", "fem6", "fem7", "fem8", "fem9", "fem10", "fem11", "fem12", "fem13", "fem14", "fem15", "fem16", "fem17", "fem18", "fem19", "fem20" ],
-      "shirt" : [ "arcana_armor_starwalker_chest", "avianadventurershirt" ],
-      "pants" : [ "arcana_armor_starwalker_legs", "avianadventurerpants" ],
+      "shirt" : [ "arcana_armor_starwalker_chest" ],
+      "pants" : [ "arcana_armor_starwalker_legs" ],
       "facialHairGroup" : "",
       "facialHair" : [ ],
       "facialMaskGroup" : "",
@@ -152,7 +152,7 @@
     //RED
     { "d9c189" : "CD1C38", "a38d59" : "982441", "735e3a" : "69243F" },
     //DARK RED
-    { "d9c189" : "ad2716", "a38d59" : "8f1f1b", "735e3a" : "731a1a" },
+    { "d9c189" : "ad2716", "a38d59" : "801c18", "735e3a" : "491715" },
     //RUSTY RED
     { "d9c189" : "BE471B", "a38d59" : "9B2F0C", "735e3a" : "702710" },
     //BROWN
@@ -174,7 +174,9 @@
     //LIGHT GREEN
     { "d9c189" : "A7D13D", "a38d59" : "83AD22", "735e3a" : "6B880B" },
     //GREEN
-    { "d9c189" : "4ece61", "a38d59" : "34ae47", "735e3a" : "228a38" },
+    { "d9c189" : "518e8b", "a38d59" : "49627c", "735e3a" : "373450" },
+    //GREEN
+    { "d9c189" : "79a5ba", "a38d59" : "3d748e", "735e3a" : "43424d" },
     //DARK GREEN
     { "d9c189" : "3b7f44", "a38d59" : "2e6a38", "735e3a" : "1d4b28" },
     //TORQUOISE

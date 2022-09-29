@@ -9,15 +9,19 @@
     "class" : "AxeCleave",
 	
 	"projectileCount" : 2,
-    "projectileDistance" : 1.2,
+	"projectileRotation" : 1.4,
+    "projectileOffset" : [1.0, 0.0],
     "projectileType" : "arcana_projectile_basic_1",
     "projectileParameters" : {
       "baseDamage" : 10
     },
 
     "fireTime" : 0.8,
+	"windupTime" : 0.6,
+	
 	"baseDamage" : 8,
     "baseDps" : 6.5,
+	
     "damageConfig" : {
       "damageSourceKind" : "axe",
       "statusEffects" : [ ],
@@ -64,6 +68,8 @@
         "duration" : 0.4,
         "armRotation" : -45,
         "weaponRotation" : -45,
+        "endArmRotation" : -55,
+        "endWeaponRotation" : -55,
         "weaponOffset" : [0.25, 2.75],
         "twoHanded" : false,
 

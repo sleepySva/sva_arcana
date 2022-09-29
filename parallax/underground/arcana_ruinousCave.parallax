@@ -1,0 +1,36 @@
+{
+  "layers" : [
+    {
+      "kind" : "tile/arcana_ruinous_brainsfront",
+      "nohueshift" : false,
+      "lightMapped" : true,
+      "parallax" : 1.2,
+      "repeatY" : true,
+      "unlit" : false
+    },
+    {
+      "kind" : "tile/stalagtentacles",
+      "nohueshift" : false,
+      "lightMapped" : true,
+      "parallax" : 1.4,
+      "repeatY" : true
+    },
+    {
+      "kind" : "tile/arcana_ruinous_energyrock",
+	  "noRandomOffset" : true,
+      "nohueshift" : false,
+      "lightMapped" : true,
+      "parallax" : 1.7,
+      "repeatY" : true
+    },
+    {
+      "kind" : "tile/arcana_ruinous_energyrock_fullbright",
+	  "noRandomOffset" : true,
+	  "unlit" : true,
+      "nohueshift" : false,
+      "lightMapped" : true,
+      "parallax" : 1.7,
+      "repeatY" : true
+    }
+  ]
+}

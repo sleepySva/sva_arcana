@@ -1,0 +1,27 @@
+{
+  "itemName" : "arcana_lootbox_legendaryTreasure_T4",
+  "price" : 3000,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "A bag that contains a mysterious ^#ab5be6;legendary^reset; reward!",
+  "shortdescription" : "Legendary Treasure ^orange;[T4]^reset;",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "arcana_lootbox_legendaryTreasure.png",
+  "animation" : "arcana_lootbox.animation",
+  "animationParts" : {
+	"gun" : "arcana_lootbox_legendaryTreasure.png"
+  },
+  "animationCustom" : {},
+  "scripts" : ["arcana_lootbox.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "arcana_lootbox_legendaryTreasure",
+    "level" : 4
+  }
+}

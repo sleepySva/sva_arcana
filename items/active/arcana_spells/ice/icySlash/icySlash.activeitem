@@ -1,0 +1,122 @@
+{
+  "itemName" : "arcana_spell_ice_icySlash",
+  "price" : 0,
+  "maxStack" : 1,
+  "level" : 1,
+  "rarity" : "Legendary",
+  "description" : "Summons an icy blade to cut through your enemies. ^green;Inflicts 1 stack of Shivery, designed for close combat.^reset;",
+  "shortdescription" : "^#1276e5;< ^reset;Icy Slash^#1276e5; >^reset;",
+  "category" : "wand",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","wand","spell","ranged"],
+  "tooltipFields" : {"subtitle" : "Spell"},
+  "tooltipKind" : "arcana_spell_ice",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "staff" : "body.png",
+    "stone" : "fullbright.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [0, 0, 0]
+      }
+    }
+  },
+
+  "inventoryIcon" : "icon.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.0,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.2,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.1,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_staff_ability_spellBurst",
+  "primaryAbility" : {
+
+    "name" : "Icy Slash",
+	"energyCost" : 90,
+	
+	"projectileType" : ["arcana_spell_ice_icySlash_projectile_1","arcana_spell_ice_icySlash_projectile_2"],
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/arcana_staff_ability_spellBurst/arcana_staff_ability_spellBurstVariant.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 1,
+    "projectileDistance" : 1,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "projectileParameters" : {
+      "baseDamage" : 13,
+      "statusEffects" : [ "arcana_status_shivery" ]
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

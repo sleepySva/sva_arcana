@@ -2,30 +2,40 @@
   "objectName" : "arcana_crafting_anvil_2",
   "colonyTags" : ["crafting"],
   "rarity" : "Legendary",
-  "description" : "An anvil infused with arcane magic.",
-  "shortdescription" : "^#ecb297;Arcanium Anvil^reset;",
+  "description" : "Replacement",
+  "shortdescription" : "Replacement",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1200,
+  "price" : 1,
   
-  "lightColor" : [120, 160, 160],
-
-  "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_anvil/arcana_crafting_anvil_2.config",
-	"filter" : ["arcana_crafting_anvil_1", "arcana_crafting_anvil_2"]
-  },
-
+  "breakDropOptions" : [
+	[ [ "arcana_crafting_anvil_1", 1, { } ] ]
+  ],
+  "printable" : false,
   "inventoryIcon" : "icon.png",
+  
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_anvil_2.png:<color>",
-      "imagePosition" : [-40, 0],
+	  "image" : "body.png:<color>.<frame>",
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-0, 0],
       "frames" : 1,
-      "animationCycle" : 0.5,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
+
+    },
+	{
+	  "image" : "body.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
 
     }
   ]

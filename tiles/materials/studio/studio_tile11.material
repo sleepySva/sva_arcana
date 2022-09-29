@@ -1,0 +1,21 @@
+{
+  "materialId" : 16315,
+  "materialName" : "studio_tile11",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile11",
+  "description" : "A barely saturated blue roofing tile.",
+  "shortdescription" : "Morose Roof Tile",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile11.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 300
+  }
+}

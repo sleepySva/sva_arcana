@@ -1,0 +1,21 @@
+{
+  "materialId" : 16304,
+  "materialName" : "romantic_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "romantic_tile4",
+  "description" : "A white stone column that is frequently used by Gilten architects and sculptors.",
+  "shortdescription" : "Gallica Column Tile",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "romantic_tile4.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2302
+  }
+}

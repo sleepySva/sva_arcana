@@ -1,0 +1,26 @@
+{
+  "objectName" : "arcana_archaic_deco_11",
+  "colonyTags" : ["misc","arcana_archaic"],
+  "rarity" : "Common",
+  "description" : "An old map with ancient writings scribbled within.",
+  "shortdescription" : "Archaic Map",
+  "race" : "gilten",
+  "category" : "decorative",
+  "price" : 230,
+  
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

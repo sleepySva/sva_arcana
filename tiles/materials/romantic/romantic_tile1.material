@@ -1,0 +1,21 @@
+{
+  "materialId" : 16301,
+  "materialName" : "romantic_tile1",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "romantic_tile1",
+  "description" : "A white smooth stone brick that is frequently used by Gilten architects and sculptors.",
+  "shortdescription" : "Gallica Smooth Stone",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "romantic_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2301
+  }
+}

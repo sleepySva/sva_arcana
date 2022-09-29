@@ -53,6 +53,7 @@ function serpentineStrike:dash()
   util.wait(self.dashTime, function(dt)
 
     mcontroller.setVelocity({self.weapon.aimDirection * self.dashSpeed, -200})
+	mcontroller.setYVelocity(0)
     mcontroller.controlMove(self.weapon.aimDirection)
 
     local direction = vec2.norm(world.distance(mcontroller.position(), position))

@@ -1,0 +1,31 @@
+{
+  "objectName" : "giltenshiplockerTier0",
+  "colonyTags" : ["gilten","storage"],
+  "printable" : false,
+  "rarity" : "Common",
+  
+  "category" : "decorative",
+  "description" : "A locker. Store some stuff, why don't you?",
+  "shortdescription" : "Ship Locker",
+  "race" : "gilten",
+  "lightColor" : [70, 70, 30],
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [-16, -8],
+      "frames" : 8,
+      "animationCycle" : 1,
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  "animation" : "/objects/noisy/noisy.animation",
+  "scripts" : [
+    "/objects/noisy/noisy.lua"
+  ],
+  
+  "sounds" : [ "/sfx/interface/clickon_error.ogg" ]
+  
+}

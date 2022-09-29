@@ -1,0 +1,312 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword_fire2.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_axe_fire1.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	  "fire4" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	  "fire5" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	  "fire6" : [ "/sfx/melee/swing_axe_fire3.ogg" ],
+	  "fire7" : [ "/sfx/melee/swing_axe_fire3.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Combo Slash",
+    "type" : "arcana_greatspear_combo",
+    "scripts" : ["/items/active/weapons/melee/abilities/greatspear/arcana_greatspear_combo.lua"],
+    "class" : "MeleeCombo",
+
+    "comboSteps" : 7,
+
+    "flashTime" : 0.3,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+	
+    "shakeProjectileType" : "arcana_projectile_scouteye",
+    "shakeProjectileParameters" : {
+      "timeToLive" : 0.01,
+      "speed" : 0
+    },
+	
+	"projectileCount" : 1,
+	"projectileType" : "artifact_greatspear_luxiant_projectile_1",
+    "projectileDistance" : 3.0,
+	"projectileOffset" : [0.4, -0.4],
+    "projectileParameters" : {
+      "baseDamage" : 22
+    },
+	
+    "baseDamage" : 22,
+	"baseDamageFactor" : 1.0,
+
+    "swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [0.4, 0.0, 3.4, 2.0],
+      [0.4, 0.0, 3.4, 2.0],
+	  [0.4, 0.0, 3.4, 2.0],
+	  [0.75, 0.0, 4.25, 5.0],
+	  [0.75, 0.0, 4.25, 5.0],
+	  [0.4, 0.0, 3.4, 2.0]
+    ],
+
+    // cooldown time multiplier for steps after the first, compounded per combo step
+    "comboSpeedFactor" : 0.6,
+
+    "edgeTriggerGrace" : 0.6,
+
+    "fireTime" : 1.4,
+    "baseDps" : 11.5,
+
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 8
+      },
+      {
+        "baseDamageFactor" : 0.9,
+        "knockback" : 14
+      },
+      {
+        "baseDamageFactor" : 0.8,
+        "knockback" : 12
+      },
+      {
+        "baseDamageFactor" : 0.7,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.1,
+        "knockback" : 6
+      },
+      {
+        "baseDamageFactor" : 1.2,
+        "knockback" : 6
+      },
+      {
+        "baseDamageFactor" : 1.8,
+        "knockback" : 28
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 60,
+        "allowRotate" : true,
+        "allowFlip" : true,
+		"twoHanded" : false
+      },
+      "windup1" : {
+        "duration" : 0.5,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.05,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.3,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+	  
+      "windup2" : {
+        "duration" : 0.28,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire2" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "wait2" : {
+        "duration" : 0.04,
+        "armRotation" : 2,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup3" : {
+        "duration" : 0.08,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "wait3" : {
+        "duration" : 0.04,
+        "armRotation" : 2,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup4" : {
+        "duration" : 0.08,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire4" : {
+        "duration" : 0.2,
+        "armRotation" : 2,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "wait4" : {
+        "duration" : 0.02,
+        "armRotation" : 2,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  
+      "windup5" : {
+        "duration" : 0.5,
+        "armRotation" : -20,
+        "weaponRotation" : -90,
+        "endArmRotation" : 90,
+        "endWeaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire5" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait5" : {
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup6" : {
+        "duration" : 0.5,
+        "armRotation" : -130,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire6" : {
+        "duration" : 0.3,
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "wait6" : {
+        "duration" : 0.2,
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+	  
+      "windup7" : {
+        "duration" : 0.7,
+		
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "endArmRotation" : -150,
+        "endWeaponRotation" : 55,
+		
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire7" : {
+        "duration" : 0.5,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "wait7" : {
+        "duration" : 0.7,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  }
+}

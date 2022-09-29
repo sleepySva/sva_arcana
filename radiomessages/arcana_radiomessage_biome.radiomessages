@@ -1,21 +1,28 @@
 {
   "arcana_status_energyDrain" : {
     "unique" : false,
-    "text" : "WARNING! ENERGY REGENERATION IS DIMINISHED!\nThe Arcane powers on this planet have interfered with your ability to regenerate energy.",
+    "text" : "^red;WARNING!^reset; ENERGY REGENERATION IS DIMINISHED!\nThe Arcane powers on this planet have interfered with your ability to regenerate energy.",
     "portraitImage" : "yell.<frame>",
     "textSpeed" : 70
   },
   
   "arcana_status_radiance" : {
     "unique" : false,
-    "text" : "WARNING! OVERFLOWING RADIANCE DETECTED!\nLumen lights have flooded this planet and will start to drain your health continuously.",
+    "text" : "^red;WARNING!^reset; OVERFLOWING RADIANCE DETECTED!\nLumen lights have flooded this planet and will start to drain your health continuously.",
     "portraitImage" : "yell.<frame>",
     "textSpeed" : 70
   },
   
   "arcana_status_supercharged" : {
     "unique" : false,
-    "text" : "WARNING! ENERGY ACCUMULATION EXCEEDS SAFE LIMIT!\nDangerous Electric energy have engulfed this planet, you should equip an EPP before venturing further.",
+    "text" : "^red;WARNING!^reset; ENERGY ACCUMULATION EXCEEDS SAFE LIMIT!\nDangerous Electric energy has engulfed this planet, you should equip an EPP before venturing further.",
+    "portraitImage" : "yell.<frame>",
+    "textSpeed" : 70
+  },
+  
+  "arcana_status_cataclysm" : {
+    "unique" : false,
+    "text" : "^red;WARNING!^reset; YOU ARE REPELLED BY UNFATHOMABLE COSMIC POWER.\nDo not venture further without proper EPP, or you risk certain death.",
     "portraitImage" : "yell.<frame>",
     "textSpeed" : 70
   }

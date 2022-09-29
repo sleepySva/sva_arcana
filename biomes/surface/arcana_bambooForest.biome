@@ -2,6 +2,8 @@
   "name" : "arcana_bambooForest",
   "friendlyName" : "Bamboo Forest",
 
+  "statusEffects" : [ "arcana_status_cataclysm" ],
+
   "spawnProfile" : {
     "groups" : [
       {
@@ -269,7 +271,15 @@
         "type" : "microdungeon",
         "microdungeons" : [ "forestmicrodungeons" ]
       },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
 
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_dungeon_general_lush" ]
+      },
       {
         "mode" : "floor",
         "priority" : 1,

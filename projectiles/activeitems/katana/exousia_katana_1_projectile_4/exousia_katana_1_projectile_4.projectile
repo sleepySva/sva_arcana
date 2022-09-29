@@ -1,0 +1,76 @@
+{
+  "projectileName" : "exousia_katana_1_projectile_4",
+  "image" : "exousia_katana_1_projectile_4.png",
+  "animationCycle" : 0.7,
+  "timeToLive" : 0.7,
+  "frameNumber" : 5,
+  "speed" : 80,
+  "orientationLocked" : true,
+  "damagePoly" : [ [-40, 24.5], [3.5, 24.5], [15.5, 21.5], [28.5, 15.5], [36.5, 7.5], [40.5, -1.5], [40.5, -12.5], [32.5, -24.5], [-12, -24.5] ],
+  "animationLoops" : true,
+  "piercing" : true,
+  "bounces" : 0,
+  "flippable" : true,
+  "damageKind" : "plasma",
+  "emitters" : [ "arcana_particle_ember_red", "arcana_particle_electric_red", "arcana_particle_flame_large_red"],
+  "lightColor" : [100, 30, 120],
+  "fullbright" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_red_energy/arcana_explosion_bullet_red_energy.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "exousia_imperialArmy_3_sniperRifle_3_projectile_1",
+        "angleAdjust" : -45,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+        "action" : "projectile",
+        "type" : "exousia_imperialArmy_3_sniperRifle_3_projectile_1",
+        "angleAdjust" : 45,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+        "action" : "projectile",
+        "type" : "exousia_imperialArmy_3_sniperRifle_3_projectile_1",
+        "angleAdjust" : 135,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.8
+    },
+	{
+        "action" : "projectile",
+        "type" : "exousia_imperialArmy_3_sniperRifle_3_projectile_1",
+        "angleAdjust" : 225,
+        "inheritDamageFactor" : 0.4,
+        "inheritSpeedFactor" : 0.8
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/katana/exousia_katana_1_projectile_2/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.4,
+        "destructionAction" : "shrink",
+        "fullbright" : false
+      }
+    }
+  ],
+  
+  "statusEffects" : [],
+  "knockback" : 22,
+  "knockbackDirectional" : true
+}

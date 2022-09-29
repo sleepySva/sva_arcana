@@ -1,0 +1,26 @@
+{
+  "objectName" : "arcana_romantic_table_1",
+  "colonyTags" : ["misc","arcana_romantic"],
+  "rarity" : "Rare",
+  "description" : "A small table for layering plant pots.",
+  "shortdescription" : "Mansion Plant Stand",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 40,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
+

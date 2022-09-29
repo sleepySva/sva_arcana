@@ -2,6 +2,21 @@
   //                                       CROP HARVEST POOLS
   // ==============================================================================================
 {
+
+  "arcana_farmable_windflower" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.89, "item" : "arcana_flowers_windflower"},
+        {"weight" : 0.01, "item" : "arcana_farmable_windflowerSeed"},
+        {"weight" : 0.1, "item" : "plantfibre"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
+  ],
+
   "arcana_farmable_wildPraire" : [
     [0, {
       "pool" : [
@@ -12,6 +27,17 @@
       "poolRounds" : [
         [0.6, 1],
         [0.4, 2]
+      ]
+    } ]
+  ],
+  
+  "arcana_farmable_whiteDaisy" : [
+    [0, {
+      "pool" : [
+        {"weight" : 1.0, "item" : "arcana_flowers_whiteDaisy"}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
       ]
     } ]
   ],
@@ -40,6 +66,36 @@
       "poolRounds" : [
         [0.6, 1],
         [0.4, 2]
+      ]
+    } ]
+  ],
+  
+  "arcana_farmable_amberplum" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.89, "item" : "arcana_farmable_amberplum"},
+        {"weight" : 0.01, "item" : "arcana_farmable_amberplumSeed"},
+        {"weight" : 0.1, "item" : "plantfibre"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
+  ],
+  
+  "arcana_farmable_wintercorn" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.79, "item" : "arcana_farmable_wintercorn"},
+        {"weight" : 0.01, "item" : "arcana_farmable_wintercornSeed"},
+		{"weight" : 0.1, "item" : "snowflake"},
+        {"weight" : 0.1, "item" : "plantfibre"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.2, 2],
+		[0.2, 3]
       ]
     } ]
   ]

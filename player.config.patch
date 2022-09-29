@@ -4,11 +4,23 @@
 		"value" : "arcanian"
 	},
 	{ "op" : "add",
+		"path" : "/species/-",
+		"value" : "gilten"
+	},
+	{ "op" : "add",
 		"path" : "/defaultCodexes/arcanian",
 		"value" : [ "protectorate1", "protectorate2" ]
 	},
 	{ "op" : "add",
 		"path" : "/deploymentConfig/speciesStarterMechBody/arcanian",
+		"value" : "mechbodyhumanproto"
+	},
+	{ "op" : "add",
+		"path" : "/defaultCodexes/gilten",
+		"value" : [ "protectorate1", "protectorate2" ]
+	},
+	{ "op" : "add",
+		"path" : "/deploymentConfig/speciesStarterMechBody/gilten",
 		"value" : "mechbodyhumanproto"
 	},
 	{

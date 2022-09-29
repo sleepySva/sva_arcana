@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "headarmour",
-  "description" : "A light circlet. ^green;+5% Poison and Ice res.^reset;",
+  "description" : "A light circlet. ^green;+5% Poison res.^reset;",
   "shortdescription" : "Alchemilla Circlet",
   "tooltipKind" : "armor",
 
@@ -38,11 +38,6 @@
     {
       "levelFunction" : "arcana_multiplier_static",
       "stat" : "poisonResistance",
-      "amount" : 0.05
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "iceResistance",
       "amount" : 0.05
     }
   ],

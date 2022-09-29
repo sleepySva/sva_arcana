@@ -1,0 +1,21 @@
+{
+  "materialId" : 16302,
+  "materialName" : "romantic_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "romantic_tile2",
+  "description" : "A white stone pillar that is frequently used by Gilten architects and sculptors.",
+  "shortdescription" : "Gallica Stone Pillar",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "romantic_tile2.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2303
+  }
+}

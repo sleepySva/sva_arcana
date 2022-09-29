@@ -1,0 +1,31 @@
+{
+  "itemName" : "arcana_parasol_black",
+  "price" : 300,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "tool",
+  "description" : "Open to gently float while falling. It's bad luck to open inside the house.",
+  "shortdescription" : "Black Parasol",
+  "tooltipKind" : "base",
+  "twoHanded" : false,
+
+  "inventoryIcon" : "arcana_parasol_black.png:open",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+	"parasol" : "arcana_parasol_black.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["lua.lua"],
+
+  "idleRotation" : -45,
+  "activeRotation" : -10,
+  "switchTime" : 0.3,
+  "fallingParameters" : {
+    "airForce" : 30,
+    "runSpeed" : 14,
+    "walkSpeed" : 14
+  },
+  "maxFallSpeed" : -14
+}

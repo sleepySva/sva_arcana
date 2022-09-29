@@ -1,0 +1,21 @@
+{
+  "materialId" : 16306,
+  "materialName" : "studio_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile2",
+  "description" : "An acacia beam made for modern homes.",
+  "shortdescription" : "Studio Acacia Beam",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1309
+  }
+}

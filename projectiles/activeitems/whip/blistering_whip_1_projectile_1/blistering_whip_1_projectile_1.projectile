@@ -1,0 +1,19 @@
+{
+  "projectileName" : "blistering_whip_1_projectile_1",
+  "physics" : "illusion",
+  "image" : "whipcrackenergy.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "timeToLive" : 0.25,
+  "power" : 50,
+  "speed" : 0,
+  "piercing" : true,
+  "actionOnReap" : [],
+  "fullbright" : true,
+  "lightColor" : [40, 80, 160],
+  "emitters" : [ "fireflames", "fireplasma" ],
+  "damageKind" : "fire",
+  "damagePoly" : [ [-6, 0], [0, 6], [6, 0], [0, -6] ],
+  "knockback" : 15,
+  "knockbackDirectional" : true
+}

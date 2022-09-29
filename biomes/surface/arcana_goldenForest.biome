@@ -2,7 +2,7 @@
   "name" : "arcana_goldenForest",
   "friendlyName" : "Golden Forest",
   
-  "statusEffects" : [ "arcana_status_radiance" ],
+  "statusEffects" : [],
 
   "spawnProfile" : {
     "groups" : [
@@ -17,9 +17,19 @@
       {
         "select" : 1,
         "pool" : [
-          [ 0.4, "frostfly" ],
-          [ 0.3, "icetip" ],
-          [ 0.3, "frostfleck" ]
+          [ 1.0, "arcana_trispiel" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1.0, "arcana_masteroidmid" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1.0, "goldbuck" ]
         ]
       },
       {
@@ -37,6 +47,18 @@
       {
         "select" : 2,
         "pool" : "generatedFlying"
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "arcana_birdcritter" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "arcana_owlcritter" ]
+        ]
       },
       {
         "select" : 2,
@@ -68,20 +90,20 @@
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [120, 120, 40], [160, 200, 200] ],
-      "dayColors" : [ [100, 204, 245], [200, 215, 245] ],
+      "dayColors" : [ [172, 219, 216], [255, 255, 166] ],
       "eveningColors" : [ [125, 17, 158], [200, 52, 100] ],
       "nightColors" : [ [24, 38, 80, 80], [58, 42, 90, 160] ],
 
       "morningLightColor" : [80, 60, 80],
-      "dayLightColor" : [160, 160, 200],
+      "dayLightColor" : [230, 230, 200],
       "eveningLightColor" : [140, 100, 180],
       "nightLightColor" : [40, 20, 80]
     }
   ],
 
   "mainBlock" : "goldenForest_tile1",
-  "subBlocks" : [ "goldenForest_tile2", "arcaneForest_tile3" ],
-  "ores" : "arcana_arcaneSea_ores_surface",
+  "subBlocks" : [ "ambersoil_tile1", "azureDesert_tile1", "empyrean_tile1", "goldenForest_tile2" ],
+  "ores" : "arcana_empyrean_ores_surface",
 
   "parallax" : "/parallax/surface/arcana_goldenForest.parallax",
 
@@ -97,34 +119,21 @@
   "musicTrack" : {
     "day" : {
       "tracks" : [
-	  "/music/elegy-of-the-star.ogg",
-	  "/music/frozen-in-time.ogg",
-	  "/music/gallyri-islands.ogg",
-	  "/music/over-the-spring-horizon.ogg",
-	  "/music/woodland-trance.ogg",
-	  "/music/jupiter.ogg",
-	  "/music/hymn-to-the-stars.ogg",
-	  "/music/haiku.ogg",
-	  "/music/m54.ogg"
+	  "/music/ophelia.ogg",
+	  "/music/permafrost.ogg"
 	  ]
     },
     "night" : {
       "tracks" : [
-	  "/music/elegy-of-the-star.ogg",
-	  "/music/frozen-in-time.ogg",
-	  "/music/gallyri-islands.ogg",
-	  "/music/drift-far.ogg",
-	  "/music/woodland-trance.ogg",
-	  "/music/jupiter.ogg",
-	  "/music/tranquility-base.ogg",
-	  "/music/psyche.ogg",
-	  "/music/eridanus-supervoid.ogg"
+	  "/music/auric.ogg"
 	  ]
     }
   },
 
   "surfacePlaceables" : {
 	
+    "grassMod" : [ "arcana_mod_goldenGrass" ],
+    "grassModDensity" : 0.8,
 	"ceilingGrassMod" : [ "undergrowth" ],
     "ceilingGrassModDensity" : 0.5,
 
@@ -156,10 +165,19 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+        "distribution" : "/biomes/distributions.config:rare",
 
         "type" : "microdungeon",
-        "microdungeons" : [ "forestmicrodungeons" ]
+        "microdungeons" : [ "arcana_empyrean_dungeon_1" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:veryRare",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_dungeon_general_lush" ]
       },
       {
         "mode" : "floor",
@@ -169,15 +187,6 @@
 
         "type" : "microdungeon",
         "microdungeons" : [ "encounterdungeons" ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 1,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
-
-        "type" : "microdungeon",
-        "microdungeons" : [ "arcana_arcaneForest_dungeon_1" ]
       },
       {
         "mode" : "floor",
@@ -195,15 +204,6 @@
       },
       {
         "mode" : "floor",
-        "priority" : 0.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:overgroundChests",
-
-        "type" : "treasureBox",
-        "treasureBoxSets" : [ "forestChest" ]
-      },
-      {
-        "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:overgroundRareChests",
@@ -212,6 +212,20 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:randomEncounterUnderground",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "arcana_archaic_deco_4" ], [1, "arcana_archaic_light_5" ] ],
             "parameters" : { }
           }
         ]
@@ -232,7 +246,7 @@
         "distribution" : "/biomes/distributions.config:denseSmall",
 
         "type" : "grass",
-        "grasses" : [ "grass", "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "arcana_arcaneForest_grass_1" ]
+        "grasses" : [ "arcana_empyrean_grass_1" ]
       },
       {
         "mode" : "floor",
@@ -243,23 +257,23 @@
         "type" : "bush",
         "bushes" : [
           {
-            "name" : "testbush",
-            "baseHueShiftMax" : 180,
-            "modHueShiftMax" : 180
+            "name" : "arcana_empyrean_bush_1",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
           }
         ]
       },
       {
         "mode" : "floor",
-        "priority" : 2.0,
+        "priority" : 1.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:denseLarge",
 
         "type" : "tree",
-        "treeFoliageHueShiftMax" : 10,
-        "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "birch", "cocoa", "fleshy", "grumpy", "pine", "roottree", "slimey", "something", "spikey", "twisted", "wood", "slobby", "pineytree" ],
-        "treeFoliageList" : [ "arcana_goldenForest_foliage_1" ]
+        "treeFoliageHueShiftMax" : 1,
+        "treeStemHueShiftMax" : 1,
+        "treeStemList" : [ "amorous" ],
+        "treeFoliageList" : [ "skyoak" ]
       },
       {
         "mode" : "floor",
@@ -270,26 +284,24 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildcarrotseed" ] ],
+            "pool" : [ [1, "arcana_farmable_amberplumSeed_wild" ] ],
             "parameters" : {
-              "startingStage" : 3
+              "startingStage" : 2
             }
           }
         ]
       },
       {
         "mode" : "floor",
-        "priority" : 0,
+        "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:surfaceCrops",
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
 
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildautomatoseed" ] ],
-            "parameters" : {
-              "startingStage" : 4
-            }
+            "pool" : [ [1.0, "arcana_farmable_whiteDaisySeed" ] ],
+            "parameters" : { "startingStage" : 2 }
           }
         ]
       }
@@ -349,25 +361,41 @@
         ]
       },
       {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "arcana_farmable_amberplumSeed_wild" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
         "mode" : "ceiling",
         "priority" : 2.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:denseMedium",
 
         "type" : "tree",
-        "treeFoliageHueShiftMax" : 160,
-        "treeStemHueShiftMax" : 10,
-        "treeStemList" : [ "desertvine", "rootvine" ],
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "goldenvine" ],
         "treeFoliageList" : [ "" ]
       },
       {
         "mode" : "floor",
-        "priority" : 2.0,
+        "priority" : 3.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:scatteredSmall",
 
         "type" : "grass",
-        "grasses" : [ "arcana_arcaneForest_grass_1" ]
+        "grasses" : [ "arcana_empyrean_grass_1" ]
       }
     ]
   }

@@ -1,31 +1,35 @@
 {
   "projectileName" : "misc_axe_blackout_projectile_1",
-  "physics" : "sticky",
+  "physics" : "laser",
   
-  "timeToLive" : 4,
+  "timeToLive" : 0.4,
   "bounces" : 0,
-  "speed" : 60,
+  "speed" : 72,
   
   "image" : "misc_axe_blackout_projectile_1.png",
   "animationCycle" : 0.2,
   "frameNumber" : 1,
   
   "fullbright" : true,
-  "lightColor" : [40, 50, 60],
-  "emitters" : ["arcana_particle_white"],
+  "lightColor" : [173, 15, 66],
+  "emitters" : ["arcana_particle_ember_pink"],
   
   "supportsProcessing" : true,
   
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
-    }
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_pink.config"
+    },
+	{
+      "action" : "sound",
+      "options" : [ "/sfx/gun/impact_plasma.ogg" ]
+	}
   ],
   
   "periodicActions" : [
     {
-      "time" : 0.066,
+      "time" : 0.02,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
@@ -34,14 +38,16 @@
         "image" : "/projectiles/activeitems/axe/misc_axe_blackout_projectile_1/misc_axe_blackout_projectile_1_trail.png",
         "position" : [0, 0],
         "layer" : "back",
-        "timeToLive" : 0.2,
-        "destructionTime" : 0.2,
-        "destructionAction" : "fade",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
         "fullbright" : true
       }
     }
   ],
   
-  "damageKind" : "default"
- 
+  "damageKind" : "default",
+  "scripts" : [ "/scripts/projectiles/zigzagprojectile.lua" ],
+  "zigZagTime" : 0.1,
+  "zigZagAngle" : 0.4
 }

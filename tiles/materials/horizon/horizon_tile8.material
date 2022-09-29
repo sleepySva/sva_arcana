@@ -1,0 +1,21 @@
+{
+  "materialId" : 16330,
+  "materialName" : "horizon_tile8",
+  "particleColor" : [70, 70, 70, 255],
+  "itemDrop" : "horizon_tile8",
+  "description" : "A reinforced solid defense wall.",
+  "shortdescription" : "Reinforced Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "horizon_tile8.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 599
+  }
+}

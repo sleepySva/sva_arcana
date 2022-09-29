@@ -1,10 +1,78 @@
 
 {
 
+  "arcana_npcdrops_horizon_disciple" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_misc_horizonDiscipleBadge", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["money", 100]},
+		{"weight" : 1.0, "item" : ["money", 150]},
+        {"weight" : 1.0, "item" : ["money", 200]},
+		{"weight" : 1.0, "item" : ["money", 250]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_npcdrops_horizon_specialist" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_misc_horizonSpecialistBadge", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["money", 200]},
+		{"weight" : 1.0, "item" : ["money", 250]},
+        {"weight" : 1.0, "item" : ["money", 300]},
+		{"weight" : 1.0, "item" : ["money", 350]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_npcdrops_horizon_pyroHoplite" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 800]},
+        {"item" : ["arcana_misc_horizonEliteBadge", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_armor_pyroHoplite_head", 1]},
+		{"weight" : 1.0, "item" : ["arcana_armor_pyroHoplite_chest", 1]},
+        {"weight" : 1.0, "item" : ["arcana_armor_pyroHoplite_legs", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_npcdrops_horizon_cryoHoplite" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["money", 800]},
+        {"item" : ["arcana_misc_horizonEliteBadge", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_armor_cryoHoplite_head", 1]},
+		{"weight" : 1.0, "item" : ["arcana_armor_cryoHoplite_chest", 1]},
+        {"weight" : 1.0, "item" : ["arcana_armor_cryoHoplite_legs", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
   "arcana_npcdrops_workshop_section8Elite" : [
     [0, {
 	  "fill" : [
-	    {"item" : ["money", 1000]},
+	    {"item" : ["money", 800]},
         {"item" : ["nanowrap", 2]},
         {"item" : ["workshop_crafting_GS8TechChip", 1]}
       ],

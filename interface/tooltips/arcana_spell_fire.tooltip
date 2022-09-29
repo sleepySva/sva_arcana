@@ -1,0 +1,84 @@
+{
+  "title" : {
+    "type" : "label",
+    "position" : [80, 202],
+    "hAnchor" : "mid",
+	"fontSize" : 7.2,
+    "value" : ""
+  },
+  "subTitle" : {
+    "type" : "label",
+    "position" : [80, 194],
+    "hAnchor" : "mid",
+	"fontSize" : 7.2,
+    "color" : [185, 181, 178],
+    "value" : ""
+  },
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/arcana_spell_header.png",
+    "fileBody" : "/interface/tooltips/arcana_spell_fire_body.png",
+    "fileFooter" : "/interface/tooltips/arcana_spell_footer.png"
+  },
+  "header" : {
+    "type" : "image",
+    "position" : [0, 193],
+    "file" : "/interface/tooltips/arcana_spell_header.png"
+  },
+  "levelTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [19, 176],
+    "hAnchor" : "left",
+    "value" : "^#363636;Fire^reset;"
+  },
+  "handednessLabel" : {
+    "type" : "label",
+	"fontSize" : 6.8,
+	"color" : [160, 160, 160],
+    "position" : [96, 176],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [80, 147],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [50, 40],
+    "minSize" : [50, 40]
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+	"color" : [160, 160, 160],
+    "position" : [19, 117],
+    "wrapWidth" : 122,
+    "hAnchor" : "left",
+    "vAnchor" : "top"
+  },
+  "energyPerShotTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [19, 51],
+    "hAnchor" : "left",
+    "value" : "Energy Cost:"
+  },
+  "energyPerShotLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [140, 51],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "spellLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+	"color" : [160, 160, 160],
+    "position" : [11, 14],
+    "hAnchor" : "left",
+    "centered" : true,
+    "value" : "Spell"
+  }
+}

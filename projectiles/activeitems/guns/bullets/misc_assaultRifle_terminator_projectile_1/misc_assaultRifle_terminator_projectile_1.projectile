@@ -1,0 +1,70 @@
+{
+  "projectileName" : "misc_assaultRifle_terminator_projectile_1",
+  "image" : "body.png",
+  "physics" : "gravitybomb",
+  "animationCycle" : 1.5,
+  "frameNumber" : 11,
+  "power" : 26,
+  "speed" : 72,
+  "knockback" : 46,
+  "knockbackDirectional" : true,
+  "timeToLive" : 1.5,
+  "bounces" : 0,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "piercing" : true,
+  "lightColor" : [95, 186, 236],
+  "emitters" : [ "electricswoosh", "rocketsmoke" ],
+  "damageKind" : "electric",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/burstexplosion/electricburstexplosion.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "mechteslabolt",
+		"inheritDamageFactor" : 0.6,
+		"inheritSpeedFactor" : 0.9,
+        "angle" : 90,
+        "fuzzAngle" : 360
+    },
+	{
+        "action" : "projectile",
+        "type" : "mechteslabolt",
+		"inheritDamageFactor" : 0.6,
+		"inheritSpeedFactor" : 0.9,
+        "angle" : 90,
+        "fuzzAngle" : 360
+    },
+	{
+        "action" : "projectile",
+        "type" : "mechteslabolt",
+		"inheritDamageFactor" : 0.6,
+		"inheritSpeedFactor" : 0.9,
+        "angle" : 90,
+        "fuzzAngle" : 360
+    }
+  ],
+  "periodicActions" : [
+	{
+		"time" : 0.03,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "mechteslabolt",
+		"inheritDamageFactor" : 0.6,
+		"inheritSpeedFactor" : 0.9,
+        "angle" : 90,
+        "fuzzAngle" : 360
+    },
+	{
+		"time" : 0.06,
+		"repeat" : true,
+        "action" : "projectile",
+        "type" : "boltguide",
+		"inheritDamageFactor" : 0.6,
+		"inheritSpeedFactor" : 0.9,
+        "angle" : 90,
+        "fuzzAngle" : 360
+    }
+  ]
+}

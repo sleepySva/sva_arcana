@@ -1,0 +1,21 @@
+{
+  "materialId" : 16639,
+  "materialName" : "empyrean_tile1",
+  "particleColor" : [149, 149, 149, 255],
+  "itemDrop" : "cobblestonematerial",
+  "shortdescription" : "Cobblestone",
+  "description" : "Hard cobblestones, smooth to the touch.",
+  "footstepSound" : "/sfx/blocks/footstep_stone3.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "empyrean_tile1.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "multiColored" : true,
+    "occludesBelow" : true,
+    "zLevel" : 1640
+  }
+}

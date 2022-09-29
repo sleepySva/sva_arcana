@@ -1,0 +1,74 @@
+{
+  "itemName" : "arcana_armor_disciple_chest",
+  "price" : 900,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "chestwear",
+  "description" : "A basic ceremonial clothing worn by the Gilten.",
+  "shortdescription" : "Disciple Garb",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+  
+  "level" : 1,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.00
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.0
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 3
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 3
+    }
+  ],
+
+  "colorOptions" : [
+    // BLACK
+    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
+    // BLACK
+    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
+    // GREY
+    { "ffca8a" : "b5b5b5", "e0975c" : "808080", "a85636" : "555555", "6f2919" : "303030" },
+    // WHITE
+    { "ffca8a" : "e6e6e6", "e0975c" : "b6b6b6", "a85636" : "7b7b7b", "6f2919" : "373737" },
+    // RED
+    { "ffca8a" : "bd6d3c", "e0975c" : "9e5224", "a85636" : "6d3521", "6f2919" : "34180e" },
+    // ORANGE
+    { "ffca8a" : "caa044", "e0975c" : "a07926", "a85636" : "7f5b2c", "6f2919" : "392813" },
+    // YELLOW
+    { "ffca8a" : "e9bf25", "e0975c" : "bd9609", "a85636" : "926a19", "6f2919" : "422f0a" },
+    // GREEN
+    { "ffca8a" : "949663", "e0975c" : "777949", "a85636" : "575437", "6f2919" : "28271a" },
+    // BLUE
+    { "ffca8a" : "639296", "e0975c" : "497579", "a85636" : "375755", "6f2919" : "1a2827" },
+    // PURPLE
+    { "ffca8a" : "637896", "e0975c" : "495c79", "a85636" : "374857", "6f2919" : "1a2228" },
+    // PINK
+    { "ffca8a" : "4b5b72", "e0975c" : "37465c", "a85636" : "2a3742", "6f2919" : "141a1e" },
+    // BROWN
+    { "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
+  ]
+}

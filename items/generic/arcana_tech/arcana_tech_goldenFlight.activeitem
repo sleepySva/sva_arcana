@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_tech_goldenFlight",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "arcana_tech_goldenFlight.png",
+  "description" : "Information about a piece of alien technology. ^orange;[Use to gain a new type of tech!]^reset;",
+  "shortdescription" : "Golden Flight",
+  "itemTags" : [ "tech" ],
+  
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "base",
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_tech.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "arcana_tech_goldenFlight.png"
+  },
+  "animationCustom" : {},
+  "tech" : "arcana_tech_goldenFlight"
+}

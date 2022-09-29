@@ -1,4 +1,20 @@
 [
+	// Mist Rider
+	{ "op" : "add", "path" : "/arcana_merchantpool_mistRider",
+		"value" : [
+			[ 0, [
+			  { "item" : { "name" : "bonebed" }, "price" : 300 },
+			  { "item" : { "name" : "huntingpike2" }, "price" : 100 },
+			  { "item" : { "name" : "salve" }, "price" : 80 },
+			  { "item" : { "name" : "throwingbones" }, "price" : 60 },
+			  { "item" : { "name" : "bone" }, "price" : 30 },
+			  { "item" : { "name" : "bonematerial" }, "price" : 20 },
+			  { "item" : { "name" : "studio_tile3" }, "price" : 10 },
+			  { "item" : { "name" : "studio_tile4" }, "price" : 10 }
+			] ]
+		]
+	},
+
 	// Astral Fabric Merchant
 	{ "op" : "add", "path" : "/arcana_merchantpool_astralMerchantFabric",
 		"value" : [

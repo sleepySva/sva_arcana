@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_romantic_deco_12",
+  "colonyTags" : ["arcana_romantic","pretty"],
+  "rarity" : "Rare",
+  "description" : "A beautifully woven banner of Pearlles.",
+  "shortdescription" : "Small Pearlles Banner",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ]
+}

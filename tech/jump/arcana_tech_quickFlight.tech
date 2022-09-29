@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_tech_quickFlight",
+  "type" : "legs",
+
+  "scripts" : ["arcana_tech_quickFlight.lua"],
+  "animator" : "arcana_tech_quickFlight.animation",
+
+  "description" : "Gives you a quick air boost in any direction!",
+  "shortDescription" : "Quick Flight",
+  "rarity" : "Legendary",
+  "icon" : "/tech/arcana_tech_quickFlight.png",
+
+  "chipCost" : 6,
+
+  "chargeTime" : 0.0,
+  "boostTime" : 0.5,
+  "boostSpeed" : 36,
+  "boostForce" : 920
+}

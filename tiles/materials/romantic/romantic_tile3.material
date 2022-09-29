@@ -1,0 +1,21 @@
+{
+  "materialId" : 16303,
+  "materialName" : "romantic_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "romantic_tile3",
+  "description" : "A white stone roofing that is frequently used by Gilten architects and sculptors.",
+  "shortdescription" : "Gallica Roofing Tile",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "romantic_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2304
+  }
+}

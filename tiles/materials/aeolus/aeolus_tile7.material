@@ -1,0 +1,21 @@
+{
+  "materialId" : 16611,
+  "materialName" : "aeolus_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aeolus_tile7",
+  "description" : "A durable sail made from paper and texiles.",
+  "shortdescription" : "Sail Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 5,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aeolus_tile7.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4186
+  }
+}

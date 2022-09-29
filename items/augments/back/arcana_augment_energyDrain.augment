@@ -1,0 +1,25 @@
+{
+  "itemName" : "arcana_augment_energyDrain",
+  "price" : 2100,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_energyDrain.png",
+  "description" : "^green;Grants energy drain immunity. Useful as an Arcane EPP replacement.^reset;",
+  "shortdescription" : "EPA - Arcane",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_energyDrain",
+    "displayName" : "EPA - Arcane",
+    "displayIcon" : "/items/augments/back/arcana_augment_energyDrain.png",
+    "effects" :
+	[
+		"arcana_status_energyDrain_immunity"
+	]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

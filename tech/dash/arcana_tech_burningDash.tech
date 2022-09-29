@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_tech_burningDash",
+  "type" : "body",
+
+  "scripts" : ["dash.lua"],
+  "animator" : "arcana_tech_burningDash.animation",
+
+  "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to quickly dash in the air! Cooldown: 0.7s",
+  "shortDescription" : "Burning Dash",
+  "rarity" : "Legendary",
+  "icon" : "/tech/arcana_tech_burningDash.png",
+
+  "chipCost" : 6,
+
+  "maximumDoubleTapTime" : 0.25,
+  "dashControlForce" : 1800,
+  "dashSpeed" : 74,
+  "dashDuration" : 0.32,
+  "dashCooldown" : 0.7,
+  "stopAfterDash" : false,
+  "groundOnly" : false
+}

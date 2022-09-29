@@ -16,7 +16,7 @@
 		"arcana_arcaneForest" : { "word" : "arcana_arcaneForest", "friendlyWord" : " Arcane Forest" },
 		"arcana_arcaneDesert" : { "word" : "arcana_arcaneDesert", "friendlyWord" : " Arcane Desert" },
 		"arcana_arcaneTundra" : { "word" : "arcana_arcaneTundra", "friendlyWord" : " Arcane Tundra" },
-		"arcana_arcaneSea" : { "word" : "arcana_arcaneSea", "friendlyWord" : " Arcane Sea" },
+		"arcana_arcaneSea" : { "word" : "arcana_arcaneSea", "friendlyWord" : " Shining Sea" },
 		"arcana_blistering" : { "word" : "arcana_blistering", "friendlyWord" : " Blistering" },
 		"arcana_turbulent" : { "word" : "arcana_turbulent", "friendlyWord" : " Turbulent" },
 		"arcana_verdant" : { "word" : "arcana_verdant", "friendlyWord" : " Arcane Verdant" },
@@ -45,16 +45,44 @@
 		"arcana_eminsnow" : { "word" : "arcana_eminsnow", "friendlyWord" : " Eminsnow" },
 		"arcana_senbonzakura" : { "word" : "arcana_senbonzakura", "friendlyWord" : " Senbonzakura" },
 		
-		"arcana_vermilion" : { "word" : "arcana_vermilion", "friendlyWord" : " Vermilion" }
+		"arcana_vermilion" : { "word" : "arcana_vermilion", "friendlyWord" : " Vermilion" },
+		"arcana_amorous" : { "word" : "arcana_amorous", "friendlyWord" : " Amorous" },
+		"arcana_ruinous" : { "word" : "arcana_ruinous", "friendlyWord" : " Ruinous" },
+		"arcana_nightmist" : { "word" : "arcana_nightmist", "friendlyWord" : " Nightmist" },
+		"arcana_empyrean" : { "word" : "arcana_empyrean", "friendlyWord" : " Empyrean" },
+		"arcana_goldenLake" : { "word" : "arcana_goldenLake", "friendlyWord" : " Golden Lake" }
 	}
   },
   
   // Weathers
+  
   {
     "op": "add",
     "path": "/weatherThreatValues",
 	"value": {
-		"arcana_weather_ruinousStorm" : 3.5
+		"arcana_weather_lightDrizzle" : 1.0
+	}
+  },
+  {
+    "op": "add",
+    "path": "/weatherThreatValues",
+	"value": {
+		"arcana_weather_ruinousRain" : 3.0
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayWeathers/arcana_weather_ruinousRain",
+	"value": {
+		"displayName" : "Ruinous Rain",
+		"icon" : "/interface/cockpit/weather/arcana_weather_ruinousRain.png"
+	}
+  },   
+  {
+    "op": "add",
+    "path": "/weatherThreatValues",
+	"value": {
+		"arcana_weather_ruinousStorm" : 3.0
 	}
   },
   {
@@ -67,6 +95,46 @@
   },
   
   // Dungeons
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_empyrean_dungeon_3",
+	"value": {
+		"description" : "A sky-bound ark that rests in the midst of the heavenly clouds.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_empyrean_dungeon_2",
+	"value": {
+		"description" : "A small sanctum occupied by the Gilten.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_windswept_dungeon_2",
+	"value": {
+		"description" : "A tall tower that could almost reach into the heavens.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_amorous_dungeon_1",
+	"value": {
+		"description" : "A small town with a few mansions at its center.",
+		"icon" : "/interface/cockpit/dungeons/arcana_amorous_dungeon_1.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_blistering_dungeon_2",
+	"value": {
+		"description" : "A mysterious structure in the middle of the Blistering barrens.",
+		"icon" : "/interface/cockpit/dungeons/arcana_blistering_dungeon_2.png"
+	}
+  },
   {
     "op": "add",
     "path": "/displayDungeons/arcana_vermilion_dungeon_2",
@@ -245,7 +313,7 @@
 		  "Extreme",
 		  "Inconceivable",
 		  "Unreal",
-		  "Auric",
+		  "Unfathomable",
 		  "Phantasmal",
 		  "Terminal"
 		],
@@ -578,14 +646,14 @@
     ]
   },
 
-  // Arcane Sea
+  // Shining Sea
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneSea",
     "value": [
-      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Arcane Sea^white;.",
-      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Arcane Sea^white;.",
-      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Arcane Sea^white;."
+      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;.",
+      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;.",
+      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;."
     ]
   },
   {
@@ -599,7 +667,7 @@
   {
     "op": "add",
     "path": "/planetTypeNames/arcana_arcaneSea",
-    "value": "Arcane Sea"
+    "value": "Shining Sea"
   },
   {
     "op": "add",
@@ -1319,6 +1387,108 @@
     "value": {
       "displayName": "Rufescite",
       "icon": "/items/generic/arcana_misc/arcana_misc_rufescite.png"
+    }
+  },
+  
+  // Amorous
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_amorous",
+    "value": [
+      "The ^#9e5359;Amorous^reset; rests in pink sunset all year around, it is the perfect place for a romantic vacation.",
+      "The ^#9e5359;Amorous^reset; rests in pink sunset all year around, it is the perfect place for a romantic vacation.",
+      "The ^#9e5359;Amorous^reset; rests in pink sunset all year around, it is the perfect place for a romantic vacation."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_amorous",
+    "value": "Amorous"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_amorous",
+    "value": [
+      158,
+      83,
+      89
+    ]
+  },
+  
+  // Nightmist
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_nightmist",
+    "value": [
+      "Fog and rainfall cover the eternal night planet of ^#4dc4b4;Nightmist^reset;. Spiritual creatures are detected here as well as old ruins from the ancient past."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_nightmist",
+    "value": "Nightmist"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_nightmist",
+    "value": [
+      77,
+      196,
+      181
+    ]
+  },
+  
+  // Empyrean
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_empyrean",
+    "value": [
+      "Unable to scan the orbiting planet. It seems that something within the ^#c0ab5e;Empyrean^reset; is interfering with our signals."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_empyrean",
+    "value": "Empyrean"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_empyrean",
+    "value": [
+      192,
+      171,
+      94
+    ]
+  },
+  
+  // Ruinous
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_ruinous",
+    "value": [
+      "All have been tainted by the force of ^orange;Cosmo^reset; within the ^#bc72e1;Ruinous^reset;. ^red;Extreme caution is advised before teleporting into the planet.^reset;"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_ruinous",
+    "value": "Ruinous"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_ruinous",
+    "value": [
+      188,
+      114,
+      225
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayOres/arcana_mod_chromaOre",
+    "value": {
+      "displayName": "???",
+      "icon": "/items/generic/arcana_ores/arcana_ore_chromaOre_hidden.png"
     }
   }
   ]

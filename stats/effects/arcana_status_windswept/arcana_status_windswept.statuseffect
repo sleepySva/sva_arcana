@@ -1,0 +1,16 @@
+{
+  "name" : "arcana_status_windswept",
+  "effectConfig" : {
+    "gravityModifier" : -0.1
+  },
+  "defaultDuration" : 4,
+
+  "scripts" : [
+    "lowgrav.lua"
+  ],
+
+  "animationConfig" : "lowgrav.animation",
+
+  "label" : "Windswept",
+  "icon" : "/interface/statuses/lowgrav.png"
+}

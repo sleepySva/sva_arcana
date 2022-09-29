@@ -1,0 +1,27 @@
+{
+	"stats" : [
+		{ "stat" : "physicalResistance", "amount" : -0.1 },
+		{ "stat" : "electricResistance", "amount" : 0.1 },
+		{ "stat" : "fireResistance", "amount" : 0.1 },
+		{ "stat" : "poisonResistance", "amount" : 0.1 },
+		{ "stat" : "iceResistance", "amount" : 0.1 }
+	],
+	"diet" : "omnivore",
+	"controlModifiers" : {
+		"speedModifier" : 1.0
+	},
+	"envEffects" : [
+	],
+	"weaponEffects" : [
+		{
+			"weapons" : [ "spear", "bow" ],
+			"stats" : [
+				{ "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 },
+				{ "stat" : "critChance", "amount" : 10 },
+				{ "stat" : "energyRegenPercentageRate", "effectiveMultiplier" : 1.1 }
+			]
+		}
+	],
+	
+	"tech" : [ "arcana_tech_basicFlight" ]
+}

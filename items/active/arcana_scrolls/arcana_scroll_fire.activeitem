@@ -1,0 +1,23 @@
+{
+  "itemName" : "arcana_scroll_fire",
+  "price" : 2000,
+  "level" : 1,
+  "maxStack" : 8,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "A magic scroll that can teach you a random spell upon usage.",
+  "shortdescription" : "^#d5340e;~ ^reset;Fire Scroll^#d5340e; ~^reset;",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "arcana_scroll_fire.png",
+  "animation" : "arcana_scroll_fire.animation",
+  "scripts" : ["arcana_lootbox.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "arcana_scroll_fire",
+    "level" : 1
+  }
+}

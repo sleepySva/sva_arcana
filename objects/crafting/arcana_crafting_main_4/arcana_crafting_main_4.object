@@ -1,44 +1,41 @@
 {
   "objectName" : "arcana_crafting_main_4",
   "colonyTags" : ["crafting"],
-  "rarity" : "Essential",
-  "description" : "The most capable inventing table of all, made from Aureola bars.",
-  "shortdescription" : "^#dfcf4e;Artificer's Table^reset;",
+  "rarity" : "Legendary",
+  "description" : "Replacement",
+  "shortdescription" : "Replacement",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1600,
+  "price" : 1,
   
-  "lightColor" : [70, 60, 30],
-
-  "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_4.config",
-	"filter" : ["arcana_crafting_main_1","arcana_crafting_main_2","arcana_crafting_main_3","arcana_crafting_main_4","inventorstable", "inventorstable2", "inventorstable3", "arcana_exousia"]
-  },
-
+  "breakDropOptions" : [
+	[ [ "arcana_crafting_main_1", 1, { } ] ]
+  ],
+  "printable" : false,
   "inventoryIcon" : "icon.png",
+  
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "arcana_crafting_main_4.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+	  "image" : "body.png:<color>.<frame>",
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-32, 0],
-      "frames" : 16,
-      "animationCycle" : 1.6,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
 
     },
 	{
-	  "imageLayers" : [ { "image" : "arcana_crafting_main_4.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+	  "image" : "body.png:<color>.<frame>",
       "direction" : "right",
-      "imagePosition" : [-32, 0],
-      "frames" : 16,
-      "animationCycle" : 1.6,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
 
     }
   ]

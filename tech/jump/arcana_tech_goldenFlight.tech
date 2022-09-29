@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_tech_goldenFlight",
+  "type" : "legs",
+
+  "scripts" : ["arcana_tech_quickFlight.lua"],
+  "animator" : "arcana_tech_goldenFlight.animation",
+
+  "description" : "A tech that grants you flight for a short period of time!",
+  "shortDescription" : "Golden Flight",
+  "rarity" : "Legendary",
+  "icon" : "/tech/arcana_tech_goldenFlight.png",
+
+  "chipCost" : 6,
+
+  "chargeTime" : 0.2,
+  "boostTime" : 1.0,
+  "boostSpeed" : 58,
+  "boostForce" : 720
+}

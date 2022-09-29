@@ -1,0 +1,49 @@
+{
+  "objectName" : "arcana_romantic_chair_3",
+  "colonyTags" : ["arcana_romantic"],
+  "rarity" : "Rare",
+  "category" : "furniture",
+  "price" : 190,
+  "printable" : false,
+  "description" : "A classical cusioned couch made for mansions.",
+  "shortdescription" : "Mansion Couch",
+  "race" : "generic",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+	  "sitCoverImage" : "/objects/arcana_romantic/arcana_romantic_chair_3/cover.png",
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        [-11, 21], // Right
+        [2, 21] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+	  "sitCoverImage" : "/objects/arcana_romantic/arcana_romantic_chair_3/cover.png",
+
+      "direction" : "right",
+
+      "sitPositions" : [
+        [-3, 21], // Left
+        [10, 21] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

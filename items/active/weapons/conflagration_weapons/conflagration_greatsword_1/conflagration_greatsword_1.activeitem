@@ -1,11 +1,11 @@
 {
   "itemName" : "conflagration_greatsword_1",
-  "price" : 1000,
+  "price" : 2400,
   "level" : 4,
   "maxStack" : 1,
-  "rarity" : "Uncommon",
-  "description" : "A burning greatsword.",
-  "shortdescription" : "Fiery Greatsword",
+  "rarity" : "Legendary",
+  "description" : "A molten greatsword fused with burning desire.",
+  "shortdescription" : "Blazefuse",
   "tooltipKind" : "sword",
   "category" : "broadsword",
   "tooltipFields" : {"subtitle" : "Greatsword"},
@@ -14,7 +14,7 @@
 
   "inventoryIcon" : "icon.png",
 
-  "animation" : "/items/active/weapons/melee/greatsword/arcana_greatsword_combo_conflagration_greatsword_1.animation",
+  "animation" : "animation.animation",
   "animationParts" : {
     "handle" : "fullbright.png",
     "blade" : "conflagration_greatsword_1.png"
@@ -27,9 +27,18 @@
 
   "primaryAbilityType" : "arcana_greatsword_combo",
   "primaryAbility" : {
-    "fireTime" : 1.2,
-    "baseDps" : 8.6
+    "fireTime" : 1.3,
+    "baseDps" : 8.5,
+    "damageConfig" : {
+      "damageSourceKind" : "firebroadsword"
+    }
   },
+  
+  "altAbilityType" : "arcana_generic_ability_blink",
+  "altAbility" : {
+    "maxDistance" : 18
+  },
+  
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

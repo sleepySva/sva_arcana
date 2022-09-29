@@ -12,7 +12,7 @@ function AxeCleave:init()
   self.elementalType = self.elementalType or self.weapon.elementalType
   self.baseDamageFactor = config.getParameter("baseDamageFactor", 1.0)
   
-  self.stances.windup.duration = self.fireTime - self.stances.fire.duration
+  self.stances.windup.duration = self.windupTime
 
   MeleeSlash.init(self)
   self:setupInterpolation()
@@ -20,34 +20,37 @@ function AxeCleave:init()
 end
 
 function AxeCleave:firePosition()
-  return vec2.add(mcontroller.position(), {0.2 * 1, -0.2})
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(0, 0))
+  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+  return aimVector
 end
 
 function AxeCleave:createProjectiles()
 
   local aimPosition = activeItem.ownerAimPosition()
   local pCount = self.projectileCount or 1
-  local fireDirection = world.distance(aimPosition, self:firePosition())[1] > 0 and 1 or -1
-  local pOffset = {fireDirection * (self.projectileDistance or 0), 0}
+  local pRotation = self.projectileRotation or 2
+  local position = vec2.add(mcontroller.position(), {self.projectileOffset[1] * mcontroller.facingDirection(), self.projectileOffset[2]})
   local pParams = copy(self.projectileParameters)
+  local fireDirection = self:firePosition()
   
   pParams.power = self.baseDamageFactor * pParams.baseDamage * config.getParameter("damageLevelMultiplier") / pCount
   pParams.powerMultiplier = activeItem.ownerPowerMultiplier()
   
-  pOffset = vec2.rotate(pOffset, (((2 * math.pi) / pCount) / -10) * (pCount * 0.3))
+  fireDirection = vec2.rotate(fireDirection, (((pRotation  * math.pi) / pCount) / -10) * (pCount * 0.3))
   
   for i = 1, pCount do
   
     local projectileId = world.spawnProjectile(
         self.projectileType,
-        self.firePosition(),
+        position,
         activeItem.ownerEntityId(),
-        pOffset,
+        fireDirection,
         false,
         pParams
       )
 	  
-	pOffset = vec2.rotate(pOffset, ((2 * math.pi) / pCount) / 10)
+	fireDirection = vec2.rotate(fireDirection, ((pRotation  * math.pi) / pCount) / 10)
 	
   end
   
@@ -105,10 +108,18 @@ function AxeCleave:fire()
   
   self:createProjectiles()
 
+  local chargeTimer = 0
+  local chargeTime = self.stances.fire.duration or 0.2
+  
   util.wait(self.stances.fire.duration, function()
-      local damageArea = partDamageArea("swoosh")
-      self.weapon:setDamage(self.damageConfig, damageArea, self.fireTime)
-    end)
+    local damageArea = partDamageArea("swoosh")
+    self.weapon:setDamage(self.damageConfig, damageArea, self.fireTime)
+	  
+	chargeTimer = math.min(chargeTime, chargeTimer + self.dt)
+	local chargeRatio = math.sin(chargeTimer / chargeTime * 1.57)
+    self.weapon.relativeArmRotation = util.toRadians(util.lerp(chargeRatio, {self.stances.fire.armRotation, self.stances.fire.endArmRotation or self.stances.fire.armRotation}))
+    self.weapon.relativeWeaponRotation = util.toRadians(util.lerp(chargeRatio, {self.stances.fire.weaponRotation, self.stances.fire.endWeaponRotation or self.stances.fire.weaponRotation}))
+  end)
 
   self.cooldownTimer = self:cooldownTime()
 end

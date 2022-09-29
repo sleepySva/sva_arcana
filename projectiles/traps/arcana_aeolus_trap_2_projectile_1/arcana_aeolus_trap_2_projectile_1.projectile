@@ -1,0 +1,57 @@
+{
+  "projectileName" : "arcana_aeolus_trap_2_projectile_1",
+  "physics" : "laser",
+  "timeToLive" : 2.6,
+  "bounces" : 0,
+  "piercing" : true,
+  "image" : "body.png",
+  "fullbright" : true,
+  "emitters" : [],
+  
+  "windupFrames" : 3,
+  "frameNumber" : 3,
+  "winddownFrames" : 1,
+  "animationCycle" : 0.06,
+  
+  "speed" : 24,
+  "acceleration" : 6,
+  "knockback" : 20,
+  "supportsProcessing" : true,
+  
+  "onlyHitTerrain" : false,
+  "movementSettings" : {
+	"collisionEnabled" : true
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.06,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/traps/arcana_aeolus_trap_2_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"size" : 0.8,
+		"renderLayer" : "foregroundEntity"
+      }
+    }
+  ],
+
+  "lightColor" : [50, 150, 172],
+  "damageKind" : "dagger",
+  "damagePoly" : [ [-8, 8], [8, 8], [8, -8], [-8, -8], [-8, 8] ],
+  "statusEffects" : [
+  ]
+  
+}

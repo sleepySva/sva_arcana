@@ -1,0 +1,60 @@
+{
+  "arcana_treasure_general_liquidwater" : [
+    [0, {
+      "fill" : [
+        { "item" : "liquidwater" }
+      ],
+      "poolRounds" : [
+        [0.2, 10],
+        [0.2, 12],
+        [0.2, 14],
+        [0.2, 16],
+        [0.2, 18]
+      ]
+    }]
+  ],
+  "arcana_treasure_general_books" : [
+    [0, {
+      "fill" : [
+        {"item" : ["bookpiles", 1]}
+      ],
+      "pool" : [
+        {"weight" : 0.86, "item" : ["bookpiles", 1]},
+		{"weight" : 0.1, "item" : ["paper", 1]},
+        {"weight" : 0.04, "pool" : "arcana_treasure_general_codex"}
+      ],
+      "poolRounds" : [
+        [0.2, 5],
+        [0.2, 6],
+        [0.2, 7],
+        [0.2, 8],
+        [0.2, 9]
+      ]
+    }]
+  ],
+  "arcana_treasure_general_codex" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.05, "pool" : "apexbaseLore"},
+        {"weight" : 0.05, "pool" : "apexcampLore"},
+		{"weight" : 0.05, "pool" : "apexcityLore"},
+		{"weight" : 0.05, "pool" : "aviantempleLore"},
+		{"weight" : 0.05, "pool" : "avianvillageLore"},
+		{"weight" : 0.05, "pool" : "avianairshipLore"},
+		{"weight" : 0.05, "pool" : "floranhuntinggroundsLore"},
+		{"weight" : 0.05, "pool" : "florancanyonLore"},
+		{"weight" : 0.05, "pool" : "floranvillagetowerLore"},
+		{"weight" : 0.05, "pool" : "dungeoncrawlerLore"},
+		{"weight" : 0.05, "pool" : "evilfortressLore"},
+		{"weight" : 0.05, "pool" : "glitchcastleLore"},
+		{"weight" : 0.05, "pool" : "humancampLore"},
+		{"weight" : 0.05, "pool" : "humancampLore"},
+        {"weight" : 0.05, "pool" : "hylotlcityLore"},
+		{"weight" : 0.05, "pool" : "hylotlcityLore"}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ]
+}

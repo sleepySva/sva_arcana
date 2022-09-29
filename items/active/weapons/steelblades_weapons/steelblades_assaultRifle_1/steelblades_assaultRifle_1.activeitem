@@ -13,21 +13,36 @@
 
   "inventoryIcon" : "steelblades_assaultRifle_1.png",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "steelblades_assaultRifle_1.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_yellow.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [1.2, 0.25]
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.3]
+		  }
+		}
+	  }
+	},
     "sounds" : {
       "fire" : ["/sfx/gun/ar4.ogg"]
     }
   },
 
   "baseOffset" : [1.2, 0.25],
-  "muzzleOffset" : [2.0, 0.4],
+  "muzzleOffset" : [2.4, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -37,15 +52,15 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.04,
-    "baseDps" : 68.0,
+    "fireTime" : 0.14,
+    "baseDps" : 28.0,
     "energyUsage" : 52.0,
-    "inaccuracy" : 0.02,
+    "inaccuracy" : 0.03,
 
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "steelblades_sniperRifle_1_projectile_1",
+    "projectileType" : "steelblades_sniperRifle_1_projectile_2",
     "projectileParameters" : {
       "damageKind" : "shotgunbullet",
 	  "speed" : 140,
@@ -70,7 +85,7 @@
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.15,
+        "duration" : 0.05,
         "armRotation" : 8,
         "weaponRotation" : 8,
         "twoHanded" : true,

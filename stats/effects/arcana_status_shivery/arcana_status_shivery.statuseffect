@@ -1,0 +1,18 @@
+{
+  "name" : "arcana_status_shivery",
+  "blockingStat" : "iceStatusImmunity",
+
+  "effectConfig" : {
+    "visualProjectileType" : "icestickyspikes"
+  },
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "arcana_status_shivery.lua"
+  ],
+
+  "animationConfig" : "animation.animation",
+
+  "label" : "Shivery",
+  "icon" : "/interface/statuses/ice.png"
+}

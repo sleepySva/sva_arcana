@@ -1,0 +1,24 @@
+{
+  "type" : "arcana_npc_romantic_villager",
+  "baseType" : "villager",
+
+  "dropPools" : [ "money" ],
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "arcana_armor_rococo_chest", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "arcana_armor_ardent_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_rococo_legs", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "arcana_armor_ardent_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

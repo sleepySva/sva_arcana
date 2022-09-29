@@ -1,21 +1,33 @@
 {
   "animationParts" : { },
   "animationCustom" : {
+    "particleEmitters" : {
+      "dashParticles" : {
+        "emissionRate" : 40.0,
+		"offsetRegion" : [-2.0, 1.0, -2.0, 1.0],
+        "particles" : [
+          {
+            "particle" : "dash",
+            "flip" : true
+          }
+        ]
+      }
+    },
     "sounds" : {
       "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
       "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
       "fire3" : [ "/sfx/melee/swing_broadsword.ogg" ],
-      "fire4" : [ "/sfx/melee/swing_spear.ogg" ]
+      "fire4" : [ "/sfx/melee/swing_shortsword.ogg" ]
     }
   },
 
   "ability" : {
     "name" : "Combo Slash",
     "type" : "arcana_katana_combo",
-    "scripts" : ["/items/active/weapons/melee/meleecombo.lua"],
+    "scripts" : ["/items/active/weapons/melee/abilities/katana/arcana_katana_combo.lua"],
     "class" : "MeleeCombo",
 
-    "comboSteps" : 4,
+    "comboSteps" : 3,
 
     "flashTime" : 0.15,
     "flashDirectives" : "fade=FFFFFFFF=0.15",
@@ -24,16 +36,22 @@
       [0.75, 0.0, 4.25, 5.0],
       [3.0, -0.5, 6.5, 2.0],
       [0.75, 0.0, 4.25, 5.0],
-      [1.5, -1.0, 5.5, 1.0]
+      [0.75, 0.0, 4.25, 5.0]
     ],
 
     // cooldown time multiplier for steps after the first, compounded per combo step
-    "comboSpeedFactor" : 0.8,
+    "comboSpeedFactor" : 0.4,
 
-    "edgeTriggerGrace" : 0.25,
+    "edgeTriggerGrace" : 0.3,
 
     "fireTime" : 0.8,
     "baseDps" : 11.5,
+
+    "shakeProjectileType" : "arcana_projectile_scouteye",
+    "shakeProjectileParameters" : {
+      "timeToLive" : 0.01,
+      "speed" : 0
+    },
 
     "damageConfig" : {
       "damageSourceKind" : "broadsword",
@@ -43,30 +61,30 @@
     },
     "stepDamageConfig" : [
       {
-        "baseDamageFactor" : 0.8,
-        "knockback" : 15
+        "baseDamageFactor" : 0.9,
+        "knockback" : 12
       },
       {
-        "baseDamageFactor" : 0.4,
-        "knockback" : 10
+        "baseDamageFactor" : 1.2,
+        "knockback" : 14
       },
       {
-        "baseDamageFactor" : 0.4,
-        "knockback" : 10
+        "baseDamageFactor" : 0.9,
+        "knockback" : 14
       },
       {
-        "baseDamageFactor" : 0.8,
-        "knockback" : 25
+        "baseDamageFactor" : 0.9,
+        "knockback" : 12
       }
     ],
 
     "stances" : {
       "idle" : {
-        "armRotation" : -65,
-        "weaponRotation" : -10,
-        "allowRotate" : false,
+        "armRotation" : -60,
+        "weaponRotation" : -200,
+        "allowRotate" : true,
         "allowFlip" : true,
-		"twoHanded" : true
+		"twoHanded" : false
       },
       "windup1" : {
         "duration" : 0.1,
@@ -74,7 +92,7 @@
         "weaponRotation" : -10,
         "twoHanded" : true,
 
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : true
       },
       "preslash1" : {
@@ -87,18 +105,20 @@
         "allowFlip" : false
       },
       "fire1" : {
-        "duration" : 0.2,
+        "duration" : 0.3,
         "armRotation" : -45,
         "weaponRotation" : -55,
+        "endArmRotation" : -55,
+        "endWeaponRotation" : -65,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "wait1" : {
-        "duration" : 0.2,
-        "armRotation" : -45,
-        "weaponRotation" : -55,
+        "duration" : 0.1,
+        "armRotation" : -55,
+        "weaponRotation" : -65,
         "allowRotate" : false,
         "allowFlip" : true,
         "twoHanded" : true
@@ -110,19 +130,21 @@
         "weaponOffset" : [0, 0],
         "twoHanded" : true,
         "allowFlip" : true,
-        "allowRotate" : false
+        "allowRotate" : true
       },
       "fire2" : {
-        "duration" : 0.2,
+        "duration" : 0.3,
         "armRotation" : -150,
         "weaponRotation" : 55,
+        "endArmRotation" : -155,
+        "endWeaponRotation" : 60,
         "weaponOffset" : [0, 0],
         "twoHanded" : true,
         "allowFlip" : true,
         "allowRotate" : false
       },
       "wait2" : {
-        "duration" : 0.2,
+        "duration" : 0.1,
         "armRotation" : -150,
         "weaponRotation" : 55,
         "weaponOffset" : [0, 0],
@@ -132,48 +154,59 @@
       },
       "windup3" : {
         "duration" : 0.1,
-        "armRotation" : 20,
-        "weaponRotation" : 30,
+        "armRotation" : -130,
+        "weaponRotation" : -10,
         "twoHanded" : true,
 
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : true
       },
       "fire3" : {
-        "duration" : 0.2,
-        "armRotation" : 45,
-        "weaponRotation" : 10,
+        "duration" : 0.3,
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "endArmRotation" : 20,
+        "endWeaponRotation" : -45,
         "twoHanded" : true,
 
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : false
       },
       "wait3" : {
-        "duration" : 0.2,
-        "armRotation" : 45,
-        "weaponRotation" : 10,
-        "weaponOffset" : [0, 0],
-        "allowRotate" : false,
+        "duration" : 0.1,
+        "armRotation" : 20,
+        "weaponRotation" : -45,
+        "allowRotate" : true,
         "allowFlip" : true,
         "twoHanded" : true
       },
       "windup4" : {
         "duration" : 0.1,
-        "armRotation" : -45,
-        "weaponRotation" : -55,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
         "twoHanded" : true,
 
-        "allowRotate" : false,
+        "allowRotate" : true,
         "allowFlip" : true
       },
       "fire4" : {
-        "duration" : 0.2,
-        "armRotation" : 0,
-        "weaponRotation" : -90,
+        "duration" : 0.3,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "endArmRotation" : -55,
+        "endWeaponRotation" : -65,
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : true
+        "allowFlip" : false
+      },
+      "wait4" : {
+        "duration" : 0.1,
+        "armRotation" : -55,
+        "weaponRotation" : -65,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
       }
     }
   }

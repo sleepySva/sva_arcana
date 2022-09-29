@@ -1,6 +1,30 @@
 [
 
   {
+    "name" : "arcana_masteroidmid",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 2],
+    "spawnChance" : 0.008,
+    "monsterType" : [
+      [0.5, "masteroidmid"],
+	  [0.5, "masteroid"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true,
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier",
+	  "healthLevelFunction" : "monsterLevelHealthMultiplier",
+      "touchDamage" : {
+        "damage" : 11
+      }
+    }
+  },
+
+  {
     "name" : "arcana_trifangle",
 
     "spawnParameters" : {
@@ -14,7 +38,8 @@
       [1, "trifangle"]
     ],
     "monsterParameters" : {
-      "aggressive" : true
+      "aggressive" : true,
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
     }
   },
   
@@ -32,7 +57,8 @@
       [1, "spinemine"]
     ],
     "monsterParameters" : {
-      "aggressive" : true
+      "aggressive" : true,
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
     }
   },
   
@@ -50,7 +76,8 @@
       [1, "heavydrone"]
     ],
     "monsterParameters" : {
-      "aggressive" : true
+      "aggressive" : true,
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
     }
   },
   
@@ -68,7 +95,8 @@
       [1, "cosmostache"]
     ],
     "monsterParameters" : {
-      "aggressive" : true
+      "aggressive" : true,
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
     }
   },
   
@@ -86,7 +114,8 @@
       [1, "chiropterror"]
     ],
     "monsterParameters" : {
-      "aggressive" : true
+      "aggressive" : true,
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
     }
   },
   
@@ -104,7 +133,8 @@
       [1.0, "omnicannon"]
     ],
     "monsterParameters" : {
-      "aggressive" : true
+      "aggressive" : true,
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
     }
   },
   

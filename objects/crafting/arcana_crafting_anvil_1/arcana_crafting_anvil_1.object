@@ -2,38 +2,160 @@
   "objectName" : "arcana_crafting_anvil_1",
   "colonyTags" : ["crafting"],
   "rarity" : "Legendary",
-  "description" : "An anvil infused with elemental magic.",
+  "description" : "An anvil infused with basic elemental magic.",
   "shortdescription" : "^#9e6b55;Elementalist's Anvil^reset;",
   "race" : "generic",
   "category" : "crafting",
   "price" : 1000,
+  
+  "breakDropOptions" : [],
+  "printable" : false,
+  
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
 
   "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_anvil/arcana_crafting_anvil_1.config",
-	"filter" : ["arcana_crafting_anvil_1"]
-  },
 
-  "inventoryIcon" : "icon.png",
+  "animation" : "animation.animation",
+  "animationPosition" : [0, 19],
+  "placementImage" : "1.png:default.default",
+  "placementImagePosition" : [-40, -0],    
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 4,
+  "inventoryIcon" : "1_icon.png",
+  
+  "upgradeStages" : [
+    {
+      "animationState" : "stage_1",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "1_icon.png",
+        "placementImage" : "1.png:default.default",
+        "placementImagePosition" : [-40, -0],    
+
+        "description" : "An anvil infused with basic elemental magic.",
+        "shortdescription" : "^#9e6b55;Elementalist's Anvil^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_anvil/arcana_crafting_anvil_1.config",
+		"filter" : ["arcana_crafting_anvil_1"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_arcaniumBar", "count" : 18 },
+			{ "item" : "battery", "count" : 1 },
+			{ "item" : "arcana_misc_copperComponent", "count" : 1 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "stage_2",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "2_icon.png",
+        "placementImage" : "2.png:default.default",
+        "placementImagePosition" : [-40, -0],    
+
+        "description" : "An anvil infused with arcane magic.",
+        "shortdescription" : "^#3ec7dd;Arcanium Anvil^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_anvil/arcana_crafting_anvil_2.config",
+		"filter" : ["arcana_crafting_anvil_1", "arcana_crafting_anvil_2"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_thoriumBar", "count" : 16 },
+			{ "item" : "orion_crafting_enhancedBattery", "count" : 1 },
+			{ "item" : "orion_crafting_jupiterCell", "count" : 1 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "stage_3",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "3_icon.png",
+        "placementImage" : "3.png:default.default",
+        "placementImagePosition" : [-40, -0],
+
+        "description" : "A modern fabricator that can produce enhanced arcane equipment.",
+        "shortdescription" : "^#bbbdce;Orion Fabricator^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_anvil/arcana_crafting_anvil_3.config",
+		"filter" : ["arcana_crafting_anvil_1", "arcana_crafting_anvil_2", "arcana_crafting_anvil_3"],
+        "upgradeMaterials" : [
+			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
+			{ "item" : "hephaestus_wand_2", "count" : 1 },
+			{ "item" : "thalassa_spear_2", "count" : 1 },
+			{ "item" : "gaea_axe_2", "count" : 1 },
+			{ "item" : "aeolus_shortbow_2", "count" : 1 },
+			{ "item" : "havencrest_broadsword_1", "count" : 1 },
+			{ "item" : "monarch_lance_1", "count" : 1 },
+			{ "item" : "horizon_hammer_1", "count" : 1 },
+			{ "item" : "orion_greatsword_1", "count" : 1 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+    {
+      "animationState" : "stage_4",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "4_icon.png",
+        "placementImage" : "4.png:default.default",
+        "placementImagePosition" : [-40, -0],
+		"rarity" : "Essential",		
+
+        "description" : "The highest tier of weapon and armor printing station imbued with gold.",
+        "shortdescription" : "^#dfcf4e;Aurea Armory^reset;"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_crafting_anvil/arcana_crafting_anvil_4.config",
+		"filter" : ["arcana_crafting_anvil_1", "arcana_crafting_anvil_2", "arcana_crafting_anvil_3", "arcana_crafting_anvil_4"]
+	  },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+  
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "arcana_crafting_anvil_1.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "image" : "1.png:<color>.<frame>",
       "direction" : "left",
 	  "flipImages" : true,
       "imagePosition" : [-40, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
 
     },
 	{
-	  "imageLayers" : [ { "image" : "arcana_crafting_anvil_1.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "image" : "1.png:<color>.<frame>",
       "direction" : "right",
       "imagePosition" : [-40, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

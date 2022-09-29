@@ -1,0 +1,56 @@
+{
+  "objectName" : "arcana_farmable_wintercornSeed_wild",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A special type of frosty corn, found commonly in Arcane Tundra planets.",
+  "shortdescription" : "Wintercorn Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 20,
+  "hasObjectItem" : false,
+
+  "biomePlaced" : true,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3], [1, 4], [0, 4] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [430, 470]
+    },
+    {
+      "duration" : [430, 470]
+    },
+    {
+      "alts" : 5,
+      "duration" : [1740, 1860]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "arcana_farmable_wintercorn",
+      "resetToStage" : 2
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "arcana_farmable_wintercornSeed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.1,
+  "consumeSoilMoisture" : false
+}

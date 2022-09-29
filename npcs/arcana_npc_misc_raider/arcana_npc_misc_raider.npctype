@@ -1,0 +1,76 @@
+{
+  "type" : "arcana_npc_misc_raider",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "banditTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "human" : {
+          "default" : [
+            "Hey look, easy prey!",
+            "Don't think you're getting out of this one easily!",
+            "I bet you'll drop lots of pixels!",
+            "You've wandered right into the wolf's den!",
+            "Good, a fight! I was almost bored!",
+            "This isn't personal, I just love attacking people!",
+            "Surprise, you're about to get poked full of holes!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "arcana_armor_invisible_head" }, { "name" : "snowinfantryhead" }, { "name" : "soldierhead" }, { "name" : "trackerhead" }, { "name" : "pathfinderhead" }, { "name" : "apextier4head" }],
+            "chest" : [ { "name" : "humantier1chest" }, { "name" : "humantier2chest" }, { "name" : "humantier3chest" }, { "name" : "humantier4chest" }, { "name" : "workoutchest", "data" : { "colorIndex" : 1 } }, { "name" : "novakidjacket" }, { "name" : "apextier4chest" }],
+            "legs" : [ { "name" : "humantier1pants" }, { "name" : "humantier2pants" }, { "name" : "humantier3pants" }, { "name" : "humantier4pants" }, { "name" : "novakidblackpants" }, { "name" : "pathfinderlegs" }, { "name" : "apextier2pants" }, { "name" : "apextier3pants" }],
+            "primary" : [
+              "scorpio_assaultrifle_rare",
+              "npcbroadsword",
+              "npchammer",
+              "npcspear"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {  
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 220.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 12.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.2
+      }
+    }
+  }
+}

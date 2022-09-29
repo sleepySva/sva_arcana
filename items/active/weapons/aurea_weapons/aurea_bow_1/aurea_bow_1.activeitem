@@ -1,0 +1,122 @@
+{
+  "itemName" : "aurea_bow_1",
+  "price" : 1200,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "The Divine Bow, Quaesitor. It shines brightly still, despite having long lost its true powers.",
+  "shortdescription" : "^#c0ab5e;Quaesitor^reset;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 5,
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "bow" : "body.png",
+    "bowFullbright" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0, 0]
+      }}
+    }},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/melee/laser_weapon_swing2.ogg" ],
+      "perfectRelease" : [ "/sfx/melee/laser_weapon_swing1.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "cooldownTime" : 0.1,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_projectile_scouteye",
+    "powerProjectileType" : "arcana_projectile_scouteye",
+    "projectileParameters" : {
+      "power" : 14.5,
+      "speed" : 110,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : -1,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : 1,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "name" : "Sagitta Aurea",
+    "energyPerShot" : 90,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_projectile_scouteye",
+    "powerProjectileType" : "arcana_projectile_scouteye",
+    "projectileParameters" : {
+      "power" : 9.5,
+      "speed" : 110,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : -10,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : -5,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : 5,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aurea_bow_1_projectile_1",
+          "angleAdjust" : 10,
+          "inheritDamageFactor" : 0.8,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

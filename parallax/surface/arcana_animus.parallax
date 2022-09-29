@@ -18,21 +18,20 @@
       "parallax" : 1.2
     },
     {
-      "kind" : "midnightbelow",
-      "offset" : [0, 350],
-      "noRandomOffset" : true,
+      "kind" : "midnight1",
+      "offset" : [0, 450],
       "parallax" : [3, 3.001],
       "nohueshift" : true
     },
 	
     {
       "kind" : "arcana_animus_canopy",
-      "offset" : [0, -115],
+      "offset" : [0, -40],
       "parallax" : 3.1,
       "lightMapped" : true
     },
     {
-      "kind" : "stem/forestlargetree",
+      "kind" : "arcana_animus_forestlargetree",
       "offset" : [0, 150],
       "parallax" : 3.11,
       "lightMapped" : true
@@ -44,6 +43,12 @@
       "directives" : "?saturation=-30"
     },
     {
+      "kind" : "arcana_animus_canopy",
+      "offset" : [0, -185],
+      "parallax" : 3.211,
+      "directives" : "?saturation=-30"
+    },
+    {
       "kind" : "godrays",
       "offset" : [0, 150],
       "parallax" : 3.211,
@@ -51,9 +56,27 @@
       "unlit" : true
     },
     {
-      "kind" : "stem/forestlargetree",
+      "kind" : "arcana_animus_forestlargetree",
       "offset" : [0, 150],
       "parallax" : 3.2
+    },
+    {
+      "kind" : "arcana_animus_forestsmalltree",
+      "offset" : [0, 150],
+      "parallax" : 3.22,
+      "lightMapped" : true
+    },
+    {
+      "kind" : "arcana_animus_canopy",
+      "offset" : [0, 25],
+      "parallax" : 3.23,
+      "directives" : "?saturation=-30"
+    },
+    {
+      "kind" : "arcana_animus_forestsmalltree",
+      "offset" : [0, 150],
+      "parallax" : 3.24,
+      "lightMapped" : true
     },
 	
     {

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "chestwear",
-  "description" : "A piece of clothing, decorated with flowers. ^green;+5% Poison and Ice res.^reset;",
+  "description" : "A piece of clothing, decorated with flowers. ^green;+5% Poison res.^reset;",
   "shortdescription" : "Alchemilla Shroud",
   "tooltipKind" : "armor",
 
@@ -46,11 +46,6 @@
     {
       "levelFunction" : "arcana_multiplier_static",
       "stat" : "poisonResistance",
-      "amount" : 0.05
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "iceResistance",
       "amount" : 0.05
     }
   ],

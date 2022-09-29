@@ -1,0 +1,21 @@
+{
+  "materialId" : 16311,
+  "materialName" : "studio_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile7",
+  "description" : "A modern wooden flooring tile for studios.",
+  "shortdescription" : "Studio Robusta Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile7.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1313
+  }
+}

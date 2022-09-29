@@ -3,8 +3,8 @@
   "price" : 960,
   "level" : 5,
   "maxStack" : 1,
-  "rarity" : "Uncommon",
-  "description" : "Also known as the green sword!",
+  "rarity" : "Legendary",
+  "description" : "An alien sword forged from toxic material.",
   "shortdescription" : "Viridescent Katana",
   "tooltipKind" : "sword",
   "category" : "broadsword",
@@ -20,22 +20,19 @@
     "blade" : "misc_katana_viridescentKatana.png"
   },
   "animationCustom" : {
-    "sounds" : {
-      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-	  "fire4" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
-    }
   },
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
 
   "primaryAbilityType" : "arcana_katana_combo",
   "primaryAbility" : {
     "fireTime" : 0.8,
-    "baseDps" : 8.2
+    "baseDps" : 8.2,
+	"damageConfig" : {
+	  "damageSourceKind" : "poisonbroadsword"
+	}
   },
 
   "altAbilityType" : "parry",

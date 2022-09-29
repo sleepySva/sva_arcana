@@ -1,0 +1,30 @@
+{
+  "projectileName" : "arcana_throwable_gleamplane",
+  "speed" : 180,
+  "physics" : "paperplane",
+  "timeToLive" : 30,
+  "image" : "body.png",
+  "flippable" : true,
+  "frameNumber" : 1,
+  "animationCycle" : 0.3,
+  "windupFrames" : 1,
+  "intangibleWindup" : true,
+  
+  "lightColor" : [218, 201, 83],
+  "emitters" : ["sparkles"],
+
+  "damageKind" : "default",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "clientEntityMode" : "ClientSlaveOnly",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/paperplaneexplosion/paperplaneexplosion.config"
+    },
+    {
+      "action" : "item",
+      "name" : "arcana_throwable_gleamplane"
+    }
+  ],
+  "damagePoly" : [ [-4, 3], [-4, -3], [4, -3], [4, 3] ]
+}

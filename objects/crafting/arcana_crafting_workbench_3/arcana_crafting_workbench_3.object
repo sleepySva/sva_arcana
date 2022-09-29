@@ -2,30 +2,40 @@
   "objectName" : "arcana_crafting_workbench_3",
   "colonyTags" : ["crafting"],
   "rarity" : "Legendary",
-  "description" : "A modern crafting table, lets you craft furniture and materials.",
-  "shortdescription" : "^#63c7e9;Orion Workstation^reset;",
+  "description" : "Replacement",
+  "shortdescription" : "Replacement",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 1400,
+  "price" : 1,
   
-  "lightColor" : [120, 140, 160],
-
-  "interactAction" : "OpenCraftingInterface",
-  "interactData" : {
-    "config" : "/interface/arcana/arcana_crafting_workbench/arcana_crafting_workbench_3.config",
-	"filter" : ["arcana_crafting_workbench_1", "arcana_crafting_workbench_2", "arcana_crafting_workbench_3"]
-  },
-
+  "breakDropOptions" : [
+	[ [ "arcana_crafting_workbench_2", 1, { } ] ]
+  ],
+  "printable" : false,
   "inventoryIcon" : "icon.png",
+  
   "orientations" : [
     {
-      "dualImage" : "arcana_crafting_workbench_3.png:<color>.<frame>",
-      "imagePosition" : [-24, 0],
-      "frames" : 12,
-      "animationCycle" : 1.4,
+	  "image" : "body.png:<color>.<frame>",
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : []
+
+    },
+	{
+	  "image" : "body.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
 
     }
   ]

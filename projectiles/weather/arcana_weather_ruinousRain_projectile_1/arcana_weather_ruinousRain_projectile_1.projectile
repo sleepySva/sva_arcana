@@ -1,0 +1,26 @@
+{
+  "projectileName" : "arcana_weather_ruinousRain_projectile_1",
+  "physics" : "rain",
+  "image" : "body.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 2,
+  "damagePoly" : [ [-30, -30], [30, -30], [30, 30], [-30, 30] ],
+  "damageKind" : "hidden",
+  "actionOnReap" : [
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : "tilleddry",
+      "newMod" : "tilled",
+      "radius" : 5
+    },
+    {
+      "action" : "liquid",
+      "liquid" : "arcana_liquid_ruinousWater",
+      "quantity" : 0.2
+    }
+  ],
+
+  "onlyHitTerrain" : true,
+  "hydrophobic" : true,
+  "masterOnly" : true
+}

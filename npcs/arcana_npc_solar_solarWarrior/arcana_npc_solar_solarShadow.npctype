@@ -2,8 +2,6 @@
   "type" : "arcana_npc_solar_solarShadow",
   "baseType" : "hostile",
   
-  "levelVariance" : [8.0, 8.0],
-  
   "dropPools" : [ "arcana_monsterdrops_soli" ],
 
   "scriptConfig" : {
@@ -70,6 +68,12 @@
   },
   
   "statusControllerSettings" : {    
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+  
     "stats" : {
       "maxHealth" : {
         "baseValue" : 140.0

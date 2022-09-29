@@ -1,0 +1,21 @@
+{
+  "materialId" : 16312,
+  "materialName" : "studio_tile8",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile8",
+  "description" : "A modern ornate wood for studios.",
+  "shortdescription" : "Studio Ornate Wood",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile8.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1311
+  }
+}

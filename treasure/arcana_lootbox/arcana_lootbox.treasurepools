@@ -1,6 +1,65 @@
 
 {
 
+  "arcana_lootbox_maybeTreasure" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.05, "pool" : "arcana_lootbox_legendaryTreasure"},
+		{"weight" : 0.95, "pool" : "basicTreasure"}
+      ]
+    }]
+  ],
+  
+  "arcana_lootbox_legendaryTreasureBag" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["misc_wand_tripleDecker", 1]},
+		{"weight" : 1.0, "item" : ["misc_katana_viridescentKatana", 1]},
+		{"weight" : 1.0, "item" : ["conflagration_greatsword_1", 1]},
+		{"weight" : 1.0, "item" : ["magnus_staff_grandel", 1]},
+		{"weight" : 1.0, "item" : ["magnus_assaultRifle_selach", 1]},
+		{"weight" : 1.0, "item" : ["misc_katana_ouroburos", 1]},
+		{"weight" : 1.0, "item" : ["artifact_magiblade_twinDragon", 1]},
+		{"weight" : 1.0, "item" : ["misc_axe_blackout", 1]},
+		{"weight" : 1.0, "item" : ["misc_broadsword_swordOfNightmist", 1]},
+		{"weight" : 1.0, "item" : ["misc_katana_neon", 1]},
+		{"weight" : 1.0, "item" : ["magnus_blastRifle_testaViola", 1]},
+		{"weight" : 1.0, "item" : ["misc_assaultRifle_terminator", 1]}
+      ]
+    }]
+  ],
+
+  "arcana_lootbox_legendaryTreasure" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["misc_wand_tripleDecker", 1]}
+      ]
+    }],
+    [2.9, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["misc_katana_viridescentKatana", 1]},
+		{"weight" : 1.0, "item" : ["conflagration_greatsword_1", 1]}
+      ]
+    }],
+    [4.9, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["magnus_staff_grandel", 1]},
+		{"weight" : 1.0, "item" : ["magnus_assaultRifle_selach", 1]},
+		{"weight" : 1.0, "item" : ["misc_katana_ouroburos", 1]},
+		{"weight" : 1.0, "item" : ["artifact_magiblade_twinDragon", 1]}
+      ]
+    }],
+    [6.9, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["misc_axe_blackout", 1]},
+		{"weight" : 1.0, "item" : ["misc_broadsword_swordOfNightmist", 1]},
+		{"weight" : 1.0, "item" : ["misc_katana_neon", 1]},
+		{"weight" : 1.0, "item" : ["magnus_blastRifle_testaViola", 1]},
+		{"weight" : 1.0, "item" : ["misc_assaultRifle_terminator", 1]}
+      ]
+    }]
+  ],
+
   "arcana_lootbox_bambooBundle" : [
     [0, {
 	  "fill" : [

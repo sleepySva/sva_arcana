@@ -1,0 +1,61 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "blinkCharge" : {
+          "default" : "idle",
+          "states" : {
+            "idle" : {
+            },
+            "charge" : {
+              "cycle" : 0.3,
+              "mode" : "transition",
+              "transition" : "idle",
+              "properties" : {
+                "immediateSound" : "/sfx/melee/charge_up15.ogg"
+              }
+            }
+          }
+        }
+      }
+    },
+    "particleEmitters" : {
+      "fireCharge" : {
+        "active" : false,
+        "emissionRate" : 30,
+        "offsetRegion" : [-0.625, 0.0, 0.375, 2.5],
+        "particles" : [
+          { "particle" : "fastrisingfire1"},
+          { "particle" : "fastrisingfire2"},
+          { "particle" : "fastrisingfire3"}
+        ]
+      }
+    }
+  },
+
+  "ability" : {
+    "name" : "Blink",
+    "type" : "arcana_generic_ability_blink",
+    "scripts" : ["/items/active/weapons/melee/abilities/generic/arcana_generic_ability_blink/arcana_generic_ability_blink.lua"],
+    "class" : "BlinkExplosion",
+
+    "energyUsage" : 120.0,
+    "cooldownTime" : 1.4,
+
+    "maxDistance" : 12,
+
+    "stances" : {
+      "charge" : {
+        "duration" : 0.2,
+        "armRotation" : 45,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

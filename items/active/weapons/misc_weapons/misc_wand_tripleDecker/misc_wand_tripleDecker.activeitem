@@ -1,11 +1,11 @@
 {
   "itemName" : "misc_wand_tripleDecker",
-  "price" : 10000,
+  "price" : 2100,
   "maxStack" : 1,
   "level" : 4,
-  "rarity" : "Uncommon",
+  "rarity" : "Legendary",
   "description" : "Taste the icy sweetness!",
-  "shortdescription" : "Trip1e Decker",
+  "shortdescription" : "Triple Decker",
   "category" : "uniqueWeapon",
   "twoHanded" : false,
   "itemTags" : ["weapon","staff"],
@@ -81,7 +81,7 @@
   "primaryAbility" : {
 
     "name" : "Neapolitan Swarm",
-	"energyCost" : 12,
+	"energyCost" : 22,
     "maxCastRange" : 24,
 	
 	"projectileType" : "misc_projectile_tripleDecker_1",
@@ -96,7 +96,7 @@
     "projectileDelayEach" : 0.06,
 
     "projectileParameters" : {
-      "baseDamage" : 8
+      "baseDamage" : 9.8
     },
 
     "stances" : {

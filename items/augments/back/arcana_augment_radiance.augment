@@ -1,0 +1,25 @@
+{
+  "itemName" : "arcana_augment_radiance",
+  "price" : 2100,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "arcana_augment_radiance.png",
+  "description" : "^green;Grants Radiance immunity. Useful as an Illuminated EPP replacement.^reset;",
+  "shortdescription" : "EPA - Illuminated",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "arcana_augment_radiance",
+    "displayName" : "EPA - Illuminated",
+    "displayIcon" : "/items/augments/back/arcana_augment_radiance.png",
+    "effects" :
+	[
+		"arcana_status_radiance_immunity"
+	]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

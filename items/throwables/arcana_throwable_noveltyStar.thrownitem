@@ -1,0 +1,30 @@
+{
+  "itemName" : "arcana_throwable_noveltyStar",
+  "rarity" : "Legendary",
+  "price" : 1,
+  "category" : "throwableItem",
+  "inventoryIcon" : "arcana_throwable_noveltyStar.png",
+  "image" : "arcana_throwable_noveltyStar.png",
+  "shortdescription" : "Super Star",
+  "description" : "It's a star!",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "arcana_throwable_noveltyStar",
+  "projectileConfig" : {
+    "speed" : 40,
+    "power" : 0,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/toy_throw1.ogg", "/sfx/projectiles/toy_throw2.ogg" ]
+      }
+    ]
+  }
+}

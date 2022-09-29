@@ -1,0 +1,64 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "properties" : {
+              "particleEmittersOff" : [ "confetti" ]
+            }
+          },
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "confetti",
+            "properties" : {
+              "immediateSound" : "/sfx/melee/sword_parry_big.ogg",
+              "particleEmittersOff" : [ "confetti" ]
+            },
+            "frameProperties" : {
+              "stateNudge" : [ [-0.125, 0], [0, 0] ]
+            }
+          },
+          "confetti" : {
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+              "particleEmittersOn" : [ "confetti" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "arcana_scroll_fire.png",
+          "offset" : [0.0, 0.0]
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "confetti" : {
+      "emissionRate" : 20,
+      "burstCount" : 8,
+      "emissionRateVariance" : 0.0,
+      "active" : true,
+	  "offsetRegion" : [-1.5, -0.5, -0.5, 0.5],
+
+      "particles" : [
+        { "particle" : "soluskatana1"},
+        { "particle" : "soluskatana2"},
+		{ "particle" : "largefireswoosh1"},
+		{ "particle" : "largefireswoosh2"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_studio_deco_3",
+  "colonyTags" : ["misc","arcana_studio"],
+  "rarity" : "Rare",
+  "description" : "A painting of a familiar looking Hylotl.",
+  "shortdescription" : "Studio Painting",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 380,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -74,15 +74,15 @@
       // sunny pink day, pink/peach sunrise and blue/pink sunset
       "mainColor" : [255, 255, 255],
 
-      "morningColors" : [ [197, 48, 174], [253, 161, 96] ],
-      "dayColors" : [ [152, 66, 235], [145, 185, 255] ],
+      "morningColors" : [ [177, 48, 194], [233, 161, 116] ],
+      "dayColors" : [ [74, 49, 156], [145, 185, 255] ],
       "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
       "nightColors" : [ [34, 28, 63, 80], [58, 32, 80, 160] ],
 
       "morningLightColor" : [140, 71, 0],
-      "dayLightColor" : [230, 210, 190],
-      "eveningLightColor" : [180, 120, 120],
-      "nightLightColor" : [40, 20, 60]
+      "dayLightColor" : [180, 180, 220],
+      "eveningLightColor" : [160, 120, 140],
+      "nightLightColor" : [60, 30, 90]
     }
   ],
 
@@ -115,6 +115,21 @@
     "grassModDensity" : 0.8,
 
     "items" : [
+	
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "scorchedbench" ], [0.2, "dumpster" ], [0.2, "scorchedcitybrokenchair" ], [0.2, "woodenutilitypole1" ], [0.2, "scorchedcitybrokentraficlights" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
       {
         "mode" : "floor",
         "priority" : 0.0,
@@ -163,7 +178,16 @@
       },
 
       // MICRO DUNGEONS
+	  
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
 
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_superstormExpanse_dungeon_2" ]
+      },
       {
         "mode" : "floor",
         "priority" : 1,

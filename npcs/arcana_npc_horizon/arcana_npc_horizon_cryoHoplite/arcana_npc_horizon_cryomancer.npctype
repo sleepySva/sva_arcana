@@ -1,0 +1,103 @@
+{
+  "type" : "arcana_npc_horizon_cryomancer",
+  "baseType" : "hostile",
+  
+  "dropPools" : [ "arcana_npcdrops_horizon_cryoHoplite" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Be banished by frozen frost!",
+			"Freeze!",
+            "The Horizon will bring down judgement upon you!",
+            "You are no match for the Horizon.",
+            "For the Horizon!",
+            "Prepare to meet your doom.",
+            "You will regret coming here.",
+            "You cannot defeat the Horizon!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_cryoHoplite_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_cryoHoplite_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_cryoHoplite_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+	        "back" : [
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "arcana_spell_ice_iceSplinters",
+			  "arcana_spell_ice_frostLance",
+			  "arcana_spell_ice_frozenNeedles"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "innateStatusEffects" : ["arcana_status_cryocraze"],
+  
+  "movementParameters" : {
+    "mass" : 1.0,
+    "runSpeed" : 10.0
+  },
+  
+  "statusControllerSettings" : {  
+	
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 200.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 120.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 4.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 40.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 0.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "fireResistance" : {
+        "baseValue" : -0.4
+      },
+      "iceResistance" : {
+        "baseValue" : 1.0
+      },
+      "arcana_resistance_abyss" : {
+        "baseValue" : 0.8
+      }
+    }
+  }
+}

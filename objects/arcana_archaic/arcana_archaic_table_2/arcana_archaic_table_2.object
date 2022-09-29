@@ -1,0 +1,26 @@
+{
+  "objectName" : "arcana_archaic_table_2",
+  "colonyTags" : ["misc","arcana_archaic"],
+  "rarity" : "Common",
+  "description" : "An ancient stone table.",
+  "shortdescription" : "Archaic Stone Table",
+  "race" : "gilten",
+  "category" : "furniture",
+  "price" : 170,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
+
