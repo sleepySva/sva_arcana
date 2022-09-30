@@ -42,7 +42,7 @@
       "hostileActions" : [
         {
           "name" : "action-fire",
-          "cooldown" : 0.3,
+          "cooldown" : 2.0,
           "parameters" : {
             "requireLineOfSight" : false,
             "maximumRange" : 50,
@@ -52,6 +52,8 @@
             "windupTime" : 0.3,
 
             "projectileType" : "artifact_battlestaff_chronologia_projectile_1",
+			"projectileCount" : 5,
+            "projectileInterval" : 0.04,
             "projectileParameters" : {
             },
             "fireOffset" : [0.0, 0.75],
@@ -62,7 +64,7 @@
             "fireSound" : "fire",
 
             "winddownState" : "",
-            "winddownTime" : 0.2
+            "winddownTime" : 0.4
           }
         },
         {
