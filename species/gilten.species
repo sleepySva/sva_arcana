@@ -1,10 +1,13 @@
 {
   "kind" : "gilten",
-	"charCreationTooltip" : {
+  "charCreationTooltip" : {
 	"title" : "Gilten",
 	"subTitle" : "Au",
 	"description" : "Residing in sky-bound arks, the ^#c0ab5e;Gilten^reset; are draco-humanoids that worship the divine Light of the Aeon. Possessing affinities harnessed from the Light, the Gilten are naturally resilient against basic elements, but weak from physical strikes."
   },
+  
+  "statusEffects" : [ "arcana_status_resistance_gilten" ],
+  
   "nameGen" : [ "/species/giltenmalenamegen.config:names", "/species/giltenfemalenamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/arcanianhurt_male1.ogg", "/sfx/humanoid/arcanianhurt_female1.ogg" ],
   "charGenTextLabels" : [ "Skin colour", "Hair style", "Shirt", "Legwear", "Fragment", "Hair colour", "Shirt colour", "Legwear colour", "GILTEN", "Personality" ],
