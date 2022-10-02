@@ -1121,18 +1121,6 @@
                  "y":496
                 }, 
                 {
-                 "gid":7545,
-                 "height":40,
-                 "id":3075,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":1072,
-                 "y":624
-                }, 
-                {
                  "gid":202,
                  "height":8,
                  "id":3085,
@@ -1635,6 +1623,18 @@
                  "width":24,
                  "x":568,
                  "y":7224
+                }, 
+                {
+                 "gid":9745,
+                 "height":8,
+                 "id":3159,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":42,
+                 "x":1064,
+                 "y":624
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1826,7 +1826,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":3158,
+ "nextobjectid":3160,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -2087,6 +2087,10 @@
         {
          "firstgid":9725,
          "source":"..\/..\/tilesets\/objects\/aurea_objects\/aurea_objects.json"
+        }, 
+        {
+         "firstgid":9732,
+         "source":"..\/..\/tilesets\/objects\/misc_objects\/misc_objects.json"
         }],
  "tilewidth":8,
  "type":"map",

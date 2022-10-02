@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":13,
+ "tilecount":14,
  "tileheight":256,
  "tileproperties":
     {
@@ -112,6 +112,14 @@
          "imagePositionY":"0",
          "object":"arcana_misc_ironStairBack",
          "tilesetDirection":"right"
+        },
+     "13":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_teleporter_smallExitTeleporter",
+         "tilesetDirection":"right"
         }
 
     },
@@ -168,6 +176,10 @@
      "12":
         {
          "image":"arcana_misc_ironStairBack.png"
+        },
+     "13":
+        {
+         "image":"arcana_teleporter_smallExitTeleporter.png"
         }
     },
  "tilewidth":188
