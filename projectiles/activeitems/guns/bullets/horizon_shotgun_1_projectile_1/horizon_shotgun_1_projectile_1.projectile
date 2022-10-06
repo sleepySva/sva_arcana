@@ -4,7 +4,7 @@
   
   "timeToLive" : 4,
   "bounces" : 0,
-  "speed" : 120,
+  "speed" : 102,
   "piercing" : true,
   
   "image" : "horizon_shotgun_1_projectile_1.png",
@@ -13,7 +13,7 @@
   
   "fullbright" : true,
   "lightColor" : [148, 62, 145],
-  "emitters" : ["electricplasmapurple","electricplasma","defaultmagenta"],
+  "emitters" : ["electricplasmapurple","electricplasma"],
   
   "supportsProcessing" : true,
   
@@ -26,7 +26,7 @@
   
   "periodicActions" : [
     {
-      "time" : 0.08,
+      "time" : 0.01,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
@@ -36,8 +36,8 @@
         "position" : [0, 0],
         "layer" : "back",
         "timeToLive" : 0.0,
-        "destructionTime" : 0.2,
-        "destructionAction" : "fade",
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
         "fullbright" : true
       }
     }

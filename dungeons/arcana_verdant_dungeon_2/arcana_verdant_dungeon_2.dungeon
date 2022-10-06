@@ -115,6 +115,22 @@
       ],
       "def" : [ "tmx", [ "arcana_verdant_dungeon_2_part_right.json" ] ],
       "chance" : 0
+    },
+    {
+      "name" : "arcana_verdant_dungeon_2_part_top_2",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_verdant_dungeon_2_part_top_2.json" ] ],
+      "chance" : 0
+    },
+    {
+      "name" : "arcana_verdant_dungeon_2_part_bottom",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", [ "arcana_verdant_dungeon_2_part_bottom.json" ] ],
+      "chance" : 0
     }
   ]
 }

@@ -33,13 +33,16 @@
       "time" : "all"
     },
     "groupSize" : [1, 2],
-    "spawnChance" : 0.008,
+    "spawnChance" : 0.005,
     "monsterType" : [
       [1, "trifangle"]
     ],
     "monsterParameters" : {
       "aggressive" : true,
-	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier",
+      "touchDamage" : {
+        "damage" : 9
+      }
     }
   },
   
@@ -52,13 +55,16 @@
       "time" : "all"
     },
     "groupSize" : [1, 2],
-    "spawnChance" : 0.01,
+    "spawnChance" : 0.005,
     "monsterType" : [
       [1, "spinemine"]
     ],
     "monsterParameters" : {
       "aggressive" : true,
-	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier",
+      "touchDamage" : {
+        "damage" : 9
+      }
     }
   },
   
@@ -71,13 +77,16 @@
       "time" : "all"
     },
     "groupSize" : [1, 1],
-    "spawnChance" : 0.006,
+    "spawnChance" : 0.003,
     "monsterType" : [
       [1, "heavydrone"]
     ],
     "monsterParameters" : {
       "aggressive" : true,
-	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier",
+      "touchDamage" : {
+        "damage" : 9
+      }
     }
   },
   
@@ -90,13 +99,16 @@
       "time" : "all"
     },
     "groupSize" : [1, 2],
-    "spawnChance" : 0.01,
+    "spawnChance" : 0.005,
     "monsterType" : [
       [1, "cosmostache"]
     ],
     "monsterParameters" : {
       "aggressive" : true,
-	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier",
+      "touchDamage" : {
+        "damage" : 8
+      }
     }
   },
   
@@ -109,13 +121,16 @@
       "time" : "all"
     },
     "groupSize" : [1, 2],
-    "spawnChance" : 0.01,
+    "spawnChance" : 0.005,
     "monsterType" : [
       [1, "chiropterror"]
     ],
     "monsterParameters" : {
       "aggressive" : true,
-	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier",
+      "touchDamage" : {
+        "damage" : 8
+      }
     }
   },
   
@@ -127,14 +142,17 @@
       "region" : "exposed",
       "time" : "all"
     },
-    "groupSize" : [1, 2],
-    "spawnChance" : 0.02,
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.005,
     "monsterType" : [
       [1.0, "omnicannon"]
     ],
     "monsterParameters" : {
       "aggressive" : true,
-	  "powerLevelFunction" : "monsterLevelPowerMultiplier"
+	  "powerLevelFunction" : "monsterLevelPowerMultiplier",
+      "touchDamage" : {
+        "damage" : 4
+      }
     }
   },
   

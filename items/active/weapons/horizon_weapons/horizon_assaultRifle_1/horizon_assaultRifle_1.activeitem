@@ -1,6 +1,6 @@
 {
   "itemName" : "horizon_assaultRifle_1",
-  "price" : 1000,
+  "price" : 1800,
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A dark rifle made from necroium.",
@@ -12,7 +12,7 @@
   "level" : 7,
   "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "horizon_assaultRifle_1" },
 
-  "inventoryIcon" : "icon.png",
+  "inventoryIcon" : "horizon_assaultRifle_1.png",
 
   "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
@@ -20,25 +20,30 @@
     "middle" : "horizon_assaultRifle_1.png",
 	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_purple.png"
   },
   "animationCustom" : {
     "animatedParts" : {
 	  "parts" : {
 	    "fullbright" : {
 		  "properties" : {
-		    "offset" : [1.2, 0.25]
+		    "offset" : [1.1, 0.25]
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.6, -0.5]
 		  }
 		}
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/ar4.ogg"]
+      "fire" : ["/sfx/gun/plasma_mp1.ogg","/sfx/gun/plasma_mp2.ogg","/sfx/gun/plasma_mp3.ogg"]
     }
   },
 
-  "baseOffset" : [1.2, 0.25],
-  "muzzleOffset" : [3.4, 0.4],
+  "baseOffset" : [1.1, 0.35],
+  "muzzleOffset" : [2.9, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -48,10 +53,10 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.10,
-    "baseDps" : 64.0,
-    "energyUsage" : 68.0,
-    "inaccuracy" : 0.08,
+    "fireTime" : 0.08,
+    "baseDps" : 54.0,
+    "energyUsage" : 74.0,
+    "inaccuracy" : 0.06,
 
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -59,7 +64,7 @@
     "projectileType" : "horizon_shotgun_1_projectile_1",
     "projectileParameters" : {
       "damageKind" : "shotgunbullet",
-      "knockback" : 20
+      "knockback" : 8
     },
     "stances" : {
       "idle" : {
@@ -72,17 +77,17 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "duration" : 0.10,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
