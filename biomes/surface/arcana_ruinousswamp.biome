@@ -1,6 +1,6 @@
 {
-  "name" : "arcana_ruinous",
-  "friendlyName" : "Ruinous",
+  "name" : "arcana_ruinousSwamp",
+  "friendlyName" : "Ruinous Swamp",
 
   "statusEffects" : [ "arcana_status_cataclysm" ],
 
@@ -106,7 +106,7 @@
   "subBlocks" : [ "desolate_tile1", "desolate_tile2", "shadowblock"],
   "ores" : "arcana_ruinous_ores_surface",
 
-  "parallax" : "/parallax/surface/arcana_ruinous.parallax",
+  "parallax" : "/parallax/surface/arcana_ruinousSwamp.parallax",
 
   "ambientNoises" : {
     "day" : {
@@ -162,19 +162,19 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:rare",
+        "distribution" : "/biomes/distributions.config:uncommon",
 
         "type" : "microdungeon",
-        "microdungeons" : [ "arcana_ruinous_dungeon_1" ]
+        "microdungeons" : [ "darkmicrodungeons" ]
       },
       {
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:uncommon",
+        "distribution" : "/biomes/distributions.config:common",
 
         "type" : "microdungeon",
-        "microdungeons" : [ "darkmicrodungeons" ]
+        "microdungeons" : [ "arcana_ruinous_dungeon_1" ]
       },
       {
         "mode" : "floor",
@@ -217,7 +217,7 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:scatteredSmall",
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
 
         "type" : "tree",
         "treeFoliageHueShiftMax" : 0,
@@ -229,7 +229,7 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:scatteredSmall",
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
 
         "type" : "tree",
         "treeFoliageHueShiftMax" : 0,
