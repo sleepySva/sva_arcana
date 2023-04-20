@@ -8,28 +8,10 @@
       "swoosh" : {
         "default" : "idle",
         "states" : {
-          "idle" : {
-          },
-          "fire" : {
-            "frames" : 3,
-            "cycle" : 0.1,
-            "mode" : "transition",
-            "transition" : "idle"
-          },
-          "fire2" : {
-            "frames" : 3,
-            "cycle" : 0.1,
-            "mode" : "transition",
-            "transition" : "idle"
-          },
-          "fire3" : {
-            "frames" : 3,
-            "cycle" : 0.1,
-            "mode" : "transition",
-            "transition" : "idle"
-          }
-        }
-      },
+          "idle" : {},
+          "fire" : {"frames" : 3,"cycle" : 0.1,"mode" : "transition","transition" : "idle"},
+          "fire2" : {"frames" : 3,"cycle" : 0.1,"mode" : "transition","transition" : "idle"},
+          "fire3" : {"frames" : 3,"cycle" : 0.1,"mode" : "transition","transition" : "idle"}}},
       "blade" : {
         "default" : "idle",
         "states" : {
@@ -55,9 +37,7 @@
             "cycle" : 0.6,
             "mode" : "transition",
             "transition" : "idle"
-          }
-        }
-      },
+          }}},
       "handle" : {
         "default" : "idle",
         "states" : {
@@ -83,11 +63,7 @@
             "cycle" : 0.6,
             "mode" : "transition",
             "transition" : "idle"
-          }
-        }
-      }
-    },
-	 
+          }}}},
     "parts" : {
       "blade" : {
         "properties" : {
@@ -118,17 +94,13 @@
             "fire3" : {
               "properties" : {
                 "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
-              }
-            }
-          }
-        }
-      },
+              }}}}},
       "handle" : {
         "properties" : {
           "zLevel" : 1,
           "centered" : true,
-		  "fullbright" : true,
-          "offset" : [0.0, 2.0], // Same as blade offset
+		      "fullbright" : true,
+          "offset" : [0.0, 2.0],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0]
         },
@@ -152,16 +124,12 @@
             "fire3" : {
               "properties" : {
                 "image" : "<partImage>:idle.<frame>?<paletteSwaps>?<directives>"
-              }
-            }
-          }
-        }
-      },
+              }}}}},
       "swoosh" : {
         "properties" : {
           "zLevel" : -1,
           "centered" : true,
-		  "fullbright" : true,
+		      "fullbright" : true,
           "offset" : [0.0, 0.0],
           "transformationGroups" : ["swoosh"],
           "rotationCenter" : [0, 0]
@@ -193,13 +161,7 @@
                 "image" : "/items/active/weapons/melee/broadsword/swoosh3/physicalswoosh.png:<frame>",
                 "offset" : [3.5, 0],
                 "damageArea" : [[-4.75, 1.5], [3, 1], [3, -1], [-4.75, -1.5]]
-              }
-            }
-          }
-        }
-      }
-    }
-  },
+              }}}}}}},
 
   "transformationGroups" : {
     "weapon" : {},
@@ -215,15 +177,15 @@
       "particles" : []
     },
     "arcana_azureswoosh" : {
-      "active" : false,
+      "active" : true,
       "transformationGroups" : ["swoosh"],
-      "emissionRate" : 20,
+      "emissionRate" : 8,
       "burstCount" : 4,
       "particles" : [
         { "particle" : "arcana_particle_ember_cyan_1"},
         { "particle" : "arcana_particle_ember_cyan_2"}
-      ]
-    },
+    ]
+  },
     "blade" : {
       "active" : true,
       "transformationGroups" : ["weapon"],
@@ -235,10 +197,6 @@
       ]
     }
   },
-
-  "sounds" : {
-    "fire" : [ ],
-    "fire2" : [ ],
-    "fire3" : [ ]
-  }
+  "lights":{"glow":{"color":[154, 185, 202]}},
+  "sounds" : {}
 }

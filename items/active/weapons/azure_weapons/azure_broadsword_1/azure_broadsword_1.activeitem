@@ -10,31 +10,26 @@
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword"],
-
   "inventoryIcon" : "body.png:idle.1",
-
   "animation" : "animation.animation",
   "animationParts" : {
     "blade" : "body.png",
     "handle" : "fullbright.png"
   },
   "animationCustom" : {
-    "animatedParts" : {
-      "parts" : {
-        "risingSwoosh" : {
-          "properties" : {
-            "fullbright" : true
-          }
-		}
-	  }
-	},
+    "animatedParts" : { "parts" : { 
+      "swoosh" : { "partStates" : { "swoosh" : {
+        "fire" : { "properties" : { "image" : "/items/active/weapons/melee/broadsword/swoosh/arcana_azure_broadsword_swoosh.png:<frame>" }},
+        "fire2" : { "properties" : { "image" : "/items/active/weapons/melee/broadsword/swoosh2/arcana_azure_broadsword_swoosh.png:<frame>" }},
+        "fire3" : { "properties" : { "image" : "/items/active/weapons/melee/broadsword/swoosh3/protectorswoosh.png:<frame>" }},
+        "fire4" : { "properties" : { "image" : "/items/active/weapons/melee/broadsword/swoosh/arcana_azure_broadsword_swoosh.png:<frame>" }},
+        "fire5" : { "properties" : { "image" : "/items/active/weapons/melee/broadsword/swoosh/arcana_azure_broadsword_swoosh.png:<frame>" }},
+        "fire6" : { "properties" : { "image" : "/items/active/weapons/melee/broadsword/swoosh/arcana_azure_broadsword_swoosh.png:<frame>" }}
+        }}}}},
     "sounds" : {
       "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
       "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-	  "upswing" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
-    }
-  },
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]}},
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
@@ -42,19 +37,239 @@
 
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
-    "fireTime" : 0.94,
-    "baseDps" : 16.2,
-	"damageConfig" : {
-	  "damageSourceKind" : "arcana_azure_slash"
-	}
-  },
+    "fireTime":0.86,
+    "baseDps":15,
+    "damageConfig":{
+        "damageSourceKind" : "arcana_azure_slash"
+      },
+      "comboSteps":6,
+      "swooshOffsetRegions":[
+        [0.75, 0.0, 4.25, 5.0],
+        [0.5, 0.0, 4.5, 0.0],
+        [1.5, -1.0, 5.5, 1.0],
+        [0.75, 0.0, 4.25, 5.0],
+        [0.5, 0.0, 4.5, 0.0],
+        [1.5, -1.0, 5.5, 1.0]
+      ],
+      "stepDamageConfig":[
+        {"baseDamageFactor":0.5, "knockback":15},
+        {"baseDamageFactor":0.3, "knockback":10},
+        {"baseDamageFactor":0.4, "knockback":14},
+        {"baseDamageFactor":0.6, "knockback":13},
+        {"baseDamageFactor":0.3, "knockback":18},
+        {"baseDamageFactor":0.7, "knockback":18}
+        ],
+      "stances":{
+        "idle":{
+          "armRotation":-35,
+          "weaponRotation":12,
+          "twoHanded":true,
+          "weaponOffset":[0,0],
+          "allowRotate":false,
+          "allowFlip":true,
+          "aimAngle":0
+        },
+          "windup1":{
+          "duration":0.1,
+          "armRotation":100,
+          "weaponRotation":-10,
+          "twoHanded":true,
+          "weaponOffset":[0,0],
+          "allowRotate":true,
+          "allowFlip":true
+          },
+        "preslash1":{
+          "duration":0.025,
+          "armRotation":30,
+          "weaponRotation":-45,
+          "twoHanded":true,
+          "weaponOffset":[0,0],
+          "allowRotate":true,
+          "allowFlip":true
+          },
+        "fire1":{
+          "duration":0.15,
+          "armRotation":-45,
+          "weaponRotation":-55,
+          "twoHanded":true,
+          "weaponOffset":[0,0],
+          "allowRotate":false,
+          "allowFlip":false
+          },
+        "wait1":{
+          "duration":1.2,
+          "armRotation":-85,
+          "weaponRotation":-5,
+          "allowRotate":false,
+          "allowFlip":true,
+          "twoHanded":true,
+          "weaponOffset":[0,0]
+        },
+        "windup2":{
+          "duration":0.1, 
+          "armRotation":-100, 
+          "weaponRotation":0, 
+          "weaponOffset":[0,1], 
+          "twoHanded":true, 
+          "allowRotate":true, 
+          "allowFlip":true
+        },
+        "preslash2":{
+          "duration":0
+        },
+        "fire2":{
+          "duration":0.18, 
+          "armRotation":180, 
+          "weaponRotation":70, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":false, 
+          "allowFlip":true
+        },
+        "wait2":{
+          "duration":0.15, 
+          "armRotation":-85, 
+          "weaponRotation":-5, 
+          "allowRotate":false, 
+          "allowFlip":true, 
+          "twoHanded":true, 
+          "weaponOffset":[0,0]
+        },
+        "windup3":{
+          "duration":0.2, 
+          "armRotation":170, 
+          "weaponRotation":90, 
+          "weaponOffset":[0,1], 
+          "twoHanded":true, 
+          "allowRotate":true, 
+          "allowFlip":true
+        },
+        "preslash3":{
+          "duration":0
+        }, 
+        "fire3":{
+          "duration":0.2, 
+          "armRotation":0, 
+          "weaponRotation":-90,
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":false, 
+          "allowFlip":true
+        },
+        "wait3":{
+          "duration":0.15, 
+          "armRotation":-85, 
+          "weaponRotation":-5, 
+          "allowRotate":false, 
+          "allowFlip":true, 
+          "twoHanded":true, 
+          "weaponOffset":[0,0]
+        },
+        "windup4":{
+          "duration":0.12, 
+          "armRotation":55,
+          "weaponRotation":55, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":true, 
+          "allowFlip":true
+        },
+        "preslash4":{
+          "duration":0.1, 
+          "armRotation":60, 
+          "weaponRotation":15, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":true, 
+          "allowFlip":true
+        }, 
+        "fire4":{
+          "duration":0.2, 
+          "armRotation":-65, 
+          "weaponRotation":-20, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":false, 
+          "allowFlip":true
+        },
+        "wait4":{
+          "duration":0.1, 
+          "armRotation":-85,
+          "weaponRotation":-5, 
+          "allowRotate":false, 
+          "allowFlip":true, 
+          "twoHanded":true, 
+          "weaponOffset":[0,0]
+        },
+        "windup5":{
+          "duration":0.07, 
+          "armRotation":20, 
+          "weaponRotation":40, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":true, 
+          "allowFlip":true
+        },
+        "preslash5":{
+          "duration":0
+        },
+        "fire5":{
+          "duration":0.1, 
+          "armRotation":160, 
+          "weaponRotation":70, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":false, 
+          "allowFlip":true
+        },
+        "wait5":{
+          "duration":0.12, 
+          "armRotation":-170, 
+          "weaponRotation":50, 
+          "allowRotate":false, 
+          "allowFlip":true, 
+          "twoHanded":true, 
+          "weaponOffset":[0,0]
+        },
+        "windup6":{
+          "duration":0.2, 
+          "armRotation":110, 
+          "weaponRotation":0, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":true, 
+          "allowFlip":true
+        },
+        "preslash6":{
+          "duration":0.16, 
+          "armRotation":60, 
+          "weaponRotation":15, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":true, 
+          "allowFlip":true
+        }, 
+        "fire6":{
+          "duration":0.5, 
+          "armRotation":-35, 
+          "weaponRotation":-65, 
+          "weaponOffset":[0,0], 
+          "twoHanded":true, 
+          "allowRotate":false, 
+          "allowFlip":true
+        },
+        "wait6":{
+          "duration":0.01, 
+          "armRotation":-85, 
+          "weaponRotation":-5, 
+          "allowRotate":false, 
+          "allowFlip":true, 
+          "twoHanded":true, 
+          "weaponOffset":[0,0]}}},
 
-  "altAbilityType" : "risingslash",
-  "altAbility" : {
-	"damageConfig" : {
-	  "damageSourceKind" : "arcana_azure_slash"
-	}
-  },
+  "altAbilityType" : "arcana_azure_travelingslash",
+  "altAbility": {
+    "name": "^#71adc0;Star Key^reset;"},
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }
