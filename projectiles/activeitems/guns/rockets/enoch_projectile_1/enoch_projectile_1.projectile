@@ -1,0 +1,25 @@
+{
+  "projectileName" : "enoch_projectile_1",
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "fallSpeed" : 0,
+  "lightColor" : [10, 10, 30],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_enoch_1/arcana_explosion_enoch_1.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "rocketsmoke", "rockettrail", "rocketsmoke", "rockettrail" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 80.0,
+  "acceleration" : 20,
+  "physics" : "arrownosticky",
+  "damageType" : "NoDamage",
+  "damageKind" : "electricplasma"
+}

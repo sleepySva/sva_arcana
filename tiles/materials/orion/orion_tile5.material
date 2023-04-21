@@ -3,13 +3,13 @@
   "materialName" : "orion_tile5",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "orion_tile5",
-  "description" : "A pipe-like metal support tile.",
-  "shortdescription" : "Pipebeam Connector",
+  "description" : "A reinforced steel wall.",
+  "shortdescription" : "Steel Wall",
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
-  "health" : 12,
+  "health" : 10,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderTemplate" : "/tiles/pipetemplate.config",
   "renderParameters" : {
     "texture" : "orion_tile5.png",
     "variants" : 1,

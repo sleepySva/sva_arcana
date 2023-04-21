@@ -1,0 +1,21 @@
+{
+  "materialId" : 16689,
+  "materialName" : "orion_tile15",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile15",
+  "description" : "A solid metal beam.",
+  "shortdescription" : "Sturdy Floor Beam",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile15.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 150
+  }
+}

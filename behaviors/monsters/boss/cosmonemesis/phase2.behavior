@@ -255,10 +255,108 @@
                           "parameters": {}
                         },
 						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "cosmonemesis-phase3",
+                                    "type": "module",
+                                    "name": "cosmonemesis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "cosmonemesis-phase3",
+                                    "type": "module",
+                                    "name": "cosmonemesis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+						{
                           "title": "cosmonemesis-meteorsweepright",
                           "type": "module",
                           "name": "cosmonemesis-meteorsweepright",
                           "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "cosmonemesis-phase3",
+                                    "type": "module",
+                                    "name": "cosmonemesis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "cosmonemesis-phase3",
+                                    "type": "module",
+                                    "name": "cosmonemesis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
                         },
 						{
                           "title": "cosmonemesis-slam",
@@ -328,10 +426,108 @@
                           "parameters": {}
                         },
 						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "cosmonemesis-phase3",
+                                    "type": "module",
+                                    "name": "cosmonemesis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "cosmonemesis-phase3",
+                                    "type": "module",
+                                    "name": "cosmonemesis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+						{
                           "title": "cosmonemesis-meteorsweepleft",
                           "type": "module",
                           "name": "cosmonemesis-meteorsweepleft",
                           "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.45},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "cosmonemesis-phase3",
+                                    "type": "module",
+                                    "name": "cosmonemesis-phase3",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "cosmonemesis-phase3",
+                                    "type": "module",
+                                    "name": "cosmonemesis-phase3",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
                         },
 						{
                           "title": "cosmonemesis-slam",

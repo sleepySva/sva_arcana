@@ -1,0 +1,77 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "altMuzzleFlash" : {
+        "active" : false,
+        "rotationGroup" : "weapon",
+        "emissionRate" : 8,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0.0, -0.25, 0.5, 0.25],
+        "particles" : [
+          { "particle" : "fireswoosh1"},
+          { "particle" : "fireswoosh2"},
+          { "particle" : "fireswoosh3"}
+        ]
+      }
+    },
+    "sounds" : {
+      "altFire" : [ "/sfx/gun/grenade2.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Stinger Burst",
+    "type" : "arcana_ranged_ability_stingerBurst",
+    "scripts" : ["/items/active/weapons/ranged/abilities/arcana_ranged_ability_stingerBurst/arcana_ranged_ability_stingerBurst.lua"],
+    "class" : "ExplosiveBurst",
+
+    "elementalConfig" : {
+      "fire" : {
+        "projectileType" : "firestickygrenadestatus"
+      },
+      "ice" : {
+        "projectileType" : "icestickygrenadestatus"
+      },
+      "poison" : {
+        "projectileType" : "scorpio_projectile_stickygrenade_poison"
+      },
+      "electric" : {
+        "projectileType" : "scorpio_projectile_stickygrenade_electric"
+      }
+    },
+    "projectileParameters" : {
+      "speed" : 110,
+	  "timeToLive" : 2
+    },
+    "inaccuracy" : 0.03,
+    "burstCount" : 4,
+    "burstTime" : 0.05,
+    "baseDps" : 9.2,
+    "fireTime" : 0.2,
+    "fireType" : "burst",
+
+    "energyUsage" : 40,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

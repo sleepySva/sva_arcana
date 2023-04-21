@@ -78,14 +78,6 @@
         }
       },
 	  {
-        "title": "timer",
-        "type": "action",
-        "name": "timer",
-        "parameters": {
-          "time": {"value": 1.0}
-        }
-      },
-	  {
         "title": "entityPosition",
         "type": "action",
         "name": "entityPosition",
@@ -168,7 +160,7 @@
         "type": "action",
         "name": "timer",
         "parameters": {
-          "time": {"value": 0.2}
+          "time": {"value": 0.1}
         }
       },
 	  {
@@ -241,6 +233,14 @@
         "parameters": {
           "active": {"value": false},
           "emitter": {"value": "slam"}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.1}
         }
       }
     ]

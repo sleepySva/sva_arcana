@@ -1,0 +1,81 @@
+{
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [98, 0],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [139, 0],
+    "hAnchor" : "right",
+    "value" : "0",
+	"fontSize" : 7.2
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [16, 61],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 122
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [75, 122],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [70, 45],
+    "minSize" : [70, 40]
+  },
+  
+  "materialImage" : {
+    "type" : "image",
+    "position" : [20, 78],
+    "file" : "",
+	"zlevel" : 2
+  },
+  "materialBackground" : {
+    "type" : "image",
+    "position" : [20, 78],
+    "file" : "/items/blueprints/blueprint_background.png",
+	"zlevel" : 1
+  },
+  "materialLabel" : {
+    "type" : "label",
+    "position" : [121, 82],
+	"hAnchor" : "left",
+    "value" : "...",
+	"zlevel" : 3,
+	"fontSize" : 7.2
+  },
+  
+  "title" : {
+    "type" : "label",
+    "position" : [35, 179],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "subTitle" : {
+    "type" : "label",
+    "position" : [35, 169],
+    "hAnchor" : "left",
+    "color" : [38, 146, 200],
+    "value" : ""
+  },
+  "rarityLabel" : {
+    "type" : "label",
+    "position" : [16, 0],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126,
+	"fontSize" : 7.2
+  },
+  "titleIcon" : {
+    "type" : "itemslot",
+    "position" : [9, 167],
+    "callback" : "null",
+    "iconMode" : true,
+    "backingImage" : "/interface/itemdescriptions/arcana_blueprint_iconback.png",
+    "showRarity" : false,
+    "showBackingImageWhenFull" : true
+  }
+}

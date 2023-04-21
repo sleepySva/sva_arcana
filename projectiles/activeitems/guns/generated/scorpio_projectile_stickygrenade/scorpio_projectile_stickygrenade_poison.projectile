@@ -1,0 +1,22 @@
+{
+  "projectileName" : "scorpio_projectile_stickygrenade_poison",
+  "physics" : "stickygrenade",
+  "piercing" : false,
+  "bounces" : -1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : true,
+  "fullbright" : true,
+  "lightColor" : [40, 90, 30],
+  "image" : "poison.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 3,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/poisonexplosionknockbackstatus.config"
+    }
+  ],
+  "power" : 50,
+  "damageKind" : "poison"
+}

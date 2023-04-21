@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_misc_hazardHologram",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A striped hazard hologram to warn unwanted visitors.",
+  "shortdescription" : "Hazard Hologram",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 90,
+  
+  "lightColor" : [16, 16, 2],
+  "lightPosition" : [2, 1],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 10,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 10,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

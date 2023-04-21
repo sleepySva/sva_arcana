@@ -1,18 +1,18 @@
 {
   "objectName" : "horizon_door_1",
-  "colonyTags" : ["misc","door"],
+  "colonyTags" : ["misc","door", "arcana_horizon"],
   "rarity" : "Rare",
 
   "category" : "door",
   "price" : 200,
-  "description" : "A large door.",
+  "description" : "A large door made from necroium.",
   "shortdescription" : "Large Necroium Door",
   "race" : "generic",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "horizon_door_1.png:default",
+      "dualImage" : "body.png:default",
       "imagePosition" : [-20, 0],
       "renderLayer" : "Object+5",
 
@@ -38,7 +38,7 @@
     }
   },
   "animationParts" : {
-    "door" : "horizon_door_1.png"
+    "door" : "body.png"
   },
   "animationPosition" : [-20, 0],
 

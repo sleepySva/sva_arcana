@@ -2,18 +2,32 @@
   "objectName" : "orion_walldeco_11",
   "colonyTags" : ["misc"],
   "rarity" : "Rare",
-  "description" : "A neon sign.",
-  "shortdescription" : "Neon City Sign",
+  "description" : "A bright display sign for Reind, a sportswear company.",
+  "shortdescription" : "Reind Sportswear Sign",
   "race" : "generic",
   "category" : "decorative",
-  "price" : 100,
+  "price" : 140,
 
-  "lightColor" : [164, 118, 219],
+  "lightColor" : [116, 124, 10],
+  "lightPosition" : [5, 1],
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "orion_walldeco_11.png:<color>",
-      "imagePosition" : [-32, 0],
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-40, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 

@@ -71,18 +71,17 @@
 
   "skyOptions" : [
     {
-      // sunny pink day, pink/peach sunrise and blue/pink sunset
       "mainColor" : [255, 255, 255],
 
-      "morningColors" : [ [177, 48, 194], [233, 161, 116] ],
-      "dayColors" : [ [74, 49, 156], [145, 185, 255] ],
-      "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
-      "nightColors" : [ [34, 28, 63, 80], [58, 32, 80, 160] ],
+      "morningColors" : [ [14, 14, 50, 80], [150, 42, 120, 190] ],
+      "dayColors" : [ [14, 14, 50, 80], [150, 42, 120, 190] ],
+      "eveningColors" : [ [14, 14, 50, 80], [150, 42, 120, 190] ],
+      "nightColors" : [ [14, 14, 50, 80], [150, 42, 120, 190] ],
 
-      "morningLightColor" : [140, 71, 0],
-      "dayLightColor" : [180, 180, 220],
-      "eveningLightColor" : [160, 120, 140],
-      "nightLightColor" : [60, 30, 90]
+      "morningLightColor" : [55, 25, 85],
+      "dayLightColor" : [55, 25, 85],
+      "eveningLightColor" : [55, 25, 85],
+      "nightLightColor" : [55, 25, 85]
     }
   ],
 
@@ -103,10 +102,10 @@
 
   "musicTrack" : {
     "day" : {
-      "tracks" : [ "/music/drift-far.ogg", "/music/distortion.ogg", "/music/tenacity.ogg", "/music/planetarium.ogg" ]
+      "tracks" : [ "/music/the-peacekeepers.ogg" ]
     },
     "night" : {
-      "tracks" : [ "/music/drift-far.ogg", "/music/distortion.ogg", "/music/tenacity.ogg", "/music/ultramarine-loop.ogg" ]
+      "tracks" : [ "/music/the-peacekeepers.ogg" ]
     }
   },
 
@@ -183,19 +182,10 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+        "distribution" : "/biomes/distributions.config:common",
 
         "type" : "microdungeon",
         "microdungeons" : [ "arcana_superstormExpanse_dungeon_2" ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 1,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
-
-        "type" : "microdungeon",
-        "microdungeons" : [ "scorchedcitymicrodungeons" ]
       },
       {
         "mode" : "floor",
@@ -208,18 +198,24 @@
       },
       {
         "mode" : "floor",
-        "priority" : 3.0,
+        "priority" : 2.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:denseSmall",
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
 
-        "type" : "grass",
-        "grasses" : [ "jungleflower1", "jungleflower2", "jungleflower3" ]
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "arcana_superstormExpanse_bush_1",
+            "baseHueShiftMax" : 5,
+            "modHueShiftMax" : 0
+          }
+        ]
       },
       {
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:denseMedium",
+        "distribution" : "/biomes/distributions.config:denseSmall",
 
         "type" : "object",
         "objectSets" : [
@@ -269,7 +265,7 @@
         "mode" : "floor",
         "priority" : 2.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:denseSmall",
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
 
         "type" : "bush",
         "bushes" : [
@@ -279,18 +275,6 @@
             "modHueShiftMax" : 180
           }
         ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 1.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:denseSmall",
-
-        "type" : "tree",
-        "treeFoliageHueShiftMax" : 180,
-        "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "palmlike", "woody" ],
-        "treeFoliageList" : [ "fluff" ]
       },
       {
         "mode" : "floor",

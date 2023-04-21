@@ -1,0 +1,184 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
+          "offset" : [0, 2.4],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
+        }
+      },
+      "handle" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+		  "fullbright" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>",
+          "offset" : [0, 2.4],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+		  "fullbright" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "swoosh_1.png:<frame>",
+                "offset" : [-1.6, 2.5],
+                "damageArea" : [[-4, 2], [-2.0, 3], [0, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [-1.6, -2.5],
+                "damageArea" : [[-4, -2], [-2.0, -3], [0, -3], [6, -1.75], [8, 0.25], [8, 2.25], [6, 3.25], [0, 2.5]]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "swoosh_1.png:<frame>",
+                "offset" : [-1.6, 2.5],
+                "damageArea" : [[-6, 2], [-3.0, 3], [1, 3], [6, 1.75], [8, -0.25], [8, -2.25], [6, -3.25], [0, -2.5]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "physicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 20,
+      "burstCount" : 2,
+      "particles" : [
+        { "particle" : "arcana_particle_ember_cyan_1"},
+        { "particle" : "arcana_particle_ember_cyan_2"}
+      ]
+    },
+    "fireswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "offsetRegion" : [0.5, 0.5, 4.5, -0.5],
+      "emissionRate" : 40,
+      "burstCount" : 7,
+      "particles" : [
+        { "particle" : "fireswoosh1"},
+        { "particle" : "fireswoosh2"},
+        { "particle" : "fireswoosh3"},
+		{ "particle" : "largefireswoosh1"},
+		{ "particle" : "mediumflame"},
+		{ "particle" : "burningvehicleflamesfront"},
+		{ "particle" : "burningvehicleflamesback"},
+		{ "particle" : "burningvehiclesmokeback"}
+      ]
+    },
+    "electricswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "electricswoosh1"},
+        { "particle" : "electricswoosh2"},
+        { "particle" : "electricswoosh2"}
+      ]
+    },
+    "poisonswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "poisonswoosh1"},
+        { "particle" : "poisonswoosh2"},
+        { "particle" : "fireswoosh2"}
+      ]
+    },
+    "iceswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "iceswoosh1"},
+        { "particle" : "iceswoosh2"},
+        { "particle" : "iceswoosh3"}
+      ]
+    },
+    "blade" : {
+      "active" : true,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.5, 1.0, 0.5, 4.0],
+      "emissionRate" : 10,
+      "particles" : [
+		{ "particle" : "burningvehiclesmokeback"},
+		{ "particle" : "burningvehiclesmokeback"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+    "fire2" : [ ],
+    "fire3" : [ ]
+  }
+}

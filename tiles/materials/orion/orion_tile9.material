@@ -6,16 +6,16 @@
   "description" : "A sloped metal panel used by the Orion, painted dark-blue.",
   "shortdescription" : "Orion Dark Panel",
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
-  "health" : 26,
+  "health" : 16,
   "category" : "materials",
 
   "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
   "renderParameters" : {
     "texture" : "orion_tile9.png",
-    "variants" : 1,
+    "variants" : 5,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 4151
   }
 }

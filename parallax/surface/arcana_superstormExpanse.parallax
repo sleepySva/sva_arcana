@@ -22,7 +22,7 @@
       "offset" : [0, 350],
       "noRandomOffset" : true,
       "parallax" : [3, 3.001],
-      "directives" : "?saturation=-20?brightness=-10",
+      "directives" : "?saturation=-60?brightness=-10",
       "nohueshift" : true
     },
     {
@@ -30,7 +30,7 @@
       "offset" : [100, 400],
       "noRandomOffset" : true,
       "parallax" : [3, 3.003],
-      "directives" : "?saturation=-25?brightness=-10",
+      "directives" : "?saturation=-65?brightness=-10",
       "nohueshift" : true
     },
     {
@@ -38,7 +38,7 @@
       "offset" : [0, 245],
       "noRandomOffset" : true,
       "parallax" : [4, 4.001],
-      "directives" : "?saturation=-20?brightness=-10",
+      "directives" : "?saturation=-60?brightness=-10",
       "nohueshift" : true,
       "fadePercent" : 0.02
     },
@@ -46,32 +46,91 @@
       "kind" : "midnight3",
       "offset" : [0, 160],
       "parallax" : [5, 5],
-      "directives" : "?saturation=-25?brightness=-10",
+      "directives" : "?saturation=-65?brightness=-10",
       "nohueshift" : true
     },
     {
-      "kind" : "cityscape0",
+      "kind" : "arcana_superstormExpanse_darkclouds",
+      "offset" : [0, -320],
+      "parallax" : 5.8,
+      "minSpeed" : 1000,
+      "maxSpeed" : 3000,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_superstormExpanse_darkclouds",
+      "offset" : [0, -120],
+      "parallax" : 10.0,
+      "minSpeed" : 500,
+      "maxSpeed" : 1000,
+      "directives" : "?saturation=-65?brightness=-10",
+      "fadePercent" : 0.05
+    },
+    {
+      "kind" : "arcana_superstormExpanse_fogclouds",
+      "offset" : [0, 360],
+      "parallax" : 5.8,
+      "minSpeed" : 1000,
+      "maxSpeed" : 3000,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_superstormExpanse_fogclouds",
+      "offset" : [0, 300],
+      "parallax" : 8.8,
+      "minSpeed" : 500,
+      "maxSpeed" : 1000,
+      "directives" : "?brightness=-5",
+      "fadePercent" : 0.05
+    },
+    {
+      "kind" : "arcana_superstormExpanse_clouds",
       "offset" : [0, 370],
       "parallax" : 5.8,
       "minSpeed" : 3000,
       "maxSpeed" : 5000,
+      "fadePercent" : 0.0,
+	  "unlit" : true
+    },
+    {
+      "kind" : "arcana_superstormExpanse_bluelight",
+      "offset" : [0, -50],
+      "parallax" : 5.9,
+	  "unlit" : true,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_superstormExpanse_cityscape0",
+      "offset" : [0, 320],
+      "parallax" : 5.9,
+      "minSpeed" : 3000,
+      "maxSpeed" : 5000,
+	  "unlit" : true,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_superstormExpanse_cityscape0_1",
+      "offset" : [0, 200],
+      "parallax" : 9.0,
+      "minSpeed" : 3000,
+      "maxSpeed" : 5000,
+	  "unlit" : true,
       "fadePercent" : 0.0
     },
     {
       "kind" : "arcana_superstormExpanse_cityscape1",
-      "offset" : [0, 350],
+      "offset" : [0, 240],
       "parallax" : 6,
       "fadePercent" : 0.0,
 	  "noRandomOffset" : true
     },
     {
       "kind" : "arcana_superstormExpanse_cityscape1_fullbright",
-      "offset" : [0, 350],
+      "offset" : [0, 240],
       "parallax" : 6,
       "fadePercent" : 0.0,
 	  "noRandomOffset" : true,
-	  "unlit" : true,
-	  "timeOfDayCorrelation" : "nightCloudVisible"
+	  "unlit" : true
     },
     {
       "kind" : "cityships",
@@ -80,6 +139,48 @@
       "minSpeed" : 21000,
       "maxSpeed" : 24000,
       "fadePercent" : 0.10
+    },
+    {
+      "kind" : "arcana_cityships",
+      "offset" : [0, 100],
+      "parallax" : 8.999,
+      "minSpeed" : 19000,
+      "maxSpeed" : 21000,
+      "fadePercent" : 0.10
+    },
+    {
+      "kind" : "arcana_ship_hylotl",
+      "offset" : [0, 150],
+	  "noRandomOffset" : true,
+      "parallax" : 6.999,
+      "minSpeed" : 40000,
+      "maxSpeed" : 40000
+    },
+    {
+      "kind" : "arcana_ship_hylotl_fullbright",
+      "offset" : [0, 150],
+	  "noRandomOffset" : true,
+	  "unlit" : true,
+      "parallax" : 6.999,
+      "minSpeed" : 40000,
+      "maxSpeed" : 40000
+    },
+    {
+      "kind" : "arcana_ship_yellow",
+      "offset" : [0, 100],
+	  "noRandomOffset" : true,
+      "parallax" : 7.2,
+      "minSpeed" : 30000,
+      "maxSpeed" : 30000
+    },
+    {
+      "kind" : "arcana_ship_yellow_fullbright",
+      "offset" : [0, 100],
+	  "noRandomOffset" : true,
+	  "unlit" : true,
+      "parallax" : 7.2,
+      "minSpeed" : 30000,
+      "maxSpeed" : 30000
     },
     {
       "kind" : "arcana_superstormExpanse_cityscape2",
@@ -112,6 +213,21 @@
 	  "unlit" : true
     },
     {
+      "kind" : "arcana_superstormExpanse_darkcity",
+      "offset" : [0, 360],
+      "parallax" : 8.95,
+      "fadePercent" : 0.0,
+	  "noRandomOffset" : true
+    },
+    {
+      "kind" : "arcana_superstormExpanse_darkcity_fullbright",
+      "offset" : [0, 360],
+      "parallax" : 8.95,
+      "fadePercent" : 0.0,
+	  "noRandomOffset" : true,
+	  "unlit" : true
+    },
+    {
       "kind" : "arcana_superstormExpanse_cityscape4",
       "offset" : [0, 150],
       "parallax" : 9,
@@ -127,13 +243,28 @@
 	  "unlit" : true
     },
     {
+      "kind" : "arcana_superstormExpanse_cityscape7",
+      "offset" : [0, 150],
+      "parallax" : 9.5,
+      "fadePercent" : 0.05,
+	  "noRandomOffset" : true
+    },
+    {
+      "kind" : "arcana_superstormExpanse_cityscape7_fullbright",
+      "offset" : [0, 150],
+      "parallax" : 9.5,
+      "fadePercent" : 0.05,
+	  "noRandomOffset" : true,
+	  "unlit" : true
+    },
+    {
       "kind" : "arcana_superstormExpanse_cityscape5",
       "offset" : [0, 150],
       "parallax" : 10,
       "fadePercent" : 0.10
     },
     {
-      "kind" : "cityscape6",
+      "kind" : "arcana_superstormExpanse_cityscape6",
       "offset" : [0, 150],
       "parallax" : 11,
       "fadePercent" : 0.10
@@ -145,7 +276,8 @@
       "noRandomOffset" : true,
       "parallax" : [12, 9.001],
       "nohueshift" : true,
-      "fadePercent" : 0.05
+      "fadePercent" : 0.05,
+      "directives" : "?saturation=-50?brightness=-10"
     },
     {
       "kind" : "midnightclouds",

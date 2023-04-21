@@ -1,0 +1,29 @@
+{
+  "name": "arcana_addEffect",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/status.lua",
+    "/scripts/actions/builders.lua"
+  ],
+  "parameters": {
+    "effectTime": 2,
+    "effect": "invulnerable"
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "addEphemeralEffect",
+        "type": "action",
+        "name": "addEphemeralEffect",
+        "parameters": {
+          "duration": {"value": "<effectTime>"},
+          "name": {"value": "<effect>"}
+        }
+      }
+    ]
+  }
+}

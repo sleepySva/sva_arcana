@@ -1,0 +1,22 @@
+{
+  "projectileName" : "scorpio_projectile_stickygrenade_electric",
+  "physics" : "stickygrenade",
+  "piercing" : false,
+  "bounces" : -1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : true,
+  "fullbright" : true,
+  "lightColor" : [60, 30, 80],
+  "image" : "electric.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 3,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/electricexplosionknockbackstatus.config"
+    }
+  ],
+  "power" : 50,
+  "damageKind" : "electric"
+}

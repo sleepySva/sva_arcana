@@ -197,6 +197,55 @@
                               "parameters": {}
                             },
 							{
+                              "title": "succeeder",
+                              "type": "decorator",
+                              "name": "succeeder",
+                              "parameters": {},
+                              "child": {
+                                "title": "sequence",
+                                "type": "composite",
+                                "name": "sequence",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "inverter",
+                                    "type": "decorator",
+                                    "name": "inverter",
+                                    "parameters": {},
+                                    "child": {
+                                      "title": "resourcePercentage",
+                                      "type": "action",
+                                      "name": "resourcePercentage",
+                                      "parameters": {
+                                        "percentage": {"value": 0.70},
+                                        "resource": {"value": "health"}
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "title": "randomize",
+                                    "type": "composite",
+                                    "name": "randomize",
+                                    "parameters": {},
+                                    "children": [
+                                      {
+                                        "title": "evolapis-phase2",
+                                        "type": "module",
+                                        "name": "evolapis-phase2",
+                                        "parameters": {}
+                                      },
+									  {
+                                        "title": "evolapis-phase2",
+                                        "type": "module",
+                                        "name": "evolapis-phase2",
+                                        "parameters": {}
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+							{
                               "title": "evolapis-poisonswarm",
                               "type": "module",
                               "name": "evolapis-poisonswarm",
@@ -280,6 +329,55 @@
                               "type": "module",
                               "name": "evolapis-dashleft",
                               "parameters": {}
+                            },
+							{
+                              "title": "succeeder",
+                              "type": "decorator",
+                              "name": "succeeder",
+                              "parameters": {},
+                              "child": {
+                                "title": "sequence",
+                                "type": "composite",
+                                "name": "sequence",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "inverter",
+                                    "type": "decorator",
+                                    "name": "inverter",
+                                    "parameters": {},
+                                    "child": {
+                                      "title": "resourcePercentage",
+                                      "type": "action",
+                                      "name": "resourcePercentage",
+                                      "parameters": {
+                                        "percentage": {"value": 0.70},
+                                        "resource": {"value": "health"}
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "title": "randomize",
+                                    "type": "composite",
+                                    "name": "randomize",
+                                    "parameters": {},
+                                    "children": [
+                                      {
+                                        "title": "evolapis-phase2",
+                                        "type": "module",
+                                        "name": "evolapis-phase2",
+                                        "parameters": {}
+                                      },
+									  {
+                                        "title": "evolapis-phase2",
+                                        "type": "module",
+                                        "name": "evolapis-phase2",
+                                        "parameters": {}
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
                             },
 							{
                               "title": "evolapis-poisonswarm",

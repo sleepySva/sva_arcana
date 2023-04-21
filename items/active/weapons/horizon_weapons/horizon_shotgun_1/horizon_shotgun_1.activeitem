@@ -3,8 +3,8 @@
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A dark shotgun made from necroium.",
-  "shortdescription" : "^#847d8b;Torment^reset;",
+  "description" : "A shotgun that fires necroium burst shots.",
+  "shortdescription" : "^#847d8b;Expiatio^reset;",
   "tooltipKind" : "gun",
   "category" : "shotgun",
   "twoHanded" : true,
@@ -49,7 +49,7 @@
     "class" : "GunFire",
 
     "fireTime" : 0.9,
-    "baseDps" : 17.2,
+    "baseDps" : 17.8,
     "energyUsage" : 60.0,
     "inaccuracy" : 0.13,
 
@@ -81,8 +81,8 @@
       },
       "cooldown" : {
         "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
         "twoHanded" : true,
 
         "allowRotate" : false,

@@ -207,6 +207,57 @@
     "monsterParameters" : {
       "aggressive" : true
     }
+  },
+  {
+    "name" : "arcana_electriccrutter",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [1.0, "electriccrutter"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  {
+    "name" : "arcana_electricsnaunt",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [1.0, "electricsnaunt"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  {
+    "name" : "arcana_electricvoltip",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [1.0, "electricvoltip"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
   }
 
 ]

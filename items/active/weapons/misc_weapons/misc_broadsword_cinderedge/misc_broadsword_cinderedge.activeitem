@@ -1,0 +1,44 @@
+{
+  "itemName" : "misc_broadsword_cinderedge",
+  "price" : 2400,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The beauty of raging flames, revealed by the edge of the Cinderege when it once set an entire city ablaze.",
+  "shortdescription" : "Cinderedge",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Claymore"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "arcana_cinderedge_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.1,
+    "baseDps" : 10.2,
+    "damageConfig" : {
+      "damageSourceKind" : "firebroadsword"
+    }
+  },
+  
+  "altAbilityType" : "arcana_generic_ability_blink",
+  "altAbility" : {
+    "maxDistance" : 18
+  },
+  
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

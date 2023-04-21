@@ -1,0 +1,62 @@
+{
+  "projectileName" : "arcana_monster_fairi_projectile_1",
+  "physics" : "default",
+  "timeToLive" : 4,
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [80, 80, 10],
+  "frameNumber" : 4,
+  "speed" : 0,
+  "power" : 26,
+  "damageKind" : "arcana_light",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+
+  "fullbright" : true,
+  "emitters" : [],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_plasma.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "soluskatana1",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "soluskatana2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/monsters/arcana_monster_fairi_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.8,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "bounces" : 0
+}

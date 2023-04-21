@@ -1,0 +1,23 @@
+{
+  "kind" : "arcana_astrifer_star_2",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_animation_astrifer_star_2/arcana_animation_astrifer_star_2.animation",
+    "initialVelocity" : [0.0, 2.0],
+    "finalVelocity" : [0.0, 0.0],
+    "approach" : [6, 6],
+    "timeToLive" : 1.0,
+    "layer" : "back",
+    "collidesForeground" : false,
+    "fullbright" : true,
+    "light" : [99, 200, 255, 255],
+    "size" : 0.5,
+    "variance" : {
+      "position" : [0, 0],
+      "initialVelocity" : [3, 3],
+      "finalVelocity" : [3, 3],
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

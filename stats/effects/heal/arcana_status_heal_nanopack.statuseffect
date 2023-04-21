@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_status_heal_nanopack",
+  "effectConfig" : {
+    "healAmount" : 160,
+    "emissionRate" : 10
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "heal.lua"
+  ],
+
+  "animationConfig" : "heal.animation",
+
+  "label" : "Healing",
+  "icon" : "/interface/statuses/heal.png"
+}

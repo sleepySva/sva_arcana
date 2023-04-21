@@ -9,12 +9,10 @@
       "attack" : {
         "default" : {
           "default" : [
-            "Attack!"
-          ]
-        },
-        "human" : {
-          "default" : [
             "Hey look, easy prey!",
+			"Hand over the goods!",
+			"Arghhhh!",
+			"This will be over in an instant!",
             "Don't think you're getting out of this one easily!",
             "I bet you'll drop lots of pixels!",
             "You've wandered right into the wolf's den!",
@@ -31,9 +29,9 @@
     "override" : [
       [0, [
           {
-            "head" : [ { "name" : "arcana_armor_invisible_head" }, { "name" : "snowinfantryhead" }, { "name" : "soldierhead" }, { "name" : "trackerhead" }, { "name" : "pathfinderhead" }, { "name" : "apextier4head" }],
-            "chest" : [ { "name" : "humantier1chest" }, { "name" : "humantier2chest" }, { "name" : "humantier3chest" }, { "name" : "humantier4chest" }, { "name" : "workoutchest", "data" : { "colorIndex" : 1 } }, { "name" : "novakidjacket" }, { "name" : "apextier4chest" }],
-            "legs" : [ { "name" : "humantier1pants" }, { "name" : "humantier2pants" }, { "name" : "humantier3pants" }, { "name" : "humantier4pants" }, { "name" : "novakidblackpants" }, { "name" : "pathfinderlegs" }, { "name" : "apextier2pants" }, { "name" : "apextier3pants" }],
+            "head" : [ { "name" : "foundrygoggleshead" }, { "name" : "novatier5mhead" }, { "name" : "apextier6mhead" }, { "name" : "snowinfantryhead" }, { "name" : "soldierhead" }, { "name" : "trackerhead" }, { "name" : "pathfinderhead" }, { "name" : "apextier4head" }],
+            "chest" : [ { "name" : "spacesuitchest" }, { "name" : "hylotltier5mchest" }, { "name" : "hylotltier3chest" }, { "name" : "humantier1chest" }, { "name" : "humantier2chest" }, { "name" : "humantier3chest" }, { "name" : "humantier4chest" }, { "name" : "workoutchest", "data" : { "colorIndex" : 1 } }, { "name" : "novakidjacket" }, { "name" : "apextier4chest" }],
+            "legs" : [ { "name" : "humantier6apants" }, { "name" : "copperarmorpants" }, { "name" : "foundrylegs" }, { "name" : "humantier2pants" }, { "name" : "humantier3pants" }, { "name" : "humantier4pants" }, { "name" : "novakidblackpants" }, { "name" : "pathfinderlegs" }, { "name" : "apextier2pants" }, { "name" : "apextier3pants" }],
             "primary" : [
               "scorpio_assaultrifle_rare",
               "npcbroadsword",

@@ -1,0 +1,27 @@
+{
+  "itemName" : "arcana_blueprint_test",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "blueprint_icon.png",
+  "description" : "A blueprint for script testing.",
+  "shortdescription" : "Blueprint",
+  "itemTags" : [ "blueprint" ],
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "base",
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_blueprint.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "blueprint_icon.png"
+  },
+  "animationCustom" : {},
+  "recipes" : [
+	"arcana_astral_deco_1",
+    "arcana_astral_deco_2",
+	"arcana_astral_deco_3"
+  ]
+}

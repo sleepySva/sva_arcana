@@ -7,12 +7,18 @@
           "stage_1" : {
             "frames" : 4,
             "cycle" : 0.4,
-            "mode" : "loop"
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ]
+            }
           },
           "stage_2" : {
             "frames" : 4,
             "cycle" : 0.4,
-            "mode" : "loop"
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ]
+            }
           },
           "stage_3" : {
             "frames" : 4,
@@ -110,6 +116,16 @@
   },
 
   "lights" : {
+    "fireglow" : {
+      "active" : false,
+      "position" : [0, 1],
+      "color" : [136, 115, 93],
+      "flickerPeriod" : 0.8,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1.0,
+      "flickerPeriodVariance" : 0.0,
+      "flickerIntensityVariance" : 0.0
+    },
     "scifiglow" : {
       "active" : false,
       "position" : [0, 2],

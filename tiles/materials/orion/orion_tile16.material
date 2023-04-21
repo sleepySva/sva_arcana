@@ -1,0 +1,21 @@
+{
+  "materialId" : 16690,
+  "materialName" : "orion_tile16",
+  "particleColor" : [68, 69, 84, 255],
+  "itemDrop" : "orion_tile16",
+  "description" : "Sturdy metal panelling that has been rusted with age.",
+  "shortdescription" : "Blue Rusty Panel",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile16.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 5002
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "arcana_approachTurn": {
+    "type": "action",
+    "name": "arcana_approachTurn",
+    "title": "",
+    "properties": {
+      "entity": {"type": "entity", "value": null},
+      "turnSpeed": {"type": "number", "value": 1}
+    },
+    "category": "arcana_nodes",
+    "script": "/scripts/actions/arcana_approachTurn.lua",
+    "output": {
+      "angle": {"type": "number", "key": null},
+      "direction": {"type": "number", "key": null}
+    }
+  },
+  "arcana_addEffect": {
+    "type": "action",
+    "name": "arcana_addEffect",
+    "title": "",
+    "properties": {
+      "effectTime": {"type": "number", "value": 2},
+      "effect": {"type": "string", "value": "invulnerable"}
+    },
+    "category": "arcana_nodes",
+    "output": {}
+  }
+}

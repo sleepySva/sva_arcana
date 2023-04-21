@@ -6,7 +6,7 @@
   "description" : "A soft prefabricated wall panel.",
   "shortdescription" : "Soft Prefab Wall",
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
-  "health" : 22,
+  "health" : 10,
   "category" : "materials",
 
   "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
@@ -15,7 +15,7 @@
     "variants" : 4,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 871
   }
 }

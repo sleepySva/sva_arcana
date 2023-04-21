@@ -25,7 +25,7 @@
 
     "touchDamage" : {
       "poly" : [ [-4.0, -2.0], [0.0, -4.0], [4.0, -2.0], [4.0, 0.0], [0.0, 4.0], [-4.0, 0.0] ],
-      "damage" : 35,
+      "damage" : 65,
 
       "teamType" : "enemy",
       "damageSourceKind" : "hammer",
@@ -80,13 +80,13 @@
           "baseValue" : 0.0
         },
 		"physicalResistance" : {
-          "baseValue" : 0.3
+          "baseValue" : 0.0
         },
         "knockbackThreshold" : {
           "baseValue" : 999999
         },
         "maxHealth" : {
-          "baseValue" : 4200
+          "baseValue" : 8000
         },
 		"lavaImmunity" : {
           "baseValue" : 1.0

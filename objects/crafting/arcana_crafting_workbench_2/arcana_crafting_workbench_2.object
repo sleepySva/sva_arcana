@@ -39,12 +39,15 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_workbench/arcana_crafting_workbench_2.config",
-		"filter" : ["arcana_crafting_workbench_2"],
+		"filter" : ["arcana_crafting_workbench_2", "craftingfurniture"],
         "upgradeMaterials" : [
 			{ "item" : "arcana_bar_thoriumBar", "count" : 16 },
 			{ "item" : "wire", "count" : 4 },
 			{ "item" : "orion_crafting_enhancedBattery", "count" : 1 }
-        ]
+        ],
+		"initialRecipeUnlocks" : [
+			"arcana_blueprint_magiwood"
+		]
 	  },
 
       "learnBlueprintsOnPickup" : [],
@@ -67,7 +70,7 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_workbench/arcana_crafting_workbench_3.config",
-		"filter" : ["arcana_crafting_workbench_2", "arcana_crafting_workbench_3"],
+		"filter" : ["arcana_crafting_workbench_2", "arcana_crafting_workbench_3", "craftingfurniture2", "craftingfurniture"],
         "upgradeMaterials" : [
 			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
 			{ "item" : "dirtmaterial", "count" : 10 },
@@ -78,7 +81,10 @@
 			{ "item" : "sandstonematerial", "count" : 10 },
 			{ "item" : "snow", "count" : 10 },
 			{ "item" : "magmarock", "count" : 10 }
-        ]
+        ],
+		"initialRecipeUnlocks" : [
+			"arcana_blueprint_magiwood"
+		]
 	  },
 
       "learnBlueprintsOnPickup" : [],
@@ -102,7 +108,10 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_workbench/arcana_crafting_workbench_4.config",
-		"filter" : ["arcana_crafting_workbench_2", "arcana_crafting_workbench_3", "arcana_crafting_workbench_4"]
+		"filter" : ["arcana_crafting_workbench_2", "arcana_crafting_workbench_3", "arcana_crafting_workbench_4", "craftingfurniture2", "craftingfurniture"],
+		"initialRecipeUnlocks" : [
+			"arcana_blueprint_magiwood"
+		]
 	  },
 
       "learnBlueprintsOnPickup" : []

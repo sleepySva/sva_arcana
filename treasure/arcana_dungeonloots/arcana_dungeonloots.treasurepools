@@ -1,5 +1,50 @@
 
 {
+  
+  "arcana_dungeonloots_horizonTiles" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["horizon_tile1", 20]},
+		{"weight" : 1.0, "item" : ["horizon_tile2", 20]},
+		{"weight" : 1.0, "item" : ["horizon_tile3", 20]},
+		{"weight" : 1.0, "item" : ["horizon_tile4", 20]},
+		{"weight" : 1.0, "item" : ["horizon_tile5", 20]},
+		{"weight" : 1.0, "item" : ["horizon_tile6", 20]},
+		{"weight" : 1.0, "item" : ["horizon_tile7", 20]},
+		{"weight" : 1.0, "item" : ["horizon_tile8", 20]}
+      ],
+      "poolRounds" : [
+        [0.2, 2],
+        [0.2, 2],
+        [0.2, 3],
+        [0.2, 3],
+        [0.2, 4]
+      ]
+    }]
+  ],
+  
+  "arcana_dungeonloots_horizonChestTreasure" : [
+    [0, {
+	  "fill" : [
+		{"pool" : "arcana_treasure_general_lowmoney"},
+		{"pool" : "arcana_treasure_general_lowmoney"},
+		{"pool" : "arcana_treasure_general_lowmoney"},
+		{"pool" : "arcana_dungeonloots_horizonTiles"},
+		{"pool" : "basicChestTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_armor_horizonDisciple_head", 1]},
+		{"weight" : 1.0, "item" : ["arcana_armor_horizonDisciple_chest", 1]},
+		{"weight" : 1.0, "item" : ["arcana_armor_horizonDisciple_legs", 1]},
+		{"weight" : 1.0, "item" : ["arcana_armor_horizonDiscipleLeader_head", 1]},
+		{"weight" : 1.0, "item" : ["arcana_armor_horizonDiscipleLeader_chest", 1]},
+		{"weight" : 1.0, "item" : ["arcana_armor_horizonDiscipleLeader_legs", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
 
   "arcana_dungeonloots_blisteringTreasure" : [
     [0, {
@@ -142,6 +187,26 @@
       ],
       "poolRounds" : [
         [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_dungeonloots_orionTech" : [
+    [0, {
+	  "fill" : [
+	    {"weight" : 1.0, "pool" : "basicTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_misc_behestDongle", 1]},
+		{"weight" : 1.0, "item" : ["arcana_misc_preceptDongle", 1]},
+        {"weight" : 1.0, "item" : ["arcana_misc_nanoweave", 1]},
+		{"weight" : 1.0, "item" : ["wire", 2]},
+		{"weight" : 1.0, "item" : ["wire", 4]}
+      ],
+      "poolRounds" : [
+        [1.0, 1],
+		[1.0, 2],
+		[1.0, 3]
       ]
     }]
   ],

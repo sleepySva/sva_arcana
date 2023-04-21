@@ -1,0 +1,78 @@
+{
+  "projectileName" : "arcana_monster_swordConjurer_projectile_1",
+  "physics" : "default",
+  "timeToLive" : 4,
+  "image" : "body.png",
+  "animationCycle" : 0.02,
+  "lightColor" : [80, 80, 10],
+  "frameNumber" : 1,
+  "windupFrames" : 19,
+  "speed" : 0,
+  "acceleration" : 25,
+  "power" : 18,
+  "damageKind" : "arcana_light",
+  "damagePoly" : [ [-1, -0.45], [-1, 0.45], [4, 0.45], [4, -0.45] ],
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  
+  "renderLayer" : "foregroundEntity",
+  "supportsProcessing" : true,
+
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_ember_yellow"],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_plasma.ogg"
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "soluskatana1",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "soluskatana2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/monsters/arcana_monster_swordConjurer_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.4,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "bounces" : -1,
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 200,
+  "rotationRate" : 1.1,
+  "trackingLimit" : 200
+}

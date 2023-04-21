@@ -3,19 +3,19 @@
   "materialName" : "orion_tile6",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "orion_tile6",
-  "description" : "A dark girder utilized by the Orion.",
-  "shortdescription" : "Orion Dark Girder",
+  "description" : "A mass produced industrial girder for construction.",
+  "shortdescription" : "Industrial Girder",
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
-  "health" : 18,
+  "health" : 8,
   "category" : "materials",
 
   "renderTemplate" : "/tiles/girdertemplate.config",
   "renderParameters" : {
     "texture" : "orion_tile6.png",
-    "variants" : 3,
+    "variants" : 1,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 1176
   }
 }

@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":25,
+ "tilecount":28,
  "tileheight":256,
  "tileproperties":
     {
@@ -208,6 +208,30 @@
          "imagePositionY":"0",
          "object":"horizon_light_3",
          "tilesetDirection":"right"
+        },
+     "25":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"horizon_bed_1",
+         "tilesetDirection":"right"
+        },
+     "26":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"horizon_table_3",
+         "tilesetDirection":"right"
+        },
+     "27":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"horizon_table_4",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -311,6 +335,18 @@
      "24":
         {
          "image":"horizon_light_3.png"
+        },
+     "25":
+        {
+         "image":"horizon_bed_1.png"
+        },
+     "26":
+        {
+         "image":"horizon_table_3.png"
+        },
+     "27":
+        {
+         "image":"horizon_table_4.png"
         }
     },
  "tilewidth":188

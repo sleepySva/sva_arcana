@@ -74,7 +74,7 @@ function update(dt)
       self.thornsTimer = self.thornsTimer + thornCount * visualInterval
 
       if self.spawnedThorns >= self.visualProjectileCount then
-		status.addEphemeralEffect("camouflage25", 4)
+		status.addEphemeralEffect("arcana_camouflage10", 6)
 		status.addEphemeralEffect("medkitheal", 4)
 		resetThorns()
 	  end

@@ -528,6 +528,55 @@
                           "parameters": {}
                         },
 						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.15},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "evolapis-phase4",
+                                    "type": "module",
+                                    "name": "evolapis-phase4",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "evolapis-phase4",
+                                    "type": "module",
+                                    "name": "evolapis-phase4",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+						{
                           "title": "evolapis-stationarycloudspawn",
                           "type": "module",
                           "name": "evolapis-stationarycloudspawn",
@@ -811,6 +860,55 @@
                           "type": "module",
                           "name": "evolapis-spikeburst",
                           "parameters": {}
+                        },
+						{
+                          "title": "succeeder",
+                          "type": "decorator",
+                          "name": "succeeder",
+                          "parameters": {},
+                          "child": {
+                            "title": "sequence",
+                            "type": "composite",
+                            "name": "sequence",
+                            "parameters": {},
+                            "children": [
+                              {
+                                "title": "inverter",
+                                "type": "decorator",
+                                "name": "inverter",
+                                "parameters": {},
+                                "child": {
+                                  "title": "resourcePercentage",
+                                  "type": "action",
+                                  "name": "resourcePercentage",
+                                  "parameters": {
+                                    "percentage": {"value": 0.15},
+                                    "resource": {"value": "health"}
+                                  }
+                                }
+                              },
+                              {
+                                "title": "randomize",
+                                "type": "composite",
+                                "name": "randomize",
+                                "parameters": {},
+                                "children": [
+                                  {
+                                    "title": "evolapis-phase4",
+                                    "type": "module",
+                                    "name": "evolapis-phase4",
+                                    "parameters": {}
+                                  },
+							      {
+                                    "title": "evolapis-phase4",
+                                    "type": "module",
+                                    "name": "evolapis-phase4",
+                                    "parameters": {}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
                         },
 						{
                           "title": "evolapis-stationarycloudspawnreversed",

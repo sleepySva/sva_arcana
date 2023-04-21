@@ -856,10 +856,10 @@
         },
 		
         "subsurface" : {
-          "primaryRegion" : [ "arcana_ferocious_underground_1" ]
+          "primaryRegion" : [ "arcana_superstormExpanse_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_ferocious_underground_2" ]
+          "primaryRegion" : [ "arcana_superstormExpanse_underground_1" ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
@@ -879,7 +879,7 @@
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_superstormExpanse"]]],
-      "subRegion": ["rust", "steamspring", "geode"]
+      "subRegion": []
     }
   },
   {
@@ -1074,6 +1074,15 @@
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_automated"]]],
       "subRegion": ["tar"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_superstormExpanse_underground_1",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "biome": [[0,["arcana_superstormExpanse_underground_1"]]],
+      "subRegion": []
     }
   },
   {
@@ -1678,6 +1687,15 @@
   },
   {
     "op": "add",
+    "path": "/regionTypes/arcana_nightmist_underground_2",
+    "value": {
+      "caveLiquid": [ "water" ],
+      "biome": [[0,["arcana_nightmist_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
     "path": "/planetTypes/arcana_amorous",
     "value": {
       "threatRange" : [7, 7],
@@ -1735,7 +1753,7 @@
           "primaryRegion" : [ "arcana_nightmist_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_nightmist_underground_1" ]
+          "primaryRegion" : [ "arcana_nightmist_underground_2" ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_nightmist_underground_1" ]

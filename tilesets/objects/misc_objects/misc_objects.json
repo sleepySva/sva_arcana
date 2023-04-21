@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":14,
+ "tilecount":19,
  "tileheight":256,
  "tileproperties":
     {
@@ -120,8 +120,47 @@
          "imagePositionY":"0",
          "object":"arcana_teleporter_smallExitTeleporter",
          "tilesetDirection":"right"
+        },
+     "14":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"arcana_misc_shortElectricalWire",
+         "tilesetDirection":"right"
+        },
+     "15":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"arcana_misc_longElectricalWire",
+         "tilesetDirection":"right"
+        },
+     "16":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"arcana_misc_greenFuelCanister",
+         "tilesetDirection":"right"
+        },
+     "17":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"arcana_misc_redFuelCanister",
+         "tilesetDirection":"right"
+        },
+     "18":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"arcana_misc_steelAirlock",
+         "tilesetDirection":"right"
         }
-
     },
  "tiles":
     {
@@ -180,6 +219,26 @@
      "13":
         {
          "image":"arcana_teleporter_smallExitTeleporter.png"
+        },
+     "14":
+        {
+         "image":"arcana_misc_shortElectricalWire.png"
+        },
+     "15":
+        {
+         "image":"arcana_misc_longElectricalWire.png"
+        },
+     "16":
+        {
+         "image":"arcana_misc_greenFuelCanister.png"
+        },
+     "17":
+        {
+         "image":"arcana_misc_redFuelCanister.png"
+        },
+     "18":
+        {
+         "image":"arcana_misc_steelAirlock.png"
         }
     },
  "tilewidth":188

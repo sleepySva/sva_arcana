@@ -78,67 +78,6 @@
         }
       },
 	  {
-        "title": "spawnMonster",
-        "type": "action",
-        "name": "spawnMonster",
-        "parameters": {
-          "replacement": {"value": false},
-          "type": {"value": "nemesisslamposition"}
-        }
-      },
-      {
-        "title": "findMonster",
-        "type": "action",
-        "name": "findMonster",
-        "parameters": {
-          "orderBy": {"value": "nearest"},
-          "position": {"key": "self"},
-          "range": {"value": 6000},
-          "type": {"value": "nemesisslamposition"}
-        },
-		"output": {
-          "list": "monsters"
-        }
-      },
-	  {
-        "title": "succeeder",
-        "type": "decorator",
-        "name": "succeeder",
-        "parameters": {},
-        "child": {
-          "title": "each",
-          "type": "decorator",
-          "name": "each",
-          "parameters": {
-            "list": {"key": "monsters"},
-            "type": {"value": "entity"}
-          },
-          "child": {
-            "title": "succeeder",
-            "type": "decorator",
-            "name": "succeeder",
-            "parameters": {},
-            "child": {
-              "title": "sendEntityMessage",
-              "type": "action",
-              "name": "sendEntityMessage",
-              "parameters": {
-                "entity": {"key": "eachItem"},
-                "message": {"value": "despawn"}
-              }
-            }
-          }
-        }
-      },
-	  {
-        "title": "timer",
-        "type": "action",
-        "name": "timer",
-        "parameters": {
-          "time": {"value": 1.0}
-        }
-      },
-	  {
         "title": "entityPosition",
         "type": "action",
         "name": "entityPosition",
@@ -232,7 +171,7 @@
         "type": "action",
         "name": "timer",
         "parameters": {
-          "time": {"value": 0.5}
+          "time": {"value": 0.1}
         }
       },
 	  {
@@ -320,33 +259,6 @@
           "position": "trueLandPosition"
         }
       },
-      {
-        "title": "flyToPosition",
-        "type": "action",
-        "name": "flyToPosition",
-        "parameters": {
-          "position": {"key": "landPosition"},
-          "speed": {"value": 75},
-          "tolerance": {"value": 9}
-        }
-      },
-	  {
-        "title": "setVelocity",
-        "type": "action",
-        "name": "setVelocity",
-        "parameters": {
-          "velocity": {"value": [0, 0]}
-        }
-      },
-	  {
-        "title": "setPosition",
-        "type": "action",
-        "name": "setPosition",
-        "parameters": {
-          "footPosition": {"value": false},
-          "position": {"key": "trueLandPosition"}
-        }
-      },
 	  {
         "title": "spawnMonster",
         "type": "action",
@@ -400,6 +312,33 @@
           }
         }
       },
+      {
+        "title": "flyToPosition",
+        "type": "action",
+        "name": "flyToPosition",
+        "parameters": {
+          "position": {"key": "landPosition"},
+          "speed": {"value": 75},
+          "tolerance": {"value": 9}
+        }
+      },
+	  {
+        "title": "setVelocity",
+        "type": "action",
+        "name": "setVelocity",
+        "parameters": {
+          "velocity": {"value": [0, 0]}
+        }
+      },
+	  {
+        "title": "setPosition",
+        "type": "action",
+        "name": "setPosition",
+        "parameters": {
+          "footPosition": {"value": false},
+          "position": {"key": "trueLandPosition"}
+        }
+      },
 	  {
         "title": "spawnProjectile",
         "type": "action",
@@ -445,6 +384,14 @@
         "parameters": {
           "active": {"value": false},
           "emitter": {"value": "slam"}
+        }
+      },
+	  {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.1}
         }
       }
     ]

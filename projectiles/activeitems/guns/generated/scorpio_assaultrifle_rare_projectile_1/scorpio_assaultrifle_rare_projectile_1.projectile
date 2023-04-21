@@ -1,0 +1,31 @@
+{
+  "projectileName" : "scorpio_assaultrifle_rare_projectile_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 124,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [230, 70, 240],
+  "emitters" : [ "electricswoosh" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/electricimpact.config"
+    }
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "electricplasmabullet"
+ 
+}

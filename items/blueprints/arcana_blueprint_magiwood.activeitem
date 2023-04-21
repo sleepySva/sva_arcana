@@ -1,0 +1,48 @@
+{
+  "itemName" : "arcana_blueprint_magiwood",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "blueprint_magiwood.png",
+  "description" : "A blueprint for crafting magiwood related furniture and blocks.",
+  "shortdescription" : "Blueprint 01 - Magiwood",
+  "itemTags" : [ "blueprint" ],
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "arcana_blueprint",
+  "tooltipFields" : {
+	"subtitle" : "^#2692c8;Blueprint^reset;",
+	"materialImage" : "/items/blueprints/blueprint_magiwood_materials.png",
+	"materialBackground" : "/items/blueprints/blueprint_background.png"
+  },
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_blueprint.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "icon.png"
+  },
+  "animationCustom" : {},
+  "recipes" : [
+	"arcana_tile1",
+    "arcana_tile2",
+	"arcana_tile3",
+	"arcana_tile4",
+	"arcana_tile5",
+	"arcana_tile6",
+	"arcana_tile7",
+	"arcana_tile8",
+	"arcana_tile9",
+	"arcana_tile10",
+	"arcana_tile11",
+	"arcana_tile12",
+	"arcana_tile13",
+	"arcana_tile14",
+	"arcana_tile15",
+	"arcana_tile16",
+	"arcana_tile17",
+	"arcana_tile18",
+	"arcana_tile19"
+  ]
+}

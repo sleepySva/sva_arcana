@@ -1,0 +1,169 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_hammer_fire1.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_hammer_fire2.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_hammer_fire3.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Combo Slash",
+    "type" : "arcana_greatsword_combo",
+    "scripts" : ["/items/active/weapons/melee/abilities/greatsword/arcana_greatsword_combo.lua"],
+    "class" : "MeleeCombo",
+
+    "comboSteps" : 3,
+	
+    "shakeProjectileType" : "arcana_projectile_scouteye",
+    "shakeProjectileParameters" : {
+      "timeToLive" : 0.01,
+      "speed" : 0
+    },
+
+    "flashTime" : 0.3,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+
+    "swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [0.75, 0.0, 4.25, 5.0]
+    ],
+
+    // cooldown time multiplier for steps after the first, compounded per combo step
+    "comboSpeedFactor" : 0.3,
+
+    "edgeTriggerGrace" : 0.4,
+
+    "fireTime" : 1.4,
+    "baseDps" : 11.5,
+
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 14
+      },
+      {
+        "baseDamageFactor" : 1.2,
+        "knockback" : 14
+      },
+      {
+        "baseDamageFactor" : 1.6,
+        "knockback" : 26
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 60,
+        "allowRotate" : true,
+        "allowFlip" : true,
+		"twoHanded" : false
+      },
+      "windup1" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : 60,
+        "endArmRotation" : 90,
+        "endWeaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.05,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "endArmRotation" : -55,
+        "endWeaponRotation" : -65,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup2" : {
+        "duration" : 0.3,
+        "armRotation" : -130,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire2" : {
+        "duration" : 0.2,
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup3" : {
+        "duration" : 0.6,
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "endArmRotation" : 90,
+        "endWeaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.3,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "endArmRotation" : -55,
+        "endWeaponRotation" : -65,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

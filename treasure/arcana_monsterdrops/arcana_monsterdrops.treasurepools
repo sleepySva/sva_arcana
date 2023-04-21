@@ -16,6 +16,22 @@
       ]
     }]
   ],
+  
+  "arcana_monsterdrops_fairi" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["arcana_essence_lightEssence", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["money", 180]},
+		{"weight" : 1.0, "item" : ["money", 200]},
+        {"weight" : 1.0, "item" : ["money", 220]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
 
   "arcana_monsterdrops_trispiel" : [
     [0, {

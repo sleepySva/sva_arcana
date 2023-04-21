@@ -95,6 +95,7 @@ function boost(direction)
   animator.stopAllSounds("charge")
   animator.stopAllSounds("chargeLoop")
   animator.playSound("boost")
+  status.addEphemeralEffect("nofalldamage", self.chargeTime + self.boostTime + 1)
 end
 
 function idle()

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16333,
+  "materialName" : "arcana_tile28",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile28",
+  "description" : "A glass window.",
+  "shortdescription" : "Unlit Glass Window",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile28.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1
+  }
+}

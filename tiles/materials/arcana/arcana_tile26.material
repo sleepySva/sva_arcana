@@ -1,0 +1,21 @@
+{
+  "materialId" : 16331,
+  "materialName" : "arcana_tile26",
+  "particleColor" : [44, 44, 44, 255],
+  "itemDrop" : "arcana_tile26",
+  "description" : "An old asphalt path, nearly made obsolete by hoverbike advancements.",
+  "shortdescription" : "Thin Asphalt",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile26.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 3120
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "name": "arcana_turnapproach",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/arcana_approachTurn.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/math.lua"
+  ],
+  "parameters": {
+    "turnSpeed": 1,
+    "flyState": "",
+    "idleState": ""
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "arcana_approachTurn",
+            "type": "action",
+            "name": "arcana_approachTurn",
+            "parameters": {
+              "entity": {"key": "target"},
+              "turnSpeed": {"key": "<turnSpeed>"}
+            },
+            "output": {
+              "angle": "heading",
+              "direction": "turnDirection"
+            }
+          },
+          {
+            "title": "succeeder",
+            "type": "decorator",
+            "name": "succeeder",
+            "parameters": {},
+            "child": {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "resetTransformationGroup",
+                  "type": "action",
+                  "name": "resetTransformationGroup",
+                  "parameters": {
+                    "transformationGroup": {"value": "body"}
+                  }
+                },
+                {
+                  "title": "rotateTransformationGroup",
+                  "type": "action",
+                  "name": "rotateTransformationGroup",
+                  "parameters": {
+                    "angle": {"key": "heading"},
+                    "transformationGroup": {"value": "body"}
+                  }
+                },
+                {
+                  "title": "faceDirection",
+                  "type": "action",
+                  "name": "faceDirection",
+                  "parameters": {
+                    "direction": {"value": 1}
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

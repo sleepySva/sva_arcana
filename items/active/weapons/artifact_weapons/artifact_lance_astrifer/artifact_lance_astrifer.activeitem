@@ -9,7 +9,7 @@
   "tooltipKind" : "sword",
   "category" : "spear",
   "tooltipFields" : {
-	"subtitle" : "^yellow;Lance^#reset;",
+	"subtitle" : "Lance",
 	"rarityLabel" : "Artifact"
   },
   "twoHanded" : true,
@@ -17,13 +17,40 @@
 
   "inventoryIcon" : "artifact_lance_astrifer.png",
   
-  "animation" : "/items/active/weapons/melee/spear/artifact_lance_astrifer.animation",
+  "animation" : "animation.animation",
   "animationParts" : {
     "handle" : "fullbright.png",
     "blade" : "artifact_lance_astrifer.png"
   },
   "animationCustom" : {
 	"animatedParts" : {
+	"stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 5,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
     "parts" : {
       "swoosh" : {
         "properties" : {
@@ -43,23 +70,23 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_1/arcana_glaive_swoosh_blue.png:<frame>",
+                "image" : "/items/active/weapons/artifact_weapons/artifact_lance_astrifer/swoosh.png:<frame>",
                 "offset" : [5.0, 0.2],
-                "damageArea" : [ [-4, 1], [5.6, 1], [5.6, -1], [-4, -1] ]
+                "damageArea" : [ [-3, 1], [4.3, 0.7], [4.3, -0.7], [-3, -1] ]
               }
             },
             "fire2" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_1/arcana_glaive_swoosh_blue.png:<frame>",
+                "image" : "/items/active/weapons/artifact_weapons/artifact_lance_astrifer/swoosh.png:<frame>",
                 "offset" : [5.0, 0.2],
-                "damageArea" : [ [-4, 1], [5.6, 1], [5.6, -1], [-4, -1] ]
+                "damageArea" : [ [-3, 1], [4.3, 0.7], [4.3, -0.7], [-3, -1] ]
               }
             },
             "fire3" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_6/arcana_glaive_swoosh_blue.png:<frame>",
+                "image" : "/items/active/weapons/artifact_weapons/artifact_lance_astrifer/swoosh.png:<frame>",
                 "offset" : [5.0, 0.2],
-                "damageArea" : [ [-4, 1], [6.2, 1], [6.2, -1], [-4, -1] ]
+                "damageArea" : [ [-3, 1], [4.3, 0.7], [4.3, -0.7], [-3, -1] ]
               }
             }
           }
@@ -103,7 +130,7 @@
     "maxCooldownTime" : 0.18,
     "minCooldownTime" : 0.18,
     "cooldownSwingReduction" : 0.08,
-    "energyUsage" : 26.0,
+    "energyUsage" : 28.0,
     "cooldownTime" : 0.18,
     "damageConfig" : {
       "damageSourceKind" : "arcana_azure"

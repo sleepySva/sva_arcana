@@ -1,0 +1,21 @@
+{
+  "materialId" : 16750,
+  "materialName" : "havencrest_tile9",
+  "particleColor" : [250, 250, 250, 255],
+  "itemDrop" : "havencrest_tile5",
+  "description" : "A painted white wall panel.",
+  "shortdescription" : "White Wall Panel B",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "havencrest_tile9.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4143
+  }
+}

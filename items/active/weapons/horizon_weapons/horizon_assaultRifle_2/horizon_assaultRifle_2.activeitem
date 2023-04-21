@@ -3,30 +3,30 @@
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A dark rifle made from necroium.",
-  "shortdescription" : "^#847d8b;Remorse MKI^reset;",
+  "description" : "A dark rifle, shoots necroium-made bullets.",
+  "shortdescription" : "^#847d8b;Tormentum 0-2^reset;",
   "tooltipKind" : "gun",
   "category" : "assaultRifle",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","assaultrifle"],
   "level" : 7,
 
-  "inventoryIcon" : "icon.png",
+  "inventoryIcon" : "body.png",
 
   "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "horizon_assaultRifle_2.png",
+    "middle" : "body.png",
 	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_purple.png"
   },
   "animationCustom" : {
     "animatedParts" : {
 	  "parts" : {
 	    "fullbright" : {
 		  "properties" : {
-		    "offset" : [1.2, 0.25]
+		    "offset" : [0.9, 0.25]
 		  }
 		}
 	  }
@@ -36,8 +36,8 @@
     }
   },
 
-  "baseOffset" : [1.2, 0.25],
-  "muzzleOffset" : [2.0, 0.5],
+  "baseOffset" : [0.9, 0.25],
+  "muzzleOffset" : [1.9, 0.2],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -47,17 +47,20 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.04,
-    "baseDps" : 58.0,
+    "fireTime" : 0.08,
+    "baseDps" : 47.0,
     "energyUsage" : 60.0,
     "inaccuracy" : 0.06,
 
     "projectileCount" : 1,
-    "fireType" : "auto",
+	"burstCount": 5,
+	"burstTime": 0.06,
+	"fireType": "burst",
 
-    "projectileType" : "horizon_assaultRifle_3_projectile_1",
+    "projectileType" : "horizon_assaultRifle_2_projectile_1",
     "projectileParameters" : {
-      "knockback" : 12
+      "knockback" : 10,
+	  "speed" : 160
     },
     "stances" : {
       "idle" : {
@@ -70,17 +73,17 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "duration" : 0.10,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,

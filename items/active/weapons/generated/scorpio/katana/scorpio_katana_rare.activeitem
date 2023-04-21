@@ -1,0 +1,130 @@
+{
+  "itemName" : "scorpio_katana_rare",
+  "price" : 1080,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A high-tech Scorpio katana.",
+  "shortdescription" : "Rare Broadsword",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Katana"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "animation" : "scorpio_katana_rare.animation",
+  "animationParts" : { },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "primaryAbilityType" : "arcana_katana_combo",
+  "primaryAbility" : {
+    "fireTime" : [0.72, 0.92],
+    "baseDps" : [9.2, 10.2],
+    "damageConfig" : {
+      "damageSourceKind" : "<elementalType>broadsword"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [
+  {
+    "nameGenerator" : "names.config:nameGen",
+    "elementalType" : [
+      "electric"
+    ],
+    "elementalConfig" : {
+      "poison" : {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [ "weakpoison" ] } },
+        "animationCustom" : { "sounds" : {
+          "fire" : [ "/sfx/melee/swing_broadsword_poison1.ogg", "/sfx/melee/swing_broadsword_poison2.ogg", "/sfx/melee/swing_broadsword_poison3.ogg" ],
+          "fire2" : [ "/sfx/melee/swing_shortsword_poison1.ogg", "/sfx/melee/swing_shortsword_poison2.ogg", "/sfx/melee/swing_shortsword_poison3.ogg" ],
+          "fire3" : [ "/sfx/melee/swing_spear_poison1.ogg", "/sfx/melee/swing_spear_poison2.ogg", "/sfx/melee/swing_spear_poison3.ogg" ]
+        } }
+      },
+      "electric" : {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [ "electrified" ] } },
+        "animationCustom" : { "sounds" : {
+          "fire" : [ "/sfx/melee/swing_broadsword_electric1.ogg", "/sfx/melee/swing_broadsword_electric2.ogg", "/sfx/melee/swing_broadsword_electric3.ogg" ],
+          "fire2" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ],
+          "fire3" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ]
+        } }
+      }
+    },
+    "animationParts" : {
+      "blade" : {
+        "path" : "blade/<variant>.png",
+        "variants" : 4,
+        "paletteSwap" : true
+      },
+      "handle" : {
+        "path" : "handle/<variant>.png",
+        "variants" : 6,
+        "paletteSwap" : true
+      },
+      "pattern" : {
+        "path" : "pattern/<variant>.png",
+        "variants" : 3,
+        "paletteSwap" : true
+      }
+    },
+    "altAbilities" : [
+      "travelingslash",
+	  "parry",
+      "blinkslash",
+      "traildash"
+    ],
+    "palette" : "/items/active/weapons/colors/scorpio_electric.weaponcolors",
+    "iconDrawables" : [ "blade", "handle", "pattern" ]
+  },
+  {
+    "nameGenerator" : "names.config:nameGen",
+    "elementalType" : [
+      "poison"
+    ],
+    "elementalConfig" : {
+      "poison" : {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [ "weakpoison" ] } },
+        "animationCustom" : { "sounds" : {
+          "fire" : [ "/sfx/melee/swing_broadsword_poison1.ogg", "/sfx/melee/swing_broadsword_poison2.ogg", "/sfx/melee/swing_broadsword_poison3.ogg" ],
+          "fire2" : [ "/sfx/melee/swing_shortsword_poison1.ogg", "/sfx/melee/swing_shortsword_poison2.ogg", "/sfx/melee/swing_shortsword_poison3.ogg" ],
+          "fire3" : [ "/sfx/melee/swing_spear_poison1.ogg", "/sfx/melee/swing_spear_poison2.ogg", "/sfx/melee/swing_spear_poison3.ogg" ]
+        } }
+      },
+      "electric" : {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [ "electrified" ] } },
+        "animationCustom" : { "sounds" : {
+          "fire" : [ "/sfx/melee/swing_broadsword_electric1.ogg", "/sfx/melee/swing_broadsword_electric2.ogg", "/sfx/melee/swing_broadsword_electric3.ogg" ],
+          "fire2" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ],
+          "fire3" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ]
+        } }
+      }
+    },
+    "animationParts" : {
+      "blade" : {
+        "path" : "blade/<variant>.png",
+        "variants" : 4,
+        "paletteSwap" : true
+      },
+      "handle" : {
+        "path" : "handle/<variant>.png",
+        "variants" : 6,
+        "paletteSwap" : true
+      },
+      "pattern" : {
+        "path" : "pattern/<variant>.png",
+        "variants" : 3,
+        "paletteSwap" : true
+      }
+    },
+    "altAbilities" : [
+      "travelingslash",
+	  "parry",
+      "blinkslash",
+      "traildash"
+    ],
+    "palette" : "/items/active/weapons/colors/scorpio_poison.weaponcolors",
+    "iconDrawables" : [ "blade", "handle", "pattern" ]
+  }
+  ]
+}

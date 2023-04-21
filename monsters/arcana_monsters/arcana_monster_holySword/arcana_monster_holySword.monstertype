@@ -1,0 +1,194 @@
+{
+  "type" : "arcana_monster_holySword",
+  "shortdescription" : "Holy Sword",
+  "description" : "A sword of light, summoned by Sword Conjurers.",
+
+  "categories" : [ "arcana_monster_holySword" ],
+  "parts" : [ "body" ],
+
+  "animation" : "animation.animation",
+
+  "dropPools" : [ ],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    
+    "damageBar" : "default", 
+
+    "behavior" : "monster",
+
+	"aggressive" : true,
+	
+	"facingMode" : "transformation",
+
+    "seeThroughLiquid" : true,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 40,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 80,
+      "targetOutOfSightTime" : 10.0,
+	  
+      "hurtWaitForGround" : false,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+      ],
+
+      "followActions" : [
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "action-stop",
+          "parameters" : {
+            "stopForce" : 20
+          }
+        }
+      ],
+
+      "approachActions" : [
+        {
+          "name" : "arcana_turnapproach",
+          "parameters" : {
+            "turnSpeed" : 1.0,
+            "flyState" : "fly",
+            "idleState" : "idle"
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-3.5, -0.5], [3.5, -0.5], [3.5, 0.5], [-3.5, 0.5] ],
+      "damage" : 12,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "arcana_light_slash",
+      "knockback" : 8,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-1, -1, 1, 1],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-0.2, -0.2], [0.2, -0.2], [0.2, 0.2], [-0.2, 0.2] ],
+
+      "mass" : 0.8,
+      "walkSpeed" : 4,
+      "runSpeed" : 30,
+      "gravityEnabled" : false,
+
+      "airFriction" : 0.0,
+      "airForce" : 25,
+      "flySpeed" : 30
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.0,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 10
+        },
+        "maxHealth" : {
+          "baseValue" : 32
+        },
+        "protection" : {
+          "baseValue" : 0.2
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.2
+        },
+        "fireResistance" : {
+          "baseValue" : 0.2
+        },
+        "iceResistance" : {
+          "baseValue" : 0.2
+        },
+        "electricResistance" : {
+          "baseValue" : 0.2
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.2
+        },
+        "arcana_resistance_light" : {
+          "baseValue" : 0.8
+        },
+        "arcana_resistance_abyss" : {
+          "baseValue" : -0.8
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -4],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

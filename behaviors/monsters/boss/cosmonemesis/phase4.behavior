@@ -128,6 +128,15 @@
           "emitter": {"value": "slam"}
         }
       },
+	  {
+        "title": "setResourcePercentage",
+        "type": "action",
+        "name": "setResourcePercentage",
+        "parameters": {
+          "percentage": {"value": 0.20},
+          "resource": {"value": "health"}
+        }
+      },
       {
         "title": "setVelocity",
         "type": "action",

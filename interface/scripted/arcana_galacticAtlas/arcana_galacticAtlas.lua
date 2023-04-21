@@ -17,3 +17,10 @@ function teleport()
 	pane.dismiss()
   end
 end
+
+function setDestinationImage()
+  self.destinationName = widget.getSelectedData("destinationTabs")
+  if (self.destinationName) then
+   widget.setImage("destinationImage", string.format("/interface/scripted/arcana_galacticAtlas/%s.png", self.destinationName))
+  end
+end

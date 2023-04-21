@@ -43,7 +43,7 @@
         "type": "action",
         "name": "offsetPosition",
         "parameters": {
-          "offset": {"value": [0, 15]},
+          "offset": {"value": [0, 30]},
           "position": {"key": "playerPosition"}
         },
         "output": {
@@ -110,7 +110,7 @@
         "type": "action",
         "name": "timer",
         "parameters": {
-          "time": {"value": 0.5}
+          "time": {"value": 0.1}
         }
       },
       {
@@ -315,7 +315,7 @@
                             "aimVector": {"key": "nemesisAimVector"},
                             "angle": {"value": 0},
                             "position": {"key": "orbPosition"},
-                            "projectileConfig": {"value": {"power" : 35.0}},
+                            "projectileConfig": {"value": {"power" : 60.0}},
                             "projectileType": {"value": "evolapisspikeghostly"},
                             "scalePower": {"value": true},
                             "sourceEntity": {"key": "self"},
@@ -358,7 +358,7 @@
             "type": "action",
             "name": "timer",
             "parameters": {
-              "time": {"value": 0.4}
+              "time": {"value": 0.1}
             }
           }
         ]

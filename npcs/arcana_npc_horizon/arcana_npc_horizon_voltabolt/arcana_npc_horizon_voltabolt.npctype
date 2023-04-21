@@ -39,9 +39,11 @@
               { "name" : "arcana_back_horizonCape", "parameters" : { "colorIndex" : 1 } }
             ],
             "primary" : [
-              "electricrailgun",
-			  "electrobaton",
-			  "violiumbroadsword"
+			  "horizon_assaultRifle_4",
+			  "horizon_rocketLauncher_1"
+            ],
+			"sheathedprimary" : [
+              "electrobaton"
             ]
           }
         ]
@@ -66,17 +68,14 @@
     ],
 	
     "stats" : {
-      "jumpModifier" : {
-        "baseValue" : 1.2
-      },
       "maxHealth" : {
-        "baseValue" : 260.0
+        "baseValue" : 240.0
       },
       "maxEnergy" : {
-        "baseValue" : 60.0
+        "baseValue" : 20.0
       },
       "powerMultiplier" : {
-        "baseValue" : 3.0
+        "baseValue" : 2.0
       },
       "protection" : {
         "baseValue" : 1.0
@@ -94,19 +93,22 @@
         "baseValue" : 0.8
       },
       "physicalResistance" : {
-        "baseValue" : 0.2
+        "baseValue" : 0.1
       },
       "poisonResistance" : {
-        "baseValue" : 0.2
+        "baseValue" : 0.1
       },
       "iceResistance" : {
-        "baseValue" : 0.2
+        "baseValue" : 0.1
       },
       "fireResistance" : {
-        "baseValue" : 0.2
+        "baseValue" : 0.1
       },
       "arcana_resistance_abyss" : {
-        "baseValue" : 0.2
+        "baseValue" : 0.1
+      },
+      "arcana_resistance_light" : {
+        "baseValue" : 0.1
       }
     }
   }

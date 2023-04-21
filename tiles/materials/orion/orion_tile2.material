@@ -6,13 +6,13 @@
   "description" : "A white concrete flooring tile.",
   "shortdescription" : "White Concrete Floor",
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
-  "health" : 16,
+  "health" : 8,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/pipetemplate.config",
   "renderParameters" : {
     "texture" : "orion_tile2.png",
-    "variants" : 4,
+    "variants" : 1,
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : false,
