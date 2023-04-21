@@ -1,0 +1,96 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "risingSwoosh" : {
+          "default" : "idle",
+          "states" : {
+            "idle" : {
+            },
+            "slash" : {
+              "frames" : 3,
+              "cycle" : 0.175,
+              "mode" : "transition",
+              "transition" : "idle"
+            }
+          }
+        }
+      },
+      "parts" : {
+        "risingSwoosh" : {
+          "properties" : {
+            "zLevel" : -1,
+            "centered" : true,
+            "offset" : [1.65, -2.5],
+            "transformationGroups" : ["swoosh"],
+            "rotationCenter" : [0, 0]
+          },
+
+          "partStates" : {
+            "risingSwoosh" : {
+              "idle" : {
+                "properties" : {
+                  "image" : ""
+                }
+              },
+              "slash" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/abilities/broadsword/heavy_risingslash/heavy_risingslash.png:<frame>",
+                  "damageArea" : [[-5, -2], [-2.5, -3], [1, -3], [4, -1.75], [5, 0.25], [5, 2.25], [4, 3.25], [0, 2.5]]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sounds" : {
+      "upswing" : [ "/sfx/melee/arcana_heavy_rising_slash.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Lethal Bite",
+    "type" : "heavy_risingslash",
+    "scripts" : ["/items/active/weapons/melee/abilities/broadsword/risingslash/risingslash.lua"],
+    "class" : "RisingSlash",
+
+    "energyUsage" : 90.0,
+    "cooldownTime" : 1.2,
+
+    "dashSpeed" : 20,
+    "dashControlForce" : 1200,
+
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "baseDamage" : 5.2,
+      "knockback" : [0,40],
+      "timeout" : 0.065,
+      "timeoutGroup" : "alt"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.4,
+        "armRotation" : -110,
+        "weaponRotation" : -180,
+        "twoHanded" : true,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "weaponOffset":[0,-2]
+      },
+      "slash" : {
+        "duration" : 0.25,
+        "armRotation" : 45,
+        "weaponRotation" : -125,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+        "weaponOffset":[0,-1]
+      },
+      "freeze" : {"duration" : 0.0}
+    }
+  }
+}

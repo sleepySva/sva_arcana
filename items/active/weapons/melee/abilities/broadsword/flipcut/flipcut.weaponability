@@ -1,0 +1,75 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "swoosh" : {
+          "states" : {
+            "flip" : {}
+          }
+        }
+      },
+
+      "parts" : {
+        "swoosh" : {
+          "partStates" : {
+            "swoosh" : {
+              "flip" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/abilities/broadsword/flipcut/physical_flipcut.png",
+                  "offset" : [2, 0],
+                  "damageArea" : [[4.7, 0], [-4.7, 0], [0, -4.7], [0, 4.7]]
+                }}}}}}},
+    "particleEmitters" : {},
+    "sounds" : {"flipSlash" : [ "/sfx/melee/heavy_swing.ogg" ]}
+  },
+
+  "ability" : {
+    "name" : "FlipCut",
+    "type" : "flipcut",
+    "scripts" : ["/items/active/weapons/melee/abilities/broadsword/flipcut/flipcut.lua"],
+    "class" : "FlipSlash",
+
+    "cooldownTime" : 0.5,
+
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "baseDamage" : 4.2,
+      "knockback" : 14,
+      "timeout" : 0.15,
+      "timeoutGroup" : "alt"
+    },
+
+    "flipMovementParameters" : {
+      "collisionPoly" : [ [-2.0, -1.0], [-1.0, -2.0], [1.0, -2.0], [2.0, -1.0], [2.0, 1.0], [1.0, 2.0], [-1.0, 2.0], [-2.0, 1.0] ]
+    },
+
+    "energyUsage" : 35.0,
+    "rotations" : 1,
+    "rotationTime" : 0.28,
+
+    "jumpVelocity" : [0,27],
+    "jumpDuration" : 0.01,
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.125,
+        "armRotation" : 55,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+        "weaponOffset":[0,-2],
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "flip" : {
+        "noAimCompensation" : true,
+        "armRotation" : 25,
+        "weaponRotation" : 90,
+        "twoHanded" : true,
+        "weaponOffset":[0,-1],
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}
