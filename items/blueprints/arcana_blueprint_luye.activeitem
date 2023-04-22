@@ -1,0 +1,36 @@
+{
+  "itemName" : "arcana_blueprint_luye",
+  "price" : 400,
+  "rarity" : "Uncommon",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "blueprint_luye.png",
+  "description" : "A blueprint for crafting Luye themed furniture and blocks.",
+  "shortdescription" : "Blueprint 06 - Luye",
+  "itemTags" : [ "blueprint" ],
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "arcana_blueprint",
+  "tooltipFields" : {
+	"subtitle" : "^#2692c8;Blueprint^reset;",
+	"materialImage" : "/items/blueprints/blueprint_luye_materials.png",
+	"materialBackground" : "/items/blueprints/blueprint_background.png"
+  },
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_blueprint.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "icon.png"
+  },
+  "animationCustom" : {},
+  "recipes" : [
+	"luye_tile1",
+    "luye_tile2",
+	"luye_tile3",
+	"luye_tile4",
+	"luye_tile5",
+	
+	"arcana_luye_crafting_2"
+  ]
+}

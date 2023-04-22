@@ -3,7 +3,7 @@
   "colonyTags" : ["crafting"],
   "rarity" : "Legendary",
   "description" : "A crafting station for creating Arcanian furnishing and basic equipment.",
-  "shortdescription" : "^#4b92a9;Astroneer's Table^reset;",
+  "shortdescription" : "^#ffffff;Astral Crafting Table^reset;",
   "race" : "generic",
   "category" : "crafting",
   "price" : 800,
@@ -12,8 +12,8 @@
 
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
-    "config" : "/interface/windowconfig/arcana_astral_crafting_1.config",
-	"filter" : ["arcana_astral_crafting_1","arcana_crafting_workbench_4","arcana_crafting_anvil_1"]
+    "config" : "/interface/arcana/arcana_crafting_workbench/astral.config",
+	"filter" : ["arcana_astral_crafting_1", "arcana_crafting_anvil_1", "arcana_astral"]
   },
 
   "inventoryIcon" : "icon.png",

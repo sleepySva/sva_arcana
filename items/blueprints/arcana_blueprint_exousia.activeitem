@@ -1,0 +1,64 @@
+{
+  "itemName" : "arcana_blueprint_exousia",
+  "price" : 400,
+  "rarity" : "Rare",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "blueprint_exousia.png",
+  "description" : "A blueprint for crafting Exousian themed furniture and blocks.",
+  "shortdescription" : "Blueprint 10 - Exousia",
+  "itemTags" : [ "blueprint" ],
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "arcana_blueprint",
+  "tooltipFields" : {
+	"subtitle" : "^#2692c8;Blueprint^reset;",
+	"materialImage" : "/items/blueprints/blueprint_exousia_materials.png",
+	"materialBackground" : "/items/blueprints/blueprint_background.png"
+  },
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_blueprint.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "icon.png"
+  },
+  "animationCustom" : {},
+  "recipes" : [
+	"exousia_tile1",
+    "exousia_tile2",
+	"exousia_tile3",
+	"exousia_tile4",
+	"exousia_tile5",
+	"exousia_tile6",
+	"exousia_tile7",
+	"exousia_tile8",
+	"exousia_tile9",
+	"exousia_tile10",
+	"exousia_tile11",
+	"exousia_tile12",
+	"exousia_tile13",
+	"exousia_tile14",
+	"exousia_tile15",
+	"exousia_tile16",
+	"exousia_tile17",
+	"exousia_tile18",
+	"exousia_tile19",
+	"exousia_tile20",
+	"exousia_tile21",
+	"exousia_tile22",
+	"exousia_tile23",
+	"exousia_tile24",
+	"exousia_tile25",
+	"exousia_tile26",
+	"exousia_tile27",
+	"exousia_tile28",
+	"exousia_tile29",
+	"exousia_tile30",
+	"exousia_tile31",
+	
+	"arcana_platform_exoslatePlatform",
+	
+	"arcana_exousia_crafting_2"
+  ]
+}
