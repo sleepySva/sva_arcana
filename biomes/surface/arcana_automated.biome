@@ -82,14 +82,14 @@
       // dark peachy massacre
       "mainColor" : [255, 255, 255],
 
-      "morningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
-      "dayColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
-      "eveningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "morningColors" : [ [200, 52, 7], [250, 138, 77] ],
+      "dayColors" : [ [255, 186, 116], [255, 255, 255] ],
+      "eveningColors" : [ [200, 52, 7], [250, 138, 77] ],
       "nightColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
 
-      "morningLightColor" : [50, 40, 80],
-      "dayLightColor" : [50, 40, 80],
-      "eveningLightColor" : [50, 40, 80],
+      "morningLightColor" : [180, 120, 120],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [180, 120, 120],
       "nightLightColor" : [50, 40, 80]
     }
   ],
@@ -98,7 +98,7 @@
   "subBlocks" : [ "automated_tile1", "obsidian", "rustyblock" ],
   "ores" : "arcana_automated_ores_surface",
 
-  "parallax" : "/parallax/surface/scorchedcity.parallax",
+  "parallax" : "/parallax/surface/arcana_automated.parallax",
 
   "ambientNoises" : {
     "day" : {
