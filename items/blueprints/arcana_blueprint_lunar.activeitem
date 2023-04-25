@@ -1,0 +1,49 @@
+{
+  "itemName" : "arcana_blueprint_lunar",
+  "price" : 400,
+  "rarity" : "Rare",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "blueprint_lunar.png",
+  "description" : "A blueprint for crafting Kuromatsu themed furniture and blocks.",
+  "shortdescription" : "Blueprint 09 - Kuromatsu",
+  "itemTags" : [ "blueprint" ],
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "arcana_blueprint",
+  "tooltipFields" : {
+	"subtitle" : "^#2692c8;Blueprint^reset;",
+	"materialImage" : "/items/blueprints/blueprint_lunar_materials.png",
+	"materialBackground" : "/items/blueprints/blueprint_background.png"
+  },
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_blueprint.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "icon.png"
+  },
+  "animationCustom" : {},
+  "recipes" : [
+	"lunar_tile1",
+	"lunar_tile2",
+	"lunar_tile3",
+	"lunar_tile4",
+	"lunar_tile5",
+	"lunar_tile6",
+	"lunar_tile7",
+	"lunar_tile8",
+	"lunar_tile9",
+	"lunar_tile10",
+	"lunar_tile11",
+	"lunar_tile12",
+	"lunar_tile13",
+	"lunar_tile14",
+	"lunar_tile15",
+	"lunar_tile16",
+	
+    "arcana_platform_kuromatsuPlatform",
+	
+	"arcana_lunar_crafting_1"
+  ]
+}
