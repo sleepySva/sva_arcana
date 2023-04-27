@@ -1,0 +1,41 @@
+{
+  "itemName" : "arcana_blueprint_horizon",
+  "price" : 400,
+  "rarity" : "Uncommon",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "blueprint_horizon.png",
+  "description" : "A blueprint for crafting Horizon themed furniture and blocks.",
+  "shortdescription" : "Blueprint 04 - Horizon",
+  "itemTags" : [ "blueprint" ],
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "arcana_blueprint",
+  "tooltipFields" : {
+	"subtitle" : "^#2692c8;Blueprint^reset;",
+	"materialImage" : "/items/blueprints/blueprint_horizon_materials.png",
+	"materialBackground" : "/items/blueprints/blueprint_background.png"
+  },
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_blueprint.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "icon.png"
+  },
+  "animationCustom" : {},
+  "recipes" : [
+	"horizon_tile1",
+	"horizon_tile2",
+	"horizon_tile3",
+	"horizon_tile4",
+	"horizon_tile5",
+	"horizon_tile6",
+	"horizon_tile7",
+	"horizon_tile8",
+	
+	"arcana_platform_necroiumPlatform",
+	
+	"arcana_horizon_crafting_1"
+  ]
+}

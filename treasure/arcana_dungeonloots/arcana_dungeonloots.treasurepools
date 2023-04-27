@@ -197,16 +197,57 @@
 	    {"weight" : 1.0, "pool" : "basicTreasure"}
       ],
       "pool" : [
-		{"weight" : 1.0, "item" : ["arcana_misc_behestDongle", 1]},
-		{"weight" : 1.0, "item" : ["arcana_misc_preceptDongle", 1]},
-        {"weight" : 1.0, "item" : ["arcana_misc_nanoweave", 1]},
-		{"weight" : 1.0, "item" : ["wire", 2]},
-		{"weight" : 1.0, "item" : ["wire", 4]}
+		{"weight" : 1.0, "item" : ["arcana_misc_slipstreamComposite", 1]},
+		{"weight" : 1.0, "item" : ["arcana_misc_slipstreamComposite", 2]},
+        {"weight" : 1.0, "item" : ["arcana_misc_slipstreamComposite", 2]},
+		{"weight" : 1.0, "item" : ["orion_crafting_orionTechCard", 1]},
+		{"weight" : 1.0, "item" : ["orion_crafting_orionTechCard", 2]}
       ],
       "poolRounds" : [
-        [1.0, 1],
+        [1.0, 2],
 		[1.0, 2],
 		[1.0, 3]
+      ]
+    }]
+  ],
+  
+  "arcana_dungeonloots_orionBasicTreasure" : [
+    [0, {
+	  "fill" : [
+	    {"weight" : 1.0, "pool" : "basicTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["orion_crafting_ursaplate", 2]},
+		{"weight" : 1.0, "item" : ["smallbattery", 1]},
+        {"weight" : 1.0, "item" : ["smallbattery", 1]},
+		{"weight" : 1.0, "item" : ["orion_crafting_orionTechCard", 1]},
+		{"weight" : 1.0, "item" : ["wire", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 2],
+		[1.0, 3],
+		[1.0, 3]
+      ]
+    }]
+  ],
+  "arcana_dungeonloots_orionChestTreasure" : [
+    [0, {
+	  "fill" : [
+	    {"weight" : 1.0, "pool" : "basicTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["orion_crafting_ursaplate", 2]},
+		{"weight" : 1.0, "item" : ["orion_crafting_orionTechCard", 1]},
+		{"weight" : 1.0, "item" : ["orion_tile2", 20]},
+		{"weight" : 1.0, "item" : ["orion_tile7", 20]},
+		{"weight" : 1.0, "item" : ["orion_tile15", 20]},
+		{"weight" : 1.0, "item" : ["orion_tile16", 20]},
+		{"weight" : 1.0, "item" : ["orion_tile10", 20]}
+      ],
+      "poolRounds" : [
+        [1.0, 6],
+		[1.0, 7],
+		[1.0, 7]
       ]
     }]
   ],
