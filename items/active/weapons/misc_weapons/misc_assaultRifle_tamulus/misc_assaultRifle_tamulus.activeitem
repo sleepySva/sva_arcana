@@ -1,0 +1,153 @@
+{
+  "itemName" : "misc_assaultRifle_tamulus",
+  "price" : 2100,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Even the Orion's most advanced armor has a weakpoint.",
+  "shortdescription" : "Tamulu5",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 7,
+
+  "inventoryIcon" : "body.png:default.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_ring_blue.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [1.1, 0.1] //Same as baseOffset
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.0, -0.3]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/mech_teslastream_fire5.ogg"]
+    }
+  },
+
+  "baseOffset" : [1.1, 0.1],
+  "muzzleOffset" : [2.9, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.44,
+    "baseDps" : 10.2,
+    "energyUsage" : 50.0,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 2,
+    "fireType" : "burst",
+	"burstCount" : 3,
+    "burstTime" : 0.1,
+
+    "projectileType" : ["misc_assaultRifle_tamulus_projectile_1"],
+    "projectileParameters" : {
+      "knockback" : 18,
+	  "speed" : 94
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"endArmRotation" : 0,
+        "endWeaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.18,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"endArmRotation" : -2,
+        "endWeaponRotation" : -2,
+		
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"endArmRotation" : 0,
+        "endWeaponRotation" : 0,
+		
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "altAbilityType" : "spray",
+  "altAbility" : {
+	"name" : "Overdrive",
+	
+    "energyUsage" : 70,
+    "baseDps" : 30,
+    "fireTime" : 0.10,
+    "inaccuracy" : 0.10,
+	
+    "projectileCount" : 2,
+    "fireType" : "burst",
+	"burstCount" : 3,
+    "burstTime" : 0.10,
+
+    "usePrimaryFireSound" : true,
+    "useParticleEmitter" : false,
+    "stances" : {
+      "fire" : {
+        "duration" : 0.10,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"endArmRotation" : -2,
+        "endWeaponRotation" : -2,
+		
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.10,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"endArmRotation" : 0,
+        "endWeaponRotation" : 0,
+		
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

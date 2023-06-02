@@ -1,14 +1,14 @@
 {
   "objectName" : "orion_wireddeco_5",
-  "colonyTags" : ["misc"],
+  "colonyTags" : ["light", "arcana_orion"],
   "rarity" : "Rare",
-  "description" : "An orion monitor displaying a bunch of statistics.",
-  "shortdescription" : "Long Orion Monitor",
+  "description" : "A high tech Orion monitor.",
+  "shortdescription" : "Orion Long Monitor",
   "race" : "generic",
-  "category" : "decorative",
-  "price" : 100,
-  
-  "lightColor" : [40, 70, 80],
+
+  "category" : "light",
+  "price" : 160,
+  "lightColor" : [5, 11, 15],
   "flickerDistance" : 0.2,
   "flickerStrength" : 0.05,
   "flickerTiming" : 4,
@@ -16,23 +16,61 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "orion_wireddeco_5.png:<color>.on",
+      "image" : "body.png:<color>.on",
       "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 1],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 1],
+
+      "direction" : "right",
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
   ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
   
-  "animation" : "orion_wireddeco_5.animation",
+  "animation" : "/objects/arcana_light_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "light" : {
+          "states" : {
+            "on" : {
+              "frames" : 1,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
   "animationParts" : {
-    "bg" : "orion_wireddeco_5.png",
-    "fg" : "orion_wireddeco_5.png"
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
   },
   "animationPosition" : [0, 0],
 
   "scripts" : [ "/objects/wired/light/light.lua" ],
   "scriptDelta" : 60,
+  
+  "interactive" : true,
 
   "inputNodes" : [ [0, 0] ]
 }

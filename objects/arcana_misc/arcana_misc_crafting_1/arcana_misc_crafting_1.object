@@ -1,0 +1,45 @@
+{
+  "objectName" : "arcana_misc_crafting_1",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Essential",
+  "description" : "A crafting station for printing developers.. I think. You'd need higher permission to access the recipes.",
+  "shortdescription" : "^#ffffff;Developer Printer^reset;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 800,
+  
+  "lightColor" : [30, 44, 20],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/arcana/arcana_crafting_workbench/misc.config",
+	"filter" : ["arcana_misc_crafting_1", "arcana_misc"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

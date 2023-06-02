@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_fishSandwich",
+  "rarity" : "Uncommon",
+  "price" : 120,
+  "category" : "preparedFood",
+  "inventoryIcon" : "arcana_food_fishSandwich.png",
+  "description" : "A cheap but tasty fish sandwich that fills your stomach. ^green;+20% max health for 120s.^reset;",
+  "shortdescription" : "Fish Sandwich",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 35,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

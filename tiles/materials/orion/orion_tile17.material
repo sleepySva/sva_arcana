@@ -1,0 +1,21 @@
+{
+  "materialId" : 16337,
+  "materialName" : "orion_tile17",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile17",
+  "description" : "A soft prefabricated wall panel.",
+  "shortdescription" : "Soft Prefab Wall B",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile17.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 870
+  }
+}

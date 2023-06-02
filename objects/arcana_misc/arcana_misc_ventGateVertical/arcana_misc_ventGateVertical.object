@@ -1,0 +1,47 @@
+{
+  "objectName" : "arcana_misc_ventGateVertical",
+  "colonyTags" : ["misc","door"],
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 40,
+  "description" : "A steel gate, securing ventilation channels.",
+  "shortdescription" : "Vent Gate",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:default",
+      "imagePosition" : [-4, 0],
+      "renderLayer" : "Object+5",
+
+      "spaces" : [[0, 0],[0, 1]],
+      "anchors" : [ ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "animation.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/bardoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/bardoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "body.png"
+  },
+  "animationPosition" : [-4, 0],
+
+  "inputNodes" : [ [0, 0] ],
+  "outputNodes" : [ [1, 0] ]
+}

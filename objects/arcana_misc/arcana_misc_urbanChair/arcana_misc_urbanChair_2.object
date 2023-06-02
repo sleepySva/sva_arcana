@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_misc_urbanChair_2",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "An orange round chair, affordable by just about anyone.",
+  "shortdescription" : "Urban Orange Chair",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 50,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "2_icon.png",
+  "orientations" : [
+    {
+      "image" : "2.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPosition" : [2, 23],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "2.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "direction" : "right",
+      "sitPosition" : [2, 23],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

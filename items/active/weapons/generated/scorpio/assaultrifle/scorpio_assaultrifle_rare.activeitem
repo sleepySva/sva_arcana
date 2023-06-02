@@ -11,7 +11,7 @@
   "itemTags" : ["weapon","ranged","assaultrifle"],
   "level" : 1,
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/generated/scorpio/gun.animation",
   "animationParts" : { },
   "animationCustom" : { },
   "baseOffset" : [-2.0, 0.125],
@@ -86,20 +86,20 @@
     "animationParts" : {
       "butt" : {
         "path" : "/items/active/weapons/generated/scorpio/assaultrifle/butt/<variant>.png",
-        "variants" : 8,
+        "variants" : 9,
         "paletteSwap" : true
       },
       "middle" : {
         "path" : "/items/active/weapons/generated/scorpio/assaultrifle/middle/<variant>.png",
-        "variants" : 9,
+        "variants" : 11,
         "paletteSwap" : true
       },
       "barrel" : {
         "path" : "/items/active/weapons/generated/scorpio/assaultrifle/barrel/<variant>.png",
-        "variants" : 7,
+        "variants" : 9,
         "paletteSwap" : true
       },
-      "muzzleFlash" : "/items/active/weapons/generated/scorpio/assaultrifle/muzzleflash.png"
+      "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_ring_blue.png"
     },
     "gunParts" : ["butt", "middle", "barrel"],
     "altAbilities" : [

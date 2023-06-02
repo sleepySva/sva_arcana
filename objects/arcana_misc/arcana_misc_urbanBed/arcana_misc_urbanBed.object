@@ -1,0 +1,52 @@
+{
+  "objectName" : "arcana_misc_urbanBed",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A basic bed produced by Urban Edge Furnishings. It's decent enough if you just need a place to sleep.",
+  "shortdescription" : "Urban Bed",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 180,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/arcana_misc/arcana_misc_urbanBed/cover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>" } ],
+      "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      
+      "sitPosition" : [-4, 14.25],
+        
+      "spaces" : [ [-3, 0], [-3, 1], [-2, 0], [-2, 1], [-1, 0], [-1, 1], [0, 0], [0, 1], [1, 0], [1, 1], [2, 0], [2, 1], [3, 0], [3, 1] ],
+      "anchors" : [ "bottom" ],
+      "direction" : "left"
+    },
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+      
+      "sitPosition" : [-12, 14.25],
+
+      "spaces" : [ [-3, 0], [-3, 1], [-2, 0], [-2, 1], [-1, 0], [-1, 1], [0, 0], [0, 1], [1, 0], [1, 1], [2, 0], [2, 1], [3, 0], [3, 1] ],
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+    }
+    
+  ]
+}
