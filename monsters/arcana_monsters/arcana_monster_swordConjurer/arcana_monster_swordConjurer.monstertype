@@ -11,8 +11,11 @@
   "dropPools" : [ { "default" : "arcana_monsterdrops_fairi" } ],
   "baseParameters" : {
     "scripts" : [
-      "/monsters/monster.lua"
+      "/monsters/arcana_monster_status.lua"
     ],
+	
+	"baseStatus" : "arcana_status_shielded_aurea",
+	"baseStatusDuration" : 10,
     
     "damageBar" : "default", 
 
@@ -253,7 +256,7 @@
           "baseValue" : 22
         },
         "maxHealth" : {
-          "baseValue" : 148
+          "baseValue" : 310
         },
         "protection" : {
           "baseValue" : 0.0

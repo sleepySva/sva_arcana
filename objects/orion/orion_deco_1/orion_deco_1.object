@@ -2,19 +2,32 @@
   "objectName" : "orion_deco_1",
   "colonyTags" : ["misc"],
   "rarity" : "Rare",
-  "description" : "A display of a tech gadget.",
-  "shortdescription" : "Gadget Display",
+  "description" : "A small Orion databank.",
+  "shortdescription" : "Small Databank",
   "race" : "generic",
   "category" : "decorative",
-  "price" : 100,
+  "price" : 40,
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "orion_deco_1.png:<color>",
-      "imagePosition" : [-8, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

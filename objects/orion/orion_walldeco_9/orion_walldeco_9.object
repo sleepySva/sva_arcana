@@ -8,11 +8,24 @@
   "category" : "decorative",
   "price" : 100,
 
-  "lightColor" : [226, 110, 255],
+  "lightColor" : [156, 40, 175],
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "orion_walldeco_9.png:<color>.<frame>",
+	  "imageLayers" : [ { "image" : "orion_walldeco_9.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 2,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "orion_walldeco_9.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "right",
       "imagePosition" : [-16, 0],
       "frames" : 2,
       "animationCycle" : 0.2,

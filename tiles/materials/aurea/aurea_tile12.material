@@ -1,0 +1,22 @@
+{
+  "materialId" : 16327,
+  "materialName" : "aurea_tile12",
+  "particleColor" : [200, 200, 110, 255],
+  "itemDrop" : "aurea_tile12",
+  "description" : "A Gilten glass barrier.",
+  "shortdescription" : "Solid Ark Barrier",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 7,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile12.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2902,
+	"radiantLight" : [80, 80, 63]
+  }
+}

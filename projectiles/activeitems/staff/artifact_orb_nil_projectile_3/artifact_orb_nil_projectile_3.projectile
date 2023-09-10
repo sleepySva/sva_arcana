@@ -4,7 +4,7 @@
   
   "timeToLive" : 4,
   "bounces" : 0,
-  "speed" : 60,
+  "speed" : 20,
   "piercing" : true,
   "knockback" : 40,
   "knockbackDirectional" : true,
@@ -76,7 +76,7 @@
   
   "periodicActions" : [
     {
-      "time" : 0.02,
+      "time" : 0.01,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
@@ -86,8 +86,8 @@
         "position" : [0, 0],
         "layer" : "back",
         "timeToLive" : 0.0,
-        "destructionTime" : 0.2,
-        "destructionAction" : "fade",
+        "destructionTime" : 0.1,
+        "destructionAction" : "shrink",
         "fullbright" : true
       }
     }

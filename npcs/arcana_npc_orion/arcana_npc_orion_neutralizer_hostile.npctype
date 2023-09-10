@@ -1,0 +1,105 @@
+{
+  "type" : "arcana_npc_orion_neutralizer_hostile",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Threat detected. Commencing extermination protocol.",
+			"Eliminating threat.",
+			"Initiating combat.",
+			"Neutralize all threats.",
+            "Securing perimeter."
+          ]
+        }
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_prima_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_prima_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_prima_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "orion_broadsword_1"
+            ]
+          },
+          {
+			"head" : [
+              { "name" : "arcana_armor_prima_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_prima_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_prima_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+			  "orion_pistol_2"
+            ],
+            "alt" : [
+              "arcana_shield_ampliftShield"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+  
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 220.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.2
+      },
+      "protection" : {
+        "baseValue" : 1.2
+      },
+      "electricStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "fireResistance" : {
+        "baseValue" : 0.1
+      },
+      "iceResistance" : {
+        "baseValue" : 0.1
+      },
+      "poisonResistance" : {
+        "baseValue" : 0.1
+      },
+      "electricResistance" : {
+        "baseValue" : 0.3
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.1
+      },
+      "arcana_resistance_light" : {
+        "baseValue" : 0.1
+      },
+      "arcana_resistance_abyss" : {
+        "baseValue" : 0.1
+      }
+    }
+  }
+}

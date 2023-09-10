@@ -1,0 +1,17 @@
+{
+  "itemName" : "arcana_food_rushsoda",
+  "rarity" : "Common",
+  "price" : 40,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_rushsoda.png",
+  "description" : "A can of Rush, perfect for fueling your day.",
+  "shortdescription" : "Rush",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 30
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16326,
+  "materialName" : "aurea_tile11",
+  "particleColor" : [42, 39, 34, 255],
+  "itemDrop" : "aurea_tile10",
+  "description" : "A durable metal wall.",
+  "shortdescription" : "Aurea Hazard Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile11.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1402
+  }
+}

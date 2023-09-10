@@ -1,0 +1,21 @@
+{
+  "materialId" : 16323,
+  "materialName" : "aurea_tile8",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "aurea_tile8",
+  "description" : "A ship floor.",
+  "shortdescription" : "Aurea Ship Floor",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile8.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 802
+  }
+}

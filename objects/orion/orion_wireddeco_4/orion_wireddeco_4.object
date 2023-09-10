@@ -3,22 +3,26 @@
   "colonyTags" : ["light", "arcana_orion"],
   "rarity" : "Rare",
   "description" : "A high tech Orion monitor.",
-  "shortdescription" : "Orion Long Monitor",
+  "shortdescription" : "Orion Monitor",
   "race" : "generic",
 
   "category" : "light",
   "price" : 160,
-  "lightColor" : [5, 11, 15],
+  "lightColor" : [120, 130, 132],
   "flickerDistance" : 0.2,
   "flickerStrength" : 0.05,
   "flickerTiming" : 4,
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.4,
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
       "image" : "body.png:<color>.on",
       "imagePosition" : [0, 0],
-	  "lightPosition" : [1, 1],
+	  "lightPosition" : [1, 0],
+	  "beamAngle" : 180,
 
       "direction" : "left",
 
@@ -29,7 +33,8 @@
     {
       "image" : "body.png:<color>.on",
       "imagePosition" : [0, 0],
-	  "lightPosition" : [1, 1],
+	  "lightPosition" : [1, 0],
+	  "beamAngle" : 0,
 
       "direction" : "right",
 
@@ -48,7 +53,7 @@
         "light" : {
           "states" : {
             "on" : {
-              "frames" : 1,
+              "frames" : 4,
               "cycle" : 0.4,
 			  "mode" : "loop"
             }

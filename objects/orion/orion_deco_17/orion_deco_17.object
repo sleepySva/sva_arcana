@@ -1,0 +1,40 @@
+{
+  "objectName" : "orion_deco_17",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A wall screen panel.",
+  "shortdescription" : "Wall Info Display",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 90,
+  
+  "lightColor" : [19, 24, 28],
+  "lightPosition" : [0, 1],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind" : "breakable_orion_1_1",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/breakables/breakable_orion_1/1.png",
+    "size" : 1.0,
+    "destructionTime" : 12.0,
+    "destructionAction" : "fade",
+    "angularVelocity" : 0,
+    "position" : [0, 0],
+    "initialVelocity" : [0, 2],
+    "finalVelocity" : [0, -30],
+    "approach" : [0, 20],
+    "timeToLive" : 2,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "variance" : {
+      "rotation" : 360,
+      "angularVelocity" : 1,
+      "initialVelocity" : [2, 2]
+    }
+  }
+}

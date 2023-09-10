@@ -1,0 +1,22 @@
+{
+  "materialId" : 16329,
+  "materialName" : "aurea_tile14",
+  "particleColor" : [42, 39, 34, 255],
+  "itemDrop" : "aurea_tile14",
+  "description" : "A light strip.",
+  "shortdescription" : "Aurea Light Strip",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile14.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 800,
+	"radiantLight" : [90, 90, 80]
+  }
+}

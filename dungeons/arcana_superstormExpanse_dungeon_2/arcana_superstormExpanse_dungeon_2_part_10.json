@@ -12,7 +12,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJztmVsOgjAQRWct\/LFLl+NH+WYJ7MY16CRtUpqhPGR6bbwnuUGxw5zBlJi4iDwWhmG6j3RAz+6Jnt0T9MdCfyz0x0J\/LPTHQn8s9MdCfyz0x0J\/LPTHQn8s9MdCfyw1\/3kQeWZpTdl\/Nhxq\/uGTKdZMAP+yfzDWnPG36j2hf7\/+o9j7Z\/SWPtl\/y\/81rOdXQjzfgrJ\/uv9l\/6P+W\/VeXPHPZ+jBv\/Yf6l69Hr1ypP+Wu+4Pja7N905KiJ97+h\/pP1Zm0OhaPYZUF9+n8975tv9evcj62XT194V1jRb+2ssrvP\/2LGU8\/O\/eR+X8pb\/1+kz2rhGy7+Fu\/xb5d3+GYX4\/b1dOGqk=",
+         "data":"eJztmUtuhDAMhrPrHbrMjlv2OCxAYkdvMIdor1DOUEXUwo38Cg2kaf1Lv2AYYn95OMOIRwgvD7fb3b1DB+qZHdQzO8j528r528r528r528r528r528r528r528r5y\/QRd9eS85cJ+OdKfXD+MvXMv8SDfxFcorv417gb+Fdk\/H2p7uDHrBL\/GdXm1+Yfrx8tjmUt1eIf4+4lHueUMT9ca82fGJ6DzcCPr0l9+An\/mo0dx16Dn4qf56dqROKHORwCPZ+QMx03ZEnAj+\/HcUrya\/ypv6\/hMO7\/yJxrop5\/uFhSfiv\/O\/KqjJNUt3n94nrn5pXLb+Wfwvf2E8FO9UeSNv74GpXfyj8w\/AMR4wp+a36Of2P6T9VnCX96bsuf3aj21vwa\/1s8XIPfOv7W\/Nw7PGj\/hNyCX8ovvUPV2uf792Y0t\/\/nvx9afo491QfUDrX\/QQ1dyW\/JPwh9SE73puME7b4+w3XqXouBP2+fxyjJf4Y\/zSHsIyOxp1jX\/xyP9Q8x7uCHfRDyz0bj\/79cex9\/2\/q+gr+UTXPe\/5yfOi+pXy3GhOahNv8ZU\/uPlv8\/89d2Kf9vc+\/87r\/pT4GYpP4=",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -26,7 +26,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt1kEKgzAQBdCcJafvwlBX9XqNVLELDYVBI+U9+BiI4Y8LISkBAAAAAABA25RTei3p3T9n6jQHAND2zJ+MNY+djHl75679631nqCnLen4OX\/vlxPzS3xI9H2X+2PmoSP8\/\/L+ro++\/SrTf\/DG9+4FrvAHesXO5",
+         "data":"eJzt1ksOgyAQgGF6j67YefMuSuoKr9cQmUAbQSxFxfxfMjEt4Mz4iCgFAAAAAAAAAOdxv4XoHT0cY9RzTD566kFqfvij6KGHSX\/W\/23PHuQZGH0tpRGvW+J6kPGW\/Uh+o0PeHBmX+an64\/diSszJcWusjxJmw3Vy88zKeeP89scetlirp3Z+az3XP6j5\/g6qPGQ+AOB4Lz1Hai826jDnrPmt38c8VfhGuqP77f5346ZhlOTPsf67uLR+UGH9v\/e0cr7S\/Ln6VWK9jLfaj8fXN5c\/p3Z9rZr8V3h\/Rar\/vdTmp\/46R+cHsI83NbGfWQ==",
          "encoding":"base64",
          "height":60,
          "id":2,
@@ -43,7 +43,51 @@
          "draworder":"topdown",
          "id":3,
          "name":"mods",
-         "objects":[],
+         "objects":[
+                {
+                 "height":16,
+                 "id":937,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"exousia_tile30"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"6"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":208,
+                 "y":392
+                }, 
+                {
+                 "height":16,
+                 "id":938,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"exousia_tile30"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"6"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":216,
+                 "y":392
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -57,30 +101,6 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":6343,
-                 "height":16,
-                 "id":908,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":56,
-                 "y":304
-                }, 
-                {
-                 "gid":6343,
-                 "height":16,
-                 "id":909,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":312,
-                 "y":304
-                }, 
-                {
                  "gid":6604,
                  "height":8,
                  "id":910,
@@ -89,8 +109,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":144,
-                 "y":392
+                 "x":136,
+                 "y":320
                 }, 
                 {
                  "gid":6604,
@@ -101,8 +121,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":224,
-                 "y":392
+                 "x":232,
+                 "y":320
                 }, 
                 {
                  "gid":3600,
@@ -193,6 +213,72 @@
                  "width":8,
                  "x":216,
                  "y":360
+                }, 
+                {
+                 "gid":6624,
+                 "height":8,
+                 "id":929,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":40,
+                 "y":304
+                }, 
+                {
+                 "gid":6624,
+                 "height":8,
+                 "id":930,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":296,
+                 "y":304
+                }, 
+                {
+                 "gid":2147491137,
+                 "height":37,
+                 "id":931,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"basicTreasure\"]}"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":48,
+                 "x":304,
+                 "y":368
+                }, 
+                {
+                 "gid":7977,
+                 "height":32,
+                 "id":932,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":40,
+                 "y":368
+                }, 
+                {
+                 "gid":7977,
+                 "height":32,
+                 "id":933,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":64,
+                 "y":368
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -217,7 +303,46 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":936,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"apex, avian, human, hylotl, floran, glitch, novakid, arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_npc_misc_raider"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":248,
+                 "y":352
+                }, 
+                {
+                 "height":8,
+                 "id":939,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"arcana_monster_horizonElectricTurret"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":144,
+                 "y":240
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -229,7 +354,47 @@
          "draworder":"topdown",
          "id":7,
          "name":"wiring - locked door",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":934,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":8,
+                         "y":-48
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":48,
+                 "y":344
+                }, 
+                {
+                 "height":0,
+                 "id":935,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":240,
+                         "y":-48
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":72,
+                 "y":344
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -462,7 +627,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":929,
+ "nextobjectid":940,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",

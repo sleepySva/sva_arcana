@@ -1,0 +1,124 @@
+{
+  "itemName" : "aurea_orb_1",
+  "price" : 1400,
+  "maxStack" : 1,
+  "level" : 7,
+  "rarity" : "Legendary",
+  "description" : "An energy orb carried by Aurea's special light casters.",
+  "shortdescription" : "Gehnniln",
+  "category" : "wand",
+  "tooltipFields" : {"subtitle" : "Orb"},
+  "twoHanded" : false,
+  "itemTags" : ["weapon","wand"],
+  "tooltipKind" : "staff",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "staff" : "body.png",
+    "stone" : "fullbright.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [110, 110, 70]
+      }
+    }
+  },
+
+  "inventoryIcon" : "icon.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : 0,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.4,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.4,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.1,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "elementswarm",
+  "primaryAbility" : {
+
+    "name" : "Light Chasers",
+	"energyCost" : 80,
+    "maxCastRange" : 38,
+	
+	"projectileType" : ["aurea_orb_1_projectile_1"],
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 7,
+    "projectileDistance" : 1,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "projectileParameters" : {
+      "baseDamage" : 17.8,
+	  "speed" : 2
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

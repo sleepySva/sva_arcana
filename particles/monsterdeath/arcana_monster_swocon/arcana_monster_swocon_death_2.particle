@@ -1,0 +1,23 @@
+{
+  "kind" : "arcana_monster_swocon_death_2",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/monsterdeath/arcana_monster_swocon/2.png",
+    "size" : 1.0,
+    "destructionTime" : 0.5,
+    "destructionAction" : "fade",
+    "angularVelocity" : 0,
+    "position" : [0, 0],
+    "initialVelocity" : [0, 10],
+    "finalVelocity" : [0, -30],
+    "approach" : [0, 20],
+    "timeToLive" : 1,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "variance" : {
+      "rotation" : 360,
+      "angularVelocity" : 5,
+      "initialVelocity" : [5, 2]
+    }
+  }
+}

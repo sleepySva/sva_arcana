@@ -1,0 +1,40 @@
+{
+  "objectName" : "orion_deco_18",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A giant vertical power generator.",
+  "shortdescription" : "Orion Generator Pylon",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 800,
+  
+  "lightColor" : [106, 184, 220],
+  "lightPosition" : [4, 6],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      "frames" : 15,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-32, 0],
+      "frames" : 15,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

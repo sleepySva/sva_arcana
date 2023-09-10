@@ -47,6 +47,24 @@
     },
 	{
         "action" : "projectile",
+        "type" : "iceburstcloud",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+        "action" : "projectile",
+        "type" : "spaceplasma",
+        "angleAdjust" : 5,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+        "action" : "projectile",
+        "type" : "spaceplasma",
+        "angleAdjust" : -5,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+        "action" : "projectile",
         "type" : "artifact_orb_nil_projectile_3",
         "angleAdjust" : 15,
         "inheritDamageFactor" : 1.0

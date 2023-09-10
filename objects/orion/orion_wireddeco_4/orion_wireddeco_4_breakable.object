@@ -1,0 +1,99 @@
+{
+  "objectName" : "orion_wireddeco_4_breakable",
+  "colonyTags" : ["light", "arcana_orion"],
+  "rarity" : "Rare",
+  "description" : "A high tech Orion monitor.",
+  "shortdescription" : "Orion Monitor",
+  "race" : "generic",
+
+  "category" : "light",
+  "price" : 160,
+  "lightColor" : [120, 130, 132],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.4,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 0],
+	  "beamAngle" : 180,
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 0],
+	  "beamAngle" : 0,
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/arcana_light_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "light" : {
+          "states" : {
+            "on" : {
+              "frames" : 4,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+  
+  "touchDamage" : {
+    "poly" : [ [0.0, -0.0], [0.0, 2.0], [3.0, 2.0], [3.0, -0.0] ],
+    "damage" : 0,
+    "knockback" : 0,
+
+    "damageType" : "Environment",
+    "damageSourceKind" : "NoDamage"
+  },
+  
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/objects/metalbarrel_break1.ogg", "/sfx/objects/metalbarrel_break2.ogg", "/sfx/objects/metalbarrel_break3.ogg" ],
+  "smashParticles" : [
+  { "count" : 2, "particle" : "glassshard" },
+  { "count" : 1, "particle" : "breakable_orion_2_1" },
+  { "count" : 1, "particle" : "breakable_orion_2_2" }
+  ],
+  "smashDropPool" : "empty", 
+
+  "inputNodes" : [ [0, 0] ]
+}

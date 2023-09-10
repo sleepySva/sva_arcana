@@ -1,0 +1,98 @@
+{
+  "itemName" : "orion_pistol_1",
+  "price" : 900,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A standard Orion pistol for combating robotic enemies. ^green;Inflicts Eletrified.^reset; ^red;No knockback.^reset;",
+  "shortdescription" : "^#bbbdce;OC^reset; Surge",
+  "tooltipKind" : "gun",
+  "category" : "pistol",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","pistol"],
+  "level" : 8,
+
+  "inventoryIcon" : "body.png:default.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_blue.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.2, 0.2] //Same as baseOffset
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.1]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/mech_teslastream_fire1.ogg", "/sfx/gun/mech_teslastream_fire2.ogg"]
+    }
+  },
+
+  "baseOffset" : [0.2, 0.2],
+  "muzzleOffset" : [1.55, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.3,
+    "baseDps" : 11.4,
+    "energyUsage" : 52.0,
+    "inaccuracy" : 0.012,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "orion_assaultRifle_1_projectile_1",
+    "projectileParameters" : {
+      "knockback" : 0
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.03,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

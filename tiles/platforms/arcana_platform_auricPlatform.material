@@ -1,0 +1,20 @@
+{
+  "materialId" : 16852,
+  "materialName" : "arcana_platform_auricPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_auricPlatform",
+  "shortdescription" : "Sanctus Platform",
+  "description" : "A solid metal platform.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_auricPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

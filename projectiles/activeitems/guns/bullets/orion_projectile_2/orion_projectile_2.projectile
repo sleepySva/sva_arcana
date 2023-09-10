@@ -1,0 +1,43 @@
+{
+  "projectileName" : "orion_projectile_2",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "orion_projectile_2.png",
+  "animationCycle" : 0.5,
+  "fullbright" : true,
+  "emitters" : [],
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 74,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/orion_projectile_2/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [73, 10, 73],
+  "damageKind" : "electricplasma",
+  "statusEffects" : [
+    "electrified"
+  ]
+}

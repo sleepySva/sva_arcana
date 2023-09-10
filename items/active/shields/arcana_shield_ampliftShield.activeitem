@@ -1,0 +1,58 @@
+{
+  "itemName" : "arcana_shield_ampliftShield",
+  "price" : 800,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "shield",
+  "description" : "A standard Orion security shield for elite guards.",
+  "shortdescription" : "Amplift Shield",
+  "tooltipKind" : "Shield",
+  "twoHanded" : false,
+  "itemTags" : ["shield"],
+
+  "inventoryIcon" : "arcana_shield_ampliftShield.png:nearidle",
+
+  "animation" : "shield_fb.animation",
+  "animationParts" : {
+    "shield" : "arcana_shield_ampliftShield.png",
+	"fullbright" : "arcana_shield_ampliftShield_fb.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
+      "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],
+      "block" : [ "/sfx/melee/shield_block_metal.ogg" ],
+      "break" : [ "/sfx/melee/shield_break_metal.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/shields/shield.lua"],
+
+  "minActiveTime" : 0.2,
+
+  "forceWalk" : true,
+  "baseShieldHealth" : 100,
+  "cooldownTime" : 0.6,
+
+  "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
+  "perfectBlockTime" : 0.2,
+
+  "knockback" : 16,
+  
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "raised" : {
+      "armRotation" : 0,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandshield.lua"
+}

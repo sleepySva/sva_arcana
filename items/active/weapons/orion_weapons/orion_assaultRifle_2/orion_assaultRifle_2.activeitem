@@ -3,7 +3,7 @@
   "price" : 900,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A standard Orion rifle for combating robotic enemies. ^green;Inflicts Eletrified.^reset; ^red;No knockback.^reset;",
+  "description" : "A standard Orion close-combat electric emitter for combating robotic enemies. ^green;Inflicts Eletrified.^reset; ^red;No knockback.^reset;",
   "shortdescription" : "^#bbbdce;OC^reset; Boltron",
   "tooltipKind" : "gun",
   "category" : "assaultRifle",
@@ -26,7 +26,7 @@
 	  "parts" : {
 	    "fullbright" : {
 		  "properties" : {
-		    "offset" : [0.2, 0.2] //Same as baseOffset
+		    "offset" : [0.8, 0.2] //Same as baseOffset
 		  }
 		},
 	    "muzzleFlash" : {
@@ -37,12 +37,12 @@
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/plasma_mp2.ogg"]
+      "fire" : [ "/sfx/gun/lightningcoil1.ogg","/sfx/gun/lightningcoil2.ogg","/sfx/gun/lightningcoil3.ogg" ]
     }
   },
 
-  "baseOffset" : [0.2, 0.2],
-  "muzzleOffset" : [2.1, 0.3],
+  "baseOffset" : [0.8, 0.2],
+  "muzzleOffset" : [2.7, 0.2],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -53,14 +53,14 @@
     "class" : "GunFire",
 
     "fireTime" : 0.16,
-    "baseDps" : 12.2,
-    "energyUsage" : 60.0,
+    "baseDps" : 12.0,
+    "energyUsage" : 62.0,
     "inaccuracy" : 0.026,
 
     "projectileCount" : 2,
     "fireType" : "auto",
 
-    "projectileType" : "orion_assaultRifle_1_projectile_1",
+    "projectileType" : "orion_projectile_4",
     "projectileParameters" : {
       "knockback" : 0
     },

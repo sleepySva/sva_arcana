@@ -1,0 +1,21 @@
+{
+  "materialId" : 16328,
+  "materialName" : "aurea_tile13",
+  "particleColor" : [42, 39, 34, 255],
+  "itemDrop" : "aurea_tile13",
+  "description" : "A durable metal wall.",
+  "shortdescription" : "Aurea Segmented Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile13.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1400
+  }
+}

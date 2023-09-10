@@ -1,0 +1,21 @@
+{
+  "materialId" : 16339,
+  "materialName" : "exousia_tile33",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "exousia_tile33",
+  "description" : "A durable black smooth panel tile, used to construct complex buildings.",
+  "shortdescription" : "Smooth Exoslate Panel B",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "exousia_tile33.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4823
+  }
+}

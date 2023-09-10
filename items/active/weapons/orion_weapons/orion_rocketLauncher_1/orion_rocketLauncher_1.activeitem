@@ -1,0 +1,111 @@
+{
+  "itemName" : "orion_rocketLauncher_1",
+  "price" : 900,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An Orion launcher that fires electric shots. ^green;Inflicts Eletrified.^reset; ^red;No knockback.^reset;",
+  "shortdescription" : "^#bbbdce;OC^reset; APL",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 8,
+
+  "inventoryIcon" : "body.png:default.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_purple.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.5, 0.2] //Same as baseOffset
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.3]
+		  }
+		}
+	  }
+	},
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 3,
+        "particles" : [
+          { "particle" : "rocketbarrelpuff" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/mech_energyrifle_fire1.ogg", "/sfx/gun/mech_energyrifle_fire2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.2],
+  "muzzleOffset" : [3.0, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.98,
+    "baseDps" : 15.2,
+    "energyUsage" : 58.0,
+    "inaccuracy" : 0.02,
+
+    "projectileCount" : 1,
+	"burstCount": 1,
+	"burstTime": 0.2,
+	"fireType": "burst",
+
+    "projectileType" : "orion_projectile_3",
+    "projectileParameters" : {
+      "knockback" : 30
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

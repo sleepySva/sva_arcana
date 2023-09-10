@@ -1,0 +1,79 @@
+{
+  "objectName" : "orion_console_4",
+  "colonyTags" : ["light", "arcana_orion"],
+  "rarity" : "Rare",
+  "description" : "A high-tech Orion console.",
+  "shortdescription" : "Orion Large Console",
+  "race" : "generic",
+
+  "category" : "light",
+  "price" : 180,
+  "lightColor" : [65, 95, 130],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [2, 2],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [2, 2],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/arcana_console_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "switchState" : {
+          "states" : {
+            "on" : {
+              "frames" : 5,
+              "cycle" : 0.5,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+  "interactive" : true,
+
+  "outputNodes" : [ [0, 0] ]
+}

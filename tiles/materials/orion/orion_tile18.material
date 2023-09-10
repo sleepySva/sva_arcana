@@ -1,0 +1,21 @@
+{
+  "materialId" : 16338,
+  "materialName" : "orion_tile18",
+  "particleColor" : [56, 57, 57, 255],
+  "itemDrop" : "orion_tile18",
+  "description" : "A reinforced wall.",
+  "shortdescription" : "Orion Steel Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile18.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 169
+  }
+}

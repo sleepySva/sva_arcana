@@ -33,7 +33,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>" } ],
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false }, { "image" : "fullbright.png:<color>", "fullbright" : true } ],
       "flipImages" : true,
       "imagePosition" : [-24, 0],
       "frames" : 1,
@@ -49,7 +49,7 @@
       "collision" : "platform"
     },
     {
-      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false }, { "image" : "fullbright.png:<color>", "fullbright" : true } ],
       "imagePosition" : [-24, 0],
       "frames" : 1,
       "animationCycle" : 1.0,

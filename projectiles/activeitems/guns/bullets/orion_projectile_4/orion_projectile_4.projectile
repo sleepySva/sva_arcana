@@ -1,0 +1,70 @@
+{
+  "projectileName" : "orion_projectile_4",
+  "image" : "lightningthrower.png",
+  "physics" : "flame",
+  "animationCycle" : 1,
+  "animationLoops" : false,
+  "frameNumber" : 12,
+  "power" : 50,
+  "speed" : 42,
+  "timeToLive" : 0.98,
+  "bounces" : 4,
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "lightColor" : [134, 149, 179],
+  "damageKind" : "electricbarrier",
+  "damageKindImage" : "/interface/statuses/electric.png",
+  "emitters" : [ "electricplasma" ],
+  "periodicActions" : [
+    {
+      "time" : 0.3,
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/sparkles/sparkle6.animation",
+            "position" : [0, 0],
+            "finalVelocity" : [0, 0],
+            "approach" : [1.5, 1.5],
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.85,
+            "fade" : 1,
+            "size" : 0.8,
+            "layer" : "front",
+            "timeToLive" : 0.35,
+            "variance" : {
+              "size" : 0.2,
+              "position" : [1.2, 1.0],
+              "initialVelocity" : [2.0, 2.0]
+            }
+          }
+        },
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/energybeamimpact/energybeamimpact.animation",
+            "initialVelocity" : [0.0, 7.0],
+            "finalVelocity" : [0.0, 3.0],
+            "approach" : [0.3, 60],
+            "timeToLive" : 0.5,
+            "layer" : "back",
+            "size" : 0.6,
+            "collidesForeground" : true,
+            "variance" : {
+            "position" : [0.5, 0.5],
+            "size" : 0.2,
+            "initialVelocity" : [5, 3],
+            "finalVelocity" : [0, 0],
+            "rotation" : 180,
+            "angularVelocity" : 180
+            }  
+          }
+        }
+      ]
+    }
+  ]
+}

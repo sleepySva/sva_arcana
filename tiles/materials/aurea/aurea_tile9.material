@@ -1,0 +1,21 @@
+{
+  "materialId" : 16324,
+  "materialName" : "aurea_tile9",
+  "particleColor" : [152, 137, 116, 255],
+  "itemDrop" : "aurea_tile9",
+  "description" : "A metal plating material for space-faring ships.",
+  "shortdescription" : "Aurea Ship Plating",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile9.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1401
+  }
+}

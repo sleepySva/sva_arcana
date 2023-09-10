@@ -1,0 +1,75 @@
+{
+  "type" : "arcana_npc_orion_sensor",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Do not interfere with the proceedings of the Orion, visitor.",
+            "Commencing identity scan... You may proceed, visitor.",
+            "...no threat detected. Continuing patrol.",
+			"If you see any suspicious activity, please report them to our security team.",
+			"Haaa... Please stay out of trouble, visitor.",
+            "Hm? Do you require any assistance, visitor?"
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_offworld_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_offworld_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_offworld_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "orion_assaultRifle_2"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 200.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.2
+      },
+      "protection" : {
+        "baseValue" : 1.2
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

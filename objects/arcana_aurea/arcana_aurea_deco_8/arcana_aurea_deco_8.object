@@ -1,0 +1,79 @@
+{
+  "objectName" : "arcana_aurea_deco_8",
+  "colonyTags" : ["light","arcana_aurea"],
+  "rarity" : "Rare",
+  "description" : "A sophisticated ship console for managing various navigation functions.",
+  "shortdescription" : "Aurea Ship Console",
+  "race" : "gilten",
+
+  "category" : "light",
+  "price" : 280,
+  "lightColor" : [60, 50, 30],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 1],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+    {
+      "image" : "body.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 1],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/arcana_console_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "switchState" : {
+          "states" : {
+            "on" : {
+              "frames" : 4,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+  "interactive" : true,
+
+  "outputNodes" : [ [0, 0] ]
+}

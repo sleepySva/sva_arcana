@@ -14,7 +14,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "image" : "orion_chair_2.png:<color>",
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
       "imagePosition" : [-16, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
@@ -26,7 +26,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "image" : "orion_chair_2.png:<color>",
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
       "imagePosition" : [-16, 0],
       "frames" : 1,
       "animationCycle" : 0.5,

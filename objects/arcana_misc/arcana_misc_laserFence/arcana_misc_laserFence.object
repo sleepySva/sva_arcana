@@ -2,19 +2,19 @@
   "objectName" : "arcana_misc_laserFence",
   "colonyTags" : ["misc"],
   "rarity" : "Common",
-  "description" : "A fence that utilizes hard light technology.",
-  "shortdescription" : "Laser Fence",
+  "description" : "A glass fence typically seen in labs.",
+  "shortdescription" : "Glass Fence",
   "race" : "generic",
   "category" : "decorative",
-  "price" : 140,
+  "price" : 120,
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false } ],
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-8, 0],
+      "imagePosition" : [-24, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 	  
@@ -25,9 +25,9 @@
 
     },
 	{
-	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false } ],
       "direction" : "right",
-      "imagePosition" : [-8, 0],
+      "imagePosition" : [-24, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 	  
