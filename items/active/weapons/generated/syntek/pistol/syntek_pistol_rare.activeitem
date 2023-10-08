@@ -1,0 +1,125 @@
+{
+  "itemName" : "syntek_pistol_rare",
+  "price" : 1080,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A fully automatic, military grade pistol with Syntek parts.",
+  "shortdescription" : "Syntek Pistol",
+  "tooltipKind" : "arcana_manu_gun_syntek",
+  "category" : "pistol",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","pistol"],
+  "level" : 1,
+  "tooltipFields" : {
+	"subtitle" : "Personal Pistol"
+  },
+
+  "animation" : "/items/active/weapons/generated/syntek/pistol/animation.animation",
+  "animationParts" : { },
+  "animationCustom" : { },
+  "baseOffset" : [0.4, 0.125],
+  "muzzleOffset" : [1.6, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : [0.33, 0.9],
+    "baseDps" : [5.75, 6.25],
+    "energyUsage" : [17.25, 18.75],
+    "inaccuracy" : 0.02,
+
+    "projectileParameters" : {
+      "knockbackRange" : [5,8]
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.12,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildweapon_static.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "names.config:nameGen",
+    "elementalType" : [
+      "electric",
+      "poison",
+      "fire",
+      "ice"
+    ],
+    "elementalConfig" : {
+      "poison" : {
+        "primaryAbility" : { "projectileType" : "syntek_plasma_poison", "projectileParameters" : { "statusEffects" : [] } },
+        "fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ]
+      },
+      "electric" : {
+        "primaryAbility" : { "projectileType" : "syntek_plasma_electric", "projectileParameters" : { "statusEffects" : [] } },
+        "fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ]
+      },
+      "fire" : {
+        "primaryAbility" : { "projectileType" : "syntek_plasma_fire", "projectileParameters" : { "statusEffects" : [] } },
+        "fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ]
+      },
+      "ice" : {
+        "primaryAbility" : { "projectileType" : "syntek_plasma_ice", "projectileParameters" : { "statusEffects" : [] } },
+        "fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ]
+      }
+    },
+    "animationParts" : {
+      "butt" : {
+        "path" : "/items/active/weapons/generated/syntek/pistol/butt/<variant>.png",
+        "variants" : 7,
+        "paletteSwap" : true
+      },
+      "middle" : {
+        "path" : "/items/active/weapons/generated/syntek/pistol/middle/<variant>.png",
+        "variants" : 6,
+        "paletteSwap" : true
+      },
+      "barrel" : {
+        "path" : "/items/active/weapons/generated/syntek/pistol/barrel/<variant>.png",
+        "variants" : 7,
+        "paletteSwap" : true
+      },
+      "fullbright" : {
+        "path" : "/items/active/weapons/generated/syntek/pistol/fullbright/<variant>.png",
+        "variants" : 6,
+        "paletteSwap" : true
+      },
+      "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_blue.png"
+    },
+    "gunParts" : ["butt", "middle", "barrel", "fullbright"],
+    "altAbilities" : [
+    ],
+    "palette" : "/items/active/weapons/colors/syntek.weaponcolors",
+	"elementPalette" : "/items/active/weapons/colors/arcana_element.weaponcolors",
+    "iconDrawables" : ["butt", "middle", "barrel", "fullbright"]
+  }]
+}

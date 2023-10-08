@@ -1,0 +1,31 @@
+{
+  "projectileName" : "syntek_plasma_ice",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 106,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [61, 187, 234],
+  "emitters" : [ "iceplasma" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_impact_ice/arcana_explosion_impact_ice.config"
+    }
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "iceplasmabullet"
+ 
+}

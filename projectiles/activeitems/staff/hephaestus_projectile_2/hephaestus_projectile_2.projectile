@@ -8,7 +8,7 @@
   "fullbright" : true,
   "emitters" : ["fireplasma","flames","firesparks"],
   "frameNumber" : 1,
-  "speed" : 10,
+  "speed" : 6,
   "supportsProcessing" : true,
   "actionOnReap" : [
     {
@@ -23,7 +23,7 @@
   "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
   
   "controlMovement" : {
-    "maxSpeed" : 60,
+    "maxSpeed" : 56,
     "controlForce" : 30
   }
 }

@@ -1,0 +1,123 @@
+{
+  "itemName" : "syntek_assaultrifle_rare",
+  "price" : 1080,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A fully automatic, military grade rifle with Syntek parts.",
+  "shortdescription" : "Syntek Assault Rifle",
+  "tooltipKind" : "arcana_manu_gun_syntek",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 1,
+
+  "animation" : "/items/active/weapons/generated/syntek/gun.animation",
+  "animationParts" : { },
+  "animationCustom" : { },
+  "baseOffset" : [-2.0, 0.125],
+  "muzzleOffset" : [0.0, 0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : [0.12, 0.19],
+    "baseDps" : [9.6, 10.8],
+    "energyUsage" : [29.5, 33.5],
+    "inaccuracy" : 0.02,
+
+    "burstTime" : 0.075,
+    "burstCount" : [2,5],
+    "fireType" : ["auto", "burst"],
+
+    "projectileParameters" : {
+      "knockbackRange" : [3,7]
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "names.config:nameGen",
+    "elementalType" : [
+      "electric",
+      "poison",
+      "fire",
+      "ice"
+    ],
+    "elementalConfig" : {
+      "poison" : {
+        "primaryAbility" : { "projectileType" : "syntek_plasma_poison", "projectileParameters" : { "statusEffects" : [] } },
+        "fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ]
+      },
+      "electric" : {
+        "primaryAbility" : { "projectileType" : "syntek_plasma_electric", "projectileParameters" : { "statusEffects" : [] } },
+        "fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ]
+      },
+      "fire" : {
+        "primaryAbility" : { "projectileType" : "syntek_plasma_fire", "projectileParameters" : { "statusEffects" : [] } },
+        "fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ]
+      },
+      "ice" : {
+        "primaryAbility" : { "projectileType" : "syntek_plasma_ice", "projectileParameters" : { "statusEffects" : [] } },
+        "fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ]
+      }
+    },
+    "animationParts" : {
+      "butt" : {
+        "path" : "/items/active/weapons/generated/syntek/assaultrifle/butt/<variant>.png",
+        "variants" : 10,
+        "paletteSwap" : true
+      },
+      "middle" : {
+        "path" : "/items/active/weapons/generated/syntek/assaultrifle/middle/<variant>.png",
+        "variants" : 11,
+        "paletteSwap" : true
+      },
+      "barrel" : {
+        "path" : "/items/active/weapons/generated/syntek/assaultrifle/barrel/<variant>.png",
+        "variants" : 9,
+        "paletteSwap" : true
+      },
+      "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_blue.png"
+    },
+    "gunParts" : ["butt", "middle", "barrel"],
+    "altAbilities" : [
+      "arcana_ranged_ability_stingerBurst",
+      "lance",
+      "explosiveburst"
+    ],
+    "palette" : "/items/active/weapons/colors/syntek.weaponcolors",
+    "iconDrawables" : ["butt", "middle", "barrel"]
+  }]
+}

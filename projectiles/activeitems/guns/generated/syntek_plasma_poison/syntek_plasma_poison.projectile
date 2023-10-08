@@ -1,0 +1,31 @@
+{
+  "projectileName" : "syntek_plasma_poison",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 112,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [100, 210, 80],
+  "emitters" : [ "poisonplasma" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_impact_poison/arcana_explosion_impact_poison.config"
+    }
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "poisonplasmabullet"
+ 
+}

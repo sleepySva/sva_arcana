@@ -84,6 +84,23 @@
     } ]
   ],
   
+  "arcana_farmable_eisilshroom" : [
+    [0, {
+	  "fill" : [
+        {"item" : "arcana_farmable_eisilshroomSeed"}
+      ],
+      "pool" : [
+        {"weight" : 0.89, "item" : "arcana_farmable_eisilshroom"},
+        {"weight" : 0.01, "item" : "arcana_farmable_eisilshroomSeed"},
+        {"weight" : 0.1, "item" : "plantfibre"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
+  ],
+  
   "arcana_farmable_wintercorn" : [
     [0, {
       "pool" : [

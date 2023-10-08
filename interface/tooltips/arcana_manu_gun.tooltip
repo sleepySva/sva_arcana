@@ -1,0 +1,153 @@
+{
+  "title" : {
+    "type" : "label",
+    "position" : [11, 232],
+    "hAnchor" : "left",
+	"fontSize" : 7.2,
+    "value" : ""
+  },
+  "subTitle" : {
+    "type" : "label",
+    "position" : [11, 224],
+    "hAnchor" : "left",
+	"fontSize" : 7.2,
+    "color" : [178, 178, 178],
+    "value" : ""
+  },
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/arcana_manu_header.png",
+    "fileBody" : "/interface/tooltips/arcana_gun_body.png",
+    "fileFooter" : "/interface/tooltips/arcana_manu_footer.png"
+  },
+  "header" : {
+    "type" : "image",
+    "position" : [0, 223],
+    "file" : "/interface/tooltips/arcana_manu_header.png"
+  },
+  "levelTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 208],
+    "hAnchor" : "left",
+    "value" : "Tier:"
+  },
+  "levelLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [38, 208],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "handednessLabel" : {
+    "type" : "label",
+	"fontSize" : 6.8,
+	"color" : [160, 160, 160],
+    "position" : [100, 208],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "damageKindImage" : {
+    "type" : "image",
+    "position" : [140, 152],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [80, 173],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [80, 70],
+    "minSize" : [60, 60]
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+	"color" : [160, 160, 160],
+    "position" : [11, 137],
+    "wrapWidth" : 140,
+    "hAnchor" : "left",
+    "vAnchor" : "top"
+  },
+  "damagePerShotTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 96],
+    "hAnchor" : "left",
+    "value" : "Damage:"
+  },
+  "damagePerShotLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [148, 96],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "speedTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 87],
+    "hAnchor" : "left",
+    "value" : "Firing Rate:"
+  },
+  "speedLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [148, 87],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerShotTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 78],
+    "hAnchor" : "left",
+    "value" : "Energy Per Shot:"
+  },
+  "energyPerShotLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [148, 78],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 69],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [148, 69],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "rarityLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 43],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [115, 43],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [128, 43],
+    "hAnchor" : "left",
+    "value" : "tree"
+  }
+}

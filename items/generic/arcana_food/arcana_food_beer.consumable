@@ -1,0 +1,17 @@
+{
+  "itemName" : "arcana_food_beer",
+  "rarity" : "Common",
+  "price" : 80,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_beer.png",
+  "description" : "A refreshing pint of golden, frothy beer in a clear glass.",
+  "shortdescription" : "Beer",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "partytime",
+        "duration" : 10
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16335,
+  "materialName" : "arcana_tile30",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile30",
+  "description" : "A solid building panel.",
+  "shortdescription" : "Neonwave Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile30.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 801
+  }
+}

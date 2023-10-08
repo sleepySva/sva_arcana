@@ -1,0 +1,25 @@
+{
+  "itemName" : "arcana_farmable_eisilshroom",
+  "rarity" : "Common",
+  "price" : 110,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "An unassuming blue mushroom, its unadorned appearance concealing its remarkable medicinal properties. ^green;Provides minor healing.^reset;",
+  "shortdescription" : "Eisilshroom",
+  "effects" : [ [
+    {
+        "effect" : "bottledwaterheal",
+        "duration" : 10
+    }
+  ] ],
+  "foodValue" : 2.00,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

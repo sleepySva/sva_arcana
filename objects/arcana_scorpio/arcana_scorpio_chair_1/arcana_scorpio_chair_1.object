@@ -1,0 +1,41 @@
+{
+  "objectName" : "arcana_scorpio_chair_1",
+  "colonyTags" : ["arcana_scorpio"],
+  "rarity" : "Rare",
+  "description" : "A comfortable chair, perfect for a gaming session.",
+  "shortdescription" : "Scorpio Chair",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 170,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitCoverImage" : "/objects/arcana_scorpio/arcana_scorpio_chair_1/cover.png",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPosition" : [0, 25],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "direction" : "right",
+      "sitPosition" : [8, 25],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

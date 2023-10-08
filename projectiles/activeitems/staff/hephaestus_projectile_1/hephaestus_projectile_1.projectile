@@ -4,17 +4,18 @@
   "timeToLive" : 4,
   "bounces" : 0,
   "image" : "hephaestus_projectile_1.png",
-  "animationCycle" : 0.2,
+  "animationCycle" : 0.4,
+  "animationLoops" : true,
   "fullbright" : true,
   "emitters" : ["fireplasma"],
-  "frameNumber" : 1,
-  "speed" : 10,
+  "frameNumber" : 4,
+  "speed" : 6,
   "acceleration" : 40,
   "supportsProcessing" : true,
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+      "file" : "/projectiles/explosions/arcana_explosion_impact_fire/arcana_explosion_impact_fire.config"
     }
   ],
   "lightColor" : [80, 40, 20],
@@ -25,6 +26,6 @@
   
   "controlMovement" : {
     "maxSpeed" : 40,
-    "controlForce" : 30
+    "controlForce" : 50
   }
 }
