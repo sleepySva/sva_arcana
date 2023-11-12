@@ -1,0 +1,21 @@
+{
+  "materialId" : 16342,
+  "materialName" : "geoelectra_tile3",
+  "particleColor" : [180, 61, 197, 255],
+  "itemDrop" : "geoelectra_tile3",
+  "description" : "A reinforced wall forged from synthite.",
+  "shortdescription" : "Neo Synthite Wall",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "geoelectra_tile3.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4800
+  }
+}

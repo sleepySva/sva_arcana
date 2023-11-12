@@ -1,0 +1,131 @@
+{
+  "type" : "arcana_npc_misc_pirate",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "arcana_npcdrops_pirate" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Hey look, easy prey!",
+			"You're going down!",
+			"Arghhhh!",
+			"This will be over in an instant!",
+            "Don't think you're getting out of this one easily!",
+            "I bet you'll drop lots of pixels!",
+            "You've wandered right into the wolf's den!",
+            "Good, a fight! I was almost bored!",
+            "This isn't personal, I just love attacking people!",
+            "Surprise, you're about to get poked full of holes!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			{ "name" : "foundrygoggleshead" },
+			{ "name" : "novatier5mhead" },
+			{ "name" : "apextier6mhead" },
+			{ "name" : "snowinfantryhead" },
+			{ "name" : "soldierhead" },
+			{ "name" : "trackerhead" },
+			{ "name" : "pathfinderhead" },
+			{ "name" : "apextier4head" },
+			{ "name" : "arcana_head_neonHelmet" },
+			{ "name" : "hylotltier6shead" },
+			{ "name" : "humantier5ahead", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier5mhead", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier5shead", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier6ahead", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier6mhead", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier6shead", "data" : { "colorIndex" : 1 } }
+			],
+            "chest" : [
+			{ "name" : "spacesuitchest" },
+			{ "name" : "hylotltier5mchest" },
+			{ "name" : "hylotltier3chest" },
+			{ "name" : "humantier1chest" },
+			{ "name" : "humantier2chest" },
+			{ "name" : "humantier3chest" },
+			{ "name" : "humantier4chest" },
+			{ "name" : "workoutchest", "data" : { "colorIndex" : 1 } },
+			{ "name" : "novakidjacket" },
+			{ "name" : "apextier4chest" },
+			{ "name" : "humantier5achest", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier5mchest", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier5schest", "data" : { "colorIndex" : 1 } }
+			],
+            "legs" : [
+			{ "name" : "humantier5apants", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier5mpants", "data" : { "colorIndex" : 1 } },
+			{ "name" : "humantier5spants", "data" : { "colorIndex" : 1 } },
+			{ "name" : "copperarmorpants" },
+			{ "name" : "foundrylegs" },
+			{ "name" : "humantier2pants" },
+			{ "name" : "humantier3pants" },
+			{ "name" : "humantier4pants" },
+			{ "name" : "novakidblackpants" },
+			{ "name" : "pathfinderlegs" },
+			{ "name" : "apextier2pants" },
+			{ "name" : "apextier3pants" },
+			{ "name" : "hylotltier5spants" }
+			],
+            "primary" : [
+              "syntek_assaultrifle_rare",
+              "npcbroadsword",
+              "npchammer",
+              "npcspear"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {  
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 220.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 12.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.1
+      },
+      "fireResistance" : {
+        "baseValue" : 0.1
+      },
+      "iceResistance" : {
+        "baseValue" : 0.1
+      },
+      "poisonResistance" : {
+        "baseValue" : 0.1
+      },
+      "electricResistance" : {
+        "baseValue" : 0.1
+      }
+    }
+  }
+}

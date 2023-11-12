@@ -1,0 +1,21 @@
+{
+  "materialId" : 16336,
+  "materialName" : "arcana_tile31",
+  "particleColor" : [100, 100, 100, 255],
+  "itemDrop" : "arcana_tile31",
+  "description" : "A solid wall painted to indicate a hazardous area.",
+  "shortdescription" : "Hazard Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 5,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile31.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 499
+  }
+}

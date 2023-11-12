@@ -1,0 +1,24 @@
+{
+  "kind" : "arcana_particle_ember_green_mass",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.02,
+    "durationVariance" : 0.01,
+    "loops" : true,
+    "start" : {
+      "particles" : [ ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "arcana_particle_ember_green_1" ],
+	  [ "arcana_particle_ember_green_2" ],
+	  [ "arcana_particle_ember_green_1" ],
+	  [ "arcana_particle_ember_green_2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [ ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

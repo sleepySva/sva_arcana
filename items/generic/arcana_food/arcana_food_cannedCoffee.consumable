@@ -1,0 +1,17 @@
+{
+  "itemName" : "arcana_food_cannedCoffee",
+  "rarity" : "Common",
+  "price" : 40,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_cannedCoffee.png",
+  "description" : "A can of cold expresso drink.",
+  "shortdescription" : "Canned Coffee",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 30
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}

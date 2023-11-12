@@ -1,0 +1,21 @@
+{
+  "modId" : 16840,
+  "modName" : "arcana_mod_galvasteelOre",
+  "itemDrop" : "arcana_ore_galvasteelOre",
+  "description" : "A mineral fragment for smelting Galvasteel.",
+  "health" : 18,
+  "harvestLevel" : 3,
+  "breaksWithTile" : true,
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_galvasteelOre.png",
+    "variants" : 8,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [0, 0, 0]
+  }
+}

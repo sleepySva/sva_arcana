@@ -1,0 +1,35 @@
+{
+  "projectileName" : "misc_axe_wastecutter_projectile_1",
+  "physics" : "sticky",
+  
+  "timeToLive" : 0.4,
+  "bounces" : 0,
+  "speed" : 80,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.4,
+  "animationLoops" : false,
+  "frameNumber" : 7,
+  
+  "damagePoly" : [ [-8, -16], [-8, 16],  [8, 16],  [16, 8],  [16, -8], [8, -16] ],
+  "piercing" : true,
+  
+  "fullbright" : true,
+  "lightColor" : [156, 237, 35],
+  "emitters" : ["arcana_particle_ember_green_mass"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "poison"
+ 
+}

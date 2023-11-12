@@ -18,6 +18,37 @@
     }]
   ],
   
+  "arcana_npcdrops_pirate_credit" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_currency_credit", 4]},
+		{"weight" : 1.0, "item" : ["arcana_currency_credit", 5]},
+        {"weight" : 1.0, "item" : ["arcana_currency_credit", 5]},
+		{"weight" : 1.0, "item" : ["arcana_currency_credit", 6]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_npcdrops_pirate" : [
+    [0, {
+	  "fill" : [
+        {"pool" : "arcana_npcdrops_pirate_credit"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["money", 80]},
+		{"weight" : 1.0, "item" : ["money", 110]},
+        {"weight" : 1.0, "item" : ["money", 140]},
+		{"weight" : 1.0, "item" : ["money", 170]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
   "arcana_npcdrops_horizon_specialist" : [
     [0, {
 	  "fill" : [

@@ -1,0 +1,17 @@
+{
+  "itemName" : "arcana_food_mangoTea",
+  "rarity" : "Common",
+  "price" : 40,
+  "category" : "drink",
+  "inventoryIcon" : "arcana_food_mangoTea.png",
+  "description" : "A can of non-carbonated mango tea drink.",
+  "shortdescription" : "Mango Tea",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 30
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}

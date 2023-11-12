@@ -1,0 +1,17 @@
+{
+  "modId" : 16838,
+  "modName" : "arcana_mod_electraSpark",
+  "description" : "A shiny sparkle.",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "grass" : true,
+  "health" : 0,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_mod_electraSpark.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "radiantLight" : [49, 33, 145]
+  }
+}

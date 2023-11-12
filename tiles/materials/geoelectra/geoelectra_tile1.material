@@ -1,0 +1,21 @@
+{
+  "materialId" : 16340,
+  "materialName" : "geoelectra_tile1",
+  "particleColor" : [180, 61, 197, 255],
+  "itemDrop" : "geoelectra_tile1",
+  "description" : "A stone pulsating with electric energy, harnessed from the depths of a subterranean biome.",
+  "shortdescription" : "Geoelectra Stone",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "geoelectra_tile1.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 707
+  }
+}

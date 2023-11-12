@@ -859,10 +859,10 @@
           "primaryRegion" : [ "arcana_superstormExpanse_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_superstormExpanse_underground_1" ]
+          "primaryRegion" : [ "arcana_geoelectra" ]
         },
         "underground2" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+          "primaryRegion" : [ "arcana_geoelectra" ]
         },
         "underground3" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
@@ -1082,6 +1082,15 @@
     "value": {
       "caveLiquid": [ "arcana_liquid_neonWater" ],
       "biome": [[0,["arcana_superstormExpanse_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_geoelectra",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "biome": [[0,["arcana_geoelectra"]]],
       "subRegion": []
     }
   },

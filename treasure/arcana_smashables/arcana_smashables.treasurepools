@@ -1,6 +1,64 @@
 
 {
 
+  "arcana_smashables_pod_geoelectra_credit" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_currency_credit", 1]},
+		{"weight" : 1.0, "item" : ["arcana_currency_credit", 1]},
+        {"weight" : 1.0, "item" : ["arcana_currency_credit", 2]},
+		{"weight" : 1.0, "item" : ["arcana_currency_credit", 2]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_smashables_pod_geoelectra_throwables" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["bomb", 1]},
+		{"weight" : 1.0, "item" : ["bomb", 2]},
+        {"weight" : 1.0, "item" : ["huntingspear", 3]},
+		{"weight" : 1.0, "item" : ["huntingspear", 4]},
+		{"weight" : 1.0, "item" : ["javelin", 3]},
+		{"weight" : 1.0, "item" : ["throwingknife", 4]},
+		{"weight" : 1.0, "item" : ["throwingknife", 5]},
+		{"weight" : 1.0, "item" : ["throwingkunai", 4]},
+		{"weight" : 1.0, "item" : ["throwingkunai", 5]},
+		{"weight" : 1.0, "item" : ["throwingdart", 4]},
+		{"weight" : 1.0, "item" : ["throwingdart", 5]}
+      ],
+      "poolRounds" : [
+        [0.2, 1],
+		[0.2, 1],
+		[0.2, 1],
+		[0.2, 2],
+		[0.2, 3]
+      ]
+    }]
+  ],
+
+
+  "arcana_smashables_pod_geoelectra" : [
+    [0, {
+	  "fill" : [
+        {"pool" : "arcana_npcdrops_pirate_credit"}
+      ],
+      "pool" : [
+        {"weight" : 1.0, "pool" : "money"},
+		{"weight" : 1.0, "pool" : "healingItem"},
+		{"weight" : 1.0, "pool" : "ore"},
+        {"weight" : 1.0, "pool" : "arcana_smashables_pod_geoelectra_credit"},
+		{"weight" : 1.0, "pool" : "arcana_smashables_pod_geoelectra_throwables"}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
   "arcana_smashables_solarEssence_small" : [
     [0, {
       "pool" : [

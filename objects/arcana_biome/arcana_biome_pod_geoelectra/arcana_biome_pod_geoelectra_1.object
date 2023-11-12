@@ -1,0 +1,44 @@
+{
+  "objectName" : "arcana_biome_pod_geoelectra_1",
+  "colonyTags" : ["arcana_geoelectra"],
+  "rarity" : "Common",
+
+  "category" : "breakable",
+  "price" : 5,
+  "description" : "A pod containing... something.",
+  "shortdescription" : "Storage Pod",
+  "race" : "generic",
+
+  "inventoryIcon" : "1_icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "1.png:<color>", "fullbright" : true }, { "image" : "1_fb.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "1.png:<color>", "fullbright" : true }, { "image" : "1_fb.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/objects/vase_break_large1.ogg", "/sfx/objects/vase_break_large2.ogg" ],
+  "smashParticles" : [ { "count" : 4, "particle" : "glassshard" } ],
+  "smashDropPool" : "arcana_smashables_pod_geoelectra", 
+  "breakDropPool" : "arcana_smashables_pod_geoelectra"
+}

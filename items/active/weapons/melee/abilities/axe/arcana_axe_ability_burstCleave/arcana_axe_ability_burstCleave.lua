@@ -37,7 +37,7 @@ function AxeCleave:createProjectiles()
   pParams.power = self.baseDamageFactor * pParams.baseDamage * config.getParameter("damageLevelMultiplier") / pCount
   pParams.powerMultiplier = activeItem.ownerPowerMultiplier()
   
-  fireDirection = vec2.rotate(fireDirection, (((pRotation  * math.pi) / pCount) / -10) * (pCount * 0.3))
+  fireDirection = vec2.rotate(fireDirection, (((pRotation  * math.pi) / pCount) / -10) * (pCount / 2 - 0.5))
   
   for i = 1, pCount do
   

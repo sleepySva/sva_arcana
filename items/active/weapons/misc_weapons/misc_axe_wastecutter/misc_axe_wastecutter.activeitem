@@ -1,0 +1,55 @@
+{
+  "itemName" : "misc_axe_wastecutter",
+  "level" : 7,
+  "price" : 1400,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Hazarous, radioactive and nuclear!",
+  "shortdescription" : "Wastecutter",
+  "tooltipKind" : "sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/axe/gaea_axe_1.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "poison",
+
+  "primaryAbilityType" : "arcana_axe_ability_burstCleave",
+  "primaryAbility" : {
+  
+    "projectileType" : "misc_axe_wastecutter_projectile_1",
+  	"projectileCount" : 1,
+	"projectileParameters" : {
+      "baseDamage" : 30
+    },
+	
+    "fireTime" : 0.9,
+	"windupTime" : 0.5,
+	
+	"baseDamage" : 12,
+	"baseDps" : 9.2,
+	
+    "damageConfig" : {
+      "knockback" : 13,
+	  "damageSourceKind" : "poison",
+      "statusEffects" : [ "arcana_status_acidicBurning" ]
+    }
+	
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

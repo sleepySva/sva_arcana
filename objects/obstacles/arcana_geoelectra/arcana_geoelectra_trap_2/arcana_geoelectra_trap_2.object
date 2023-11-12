@@ -1,0 +1,79 @@
+{
+  "objectName" : "arcana_geoelectra_trap_2",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "category" : "trap",
+  "printable" : false,
+
+  "description" : "Watch out!",
+  "shortdescription" : "Biome Trap",
+  "race" : "generic",
+  
+  "lightColor" : [44, 14, 113],
+
+  "flickerPeriod" : 0.2,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.05,
+  "flickerIntensityVariance" : 0.025,
+
+
+  "particleEmitter" : {
+    "emissionRate" : 0.5,
+    "emissionVariance" : 0.25,
+    "pixelOrigin" : [0, 0],
+    "placeInSpaces" : true,
+
+    "particle" : {
+		"type" : "animated",
+		"looping" : true,
+		"animation" : "/animations/teslabolt/teslabolt.animation",
+		"position" : [0, 0],
+		"finalVelocity" : [0, 0],
+		"approach" : [50, 50],
+		"destructionAction" : "shrink",
+		"destructionTime" : 0.425,
+		"fade" : 1,
+		"fullbright" : true,
+		"light" : [25, 92, 107],
+		"size" : 0.5,
+		"layer" : "middle",
+		"timeToLive" : 0.425,
+        "collidesForeground" : false
+    },
+    "particleVariance" : {
+      "position" : [0.5, 0.5],
+      "finalVelocity" : [1.5, 1.5],
+      "rotation" : 180
+    }
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>", "fullbright" : false } ],
+      "imagePosition" : [0, -8],
+      "frames" : 10,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ],
+
+  "touchDamage" : {
+    "poly" : [ [0.5, -0.5], [1.0, 1.0], [0.0, 1.0] ],
+    "damage" : 18,
+    "knockback" : 14,
+
+    "damageType" : "Environment",
+    "damageSourceKind" : "electric"
+  },
+
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/environmental/tree_crystal_breaking.ogg" ],
+  "smashParticles" : [ { "count" : 5, "particle" : "electricswoosh1" } ],
+
+  "biomePlaced" : true
+}

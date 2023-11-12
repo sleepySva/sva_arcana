@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_misc_cerealBox_2",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A partially opened cereal box, its cardboard flaps folded back to unveil a glimpse of crunchy cereal within.",
+  "shortdescription" : "Cereal Box",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 20,
+
+  "inventoryIcon" : "2_icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "2.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

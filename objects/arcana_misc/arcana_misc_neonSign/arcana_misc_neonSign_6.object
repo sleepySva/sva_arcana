@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_misc_neonSign_6",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "An advert sign.",
+  "shortdescription" : "Neon Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 50,
+  
+  "lightColor" : [165, 143, 13],
+  "lightPosition" : [3, 1],
+
+  "inventoryIcon" : "6_icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "6.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "6.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

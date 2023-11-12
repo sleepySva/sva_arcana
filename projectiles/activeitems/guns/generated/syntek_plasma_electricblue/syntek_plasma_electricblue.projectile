@@ -1,0 +1,31 @@
+{
+  "projectileName" : "syntek_plasma_electricblue",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 124,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [55, 158, 213],
+  "emitters" : [ "electricswoosh" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_impact_electricblue/arcana_explosion_impact_electricblue.config"
+    }
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "electricplasmabullet"
+ 
+}
