@@ -1,0 +1,60 @@
+{
+  "itemName" : "artifact_blastRifle_neonGenesis",
+  "price" : 3200,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "An angelic presence surges through. ^green;Hold 0.4 seconds for a charged shot.^reset;",
+  "shortdescription" : "Neon Genesis",
+  "tooltipKind" : "base",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 9,
+
+  "inventoryIcon" : "icon.png",
+  "cursor" : "/cursors/arcana_cursor_neonGenesis.cursor",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "gun" : "body.png",
+    "gunfullbright" : "fullbright.png",
+	"charge" : "charge.png"
+  },
+  "animationCustom" : {},
+  
+  "muzzleOffset" : [5.4, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbilityType" : "chargefire",
+  "primaryAbility" : {
+    "chargeLevels" : [
+      {
+        "time" : 0,
+        "energyCost" : 80,
+        "cooldown" : 0.4,
+        "projectileType" : "artifact_blastRifle_neonGenesis_projectile_2",
+        "projectileCount" : 1,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 7,
+        "fireSound" : "fire2"
+      },
+      {
+        "time" : 0.4,
+        "energyCost" : 120,
+        "cooldown" : 0.6,
+        "projectileType" : "artifact_blastRifle_neonGenesis_projectile_1",
+        "projectileCount" : 1,
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 12,
+        "fireSound" : "fire"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

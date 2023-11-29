@@ -1,0 +1,50 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "dashing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {}
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "dashParticles" : {
+      "emissionRate" : 40.0,
+      "particles" : [
+        {
+          "particle" : "burningvehicleflamesback",
+          "flip" : true
+        },
+        {
+          "particle" : "burningvehicleflamesfront",
+          "flip" : true
+        },
+        {
+          "particle" : "burningvehiclesmokeback",
+          "flip" : true
+        },
+        {
+          "particle" : "burningvehiclesmokefront",
+          "flip" : true
+        },
+        {
+          "particle" : "firestormflame",
+          "flip" : true
+        },
+        {
+          "particle" : "firestormflame2",
+          "flip" : true
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "startDash" : [ "/sfx/tech/tech_dash.ogg" ],
+    "recharge" : [ "/sfx/tech/tech_dash_cooldown2.ogg" ]
+  }
+}

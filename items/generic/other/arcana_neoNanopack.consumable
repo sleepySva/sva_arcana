@@ -1,0 +1,28 @@
+{
+  "itemName" : "arcana_neoNanopack",
+  "rarity" : "Essential",
+  "price" : 1600,
+  "category" : "medicine",
+  "tooltipKind" : "arcana_base_generic",
+  "inventoryIcon" : "arcana_neoNanopack.png",
+  
+  "description" : "A nanopack with the power of NEO.
+
+^green;Restores 350 Health over 1 second.^reset;
+^yellow;Cooldown: 26s^reset;",
+
+  "shortdescription" : "Neo Nanopack",
+  "effects" : [ [
+      {
+        "effect" : "arcana_status_heal_neoNanopack"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "nanowrapheal",
+    "arcana_status_heal_nanopack",
+	"arcana_status_heal_energizedNanopack",
+	"arcana_status_heal_neoNanopack"
+  ]
+}

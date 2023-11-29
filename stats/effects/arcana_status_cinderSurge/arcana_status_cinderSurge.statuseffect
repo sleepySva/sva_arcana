@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_status_cinderSurge",
+  "effectConfig" : {
+  
+	"stats" : [
+	    {
+		  "name" : "powerMultiplier",
+		  "modifier" : 1.1
+		}
+	],
+	
+	"speedModifier" : 1.2
+	
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Cinder Surge",
+  "icon" : "/interface/statuses/arcana_status_cinderSurge.png"
+}

@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_status_cinderCore",
+  "effectConfig" : {
+  
+	"stats" : [
+	    {
+		  "name" : "powerMultiplier",
+		  "modifier" : 1.05
+		}
+	],
+	
+	"speedModifier" : 1.1
+	
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Cinder Core",
+  "icon" : "/interface/statuses/arcana_status_cinderCore.png"
+}

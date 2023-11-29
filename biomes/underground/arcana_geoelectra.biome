@@ -52,7 +52,7 @@
   "undergroundPlaceables" : {
 
     "grassMod" : [ "arcana_mod_electraSpark" ],
-    "grassModDensity" : 0.4,
+    "grassModDensity" : 0.2,
 
     "items" : [
       {
@@ -140,7 +140,7 @@
         "mode" : "ceiling",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingLower",
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingMid",
 
         "type" : "object",
         "objectSets" : [

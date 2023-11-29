@@ -31,12 +31,10 @@ function learnBlueprint()
 	  player.enableTech(self.tech)
 	  player.radioMessage("arcana_radiomessage_tech_new", 0)
 	  animator.playSound("learnBlueprint")
-	  item.consume(1)
   else
       player.radioMessage("arcana_radiomessage_tech_duplicate", 0)
-	  player.giveItem(item.name())
   end
-  item.consume(1)
+
 end
 
 function updateAim()

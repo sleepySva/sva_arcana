@@ -208,6 +208,25 @@
       "aggressive" : true
     }
   },
+  
+  {
+    "name" : "arcana_firegleap",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "exposed",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [1.0, "firegleap"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
   {
     "name" : "arcana_electriccrutter",
 

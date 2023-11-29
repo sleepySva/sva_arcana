@@ -277,7 +277,7 @@
       "layers": {
         "surface": {
           "primaryRegion" : ["arcana_blistering"],
-          "secondaryRegions" : [],
+          "secondaryRegions" : ["arcana_cindered"],
           "dungeons": [
 		  	  [8.0, "arcana_blistering_dungeon_2"],
 			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
@@ -301,7 +301,22 @@
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_blistering"]]],
-      "subRegion" : ["bones"]
+      "subRegion" : []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_cindered",
+    "value": {
+      "caveLiquid" : [ "water" ],
+      "caveLiquidSeedDensityRange" : [1, 3],
+      "encloseLiquids" : true,
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_cindered"]]],
+      "subRegion" : []
     }
   },
   

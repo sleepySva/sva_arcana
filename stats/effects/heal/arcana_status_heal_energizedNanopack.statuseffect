@@ -1,13 +1,14 @@
 {
   "name" : "arcana_status_heal_energizedNanopack",
   "effectConfig" : {
-    "healAmount" : 260,
+    "healAmount" : 300,
+	"healDuration" : 2,
     "emissionRate" : 10
   },
-  "defaultDuration" : 3,
+  "defaultDuration" : 28,
 
   "scripts" : [
-    "heal.lua"
+    "arcana_heal.lua"
   ],
 
   "animationConfig" : "heal.animation",

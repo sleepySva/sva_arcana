@@ -5,6 +5,7 @@ function init()
   self.rechargeEffectTimer = 0
 
   self.cooldown = config.getParameter("cooldown")
+  self.effectDuration = config.getParameter("effectDuration")
 
   self.rechargeDirectives = config.getParameter("rechargeDirectives", "?fade=B7862CFF=0.25")
   self.rechargeEffectTime = config.getParameter("rechargeEffectTime", 0.1)
@@ -15,13 +16,13 @@ end
 function energize()
   if self.cooldownTimer == 0 and not status.statPositive("activeMovementAbilities") then
       self.cooldownTimer = self.cooldown
-      status.addEphemeralEffect("arcana_status_energized", 20)
+      status.addEphemeralEffect("arcana_status_energized", self.effectDuration)
   end
 end
 
 function uninit()
   tech.setParentDirectives()
-  status.removeEphemeralEffect("arcana_status_energized", 20)
+  status.removeEphemeralEffect("arcana_status_energized")
 end
 
 function update(args)

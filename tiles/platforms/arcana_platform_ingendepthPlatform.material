@@ -1,0 +1,20 @@
+{
+  "materialId" : 16853,
+  "materialName" : "arcana_platform_ingendepthPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_ingendepthPlatform",
+  "shortdescription" : "Ingendepth Platform",
+  "description" : "An alien stone platform.",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_ingendepthPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

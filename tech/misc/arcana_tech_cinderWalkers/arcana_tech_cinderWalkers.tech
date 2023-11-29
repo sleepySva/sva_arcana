@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_tech_cinderWalkers",
+  "type" : "legs",
+
+  "scripts" : ["lua.lua"],
+  "animator" : "animation.animation",
+  
+  "description" : "Passively grants +5% max HP, ATK and run speed. Double tap ^green;[A]^white; or ^green;[D] ^white;to quickly dash.",
+  "shortDescription" : "Cinder Walkers",
+  "rarity" : "Legendary",
+  "icon" : "/tech/arcana_tech_cinderWalkers.png",
+
+  "chipCost" : 6,
+
+  "maximumDoubleTapTime" : 0.25,
+  "dashControlForce" : 1800,
+  "dashSpeed" : 74,
+  "dashDuration" : 0.32,
+  "dashCooldown" : 0.7,
+  "stopAfterDash" : false,
+  "groundOnly" : false
+}

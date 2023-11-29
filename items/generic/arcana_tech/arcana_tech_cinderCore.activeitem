@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_tech_cinderCore",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "arcana_tech_cinderCore.png",
+  "description" : "Information about a piece of alien technology. ^orange;[Use to gain a new type of tech!]^reset;",
+  "shortdescription" : "Cinder Core",
+  "itemTags" : [ "tech" ],
+  
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "base",
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_tech.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "arcana_tech_cinderCore.png"
+  },
+  "animationCustom" : {},
+  "tech" : "arcana_tech_cinderCore"
+}

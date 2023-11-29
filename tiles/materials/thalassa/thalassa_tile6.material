@@ -3,19 +3,19 @@
   "materialName" : "thalassa_tile6",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "thalassa_tile6",
-  "description" : "A deep blue roofing made from aquamarine stone.",
-  "shortdescription" : "Aquamarine Roofing",
+  "description" : "An alien stone building remnant.",
+  "shortdescription" : "Ingendepth Beam",
   "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
   "health" : 20,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/girdertemplate.config",
   "renderParameters" : {
     "texture" : "thalassa_tile6.png",
-    "variants" : 5,
+    "variants" : 1,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 166
   }
 }

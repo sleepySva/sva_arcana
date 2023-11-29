@@ -1,0 +1,49 @@
+{
+  "projectileName" : "artifact_blastRifle_neonGenesis_projectile_2",
+  "physics" : "laser",
+  
+  "timeToLive" : 2,
+  "bounces" : 0,
+  "speed" : 132,
+  "piercing" : false,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 8,
+  
+  "fullbright" : true,
+  "lightColor" : [148, 62, 145],
+  "emitters" : ["sparks","smoke"],
+  
+  "damagePoly" : [[-4, 2], [-2, 4], [2, 4], [4, 2], [4, -2], [2, -4], [-2, -4], [-4, -2]],
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/electricexplosionknockbackstatus.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/artifact_blastRifle_neonGenesis_projectile_2/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "electric"
+ 
+}

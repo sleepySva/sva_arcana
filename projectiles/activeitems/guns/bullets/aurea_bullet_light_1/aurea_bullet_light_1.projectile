@@ -1,0 +1,31 @@
+{
+  "projectileName" : "aurea_bullet_light_1",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 124,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [225, 186, 30],
+  "emitters" : [ "arcana_particle_ember_yellow" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_impact_light/arcana_explosion_impact_light.config"
+    }
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "plasmabullet"
+ 
+}

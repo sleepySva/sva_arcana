@@ -1,0 +1,28 @@
+{
+  "name" : "arcana_status_cinderWalkers",
+  "effectConfig" : {
+  
+	"stats" : [
+	    {
+		  "name" : "maxHealth",
+		  "modifier" : 1.05
+		},
+	    {
+		  "name" : "powerMultiplier",
+		  "modifier" : 1.05
+		}
+	],
+	
+	"speedModifier" : 1.05,
+	"groundMovementModifier" : 1.05
+	
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Cinder Walkers",
+  "icon" : "/interface/statuses/arcana_status_cinderWalkers.png"
+}

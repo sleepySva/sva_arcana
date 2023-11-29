@@ -1,0 +1,24 @@
+{
+  "name" : "arcana_status_nobleWalkers",
+  "effectConfig" : {
+  
+	"stats" : [
+	    {
+		  "name" : "maxHealth",
+		  "modifier" : 1.2
+		}
+	],
+	
+	"speedModifier" : 0.7,
+	"groundMovementModifier" : 0.7
+	
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Noble Walkers",
+  "icon" : "/interface/statuses/arcana_status_nobleWalkers.png"
+}

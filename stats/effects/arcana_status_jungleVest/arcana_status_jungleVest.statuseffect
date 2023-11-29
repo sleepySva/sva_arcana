@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_status_jungleVest",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "maxHealth",
+        "effectiveMultiplier" : 1.1
+      },
+      {
+        "stat" : "poisonResistance",
+        "amount" : 0.05
+      }
+    ]
+	
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Jungle Vest",
+  "icon" : "/interface/statuses/arcana_status_jungleVest.png"
+}

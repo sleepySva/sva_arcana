@@ -51,7 +51,7 @@
     }
   },
 
-  "hueShiftOptions" : [-20, -15, -10],
+  "hueShiftOptions" : [-5, 0],
 
   "weather" : [
     [0, [
@@ -65,12 +65,12 @@
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [120, 120, 40], [160, 200, 200] ],
-      "dayColors" : [ [100, 204, 245], [200, 215, 245] ],
+      "dayColors" : [ [100, 204, 245], [65, 83, 79] ],
       "eveningColors" : [ [125, 17, 158], [200, 52, 100] ],
       "nightColors" : [ [24, 38, 80, 80], [58, 42, 90, 160] ],
 
       "morningLightColor" : [80, 60, 80],
-      "dayLightColor" : [160, 160, 200],
+      "dayLightColor" : [170, 170, 190],
       "eveningLightColor" : [140, 100, 180],
       "nightLightColor" : [40, 20, 80]
     }
@@ -269,10 +269,10 @@
         "distribution" : "/biomes/distributions.config:denseLarge",
 
         "type" : "tree",
-        "treeFoliageHueShiftMax" : 180,
-        "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "birch", "cocoa", "fleshy", "grumpy", "pine", "roottree", "slimey", "something", "spikey", "twisted", "wood", "slobby", "pineytree" ],
-        "treeFoliageList" : [ "rose", "bubbles", "cloudy", "frumpy", "greenleaves", "hanging", "leafy", "lotus", "lushgreen", "orangeflower", "pinefoliage", "redleaves", "scraggy", "spikeyfoliage" ]
+        "treeFoliageHueShiftMax" : 5,
+        "treeStemHueShiftMax" : 5,
+        "treeStemList" : [ "twistypink" ],
+        "treeFoliageList" : [ "twistypinkleaf" ]
       },
       {
         "mode" : "floor",

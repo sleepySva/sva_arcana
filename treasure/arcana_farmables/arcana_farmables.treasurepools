@@ -101,6 +101,25 @@
     } ]
   ],
   
+  "arcana_farmable_ardenreef" : [
+    [0, {
+	  "fill" : [
+        {"item" : "arcana_farmable_ardenreefSeed"}
+      ],
+      "pool" : [
+        {"weight" : 0.2, "item" : "embercoral1"},
+		{"weight" : 0.2, "item" : "embercoral2"},
+		{"weight" : 0.2, "item" : "embercoral3"},
+		{"weight" : 0.2, "item" : "embercoral4"},
+		{"weight" : 0.2, "item" : "embercoral5"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
+  ],
+  
   "arcana_farmable_wintercorn" : [
     [0, {
       "pool" : [

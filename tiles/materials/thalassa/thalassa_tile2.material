@@ -3,19 +3,19 @@
   "materialName" : "thalassa_tile2",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "thalassa_tile2",
-  "description" : "Bricks made from aquamerine stone.",
-  "shortdescription" : "Small Aquamarine Brick",
+  "description" : "An alien stone building remnant.",
+  "shortdescription" : "Ingendepth Melodium Wall",
   "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
   "health" : 20,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/pipetemplate.config",
   "renderParameters" : {
     "texture" : "thalassa_tile2.png",
-    "variants" : 5,
+    "variants" : 1,
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : false,
-    "zLevel" : 162
+    "zLevel" : 262
   }
 }

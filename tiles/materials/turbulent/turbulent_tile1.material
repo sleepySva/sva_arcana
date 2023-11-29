@@ -6,16 +6,16 @@
   "description" : "A sea stained rock block.",
   "shortdescription" : "Turbulent Rock",
   "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
-  "health" : 12,
+  "health" : 10,
   "category" : "materials",
 
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {
     "texture" : "turbulent_tile1.png",
-    "variants" : 5,
+    "variants" : 10,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 1318
   }
 }

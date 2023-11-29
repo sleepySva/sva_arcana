@@ -76,14 +76,14 @@
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [200, 64, 40], [252, 70, 40] ],
-      "dayColors" : [ [200, 122, 77], [255, 163, 132] ],
+      "dayColors" : [ [69, 121, 176], [255, 163, 132] ],
       "eveningColors" : [ [200, 21, 0], [254, 65, 29] ],
-      "nightColors" : [ [70, 20, 0, 60], [70, 20, 0, 160] ],
+      "nightColors" : [ [20, 40, 79, 60], [70, 20, 0, 160] ],
 
       "morningLightColor" : [100, 20, 20],
-      "dayLightColor" : [194, 113, 59],
+      "dayLightColor" : [173, 155, 132],
       "eveningLightColor" : [100, 20, 20],
-      "nightLightColor" : [70, 20, 0]
+      "nightLightColor" : [60, 30, 10]
     }
   ],
 
@@ -104,7 +104,7 @@
 
   "musicTrack" : {
     "day" : {
-      "tracks" : [ "/music/lava-exploration1.ogg", "/music/drosera.ogg", "/music/inviolate-loop.ogg", "/music/desert-exploration2.ogg", "/music/ultramarine.ogg", "/music/arctic-constellation1.ogg", "/music/body-electric-loop.ogg", "/music/mercury.ogg", "/music/nomads.ogg", "/music/psyche.ogg" ]
+      "tracks" : [ "/music/cinders.ogg" ]
     },
     "night" : {
       "tracks" : [ "/music/lava-exploration2.ogg", "/music/crystal-exploration2.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/arctic-constellation1.ogg", "/music/nomads.ogg", "/music/psyche.ogg", "/music/casiopeia.ogg", "/music/error-0xbfaf000.ogg", "/music/accretion-disc.ogg" ]
@@ -116,6 +116,20 @@
     "grassModDensity" : 0.9,
 
     "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.5, "hephaestus_deco_3" ], [0.5, "hephaestus_deco_3_1" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
       {
         "mode" : "floor",
         "priority" : 0.0,
@@ -250,6 +264,21 @@
       },
       {
         "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "arcana_blistering_bush_1",
+            "baseHueShiftMax" : 3,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:denseLarge",
@@ -269,7 +298,7 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildbeakseedseed" ] ],
+            "pool" : [ [1, "arcana_farmable_ardenreefSeed_wild" ] ],
             "parameters" : {
               "startingStage" : 3
             }
