@@ -1,10 +1,11 @@
 require "/scripts/util.lua"
 
 function has_value()
-local a = player.swapSlotItem()
-if #AI == 2 then return a.name ~= AI[1] and a.name ~= AI[2] end
-if player.isAdmin() then return true end
-return (bagType == 4 and root.itemType(a.name) == "thrownitem") or contains(AI,a.name) or contains(AI,root.itemConfig(a).config.category) or itemHasTags(a)
+  local a = player.swapSlotItem()
+  if root.itemHasTag(a.name, "arcana_bag") then return false end
+  if #AI == 2 then return a.name ~= AI[1] and a.name ~= AI[2] end
+  if player.isAdmin() then return true end
+  return (bagType == 4 and root.itemType(a.name) == "thrownitem") or contains(AI,a.name) or contains(AI,root.itemConfig(a).config.category) or itemHasTags(a)
 end
 
 function itemHasTags(e) for _,r in pairs(AI) do if root.itemHasTag(e.name,r) then return true end end return false end
@@ -17,7 +18,7 @@ function leftClickSlot(slot)
   local bag = bagType
   widget.setItemSlotItem(slot, player.getProperty("arcana_bag_"..bag)[""..slot])
   if player.swapSlotItem() then
-	if has_value() then
+    if has_value() then
       if widget.itemSlotItem(slot) then
         local item = player.swapSlotItem()
         local maxStack = item.parameters.maxStack or root.itemConfig(item.name).config.maxStack or root.assetJson("/items/defaultParameters.config:defaultMaxStack")
