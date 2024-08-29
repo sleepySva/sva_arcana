@@ -1,0 +1,51 @@
+{
+  "type" : "arcana_npc_gilten_clothesMerchant",
+  "baseType" : "merchant",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 10,
+      "categories" : {
+        "default" : [
+			"arcana_giltenclothes"
+		]
+      },
+      "buyFactorRange" : [ 3.0, 4.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 16,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Clothing Merchant",
+          "subtitle" : "  Sells Gilten clothing"
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_devotee_head", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_devotee_chest", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_devotee_legs", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "back" : [
+              { "name" : "survivalgearback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type" : "arcana_npc_gilten_seekerlounger",
+  "baseType" : "villager",
+
+  "dropPools" : [ "money" ],
+  
+  "damageTeamType" : "ghostly",
+  "scriptConfig" : {
+    "behavior" : "lounger"
+  },  
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "arcana_armor_aureaUniform_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_aureaUniform_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_aureaUniform_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_aureaUniform_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_aureaUniform_chest", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_aureaUniform_legs", "parameters" : { "colorIndex" : 4 } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_aureaUniform_chest", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_aureaUniform_legs", "parameters" : { "colorIndex" : 7 } }
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_aureaUniform_chest", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_aureaUniform_legs", "parameters" : { "colorIndex" : 8 } }
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 180.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 40.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 12.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

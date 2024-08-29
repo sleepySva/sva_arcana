@@ -1,0 +1,37 @@
+{
+  "id" : "arcana_seeker_1_intro",
+  "mainQuest" : true,
+  "canBeAbandoned" : true,
+  "prerequisites" : [],
+  "title" : "^orange;Introduction^reset;",
+  "text" : "I've heard about all about you, Protector. Welcome to ^orange;Lighthaven^reset;. I'm ^orange;Carmine^reset;, the captain of this outpost. I have an important matter to discuss with you - talk to me again when you're ready.",
+  "completionText" : "What do you think? No need to rush - I'll be here waiting, should you decide to become a Seeker.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/arcana_maincinema.lua",
+  "scriptConfig" : {
+    "completeCinema" : "/cinematics/arcana/arcana_seeker_1/arcana_seeker_1.cinematic",
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      },
+      "questFailed" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+    ]
+  }
+}

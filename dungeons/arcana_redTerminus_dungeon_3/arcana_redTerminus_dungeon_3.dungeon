@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "arcana_redTerminus_dungeon_3",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "main" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 20,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "main",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "main.json" ],
+	  "chance" : 1000
+    }
+  ]
+}

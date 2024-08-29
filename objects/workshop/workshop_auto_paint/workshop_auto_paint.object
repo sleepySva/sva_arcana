@@ -1,0 +1,44 @@
+{
+  "objectName" : "workshop_auto_paint",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A station for painting factory objects.",
+  "shortdescription" : "Paint Station",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1000,
+  
+  "lightColor" : [100, 50, 120],
+  
+  "objectType" : "container",
+  "slotCount" : 1,
+  "uiConfig" : "/interface/arcana/arcana_auto/paint.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "left.png:<color>.<frame>", "fullbright" : true }, { "image" : "left_fb.png:<color>.<frame>"} ],
+      "direction" : "left",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

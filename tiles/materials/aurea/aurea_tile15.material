@@ -1,0 +1,21 @@
+{
+  "materialId" : 16358,
+  "materialName" : "aurea_tile15",
+  "particleColor" : [152, 137, 116, 255],
+  "itemDrop" : "aurea_tile15",
+  "description" : "A metal support beam.",
+  "shortdescription" : "Aurea Prefab Support",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "aurea_tile15.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2400
+  }
+}

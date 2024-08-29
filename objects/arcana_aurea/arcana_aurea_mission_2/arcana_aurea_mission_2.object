@@ -1,0 +1,55 @@
+{
+  "objectName" : "arcana_aurea_mission_2",
+  "colonyTags" : ["outpost"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "description" : "Equip your tech on this console.",
+  "shortdescription" : "Equip Tech Console",
+  "race" : "generic",
+
+  "apexDescription" : "This complex machine allows me to equip techs.",
+  "avianDescription" : "This console lets me equip techs! Useful devices, once you get over the weirdness.",
+  "floranDescription" : "This consssole lets Floran equip techs! New techsss always very exciting.",
+  "glitchDescription" : "Excited. This console allows me to equip and remove techs.",
+  "humanDescription" : "I can equip techs here! What a handy machine.",
+  "hylotlDescription" : "Techs are a fascinating advancement in bioengineering. I can equip them here.",
+  "novakidDescription" : "With a little know-how, I can use this machine to equip techs.",
+
+  "printable" : false,
+
+
+  "lightColor" : [20, 20, 30],
+  "lightPosition" : [0,2],
+
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "frames" : 5,
+      "animationCycle" : 0.7,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "right",
+
+      "frames" : 5,
+      "animationCycle" : 0.7,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/techupgrade/techupgradegui.config"
+}

@@ -1,0 +1,136 @@
+{
+  "type" : "arcana_npc_ice_iceMage",
+  "baseType" : "hostile",
+  
+  "dropPools" : [ "arcana_npcdrops_ice_iceMage" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "...",
+			"...",
+            "..."
+          ]
+        }
+      },
+      "reattack" : {
+        "default" : {
+          "default" : [
+            "...",
+			"...",
+            "..."
+          ]
+        }
+      },
+      "killedTarget" : {
+        "default" : {
+          "default" : [
+            "...",
+			"...",
+            "..."
+          ]
+        }
+      },
+      "lostTarget" : {
+        "default" : {
+          "default" : [
+            "...",
+			"...",
+            "..."
+          ]
+        }
+      },
+      "outOfSight" : {
+        "default" : {
+          "default" : [
+            "...",
+			"...",
+            "..."
+          ]
+        }
+      },
+      "cantReach" : {
+        "default" : {
+          "default" : [
+            "...",
+			"...",
+            "..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_iceMage_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_iceMage_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_iceMage_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "arcana_spell_ice_shiveringShot",
+			  "arcana_spell_ice_iceSplinters"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "innateStatusEffects" : [],
+  
+  "movementParameters" : {
+    "mass" : 1.0,
+    "runSpeed" : 8.0
+  },
+  
+  "statusControllerSettings" : {  
+	
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 80.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 90.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 6.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 0.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "fireResistance" : {
+        "baseValue" : -0.5
+      },
+      "iceResistance" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

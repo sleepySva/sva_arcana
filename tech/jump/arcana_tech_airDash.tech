@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_tech_airDash",
+  "type" : "legs",
+
+  "scripts" : ["arcana_tech_quickFlight.lua"],
+  "animator" : "arcana_tech_quickFlight.animation",
+
+  "description" : "This tech allows you to do a quick dash in the air!",
+  "shortDescription" : "Air Dash",
+  "rarity" : "Legendary",
+  "icon" : "/tech/arcana_tech_airDash.png",
+
+  "chipCost" : 6,
+
+  "chargeTime" : 0.0,
+  "boostTime" : 0.3,
+  "boostSpeed" : 36,
+  "boostForce" : 920
+}

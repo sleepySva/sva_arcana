@@ -1,0 +1,78 @@
+{
+  "projectileName" : "arcana_horizonPod1",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 1.0,
+  "image" : "body.png",
+  "speed" : 0,
+  "animationCycle" : 1.0,
+  "animationLoops" : true,
+  "frameNumber" : 11,
+  "power" : 0,
+  "fullbright" : true,
+  "damageKind" : "hidden",
+  "piercing" : false,
+  "orientationLocked" : true,
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "onlyHitTerrain" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion/regularexplosion.config"
+    },
+	{
+	  "action" : "particle",
+	  "specification" : {
+		"type" : "textured",
+		"image" : "/particles/monsterdeath/arcana_monster_horizonPod1/1.png",
+		"size" : 1.0,
+		"position" : [-1.5, -6.0],
+		"offsetRegion" : [0, 0, 0, 0],
+		"initialVelocity" : [-8, 10],
+		"finalVelocity" : [-4, -10],
+		"approach" : [0, 20],
+		"angularVelocity" : 4,
+		"timeToLive" : 4.0,
+		"destructionTime" : 1.0,
+		"destructionAction" : "fade",
+		"layer" : "front",
+		"variance" : {
+		  "angularVelocity" : 2
+		}
+	  }
+	},
+	{
+	  "action" : "particle",
+	  "specification" : {
+		"type" : "textured",
+		"image" : "/particles/monsterdeath/arcana_monster_horizonPod1/2.png",
+		"size" : 1.0,
+		"position" : [1.5, -6.0],
+		"offsetRegion" : [0, 0, 0, 0],
+		"initialVelocity" : [8, 10],
+		"finalVelocity" : [4, -10],
+		"approach" : [0, 20],
+		"angularVelocity" : 4,
+		"timeToLive" : 4.0,
+		"destructionTime" : 1.0,
+		"destructionAction" : "fade",
+		"layer" : "front",
+		"variance" : {
+		  "angularVelocity" : 2
+		}
+	  }
+	}
+  ],
+  
+  "scripts" : ["/scripts/projectiles/arcana_npcprojectile.lua"],
+  "scriptDelta" : 10,
+  "npcType" : "arcana_npc_horizon_horizonDisciple",
+  "npcSpawnOffset" : [0, -5]
+}

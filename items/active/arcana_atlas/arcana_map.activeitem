@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_map",
+  "shortdescription" : "^#000000;^reset;^orange;Galactic Map^reset;",
+  "description" : "A set of coordinates given to trusted Protectors. ^orange;Use this to open the Galactic Map.^reset;",
+  "price" : 0,
+  "tooltipKind" : "base",
+  "rarity" : "essential",
+  "category" : "tool",
+  "itemTags" : [],
+  "inventoryIcon" : "map.png",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "body" : "map.png"
+  },
+  "scripts" : ["map.lua"],
+  "radioMessagesOnPickup" : [ "arcana_radiomessage_pickup_map" ]
+}

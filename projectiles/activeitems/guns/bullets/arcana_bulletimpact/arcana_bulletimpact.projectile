@@ -1,0 +1,28 @@
+{
+  "projectileName" : "arcana_bulletimpact",
+  "physics" : "rain",
+  
+  "timeToLive" : 0.6,
+  "bounces" : 2,
+  "speed" : 10,
+  "piercing" : false,
+  "orientationLocked" : false,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : false,
+  "lightColor" : [20, 20, 0],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+  ],
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "hidden",
+  "onlyHitTerrain" : true
+}

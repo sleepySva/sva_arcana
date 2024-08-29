@@ -1,0 +1,29 @@
+{
+  "projectileName" : "arcana_boss_ursa_3",
+  "image" : "mechteslabolt.png",
+  "animationCycle" : 0.15,
+  "timeToLive" : 3.0,
+  "frameNumber" : 4,
+  "speed" : 2,
+  "acceleration" : 60,
+  "damagePoly" : [ [-6, 0], [0, 3], [6, 0], [0, -3] ],
+  "piercing" : false,
+  "flippable" : true,
+  "damageKind" : "electric",
+  "lightColor" : [80, 40, 140],
+  "statusEffects" : ["overload"],
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 400,
+  "rotationRate" : 1.0,
+  "trackingLimit" : 400
+}

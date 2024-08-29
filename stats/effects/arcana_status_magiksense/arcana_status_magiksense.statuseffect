@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_status_magiksense",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "maxEnergy",
+        "effectiveMultiplier" : 1.2
+      },
+      {
+        "stat" : "arcana_status_energyDrain_immunity",
+        "amount" : 1.0
+      }
+    ]
+	
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Magiksense: ^green;+20% Max Energy, Arcane Drain Immunity^reset;",
+  "icon" : "/items/generic/other/arcana_magiksensePotion.png"
+}

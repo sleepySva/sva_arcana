@@ -1,0 +1,21 @@
+{
+  "materialId" : 16350,
+  "materialName" : "blistering_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "blistering_tile2",
+  "description" : "A stone brick that originated from deep ruins.",
+  "shortdescription" : "Cindered Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "blistering_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1006
+  }
+}

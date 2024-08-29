@@ -1,0 +1,21 @@
+{
+  "kind" : "arcana_monster_horizonPod1_2",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/monsterdeath/arcana_monster_horizonPod1/2.png",
+    "size" : 1.0,
+	"position" : [1.5, -2.0],
+	"offsetRegion" : [0, 0, 0, 0],
+	"initialVelocity" : [8, 10],
+	"finalVelocity" : [6, -10],
+	"approach" : [0, 20],
+	"angularVelocity" : 4,
+	"timeToLive" : 4.0,
+	"destructionTime" : 1.0,
+	"destructionAction" : "fade",
+	"layer" : "front",
+	"variance" : {
+	  "angularVelocity" : 2
+	}
+  }
+}

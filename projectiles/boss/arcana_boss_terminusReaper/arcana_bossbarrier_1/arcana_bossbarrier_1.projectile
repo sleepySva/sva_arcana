@@ -1,0 +1,41 @@
+{
+  "projectileName" : "arcana_bossbarrier_1",
+  "physics" : "default",
+  "bounces" : 0,
+  "timeToLive" : 8.0,
+  "image" : "body.png",
+  "speed" : 0,
+  "animationCycle" : 0.1,
+  "frameNumber" : 1,
+  "windupFrames" : 2,
+  "power" : 0,
+  "fullbright" : true,
+  "damageKind" : "hidden",
+  "piercing" : false,
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+  "collisionEnabled" : true
+  },
+  "renderLayer" : "foregroundEntity",
+  "onlyHitTerrain" : true,
+  
+  "physicsCollisions" : {
+    "piece1" : {
+      "collision" : [ [0.0, -2.0], [0, 2.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece2" : {
+      "collision" : [ [-1.0, -3.0], [0.0, -2.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece3" : {
+      "collision" : [ [-1.0, 3.0], [0.0, 2.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop", "projectile"]
+    }
+  }
+}

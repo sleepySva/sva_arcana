@@ -1,0 +1,37 @@
+{
+  "id" : "arcana_seeker_1_missionafter",
+  "mainQuest" : true,
+  "canBeAbandoned" : true,
+  "prerequisites" : ["arcana_seeker_1_mission"],
+  "title" : "^orange;About What Happened^reset;",
+  "text" : "The intruders were no ordinary individuals. They were members of the ^#d03ad7;Horizon^reset;, a group of artifact hunters willing to go to any lengths to obtain relics of the Ancients. To make matters worse... they've taken the ^orange;Miracle of Fire^reset;, one of the four Ancient artifacts, from our vault.",
+  "completionText" : "We are still gathering information about the stolen relic's whereabouts, as well as intel on the remaining Miracles. For now, please hold on to the ^orange;Seeker Atlas^reset;, and use it to aid your journey as a Seeker. I will contact you as soon as we have any new developments.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	  [ "arcana_atlas", 1 ]
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      },
+      "questFailed" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+    ]
+  }
+}

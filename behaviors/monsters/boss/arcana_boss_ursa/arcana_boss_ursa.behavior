@@ -1,0 +1,522 @@
+{
+  "name": "arcana_boss_ursa",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/monster.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "endWaitTime": 2
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "faceDirection",
+        "type": "action",
+        "name": "faceDirection",
+        "parameters": {
+          "direction": {"value": -1}
+        }
+      },
+      {
+        "title": "setDying",
+        "type": "action",
+        "name": "setDying",
+        "parameters": {
+          "shouldDie": {"value": false}
+        }
+      },
+      {
+        "title": "setAggressive",
+        "type": "action",
+        "name": "setAggressive",
+        "parameters": {
+          "aggressive": {"value": true}
+        }
+      },
+      {
+        "title": "setAnimationState",
+        "type": "action",
+        "name": "setAnimationState",
+        "parameters": {
+          "state": {"value": "beamin"},
+          "type": {"value": "body"}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "monster-targeting",
+            "type": "module",
+            "name": "monster-targeting",
+            "parameters": {
+              "targetQueryRange": {"value": 80},
+              "keepTargetInRange": {"value": 6000},
+              "targetEntityTypes": {"value": ["player"]},
+              "keepTargetInSight": {"value": false},
+              "queryTargets": {"value": true},
+              "targetOnDamage": {"value": true},
+              "targetOutOfSightTime": {"value": 1}
+            }
+          },
+          {
+            "title": "controlParameters",
+            "type": "action",
+            "name": "controlParameters",
+            "parameters": {
+              "parameters": {"value": {"gravityEnabled": true}}
+            }
+          },
+          {
+            "title": "Spiderboss",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "resourcePercentage",
+                    "type": "action",
+                    "name": "resourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 0},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "Reset",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+					  {
+						"title": "setResourcePercentage",
+						"type": "action",
+						"name": "setResourcePercentage",
+						"parameters": {
+						  "percentage": {"value": 1.0},
+						  "resource": {"value": "health"}
+						}
+					  },
+                      {
+                        "title": "addEphemeralEffect",
+                        "type": "action",
+                        "name": "addEphemeralEffect",
+                        "parameters": {
+                          "duration": {"value": 17},
+                          "name": {"value": "cultistshield"}
+                        }
+                      },
+                      {
+                        "title": "setFlag",
+                        "type": "action",
+                        "name": "setFlag",
+                        "parameters": {
+                          "name": {"value": "intro"}
+                        }
+                      },
+					  {
+						"title": "timer",
+						"type": "action",
+						"name": "timer",
+						"parameters": {
+						  "time": {"value": 2.0}
+						}
+					  },
+                      {
+                        "title": "sequentialdialognoskip",
+                        "type": "module",
+                        "name": "sequentialdialognoskip",
+                        "parameters": {
+                          "dialogWaitTime": {"value": 4},
+                          "dialogEndWait": {"value": 4},
+                          "dialogKey": {"value": "dialog.intro"},
+                          "dialogTarget": {"key": "target"}
+                        }
+                      },
+                      {
+                        "title": "setDamageBar",
+                        "type": "action",
+                        "name": "setDamageBar",
+                        "parameters": {
+                          "type": {"value": "Special"}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": true}
+                        }
+                      },
+                      {
+                        "title": "sequentialdialognoskip",
+                        "type": "module",
+                        "name": "sequentialdialognoskip",
+                        "parameters": {
+                          "dialogWaitTime": {"value": 0},
+                          "dialogEndWait": {"value": 0},
+                          "dialogKey": {"value": "dialog.start"},
+                          "dialogTarget": {"key": "target"}
+                        }
+                      },
+                      {
+                        "title": "setAggressive",
+                        "type": "action",
+                        "name": "setAggressive",
+                        "parameters": {
+                          "aggressive": {"value": true}
+                        }
+                      },
+					  {
+						"title": "timer",
+						"type": "action",
+						"name": "timer",
+						"parameters": {
+						  "time": {"value": 2.0}
+						}
+					  },
+                      {
+                        "title": "repeater",
+                        "type": "decorator",
+                        "name": "repeater",
+                        "parameters": {
+                          "maxLoops": {"value": -1},
+                          "untilSuccess": {"value": false}
+                        },
+                        "child": {
+                          "title": "Reset",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+                            {
+                              "title": "arcana_boss_ursa_row",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_row",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_rowfollowup",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_rowfollowup",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_rowfinish",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_rowfinish",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_teleport",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_teleport",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_bottom",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_bottom",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_bottomfollowup",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_bottomfollowup",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_eye",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_eye",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_teleport",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_teleport",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_row",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_row",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_eyealt",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_eyealt",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_rowfollowup",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_rowfollowup",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_rowfinish",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_rowfinish",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_eye",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_eye",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_ursa_teleport",
+                              "type": "module",
+                              "name": "arcana_boss_ursa_teleport",
+                              "parameters": {}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "resourcePercentage",
+                      "type": "action",
+                      "name": "resourcePercentage",
+                      "parameters": {
+                        "percentage": {"value": 0},
+                        "resource": {"value": "health"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "idle"},
+                      "type": {"value": "body"}
+                    }
+                  },
+                  {
+                    "title": "sequentialdialognoskip",
+                    "type": "module",
+                    "name": "sequentialdialognoskip",
+                    "parameters": {
+                      "dialogWaitTime": {"value": 4},
+                      "dialogEndWait": {"key": "<endWaitTime>"},
+                      "dialogKey": {"value": "dialog.death"},
+                      "dialogTarget": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "addEphemeralEffect",
+                    "type": "action",
+                    "name": "addEphemeralEffect",
+                    "parameters": {
+                      "name": {"value": "beamout"}
+                    }
+                  },
+                  {
+                    "title": "battleMusic",
+                    "type": "action",
+                    "name": "battleMusic",
+                    "parameters": {
+                      "enable": {"value": false}
+                    }
+                  },
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.75}
+                    }
+                  },
+                  {
+                    "title": "setDying",
+                    "type": "action",
+                    "name": "setDying",
+                    "parameters": {
+                      "shouldDie": {"value": true}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "setResourcePercentage",
+                    "type": "action",
+                    "name": "setResourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 1.0},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "setDamageBar",
+                    "type": "action",
+                    "name": "setDamageBar",
+                    "parameters": {
+                      "type": {"value": "None"}
+                    }
+                  },
+                  {
+                    "title": "setAggressive",
+                    "type": "action",
+                    "name": "setAggressive",
+                    "parameters": {
+                      "aggressive": {"value": true}
+                    }
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "beamout"},
+                          "type": {"value": "body"}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.9}
+                        }
+                      },
+                      {
+                        "title": "setPosition",
+                        "type": "action",
+                        "name": "setPosition",
+                        "parameters": {
+                          "footPosition": {"value": false},
+                          "position": {"key": "spawn"}
+                        }
+                      },
+                      {
+                        "title": "faceDirection",
+                        "type": "action",
+                        "name": "faceDirection",
+                        "parameters": {
+                          "direction": {"value": -1}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.1}
+                        }
+                      },
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "beamin"},
+                          "type": {"value": "body"}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": false}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.6}
+                        }
+                      },
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "idle"},
+                          "type": {"value": "body"}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "runner",
+                    "type": "action",
+                    "name": "runner",
+                    "parameters": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

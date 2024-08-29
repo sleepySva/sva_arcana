@@ -1,0 +1,42 @@
+{
+  "objectName" : "arcana_carnival_apexcooldesk",
+  "colonyTags" : ["apex","apexresearchlab","storage","commerce"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "furniture",
+  "price" : 120,
+  "description" : "This desk is sleek, looks solid.",
+  "shortdescription" : "Cool Desk",
+  "race" : "apex",
+  "health" : 1.5,
+
+  "apexDescription" : "I wonder who worked here...",
+  "avianDescription" : "A desk of metal - clinical in appearance.",
+  "floranDescription" : "Dessk iss cool to touch.",
+  "glitchDescription" : "Indifference. A desk.",
+  "humanDescription" : "A professional-looking desk.",
+  "hylotlDescription" : "A thin metal desk.",
+  "novakidDescription" : "A shiny lookin' desk made outta metal.",
+
+  "inventoryIcon" : "apexcooldeskicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "apexcooldesk.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/bunkercabinet_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bunkercabinet_close.ogg" ],
+  "slotCount" : 9,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

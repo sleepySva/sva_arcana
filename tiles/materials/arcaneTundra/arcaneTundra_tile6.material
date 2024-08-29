@@ -1,0 +1,22 @@
+{
+  "materialId" : 16357,
+  "materialName" : "arcaneTundra_tile6",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcaneTundra_tile6",
+  "description" : "A chiseled ice pillar.",
+  "shortdescription" : "Glacial Ice Pillar",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/rowtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcaneTundra_tile6.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 3149,
+    "radiantLight" : [0, 0, 0]
+  }
+}

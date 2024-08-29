@@ -1,0 +1,24 @@
+{
+  "materialId" : 16366,
+  "materialName" : "arcana_rail_lightrail",
+  "collisionKind" : "none",
+  "foregroundOnly" : true,
+  "itemDrop" : "arcana_rail_lightrail",
+  "shortdescription" : "Light Rail",
+  "description" : "A glowing rail track.",
+  "footstepSound" : "/sfx/blocks/footstep_girder.ogg",
+  "category": "supports",
+  "health" : 4,
+
+  "renderTemplate" : "/tiles/arcana_railtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_rail_lightrail.png",
+    "variants" : 1,
+    "multiColored" : true,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "zLevel" : 0,
+	"radiantLight" : [50, 50, 10]
+	
+  }
+}

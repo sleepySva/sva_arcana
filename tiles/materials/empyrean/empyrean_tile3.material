@@ -1,0 +1,21 @@
+{
+  "materialId" : 16347,
+  "materialName" : "empyrean_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "empyrean_tile3",
+  "description" : "A patterned brick wall.",
+  "shortdescription" : "Sky Ark Revere Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_stone3.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "empyrean_tile3.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4921
+  }
+}

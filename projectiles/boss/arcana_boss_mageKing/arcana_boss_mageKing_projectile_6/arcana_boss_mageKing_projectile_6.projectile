@@ -1,0 +1,57 @@
+{
+  "projectileName" : "arcana_boss_mageKing_projectile_6",
+  "physics" : "hover",
+  "timeToLive" : 5,
+  "image" : "arcana_boss_mageKing_projectile_6.png",
+  "animationCycle" : 0.35,
+  "lightColor" : [60, 90, 110],
+  "frameNumber" : 4,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/melee/astraltear2.ogg" ]
+    },
+    {
+      "time" : 5.65,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/astraltear_stop3.ogg" ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/iceimpactmute.config"
+    },
+	{
+		"action" : "spawnmonster",
+		"type" : "icepeblit",
+		"offset": [ 0, 0 ],
+		"arguments" : { }
+	}
+  ],
+  "speed" : 0,
+  "power" : 0,
+  "damagePoly" : [],
+
+  "fullbright" : true,
+  "emitters" : [],
+
+  "renderLayer" : "Projectile-1",
+  "orientationLocked" : true,
+
+  "bounces" : -1,
+  "onlyHitTerrain" : true,
+
+  "scripts" : [ "/projectiles/boss/arcana_boss_mageKing/arcana_boss_mageKing_projectile_6/elementportal.lua" ],
+
+  "projectileType" : "largeicecloud",
+  "projectileParameters" : {},
+  "spawnRate" : 0.9,
+
+  "persistentAudio" : "/sfx/projectiles/iceorb_loop.ogg"
+}

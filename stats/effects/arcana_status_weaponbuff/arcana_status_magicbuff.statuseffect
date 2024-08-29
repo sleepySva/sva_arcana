@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_status_magicbuff",
+  "effectConfig" : {
+  
+    "weaponTags" : ["wand", "staff"],
+    "statModifiers" : [
+      {
+        "stat" : "powerMultiplier",
+        "effectiveMultiplier" : 1.1
+      }
+    ]
+	
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_status_weaponbuff.lua"
+  ],
+  "scriptDelta" : 50,
+  
+  "label" : "Magic+",
+  "icon" : "/interface/statuses/attack.png"
+}

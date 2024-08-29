@@ -1,0 +1,45 @@
+{
+  "frameGrid" : {
+    "size" : [72, 72],
+    "dimensions" : [13, 10],
+
+    "names" : [
+      [ null, "idle.1", "idle.2", "idle.3", "idle.4", null, "intro.1", "introbeam.1", "introbeam.2", "introbeam.3", "introbeam.4", "introbeam.5", "introbeam.6" ],
+      [ null, "beamout.1", "beamout.2", "beamout.3", "beamout.4", "beamout.5", null, "beamout.6", "beamout.7", "beamout.8", "beamout.9", "beamout.10" ],
+      [ null, "beamin.1", "beamin.2", "beamin.3", "beamin.4", "beamin.5", "beamin.6", "beamin.7", "invisible.1" ],
+      [ null, "dashwindup.1", "dashwindup.2", "dashwindup.3", "dashwindup.4", "dashwindup.5", "dashwindup.6", null, "dash.1", "dash.2", "dash.3", "dash.4"],
+      [ null, "spherein.1", "spherein.2", "spherein.3", "spherein.4", "spherein.5", "spherein.6", "spherein.7", "spherein.8", "spherein.9", "spherein.10", "spherein.11" ],
+      [ null, "sphere.1", "sphere.2", "sphere.3", "sphere.4", "sphere.5", "sphere.6", "sphere.7", "sphere.8", null, "fall.1", "fall.2" ],
+      [ null, "beamwindup.1", "beamwindup.2", "beamwindup.3", "beamwindup.4", null, "beam.1", "beam.2", "beam.3", "beam.4"],
+      [ null, "jump.1", "jump.2", "jump.3", "jump.4", null, "flyingslash.1", "flyingslash.2", "flyingslash.3", "flyingslash.4", "flyingslash.5", "flyingslash.6"],
+      [ null, "exhaustin.1", "exhaustin.2", "exhaustin.3", null, "exhaust.1", "exhaust.2", null, "exhaustout.1", "exhaustout.2", "exhaustout.3", "exhaustout.4", "exhaustout.5"],
+      [ null, "slash.1", "slash.2", "slash.3", "slash.4", "slash.5", "slash.6", "exhaust.3", "exhaust.4", "exhaust.5", "exhaust.6", "exhaust.7", "exhaust.8" ]
+    ]
+  },
+  "aliases" : {
+    "sphereout.1" : "spherein.7",
+    "sphereout.2" : "spherein.6",
+    "sphereout.3" : "spherein.5",
+    "sphereout.4" : "spherein.4",
+    "sphereout.5" : "spherein.3",
+    "sphereout.6" : "spherein.2",
+    "sphereout.7" : "spherein.1",
+
+    "beamwinddown.1" : "beamwindup.4",
+    "beamwinddown.2" : "beamwindup.3",
+    "beamwinddown.3" : "beamwindup.2",
+    "beamwinddown.4" : "beamwindup.1",
+
+    "slashout.1" : "beamout.6",
+    "slashout.2" : "beamout.7",
+    "slashout.3" : "beamout.8",
+    "slashout.4" : "beamout.9",
+    "slashout.5" : "beamout.10",
+
+    "introbeam.7" : "beamout.6",
+    "introbeam.8" : "beamout.7",
+    "introbeam.9" : "beamout.8",
+    "introbeam.10" : "beamout.9",
+    "introbeam.11" : "beamout.10"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_tech_stormDrive",
+  "price" : 2000,
+  "rarity" : "Essential",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "arcana_tech_stormDrive.png",
+  "description" : "Grants +20% Max Energy, +10% Max Health, and gives you ^orange;five^reset; jumps! ^orange;[Use to gain a new type of tech!]^reset;",
+  "shortdescription" : "Storm Drive",
+  "itemTags" : [ "tech" ],
+  
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "arcana_base_item",
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_tech.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "arcana_tech_stormDrive.png"
+  },
+  "animationCustom" : {},
+  "tech" : "arcana_tech_stormDrive"
+}

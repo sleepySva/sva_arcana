@@ -1,0 +1,42 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/arcana_headeritem.png",
+    "fileBody" : "/interface/tooltips/arcana_bodyitemlong.png",
+    "fileFooter" : "/interface/tooltips/arcana_footeritem.png"
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [137, 23],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [150, 23],
+    "hAnchor" : "left",
+    "value" : "0"
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [11, 89],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+	"fontSize" : 7.2,
+    "wrapWidth" : 159
+  },
+  "rarityLabel" : {
+    "type" : "label",
+    "position" : [7, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [90, 120],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [70, 45],
+    "minSize" : [70, 40]
+  }
+}

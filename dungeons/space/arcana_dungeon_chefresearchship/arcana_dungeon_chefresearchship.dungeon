@@ -1,0 +1,58 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_chefresearchship",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "cockpit3" ],
+    "gravity" : 40,
+    "maxRadius" : 1000000,
+    "maxParts" : 2,
+    "protected" : true
+  },
+
+  "parts" : [
+
+    // SAFE ZONE
+    {
+      "name" : "safe-empty",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "/dungeons/space/hazards/safe-empty.json" ],
+      "chance" : 0,
+      "markDungeonId" : false
+    },
+
+    // COCKPIT
+    {
+      "name" : "cockpit3",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "cockpit3.json" ],
+      "chance" : 2
+    },
+
+    // MIDDLE
+
+    {
+      "name" : "middle3b",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "middle3b.json" ],
+      "chance" : 1
+    },
+	
+    // REAR / ENGINE / MECH ENTRY
+    {
+      "name" : "backend1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "backend1.json" ],
+      "chance" : 0
+    }
+  ]
+}

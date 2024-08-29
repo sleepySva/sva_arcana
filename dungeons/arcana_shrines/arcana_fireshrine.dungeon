@@ -1,0 +1,43 @@
+{
+  "metadata" : {
+    "name" : "arcana_fireshrine",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"fire",
+	"empty",
+	"empty2"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "fire",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "fire.json" ]
+    },
+    {
+      "name" : "empty",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "empty.json" ]
+    },
+    {
+      "name" : "empty2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "empty2.json" ]
+    }
+  ]
+}

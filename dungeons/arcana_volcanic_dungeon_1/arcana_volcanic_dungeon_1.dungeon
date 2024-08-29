@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "arcana_volcanic_dungeon_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "center" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 50,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "center",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "1.json" ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "objectName" : "arcana_anarkyons_light_2",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A crude gas-fueled ceiling light.",
+  "shortdescription" : "Chempunk Ceiling Light",
+  "race" : "generic",
+  
+  "category" : "light",
+  "price" : 60,
+  "lightColor" : [132, 153, 0],
+  "pointLight" : false,
+  "pointBeam" : 2,
+  "beamAmbience" : 0.10,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [2, 0],
+
+      "direction" : "left",
+      "beamAngle" : 270,
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [2, 0],
+
+      "direction" : "right",
+      "beamAngle" : 270,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

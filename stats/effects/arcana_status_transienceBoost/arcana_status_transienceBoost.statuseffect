@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_status_transienceBoost",
+  "effectConfig" : {
+  
+	"stats" : [
+	    {
+		  "name" : "powerMultiplier",
+		  "modifier" : 1.5
+		}
+	],
+	
+	"speedModifier" : 1.5
+	
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Transience Boost",
+  "icon" : "/interface/statuses/largedamageboost.png"
+}

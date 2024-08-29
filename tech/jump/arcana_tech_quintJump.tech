@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_tech_quintJump",
+  "type" : "legs",
+
+  "scripts" : ["multijump.lua"],
+  "animator" : "multijump.animation",
+
+  "description" : "Gives you ^orange;five^reset; regular jumps you can use in the air!",
+  "shortDescription" : "Quint Jump",
+  "rarity" : "Legendary",
+  "icon" : "/tech/arcana_tech_quintJump.png",
+
+  "chipCost" : 0,
+
+  "multiJumpCount" : 5,
+  "multiJumpModifier" : 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "materialId" : 16349,
+  "materialName" : "arcaneTundra_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcaneTundra_tile4",
+  "description" : "A chiseled ice brick.",
+  "shortdescription" : "Glacial Ice Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcaneTundra_tile4.png",
+    "variants" : 6,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 3148,
+    "radiantLight" : [0, 0, 0]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id" : "arcana_seeker_1_mission",
+  "mainQuest" : true,
+  "canBeAbandoned" : true,
+  "prerequisites" : ["arcana_seeker_1_intro"],
+  "title" : "^orange;The Seeker Trial^reset;",
+  "text" : "To become a Seeker, you'd usually have to pass a series of tests and background checks... but in light of your unique status, we can skip you right to the final exam: ^orange;The Seeker Trial.^reset; Whenever you are ready, talk to me again to start.",
+  "completionText" : "I'm glad you made it here safely. Allow me to properly congratulate you on becoming a Seeker - and discuss the events regarding the intruders, whenever you are ready.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	  [ "arcana_armor_aureaUniform_chest", 1 ],
+	  [ "arcana_armor_aureaUniform_legs", 1 ]
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+  
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      }
+    },
+	
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Carmine^reset; to begin the ^orange;Seeker Trial^reset;",
+      "findGoal" : "Complete the ^orange;Seeker Trial^reset;.",
+      "turnIn" : "Return to ^orange;Carmine^reset; at ^orange;Lighthaven^reset;"
+    },
+	
+    "warpEntityUid" : "arcana_aurea_npc_carmine",
+    "warpAction" : "instanceworld:arcana_mission_seekerIntro",
+    "warpDialog" : "/interface/confirmation/arcana_confirmation_teleport.config:seekerIntro",
+	
+    "goalTrigger" : "proximity",
+    "proximityRange" : 20,
+	
+    "goalEntityUid" : "arcana_goal_seekerIntro",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+	
+    "turnInEntityUid" : "arcana_aurea_npc_carmine"
+  }
+}

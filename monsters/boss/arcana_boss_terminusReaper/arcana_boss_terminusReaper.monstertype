@@ -1,0 +1,168 @@
+{
+  "type" : "arcana_boss_terminusReaper",
+  "shortdescription" : "The Harvester",
+  "categories" : [ "arcana_boss_terminusReaper" ],
+  "parts" : [ "body", "fullbright" ],
+
+  "animation" : "animation.animation",
+  "reversed" : false,
+
+  "dropPools" : [
+  ],
+
+  "baseParameters" : {
+    "monsterClass" : "boss",
+	"musicStagehands" : [ "bossmusic" ],
+
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    "initialScriptDelta" : 1,
+    "behaviorUpdateDelta" : 1,
+
+    "seeThroughLiquid" : true,
+	
+	"renderLayer" : "Projectile-200",
+    "behavior" : "arcana_boss_terminusReaper",
+	
+    "behaviorConfig" : {
+      "sphereCollisionPoly" : [ [-0.85, -0.45], [-0.45, -0.85], [0.45, -0.85], [0.85, -0.45], [0.85, 0.45], [0.45, 0.85], [-0.45, 0.85], [-0.85, 0.45] ],
+
+      "endWaitTime" : 8
+    },
+
+    "damageBar" : "None",
+	"persistent" : true,
+
+    "damageSources" : {
+      "dash" : {
+        "poly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+        "damage" : 20.0,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "broadsword",
+        "knockback" : 30
+      }
+    },
+
+    "damageParts" : {
+      "body" : {
+        "damage" : 10,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "arcana_abyss",
+        "knockback" : 30
+      }
+    },
+
+    "flipPartPoly" : false,
+    "collisionParts" : [
+      "body"
+    ],
+
+    "knockoutTime" : 0.0,
+    "knockoutEffect" : "blink",
+    "knockoutAnimationStates" : {
+      "body" : "idle"
+    },
+    "deathParticles" : "deathPoof",
+
+    "metaBoundBox" : [-2.5, -2.5, 2.5, 2.5],
+    "scale" : 1.0,
+
+    "selfDamagePoly" : [ [-3.5, -3.0], [-3.0, -3.5], [3.0, -3.5], [3.5, -3.0], [3.5, 3.0], [3.0, 3.5], [-3.0, 3.5], [-3.5, 3.0] ],
+
+    "movementSettings" : {
+      "collisionEnabled" : false,
+      "collisionPoly" : [ [-3.5, -3.0], [-3.0, -3.5], [3.0, -3.5], [3.5, -3.0], [3.5, 3.0], [3.0, 3.5], [-3.0, 3.5], [-3.5, 3.0] ],
+      "mass" : 1.0,
+      "physicsEffectCategories" : ["boss"],
+      "gravityEnabled": false
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic",
+        "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffea63FF?replace=31a6ffFF=f5bc00FF"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 100
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 4000
+        },
+        "protection" : {
+          "baseValue" : 1.4
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 3.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+        "arcana_abyssResistance" : {
+          "baseValue" : 0.8
+        },
+        "arcana_lightResistance" : {
+          "baseValue" : -0.4
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 7],
+    "feetOffset" : [0, -21]
+  }
+}

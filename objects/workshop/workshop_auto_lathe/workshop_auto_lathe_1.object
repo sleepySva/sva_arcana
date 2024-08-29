@@ -1,0 +1,117 @@
+{
+  "objectName" : "workshop_auto_lathe_1",
+  "colonyTags" : ["factorypaint"],
+  "rarity" : "Rare",
+  "description" : "^white;An automatic lathe for creating basic materials. ^orange;Can be wired to other machines.^reset;",
+  "shortdescription" : "Lathe",
+  "subtitle" : "Turn ores into pixels",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 3200,
+  "objectType" : "container",
+  "printable" : false,
+  "health" : 1.5,
+
+  "lightColor" : [179, 149, 107],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+  
+  "scripts" : [ "script.lua" ],
+  "scriptDelta" : 5,
+  
+  "inputNodes" : [ [0, 0] ],
+  "outputNodes" : [ [1, 0] ],
+  
+  "animation" : "animation.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "switchState" : {
+          "states" : {
+            "on" : {
+              "frames" : 15,
+              "cycle" : 1.5,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "1.png",
+    "fg" : "1_fb.png"
+  },
+
+  "inventoryIcon" : "1_icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "1.png:<color>.<frame>", "fullbright" : true }, { "image" : "1_fb.png:<color>.<frame>" } ],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "1.png:<color>.<frame>", "fullbright" : true }, { "image" : "1_fb.png:<color>.<frame>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/campfire.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
+  "slotCount" : 2,
+  "uiConfig" : "/interface/arcana/arcana_auto/lathe.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+  
+  "recipes" : {
+    "workshop_crafting_dustriumWire" : {
+      "input" : [
+        { "name" : "workshop_crafting_dustriumPlate", "count" : 1 }
+      ],
+      "output" : { "name" : "workshop_crafting_dustriumWire", "count" : 2 }
+	},
+    "workshop_crafting_dustriumConnector" : {
+      "input" : [
+        { "name" : "ironbar", "count" : 1 }
+      ],
+      "output" : { "name" : "workshop_crafting_dustriumConnector", "count" : 2 }
+	},
+    "workshop_crafting_dustriumPanel" : {
+      "input" : [
+        { "name" : "workshop_crafting_dustriumConnector", "count" : 4 }
+      ],
+      "output" : { "name" : "workshop_crafting_dustriumPanel", "count" : 1 }
+	}
+  },
+  "maxPower" : 20,
+  "powerUseAmount" : 10,
+  "voltage" : 30,
+  "craftingTime" : 2.0,
+  "outputRate" : 4,
+  "directives" : ""
+
+}

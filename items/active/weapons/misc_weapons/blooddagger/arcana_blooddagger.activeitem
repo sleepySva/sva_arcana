@@ -1,0 +1,76 @@
+{
+  "itemName" : "arcana_blooddagger",
+  "price" : 1400,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A red dagger used by blood assassins.",
+  "shortdescription" : "Blood Dagger",
+  "tooltipKind" : "sword",
+  "category" : "dagger",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","dagger"],
+  
+  "inventoryIcon" : "icon.png",
+  
+  "animation" : "dagger.animation",
+  "animationParts" : {
+    "handle": "",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_dagger.ogg" ]
+    }
+  },
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : 0.0,
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+    "class" : "MeleeSlash",
+
+    "fireTime" : 0.4,
+    "baseDps" : 22.0,
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "statusEffects" : ["arcana_status_bleeding"],
+      "knockbackMode" : "aim",
+      "knockback" : 6,
+      "timeoutGroup" : "primary"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -70,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup" : {
+        "duration" : 0.05,
+        "armRotation" : -20,
+        "weaponRotation" : -20,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire" : {
+        "duration" : 0.1,
+        "armRotation" : -135,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, 2.5],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  },
+  "fireSounds" : [ "/sfx/melee/swing_dagger.ogg" ],
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

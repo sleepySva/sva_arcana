@@ -1,0 +1,24 @@
+{
+  "objectName" : "workshop_deco_15",
+  "colonyTags" : ["titancorp"],
+  "rarity" : "Rare",
+  "description" : "A small greenery in the midst of Titancorp's machinery.",
+  "shortdescription" : "Titancorp Plant Box",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 40,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

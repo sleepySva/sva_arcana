@@ -1,0 +1,21 @@
+{
+  "materialId" : 16351,
+  "materialName" : "empyrean_tile4",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "empyrean_tile4",
+  "description" : "A polished roofing tile.",
+  "shortdescription" : "Ark Roof Tile",
+  "footstepSound" : "/sfx/blocks/footstep_stone3.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "empyrean_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 300
+  }
+}

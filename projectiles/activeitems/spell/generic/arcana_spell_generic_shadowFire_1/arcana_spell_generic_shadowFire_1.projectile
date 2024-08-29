@@ -1,0 +1,68 @@
+{
+  "projectileName" : "arcana_spell_generic_shadowFire_1",
+  "physics" : "laser",
+  "timeToLive" : 3,
+  "image" : "body.png",
+  "animationCycle" : 0.3,
+  "animationLoops" : true,
+  "lightColor" : [64, 36, 90],
+  "frameNumber" : 4,
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/spell/generic/arcana_spell_generic_shadowFire_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnodamage.config"
+    },
+    {
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 0.4,
+          "type" : "arcana_spell_generic_shadowFire_2",
+          "angle" : 90,
+          "fuzzAngle" : 180
+        }
+      ]
+    }
+  ],
+  
+  "speed" : 30,
+  "power" : 30,
+  "damageKind" : "arcana_abyss",
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageRepeatTimeout" : 0.4,
+  "statusEffects" : [ "burning" ],
+
+  "fullbright" : true,
+  "emitters" : [ "arcana_particle_ember_purple" ],
+
+  "bounces" : 0,
+  "piercing" : false,
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 400,
+  "rotationRate" : 2.0,
+  "trackingLimit" : 400
+}

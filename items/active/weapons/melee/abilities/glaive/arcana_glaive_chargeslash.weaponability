@@ -1,0 +1,44 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "chargefire" : [ "/sfx/melee/travelingslash_fire1.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Heavenly Cleave",
+    "type" : "arcana_glaive_chargeslash",
+    "scripts" : ["/items/active/weapons/melee/abilities/glaive/arcana_glaive_chargeslash.lua"],
+    "class" : "chargeslash",
+
+    "projectileType" : "firetravelingswoosh",
+    "projectileOffset" : [0,0],
+    "baseDamage" : 12,
+    "energyUsage" : 180,
+    "cooldownTime" : 1.6,
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.4,
+        "armRotation" : 10,
+        "weaponRotation" : -10,
+        "endArmRotation" : 70,
+        "endWeaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      }
+    }
+  }
+}

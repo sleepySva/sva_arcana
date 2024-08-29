@@ -1,0 +1,23 @@
+{
+  "materialId" : 16369,
+  "materialName" : "arcana_statustile_1",
+  "particleColor" : [111, 75, 58, 255],
+  "itemDrop" : "arcana_statustile_1",
+  "shortdescription" : "Blue Death Block",
+  "description" : "A dangerous looking energy spike.",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+  "statusEffects": [ "arcana_status_death" ],
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_statustile_1.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "radiantLight" : [57, 158, 194],
+    "zLevel" : 10
+  }
+}

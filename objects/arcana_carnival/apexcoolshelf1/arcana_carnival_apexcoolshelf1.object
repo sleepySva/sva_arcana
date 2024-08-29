@@ -1,0 +1,32 @@
+{
+  "objectName" : "arcana_carnival_apexcoolshelf1",
+  "colonyTags" : ["apex","apexresearchlab","storage"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 105,
+  "description" : "There's nothing of interest on this shelf.",
+  "shortdescription" : "Cool Empty Shelf",
+  "race" : "apex",
+
+  "apexDescription" : "An empty shelf.",
+  "avianDescription" : "A place to stack objects.",
+  "floranDescription" : "Metal shelf iss cold.",
+  "glitchDescription" : "Disappointed. Nothing here.",
+  "humanDescription" : "An empty metal shelf.",
+  "hylotlDescription" : "This shelf looks lonely.",
+  "novakidDescription" : "Ain't nothing here to see.",
+
+  "inventoryIcon" : "apexcoolshelf1icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "apexcoolshelf1.png:<color>",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

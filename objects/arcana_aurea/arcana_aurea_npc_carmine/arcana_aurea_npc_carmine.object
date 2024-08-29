@@ -1,0 +1,62 @@
+{
+  "objectName" : "arcana_aurea_npc_carmine",
+  "colonyTags" : ["misc"],
+  "rarity" : "Legendary",
+  "description" : "...",
+  "shortdescription" : "Carmine",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "offeredQuests" : [
+    "arcana_seeker_1_intro",
+    "arcana_seeker_1_mission",
+	"arcana_seeker_1_missionafter"
+  ],
+  "turnInQuests" : [
+    "arcana_seeker_1_intro",
+    "arcana_seeker_1_mission",
+	"arcana_seeker_1_missionafter"
+  ],
+
+  "uniqueId" : "arcana_aurea_npc_carmine",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 8,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 8,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [ "/objects/arcana_lua_object_interactChat.lua" ],
+  "scriptDelta" : 10,
+  "mouthPosition" : [0.0, -0.2],
+  "detectArea" : [ [-6, -2], [6, 2] ],
+ 
+  "chatOptions" : [
+	"Do not let idleness consume you, friend. Many adventures await you still.",
+	"You've survived an encounter with the Ruin? How interesting.",
+    "I sense you have the makings of a great warrior... I should like to battle you someday.",
+	"My horns? That is but one of many perks of being a half-Gilten, friend."
+  ]
+}

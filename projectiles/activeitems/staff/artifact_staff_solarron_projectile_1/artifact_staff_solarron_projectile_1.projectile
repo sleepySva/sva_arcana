@@ -1,0 +1,78 @@
+{
+  "projectileName" : "artifact_staff_solarron_projectile_1",
+  "physics" : "rain",
+  "image" : "artifact_staff_solarron_projectile_1.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "lightColor" : [235, 126, 2],
+  "periodicActions" : [
+    {
+      "time" : 0.05,
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/mediumflamefire/mediumflamefire.animation",
+            "initialVelocity" : [0.0, 7.0],
+            "finalVelocity" : [0.0, 3.0],
+            "approach" : [0.3, 60],
+            "timeToLive" : 0.7,
+            "layer" : "back",
+            "size" : 0.4,
+            "collidesForeground" : true,
+            "variance" : {
+            "position" : [0.5, 0.5],
+            "size" : 0.1,
+            "initialVelocity" : [5, 3],
+            "finalVelocity" : [0, 0],
+            "rotation" : 180,
+            "angularVelocity" : 180
+            }
+          }
+        }
+      ]
+    },
+    {
+      "time" : 0.3,
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+		{
+		  "action" : "projectile",
+		  "inheritDamageFactor" : 0.8,
+		  "type" : "artifact_staff_solarron_projectile_3",
+		  "angle" : 0,
+		  "fuzzAngle" : 0
+		}
+      ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnodamage.config"
+    },
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.6,
+      "type" : "artifact_staff_solarron_projectile_2",
+      "angle" : 0,
+      "fuzzAngle" : 0
+    }
+  ],
+  "power" : 30,
+  "knockback" : 40,
+  "speed" : 80,
+  "damageKind" : "fireplasma",
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "statusEffects" : [
+    "burning"
+  ],
+  "hydrophobic" : true,
+  "persistentAudio" : "/sfx/projectiles/dragonprojectile_loop.ogg",
+  "emitters" : [ "fireplasma", "smoke", "flames" ]
+}

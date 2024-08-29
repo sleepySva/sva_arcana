@@ -1,0 +1,21 @@
+{
+  "name" : "arcana_status_eliteSeekerBoost",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "maxHealth",
+        "effectiveMultiplier" : 1.3
+      }
+    ]
+	
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Elite Seeker Boost",
+  "icon" : "/interface/statuses/maxhealth.png"
+}

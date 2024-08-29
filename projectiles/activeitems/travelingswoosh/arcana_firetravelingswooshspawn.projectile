@@ -1,0 +1,47 @@
+{
+  "projectileName" : "arcana_firetravelingswooshspawn",
+  "image" : "arcana_firetravelingswoosh.png",
+  "animationCycle" : 0.3,
+  "timeToLive" : 0.02,
+  "frameNumber" : 5,
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "speed" : 50,
+  "orientationLocked" : true,
+  "damagePoly" : [ [-40, 24.5], [3.5, 24.5], [15.5, 21.5], [28.5, 15.5], [36.5, 7.5], [40.5, -1.5], [40.5, -12.5], [32.5, -24.5], [-12, -24.5] ],
+  "animationLoops" : true,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "emitters" : [ "largefireswoosh" ],
+  "damageKind" : "firebroadsword",
+  "statusEffects" : [
+    "burning"
+  ],
+  "lightColor" : [191, 103, 2],
+  "pointLight" : true,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "actionOnReap" : [
+	{
+        "action" : "projectile",
+        "type" : "arcana_firetravelingswoosh",
+		"fuzzAngle" : 12,
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.6
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_firetravelingswoosh",
+		"fuzzAngle" : 12,
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.6
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_firetravelingswoosh",
+		"fuzzAngle" : 12,
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.6
+    }
+  ]
+}

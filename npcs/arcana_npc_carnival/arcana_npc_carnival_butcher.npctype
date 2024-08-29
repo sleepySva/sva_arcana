@@ -1,0 +1,85 @@
+{
+  "type" : "arcana_npc_carnival_butcher",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "arcana_npcdrops_pirate" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Tasty meat...",
+			"Fresh meat!",
+			"I will tear you apart...",
+			"I'll make you into a wonderful meal...",
+            "You'll make a fine meal!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			{ "name" : "arcana_armor_butcher_head" }
+			],
+            "chest" : [
+			{ "name" : "arcana_armor_butcher_chest", "parameters" : { "colorIndex" : 0 } }
+			],
+            "legs" : [
+			{ "name" : "arcana_armor_butcher_legs" }
+			],
+            "primary" : [
+              "arcana_bloodaxe",
+			  "arcana_bloodspear"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {  
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 160.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 12.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.1
+      },
+      "fireResistance" : {
+        "baseValue" : -0.2
+      },
+      "iceResistance" : {
+        "baseValue" : 0.2
+      },
+      "poisonResistance" : {
+        "baseValue" : -0.2
+      },
+      "electricResistance" : {
+        "baseValue" : 0.2
+      }
+    }
+  }
+}

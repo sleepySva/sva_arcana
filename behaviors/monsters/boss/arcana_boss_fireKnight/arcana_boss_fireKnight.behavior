@@ -1,0 +1,478 @@
+{
+  "name": "arcana_boss_fireKnight",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/monster.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "endWaitTime": 4
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "faceDirection",
+        "type": "action",
+        "name": "faceDirection",
+        "parameters": {
+          "direction": {"value": -1}
+        }
+      },
+      {
+        "title": "setDying",
+        "type": "action",
+        "name": "setDying",
+        "parameters": {
+          "shouldDie": {"value": false}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "monster-targeting",
+            "type": "module",
+            "name": "monster-targeting",
+            "parameters": {
+              "targetQueryRange": {"value": 20},
+              "keepTargetInRange": {"value": 6000},
+              "targetEntityTypes": {"value": ["player"]},
+              "keepTargetInSight": {"value": false},
+              "queryTargets": {"value": true},
+              "targetOnDamage": {"value": true},
+              "targetOutOfSightTime": {"value": 1}
+            }
+          },
+          {
+            "title": "controlParameters",
+            "type": "action",
+            "name": "controlParameters",
+            "parameters": {
+              "parameters": {"value": {"gravityEnabled": false}}
+            }
+          },
+          {
+            "title": "Spiderboss",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "resourcePercentage",
+                    "type": "action",
+                    "name": "resourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 0},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "Reset",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "setDamageBar",
+                        "type": "action",
+                        "name": "setDamageBar",
+                        "parameters": {
+                          "type": {"value": "Special"}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": true}
+                        }
+                      },
+                      {
+                        "title": "setAggressive",
+                        "type": "action",
+                        "name": "setAggressive",
+                        "parameters": {
+                          "aggressive": {"value": true}
+                        }
+                      },
+					  {
+						"title": "timer",
+						"type": "action",
+						"name": "timer",
+						"parameters": {
+						  "time": {"value": 1.0}
+						}
+					  },
+                      {
+                        "title": "repeater",
+                        "type": "decorator",
+                        "name": "repeater",
+                        "parameters": {
+                          "maxLoops": {"value": -1},
+                          "untilSuccess": {"value": false}
+                        },
+                        "child": {
+                          "title": "Reset",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+                            {
+                              "title": "halt",
+                              "type": "action",
+                              "name": "halt",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_boom",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_boom",
+                              "parameters": {}
+                            },
+	                        {
+                              "title": "arcana_boss_mageKing_smallboom",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_smallboom",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_teleport",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_teleport",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_basic",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_basic",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_burst",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_burst",
+                              "parameters": {
+                                "projectileCount": {"value": 1}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_wave",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_wave",
+                              "parameters": {
+                                "projectileCount": {"value": 1}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_basic",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_basic",
+                              "parameters": {
+                                "projectileCount": {"value": 1}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_burst",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_burst",
+                              "parameters": {
+                                "projectileCount": {"value": 1}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_burst",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_burst",
+                              "parameters": {
+                                "projectileCount": {"value": 1}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_move",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_move",
+                              "parameters": {}
+                            },
+	                        {
+                              "title": "arcana_boss_fireKnight_boom",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_boom",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_move",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_move",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_basic",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_basic",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_basic",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_basic",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_teleport",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_teleport",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_basic",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_basic",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_basic",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_basic",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_fireKnight_ult",
+                              "type": "module",
+                              "name": "arcana_boss_fireKnight_ult",
+                              "parameters": {}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "resourcePercentage",
+                      "type": "action",
+                      "name": "resourcePercentage",
+                      "parameters": {
+                        "percentage": {"value": 0},
+                        "resource": {"value": "health"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "idle"},
+                      "type": {"value": "body"}
+                    }
+                  },
+                  {
+                    "title": "battleMusic",
+                    "type": "action",
+                    "name": "battleMusic",
+                    "parameters": {
+                      "enable": {"value": false}
+                    }
+                  },
+                  {
+                    "title": "addEphemeralEffect",
+                    "type": "action",
+                    "name": "addEphemeralEffect",
+                    "parameters": {
+                      "name": {"value": "beamout"}
+                    }
+                  },
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.75}
+                    }
+                  },
+                  {
+                    "title": "setDying",
+                    "type": "action",
+                    "name": "setDying",
+                    "parameters": {
+                      "shouldDie": {"value": true}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "setResourcePercentage",
+                    "type": "action",
+                    "name": "setResourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 1},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "setDamageBar",
+                    "type": "action",
+                    "name": "setDamageBar",
+                    "parameters": {
+                      "type": {"value": "None"}
+                    }
+                  },
+                  {
+                    "title": "setAggressive",
+                    "type": "action",
+                    "name": "setAggressive",
+                    "parameters": {
+                      "aggressive": {"value": false}
+                    }
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "beamout"},
+                          "type": {"value": "body"}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.9}
+                        }
+                      },
+                      {
+                        "title": "setPosition",
+                        "type": "action",
+                        "name": "setPosition",
+                        "parameters": {
+                          "footPosition": {"value": false},
+                          "position": {"key": "spawn"}
+                        }
+                      },
+                      {
+                        "title": "faceDirection",
+                        "type": "action",
+                        "name": "faceDirection",
+                        "parameters": {
+                          "direction": {"value": -1}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.1}
+                        }
+                      },
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "beamin"},
+                          "type": {"value": "body"}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": false}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.6}
+                        }
+                      },
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "idle"},
+                          "type": {"value": "body"}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "runner",
+                    "type": "action",
+                    "name": "runner",
+                    "parameters": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

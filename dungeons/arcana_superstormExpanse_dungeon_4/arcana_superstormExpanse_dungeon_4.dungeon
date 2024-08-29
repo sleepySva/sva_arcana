@@ -1,0 +1,99 @@
+{
+  "metadata" : {
+    "name" : "arcana_superstormExpanse_dungeon_4",
+    "species" : "generic",
+    "rules" : [],
+
+    "anchor" : [
+	  "bottom"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "bottom",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "bottom.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "left1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "left1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "left2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "left2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "left3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "left3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "left4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "left4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "left5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "left5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "right1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "right1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "right2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "right2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "right3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+	    [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "right3.json" ],
+      "chance" : 0
+    }
+  ]
+}

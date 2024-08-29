@@ -1,0 +1,30 @@
+{
+  "name" : "arcana_status_electricVeilEasy",
+  "effectConfig" : {
+    "minRange" : 0.8,
+
+    "visualProjectileCount" : 8,
+    "visualProjectileType" : "electricstickyspikes",
+    "visualProjectileSpeed" : 7.0,
+    "visualProjectileTime" : 0.75,
+    "visualDuration" : 0,
+    "border" : "1;f22c1699;00000000",
+
+    "damageMultiplier" : 0.0,
+    "damageProjectileType" : "novadamage",
+
+    "cooldown" : 6,
+
+    "minTriggerDamage" : -1,
+
+    "removeInWater" : true
+  },
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "arcana_status_electricVeilEasy.lua"
+  ],
+
+  "label" : "Nova",
+  "icon" : "/interface/statuses/nova.png"
+}

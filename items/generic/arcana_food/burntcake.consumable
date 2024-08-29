@@ -1,0 +1,23 @@
+{
+  "itemName" : "burntcake",
+  "rarity" : "Common",
+  "price" : 1,
+  "category" : "preparedFood",
+  "inventoryIcon" : "burntcake.png",
+  "description" : "D:",
+  "shortdescription" : "Sad Melted Cake",
+  "effects" : [ [
+    {
+        "effect" : "burning",
+        "duration" : 405
+    }
+  ] ],
+  "foodValue" : 1,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+  ]
+}

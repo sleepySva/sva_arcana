@@ -1,0 +1,21 @@
+{
+  "materialId" : 16360,
+  "materialName" : "orion_tile19",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "orion_tile10",
+  "description" : "A metal panel used by the Orion, painted white.",
+  "shortdescription" : "Orion Large Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "orion_tile19.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4101
+  }
+}

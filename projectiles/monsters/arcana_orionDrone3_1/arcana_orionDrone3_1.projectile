@@ -1,0 +1,40 @@
+{
+  "projectileName" : "arcana_orionDrone3_1",
+  "image" : "homingrocket.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [128, 128, 255],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_smokeexplosion/arcana_smokeexplosion.config"
+    },
+ 	{
+        "action" : "projectile",
+        "type" : "arcana_orionDrone3_2",
+        "angleAdjust" : 0,
+		"fuzzAngle" : 15,
+        "inheritDamageFactor" : 1.0
+    }
+  ],
+  "emitters" : [ "rocketsmoke" ],
+  "timeToLive" : 0.1,
+  "power" : 10.0,
+  "speed" : 1.0,
+  "acceleration" : 80,
+  "physics" : "laser",
+  "damageKind" : "default",
+  
+  "renderLayer" : "foregroundEntity",
+  "supportsProcessing" : true,
+
+  "scripts" : ["/scripts/projectiles/arcana_homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 200,
+  "homingDelay" : 1,
+  "rotationRate" : 2.0,
+  "trackingLimit" : 200
+}

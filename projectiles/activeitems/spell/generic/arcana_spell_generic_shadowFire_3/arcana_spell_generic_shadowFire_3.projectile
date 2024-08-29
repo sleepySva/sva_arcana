@@ -1,0 +1,25 @@
+{
+  "projectileName" : "arcana_spell_generic_shadowFire_3",
+  "physics" : "firespread",
+  "bounces" : -1,
+  "timeToLive" : 3,
+  "speed" : 15,
+  "image" : "firefinish.png",
+  "animationCycle" : 0.55,
+  "emitters" : [ "arcana_particle_ember_purple" ],
+  "lightColor" : [64, 36, 90],
+  "frameNumber" : 4,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "hydrophobic" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smoke/smoke.config"
+    }
+  ],
+  "damageKind" : "arcana_abyss",
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "statusEffects" : [
+    "burning"
+  ]
+}

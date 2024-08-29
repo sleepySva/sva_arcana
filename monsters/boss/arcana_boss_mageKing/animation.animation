@@ -1,0 +1,568 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 1,
+        "default" : "intro",
+        "states" : {
+          "intro" : {
+            "frames" : 1
+          },
+          "introbeam" : {
+            "frames" : 11,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "invisible",
+            "frameProperties" : {
+              "immediateSound" : [ "/sfx/npc/boss/cultistboss_recharge.ogg", "", "", "", "", "/sfx/npc/boss/cultistboss_blink.ogg", "", "", "", "", "" ]
+            }
+          },
+          "idle" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "jump" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "immediateSound" : "/sfx/tech/tech_rocketboots_thrust1.ogg",
+              "persistentSound" : "/sfx/tech/tech_rocketboots.ogg"
+            }
+          },
+          "fall" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "properties" : {
+              "immediateSound" : "/sfx/tech/tech_rocketboots_thrust2.ogg"
+            }
+          },
+          "beamout" : {
+            "frames" : 10,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "invisible",
+            "frameProperties" : {
+              "immediateSound" : [ "", "", "", "", "/sfx/npc/boss/cultistboss_blink.ogg", "", "", "", "", "" ]
+            }
+          },
+          "invisible" : {
+            "frames" : 1
+          },
+          "beamin" : {
+            "frames" : 7,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/cultistboss_blink.ogg"
+            }
+          },
+          "dashwindup" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "dash",
+            "properties" : {
+              "immediateSound" :  "/sfx/melee/charge_combo1.ogg"
+            }
+          },
+          "dash" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/npc/boss/cultistboss_dash_loop.ogg"
+            }
+          },
+          "spherein" : {
+            "frames" : 11,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "sphere",
+            "frameProperties" : {
+              "immediateSound" : [ "", "", "", "", "/sfx/npc/boss/cultistboss_sphere_transform.ogg", "", "", "", "", "", "" ]
+            }
+          },
+          "sphere" : {
+            "frames" : 8,
+            "cycle" : 0.2,
+            "mode" : "loop"
+          },
+          "sphereout" : {
+            "frames" : 7,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "exhaustin",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/cultistboss_sphere_transform.ogg"
+            }
+          },
+          "flyingslash" : {
+            "frames" : 6,
+            "cycle" : 0.3,
+            "properties" : {
+              "persistentSound" : "/sfx/tech/tech_rocketboots.ogg"
+            },
+            "frameProperties" : {
+              "immediateSound" : [ "", "", "/sfx/melee/giantsword_charge_full.ogg", "", "", "" ]
+            }
+          },
+          "exhaustin" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "exhaust"
+          },
+          "exhaust" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "exhaustout" : {
+            "frames" : 5,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "idle",
+            "frameProperties" : {
+              "immediateSound" : [ "", "/sfx/npc/boss/cultistboss_recharge.ogg", "", "", "" ]
+            }
+          },
+          "beamwindup" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "beam",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/cultistboss_beamwindup.ogg"
+            }
+          },
+          "beam" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "loop",
+            "properties" : {
+              "immediateSound" : "/sfx/objects/crystaltrap_on1.ogg",
+              "persistentSound" : "/sfx/objects/crystaltrap_loop.ogg"
+            }
+          },
+          "beamwinddown" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "immediateSound" : "/sfx/objects/crystaltrap_off.ogg"
+            }
+          },
+          "slash" : {
+            "frames" : 6,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "slashout" : {
+            "frames" : 5,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "invisible",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/cultistboss_blink.ogg"
+            }
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "body" : {
+            "intro" : {
+              "properties" : {
+                "image" : "<partImage>:intro.<frame>"
+              }
+            },
+            "introbeam" : {
+              "properties" : {
+                "image" : "<partImage>:introbeam.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "<partImage>:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "<partImage>:fall.<frame>"
+              }
+            },
+            "beamout" : {
+              "properties" : {
+                "image" : "<partImage>:beamout.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {
+                "image" : "<partImage>:invisible.<frame>"
+              }
+            },
+            "beamin" : {
+              "properties" : {
+                "image" : "<partImage>:beamin.<frame>"
+              }
+            },
+            "dashwindup" : {
+              "properties" : {
+                "image" : "<partImage>:dashwindup.<frame>"
+              }
+            },
+            "dash" : {
+              "properties" : {
+                "image" : "<partImage>:dash.<frame>"
+              }
+            },
+            "spherein" : {
+              "properties" : {
+                "image" : "<partImage>:spherein.<frame>"
+              }
+            },
+            "sphere" : {
+              "properties" : {
+                "image" : "<partImage>:sphere.<frame>",
+                "collisionPoly" : [ [-0.875, -1.5], [-0.5, -1.875], [0.5, -1.875], [1.0, -1.5], [1.0, -0.5], [0.5, -0.0], [-0.5, -0.0], [-0.875, -0.5] ]
+              }
+            },
+            "sphereout" : {
+              "properties" : {
+                "image" : "<partImage>:sphereout.<frame>"
+              }
+            },
+            "flyingslash" : {
+              "properties" : {
+                "image" : "<partImage>:flyingslash.<frame>"
+              }
+            },
+            "exhaustin" : {
+              "properties" : {
+                "image" : "<partImage>:exhaustin.<frame>"
+              }
+            },
+            "exhaust" : {
+              "properties" : {
+                "image" : "<partImage>:exhaust.<frame>"
+              }
+            },
+            "exhaustout" : {
+              "properties" : {
+                "image" : "<partImage>:exhaustout.<frame>"
+              }
+            },
+            "beamwindup" : {
+              "properties" : {
+                "image" : "<partImage>:beamwindup.<frame>"
+              }
+            },
+            "beam" : {
+              "properties" : {
+                "image" : "<partImage>:beam.<frame>"
+              }
+            },
+            "beamwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:beamwinddown.<frame>"
+              }
+            },
+            "slash" : {
+              "properties" : {
+                "image" : "<partImage>:slash.<frame>",
+                "damageArea" : [ [-4.0, 0.0], [4.0, 0.0], [3.25, -1.875], [0.75, -2.75], [-0.75, -2.75], [-3.25, -1.875] ]
+              }
+            },
+            "slashout" : {
+              "properties" : {
+                "image" : "<partImage>:slashout.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "fullbright" : {
+        "properties" : {
+          "zLevel" : 2,
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "body" : {
+            "intro" : {
+              "properties" : {
+                "image" : "<partImage>:intro.<frame>"
+              }
+            },
+            "introbeam" : {
+              "properties" : {
+                "image" : "<partImage>:introbeam.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "<partImage>:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "<partImage>:fall.<frame>"
+              }
+            },
+            "beamout" : {
+              "properties" : {
+                "image" : "<partImage>:beamout.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {
+                "image" : "<partImage>:invisible.<frame>"
+              }
+            },
+            "beamin" : {
+              "properties" : {
+                "image" : "<partImage>:beamin.<frame>"
+              }
+            },
+            "dashwindup" : {
+              "properties" : {
+                "image" : "<partImage>:dashwindup.<frame>"
+              }
+            },
+            "dash" : {
+              "properties" : {
+                "image" : "<partImage>:dash.<frame>"
+              }
+            },
+            "spherein" : {
+              "properties" : {
+                "image" : "<partImage>:spherein.<frame>"
+              }
+            },
+            "sphere" : {
+              "properties" : {
+                "image" : "<partImage>:sphere.<frame>",
+                "collisionPoly" : [ [-0.875, -1.5], [-0.5, -1.875], [0.5, -1.875], [1.0, -1.5], [1.0, -0.5], [0.5, -0.0], [-0.5, -0.0], [-0.875, -0.5] ]
+              }
+            },
+            "sphereout" : {
+              "properties" : {
+                "image" : "<partImage>:sphereout.<frame>"
+              }
+            },
+            "flyingslash" : {
+              "properties" : {
+                "image" : "<partImage>:flyingslash.<frame>"
+              }
+            },
+            "exhaustin" : {
+              "properties" : {
+                "image" : "<partImage>:exhaustin.<frame>"
+              }
+            },
+            "exhaust" : {
+              "properties" : {
+                "image" : "<partImage>:exhaust.<frame>"
+              }
+            },
+            "exhaustout" : {
+              "properties" : {
+                "image" : "<partImage>:exhaustout.<frame>"
+              }
+            },
+            "beamwindup" : {
+              "properties" : {
+                "image" : "<partImage>:beamwindup.<frame>"
+              }
+            },
+            "beam" : {
+              "properties" : {
+                "image" : "<partImage>:beam.<frame>"
+              }
+            },
+            "beamwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:beamwinddown.<frame>"
+              }
+            },
+            "slash" : {
+              "properties" : {
+                "image" : "<partImage>:slash.<frame>",
+                "damageArea" : [ [-4.0, 0.0], [4.0, 0.0], [3.25, -1.875], [0.75, -2.75], [-0.75, -2.75], [-3.25, -1.875] ]
+              }
+            },
+            "slashout" : {
+              "properties" : {
+                "image" : "<partImage>:slashout.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "beam" : {
+        "properties" : {
+          "zLevel" : 3,
+          "fullbright" : true,
+          "offset" : [23.1875, 0.0]
+        },
+
+        "partStates" : {
+          "body" : {
+            "beamwindup" : {
+              "properties" : {
+                "image" : "<partImage>:beamwindup.<frame>"
+              }
+            },
+            "beam" : {
+              "properties" : {
+                "image" : "<partImage>:beam.<frame>",
+                "damageArea" : [ [-22.6875, -0.5], [-22.6875, 0.5], [22.6875, 0.5], [22.6875, -0.5] ]
+              }
+            },
+            "beamwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:beamwinddown.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "particleEmitters" : {
+    "deathPoof" : {
+      "particles" : [
+      ]
+    },
+    "dash" : {
+      "emissionRate" : 40,
+      "particles" : [
+        { "particle" : "cultistbossdash", "offset" : [-1.0, 0] }
+      ]
+    },
+    "teleportIn" : {
+      "emissionRate" : 40,
+      "particles" : [
+        { "particle" : "cultistbossdash", "offset" : [0.0, 0] }
+      ]
+    },
+    "teleportOut" : {
+      "emissionRate" : 40,
+      "particles" : [
+        { "particle" : "cultistbossdash", "offset" : [0.0, 0] }
+      ]
+    },
+    "outOfEnergy" : {
+      "particles" : [
+        {
+          "count" : 10,
+          "particle" : {
+            "type" : "ember",
+            "size" : 0.5,
+            "color" : [253, 143, 77, 255],
+            "fade" : 0.9,
+            "destructionAction" : "shrink",
+            "destructionTime" : 1,
+            "initialVelocity" : [0, 0.0],
+            "finalVelocity" : [0, -5.0],
+            "approach" : [0, 20],
+            "timeToLive" : 0.8,
+            "light" : [14, 47, 72],
+            "layer" : "back",
+            "variance" : {
+              "initialVelocity" : [6, 0.0],
+              "finalVelocity" : [0, 2.0],
+              "size" : 1
+            }
+          }
+        },
+        {
+          "count" : 10,
+          "particle" : {
+            "type" : "ember",
+            "size" : 0.5,
+            "color" : [253, 209, 77, 255],
+            "fade" : 0.9,
+            "destructionAction" : "shrink",
+            "destructionTime" : 1,
+            "initialVelocity" : [0, 0.0],
+            "finalVelocity" : [0, -5.0],
+            "approach" : [0, 20],
+            "timeToLive" : 0.8,
+            "light" : [72, 72, 72],
+            "layer" : "back",
+            "variance" : {
+              "initialVelocity" : [6, 0.0],
+              "finalVelocity" : [0, 2.0],
+              "size" : 1
+            }
+          }
+        }
+      ]
+    },
+    "spheredash" : {
+      "emissionRate" : 150.0,
+      "particles" : [
+        { "particle" : "cultistbosssphere", "offset" : [-0.0625, 0.0625] },
+        { "particle" : "cultistjetboots2", "offset" : [-0.15, 0.0] },
+        { "particle" : "cultistjetboots", "offset" : [-0.15, 0.0] },
+        { "particle" : "cultistjetboots3", "offset" : [-0.15, 0.0] },
+        { "particle" : "cultistjetboots2", "offset" : [0.15, 0.0] },
+        { "particle" : "cultistjetboots", "offset" : [0.15, 0.0] },
+        { "particle" : "cultistjetboots3", "offset" : [0.15, 0.0] }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ "/sfx/gun/plasma_pistol1.ogg" ],
+    "deathPuff" : [  ],
+    "outOfEnergy" : [ "/sfx/interface/energy_out1.ogg" ],
+    "energyRecharge" : [ ],
+    "slash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ],
+    "flyingSlash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ],
+    "sphereDash" : [ "/sfx/npc/boss/cultistboss_sphere_attack.ogg" ]
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

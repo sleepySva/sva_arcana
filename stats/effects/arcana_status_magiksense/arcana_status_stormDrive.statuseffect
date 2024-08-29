@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_status_stormDrive",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "maxHealth",
+        "effectiveMultiplier" : 1.1
+      },
+      {
+        "stat" : "maxEnergy",
+        "effectiveMultiplier" : 1.2
+      }
+    ]
+	
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Storm Drive: ^green;+20% Max Energy, +10% Max Health^reset;",
+  "icon" : "/interface/statuses/maxhealth.png"
+}

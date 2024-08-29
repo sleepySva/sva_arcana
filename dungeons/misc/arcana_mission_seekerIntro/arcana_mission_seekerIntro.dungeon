@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "arcana_mission_seekerIntro",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "arcana_mission_seekerIntro" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "arcana_mission_seekerIntro",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_mission_seekerIntro.json" ]
+    }
+  ]
+}

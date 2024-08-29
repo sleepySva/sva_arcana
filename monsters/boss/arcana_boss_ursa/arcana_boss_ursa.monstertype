@@ -1,0 +1,193 @@
+{
+  "type" : "arcana_boss_ursa",
+  "shortdescription" : "Ursa",
+  "categories" : [ "arcana_boss_ursa" ],
+  "parts" : [ "body", "fullbright" ],
+
+  "animation" : "animation.animation",
+  "reversed" : false,
+
+  "dropPools" : [
+  ],
+
+  "baseParameters" : {
+    "monsterClass" : "boss",
+
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    "initialScriptDelta" : 1,
+    "behaviorUpdateDelta" : 1,
+
+    "behavior" : "arcana_boss_ursa",
+	
+    "behaviorConfig" : {
+      "sphereCollisionPoly" : [ [-0.85, -0.45], [-0.45, -0.85], [0.45, -0.85], [0.85, -0.45], [0.85, 0.45], [0.45, 0.85], [-0.45, 0.85], [-0.85, 0.45] ],
+
+      "endWaitTime" : 8
+    },
+
+    "damageBar" : "None",
+	"persistent" : true,
+	
+    "dialog" : {
+      "intro" : {
+        "default" : {
+          "default" : [
+            "Fwahaha... what have we here?",
+            "It must be my lucky day. The treasssure of the Protectorate - the Matter Manipulator...",
+			"Ssseems to be in your very handsss.",
+            "How about you hand that over? If you don't want yourself to be riddled with holesss, that iss."
+          ]
+        }
+      },
+      "start" : {
+        "default" : {
+          "default" : [
+            "Let'ss see what you can do... Protector."
+          ]
+        }
+      },
+      "death" : {
+        "default" : {
+          "default" : [
+            "Fwahaha! Your resistance suprissses me, Protector.",
+            "I'd play with you some more... but thisss detour has taken too much time already.",
+			"Lookss like you get to keep your toy today. We've already got what we came for, anywayss.",
+            "...hurry up? Okay, okaaay. No need to shout. I'm coming."
+          ]
+        }
+      }
+    },
+
+    "damageSources" : {
+      "dash" : {
+        "poly" : [ [-1.0, -1.75], [-0.75, -2.0], [0.75, -2.0], [1.0, -1.75], [1.0, 1.75], [0.75, 2.0], [-0.75, 2.0], [-1.0, 1.75] ],
+        "damage" : 10.0,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "broadsword",
+        "knockback" : 30
+      }
+    },
+
+    "damageParts" : {
+      "body" : {
+        "damage" : 4,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "broadsword",
+        "knockback" : 30
+      }
+    },
+
+    "flipPartPoly" : false,
+    "collisionParts" : [
+      "body"
+    ],
+
+    "knockoutTime" : 0.0,
+    "knockoutEffect" : "blink",
+    "knockoutAnimationStates" : {
+      "body" : "idle"
+    },
+    "deathParticles" : "deathPoof",
+
+    "metaBoundBox" : [-2.5, -2.5, 2.5, 2.5],
+    "scale" : 1.0,
+
+    "selfDamagePoly" : [ [-1.0, -1.75], [-0.75, -2.0], [0.75, -2.0], [1.0, -1.75], [1.0, 1.75], [0.75, 2.0], [-0.75, 2.0], [-1.0, 1.75] ],
+
+    "movementSettings" : {
+      "collisionEnabled" : true,
+      "collisionPoly" : [ [-1.0, -1.75], [-0.75, -2.0], [0.75, -2.0], [1.0, -1.75], [1.0, 1.75], [0.75, 2.0], [-0.75, 2.0], [-1.0, 1.75] ],
+      "mass" : 1.0,
+      "physicsEffectCategories" : ["boss"]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic",
+        "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffea63FF?replace=31a6ffFF=f5bc00FF"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 40
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 1200
+        },
+        "protection" : {
+          "baseValue" : 1.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+        "arcana_abyssResistance" : {
+          "baseValue" : 0.4
+        },
+        "electricResistance" : {
+          "baseValue" : -0.2
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, 0]
+  }
+}

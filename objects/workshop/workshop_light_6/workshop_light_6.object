@@ -1,0 +1,47 @@
+{
+  "objectName" : "workshop_light_6",
+  "colonyTags" : ["light", "titancorp"],
+  "rarity" : "Rare",
+  "description" : "An orange lamp for lighting up factories.",
+  "shortdescription" : "Titancorp Ceiling Lamp",
+  "race" : "generic",
+  "category" : "light",
+  "price" : 60,
+  
+  "lightColor" : [155, 115, 20],
+  //"pointLight" : true,
+  //"pointBeam" : 10,
+  //"beamAmbience" : 0.15,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationPosition" : [0, 0],
+	  "lightPosition" : [1, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

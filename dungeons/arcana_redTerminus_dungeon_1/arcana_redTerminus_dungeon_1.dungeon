@@ -1,0 +1,92 @@
+{
+  "metadata" : {
+    "name" : "arcana_redTerminus_dungeon_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "main" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 20,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "main",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "main.json" ],
+	  "chance" : 10
+    },
+    {
+      "name" : "1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "1" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "1.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "2" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "2.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "3" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "3.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "4",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "4" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "4.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "7",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "7" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "7.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "5",
+      "rules" : [
+		[ "doNotConnectToPart", [ "5" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "5.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "6",
+      "rules" : [
+		[ "doNotConnectToPart", [ "6" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "6.json" ],
+	  "chance" : 0
+    }
+  ]
+}

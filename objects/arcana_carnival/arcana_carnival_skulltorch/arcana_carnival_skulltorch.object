@@ -1,0 +1,78 @@
+{
+  "objectName" : "arcana_carnival_skulltorch",
+  "colonyTags" : ["carnival","light"],
+  "rarity" : "Common",
+  "description" : "Deep shadows stretch away from this menacing torch.",
+  "shortdescription" : "Skull Torch Stand",
+  "race" : "floran",
+  "category" : "light",
+  "price" : 85,
+  "printable" : false,
+
+  "maximumLiquidLevel" : 0.2,
+
+  "apexDescription" : "This morbid torch provides warmth as well as light.",
+  "avianDescription" : "A rather gruesome torch, if I might say...",
+  "floranDescription" : "Burning face!",
+  "glitchDescription" : "Uncomfortable. I belive this is a real skull.",
+  "humanDescription" : "A skull with flames for hair! Cool.",
+  "hylotlDescription" : "Who would use the dead for this purpose?",
+  "novakidDescription" : "Howdy, buddy.",
+
+  "lightColor" : [156, 0, 0],
+
+  "flickerPeriod" : 0.2,
+  "flickerMinIntensity" : 0.7,
+  "flickerMaxIntensity" : 0.75,
+  "flickerPeriodVariance" : 0.05,
+  "flickerIntensityVariance" : 0.025,
+
+  "statusEffects" : [ ],
+
+  "inventoryIcon" : "skulltorchicon.png",
+  "orientations" : [
+    {
+      "image" : "skulltorch.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+    
+      "direction" : "left",
+      "flipImages" : true,
+    
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "animationPosition" : [-8, 0]
+    },
+  {
+      "image" : "skulltorch.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+    
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "animationPosition" : [-8, 0]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/torch.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "skulltorch.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/torch_on1.ogg", "/sfx/objects/torch_on2.ogg" ],
+      "off" : [ "/sfx/objects/torch_off1.ogg", "/sfx/objects/torch_off2.ogg", "/sfx/objects/torch_off3.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "skulltorch.png",
+    "fg" : "skulltorchlit.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 1] ]
+  
+  // "interactive" : false
+}

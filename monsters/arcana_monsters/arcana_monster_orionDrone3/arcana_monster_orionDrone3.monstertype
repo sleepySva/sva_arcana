@@ -1,0 +1,332 @@
+{
+  "type" : "arcana_monster_orionDrone3",
+  "shortdescription" : "OSR-DEMOL",
+  "description" : "A Orion heavy drone, only rarely deployed to eliminate high threat targets.",
+
+  "categories" : [ "arcana_monster_orionDrone3" ],
+  "parts" : [ "body" ],
+
+  "animation" : "animation.animation",
+
+  "dropPools" : [ { "default" : "arcana_monsterdrops_orionDrone3" } ],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    
+    "damageBar" : "Special", 
+
+    "behavior" : "monster",
+    "deathBehavior" : "monster-death",
+
+	"aggressive" : true,
+
+    "seeThroughLiquid" : true,
+    "behaviorConfig" : {
+      "damageOnTouch" : false,
+
+      "targetQueryRange" : 40,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 70,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "arcana_dronefire",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 40,
+            "minimumRange" : 1,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "arcana_orionDrone3_1",
+			"projectileCount" : 1,
+            "projectileInterval" : 0.1,
+            "projectileParameters" : {
+			  "renderLayer" : "ForegroundEntity+10",
+			  "power" : 6.0,
+              "speed" : 1,
+			  "acceleration" : 20
+            },
+			"inaccuracy" : 0.03,
+			"fireOffset" : [1.1, -1.9],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "fire",
+            "winddownTime" : 0.4
+          }
+        },
+        {
+          "name" : "arcana_dronefire",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 40,
+            "minimumRange" : 1,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "mechminimissile",
+			"projectileCount" : 1,
+            "projectileInterval" : 0.05,
+            "projectileParameters" : {
+			  "renderLayer" : "ForegroundEntity+10",
+			  "power" : 6.0,
+              "speed" : 1,
+			  "acceleration" : 120
+            },
+			"inaccuracy" : 0.01,
+			"fireOffset" : [1.1, -1.9],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "fire",
+            "winddownTime" : 0.0
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 4,
+            "maxRange" : 8
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,6],
+            "groundDistance" : 12,
+            "ceilingDistance" : 6,
+            "xVelocity" : 4,
+            "yVelocity" : 8
+          }
+        }
+      ],
+      "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "spacemineexplosion",
+            "projectileParameters" : {
+              "power" : 10,
+              "damageTeam" : { "type" : "indiscriminate" }
+            },
+            "aimDirection" : [0, 0],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0]
+          }
+        },
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "mechexplosion",
+            "projectileParameters" : {
+              "power" : 10,
+              "damageTeam" : { "type" : "indiscriminate" }
+            },
+            "aimDirection" : [0, 0],
+            "inaccuracy" : 2,
+            "fireOffset" : [0, 0]
+          }
+        },
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "firefinish",
+            "projectileParameters" : {
+              "power" : 1,
+			  "speed" : 10,
+              "damageTeam" : { "type" : "indiscriminate" }
+            },
+            "aimDirection" : [0, 1],
+            "inaccuracy" : 300,
+            "fireOffset" : [0, 0]
+          }
+        },
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "firefinish",
+            "projectileParameters" : {
+              "power" : 1,
+			  "speed" : 10,
+              "damageTeam" : { "type" : "indiscriminate" }
+            },
+            "aimDirection" : [0, 1],
+            "inaccuracy" : 300,
+            "fireOffset" : [0, 0]
+          }
+        },
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "firefinish",
+            "projectileParameters" : {
+              "power" : 1,
+			  "speed" : 10,
+              "damageTeam" : { "type" : "indiscriminate" }
+            },
+            "aimDirection" : [0, 1],
+            "inaccuracy" : 300,
+            "fireOffset" : [0, 0]
+          }
+        }
+      ],
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-3.0, -3.0], [3.0, -3.0], [3.0, 1.0], [-3.0, 1.0] ],
+      "damage" : 2,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 2,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-2, -2, 2, 2],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-3.0, -3.0], [3.0, -3.0], [3.0, 1.0], [-3.0, 1.0] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 8,
+      "gravityEnabled" : false,
+
+      "airFriction" : 1,
+      "airForce" : 20,
+      "flySpeed" : 8
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.0,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 30
+        },
+        "maxHealth" : {
+          "baseValue" : 800
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.6
+        },
+        "poisonResistance" : {
+          "baseValue" : 1.0
+        },
+        "arcana_resistance_lumen" : {
+          "baseValue" : 0.2
+        },
+        "arcana_resistance_abyss" : {
+          "baseValue" : 0.2
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -1],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

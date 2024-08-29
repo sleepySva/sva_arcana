@@ -1,0 +1,47 @@
+{
+  "objectName" : "arcana_musicbox_1",
+  "colonyTags" : ["music"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 1200,
+  "printable" : false,
+  "description" : "An intricate handmade music box. The melody it plays is soothing.",
+  "shortdescription" : "Music Box",
+  "race" : "generic",
+
+  "lightColor" : [0, 0, 0],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>.off",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/light/light.lua"
+  ],
+
+  "animation" : "animation.animation",
+  "animationPosition" : [-8, 0],
+  "animationParts" : {
+    "musicbox" : "body.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/musicbox_open.ogg" ],
+      "off" : [ "/sfx/objects/musicbox_close.ogg" ]
+    }
+  },
+
+  "defaultLightState" : false,
+
+  "soundEffect" : "/sfx/objects/musicbox2.ogg"
+}

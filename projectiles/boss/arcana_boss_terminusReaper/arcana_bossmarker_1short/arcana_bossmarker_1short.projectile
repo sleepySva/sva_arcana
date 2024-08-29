@@ -1,0 +1,24 @@
+{
+  "projectileName" : "arcana_bossmarker_1short",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 0.4,
+  "image" : "body.png",
+  "speed" : 0,
+  "animationCycle" : 0.2,
+  "animationLoops" : true,
+  "frameNumber" : 4,
+  "power" : 0,
+  "fullbright" : true,
+  "damageKind" : "hidden",
+  "piercing" : false,
+  "orientationLocked" : true,
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "onlyHitTerrain" : true
+}

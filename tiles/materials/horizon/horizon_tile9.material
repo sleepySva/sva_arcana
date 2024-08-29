@@ -1,0 +1,21 @@
+{
+  "materialId" : 16368,
+  "materialName" : "horizon_tile9",
+  "particleColor" : [40, 40, 40, 255],
+  "itemDrop" : "horizon_tile9",
+  "description" : "A solid iron sheet for protecting walls.",
+  "shortdescription" : "Dark Iron Sheet",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "horizon_tile9.png",
+    "variants" : 12,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 602
+  }
+}

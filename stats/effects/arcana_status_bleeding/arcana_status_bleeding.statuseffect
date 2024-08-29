@@ -1,0 +1,16 @@
+{
+  "name" : "arcana_status_bleeding",
+  "blockingStat" : "arcana_status_bleeding_immunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "bleeding.lua"
+  ],
+
+  "animationConfig" : "bleeding.animation",
+
+  "label" : "Bleeding",
+  "icon" : "/interface/statuses/arcana_status_bleeding.png"
+}

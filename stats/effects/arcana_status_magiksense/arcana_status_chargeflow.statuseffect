@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_status_chargeflow",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "electricResistance",
+        "amount" : 0.1
+      },
+      {
+        "stat" : "arcana_status_supercharged_immunity",
+        "amount" : 1.0
+      }
+    ]
+	
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Chargeflow: ^green;+10% Electric RES, Supercharged Immunity^reset;",
+  "icon" : "/items/generic/other/arcana_chargeflowPotion.png"
+}

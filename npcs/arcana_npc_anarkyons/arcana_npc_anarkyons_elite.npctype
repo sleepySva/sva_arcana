@@ -1,0 +1,96 @@
+{
+  "type" : "arcana_npc_anarkyons_elite",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "arcana_npcdrops_anarkyonselite" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Hey look, easy prey!",
+			"Hand over the goods!",
+			"Arghhhh!",
+			"This will be over in an instant!",
+            "Don't think you're getting out of this one easily!",
+            "I bet you'll drop lots of pixels!",
+            "You've wandered right into the wolf's den!",
+            "Good, a fight! I was almost bored!",
+            "This isn't personal, I just love attacking people!",
+            "Surprise, you're about to get poked full of holes!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			{ "name" : "arcana_armor_chemhyde_head" }
+			],
+            "chest" : [
+			{ "name" : "arcana_armor_chemhyde_chest", "parameters" : { "colorIndex" : 0 } }
+			],
+            "legs" : [
+			{ "name" : "arcana_armor_chemhyde_legs" }
+			],
+            "primary" : [
+              "misc_axe_wastecutter",
+			  "misc_katana_viridescentKatana"
+            ],
+			"sheathedprimary" : [
+              "doomcannon"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {  
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 240.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 12.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.2
+      },
+      "fireResistance" : {
+        "baseValue" : 0.0
+      },
+      "iceResistance" : {
+        "baseValue" : 0.0
+      },
+      "poisonResistance" : {
+        "baseValue" : 0.6
+      },
+      "electricResistance" : {
+        "baseValue" : 0.0
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

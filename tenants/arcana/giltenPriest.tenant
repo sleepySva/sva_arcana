@@ -1,0 +1,24 @@
+{
+  "name": "arcana_tenant_giltenPriest",
+  "priority": 10,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "archaic": 8
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": ["gilten"],
+      "type": "arcana_tenant_giltenPriest",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "villagerGift"
+  }
+}

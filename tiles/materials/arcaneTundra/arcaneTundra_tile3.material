@@ -1,0 +1,22 @@
+{
+  "materialId" : 16348,
+  "materialName" : "arcaneTundra_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcaneTundra_tile3",
+  "description" : "An alien ice material, tingly to the touch.",
+  "shortdescription" : "Glacial Ice",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "arcaneTundra_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 3313,
+    "radiantLight" : [0, 0, 0]
+  }
+}

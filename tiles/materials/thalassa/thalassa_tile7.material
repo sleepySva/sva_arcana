@@ -1,0 +1,21 @@
+{
+  "materialId" : 16345,
+  "materialName" : "thalassa_tile7",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "thalassa_tile7",
+  "description" : "A worn metal wall panel.",
+  "shortdescription" : "Ingendepth Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "thalassa_tile7.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 891
+  }
+}

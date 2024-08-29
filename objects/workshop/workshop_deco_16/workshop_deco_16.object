@@ -1,0 +1,24 @@
+{
+  "objectName" : "workshop_deco_16",
+  "colonyTags" : ["titancorp"],
+  "rarity" : "Rare",
+  "description" : "A metal fence for separating hazardous areas.",
+  "shortdescription" : "Hazard Fence",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 80,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

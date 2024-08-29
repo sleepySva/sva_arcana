@@ -1,0 +1,23 @@
+{
+  "projectileName" : "arcana_fleshcrawler_1",
+  "image" : "acidexplosion.png",
+  "physics" : "rain",
+  "animationCycle" : 0.5,
+  "frameNumber" : 5,
+  "speed" : 0,
+  "damagePoly" : [ [-16, 0], [-10, -10], [0, -16], [10, -10], [16, 0], [10, 10], [0, 16], [-10, 10] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "default",
+  "timeToLive" : 0.5,
+  
+  "actionOnReap" : [
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : null,
+      "newMod" : "arcana_mod_blood",
+      "radius" : 1
+    }
+  ]
+}

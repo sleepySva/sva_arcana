@@ -1,0 +1,277 @@
+{
+  "type" : "arcana_monster_bigexospider",
+  "shortdescription" : "Exospider",
+  "description" : "A modified robotic spider, designed for chemical warfare.",
+
+  "categories" : [ "arcana_monster_bigexospider" ],
+  "parts" : [ "body" ],
+
+  "animation" : "animation.animation",
+
+  "dropPools" : [ "largeRobotTreasure" ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "facingMode" : "transformation",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "hurtWaitForGround" : false,
+
+      "targetQueryRange" : 20,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 40,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 20,
+            "minimumRange" : 2,
+            "onGround" : false,
+            "windupTime" : 0.3,
+            "windupStopForce" : 100,
+
+            "projectileType" : "arcana_projectile_flame_poison",
+            "fireOffset" : [0.0, 1.5],
+            "projectileCount" : 20,
+            "projectileInterval" : 0.05,
+            "fireSound" : "",
+
+            "winddownTime" : 0.2
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 30,
+            "minimumRange" : 2,
+            "onGround" : false,
+            "windupTime" : 0.3,
+            "windupStopForce" : 100,
+
+            "projectileType" : "arcana_bigexospider_1",
+            "fireOffset" : [0.0, 1.5],
+            "aimAtTarget" : false,
+            "inaccuracy" : 0.4,
+            "aimDirection" : [0,1],
+            "projectileCount" : 12,
+            "projectileInterval" : 0.05,
+            "fireSound" : "",
+
+            "winddownTime" : 0.2
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 4.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 40,
+            "minimumRange" : 2,
+            "onGround" : false,
+            "windupTime" : 0.3,
+            "windupStopForce" : 100,
+
+            "projectileType" : "poisonplasmarocketstatus",
+            "fireOffset" : [0.0, 1.5],
+            "inaccuracy" : 0.1,
+            "projectileCount" : 1,
+            "projectileInterval" : 0.1,
+            "fireSound" : "",
+
+            "winddownTime" : 0.2
+          }
+        },
+        {
+          "name" : "action-leap",
+          "cooldown" : 2.0,
+          "parameters" : {
+            "onGround" : false,
+            "minimumRange" : 5,
+            "maximumRange" : 20,
+            "windupTime" : 0.3,
+            "windupState" : "",
+
+            "leapVelocity" : 28,
+            "collisionCheck" : true,
+            "highArc" : false,
+            "leapState" : "jump",
+            "fallState" : "fall",
+
+            "winddownState" : "idle",
+            "winddownTime" : 0.0
+          }
+        }
+      ],
+
+      "periodicActions" : [ ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-crawl"
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-crawl"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-crawl",
+          "cooldown" : 1,
+          "parameters" : {
+            "wanderTime" : 1.5,
+            "stopForce" : 200,
+            "idleTime" : 1.0
+          }
+        }
+      ],
+
+      "concurrentActions" : [
+      ],
+
+      "concurrentHostileActions" : [
+        {
+          "name" : "idle-crawl"
+        }
+      ]
+    },
+
+    //"baseSkills" : ["flameThrowerAttack"],
+    //"specialSkills" : ["pounceAttack"],
+
+    "metaBoundBox" : [-1.25, -1.25, 1.25, 1.25],
+    "scale" : 1.0,
+
+    "touchDamage" : {
+      "poly" : [ [0.41, 1], [1, 0.41], [1, -0.41], [0.41, -1], [-0.41, -1], [-1, -0.41], [-1, 0.41], [-0.41, 1] ],
+      "damage" : 2,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 2,
+      "statusEffects" : [ ]
+    },
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.41, 1], [1, 0.41], [1, -0.41], [0.41, -1], [-0.41, -1], [-1, -0.41], [-1, 0.41], [-0.41, 1] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 5,
+      "runSpeed" : 7
+    },
+
+    "knockoutTime" : 0.0,
+    "knockoutEffect" : "blink",
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 20
+        },
+        "maxHealth" : {
+          "baseValue" : 60
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.2
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.9
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

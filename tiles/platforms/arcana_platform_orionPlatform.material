@@ -1,0 +1,21 @@
+{
+  "materialId" : 16855,
+  "materialName" : "arcana_platform_orionPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_orionPlatform",
+  "shortdescription" : "Orion Platform",
+  "description" : "A sleek high-tech platform.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 6,
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_orionPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

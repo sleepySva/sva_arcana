@@ -1,0 +1,53 @@
+{
+  "animatedParts" : {
+    "parts" : {
+      "bow" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage>:<drawFrame>",
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "bowFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "image" : "<partImage>:<drawFrame>",
+          "transformationGroups" : ["weapon"]
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "bow" : {
+      "active" : true,
+      "offsetRegion" : [-0.5, -1.0, 0.25, 1.0],
+      "emissionRate" : 4,
+      "particles" : [
+        { "particle" : "soluskatana1"},
+		{ "particle" : "soluskatana2"}
+      ],
+      "transformationGroups" : ["weapon"]
+    }
+  },
+
+  "lights" : {
+    "glow" : {
+      "position" : [0, 2.0],
+      "color" : [90, 90, 60],
+      "transformationGroups" : ["weapon"]
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {}
+  },
+
+  "sounds" : {
+    "draw" : [ ],
+    "release" : [ ],
+    "perfectRelease" : [ ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "materialId" : 16361,
+  "materialName" : "workshop_tile12",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "workshop_tile12",
+  "description" : "An alternate pattern of the machinery panel.",
+  "shortdescription" : "Alt Machinery Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "workshop_tile12.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 146,
+    "radiantLight" : [0, 0, 0]
+  }
+}

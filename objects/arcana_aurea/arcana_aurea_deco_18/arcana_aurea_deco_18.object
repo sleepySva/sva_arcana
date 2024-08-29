@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_aurea_deco_18",
+  "colonyTags" : ["arcana_aurea"],
+  "rarity" : "Rare",
+  "description" : "A small banner of the Church of Lux.",
+  "shortdescription" : "Small Gilten Banner",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 40,
+  
+  "lightColor" : [0, 0, 0],
+  "lightPosition" : [0, 2],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false } ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false } ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ]
+}

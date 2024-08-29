@@ -1,0 +1,87 @@
+{
+  "type" : "arcana_npc_carnival_bloodAssassin",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "arcana_npcdrops_pirate" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "I shall bathe thee in blood...",
+			"Drown thyself in a river of blood..",
+			"Submit thy flesh...",
+			"A sacrifice...",
+            "Thy blood shall be ours to spill..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			{ "name" : "arcana_armor_bloodAssassin_head" }
+			],
+            "chest" : [
+			{ "name" : "arcana_armor_bloodAssassin_chest", "parameters" : { "colorIndex" : 0 } }
+			],
+            "legs" : [
+			{ "name" : "arcana_armor_bloodAssassin_legs" }
+			],
+            "primary" : [
+              "arcana_blooddagger"
+            ],
+            "alt" : [
+              "arcana_blooddagger"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {  
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 120.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 8.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.1
+      },
+      "fireResistance" : {
+        "baseValue" : -0.2
+      },
+      "iceResistance" : {
+        "baseValue" : 0.2
+      },
+      "poisonResistance" : {
+        "baseValue" : -0.2
+      },
+      "electricResistance" : {
+        "baseValue" : 0.2
+      }
+    }
+  }
+}

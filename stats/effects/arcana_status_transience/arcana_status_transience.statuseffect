@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_status_transience",
+  "effectConfig" : {
+    "minRange" : 0.8,
+
+    "border" : "1;f22c1699;00000000",
+
+    "damageMultiplier" : 0.0,
+    "damageProjectileType" : "novadamage",
+
+    "cooldown" : 16,
+
+    "minTriggerDamage" : -1,
+
+    "removeInWater" : false
+  },
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "arcana_status_transience.lua"
+  ],
+
+  "label" : "Transience",
+  "icon" : "/interface/statuses/nova.png"
+}

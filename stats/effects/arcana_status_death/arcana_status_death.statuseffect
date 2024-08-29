@@ -1,0 +1,16 @@
+{
+  "name" : "arcana_status_death",
+  "blockingStat" : "arcana_status_death_immunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "melting.lua"
+  ],
+
+  "animationConfig" : "melting.animation",
+
+  "label" : "Death",
+  "icon" : "/interface/statuses/fire.png"
+}

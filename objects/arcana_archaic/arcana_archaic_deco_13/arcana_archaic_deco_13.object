@@ -1,0 +1,26 @@
+{
+  "objectName" : "arcana_archaic_deco_13",
+  "colonyTags" : ["misc","arcana_archaic","nature"],
+  "rarity" : "Common",
+  "description" : "A large tree with golden leaves.",
+  "shortdescription" : "Large Skyoak Tree",
+  "race" : "gilten",
+  "category" : "decorative",
+  "price" : 400,
+  
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

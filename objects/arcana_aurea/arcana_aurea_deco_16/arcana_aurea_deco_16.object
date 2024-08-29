@@ -1,0 +1,45 @@
+{
+  "objectName" : "arcana_aurea_deco_16",
+  "colonyTags" : ["arcana_aurea"],
+  "rarity" : "Rare",
+  "description" : "A small hologram projector.",
+  "shortdescription" : "Small Hologram Base",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 60,
+  
+  "lightColor" : [140, 140, 70],
+  "lightPosition" : [0, 0],
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.15,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "beamAngle" : 90
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "beamAngle" : 90
+
+    }
+  ]
+}

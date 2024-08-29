@@ -1,0 +1,47 @@
+{
+  "projectileName" : "arcana_boss_mageKing_projectile_7",
+  "physics" : "laser",
+  "timeToLive" : 3,
+  "image" : "body.png",
+  "animationCycle" : 0.6,
+  "animationLoops" : true,
+  "lightColor" : [30, 70, 110],
+  "frameNumber" : 6,
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "periodicActions" : [
+  ],  
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "iceshard"
+        }
+      ]
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/ice_barrier_break1.ogg", "/sfx/projectiles/ice_barrier_break2.ogg", "/sfx/projectiles/ice_barrier_break3.ogg", "/sfx/projectiles/ice_barrier_break4.ogg", "/sfx/projectiles/ice_barrier_break5.ogg", "/sfx/projectiles/ice_barrier_break6.ogg", "/sfx/projectiles/ice_barrier_break7.ogg", "/sfx/projectiles/ice_barrier_break8.ogg", "/sfx/projectiles/ice_barrier_break9.ogg", "/sfx/projectiles/ice_barrier_break10.ogg" ]
+    }
+  ],
+  
+  "speed" : 12,
+  "power" : 20,
+  "damageKind" : "ice",
+  "damagePoly" : [ [-28, 0], [-20, 20], [0, 28], [20, 20], [28, 0], [20, -20], [0, -28], [-20, -20] ],
+  "damageRepeatTimeout" : 0.5,
+  "statusEffects" : [ "frostslow" ],
+
+  "fullbright" : true,
+  "emitters" : [ "iceplasma" ],
+
+  "bounces" : 0,
+  "piercing" : true
+}

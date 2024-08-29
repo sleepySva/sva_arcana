@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_status_tundraVest",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "maxHealth",
+        "effectiveMultiplier" : 1.1
+      },
+      {
+        "stat" : "iceResistance",
+        "amount" : 0.05
+      }
+    ]
+	
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Tundra Vest",
+  "icon" : "/interface/statuses/arcana_status_tundraVest.png"
+}

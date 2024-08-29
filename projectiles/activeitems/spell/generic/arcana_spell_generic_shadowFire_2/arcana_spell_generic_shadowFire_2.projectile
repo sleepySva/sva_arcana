@@ -1,0 +1,39 @@
+{
+  "projectileName" : "arcana_spell_generic_shadowFire_2",
+  "physics" : "firespread",
+  "bounces" : -1,
+  "timeToLive" : 3,
+  "speed" : 30,
+  "image" : "firepart5.png",
+  "animationCycle" : 0.55,
+  "lightColor" : [64, 36, 90],
+  "frameNumber" : 4,
+  "emitters" : [ "arcana_particle_ember_purple" ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "hydrophobic" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/fireexplosion/fireexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_spell_generic_shadowFire_3",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.5,
+      "angleAdjust" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_spell_generic_shadowFire_3",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.5,
+      "angleAdjust" : 135
+    }
+  ],
+  "damageKind" : "arcana_abyss",
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "statusEffects" : [
+    "burning"
+  ]
+}

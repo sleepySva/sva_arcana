@@ -1,0 +1,22 @@
+{
+  "materialId" : 16370,
+  "materialName" : "redTerminus_tile5",
+  "particleColor" : [255, 83, 83, 255],
+  "itemDrop" : "redTerminus_tile5",
+  "description" : "A bright, red tinted flower block.",
+  "shortdescription" : "Lightborne Flower Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "redTerminus_tile5.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2101,
+    "radiantLight" : [40, 20, 20]
+  }
+}

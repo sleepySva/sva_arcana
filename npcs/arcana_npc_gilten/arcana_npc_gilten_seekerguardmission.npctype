@@ -1,0 +1,75 @@
+{
+  "type" : "arcana_npc_gilten_seekerguardmission",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+      "greeting" : {
+        "default" : {
+          "default" : [
+            "You go ahead and get to safety! I'll handle things here."
+          ]
+        }
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "You go ahead and get to safety! I'll handle things here."
+          ]
+        }
+      }
+    }
+	
+  },  
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_aureaguarduniform_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_aureaguarduniform_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_aureaguarduniform_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : 6 } }
+            ],
+            "primary" : [
+              "aurea_pistol_2"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 160.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 40.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 10.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

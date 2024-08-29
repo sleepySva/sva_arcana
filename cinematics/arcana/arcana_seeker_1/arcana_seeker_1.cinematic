@@ -1,0 +1,590 @@
+{
+  "muteSfx" : true,
+  "muteMusic" : true,
+  "skippable" : true,
+  "letterbox" : false,
+  "backgroundColor" : [0, 0, 0, 255],
+  "backgroundFadeTime" : 0.2,
+
+  "panels" : [
+// -------------------------------- spotlight
+    {
+      "startTime" : 1,
+      "endTime" : 46,
+      "drawables" : [
+        {
+          "image" : "/cinematics/arcana/arcana_seeker_1/shadow.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 0.0,
+          "zoom" : 1.5,
+          "position" : [485, 230]
+        },
+        {
+          "timecode" : 0.5,
+          "alpha" : 1.0,
+          "zoom" : 1.5
+        },
+        {
+          "timecode" : 34,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 34.5,
+          "alpha" : 0
+        }
+      ]
+    },
+
+// -------------------------------- Captain
+    {
+      "startTime" : 1,
+      "endTime" : 46,
+      "drawables" : [
+        {
+          "image" : "/cinematics/arcana/arcana_seeker_1/carmine.png:<frame>"
+        }
+      ],
+      "animationFrames" : 1,
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 0.0,
+          "zoom" : 1.5,
+          "position" : [485, 264],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "alpha" : 1.0,
+          "zoom" : 1.5
+        },
+        {
+          "timecode" : 23.45,
+          "alpha" : 1,
+          "frame" : 0
+        },
+        {
+          "timecode" : 23.5,
+          "alpha" : 1,
+          "frame" : 0
+        },
+        {
+          "timecode" : 29.99,
+          "alpha" : 1,
+          "frame" : 0
+        },
+        {
+          "timecode" : 30,
+          "alpha" : 1,
+          "frame" : 0
+        },
+        {
+          "timecode" : 34,
+          "alpha" : 1,
+          "frame" : 0
+        },
+        {
+          "timecode" : 34.5,
+          "alpha" : 0,
+          "frame" : 0
+        }
+      ]
+    },
+
+
+// ------------------ radio message popup background
+    {
+      "startTime" : 1.5,
+      "endTime" : 65,
+      "drawables" : [
+        {
+          "image" : "/cinematics/radiomessagebg.png:<frame>"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [480, 100],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 65.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 66,
+          "frame" : 12
+        }
+      ]
+    },
+
+
+
+// ----------------- first radio message
+    {
+      "startTime" : 2.0,
+      "endTime" : 8.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/soundonly.png:<frame>"
+        }
+      ],
+      "animationFrames" : 6,
+      "text" : "As you may know, the ^orange;Aurea Collective^reset; is an intergalactic artifact safekeeping order, now gradually expanding further into the galactic stage.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3.0,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+
+      ]
+    },
+
+// -------------------- second radio message
+    {
+      "startTime" : 8.0,
+      "endTime" : 15.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/soundonly.png:<frame>"
+        }
+      ],
+      "animationFrames" : 6,
+      "text" : "Our mission is to unite all under the Light, and preserve peace from evil's reach.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3.5,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+//------------------------------- third radio message
+    {
+      "startTime" : 15.0,
+      "endTime" : 24.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/soundonly.png:<frame>"
+        }
+      ],
+      "animationFrames" : 6,
+      "text" : "Drawing in outworlders from across the galaxy, the Collective quickly expanded, now beginning to specialize in aquisition, research and distribution of foreign artifacts.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3.0,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+// --------------- fourth radio message
+    {
+      "startTime" : 24.0,
+      "endTime" : 30.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/soundonly.png:<frame>"
+        }
+      ],
+      "animationFrames" : 6,
+      "text" : "Now - we've recently discovered a device of immense power, akin to the ^orange;Cultivator's Artifacts^reset; that you may have heard of.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+// --------------- fifth radio message
+    {
+      "startTime" : 30.0,
+      "endTime" : 42.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/soundonly.png:<frame>"
+        }
+      ],
+      "animationFrames" : 6,
+      "text" : "Upon further research, we theorize that it's but one of the four ^orange;Elemental Miracles^reset;. If we can collect the whole set, we may be able to establish a breakthrough and learn more about the ^orange;Ancients^reset;.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 5.5,
+          "frame" : 18,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+// --------------- sixth radio message
+    {
+      "startTime" : 42.0,
+      "endTime" : 50.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/soundonly.png:<frame>"
+        }
+      ],
+      "animationFrames" : 6,
+      "text" : "With knowledge about the Ancients, we may be able to better combat threats on a galactic scale, and prevent tragedies similar to one that befell Earth.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3.5,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+
+// --------------------- Elements
+    {
+      "startTime" : 36,
+      "endTime" : 66,
+      "drawables" : [
+        {
+          "image" : "/cinematics/arcana/arcana_seeker_1/poison.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 0.0,
+          "zoom" : 1.5,
+          "position" : [479, 280],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "alpha" : 1.0,
+		  "position" : [479, 290]
+        },
+        {
+          "timecode" : 10,
+          "alpha" : 1.0
+        },
+        {
+          "timecode" : 20,
+          "frame" : 300,
+          "alpha" : 0
+        }
+      ]
+    },
+    {
+      "startTime" : 38,
+      "endTime" : 66,
+      "drawables" : [
+        {
+          "image" : "/cinematics/arcana/arcana_seeker_1/fire.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 0.0,
+          "zoom" : 1.5,
+          "position" : [479, 280],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "alpha" : 1.0,
+		  "position" : [479, 290]
+        },
+        {
+          "timecode" : 10,
+          "alpha" : 1.0
+        },
+        {
+          "timecode" : 20,
+          "frame" : 300,
+          "alpha" : 0
+        }
+      ]
+    },
+    {
+      "startTime" : 40,
+      "endTime" : 66,
+      "drawables" : [
+        {
+          "image" : "/cinematics/arcana/arcana_seeker_1/ice.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 0.0,
+          "zoom" : 1.5,
+          "position" : [479, 280],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "alpha" : 1.0,
+		  "position" : [479, 290]
+        },
+        {
+          "timecode" : 10,
+          "alpha" : 1.0
+        },
+        {
+          "timecode" : 20,
+          "frame" : 300,
+          "alpha" : 0
+        }
+      ]
+    },
+    {
+      "startTime" : 42,
+      "endTime" : 66,
+      "drawables" : [
+        {
+          "image" : "/cinematics/arcana/arcana_seeker_1/electric.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 0.0,
+          "zoom" : 1.5,
+          "position" : [479, 280],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "alpha" : 1.0,
+		  "position" : [479, 290]
+        },
+        {
+          "timecode" : 10,
+          "alpha" : 1.0
+        },
+        {
+          "timecode" : 20,
+          "frame" : 300,
+          "alpha" : 0
+        }
+      ]
+    },
+
+// --------------- eigth radio message
+    {
+      "startTime" : 50.0,
+      "endTime" : 65.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/soundonly.png:<frame>"
+        }
+      ],
+      "animationFrames" : 6,
+      "text" : "Thus, I formally invite you to join us as a ^orange;Seeker^reset;. To explore the universe, and gather knowledge in the name of unity. I believe.. your expertise as a Protector, will be of great help to us.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 4.5,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+      ]
+    }
+
+  ],
+
+
+
+  "audio" : [
+    {
+      "timecode" : 2.25,
+      "endTimecode" : 4.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 8.25,
+      "endTimecode" : 11.7,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 15.25,
+      "endTimecode" : 17.7,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 24.25,
+      "endTimecode" : 26.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 30.25,
+      "endTimecode" : 35,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 42.25,
+      "endTimecode" : 45.25,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 50.25,
+      "endTimecode" : 54.0,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    /*
+    {
+      "timecode" : 0,
+      "resource" : "/sfx/cinematics/esther_start.ogg"
+    },
+    */
+    {
+      "timecode" : 69,
+      "endTimecode" : 70,
+      "loops" : 0,
+      "resource" : "/sfx/instruments/drumkit/52.ogg"
+    },
+    {
+      "timecode" : 0,
+      "endTimecode" : 69,
+      "loops" : 0,
+      "resource" : "/music/the-eternal-tide.ogg"
+    }
+  ]
+}

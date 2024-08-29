@@ -1,0 +1,21 @@
+{
+  "materialId" : 16346,
+  "materialName" : "empyrean_tile2",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "empyrean_tile2",
+  "description" : "A patterned brick wall.",
+  "shortdescription" : "Sky Ark Bricks",
+  "footstepSound" : "/sfx/blocks/footstep_stone3.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "empyrean_tile2.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 1820
+  }
+}

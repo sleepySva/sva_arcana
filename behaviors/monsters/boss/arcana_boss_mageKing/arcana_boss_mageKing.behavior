@@ -1,0 +1,479 @@
+{
+  "name": "arcana_boss_mageKing",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/monster.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "endWaitTime": 4
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "faceDirection",
+        "type": "action",
+        "name": "faceDirection",
+        "parameters": {
+          "direction": {"value": -1}
+        }
+      },
+      {
+        "title": "setDying",
+        "type": "action",
+        "name": "setDying",
+        "parameters": {
+          "shouldDie": {"value": false}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "monster-targeting",
+            "type": "module",
+            "name": "monster-targeting",
+            "parameters": {
+              "targetQueryRange": {"value": 60},
+              "keepTargetInRange": {"value": 6000},
+              "targetEntityTypes": {"value": ["player"]},
+              "keepTargetInSight": {"value": false},
+              "queryTargets": {"value": true},
+              "targetOnDamage": {"value": true},
+              "targetOutOfSightTime": {"value": 1}
+            }
+          },
+          {
+            "title": "controlParameters",
+            "type": "action",
+            "name": "controlParameters",
+            "parameters": {
+              "parameters": {"value": {"gravityEnabled": false}}
+            }
+          },
+          {
+            "title": "Spiderboss",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "resourcePercentage",
+                    "type": "action",
+                    "name": "resourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 0},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "selector",
+                    "type": "composite",
+                    "name": "selector",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "hasFlag",
+                        "type": "action",
+                        "name": "hasFlag",
+                        "parameters": {
+                          "name": {"key": "exhausted"}
+                        }
+                      },
+                      {
+                        "title": "addEphemeralEffect",
+                        "type": "action",
+                        "name": "addEphemeralEffect",
+                        "parameters": {
+                          "duration": {"value": 10},
+                          "name": {"value": "arcana_cultistshield_1"}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Reset",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "setDamageBar",
+                        "type": "action",
+                        "name": "setDamageBar",
+                        "parameters": {
+                          "type": {"value": "Special"}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": true}
+                        }
+                      },
+                      {
+                        "title": "setAggressive",
+                        "type": "action",
+                        "name": "setAggressive",
+                        "parameters": {
+                          "aggressive": {"value": true}
+                        }
+                      },
+					  {
+						"title": "timer",
+						"type": "action",
+						"name": "timer",
+						"parameters": {
+						  "time": {"value": 6.0}
+						}
+					  },
+                      {
+                        "title": "repeater",
+                        "type": "decorator",
+                        "name": "repeater",
+                        "parameters": {
+                          "maxLoops": {"value": -1},
+                          "untilSuccess": {"value": false}
+                        },
+                        "child": {
+                          "title": "Reset",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+                            {
+                              "title": "halt",
+                              "type": "action",
+                              "name": "halt",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_teleport",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_teleport",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_iceBurst",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_iceBurst",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_iceShards",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_iceShards",
+                              "parameters": {
+                                "projectileAngleStep": {"value": 0.14},
+                                "projectileCount": {"value": 8}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_iceCollapse",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_iceCollapse",
+                              "parameters": {
+                                "projectileAngleStep": {"value": 0.2},
+                                "projectileCount": {"value": 6}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_iceMissile",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_iceMissile",
+                              "parameters": {
+                                "projectileCount": {"value": 4}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_iceBarrage",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_iceBarrage",
+                              "parameters": {
+                                "projectileCount": {"value": 9}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_exhaust",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_exhaust",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_icePulse",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_icePulse",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_teleport",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_teleport",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_iceShards",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_iceShards",
+                              "parameters": {
+                                "projectileAngleStep": {"value": 0.14},
+                                "projectileCount": {"value": 8}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_teleport",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_teleport",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_iceShards",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_iceShards",
+                              "parameters": {
+                                "projectileAngleStep": {"value": 0.14},
+                                "projectileCount": {"value": 8}
+                              }
+                            },
+                            {
+                              "title": "arcana_boss_mageKing_exhaust",
+                              "type": "module",
+                              "name": "arcana_boss_mageKing_exhaust",
+                              "parameters": {}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "resourcePercentage",
+                      "type": "action",
+                      "name": "resourcePercentage",
+                      "parameters": {
+                        "percentage": {"value": 0},
+                        "resource": {"value": "health"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "idle"},
+                      "type": {"value": "body"}
+                    }
+                  },
+                  {
+                    "title": "battleMusic",
+                    "type": "action",
+                    "name": "battleMusic",
+                    "parameters": {
+                      "enable": {"value": false}
+                    }
+                  },
+                  {
+                    "title": "addEphemeralEffect",
+                    "type": "action",
+                    "name": "addEphemeralEffect",
+                    "parameters": {
+                      "name": {"value": "beamout"}
+                    }
+                  },
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.75}
+                    }
+                  },
+                  {
+                    "title": "setDying",
+                    "type": "action",
+                    "name": "setDying",
+                    "parameters": {
+                      "shouldDie": {"value": true}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Reset",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "setResourcePercentage",
+                    "type": "action",
+                    "name": "setResourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 1},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "setDamageBar",
+                    "type": "action",
+                    "name": "setDamageBar",
+                    "parameters": {
+                      "type": {"value": "None"}
+                    }
+                  },
+                  {
+                    "title": "setAggressive",
+                    "type": "action",
+                    "name": "setAggressive",
+                    "parameters": {
+                      "aggressive": {"value": false}
+                    }
+                  },
+                  {
+                    "title": "sequence",
+                    "type": "composite",
+                    "name": "sequence",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "beamout"},
+                          "type": {"value": "body"}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.9}
+                        }
+                      },
+                      {
+                        "title": "setPosition",
+                        "type": "action",
+                        "name": "setPosition",
+                        "parameters": {
+                          "footPosition": {"value": false},
+                          "position": {"key": "spawn"}
+                        }
+                      },
+                      {
+                        "title": "faceDirection",
+                        "type": "action",
+                        "name": "faceDirection",
+                        "parameters": {
+                          "direction": {"value": -1}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.1}
+                        }
+                      },
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "beamin"},
+                          "type": {"value": "body"}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": false}
+                        }
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.6}
+                        }
+                      },
+                      {
+                        "title": "setAnimationState",
+                        "type": "action",
+                        "name": "setAnimationState",
+                        "parameters": {
+                          "state": {"value": "intro"},
+                          "type": {"value": "body"}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "runner",
+                    "type": "action",
+                    "name": "runner",
+                    "parameters": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

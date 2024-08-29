@@ -1,0 +1,23 @@
+{
+  "kind" : "arcana_shielded_1_3",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/shielded/arcana_shielded_1/3.png",
+    "size" : 1.0,
+    "destructionTime" : 0.5,
+    "destructionAction" : "fade",
+    "angularVelocity" : 0,
+    "position" : [0, 0],
+    "initialVelocity" : [0, 10],
+    "finalVelocity" : [0, -20],
+    "approach" : [0, 20],
+    "timeToLive" : 1,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "variance" : {
+      "rotation" : 360,
+      "angularVelocity" : 5,
+      "initialVelocity" : [7, 7]
+    }
+  }
+}

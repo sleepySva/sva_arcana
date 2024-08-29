@@ -1,0 +1,44 @@
+{
+  "objectName" : "workshop_auto_shop",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A crafting station.",
+  "shortdescription" : "Titancorp Credit Shop",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1000,
+  
+  "lightColor" : [100, 50, 120],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/arcana/arcana_crafting_trading/titancorp.config",
+	"filter" : ["arcana_titancorp_crafting_1"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "left.png:<color>.<frame>", "fullbright" : true }, { "image" : "left_fb.png:<color>.<frame>"} ],
+      "direction" : "left",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

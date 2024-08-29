@@ -1,0 +1,75 @@
+{
+  "type" : "arcana_tenant_titancorpEngineer",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"],
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberengineer"],
+          [1, "crewmembermechanic"]
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm here to ensure everything runs smoother than a quantum processor on a good day.",
+            "If it's broken, I can fix it or make it better.",
+            "Titancorp sure knows how to keep us busy. Anything you need while I'm around?",
+            "Ever seen a megafactory up close? I used to be in the thick of it at Titancorp.",
+            "After years at Titancorp, I can fix just about anything. Old habits die hard, I guess.",
+            "I still remember the smell of fresh metal and oil...",
+            "I’ve been tinkering with old tech lately, amazing what you can create with a little imagination.",
+            "You know, nothing beats the feeling of a good cup of coffee after a long shift.",
+            "You ever think about how different life could be if you just took a different path one day?",
+            "If you're ever in need of a distraction, I've got a few factory stories to share."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_architect_head", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "industrialcrewhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_architect_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_architect_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "workshop_axe_1",
+			  "workshop_axe_3",
+			  "workshop_assaultRifle_1",
+			  "workshop_pistol_1"
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_architect_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_architect_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "workshop_axe_1",
+			  "workshop_axe_3",
+			  "workshop_assaultRifle_1",
+			  "workshop_pistol_1"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

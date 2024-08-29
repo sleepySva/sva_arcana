@@ -1,0 +1,25 @@
+{
+  "objectName" : "workshop_table_2",
+  "colonyTags" : ["titancorp"],
+  "rarity" : "Rare",
+  "description" : "A simple Titancorp table.",
+  "shortdescription" : "Titancorp Table",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 90,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16352,
+  "materialName" : "empyrean_tile5",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "empyrean_tile5",
+  "description" : "A polished pillar tile.",
+  "shortdescription" : "Ark Pillar Tile",
+  "footstepSound" : "/sfx/blocks/footstep_stone3.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "empyrean_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 2305
+  }
+}

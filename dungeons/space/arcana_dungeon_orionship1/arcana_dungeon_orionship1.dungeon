@@ -1,0 +1,37 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_orionship1",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "ship" ],
+    "gravity" : 40,
+    "maxRadius" : 1000000,
+    "maxParts" : 2,
+    "protected" : true
+  },
+
+  "parts" : [
+
+    // SAFE ZONE
+    {
+      "name" : "safe-empty",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "/dungeons/space/hazards/safe-empty.json" ],
+      "chance" : 0,
+      "markDungeonId" : false
+    },
+
+    // COCKPIT
+    {
+      "name" : "ship",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "ship.json" ],
+      "chance" : 2
+    }
+  ]
+}

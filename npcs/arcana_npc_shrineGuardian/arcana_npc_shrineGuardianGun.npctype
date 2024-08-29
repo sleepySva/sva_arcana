@@ -1,0 +1,100 @@
+{
+  "type" : "arcana_npc_shrineGuardianGun",
+  "baseType" : "hostile",
+  
+  "dropPools" : [ "flowerBush" ],
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  
+      "attack" : {
+        "default" : {
+          "default" : [
+            "l..ve..",
+            "at...k..",
+			"p..t.ct..",
+			"f...ve...",
+			"g..rd.."
+          ]
+        }
+      }
+	  
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "plumeknighthead", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "novatier5achest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "humantier6apants", "parameters" : { "colorIndex" : 1 } }
+            ],
+	        "back" : [
+              { "name" : "eyeback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+			  "durasteelrevolver"
+            ],
+            "alt" : [
+			  "commonlargeshield"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+  
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 140.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.2
+      },
+      "fireResistance" : {
+        "baseValue" : 0.2
+      },
+      "iceResistance" : {
+        "baseValue" : 0.2
+      },
+      "poisonResistance" : {
+        "baseValue" : 0.2
+      },
+      "electricResistance" : {
+        "baseValue" : 0.2
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "electricStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

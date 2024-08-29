@@ -1,0 +1,21 @@
+{
+  "projectileName" : "arcana_boss_ursa_2",
+  "image" : "mechteslabolt.png",
+  "animationCycle" : 0.15,
+  "timeToLive" : 3.0,
+  "frameNumber" : 4,
+  "speed" : 20,
+  "damagePoly" : [ [-6, 0], [0, 3], [6, 0], [0, -3] ],
+  "piercing" : false,
+  "flippable" : true,
+  "damageKind" : "electric",
+  "lightColor" : [80, 40, 140],
+  "statusEffects" : ["overload"],
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity"
+}

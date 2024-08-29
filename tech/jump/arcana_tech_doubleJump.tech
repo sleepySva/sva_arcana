@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_tech_doubleJump",
+  "type" : "legs",
+
+  "scripts" : ["multijump.lua"],
+  "animator" : "multijump.animation",
+
+  "description" : "This tech allows you to do an extra jump in the air!",
+  "shortDescription" : "Double Jump",
+  "rarity" : "Legendary",
+  "icon" : "/tech/doublejump.png",
+
+  "chipCost" : 0,
+
+  "multiJumpCount" : 2,
+  "multiJumpModifier" : 1.0
+}

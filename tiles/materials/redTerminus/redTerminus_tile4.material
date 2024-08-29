@@ -1,0 +1,21 @@
+{
+  "materialId" : 16367,
+  "materialName" : "redTerminus_tile4",
+  "particleColor" : [255, 0, 0, 255],
+  "itemDrop" : "redTerminus_tile4",
+  "description" : "A hard crystal native to the Terminus.",
+  "shortdescription" : "Red Crystal Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 14,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "redTerminus_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2001
+  }
+}

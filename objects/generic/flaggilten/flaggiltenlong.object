@@ -1,0 +1,40 @@
+{
+  "objectName" : "flaggiltenlong",
+  "colonyTags" : ["gilten"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "teleporter",
+  "category" : "teleportMarker",
+  "price" : 70,
+  
+  "description" : "An Gilten flag, with the symbol of the Collective.",
+  "shortdescription" : "Long Gilten Flag",
+  "race" : "gilten",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "flaggiltenlong.png:<color>.<frame>",
+      "flipImages" : true,
+      "direction" : "left",
+      "imagePosition" : [-17, 0],
+      "frames" : 6,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "flaggiltenlong.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [1, 0],
+      "frames" : 6,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+  //"soundEffect" : "/sfx/objects/flag_flap_loop.ogg"
+}

@@ -1,0 +1,22 @@
+{
+  "projectileName" : "arcana_monster_cerueonCrab_projectile_1",
+  "physics" : "rain",
+  "timeToLive" : 2.0,
+  "image" : "icerain.png",
+  "animationCycle" : 1,
+  "lightColor" : [60, 90, 110],
+  "frameNumber" : 1,
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/icerain_impact.ogg" ]
+    }
+  ],
+  "speed" : 30,
+  "power" : 30,
+  "damageKind" : "ice",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "statusEffects" : [ "frostslow" ],
+  "emitters" : [ "icetrail" ]
+}

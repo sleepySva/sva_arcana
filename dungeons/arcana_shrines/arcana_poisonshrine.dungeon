@@ -1,0 +1,43 @@
+{
+  "metadata" : {
+    "name" : "arcana_poisonshrine",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	"poison",
+	"empty",
+	"empty2"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "poison",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "poison.json" ]
+    },
+    {
+      "name" : "empty",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "empty.json" ]
+    },
+    {
+      "name" : "empty2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "empty2.json" ]
+    }
+  ]
+}

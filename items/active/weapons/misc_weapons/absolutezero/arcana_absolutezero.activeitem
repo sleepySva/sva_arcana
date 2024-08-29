@@ -1,0 +1,52 @@
+{
+  "itemName" : "arcana_absolutezero",
+  "price" : 800,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A greatspear that has been enchanted by ice magic.",
+  "shortdescription" : "Absolute Zero",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "tooltipFields" : {
+	"subtitle" : "Greatspear"
+  },
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire2" : [ "/sfx/melee/spear_flurry.ogg" ],
+      "fire3" : [ "/sfx/melee/spear_flurry.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "ice",
+
+  "primaryAbilityType" : "arcana_greatspear_projcombo",
+  "primaryAbility" : {
+    "fireTime" : 1.1,
+    "baseDps" : 12.0,
+	"projectileType" : "icetravelingswoosh",
+	"projectileOffset" : [0.4, -0.4],
+    "projectileParameters" : {
+      "baseDamage" : 12
+    },
+    "damageConfig" : {
+      "damageSourceKind" : "icespear"
+    }
+  },
+  
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

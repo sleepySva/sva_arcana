@@ -1,0 +1,21 @@
+{
+  "materialId" : 16362,
+  "materialName" : "automated_tile3",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "automated_tile1",
+  "description" : "An unknown material.",
+  "shortdescription" : "Gnosti Ore",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "automated_tile3.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4724
+  }
+}

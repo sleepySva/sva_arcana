@@ -1,0 +1,21 @@
+{
+  "materialId" : 16353,
+  "materialName" : "empyrean_tile6",
+  "particleColor" : [192, 142, 74, 255],
+  "itemDrop" : "empyrean_tile6",
+  "description" : "A block of leaves.",
+  "shortdescription" : "Empyrean Leaf Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 2,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "empyrean_tile6.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 3515
+  }
+}

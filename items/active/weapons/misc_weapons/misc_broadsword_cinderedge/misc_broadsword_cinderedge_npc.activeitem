@@ -1,0 +1,153 @@
+{
+  "itemName" : "misc_broadsword_cinderedge_npc",
+  "price" : 2400,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The beauty of raging flames, revealed by the edge of the Cinderege when it once set an entire city ablaze.",
+  "shortdescription" : "Cinderedge",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Claymore"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "arcana_cinderedge_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.7,
+    "baseDps" : 10.2,
+    "damageConfig" : {
+      "damageSourceKind" : "firebroadsword"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 45,
+        "weaponRotation" : 60,
+        "allowRotate" : true,
+        "allowFlip" : true,
+		"twoHanded" : false
+      },
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : 45,
+        "weaponRotation" : 60,
+        "endArmRotation" : 135,
+        "endWeaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.05,
+        "armRotation" : 100,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : -55,
+        "endArmRotation" : -10,
+        "endWeaponRotation" : -65,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.05,
+        "armRotation" : -10,
+        "weaponRotation" : -65,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : -55,
+        "weaponRotation" : -65,
+        "endArmRotation" : 90,
+        "endWeaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire2" : {
+        "duration" : 0.2,
+        "armRotation" : -90,
+        "weaponRotation" : -190,
+        "endArmRotation" : -15,
+        "endWeaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : -15,
+        "weaponRotation" : -55,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup3" : {
+        "duration" : 0.2,
+        "armRotation" : -15,
+        "weaponRotation" : -55,
+        "endArmRotation" : 90,
+        "endWeaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.3,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "endArmRotation" : -55,
+        "endWeaponRotation" : -65,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "altAbilityType" : "arcana_generic_ability_blink",
+  "altAbility" : {
+    "maxDistance" : 18
+  },
+  
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

@@ -1,0 +1,20 @@
+{
+  "materialId" : 16355,
+  "materialName" : "workshop_tile11",
+  "itemDrop" : "workshop_tile11",
+  "shortdescription" : "Sloped Girder",
+  "description" : "A strong reinforced girder.",
+  "footstepSound" : "/sfx/blocks/footstep_girder.ogg",
+  "category": "supports",
+  "health" : 4,
+
+  "renderTemplate" : "/tiles/arcana_railtemplate.config",
+  "renderParameters" : {
+    "texture" : "workshop_tile11.png",
+    "variants" : 1,
+    "multiColored" : true,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "zLevel" : 0
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "itemName" : "solar_glaive_1",
+  "price" : 0,
+  "level" : 9,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "An ancient glaive, forged to burn all away in the face of the heavenly sun.",
+  "shortdescription" : "^orange;Sundragon^reset;",
+  "tooltipKind" : "arcana_sword",
+  "category" : "spear",
+  "tooltipFields" : {
+	"subtitle" : "Glaive"
+  },
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_hammer_fire1.ogg", "/sfx/melee/swing_hammer_fire2.ogg", "/sfx/melee/swing_hammer_fire3.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_hammer_fire1.ogg", "/sfx/melee/swing_hammer_fire2.ogg", "/sfx/melee/swing_hammer_fire3.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_hammer_fire1.ogg", "/sfx/melee/swing_hammer_fire2.ogg", "/sfx/melee/swing_hammer_fire3.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_hammer_fire1.ogg", "/sfx/melee/swing_hammer_fire2.ogg", "/sfx/melee/swing_hammer_fire3.ogg" ],
+      "fire5" : [ "/sfx/melee/swing_hammer_fire1.ogg", "/sfx/melee/swing_hammer_fire2.ogg", "/sfx/melee/swing_hammer_fire3.ogg" ],
+      "fire6" : [ "/sfx/melee/swing_hammer_fire1.ogg", "/sfx/melee/swing_hammer_fire2.ogg", "/sfx/melee/swing_hammer_fire3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "arcana_fireglaive_combo",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 11.0
+  },
+  "altAbilityType" : "arcana_glaive_chargeslash",
+  "altAbility" : {
+    "projectileType" : "arcana_firetravelingswooshalt3",
+	"baseDamage" : 11,
+    "energyUsage" : 160,
+    "cooldownTime" : 1.8
+  },
+  
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

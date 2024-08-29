@@ -1,0 +1,23 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 7.0,
+      "particles" : [
+        {
+          "particle" : "dripblood"
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [130, 0, 0]
+    }
+  },
+  "sounds" : {
+    "burn" : [ "/sfx/projectiles/bloodvomit1.ogg" ]
+  }
+}

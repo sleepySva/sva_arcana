@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_status_voidphase",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "arcana_resistance_light",
+        "amount" : 0.1
+      },
+      {
+        "stat" : "arcana_status_radiance_immunity",
+        "amount" : 1.0
+      }
+    ]
+	
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Voidphase: ^green;+10% Light RES, Radiance Immunity^reset;",
+  "icon" : "/items/generic/other/arcana_voidphasePotion.png"
+}

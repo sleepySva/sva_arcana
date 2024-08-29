@@ -1,0 +1,65 @@
+{
+  "type" : "arcana_npc_orion_shipcrew",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "dialog" : {
+	
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Our robots are scarily efficient at their jobs... maybe they'll replace us all someday.",
+            "The Orion has been collecting data on everything and everyone for a long time, allowing them to predict what the customers want at all times.",
+            "People have forsaken their privacy long ago for Orion and other megacorp's services. Perhaps the Coalition was an inevitable future that we all desired."
+          ]
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "arcana_armor_offworld_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_offworld_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "orion_pistol_1"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 140.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.2
+      },
+      "protection" : {
+        "baseValue" : 1.2
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

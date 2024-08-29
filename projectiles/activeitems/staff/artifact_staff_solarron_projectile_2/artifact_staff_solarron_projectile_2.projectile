@@ -1,0 +1,34 @@
+{
+  "projectileName" : "artifact_staff_solarron_projectile_2",
+  "image" : "fireshockwave.png",
+  "animationCycle" : 0.5,
+  "animationLoops" : false,
+  "timeToLive" : 0.5,
+  "frameNumber" : 5,
+  "power" : 50,
+  "speed" : 0,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "damagePoly" : [ [-4, 11], [4, 11], [4, -11], [-4, -11] ],
+  "lightColor" : [255, 150, 150],
+  "damageKind" : "fire",
+  "statusEffects" : [
+    "burning"
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 4,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "burningvehicleflamesfront"
+        }
+      ]
+    }
+  ],
+  "emitters" : ["barrierflames"]
+}

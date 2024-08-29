@@ -1,0 +1,22 @@
+{
+  "frameGrid" : {
+    "size" : [363, 16],
+    "dimensions" : [1, 4],
+
+    "names" : [
+      [ "beamwindup.1" ],
+      [ "beamwindup.2" ],
+      [ "beam.1" ],
+      [ "beam.2" ]
+    ]
+  },
+  "aliases" : {
+    "beamwindup.3" : "beamwindup.1",
+    "beamwindup.4" : "beamwindup.2",
+
+    "beamwinddown.1" : "beamwindup.2",
+    "beamwinddown.2" : "beamwindup.1",
+    "beamwinddown.3" : "beamwindup.2",
+    "beamwinddown.4" : "beamwindup.1"
+  }
+}

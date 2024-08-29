@@ -1,0 +1,20 @@
+{
+  "materialId" : 16854,
+  "materialName" : "arcana_platform_icePlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_icePlatform",
+  "shortdescription" : "Ice Platform",
+  "description" : "A platform of solid ice.",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_icePlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

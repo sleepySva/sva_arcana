@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_chargeflowPotion",
+  "rarity" : "Uncommon",
+  "price" : 400,
+  "category" : "medicine",
+  "tooltipKind" : "arcana_base_generic",
+  "inventoryIcon" : "arcana_chargeflowPotion.png",
+  
+  "description" : "A potion for negating the overflowing energy dischared by the Superstorm Stars.
+^green;Grants +10% Electric RES and Supercharged protection for 2 minutes.^reset;",
+
+  "shortdescription" : "^#000000;^reset;Chargeflow Potion",
+  "effects" : [ [
+      {
+        "effect" : "arcana_status_chargeflow"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+  ]
+}

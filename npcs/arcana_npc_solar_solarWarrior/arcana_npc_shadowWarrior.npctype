@@ -1,0 +1,104 @@
+{
+  "type" : "arcana_npc_shadowWarrior",
+  "baseType" : "hostile",
+  
+  "dropPools" : [ "goodWeapon" ],
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  
+      "attack" : {
+        "default" : {
+          "default" : [
+		  
+            "...",
+            "...",
+			"...",
+			"...",
+			"...",
+			"...",
+            "...",
+            "..."
+			
+          ]
+        }
+      }
+	  
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_aeternus_head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_aeternus_chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_aeternus_legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+			  "horizon_hammer_1"
+            ],
+			"sheathedprimary" : [ 
+              { "name" : "arcana_spell_generic_shadowFire" }
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "movementParameters" : {
+    "mass" : 1.0,
+    "runSpeed" : 14.0
+  },
+  
+  "statusControllerSettings" : {    
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+  
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 600.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 40.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 40.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "electricStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "arcana_resistance_light" : {
+        "baseValue" : -0.4
+      },
+      "arcana_resistance_abyss" : {
+        "baseValue" : 0.4
+      }
+    }
+  }
+}

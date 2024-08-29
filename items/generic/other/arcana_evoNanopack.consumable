@@ -1,0 +1,28 @@
+{
+  "itemName" : "arcana_evoNanopack",
+  "rarity" : "Essential",
+  "price" : 1400,
+  "category" : "medicine",
+  "tooltipKind" : "arcana_base_generic",
+  "inventoryIcon" : "arcana_evoNanopack.png",
+  
+  "description" : "A nanopack developed by Ecolife that can fully restore most lifeforms.
+^green;Restores 450 Health over 1 second.^reset;
+^yellow;Cooldown: 24s^reset;",
+
+  "shortdescription" : "^#ffffff;Aion Nanopack^reset;",
+  "effects" : [ [
+      {
+        "effect" : "arcana_status_heal_evoNanopack"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "nanowrapheal",
+    "arcana_status_heal_nanopack",
+	"arcana_status_heal_energizedNanopack",
+	"arcana_status_heal_neoNanopack",
+	"arcana_status_heal_evoNanopack"
+  ]
+}

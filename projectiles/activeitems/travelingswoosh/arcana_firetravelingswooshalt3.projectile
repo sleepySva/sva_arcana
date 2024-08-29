@@ -1,0 +1,72 @@
+{
+  "projectileName" : "arcana_firetravelingswooshalt3",
+  "image" : "arcana_firetravelingswooshalt.png",
+  "animationCycle" : 0.3,
+  "timeToLive" : 1.0,
+  "frameNumber" : 1,
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "speed" : 50,
+  "damagePoly" : [ [-40, 24.5], [3.5, 24.5], [15.5, 21.5], [28.5, 15.5], [36.5, 7.5], [40.5, -1.5], [40.5, -12.5], [32.5, -24.5], [-12, -24.5] ],
+  "animationLoops" : true,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "emitters" : [ "largefireswoosh" ],
+  "damageKind" : "firebroadsword",
+  "statusEffects" : [
+    "burning"
+  ],
+  "lightColor" : [191, 103, 2],
+  "pointLight" : true,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/travelingswoosh/arcana_firetravelingswooshalttrail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    },
+	{
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "arcana_firetravelingswoosh",
+	  "fuzzAngle" : 20,
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.2
+    },
+	{
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "arenaflame",
+	  "fuzzAngle" : 20,
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.2,
+	  "inheritSpeedFactor" : 1.0
+    }
+  ],
+  "actionOnReap" : [
+    {
+	  "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config"
+    }
+  ],
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 100,
+  "rotationRate" : 1.4,
+  "trackingLimit" : 400
+}

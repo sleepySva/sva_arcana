@@ -1,0 +1,327 @@
+{
+  "type" : "arcana_monster_swordConjurerBoss",
+  "shortdescription" : "Sword Conjurer",
+  "description" : "One of the Golden Forest's sentinel, who protects the holy grounds.",
+
+  "categories" : [ "arcana_monster_swordConjurerBoss" ],
+  "parts" : [ "body" ],
+
+  "animation" : "animation.animation",
+
+  "dropPools" : [ { "default" : "money" } ],
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/arcana_monster_shielded.lua"
+    ],
+	
+	"shieldStatus" : "arcana_status_shielded_aurea",
+	"shieldHealthPercent" : 0.5,
+    
+    "damageBar" : "default", 
+
+    "behavior" : "monster",
+
+	"aggressive" : true,
+
+    "seeThroughLiquid" : true,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 40,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 80,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+	  
+      "concurrentActions" : [
+      ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 30,
+            "minimumRange" : 0,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 1.1,
+
+            "projectileType" : "arcana_monster_swordConjurer_projectile_1",
+			"projectileCount" : 1,
+            "projectileInterval" : 0.1,
+            "projectileParameters" : {
+			  "renderLayer" : "foregroundEntity",
+			  "rotationRate" : 0.4,
+			  "speed" : 0.01
+            },
+			"inaccuracy" : 0.1,
+            "fireOffsets" : [[6, 5],[12, 5],[9, 8]],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "firewinddown",
+            "winddownTime" : 0.7
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 30,
+            "minimumRange" : 0,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 1.1,
+
+            "projectileType" : "arcana_monster_swordConjurer_projectile_1",
+			"projectileCount" : 1,
+            "projectileInterval" : 0.1,
+            "projectileParameters" : {
+			  "renderLayer" : "foregroundEntity",
+			  "rotationRate" : 0.4,
+			  "speed" : 0.01
+            },
+			"inaccuracy" : 0.1,
+            "fireOffsets" : [[-6, 5],[-12, 5],[-9, 8]],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "firewinddown",
+            "winddownTime" : 0.7
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 12.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 30,
+            "minimumRange" : 0,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 1.1,
+
+            "projectileType" : "arcana_monster_swordConjurer_projectile_1",
+			"projectileCount" : 4,
+            "projectileInterval" : 0.2,
+            "projectileParameters" : {
+			  "renderLayer" : "foregroundEntity",
+			  "rotationRate" : 0.1,
+			  "speed" : 0.01
+            },
+			"inaccuracy" : 0.5,
+            "fireOffsets" : [[2, 8],[-2, 8]],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "firewinddown",
+            "winddownTime" : 2.1
+          }
+        },
+        {
+          "name" : "action-fire",
+          "cooldown" : 7.0,
+          "parameters" : {
+            "requireLineOfSight" : false,
+            "maximumRange" : 40,
+            "minimumRange" : 0,
+            "windupStopForce" : 50,
+            "windupState" : "firewindup",
+            "windupTime" : 1.1,
+
+            "projectileType" : "poisonguardiandamagearea",
+			"projectileCount" : 1,
+            "projectileInterval" : 0.3,
+            "projectileParameters" : {
+			  "renderLayer" : "foregroundEntity",
+			  "speed" : 12
+            },
+			"inaccuracy" : 0.0,
+            "fireOffsets" : [[0, 0],[0, 0]],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+
+            "winddownState" : "firewinddown",
+            "winddownTime" : 1.4
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 4,
+            "maxRange" : 8
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,4],
+            "groundDistance" : 8,
+            "ceilingDistance" : 8,
+            "xVelocity" : 2,
+            "yVelocity" : 10
+          }
+        }
+      ],
+
+      "concurrentHostileActions" : [
+        {
+          "name" : "action-spawncompanions",
+          "parameters" : {
+            "maxCount" : 2,
+            "spawnCooldown" : 10,
+            "monsterType" : "gleap"
+          }
+        }
+      ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-2.0, -2.0], [2.0, -2.0], [2.0, 2.0], [-2.0, 2.0] ],
+      "damage" : 4,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "arcana_light",
+      "knockback" : 8,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-2, -2, 2, 2],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-2.0, -4.0], [2.0, -4.0], [2.0, 3.0], [-2.0, 3.0] ],
+
+      "mass" : 0.8,
+      "walkSpeed" : 2,
+      "runSpeed" : 8,
+      "gravityEnabled" : false,
+
+      "airFriction" : 1,
+      "airForce" : 20,
+      "flySpeed" : 8
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.0,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 28
+        },
+        "maxHealth" : {
+          "baseValue" : 400
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.4
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.2
+        },
+        "fireResistance" : {
+          "baseValue" : -0.2
+        },
+        "iceResistance" : {
+          "baseValue" : 0.2
+        },
+        "electricResistance" : {
+          "baseValue" : 0.8
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.2
+        },
+        "arcana_resistance_light" : {
+          "baseValue" : 0.8
+        },
+        "arcana_resistance_abyss" : {
+          "baseValue" : -0.2
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -4],
+    "capturable" : false,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

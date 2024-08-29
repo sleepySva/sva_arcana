@@ -1,0 +1,58 @@
+{
+  "projectileName" : "arcana_boss_fireKnight_projectile_4",
+  "image" : "firetravelingswoosh.png",
+  "animationCycle" : 0.8,
+  "timeToLive" : 0.8,
+  "frameNumber" : 5,
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "speed" : 80,
+  "orientationLocked" : true,
+  "damagePoly" : [ [-40, 24.5], [3.5, 24.5], [15.5, 21.5], [28.5, 15.5], [36.5, 7.5], [40.5, -1.5], [40.5, -12.5], [32.5, -24.5], [-12, -24.5] ],
+  "animationLoops" : true,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "emitters" : [ "largefireswoosh" ],
+  "damageKind" : "firebroadsword",
+  "statusEffects" : [
+    "burning"
+  ],
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "periodicActions" : [
+    {
+      "time" : 0.3,
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+		{
+			"action" : "projectile",
+			"type" : "firepart5",
+			"fuzzAngle" : 360,
+			"inheritDamageFactor" : 0.2
+		}
+      ]
+    },
+    {
+      "time" : 0.1,
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+		{
+			"action" : "projectile",
+			"type" : "fireplasmaexplosionstatus",
+			"fuzzAngle" : 360,
+			"inheritDamageFactor" : 0.4
+		}
+      ]
+    }
+  ],
+  "renderLayer" : "foregroundEntity",  
+  
+  "lightColor" : [191, 103, 2],
+  "pointLight" : true,
+  "knockback" : 10,
+  "knockbackDirectional" : true
+}

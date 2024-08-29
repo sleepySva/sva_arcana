@@ -1,0 +1,105 @@
+{
+  "type" : "arcana_npc_shadowGuardian",
+  "baseType" : "hostile",
+  
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  
+      "attack" : {
+        "default" : {
+          "default" : [
+		  
+            "...",
+            "...",
+			"...",
+			"...",
+			"...",
+			"...",
+            "...",
+            "..."
+			
+          ]
+        }
+      }
+	  
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "darkdisguisehead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "darkdisguisechest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "darkdisguiselegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+			  "npcpetcapturepod",
+              "npcdagger",
+              "npcaxe",
+              "npcshortsword",
+              "npcbroadsword",
+              "npchammer",
+              "npcspear"
+            ],
+			"sheathedprimary" : [ 
+              { "name" : "arcana_spell_generic_shadowFire" }
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+  
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 260.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 40.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 20.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "iceStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "electricStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "poisonStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "arcana_resistance_light" : {
+        "baseValue" : -0.6
+      },
+      "arcana_resistance_abyss" : {
+        "baseValue" : 0.6
+      }
+    }
+  }
+}
