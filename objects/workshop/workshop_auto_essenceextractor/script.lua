@@ -38,7 +38,6 @@ function output(state)
   for i=1, world.containerSize(entity.id()) do
     -- Export first avaliable item found
 	if world.containerItemAt(entity.id(), i-1) ~= nil and i >= 2 then
-	  --sb.logInfo(dump(world.containerItemAt(entity.id(), i-1)))
 	  outputFromSlot(i-1)
 	  return
 	end

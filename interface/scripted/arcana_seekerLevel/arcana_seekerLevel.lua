@@ -67,8 +67,6 @@ end
 
 function displayStats()
   local playerlevel = player.currency("arcana_seekerlevel")
-  sb.logInfo(dump(self.stats))
-  sb.logInfo("-----")
   for i=1,self.max do 
     sb.logInfo("---")
     sb.logInfo("i: "..i)
@@ -76,7 +74,6 @@ function displayStats()
 	  sb.logInfo("stat: "..self.dict[v.stat].." amount: +"..v.amount)
 	end
   end
-  sb.logInfo("-----")
 end
 
 function populateList()
