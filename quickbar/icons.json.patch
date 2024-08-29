@@ -1,18 +1,18 @@
 [
   {
     "op": "add",
-    "path": "/items/arcana_quickbar_arcanaCollections",
+    "path": "/items/arcana_quickbar_arcanaUpdates",
     "value": {
-      "label": "^#ded695;Arcana Collections^white;",
-      "icon": "/quickbar/arcana_quickbar_arcanaCollections.png",
-      "action": [ "pane", "/interface/scripted/arcana_collections/arcana_collections_gui.config" ]
+      "label": "^orange;Arcana Updates^reset;",
+      "icon": "/quickbar/arcana_quickbar_arcanaUpdates.png",
+      "action": [ "pane", "/interface/scripted/arcana_updates/arcana_updates_gui.config" ]
     }
   },
   {
     "op": "add",
     "path": "/items/arcana_quickbar_galacticAtlas",
     "value": {
-      "label": "^#ded695;Galactic Atlas^white;",
+      "label": "^orange;Galactic Atlas^reset;",
       "icon": "/quickbar/arcana_quickbar_galacticAtlas.png",
       "action": [ "pane", "/interface/scripted/arcana_galacticAtlas/arcana_galacticAtlas.config" ]
     }

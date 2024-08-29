@@ -8,6 +8,7 @@ function init() ini()
     if yv == nil then
       player.setProperty("arcana_version", currentVersion)
       yv = currentVersion
+	  player.interact("scriptPane", interface)
     end
     if yv < currentVersion then
       sb.logInfo(string.format("[Arcana] Updating this character from %s to %s!", yv, currentVersion))
