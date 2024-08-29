@@ -4,5 +4,5 @@ if cursor and player.swapSlotItem() == nil then activeItem.setCursor(cursor..".c
 end
 function uninit() activeItem.setCursor() end
 function activate()
-  activeItem.interact("scriptPane", "/interface/scripted/xrc_arcana_bag/"..b..".config")
+  activeItem.interact("scriptPane", "/interface/scripted/arcana_bag/"..b..".config")
 end

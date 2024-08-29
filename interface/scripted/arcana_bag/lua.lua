@@ -1,4 +1,4 @@
-require "/interface/scripted/xrc_arcana_bag/LAJ_slot.lua"
+require "/interface/scripted/arcana_bag/LAJ_slot.lua"
 
 function init()
     s = config.getParameter("bagSfx","/assetmissing.wav")
