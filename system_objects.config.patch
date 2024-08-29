@@ -25,5 +25,81 @@
         "description": "A friendly small Arcanian ship. Its captain has initiated communications and invited you for a visit."
       }
     }
+  },
+  {
+    "op": "add",
+    "path": "/arcana_dungeon_orionship1",
+    "value": {
+      "warpAction": "InstanceWorld:arcana_dungeon_orionship1",
+      "threatLevel": 1,
+      "skyParameters": {
+        "seed": 0,
+        "horizonClouds": false,
+        "horizonImages": [
+          {
+            "left": "/celestial/system/ships/shiphorizonleft.png",
+            "right": "/celestial/system/ships/shiphorizonright.png"
+          }
+        ]
+      },
+      "moving": true,
+      "speed": 15,
+      "orbitRange": [1, 1],
+      "lifeTime": [1500, 2100],
+      "parameters": {
+        "icon": "/celestial/system/ships/arcana_ship_orion.png",
+        "displayName": "Orion Transport Ship",
+        "description": "A friendly small Orion ship. Its captain has initiated communications and welcomes you for a visit."
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/arcana_dungeon_chefresearchship",
+    "value": {
+      "warpAction": "InstanceWorld:arcana_dungeon_chefresearchship",
+      "threatLevel": 6,
+      "skyParameters" : {
+        "seed" : 0,
+        "horizonClouds" : false,
+        "horizonImages" : [ { "left": "/celestial/system/anomaly/anomalyhorizonleft.png", "right": "/celestial/system/anomaly/anomalyhorizonright.png" } ]
+      },
+      "moving" : false,
+      "speed" : 0,
+      "orbitRange" : [0, 0],
+      "lifeTime": [1500, 2100],
+      "parameters" : {
+        "icon" : "/celestial/system/anomaly/arcana_yellowanomaly.png",
+        "displayName" : "???",
+        "description" : "Celestial interference prevents a detailed scan, but there are anomalous energy readings here that warrant investigation."
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/arcana_dungeon_anarkyonsship",
+    "value": {
+      "warpAction": "InstanceWorld:arcana_dungeon_anarkyonsship",
+      "threatLevel": 6,
+      "skyParameters": {
+        "seed": 0,
+        "horizonClouds": false,
+        "horizonImages": [
+          {
+            "left": "/celestial/system/ships/shiphorizonleft.png",
+            "right": "/celestial/system/ships/shiphorizonright.png"
+          }
+        ]
+      },
+      "moving": true,
+      "speed": 15,
+      "orbitRange": [1, 1],
+      "lifeTime": [1500, 2100],
+      "parameters" : {
+        "icon" : "/celestial/system/ships/arcana_ship_anarkyons.png",
+        "displayName" : "Anarkyons Ship",
+        "description" : "Whoever's flying this ship, we shouldn't get close without being prepared for a fight."
+      }
+    }
   }
 ]

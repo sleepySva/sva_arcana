@@ -2,7 +2,7 @@
   "type" : "arcana_npc_horizon_omenkyrie",
   "baseType" : "hostile",
   
-  "dropPools" : [ "money" ],
+  "dropPools" : [ "arcana_npcdrops_horizon_specialist" ],
 
   "scriptConfig" : {
     "dialog" : {
@@ -94,19 +94,19 @@
         "baseValue" : 1.0
       },
       "fireResistance" : {
-        "baseValue" : 0.9
+        "baseValue" : 0.6
       },
       "iceResistance" : {
-        "baseValue" : 0.9
+        "baseValue" : 0.6
       },
       "poisonResistance" : {
-        "baseValue" : 0.9
+        "baseValue" : 0.6
       },
       "electricResistance" : {
-        "baseValue" : 0.9
+        "baseValue" : 0.6
       },
       "physicalResistance" : {
-        "baseValue" : 0.9
+        "baseValue" : 0.8
       },
       "arcana_resistance_light" : {
         "baseValue" : -1.0

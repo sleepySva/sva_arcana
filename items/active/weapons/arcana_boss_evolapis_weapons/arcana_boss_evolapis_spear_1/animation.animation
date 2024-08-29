@@ -11,8 +11,8 @@
           "idle" : {
           },
           "fire" : {
-            "frames" : 3,
-            "cycle" : 0.08,
+            "frames" : 5,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -60,7 +60,7 @@
           "offset" : [0.0, 1.0],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0],
-          "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]]
+          "damageArea" : [[0, 0.5], [-0.6, 1.5], [-0.6, 3.75], [0, 5.25], [0.6, 3.75], [0.6, 1.5]]
         },
         "partStates" : {
           "blade" : {
@@ -120,8 +120,8 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/spear/swoosh/<elementalType>swoosh.png:<frame>",
-                "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
+                "image" : "/items/active/weapons/melee/spear/swoosh/arcana_spear_swoosh_split.png:<frame>",
+                "damageArea" : [[-3.5, 0], [-1, 1], [2, 1], [4, 0], [2, -1], [-1, -1]]
               }
             }
           }

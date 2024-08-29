@@ -62,7 +62,7 @@
   "undergroundPlaceables" : {
 
     "grassMod" : [ "ash" ],
-    "grassModDensity" : 0.8,
+    "grassModDensity" : 0.4,
 
     "items" : [
       {
@@ -190,6 +190,20 @@
       },
       {
         "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.25, "smokegen" ],[0.25, "volcanictrap" ],[0.25, "ancientbust" ],[0.25, "ancientpillar" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
         "priority" : 99.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:denseSmall",
@@ -205,6 +219,15 @@
 
         "type" : "microdungeon",
         "microdungeons" : [ "undergroundencounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 99,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:randomEncounter",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_fireshrine" ]
       }
     ]
   },

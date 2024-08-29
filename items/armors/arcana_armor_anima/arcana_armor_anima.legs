@@ -5,9 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "A pair of leggings, crafted from anima bars.",
+  "description" : "A pair of leggings, crafted from anima bars. ^green;+2% Fire RES.^reset;",
   "shortdescription" : "Anima Leggings",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
@@ -33,6 +33,11 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 16
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "fireResistance",
+      "amount" : 0.02
     }
   ],
 

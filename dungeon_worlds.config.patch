@@ -1,4 +1,85 @@
 [
+
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_testspace",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_chefresearchship",
+      "threatLevel" : 6,
+      "gravity" : 0,
+      "airless" : true,
+      "worldSize" : [1300, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/tranquility-base.ogg",
+      "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_orionship1",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_orionship1",
+      "threatLevel" : 1,
+      "gravity" : 0,
+      "airless" : true,
+      "worldSize" : [1300, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/tranquility-base.ogg",
+      "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_chefresearchship",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_chefresearchship",
+      "threatLevel" : 6,
+      "gravity" : 0,
+      "airless" : true,
+      "worldSize" : [1300, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/lava-exploration2.ogg",
+      "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_anarkyonsship",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_anarkyonsship",
+      "threatLevel" : 6,
+      "gravity" : 0,
+      "airless" : true,
+      "worldSize" : [1300, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/lava-exploration1.ogg",
+      "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  },
+
   {
     "op" : "add",
     "path" : "/arcana_dungeon_novaStation_1",
@@ -17,6 +98,44 @@
       "ambientLightLevel" : [55, 25, 85],
       "biome" : "arcana_superstormExpanse_night",
       "musicTrack" : "/music/planetarium.ogg"
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_dungeon_lighthaven",
+    "value" : {
+      "primaryDungeon" : "arcana_dungeon_lighthaven",
+	  "weatherPool" : [
+		[1.0, "clear"]
+	  ],
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [2000, 900],
+      "dungeonBaseHeight" : 300,
+	  "dungeonSurfaceHeight" : 130,
+      "ambientLightLevel" : [20, 20, 20],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/planetarium.ogg"
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_mission_seekerIntro",
+    "value" : {
+      "primaryDungeon" : "arcana_mission_seekerIntro",
+	  "weatherPool" : [
+		[1.0, "clear"]
+	  ],
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [3000, 1800],
+      "dungeonBaseHeight" : 900,
+	  "dungeonSurfaceHeight" : 130,
+      "ambientLightLevel" : [20, 20, 20],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : ""
     }
   },
   

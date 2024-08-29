@@ -5,9 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "chestwear",
-  "description" : "'Omae wa mou shindeiru.'",
+  "description" : "An enchanted helmet with slight fire protection. ^green;+2% Fire RES.^reset;",
   "shortdescription" : "Anima Chestplate",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : {
     "body" : "chest.png",
@@ -42,6 +42,11 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 16
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "fireResistance",
+      "amount" : 0.02
     }
   ],
 

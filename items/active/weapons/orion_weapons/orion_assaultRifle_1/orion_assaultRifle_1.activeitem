@@ -42,7 +42,7 @@
   },
 
   "baseOffset" : [0.7, 0.2],
-  "muzzleOffset" : [3.1, 0.3],
+  "muzzleOffset" : [2.7, 0.3],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -75,8 +75,9 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "weaponOffset" : [-0.4, 0],
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -84,8 +85,9 @@
       },
       "cooldown" : {
         "duration" : 0.05,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "weaponOffset" : [-0.2, 0],
         "twoHanded" : true,
 
         "allowRotate" : false,

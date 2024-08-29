@@ -1,11 +1,11 @@
 {
   "objectName" : "horizon_storage_1",
-  "colonyTags" : ["misc","storage"],
+  "colonyTags" : ["horizon","storage"],
   "rarity" : "Rare",
-  "description" : "A desk.",
+  "description" : "A desk made from necroium.",
   "shortdescription" : "Horizon Desk",
   "race" : "generic",
-  "price" : 100,
+  "price" : 140,
   
   "category" : "storage",
   "objectType" : "container",
@@ -42,7 +42,7 @@
 
   "openSounds" : [ "/sfx/objects/bunkercabinet_open.ogg" ],
   "closeSounds" : [ "/sfx/objects/bunkercabinet_close.ogg" ],
-  "slotCount" : 32,
+  "slotCount" : 16,
   "uiConfig" : "/interface/chests/chest<slots>.config",
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600

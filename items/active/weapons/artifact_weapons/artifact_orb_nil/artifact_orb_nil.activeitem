@@ -1,11 +1,11 @@
 {
   "itemName" : "artifact_orb_nil",
-  "price" : 60000,
+  "price" : 800,
   "maxStack" : 1,
-  "level" : 9,
-  "rarity" : "Essential",
-  "description" : "A device extracting power from a fragment of the Zero Mirror.",
-  "shortdescription" : "^yellow;Nil^#reset;",
+  "level" : 5,
+  "rarity" : "Legendary",
+  "description" : "A device extracting power from a fragment of the mirrorscape.",
+  "shortdescription" : "Frostshard Lamp",
   "category" : "wand",
   "tooltipFields" : {"subtitle" : "Orb"},
   "twoHanded" : false,
@@ -82,7 +82,7 @@
   "primaryAbility" : {
 
     "name" : "Mirage Mirrors",
-	"energyCost" : 120,
+	"energyCost" : 60,
     "maxCastRange" : 40,
 	
 	"projectileType" : ["artifact_orb_nil_projectile_1","artifact_orb_nil_projectile_2"],
@@ -97,7 +97,7 @@
     "projectileDelayEach" : 0.06,
 
     "projectileParameters" : {
-      "baseDamage" : 16
+      "baseDamage" : 12
     },
 
     "stances" : {

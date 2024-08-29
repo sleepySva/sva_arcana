@@ -41,9 +41,9 @@
 		"config" : "/interface/arcana/arcana_crafting_anvil/arcana_crafting_anvil_1.config",
 		"filter" : ["arcana_crafting_anvil_1"],
         "upgradeMaterials" : [
-			{ "item" : "arcana_bar_arcaniumBar", "count" : 18 },
-			{ "item" : "battery", "count" : 1 },
-			{ "item" : "arcana_misc_copperComponent", "count" : 1 }
+			{ "item" : "arcana_bar_arcaniumBar", "count" : 16 },
+			{ "item" : "durasteelbar", "count" : 8 },
+			{ "item" : "goldbar", "count" : 4 }
         ]
 	  },
 
@@ -90,7 +90,7 @@
         "placementImagePosition" : [-40, -0],
 
         "description" : "A modern fabricator that can produce enhanced arcane equipment.",
-        "shortdescription" : "^#bbbdce;Orion Fabricator^reset;"
+        "shortdescription" : "^#bbbdce;Modern Fabricator^reset;"
       },
 
 	  "interactData" : {
@@ -101,11 +101,7 @@
 			{ "item" : "hephaestus_wand_2", "count" : 1 },
 			{ "item" : "thalassa_spear_2", "count" : 1 },
 			{ "item" : "gaea_axe_2", "count" : 1 },
-			{ "item" : "aeolus_shortbow_2", "count" : 1 },
-			{ "item" : "havencrest_broadsword_1", "count" : 1 },
-			{ "item" : "monarch_lance_1", "count" : 1 },
-			{ "item" : "horizon_hammer_1", "count" : 1 },
-			{ "item" : "orion_greatsword_1", "count" : 1 }
+			{ "item" : "aeolus_shortbow_2", "count" : 1 }
         ]
 	  },
 

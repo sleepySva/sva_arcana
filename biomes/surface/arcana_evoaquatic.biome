@@ -63,14 +63,17 @@
           "stats" : {
             "poisonStatusImmunity" : {
               "baseValue" : 1.0
-            }
+            },
+			"poisonResistance" : {
+			  "baseValue" : 0.6
+			}
           }
         }
     }
   },
 
   // hue shift options
-  "hueShiftOptions" : [-180, -135, -90, -45, 0, 45, 90, 135, 180],
+  "hueShiftOptions" : [0],
 
   "weather" : [
     [0, [
@@ -80,32 +83,18 @@
 
   "skyOptions" : [
     {
-      // sunny green day, darkgreen/yellow sunrise and purple/blue sunset
-      "mainColor" : [255, 255, 255],
-
-      "morningColors" : [ [68, 164, 84], [243, 201, 115] ],
-      "dayColors" : [ [115, 255, 204], [255, 255, 255] ],
-      "eveningColors" : [ [43, 17, 118], [244, 161, 231] ],
-      "nightColors" : [ [24, 118, 53, 80], [58, 132, 70, 160] ],
-
-      "morningLightColor" : [20, 91, 100],
-      "dayLightColor" : [200, 200, 200],
-      "eveningLightColor" : [160, 120, 180],
-      "nightLightColor" : [40, 110, 60]
-    },
-    {
       // sunny lilac day, blue/orange sunrise and blue/green sunset
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [0, 24, 55], [255, 140, 49] ],
-      "dayColors" : [ [176, 115, 255], [255, 255, 255] ],
+      "dayColors" : [ [191, 196, 116], [196, 116, 116] ],
       "eveningColors" : [ [100, 86, 173], [0, 222, 73] ],
-      "nightColors" : [ [24, 98, 53, 80], [58, 132, 70, 160] ],
+      "nightColors" : [ [14, 88, 43, 80], [58, 132, 70, 160] ],
 
       "morningLightColor" : [140, 71, 0],
-      "dayLightColor" : [200, 200, 200],
+      "dayLightColor" : [215, 190, 190],
       "eveningLightColor" : [160, 120, 180],
-      "nightLightColor" : [40, 110, 60]
+      "nightLightColor" : [20, 60, 0]
     }
   ],
 

@@ -1,4 +1,14 @@
 [
+
+  {
+    "op": "add",
+    "path": "/arcana_redTerminus",
+    "value": [
+		[0.15, "arcana_weather_redRain"],
+		[0.85, "clear"]
+    ]
+  },
+
   {
     "op": "add",
     "path": "/arcana_arcaneForest",
@@ -108,9 +118,8 @@
 		[0.05, "windstorm"],
 		[0.35, "rain"],
 		[0.125, "storm"],
-		[0.025, "acidrain"],
 		[0.40, "drizzle"],
-		[0.05, "clear"]
+		[0.075, "clear"]
     ]
   }
   

@@ -1,11 +1,11 @@
 {
   "objectName" : "orion_storage_2",
-  "colonyTags" : ["misc","storage"],
+  "colonyTags" : ["orion","storage"],
   "rarity" : "Rare",
-  "description" : "A small cabinet with a white metal surface.",
-  "shortdescription" : "Orion Mini Cabinet",
+  "description" : "A cabinet with a built in smart sensor.",
+  "shortdescription" : "Orion Smart Cabinet",
   "race" : "generic",
-  "price" : 100,
+  "price" : 140,
   
   "category" : "storage",
   "objectType" : "container",
@@ -14,26 +14,28 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "orion_storage_2.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-8, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "imagePosition" : [-24, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
 
     },
 	{
-	  "imageLayers" : [ { "image" : "orion_storage_2.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "right",
-      "imagePosition" : [-8, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "imagePosition" : [-24, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
 
     }
   ],

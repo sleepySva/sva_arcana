@@ -1,17 +1,22 @@
 {
   "name" : "arcana_automated_underground_1",
-  "friendlyName" : "arcana_automated_underground_1",
+  "friendlyName" : "Misty Cavern",
 
   "spawnProfile" : {
     "groups" : [
       {
-        "select" : 2,
+        "select" : 1,
         "pool" : [ 
-          [ 0.2, "poptop" ],
-          [ 0.2, "poptop" ],
-          [ 0.2, "skimbus" ],
-          [ 0.2, "skimbus" ],
-          [ 0.2, "adultpoptop" ]
+          [ 0.2, "fennix" ],
+          [ 0.2, "pipkin" ],
+          [ 0.2, "taroni" ],
+          [ 0.2, "voltip" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [ 
+          [ 1.0, "arcana_cerueonCrab" ]
         ]
       },
       {
@@ -21,11 +26,11 @@
     ]
   },
 
-  "parallax" : "/parallax/underground/underground5a.parallax",
+  "parallax" : "/parallax/underground/underground5c.parallax",
 
   "mainBlock" : "automated_tile2",
-  "subBlocks" : [ "sewage", "automated_tile1", "rustyblock" ],
-  "ores" : "arcana_automated_ores_underground_2",
+  "subBlocks" : [ "alienrock", "rustyblock", "cerueon_tile2" ],
+  "ores" : "arcana_automated_ores_underground_1",
 
   "ambientNoises" : {
     "day" : {
@@ -38,19 +43,63 @@
 
   "musicTrack" : {
     "day" : {
-      "tracks" : [ "/music/tenacity.ogg", "/music/drift-far.ogg" ]
+      "tracks" : [ "/music/cinders.ogg", "/music/outisde-the-citadel.ogg" ]
     },
     "night" : {
-      "tracks" : [ "/music/tenacity.ogg", "/music/drift-far.ogg" ]
+      "tracks" : [ "/music/cinders.ogg", "/music/outisde-the-citadel.ogg" ]
     }
   },
 
   "undergroundPlaceables" : {
 
-    "grassMod" : [ "snow" ],
+    "grassMod" : [ "arcana_mod_cerueonGrass" ],
     "grassModDensity" : 0.6,
 
     "items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "arcana_vine_blue" ],
+        "treeFoliageList" : [ "arcana_foliage_blue" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "alienbush",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [
+			[0.5, "arcana_biome_smoke_lunar" ],
+			[0.5, "arcana_biome_spark_cerueon" ]
+			],
+            "parameters" : { }
+          }
+        ]
+      },
       {
         "mode" : "floor",
         "priority" : 1.0,
@@ -61,6 +110,20 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundOreRocks",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "explosivebarrel" ], [0.2, "scorchedlandmine" ], [0.2, "scorchedlandmine" ], [0.2, "scorchedlandmine" ], [0.2, "scorchedlandmine" ] ],
             "parameters" : { }
           }
         ]
@@ -181,7 +244,16 @@
         "distribution" : "/biomes/distributions.config:denseSmall",
 
         "type" : "microdungeon",
-        "microdungeons" : [ "underground5amicrodungeons" ]
+        "microdungeons" : [ "arcana_workshop_dungeon_3" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 99.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_nodes" ]
       },
       {
         "mode" : "floor",
@@ -191,6 +263,15 @@
 
         "type" : "microdungeon",
         "microdungeons" : [ "undergroundencounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 99,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:randomEncounter",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_electricshrine" ]
       }
     ]
   },

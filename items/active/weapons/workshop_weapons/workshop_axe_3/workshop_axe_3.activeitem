@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A heavy axe utilized by the elites of the Section 8 of the Workshop of Gears.",
-  "shortdescription" : "^#ffa93d;WGS8^reset; Produtar Prototype E",
+  "shortdescription" : "^#ffa93d;TC^reset; Produtar Prototype O",
   "tooltipKind" : "sword",
   "category" : "axe",
   "twoHanded" : false,
@@ -38,7 +38,7 @@
   	"projectileCount" : 3,
     "projectileDistance" : 1.0,
 	"projectileParameters" : {
-		"baseDamage" : 6,
+		"baseDamage" : 7,
 		"emitters" : ["sparks"],
 		"speed" : 110,
 		"actionOnReap" : [
@@ -49,7 +49,7 @@
 		]
     },
 	
-    "fireTime" : 0.4,
+    "fireTime" : 0.5,
     "baseDps" : 20.0,
     "damageConfig" : {
       "knockback" : 80

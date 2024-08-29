@@ -1,10 +1,10 @@
 {
   "itemName" : "workshop_assaultRifle_1",
-  "price" : 1000,
+  "price" : 1100,
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A dark rifle made from Dustrium.",
-  "shortdescription" : "^#ffa93d;WG^reset; Kerose Carbine",
+  "shortdescription" : "^#ffa93d;TC^reset; Forgeline",
   "tooltipKind" : "gun",
   "category" : "assaultRifle",
   "twoHanded" : true,
@@ -12,32 +12,53 @@
   "level" : 8,
 
   "inventoryIcon" : "workshop_assaultRifle_1.png",
-
+  
   "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "workshop_assaultRifle_1.png",
 	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [5.45, 0.15, 5.45, 0.15],
+        "particles" : [
+          { "particle" : "discardedbullet" }
+        ]
+      },
+     "altMuzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [5.45, 0.15, 5.45, 0.15],
+        "particles" : [
+          { "particle" : "discardedbullet" }
+        ]
+      }
+    },
     "animatedParts" : {
 	  "parts" : {
 	    "fullbright" : {
 		  "properties" : {
 		    "offset" : [1.0, 0.2]
 		  }
-		}
+		},
+        "muzzleFlash" : {
+          "properties" : {
+            "offset" : [0.3, -0.1]
+		  }
+        }
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/uzi1.ogg"]
+      "fire" : ["/sfx/gun/sniper3.ogg"]
     }
   },
 
   "baseOffset" : [1.0, 0.2],
-  "muzzleOffset" : [2.6, 0.4],
+  "muzzleOffset" : [2.6, 0.22],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -49,8 +70,8 @@
 
     "fireTime" : 0.08,
     "baseDps" : 30.6,
-    "energyUsage" : 22.0,
-    "inaccuracy" : 0.01,
+    "energyUsage" : 24.0,
+    "inaccuracy" : 0.03,
 
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -71,17 +92,19 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "weaponOffset" : [-0.1, 0],
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "duration" : 0.11,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "weaponOffset" : [-0.1, 0],
         "twoHanded" : true,
 
         "allowRotate" : false,

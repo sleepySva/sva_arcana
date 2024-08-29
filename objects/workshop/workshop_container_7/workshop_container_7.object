@@ -1,11 +1,11 @@
 {
   "objectName" : "workshop_container_7",
-  "colonyTags" : ["misc","storage"],
+  "colonyTags" : ["titancorp","storage"],
   "rarity" : "Rare",
-  "description" : "A metal cabinet utilized by the Workshop of Gears.",
-  "shortdescription" : "Workshop Cabinet",
+  "description" : "A metal weapons locker for use by Titancorp guards.",
+  "shortdescription" : "Titancorp Weapons Locker",
   "race" : "generic",
-  "price" : 100,
+  "price" : 220,
   
   "category" : "storage",
   "objectType" : "container",
@@ -42,7 +42,7 @@
 
   "openSounds" : [ "/sfx/objects/bunkercabinet_open.ogg" ],
   "closeSounds" : [ "/sfx/objects/bunkercabinet_close.ogg" ],
-  "slotCount" : 32,
+  "slotCount" : 16,
   "uiConfig" : "/interface/chests/chest<slots>.config",
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600

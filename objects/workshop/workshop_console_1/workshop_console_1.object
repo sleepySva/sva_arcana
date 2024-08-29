@@ -1,44 +1,79 @@
 {
   "objectName" : "workshop_console_1",
-  "colonyTags" : ["misc","wired"],
+  "colonyTags" : ["light", "titancorp"],
   "rarity" : "Rare",
-  "description" : "A black console made of metal.",
-  "shortdescription" : "Small Workshop Console",
+  "description" : "A standard Titancorp console.",
+  "shortdescription" : "Small Titancorp Console",
   "race" : "generic",
 
-  "category" : "wire",
-  "price" : 70,
+  "category" : "light",
+  "price" : 140,
+  "lightColor" : [137, 59, 41],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
 
-  "lightColor" : [140, 80, 30],
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "workshop_console_1.png:<color>.off",
+      "image" : "workshop_console_1.png:<color>.on",
       "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 2],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "workshop_console_1.png:<color>.on",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 2],
+
+      "direction" : "right",
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
   ],
 
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/arcana_console_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "switchState" : {
+          "states" : {
+            "on" : {
+              "frames" : 4,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "workshop_console_1.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
   "scripts" : [
     "/objects/wired/switch/switch.lua"
   ],
   "scriptDelta" : 5,
-
-  "animation" : "/objects/wired/switch/switchtoggle.animation",
-  "animationCustom" : {
-    "sounds" : {
-      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
-      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
-    }
-  },
-
-  "animationParts" : {
-    "switch" : "workshop_console_1.png"
-  },
-  "animationPosition" : [0, 0],
+  
+  "defaultSwitchState" : true,
+  "interactive" : true,
 
   "outputNodes" : [ [0, 0] ]
-  
 }

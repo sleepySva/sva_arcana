@@ -19,187 +19,49 @@
     },
     {
       "kind" : "junglefront",
-      "offset" : [0, 390],
+      "offset" : [0, 500],
       "parallax" : 1.09,
-      "directives" : "?saturation=-10?brightness=-30",
+      "directives" : "?brightness=-15",
       "lightMapped" : true
     },
     {
-      "kind" : "junglelargetree",
-      "offset" : [0, 90],
-      "parallax" : 1.11,
-      "directives" : "?saturation=-10?brightness=-35",
+      "kind" : "arcana_evoaquatic_grass",
+      "offset" : [0, 135],
+      "parallax" : 1.2,
+      "lightMapped" : true
+    },
+    {
+      "kind" : "arcana_evoaquatic_front",
+      "offset" : [0, 380],
+      "parallax" : 1.5,
       "lightMapped" : true
     },
     {
       "kind" : "godrays",
       "offset" : [0, 90],
-      "parallax" : 1.211,
+      "parallax" : 1.111,
       "timeOfDayCorrelation" : "dayVisible",
       "unlit" : true
     },
     {
-      "kind" : "junglelargetree",
-      "offset" : [0, 90],
-      "directives" : "?saturation=-10?brightness=-40",
-      "parallax" : 1.2
-    },
-    {
-      "kind" : "junglesmalltree",
-      "offset" : [0, 90],
-      "directives" : "?saturation=-10?brightness=-45",
-      "parallax" : 1.3
-    }, 
-    {
-      "kind" : "junglesmalltree",
-      "offset" : [0, 90],
-      "directives" : "?saturation=-10?brightness=-50",
-      "parallax" : 1.4
-    }, 
-    {
-      "kind" : "jungletreesback",
-      "offset" : [0, 400],
-      "directives" : "?saturation=-10?brightness=-55",
-      "parallax" : 1.5
-    },
-    {
-      "kind" : "jungleback",
-      "offset" : [0, 350],
-      "parallax" : 2.5,
-      "fadePercent" : 0.02
-    },
-    {
-      "kind" : "jungleback",
-      "offset" : [0, 400],
-      "parallax" : 4,
-      "fadePercent" : 0.1
-    },
-	{
-      "kind" : "junglecanopy",
-      "offset" : [0, -175],
-      "parallax" : 1.1,
-      "directives" : "?saturation=-0?brightness=-40",
+      "kind" : "arcana_evoaquatic_back",
+      "offset" : [0, 370],
+      "parallax" : 3,
+      "directives" : "?saturation=-5?brightness=-10",
       "lightMapped" : true
     },
-	{
-      "kind" : "junglecanopy",
-      "offset" : [0, -175],
-      "parallax" : 1.21,
-      "directives" : "?saturation=-0?brightness=-50"
-    },
-	{
-      "kind" : "junglecanopy",
-      "offset" : [0, -175],
-      "parallax" : 1.31,
-      "directives" : "?saturation=-0?brightness=-60"
+    {
+      "kind" : "arcana_evoaquatic_back",
+      "offset" : [200, 305],
+      "parallax" : 5,
+      "directives" : "?saturation=-15?brightness=-30",
+      "lightMapped" : true
     },
     {
-      "kind" : "midnightbelow",
-      "offset" : [0, 350],
-      "noRandomOffset" : true,
-      "parallax" : [3, 3.001],
-      "nohueshift" : false
-    },
-    {
-      "kind" : "midnight1",
-      "offset" : [100, 400],
-      "noRandomOffset" : true,
-      "parallax" : [3, 3.003],
-      "nohueshift" : false
-    },
-    {
-      "kind" : "midnight2",
-      "offset" : [0, 225],
-      "noRandomOffset" : true,
-      "parallax" : [5, 5.001],
-      "nohueshift" : false,
-      "fadePercent" : 0.02
-    },
-    {
-      "kind" : "midnight3",
-      "offset" : [0, 140],
-      "parallax" : [7, 7],
-      "nohueshift" : false
-    },
-    {
-      "kind" : "clouds1",
-      "baseCount" : 2,
-      "offset" : [0, 525],
-      "parallax" : [8, 7],
-      "minSpeed" : -10000,
-      "maxSpeed" : -10000,
-      "fadePercent" : 0.04
-    },
-    {
-      "kind" : "midnightback",
-      "offset" : [50, 200],
-      "noRandomOffset" : true,
-      "parallax" : [10, 9.001],
-      "nohueshift" : true,
-      "fadePercent" : 0.05
-    },
-    {
-      "kind" : "midnightclouds",
-      "baseCount" : 2,
-      "offset" : [0, 440],
-      "parallax" : 15
-    },
-    {
-      "kind" : "midnightclouds",
-      "baseCount" : 2,
-      "offset" : [0, 440],
-      "parallax" : 15
-    },
-    {
-      "kind" : "midnightclouds2",
-      "baseCount" : 2,
-      "offset" : [0, 400],
-      "parallax" : 20
-    },
-    {
-      "kind" : "midnightclouds2",
-      "baseCount" : 2,
-      "offset" : [0, 400],
-      "parallax" : 20
-    },
-    {
-      "kind" : "midnightclouds3",
-      "baseCount" : 2,
-      "offset" : [0, 360],
-      "parallax" : 25
-    },
-    {
-      "kind" : "midnightclouds3",
-      "baseCount" : 2,
-      "offset" : [0, 360],
-      "parallax" : 25
-    },
-    {
-      "kind" : "clouds3",
-      "baseCount" : 2,
-      "offset" : [0, 120],
-      "parallax" : 9,
-      "minSpeed" : 5000,
-      "maxSpeed" : 10000,
-      "fadePercent" : 0.15
-    },
-    {
-      "kind" : "clouds2",
-      "baseCount" : 2,
-      "offset" : [0, 140],
-      "parallax" : 14,
-      "minSpeed" : 2000,
-      "maxSpeed" : 5000,
-      "fadePercent" : 0.06
-    },
-    {
-      "kind" : "clouds1",
-      "baseCount" : 2,
-      "offset" : [0, 150],
+      "kind" : "jungleback",
+      "offset" : [0, 355],
       "parallax" : 6,
-      "minSpeed" : 5000,
-      "maxSpeed" : 10000,
-      "fadePercent" : 0.04
+      "fadePercent" : 0.1
     },
     {
       "kind" : "clouds3",

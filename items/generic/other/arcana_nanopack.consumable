@@ -1,17 +1,16 @@
 {
   "itemName" : "arcana_nanopack",
   "rarity" : "Rare",
-  "price" : 500,
+  "price" : 400,
   "category" : "medicine",
   "tooltipKind" : "arcana_base_generic",
   "inventoryIcon" : "arcana_nanopack.png",
   
   "description" : "A modern solution for quick wound tending using restorative nanites.
-
 ^green;Restores 200 Health over 2 seconds.^reset;
 ^yellow;Cooldown: 30s^reset;",
 
-  "shortdescription" : "Nanopack",
+  "shortdescription" : "^#fefefe;Nanopack^reset;",
   "effects" : [ [
       {
         "effect" : "arcana_status_heal_nanopack"
@@ -23,6 +22,7 @@
     "nanowrapheal",
     "arcana_status_heal_nanopack",
 	"arcana_status_heal_energizedNanopack",
-	"arcana_status_heal_neoNanopack"
+	"arcana_status_heal_neoNanopack",
+	"arcana_status_heal_evoNanopack"
   ]
 }

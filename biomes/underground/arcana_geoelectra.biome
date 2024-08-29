@@ -33,10 +33,10 @@
 
   "ambientNoises" : {
     "day" : {
-      "tracks" : [ "/sfx/environmental/desert_underground.ogg" ]
+      "tracks" : [ "/music/Six-Umbrellas-Metropolis.ogg" ]
     },
     "night" : {
-      "tracks" : [ "/sfx/environmental/desert_underground.ogg" ]
+      "tracks" : [ "/music/Six-Umbrellas-Metropolis.ogg" ]
     }
   },
 
@@ -222,12 +222,21 @@
       },
       {
         "mode" : "floor",
-        "priority" : 99.0,
+        "priority" : 98.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:denseSmall",
 
         "type" : "microdungeon",
         "microdungeons" : [ "arcana_geoelectra_dungeon_1" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 98.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_nodes" ]
       },
       {
         "mode" : "floor",
@@ -237,6 +246,15 @@
 
         "type" : "microdungeon",
         "microdungeons" : [ "undergroundencounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 99,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:randomEncounter",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_electricshrine" ]
       }
     ]
   },

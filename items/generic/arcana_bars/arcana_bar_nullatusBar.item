@@ -1,10 +1,12 @@
 {
   "itemName" : "arcana_bar_nullatusBar",
-  "price" : 3200,
+  "price" : 6400,
   "rarity" : "Essential",
+  "tooltipKind" : "arcana_base_ancient",
   "category" : "craftingMaterial",
   "inventoryIcon" : "arcana_bar_nullatusBar.png",
-  "description" : "A material radiating an overwhelming aura, its durability unknown.",
+  "description" : "A material for creating ^orange;Tier 9^reset; equipment, radiating an overwhelming aura.",
   "shortdescription" : "^#8b826f;Nullatus Bar^reset;",
-  "itemTags" : [ "reagent" ]
+  "itemTags" : [ "reagent" ],
+  "radioMessagesOnPickup" : [ "arcana_radiomessage_pickup_nullatusBar" ]
 }

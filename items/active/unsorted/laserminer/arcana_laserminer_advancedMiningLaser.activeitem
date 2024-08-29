@@ -1,11 +1,11 @@
 {
   "itemName" : "arcana_laserminer_advancedMiningLaser",
-  "price" : 3200,
+  "price" : 2200,
   "inventoryIcon" : "arcana_laserminer_advancedMiningLaser_body.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "The pinnacle of mining lasers, upgraded by advanced machinery parts.",
-  "shortdescription" : "Advanced Mining Laser",
+  "shortdescription" : "Master Mining Laser",
   "level" : 6,
   "category" : "Tool",
 
@@ -51,10 +51,10 @@
     "scripts" : ["/items/active/unsorted/laserminer/arcana_beammine.lua"],
     "class" : "BeamMine",
 
-    "beamLength" : 24,
-    "cooldownTime" : 0.7,
+    "beamLength" : 26,
+    "cooldownTime" : 0.8,
 
-    "energyUsage" : 30.0,
+    "energyUsage" : 20.0,
     "damageInterval" : 0.1,
     "tileDamage" : 30.0,
 	"tileRadius" : 3,

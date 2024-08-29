@@ -13,6 +13,9 @@
     "op": "add",
     "path": "/wordsList",
 	"value": {
+		"arcana_automated_underground_1" : { "word" : "arcana_automated_underground_1", "friendlyWord" : " Misty Cavern" },
+		"arcana_geoelectra" : { "word" : "arcana_geoelectra", "friendlyWord" : " Geoelectra" },
+		"arcana_mutatedCavern" : { "word" : "arcana_mutatedCavern", "friendlyWord" : " Mutated Cavern" },
 		"arcana_ashen" : { "word" : "arcana_ashen", "friendlyWord" : " Ashen" },
 		"arcana_cerueonFields" : { "word" : "arcana_cerueonFields", "friendlyWord" : " Cerueon Fields" },
 		"arcana_cindered" : { "word" : "arcana_cindered", "friendlyWord" : " Cindered" },
@@ -21,6 +24,11 @@
 		"arcana_dracoRidge" : { "word" : "arcana_dracoRidge", "friendlyWord" : " Draco Ridge" },
 		"arcana_eminsnowForest" : { "word" : "arcana_eminsnowForest", "friendlyWord" : " Eminsnow Forest" },
 		"arcana_jadeMorass" : { "word" : "arcana_jadeMorass", "friendlyWord" : " Jade Morass" },
+		
+		"arcana_redMoon" : { "word" : "arcana_redMoon", "friendlyWord" : " Red Moon" },
+		"arcana_frostMoon" : { "word" : "arcana_frostMoon", "friendlyWord" : " Frost Moon" },
+		"arcana_cyberMoon" : { "word" : "arcana_cyberMoon", "friendlyWord" : " Cyber Moon" },
+		"arcana_toxicMoon" : { "word" : "arcana_toxicMoon", "friendlyWord" : " Toxic Moon" },
 		
 		"arcana_arcaneForest" : { "word" : "arcana_arcaneForest", "friendlyWord" : " Arcane" },
 		"arcana_arcaneDesert" : { "word" : "arcana_arcaneDesert", "friendlyWord" : " Arcane Desert" },
@@ -58,6 +66,7 @@
 		"arcana_amorous" : { "word" : "arcana_amorous", "friendlyWord" : " Amorous" },
 		"arcana_ruinous" : { "word" : "arcana_ruinous", "friendlyWord" : " Ruinous" },
 		"arcana_nightmist" : { "word" : "arcana_nightmist", "friendlyWord" : " Nightmist" },
+		"arcana_redTerminus" : { "word" : "arcana_redTerminus", "friendlyWord" : " Red Terminus" },
 		"arcana_empyrean" : { "word" : "arcana_empyrean", "friendlyWord" : " Empyrean" },
 		"arcana_goldenLake" : { "word" : "arcana_goldenLake", "friendlyWord" : " Golden Lake" }
 	}
@@ -70,6 +79,13 @@
     "path": "/weatherThreatValues",
 	"value": {
 		"arcana_weather_lightDrizzle" : 1.0
+	}
+  },
+  {
+    "op": "add",
+    "path": "/weatherThreatValues",
+	"value": {
+		"arcana_weather_redRain" : 3.0
 	}
   },
   {
@@ -102,6 +118,14 @@
 		"icon" : "/interface/cockpit/weather/arcana_weather_ruinousStorm.png"
 	}
   },
+  {
+    "op": "add",
+    "path": "/displayWeathers/arcana_weather_redRain",
+	"value": {
+		"displayName" : "Red Rain",
+		"icon" : "/interface/cockpit/weather/arcana_weather_redRain.png"
+	}
+  },
   
   // Dungeons
   {
@@ -117,6 +141,46 @@
     "path": "/displayDungeons/arcana_dungeon_misc_2",
 	"value": {
 		"description" : "An apex compound of sorts. Signs of the Miniknog are detected.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_redTerminus_dungeon_1",
+	"value": {
+		"description" : "...",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknownred.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_redTerminus_dungeon_3",
+	"value": {
+		"description" : "A small structure of Ancient origin. A special object appears to be nested within.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_ice_dungeon_1",
+	"value": {
+		"description" : "An icy castle. Signs of Glitch-like lifeforms are detected.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_volcanic_dungeon_1",
+	"value": {
+		"description" : "A small ruins made from stone is detected here.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_empyrean_dungeon_4",
+	"value": {
+		"description" : "A small Aurea landing area.",
 		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
 	}
   },
@@ -252,8 +316,16 @@
     "op": "add",
     "path": "/displayDungeons/arcana_workshop_dungeon_1",
 	"value": {
-		"description" : "An industrial compound supervised by Section 8 of the Workshop of Gears.",
-		"icon" : "/interface/cockpit/dungeons/arcana_workshop_dungeon_1.png"
+		"description" : "An industrial compound supervised by Titancorp's employees. Entry is prohibited.",
+		"icon" : "/interface/cockpit/dungeons/arcana_titancorp.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_anarkyon_dungeon_1",
+	"value": {
+		"description" : "An abandoned factory. A number of lifeforms are detected within.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
 	}
   },
   {
@@ -270,6 +342,22 @@
 	"value": {
 		"description" : "A floating fort-like structure. High Electric energy are detected within.",
 		"icon" : "/interface/cockpit/dungeons/arcana_superstormExpanse_dungeon_1.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_superstormExpanse_dungeon_3",
+	"value": {
+		"description" : "A city filled with neon lights.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_superstormExpanse_dungeon_4",
+	"value": {
+		"description" : "A large power pylon, occupied by the Orion.",
+		"icon" : "/interface/cockpit/dungeons/arcana_orion.png"
 	}
   },
   {
@@ -316,10 +404,10 @@
 		  [60, 213, 0 ], //TL 4
 		  [180, 213, 0], //TL 5
 		  [213, 195, 0], //TL 6
-		  [213, 140, 0], //TL 7
-		  [194, 160, 83], //TL 8
-		  [191, 63, 179], //TL 9
-		  [180, 180, 180] //TL 10
+		  [224, 0, 0], //TL 7
+		  [224, 0, 0], //TL 8
+		  [224, 0, 0], //TL 9
+		  [224, 0, 0] //TL 10
 		],
 		"moon" : [
 		  [160, 160, 160]
@@ -338,9 +426,9 @@
 		  "Extreme",
 		  "Inconceivable",
 		  "Unreal",
-		  "Unfathomable",
-		  "Phantasmal",
-		  "Terminal"
+		  "Unreal+",
+		  "Unreal++",
+		  "Unreal+++"
 		],
 		"moon" : [
 		  "Unknown"
@@ -360,10 +448,10 @@
 			[140, 213, 0 ], // T4
 			[213, 140, 0], // T5
 			[180, 50, 0], // T6
-			[104, 42, 42], // T7
-			[132, 122, 123], // T8
-			[194, 14, 90], // T9
-			[88, 88, 88], // T10
+			[224, 0, 0], // T7
+			[224, 0, 0], // T8
+			[224, 0, 0], // T9
+			[224, 0, 0], // T10
 			[88, 88, 88] // ????????
 		]
 	}
@@ -379,11 +467,11 @@
 			"Moderate", // T4
 			"Dangerous", // T5
 			"Extreme", // T6
-			"Brutal", // T7
-			"Merciless", // T8
-			"Diabolical", // T9
-			"Ancient", // T10
-			"Ancient" // ???????????????
+			"Merciless", // T7
+			"Merciless+", // T8
+			"Merciless++", // T9
+			"Merciless+++", // T10
+			"Unknown" // ???????????????
 		],
 		"friendly" : "None"
 	}
@@ -463,6 +551,106 @@
     "path": "/starTypeNames/arcana_star_mirage",
     "value": "Mirage Star"
   },
+  
+  // Red Moon
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_redMoon",
+    "value": [
+      "A lonely ^#949493;moon^white; with ^red;no breathable atmosphere^white;; the sky is open to the stars, there is fuel below the ground. Likelihood of feeling lonesome and desolate: 92%.",
+      "This ^#949493;moon^white; supports no life and has ^red;no atmosphere^white;. However, fuel is abundant here - scans indicate that there is a wealth of it buried below the surface. ",
+      "This vacant ^#949493;moon^white; has ^red;no breathable atmosphere^white;, but there are caverns below ground that contain vast fuel deposits. In summation: useful, but not enticing."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_redMoon",
+    "value": "Red Moon"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_redMoon",
+    "value": [
+      187,
+      33,
+      33
+    ]
+  },  
+  
+  // Frost Moon
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_frostMoon",
+    "value": [
+      "A lonely ^#949493;moon^white; with ^red;no breathable atmosphere^white;; the sky is open to the stars, there is fuel below the ground. Likelihood of feeling lonesome and desolate: 92%.",
+      "This ^#949493;moon^white; supports no life and has ^red;no atmosphere^white;. However, fuel is abundant here - scans indicate that there is a wealth of it buried below the surface. ",
+      "This vacant ^#949493;moon^white; has ^red;no breathable atmosphere^white;, but there are caverns below ground that contain vast fuel deposits. In summation: useful, but not enticing."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_frostMoon",
+    "value": "Frost Moon"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_frostMoon",
+    "value": [
+      146,
+      235,
+      252
+    ]
+  }, 
+
+  // Cyber Moon
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_cyberMoon",
+    "value": [
+      "A lonely ^#949493;moon^white; with ^red;no breathable atmosphere^white;; the sky is open to the stars, there is fuel below the ground. Likelihood of feeling lonesome and desolate: 92%.",
+      "This ^#949493;moon^white; supports no life and has ^red;no atmosphere^white;. However, fuel is abundant here - scans indicate that there is a wealth of it buried below the surface. ",
+      "This vacant ^#949493;moon^white; has ^red;no breathable atmosphere^white;, but there are caverns below ground that contain vast fuel deposits. In summation: useful, but not enticing."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_cyberMoon",
+    "value": "Cyber Moon"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_cyberMoon",
+    "value": [
+      204,
+      126,
+      252
+    ]
+  },   
+  
+  // Toxic Moon
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_toxicMoon",
+    "value": [
+      "A lonely ^#949493;moon^white; with ^red;no breathable atmosphere^white;; the sky is open to the stars, there is fuel below the ground. Likelihood of feeling lonesome and desolate: 92%.",
+      "This ^#949493;moon^white; supports no life and has ^red;no atmosphere^white;. However, fuel is abundant here - scans indicate that there is a wealth of it buried below the surface. ",
+      "This vacant ^#949493;moon^white; has ^red;no breathable atmosphere^white;, but there are caverns below ground that contain vast fuel deposits. In summation: useful, but not enticing."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_toxicMoon",
+    "value": "Toxic Moon"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_toxicMoon",
+    "value": [
+      255,
+      255,
+      143
+    ]
+  },   
 
   // Arcane Forest
   {
@@ -1460,6 +1648,29 @@
       77,
       196,
       181
+    ]
+  },
+  
+  // Red Terminus
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_redTerminus",
+    "value": [
+      "An unknown interference source has prevented S.A.I.L. from identifying signatures within the planet. Proceed with caution."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_redTerminus",
+    "value": "Red Terminus"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_redTerminus",
+    "value": [
+      255,
+      0,
+      0
     ]
   },
   

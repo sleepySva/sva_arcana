@@ -19,7 +19,7 @@
           },
           "fire" : {
             "frames" : 3,
-            "cycle" : 0.08,
+            "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -59,8 +59,9 @@
       "swoosh" : {
         "properties" : {
           "zLevel" : -1,
+		  "fullbright" : true,
           "centered" : true,
-          "offset" : [-2.25, 1.0],
+          "offset" : [-1.75, 1.0],
           "transformationGroups" : ["swoosh"],
           "rotationCenter" : [0, 0]
         },
@@ -75,7 +76,7 @@
             "fire" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/axe/swoosh/arcana_swoosh_axe_solar.png:<frame>",
-                "damageArea" : [[-2.25, 1.75], [-1, 2.25], [0.25, 2.25], [2, 1.5], [3.25, -0.125], [3.25, -1.25], [2.5, -2.5], [1.0, -2.5]]
+                "damageArea" : [[-1.75, 1.75], [-0.5, 2.25], [-0.25, 2.25], [1.5, 1.5], [2.75, -0.125], [2.75, -1.25], [2.0, -2.5], [0.5, -2.5]]
               }
             }
           }

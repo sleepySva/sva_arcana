@@ -1,22 +1,92 @@
 {
-  "arcana_treasure_general_liquidwater" : [
+  "arcana_treasure_general_ironore" : [
     [0, {
-      "fill" : [
-        { "item" : "liquidwater" }
+      "pool" : [
+        {"weight" : 0.2, "item" : ["ironore", 12]},
+        {"weight" : 0.2, "item" : ["ironore", 14]},
+		{"weight" : 0.2, "item" : ["ironore", 16]},
+		{"weight" : 0.2, "item" : ["ironore", 18]},
+		{"weight" : 0.2, "item" : ["ironore", 20]}
       ],
       "poolRounds" : [
-        [0.2, 10],
-        [0.2, 12],
-        [0.2, 14],
-        [0.2, 16],
-        [0.2, 18]
+        [1.0, 1]
+      ]
+    }]
+  ],
+  "arcana_treasure_general_rawDustrium" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.2, "item" : ["workshop_crafting_rawDustrium", 12]},
+        {"weight" : 0.2, "item" : ["workshop_crafting_rawDustrium", 14]},
+		{"weight" : 0.2, "item" : ["workshop_crafting_rawDustrium", 16]},
+		{"weight" : 0.2, "item" : ["workshop_crafting_rawDustrium", 18]},
+		{"weight" : 0.2, "item" : ["workshop_crafting_rawDustrium", 20]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  "arcana_treasure_general_galvasteelOre" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.2, "item" : ["arcana_ore_galvasteelOre", 12]},
+        {"weight" : 0.2, "item" : ["arcana_ore_galvasteelOre", 14]},
+		{"weight" : 0.2, "item" : ["arcana_ore_galvasteelOre", 16]},
+		{"weight" : 0.2, "item" : ["arcana_ore_galvasteelOre", 18]},
+		{"weight" : 0.2, "item" : ["arcana_ore_galvasteelOre", 20]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  "arcana_treasure_general_liquidwater" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.2, "item" : ["liquidwater", 10]},
+        {"weight" : 0.2, "item" : ["liquidwater", 11]},
+		{"weight" : 0.2, "item" : ["liquidwater", 12]},
+		{"weight" : 0.2, "item" : ["liquidwater", 13]},
+		{"weight" : 0.2, "item" : ["liquidwater", 14]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  "arcana_treasure_general_liquidoil" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.2, "item" : ["liquidoil", 10]},
+        {"weight" : 0.2, "item" : ["liquidoil", 11]},
+		{"weight" : 0.2, "item" : ["liquidoil", 12]},
+		{"weight" : 0.2, "item" : ["liquidoil", 13]},
+		{"weight" : 0.2, "item" : ["liquidoil", 14]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  "arcana_treasure_general_liquidfuel" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.2, "item" : ["liquidfuel", 6]},
+        {"weight" : 0.2, "item" : ["liquidfuel", 8]},
+		{"weight" : 0.2, "item" : ["liquidfuel", 10]},
+		{"weight" : 0.2, "item" : ["liquidfuel", 12]},
+		{"weight" : 0.2, "item" : ["liquidfuel", 14]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
       ]
     }]
   ],
   "arcana_treasure_general_books" : [
     [0, {
       "fill" : [
-        {"item" : ["bookpiles", 1]}
+        {"item" : ["bookpiles", 4]}
       ],
       "pool" : [
         {"weight" : 0.86, "item" : ["bookpiles", 1]},

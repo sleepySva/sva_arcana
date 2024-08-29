@@ -18,8 +18,6 @@
     ]
   },
 
-  "parallax" : "/parallax/surface/oceanfloor.parallax",
-
   "ambientNoises" : {
     "day" : {
       "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
@@ -38,10 +36,12 @@
     }
   },
 
-  "hueShiftOptions" : [-60, -45, 0, 45, 60],
+  "parallax" : "/parallax/underground/underground1a.parallax",
+
+  "hueShiftOptions" : [-5, -3, 0, 3, 5],
 
   "mainBlock" : "turbulent_tile1",
-  "subBlocks" : [ "mud", "sandstone01" ],
+  "subBlocks" : [ "mud", "turbulent_tile2" ],
   "ores" : "arcana_turbulent_ores_surface",
 
   "surfacePlaceables" : {
@@ -178,8 +178,20 @@
         "type" : "tree",
         "treeFoliageHueShiftMax" : 15,
         "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "kelp", "seaweed" ],
-        "treeFoliageList" : [ "flowy", "kelpy", "leafy", "wavy" ]
+        "treeStemList" : [ "kelp" ],
+        "treeFoliageList" : [ "flowy", "kelpy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 15,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "seaweed" ],
+        "treeFoliageList" : [ "leafy", "wavy" ]
       },
 
       {
@@ -213,7 +225,48 @@
             }
           }
         ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "embercoral1" ], [0.20, "embercoral2" ], [0.20, "embercoral3" ], [0.20, "embercoral4" ], [0.20, "embercoral5" ]]
+          }
+        ]
       }
     ]
+  },
+  "undergroundPlaceables" : {
+	"items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "wildernessvine" ],
+        "treeFoliageList" : [ "dreamy" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "swampvine" ],
+        "treeFoliageList" : [ "starry" ]
+      }
+	]
   }
 }

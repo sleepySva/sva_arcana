@@ -1,10 +1,10 @@
 {
   "itemName" : "workshop_pistol_2",
-  "price" : 1000,
+  "price" : 950,
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A pistol utilized by Section 8 of the Workshop of Gears.",
-  "shortdescription" : "^#ffa93d;WGS8^reset; Petrolle A2",
+  "shortdescription" : "^#ffa93d;TC^reset; Petrow A2",
   "tooltipKind" : "gun",
   "category" : "pistol",
   "twoHanded" : false,
@@ -19,7 +19,7 @@
     "middle" : "workshop_pistol_2.png",
 	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -28,16 +28,22 @@
 		  "properties" : {
 		    "offset" : [0.6, 0.2]
 		  }
-		}
+		},
+        "muzzleFlash" : {
+          "properties" : {
+            "offset" : [0.2, -0.35]
+		  }
+        }
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/plasma_ar4.ogg"]
+      "fire" : ["/sfx/gun/plasma_pistol2.ogg"]
     }
   },
 
+
   "baseOffset" : [0.6, 0.2],
-  "muzzleOffset" : [1.7, 0.2],
+  "muzzleOffset" : [1.7, 0.3],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -48,8 +54,8 @@
     "class" : "GunFire",
 
     "fireTime" : 1.2,
-    "baseDps" : 8.2,
-    "energyUsage" : 26.0,
+    "baseDps" : 7.8,
+    "energyUsage" : 36.0,
     "inaccuracy" : 0.004,
 
     "projectileCount" : 1,
@@ -71,17 +77,18 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
         "twoHanded" : false,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.25,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "duration" : 0.2,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : false,
 
         "allowRotate" : false,

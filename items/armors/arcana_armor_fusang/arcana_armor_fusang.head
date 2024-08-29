@@ -5,9 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headarmour",
-  "description" : "A Solar-forged armor that can withstand intense heat. ^green;+10% Solar and Fire res.^reset;",
+  "description" : "A Solar-forged armor that can withstand intense heat. ^green;+5% Fire res, and grants Burning and Lava immunity. +10% ATK when using Melee weapons.^reset;",
   "shortdescription" : "Fusang Helmet",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
@@ -36,15 +36,29 @@
       "amount" : 30
     },
     {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "fireResistance",
-      "amount" : 0.1
+	  "levelFunction" : "arcana_multiplier_static",
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+	  "levelFunction" : "arcana_multiplier_static",
+      "stat" : "lavaImmunity",
+      "amount" : 1.0
+    },
+    {
+	  "levelFunction" : "arcana_multiplier_static",
+      "stat" : "fireStatusImmunity",
+      "amount" : 1.0
     },
     {
       "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_solar",
-      "amount" : 0.1
+      "stat" : "fireResistance",
+      "amount" : 0.05
     }
+  ],
+ 
+  "statusEffects" : [
+    "arcana_status_weaponbuff"
   ],
   
   "colorOptions" : [

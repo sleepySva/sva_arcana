@@ -38,12 +38,12 @@
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/plasma_mp1.ogg","/sfx/gun/plasma_mp2.ogg","/sfx/gun/plasma_mp3.ogg"]
+      "fire" : ["/sfx/gun/plasma_ar4.ogg"]
     }
   },
 
   "baseOffset" : [1.1, 0.35],
-  "muzzleOffset" : [2.9, 0.4],
+  "muzzleOffset" : [2.5, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -53,15 +53,15 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.08,
-    "baseDps" : 54.0,
-    "energyUsage" : 74.0,
-    "inaccuracy" : 0.06,
+    "fireTime" : 0.09,
+    "baseDps" : 44,
+    "energyUsage" : 76.0,
+    "inaccuracy" : 0.05,
 
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "horizon_shotgun_1_projectile_1",
+    "projectileType" : "horizon_assaultRifle_2_projectile_1",
     "projectileParameters" : {
       "damageKind" : "shotgunbullet",
       "knockback" : 8
@@ -77,8 +77,9 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "weaponOffset" : [-0.1, 0],
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -86,8 +87,9 @@
       },
       "cooldown" : {
         "duration" : 0.10,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "weaponOffset" : [-0.1, 0],
         "twoHanded" : true,
 
         "allowRotate" : false,

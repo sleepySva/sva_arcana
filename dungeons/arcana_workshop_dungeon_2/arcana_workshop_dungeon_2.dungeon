@@ -9,7 +9,11 @@
 	"arcana_workshop_dungeon_2_part_1",
 	"arcana_workshop_dungeon_2_part_2",
 	"arcana_workshop_dungeon_2_part_3",
-	"arcana_workshop_dungeon_2_part_4"
+	"arcana_workshop_dungeon_2_part_4",
+	"arcana_workshop_dungeon_2_part_5",
+	"arcana_workshop_dungeon_2_part_6",
+	"arcana_workshop_dungeon_2_part_7",
+	"arcana_workshop_dungeon_2_part_8"
 	],
 
     "gravity" : 80,
@@ -46,7 +50,34 @@
         [ "maxSpawnCount", [1] ]
       ],
       "def" : [ "tmx", "arcana_workshop_dungeon_2_part_4.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_2_part_5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_2_part_5.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_2_part_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_2_part_6.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_2_part_7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_2_part_7.json" ]
+    },
+    {
+      "name" : "arcana_workshop_dungeon_2_part_8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "arcana_workshop_dungeon_2_part_8.json" ]
     }
-
   ]
 }

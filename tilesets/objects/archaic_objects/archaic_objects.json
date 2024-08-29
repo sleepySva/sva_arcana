@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":30,
+ "tilecount":32,
  "tileheight":256,
  "tileproperties":
     {
@@ -248,6 +248,22 @@
          "imagePositionY":"0",
          "object":"arcana_archaic_deco_12",
          "tilesetDirection":"right"
+        },
+     "30":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"arcana_archaic_deco_13",
+         "tilesetDirection":"right"
+        },
+     "31":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-144",
+         "imagePositionY":"0",
+         "object":"arcana_archaic_deco_14",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -371,6 +387,14 @@
      "29":
         {
          "image":"arcana_archaic_deco_12.png"
+        },
+     "30":
+        {
+         "image":"arcana_archaic_deco_13.png"
+        },
+     "31":
+        {
+         "image":"arcana_archaic_deco_14.png"
         }
     },
  "tilewidth":188

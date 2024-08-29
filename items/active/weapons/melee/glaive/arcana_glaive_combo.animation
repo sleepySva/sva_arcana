@@ -1,6 +1,7 @@
 {
   "globalTagDefaults" : {
-    "paletteSwaps" : ""
+    "paletteSwaps" : "",
+	"flipDirectives" : ""
   },
 
   "animatedParts" : {
@@ -11,37 +12,37 @@
           "idle" : {
           },
           "fire" : {
-            "frames" : 5,
-            "cycle" : 0.3,
-            "mode" : "transition",
-            "transition" : "idle"
-          },
-          "fire2" : {
-            "frames" : 4,
+            "frames" : 3,
             "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "idle"
           },
+          "fire2" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
           "fire3" : {
-            "frames" : 4,
+            "frames" : 3,
             "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "idle"
           },
           "fire4" : {
-            "frames" : 5,
-            "cycle" : 0.3,
+            "frames" : 3,
+            "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
           },
           "fire5" : {
-            "frames" : 4,
-            "cycle" : 0.3,
+            "frames" : 3,
+            "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
           },
 		  "fire6" : {
-            "frames" : 4,
+            "frames" : 3,
             "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
@@ -55,8 +56,8 @@
         "properties" : {
           "zLevel" : 0,
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
-          "offset" : [0, 0.1],
+          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>?<flipDirectives>",
+          "offset" : [0, 2.4],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0],
           "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
@@ -67,8 +68,8 @@
           "zLevel" : 1,
 		  "fullbright" : true,
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>?<directives>",
-          "offset" : [0, 0.1],
+          "image" : "<partImage><paletteSwaps>?<directives>?<flipDirectives>",
+          "offset" : [0, 2.4],
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0]
         }
@@ -91,44 +92,44 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_1/arcana_glaive_swoosh_green.png:<frame>",
-                "offset" : [3.0, 0.0],
-                "damageArea" : [ [-4, 1], [6, 1], [6, -1], [-4, -1] ]
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [0.4, -4.0],
+                "damageArea" : [[-3, -2], [-2, -3], [1, -3.5], [4.5, -2.0], [5.5, 0.25], [4.75, 2.25], [3.5, 3.25], [-1, 2.5]]
               }
             },
             "fire2" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_2/arcana_glaive_swoosh_green.png:<frame>",
-                "offset" : [5.0, 1.0],
-                "damageArea" : [[-5, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+                "image" : "swoosh_3.png:<frame>",
+                "offset" : [6.0, 0.0],
+                "damageArea" : [[-4, 1], [4.5, 1], [2.5, -2], [-4, -2]]
               }
             },
             "fire3" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_3/arcana_glaive_swoosh_green.png:<frame>",
-                "offset" : [1.0, 1.0],
-                "damageArea" : [[-5, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+                "image" : "swoosh_1.png:<frame>",
+                "offset" : [0.6, 3.4],
+                "damageArea" : [[-3, 2], [-2, 3], [1, 3.5], [4.5, 2.0], [5.5, -0.25], [4.75, -2.25], [3.5, -3.25], [-1, -2.5]]
               }
             },
             "fire4" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_1/arcana_glaive_swoosh_green.png:<frame>",
-                "offset" : [3.0, 0.0],
-                "damageArea" : [[-5, 1.6], [-2.0, 2], [2, 2], [3, 1.2], [5, -0.25], [5, -2.0], [3, -3.0], [0, -2.0]]
+                "image" : "swoosh_4.png:<frame>",
+                "offset" : [4.0, 0.0],
+                "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
               }
             },
             "fire5" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_4/arcana_glaive_swoosh_green.png:<frame>",
-                "offset" : [2.0, 1.0],
-                "damageArea" : [ [-4, 1], [6, 1], [6, -1], [-4, -1] ]
+                "image" : "swoosh_4.png:<frame>",
+                "offset" : [5.0, 0.0],
+                "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
               }
             },
             "fire6" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/glaive/swoosh_5/arcana_glaive_swoosh_green.png:<frame>",
-                "offset" : [2.0, 1.0],
-                "damageArea" : [[-5, -1.6], [-3.0, 2], [3, 4], [4, 2.2], [6, -0.25], [6, -2.0], [4, -3.0], [0, -2.0]]
+                "image" : "swoosh_1.png:<frame>",
+                "offset" : [0.6, 3.4],
+                "damageArea" : [[-3, 2], [-2, 3], [1, 3.5], [4.5, 2.0], [5.5, -0.25], [4.75, -2.25], [3.5, -3.25], [-1, -2.5]]
               }
             }
           }
@@ -143,15 +144,12 @@
   },
 
   "particleEmitters" : {
-    "arcana_glaive_swoosh_green" : {
+    "physicalswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
       "emissionRate" : 20,
-      "burstCount" : 2,
+      "burstCount" : 1,
       "particles" : [
-        { "particle" : "poisonswoosh1"},
-        { "particle" : "poisonswoosh2"},
-        { "particle" : "poisonswoosh3"}
       ]
     },
     "fireswoosh" : {

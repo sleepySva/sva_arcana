@@ -25,10 +25,10 @@
         {"item" : ["arcana_essence_lunarEssence", 10]}
       ],
       "pool" : [
-		{"weight" : 0.1, "item" : ["arcana_misc_lunarInsignia", 2]},
-		{"weight" : 0.2, "item" : ["arcana_misc_lunarInsignia", 3]},
-        {"weight" : 0.3, "item" : ["arcana_misc_lunarInsignia", 3]},
-		{"weight" : 0.4, "item" : ["arcana_misc_lunarInsignia", 2]}
+		{"weight" : 0.1, "item" : ["arcana_misc_lunarInsignia", 3]},
+		{"weight" : 0.2, "item" : ["arcana_misc_lunarInsignia", 4]},
+        {"weight" : 0.3, "item" : ["arcana_misc_lunarInsignia", 4]},
+		{"weight" : 0.4, "item" : ["arcana_misc_lunarInsignia", 3]}
       ],
       "poolRounds" : [
         [1.0, 1]
@@ -59,6 +59,7 @@
   "arcana_bossdrops_evolapis" : [
     [0, {
 	  "fill" : [
+        {"item" : ["arcana_codex_evolapis-codex", 1]},
         {"item" : ["money", 14000]},
         {"item" : ["nanowrap", 2]}
       ],
@@ -70,6 +71,50 @@
       ],
       "poolRounds" : [
         [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_bossdrops_mageKing" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_codex_mageKing-codex", 1]},
+        {"item" : ["money", 3000]},
+        {"item" : ["nanowrap", 2]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_misc_cryogenicCell", 6]},
+		{"weight" : 1.0, "item" : ["arcana_misc_cryogenicCell", 7]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_bossdrops_fireKnight" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_codex_fireKnight-codex", 1]},
+        {"item" : ["money", 4000]},
+        {"item" : ["nanowrap", 2]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["misc_broadsword_cinderedge", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_bossdrops_terminusReaper" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_codex_terminusReaper-codex", 1]},
+		{"item" : ["arcana_essence_mirageEssence", 120]},
+        {"item" : ["money", 30000]},
+        {"item" : ["nanowrap", 2]}
       ]
     }]
   ],
@@ -98,10 +143,10 @@
         {"item" : ["arcana_essence_solarEssence", 10]}
       ],
       "pool" : [
-		{"weight" : 0.1, "item" : ["arcana_misc_solarMedallion", 2]},
-		{"weight" : 0.2, "item" : ["arcana_misc_solarMedallion", 3]},
-        {"weight" : 0.3, "item" : ["arcana_misc_solarMedallion", 3]},
-		{"weight" : 0.4, "item" : ["arcana_misc_solarMedallion", 2]}
+		{"weight" : 0.1, "item" : ["arcana_misc_solarMedallion", 5]},
+		{"weight" : 0.2, "item" : ["arcana_misc_solarMedallion", 4]},
+        {"weight" : 0.3, "item" : ["arcana_misc_solarMedallion", 4]},
+		{"weight" : 0.4, "item" : ["arcana_misc_solarMedallion", 5]}
       ],
       "poolRounds" : [
         [1.0, 1]

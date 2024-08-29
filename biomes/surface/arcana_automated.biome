@@ -83,7 +83,7 @@
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [200, 52, 7], [250, 138, 77] ],
-      "dayColors" : [ [255, 186, 116], [255, 255, 255] ],
+      "dayColors" : [ [26, 110, 145], [255, 216, 151] ],
       "eveningColors" : [ [200, 52, 7], [250, 138, 77] ],
       "nightColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
 
@@ -190,7 +190,7 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:uncommon",
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
 
         "type" : "microdungeon",
         "microdungeons" : [ "arcana_workshop_dungeon_2" ]

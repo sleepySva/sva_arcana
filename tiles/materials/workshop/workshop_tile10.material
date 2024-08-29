@@ -3,19 +3,19 @@
   "materialName" : "workshop_tile10",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "workshop_tile10",
-  "description" : "A blue support tile used by the Workshop.",
-  "shortdescription" : "Blue Metal Support",
+  "description" : "A simple metal background wall for use in factories.",
+  "shortdescription" : "Foundry Background Wall",
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 14,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderTemplate" : "/tiles/pipetemplate.config",
   "renderParameters" : {
     "texture" : "workshop_tile10.png",
-    "variants" : 1,
+    "variants" : 3,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 147
   }
 }

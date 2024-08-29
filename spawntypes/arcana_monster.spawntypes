@@ -15,6 +15,37 @@
       "aggressive" : true
     }
   },
+  
+  {
+    "name" : "arcana_glacicub",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "all",
+      "time" : "all"
+    },
+    "spawnChance" : 0.1,
+    "monsterType" : "arcana_monster_glacicub",
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_cerueonCrab",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "all",
+      "time" : "all"
+    },
+    "spawnChance" : 0.1,
+    "monsterType" : "arcana_monster_cerueonCrab",
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
   {
     "name" : "arcana_paintlin",
 
@@ -114,6 +145,42 @@
   },
   
   {
+    "name" : "arcana_redMonopus",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_redMonopus"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_redPyromantle",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.01,
+    "monsterType" : [
+      [1, "arcana_monster_redPyromantle"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  
+  {
     "name" : "arcana_cerueonPearl",
 
     "spawnParameters" : {
@@ -128,6 +195,24 @@
     ],
     "monsterParameters" : {
       "aggressive" : true
+    }
+  },
+  
+  {
+    "name" : "arcana_fairi",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.009,
+    "monsterType" : [
+      [1, "arcana_monster_fairi"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : false
     }
   },
   
@@ -212,7 +297,7 @@
       "time" : "all"
     },
     "groupSize" : [1, 1],
-    "spawnChance" : 0.008,
+    "spawnChance" : 0.007,
     "monsterType" : [
       [1, "arcana_monster_tricanard"]
     ],
@@ -230,7 +315,7 @@
       "time" : "all"
     },
     "groupSize" : [1, 1],
-    "spawnChance" : 0.008,
+    "spawnChance" : 0.007,
     "monsterType" : [
       [1, "arcana_monster_trispiel"]
     ],

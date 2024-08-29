@@ -1,4 +1,262 @@
 [
+  { "op":"add", "path": "/planetTypes/tundra/layers/surface/dungeons/-", "value": [ 7.0, "arcana_ice_dungeon_1" ] },
+  { "op":"add", "path": "/planetTypes/volcanic/layers/surface/dungeons/-", "value": [ 7.0, "arcana_volcanic_dungeon_1" ] },
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_redMoon",
+    "value": {
+      "gravityRange" : [20, 20],
+      "threatRange" : [1, 6],
+      "layers": {
+        "space" : {
+          "primaryRegion" : ["barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["void"]
+        },
+        "surface" : {
+          "primaryRegion" : ["arcana_redMoon"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_redMoonUnderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["arcana_redMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["arcana_redMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["arcana_redMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["mooncore"],
+          "baseHeight" : 150
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_redMoon",
+    "value": {
+      "blockSelector" : [ "remixedSurface" ],
+      "fgCaveSelector" : [ "moonSurfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "arcana_redMoon" ]]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_redMoonUnderground",
+    "value": {
+      "fgCaveSelector" : [ "moonCaves" ],
+      "fgOreSelector" : ["richVeins"],
+      "bgOreSelector" : ["richVeins"],
+      "caveLiquid" : [ "fuel" ],
+      "caveLiquidSeedDensityRange" : [3.5, 3.5],
+      "biome" : [
+        [0, [ "arcana_redMoonUnderground"]]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_frostMoon",
+    "value": {
+      "gravityRange" : [20, 20],
+      "threatRange" : [1, 6],
+      "layers": {
+        "space" : {
+          "primaryRegion" : ["barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["void"]
+        },
+        "surface" : {
+          "primaryRegion" : ["arcana_frostMoon"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_frostMoonUnderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["arcana_frostMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["arcana_frostMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["arcana_frostMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["mooncore"],
+          "baseHeight" : 150
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_frostMoon",
+    "value": {
+      "blockSelector" : [ "remixedSurface" ],
+      "fgCaveSelector" : [ "moonSurfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "arcana_frostMoon" ]]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_frostMoonUnderground",
+    "value": {
+      "fgCaveSelector" : [ "moonCaves" ],
+      "fgOreSelector" : ["richVeins"],
+      "bgOreSelector" : ["richVeins"],
+      "caveLiquid" : [ "fuel" ],
+      "caveLiquidSeedDensityRange" : [3.5, 3.5],
+      "biome" : [
+        [0, [ "arcana_frostMoonUnderground"]]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_cyberMoon",
+    "value": {
+      "gravityRange" : [20, 20],
+      "threatRange" : [1, 6],
+      "layers": {
+        "space" : {
+          "primaryRegion" : ["barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["void"]
+        },
+        "surface" : {
+          "primaryRegion" : ["arcana_cyberMoon"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_cyberMoonUnderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["arcana_cyberMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["arcana_cyberMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["arcana_cyberMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["mooncore"],
+          "baseHeight" : 150
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_cyberMoon",
+    "value": {
+      "blockSelector" : [ "remixedSurface" ],
+      "fgCaveSelector" : [ "moonSurfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "arcana_cyberMoon" ]]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_cyberMoonUnderground",
+    "value": {
+      "fgCaveSelector" : [ "moonCaves" ],
+      "fgOreSelector" : ["richVeins"],
+      "bgOreSelector" : ["richVeins"],
+      "caveLiquid" : [ "fuel" ],
+      "caveLiquidSeedDensityRange" : [3.5, 3.5],
+      "biome" : [
+        [0, [ "arcana_cyberMoonUnderground"]]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_toxicMoon",
+    "value": {
+      "gravityRange" : [20, 20],
+      "threatRange" : [1, 6],
+      "layers": {
+        "space" : {
+          "primaryRegion" : ["barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["void"]
+        },
+        "surface" : {
+          "primaryRegion" : ["arcana_toxicMoon"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_toxicMoonUnderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["arcana_toxicMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["arcana_toxicMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["arcana_toxicMoonUnderground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["mooncore"],
+          "baseHeight" : 150
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_toxicMoon",
+    "value": {
+      "blockSelector" : [ "remixedSurface" ],
+      "fgCaveSelector" : [ "moonSurfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "arcana_toxicMoon" ]]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_toxicMoonUnderground",
+    "value": {
+      "fgCaveSelector" : [ "moonCaves" ],
+      "fgOreSelector" : ["richVeins"],
+      "bgOreSelector" : ["richVeins"],
+      "caveLiquid" : [ "fuel" ],
+      "caveLiquidSeedDensityRange" : [3.5, 3.5],
+      "biome" : [
+        [0, [ "arcana_toxicMoonUnderground"]]
+      ]
+    }
+  },
   {
     "op": "add",
     "path": "/planetTypes/arcana_arcaneForest",
@@ -278,13 +536,21 @@
         "surface": {
           "primaryRegion" : ["arcana_blistering"],
           "secondaryRegions" : ["arcana_cindered"],
+		  "dungeonCountRange" : [2, 2],
           "dungeons": [
 		  	  [8.0, "arcana_blistering_dungeon_2"],
-			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
-              [1.0, "arcana_dungeon_misc_1"],
-			  [1.0, "arcana_dungeon_misc_2"]
+			  [1.0, "arcana_volcanic_dungeon_1"]
           ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_cinderedCavern" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_cinderedCeiling" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_cinderedCavern" ]
         }
       }
     }
@@ -316,6 +582,31 @@
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_cindered"]]],
+      "subRegion" : []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_cinderedCavern",
+    "value": {
+      "caveLiquid" : [ "lava" ],
+      "caveLiquidSeedDensityRange" : [1, 3],
+      "encloseLiquids" : true,
+      "biome": [[0,["arcana_cinderedCavern"]]],
+      "subRegion" : []
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_cinderedCeiling",
+    "value": {
+      "caveLiquid" : [ "lava" ],
+      "caveLiquidSeedDensityRange" : [1, 3],
+      "encloseLiquids" : true,
+      "blockSelector": ["coreCaves"],
+      "biome": [[0,["arcana_cinderedCavern"]]],
       "subRegion" : []
     }
   },
@@ -378,6 +669,10 @@
           "primaryRegion" : ["arcana_turbulent"],
           "baseHeight" : 1150,
           "layerLevel" : 1050
+        },
+        "subsurface" : {
+          "primaryRegion" : ["arcana_turbulent_floor"],
+          "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
         }
       }
     }
@@ -388,8 +683,8 @@
     "path": "/regionTypes/arcana_turbulent",
     "value": {
       "oceanLiquid" : [ "water" ],
-      "blockSelector" : [ "remixedIslandTowersSurface" ],
-      "fgCaveSelector" : [ "empty" ],
+      "blockSelector" : [ "remixedIslandsSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
       "bgCaveSelector" : [ "empty" ],
       "biome": [[0,["arcana_turbulent"]]]
     }
@@ -401,9 +696,9 @@
     "value": {
       "oceanLiquid" : [ "water" ],
 	  "oceanLevelOffset" : 1000,
-      "blockSelector" : [ "ledgesSurface" ],
-      "fgCaveSelector" : [ "emptier" ],
-      "bgCaveSelector" : [ "emptiest" ],
+      "blockSelector" : [ "surfaceCaves" ],
+      "fgCaveSelector" : [ "denseCaves" ],
+      "bgCaveSelector" : [ "empty" ],
       "biome": [[0,["arcana_turbulent_floor"]]]
     }
   },
@@ -779,16 +1074,16 @@
         },
 		
         "subsurface" : {
-          "primaryRegion" : [ "arcana_ferocious_underground_1" ]
+          "primaryRegion" : [ "arcana_animus_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_ferocious_underground_2" ]
+          "primaryRegion" : [ "arcana_animus_underground_1" ]
         },
         "underground2" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+          "primaryRegion" : [ "arcana_animus_underground_2" ]
         },
         "underground3" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
+          "primaryRegion" : [ "arcana_animus_underground_2" ]
         }
       }
     }
@@ -805,7 +1100,24 @@
       "subRegion": ["giantflowers", "hive", "alpine"]
     }
   },
-  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_animus_underground_1",
+    "value": {
+      "caveLiquid": [ "healingliquid" ],
+      "biome": [[0,["arcana_animus_underground_1"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_animus_underground_2",
+    "value": {
+      "caveLiquid": [ "healingliquid" ],
+      "biome": [[0,["arcana_animus_underground_2"]]],
+      "subRegion": []
+    }
+  },
   {
     "op": "add",
     "path": "/planetTypes/arcana_evoaquatic",
@@ -826,13 +1138,13 @@
         },
 		
         "subsurface" : {
-          "primaryRegion" : [ "arcana_ferocious_underground_1" ]
+          "primaryRegion" : [ "arcana_mutatedCavern" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_ferocious_underground_2" ]
+          "primaryRegion" : [ "arcana_mutatedCavern" ]
         },
         "underground2" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+          "primaryRegion" : [ "arcana_mutatedCavern" ]
         },
         "underground3" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
@@ -864,9 +1176,11 @@
         "surface": {
           "primaryRegion" : ["arcana_superstormExpanse"],
           "secondaryRegions" : [],
+		  "dungeonCountRange" : [3, 3],
           "dungeons": [
 		      [8.0, "arcana_superstormExpanse_dungeon_1"],
-			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"]
+			  [8.0, "arcana_superstormExpanse_dungeon_3"],
+			  [8.0, "arcana_superstormExpanse_dungeon_4"]
           ]
         },
 		
@@ -1056,11 +1370,11 @@
       "layers": {
         "surface": {
           "primaryRegion" : ["arcana_automated"],
-          "secondaryRegions" : ["scorchedcity", "arcana_superstormExpanse" ],
+          "secondaryRegions" : [],
+		  "dungeonCountRange" : [2, 2],
           "dungeons": [
 			  [8.0, "arcana_workshop_dungeon_1"],
-			  [1.0, "dungeoncrawler"], [1.0, "glitchvillage"],
-			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+			  [8.0, "arcana_anarkyon_dungeon_1"]
           ]
         },
 		
@@ -1068,10 +1382,10 @@
           "primaryRegion" : [ "arcana_automated_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_automated_underground_2" ]
+          "primaryRegion" : [ "arcana_automated_underground_1" ]
         },
         "underground2" : {
-          "primaryRegion" : [ "arcana_automated_underground_3" ]
+          "primaryRegion" : [ "arcana_scrapCeiling" ]
         },
         "underground3" : {
           "primaryRegion" : [ "arcana_automated_underground_4" ]
@@ -1111,11 +1425,30 @@
   },
   {
     "op": "add",
+    "path": "/regionTypes/arcana_mutatedCavern",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_viridescentAcid" ],
+      "biome": [[0,["arcana_mutatedCavern"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
     "path": "/regionTypes/arcana_automated_underground_1",
     "value": {
       "caveLiquid": [ "arcana_liquid_viridescentAcid" ],
       "biome": [[0,["arcana_automated_underground_1"]]],
       "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_scrapCeiling",
+    "value": {
+      "caveLiquid" : [ "arcana_liquid_viridescentAcid" ],
+      "blockSelector": ["coreCaves"],
+      "biome": [[0,["arcana_automated_underground_1"]]],
+      "subRegion" : []
     }
   },
   {
@@ -1161,6 +1494,12 @@
         "subsurface" : {
           "primaryRegion" : ["arcana_neonSea_floor"],
           "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_neonCave" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_neonCave" ]
         }
       }
     }
@@ -1184,12 +1523,24 @@
     "value": {
       "oceanLiquid" : [ "arcana_liquid_neonWater" ],
 	  "oceanLevelOffset" : 1000,
-      "blockSelector" : [ "ledgesSurface" ],
-      "fgCaveSelector" : [ "emptier" ],
+      "blockSelector" : [ "surfaceCaves" ],
+      "fgCaveSelector" : [ "denseCaves" ],
       "bgCaveSelector" : [ "emptiest" ],
       "biome": [[0,["arcana_neonSea_floor"]]]
     }
   },
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_neonCave",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_neonWater" ],
+      "caveLiquidSeedDensityRange" : [20, 20],
+      "encloseLiquids" : true,
+      "biome": [[0,["arcana_neonCave"]]],
+      "subRegion": []
+    }
+  }, 
   
   {
     "op": "add",
@@ -1201,11 +1552,10 @@
           "primaryRegion" : [ "arcana_viridescent" ],
           "secondaryRegions" : [],
           "dungeons": [
-			  [1.0, "arcana_workshop_dungeon_1"],
+			  [8.0, "arcana_anarkyon_dungeon_1"],
 			  [8.0, "arcana_viridescent_dungeon_1"],
 			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
-			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
-			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"]
           ]
         },
 		
@@ -1811,10 +2161,11 @@
         "surface": {
           "primaryRegion" : [ "arcana_goldenForest" ],
           "secondaryRegions" : [ "arcana_goldenLake" ],
-		  "dungeonCountRange" : [2, 2],
+		  "dungeonCountRange" : [3, 3],
           "dungeons": [
 		      [1.0, "arcana_empyrean_dungeon_2"],
-			  [1.0, "arcana_empyrean_dungeon_3"]
+			  [1.0, "arcana_empyrean_dungeon_3"],
+			  [1.0, "arcana_empyrean_dungeon_4"]
           ]
         },
 		
@@ -1844,6 +2195,99 @@
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_empyrean"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_redTerminus",
+    "value": {
+	  "blendSize" : 30,
+      "threatRange" : [9, 9],
+      "layers": {
+        "surface" : {
+          "primaryRegion" : ["arcana_redTerminusSurface"],
+          "secondaryRegions" : [ ],
+		  "dungeonCountRange" : [2, 2],
+          "dungeons": [
+		      [1.0, "arcana_redTerminus_dungeon_1"],
+			  [1.0, "arcana_redTerminus_dungeon_3"]
+          ],
+          "baseHeight" : 1150,
+          "layerLevel" : 1050
+        },
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_redTerminus" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_redTerminusUnderground2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_ancientCore"  ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_ancientCore" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_redTerminusSurface",
+    "value": {
+      "caveLiquid" : [ "arcana_liquid_ruinousWater" ],
+      "blockSelector" : [ "remixedIslandsSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome": [[0,["arcana_redTerminus"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_redTerminus",
+    "value": {
+      "caveLiquid" : [ "arcana_liquid_ruinousWater" ],
+      "blockSelector" : [ "coreCaves" ],
+      "fgCaveSelector" : [ "coreCaves" ],
+      "bgCaveSelector" : [ "coreCaves" ],
+      "biome": [[0,["arcana_redTerminus"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_redTerminusUnderground2",
+    "value": {
+      "caveLiquid" : [ "arcana_liquid_ruinousWater" ],
+      "blockSelector" : [ "coreCaves" ],
+      "fgCaveSelector" : [ "coreCaves" ],
+      "bgCaveSelector" : [ "coreCaves" ],
+      "biome": [[0,["arcana_redTerminusUnderground2"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_redTerminusUnderground",
+    "value": {
+      "caveLiquid" : [ "arcana_liquid_ruinousWater" ],
+      "blockSelector" : [ "coreCaves" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome": [[0,["arcana_redTerminus"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_ancientCore",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "blockSelector" : [ "coreCaves" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome": [[0,["arcana_ancientCore"]]],
       "subRegion": []
     }
   },
@@ -1931,6 +2375,55 @@
 	  "blockSelector" : [ "coreCaves" ],
       "biome": [[0,["arcana_gleamingBasin"]]],
       "subRegion": []
+    }
+  },
+  
+  
+  
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_tundraUnderground",
+    "value": {
+      "caveLiquid": [ "water" ],
+      "biome": [[0,["arcana_tundraUnderground"]]],
+      "subRegion": ["luminouscaves", "stonecaves", "bonecaves", "icecaves"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_tundraDeepUnderground",
+    "value": {
+      "caveLiquid": [ "water" ],
+      "biome": [[0,["arcana_tundraDeepUnderground"]]],
+      "subRegion": ["luminouscaves", "icecaves"]
+    }
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/subsurface",
+    "value": {
+      "primaryRegion": [
+        "arcana_tundraUnderground"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/underground1",
+    "value": {
+      "primaryRegion": [
+        "arcana_tundraUnderground"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/underground2",
+    "value": {
+      "primaryRegion": [
+        "arcana_tundraDeepUnderground"
+      ]
     }
   }
 ]

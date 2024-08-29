@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A shortbow that fires light arrows at an extremely fast speed.",
-  "shortdescription" : "^#cab6b4;Zephyr^reset;",
+  "shortdescription" : "Zephyr",
   "tooltipKind" : "base",
   "category" : "bow",
   "tooltipFields" : {"subtitle" : "Shortbow"},
@@ -37,7 +37,7 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.56,
+    "fireTime" : 0.50,
     "baseDps" : 8.2,
     "energyUsage" : 10,
     "projectileCount" : 1,

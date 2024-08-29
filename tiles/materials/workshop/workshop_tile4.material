@@ -3,19 +3,19 @@
   "materialName" : "workshop_tile4",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "workshop_tile4",
-  "description" : "A black wall tile used by the Workshop.",
-  "shortdescription" : "Black Workshop Wall",
+  "description" : "An industrial beam.",
+  "shortdescription" : "Industrial Vertical Beam",
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 10,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/pipetemplate.config",
   "renderParameters" : {
     "texture" : "workshop_tile4.png",
     "variants" : 1,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 141
   }
 }

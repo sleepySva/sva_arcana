@@ -4,7 +4,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "An angelic presence surges through. ^green;Hold 0.4 seconds for a charged shot.^reset;",
-  "shortdescription" : "Neon Genesis",
+  "shortdescription" : "^orange;Neon Genesis^reset;",
   "tooltipKind" : "base",
   "category" : "uniqueWeapon",
   "twoHanded" : true,
@@ -46,12 +46,28 @@
         "time" : 0.4,
         "energyCost" : 120,
         "cooldown" : 0.6,
-        "projectileType" : "artifact_blastRifle_neonGenesis_projectile_1",
+        "projectileType" : "arcana_projectile_scouteye",
         "projectileCount" : 1,
-        "projectileParameters" : {},
         "inaccuracy" : 0,
         "baseDamage" : 12,
-        "fireSound" : "fire"
+        "fireSound" : "fire",
+		"projectileParameters" : {
+		  "speed" : 132,
+		  "timeToLive" : 0,
+		  "actionOnReap" : [
+			{
+			  "action" : "projectile",
+			  "type" : "artifact_blastRifle_neonGenesis_projectile_1",
+			  "angleAdjust" : 0,
+			  "inheritDamageFactor" : 1.0,
+			  "inheritSpeedFactor" : 1
+			},
+			{
+			  "action" : "config",
+			  "file" : "/projectiles/explosions/regularexplosion2/electricexplosionknockback.config"
+			}
+		  ]
+		}
       }
     ]
   },

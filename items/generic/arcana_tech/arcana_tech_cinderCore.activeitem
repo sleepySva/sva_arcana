@@ -4,14 +4,14 @@
   "rarity" : "Legendary",
   "category" : "mysteriousReward",
   "inventoryIcon" : "arcana_tech_cinderCore.png",
-  "description" : "Information about a piece of alien technology. ^orange;[Use to gain a new type of tech!]^reset;",
+  "description" : "Passively grants +5% attack and +10% run speed. ^orange;[Use to gain a new type of tech!]^reset;",
   "shortdescription" : "Cinder Core",
   "itemTags" : [ "tech" ],
   
   
   "level" : 1,
   "maxStack" : 1,
-  "tooltipKind" : "base",
+  "tooltipKind" : "arcana_base_item",
   "twoHanded" : true,
   
   "scripts" : ["arcana_tech.lua"],

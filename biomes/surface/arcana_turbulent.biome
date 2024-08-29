@@ -72,19 +72,19 @@
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [157, 8, 134], [213, 121, 56] ],
-      "dayColors" : [ [225, 86, 122], [225, 225, 225] ],
+      "dayColors" : [ [32, 39, 67], [87, 126, 177] ],
       "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
-      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+      "nightColors" : [ [24, 38, 53, 80], [15, 16, 23, 160] ],
 
       "morningLightColor" : [120, 40, 20],
-      "dayLightColor" : [160, 140, 160],
+      "dayLightColor" : [87, 103, 177],
       "eveningLightColor" : [140, 100, 120],
       "nightLightColor" : [40, 20, 50]
     }
   ],
 
   "mainBlock" : "turbulent_tile1",
-  "subBlocks" : [ "sandstone01", "rockbrick", "shadowblock"],
+  "subBlocks" : [ "turbulent_tile2", "rockbrick", "shadowblock"],
   "ores" : "arcana_turbulent_ores_surface",
 
   "parallax" : "/parallax/surface/arcana_turbulent.parallax",
@@ -171,12 +171,12 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:denseMedium",
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
 
         "type" : "tree",
         "treeFoliageHueShiftMax" : 180,
         "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "ashy", "coal", "magma", "lava" ],
+        "treeStemList" : [ "ashy", "coal" ],
         "treeFoliageList" : [ "" ]
       },
       {

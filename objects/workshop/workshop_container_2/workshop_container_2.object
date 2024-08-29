@@ -1,11 +1,11 @@
 {
   "objectName" : "workshop_container_2",
-  "colonyTags" : ["misc","storage"],
+  "colonyTags" : ["titancorp","storage"],
   "rarity" : "Rare",
   "description" : "A large metal crate with an orange lid.",
   "shortdescription" : "Large Mechanic's Crate",
   "race" : "generic",
-  "price" : 100,
+  "price" : 200,
   
   "category" : "storage",
   "objectType" : "container",
@@ -14,14 +14,28 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "workshop_container_2.png:<color>",
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
       "imagePosition" : [-16, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
-      "collision" : "platform"
+	  "collision" : "platform"
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
 
     }
   ],

@@ -182,7 +182,7 @@
       },
       {
         "mode" : "floor",
-        "priority" : 99.0,
+        "priority" : 98.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:denseSmall",
 
@@ -197,6 +197,15 @@
 
         "type" : "microdungeon",
         "microdungeons" : [ "undergroundencounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 99,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:randomEncounter",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_poisonshrine" ]
       }
     ]
   },

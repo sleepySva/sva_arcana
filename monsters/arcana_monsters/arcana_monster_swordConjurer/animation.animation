@@ -235,6 +235,20 @@
         { "particle" : "deathfizz4right" }
       ]
     },
+    "shieldBreak" : {
+	  "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [
+		{ "particle" : "arcana_shielded_1_1" },
+		{ "particle" : "arcana_shielded_1_1" },
+		{ "particle" : "arcana_shielded_1_1" },
+		{ "particle" : "arcana_shielded_1_2" },
+		{ "particle" : "arcana_shielded_1_2" },
+		{ "particle" : "arcana_shielded_1_2" },
+		{ "particle" : "arcana_shielded_1_3" },
+		{ "particle" : "arcana_shielded_1_3" },
+		{ "particle" : "arcana_shielded_1_3" }
+      ]
+    },
     "captureParticles" : {
       "particles" : [
         { "particle" : "monstercapture" }
@@ -266,6 +280,7 @@
 	"crash" : [ "/sfx/melee/hammer_hit_ground2.ogg" ],
     "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
     "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
-    "fire" : [ "/sfx/tech/tech_blink1.ogg" ]
+    "fire" : [ "/sfx/tech/tech_blink1.ogg" ],
+	"shieldBreak" : [ "/sfx/melee/shield_break_floran.ogg" ]
   }
 }

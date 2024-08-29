@@ -5,13 +5,13 @@
   "tooltipKind" : "eppaugment",
   "category" : "eppAugment",
   "inventoryIcon" : "arcana_augment_4.png",
-  "description" : "^green;Grants immunity to burning, frost, electrified and poisoned. +10% health, attack and energy.^reset;",
-  "shortdescription" : "Amp - Gleaming Gold",
+  "description" : "^green;Grants immunity to burning, frost, electrified and poisoned. +10% health and +10% attack.^reset;",
+  "shortdescription" : "Amp - Gleamstasis",
 
   "augment" : {
     "type" : "back",
     "name" : "arcana_augment_4",
-    "displayName" : "Gleaming Gold",
+    "displayName" : "Gleamstasis",
     "displayIcon" : "/items/augments/back/arcana_augment_4.png",
     "effects" :
 	[
@@ -20,7 +20,6 @@
 		"arcana_status_resistance_fireStatus",
 		"arcana_status_resistance_poisonStatus",
 		"arcana_status_attackPercent_10",
-		"arcana_status_energyPercent_10",
 		"arcana_status_maxHealthPercent_10"
 	]
   },

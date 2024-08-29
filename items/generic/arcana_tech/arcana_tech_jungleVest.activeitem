@@ -4,14 +4,14 @@
   "rarity" : "Legendary",
   "category" : "mysteriousReward",
   "inventoryIcon" : "arcana_tech_jungleVest.png",
-  "description" : "Information about a piece of alien technology. ^orange;[Use to gain a new type of tech!]^reset;",
+  "description" : "Passively grants +10% max HP and +5% poison RES. ^orange;[Use to gain a new type of tech!]^reset;",
   "shortdescription" : "Jungle Vest",
   "itemTags" : [ "tech" ],
   
   
   "level" : 1,
   "maxStack" : 1,
-  "tooltipKind" : "base",
+  "tooltipKind" : "arcana_base_item",
   "twoHanded" : true,
   
   "scripts" : ["arcana_tech.lua"],

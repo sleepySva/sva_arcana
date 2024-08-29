@@ -25,7 +25,7 @@
   
   "periodicActions" : [
     {
-      "time" : 0.066,
+      "time" : 0.005,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
@@ -35,8 +35,8 @@
         "position" : [0, 0],
         "layer" : "back",
         "timeToLive" : 0.0,
-        "destructionTime" : 0.2,
-        "destructionAction" : "fade",
+        "destructionTime" : 0.15,
+        "destructionAction" : "shrink",
         "fullbright" : false
       }
     }

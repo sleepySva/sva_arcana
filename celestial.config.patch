@@ -514,7 +514,7 @@
 					"description" : "Mirage Planet",
 					"smallImage" : "/celestial/system/planet_small.png",
 
-					"terrestrialType" : [ "arcana_vermilion", "arcana_amorous", "arcana_ruinous", "arcana_empyrean" ]
+					"terrestrialType" : [ "arcana_vermilion", "arcana_amorous", "arcana_ruinous", "arcana_empyrean", "arcana_redTerminus" ]
 				  },
 
 				  "variationParameters" : [
@@ -1394,6 +1394,28 @@
 		
 		{
 			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_redTerminus",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_redTerminus_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_redTerminus",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_redTerminus/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op" : "add",
 			"path" : "/terrestrialHorizonGraphics/arcana_empyrean",
 			"value" :
 			{
@@ -1436,7 +1458,104 @@
 				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
 				"dynamicsRange" : [1, 30]
 			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_redMoon",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/moon_<selector>.png",
+				"maskPerPlanetRange" : [0, 0]
+			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_redMoon",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_redMoon/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/arid/<num>.png",
+				"dynamicsRange" : [1, 50]
+			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_frostMoon",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/moon_<selector>.png",
+				"maskPerPlanetRange" : [0, 0]
+			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_frostMoon",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_frostMoon/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/arid/<num>.png",
+				"dynamicsRange" : [1, 50]
+			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_cyberMoon",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/moon_<selector>.png",
+				"maskPerPlanetRange" : [0, 0]
+			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_cyberMoon",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_cyberMoon/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/arid/<num>.png",
+				"dynamicsRange" : [1, 50]
+			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_toxicMoon",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/moon_<selector>.png",
+				"maskPerPlanetRange" : [0, 0]
+			}
+		},
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_toxicMoon",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_toxicMoon/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/arid/<num>.png",
+				"dynamicsRange" : [1, 50]
+			}
+		},
+		{
+			"op": "add",
+			"path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-",
+			"value": "arcana_redMoon"
+		},
+		{
+			"op": "add",
+			"path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-",
+			"value": "arcana_frostMoon"
+		},
+		{
+			"op": "add",
+			"path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-",
+			"value": "arcana_cyberMoon"
+		},
+		{
+			"op": "add",
+			"path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-",
+			"value": "arcana_toxicMoon"
 		}
+
 	],
 
 	// TrueSpace Patch
@@ -1854,20 +1973,6 @@
 		  "op": "add",
 		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_amorous"
-		},
-		
-		// Planets
-		{
-		  "op": "add",
-		  "path": "/planetaryTypes/CoolPlanet/baseParameters/terrestrialType/-",
-		  "value": "arcana_nightmist"
-		},
-		
-		// Sats
-		{
-		  "op": "add",
-		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
-		  "value": "arcana_nightmist"
 		},
 		
 		// Planets

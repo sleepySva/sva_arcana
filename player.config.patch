@@ -1,4 +1,9 @@
 [
+    {"op" : "add", "path" : "/genericScriptContexts/arcanaBlockHandler", "value" : "/scripts/arcana_blockStatusEffect.lua"},
+    { "op" : "add",
+	  "path" : "/deploymentConfig/scripts/-",
+	  "value" : "/scripts/arcana_playereffects.lua"
+    },
 	{ "op" : "add",
 		"path" : "/species/-",
 		"value" : "arcanian"
@@ -48,11 +53,5 @@
 		"value" : {
 			"baseValue" : 1.0
 		}
-	},
-	
-	{ 
-		"op" : "add",
-		"path" : "/deploymentConfig/scripts/-",
-		"value" : "/scripts/arcana_updatePopup.lua"
 	}
 ]

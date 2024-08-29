@@ -5,9 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "chestwear",
-  "description" : "A pale colored armor, crafted from holosium. ^green;+10% Lumin res.^reset; ^red;-10% Abyss res.^reset;",
+  "description" : "A pale colored armor, crafted from holosium. ^green;+10% Light res.^reset; ^red;-10% Abyss res.^reset;",
   "shortdescription" : "Lepidoptera Shell",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : {
     "body" : "chest.png",
@@ -45,7 +45,7 @@
     },
     {
       "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_lumen",
+      "stat" : "arcana_resistance_light",
       "amount" : 0.1
     },
     {
@@ -57,7 +57,7 @@
 
   "colorOptions" : [
     // BLACK
-    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
+    { "ffca8a" : "f8e7d3", "e0975c" : "b8bcbe", "a85636" : "837f7f", "6f2919" : "5a5a5a" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

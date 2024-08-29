@@ -4,14 +4,14 @@
   "rarity" : "Legendary",
   "category" : "mysteriousReward",
   "inventoryIcon" : "arcana_tech_cinderWalkers.png",
-  "description" : "Information about a piece of alien technology. ^orange;[Use to gain a new type of tech!]^reset;",
+  "description" : "Passively grants +5% max HP, ATK and run speed. Double tap ^green;[A]^white; or ^green;[D] ^white;to dash. ^orange;[Use to gain this tech!]^reset;",
   "shortdescription" : "Cinder Walkers",
   "itemTags" : [ "tech" ],
   
   
   "level" : 1,
   "maxStack" : 1,
-  "tooltipKind" : "base",
+  "tooltipKind" : "arcana_base_item",
   "twoHanded" : true,
   
   "scripts" : ["arcana_tech.lua"],

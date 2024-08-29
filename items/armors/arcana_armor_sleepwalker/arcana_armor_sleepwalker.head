@@ -5,9 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headarmour",
-  "description" : "A dark lit futuristic helmet. ^red;-10% Eletric resistance.^reset;",
+  "description" : "A dark lit futuristic helmet. ^green;+5% Poison, Fire and Ice Res.^reset;, ^red;-10% Eletric Res.^reset;",
   "shortdescription" : "Sleepwalker Helmet",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
@@ -34,6 +34,21 @@
       "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 26
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "fireResistance",
+      "amount" : 0.05
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "iceResistance",
+      "amount" : 0.05
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "poisonResistance",
+      "amount" : 0.05
     },
     {
       "levelFunction" : "arcana_multiplier_static",

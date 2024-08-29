@@ -1,22 +1,22 @@
 {
   "objectName" : "workshop_deco_8",
-  "colonyTags" : ["misc"],
+  "colonyTags" : ["titancorp"],
   "rarity" : "Rare",
   "description" : "A large server storage.",
   "shortdescription" : "Workshop Server",
   "race" : "generic",
   "category" : "decorative",
-  "price" : 100,
+  "price" : 220,
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "workshop_deco_8.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "imageLayers" : [ { "image" : "workshop_deco_8.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "left",
 	  "flipImages" : true,
       "imagePosition" : [-16, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
@@ -24,11 +24,11 @@
 
     },
 	{
-	  "imageLayers" : [ { "image" : "workshop_deco_8.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "imageLayers" : [ { "image" : "workshop_deco_8.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "right",
       "imagePosition" : [-16, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      "frames" : 4,
+      "animationCycle" : 0.4,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],

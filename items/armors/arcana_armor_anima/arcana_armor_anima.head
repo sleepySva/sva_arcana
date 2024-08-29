@@ -5,9 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "headarmour",
-  "description" : "A spooky-looking masked helm.",
+  "description" : "A spooky-looking masked helm. ^green;+6% Fire RES.^reset;",
   "shortdescription" : "Anima Mask",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
@@ -34,6 +34,11 @@
       "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 14
+    },
+    {
+      "levelFunction" : "arcana_multiplier_static",
+      "stat" : "fireResistance",
+      "amount" : 0.06
     }
   ],
   

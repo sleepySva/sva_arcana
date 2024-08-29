@@ -52,5 +52,15 @@
         }
       }
     }
+  },
+  
+  "particleEmitters" : {
+    "default" : {
+      "active" : false,
+      "emissionRate" : 3,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [
+      ]
+    }
   }
 }

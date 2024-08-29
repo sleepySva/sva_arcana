@@ -1,81 +1,103 @@
 {
   "itemName" : "aeon_shortbow_1",
-  "level" : 8,
-  "price" : 1000,
+  "price" : 1200,
+  "inventoryIcon" : "icon.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A golden shortbow, can instantly fire arrows.",
-  "shortdescription" : "Aeon Shortbow",
-  "tooltipKind" : "base",
+  "tooltipKind" : "bow",
   "category" : "bow",
-  "tooltipFields" : {"subtitle" : "Shortbow"},
+  "description" : "A golden bow infused with an aeon-lit string.",
+  "shortdescription" : "Aeon Longbow",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","shortbow"],
+  "itemTags" : ["weapon", "ranged", "bow"],
 
-  "inventoryIcon" : "icon.png",
+  "radioMessagesOnPickup" : [ "pickupbow" ],
 
-  "animation" : "/items/active/weapons/ranged/aeon_shortbow_1.animation",
+  "level" : 8,
+
+  "animation" : "animation.animation",
   "animationParts" : {
-    "butt" : "",
-    "middle" : "aeon_shortbow_1.png",
-    "barrel" : "",
-    "muzzleFlash" : ""
+    "bow" : "body.png",
+    "bowFullbright" : "fullbright.png"
   },
   "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0.4, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0.4, 0]
+      }}
+    }},
     "sounds" : {
-      "fire" : ["/sfx/gun/bow_loose.ogg"]
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/melee/laser_weapon_swing2.ogg" ],
+      "perfectRelease" : [ "/sfx/melee/laser_weapon_swing1.ogg" ]
     }
   },
-  "baseOffset" : [0.70, 0.2],
-  "muzzleOffset" : [0.75, 0.05],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
 
-  "elementalType" : "physical",
-
+  "primaryAbilityType" : "bowshot",
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
-
-    "fireTime" : 0.6,
-    "baseDps" : 14.0,
-    "energyUsage" : 18,
-    "projectileCount" : 1,
-    "inaccuracy" : 0.01,
-    "fireType" : "auto",
-
-    "projectileType" : "aeon_shortbow_1_projectile_1",
-    "projectileParameters" : {},
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : true
-      },
-      "cooldown" : {
-        "duration" : 0.1,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : true
-      }
+    "fireOffset" : [0.75, 0],
+    "cooldownTime" : 0.1,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_projectile_scouteye",
+    "powerProjectileType" : "arcana_projectile_scouteye",
+    "projectileParameters" : {
+      "power" : 14.0,
+      "speed" : 100,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "aeon_shortbow_1_projectile_1",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 1.0,
+          "inheritSpeedFactor" : 1
+        }
+      ]
     }
   },
 
-  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "name" : "Split Shot",
+    "fireOffset" : [0.75, 0],
+    "energyPerShot" : 95,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_projectile_scouteye",
+    "powerProjectileType" : "arcana_projectile_scouteye",
+    "projectileParameters" : {
+      "power" : 9.4,
+      "speed" : 92,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "aeon_shortbow_1_projectile_1",
+          "angleAdjust" : -5,
+          "inheritDamageFactor" : 0.6,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aeon_shortbow_1_projectile_1",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 0.6,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "aeon_shortbow_1_projectile_1",
+          "angleAdjust" : 5,
+          "inheritDamageFactor" : 0.6,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
 }

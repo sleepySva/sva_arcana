@@ -1,12 +1,12 @@
 {
   "objectName" : "workshop_wireddeco_4",
-  "colonyTags" : ["misc"],
+  "colonyTags" : ["titancorp"],
   "rarity" : "Rare",
   "description" : "A small wall display screen.",
   "shortdescription" : "Small Display Screen",
   "race" : "generic",
   "category" : "decorative",
-  "price" : 100,
+  "price" : 120,
   
   "lightColor" : [140, 80, 30],
 
@@ -21,15 +21,36 @@
     }
   ],
   
-  "animation" : "workshop_wireddeco_4.animation",
+  "animation" : "/objects/arcana_light_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "light" : {
+          "states" : {
+            "on" : {
+              "frames" : 4,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
   "animationParts" : {
     "bg" : "workshop_wireddeco_4.png",
-    "fg" : "workshop_wireddeco_4.png"
+    "fg" : "fullbright.png"
   },
   "animationPosition" : [0, 0],
 
   "scripts" : [ "/objects/wired/light/light.lua" ],
   "scriptDelta" : 60,
+  
+  "interactive" : true,
 
   "inputNodes" : [ [0, 0] ]
 }

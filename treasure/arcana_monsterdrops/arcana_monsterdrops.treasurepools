@@ -17,6 +17,40 @@
     }]
   ],
   
+  "arcana_monsterdrops_orionDrone3" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["orion_crafting_jupiterCell", 1]},
+		{"item" : ["orion_crafting_ursaplate", 4]},
+		{"item" : ["orion_crafting_orionTechCard", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["wire", 2]},
+		{"weight" : 1.0, "item" : ["wire", 3]},
+        {"weight" : 1.0, "item" : ["wire", 4]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_monsterdrops_neoBomb" : [
+    [0, {
+	  "fill" : [
+	    {"item" : ["arcana_misc_neoCell", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["wire", 2]},
+		{"weight" : 1.0, "item" : ["wire", 3]},
+        {"weight" : 1.0, "item" : ["wire", 4]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
   "arcana_monsterdrops_fairi" : [
     [0, {
 	  "fill" : [

@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":8,
+ "tilecount":10,
  "tileheight":8,
  "tileproperties":
     {
@@ -64,6 +64,21 @@
          "\/\/name":"havencrest_tile8",
          "\/\/shortdescription":"",
          "material":"havencrest_tile8"
+        },
+     "8":
+        {
+         "\/\/description":"",
+         "\/\/name":"havencrest_tile5_blue",
+         "\/\/shortdescription":"",
+         "material":"havencrest_tile5",
+		 "colorVariant":"2"
+        },
+     "9":
+        {
+         "\/\/description":"",
+         "\/\/name":"havencrest_tile9",
+         "\/\/shortdescription":"",
+         "material":"havencrest_tile9"
         }
     },
  "tiles":
@@ -99,6 +114,14 @@
      "7":
         {
          "image":"havencrest_tile8.png"
+        },
+     "8":
+        {
+         "image":"havencrest_tile5_blue.png"
+        },
+     "9":
+        {
+         "image":"havencrest_tile9.png"
         }
     },
  "tilewidth":8

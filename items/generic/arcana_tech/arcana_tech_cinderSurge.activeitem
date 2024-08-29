@@ -4,14 +4,14 @@
   "rarity" : "Legendary",
   "category" : "mysteriousReward",
   "inventoryIcon" : "arcana_tech_cinderSurge.png",
-  "description" : "Information about a piece of alien technology. ^orange;[Use to gain a new type of tech!]^reset;",
+  "description" : "Grants +10% attack and +20% run speed for 30s. 50s cooldown. ^green;[F]^reset; ^orange;[Use to gain a new type of tech!]^reset;",
   "shortdescription" : "Cinder Surge",
   "itemTags" : [ "tech" ],
   
   
   "level" : 1,
   "maxStack" : 1,
-  "tooltipKind" : "base",
+  "tooltipKind" : "arcana_base_item",
   "twoHanded" : true,
   
   "scripts" : ["arcana_tech.lua"],

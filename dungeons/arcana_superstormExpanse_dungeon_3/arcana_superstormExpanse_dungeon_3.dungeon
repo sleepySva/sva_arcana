@@ -6,22 +6,243 @@
     ],
 
     "anchor" : [
-	"arcana_superstormExpanse_dungeon_3_part_1"
+	"ground1"
 	],
 
     "gravity" : 80,
     "maxRadius" : 1000000,
     "maxParts" : 100,
-    "protected" : false
+    "protected" : true
   },
 
   "parts" : [
     {
-      "name" : "arcana_superstormExpanse_dungeon_3_part_1",
+      "name" : "ground1",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_superstormExpanse_dungeon_3_part_1.json" ]
+      "def" : [ "tmx", "ground1.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "bottom",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "bottom" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "bottom1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "bottom1" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom1.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "bottom2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "bottom2" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom2.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "bottom3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "bottom3" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom3.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "bottom4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "bottom4" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom4.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "bottom5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "bottom5" ] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom5.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "bottomleft",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottomleft.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "bottomright",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottomright.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt1left1",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt1left1.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt1left2",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt1left2.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt1left3",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt1left3.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt1left4",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt1left4.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt1right1",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt1right1.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt1right2",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt1right2.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt1right3",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt1right3.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt2right1",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt2right1.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "apt2right2",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "apt2right2.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "top1left1",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "top1left1.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "top1left2",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "top1left2.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "top1left3",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "top1left3.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "top1right1",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "top1right1.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "top1right2",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "top1right2.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "1",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "1.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "2",
+      "rules" : [
+	    [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "2.json" ],
+	  "chance" : 0
     }
   ]
 }

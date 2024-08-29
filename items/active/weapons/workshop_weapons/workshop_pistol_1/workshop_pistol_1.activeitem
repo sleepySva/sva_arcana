@@ -4,7 +4,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A pistol, crafted from Dustrium.",
-  "shortdescription" : "^#ffa93d;WG^reset; Dieselle A7",
+  "shortdescription" : "^#ffa93d;TC^reset; Dieslcron",
   "tooltipKind" : "gun",
   "category" : "pistol",
   "twoHanded" : false,
@@ -12,22 +12,37 @@
   "level" : 8,
 
   "inventoryIcon" : "workshop_pistol_1.png",
-
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "workshop_pistol_1.png",
+	"fullbright" : "fb.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.6, 0.2]
+		  }
+		},
+        "muzzleFlash" : {
+          "properties" : {
+            "offset" : [0.5, -0.35]
+		  }
+        }
+	  }
+	},
     "sounds" : {
       "fire" : ["/sfx/gun/revolver2.ogg"]
     }
   },
 
   "baseOffset" : [0.6, 0.2],
-  "muzzleOffset" : [1.8, 0.4],
+  "muzzleOffset" : [1.5, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -37,10 +52,10 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.8,
-    "baseDps" : 10.2,
-    "energyUsage" : 24.0,
-    "inaccuracy" : 0.004,
+    "fireTime" : 0.9,
+    "baseDps" : 9.8,
+    "energyUsage" : 38.0,
+    "inaccuracy" : 0.003,
 
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -48,7 +63,7 @@
     "projectileType" : "workshop_pistol_1_projectile_1",
     "projectileParameters" : {
 	  "speed" : 120,
-      "knockback" : 8
+      "knockback" : 10
     },
     "stances" : {
       "idle" : {

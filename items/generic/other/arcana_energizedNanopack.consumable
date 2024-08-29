@@ -1,17 +1,16 @@
 {
   "itemName" : "arcana_energizedNanopack",
   "rarity" : "Legendary",
-  "price" : 900,
+  "price" : 800,
   "category" : "medicine",
   "tooltipKind" : "arcana_base_generic",
   "inventoryIcon" : "arcana_energizedNanopack.png",
   
   "description" : "A nanopack that has been improved by energized nanites.
-
 ^green;Restores 300 Health over 2 seconds.^reset;
 ^yellow;Cooldown: 28s^reset;",
   
-  "shortdescription" : "Energized Nanopack",
+  "shortdescription" : "^#fffefe;Energized Nanopack^reset;",
   "effects" : [ [
       {
         "effect" : "arcana_status_heal_energizedNanopack"
@@ -23,6 +22,7 @@
     "nanowrapheal",
     "arcana_status_heal_nanopack",
 	"arcana_status_heal_energizedNanopack",
-	"arcana_status_heal_neoNanopack"
+	"arcana_status_heal_neoNanopack",
+	"arcana_status_heal_evoNanopack"
   ]
 }

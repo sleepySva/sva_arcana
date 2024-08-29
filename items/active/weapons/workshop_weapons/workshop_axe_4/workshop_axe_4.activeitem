@@ -4,8 +4,8 @@
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A variant heavy axe utilized by Section 8 of the Workshop of Gears.",
-  "shortdescription" : "^#ffa93d;WGS8^reset; Dustrium Axe PA",
+  "description" : "A variant heavy axe emitting high heat.",
+  "shortdescription" : "^#ffa93d;TC^reset; Searing Axe Prototype A",
   "tooltipKind" : "sword",
   "category" : "axe",
   "twoHanded" : false,
@@ -34,13 +34,14 @@
   "primaryAbilityType" : "arcana_axe_ability_burstCleave",
   "primaryAbility" : {
   
-    "projectileType" : "workshop_axe_1_projectile_1",
-  	"projectileCount" : 4,
+    "projectileType" : "firetravelingswoosh",
+  	"projectileCount" : 1,
     "projectileDistance" : 1.0,
 	"projectileParameters" : {
-		"baseDamage" : 6,
+		"baseDamage" : 13,
 		"emitters" : ["sparks"],
-		"speed" : 18,
+		"speed" : 28,
+		"timeToLive" : 0.5,
 		"actionOnReap" : [
 			{
 				"action" : "config",
@@ -49,7 +50,7 @@
 		]
     },
 	
-    "fireTime" : 0.9,
+    "fireTime" : 1.0,
     "baseDps" : 8.4,
     "damageConfig" : {
       "knockback" : 20

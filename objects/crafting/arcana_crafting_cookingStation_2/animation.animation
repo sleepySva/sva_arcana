@@ -5,26 +5,29 @@
         "default" : "stage_2",
         "states" : {
           "stage_1" : {
-            "frames" : 4,
-            "cycle" : 0.4,
+            "frames" : 1,
+            "cycle" : 0.5,
             "mode" : "loop"
           },
           "stage_2" : {
-            "frames" : 4,
-            "cycle" : 0.4,
-            "mode" : "loop"
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
           },
           "stage_3" : {
-            "frames" : 8,
-            "cycle" : 0.8,
+            "frames" : 1,
+            "cycle" : 0.5,
             "mode" : "loop",
             "properties" : {
               "lightsOn" : [ "scifiglow" ]
             }
           },
           "stage_4" : {
-            "frames" : 20,
-            "cycle" : 2.0,
+            "frames" : 1,
+            "cycle" : 0.5,
             "mode" : "loop",
             "properties" : {
               "lightsOn" : [ "scifiglow" ]
@@ -113,7 +116,7 @@
     "scifiglow" : {
       "active" : false,
       "position" : [0, 2],
-      "color" : [76, 125, 153],
+      "color" : [140, 145, 133],
       "flickerPeriod" : 0.8,
       "flickerMinIntensity" : 0.95,
       "flickerMaxIntensity" : 1.0,

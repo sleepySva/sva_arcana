@@ -17,7 +17,7 @@
 
   "animation" : "animation.animation",
   "animationPosition" : [0, 19],
-  "placementImage" : "2.png:default.default",
+  "placementImage" : "3.png:default.default",
   "placementImagePosition" : [-36, -0],    
 
   "startingUpgradeStage" : 1,
@@ -43,14 +43,10 @@
 		"filter" : ["arcana_crafting_techStation_3"],
         "upgradeMaterials" : [
 			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
-			{ "item" : "wire", "count" : 16 },
-			{ "item" : "siliconboard", "count" : 8 },
-			{ "item" : "smallbattery", "count" : 4 },
-			{ "item" : "battery", "count" : 2 },
-			{ "item" : "salvagearm", "count" : 16 },
-			{ "item" : "salvagetier4", "count" : 8 },
-			{ "item" : "salvagetier5", "count" : 4 },
-			{ "item" : "salvagetier6", "count" : 2 }
+			{ "item" : "workshop_crafting_dustriumWire", "count" : 32 },
+			{ "item" : "workshop_crafting_dustriumConnector", "count" : 32 },
+			{ "item" : "workshop_crafting_motor", "count" : 16 },
+			{ "item" : "workshop_crafting_reinforcedFrame", "count" : 16 }
         ]
 	  },
 

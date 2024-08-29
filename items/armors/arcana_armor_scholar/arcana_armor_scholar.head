@@ -1,13 +1,13 @@
 {
   "itemName" : "arcana_armor_scholar_head",
-  "price" : 1000,
+  "price" : 1100,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "headarmour",
-  "description" : "A circlet crafted from arcanium.",
+  "description" : "A circlet crafted from arcanium. ^green;+10% ATK when using Magic weapons.^reset;",
   "shortdescription" : "Scholar's Circlet",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
@@ -35,6 +35,10 @@
       "stat" : "maxHealth",
       "amount" : 12
     }
+  ],
+  
+  "statusEffects" : [
+    "arcana_status_magicbuff"
   ],
   
   "colorOptions" : [

@@ -6,14 +6,15 @@
   "bounces" : 0,
   "speed" : 80,
   "piercing" : false,
+  "orientationLocked" : true,
   
   "image" : "workshop_pistol_1_projectile_1.png",
   "animationCycle" : 0.2,
   "frameNumber" : 1,
   
-  "fullbright" : true,
-  "lightColor" : [148, 62, 145],
-  "emitters" : ["sparks","smoke","rockettrail"],
+  "fullbright" : false,
+  "lightColor" : [20, 20, 0],
+  "emitters" : ["sparks"],
   
   "supportsProcessing" : true,
   
@@ -21,6 +22,38 @@
     {
       "action" : "config",
       "file" : "/projectiles/explosions/heavybulletexplosion/heavybulletexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_bulletimpact",
+      "fuzzAngle" : 365,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 35
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_bulletimpact",
+      "fuzzAngle" : 365,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 35
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.005,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/workshop_pistol_1_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "shrink",
+        "fullbright" : false
+      }
     }
   ],
   

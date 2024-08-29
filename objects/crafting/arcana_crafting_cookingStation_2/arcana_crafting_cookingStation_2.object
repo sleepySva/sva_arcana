@@ -39,7 +39,7 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_cookingStation/arcana_crafting_cookingStation_2.config",
-		"filter" : ["arcana_crafting_cookingStation_2"],
+		"filter" : ["arcana_crafting_cookingStation_2","craftingmedical","craftingfood"],
         "upgradeMaterials" : [
 			{ "item" : "arcana_bar_thoriumBar", "count" : 6 },
 			{ "item" : "wire", "count" : 6 },
@@ -67,7 +67,7 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_cookingStation/arcana_crafting_cookingStation_3.config",
-		"filter" : ["arcana_crafting_cookingStation_2", "arcana_crafting_cookingStation_3"],
+		"filter" : ["arcana_crafting_cookingStation_2", "arcana_crafting_cookingStation_3","craftingmedical", "craftingmedical2","craftingfood"],
         "upgradeMaterials" : [
 			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
 			{ "item" : "banana", "count" : 1 },
@@ -102,7 +102,7 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_cookingStation/arcana_crafting_cookingStation_4.config",
-		"filter" : ["arcana_crafting_cookingStation_2", "arcana_crafting_cookingStation_3", "arcana_crafting_cookingStation_4"]
+		"filter" : ["arcana_crafting_cookingStation_2", "arcana_crafting_cookingStation_3", "arcana_crafting_cookingStation_4","craftingmedical", "craftingmedical2","craftingfood"]
 	  },
 
       "learnBlueprintsOnPickup" : []

@@ -1,5 +1,94 @@
-
 {
+  
+  "arcana_dungeonloots_neoncityextra" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["arcana_body_redSkyHoodie", 1]},
+		{"item" : ["scorpio_katana_rare", 1]},
+		{"item" : ["arcana_currency_credit", 20]}
+      ]
+    }]
+  ],   
+  
+  "arcana_dungeonloots_lighthavenextra" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["bookpiles", 1]}
+      ]
+    }]
+  ], 
+
+  "arcana_dungeonloots_nanowrap" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["nanowrap", 1]}
+      ]
+    }]
+  ],    
+  
+  "arcana_dungeonloots_neoncitybooks" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["bookpiles", 1]},
+		{"pool" : "arcana_dungeonloots_neoncitycodex"}
+      ]
+    }]
+  ],
+  
+  "arcana_dungeonloots_neoncitydrinks" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["saloontumbler", 1]}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "item" : ["carrotjuice", 1]},
+		{"weight" : 1.0, "item" : ["tomatojuice", 1]},
+		{"weight" : 1.0, "item" : ["thornjuice", 1]},
+		{"weight" : 1.0, "item" : ["alienfruitjam", 1]},
+		{"weight" : 1.0, "item" : ["alienfruitjuice", 1]},
+		{"weight" : 1.0, "item" : ["avesmingojuice", 1]},
+		{"weight" : 1.0, "item" : ["pussplumjam", 1]},
+		{"weight" : 1.0, "item" : ["toxicjuice", 1]}
+      ],
+      "poolRounds" : [
+        [0.5, 1],
+        [0.5, 2]
+      ]
+    }]
+  ],
+  
+  "arcana_dungeonloots_neoncitycodex" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_codex_misc_3-codex", 1]},
+		{"weight" : 1.0, "item" : ["arcana_codex_misc_4-codex", 1]},
+		{"weight" : 1.0, "item" : ["arcana_codex_misc_5-codex", 1]},
+		{"weight" : 1.0, "item" : ["arcana_codex_misc_6-codex", 1]},
+		{"weight" : 1.0, "item" : ["bookpiles", 2]},
+		{"weight" : 1.0, "item" : ["bookpiles", 3]},
+		{"weight" : 1.0, "item" : ["bookpiles", 4]},
+		{"weight" : 1.0, "item" : ["bookpiles", 5]}
+      ],
+      "poolRounds" : [
+        [0.5, 1],
+        [0.5, 1]
+      ]
+    }]
+  ],
+  "arcana_dungeonloots_titancorpBlueprint" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["arcana_blueprint_workshop", 1]}
+      ]
+    }]
+  ],
+  "arcana_dungeonloots_elementalHeart" : [
+    [0, {
+	  "fill" : [
+		{"item" : ["arcana_misc_elementalHeart", 1]}
+      ]
+    }]
+  ],
   
   "arcana_dungeonloots_horizonTiles" : [
     [0, {
@@ -219,17 +308,29 @@
       "pool" : [
 		{"weight" : 1.0, "item" : ["orion_crafting_ursaplate", 2]},
 		{"weight" : 1.0, "item" : ["smallbattery", 1]},
-        {"weight" : 1.0, "item" : ["smallbattery", 1]},
+        {"weight" : 1.0, "item" : ["wire", 1]},
 		{"weight" : 1.0, "item" : ["orion_crafting_orionTechCard", 1]},
-		{"weight" : 1.0, "item" : ["wire", 1]}
+		{"weight" : 1.0, "item" : ["orion_tile12", 10]},
+		{"weight" : 1.0, "item" : ["orion_tile9", 10]},
+		{"weight" : 1.0, "item" : ["orion_tile10", 10]}
       ],
       "poolRounds" : [
-        [1.0, 2],
-		[1.0, 3],
+        [1.0, 1],
+		[1.0, 2],
 		[1.0, 3]
       ]
     }]
   ],
+  
+  "arcana_dungeonloots_orionBlueprint" : [
+    [0, {
+	  "fill" : [
+	    {"weight" : 1.0, "pool" : "arcana_dungeonloots_orionChestTreasure"},
+		{"weight" : 1.0, "item" : ["arcana_blueprint_orion", 1]}
+      ]
+    }]
+  ],
+  
   "arcana_dungeonloots_orionChestTreasure" : [
     [0, {
 	  "fill" : [
@@ -238,11 +339,11 @@
       "pool" : [
 		{"weight" : 1.0, "item" : ["orion_crafting_ursaplate", 2]},
 		{"weight" : 1.0, "item" : ["orion_crafting_orionTechCard", 1]},
-		{"weight" : 1.0, "item" : ["orion_tile2", 20]},
-		{"weight" : 1.0, "item" : ["orion_tile7", 20]},
-		{"weight" : 1.0, "item" : ["orion_tile15", 20]},
-		{"weight" : 1.0, "item" : ["orion_tile16", 20]},
-		{"weight" : 1.0, "item" : ["orion_tile10", 20]}
+		{"weight" : 1.0, "item" : ["orion_tile12", 20]},
+		{"weight" : 1.0, "item" : ["orion_tile9", 20]},
+		{"weight" : 1.0, "item" : ["orion_tile10", 20]},
+		{"weight" : 1.0, "item" : ["arcana_currency_credit", 2]},
+		{"weight" : 1.0, "item" : ["arcana_currency_credit", 3]}
       ],
       "poolRounds" : [
         [1.0, 6],

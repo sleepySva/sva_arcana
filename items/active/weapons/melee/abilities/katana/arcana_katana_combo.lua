@@ -138,14 +138,11 @@ function MeleeCombo:fire()
   local chargeTimer = 0
   local chargeTime = stance.duration or 0.2
   
-  animator.setParticleEmitterActive("dashParticles", true)
   
-  local momentum = 20
+  local momentum = {50,0}
   if mcontroller.groundMovement() then 
-    momentum = 40
+    momentum[2] = 20
   end
-  
-  mcontroller.addMomentum({(vec2.rotate({1, 0}, self.weapon.aimAngle))[1] * momentum * self.weapon.aimDirection, (vec2.rotate({1, 0}, self.weapon.aimAngle))[2] * 60})
   
     self.scoutProjectileId = world.spawnProjectile(
       self.shakeProjectileType,
@@ -159,6 +156,11 @@ function MeleeCombo:fire()
   activeItem.setCameraFocusEntity(self.scoutProjectileId)
 
   util.wait(stance.duration, function()
+    if self.comboStep == 4 then
+	  animator.setParticleEmitterActive("dashParticles", true)
+      mcontroller.controlMove(self.weapon.aimDirection)
+      mcontroller.controlApproachVelocity({(vec2.rotate({1, 0}, self.weapon.aimAngle))[1] * momentum[1] * self.weapon.aimDirection, (vec2.rotate({1, 0}, self.weapon.aimAngle))[2] * momentum[2]}, 4000)
+	end
     local damageArea = partDamageArea("swoosh")
     self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
 	

@@ -14,6 +14,21 @@
 			] ]
 		]
 	},
+	
+	// Gilten Clothing Merchant
+	{ "op" : "add", "path" : "/arcana_giltenclothes",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "fabric" } },
+			  { "item": { "name": "string" }, "rarity": 0.6 },
+			  { "item": { "name": "whitedye" }, "rarity": 0.6 },
+			  { "item": { "name": "yellowdye" }, "rarity": 0.6 },
+			  { "item": { "name": "arcana_armor_disciple_head" }},
+			  { "item": { "name": "arcana_armor_disciple_chest" }},
+			  { "item": { "name": "arcana_armor_disciple_legs" }}
+			] ]
+		]
+	},
 
 	// Astral Fabric Merchant
 	{ "op" : "add", "path" : "/arcana_merchantpool_astralMerchantFabric",

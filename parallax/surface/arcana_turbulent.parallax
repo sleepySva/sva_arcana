@@ -3,18 +3,18 @@
   
   "layers" : [
     {
-      "kind" : "divider/blackrock",
-      "offset" : [0, 350],
+      "kind" : "divider/arcana_turbulent_rock",
+      "offset" : [0, 100],
       "nohueshift" : true,
       "lightMapped" : true,
       "parallax" : 1.199
     },
     {
-      "kind" : "tile/magmarock",
+      "kind" : "tile/arcana_turbulent_rock",
       "nohueshift" : true,
       "lightMapped" : true,
       "repeatY" : true,
-      "tileLimitTop" : 275,
+      "tileLimitTop" : 25,
       "parallax" : 1.2
     },
     {
