@@ -4311,28 +4311,6 @@
                 }, 
                 {
                  "height":8,
-                 "id":2154,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"human"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"nakedvillager"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":1104,
-                 "y":312
-                }, 
-                {
-                 "height":8,
                  "id":2155,
                  "name":"",
                  "properties":[
@@ -4351,6 +4329,28 @@
                  "visible":true,
                  "width":8,
                  "x":1128,
+                 "y":312
+                }, 
+                {
+                 "height":8,
+                 "id":2161,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"novakid"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"villager"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1104,
                  "y":312
                 }],
          "opacity":1,
@@ -4499,7 +4499,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -4515,7 +4515,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":2161,
+ "nextobjectid":2162,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

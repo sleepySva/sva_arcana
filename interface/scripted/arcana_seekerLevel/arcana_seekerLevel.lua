@@ -68,10 +68,7 @@ end
 function displayStats()
   local playerlevel = player.currency("arcana_seekerlevel")
   for i=1,self.max do 
-    sb.logInfo("---")
-    sb.logInfo("i: "..i)
 	for k, v in pairs(self.stats[""..i]) do 
-	  sb.logInfo("stat: "..self.dict[v.stat].." amount: +"..v.amount)
 	end
   end
 end
