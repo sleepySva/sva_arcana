@@ -15,8 +15,6 @@ end
 
 function applystats()
   local playerlevel = effect.duration() + 0.5
-  sb.logInfo("---")
-  sb.logInfo(playerlevel)
   
   local total = { maxHealth = 0, powerMultiplier = 0, maxEnergy = 0 }
   for i=1,self.max do
@@ -26,8 +24,6 @@ function applystats()
   end
   
   for k, v in pairs(total) do 
-    sb.logInfo("---")
-    sb.logInfo("stat: "..k.." amount: "..v)
 	effect.addStatModifierGroup({{stat = k, amount = v}})
   end
 end
