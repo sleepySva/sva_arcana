@@ -2096,42 +2096,6 @@
                  "y":1952
                 }, 
                 {
-                 "gid":7280,
-                 "height":16,
-                 "id":2126,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"trifangle\"], \"monsterLevel\" : [1, 1], \"monsterParams\" : { \"aggressive\" : true }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":2608,
-                 "y":1872
-                }, 
-                {
-                 "gid":7280,
-                 "height":16,
-                 "id":2128,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"trifangle\"], \"monsterLevel\" : [1, 1], \"monsterParams\" : { \"aggressive\" : true }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":2832,
-                 "y":1872
-                }, 
-                {
                  "gid":9083,
                  "height":40,
                  "id":2129,
@@ -2368,31 +2332,13 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"trifangle\"], \"monsterLevel\" : [1, 1], \"monsterParams\" : { \"aggressive\" : true }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"trifangle\"], \"monsterLevel\" : [1, 1], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 20 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
                  "x":1624,
-                 "y":1776
-                }, 
-                {
-                 "gid":7280,
-                 "height":16,
-                 "id":2163,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"trifangle\"], \"monsterLevel\" : [1, 1], \"monsterParams\" : { \"aggressive\" : true }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":1800,
                  "y":1776
                 }, 
                 {
@@ -7499,6 +7445,60 @@
                  "width":16,
                  "x":3816,
                  "y":1256
+                }, 
+                {
+                 "gid":7280,
+                 "height":16,
+                 "id":2886,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"trifangle\"], \"monsterLevel\" : [1, 1], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 20 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":1800,
+                 "y":1776
+                }, 
+                {
+                 "gid":7280,
+                 "height":16,
+                 "id":2887,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"trifangle\"], \"monsterLevel\" : [1, 1], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 20 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":2832,
+                 "y":1872
+                }, 
+                {
+                 "gid":7280,
+                 "height":16,
+                 "id":2888,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"trifangle\"], \"monsterLevel\" : [1, 1], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 20 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":2608,
+                 "y":1872
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -11444,7 +11444,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -11460,7 +11460,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":2886,
+ "nextobjectid":2889,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
