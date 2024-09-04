@@ -60,6 +60,8 @@
     ],
     "monsterParameters" : {
       "colors" : "snow",
+		"healthLevelFunction" : "monsterLevelHealthMultiplier",
+		"powerLevelFunction" : "monsterLevelPowerMultiplier",
         "statusSettings" : {
         "stats" : {
           "lavaImmunity" : {
