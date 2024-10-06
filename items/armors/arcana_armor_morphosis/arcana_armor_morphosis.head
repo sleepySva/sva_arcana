@@ -5,13 +5,21 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "headarmour",
-  "description" : "A mask made from morphosis bars.",
+  "description" : "A mask made from morphosis bars. \n\n^orange;Set Bonus:^reset; Grants ^green;+5% Poison RES^reset;. ^green;+10% Physical RES while using a Shield^reset;. ^orange;2 Piece set^reset;.",
   "shortdescription" : "Morphosis Mask",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+  
+  "statusEffects" : [
+    "arcana_morphosisset",
+    {
+      "stat" : "morphosis",
+      "amount" : 1
+    }
+  ],   
 
   "level" : 7,
   "leveledStatusEffects" : [

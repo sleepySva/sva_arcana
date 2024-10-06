@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_catacomb_deco_13",
+  "colonyTags" : ["misc", "arcana_catacomb"],
+  "rarity" : "Common",
+  "description" : "A decorative flag.",
+  "shortdescription" : "Waving Flag",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 80,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "frames" : 11,
+      "animationCycle" : 1.1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

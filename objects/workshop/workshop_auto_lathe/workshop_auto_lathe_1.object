@@ -77,6 +77,9 @@
       "anchors" : [ "bottom" ]
     }
   ],
+  
+  "placementImage" : "1.png:default.0",
+  "placementImagePosition" : [0, 0],
 
   "soundEffect" : "/sfx/objects/campfire.ogg",
   "soundEffectRangeMultiplier" : 0.5,
@@ -87,26 +90,7 @@
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
   
-  "recipes" : {
-    "workshop_crafting_dustriumWire" : {
-      "input" : [
-        { "name" : "workshop_crafting_dustriumPlate", "count" : 1 }
-      ],
-      "output" : { "name" : "workshop_crafting_dustriumWire", "count" : 2 }
-	},
-    "workshop_crafting_dustriumConnector" : {
-      "input" : [
-        { "name" : "ironbar", "count" : 1 }
-      ],
-      "output" : { "name" : "workshop_crafting_dustriumConnector", "count" : 2 }
-	},
-    "workshop_crafting_dustriumPanel" : {
-      "input" : [
-        { "name" : "workshop_crafting_dustriumConnector", "count" : 4 }
-      ],
-      "output" : { "name" : "workshop_crafting_dustriumPanel", "count" : 1 }
-	}
-  },
+  "configPath" : "/objects/workshop/workshop_auto_lathe/lathe.config",
   "maxPower" : 20,
   "powerUseAmount" : 10,
   "voltage" : 30,

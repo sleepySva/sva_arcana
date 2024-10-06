@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "chestwear",
-  "description" : "A reinforced jacket that defends against the cold. ^green;+8% Ice Res.^reset;",
+  "description" : "A reinforced jacket that defends against the cold. \n\n^orange;Set Bonus:^reset; \nGrants ^green;Frost Immunity^reset; and ^green;+20% Ice RES^reset;.",
   "shortdescription" : "Frostclad Jacket",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_frostcladset",
+    {
+      "stat" : "arcana_frostclad",
+      "amount" : 1
+    }
+  ],
   
   "level" : 4,
   "leveledStatusEffects" : [
@@ -42,11 +50,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 6
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "iceResistance",
-      "amount" : 0.08
     }
   ],
 

@@ -58,8 +58,8 @@ end
 
 function automation()
   
+  if self.isPowered == false then return end
   local powered = true
-  if not cf_power.consumePower(self.powerUseAmount) then powered = false end
   local lastItem = world.containerItemAt(entity.id(), world.containerSize(entity.id()) - 1)
   
   local ironquery = world.objectQuery(object.position(), 3, { name = "workshop_auto_node_iron" })
@@ -103,6 +103,13 @@ function powerCheck()
 end
 
 function update(dt)
+  if self.consumptionTimer > 0 then
+    self.consumptionTimer = math.max(0, self.consumptionTimer - dt)
+    if self.consumptionTimer == 0 then
+      powerCheck()
+	  self.consumptionTimer = self.consumptionTime
+    end
+  end
   if self.cooldownTimer > 0 then
     self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
     if self.cooldownTimer == 0 then

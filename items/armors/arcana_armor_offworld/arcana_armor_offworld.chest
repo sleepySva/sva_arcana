@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "A white futuristic combat suit.",
+  "description" : "A white futuristic combat suit. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Ranged damage^reset;, ^green;+10% Electric RES^reset; and ^green;+40% Energy Regen Rate^reset;.",
   "shortdescription" : "Offworld Suit",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_offworldset",
+    {
+      "stat" : "arcana_offworld",
+      "amount" : 1
+    }
+  ],      
   
   "level" : 8,
   "leveledStatusEffects" : [

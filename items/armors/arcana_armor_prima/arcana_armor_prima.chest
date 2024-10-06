@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "A white futuristic combat suit. ^green;+5% Electric res.^reset;",
+  "description" : "A white futuristic combat suit. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+15% Electric RES^reset; and ^green;+20% Max Energy^reset;.",
   "shortdescription" : "Prima Suit",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_primaset",
+    {
+      "stat" : "arcana_prima",
+      "amount" : 1
+    }
+  ],    
   
   "level" : 8,
   "leveledStatusEffects" : [
@@ -42,11 +50,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 24
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "electricResistance",
-      "amount" : 0.05
     }
   ],
 

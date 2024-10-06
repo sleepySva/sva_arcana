@@ -1,0 +1,22 @@
+{
+  "materialId" : 16373,
+  "materialName" : "studio_tile12",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile12",
+  "description" : "A solid iron fence.",
+  "shortdescription" : "Iron Fence",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+  "blocksLiquidFlow" : false,
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile12.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 300
+  }
+}

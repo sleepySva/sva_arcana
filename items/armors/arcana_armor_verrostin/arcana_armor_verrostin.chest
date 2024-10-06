@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "A haken-verrostin forged armor.",
+  "description" : "A haken-verrostin forged armor. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Verrostin Weapon, Rocket Launcher and Blast Rifle damage.^reset;",
   "shortdescription" : "Verrostin Chestplate",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_verrostinset",
+    {
+      "stat" : "arcana_verrostin",
+      "amount" : 1
+    }
+  ],     
   
   "level" : 8,
   "leveledStatusEffects" : [

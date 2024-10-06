@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_animaset",
+  "effectConfig" : {
+  
+    "set" : "arcana_anima",
+	"minParts" : 2,
+    "statModifiers" : [
+	  { "stat" : "fireResistance", "amount" : 0.10 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["katana","animus"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

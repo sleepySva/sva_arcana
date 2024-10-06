@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_aegisset",
+  "effectConfig" : {
+  
+    "set" : "arcana_aegis",
+	"minParts" : 3,
+    "statModifiers" : [
+    ],
+	"weaponBuff" : {
+      "tags" : ["shield"],
+      "modifiers" : [
+        { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.2 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

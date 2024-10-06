@@ -5,13 +5,21 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headarmour",
-  "description" : "A white futuristic helmet.",
+  "description" : "A white futuristic helmet. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Ranged damage^reset;, ^green;+10% Electric RES^reset; and ^green;+40% Energy Regen Rate^reset;.",
   "shortdescription" : "Offworld Helmet",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+
+  "statusEffects" : [
+    "arcana_offworldset",
+    {
+      "stat" : "arcana_offworld",
+      "amount" : 1
+    }
+  ],    
 
   "level" : 8,
   "leveledStatusEffects" : [

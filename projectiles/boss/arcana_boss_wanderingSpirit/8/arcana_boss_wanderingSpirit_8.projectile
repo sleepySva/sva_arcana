@@ -1,0 +1,38 @@
+{
+  "projectileName" : "arcana_boss_wanderingSpirit_8",
+  "image" : "body.png",
+  "animationCycle" : 0.8,
+  "timeToLive" : 3.0,
+  "frameNumber" : 8,
+  "speed" : 4,
+  "damagePoly" : [ [-6, -3], [-6, 3], [6, 3], [6, -3] ],
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "plasma",
+  "lightColor" : [0, 178, 251],
+  "statusEffects" : ["arcana_status_frightened"],
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+	{
+		"action" : "spawnmonster",
+		"type" : "arcana_monster_skeleton",
+		"offset": [ 0, 0 ],
+		"level" : 5,
+		"arguments" : { }
+	},
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_2_blue/arcana_explosion_plasma_2_blue.config"
+    }
+  ],
+  
+  "fullbright" : true,
+  "emitters" : []
+}

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "A heavy armor forged from haken-stahlite.",
+  "description" : "A heavy armor forged from haken-stahlite. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+20% Damage while using a Shield^reset;.",
   "shortdescription" : "Aegis Chestplate",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_aegisset",
+    {
+      "stat" : "arcana_aegis",
+      "amount" : 1
+    }
+  ],    
   
   "level" : 8,
   "leveledStatusEffects" : [
@@ -36,7 +44,7 @@
     {
       "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 4
+      "amount" : 2
     },
     {
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",

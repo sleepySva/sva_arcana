@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "A white futuristic leggings. ^green;+5% Electric res.^reset;",
+  "description" : "A white futuristic leggings. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+15% Electric RES^reset; and ^green;+20% Max Energy^reset;.",
   "shortdescription" : "Prima Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_primaset",
+    {
+      "stat" : "arcana_prima",
+      "amount" : 1
+    }
+  ],    
   
   "level" : 8,
   "leveledStatusEffects" : [
@@ -33,11 +41,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 22
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "electricResistance",
-      "amount" : 0.05
     }
   ],
 

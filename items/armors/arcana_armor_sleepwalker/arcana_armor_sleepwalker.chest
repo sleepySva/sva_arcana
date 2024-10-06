@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "A dark combat jacket. ^red;-10% Eletric resistance.^reset;",
+  "description" : "A dark combat jacket. ^red;-10% Eletric resistance.^reset; \n\n^orange;Set Bonus:^reset; \nGrants ^green;+15% Katana and Dagger damage^reset;.",
   "shortdescription" : "Sleepwalker Jacket",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_sleepwalkerset",
+    {
+      "stat" : "arcana_sleepwalker",
+      "amount" : 1
+    }
+  ],       
   
   "level" : 8,
   "leveledStatusEffects" : [

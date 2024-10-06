@@ -5,13 +5,21 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "headarmour",
-  "description" : "A light circlet. ^green;+5% Poison res.^reset;",
+  "description" : "A light circlet. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+30% Energy Regen Rate^reset; and ^green;+15% Poison RES^reset;.",
   "shortdescription" : "Alchemilla Circlet",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+  
+  "statusEffects" : [
+    "arcana_alchemillaset",
+    {
+      "stat" : "arcana_alchemilla",
+      "amount" : 1
+    }
+  ],    
 
   "level" : 2,
   "leveledStatusEffects" : [

@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "A pair of leggings, crafted from anima bars. ^green;+2% Fire RES.^reset;",
+  "description" : "A pair of leggings, crafted from anima bars. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Animus Weapon and Katana damage^reset;, and ^green;+10% Fire RES^reset;. ^orange;2 Piece Set^reset;.",
   "shortdescription" : "Anima Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_animaset",
+    {
+      "stat" : "arcana_anima",
+      "amount" : 1
+    }
+  ],
   
   "level" : 7,
   "leveledStatusEffects" : [
@@ -33,17 +41,12 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 16
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "fireResistance",
-      "amount" : 0.02
     }
   ],
 
   "colorOptions" : [
     // DEFAULT
-    { "ffca8a" : "96e8f7", "e0975c" : "2a6d92", "a85636" : "357ca3", "6f2919" : "184f6d" },
+    { "ffca8a" : "19cfc0", "e0975c" : "1ea6d9", "a85636" : "3259da", "6f2919" : "0f297e" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

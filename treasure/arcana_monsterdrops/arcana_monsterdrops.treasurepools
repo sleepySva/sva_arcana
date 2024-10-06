@@ -1,6 +1,20 @@
 
 {
 
+  "arcana_monsterdrops_skeleton" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["money", 20]},
+		{"weight" : 1.0, "item" : ["bone", 1]},
+		{"weight" : 1.0, "item" : ["bone", 2]},
+        {"weight" : 1.0, "item" : ["bone", 3]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
   "arcana_monsterdrops_pigmentPowder" : [
     [0, {
 	  "fill" : [

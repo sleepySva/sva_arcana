@@ -8,11 +8,11 @@
   "shortdescription" : "^#1e9a79;Sinornis^reset;",
   "category" : "staff",
   "tooltipFields" : {
-	"subtitle" : "^yellow;Summon Staff^#reset;"
+	"subtitle" : "Summon Staff"
   },
   "twoHanded" : true,
   "itemTags" : ["weapon","staff"],
-  "tooltipKind" : "staff",
+  "tooltipKind" : "arcana_staff",
 
   "animation" : "animation.animation",
   "animationParts" : {
@@ -78,7 +78,7 @@
     }
   },
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
 
   "primaryAbilityType" : "elementswarm",
   "primaryAbility" : {

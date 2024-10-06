@@ -1,0 +1,24 @@
+{
+  "name" : "arcana_horncasterset",
+  "effectConfig" : {
+  
+    "set" : "arcana_horncaster",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "energyRegenPercentageRate", "effectiveMultiplier" : 1.6 },
+	  { "stat" : "physicalResistance", "amount" : 0.1 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["staff"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.15 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

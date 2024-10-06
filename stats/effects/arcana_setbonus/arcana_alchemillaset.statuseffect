@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_alchemillaset",
+  "effectConfig" : {
+  
+    "set" : "arcana_alchemilla",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "energyRegenPercentageRate", "effectiveMultiplier" : 1.3 },
+	  { "stat" : "poisonResistance", "amount" : 0.15 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["none"],
+      "modifiers" : [
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

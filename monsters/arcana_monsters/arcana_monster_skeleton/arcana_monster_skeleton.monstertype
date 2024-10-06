@@ -1,12 +1,14 @@
 {
   "type" : "arcana_monster_skeleton",
+  "shortdescription" : "Skeleton",
+  "description" : "A skeleton, reanimated from an alien power.",
 
   "categories" : [ "arcana_monster_skeleton" ],
   "parts" : [ "body" ],
 
   "animation" : "arcana_monster_skeleton.animation",
 
-  "dropPools" : [ "apexmutanttreasure" ],
+  "dropPools" : [ "arcana_monsterdrops_skeleton" ],
 
   "baseParameters" : {
     "scripts" : [
@@ -58,9 +60,13 @@
         {
           "name" : "approach-walk",
           "parameters" : {
-            "canJump" : false,
-            "run" : true,
-            "moveState" : "run"
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10,
+            "run" : true
           }
         }
       ],
@@ -74,9 +80,12 @@
         {
           "name" : "approach-walk",
           "parameters" : {
-            "canJump" : false,
-            "run" : true,
-            "moveState" : "run"
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10
           }
         }
       ],
@@ -192,7 +201,7 @@
 
     "mouthOffset" : [0, 0],
     "feetOffset" : [0, -22],
-    "capturable" : false,
+    "capturable" : true,
     "captureHealthFraction" : 0.5,
     "nametagColor" : [64, 200, 255]
   }

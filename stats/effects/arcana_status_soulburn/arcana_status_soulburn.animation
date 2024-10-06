@@ -1,0 +1,32 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 7.0,
+      "particles" : [
+        {
+          "particle" : "arcana_particle_soulburn"
+        }
+      ]
+    },
+    "name" : {
+      "enabled" : false,
+	  "burstCount" : 1,
+      "particles" : [
+        {
+          "particle" : "arcana_soulburn"
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [30, 166, 217]
+    }
+  },
+  "sounds" : {
+    "burn" : [ "/sfx/projectiles/flame_burning.ogg" ]
+  }
+}

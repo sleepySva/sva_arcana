@@ -1,0 +1,46 @@
+{
+  "projectileName" : "arcana_boss_wanderingSpirit_5",
+  "image" : "body.png",
+  "animationCycle" : 0.3,
+  "timeToLive" : 3.0,
+  "frameNumber" : 3,
+  "speed" : 10,
+  "acceleration" : 70,
+  "damagePoly" : [ [28, -11], [24, 11], [2, 11], [-12, -11] ],
+  "piercing" : false,
+  "flippable" : true,
+  "damageKind" : "plasma",
+  "lightColor" : [0, 178, 251],
+  "statusEffects" : ["arcana_status_frightened"],
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_wanderingSpirit/5/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "shrink",
+        "fullbright" : false
+      }
+    }
+  ],  
+  
+  "fullbright" : true,
+  "emitters" : []
+}

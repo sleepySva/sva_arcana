@@ -1,0 +1,123 @@
+{
+  "metadata" : {
+    "name" : "arcana_nightmist_dungeon_3",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	  "crystal_top"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "1.json" ]
+    },
+    {
+      "name" : "2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "2.json" ]
+    },
+    {
+      "name" : "3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "3.json" ]
+    },
+    {
+      "name" : "4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "4.json" ]
+    },
+    {
+      "name" : "5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "5.json" ]
+    },
+    {
+      "name" : "6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "6.json" ]
+    },
+    {
+      "name" : "crystal_center",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal_center.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "crystal_1",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal_1.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "crystal_2",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal_2.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "crystal_3",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal_3.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "crystal_left",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal_left.json" ]
+    },
+    {
+      "name" : "crystal_right",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal_right.json" ]
+    },
+    {
+      "name" : "crystal_top",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal_top.json" ],
+	  "chance" : 1
+    }
+  ]
+}

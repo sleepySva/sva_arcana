@@ -1,10 +1,10 @@
 {
   "projectileName" : "solar_axe_1_projectile_1",
-  "physics" : "rain",
+  "physics" : "laser",
   
   "timeToLive" : 4,
   "bounces" : 0,
-  "speed" : 28,
+  "speed" : 60,
   
   "image" : "solar_axe_1_projectile_1.png",
   "animationCycle" : 0.2,
@@ -12,7 +12,8 @@
   
   "fullbright" : true,
   "lightColor" : [180, 90, 40],
-  "emitters" : ["arcana_particle_white"],
+  "emitters" : ["largefireswoosh"],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
   
   "supportsProcessing" : true,
   
@@ -25,18 +26,18 @@
   
   "periodicActions" : [
     {
-      "time" : 0.066,
+      "time" : 0.02,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
       "specification" : {
         "type" : "textured",
-        "image" : "/projectiles/activeitems/axe/solar_axe_1_projectile_1/solar_axe_1_projectile_1_trail.png",
+        "image" : "/projectiles/activeitems/axe/solar_axe_1_projectile_1/trail.png",
         "position" : [0, 0],
         "layer" : "back",
         "timeToLive" : 0.0,
         "destructionTime" : 0.2,
-        "destructionAction" : "fade",
+        "destructionAction" : "shrink",
         "fullbright" : true
       }
     }

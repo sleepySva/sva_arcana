@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_throwable_aeolus",
+  "rarity" : "Uncommon",
+  "category" : "throwableItem",
+  "inventoryIcon" : "arcana_throwable_aeolus.png",
+  "image" : "arcana_throwable_aeolus.png",
+  "shortdescription" : "Arioforged Dagger",
+  "description" : "A throwing dagger, made from ariostone.",
+
+  "ammoUsage" : 0,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.5,
+
+  "projectileType" : "arcana_throwable_aeolus",
+  "projectileConfig" : {
+    "speed" : 90,
+    "power" : 12,
+    "knockback" : 8
+  }
+}

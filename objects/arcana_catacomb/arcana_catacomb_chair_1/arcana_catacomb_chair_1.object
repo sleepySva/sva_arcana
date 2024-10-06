@@ -1,0 +1,43 @@
+{
+  "objectName" : "arcana_catacomb_chair_1",
+  "colonyTags" : ["catacomb"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 130,
+  "printable" : false,
+  "description" : "An ornate wooden chair with intricate patterns.",
+  "shortdescription" : "Catacomb Wooden Chair",
+  "race" : "generic",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+	  "sitCoverImage" : "/objects/arcana_catacomb/arcana_catacomb_chair_1/cover.png",
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPosition" : [-2, 21],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+	  "sitCoverImage" : "/objects/arcana_catacomb/arcana_catacomb_chair_1/cover.png",
+
+      "direction" : "right",
+
+      "sitPosition" : [6, 21],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

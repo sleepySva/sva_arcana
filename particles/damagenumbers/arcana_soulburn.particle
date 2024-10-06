@@ -1,0 +1,23 @@
+{
+  "kind" : "arcana_soulburn",
+  "definition" : {
+    "type" : "text",
+    "text" : "^shadow;Soulburn",
+    "color" : [75, 180, 202, 255],
+    "light" : [75, 180, 202],
+    "fullbright" : true,
+    "initialVelocity" : [0.0, 2.0],
+    "finalVelocity" : [0.0, -2.0],
+    "size" : 0.7,
+    "approach" : [3, 50],
+    "angularVelocity" : 20,
+    "timeToLive" : 0.8,
+    "layer" : "front",
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.4,
+    "variance" : {
+      "initialVelocity" : [6.0, 1.0]
+    },
+    "flippable" : false
+  }
+}

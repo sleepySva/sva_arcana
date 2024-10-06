@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_astraeaset",
+  "effectConfig" : {
+  
+    "set" : "arcana_astraea",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "maxEnergy", "effectiveMultiplier" : 1.2 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["staff"],
+      "modifiers" : [
+        { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

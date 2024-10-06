@@ -6,7 +6,7 @@
   "rarity" : "Rare",
   "description" : "A jade plasma fork-spear forged from the primordial powers.",
   "shortdescription" : "^#1e9a79;Titanosa^reset;",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "arcana_sword",
   "category" : "spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear"],
@@ -26,14 +26,17 @@
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
   
   "aimOffset" : -1.0,
 
   "primaryAbilityType" : "spearstab",
   "primaryAbility" : {
     "fireTime" : 1.04,
-    "baseDps" : 14.4
+    "baseDps" : 14.4,
+    "damageConfig" : {
+      "damageSourceKind" : "poisonspear"
+    }
   },
 
   "altAbilityType" : "spearspin",

@@ -5,13 +5,21 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headarmour",
-  "description" : "A haken-verrostin forged armor.",
+  "description" : "A haken-verrostin forged armor. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Verrostin Weapon, Rocket Launcher and Blast Rifle damage.^reset;",
   "shortdescription" : "Verrostin Helmet",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+  
+  "statusEffects" : [
+    "arcana_verrostinset",
+    {
+      "stat" : "arcana_verrostin",
+      "amount" : 1
+    }
+  ],     
 
   "level" : 8,
   "leveledStatusEffects" : [

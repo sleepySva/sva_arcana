@@ -144,7 +144,7 @@
   },
 
   "particleEmitters" : {
-    "physicalcharge" : {
+    "poisoncharge" : {
       "active" : false,
       "transformationGroups" : ["weapon"],
       "emissionRate" : 10,
@@ -157,11 +157,11 @@
   },
 
   "sounds" : {
-    "physicalcharge" : ["/sfx/melee/staff_charge1.ogg"],
-    "physicalfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
-    "physicalchargedloop" : ["/sfx/melee/charge_full_hold1.ogg"],
-    "physicaldischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
-    "physicalactivate" : ["/sfx/projectiles/plasma3.ogg"],
+    "poisoncharge" : ["/sfx/melee/staff_charge1.ogg"],
+    "poisonfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "poisonchargedloop" : ["/sfx/melee/charge_full_hold1.ogg"],
+    "poisondischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "poisonactivate" : ["/sfx/projectiles/plasma3.ogg"],
 	
     "zoneactivate" : ["/sfx/melee/staff_aura_activate.ogg"]
   }

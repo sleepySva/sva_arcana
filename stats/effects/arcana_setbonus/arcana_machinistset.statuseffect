@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_machinistset",
+  "effectConfig" : {
+  
+    "set" : "arcana_machinist",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "fireResistance", "amount" : 0.05 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["axe", "hammer"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

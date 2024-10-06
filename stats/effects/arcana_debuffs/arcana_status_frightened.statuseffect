@@ -1,0 +1,26 @@
+{
+  "name" : "arcana_status_frightened",
+  "blockingStat" : "arcana_status_frightened_immunity",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "maxHealth",
+        "effectiveMultiplier" : 0.8
+      },
+      {
+        "stat" : "powerMultiplier",
+        "effectiveMultiplier" : 0.8
+      }
+    ]
+	
+  },
+  "defaultDuration" : 10.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Frightened: ^red;-20% Max Health, -20% Attack^reset;",
+  "icon" : "/interface/statuses/oldpoison.png"
+}

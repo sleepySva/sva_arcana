@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "A chestplate.",
-  "shortdescription" : "Titancorp Guard Chestplate",
+  "description" : "A chestplate worn by Titancorp machinists. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+5% Fire RES^reset; and ^green;+10% Axe and Hammer damage^reset;.",
+  "shortdescription" : "Machinist Chestplate",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : {
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_machinistset",
+    {
+      "stat" : "arcana_machinist",
+      "amount" : 1
+    }
+  ],  
   
   "level" : 8,
   "leveledStatusEffects" : [
@@ -36,7 +44,7 @@
     {
       "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 8
+      "amount" : 7
     },
     {
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",

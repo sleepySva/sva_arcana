@@ -1,0 +1,59 @@
+{
+  "itemName" : "animus_spear_1",
+  "price" : 1000,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "An axe forged from Anima Chunk and Arcanium. ^green;Inflicts Soulburn, dealing true damage over time.^reset;",
+  "shortdescription" : "^#2990de;Animus Spear^reset;",
+  "tooltipKind" : "arcana_sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","animus"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "/items/active/weapons/melee/spear/arcana_spear.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "swoosh" : {
+          "partStates" : {
+            "swoosh" : {
+              "fire" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/spear/swoosh/arcana_soul.png:<frame>",
+                  "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.9,
+    "baseDps" : 9.4,
+    "damageConfig" : {
+      "statusEffects" : [ "arcana_status_soulburn" ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "A dark futuristic leggings. ^red;-10% Eletric resistance.^reset;",
+  "description" : "A dark futuristic leggings. ^red;-10% Eletric resistance.^reset; \n\n^orange;Set Bonus:^reset; \nGrants ^green;+15% Katana and Dagger damage^reset;.",
   "shortdescription" : "Sleepwalker Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_sleepwalkerset",
+    {
+      "stat" : "arcana_sleepwalker",
+      "amount" : 1
+    }
+  ],     
   
   "level" : 8,
   "leveledStatusEffects" : [

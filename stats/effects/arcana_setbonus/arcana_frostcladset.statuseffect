@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_frostcladset",
+  "effectConfig" : {
+  
+    "set" : "arcana_frostclad",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "iceStatusImmunity", "amount" : 1.0 },
+	  { "stat" : "iceResistance", "amount" : 0.2 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["none"],
+      "modifiers" : [
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

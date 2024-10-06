@@ -31,18 +31,18 @@
 		},
 	    "muzzleFlash" : {
 		  "properties" : {
-		    "offset" : [0.0, -0.3]
+		    "offset" : [0.0, -0.2]
 		  }
 		}
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/plasma_pistol3.ogg"]
+      "fire" : ["/sfx/gun/plasma_ar1.ogg"]
     }
   },
 
   "baseOffset" : [0.4, 0.2],
-  "muzzleOffset" : [1.8, 0.3],
+  "muzzleOffset" : [1.7, 0.3],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -54,18 +54,18 @@
 
     "fireTime" : 0.4,
     "baseDps" : 6.4,
-    "energyUsage" : 38.0,
+    "energyUsage" : 37.0,
     "inaccuracy" : 0.004,
 
     "projectileCount" : 1,
     "fireType" : "burst",
 	
 	"burstCount": 5,
-	"burstTime": 0.04,
+	"burstTime": 0.1,
 
-    "projectileType" : "azure_machinePistol_1_projectile_1",
+    "projectileType" : "arcana_azure_3",
     "projectileParameters" : {
-      "knockback" : 12
+      "knockback" : 14
     },
     "stances" : {
       "idle" : {
@@ -78,8 +78,8 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : false,
 
         "allowRotate" : true,
@@ -87,8 +87,8 @@
       },
       "cooldown" : {
         "duration" : 0.03,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : false,
 
         "allowRotate" : true,

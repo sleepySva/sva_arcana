@@ -1,0 +1,51 @@
+{
+  "projectileName" : "arcana_throwable_aeolus",
+  "image" : "body.png",
+  "animationCycle" : 0.5,
+  "physics" : "laser",
+  "frameNumber" : 1,
+  "lightColor" : [7, 135, 135],
+  "fullbright" : true,
+  "speed" : 40,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+	  "time" : 0,
+	  "repeat" : false,
+	  "action" : "sound",
+	  "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+    },
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/throwable/arcana_throwable_aeolus/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : false
+      }
+    }
+  ],
+  "power" : 200.0,
+  "knockback" : 20,
+  "persistentAudio" : "/sfx/projectiles/boomerang3.ogg",
+  "damageKind" : "dagger",
+  "emitters" : [ "arcana_particle_feather_1" ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  
+  "scripts" : ["/scripts/projectiles/arcana_rotatingProjectile.lua"],
+  "scriptDelta" : 1
+}
+
+

@@ -31,7 +31,7 @@
 		},
 	    "muzzleFlash" : {
 		  "properties" : {
-		    "offset" : [0.2, -0.3]
+		    "offset" : [0.2, -0.2]
 		  }
 		}
 	  }
@@ -42,7 +42,7 @@
   },
 
   "baseOffset" : [0.2, 0.2],
-  "muzzleOffset" : [2.0, 0.3],
+  "muzzleOffset" : [1.8, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -52,16 +52,16 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.3,
-    "baseDps" : 5.2,
+    "fireTime" : 0.2,
+    "baseDps" : 10.0,
     "energyUsage" : 38.0,
-    "inaccuracy" : 0.004,
+    "inaccuracy" : 0.005,
 
     "projectileCount" : 1,
     "fireType" : "burst",
 	
-	"burstCount": 8,
-	"burstTime": 0.08,
+	"burstCount": 2,
+	"burstTime": 0.07,
 
     "projectileType" : "azure_machinePistol_1_projectile_1",
     "projectileParameters" : {
@@ -78,8 +78,8 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
         "twoHanded" : false,
 
         "allowRotate" : true,
@@ -87,8 +87,8 @@
       },
       "cooldown" : {
         "duration" : 0.03,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
         "twoHanded" : false,
 
         "allowRotate" : true,

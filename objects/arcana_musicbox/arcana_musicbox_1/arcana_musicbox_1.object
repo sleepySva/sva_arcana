@@ -3,10 +3,10 @@
   "colonyTags" : ["music"],
   "rarity" : "Rare",
   "category" : "decorative",
-  "price" : 1200,
+  "price" : 800,
   "printable" : false,
-  "description" : "An intricate handmade music box. The melody it plays is soothing.",
-  "shortdescription" : "Music Box",
+  "description" : "A outworldly music box for playing Arcana music.",
+  "shortdescription" : "Arcana Music Box",
   "race" : "generic",
 
   "lightColor" : [0, 0, 0],
@@ -25,10 +25,6 @@
     }
   ],
 
-  "scripts" : [
-    "/objects/wired/light/light.lua"
-  ],
-
   "animation" : "animation.animation",
   "animationPosition" : [-8, 0],
   "animationParts" : {
@@ -43,5 +39,6 @@
 
   "defaultLightState" : false,
 
-  "soundEffect" : "/sfx/objects/musicbox2.ogg"
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/arcana_musicbox/arcana_musicbox.config"
 }

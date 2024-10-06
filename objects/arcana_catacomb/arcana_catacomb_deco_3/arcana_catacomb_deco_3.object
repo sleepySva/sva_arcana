@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_catacomb_deco_3",
+  "colonyTags" : ["misc", "arcana_catacomb"],
+  "rarity" : "Common",
+  "description" : "A hanging skull. Spooky.",
+  "shortdescription" : "Catacomb Hanging Skull",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 50,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ]
+}

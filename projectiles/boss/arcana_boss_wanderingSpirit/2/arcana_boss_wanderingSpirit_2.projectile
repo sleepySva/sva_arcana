@@ -1,0 +1,44 @@
+{
+  "projectileName" : "arcana_boss_wanderingSpirit_2",
+  "image" : "body.png",
+  "animationCycle" : 0.15,
+  "timeToLive" : 6.0,
+  "frameNumber" : 4,
+  "speed" : 30,
+  "damagePoly" : [ [-3, -3], [-3, 3], [3, 3], [3, -3] ],
+  "piercing" : false,
+  "flippable" : true,
+  "damageKind" : "plasma",
+  "lightColor" : [0, 178, 251],
+  "statusEffects" : ["arcana_status_frightened"],
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_wanderingSpirit/1/trail.png",
+        "position" : [0, 0],
+        "layer" : "front",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.4,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],  
+  
+  
+  "fullbright" : true,
+  "emitters" : ["iceplasma","icetrail"]
+}

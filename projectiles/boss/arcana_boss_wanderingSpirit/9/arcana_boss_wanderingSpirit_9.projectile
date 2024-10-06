@@ -1,0 +1,78 @@
+{
+  "projectileName" : "arcana_boss_wanderingSpirit_9",
+  
+  "physics" : "sticky",
+  "bounces" : -1,
+  "piercing" : true,
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "physicsCollisions" : {
+    "piece1" : {
+      "collision" : [ [-32.75, -19.75], [-32.75, 19.75] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece2" : {
+      "collision" : [ [32.75, -19.75], [32.75, 19.75] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece3" : {
+      "collision" : [ [-19.75, 32.75], [19.75, 32.75] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece4" : {
+      "collision" : [ [-19.75, -32.75], [19.75, -32.75] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece5" : {
+      "collision" : [ [-32.75, 19.75], [-19.75, 32.75] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece6" : {
+      "collision" : [ [19.75, 32.75], [32.75, 19.75] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece7" : {
+      "collision" : [ [-32.75, -19.75], [-19.75, -32.75] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece8" : {
+      "collision" : [ [19.75, -32.75], [32.75, -19.75] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "npc", "vehicle", "itemdrop", "projectile"]
+    }
+  },
+  
+  "animationCycle" : 0.1,
+  "frameNumber" : 1,
+  "windupFrames" : 2,
+  
+  "timeToLive" : 12,
+  "image" : "body.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 0,
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "lightColor" : [0, 0, 0],
+  
+  "periodicActions" : [
+    {
+      "time" : 4.8,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/vehicle_disappear2.ogg" ]
+    }
+  ],
+  "power" : 0,
+  "emitters" : [],
+  "damageKind" : "hidden"
+}

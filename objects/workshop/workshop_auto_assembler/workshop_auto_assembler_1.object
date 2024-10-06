@@ -77,6 +77,9 @@
       "anchors" : [ "bottom" ]
     }
   ],
+  
+  "placementImage" : "1.png:default.0",
+  "placementImagePosition" : [0, 0],
 
   "soundEffect" : "/sfx/objects/campfire.ogg",
   "soundEffectRangeMultiplier" : 0.5,
@@ -88,7 +91,6 @@
   "autoCloseCooldown" : 3600,
   
   "configPath" : "/objects/workshop/workshop_auto_assembler/config.config",
-
   "maxPower" : 30,
   "powerUseAmount" : 15,
   "voltage" : 45,

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
-  "description" : "An ancient armor forged with blue immorite. ^green;Grants +5% Physical Res.^reset;",
+  "description" : "An ancient armor forged with blue immorite. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+15% Magic damage^reset;, ^green;+10% Physical RES^reset; and ^green;+60% Energy Regen Rate^reset;.",
   "shortdescription" : "Horncaster's Avarice",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_horncasterset",
+    {
+      "stat" : "arcana_horncaster",
+      "amount" : 1
+    }
+  ],     
   
   "level" : 9,
   "leveledStatusEffects" : [

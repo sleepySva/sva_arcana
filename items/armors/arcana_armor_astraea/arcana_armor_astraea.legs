@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "legwear",
-  "description" : "A glinting fragment of the falling stars. ^green;+4% Fire and Light RES.^reset;",
+  "description" : "A glinting fragment of the falling stars. \n^green;+4% Fire and Light RES.^reset; \n\n^orange;Set Bonus:^reset; \nGrants ^green;+20% Max Energy^reset; and ^green;+10% Staff Damage^reset;.",
   "shortdescription" : "Astraea Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_astraeaset",
+    {
+      "stat" : "arcana_astraea",
+      "amount" : 1
+    }
+  ],
   
   "level" : 3,
   "leveledStatusEffects" : [

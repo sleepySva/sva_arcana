@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_corekeeperset",
+  "effectConfig" : {
+  
+    "set" : "arcana_corekeeper",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "poisonResistance", "amount" : 0.05 },
+	  { "stat" : "electricResistance", "amount" : 0.05 },
+	  { "stat" : "fireResistance", "amount" : 0.05 },
+	  { "stat" : "iceResistance", "amount" : 0.05 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["none"],
+      "modifiers" : [
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

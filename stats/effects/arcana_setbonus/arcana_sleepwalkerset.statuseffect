@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_sleepwalkerset",
+  "effectConfig" : {
+  
+    "set" : "arcana_sleepwalker",
+	"minParts" : 3,
+    "statModifiers" : [
+    ],
+	"weaponBuff" : {
+      "tags" : ["katana", "dagger"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.15 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

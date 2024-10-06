@@ -144,6 +144,7 @@ function setDirectives(itemConfig)
   local newparameters = {}
   newparameters = util.mergeTable(newparameters, {directives = getDirectives()})
   newparameters = util.mergeTable(newparameters, {inventoryIcon = itemConfig.config.inventoryIcon..getDirectives()})
+  newparameters = util.mergeTable(newparameters, {placementImage = itemConfig.config.placementImage..getDirectives()})
   --sb.logInfo(dump(newparameters))
   return newparameters
 end

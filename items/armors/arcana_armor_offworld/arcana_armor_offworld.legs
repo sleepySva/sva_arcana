@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "A white futuristic leggings.",
+  "description" : "A white futuristic leggings. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Ranged damage^reset;, ^green;+10% Electric RES^reset; and ^green;+40% Energy Regen Rate^reset;.",
   "shortdescription" : "Offworld Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_offworldset",
+    {
+      "stat" : "arcana_offworld",
+      "amount" : 1
+    }
+  ],      
   
   "level" : 8,
   "leveledStatusEffects" : [

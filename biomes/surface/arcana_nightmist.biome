@@ -60,14 +60,14 @@
             "baseValue" : 10
           },
           "maxHealth" : {
-            "baseValue" : 120
+            "baseValue" : 80
           }
         }
       }
     }
   },
 
-  "hueShiftOptions" : [0, 0, 0, 0],
+  "hueShiftOptions" : [0],
 
   "weather" : [
     [0, [
@@ -78,17 +78,17 @@
   "skyOptions" : [
     {
       // dark peachy massacre
-      "mainColor" : [255, 255, 255],
+      "mainColor" : [210, 210, 210],
 
       "morningColors" : [ [4, 38, 80, 50], [28, 62, 100, 120] ],
-      "dayColors" : [ [34, 68, 90, 80], [78, 112, 170, 160] ],
+      "dayColors" : [ [35, 47, 55, 120], [65, 75, 94, 200] ],
       "eveningColors" : [ [14, 58, 90, 80], [48, 92, 170, 160] ],
-      "nightColors" : [ [14, 58, 90, 80], [48, 92, 170, 160] ],
+      "nightColors" : [ [25, 31, 36, 120], [47, 56, 74, 200] ],
 
-      "morningLightColor" : [0, 4, 5],
-      "dayLightColor" : [24, 40, 50],
-      "eveningLightColor" : [4, 20, 30],
-      "nightLightColor" : [4, 20, 30]
+      "morningLightColor" : [4, 6, 8],
+      "dayLightColor" : [22, 34, 44],
+      "eveningLightColor" : [4, 20, 25],
+      "nightLightColor" : [8, 12, 14]
     }
   ],
 

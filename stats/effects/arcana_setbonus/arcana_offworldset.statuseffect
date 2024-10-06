@@ -1,0 +1,24 @@
+{
+  "name" : "arcana_offworldset",
+  "effectConfig" : {
+  
+    "set" : "arcana_offworld",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "energyRegenPercentageRate", "effectiveMultiplier" : 1.4 },
+	  { "stat" : "electricResistance", "amount" : 0.10 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["ranged"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

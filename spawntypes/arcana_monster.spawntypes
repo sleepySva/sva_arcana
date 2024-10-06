@@ -332,10 +332,11 @@
       "region" : "exposed",
       "time" : "all"
     },
-    "groupSize" : [2, 3],
+    "groupSize" : [1, 2],
     "spawnChance" : 0.2,
     "monsterType" : [
-      [1, "arcana_monster_skeleton"]
+      [0.9, "arcana_monster_skeleton"],
+	  [0.1, "arcana_monster_skeletonalt"]
     ],
     "monsterParameters" : {
       "aggressive" : true

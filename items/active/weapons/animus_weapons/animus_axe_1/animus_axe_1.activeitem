@@ -1,0 +1,96 @@
+{
+  "itemName" : "animus_axe_1",
+  "level" : 7,
+  "price" : 1400,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "An axe forged from Anima Chunk and Arcanium. ^green;Inflicts Soulburn, dealing true damage over time.^reset;",
+  "shortdescription" : "^#2990de;Animus Axe^reset;",
+  "tooltipKind" : "arcana_sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe","animus"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "/items/active/weapons/melee/axe/arcana_longaxe.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "swoosh" : {
+          "default" : "idle",
+          "states" : {
+            "idle" : {
+            },
+            "fire" : {
+              "frames" : 3,
+              "cycle" : 0.2,
+              "mode" : "transition",
+              "transition" : "idle"
+            }
+          }
+        }
+      },
+      "parts" : {
+        "swoosh" : {
+          "properties" : {
+            "offset" : [-1, 1.0]
+          },
+
+          "partStates" : {
+            "swoosh" : {
+              "idle" : {
+                "properties" : {
+                  "image" : ""
+                }
+              },
+              "fire" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/axe/swoosh/arcana_soul.png:<frame>",
+                  "damageArea" : [[-2.25, 1.75], [-1, 2.25], [0.25, 2.25], [2, 1.5], [3.25, -0.125], [3.25, -1.25], [2.5, -2.5], [1.0, -2.5]]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_axe_ability_burstCleave",
+  "primaryAbility" : {
+  
+    "projectileType" : "arcana_soulswoosh",
+  	"projectileCount" : 1,
+	"projectileParameters" : {
+      "baseDamage" : 11,
+	  "statusEffects" : [ "arcana_status_soulburn" ]
+    },
+	
+    "fireTime" : 0.9,
+	"windupTime" : 0.5,
+	
+	"baseDamage" : 10,
+	"baseDps" : 8.0,
+	
+    "damageConfig" : {
+      "knockback" : 14,
+	  "damageSourceKind" : "axe",
+      "statusEffects" : [ "arcana_status_soulburn" ]
+    }
+	
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

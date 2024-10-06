@@ -11,7 +11,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false } ],
       "direction" : "left",
 	  "flipImages" : true,
       "imagePosition" : [-8, 0],
@@ -23,7 +23,7 @@
 
     },
 	{
-	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false } ],
       "direction" : "right",
       "imagePosition" : [-8, 0],
       "frames" : 1,

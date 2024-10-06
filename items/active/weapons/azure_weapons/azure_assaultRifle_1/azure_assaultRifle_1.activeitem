@@ -31,7 +31,7 @@
 		},
 	    "muzzleFlash" : {
 		  "properties" : {
-		    "offset" : [0.0, -0.4]
+		    "offset" : [0.0, -0.2]
 		  }
 		}
 	  }
@@ -42,7 +42,7 @@
   },
 
   "baseOffset" : [0.3, 0.2],
-  "muzzleOffset" : [3.2, 0.4],
+  "muzzleOffset" : [2.9, 0.2],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -54,11 +54,13 @@
 
     "fireTime" : 0.12,
     "baseDps" : 20.0,
-    "energyUsage" : 68.0,
+    "energyUsage" : 66.0,
     "inaccuracy" : 0.01,
 
     "projectileCount" : 1,
     "fireType" : "auto",
+	"burstCount" : 4,
+	"burstTime" : 0.05,
 
     "projectileType" : "azure_assaultRifle_1_projectile_1",
     "projectileParameters" : {
@@ -75,17 +77,19 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+		"weaponOffset" : [-0.1, 0],
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.06,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "duration" : 0.04,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+		"weaponOffset" : [-0.1, 0],
         "twoHanded" : true,
 
         "allowRotate" : false,

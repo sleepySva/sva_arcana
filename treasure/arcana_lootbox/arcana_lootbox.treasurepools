@@ -21,10 +21,10 @@
 		{"weight" : 1.0, "item" : ["misc_katana_ouroburos", 1]},
 		{"weight" : 1.0, "item" : ["artifact_magiblade_twinDragon", 1]},
 		{"weight" : 1.0, "item" : ["misc_axe_blackout", 1]},
-		{"weight" : 1.0, "item" : ["misc_broadsword_swordOfNightmist", 1]},
 		{"weight" : 1.0, "item" : ["misc_katana_neon", 1]},
 		{"weight" : 1.0, "item" : ["magnus_blastRifle_testaViola", 1]},
-		{"weight" : 1.0, "item" : ["misc_assaultRifle_terminator", 1]}
+		{"weight" : 1.0, "item" : ["misc_assaultRifle_terminator", 1]},
+		{"weight" : 1.0, "item" : ["misc_rocketLauncher_enoch", 1]}
       ]
     }]
   ],
@@ -32,16 +32,21 @@
   "arcana_lootbox_legendaryTreasure" : [
     [0, {
       "pool" : [
-		{"weight" : 1.0, "item" : ["misc_wand_tripleDecker", 1]}
+		{"weight" : 1.0, "pool" : "basicTreasure"}
       ]
     }],
     [2.9, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["misc_wand_tripleDecker", 1]}
+      ]
+    }],
+    [4.9, {
       "pool" : [
 		{"weight" : 1.0, "item" : ["misc_katana_viridescentKatana", 1]},
 		{"weight" : 1.0, "item" : ["conflagration_greatsword_1", 1]}
       ]
     }],
-    [4.9, {
+    [5.9, {
       "pool" : [
 		{"weight" : 1.0, "item" : ["magnus_staff_grandel", 1]},
 		{"weight" : 1.0, "item" : ["magnus_assaultRifle_selach", 1]},
@@ -54,10 +59,10 @@
 		{"weight" : 1.0, "item" : ["misc_axe_blackout", 1]},
 		{"weight" : 1.0, "item" : ["misc_axe_wastecutter", 1]},
 		{"weight" : 1.0, "item" : ["misc_broadsword_starryKey", 1]},
-		{"weight" : 1.0, "item" : ["misc_broadsword_swordOfNightmist", 1]},
 		{"weight" : 1.0, "item" : ["misc_katana_neon", 1]},
 		{"weight" : 1.0, "item" : ["magnus_blastRifle_testaViola", 1]},
-		{"weight" : 1.0, "item" : ["misc_assaultRifle_terminator", 1]}
+		{"weight" : 1.0, "item" : ["misc_assaultRifle_terminator", 1]},
+		{"weight" : 1.0, "item" : ["misc_rocketLauncher_enoch", 1]}
       ]
     }]
   ],

@@ -2,21 +2,20 @@
 
   {
     "op" : "add",
-    "path" : "/arcana_dungeon_testspace",
+    "path" : "/arcana_bossarena",
     "value" : {
-      "primaryDungeon" : "arcana_dungeon_chefresearchship",
-      "threatLevel" : 6,
-      "gravity" : 0,
-      "airless" : true,
-      "worldSize" : [1300, 200],
-      "dungeonBaseHeight" : 150,
-      "dungeonSurfaceHeight" : 150,
+      "primaryDungeon" : "arcana_bossarena",
+	  "weatherPool" : [
+		[1.0, "clear"]
+	  ],
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [1000, 800],
+      "dungeonBaseHeight" : 300,
+	  "dungeonSurfaceHeight" : 130,
       "ambientLightLevel" : [32, 32, 32],
       "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
-      "musicTrack" : "/music/tranquility-base.ogg",
-      "environmentStatusEffects" : ["biomeairless", "dontstarve"],
-      "worldEdgeForceRegions" : "TopAndBottom",
-      "biome" : "space"
+      "musicTrack" : "/music/tranquility-base.ogg"
     }
   },
   

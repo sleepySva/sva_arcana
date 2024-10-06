@@ -1,0 +1,21 @@
+{
+  "materialId" : 16378,
+  "materialName" : "studio_tile15",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile15",
+  "description" : "Slightly worn stone bricks, found in the catacombs.",
+  "shortdescription" : "Shrounded Stone Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile15.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "multiColored" : true,
+    "occludesBelow" : true,
+    "zLevel" : 3420
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_verrostinset",
+  "effectConfig" : {
+  
+    "set" : "arcana_verrostinset",
+	"minParts" : 3,
+    "statModifiers" : [
+    ],
+	"weaponBuff" : {
+      "tags" : ["verrostin", "rocketlauncher", "blastrifle"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "A haken-verrostin forged armor.",
+  "description" : "A haken-verrostin forged armor. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Verrostin Weapon, Rocket Launcher and Blast Rifle damage.^reset;",
   "shortdescription" : "Verrostin Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_verrostinset",
+    {
+      "stat" : "arcana_verrostin",
+      "amount" : 1
+    }
+  ],     
   
   "level" : 8,
   "leveledStatusEffects" : [

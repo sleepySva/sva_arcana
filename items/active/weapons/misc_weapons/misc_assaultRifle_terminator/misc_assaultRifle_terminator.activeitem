@@ -53,14 +53,14 @@
     "class" : "GunFire",
 
     "fireTime" : 0.3,
-    "baseDps" : 11.8,
-    "energyUsage" : 60.0,
+    "baseDps" : 12.2,
+    "energyUsage" : 50.0,
     "inaccuracy" : 0.004,
 
     "projectileCount" : 1,
     "fireType" : "burst",
-	"burstCount" : 3,
-    "burstTime" : 0.1,
+	"burstCount" : 4,
+    "burstTime" : 0.08,
 
     "projectileType" : ["robotshock"],
     "projectileParameters" : {
@@ -100,9 +100,9 @@
   "altAbilityType" : "guidedrocket",
   "altAbility" : {
 	"elementalConfig" : {
-      "physical" : { "projectileType" : "misc_assaultRifle_terminator_projectile_1" }
+      "physical" : { "projectileType" : "arcana_terminator_1" }
     },
-	"energyUsage" : 148.0,
+	"energyUsage" : 180.0,
 	"name" : "Storm of The End"
   },
 

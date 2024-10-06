@@ -1,0 +1,54 @@
+{
+  "projectileName" : "arcana_azure_3",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 70,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [40, 80, 100],
+  "emitters" : [ "arcana_particle_ember_cyan_2" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_2_blue/arcana_explosion_plasma_2_blue.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/arcana_azure_3/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+		"size" : 0.8,
+        "destructionTime" : 0.2,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"variance" : {
+		  "initialVelocity" : [8, 8],
+		  "size" : 0.4,
+		  "rotation" : 180,
+		  "angularVelocity" : 180
+		}
+      }
+    }
+  ],
+  
+  "damageKind" : "arcana_azure"
+ 
+}

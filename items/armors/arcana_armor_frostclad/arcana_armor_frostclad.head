@@ -5,13 +5,21 @@
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "headarmour",
-  "description" : "A reinforced hood that defends against the cold. ^green;+8% Ice Res.^reset;",
+  "description" : "A reinforced hood that defends against the cold. \n\n^orange;Set Bonus:^reset; \nGrants ^green;Frost Immunity^reset; and ^green;+20% Ice RES^reset;.",
   "shortdescription" : "Frostclad Hood",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+
+  "statusEffects" : [
+    "arcana_frostcladset",
+    {
+      "stat" : "arcana_frostclad",
+      "amount" : 1
+    }
+  ],
 
   "level" : 4,
   "leveledStatusEffects" : [
@@ -34,11 +42,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 3
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "iceResistance",
-      "amount" : 0.08
     }
   ],
   

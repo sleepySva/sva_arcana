@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_primaset",
+  "effectConfig" : {
+  
+    "set" : "arcana_prima",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "maxEnergy", "effectiveMultiplier" : 1.2 },
+	  { "stat" : "electricResistance", "amount" : 0.15 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["none"],
+      "modifiers" : [
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

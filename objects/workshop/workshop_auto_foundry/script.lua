@@ -3,10 +3,11 @@ require "/objects/scripts/cf_power.lua"
 pInit = init
 function init()
   if pInit then pInit() end
-  self.craftingTime = config.getParameter("craftingTime", 1.0)
+  local configPath = config.getParameter("configPath", "/objects/workshop/workshop_auto_assembler/config.config")
+  self.craftingTime = root.assetJson(configPath).craftingTime or 1
   self.cooldownTimer = self.craftingTime
-  self.recipes = config.getParameter("recipes", nil)
-  self.outputRate = config.getParameter("outputRate", 10)
+  self.outputRate = root.assetJson(configPath).outputRate or 1
+  self.recipes = root.assetJson(configPath).recipes or nil
   self.powerUseAmount = config.getParameter("powerUseAmount", 0)
   cf_power.setPower(config.getParameter("maxPower", 10))
   animator.setGlobalTag("directives", config.getParameter("directives", ""))

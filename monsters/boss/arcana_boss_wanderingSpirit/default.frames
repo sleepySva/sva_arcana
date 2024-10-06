@@ -1,0 +1,39 @@
+{
+  "frameGrid" : {
+    "size" : [96, 80],
+    "dimensions" : [25, 1],
+
+    "names" : [
+      [
+	  "idle.1",
+	  "idle.2",
+	  "idle.3",
+	  "idle.4", 
+	  "idle.5",
+	  "idle.6",
+	  "firewindup.1",
+	  "fire.1",
+	  "fire.2",
+	  "fire.3",
+	  "fire.4",
+	  "fire.5",
+	  "fire.6",
+	  "fire.7",
+	  "beamout.1",
+	  "beamout.2",
+	  "beamout.3",
+	  "beamout.4",
+	  "beamout.5",
+	  "invisible.1",
+	  "beamin.1",
+	  "beamin.2",
+	  "beamin.3",
+	  "beamin.4",
+	  "beamin.5"
+	  ]
+    ]
+  },
+  "aliases" : {
+    "beamwinddown.1" : "beamout.1"
+  }
+}

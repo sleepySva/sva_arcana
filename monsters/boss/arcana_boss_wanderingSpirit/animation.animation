@@ -1,0 +1,328 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 1,
+        "default" : "intro",
+        "states" : {
+          "intro" : {
+            "frames" : 5,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/cultistboss_blink.ogg"
+            }
+          },
+          "idle" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          },
+          "jump" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          },
+          "fall" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          },
+          "beamout" : {
+            "frames" : 5,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "invisible",
+            "frameProperties" : {
+              "immediateSound" : [ "", "", "", "", "/sfx/npc/boss/cultistboss_blink.ogg", "", "", "", "", "" ]
+            }
+          },
+          "invisible" : {
+            "frames" : 1
+          },
+          "beamin" : {
+            "frames" : 5,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/cultistboss_blink.ogg"
+            }
+          },
+          "beam" : {
+            "frames" : 5,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/boss/cultistboss_blink.ogg"
+            }
+          },
+          "slash" : {
+            "frames" : 7,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "firewindup" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "fireloop"
+          },
+          "fireloop" : {
+            "frames" : 7,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "body" : {
+            "intro" : {
+              "properties" : {
+                "image" : "<partImage>:beamin.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "beamout" : {
+              "properties" : {
+                "image" : "<partImage>:beamout.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {
+                "image" : "<partImage>:invisible.<frame>"
+              }
+            },
+            "beamin" : {
+              "properties" : {
+                "image" : "<partImage>:beamin.<frame>"
+              }
+            },
+            "beam" : {
+              "properties" : {
+                "image" : "<partImage>:beamin.<frame>"
+              }
+            },
+            "slash" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "fireloop" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "firewindup" : {
+              "properties" : {
+                "image" : "<partImage>:firewindup.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "fullbright" : {
+        "properties" : {
+          "zLevel" : 2,
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "body" : {
+            "intro" : {
+              "properties" : {
+                "image" : "<partImage>:beamin.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "beamout" : {
+              "properties" : {
+                "image" : "<partImage>:beamout.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {
+                "image" : "<partImage>:invisible.<frame>"
+              }
+            },
+            "beamin" : {
+              "properties" : {
+                "image" : "<partImage>:beamin.<frame>"
+              }
+            },
+            "beam" : {
+              "properties" : {
+                "image" : "<partImage>:beamin.<frame>"
+              }
+            },
+            "slash" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "fireloop" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "firewindup" : {
+              "properties" : {
+                "image" : "<partImage>:firewindup.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "particleEmitters" : {
+    "deathPoof" : {
+      "particles" : [
+      ]
+    },
+    "dash" : {
+      "emissionRate" : 40,
+      "particles" : [
+        { "particle" : "cultistbossdash", "offset" : [-1.0, 0] }
+      ]
+    },
+    "teleportIn" : {
+      "emissionRate" : 40,
+      "particles" : [
+        { "particle" : "cultistbossdash", "offset" : [0.0, 0] }
+      ]
+    },
+    "teleportOut" : {
+      "emissionRate" : 40,
+      "particles" : [
+        { "particle" : "cultistbossdash", "offset" : [0.0, 0] }
+      ]
+    },
+    "energy" : {
+      "emissionRate" : 20,
+      "particles" : [
+        { "particle" : "arcana_energy_azure", "offset" : [0, 0] },
+		{ "particle" : "arcana_particle_ember_cyan_1", "offset" : [0, 0] },
+		{ "particle" : "arcana_spiritimage", "offset" : [0, 0] }
+      ]
+    },
+    "outOfEnergy" : {
+      "particles" : [
+        {
+          "count" : 10,
+          "particle" : {
+            "type" : "ember",
+            "size" : 0.5,
+            "color" : [253, 143, 77, 255],
+            "fade" : 0.9,
+            "destructionAction" : "shrink",
+            "destructionTime" : 1,
+            "initialVelocity" : [0, 0.0],
+            "finalVelocity" : [0, -5.0],
+            "approach" : [0, 20],
+            "timeToLive" : 0.8,
+            "light" : [14, 47, 72],
+            "layer" : "back",
+            "variance" : {
+              "initialVelocity" : [6, 0.0],
+              "finalVelocity" : [0, 2.0],
+              "size" : 1
+            }
+          }
+        },
+        {
+          "count" : 10,
+          "particle" : {
+            "type" : "ember",
+            "size" : 0.5,
+            "color" : [253, 209, 77, 255],
+            "fade" : 0.9,
+            "destructionAction" : "shrink",
+            "destructionTime" : 1,
+            "initialVelocity" : [0, 0.0],
+            "finalVelocity" : [0, -5.0],
+            "approach" : [0, 20],
+            "timeToLive" : 0.8,
+            "light" : [72, 72, 72],
+            "layer" : "back",
+            "variance" : {
+              "initialVelocity" : [6, 0.0],
+              "finalVelocity" : [0, 2.0],
+              "size" : 1
+            }
+          }
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ "/sfx/melee/travelingslash_fire3.ogg" ],
+	"fire2" : [ "/sfx/projectiles/fire_barrier_kill.ogg" ],
+	"electric" : [ "/sfx/gun/mech_teslastream_fire5.ogg" ],
+    "deathPuff" : [  ],
+    "outOfEnergy" : [ "/sfx/interface/energy_out1.ogg" ],
+    "energyRecharge" : [ ],
+    "slash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ],
+    "flyingSlash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ]
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0.25,
+      "directives" : "fade=ffffff;0.5"
+    }
+  }
+}

@@ -1,15 +1,16 @@
 {
   "id" : "arcana_codex_mageKing",
-  "title" : "Mage King Vallan",
-  "description" : "A short entry about the Glitch mage king, Vallan.",
+  "title" : "Mage King Vallen",
+  "description" : "A short entry about the Glitch mage king, Vallen.",
   "icon" : "arcana_codex_mageKing.png",
   "contentPages" :
   [
-    "Vallan the Mage King was the first Glitch to display immense magic capabilities, despite being bounded to a machine body. His powers may have originated from the Cultivator's blessing, or simply from an augment gifted by the Highmind.",
-	"Though their original body was lost in the war against the machines, Vallan's icy clones continues to govern the knights of their mirage castles, eternally waiting for the Highmind's divine orders."
+    "Vallen the Mage King was the first Glitch to display immense magic capabilities, despite being bounded to a machine body. His powers may have originated from the Cultivator's blessing, or simply from an augment gifted by the Highmind.",
+	"Though their original body was lost in the war against the machines, Vallen's icy clones continues to govern the knights of their mirage castles, eternally waiting for the Highmind's divine orders."
   ],
     "itemConfig" : {
     "rarity" : "Legendary",
-    "price" : 600
+    "price" : 600,
+	"collectablesOnPickup" : { "arcana_bosses" : "mageKing" }
   }
 }

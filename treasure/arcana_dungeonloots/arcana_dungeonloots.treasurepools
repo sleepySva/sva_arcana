@@ -1,5 +1,66 @@
 {
-  
+ 
+  "arcana_dungeonloots_darkbookcase" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_misc_robustaWood", 1]},
+		{"weight" : 1.0, "item" : ["bookpiles", 1]},
+		{"weight" : 1.0, "item" : ["paper", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 1],
+		[0.2, 2],
+		[0.2, 2],
+		[0.2, 2],
+        [0.2, 3]
+      ]
+    }]
+  ],   
+ 
+  "arcana_dungeonloots_catacombbooks" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["bookpiles", 1]},
+		{"weight" : 1.0, "item" : ["bookpiles", 1]},
+		{"weight" : 1.0, "item" : ["bookpiles", 1]},
+		{"weight" : 1.0, "item" : ["bookpiles", 1]},
+		{"weight" : 1.0, "item" : ["bone", 1]},
+		{"weight" : 1.0, "item" : ["bonematerial", 1]},
+		{"weight" : 1.0, "item" : ["paper", 1]},
+		{"weight" : 0.1, "item" : ["paper", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 3],
+		[0.2, 4],
+		[0.2, 5],
+		[0.2, 6],
+        [0.2, 7]
+      ]
+    }]
+  ],  
+ 
+  "arcana_dungeonloots_catacombchest" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["studio_tile13", 4]},
+		{"weight" : 1.0, "item" : ["studio_tile14", 4]},
+		{"weight" : 1.0, "item" : ["studio_tile8", 4]},
+		{"weight" : 1.0, "item" : ["studio_tile3", 4]},
+		{"weight" : 1.0, "item" : ["bone", 2]},
+		{"weight" : 1.0, "item" : ["bonematerial", 6]},
+		{"weight" : 1.0, "item" : ["throwingbones", 6]},
+		{"weight" : 0.1, "item" : ["jeffback", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 3],
+		[0.2, 4],
+		[0.2, 5],
+		[0.2, 6],
+        [0.2, 7]
+      ]
+    }]
+  ],  
+ 
   "arcana_dungeonloots_neoncityextra" : [
     [0, {
 	  "fill" : [
@@ -77,8 +138,11 @@
   ],
   "arcana_dungeonloots_titancorpBlueprint" : [
     [0, {
-	  "fill" : [
-		{"item" : ["arcana_blueprint_workshop", 1]}
+      "pool" : [
+		{"weight" : 1.0, "item" : ["workshop_axe_1", 1]},
+		{"weight" : 1.0, "item" : ["workshop_axe_2", 1]},
+		{"weight" : 1.0, "item" : ["workshop_axe_3", 1]},
+		{"weight" : 1.0, "item" : ["workshop_axe_4", 1]}
       ]
     }]
   ],
@@ -326,7 +390,7 @@
     [0, {
 	  "fill" : [
 	    {"weight" : 1.0, "pool" : "arcana_dungeonloots_orionChestTreasure"},
-		{"weight" : 1.0, "item" : ["arcana_blueprint_orion", 1]}
+		{"weight" : 1.0, "item" : ["orion_rocketLauncher_1", 1]}
       ]
     }]
   ],

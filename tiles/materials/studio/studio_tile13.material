@@ -1,0 +1,21 @@
+{
+  "materialId" : 16374,
+  "materialName" : "studio_tile13",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile13",
+  "description" : "Slightly worn stone bricks, found in the catacombs.",
+  "shortdescription" : "Catacomb Stone Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile13.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "multiColored" : true,
+    "occludesBelow" : true,
+    "zLevel" : 3099
+  }
+}

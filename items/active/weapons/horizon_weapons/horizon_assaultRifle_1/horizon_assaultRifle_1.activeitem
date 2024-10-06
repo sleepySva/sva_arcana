@@ -32,7 +32,7 @@
 		},
 	    "muzzleFlash" : {
 		  "properties" : {
-		    "offset" : [0.6, -0.5]
+		    "offset" : [0.6, -0.2]
 		  }
 		}
 	  }
@@ -43,11 +43,11 @@
   },
 
   "baseOffset" : [1.1, 0.35],
-  "muzzleOffset" : [2.5, 0.4],
+  "muzzleOffset" : [2.5, 0.1],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "arcana_abyss",
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
@@ -63,7 +63,7 @@
 
     "projectileType" : "horizon_assaultRifle_2_projectile_1",
     "projectileParameters" : {
-      "damageKind" : "shotgunbullet",
+      "damageKind" : "arcana_abyss",
       "knockback" : 8
     },
     "stances" : {

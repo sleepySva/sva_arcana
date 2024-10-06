@@ -77,6 +77,9 @@
       "anchors" : [ "bottom" ]
     }
   ],
+  
+  "placementImage" : "1.png:default.0",
+  "placementImagePosition" : [0, 0],
 
   "soundEffect" : "/sfx/objects/campfire.ogg",
   "soundEffectRangeMultiplier" : 0.5,
@@ -87,32 +90,7 @@
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
   
-  "recipes" : {
-    "workshop_crafting_dustriumPlate" : {
-      "input" : [
-        { "name" : "workshop_crafting_rawDustrium", "count" : 2 }
-      ],
-      "output" : { "name" : "workshop_crafting_dustriumPlate", "count" : 1 }
-	},
-    "arcana_bar_galvasteelBar" : {
-      "input" : [
-        { "name" : "arcana_ore_galvasteelOre", "count" : 2 }
-      ],
-      "output" : { "name" : "arcana_bar_galvasteelBar", "count" : 1 }
-	},
-    "ironbar" : {
-      "input" : [
-        { "name" : "ironore", "count" : 2 }
-      ],
-      "output" : { "name" : "ironbar", "count" : 1 }
-	},
-    "burntcake" : {
-      "input" : [
-        { "name" : "cake", "count" : 1 }
-      ],
-      "output" : { "name" : "burntcake", "count" : 1 }
-	}
-  },
+  "configPath" : "/objects/workshop/workshop_auto_foundry/config.config",
   "maxPower" : 10,
   "powerUseAmount" : 5,
   "voltage" : 30,

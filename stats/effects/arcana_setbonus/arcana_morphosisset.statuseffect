@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_morphosisset",
+  "effectConfig" : {
+  
+    "set" : "arcana_morphosis",
+	"minParts" : 2,
+    "statModifiers" : [
+	  { "stat" : "poisonResistance", "amount" : 0.05 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["shield"],
+      "modifiers" : [
+	    { "stat" : "physicalResistance", "amount" : 0.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

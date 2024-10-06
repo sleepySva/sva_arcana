@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "legwear",
-  "description" : "A piece of plant made greaves. ^green;+5% Poison res.^reset;",
+  "description" : "A piece of plant made greaves. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+30% Energy Regen Rate^reset; and ^green;+15% Poison RES^reset;.",
   "shortdescription" : "Alchemilla Greaves",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_alchemillaset",
+    {
+      "stat" : "arcana_alchemilla",
+      "amount" : 1
+    }
+  ],    
   
   "level" : 2,
   "leveledStatusEffects" : [

@@ -1,0 +1,18 @@
+{
+  "itemName" : "arcana_guideBook",
+  "shortdescription" : "^#000000;^reset;^orange;Arcana Guidebook^reset;",
+  "description" : "A beginner's guide for Arcana progression. ^orange;Use this to open the guidebook.^reset;",
+  "price" : 0,
+  "tooltipKind" : "arcana_base_item",
+  "rarity" : "essential",
+  "category" : "tool",
+  "itemTags" : [],
+  "inventoryIcon" : "guide.png",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "body" : "guide.png"
+  },
+  "scripts" : ["guide.lua"]
+}
