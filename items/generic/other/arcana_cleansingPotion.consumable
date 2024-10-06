@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_cleansingPotion",
+  "rarity" : "Legendary",
+  "price" : 600,
+  "category" : "medicine",
+  "tooltipKind" : "arcana_base_generic",
+  "inventoryIcon" : "arcana_cleansingPotion.png",
+  
+  "description" : "A special potion concocted by outworld exorcists.
+^green;Grants immunity to Frightened and provides +10% Max Health for 1 minute.^reset;",
+
+  "shortdescription" : "^#000000;^reset;Cleansing Potion",
+  "effects" : [ [
+      {
+        "effect" : "arcana_status_cleansing"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "materialId" : 16379,
+  "materialName" : "studio_tile16",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile16",
+  "description" : "A ghostly smooth stone.",
+  "shortdescription" : "Soulsea Smooth Stone",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile16.png",
+    "variants" : 7,
+    "lightTransparent" : false,
+    "multiColored" : true,
+    "occludesBelow" : true,
+    "zLevel" : 2000,
+    "radiantLight" : [0, 127, 128]
+  }
+}

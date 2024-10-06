@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_status_cleansing",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "maxHealth",
+        "effectiveMultiplier" : 1.1
+      },
+      {
+        "stat" : "arcana_status_frightened_immunity",
+        "amount" : 1.0
+      }
+    ]
+	
+  },
+  "defaultDuration" : 60.0,
+
+  "scripts" : [
+    "arcana_status_multiplier.lua"
+  ],
+  
+  "label" : "Cleansing: ^green;+10% Max Health, Frightened Immunity^reset;",
+  "icon" : "/items/generic/other/arcana_cleansingPotion.png"
+}
