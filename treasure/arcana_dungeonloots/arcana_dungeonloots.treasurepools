@@ -389,8 +389,10 @@
   "arcana_dungeonloots_orionBlueprint" : [
     [0, {
 	  "fill" : [
-	    {"weight" : 1.0, "pool" : "arcana_dungeonloots_orionChestTreasure"},
-		{"weight" : 1.0, "item" : ["orion_rocketLauncher_1", 1]}
+		{"item" : ["orion_rocketLauncher_1", 1]},
+		{"item" : ["orion_pistol_2", 1]},
+		{"item" : ["arcana_bar_thoriumBar", 10]},
+		{"item" : ["orion_crafting_regulusCell", 1]}
       ]
     }]
   ],

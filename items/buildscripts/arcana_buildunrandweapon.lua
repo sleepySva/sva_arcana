@@ -65,7 +65,7 @@ function build(directory, config, parameters, level, seed)
     config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
     config.tooltipFields.dpsLabel = util.round((config.primaryAbility.baseDps or 0) * config.damageLevelMultiplier, 1)
     config.tooltipFields.speedLabel = util.round(1 / (config.primaryAbility.fireTime or 1.0), 1)
-    config.tooltipFields.damagePerShotLabel = util.round((config.primaryAbility.baseDps or 0) * (config.primaryAbility.fireTime or 1.0) * config.damageLevelMultiplier, 1)
+    config.tooltipFields.damagePerShotLabel = config.primaryAbility.chargeDps or (util.round((config.primaryAbility.baseDps or 0) * (config.primaryAbility.fireTime or 1.0) * config.damageLevelMultiplier, 1))
     config.tooltipFields.energyPerShotLabel = util.round((config.primaryAbility.energyUsage or config.primaryAbility.energyCost or 0) * (config.primaryAbility.fireTime or 1.0), 1)
     if elementalType ~= "physical" then
       config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"

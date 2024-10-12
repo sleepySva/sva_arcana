@@ -1,0 +1,21 @@
+{
+  "materialId" : 16381,
+  "materialName" : "geoelectra_tile5",
+  "particleColor" : [50, 50, 50, 255],
+  "itemDrop" : "geoelectra_tile5",
+  "description" : "A reinforced glass floor.",
+  "shortdescription" : "Neo Synthite Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/rowtemplate.config",
+  "renderParameters" : {
+    "texture" : "geoelectra_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 50
+  }
+}

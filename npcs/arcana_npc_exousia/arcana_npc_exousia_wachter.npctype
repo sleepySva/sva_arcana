@@ -4,6 +4,34 @@
 
   "dropPools" : [ "money" ],
   
+  "scriptConfig" : {
+
+    "dialog" : {
+      "greeting" : {
+        "default" : {
+          "default" : [
+            "Greetings.",
+			"Welcome visitor.",
+			"Exousia welcomes you."
+          ]
+        }
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Glory be to the Lionheart Emperor, and to Exousia!",
+			"Don't do anything stupid or I'll have to take you into custody.",
+			"Please stand at least five feet away from the barrel of my gun at all times.",
+			"You look familiar... Have I seen your face on a wanted poster before?",
+			"The Imperial police is supposed to be one of Exousia's major powers and yet they can't afford any padding for our armor?",
+			"Visitor, remember that you are in Exousian territory. Do not do anything that would force the Empire to exert our might."
+          ]
+        }
+      }
+    }
+	
+  },
+  
   "matchColorIndices" : true,
   "items" : {
     "override" : [

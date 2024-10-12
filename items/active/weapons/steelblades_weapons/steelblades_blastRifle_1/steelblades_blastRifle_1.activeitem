@@ -5,8 +5,11 @@
   "rarity" : "Legendary",
   "description" : "A blast-rifle made from verrostin. Used by the Steelblades.",
   "shortdescription" : "Verrostin Blaster",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "arcana_blastrifle",
   "category" : "uniqueWeapon",
+  "tooltipFields" : {
+	"subtitle" : "Blast Rifle"
+  },
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","blastrifle","verrostin"],
   "level" : 8,
@@ -29,6 +32,7 @@
 
   "primaryAbilityType" : "chargefire",
   "primaryAbility" : {
+    "chargeDps" : 110,
     "chargeLevels" : [
       {
         "time" : 0,
@@ -57,5 +61,5 @@
     ]
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

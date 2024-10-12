@@ -5,10 +5,13 @@
   "rarity" : "Rare",
   "description" : "A blast-rifle that shoots concentrated fire rounds.",
   "shortdescription" : "^#ff8b5b;Kitsunebi^reset;",
-  "tooltipKind" : "base",
+  "tooltipKind" : "arcana_blastrifle",
   "category" : "uniqueWeapon",
+  "tooltipFields" : {
+	"subtitle" : "Blast Rifle"
+  },
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged"],
+  "itemTags" : ["weapon","ranged","blastrifle"],
   "level" : 7,
 
   "inventoryIcon" : "icon.png",
@@ -28,6 +31,7 @@
 
   "primaryAbilityType" : "chargefire",
   "primaryAbility" : {
+    "chargeDps" : 91,
     "chargeLevels" : [
       {
         "time" : 0,
@@ -58,5 +62,5 @@
     ]
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

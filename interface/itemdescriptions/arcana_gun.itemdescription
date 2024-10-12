@@ -1,81 +1,97 @@
 {
   "moneyIcon" : {
     "type" : "image",
-    "position" : [102, 30],
+    "position" : [102, 0],
     "file" : "/interface/money.png"
   },
   "priceLabel" : {
     "type" : "label",
-    "position" : [115, 30],
-    "hAnchor" : "left",
+    "position" : [142, 0],
+    "hAnchor" : "right",
     "value" : "tree"
   },
   "speedTitleLabel" : {
     "type" : "label",
-    "position" : [16, 74],
+	"fontSize" : 7.2,
+	"color" : [140, 140,140],
+    "position" : [16, 78],
     "hAnchor" : "left",
-    "value" : "Rate of Fire:"
+    "value" : "Firing Rate:"
   },
   "speedLabel" : {
     "type" : "label",
-    "position" : [134, 74],
+	"fontSize" : 7.2,
+	"color" : [140, 140,140],
+    "position" : [133, 78],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "damagePerShotTitleLabel" : {
     "type" : "label",
-    "position" : [16, 83],
+	"fontSize" : 7.2,
+    "position" : [16, 87],
     "hAnchor" : "left",
-    "value" : "Damage Per Shot:"
+    "value" : "Damage:"
   },
   "damagePerShotLabel" : {
     "type" : "label",
-    "position" : [134, 83],
+	"fontSize" : 7.2,
+    "position" : [133, 87],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "energyPerShotTitleLabel" : {
     "type" : "label",
-    "position" : [16, 65],
+	"fontSize" : 7.2,
+	"color" : [140, 140,140],
+    "position" : [16, 69],
     "hAnchor" : "left",
     "value" : "Energy Per Shot:"
   },
   "energyPerShotLabel" : {
     "type" : "label",
-    "position" : [134, 65],
+	"fontSize" : 7.2,
+	"color" : [140, 140,140],
+    "position" : [133, 69],
     "hAnchor" : "right",
+    "centered" : true,
     "wrapWidth" : 126
   },
   "altAbilityTitleLabel" : {
     "type" : "label",
-    "position" : [16, 56],
+	"fontSize" : 7.2,
+	"color" : [140, 140,140],
+    "position" : [16, 60],
     "hAnchor" : "left",
     "value" : ""
   },
   "altAbilityLabel" : {
     "type" : "label",
-    "position" : [133, 56],
+	"fontSize" : 7.2,
+	"color" : [140, 140,140],
+    "position" : [133, 60],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
   "handednessLabel" : {
     "type" : "label",
-    "position" : [75, 150],
-    "hAnchor" : "mid",
+    "position" : [133, 154],
+    "hAnchor" : "right",
     "centered" : true,
+	"fontSize" : 6.0,
     "wrapWidth" : 122
   },
   "rarityLabel" : {
     "type" : "label",
-    "position" : [12, 30],
+    "position" : [12, 0],
     "hAnchor" : "left",
     "centered" : true,
     "wrapWidth" : 126
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 105],
+    "position" : [126, 111],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -83,11 +99,24 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [70, 120],
+    "position" : [76, 130],
     "file" : "",
     "centered" : true,
-    "maxSize" : [60, 60],
-    "minSize" : [60, 60]
+    "maxSize" : [80, 60],
+    "minSize" : [65, 45]
+  },
+  "descriptionBack" : {
+    "type" : "image",
+    "position" : [8, 12],
+    "file" : "/interface/tooltips/arcana_sworddesc.png"
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [16, 58],
+    "wrapWidth" : 122,
+	"fontSize" : 7.2,
+    "hAnchor" : "left",
+    "vAnchor" : "top"
   },
   "title" : {
     "type" : "label",
@@ -111,5 +140,4 @@
     "showRarity" : false,
     "showBackingImageWhenFull" : true
   }
-
 }

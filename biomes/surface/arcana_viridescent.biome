@@ -273,7 +273,7 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildbananaseed" ] ],
+            "pool" : [ [1, "arcana_farmable_teaPlantSeed_wild" ] ],
             "parameters" : {
               "startingStage" : 4
             }
@@ -289,25 +289,9 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildcoffeeseed" ] ],
+            "pool" : [ [1, "arcana_farmable_teaPlantSeed_wild" ] ],
             "parameters" : {
-              "startingStage" : 4
-            }
-          }
-        ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 1.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:surfaceCrops",
-
-        "type" : "object",
-        "objectSets" : [
-          {
-            "pool" : [ [1, "wildavesmingoseed" ] ],
-            "parameters" : {
-              "startingStage" : 4
+              "startingStage" : 2
             }
           }
         ]
@@ -332,28 +316,12 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:surfaceCrops",
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
 
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildcocoaseed" ] ],
-            "parameters" : {
-              "startingStage" : 3
-            }
-          }
-        ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 1.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:surfaceCrops",
-
-        "type" : "object",
-        "objectSets" : [
-          {
-            "pool" : [ [1, "wildpineappleseed" ] ],
+            "pool" : [ [1, "arcana_farmable_teaPlantSeed_wild" ] ],
             "parameters" : {
               "startingStage" : 3
             }

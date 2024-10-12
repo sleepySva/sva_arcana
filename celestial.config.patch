@@ -2001,6 +2001,34 @@
 		  "op": "add",
 		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_ruinous"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/ColdPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_redTerminus"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/ColdNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_redTerminus"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/DrkPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_nightmist"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/DrkNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_nightmist"
 		}
 	]
 ]

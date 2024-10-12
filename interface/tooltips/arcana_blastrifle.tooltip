@@ -1,0 +1,90 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/arcana_sword_header.png",
+    "fileBody" : "/interface/tooltips/arcana_sword_body.png",
+    "fileFooter" : "/interface/tooltips/arcana_sword_footer.png"
+  },
+  "levelTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 188],
+    "hAnchor" : "left",
+    "value" : "Tier:"
+  },
+  "levelLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [38, 188],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "handednessLabel" : {
+    "type" : "label",
+	"fontSize" : 6.8,
+	"color" : [160, 160, 160],
+    "position" : [97, 188],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "damageKindImage" : {
+    "type" : "image",
+    "position" : [140, 132],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [80, 153],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [80, 70],
+    "minSize" : [60, 60]
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+	"color" : [160, 160, 160],
+    "position" : [11, 117],
+    "wrapWidth" : 140,
+    "hAnchor" : "left",
+    "vAnchor" : "top"
+  },
+  "damagePerShotTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 76],
+    "hAnchor" : "left",
+    "value" : "Damage:"
+  },
+  "damagePerShotLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [148, 76],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "rarityLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [115, 23],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [128, 23],
+    "hAnchor" : "left",
+    "value" : "tree"
+  }
+}

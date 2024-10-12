@@ -792,6 +792,14 @@
   },
   {
     "op": "add",
+    "path": "/displayOres/arcana_mod_florastone",
+    "value": {
+      "displayName": "Florastone",
+      "icon": "/items/generic/elemental_crafting/elemental_crafting_florastone.png"
+    }
+  },
+  {
+    "op": "add",
     "path": "/planetTypeColors/arcana_verdant",
     "value": [
       185,
@@ -1734,7 +1742,7 @@
     "op": "add",
     "path": "/visitableTypeDescription/arcana_ruinous",
     "value": [
-      "All have been tainted by the force of ^orange;Cosmo^reset; within the ^#bc72e1;Ruinous^reset;. ^red;Extreme caution is advised before teleporting into the planet.^reset;"
+      "All have been tainted by an unknown force within the ^#bc72e1;Ruinous^reset;. ^red;Extreme caution is advised before teleporting into the planet.^reset;"
     ]
   },
   {

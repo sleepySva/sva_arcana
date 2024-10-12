@@ -23,7 +23,7 @@
     "type" : "label",
 	"fontSize" : 6.8,
 	"color" : [160, 160, 160],
-    "position" : [97, 188],
+    "position" : [100, 188],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
@@ -58,7 +58,7 @@
 	"fontSize" : 7.2,
     "position" : [11, 76],
     "hAnchor" : "left",
-    "value" : "Damage:"
+    "value" : "Max Damage:"
   },
   "maxDamageLabel" : {
     "type" : "label",
@@ -72,13 +72,28 @@
 	"fontSize" : 7.2,
     "position" : [11, 67],
     "hAnchor" : "left",
-    "value" : "Energy Per Shot:"
+    "value" : "Firing Rate:"
   },
   "energyPerShotLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
     "position" : [148, 67],
     "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [11, 49],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [148, 49],
+    "hAnchor" : "right",
+    "centered" : true,
     "wrapWidth" : 126
   },
   "rarityLabel" : {

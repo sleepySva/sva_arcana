@@ -75,6 +75,9 @@
             "frames" : 7,
             "cycle" : 0.6,
             "mode" : "loop"
+          },
+          "special" : {
+            "frames" : 1
           }
         }
       },
@@ -154,6 +157,11 @@
               "properties" : {
                 "image" : "<partImage>:firewindup.<frame>"
               }
+            },
+            "special" : {
+              "properties" : {
+                "image" : "<partImage>:special.<frame>"
+              }
             }
           }
         }
@@ -219,6 +227,11 @@
             "firewindup" : {
               "properties" : {
                 "image" : "<partImage>:firewindup.<frame>"
+              }
+            },
+            "special" : {
+              "properties" : {
+                "image" : "<partImage>:special.<frame>"
               }
             }
           }

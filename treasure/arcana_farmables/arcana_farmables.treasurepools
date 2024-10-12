@@ -16,6 +16,20 @@
       ]
     } ]
   ],
+  
+  "arcana_farmable_teaPlant" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.89, "item" : "arcana_farmable_teaPlant"},
+        {"weight" : 0.01, "item" : "arcana_farmable_teaPlantSeed"},
+        {"weight" : 0.1, "item" : "plantfibre"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
+  ],
 
   "arcana_farmable_wildPraire" : [
     [0, {

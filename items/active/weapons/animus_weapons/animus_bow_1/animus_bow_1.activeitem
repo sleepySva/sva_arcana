@@ -1,0 +1,92 @@
+{
+  "itemName" : "animus_bow_1",
+  "price" : 1200,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "arcana_bow",
+  "category" : "bow",
+  "description" : "A sword forged from Anima Chunk and Arcanium. ^green;Inflicts Soulburn, dealing true damage over time.^reset;",
+  "shortdescription" : "^#2990de;Animus Bow^reset;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow", "animus"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 7,
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "bow" : "body.png",
+    "bowFullbright" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0, 0]
+      }}
+    }},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "energyPerShot" : 20,
+    "cooldownTime" : 0.1,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_azure_4",
+    "powerProjectileType" : "arcana_azure_4",
+    "projectileParameters" : {
+      "power" : 20,
+      "speed" : 110
+    }
+  },
+
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "name" : "Split Shot",
+    "energyPerShot" : 80,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_azure_4",
+    "powerProjectileType" : "arcana_azure_4",
+    "projectileParameters" : {
+      "power" : 17,
+      "speed" : 110,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "arcana_azure_4",
+          "angleAdjust" : -3,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "arcana_azure_4",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "arcana_azure_4",
+          "angleAdjust" : 3,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

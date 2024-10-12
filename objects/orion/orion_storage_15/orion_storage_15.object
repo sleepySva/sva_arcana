@@ -7,7 +7,7 @@
   "race" : "generic",
   "price" : 140,
   
-  "category" : "storage",
+  "category" : "fridgeStorage",
   "objectType" : "container",
   "tooltipKind" : "container",
 
@@ -43,5 +43,7 @@
   "slotCount" : 16,
   "uiConfig" : "/interface/chests/chest<slots>.config",
   "frameCooldown" : 5,
-  "autoCloseCooldown" : 3600
+  "autoCloseCooldown" : 3600,
+  
+  "itemAgeMultiplier" : 0.0
 }

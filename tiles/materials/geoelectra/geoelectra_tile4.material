@@ -1,0 +1,21 @@
+{
+  "materialId" : 16343,
+  "materialName" : "geoelectra_tile4",
+  "particleColor" : [50, 50, 50, 255],
+  "itemDrop" : "geoelectra_tile4",
+  "description" : "A reinforced wall forged from galvasteel.",
+  "shortdescription" : "Neo Machinery Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "geoelectra_tile4.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4800
+  }
+}

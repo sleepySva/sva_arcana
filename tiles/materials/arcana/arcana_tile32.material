@@ -1,0 +1,21 @@
+{
+  "materialId" : 16380,
+  "materialName" : "arcana_tile32",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile32",
+  "description" : "A sloped rusty copper panel.",
+  "shortdescription" : "Sloped Rusty Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile32.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4749
+  }
+}
