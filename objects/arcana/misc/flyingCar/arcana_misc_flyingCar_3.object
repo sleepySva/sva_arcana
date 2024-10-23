@@ -1,0 +1,47 @@
+{
+  "objectName" : "arcana_misc_flyingCar_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "An economy class car, equipped with basic flight boosters.",
+  "shortdescription" : "Corefield Tracer S20",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 620,
+  
+  "inventoryIcon" : "3_icon.png",
+  
+  "lightColor" : [230, 230, 230],
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.2,
+  
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "3.png:<color>.<frame>", "fullbright" : false }, { "image" : "fullbright.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-40, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+	  
+	  "lightPosition" : [-4, 2],
+	  "beamAngle" : 180,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+    },
+	{
+	  "imageLayers" : [ { "image" : "3.png:<color>.<frame>", "fullbright" : false }, { "image" : "fullbright.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "right",
+      "imagePosition" : [-40, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+	  
+	  "lightPosition" : [4, 2],
+	  "beamAngle" : 0,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+    }
+  ]
+}

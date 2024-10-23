@@ -1,0 +1,21 @@
+{
+  "materialId" : 16383,
+  "materialName" : "studio_tile18",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "studio_tile18",
+  "description" : "A solid stone pillar.",
+  "shortdescription" : "Dark Stone Pillar",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "studio_tile18.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "multiColored" : true,
+    "occludesBelow" : true,
+    "zLevel" : 3429
+  }
+}

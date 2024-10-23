@@ -1,0 +1,15 @@
+{
+  "id" : "arcana_codex_wanderingSpirit",
+  "title" : "The Plague Doctor",
+  "description" : "A short entry about the Plague Doctor.",
+  "icon" : "arcana_codex_wanderingSpirit.png",
+  "contentPages" :
+  [
+    "In his eagerness to rid the disease plaguing the land, the doctor discovered something far greater: the cure to death itself and the potential to harness souls. From the spring of life, he grants immortality to all who have perished, giving rise to an unending surge of the undead."
+  ],
+    "itemConfig" : {
+    "rarity" : "Legendary",
+    "price" : 600,
+	"collectablesOnPickup" : { "arcana_bosses" : "wanderingSpirit" }
+  }
+}

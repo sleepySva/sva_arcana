@@ -1,0 +1,20 @@
+{
+  "materialId" : 16856,
+  "materialName" : "arcana_platform_stonePlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_stonePlatform",
+  "description" : "A smooth stone platform.",
+  "shortdescription" : "Smooth Stone Platform",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_stonePlatform.png",
+    "variants" : 3,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

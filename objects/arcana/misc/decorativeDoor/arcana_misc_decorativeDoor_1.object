@@ -1,0 +1,41 @@
+{
+  "objectName" : "arcana_misc_decorativeDoor_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A secure door for keeping out unwanted intruders.",
+  "shortdescription" : "Decorative Door",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 60,
+  "printable" : false,
+  
+  "lightColor" : [160, 160, 130],
+  "lightPosition" : [0, 2],
+
+  "inventoryIcon" : "1_icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "1.png:<color>", "fullbright" : true }, { "image" : "1_fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "1.png:<color>", "fullbright" : true }, { "image" : "1_fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

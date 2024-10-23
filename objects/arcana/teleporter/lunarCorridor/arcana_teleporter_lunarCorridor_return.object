@@ -1,0 +1,50 @@
+{
+  "objectName" : "arcana_teleporter_lunarCorridor_return",
+  "colonyTags" : ["ancient"],
+  "rarity" : "Legendary",
+  "category" : "other",
+  "price" : 0,
+  "printable" : false,
+
+  "description" : "I sure hope this door will take me back to reality!",
+  "shortdescription" : "Challenge Door",
+  "race" : "ancient",
+
+  "apexDescription" : "That gate must be the exit.",
+  "avianDescription" : "Thank the Kluex. I believe this must be my way out.",
+  "floranDescription" : "Floran guesses thisss is door out.",
+  "glitchDescription" : "Hopeful. Surely, this must be the way out of here.",
+  "humanDescription" : "I sure hope this door will take me back to reality!",
+  "hylotlDescription" : "Everything that has a beginning must come to an end. It's time for me to leave this place.",
+  "novakidDescription" : "Time for me to be leavin' this place.",
+
+  "lightColor" : [76, 60, 86],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "arcana_teleporter_lunarCorridor_return.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright_return.png:<color>.<frame>" } ],
+      "imagePosition" : [-16, 0],
+      "animationPosition" : [-16, 0],
+      "spaceScan" : 0.1,
+
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+
+      "lightPosition" : [0, 3],
+
+      "detectArea" : [ [-3, 0], [3, 5] ]
+    }
+  ],
+
+  "animation" : "/objects/arcana/teleporter/lunarCorridor/animation.animation",
+  "animationParts" : {
+    "bg" : "arcana_teleporter_lunarCorridor_return.png",
+    "fg" : "fullbright_return.png"
+  },
+
+  "scripts" : [ "/objects/arcana_teleporter/arcana_teleporter_lunarCorridor/arcana_teleporter_lunarCorridor.lua" ],
+  "scriptDelta" : 20,
+
+  "returnDoor" : true
+}

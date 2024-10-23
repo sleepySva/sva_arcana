@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_aurea_deco_2",
+  "colonyTags" : ["arcana_aurea"],
+  "rarity" : "Rare",
+  "description" : "A hologram display that is showing some information about the Gilten.",
+  "shortdescription" : "Small Hologram",
+  "race" : "gilten",
+  "category" : "decorative",
+  "price" : 240,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ]
+}

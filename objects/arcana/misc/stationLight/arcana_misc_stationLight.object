@@ -1,0 +1,62 @@
+{
+  "objectName" : "arcana_misc_stationLight",
+  "colonyTags" : ["station","light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 85,
+  "description" : "A long industrial looking fluorescent light.",
+  "shortdescription" : "Tall Station Light",
+  "race" : "generic",
+
+  "apexDescription" : "This industrial light is quite large.",
+  "avianDescription" : "This light isn't very nice looking, and the light it casts is cold.",
+  "floranDescription" : "Floran dissslikes cold electric light.",
+  "glitchDescription" : "Informed. These lights each have a compact power source built inside.",
+  "humanDescription" : "Some big fluorescent lights, the kind seen in ships and stations.",
+  "hylotlDescription" : "A large fluorescent light, I wonder if it's waterproof.",
+  "novakidDescription" : "A big ol' electric light.",
+
+  "lightColor" : [96, 116, 140],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 2],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 2],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ],
+  "interactive" : false,
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5
+
+}

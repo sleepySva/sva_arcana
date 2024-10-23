@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_exousia_vehicles_deco_5",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A standard modern car manufactured by the Schreiten company.",
+  "shortdescription" : "Schreiten Equus R",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 560,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-48, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-48, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

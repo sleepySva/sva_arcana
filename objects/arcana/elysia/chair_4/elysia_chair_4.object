@@ -1,0 +1,46 @@
+{
+  "objectName" : "elysia_chair_4",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A green resort couch, comfortable and relaxing to rest on.",
+  "shortdescription" : "Elysia Couch",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "elysia_chair_4.png:<color>",
+      "imagePosition" : [-24, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-8, 23], // Right
+        [8, 23] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "elysia_chair_4.png:<color>",
+      "imagePosition" : [-24, 0],
+      "direction" : "right",
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-8, 23], // Left
+        [8, 23] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_gearshiftset",
+  "effectConfig" : {
+  
+    "set" : "arcana_gearshift",
+	"minParts" : 3,
+    "statModifiers" : [
+    ],
+    "status" : "arcana_gearshift",
+	"weaponBuff" : {
+      "tags" : ["titancorp"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

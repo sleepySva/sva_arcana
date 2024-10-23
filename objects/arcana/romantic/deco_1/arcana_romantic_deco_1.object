@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_romantic_deco_1",
+  "colonyTags" : ["misc","arcana_romantic"],
+  "rarity" : "Rare",
+  "description" : "A verdant mansion plant.",
+  "shortdescription" : "Mansion Leafy Plant",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 120,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

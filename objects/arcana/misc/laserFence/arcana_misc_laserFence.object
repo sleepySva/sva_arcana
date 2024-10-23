@@ -1,0 +1,41 @@
+{
+  "objectName" : "arcana_misc_laserFence",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A glass fence typically seen in labs.",
+  "shortdescription" : "Glass Fence",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 120,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false } ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "renderLayer" : "Player+1",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : false } ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "renderLayer" : "Player+1",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

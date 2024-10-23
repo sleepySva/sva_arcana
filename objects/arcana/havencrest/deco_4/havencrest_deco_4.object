@@ -1,0 +1,25 @@
+{
+  "objectName" : "havencrest_deco_4",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A decorative sandstone support structure, powered by an arcane crystal.",
+  "shortdescription" : "Oasis Support Structure",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "lightColor" : [40, 90, 100],
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "havencrest_deco_4.png:<color>",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemName" : "arcana_mistbanePotion",
+  "rarity" : "Legendary",
+  "price" : 150,
+  "category" : "medicine",
+  "tooltipKind" : "arcana_base_generic",
+  "inventoryIcon" : "arcana_mistbanePotion.png",
+  
+  "description" : "An odd, shadowy potion. \nCures ^red;Frightened^reset; and grants ^green;small health regeneration^reset;.^reset;",
+
+  "shortdescription" : "Mistbane Potion",
+  "effects" : [ [
+      {
+        "effect" : "arcana_status_mistbane"
+      },
+      {
+        "effect" : "salveheal"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "arcana_status_mistbane",
+	"salveheal"
+  ]
+}

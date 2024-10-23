@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_tech_shadowStep",
+  "type" : "body",
+
+  "scripts" : ["arcana_dodge.lua"],
+  "animator" : "arcana_tech_shadowStep.animation",
+
+  "description" : "Grants ^green;immunity to fall damage^reset;. Double tap ^green;[A]^white; or ^green;[D] ^white;to dash. Dashes can dodge attacks, which has a separate 3s cooldown.",
+  "shortDescription" : "Shadow Step",
+  "rarity" : "Uncommon",
+  "icon" : "/tech/arcana_tech_shadowStep.png",
+
+  "chipCost" : 2,
+
+  "status" : "arcana_status_nofalldamage",
+  "maximumDoubleTapTime" : 0.25,
+  "dashControlForce" : 2000,
+  "dashSpeed" : 84,
+  "dashDuration" : 0.18,
+  "dashCooldown" : 0.7,
+  "immunityDashDuration" : 0.24,
+  "immunityCooldown" : 3.0,
+  "stopAfterDash" : true,
+  "groundOnly" : false
+}

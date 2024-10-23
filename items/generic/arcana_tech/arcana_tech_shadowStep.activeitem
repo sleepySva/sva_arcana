@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_tech_shadowStep",
+  "price" : 4000,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "inventoryIcon" : "arcana_tech_shadowStep.png",
+  "description" : "Grants ^green;immunity to fall damage^reset;. Double tap ^green;[A]^white; or ^green;[D] ^white;to dash. Dashes can dodge attacks, which has a separate 3s cooldown. ^orange;[Use to gain a new type of tech!]^reset;",
+  "shortdescription" : "Shadow Step",
+  "itemTags" : [ "tech" ],
+  
+  
+  "level" : 1,
+  "maxStack" : 1,
+  "tooltipKind" : "arcana_base_item",
+  "twoHanded" : true,
+  
+  "scripts" : ["arcana_tech.lua"],
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blueprint" : "arcana_tech_shadowStep.png"
+  },
+  "animationCustom" : {},
+  "tech" : "arcana_tech_shadowStep"
+}

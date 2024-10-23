@@ -1,0 +1,25 @@
+{
+  "objectName" : "elysia_sign_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A wall poster, displaying some details about the Elysia Resort.",
+  "shortdescription" : "Elysia Info Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 50,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "elysia_sign_1.png:<color>",
+      "imagePosition" : [-16, -0],
+	  "direction" : "right",
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

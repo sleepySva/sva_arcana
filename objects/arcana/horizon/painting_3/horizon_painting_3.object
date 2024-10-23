@@ -1,0 +1,24 @@
+{
+  "objectName" : "horizon_painting_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A painting.",
+  "shortdescription" : "Web",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "horizon_painting_3.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

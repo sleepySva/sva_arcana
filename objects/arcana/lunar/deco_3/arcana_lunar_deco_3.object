@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_lunar_deco_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A small decorative cherry blossom plant.",
+  "shortdescription" : "Small Sakura Tree",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 140,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_lunar_deco_3.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_lunar_deco_7",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A plant box holding a herb plant.",
+  "shortdescription" : "Herb Plant",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 60,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_lunar_deco_7.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

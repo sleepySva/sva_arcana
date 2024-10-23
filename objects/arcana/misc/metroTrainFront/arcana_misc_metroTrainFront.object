@@ -1,0 +1,39 @@
+{
+  "objectName" : "arcana_misc_metroTrainFront",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A modern metro train.",
+  "shortdescription" : "Metro Train Front",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 500,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 11,
+      "animationCycle" : 1.1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ],
+      "collision" : "platform"
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 11,
+      "animationCycle" : 1.1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ],
+      "collision" : "platform"
+
+    }
+  ]
+}

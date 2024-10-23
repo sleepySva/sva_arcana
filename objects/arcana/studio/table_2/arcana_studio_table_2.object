@@ -1,0 +1,26 @@
+{
+  "objectName" : "arcana_studio_table_2",
+  "colonyTags" : ["misc","arcana_studio"],
+  "rarity" : "Rare",
+  "description" : "A light wooden table built in a minimal style.",
+  "shortdescription" : "Studio Light Table",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 180,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
+

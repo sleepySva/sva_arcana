@@ -1,0 +1,41 @@
+{
+  "objectName" : "arcana_misc_blueNeonSign",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A blue neon sign with a green X at the center of it.",
+  "shortdescription" : "Blue Neon Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 130,
+  "printable" : false,
+  
+  "lightColor" : [20, 139, 161],
+  "lightPosition" : [1, 1],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

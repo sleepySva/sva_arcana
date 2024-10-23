@@ -1,0 +1,15 @@
+{
+  "id" : "arcana_codex_aeonTimepiece",
+  "title" : "Aeon Timepiece",
+  "description" : "A short entry about the Aeon Timepiece.",
+  "icon" : "arcana_codex_aeonTimepiece.png",
+  "contentPages" :
+  [
+    "To preserve the universe from the calamity they've created themselves, the old Clockmakers gathered all of their resources into the makings of their last and greatest invention and sacrifice. Within this eternal stasis, the Aeon Timepiece is all that remains of the long lost history."
+  ],
+    "itemConfig" : {
+    "rarity" : "Legendary",
+    "price" : 600,
+	"collectablesOnPickup" : { "arcana_bosses" : "aeonTimepiece" }
+  }
+}

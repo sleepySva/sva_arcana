@@ -1,0 +1,15 @@
+{
+  "id" : "arcana_codex_cosmoNemesis",
+  "title" : "Cosmo Nemesis",
+  "description" : "A short entry about the Cosmo Nemesis.",
+  "icon" : "arcana_codex_cosmoNemesis.png",
+  "contentPages" :
+  [
+    "The Cosmo Nemesis is a distorted spirit that absorbed the abundance essence of the Anima, turning it into a roaming monstrocity that spreads scorching fire. It endlessly lurks in the shadows, waiting for lost wanderers to devour them fully, absorbing even more essence to feed its gluttony."
+  ],
+    "itemConfig" : {
+    "rarity" : "Legendary",
+    "price" : 600,
+	"collectablesOnPickup" : { "arcana_bosses" : "cosmoNemesis" }
+  }
+}

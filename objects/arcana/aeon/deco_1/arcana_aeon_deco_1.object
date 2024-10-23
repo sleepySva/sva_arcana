@@ -1,0 +1,36 @@
+{
+  "objectName" : "arcana_aeon_deco_1",
+  "colonyTags" : ["glitch","glitchsewer","mechanical"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 100,
+  "description" : "A gear. Part of a well-oiled machine. Actually, it's a bit rusty.",
+  "shortdescription" : "Large Gear",
+  "race" : "generic",
+
+  "apexDescription" : "A machine gear. It appears to be working correctly.",
+  "avianDescription" : "A gear. It looks dirty.",
+  "floranDescription" : "Wheel sspins, but for what use?",
+  "glitchDescription" : "Thoughtful. Many of these gears make up a Glitch.",
+  "humanDescription" : "An oiled gear, seems like it's a bit rusty though.",
+  "hylotlDescription" : "A slightly rusty gear, it has been near too much water.",
+  "novakidDescription" : "I bet these were useful once, looks to me like they're rustin' up.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "leftImage" : "arcana_aeon_deco_1_left.png:<color>.<frame>",
+      "rightImage" : "arcana_aeon_deco_1_right.png:<color>.<frame>",
+      "frames" : 5,
+      "animationCycle" : 0.6,
+      "imagePosition" : [-8, -8],
+
+      "spaces" : [ [0, 0] ],
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/sewergear.ogg",
+  "soundEffectRangeMultiplier" : 0.5
+
+}

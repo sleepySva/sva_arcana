@@ -1,0 +1,25 @@
+{
+  "objectName" : "elysia_poster_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A large poster of the tropical resort Elysia.",
+  "shortdescription" : "Elysia Large Advertisement",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 50,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "elysia_poster_3.png:<color>",
+      "imagePosition" : [-24, -0],
+	  "direction" : "right",
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

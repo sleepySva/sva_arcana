@@ -1,0 +1,51 @@
+{
+  "objectName" : "arcana_ice_door_1",
+  "colonyTags" : ["ice","door"],
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 145,
+  "description" : "A huge, intimidating door.",
+  "shortdescription" : "Large Ice Door",
+  "race" : "glitch",
+
+  "inventoryIcon" : "icon.png",
+
+  "tooltipKind" : "door",
+  "largeImage" : "body.png:right",
+  
+  "orientations" : [
+    {
+      "dualImage" : "body.png:default",
+      "imagePosition" : [-24, 0],
+      "renderLayer" : "Object+5",
+
+      "spaces" : [ [0, 0], [0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [0, 6], [0, 7] ],
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/largecastledoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/largecastledoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "body.png"
+  },
+  "animationPosition" : [-24, 0],
+
+  "inputNodes" : [ [0, 7] ],
+  "outputNodes" : [ [0, 0] ]
+}

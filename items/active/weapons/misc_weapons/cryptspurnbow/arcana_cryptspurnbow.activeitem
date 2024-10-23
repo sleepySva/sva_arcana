@@ -1,0 +1,92 @@
+{
+  "itemName" : "arcana_cryptspurnbow",
+  "price" : 1400,
+  "inventoryIcon" : "icon.png",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "tooltipKind" : "arcana_bow",
+  "category" : "bow",
+  "description" : "A bow modified by the Doctor, used by once proud soldiers of a lost city.",
+  "shortdescription" : "Cryptspurn Bow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 6,
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "bow" : "body.png",
+    "bowFullbright" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0, 0]
+      }}
+    }},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "energyPerShot" : 20,
+    "cooldownTime" : 0.1,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_azure_5",
+    "powerProjectileType" : "arcana_azure_5",
+    "projectileParameters" : {
+      "power" : 19,
+      "speed" : 110
+    }
+  },
+
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "name" : "Split Shot",
+    "energyPerShot" : 80,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_azure_5",
+    "powerProjectileType" : "arcana_azure_5",
+    "projectileParameters" : {
+      "power" : 16,
+      "speed" : 110,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "arcana_azure_5",
+          "angleAdjust" : -3,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "arcana_azure_5",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "arcana_azure_5",
+          "angleAdjust" : 3,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

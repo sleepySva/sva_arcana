@@ -1,0 +1,43 @@
+{
+  "objectName" : "arcana_carnival_apexcoolcupboard",
+  "colonyTags" : ["apex","apexresearchlab","storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "price" : 160,
+  "description" : "This cupboard is sleek, but it doesn't look sturdy.",
+  "shortdescription" : "Cool Cupboard",
+  "race" : "apex",
+  "health" : 1.5,
+
+  "apexDescription" : "I bet there are a few skeletons in this closet.",
+  "avianDescription" : "Is there anything inside?",
+  "floranDescription" : "Ssstorage.",
+  "glitchDescription" : "Curious. Could contain items.",
+  "humanDescription" : "A sleek-looking cupboard.",
+  "hylotlDescription" : "I should check the contents.",
+  "novakidDescription" : "Let's take a look inside.",
+
+  "inventoryIcon" : "apexcoolcupboardicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "apexcoolcupboard.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/locker_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/locker_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

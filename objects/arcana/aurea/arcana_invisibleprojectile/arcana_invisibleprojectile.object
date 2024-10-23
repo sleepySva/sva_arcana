@@ -1,0 +1,68 @@
+{
+  "objectName" : "arcana_invisibleprojectile",
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "breakable",
+
+  "description" : "...",
+  "shortdescription" : "Invisible Projectile Spawner",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "body.png",
+        "fg" : "body.png"
+      },
+
+      "projectileDirection" : [1, 0],
+      "projectilePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+      
+      "animationPosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "body.png",
+        "fg" : "body.png"
+      },
+
+      "projectileDirection" : [1, 0],
+      "projectilePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+    }
+  ],
+
+  "scripts" : [ "arcana_invisibleprojectile.lua" ],
+  "scriptDelta" : 2,
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "shoot" : [],
+      "on" : [],
+      "off" : []
+    }
+  },
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0],
+  "activeLightColor" : [0, 0, 0],
+  
+  "projectile" : "arcana_horizonPod1"
+}

@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_mistriderset",
+  "effectConfig" : {
+  
+    "set" : "arcana_mistrider",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.2 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["none"],
+      "modifiers" : [
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus_mistrider.lua"
+  ],
+  "scriptDelta" : 30
+}

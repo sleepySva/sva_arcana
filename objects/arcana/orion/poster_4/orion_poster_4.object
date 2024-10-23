@@ -1,0 +1,24 @@
+{
+  "objectName" : "orion_poster_4",
+  "colonyTags" : ["orion"],
+  "rarity" : "Rare",
+  "description" : "A poster of the logo of Orion Cybernetics.",
+  "shortdescription" : "Orion Logo",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 200,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_poster_4.png:<color>",
+      "imagePosition" : [-8, -0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

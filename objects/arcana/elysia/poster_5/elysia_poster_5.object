@@ -1,0 +1,25 @@
+{
+  "objectName" : "elysia_poster_5",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A poster of the tropical resort Elysia. Looks fancy.",
+  "shortdescription" : "Elysia Small Poster",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 50,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "elysia_poster_5.png:<color>",
+      "imagePosition" : [-16, -0],
+	  "direction" : "right",
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

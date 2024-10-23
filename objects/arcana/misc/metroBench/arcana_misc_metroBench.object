@@ -1,0 +1,49 @@
+{
+  "objectName" : "arcana_misc_metroBench",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 120,
+  "printable" : false,
+  "description" : "A sleek, stainless steel bench in the bustling metro station, offering commuters a moment of respite amidst the urban chaos.",
+  "shortdescription" : "Metro Bench",
+  "race" : "generic",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "imagePosition" : [-24, 0],
+	  "sitCoverImage" : "/objects/arcana_misc/arcana_misc_metroBench/cover.png",
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        [-11, 21], // Right
+        [2, 21] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "imagePosition" : [-24, 0],
+	  "sitCoverImage" : "/objects/arcana_misc/arcana_misc_metroBench/cover.png",
+
+      "direction" : "right",
+
+      "sitPositions" : [
+        [-3, 21], // Left
+        [10, 21] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

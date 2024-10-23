@@ -1,0 +1,42 @@
+{
+  "objectName" : "arcana_vendor_1",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "A questionable vendor selling mystery boxes that contains random rewards.",
+  "shortdescription" : "Wheel of Fortune Vendor",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Wheel of Fortune",
+        "subtitle" : " Become a pixelnaire today!"
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.2,
+    "items" : [
+      { "item" : "arcana_vendor_1_goldenFortuneBox" },
+	  { "item" : "arcana_vendor_1_silverFortuneBox" },
+	  { "item" : "arcana_vendor_1_bronzeFortuneBox" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_vendor_1.png:<color>.<frame>",
+      "imagePosition" : [-96, -0],
+      "frames" : 8,
+      "animationCycle" : 3.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

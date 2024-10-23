@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_exousia_props_deco_28",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A small vermilion Zinnofeur tree.",
+  "shortdescription" : "Zinnofeur Tree",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 260,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : ["bottom"]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : ["bottom"]
+
+    }
+  ]
+}

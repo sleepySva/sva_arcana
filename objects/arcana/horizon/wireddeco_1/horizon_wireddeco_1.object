@@ -1,0 +1,51 @@
+{
+  "objectName" : "horizon_wireddeco_1",
+  "colonyTags" : ["electronic"],
+  "rarity" : "Rare",
+  "description" : "A monitor, utilized by the fleets of the Horizon.",
+  "shortdescription" : "Horizon Standing Monitor",
+  "race" : "generic",
+
+  "category" : "decorative",
+  "price" : 100,
+  "lightColor" : [122, 52, 143],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "horizon_wireddeco_1.png:<color>.on",
+      "imagePosition" : [-24, -8],
+      "flipImages" : true,
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "horizon_wireddeco_1.png:<color>.on",
+      "imagePosition" : [-24, -8],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/outpostmonitor_static.ogg",
+
+  "animation" : "horizon_wireddeco_1.animation",
+  "animationParts" : {
+    "bg" : "horizon_wireddeco_1.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [-24, -8],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+
+}

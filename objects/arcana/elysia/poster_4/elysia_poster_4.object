@@ -1,0 +1,25 @@
+{
+  "objectName" : "elysia_poster_4",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A large poster advertising a resort named Elysia.",
+  "shortdescription" : "Elysia Large Poster",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 50,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "elysia_poster_4.png:<color>",
+      "imagePosition" : [-8, -0],
+	  "direction" : "right",
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "objectName" : "arcana_catacomb_npc_1",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "A strange hooded figure.",
+  "shortdescription" : "???",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 0,
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " ???",
+        "subtitle" : ""
+      }
+    },
+    "buyFactor" : 3.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "arcana_tech_shadowStep" },
+	  { "item" : "arcana_mistbanePotion" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 4.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "right",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 4.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "health" : 100,
+  
+  "scripts" : [ "/objects/arcana_lua_object_chat.lua" ],
+  "scriptDelta" : 20,
+  "mouthPosition" : [0, 0],
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "Your scent... you must be here for the hunt, just like me.",
+    "I've got something that can help you. Stuff don't come free, though.",
+    "..."
+  ]
+}

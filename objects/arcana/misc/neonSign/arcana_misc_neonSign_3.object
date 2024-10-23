@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_misc_neonSign_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A big neon display sign.",
+  "shortdescription" : "Neon Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 50,
+  
+  "lightColor" : [77, 72, 159],
+  "lightPosition" : [2, 1],
+
+  "inventoryIcon" : "3_icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "3.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 2,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "3.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 2,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+
+    }
+  ]
+}

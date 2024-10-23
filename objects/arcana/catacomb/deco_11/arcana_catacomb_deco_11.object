@@ -1,0 +1,42 @@
+{
+  "objectName" : "arcana_catacomb_deco_11",
+  "colonyTags" : ["catacomb"],
+  "rarity" : "Common",
+  "description" : "A ghostly image.",
+  "shortdescription" : "Spectral Tombstone",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 140,
+  
+  "printable" : false,
+  "lightColor" : [40, 110, 120],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+	  "lightPosition" : [1, 2],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+	  "lightPosition" : [1, 2],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ]
+}

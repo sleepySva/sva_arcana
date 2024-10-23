@@ -1,0 +1,51 @@
+{
+  "objectName" : "arcana_astral_deco_15",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A sheet of fabric used to cover up Arcanian goods.",
+  "shortdescription" : "Side Fabric Cover",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 80,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "arcana_astral_deco_15.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" :  [
+		  [-2, 4],
+		  [-1, 3],
+		  [0, 2],
+		  [1, 2]
+	  ],
+      "anchors" : [],
+	  "collision" : "solid"
+
+    },
+    {
+      "image" : "arcana_astral_deco_15.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "direction" : "right",
+
+      "spaces" :  [
+		  [-2, 2],
+		  [-1, 2],
+		  [0, 3],
+		  [1, 4]
+	  ],
+      "anchors" : [],
+	  "collision" : "solid"
+
+    }
+  ]
+}

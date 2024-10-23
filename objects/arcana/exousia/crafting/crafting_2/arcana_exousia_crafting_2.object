@@ -1,0 +1,45 @@
+{
+  "objectName" : "arcana_exousia_crafting_2",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A special workstation for crafting Exousia furniture and misc objects.",
+  "shortdescription" : "Exousia Workstation",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1200,
+  
+  "lightColor" : [80, 120, 120],
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/arcana/arcana_crafting_workbench/arcana_exousia_crafting_1.config",
+	"filter" : ["arcana_exousia_crafting_1","arcana_exousia"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

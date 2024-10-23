@@ -1,0 +1,57 @@
+{
+  "objectName" : "arcana_dungeon_astralObservatory_npc_ankhu",
+  "colonyTags" : ["misc"],
+  "rarity" : "Legendary",
+  "description" : "An Arcanian scholar, it seems.",
+  "shortdescription" : "Ankhu",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+
+  "offeredQuests" : [
+    "arcana_quests_ankhu_1"
+  ],
+  "turnInQuests" : [
+    "arcana_quests_ankhu_1"
+  ],
+
+  "uniqueId" : "arcana_dungeon_astralObservatory_npc_ankhu",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 16,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 16,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : ["/scripts/chattyObject.lua"],
+  "scriptDelta" : 10,
+  "mouthPosition" : [0.0, 0.2],
+ 
+  "chatOptions" : [
+    "As scholars, we study the stars as well as exploring them whenever we can.",
+	"From the looks of it, you yourself have seen many stars, have you not?",
+    "Alas, the days of exploration has passed for me.",
+	"I now reside in the Observatory as an Archivist, educating other Arcanians on the study of the stars."
+  ]
+}

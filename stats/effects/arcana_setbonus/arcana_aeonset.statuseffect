@@ -1,0 +1,24 @@
+{
+  "name" : "arcana_aeonset",
+  "effectConfig" : {
+  
+    "set" : "arcana_aeon",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "physicalResistance", "amount" : 0.05 }
+    ],
+    "status" : "arcana_haste",
+	"weaponBuff" : {
+      "tags" : ["aeon"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.15 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

@@ -1,0 +1,34 @@
+{
+  "objectName" : "arcana_studio_storage_1",
+  "colonyTags" : ["misc","storage","arcana_studio"],
+  "rarity" : "Rare",
+  "description" : "A simple bookshelf with smooth wooden surfaces.",
+  "shortdescription" : "Studio Bookshelf",
+  "race" : "generic",
+  "price" : 280,
+  
+  "category" : "storage",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/woodendoor_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/woodendoor_close.ogg" ],
+  "slotCount" : 24,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

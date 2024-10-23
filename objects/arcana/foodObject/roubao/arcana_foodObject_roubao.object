@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_foodObject_roubao",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A roubao.",
+  "shortdescription" : "Roubao",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 20,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_foodObject_roubao.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

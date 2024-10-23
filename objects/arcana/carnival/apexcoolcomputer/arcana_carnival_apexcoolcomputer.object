@@ -1,0 +1,42 @@
+{
+  "objectName" : "arcana_carnival_apexcoolcomputer",
+  "colonyTags" : ["apex","apexresearchlab","electronic"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 50,
+  "description" : "This cool computer is making a lot of 'beep boop boop beep' noises.",
+  "shortdescription" : "Cool Computer",
+  "race" : "apex",
+
+  "apexDescription" : "This is a really powerful computer. Apex civilians don't have access to computers.",
+  "avianDescription" : "This computer screen has so many colours.",
+  "floranDescription" : "Floran sssteal technology to sssurvive.",
+  "glitchDescription" : "Appreciative. What a stunning machine.",
+  "humanDescription" : "This looks a lot like the kind of computing power humanity used to possess.",
+  "hylotlDescription" : "A basic computer.",
+  "novakidDescription" : "It's a computer screen.",
+
+
+  "inventoryIcon" : "apexcoolcomputericon.png",
+  "orientations" : [
+    {
+      "image" : "apexcoolcomputer.png:<color>.off",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "apexcoolcomputer.png:<color>.off",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

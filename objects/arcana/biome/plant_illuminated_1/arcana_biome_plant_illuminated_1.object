@@ -1,0 +1,51 @@
+{
+  "objectName" : "arcana_biome_plant_illuminated_1",
+  "colonyTags" : ["bioluminescence"],
+  "rarity" : "Common",
+  "description" : "A bush of pretty glowing flowers.",
+  "shortdescription" : "Glow Flower Bush",
+  "race" : "generic",
+
+  "apexDescription" : "Pretty glowing flowers.",
+  "avianDescription" : "These glowing flowers are beautiful!",
+  "floranDescription" : "Floran would wear glowy flowersss... but then Floran would be sseen.",
+  "glitchDescription" : "Intrigued. These flowers are surprisingly well adapted to this harsh environment.",
+  "humanDescription" : "I'd love some of these flower bushes in my garden, but they look too delicate to transplant.",
+  "hylotlDescription" : "These flowers glow faintly. They seem forlorn in this snowy wasteland.",
+  "novakidDescription" : "Ain't that a pretty plant.",
+
+  "category" : "light",
+  "printable" : false,
+
+  "lightColor" : [133, 133, 133],
+
+  "inventoryIcon" : "glowbush1.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "glowbush1.png", "fullbright" : true }, { "image" : "glowbush1lit.png" } ],
+      "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "spaceScan" : 0.1,
+      "fgAnchors" : [ [-1, -1], [0, -1] ],
+      "direction" : "left",
+      "lightPosition" : [0, 1]
+    },
+    {
+      "imageLayers" : [ { "image" : "glowbush1.png", "fullbright" : true }, { "image" : "glowbush1lit.png" } ],
+      "imagePosition" : [-16, 0],
+      "spaceScan" : 0.1,
+      "fgAnchors" : [ [-1, -1], [0, -1] ],
+      "direction" : "right",
+      "lightPosition" : [0, 1]
+    }
+  ],
+
+  "smashOnBreak" : true,
+  "smashParticles" : [ { "count" : 8, "particle" : "bluevineshard" } ],
+  "smashDropOptions" : [
+    [ [ "glowfibre", 1, { } ] ]
+  ],
+
+  "biomePlaced" : true
+}

@@ -1,0 +1,46 @@
+{
+  "objectName" : "empress_chair_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A long boutique couch.",
+  "shortdescription" : "Boutique Long Couch",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "empress_chair_3.png:<color>",
+      "imagePosition" : [-24, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-8, 23], // Right
+        [8, 23] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "empress_chair_3.png:<color>",
+      "imagePosition" : [-24, 0],
+      "direction" : "right",
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-8, 23], // Left
+        [8, 23] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

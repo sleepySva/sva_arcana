@@ -1,0 +1,20 @@
+{
+  "frameGrid" : {
+    "size" : [32, 64],
+    "dimensions" : [8, 2],
+    "names" : [
+      [ "default.open.1", "default.open.2", "default.open.3", "default.open.4", null, null, null, null ],
+      [ "default.vanish.1", "default.vanish.2", "default.vanish.3", "default.vanish.4", "default.vanish.5", "default.vanish.6", "default.vanish.7", "default.vanish.8" ]
+    ]
+  },
+
+  "aliases" : {
+    "default.default" : "default.off",
+    "default.off" : "default.open.1",
+    "default.on" : "default.open.4",
+    "default.close.1" : "default.open.4",
+    "default.close.2" : "default.open.3",
+    "default.close.3" : "default.open.2",
+    "default.close.4" : "default.open.1"
+  }
+}

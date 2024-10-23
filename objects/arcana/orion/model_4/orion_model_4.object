@@ -1,0 +1,24 @@
+{
+  "objectName" : "orion_model_4",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A display model of a combat mech.",
+  "shortdescription" : "Model, Vanguard",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 200,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_model_4.png:<color>",
+      "imagePosition" : [-32, -0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

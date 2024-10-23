@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_lunar_deco_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A decorative banner showing a purple emblem.",
+  "shortdescription" : "Lunar Takeda Banner",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 80,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_lunar_deco_1.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

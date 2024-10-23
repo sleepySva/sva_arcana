@@ -1,0 +1,71 @@
+{
+  "objectName" : "arcana_scorpio_clublight_1",
+  "colonyTags" : ["light", "arcana_scorpio"],
+  "rarity" : "Common",
+  "description" : "A flickering club light.",
+  "shortdescription" : "Sanguine Club Light",
+  "race" : "generic",
+  "category" : "light",
+  "price" : 60,
+  
+  "lightColor" : [223, 31, 79],
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.15,
+  
+  "flickerPeriod" : 0.4,
+  "flickerMinIntensity" : 0.85,
+  "flickerMaxIntensity" : 1.0,
+  "flickerPeriodVariance" : 0.2,
+  "flickerIntensityVariance" : 2.0,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 270,
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 270,
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "body.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

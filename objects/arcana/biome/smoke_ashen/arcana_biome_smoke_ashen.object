@@ -1,0 +1,78 @@
+{
+  "objectName" : "arcana_biome_smoke_ashen",
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "breakable",
+
+  "description" : "Smoke Primer.",
+  "shortdescription" : "Smoke",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "body.png",
+        "fg" : "body.png"
+      },
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [0, 0.7],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+      
+      "animationPosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "body.png",
+        "fg" : "body.png"
+      },
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [0, 0.7],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scriptDelta" : 2,
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "shoot" : [],
+      "on" : [],
+      "off" : []
+    }
+  },
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0],
+  "activeLightColor" : [0, 0, 0],
+
+  "fireTime" : 0.4,
+  "fireTimeVariance" : 0.3,
+  "projectile" : "arcana_projectile_flame_ashen",
+  "projectileConfig" : {
+    "power" : 0,
+    "damageType" : "Environment"
+  },
+
+  "smashOnBreak" : true,
+
+  "biomePlaced" : true
+}

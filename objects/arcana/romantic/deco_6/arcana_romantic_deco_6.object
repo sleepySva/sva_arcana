@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_romantic_deco_6",
+  "colonyTags" : ["misc","arcana_romantic"],
+  "rarity" : "Rare",
+  "description" : "A portrait.",
+  "shortdescription" : "Mansion Wall Portrait",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 90,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

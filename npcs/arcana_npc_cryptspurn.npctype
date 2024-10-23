@@ -1,0 +1,90 @@
+{
+  "type" : "arcana_npc_cryptspurn",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "arcana_npcdrops_cryptspurn" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "guhhk...",
+			"uugk...",
+			"...",
+			"ugkk..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			{ "name" : "arcana_armor_cryptspurn_head" }
+			],
+            "chest" : [
+			{ "name" : "arcana_armor_cryptspurn_chest" }
+			],
+            "legs" : [
+			{ "name" : "arcana_armor_cryptspurn_legs" }
+			],
+            "primary" : [
+              "arcana_cryptspurnaxe",
+			  "arcana_cryptspurnspear"
+            ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {  
+  
+    "primaryScriptSources" : [
+      "/stats/neb-arcana_npc_primary.lua",
+	  "/scripts/vec2.lua"
+    ],
+	
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 120.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "knockbackThreshold" : {
+        "baseValue" : 16.0
+      },
+      "knockbackStunTime" : {
+        "baseValue" : 0.0
+      },
+      "physicalResistance" : {
+        "baseValue" : 0.1
+      },
+      "fireResistance" : {
+        "baseValue" : 0.0
+      },
+      "iceResistance" : {
+        "baseValue" : 0.0
+      },
+      "poisonResistance" : {
+        "baseValue" : 0.6
+      },
+      "electricResistance" : {
+        "baseValue" : 0.6
+      },
+      "arcana_resistance_light" : {
+        "baseValue" : -0.6
+      },
+      "arcana_resistance_abyss" : {
+        "baseValue" : 0.6
+      }
+    }
+  }
+}

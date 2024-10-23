@@ -1,0 +1,37 @@
+{
+  "objectName" : "orion_deco_15_up",
+  "colonyTags" : ["orion"],
+  "rarity" : "Rare",
+  "description" : "A tall signal transmitter.",
+  "shortdescription" : "Orion Signal Pole",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 90,
+
+  "inventoryIcon" : "icon_up.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body_up.png:<color>", "fullbright" : true }, { "image" : "fullbright_up.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body_up.png:<color>", "fullbright" : true }, { "image" : "fullbright_up.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

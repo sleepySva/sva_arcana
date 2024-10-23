@@ -1,0 +1,77 @@
+{
+  "objectName" : "arcana_vendor_kucaiRestaurant",
+  "colonyTags" : ["misc","commerce"],
+  "rarity" : "Legendary",
+  "description" : "A restaurant counter, I wonder what delicious food I can eat here.",
+  "shortdescription" : "Kucai Restaurant",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 200,
+  "lightColor" : [60, 50, 50],
+
+
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Kucai Restaurant",
+        "subtitle" : " Traditional Cusine"
+      }
+    },
+    "buyFactor" : 2.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "arcana_food_zhushiPlatter" },
+	  { "item" : "arcana_food_roubao" },
+	  { "item" : "arcana_food_blackSesameRoll" },
+	  { "item" : "cookedtomato" },
+	  { "item" : "fishdumplings" },
+	  { "item" : "meatdumplings" },
+	  { "item" : "roastedmushrooms" },
+	  { "item" : "mushroomrice" },
+	  { "item" : "arcana_food_oolongTea" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "arcana_vendor_kucaiRestaurant.png:<color>.<frame>" } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 32,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "arcana_vendor_kucaiRestaurant.png:<color>.<frame>" } ],
+	  "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 32,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [ "/objects/arcana_lua_object_chat.lua" ],
+  "scriptDelta" : 20,
+  "mouthPosition" : [0.2, -0.0],
+  "chatRadius" : 8,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "Welcome! What can I get you today?",
+    "I recommend the black sesame rolls, if you're looking for a good snack.",
+	"You should try the special, the Zhushi platter!",
+	"Our restaurant is small, but it has been popular to travellers and explorers.",
+    "The Luye supplies us with quality tea, you should try some!"
+  ]
+}

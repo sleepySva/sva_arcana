@@ -1,0 +1,45 @@
+{
+  "objectName" : "arcana_horizon_crafting_1",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Legendary",
+  "description" : "A crafting station for creating Horizon furnishing and basic equipment.",
+  "shortdescription" : "^#ffffff;Horizon Crafting Table^reset;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 800,
+  
+  "lightColor" : [70, 28, 70],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/arcana/arcana_crafting_workbench/horizon.config",
+	"filter" : ["arcana_horizon_crafting_1", "arcana_horizon"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

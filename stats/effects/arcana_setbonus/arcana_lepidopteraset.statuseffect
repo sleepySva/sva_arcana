@@ -1,0 +1,23 @@
+{
+  "name" : "arcana_lepidopteraset",
+  "effectConfig" : {
+  
+    "set" : "arcana_lepidoptera",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "arcana_resistance_light", "amount" : 0.1 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["staff","spear","lance"],
+      "modifiers" : [
+        { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

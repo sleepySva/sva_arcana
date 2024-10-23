@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_catacomb_light_3",
+  "colonyTags" : ["misc","arcana_catacomb"],
+  "rarity" : "Common",
+  "description" : "An eerie ceiling lamp found in the Nightmist catacombs.",
+  "shortdescription" : "Catacomb Short Lamp",
+  "race" : "generic",
+  "category" : "light",
+  "price" : 90,
+  
+  "lightColor" : [60, 120, 120],
+  //"pointLight" : true,
+  //"pointBeam" : 10,
+  //"beamAmbience" : 0.15,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "body.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

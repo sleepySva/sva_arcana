@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_misc_directionSign_1",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A direction marking.",
+  "shortdescription" : "Cafe Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 20,
+  "printable" : false,
+
+  "inventoryIcon" : "1_icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "1_left.png:<color>", "fullbright" : false } ],
+      "direction" : "left",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "1_right.png:<color>", "fullbright" : false } ],
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

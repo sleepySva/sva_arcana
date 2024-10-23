@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_scorpio_poster_2",
+  "colonyTags" : ["arcana_scorpio"],
+  "rarity" : "Rare",
+  "description" : "A poster.",
+  "shortdescription" : "Scorpio Wall Poster",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 30,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, -0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

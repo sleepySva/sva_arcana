@@ -1,0 +1,41 @@
+{
+  "objectName" : "arcana_misc_pillar",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "A tall pillar supporting the roof.",
+  "shortdescription" : "Pillar",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 10,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "renderLayer" : "Player+1",
+
+      "spaces" : [ [3, 0] ],
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "renderLayer" : "Player+1",
+
+      "spaces" : [ [3, 0] ],
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

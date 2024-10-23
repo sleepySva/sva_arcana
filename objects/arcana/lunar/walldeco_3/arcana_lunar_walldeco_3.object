@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_lunar_walldeco_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A traditional landscape painting.",
+  "shortdescription" : "Traditional Painting",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 240,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_lunar_walldeco_3.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

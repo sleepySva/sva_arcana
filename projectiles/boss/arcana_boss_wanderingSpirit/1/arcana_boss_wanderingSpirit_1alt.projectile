@@ -1,0 +1,56 @@
+{
+  "projectileName" : "arcana_boss_wanderingSpirit_1alt",
+  "image" : "body.png",
+  "animationCycle" : 0.15,
+  "timeToLive" : 3.0,
+  "frameNumber" : 4,
+  "speed" : 12,
+  "acceleration" : 24,
+  "damagePoly" : [ [-3, -3], [-3, 3], [3, 3], [3, -3] ],
+  "piercing" : false,
+  "flippable" : true,
+  "damageKind" : "plasma",
+  "lightColor" : [0, 178, 251],
+  "statusEffects" : ["arcana_status_frightened"],
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_wanderingSpirit/1/trail.png",
+        "position" : [0, 0],
+        "layer" : "front",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"variance" : {
+		  "initialVelocity" : [8, 8],
+		  "rotation" : 180,
+		  "angularVelocity" : 180
+		}
+      }
+    }
+  ],  
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "fullbright" : true,
+  "emitters" : ["iceplasma","icetrail"],
+  
+  "homingDistance" : 200,
+  "rotationRate" : 0.8,
+  "trackingLimit" : 200
+}

@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_aurea_deco_4_1",
+  "colonyTags" : ["arcana_aurea"],
+  "rarity" : "Rare",
+  "description" : "A simple but effective ship turret.",
+  "shortdescription" : "Aurea Ship Turret",
+  "race" : "gilten",
+  "category" : "decorative",
+  "price" : 300,
+
+  "inventoryIcon" : "1_icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "1.png:<color>.<frame>", "fullbright" : true }, { "image" : "1_fb.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "1.png:<color>.<frame>", "fullbright" : true }, { "image" : "1_fb.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "dashing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {}
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "immunityParticles" : {
+      "emissionRate" : 50.0,
+      "particles" : [
+        {
+          "particle" : "arcana_shadowstep",
+          "flip" : true
+        },
+        {
+          "particle" : "arcana_particle_ember_black_1",
+          "flip" : true
+        },
+        {
+          "particle" : "arcana_particle_black",
+          "flip" : true
+        },
+        {
+          "particle" : "arcana_particle_black",
+          "flip" : true
+        }
+      ]
+    },
+    "dashParticles" : {
+      "emissionRate" : 40.0,
+      "particles" : [
+        {
+          "particle" : "dash",
+          "flip" : true
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "startDash" : [ "/sfx/tech/tech_dash.ogg" ],
+    "immunityDash" : [ "/sfx/tech/tech_dashftl.ogg" ],
+    "recharge" : [ "/sfx/tech/tech_dash_cooldown2.ogg" ]
+  }
+}

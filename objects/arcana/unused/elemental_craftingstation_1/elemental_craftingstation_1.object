@@ -1,0 +1,32 @@
+{
+  "objectName" : "elemental_craftingstation_1",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Uncommon",
+  "description" : "A basic crafting station for elementally infused items.",
+  "shortdescription" : "Wooden Elemental Table",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 1000,
+  
+  "lightColor" : [140, 120, 180],
+
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/elemental_crafting_1.config",
+	"filter" : ["elemental_crafting_1"]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "elemental_craftingstation_1.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

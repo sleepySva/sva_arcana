@@ -1,0 +1,25 @@
+{
+  "objectName" : "orion_walldeco_2",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A wall hydroponic containing some sort of plants.",
+  "shortdescription" : "Wall Decorative Hydroponic",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "lightColor" : [10, 20, 20],
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "orion_walldeco_2.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id" : "arcana_codex_solarGuardian",
+  "title" : "Solar Guardian",
+  "description" : "A short entry about the Solar Guardian.",
+  "icon" : "arcana_codex_solarGuardian.png",
+  "contentPages" :
+  [
+    "A construct that re-manifested itself in the Solar Corridors, the Solar Guardian harnesses corridor's energy to cast out fiery attacks against any intruders. Its body is built similar to the Vault Guardians, thus is believed to be a machine of the Ancients."
+  ],
+    "itemConfig" : {
+    "rarity" : "Legendary",
+    "price" : 600,
+	"collectablesOnPickup" : { "arcana_bosses" : "solarGuardian" }
+  }
+}

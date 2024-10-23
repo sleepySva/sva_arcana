@@ -1,0 +1,35 @@
+{
+  "frameGrid" : {
+    "size" : [48, 48],
+    "dimensions" : [18, 1],
+
+    "names" : [
+      [
+	  "idle.1",
+	  "walk.1",
+	  "walk.2",
+	  "walk.3",
+	  "walk.4",
+	  "walk.5",
+	  "walk.6",
+	  "walk.7",
+	  "walk.8",
+	  "walk.9",
+	  "walk.10",
+	  "fire.1",
+	  "fire.2",
+	  "fire.3",
+	  "fire.4",
+	  "fire.5",
+	  "fire.6",
+	  "fire.7"
+	  ]
+    ]
+  },
+  "aliases" : {
+	"hurt.1" : "idle.1",
+	"fall.1" : "idle.1",
+	"jump.1" : "idle.1",
+	"firewindup.1" : "idle.1"
+  }
+}

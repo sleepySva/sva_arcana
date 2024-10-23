@@ -1,0 +1,26 @@
+{
+  "objectName" : "arcana_catacomb_deco_23",
+  "colonyTags" : ["catacomb"],
+  "rarity" : "Common",
+  "description" : "A weathered wooden notice board.",
+  "shortdescription" : "Worn Notice Board",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 20,
+  
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

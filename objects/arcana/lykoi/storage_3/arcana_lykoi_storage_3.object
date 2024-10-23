@@ -1,0 +1,34 @@
+{
+  "objectName" : "arcana_lykoi_storage_3",
+  "colonyTags" : ["misc","storage"],
+  "rarity" : "Rare",
+  "description" : "A specially made weapon crate for storing firearms.",
+  "shortdescription" : "Lykoi Weapon Crate",
+  "race" : "generic",
+  "price" : 100,
+  
+  "category" : "storage",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_lykoi_storage_3.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/bunkercabinet_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bunkercabinet_close.ogg" ],
+  "slotCount" : 9,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

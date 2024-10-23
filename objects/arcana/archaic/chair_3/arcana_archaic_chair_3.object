@@ -1,0 +1,49 @@
+{
+  "objectName" : "arcana_archaic_chair_3",
+  "colonyTags" : ["gilten","archaic"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 300,
+  "printable" : false,
+  "description" : "An ancient stone bench that is pretty to look at, but not so comfortable to sit on.",
+  "shortdescription" : "Archaic Stone Bench",
+  "race" : "gilten",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+	  "sitCoverImage" : "/objects/arcana/archaic/chair_3/cover.png",
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        [-11, 23], // Right
+        [2, 23] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+	  "sitCoverImage" : "/objects/arcana/archaic/chair_3/cover.png",
+
+      "direction" : "right",
+
+      "sitPositions" : [
+        [-3, 23], // Left
+        [10, 23] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

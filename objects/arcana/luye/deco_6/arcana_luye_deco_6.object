@@ -1,0 +1,24 @@
+{
+  "objectName" : "arcana_luye_deco_6",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "Packs of green teabags.",
+  "shortdescription" : "Luye Green Teabags",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_luye_deco_6.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

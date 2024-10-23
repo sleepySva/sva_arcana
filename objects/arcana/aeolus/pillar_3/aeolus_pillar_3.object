@@ -1,0 +1,27 @@
+{
+  "objectName" : "aeolus_pillar_3",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A large stone pillar.",
+  "shortdescription" : "Large Ariostone Pillar",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 100,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "aeolus_pillar_3.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+	  "renderLayer" : "Player+1",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

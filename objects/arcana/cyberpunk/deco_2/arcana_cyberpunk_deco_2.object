@@ -1,0 +1,26 @@
+{
+  "objectName" : "arcana_cyberpunk_deco_2",
+  "colonyTags" : ["misc"],
+  "rarity" : "Rare",
+  "description" : "A cyberpunk plant box.",
+  "shortdescription" : "Cyberpunk Cyan Plants",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 200,
+  
+  "lightColor" : [20, 40, 50],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "arcana_cyberpunk_deco_2.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
