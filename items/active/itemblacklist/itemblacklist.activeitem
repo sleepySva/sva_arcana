@@ -1,0 +1,18 @@
+{
+  "itemName" : "itemblacklist",
+  "shortdescription" : "^gray;Auto Trash^reset;",
+  "description" : "Conveniently remove any unwanted items! ^orange;Use this to open the Auto Trash feature.^reset;",
+  "price" : 0,
+  "tooltipKind" : "base",
+  "rarity" : "essential",
+  "category" : "tool",
+  "itemTags" : [],
+  "inventoryIcon" : "icon.png",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "body" : "icon.png"
+  },
+  "scripts" : ["itemblacklist.lua"]
+}

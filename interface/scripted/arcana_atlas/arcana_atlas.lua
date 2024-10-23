@@ -16,8 +16,8 @@ end
 function mech()
   player.interact("scriptPane", "/interface/scripted/mechassembly/mechassemblygui.config")
 end
-function itemBlacklist()
-  player.interact("scriptPane", "/interface/scripted/itemBlacklist/itemBlacklist.config")
+function guidebook()
+  player.interact("scriptPane", "/interface/scripted/arcana_books/arcana_guideBook.config")
 end
 function map()
   player.interact("scriptPane", "/interface/scripted/arcana_galacticAtlas/arcana_galacticAtlas.config")

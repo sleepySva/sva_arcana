@@ -1,20 +1,38 @@
 [
-  {
-    "op": "add",
-    "path": "/items/arcana_quickbar_arcanaUpdates",
-    "value": {
-      "label": "^orange;Arcana Updates^reset;",
-      "icon": "/quickbar/arcana_quickbar_arcanaUpdates.png",
-      "action": [ "pane", "/interface/scripted/arcana_updates/arcana_updates_gui.config" ]
-    }
-  },
-  {
-    "op": "add",
-    "path": "/items/arcana_quickbar_galacticAtlas",
-    "value": {
-      "label": "^orange;Galactic Atlas^reset;",
-      "icon": "/quickbar/arcana_quickbar_galacticAtlas.png",
-      "action": [ "pane", "/interface/scripted/arcana_galacticAtlas/arcana_galacticAtlas.config" ]
-    }
-  }
+	[
+	  {
+		"op": "add",
+		"path": "/items/arcana_quickbar_arcanaUpdates",
+		"value": {
+		  "label": "^orange;Arcana Updates^reset;",
+		  "icon": "/quickbar/arcana_quickbar_arcanaUpdates.png",
+		  "action": [ "pane", "/interface/scripted/arcana_updates/arcana_updates_gui.config" ]
+		}
+	  },
+	  {
+		"op": "add",
+		"path": "/items/arcana_quickbar_galacticAtlas",
+		"value": {
+		  "label": "^orange;Galactic Atlas^reset;",
+		  "icon": "/quickbar/arcana_quickbar_galacticAtlas.png",
+		  "action": [ "pane", "/interface/scripted/arcana_galacticAtlas/arcana_galacticAtlas.config" ]
+		}
+	  }
+	],
+	[
+	  {
+		"op": "test",
+		"path": "/items/itemBlacklist",
+		"inverse": true
+	  },
+	  {
+		"op": "add",
+		"path": "/items/itemBlacklist",
+		"value": {
+		  "label": "^gray;Auto Trash^reset;",
+		  "icon": "/quickbar/itemBlacklist.png",
+		  "action": [ "pane", "/interface/scripted/itemBlacklist/itemBlacklist.config" ]
+		}
+	  }
+	]
 ]

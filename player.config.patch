@@ -55,5 +55,23 @@
 			"path" : "/deploymentConfig/scripts/-",
 			"value" : "/scripts/arcana_updatePopup.lua"
 		}
+	],
+	[
+	  {
+		"op": "test",
+		"path": "/genericScriptContexts/ib_itemblacklist",
+		"inverse": true
+	  },
+	  {
+		  "op": "add",
+		  "path":"/defaultBlueprints/tier1/-",
+		  "value":
+			  {"item":"itemblacklist"}
+	  },
+      { 
+		  "op" : "add",
+		  "path" : "/genericScriptContexts/ib_itemblacklist",
+		  "value" : "/scripts/ib_itemBlacklist.lua"
+	  }
 	]
 ]

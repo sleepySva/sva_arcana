@@ -6,11 +6,18 @@ require "/scripts/vec2.lua"
 function init()
   self.list = "blacklistArea.list"
   self.slot = "itemSlot"
+  self.checkbox = "checkbox"
+  self.slider = "slider"
+  self.sliderLbl = "sliderlabel"
   self.blacklist = player.getProperty("itemblacklist") or {}
   self.defaultIcon = "/interface/statuses/x.png"
-  self.capacity = config.getParameter("capacity", 60)
+  self.capacity = config.getParameter("capacity", 80)
   self.capacityLbl = "capacity"
   populateList()
+  if player.getProperty("ibsettings", nil) == nil or type(player.getProperty("ibsettings")) ~= "table" then player.setProperty("ibsettings", {enabled = true, delta = 1}) end
+  widget.setChecked(self.checkbox, player.getProperty("ibsettings").enabled)
+  widget.setSliderValue(self.slider, math.floor(player.getProperty("ibsettings").delta))
+  frequency()
 end
 
 function update(dt)
@@ -58,7 +65,8 @@ function populateList()
 	  local itemImage = ""
       local item = widget.addListItem(self.list)
 	  local config = root.itemConfig(name).config
-	  if config.inventoryIcon ~= nil and not contains(root.itemTags(name), "weapon") then 
+	  local isString = ((type(root.itemConfig(name).directory) == "string") and (type(config.inventoryIcon) == "string"))
+	  if (config.inventoryIcon ~= nil and not contains(root.itemTags(name), "weapon")) and isString == true then
 	    itemImage = util.absolutePath(root.itemConfig(name).directory, config.inventoryIcon)
 	  else
 	    itemImage = self.defaultIcon
@@ -81,4 +89,16 @@ function slotUpdate()
 	player.setProperty("itemblacklist", self.blacklist)
     populateList()
   end
+end
+
+function checkbox()
+  local checked = widget.getChecked(self.checkbox)
+  player.setProperty("ibsettings", {enabled = checked, delta = player.getProperty("ibsettings").delta})
+end
+
+function frequency()
+  local value = math.max(0, math.floor(widget.getSliderValue(self.slider)))
+  local str = "Trash every ^orange;" .. tostring(value) .. "^reset;s"
+  widget.setText(self.sliderLbl, str)
+  player.setProperty("ibsettings", {enabled = player.getProperty("ibsettings").enabled, delta = value})
 end
