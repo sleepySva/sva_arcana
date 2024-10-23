@@ -3,6 +3,13 @@
 
   "layers" : [
     {
+      "kind" : "tile/arcana_darkback",
+      "nohueshift" : false,
+      "lightMapped" : true,
+      "parallax" : 1.5,
+      "repeatY" : true
+    },
+    {
       "kind" : "divider/dirt",
       "directives" : "?saturation=-70?brightness=-18",
       "offset" : [0, 400],
@@ -132,8 +139,8 @@
     },
     {
       "kind" : "forestback",
-      "directives" : "?saturation=-70?brightness=-18",
-      "offset" : [0, 440],
+      "directives" : "?saturation=-74?brightness=-18",
+      "offset" : [0, 340],
       "parallax" : [8.2, 4.3],
       "fadePercent" : 0.2
     },

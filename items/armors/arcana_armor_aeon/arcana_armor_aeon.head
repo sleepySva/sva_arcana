@@ -1,17 +1,25 @@
 {
   "itemName" : "arcana_armor_aeon_head",
-  "price" : 1000,
+  "price" : 2000,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "headarmour",
-  "description" : "The zero aeon, bright as the azure stars. ^green;+2% Physical and Azure Res.^reset;",
+  "description" : "The zero aeon, bright as the azure stars. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+5% Physical RES^reset;, ^green;+15% Speed^reset;, ^green;+15% Aeon weapon damage^reset;.",
   "shortdescription" : "Aeon's Zero",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+  
+  "statusEffects" : [
+    "arcana_aeonset",
+    {
+      "stat" : "arcana_aeon",
+      "amount" : 1
+    }
+  ],  
 
   "level" : 8,
   "leveledStatusEffects" : [
@@ -34,16 +42,6 @@
       "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 30
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "physicalResistance",
-      "amount" : 0.02
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_azure",
-      "amount" : 0.02
     }
   ],
   

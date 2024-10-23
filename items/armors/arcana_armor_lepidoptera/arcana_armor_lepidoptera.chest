@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "chestwear",
-  "description" : "A pale colored armor, crafted from holosium. ^green;+10% Light res.^reset; ^red;-10% Abyss res.^reset;",
+  "description" : "A pale colored armor, crafted from holosium. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Light RES^reset; and ^green;+10% Magic, Spear and Lance Damage^reset;.",
   "shortdescription" : "Lepidoptera Shell",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_lepidopteraset",
+    {
+      "stat" : "arcana_lepidoptera",
+      "amount" : 1
+    }
+  ],
   
   "level" : 7,
   "leveledStatusEffects" : [
@@ -42,16 +50,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 20
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_light",
-      "amount" : 0.1
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_abyss",
-      "amount" : -0.1
     }
   ],
 

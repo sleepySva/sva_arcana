@@ -80,15 +80,15 @@
       // dark peachy massacre
       "mainColor" : [210, 210, 210],
 
-      "morningColors" : [ [4, 38, 80, 50], [28, 62, 100, 120] ],
-      "dayColors" : [ [35, 47, 55, 120], [65, 75, 94, 200] ],
-      "eveningColors" : [ [14, 58, 90, 80], [48, 92, 170, 160] ],
-      "nightColors" : [ [25, 31, 36, 120], [47, 56, 74, 200] ],
+      "morningColors" : [ [4, 38, 70, 50], [28, 62, 80, 120] ],
+      "dayColors" : [ [38, 40, 42, 120], [66, 70, 74, 200] ],
+      "eveningColors" : [ [14, 58, 70, 80], [48, 92, 110, 160] ],
+      "nightColors" : [ [28, 30, 32, 120], [54, 56, 58, 200] ],
 
       "morningLightColor" : [4, 6, 8],
-      "dayLightColor" : [22, 34, 44],
-      "eveningLightColor" : [4, 20, 25],
-      "nightLightColor" : [8, 12, 14]
+      "dayLightColor" : [39, 40, 43],
+      "eveningLightColor" : [8, 18, 20],
+      "nightLightColor" : [13, 14, 17]
     }
   ],
 
@@ -256,7 +256,7 @@
         "mode" : "floor",
         "priority" : 3.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:uncommon",
+        "distribution" : "/biomes/distributions.config:rare",
 
         "type" : "object",
         "objectSets" : [

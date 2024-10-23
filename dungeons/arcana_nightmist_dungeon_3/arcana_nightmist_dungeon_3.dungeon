@@ -6,7 +6,7 @@
     ],
 
     "anchor" : [
-	  "crystal_top"
+	  "city_left"
 	],
 
     "gravity" : 80,
@@ -117,7 +117,119 @@
         [ "maxSpawnCount", [1] ]
       ],
       "def" : [ "tmx", "crystal_top.json" ],
+	  "chance" : 5000
+    },
+    {
+      "name" : "city_bottom",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "city_bottom.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "spire_1",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "crystal_top" ] ]
+      ],
+      "def" : [ "tmx", "spire_1.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "spire_2",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "crystal_top" ] ]
+      ],
+      "def" : [ "tmx", "spire_2.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "spire_3",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "crystal_top" ] ]
+      ],
+      "def" : [ "tmx", "spire_3.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "spire_top",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ],
+		[ "doNotConnectToPart", [ "crystal_top" ] ]
+      ],
+      "def" : [ "tmx", "spire_top.json" ],
 	  "chance" : 1
+    },
+    {
+      "name" : "crystal_bottom",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal_bottom.json" ],
+	  "chance" : 10000
+    },
+    {
+      "name" : "city_left",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "city_left.json" ],
+	  "chance" : 1
+    },
+    {
+      "name" : "city_1",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "city_1.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "city_2",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "city_2.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "city_3",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "city_3.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "city_4",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "city_4.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "city_right",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "city_right.json" ],
+	  "chance" : 0
     }
   ]
 }

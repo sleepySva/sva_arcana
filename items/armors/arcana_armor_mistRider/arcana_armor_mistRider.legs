@@ -1,23 +1,31 @@
 {
   "itemName" : "arcana_armor_mistRider_legs",
-  "price" : 480,
+  "price" : 1480,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
-  "rarity" : "Uncommon",
+  "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "A dark set of greaves worn by the Mist Riders.",
+  "description" : "A dark set of greaves worn by the Mist Rider. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+20% Damage when there's a monster with more health than you within 50 tiles^reset;.",
   "shortdescription" : "Mist Rider's Greaves",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
   
-  "level" : 2,
+  "statusEffects" : [
+    "arcana_mistriderset",
+    {
+      "stat" : "arcana_mistrider",
+      "amount" : 1
+    }
+  ],
+  
+  "level" : 7,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.1
+      "baseMultiplier" : 1.07
     },
     {
       "levelFunction" : "standardArmorLevelProtectionMultiplier",
@@ -27,12 +35,12 @@
     {
       "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 2
+      "amount" : 4
     },
     {
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 2
+      "amount" : 17
     }
   ],
 

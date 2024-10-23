@@ -1,39 +1,47 @@
 {
   "itemName" : "arcana_armor_mistRider_head",
-  "price" : 420,
+  "price" : 1420,
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
-  "rarity" : "Uncommon",
+  "rarity" : "Rare",
   "category" : "headarmour",
-  "description" : "A dark hood worn by the Mist Riders.",
+  "description" : "The Hunt beckons. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+20% Damage when there's a monster with more health than you within 50 tiles^reset;.",
   "shortdescription" : "Mist Rider's Hood",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+  
+  "statusEffects" : [
+    "arcana_mistriderset",
+    {
+      "stat" : "arcana_mistrider",
+      "amount" : 1
+    }
+  ],
 
-  "level" : 2,
+  "level" : 7,
   "leveledStatusEffects" : [
     {
-      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.15
+      "baseMultiplier" : 1.1
     },
     {
-      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
       "stat" : "protection",
       "amount" : 0.3
     },
     {
-      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "manipulatorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 3
+      "amount" : 2
     },
     {
-      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 3
+      "amount" : 16
     }
   ],
   

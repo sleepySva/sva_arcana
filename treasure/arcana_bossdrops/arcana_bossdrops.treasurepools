@@ -40,6 +40,7 @@
     [0, {
 	  "fill" : [
 	    {"item" : ["money", 26000]},
+		{"item" : ["arcana_codex_aeonTimepiece-codex", 1]},
         {"item" : ["arcana_misc_aeonLeaf", 10]},
         {"item" : ["arcana_misc_aeonCore", 1]},
 		{"item" : ["arcana_misc_eternalPage", 20]},
@@ -92,6 +93,17 @@
     }]
   ],
   
+  "arcana_bossdrops_wanderingSpirit" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_codex_wanderingSpirit-codex", 1]},
+		{"item" : ["arcana_bonestaff", 1]},
+        {"item" : ["money", 6000]},
+        {"item" : ["arcana_voidphasePotion", 3]}
+      ]
+    }]
+  ],
+  
   "arcana_bossdrops_fireKnight" : [
     [0, {
 	  "fill" : [
@@ -122,6 +134,7 @@
   "arcana_bossdrops_cosmoNemesis" : [
     [0, {
 	  "fill" : [
+	    {"item" : ["arcana_codex_cosmoNemesis-codex", 1]},
         {"item" : ["money", 14000]},
         {"item" : ["nanowrap", 2]}
       ],
@@ -140,6 +153,7 @@
   "arcana_bossdrops_solarGuardian" : [
     [0, {
 	  "fill" : [
+	    {"item" : ["arcana_codex_solarGuardian-codex", 1]},
         {"item" : ["arcana_essence_solarEssence", 10]}
       ],
       "pool" : [

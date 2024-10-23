@@ -3,19 +3,19 @@
   "materialName" : "studio_tile14",
   "particleColor" : [110, 110, 110, 255],
   "itemDrop" : "studio_tile14",
-  "description" : "Slightly worn stone bricks, found in the catacombs.",
-  "shortdescription" : "Shrounded Ornate Brick",
+  "description" : "Slightly worn stone bricks, now shrounded by the nightmist.",
+  "shortdescription" : "Nightmist Ornate Brick",
   "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
   "health" : 16,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderTemplate" : "/tiles/rowtemplate.config",
   "renderParameters" : {
     "texture" : "studio_tile14.png",
-    "variants" : 1,
+    "variants" : 5,
     "lightTransparent" : false,
     "multiColored" : true,
     "occludesBelow" : true,
-    "zLevel" : 3410
+    "zLevel" : 3430
   }
 }

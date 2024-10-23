@@ -1,6 +1,38 @@
 
 {
 
+  "arcana_npcdrops_graverotten" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.025, "item" : ["arcana_armor_graverotten_head", 1]},
+		{"weight" : 0.025, "item" : ["arcana_armor_graverotten_chest", 1]},
+		{"weight" : 0.025, "item" : ["arcana_armor_graverotten_legs", 1]},
+		{"weight" : 0.025, "item" : ["arcana_cryptspurnbow", 1]},
+		{"weight" : 0.4, "item" : ["arcana_misc_soulseaSpirit", 1]},
+		{"weight" : 0.4, "item" : ["bone", 2]},
+		{"weight" : 0.1, "item" : ["bone", 3]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
+  "arcana_npcdrops_cryptspurn" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.025, "item" : ["arcana_armor_cryptspurn_head", 1]},
+		{"weight" : 0.025, "item" : ["arcana_armor_cryptspurn_chest", 1]},
+		{"weight" : 0.025, "item" : ["arcana_armor_cryptspurn_legs", 1]},
+		{"weight" : 0.4, "item" : ["arcana_misc_soulseaSpirit", 1]},
+		{"weight" : 0.4, "item" : ["bone", 2]},
+		{"weight" : 0.125, "item" : ["bone", 3]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
 
   "arcana_npcdrops_anarkyonselite" : [
     [0, {

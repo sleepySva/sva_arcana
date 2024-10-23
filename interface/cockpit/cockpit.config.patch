@@ -24,6 +24,7 @@
 		"arcana_dracoRidge" : { "word" : "arcana_dracoRidge", "friendlyWord" : " Draco Ridge" },
 		"arcana_eminsnowForest" : { "word" : "arcana_eminsnowForest", "friendlyWord" : " Eminsnow Forest" },
 		"arcana_jadeMorass" : { "word" : "arcana_jadeMorass", "friendlyWord" : " Jade Morass" },
+		"arcana_cemetery" : { "word" : "arcana_cemetery", "friendlyWord" : " Cemetery" },
 		
 		"arcana_redMoon" : { "word" : "arcana_redMoon", "friendlyWord" : " Red Moon" },
 		"arcana_frostMoon" : { "word" : "arcana_frostMoon", "friendlyWord" : " Frost Moon" },
@@ -144,6 +145,15 @@
 		"description" : "An apex compound of sorts. Signs of the Miniknog are detected.",
 		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png",
 		"name" : "Miniknog Offworld Facility"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_nightmist_dungeon_3",
+	"value": {
+		"description" : "A ruined city is detected within the planet.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png",
+		"name" : "Mist Shrouded City"
 	}
   },
   {

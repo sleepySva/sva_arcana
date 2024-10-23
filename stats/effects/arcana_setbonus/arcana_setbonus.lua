@@ -7,6 +7,8 @@ function init()
   self.set = config.getParameter("set")
   self.minParts = config.getParameter("minParts", 3)
   self.statModifiers = config.getParameter("statModifiers", {})
+  self.status = config.getParameter("status", nil)
+  self.hasStatus = false
   self.movementModifiers = config.getParameter("movementModifiers", {})
   self.weaponBuff = config.getParameter("weaponBuff")
   self.effectGroup = nil
@@ -27,11 +29,21 @@ function updateBonus(id)
       self.weaponGroup = nil
     end
   end
+  setStatus(hasSet)
   if id == nil and hasSet then 
     self.effectGroup = effect.addStatModifierGroup(self.statModifiers)
   elseif not hasSet then
-   if id ~= nil then effect.removeStatModifierGroup(self.effectGroup) self.effectGroup = nil end
-   if self.weaponGroup ~= nil then effect.removeStatModifierGroup(self.weaponGroup) self.weaponGroup = nil end
+    if id ~= nil then effect.removeStatModifierGroup(self.effectGroup) self.effectGroup = nil end
+    if self.weaponGroup ~= nil then effect.removeStatModifierGroup(self.weaponGroup) self.weaponGroup = nil end
+  end
+end
+
+function setStatus(hasSet)
+  if hasSet and self.status ~= nil then
+    status.addEphemeralEffect(self.status)
+	self.hasStatus = true
+  elseif self.status ~= nil and self.hasStatus == true then
+    status.removeEphemeralEffect(self.status) self.hasStatus = false
   end
 end
 

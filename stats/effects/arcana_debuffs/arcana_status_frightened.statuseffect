@@ -6,7 +6,7 @@
     "statModifiers" : [
       {
         "stat" : "maxHealth",
-        "effectiveMultiplier" : 0.8
+        "effectiveMultiplier" : 0.9
       },
       {
         "stat" : "powerMultiplier",
@@ -15,12 +15,12 @@
     ]
 	
   },
-  "defaultDuration" : 10.0,
+  "defaultDuration" : 8.0,
 
   "scripts" : [
     "arcana_status_multiplier.lua"
   ],
   
-  "label" : "Frightened: ^red;-20% Max Health, -20% Attack^reset;",
+  "label" : "Frightened: ^red;-10% Max Health, -20% Attack^reset;",
   "icon" : "/interface/statuses/oldpoison.png"
 }

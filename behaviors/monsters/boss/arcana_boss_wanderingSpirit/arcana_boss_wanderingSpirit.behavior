@@ -132,6 +132,15 @@
 						}
 					  },
 					  {
+						"title": "setVelocity",
+						"type": "action",
+						"name": "setVelocity",
+						"parameters": {
+						  "x": {"value": 0},
+						  "y": {"value": 0}
+						}
+					  },
+					  {
 						"title": "timer",
 						"type": "action",
 						"name": "timer",
@@ -139,6 +148,34 @@
 						  "time": {"value": 1.0}
 						}
 					  },
+                      {
+                        "title": "addEphemeralEffect",
+                        "type": "action",
+                        "name": "addEphemeralEffect",
+                        "parameters": {
+                          "duration": {"value": 12},
+                          "name": {"value": "cultistshield"}
+                        }
+                      },
+                      {
+                        "title": "sequentialdialognoskip",
+                        "type": "module",
+                        "name": "sequentialdialognoskip",
+                        "parameters": {
+                          "dialogWaitTime": {"value": 4},
+                          "dialogEndWait": {"value": 4},
+                          "dialogKey": {"value": "dialog.intro"},
+                          "dialogTarget": {"key": "target"}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": true}
+                        }
+                      },
                       {
                         "title": "setDamageBar",
                         "type": "action",
@@ -572,22 +609,184 @@
                       "type": {"value": "body"}
                     }
                   },
-                  {
-                    "title": "addEphemeralEffect",
-                    "type": "action",
-                    "name": "addEphemeralEffect",
-                    "parameters": {
-                      "name": {"value": "beamout"}
-                    }
-                  },
-                  {
-                    "title": "timer",
-                    "type": "action",
-                    "name": "timer",
-                    "parameters": {
-                      "time": {"value": 0.75}
-                    }
-                  },
+				  {
+					"title": "battleMusic",
+					"type": "action",
+					"name": "battleMusic",
+					"parameters": {
+					  "enable": {"value": false}
+					}
+				  },
+				  {
+					"title": "setVelocity",
+					"type": "action",
+					"name": "setVelocity",
+					"parameters": {
+					  "x": {"value": 0},
+					  "y": {"value": 0}
+					}
+				  },
+				  {
+					"title": "addEphemeralEffect",
+					"type": "action",
+					"name": "addEphemeralEffect",
+					"parameters": {
+					  "name": {"value": "guardiandeath"}
+					}
+				  },
+				  {
+					"title": "parallel",
+					"type": "composite",
+					"name": "parallel",
+					"parameters": {
+					  "fail": {"value": 1},
+					  "success": {"value": -1}
+					},
+					"children": [
+					  {
+						"title": "timer",
+						"type": "action",
+						"name": "timer",
+						"parameters": {
+						  "time": {"value": 6}
+						},
+						"output": {
+						  "ratio": "ratio"
+						}
+					  },
+					  {
+						"title": "sequence",
+						"type": "composite",
+						"name": "sequence",
+						"parameters": {},
+						"children": [
+						  {
+							"title": "lerp",
+							"type": "action",
+							"name": "lerp",
+							"parameters": {
+							  "max": {"value": 0.25},
+							  "min": {"value": 0},
+							  "ratio": {"key": "ratio"}
+							},
+							"output": {
+							  "number": "shake"
+							}
+						  },
+						  {
+							"title": "random",
+							"type": "action",
+							"name": "random",
+							"parameters": {
+							  "max": {"key": "shake"},
+							  "min": {"value": 0}
+							},
+							"output": {
+							  "number": "x"
+							}
+						  },
+						  {
+							"title": "random",
+							"type": "action",
+							"name": "random",
+							"parameters": {
+							  "max": {"key": "shake"},
+							  "min": {"value": 0}
+							},
+							"output": {
+							  "number": "y"
+							}
+						  },
+						  {
+							"title": "resetTransformationGroup",
+							"type": "action",
+							"name": "resetTransformationGroup",
+							"parameters": {
+							  "transformationGroup": {"value": "all"}
+							}
+						  },
+						  {
+							"title": "translateTransformationGroup",
+							"type": "action",
+							"name": "translateTransformationGroup",
+							"parameters": {
+							  "offset": {"value": ["x", "y"]},
+							  "transformationGroup": {"value": "all"}
+							}
+						  }
+						]
+					  }
+					]
+				  },
+				  {
+					"title": "playSound",
+					"type": "action",
+					"name": "playSound",
+					"parameters": {
+					  "loops": {"value": 0},
+					  "sound": {"value": "deathShrink"}
+					}
+				  },
+				  {
+					"title": "parallel",
+					"type": "composite",
+					"name": "parallel",
+					"parameters": {
+					  "fail": {"value": 1},
+					  "success": {"value": -1}
+					},
+					"children": [
+					  {
+						"title": "timer",
+						"type": "action",
+						"name": "timer",
+						"parameters": {
+						  "time": {"value": 0.1}
+						},
+						"output": {
+						  "ratio": "ratio"
+						}
+					  },
+					  {
+						"title": "sequence",
+						"type": "composite",
+						"name": "sequence",
+						"parameters": {},
+						"children": [
+						  {
+							"title": "lerp",
+							"type": "action",
+							"name": "lerp",
+							"parameters": {
+							  "max": {"value": 0.05},
+							  "min": {"value": 1},
+							  "ratio": {"key": "ratio"}
+							},
+							"output": {
+							  "number": "scale"
+							}
+						  },
+						  {
+							"title": "resetTransformationGroup",
+							"type": "action",
+							"name": "resetTransformationGroup",
+							"parameters": {
+							  "transformationGroup": {"value": "all"}
+							}
+						  },
+						  {
+							"title": "scaleTransformationGroup",
+							"type": "action",
+							"name": "scaleTransformationGroup",
+							"parameters": {
+							  "scale": {"value": ["scale", "scale"]},
+							  "transformationGroup": {"value": "all"}
+							}
+						  }
+						]
+					  }
+					]
+				  },
                   {
                     "title": "setDying",
                     "type": "action",
@@ -686,6 +885,23 @@
                           "type": {"value": "body"}
                         }
                       },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": false}
+                        }
+                      },
+					  {
+						"title": "setVelocity",
+						"type": "action",
+						"name": "setVelocity",
+						"parameters": {
+						  "x": {"value": 0},
+						  "y": {"value": 0}
+						}
+					  },
                       {
                         "title": "timer",
                         "type": "action",

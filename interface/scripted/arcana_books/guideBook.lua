@@ -85,6 +85,7 @@ function populateBossList()
 	if not playerCollectables[boss.filename] then 
       widget.setText(string.format("%s.%s.name", self.bossList, item), "???")
 	  widget.setFontColor(string.format("%s.%s.name", self.bossList, item), "gray")
+	  widget.setVisible(string.format("%s.%s.checkmark", self.bossList, item), false)
 	else
 	  widget.setText(string.format("%s.%s.name", self.bossList, item), boss.name)
 	  widget.setFontColor(string.format("%s.%s.name", self.bossList, item), "white")

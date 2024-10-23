@@ -2146,12 +2146,15 @@
     "op": "add",
     "path": "/planetTypes/arcana_nightmist",
     "value": {
-      "threatRange" : [8, 8],
+      "threatRange" : [7, 7],
       "layers": {
         "surface": {
           "primaryRegion" : [ "arcana_cemetery" ],
           "secondaryRegions" : [ "arcana_nightmist" ],
+		  "dungeonCountRange" : [2, 2],
           "dungeons": [
+			  [1.0, "arcana_nightmist_dungeon_3"],
+			  [1.0, "floranhuntinggrounds"]
           ]
         },
 		

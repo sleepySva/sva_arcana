@@ -1,16 +1,24 @@
 {
   "itemName" : "arcana_armor_aeon_legs",
-  "price" : 1000,
+  "price" : 2000,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "The hand of hour, cold as the celestial moon. ^green;+2% Physical and Lunar Res.^reset;",
+  "description" : "The hand of hour, cold as the celestial moon. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+5% Physical RES^reset;, ^green;+15% Speed^reset;, ^green;+15% Aeon weapon damage^reset;.",
   "shortdescription" : "Aeon's Hour",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_aeonset",
+    {
+      "stat" : "arcana_aeon",
+      "amount" : 1
+    }
+  ],  
   
   "level" : 8,
   "leveledStatusEffects" : [
@@ -33,16 +41,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 32
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "physicalResistance",
-      "amount" : 0.02
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_lunar",
-      "amount" : 0.02
     }
   ],
 

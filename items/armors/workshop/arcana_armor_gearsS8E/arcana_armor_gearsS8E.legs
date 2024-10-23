@@ -1,16 +1,24 @@
 {
   "itemName" : "arcana_armor_gearsS8E_legs",
-  "price" : 1000,
+  "price" : 1600,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "legwear",
-  "description" : "A piece of leggings worn by Titancorp elites.",
-  "shortdescription" : "Titancorp S8 Leggings",
+  "description" : "Titancorp elite's uniform. \n\n^orange;Set Bonus:^reset; \n^green;+10% Titancorp weapon damage^reset;. ^green;Recover Health to max and +40% Speed for 30s when Health drops below 60%^reset;, ^orange;Cooldown 120s^reset;.",
+  "shortdescription" : "Gearshift Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_gearshiftset",
+    {
+      "stat" : "arcana_gearshift",
+      "amount" : 1
+    }
+  ],  
   
   "level" : 8,
   "leveledStatusEffects" : [

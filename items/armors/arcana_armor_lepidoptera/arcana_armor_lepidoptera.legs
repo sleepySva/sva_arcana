@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "A piece of pale colored leggings, crafted from holosium. ^green;+10% Light res.^reset; ^red;-10% Abyss res.^reset;",
+  "description" : "A piece of pale colored leggings, crafted from holosium. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Light RES^reset; and ^green;+10% Magic, Spear and Lance Damage^reset;.",
   "shortdescription" : "Lepidoptera Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_lepidopteraset",
+    {
+      "stat" : "arcana_lepidoptera",
+      "amount" : 1
+    }
+  ],
   
   "level" : 7,
   "leveledStatusEffects" : [
@@ -33,16 +41,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 18
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_light",
-      "amount" : 0.1
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_abyss",
-      "amount" : -0.1
     }
   ],
 

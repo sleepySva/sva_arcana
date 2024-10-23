@@ -1,13 +1,13 @@
 {
   "itemName" : "arcana_armor_mistRider_chest",
-  "price" : 480,
+  "price" : 1480,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
-  "rarity" : "Uncommon",
+  "rarity" : "Rare",
   "category" : "chestwear",
-  "description" : "A dark armor worn by the Mist Riders.",
+  "description" : "A dark armor worn by the Mist Rider. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+20% Damage when there's a monster with more health than you within 50 tiles^reset;.",
   "shortdescription" : "Mist Rider's Armor",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : {
     "body" : "chest.png",
@@ -21,37 +21,35 @@
     "frontSleeve" : "fsleeve.png"
   },
   
-  "level" : 2,
+  "statusEffects" : [
+    "arcana_mistriderset",
+    {
+      "stat" : "arcana_mistrider",
+      "amount" : 1
+    }
+  ],
+  
+  "level" : 7,
   "leveledStatusEffects" : [
     {
       "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
       "stat" : "powerMultiplier",
-      "baseMultiplier" : 1.25
+      "baseMultiplier" : 1.14
     },
     {
       "levelFunction" : "standardArmorLevelProtectionMultiplier",
       "stat" : "protection",
-      "amount" : 0.5
+      "amount" : 0.46
     },
     {
       "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 5
+      "amount" : 4
     },
     {
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
-      "amount" : 5
-    },
-	{
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "fireResistance",
-      "amount" : 0.04
-    },
-	{
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "iceResistance",
-      "amount" : 0.04
+      "amount" : 18
     }
   ],
   

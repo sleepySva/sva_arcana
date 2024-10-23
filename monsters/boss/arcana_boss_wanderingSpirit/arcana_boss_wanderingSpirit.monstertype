@@ -7,7 +7,7 @@
   "animation" : "animation.animation",
   "reversed" : false,
 
-  "dropPools" : [],
+  "dropPools" : [ "arcana_bossdrops_wanderingSpirit" ],
 
   "baseParameters" : {
     "monsterClass" : "boss",
@@ -30,6 +30,17 @@
 
     "damageBar" : "None",
 	"persistent" : true,
+	
+    "dialog" : {
+      "intro" : {
+        "default" : {
+          "default" : [
+            "Have you come to seek salvation...? I will cure you of your disease...",
+            "Do not fear... Join me in this eternal paradise."
+          ]
+        }
+      }
+    },
 
     "damageSources" : {
       "dash" : {
@@ -81,7 +92,7 @@
 
     "movementSettings" : {
       "collisionEnabled" : false,
-      "collisionPoly" : [ [-1.0, -1.75], [-0.75, -2.0], [0.75, -2.0], [1.0, -1.75], [1.0, 1.75], [0.75, 2.0], [-0.75, 2.0], [-1.0, 1.75] ],
+      "collisionPoly" : [ [-1.0, -2.75], [-0.75, -3.0], [0.75, -3.0], [1.0, -2.75], [1.0, 1.75], [0.75, 2.0], [-0.75, 2.0], [-1.0, 1.75] ],
       "mass" : 1.0,
       "physicsEffectCategories" : ["boss"]
     },
@@ -112,7 +123,7 @@
           "baseValue" : 1.0
         },
         "maxHealth" : {
-          "baseValue" : 5600
+          "baseValue" : 5000
         },
         "protection" : {
           "baseValue" : 1.0

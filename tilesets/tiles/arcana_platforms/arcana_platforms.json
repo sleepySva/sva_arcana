@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":15,
+ "tilecount":16,
  "tileheight":8,
  "tileproperties":
     {
@@ -113,6 +113,13 @@
          "\/\/name":"arcana_rail_lightrail",
          "\/\/shortdescription":"",
          "material":"arcana_rail_lightrail"
+        },
+     "15":
+        {
+         "\/\/description":"",
+         "\/\/name":"arcana_platform_stonePlatform",
+         "\/\/shortdescription":"",
+         "material":"arcana_platform_stonePlatform"
         }
     },
  "tiles":
@@ -176,6 +183,10 @@
      "14":
         {
          "image":"arcana_rail_lightrail.png"
+        },
+     "15":
+        {
+         "image":"arcana_platform_stonePlatform.png"
         }
     },
  "tilewidth":8

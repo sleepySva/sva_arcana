@@ -1,4 +1,4 @@
-require "/objects/scripts/cf_power.lua"
+require "/objects/scripts/cfpower.lua"
 
 pInit = init
 function init()
@@ -9,7 +9,7 @@ function init()
   self.outputRate = root.assetJson(configPath).outputRate or 1
   self.recipes = root.assetJson(configPath).recipes or nil
   self.powerUseAmount = config.getParameter("powerUseAmount", 0)
-  cf_power.setPower(config.getParameter("maxPower", 10))
+  cfpower.setPower(config.getParameter("maxPower", 10))
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
 end
 
@@ -46,7 +46,7 @@ function automation()
   
   local craftable = true
   local lastItem = world.containerItemAt(entity.id(), world.containerSize(entity.id()) - 1)
-  if cf_power.consumePower(self.powerUseAmount) < 0 then animator.setAnimationState("switchState", "off") return end
+  if cfpower.consumePower(self.powerUseAmount) < 0 then animator.setAnimationState("switchState", "off") return end
   
   for i, recipe in pairs(self.recipes) do
   

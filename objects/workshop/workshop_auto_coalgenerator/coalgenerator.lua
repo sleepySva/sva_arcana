@@ -1,4 +1,4 @@
-require("/objects/scripts/cf_power.lua")
+require("/objects/scripts/cfpower.lua")
 
 pInit = init
 
@@ -76,7 +76,7 @@ function update(dt)
 		  animator.playSound("onloop", -1)
 		  self.isPlayingSound = true
 		end
-	    cf_power.setPower(self.maxPower)
+	    cfpower.setPower(self.maxPower)
 	  else
 	    object.setOutputNodeLevel(0, false)
 		animator.setAnimationState("switchState", "off")
@@ -84,7 +84,7 @@ function update(dt)
 		animator.stopAllSounds("onloop")
 		self.isPlayingSound = false
 	  end 
-	  cf_power.pushPower(0, cf_power.getPower(), true, 0)
+	  cfpower.pushPower(0, cfpower.getPower(), true, 0)
 	  self.productionTimer = self.productionTime
 	end
   end

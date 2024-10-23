@@ -98,6 +98,7 @@
     "parts" : {
       "body" : {
         "properties" : {
+          "transformationGroups" : ["all"],
           "zLevel" : 1
         },
 
@@ -168,6 +169,7 @@
       },
       "fullbright" : {
         "properties" : {
+          "transformationGroups" : ["all"],
           "zLevel" : 2,
           "fullbright" : true
         },
@@ -239,6 +241,11 @@
       }
     }
   },
+  
+  "transformationGroups" : {
+    "all" : {"interpolated" : true}
+  },    
+  
   "particleEmitters" : {
     "deathPoof" : {
       "particles" : [
@@ -328,7 +335,9 @@
     "outOfEnergy" : [ "/sfx/interface/energy_out1.ogg" ],
     "energyRecharge" : [ ],
     "slash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ],
-    "flyingSlash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ]
+    "flyingSlash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ],
+    "deathFade" : [ "/sfx/npc/boss/guardian_death_fade.ogg" ],
+    "deathShrink" : [ "/sfx/npc/boss/guardian_death_shrink.ogg" ]
   },
 
   "effects" : {

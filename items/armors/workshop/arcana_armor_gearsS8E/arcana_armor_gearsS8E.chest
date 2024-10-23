@@ -1,12 +1,12 @@
 {
   "itemName" : "arcana_armor_gearsS8E_chest",
-  "price" : 1000,
+  "price" : 1600,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "chestwear",
-  "description" : "A durable armor worn by Titancorp elites.",
-  "shortdescription" : "Titancorp S8 Armor",
+  "description" : "Titancorp elite's uniform. \n\n^orange;Set Bonus:^reset; \n^green;+10% Titancorp weapon damage^reset;. ^green;Recover Health to max and +40% Speed for 30s when Health drops below 60%^reset;, ^orange;Cooldown 120s^reset;.",
+  "shortdescription" : "Gearshift Armor",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : {
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_gearshiftset",
+    {
+      "stat" : "arcana_gearshift",
+      "amount" : 1
+    }
+  ],  
   
   "level" : 8,
   "leveledStatusEffects" : [
