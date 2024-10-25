@@ -77,6 +77,10 @@ function populateBossList()
   for _,collectable in pairs(player.collectables(self.bossCollection)) do
     playerCollectables[collectable] = true
   end
+  
+  table.sort(self.bosses, function(a,b)
+    return (a.order or 0) < (b.order or 0)
+  end)
 
   for _, boss in pairs(self.bosses) do
     local item = widget.addListItem(self.bossList)
