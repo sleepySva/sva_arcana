@@ -1,4 +1,4 @@
-require("/objects/scripts/cfpower.lua")
+require "/scripts/automation/arcana_power.lua"
 
 pInit = init
 
@@ -18,19 +18,6 @@ end
 
 function uninit()
 
-end
-
-function dump(o)
-   if type(o) == 'table' then
-      local s = '{ '
-      for k,v in pairs(o) do
-         if type(k) ~= 'number' then k = '"'..k..'"' end
-         s = s .. '['..k..'] = ' .. dump(v) .. ','
-      end
-      return s .. '} '
-   else
-      return tostring(o) or "NIL"
-   end
 end
 
 function tablelength(table)
@@ -76,7 +63,7 @@ function update(dt)
 		  animator.playSound("onloop", -1)
 		  self.isPlayingSound = true
 		end
-	    cfpower.setPower(self.maxPower)
+	    arcana_power:setPower(self.maxPower)
 	  else
 	    object.setOutputNodeLevel(0, false)
 		animator.setAnimationState("switchState", "off")
@@ -84,7 +71,7 @@ function update(dt)
 		animator.stopAllSounds("onloop")
 		self.isPlayingSound = false
 	  end 
-	  cfpower.pushPower(0, cfpower.getPower(), true, 0)
+	  arcana_power:sendPower(0, arcana_power:getPower())
 	  self.productionTimer = self.productionTime
 	end
   end

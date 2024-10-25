@@ -1,4 +1,4 @@
-require "/objects/scripts/cfpower.lua"
+require "/scripts/automation/arcana_power.lua"
 
 pInit = init
 function init()
@@ -11,7 +11,7 @@ function init()
   self.outputRate = root.assetJson(configPath).outputRate or 1
   self.recipes = root.assetJson(configPath).recipes or nil
   self.powerUseAmount = config.getParameter("powerUseAmount", 0)
-  cfpower.setPower(config.getParameter("maxPower", 10))
+  arcana_power:setPower(config.getParameter("maxPower", 10))
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
 end
 
@@ -80,8 +80,8 @@ function automation()
 end
 
 function powerCheck()
-  if cfpower.getPower() >= self.powerUseAmount then 
-    cfpower.consumePower(self.powerUseAmount)
+  if arcana_power:getPower() >= self.powerUseAmount then 
+    arcana_power:removePower(self.powerUseAmount)
     self.isPowered = true
   else
     animator.setAnimationState("switchState", "off")

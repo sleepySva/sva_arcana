@@ -1,5 +1,5 @@
 --https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
-require("/objects/scripts/cfpower.lua")
+require "/scripts/automation/arcana_power.lua"
 
 pInit = init
 
@@ -72,7 +72,7 @@ function update(dt)
 		  animator.playSound("onloop", -1)
 		  self.isPlayingSound = true
 		end
-	    cfpower.setPower(self.maxPower)
+	    arcana_power:setPower(self.maxPower)
 	  else
 	    object.setOutputNodeLevel(0, false)
 		animator.setAnimationState("switchState", "off")
@@ -80,7 +80,7 @@ function update(dt)
 		animator.stopAllSounds("onloop")
 		self.isPlayingSound = false
 	  end 
-	  cfpower.pushPower(0, cfpower.getPower(), true, 0)
+    arcana_power:sendPower(0, arcana_power:getPower())
 	  self.productionTimer = self.productionTime
 	end
   end

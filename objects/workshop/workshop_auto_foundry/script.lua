@@ -1,4 +1,4 @@
-require "/objects/scripts/cfpower.lua"
+require "/scripts/automation/arcana_power.lua"
 
 pInit = init
 function init()
@@ -9,7 +9,7 @@ function init()
   self.outputRate = root.assetJson(configPath).outputRate or 1
   self.recipes = root.assetJson(configPath).recipes or nil
   self.powerUseAmount = config.getParameter("powerUseAmount", 0)
-  cfpower.setPower(config.getParameter("maxPower", 10))
+  arcana_power:setPower(config.getParameter("maxPower", 10))
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
 end
 
@@ -46,7 +46,7 @@ function automation()
   
   local craftable = true
   local lastItem = world.containerItemAt(entity.id(), world.containerSize(entity.id()) - 1)
-  if cfpower.consumePower(self.powerUseAmount) < 0 then animator.setAnimationState("switchState", "off") return end
+  if arcana_power:removePower(self.powerUseAmount) < 0 then animator.setAnimationState("switchState", "off") return end
   
   for i, recipe in pairs(self.recipes) do
   
@@ -83,8 +83,8 @@ function update(dt)
     self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
     if self.cooldownTimer == 0 then
       automation()
-	  output(true)
-	  self.cooldownTimer = self.craftingTime
+	    output(true)
+	    self.cooldownTimer = self.craftingTime
     end
   end
 end
