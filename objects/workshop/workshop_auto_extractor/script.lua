@@ -1,3 +1,4 @@
+--http://lua-users.org/wiki/SimpleRound
 require "/scripts/automation/arcana_power.lua"
 
 pInit = init
@@ -10,10 +11,16 @@ function init()
   self.outputRate = config.getParameter("outputRate", 10)
   self.resources = config.getParameter("resources", nil)
   self.powerUseAmount = config.getParameter("powerUseAmount", 0)
-  arcana_power:setPower(config.getParameter("maxPower", 10))
+  power.set(config.getParameter("maxPower", 10))
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
+  
+  self.isPowered = true
+  message.setHandler("getProgress", function()
+    local progress = power.round((1 - (self.cooldownTimer / self.craftingTime)), 1)
+	--if self.isPowered == true then sb.logInfo("Powered On: " .. tostring(progress)) else sb.logInfo("Powered Off: " .. tostring(progress)) end
+    if self.isPowered == true then return progress else return 0 end
+  end)
 end
-
 
 function uninit()
 
@@ -92,10 +99,8 @@ function automation()
 end
 
 function powerCheck()
-  --sb.logInfo("getPower %s", arcana_power:getPower())
-  --sb.logInfo("powerUseAmount %s", self.powerUseAmount)
-  if arcana_power:getPower() >= self.powerUseAmount then 
-    arcana_power:removePower(self.powerUseAmount)
+  if power.get() >= self.powerUseAmount then 
+    power.remove(self.powerUseAmount)
     self.isPowered = true
   else
     animator.setAnimationState("switchState", "off")

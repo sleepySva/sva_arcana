@@ -1,0 +1,48 @@
+{
+  "projectileName" : "arcana_gaea_1",
+  "physics" : "sticky",
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "image" : "body.png",
+  "animationCycle" : 0.4,
+  "animationLoops" : true,
+  "fullbright" : true,
+  "emitters" : ["arcana_leaftrail"],
+  "frameNumber" : 1,
+  "speed" : 0,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+  ],
+  "lightColor" : [80, 40, 20],
+  "damageKind" : "poison",
+  "statusEffects" : [],
+  
+  "scripts" : [ "/projectiles/activeitems/staff/plasmablade/plasmablade.lua" ],
+
+  "triggerSpeed" : 90,
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/gaea_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 2.0,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "controlRotation" : {
+    "maxSpeed" : 16,
+    "controlForce" : 70,
+    "friction" : 10
+  }
+}

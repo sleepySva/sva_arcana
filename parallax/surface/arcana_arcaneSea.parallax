@@ -7,72 +7,85 @@
       "repeatY" : true,
       "tileLimitTop" : 610,
       "parallax" : 1.0,
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "oceanbelow",
       "offset" : [0, 610],
       "parallax" : 1.0,
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "ocean1",
       "offset" : [0, 278],
       "parallax" : [1.5, 1.05],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "ocean2",
       "offset" : [0, 283],
       "parallax" : [2, 1.05],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "ocean3",
       "offset" : [0, 283],
       "parallax" : [3, 1.08],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "ocean4",
       "offset" : [0, 284],
       "parallax" : [4, 1.11],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "ocean5",
       "offset" : [0, 286],
       "parallax" : [5, 1.14],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "ocean6",
       "offset" : [0, 288],
       "parallax" : [6, 1.17],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "ocean7",
       "offset" : [0, 290],
       "parallax" : [7, 1.20],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "ocean8",
       "offset" : [0, 292],
       "parallax" : [8, 1.23],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "oceanblue",
       "offset" : [0, 292],
       "parallax" : [8, 1.24],
+	  "directives" : "?hueshift=-20",
       "nohueshift" : true
     },
     {
       "kind" : "cityscape0",
       "offset" : [0, 590],
       "parallax" : [8.01, 1.231],
+      "minSpeed" : 1000,
+      "maxSpeed" : 4000,
       "nohueshift" : true
     },
     {
@@ -83,19 +96,19 @@
     },
     {
       "kind" : "arcana_arcaneDesert_1",
-      "offset" : [0, 220],
-      "parallax" : [8.2, 2.0],
-      "directives" : "",
+      "offset" : [0, 260],
+      "parallax" : [8.2, 1.7],
+	  "directives" : "?brightness=10",
       "fadePercent" : 0.0,
 	  "size" : 1.0,
       "nohueshift" : true
     },
     {
       "kind" : "arcana_arcaneDesert_1",
-      "offset" : [0, 170],
-      "parallax" : [8.3, 2.1],
+      "offset" : [0, 210],
+      "parallax" : [8.3, 1.8],
       "directives" : "",
-      "fadePercent" : 0.0,
+      "fadePercent" : 0.05,
 	  "size" : 1.0,
       "nohueshift" : true
     },
@@ -104,7 +117,8 @@
       "offset" : [100, 400],
       "noRandomOffset" : true,
       "parallax" : [8.4, 3.003],
-      "nohueshift" : true
+      "nohueshift" : true,
+      "fadePercent" : 0.05
     },
     {
       "kind" : "midnight2",
@@ -112,13 +126,14 @@
       "noRandomOffset" : true,
       "parallax" : [8.6, 5.001],
       "nohueshift" : true,
-      "fadePercent" : 0.02
+      "fadePercent" : 0.05
     },
     {
       "kind" : "midnight3",
       "offset" : [0, 140],
       "parallax" : [9, 7],
-      "nohueshift" : true
+      "nohueshift" : true,
+      "fadePercent" : 0.05
     },
     {
       "kind" : "midnightback",

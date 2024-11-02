@@ -9,11 +9,25 @@ function init()
   self.descrptionLable = "lblText"
   self.inputwidget = "scrollArea.inputList"
   self.leftwidget = "scrollArea.leftList"
+  
+  self.entity = pane.containerEntityId()
+  self.progressWidget = "progress"
+  
   populateFields()
   populateList()
 end
 
 function update(dt)
+  if not self.promise then 
+    self.promise = world.sendEntityMessage(self.entity, "getProgress")
+  end
+  if self.promise:succeeded() then
+    if self.promise:finished() then
+      local progress = self.promise:result()
+      widget.setProgress(self.progressWidget, progress)
+	  self.promise = nil
+    end
+  end
 end
 
 

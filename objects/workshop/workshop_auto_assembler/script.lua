@@ -15,11 +15,6 @@ function init()
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
 end
 
-
-function uninit()
-
-end
-
 function tablelength(table)
   local count = 0
   for _ in pairs(table) do count = count + 1 end

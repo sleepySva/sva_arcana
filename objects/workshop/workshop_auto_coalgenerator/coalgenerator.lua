@@ -13,6 +13,11 @@ function init()
   self.isPowered = false
   self.isPlayingSound = false
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
+  
+  message.setHandler("getProgress", function()
+    local progress = power.round((1 - (1 - self.consumptionTimer / self.consumptionTime)), 1)
+    if self.isPowered == true then return progress else return 0 end
+  end)
 end
 
 
@@ -63,7 +68,7 @@ function update(dt)
 		  animator.playSound("onloop", -1)
 		  self.isPlayingSound = true
 		end
-	    arcana_power:setPower(self.maxPower)
+	    power.set(self.maxPower)
 	  else
 	    object.setOutputNodeLevel(0, false)
 		animator.setAnimationState("switchState", "off")
@@ -71,7 +76,7 @@ function update(dt)
 		animator.stopAllSounds("onloop")
 		self.isPlayingSound = false
 	  end 
-	  arcana_power:sendPower(0, arcana_power:getPower())
+	  power.send(0, power.get())
 	  self.productionTimer = self.productionTime
 	end
   end

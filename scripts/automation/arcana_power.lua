@@ -1,114 +1,59 @@
--- by Darkcraft8
-arcana_power = {}
+power = {}
+
 function init()
-    storage.maxPower = config.getParameter("maxPower", 404)
-    storage.power = storage.power or config.getParameter("initPower", 0)
+  power.init()
 end
 
-function arcana_power:setPower(value) -- Simply set the power to the value
-    if value then
-        storage.power = value
-    end
+-- Init
+function power.init()
+  storage.max = config.getParameter("maxPower", 0)
+  storage.power = storage.power or config.getParameter("initPower", 0)
 end
 
-function arcana_power:addPower(value) -- Simply add the value to the power
-    local surplusPower = 0
-    if value then
-        if storage.power + value > storage.maxPower then
-            surplusPower = (storage.power + value) - storage.maxPower
-            storage.power = storage.maxPower
-        else
-            storage.power = storage.power + value
-        end
-    end
-    return surplusPower
-end
-
-function arcana_power:removePower(value, removePartial) -- Simply remove/consume the value to the power
-    local amountLeft = 0
-    if removePartial and storage.power < value then return amountLeft, false end
-    if storage.power > 0 then 
-        storage.power = storage.power - value
-        amountLeft = storage.power
-        return amountLeft, true
-    else
-        amountLeft = storage.power - value
-        return amountLeft, false
-    end
-end
-
-function arcana_power:getPower()
-    return storage.power
-end
-
-function arcana_power:sendPower(nodeId, power)
-    local nodeId = nodeId
-    if not nodeId then nodeId = config.getParameter("outputPowerNode", 0) end
-    local targetObject = object.getOutputNodeIds(nodeId)
-    local targetAmount = arcana_power:getTargetAmount(targetObject)
-    if targetAmount <= 0 then return end
-    local sentPowerAmount = arcana_power:getPower(targetObject) / targetAmount
+-- Sends power to all connected objects for a set node.
+function power.send(node, amount)
+  local targets = object.getOutputNodeIds(node or 0)
+  if not targets or power.tablelength(targets) == 0 then return end
+  local dividedPower = math.floor(math.max(0, amount) / power.tablelength(targets))
     
-    for targetEntityId, _ in pairs(targetObject) do
-        arcana_power:removePower(sentPowerAmount)
-        -- the script is for object, they ALL run server-side meaning that we can use this function to call specific function
-        local responce = world.callScriptedEntity(targetEntityId, "arcana_power.addPower", nil, sentPowerAmount )
-        if responce then
-            arcana_power:addPower(responce)
-        end
-    end
-
-    return arcana_power:getPower(targetObject)
+  for target, _ in pairs(targets) do
+    power.remove(dividedPower)
+    local overflow = world.callScriptedEntity(target, "power.add", dividedPower)
+    if overflow then power.add(overflow) end
+  end
 end
 
-function arcana_power:getIncomingPower(nodeId) -- Get the amount of power produced by object's that are connected to the inputs 
-    local nodeId = nodeId
-    if not nodeId then nodeId = config.getParameter("inputPowerNode", 0) end
-    local targetObject = object.getInputNodeIds(nodeId)
-    local targetAmount = arcana_power:getTargetAmount(targetObject)
-    if targetAmount <= 0 then return end
-
-    local finalResult = 0
-    for targetEntityId, _ in pairs(targetObject) do 
-        local responce = world.callScriptedEntity(targetEntityId , "arcana_power.sentPowerAmount")
-        if responce then
-            finalResult = finalResult + responce
-        end
-    end
-
-    return finalResult
+-- Adds power up to the max power amount.
+function power.add(power)
+  if storage.power + power > storage.max then storage.power = storage.max return storage.power + power - storage.max end
+  storage.power = math.max(math.min(storage.max, storage.power + power), 0)
 end
 
-function arcana_power:sentPowerAmount()
-    if storage.targetAmount and storage.power then
-        if storage.power / storage.targetAmount > 0 then
-            return storage.power / storage.targetAmount
-        else
-            return 0
-        end
-    else
-        return 0
-    end
+-- Removes power to a minimum of 0.
+function power.remove(power)
+  storage.power = math.max(storage.power - power, 0)
 end
 
-function arcana_power:getTargetAmount(nodeIdTable)
-    local indexAmount = 0
-    for index, _ in pairs(nodeIdTable) do 
-        indexAmount = indexAmount + 1
-    end
-    storage.targetAmount = indexAmount
-    return indexAmount
+-- Sets power up to the max power amount.
+function power.set(power)
+  storage.power = math.max(math.min(storage.max, power), 0)
 end
 
-function arcana_power:productionAmount()
-    return config.getParameter("maxPower", 404)
+-- Returns current power amount.
+function power.get()
+  return storage.power
 end
 
-function arcana_power:getTargetPowerProduction(targetEntityId)
-    local responce = world.callScriptedEntity(targetEntityId , "arcana_power.productionAmount")
-    if responce then
-        return responce
-    else
-        return 0
-    end
+--http://lua-users.org/wiki/SimpleRound, for progress bar completion rounding.
+function power.round(num, numDecimalPlaces)
+  if num <= 0.97 then return num end
+  local mult = 10^(numDecimalPlaces or 0)
+  return math.ceil(num * mult + 0.5) / mult
+end
+
+--https://stackoverflow.com/questions/2705793/how-to-get-number-of-entries-in-a-lua-table
+function power.tablelength(T)
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
 end
