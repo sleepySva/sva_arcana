@@ -1,0 +1,22 @@
+{
+  "materialId" : 16385,
+  "materialName" : "bleuark_tile10",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "bleuark_tile10",
+  "description" : "A smooth sea crystal block.",
+  "shortdescription" : "Smooth Sea Crystal",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "bleuark_tile10.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 61,
+    "radiantLight" : [26, 84, 153]
+  }
+}

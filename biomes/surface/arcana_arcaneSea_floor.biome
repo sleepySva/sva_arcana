@@ -20,7 +20,7 @@
     ]
   },
 
-  "parallax" : "/parallax/surface/oceanfloor.parallax",
+  "parallax" : "/parallax/surface/arcana_oceanfloor.parallax",
 
   "ambientNoises" : {
     "day" : {
@@ -61,6 +61,18 @@
         "treasureBoxSets" : [ "oceanFloorChest" ]
       },
       {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "arcana_vine_bush" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
@@ -68,6 +80,20 @@
 
         "type" : "grass",
         "grasses" : [ "corals", "seaweed", "waterplant2", "waterplant3" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "bleuark_pot_1" ], [1.0, "bleuark_pot_2" ], [1.0, "bleuark_pot_3" ], [1.0, "bleuark_pot_7" ], [1.0, "bleuark_light_2" ] ],
+            "parameters" : { }
+          }
+        ]
       },
       {
         "mode" : "floor",

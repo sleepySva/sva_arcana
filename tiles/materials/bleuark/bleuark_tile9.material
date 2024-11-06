@@ -1,0 +1,22 @@
+{
+  "materialId" : 16384,
+  "materialName" : "bleuark_tile9",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "bleuark_tile9",
+  "description" : "A blue sea crystal block.",
+  "shortdescription" : "Sea Crystal Block",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "bleuark_tile9.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 60,
+    "radiantLight" : [26, 84, 153]
+  }
+}

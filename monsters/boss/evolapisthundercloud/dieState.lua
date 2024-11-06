@@ -19,7 +19,6 @@ function dieState.enteringState(stateData)
   local players = world.players()
   for _,playerId in pairs(players) do
     world.sendEntityMessage(playerId, "dreadwingDeath")
-    world.setUniverseFlag(config.getParameter("universeFlagOnDeath"))
   end
 end
 

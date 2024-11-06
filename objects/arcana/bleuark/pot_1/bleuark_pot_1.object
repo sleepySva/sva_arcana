@@ -1,0 +1,34 @@
+{
+  "objectName" : "bleuark_pot_1",
+  "colonyTags" : ["atlantic"],
+  "rarity" : "Common",
+
+  "category" : "breakable",
+  "price" : 200,
+  "description" : "A luminescent crystal.",
+  "shortdescription" : "Sea Crystal",
+  "race" : "generic",
+
+  "lightColor" : [20, 120, 160],
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "smashOnBreak" : true,
+  "smashSounds" : [ "/sfx/objects/prism_break_large1.ogg", "/sfx/objects/prism_break_large2.ogg" ],
+  "smashParticles" : [ { "count" : 8, "particle" : "tallprismshard" }, { "count" : 8, "particle" : "tallprismfineshard" } ],
+  "smashDropPool" : "arcana_dungeonloots_seacrystal", 
+  "breakDropPool" : "arcana_dungeonloots_seacrystal"
+}

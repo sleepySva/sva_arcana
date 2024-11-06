@@ -86,6 +86,8 @@
       "parallax" : [8.01, 1.231],
       "minSpeed" : 1000,
       "maxSpeed" : 4000,
+      "directives" : "",
+      "fadePercent" : 0.05,
       "nohueshift" : true
     },
     {
@@ -95,51 +97,29 @@
       "nohueshift" : true
     },
     {
-      "kind" : "arcana_arcaneDesert_1",
-      "offset" : [0, 260],
+      "kind" : "deserttrees",
+      "offset" : [0, 400],
       "parallax" : [8.2, 1.7],
-	  "directives" : "?brightness=10",
-      "fadePercent" : 0.0,
-	  "size" : 1.0,
-      "nohueshift" : true
-    },
-    {
-      "kind" : "arcana_arcaneDesert_1",
-      "offset" : [0, 210],
-      "parallax" : [8.3, 1.8],
       "directives" : "",
       "fadePercent" : 0.05,
 	  "size" : 1.0,
       "nohueshift" : true
     },
     {
-      "kind" : "midnight1",
-      "offset" : [100, 400],
-      "noRandomOffset" : true,
-      "parallax" : [8.4, 3.003],
-      "nohueshift" : true,
-      "fadePercent" : 0.05
+      "kind" : "desertback",
+      "offset" : [0, 670],
+      "parallax" : [8.3, 1.8],
+	  "directives" : "?brightness=-10",
+      "fadePercent" : 0.05,
+	  "size" : 1.0,
+      "nohueshift" : true
     },
     {
-      "kind" : "midnight2",
-      "offset" : [0, 225],
+      "kind" : "arcana_grassback",
+      "offset" : [100, 480],
       "noRandomOffset" : true,
-      "parallax" : [8.6, 5.001],
-      "nohueshift" : true,
-      "fadePercent" : 0.05
-    },
-    {
-      "kind" : "midnight3",
-      "offset" : [0, 140],
-      "parallax" : [9, 7],
-      "nohueshift" : true,
-      "fadePercent" : 0.05
-    },
-    {
-      "kind" : "midnightback",
-      "offset" : [50, 100],
-      "noRandomOffset" : true,
-      "parallax" : [10, 9.001],
+      "parallax" : [8.4, 3],
+	  "directives" : "?brightness=20",
       "nohueshift" : true,
       "fadePercent" : 0.05
     },

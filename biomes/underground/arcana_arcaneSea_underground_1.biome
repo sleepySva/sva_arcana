@@ -1,6 +1,6 @@
 {
   "name" : "arcana_arcaneSea_underground_1",
-  "friendlyName" : "Shining Sea Underground",
+  "friendlyName" : "Luminescent",
 
   "spawnProfile" : {
     "groups" : [
@@ -80,6 +80,18 @@
         ]
       },
       {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "arcana_vine_bush" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
         "mode" : "background",
         "priority" : 1.0,
         "variants" : 1,
@@ -144,6 +156,34 @@
         "objectSets" : [
           {
             "pool" : [ [1, "challengedoor" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "bleuark_pot_1" ], [1.0, "bleuark_pot_2" ], [1.0, "bleuark_pot_3" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingMid",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "bleuark_pot_4" ], [1.0, "bleuark_pot_5" ], [1.0, "bleuark_pot_6" ] ],
             "parameters" : { }
           }
         ]
