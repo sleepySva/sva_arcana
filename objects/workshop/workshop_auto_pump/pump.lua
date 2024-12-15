@@ -14,8 +14,14 @@ function init()
   self.outputRate = root.assetJson(configPath).outputRate or 1
   self.recipes = root.assetJson(configPath).recipes or nil
   self.powerUseAmount = config.getParameter("powerUseAmount", 0)
-  arcana_power:setPower(config.getParameter("maxPower", 10))
+  power.set(config.getParameter("maxPower", 10))
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
+  
+  self.isPowered = true
+  message.setHandler("getProgress", function()
+    local progress = power.round((1 - (self.cooldownTimer / self.pumpTime)), 1)
+    if self.isPowered == true and self.isEmpty == false then return progress else return 0 end
+  end)
 end
 
 
@@ -59,15 +65,17 @@ function automation()
 	world.destroyLiquid(liquidPosition)
 	liquidItem.name = root.liquidConfig(liquidLevel[1]).config.itemDrop
 	world.containerAddItems(entity.id(), liquidItem)
+	self.isEmpty = false
 	animator.setAnimationState("switchState", "on")
   else
+    self.isEmpty = true
     animator.setAnimationState("switchState", "empty")
   end
 end
 
 function powerCheck()
-  if arcana_power:getPower() >= self.powerUseAmount then 
-    arcana_power:removePower(self.powerUseAmount)
+  if power.get() >= self.powerUseAmount then 
+    power.remove(self.powerUseAmount)
     self.isPowered = true
   else
     animator.setAnimationState("switchState", "off")

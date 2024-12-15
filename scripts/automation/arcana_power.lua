@@ -8,6 +8,12 @@ end
 function power.init()
   storage.max = config.getParameter("maxPower", 0)
   storage.power = storage.power or config.getParameter("initPower", 0)
+  storage.state = storage.state or true
+  
+  message.setHandler("getState", function(_, _, state)
+    if state ~= nil then power.setState(state) end
+    return power.getState(state)
+  end)
 end
 
 -- Sends power to all connected objects for a set node.
@@ -42,6 +48,16 @@ end
 -- Returns current power amount.
 function power.get()
   return storage.power
+end
+
+-- Returns current state for button use
+function power.getState()
+  return storage.state
+end
+
+-- Sets current state
+function power.setState(s)
+  storage.state = s
 end
 
 --http://lua-users.org/wiki/SimpleRound, for progress bar completion rounding.

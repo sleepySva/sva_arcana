@@ -59,34 +59,47 @@ function consumeInputSingle()
 end
 
 function update(dt)
-  if self.consumptionTimer > 0 then
-    self.consumptionTimer = math.max(0, self.consumptionTimer - dt)
-    if self.consumptionTimer == 0 then
-	  consumeInputSingle()
-	  self.consumptionTimer = self.consumptionTime
+  if power.getState() == true then
+    if self.consumptionTimer > 0 then
+      self.consumptionTimer = math.max(0, self.consumptionTimer - dt)
+      if self.consumptionTimer == 0 then
+	    consumeInputSingle()
+	    self.consumptionTimer = self.consumptionTime
+      end
     end
+    if self.productionTimer > 0 then
+      self.productionTimer = math.max(0, self.productionTimer - dt)
+	  if self.productionTimer == 0 then
+	    if self.isPowered == true then
+	      object.setOutputNodeLevel(0, true)
+		  setAnimation(true)
+	      power.set(self.maxPower)
+	    else
+	      object.setOutputNodeLevel(0, false)
+		  setAnimation(false)
+		  power.set(0)
+	    end 
+      power.send(0, power.get())
+	    self.productionTimer = self.productionTime
+	  end
+    end
+  else
+    setAnimation(false)
   end
-  if self.productionTimer > 0 then
-    self.productionTimer = math.max(0, self.productionTimer - dt)
-	if self.productionTimer == 0 then
-	  if self.isPowered == true then
-	    object.setOutputNodeLevel(0, true)
-		animator.setAnimationState("switchState", "on")
-		animator.setParticleEmitterActive("smoke", true)
-		if self.isPlayingSound == false then
-		  animator.playSound("onloop", -1)
-		  self.isPlayingSound = true
-		end
-	    power.set(self.maxPower)
-	  else
-	    object.setOutputNodeLevel(0, false)
-		animator.setAnimationState("switchState", "off")
-		animator.setParticleEmitterActive("smoke", false)
-		animator.stopAllSounds("onloop")
-		self.isPlayingSound = false
-	  end 
-    power.send(0, power.get())
-	  self.productionTimer = self.productionTime
+end
+
+function setAnimation(s)
+  if s == true then 
+    if self.isPlayingSound == false then
+	  animator.playSound("onloop", -1)
+	  self.isPlayingSound = true
 	end
+    animator.setAnimationState("switchState", "on")
+	animator.setParticleEmitterActive("smoke", true)
+  else
+    animator.setAnimationState("switchState", "off")
+	animator.setParticleEmitterActive("smoke", false)
+	animator.stopAllSounds("onloop")
+	self.isPlayingSound = false
   end
 end
