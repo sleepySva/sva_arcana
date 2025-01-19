@@ -2550,18 +2550,6 @@
                  "y":1424
                 }, 
                 {
-                 "gid":9110,
-                 "height":8,
-                 "id":1287,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":40,
-                 "x":5672,
-                 "y":1704
-                }, 
-                {
                  "gid":2147492758,
                  "height":8,
                  "id":1288,
@@ -2572,18 +2560,6 @@
                  "width":40,
                  "x":4840,
                  "y":1704
-                }, 
-                {
-                 "gid":9076,
-                 "height":24,
-                 "id":1289,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":40,
-                 "x":5672,
-                 "y":1696
                 }, 
                 {
                  "gid":9160,
@@ -6415,7 +6391,7 @@
                  "type":"",
                  "visible":true,
                  "width":40,
-                 "x":4520,
+                 "x":4512,
                  "y":1776
                 }, 
                 {
@@ -6427,7 +6403,7 @@
                  "type":"",
                  "visible":true,
                  "width":40,
-                 "x":4520,
+                 "x":4512,
                  "y":1752
                 }, 
                 {
@@ -6439,7 +6415,7 @@
                  "type":"",
                  "visible":true,
                  "width":56,
-                 "x":4464,
+                 "x":4456,
                  "y":1776
                 }, 
                 {
@@ -8181,6 +8157,24 @@
                  "width":16,
                  "x":4712,
                  "y":1488
+                }, 
+                {
+                 "gid":9559,
+                 "height":64,
+                 "id":1914,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"interactData\" : \"\/interface\/warping\/arcana_lighthaven.config\", \"uniqueId\" : \"arcana_lighthaventele\" }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":5680,
+                 "y":1704
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -9264,7 +9258,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1913,
+ "nextobjectid":1915,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -9497,6 +9491,10 @@
         {
          "firstgid":9517,
          "source":"..\/..\/..\/tilesets\/objects\/catacomb_objects\/catacomb_objects.json"
+        }, 
+        {
+         "firstgid":9559,
+         "source":"..\/..\/..\/tilesets\/objects\/arcana_teleporters\/arcana_teleporters.json"
         }],
  "tilewidth":8,
  "type":"map",
