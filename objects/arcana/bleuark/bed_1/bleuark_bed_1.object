@@ -1,0 +1,37 @@
+{
+  "objectName" : "bleuark_bed_1",
+  "colonyTags" : ["arcanian", "bed"],
+  "rarity" : "Rare",
+  "description" : "A solid bed with blue sheets.",
+  "shortdescription" : "Bleuark Bed",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 240,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-8, 13.2],
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/arcana/bleuark/bed_1/cover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16390,
+  "materialName" : "arcana_tile33",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile27",
+  "description" : "A highly durable block made from alien materials.",
+  "shortdescription" : "Construct Block",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 32,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile33.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 3000
+  }
+}

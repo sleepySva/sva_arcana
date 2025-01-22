@@ -1,0 +1,40 @@
+{
+  "objectName" : "bleuark_deco_14",
+  "colonyTags" : ["atlantic"],
+  "rarity" : "Rare",
+  "description" : "An intricate tile painting made from gold and stone.",
+  "shortdescription" : "Small Tile Mural",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 160,
+  
+  "lightColor" : [0, 0, 0],
+  "lightPosition" : [0, 2],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

@@ -1810,7 +1810,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_azureSea",
     "value": {
-      "oceanLiquid" : [ "water" ],
+      "oceanLiquid" : [ "arcana_liquid_arcaneWater" ],
       "blockSelector" : [ "remixedIslandsSurface" ],
       "fgCaveSelector" : [ "empty" ],
       "bgCaveSelector" : [ "empty" ],
@@ -1822,7 +1822,7 @@
     "op": "add",
     "path": "/regionTypes/arcana_azureSea_floor",
     "value": {
-      "oceanLiquid" : [ "water" ],
+      "oceanLiquid" : [ "arcana_liquid_arcaneWater" ],
 	  "oceanLevelOffset" : 1000,
       "blockSelector" : [ "ledgesSurface" ],
       "fgCaveSelector" : [ "emptier" ],
