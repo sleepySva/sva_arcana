@@ -70,22 +70,23 @@
 
   "skyOptions" : [
     {
+      // sunny earth days, red/orange sunrise and purple/red sunset
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [120, 120, 40], [160, 200, 200] ],
-      "dayColors" : [ [4, 197, 255], [6, 81, 255] ],
+      "dayColors" : [ [100, 204, 245], [190, 215, 245] ],
       "eveningColors" : [ [125, 17, 158], [200, 52, 100] ],
-      "nightColors" : [ [45, 150, 255, 80], [0, 55, 183, 160] ],
+      "nightColors" : [ [24, 38, 100, 80], [58, 42, 110, 160] ],
 
-      "morningLightColor" : [80, 60, 120],
-      "dayLightColor" : [130, 160, 250],
+      "morningLightColor" : [80, 60, 80],
+      "dayLightColor" : [140, 170, 230],
       "eveningLightColor" : [140, 100, 180],
-      "nightLightColor" : [40, 70, 150]
+      "nightLightColor" : [40, 70, 130]
     }
   ],
 
   "mainBlock" : "sand2",
-  "subBlocks" : [ "azureDesert_tile1", "azureDesert_tile2" ],
+  "subBlocks" : [ "rock14", "rock04" ],
   "ores" : "arcana_azureSea_ores_surface",
 
   "parallax" : "/parallax/surface/arcana_azureSea.parallax",

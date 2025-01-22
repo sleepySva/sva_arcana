@@ -3,13 +3,6 @@
 
   "layers" : [
     {
-      "kind" : "tile/arcana_blueback",
-      "nohueshift" : false,
-      "lightMapped" : true,
-      "parallax" : 1.5,
-      "repeatY" : true
-    },
-    {
       "kind" : "tile/ocean",
       "repeatY" : true,
       "tileLimitTop" : 610,
@@ -22,13 +15,7 @@
       "parallax" : 1.0,
       "nohueshift" : true
     },
-    {
-      "kind" : "forestfront_blueref",
-      "offset" : [0, 490],
-      "parallax" : 1.0,
-      "fadePercent" : 0.0,
-	  "lightMapped" : true
-    },
+
     {
       "kind" : "ocean1",
       "offset" : [0, 278],
@@ -91,56 +78,67 @@
     },
     {
       "kind" : "forestfront_blue",
-      "offset" : [0, 620],
-      "parallax" : 2.0,
+      "offset" : [0, 510],
+      "parallax" : 5.0,
       "fadePercent" : 0.01,
 	  "lightMapped" : true
     },
     {
-      "kind" : "forestfront_blues",
-      "offset" : [0, 320],
-      "parallax" : 2.1,
-      "fadePercent" : 0.1,
-	  "lightMapped" : true
-    },
-    {
-      "kind" : "forestfront_blues",
-      "offset" : [0, 280],
-      "parallax" : 2.2,
-      "fadePercent" : 0.2,
-	  "lightMapped" : true
-    },
-    {
-      "kind" : "forestfront_blues",
-      "offset" : [0, 250],
-      "parallax" : 2.4,
-      "fadePercent" : 0.4,
-	  "lightMapped" : true
-    },
-    {
-      "kind" : "arcana_azureseaback",
-      "offset" : [0, 480],
-      "parallax" : 4.0,
-      "fadePercent" : 0.2,
-	  "lightMapped" : true
-    },
-    {
-      "kind" : "stars",
+      "kind" : "desertforeground_blue",
       "offset" : [0, 380],
-      "parallax" : 6.0,
-      "fadePercent" : 0.3,
-	  "lightMapped" : true
+      "parallax" : 5.4,
+      "fadePercent" : 0.01
     },
     {
-      "kind" : "arcana_moon",
-      "offset" : [0, 170],
-      "parallax" : 11.0,
-	  "unlit" : true,
-      "fadePercent" : 0.0,
-      "minSpeed" : 400,
-      "maxSpeed" : 600,
-	  "lightMapped" : true
+      "kind" : "desertforeground2_blue",
+      "offset" : [0, 345],
+      "parallax" : 5.6,
+      "fadePercent" : 0.04
     },
+    {
+      "kind" : "deserttrees",
+      "offset" : [0, 155],
+      "parallax" : 5.7,
+      "fadePercent" : 0.06
+    },
+    {
+      "kind" : "desertforeground3",
+      "offset" : [0, 340],
+      "parallax" : 5.8,
+      "fadePercent" : 0.09
+    },
+    {
+      "kind" : "desertforeground",
+      "offset" : [0, 325],
+      "parallax" : 6.0,
+      "fadePercent" : 0.1
+    },
+    {
+      "kind" : "desertforeground",
+      "offset" : [0, 330],
+      "parallax" : 6.2,
+      "fadePercent" : 0.14
+    },
+    {
+      "kind" : "deserttrees2",
+      "offset" : [0, 275],
+      "parallax" : 6.4,
+      "fadePercent" : 0.20
+    },
+    {
+      "kind" : "desertforeground",
+      "offset" : [0, 310],
+      "parallax" : 6.6,
+      "fadePercent" : 0.24
+    },
+    {
+      "kind" : "desertback2",
+      "offset" : [0, 420],
+      "parallax" : 7,
+      "baseCount" : 4,
+      "fadePercent" : 0.28
+    },
+
     // Day Clouds
 
     {
