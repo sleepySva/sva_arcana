@@ -1,0 +1,70 @@
+{
+  "metadata" : {
+    "name" : "arcana_arcaneSea_dungeon_3",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "entrance_1" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "entrance_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "entrance_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "entrance_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "entrance_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "middle_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "middle_1.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "middle_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "middle_2.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "middle_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "middle_3.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "middle_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "middle_4.json" ],
+      "chance" : 1000
+    }
+  ]
+}

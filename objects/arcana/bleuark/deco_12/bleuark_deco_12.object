@@ -1,0 +1,44 @@
+{
+  "objectName" : "bleuark_deco_12",
+  "colonyTags" : ["atlantic"],
+  "rarity" : "Rare",
+  "description" : "A now non-functional ark machinery part.",
+  "shortdescription" : "Sealed Ark Greeble",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 80,
+  
+  "lightColor" : [0, 0, 0],
+  "lightPosition" : [0, 2],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	 
+	  "renderLayer" : "MiddleParticle+1",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "renderLayer" : "MiddleParticle+1",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

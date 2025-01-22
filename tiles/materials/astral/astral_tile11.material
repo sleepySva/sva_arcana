@@ -1,0 +1,23 @@
+{
+  "materialId" : 16388,
+  "materialName" : "astral_tile11",
+  "particleColor" : [185, 155, 55, 255],
+  "itemDrop" : "astral_tile11",
+
+  "description" : "An ancient temple wall.",
+
+  "shortdescription" : "Arcane Temple Panel",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 20,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile11.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4999
+  }
+}

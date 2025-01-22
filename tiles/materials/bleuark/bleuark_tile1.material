@@ -6,16 +6,16 @@
   "description" : "A dark blue stone block.",
   "shortdescription" : "Seastone Block",
   "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
-  "health" : 18,
+  "health" : 16,
   "category" : "materials",
 
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/pipetemplate.config",
   "renderParameters" : {
     "texture" : "bleuark_tile1.png",
-    "variants" : 10,
+    "variants" : 4,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : true,
+    "multiColored" : false,
     "zLevel" : 1212
   }
 }

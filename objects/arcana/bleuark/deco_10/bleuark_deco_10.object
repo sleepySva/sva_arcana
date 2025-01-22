@@ -1,0 +1,46 @@
+{
+  "objectName" : "bleuark_deco_10",
+  "colonyTags" : ["atlantic"],
+  "rarity" : "Rare",
+  "description" : "A thin luminescent pillar.",
+  "shortdescription" : "Atlantic Pillar",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 60,
+  
+  "lightColor" : [0, 0, 0],
+  "lightPosition" : [0, 2],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "renderLayer" : "Player+1",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "renderLayer" : "Player+1",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
