@@ -65,6 +65,60 @@
       ],
       "def" : [ "tmx", "middle_4.json" ],
       "chance" : 1000
+    },
+    {
+      "name" : "bottom",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom.json" ],
+      "chance" : 100
+    },
+    {
+      "name" : "bottom_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom_1.json" ],
+      "chance" : 50
+    },
+    {
+      "name" : "bottom_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom_2.json" ],
+      "chance" : 50
+    },
+    {
+      "name" : "bottom_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom_3.json" ],
+      "chance" : 50
+    },
+    {
+      "name" : "bottom_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom_4.json" ],
+      "chance" : 50
+    },
+    {
+      "name" : "bottom_right",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom_right.json" ],
+      "chance" : 0
     }
   ]
 }

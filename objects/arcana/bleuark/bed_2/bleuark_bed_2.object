@@ -1,0 +1,54 @@
+{
+  "objectName" : "bleuark_bed_2",
+  "colonyTags" : ["atlantis", "bed"],
+  "rarity" : "Rare",
+  "description" : "A royal looking bed with blue sheets.",
+  "shortdescription" : "Long Seastone Bed",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 340,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-8, 13.2],
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/arcana/bleuark/bed_2/cover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+	  
+	  "sitPosition" : [-8, 13.2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>"} ],
+      "direction" : "right",
+	  "flipImages" : false,
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+	  
+	  "sitPosition" : [-16, 13.2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
