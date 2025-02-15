@@ -1,0 +1,65 @@
+{
+  "projectileName" : "arcana_boss_navigator_3_long",
+  "physics" : "laser",
+  
+  "timeToLive" : 6,
+  "bounces" : 0,
+  "speed" : 14,
+  "piercing" : true,
+  
+  "power" : 24.0,
+  
+  "image" : "box.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 62, 140],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+	{
+	  "action" : "config",
+	  "file" : "/projectiles/explosions/arcana_muzzlecyan/arcana_muzzlecyan.config"
+	},
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/objects/ancient_pot_break_medium6.ogg" ]
+    },
+    {
+      "action" : "explosion",
+      "foregroundRadius" : 2,
+      "backgroundRadius" : 2,
+      "explosiveDamageAmount" : 0.5,
+      "delaySteps" : 2
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.5,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "arcana_boss_navigator_3_static",
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.8,
+	  "inheritSpeedFactor" : 1.0
+    }
+  ],
+  
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-12, -20], [-12, 20], [12, 20], [12, -20] ],
+  
+  "delayTime" : 0.1,
+  "controlForce" : 4,
+  "triggerSpeed" : 14,
+  
+  "scripts" : [ "/projectiles/scripts/arcana_hoverprojectile.lua" ]
+ 
+}

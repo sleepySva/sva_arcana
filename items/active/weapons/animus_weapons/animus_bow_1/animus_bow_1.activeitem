@@ -9,7 +9,7 @@
   "description" : "A bow forged from Anima Chunk and Arcanium. ^green;Inflicts Soulburn, dealing true damage over time.^reset;",
   "shortdescription" : "^#2990de;Animus Bow^reset;",
   "twoHanded" : true,
-  "itemTags" : ["weapon", "ranged", "bow", "animus"],
+  "itemTags" : ["weapon", "ranged", "bow", "animus", "upgradeableWeapon"],
 
   "radioMessagesOnPickup" : [ "pickupbow" ],
 
@@ -88,5 +88,13 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildbow.lua"
+  "builder" : "/items/buildscripts/buildbow.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded_icon.png",
+    "animationParts" : {
+      "bow" : "upgraded.png",
+      "bowFullbright" : "upgraded_fullbright.png"
+    },
+    "shortdescription" : "Animus Bow ^yellow;^reset;"
+  }
 }

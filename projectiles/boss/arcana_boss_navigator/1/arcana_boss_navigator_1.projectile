@@ -1,0 +1,52 @@
+{
+  "projectileName" : "arcana_boss_navigator_1",
+  "physics" : "rain",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 40,
+  "piercing" : true,
+  
+  "power" : 24.0,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 62, 140],
+  "emitters" : [ "arcana_particle_ember_cyan_2" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_navigator/1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.5,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"variance" : {
+		  "initialVelocity" : [2, 2],
+		  "size" : 0.2,
+		  "rotation" : 180,
+		  "angularVelocity" : 180
+		}
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

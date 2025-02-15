@@ -1,7 +1,7 @@
 function init()
   animator.setParticleEmitterOffsetRegion("flames", mcontroller.boundBox())
   animator.setParticleEmitterActive("flames", false)
-  animator.playSound("burn", -1)
+  animator.playSound("bgm", -1)
   
   script.setUpdateDelta(5)
 

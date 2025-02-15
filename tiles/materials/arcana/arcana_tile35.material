@@ -1,0 +1,22 @@
+{
+  "materialId" : 16396,
+  "materialName" : "arcana_tile35",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile35",
+  "description" : "A leafy vine block.",
+  "shortdescription" : "Leafy Vine Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 2,
+  "category" : "materials",
+
+  "blocksLiquidFlow" : false,
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile35.png",
+    "variants" : 3,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 4998
+  }
+}

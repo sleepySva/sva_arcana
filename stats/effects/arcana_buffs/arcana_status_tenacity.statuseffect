@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_status_tenacity",
+  "blockingStat" : "arcana_status_tenacity_immunity",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "powerMultiplier",
+        "effectiveMultiplier" : 1.2
+      }
+    ]
+	
+  },
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "arcana_status_tenacity.lua"
+  ],
+  
+  "label" : "Tenacity: ^green;+20% Damage^reset; while under 50% health.",
+  "icon" : "/interface/statuses/rage.png"
+}

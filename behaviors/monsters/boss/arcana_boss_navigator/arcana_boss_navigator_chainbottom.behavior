@@ -1,0 +1,334 @@
+{
+  "name": "arcana_boss_navigator_chainbottom",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/projectiles.lua"
+  ],
+  "parameters": {
+    "jumpVelocityX": 0,
+    "jumpVelocityY": 0,
+    "stopForce": 60,
+    "projectileCount": 1
+  },
+  "root": {
+    "title": "Reset",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "entityPosition",
+        "type": "action",
+        "name": "entityPosition",
+        "parameters": {
+          "entity": {"key": "target"}
+        },
+        "output": {
+          "position": "targetPosition"
+        }
+      },
+      {
+        "title": "distance",
+        "type": "action",
+        "name": "distance",
+        "parameters": {
+          "from": {"key": "self"},
+          "to": {"key": "targetPosition"}
+        },
+        "output": {
+          "x": "toTarget"
+        }
+      },
+      {
+        "title": "distance",
+        "type": "action",
+        "name": "distance",
+        "parameters": {
+          "from": {"key": "self"},
+          "to": {"key": "targetPosition"}
+        },
+        "output": {
+          "vector": "aimVector"
+        }
+      },
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {
+          "direction": {"key": "toTarget"}
+        },
+        "output": {
+          "direction": "toTarget"
+        }
+      },
+      {
+        "title": "faceDirection",
+        "type": "action",
+        "name": "faceDirection",
+        "parameters": {
+          "direction": {"key": "toTarget"}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": 1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "controlParameters",
+            "type": "action",
+            "name": "controlParameters",
+            "parameters": {
+              "parameters": {"value": {"gravityEnabled": false}}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "setAnimationState",
+                "type": "action",
+                "name": "setAnimationState",
+                "parameters": {
+                  "state": {"value": "jump"},
+                  "type": {"value": "body"}
+                }
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "offsetPosition",
+                    "type": "action",
+                    "name": "offsetPosition",
+                    "parameters": {
+                      "offset": {"value": [0, -20]},
+                      "position": {"key": "targetPosition"}
+                    },
+                    "output": {
+                      "position": "offsetPosition"
+                    }
+                  },
+                  {
+                    "title": "repeater",
+                    "type": "decorator",
+                    "name": "repeater",
+                    "parameters": {
+                      "maxLoops": {"key": "<projectileCount>"},
+                      "untilSuccess": {"value": false}
+                    },
+                    "child": {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+					    {
+						  "title": "distance",
+						  "type": "action",
+						  "name": "distance",
+						  "parameters": {
+						    "from": {"key": "self"},
+						    "to": {"key": "targetPosition"}
+						  },
+						  "output": {
+						    "vector": "aim"
+						  }
+					    },
+                        {
+                          "title": "playSound",
+                          "type": "action",
+                          "name": "playSound",
+                          "parameters": {
+                            "sound": {"value": "chain"}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [-40.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [-30.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [-20.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [-10.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [0.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [10.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [20.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [30.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "spawnProjectile",
+                          "type": "action",
+                          "name": "spawnProjectile",
+                          "parameters": {
+                            "aimVector": {"value": [0.0, 1.0]},
+                            "angle": {"value": 0},
+                            "offset": {"value": [40.0, 0.0]},
+                            "position": {"key": "offsetPosition"},
+                            "projectileConfig": {"value": {}},
+                            "projectileType": {"value": "arcana_boss_navigator_5short"},
+                            "scalePower": {"value": true},
+                            "sourceEntity": {"key": "self"},
+                            "trackSource": {"value": false}
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": 0.2}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "setAnimationState",
+        "type": "action",
+        "name": "setAnimationState",
+        "parameters": {
+          "state": {"value": "fall"},
+          "type": {"value": "body"}
+        }
+      }
+    ]
+  }
+}

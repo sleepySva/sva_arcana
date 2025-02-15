@@ -1,0 +1,30 @@
+{
+  "projectileName" : "arcana_boss_navigator_1_orb",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 10,
+  "piercing" : true,
+  
+  "power" : 24.0,
+  
+  "image" : "orb.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 62, 140],
+  "emitters" : [ "arcana_particle_ember_cyan_2" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

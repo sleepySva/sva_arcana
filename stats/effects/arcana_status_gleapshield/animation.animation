@@ -1,0 +1,62 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "shield" : {
+        "priority" : 2,
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "fulloff"
+          },
+          "fulloff" : {
+            "frames" : 1
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {      
+      "shield" : {
+        "properties" : {
+          "zLevel" : 5,
+          "centered" : true,
+          "offset" : [0, 0],
+		  "fullbright" : true
+        },
+
+        "partStates" : {
+          "shield" : {
+            "on" : {
+              "properties" : {
+                "image" : "/animations/arcana_gleapshield/body.png:on.<frame>"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "/animations/arcana_gleapshield/body.png:off.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "particleEmitters" : {
+    "default" : {
+      "active" : false,
+      "emissionRate" : 3,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [
+      ]
+    }
+  }
+}

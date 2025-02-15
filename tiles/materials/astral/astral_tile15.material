@@ -1,0 +1,21 @@
+{
+  "materialId" : 16394,
+  "materialName" : "astral_tile15",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile15",
+  "description" : "An Arcanian fabric tile used for decorating purposes.",
+  "shortdescription" : "Astral Fabric ^orange;Dunes^reset;",
+  "footstepSound" : "/sfx/blocks/footstep_ash.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile15.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 12
+  }
+}

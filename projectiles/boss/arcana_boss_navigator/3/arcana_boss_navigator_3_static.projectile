@@ -1,0 +1,43 @@
+{
+  "projectileName" : "arcana_boss_navigator_3_static",
+  "physics" : "laser",
+  
+  "timeToLive" : 5,
+  "bounces" : 0,
+  "speed" : 1,
+  "piercing" : true,
+  
+  "power" : 24.0,
+  
+  "image" : "blue.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 62, 140],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-12, -24], [-12, 24], [12, 24], [12, -24] ],
+  
+  "delayTime" : 0.1,
+  "controlForce" : 1,
+  "triggerSpeed" : 1,
+  
+  "scripts" : [ "/projectiles/scripts/arcana_hoverprojectile.lua" ]
+ 
+}

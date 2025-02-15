@@ -8,7 +8,7 @@
   "tooltipKind" : "arcana_gun",
   "category" : "assaultRifle",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "itemTags" : ["weapon","ranged","assaultrifle","upgradeableWeapon"],
   "level" : 6,
 
   "inventoryIcon" : "icon.png",
@@ -18,16 +18,25 @@
     "butt" : "",
     "middle" : "bleuark_assaultRifle_1.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_blue.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0, -0.5]
+		  }
+		}
+	  }
+	},
     "sounds" : {
-      "fire" : ["/sfx/gun/plasma_sniper1.ogg"]
+      "fire" : ["/sfx/gun/plasma_ar4.ogg"]
     }
   },
 
   "baseOffset" : [1.2, 0.25],
-  "muzzleOffset" : [2.4, 0.4],
+  "muzzleOffset" : [2.0, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -62,8 +71,8 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -71,8 +80,8 @@
       },
       "cooldown" : {
         "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -122,5 +131,12 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "middle" : "upgraded.png"
+    },
+    "shortdescription" : "Golden Triumph ^yellow;^reset;"
+  }
 }

@@ -1,21 +1,21 @@
 {
   "projectileName" : "bleuark_assaultRifle_1_projectile_1",
-  "physics" : "grenade",
+  "physics" : "laser",
   
   "timeToLive" : 4,
   "bounces" : 0,
-  "speed" : 46,
+  "speed" : 36,
   "piercing" : true,
   
   "power" : 24.0,
   
-  "image" : "bleuark_assaultRifle_1_projectile_1.png",
+  "image" : "body.png",
   "animationCycle" : 0.2,
   "frameNumber" : 1,
   
   "fullbright" : true,
-  "lightColor" : [20, 62, 145],
-  "emitters" : ["icetrailfast","drinking","capturepodblue"],
+  "lightColor" : [10, 62, 140],
+  "emitters" : [ "arcana_particle_ember_cyan_2" ],
   
   "supportsProcessing" : true,
   
@@ -28,19 +28,25 @@
   
   "periodicActions" : [
     {
-      "time" : 0.066,
+      "time" : 0.01,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
       "specification" : {
         "type" : "textured",
-        "image" : "/projectiles/activeitems/guns/bullets/bleuark_assaultRifle_1_projectile_1/bleuark_assaultRifle_1_projectile_1_trail.png",
+        "image" : "/projectiles/activeitems/guns/bullets/bleuark_assaultRifle_1_projectile_1/trail.png",
         "position" : [0, 0],
         "layer" : "back",
         "timeToLive" : 0.0,
-        "destructionTime" : 0.2,
-        "destructionAction" : "fade",
-        "fullbright" : true
+        "destructionTime" : 0.5,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"variance" : {
+		  "initialVelocity" : [2, 2],
+		  "size" : 0.2,
+		  "rotation" : 180,
+		  "angularVelocity" : 180
+		}
       }
     }
   ],

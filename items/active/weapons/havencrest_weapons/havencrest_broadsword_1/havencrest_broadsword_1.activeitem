@@ -96,8 +96,8 @@
   "elementalType": "physical",
   "primaryAbilityType": "broadswordcombo",
   "primaryAbility": {
-    "fireTime": 1.5,
-    "baseDps": 13,
+    "fireTime": 1.4,
+    "baseDps": 11.2,
     "damageConfig": {
       "knockback": 22,
       "damageSourceKind": "broadsword"
@@ -110,16 +110,16 @@
       [0.75, 0.0, 4.25, 5.0]
     ],
     "stepDamageConfig": [{
-      "baseDamageFactor": 0.5,
+      "baseDamageFactor": 0.7,
       "knockback": 18
     }, {
-      "baseDamageFactor": 0.4,
+      "baseDamageFactor": 0.6,
       "knockback": 15
     }, {
-      "baseDamageFactor": 0.5,
+      "baseDamageFactor": 0.7,
       "knockback": 26
     }, {
-      "baseDamageFactor": 0.8,
+      "baseDamageFactor": 1.0,
       "knockback": 32
     }],
     "stances": {

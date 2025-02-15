@@ -1,0 +1,21 @@
+{
+  "materialId" : 16393,
+  "materialName" : "astral_tile14",
+  "particleColor" : [185, 155, 55, 255],
+  "itemDrop" : "astral_tile14",
+  "description" : "A smooth sandstone brick tile.",
+  "shortdescription" : "Red Arcane Temple Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile14.png",
+    "variants" : 6,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 133
+  }
+}

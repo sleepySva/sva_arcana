@@ -9,7 +9,7 @@
   "tooltipKind" : "arcana_sword",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear"],
+  "itemTags" : ["weapon","melee","spear","upgradeableWeapon"],
 
   "inventoryIcon" : "body.png:idle.1",
 
@@ -38,5 +38,12 @@
 
   "altAbilityType" : "spearspin",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "blade" : "upgraded.png"
+    },
+    "shortdescription" : "Arioforged Spear ^yellow;^reset;"
+  }
 }

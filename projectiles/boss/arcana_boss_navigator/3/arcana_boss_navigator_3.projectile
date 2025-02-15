@@ -1,0 +1,94 @@
+{
+  "projectileName" : "arcana_boss_navigator_3",
+  "physics" : "laser",
+  
+  "timeToLive" : 8,
+  "bounces" : 0,
+  "speed" : 6,
+  "piercing" : true,
+  
+  "power" : 24.0,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.1,
+  "frameNumber" : 1,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 62, 140],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+	  "action" : "config",
+	  "file" : "/projectiles/explosions/arcana_muzzlecyan/arcana_muzzlecyan.config"
+	},
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/objects/ancient_pot_break_medium6.ogg" ]
+    },
+    {
+      "action" : "explosion",
+      "foregroundRadius" : 2,
+      "backgroundRadius" : 2,
+      "explosiveDamageAmount" : 0.5,
+      "delaySteps" : 2
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_navigator_1",
+        "angleAdjust" : -45,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_navigator_1",
+        "angleAdjust" : 45,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_navigator_1",
+        "angleAdjust" : 20,
+        "inheritDamageFactor" : 0.1
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_navigator_1",
+        "angleAdjust" : -20,
+        "inheritDamageFactor" : 0.1
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.03,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_navigator/3/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-9, 0], [-2, 26], [9, 0], [-2, -26] ],
+  
+  "delayTime" : 1.4,
+  "controlForce" : 4,
+  "triggerSpeed" : 80,
+  
+  "scripts" : [ "/projectiles/scripts/arcana_hoverprojectile.lua" ]
+ 
+}

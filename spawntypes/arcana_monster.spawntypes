@@ -2,6 +2,36 @@
   // unique monsters
 
   {
+    "name" : "arcana_arcaneGleap",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "all",
+      "time" : "all"
+    },
+    "spawnChance" : 0.1,
+    "monsterType" : "arcana_monster_arcaneGleap",
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+
+  {
+    "name" : "arcana_maskedOogler",
+
+    "spawnParameters" : {
+      "area" : "surface",
+      "region" : "all",
+      "time" : "all"
+    },
+    "spawnChance" : 0.1,
+    "monsterType" : "arcana_monster_maskedOogler",
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+
+  {
     "name" : "arcana_mudmidge",
 
     "spawnParameters" : {

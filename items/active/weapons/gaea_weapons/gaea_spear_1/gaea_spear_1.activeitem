@@ -1,6 +1,6 @@
 {
   "itemName" : "gaea_spear_1",
-  "price" : 1000,
+  "price" : 900,
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "Uncommon",
@@ -9,7 +9,7 @@
   "tooltipKind" : "arcana_sword",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear"],
+  "itemTags" : ["weapon","melee","spear","upgradeableWeapon"],
   "collectablesOnPickup" : { "arcana_collection_weapon_elemental" : "gaea_spear_1" },
 
   "inventoryIcon" : "icon.png",
@@ -37,5 +37,12 @@
     "baseDps" : 8.6
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "blade" : "upgraded.png"
+    },
+    "shortdescription" : "Rampant Spike ^yellow;^reset;"
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16395,
+  "materialName" : "arcana_tile34",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile34",
+  "description" : "A palm leaf block.",
+  "shortdescription" : "Palm Leaf Block",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile34.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 4999
+  }
+}

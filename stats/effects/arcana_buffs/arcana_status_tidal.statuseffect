@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_status_tidal",
+  "blockingStat" : "arcana_status_tidal_immunity",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+      {
+        "stat" : "powerMultiplier",
+        "effectiveMultiplier" : 1.2
+      }
+    ]
+	
+  },
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "arcana_status_tidal.lua"
+  ],
+  
+  "label" : "Tidal: ^green;+20% Damage^reset; while underwater.",
+  "icon" : "/interface/statuses/swimboost.png"
+}

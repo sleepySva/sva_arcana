@@ -1,0 +1,18 @@
+{
+  "kind" : "arcana_gleapimage",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_gleapimage/arcana_gleapimage.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [20, 20],
+    "fade" : 1,
+    "size" : 1,
+    "layer" : "back",
+    "timeToLive" : 0.3,
+    "variance" : {
+      "initialVelocity" : [3, 3],
+      "finalVelocity" : [0, 0]
+    }
+  }
+}

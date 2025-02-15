@@ -1,0 +1,21 @@
+{
+  "materialId" : 16391,
+  "materialName" : "astral_tile12",
+  "particleColor" : [185, 155, 55, 255],
+  "itemDrop" : "astral_tile12",
+  "description" : "A sandstone brick tile with different carved patterns.",
+  "shortdescription" : "Arcane Temple Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile12.png",
+    "variants" : 6,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 132
+  }
+}

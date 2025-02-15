@@ -4,12 +4,12 @@
   "level" : 7,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A dark broadsword.",
+  "description" : "A dark broadsword forged from Necroium. ^green;Tenacity: +20% Damage while at 50% health or less.^reset;",
   "shortdescription" : "^#847d8b;Tenebrosity^reset;",
   "tooltipKind" : "arcana_sword",
   "category" : "broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword"],
+  "itemTags" : ["weapon","melee","broadsword","upgradeableWeapon"],
   "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "horizon_broadsword_1" },
 
   "inventoryIcon" : "icon.png",
@@ -39,7 +39,8 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+  "itemStatus" : "arcana_status_tenacity",
 
   "elementalType" : "arcana_abyss",
 
@@ -69,5 +70,13 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "blade" : "upgraded.png",
+	  "handle" : "upgraded_fullbright.png"
+    },
+    "shortdescription" : "Tenebrosity ^yellow;^reset;"
+  }
 }

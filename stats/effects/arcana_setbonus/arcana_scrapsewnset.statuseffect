@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_scrapsewnset",
+  "effectConfig" : {
+  
+    "set" : "arcana_scrapsewnset",
+	"minParts" : 3,
+    "statModifiers" : [
+    ],
+	"weaponBuff" : {
+      "tags" : ["ranged"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

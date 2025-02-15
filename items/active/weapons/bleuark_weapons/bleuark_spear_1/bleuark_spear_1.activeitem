@@ -1,15 +1,15 @@
 {
   "itemName" : "bleuark_spear_1",
-  "price" : 1000,
+  "price" : 1200,
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A spear made from atla gold.",
-  "shortdescription" : "Atlantis Spear",
+  "description" : "A golden trident, perfect for hunting big fishes. ^green;Tidal: +20% Damage while underwater.^reset;",
+  "shortdescription" : "Atlantis Trident",
   "tooltipKind" : "arcana_sword",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear"],
+  "itemTags" : ["weapon","melee","spear","upgradeableWeapon"],
 
   "inventoryIcon" : "icon.png",
 
@@ -29,7 +29,8 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+  "itemStatus" : "arcana_status_tidal",
 
   "elementalType" : "physical",
 
@@ -62,5 +63,12 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "blade" : "upgraded.png"
+    },
+    "shortdescription" : "Atlantis Trident ^yellow;^reset;"
+  }
 }

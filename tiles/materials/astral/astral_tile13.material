@@ -1,0 +1,21 @@
+{
+  "materialId" : 16392,
+  "materialName" : "astral_tile13",
+  "particleColor" : [185, 155, 55, 255],
+  "itemDrop" : "astral_tile13",
+  "description" : "A smooth sandstone brick tile.",
+  "shortdescription" : "Smooth Arcane Temple Brick",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 12,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile13.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 134
+  }
+}

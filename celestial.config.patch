@@ -94,7 +94,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -106,7 +106,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 0.1, "item" : "Moon"},
+						{"weight" : 0.1, "item" : "arcana_moon"},
 						{"weight" : 0.9, "item" : "arcana_planetary_arcane"}
 					  ]
 					},
@@ -120,7 +120,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -187,7 +187,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -200,7 +200,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 0.1, "item" : "Moon"},
+						{"weight" : 0.1, "item" : "arcana_moon"},
 						{"weight" : 0.9, "item" : "arcana_planetary_illuminated"}
 					  ]
 					},
@@ -214,7 +214,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -281,7 +281,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -294,7 +294,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 0.1, "item" : "Moon"},
+						{"weight" : 0.1, "item" : "arcana_moon"},
 						{"weight" : 0.90, "item" : "arcana_planetary_superstorm"}
 					  ]
 					},
@@ -307,7 +307,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -373,7 +373,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -399,7 +399,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -457,7 +457,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -483,7 +483,7 @@
 						{"weight" : 0.05, "item" : "AsteroidField"}
 					  ],
 					  "satelliteTypes" : [
-						{"weight" : 1, "item" : "Moon"}
+						{"weight" : 1, "item" : "arcana_moon"}
 					  ]
 					},
 					{
@@ -529,6 +529,35 @@
 					  "worldSize" : "large"
 					}
 				  ]
+			}
+		},
+		
+		{
+			"op":"add",
+			"path":"/satelliteTypes/arcana_moon",
+			"value":
+			{
+			  "baseParameters" : {
+				"worldType" : "Terrestrial",
+				"description" : "Bog Standard Moon",
+
+				"terrestrialType" : [ "arcana_redMoon", "arcana_frostMoon", "arcana_cyberMoon", "arcana_toxicMoon", "moon" ]
+			  },
+
+			  "variationParameters" : [
+				{
+				  "imageScale" : 0.035,
+				  "worldSize" : "small"
+				},
+				{
+				  "imageScale" : 0.045,
+				  "worldSize" : "small"
+				},
+				{
+				  "imageScale" : 0.055,
+				  "worldSize" : "small"
+				}
+			  ]
 			}
 		},
 
@@ -1534,26 +1563,6 @@
 				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/arid/<num>.png",
 				"dynamicsRange" : [1, 50]
 			}
-		},
-		{
-			"op": "add",
-			"path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-",
-			"value": "arcana_redMoon"
-		},
-		{
-			"op": "add",
-			"path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-",
-			"value": "arcana_frostMoon"
-		},
-		{
-			"op": "add",
-			"path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-",
-			"value": "arcana_cyberMoon"
-		},
-		{
-			"op": "add",
-			"path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-",
-			"value": "arcana_toxicMoon"
 		}
 
 	],

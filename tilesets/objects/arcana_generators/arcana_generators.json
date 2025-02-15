@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":1,
+ "tilecount":2,
  "tileheight":256,
  "tileproperties":
     {
@@ -16,6 +16,14 @@
          "imagePositionY":"0",
          "object":"arcana_generator_orion",
          "tilesetDirection":"right"
+        },
+     "1":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-80",
+         "imagePositionY":"0",
+         "object":"arcana_generator_bleuark",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -23,6 +31,10 @@
      "0":
         {
          "image":"arcana_generator_orion.png"
+        },
+     "1":
+        {
+         "image":"arcana_generator_bleuark.png"
         }
     },
  "tilewidth":188

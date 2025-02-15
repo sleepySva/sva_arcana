@@ -1,0 +1,37 @@
+{
+  "projectileName" : "arcana_boss_navigator_5_static",
+  "physics" : "laser",
+  
+  "timeToLive" : 10,
+  "bounces" : 0,
+  "speed" : 0,
+  "piercing" : true,
+  
+  "power" : 24.0,
+  
+  "image" : "blue.png",
+  "animationCycle" : 0.1,
+  "frameNumber" : 1,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 40, 100],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+  ],
+  
+  "periodicActions" : [
+  ],
+  
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-26, 0], [0, 4], [26, 0], [0, -4] ]
+ 
+}

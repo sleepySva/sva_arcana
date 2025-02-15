@@ -9,7 +9,7 @@
   "tooltipKind" : "arcana_sword",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","animus"],
+  "itemTags" : ["weapon","melee","axe","animus","upgradeableWeapon"],
 
   "inventoryIcon" : "body.png",
 
@@ -92,5 +92,13 @@
 	
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "blade" : "upgraded.png",
+	  "handle" : "upgraded_fullbright.png"
+    },
+    "shortdescription" : "Animus Axe ^yellow;^reset;"
+  }
 }
