@@ -720,7 +720,8 @@
         },
         "subsurface" : {
           "primaryRegion" : ["arcana_arcaneSea_floor"],
-          "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
+		  "dungeonCountRange" : [1, 1],
+          "dungeons" : [[1.0, "arcana_arcaneSea_dungeon_3"]]
         },
         "underground1" : {
           "primaryRegion" : [ "arcana_arcaneSea_underground_1" ]

@@ -1,5 +1,66 @@
 {
 
+  "arcana_dungeonloots_sealedarkbooks" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.7, "item" : ["bookpiles", 1]},
+		{"weight" : 0.2, "item" : ["paper", 1]},
+		{"weight" : 0.1, "item" : ["arcana_ore_atlaGoldOre", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 3],
+		[0.2, 4],
+		[0.2, 5],
+		[0.2, 6],
+        [0.2, 7]
+      ]
+    }]
+  ],  
+
+  "arcana_dungeonloots_sealedarkbasic" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["bleuark_tile4", 10]},
+		{"weight" : 1.0, "item" : ["bleuark_tile8", 10]},
+		{"weight" : 1.0, "item" : ["bleuark_tile9", 10]},
+		{"weight" : 1.0, "item" : ["bleuark_tile12", 10]},
+		{"weight" : 1.0, "item" : ["bleuark_deco_9", 1]},
+		{"weight" : 1.0, "item" : ["bleuark_deco_10", 1]},
+		{"weight" : 1.0, "item" : ["bleuark_light_1", 1]},
+		{"weight" : 1.0, "item" : ["bleuark_light_2", 1]},
+		{"weight" : 1.0, "item" : ["bleuark_light_3", 1]},
+		{"weight" : 1.0, "item" : ["bleuark_light_4", 1]},
+		{"weight" : 1.0, "item" : ["bleuark_light_5", 1]},
+		{"weight" : 1.0, "item" : ["arcana_ore_atlaGoldOre", 2]}
+      ],
+      "poolRounds" : [
+        [0.2, 1],
+		[0.2, 2],
+		[0.2, 3],
+		[0.2, 4],
+        [0.2, 5]
+      ]
+    }]
+  ],   
+  
+  "arcana_dungeonloots_sealedarkrare" : [
+    [0, {
+	  "fill" : [
+        {"pool" : "basicChestTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "pool" : "arcana_dungeonloots_sealedarkbasic"}
+      ],
+      "poolRounds" : [
+        [0.2, 2],
+		[0.2, 3],
+		[0.2, 4],
+		[0.2, 5],
+        [0.2, 6]
+      ]
+    }]
+  ],  
+
   "arcana_dungeonloots_seacrystal" : [
     [0, {
       "pool" : [

@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_bluecheese",
+  "rarity" : "Common",
+  "price" : 240,
+  "category" : "preparedFood",
+  "inventoryIcon" : "arcana_bluecheese.png",
+  "description" : "A piece of cheese that can pratically last forever. Not very tasty, though.",
+  "shortdescription" : "Blue Cheese",
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 180
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 9999,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 10,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -36,6 +36,14 @@
           "shouldDie": {"value": false}
         }
       },
+	  {
+		"title": "controlParameters",
+		"type": "action",
+		"name": "controlParameters",
+		"parameters": {
+		  "parameters": {"value": {"gravityEnabled": false}}
+		}
+	  },
       {
         "title": "setAggressive",
         "type": "action",
@@ -74,14 +82,6 @@
               "queryTargets": {"value": true},
               "targetOnDamage": {"value": true},
               "targetOutOfSightTime": {"value": 100}
-            }
-          },
-          {
-            "title": "controlParameters",
-            "type": "action",
-            "name": "controlParameters",
-            "parameters": {
-              "parameters": {"value": {"gravityEnabled": false}}
             }
           },
           {
@@ -280,6 +280,17 @@
 							    "time": {"value": 0.4}
 							  }
 						    },
+						    {
+							  "title": "arcana_boss_navigator_teleport",
+							  "type": "module",
+							  "name": "arcana_boss_navigator_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_navigatorright"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
+							  }
+						    },
                             {
                               "title": "arcana_boss_navigator_trianglebig",
                               "type": "module",
@@ -307,6 +318,23 @@
 							  "parameters": {
 							    "time": {"value": 1.0}
 							  }
+						    },
+						    {
+							  "title": "arcana_boss_navigator_teleport",
+							  "type": "module",
+							  "name": "arcana_boss_navigator_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_navigatorleft"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
+							  }
+						    },
+						    {
+							  "title": "cultistboss-facecenter",
+							  "type": "module",
+							  "name": "cultistboss-facecenter",
+							  "parameters": {}
 						    },
                             {
                               "title": "arcana_boss_navigator_trianglecage",
@@ -336,6 +364,17 @@
 							    "time": {"value": 0.5}
 							  }
 						    },
+						    {
+							  "title": "arcana_boss_navigator_teleport",
+							  "type": "module",
+							  "name": "arcana_boss_navigator_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_navigatorright"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
+							  }
+						    },
                             {
                               "title": "arcana_boss_navigator_triangle",
                               "type": "module",
@@ -370,6 +409,17 @@
 							    "time": {"value": 2.0}
 							  }
 						    },
+						    {
+							  "title": "arcana_boss_navigator_teleport",
+							  "type": "module",
+							  "name": "arcana_boss_navigator_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_navigatorleft"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
+							  }
+						    },
                             {
                               "title": "arcana_boss_navigator_triangle",
                               "type": "module",
@@ -439,6 +489,23 @@
 							  "parameters": {
 							    "time": {"value": 1.0}
 							  }
+						    },
+						    {
+							  "title": "arcana_boss_navigator_teleport",
+							  "type": "module",
+							  "name": "arcana_boss_navigator_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_navigatorhigh"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
+							  }
+						    },
+						    {
+							  "title": "cultistboss-facecenter",
+							  "type": "module",
+							  "name": "cultistboss-facecenter",
+							  "parameters": {}
 						    },
                             {
                               "title": "arcana_boss_navigator_trianglecage",
@@ -515,11 +582,56 @@
                               "parameters": {}
                             },
 						    {
+							  "title": "arcana_boss_navigator_teleport",
+							  "type": "module",
+							  "name": "arcana_boss_navigator_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_navigatorhigh"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
+							  }
+						    },
+						    {
+							  "title": "cultistboss-facecenter",
+							  "type": "module",
+							  "name": "cultistboss-facecenter",
+							  "parameters": {}
+						    },
+						    {
 							  "title": "timer",
 							  "type": "action",
 							  "name": "timer",
 							  "parameters": {
-							    "time": {"value": 4.0}
+							    "time": {"value": 1.0}
+							  }
+						    },
+                            {
+                              "title": "arcana_boss_navigator_trianglebiglow",
+                              "type": "module",
+                              "name": "arcana_boss_navigator_trianglebiglow",
+                              "parameters": {}
+                            },
+						    {
+							  "title": "timer",
+							  "type": "action",
+							  "name": "timer",
+							  "parameters": {
+							    "time": {"value": 1.0}
+							  }
+						    },
+                            {
+                              "title": "arcana_boss_navigator_trianglebiglow",
+                              "type": "module",
+                              "name": "arcana_boss_navigator_trianglebiglow",
+                              "parameters": {}
+                            },
+						    {
+							  "title": "timer",
+							  "type": "action",
+							  "name": "timer",
+							  "parameters": {
+							    "time": {"value": 2.0}
 							  }
 						    },
                             {
@@ -535,6 +647,23 @@
 							  "parameters": {
 							    "time": {"value": 1.0}
 							  }
+						    },
+						    {
+							  "title": "arcana_boss_navigator_teleport",
+							  "type": "module",
+							  "name": "arcana_boss_navigator_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_navigatorhigh"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
+							  }
+						    },
+						    {
+							  "title": "cultistboss-facecenter",
+							  "type": "module",
+							  "name": "cultistboss-facecenter",
+							  "parameters": {}
 						    },
                             {
                               "title": "arcana_boss_navigator_trianglebig",

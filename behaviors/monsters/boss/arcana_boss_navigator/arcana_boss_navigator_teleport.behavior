@@ -1,0 +1,225 @@
+{
+  "name": "arcana_boss_navigator_teleport",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/query.lua",
+    "/scripts/behavior/bdata.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "positionType": "",
+    "shufflePositions": true,
+    "reverseOrder": false,
+    "positionIndex": 1
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "findStagehand",
+        "type": "action",
+        "name": "findStagehand",
+        "parameters": {
+          "orderBy": {"value": "nearest"},
+          "position": {"key": "self"},
+          "range": {"value": 140},
+          "type": {"value": "<positionType>"}
+        },
+        "output": {
+          "list": "teleportPositions"
+        }
+      },
+      {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "optional",
+          "type": "decorator",
+          "name": "optional",
+          "parameters": {
+            "shouldRun": {"key": "<shufflePositions>"}
+          },
+          "child": {
+            "title": "listShuffle",
+            "type": "action",
+            "name": "listShuffle",
+            "parameters": {
+              "list": {"key": "teleportPositions"}
+            },
+            "output": {
+              "list": "teleportPositions"
+            }
+          }
+        }
+      },
+      {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "optional",
+          "type": "decorator",
+          "name": "optional",
+          "parameters": {
+            "shouldRun": {"key": "<reverseOrder>"}
+          },
+          "child": {
+            "title": "listReverse",
+            "type": "action",
+            "name": "listReverse",
+            "parameters": {
+              "list": {"key": "teleportPositions"}
+            },
+            "output": {
+              "list": "teleportPositions"
+            }
+          }
+        }
+      },
+      {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "repeater",
+          "type": "decorator",
+          "name": "repeater",
+          "parameters": {
+            "maxLoops": {"key": "<positionIndex>"},
+            "untilSuccess": {"value": false}
+          },
+          "child": {
+            "title": "listPop",
+            "type": "action",
+            "name": "listPop",
+            "parameters": {
+              "list": {"key": "teleportPositions"}
+            },
+            "output": {
+              "list" : "teleportPositions",
+              "entity": "teleportStagehand"
+            }
+          }
+        }
+      },
+      {
+        "title": "entityPosition",
+        "type": "action",
+        "name": "entityPosition",
+        "parameters": {
+          "entity": {"key": "teleportStagehand"}
+        },
+        "output": {
+          "position": "teleportPosition"
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "controlApproachVelocity",
+            "type": "action",
+            "name": "controlApproachVelocity",
+            "parameters": {
+              "force": {"value": 500},
+              "velocity": {"value": [0, 0]}
+            }
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "selector",
+                "type": "composite",
+                "name": "selector",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "optional",
+                    "type": "decorator",
+                    "name": "optional",
+                    "parameters": {
+                      "shouldRun": {"key": "intro"}
+                    },
+                    "child": {
+                      "title": "setAnimationState",
+                      "type": "action",
+                      "name": "setAnimationState",
+                      "parameters": {
+                        "state": {"value": "beamin"},
+                        "type": {"value": "body"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "beamout"},
+                      "type": {"value": "body"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": 0.6}
+                }
+              },
+              {
+                "title": "setPosition",
+                "type": "action",
+                "name": "setPosition",
+                "parameters": {
+                  "footPosition": {"value": false},
+                  "position": {"key": "teleportPosition"}
+                }
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": {"value": 0.1}
+                }
+              },
+              {
+                "title": "setAnimationState",
+                "type": "action",
+                "name": "setAnimationState",
+                "parameters": {
+                  "state": {"value": "beamin"},
+                  "type": {"value": "body"}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

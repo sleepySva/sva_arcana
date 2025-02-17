@@ -7,7 +7,7 @@
   "animation" : "animation.animation",
   "reversed" : false,
 
-  "dropPools" : [ "money" ],
+  "dropPools" : [ "arcana_bossdrops_navigator" ],
 
   "baseParameters" : {
     "monsterClass" : "boss",
@@ -91,7 +91,8 @@
     "selfDamagePoly" : [ [-1.0, -1.75], [-0.75, -2.0], [0.75, -2.0], [1.0, -1.75], [1.0, 1.75], [0.75, 2.0], [-0.75, 2.0], [-1.0, 1.75] ],
 
     "movementSettings" : {
-      "collisionEnabled" : false,
+      "collisionEnabled" : true,
+	  "gravityEnabled" : false,
       "collisionPoly" : [ [-1.0, -2.75], [-0.75, -3.0], [0.75, -3.0], [1.0, -2.75], [1.0, 1.75], [0.75, 2.0], [-0.75, 2.0], [-1.0, 1.75] ],
       "mass" : 1.0,
       "physicsEffectCategories" : ["boss"]
@@ -123,7 +124,7 @@
           "baseValue" : 1.0
         },
         "maxHealth" : {
-          "baseValue" : 4000
+          "baseValue" : 4800
         },
         "protection" : {
           "baseValue" : 1.0
@@ -179,7 +180,7 @@
       }
     },
 
-    "mouthOffset" : [0, 0],
+    "mouthOffset" : [0, 2],
     "feetOffset" : [0, 0]
   }
 }

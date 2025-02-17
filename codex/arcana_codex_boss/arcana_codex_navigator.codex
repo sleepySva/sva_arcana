@@ -1,0 +1,15 @@
+{
+  "id" : "arcana_codex_navigator",
+  "title" : "The Navigator",
+  "description" : "A short entry about the Navigator.",
+  "icon" : "arcana_codex_navigator.png",
+  "contentPages" :
+  [
+    "The A.I. that guides the Starstriders as well as their ship systems. Although the ancient arks were sealed beneath the waters long ago, the Navigator still remains, keeping watch of the old relics. It finds no purpose in preserving the vessel, and instead seeks to guide those who hold a glimmering potential."
+  ],
+    "itemConfig" : {
+    "rarity" : "Legendary",
+    "price" : 600,
+	"collectablesOnPickup" : { "arcana_bosses" : "navigator" }
+  }
+}
