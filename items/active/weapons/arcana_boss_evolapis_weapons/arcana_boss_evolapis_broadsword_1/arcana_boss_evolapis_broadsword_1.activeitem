@@ -1,10 +1,10 @@
 {
   "itemName" : "arcana_boss_evolapis_broadsword_1",
-  "price" : 1120,
+  "price" : 1600,
   "level" : 7,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A jade plasma blade forged from the primordial powers.",
+  "description" : "A jade plasma blade forged from the primordial powers. ^green;Inflicts Poisoned on hit.^reset;",
   "shortdescription" : "^#1e9a79;Archosa^reset;",
   "tooltipKind" : "arcana_sword",
   "category" : "broadsword",
@@ -63,10 +63,11 @@
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime":0.65,
-    "baseDps":10.2,
+    "baseDps":14.0,
     "damageConfig":{
         "knockback":10,
-        "damageSourceKind": "poisonbroadsword"
+        "damageSourceKind": "poisonbroadsword",
+        "statusEffects" : [ "weakpoison" ]
       },
       "comboSteps":4,
       "swooshOffsetRegions":[
@@ -76,10 +77,10 @@
         [1.5, -1.0, 5.5, 1.0]
       ],
       "stepDamageConfig":[
-        {"baseDamageFactor":0.7, "knockback":16},
+        {"baseDamageFactor":0.9, "knockback":16},
         {"baseDamageFactor":0.4, "knockback":12},
-        {"baseDamageFactor":0.7, "knockback":14},
-        {"baseDamageFactor":1.1, "knockback":24}
+        {"baseDamageFactor":0.9, "knockback":14},
+        {"baseDamageFactor":1.0, "knockback":24}
         ],
       "stances":{
         "idle":{

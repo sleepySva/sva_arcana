@@ -1,10 +1,10 @@
 {
   "itemName" : "arcana_boss_evolapis_spear_1",
-  "price" : 1120,
+  "price" : 1600,
   "level" : 7,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A jade plasma fork-spear forged from the primordial powers.",
+  "description" : "A jade plasma fork-spear forged from the primordial powers. ^green;Inflicts Poisoned on hit.^reset;",
   "shortdescription" : "^#1e9a79;Titanosa^reset;",
   "tooltipKind" : "arcana_sword",
   "category" : "spear",
@@ -35,7 +35,8 @@
     "fireTime" : 1.04,
     "baseDps" : 14.4,
     "damageConfig" : {
-      "damageSourceKind" : "poisonspear"
+      "damageSourceKind" : "poisonspear",
+      "statusEffects" : [ "weakpoison" ]
     }
   },
 

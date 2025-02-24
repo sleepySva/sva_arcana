@@ -151,9 +151,18 @@
     "op": "add",
     "path": "/displayDungeons/arcana_arcaneSea_dungeon_3",
 	"value": {
-		"description" : "A sunken structure seems to be in the depths of the ocean below.",
+		"description" : "A sunken structure seems to be in the depths of the ocean below. ^orange;Caution is advised.^reset;",
 		"icon" : "/interface/cockpit/dungeons/arcana_arcaneSea_dungeon_3.png",
 		"name" : "Sealed Ark"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_arcaneSea_dungeon_4",
+	"value": {
+		"description" : "A partially flooded maze-like structure that was once likely an experimental grounds of sorts.",
+		"icon" : "/interface/cockpit/dungeons/arcana_arcaneSea_dungeon_4.png",
+		"name" : "Oceanic Maze"
 	}
   },
   {

@@ -1,0 +1,334 @@
+{
+  "metadata" : {
+    "name" : "arcana_arcaneSea_dungeon_4",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "entrance_1" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "entrance_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "entrance_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "1.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "2.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "3.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "4.json" ],
+      "chance" : 1000
+    },
+    {
+      "name" : "end_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "end_1.json" ],
+      "chance" : 500
+    },
+    {
+      "name" : "big_1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "big_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "big_2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "big_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "big_3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "big_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "big_4",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "big_4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "big_5",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "big_5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "big_6",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "big_6.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "horizontal_1",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "horizontal_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "horizontal_2",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "horizontal_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "horizontal_3",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "horizontal_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "horizontal_4",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "horizontal_4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "horizontal_5",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "horizontal_5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "horizontal_6",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "horizontal_6.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "vertical_1",
+      "rules" : [
+        [ "maxSpawnCount", [6] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "vertical_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "vertical_2",
+      "rules" : [
+        [ "maxSpawnCount", [6] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "vertical_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "vertical_3",
+      "rules" : [
+        [ "maxSpawnCount", [6] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "vertical_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "vertical_4",
+      "rules" : [
+        [ "maxSpawnCount", [6] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "vertical_4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "vertical_5",
+      "rules" : [
+        [ "maxSpawnCount", [6] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "vertical_5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "vertical_6",
+      "rules" : [
+        [ "maxSpawnCount", [6] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "vertical_6.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "medium_1",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "medium_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "medium_2",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "medium_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "medium_3",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "medium_3.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "medium_4",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "medium_4.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "medium_5",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "medium_5.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "medium_6",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "medium_6.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "top_1",
+      "rules" : [
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "top_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "top_2",
+      "rules" : [
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "top_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "bottom_1",
+      "rules" : [
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "bottom_2",
+      "rules" : [
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "bottom_2.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "left_1",
+      "rules" : [
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "left_1.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "right_1",
+      "rules" : [
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "right_1.json" ],
+      "chance" : 0
+    }
+  ]
+}

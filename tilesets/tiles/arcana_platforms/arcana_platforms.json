@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":16,
+ "tilecount":17,
  "tileheight":8,
  "tileproperties":
     {
@@ -120,6 +120,14 @@
          "\/\/name":"arcana_platform_stonePlatform",
          "\/\/shortdescription":"",
          "material":"arcana_platform_stonePlatform"
+        },
+     "16":
+        {
+         "\/\/description":"",
+         "\/\/name":"arcana_platform_atlantisPlatform",
+         "\/\/shortdescription":"",
+         "material":"arcana_platform_atlantisPlatform",
+		 "colorVariant":"2"
         }
     },
  "tiles":
@@ -187,6 +195,10 @@
      "15":
         {
          "image":"arcana_platform_stonePlatform.png"
+        },
+     "16":
+        {
+         "image":"arcana_platform_atlantisPlatform_blue.png"
         }
     },
  "tilewidth":8

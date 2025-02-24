@@ -1,0 +1,175 @@
+{
+  "type" : "arcana_monster_evolvedGleap",
+  "shortdescription" : "Evolved Gleap Azraaq",
+  "categories" : [ "arcana_monster_evolvedGleap" ],
+  "parts" : [ "body", "fullbright" ],
+
+  "animation" : "animation.animation",
+  "reversed" : false,
+
+  "dropPools" : [ "arcana_bossdrops_evolvedGleap" ],
+
+  "baseParameters" : {
+    "monsterClass" : "boss",
+
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+    "initialScriptDelta" : 1,
+    "behaviorUpdateDelta" : 1,
+
+    "renderLayer" : "ForegroundEntity",
+    "behavior" : "arcana_evolvedGleap",
+	
+    "behaviorConfig" : {
+	  "damageOnTouch" : true,
+      "sphereCollisionPoly" : [ [-0.85, -0.45], [-0.45, -0.85], [0.45, -0.85], [0.85, -0.45], [0.85, 0.45], [0.45, 0.85], [-0.45, 0.85], [-0.85, 0.45] ],
+
+      "endWaitTime" : 8
+    },
+
+    "damageBar" : "None",
+	"persistent" : true,
+
+    "damageSources" : {
+      "dash" : {
+        "poly" : [ [-2.0, -1.75], [-1.75, -2.0], [1.75, -2.0], [2.0, -1.75], [2.0, 1.75], [1.75, 2.0], [-1.75, 2.0], [-2.0, 1.75] ],
+        "damage" : 30.0,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "hammer",
+        "knockback" : 40
+      }
+    },
+
+    "touchDamage" : {
+      "poly" : [ [-2.0, -1.75], [-1.75, -2.0], [1.75, -2.0], [2.0, -1.75], [2.0, 1.75], [1.75, 2.0], [-1.75, 2.0], [-2.0, 1.75] ],
+      "damage" : 30,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "hammer",
+      "knockback" : 40,
+      "statusEffects" : [ ]
+    },
+	
+    "damageParts" : {
+      "body" : {
+        "damage" : 30,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "hammer",
+        "knockback" : 40
+      }
+    },
+
+    "flipPartPoly" : false,
+    "collisionParts" : [
+      "body"
+    ],
+
+    "knockoutTime" : 0.0,
+    "knockoutEffect" : "blink",
+    "knockoutAnimationStates" : {
+      "body" : "idle"
+    },
+    "deathParticles" : "deathPoof",
+
+    "metaBoundBox" : [-2.5, -2.5, 2.5, 2.5],
+    "scale" : 1.0,
+
+    "selfDamagePoly" : [ [-2.0, -1.75], [-1.75, -2.0], [1.75, -2.0], [2.0, -1.75], [2.0, 1.75], [1.75, 2.0], [-1.75, 2.0], [-2.0, 1.75] ],
+
+    "movementSettings" : {
+      "collisionEnabled" : false,
+	  "gravityEnabled" : false,
+      "collisionPoly" : [ [-2.0, -1.75], [-1.75, -2.0], [1.75, -2.0], [2.0, -1.75], [2.0, 1.75], [1.75, 2.0], [-1.75, 2.0], [-2.0, 1.75] ],
+      "mass" : 1.0,
+      "physicsEffectCategories" : ["boss"]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic",
+        "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffea63FF?replace=31a6ffFF=f5bc00FF"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 160
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 2300
+        },
+        "protection" : {
+          "baseValue" : 1.2
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.2
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "specialStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "healingStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 1.0
+        },
+        "arcana_abyssResistance" : {
+          "baseValue" : 0.0
+        },
+        "arcana_lightResistance" : {
+          "baseValue" : 0.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 2],
+    "feetOffset" : [0, 0]
+  }
+}

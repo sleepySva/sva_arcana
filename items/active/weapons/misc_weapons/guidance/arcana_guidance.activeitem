@@ -77,27 +77,23 @@
 
   "elementalType" : "physical",
 
-  "primaryAbilityType" : "elementswarm",
+  "primaryAbilityType" : "plasmabladebarrage",
   "primaryAbility" : {
 
-    "name" : "Summon Watchbones",
-	"energyCost" : 200,
-    "maxCastRange" : 18,
+    "name" : "Triblades",
+	"energyCost" : 10,
+    "maxCastRange" : 20,
 	
-	"monsterType" : "arcana_monster_watchbonesally",
+	"projectileType" : "arcana_bluetriangle_1",
 	
-	"scripts" : ["/items/active/weapons/staff/abilities/arcana_summonStaff_summon.lua"],
-    "class" : "ControlProjectile",
-	
-	"monsterCount" : 1,
-    "monsterDistance" : 0,
+	"projectileCount" : 3,
+    "projectileDistance" : 1.0,
 	
     "projectileDelayFirst" : 1.0,
-    "projectileDelayEach" : 0.06,
+    "projectileDelayEach" : 0.2,
 
-    "monsterParameters" : {
-		"level" : 7,
-		"aggressive" : true
+    "projectileParameters" : {
+      "baseDamage" : 18
     },
 
     "stances" : {
@@ -118,6 +114,8 @@
       }
     }
   },
+
+  "altAbilityType" : "healingzone",
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

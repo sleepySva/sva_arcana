@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":12,
+ "tilecount":13,
  "tileheight":8,
  "tileproperties":
     {
@@ -92,6 +92,14 @@
          "\/\/name":"bleuark_tile12",
          "\/\/shortdescription":"",
          "material":"bleuark_tile12"
+        },
+     "12":
+        {
+         "\/\/description":"",
+         "\/\/name":"bleuark_tile8",
+         "\/\/shortdescription":"",
+         "material":"bleuark_tile8",
+		 "colorVariant":"2"
         }
     },
  "tiles":
@@ -143,6 +151,10 @@
      "11":
         {
          "image":"bleuark_tile12.png"
+        },
+     "12":
+        {
+         "image":"bleuark_tile8_blue.png"
         }
     },
  "tilewidth":8
