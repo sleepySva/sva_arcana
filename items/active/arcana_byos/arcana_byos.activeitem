@@ -1,0 +1,18 @@
+{
+  "itemName" : "arcana_byos",
+  "shortdescription" : "^#000000;^reset;^orange;BYOS^reset;",
+  "description" : "Use this to convert your ship to a new, fully customizable ship! ^red;WIP. DO NOT USE.^reset;",
+  "price" : 1000,
+  "tooltipKind" : "base",
+  "rarity" : "essential",
+  "category" : "tool",
+  "itemTags" : [],
+  "inventoryIcon" : "icon.png",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "body" : "icon.png"
+  },
+  "scripts" : ["byos.lua"]
+}

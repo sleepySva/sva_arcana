@@ -1,0 +1,31 @@
+{
+  "objectName" : "arcana_byos_spawner",
+  "colonyTags" : ["byos"],
+  "rarity" : "Common",
+  "description" : "",
+  "shortdescription" : "",
+  "race" : "generic",
+  "category" : "terraformer",
+  "price" : 100,
+  "printable" : false,
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ],
+
+  "scripts" : ["spawner.lua"],
+  "scriptDelta" : 10,
+  "dungeonName" : "arcana_byos_default",
+  "spawnOffset" : [2000, 1012]
+
+}
