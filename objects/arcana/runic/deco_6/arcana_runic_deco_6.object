@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_runic_deco_6",
+  "colonyTags" : ["runic"],
+  "rarity" : "Common",
+  "description" : "A bunch of colored stones hanging on a rope.",
+  "shortdescription" : "Runic Hanging Stones",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 90,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ]
+}

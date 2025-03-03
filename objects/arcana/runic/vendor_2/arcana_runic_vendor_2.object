@@ -1,0 +1,64 @@
+{
+  "objectName" : "arcana_runic_vendor_1",
+  "colonyTags" : ["runic"],
+  "rarity" : "Common",
+  "description" : "A market stall selling various furniture.",
+  "shortdescription" : "Runic Special Stall",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 320,
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Furniture Stall",
+        "subtitle" : " Buy runic furniture here!"
+      }
+    },
+    "buyFactor" : 3.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "arcana_runic_storage_1" },
+	  { "item" : "arcana_runic_storage_2" },
+	  { "item" : "arcana_runic_storage_3" },
+	  { "item" : "arcana_runic_storage_4" },
+	  { "item" : "arcana_runic_storage_5" },
+	  { "item" : "arcana_runic_storage_6" },
+	  { "item" : "arcana_runic_storage_7" },
+	  { "item" : "arcana_runic_storage_8" },
+	  { "item" : "arcana_runic_bed_1" },
+	  { "item" : "arcana_runic_bed_2" },
+	  { "item" : "arcana_runic_light_5" },
+	  { "item" : "arcana_runic_light_6" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

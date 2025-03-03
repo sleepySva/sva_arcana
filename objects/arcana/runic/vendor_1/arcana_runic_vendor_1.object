@@ -1,0 +1,57 @@
+{
+  "objectName" : "arcana_runic_vendor_1",
+  "colonyTags" : ["runic"],
+  "rarity" : "Common",
+  "description" : "A market stall selling various pottery.",
+  "shortdescription" : "Runic Special Stall",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 320,
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Pottery Stall",
+        "subtitle" : " Buy decorative pottery here!"
+      }
+    },
+    "buyFactor" : 3.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  { "item" : "arcana_runic_deco_1" },
+	  { "item" : "arcana_runic_deco_2" },
+	  { "item" : "arcana_runic_deco_3" },
+	  { "item" : "arcana_runic_deco_4" },
+	  { "item" : "arcana_runic_deco_5" }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "objectName" : "arcana_runic_deco_10",
+  "colonyTags" : ["runic"],
+  "rarity" : "Common",
+  "description" : "A large sandstone plate vaguely displaying a big pyramid and its inner layout.",
+  "shortdescription" : "Runic Pyramid Tablet",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 480,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ]
+}
