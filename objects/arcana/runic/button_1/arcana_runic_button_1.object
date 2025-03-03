@@ -1,0 +1,63 @@
+{
+  "objectName" : "button_1",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A compact button that activates when pressed.",
+  "shortdescription" : "Tiny Wall Button",
+  "race" : "generic",
+
+  "apexDescription" : "A button. Its function is unknown. Only one way to find out.",
+  "avianDescription" : "Why am I always compelled to push buttons?",
+  "floranDescription" : "Floran push buttonsss!",
+  "glitchDescription" : "Tempted. A button, begging to be pressed.",
+  "humanDescription" : "There's a button! I can't not press it!",
+  "hylotlDescription" : "Buttons are infuriating. Still, I must push it.",
+  "novakidDescription" : "Why is it always so darn temptin' to push buttons.",
+
+  "category" : "wire",
+  "price" : 15,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/momentaryswitch/momentaryswitch.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallbutton.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "switch" : "body.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [0, 0] ],
+
+  "interval" : 15,
+
+  "npcToy": {
+    "ownerOnly" : true,
+    "influence" : [
+      "wallbutton"
+    ],
+    "preciseStandPositionLeft" : [-1.0, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "defaultReactions" : {},
+    "maxNpcs" : 1
+  }
+}

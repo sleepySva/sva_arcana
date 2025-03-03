@@ -3,12 +3,8 @@ function init()
   self.hitInvulnerabilityTime = 0
 
   message.setHandler("applyStatusEffect", function(_, _, effectConfig, duration, sourceEntityId)
-    status.addEphemeralEffect(effectConfig, duration, sourceEntityId)
-  end)
-  
-  if root.hasTech("stardustlib:enable-extenders") then
-    require "/sys/stardust/statusext.lua"
-  end
+      status.addEphemeralEffect(effectConfig, duration, sourceEntityId)
+    end)
 end
 
 function applyDamageRequest(damageRequest)
@@ -34,7 +30,8 @@ function applyDamageRequest(damageRequest)
     return {}
   end
 
-  if damageRequest.hitType == "ShieldHit" and status.statPositive("shieldHealth") and status.resourcePositive("shieldStamina") then
+  local hitType = damageRequest.hitType
+  if hitType == "ShieldHit" and status.statPositive("shieldHealth") and status.resourcePositive("shieldStamina") then
     status.modifyResource("shieldStamina", -damage / status.stat("shieldHealth"))
     status.setResourcePercentage("shieldStaminaRegenBlock", 1.0)
     damage = 0
@@ -42,17 +39,17 @@ function applyDamageRequest(damageRequest)
     damageRequest.damageSourceKind = "shield"
   end
 
-  local hitType = damageRequest.hitType
   local elementalStat = root.elementalResistance(damageRequest.damageSourceKind)
   local resistance = status.stat(elementalStat)
   damage = damage - (resistance * damage)
   if resistance ~= 0 and damage > 0 then
     hitType = resistance > 0 and "weakhit" or "stronghit"
   end
-  
+
   local healthLost = math.min(damage, status.resource("health"))
   if healthLost > 0 and damageRequest.damageType ~= "Knockback" then
     status.modifyResource("health", -healthLost)
+    
     self.damageFlashTime = 0.07
     if hitType == "stronghit" then
       self.damageFlashType = "strong"
@@ -61,6 +58,7 @@ function applyDamageRequest(damageRequest)
     else
       self.damageFlashType = "default"
     end
+
     if status.statusProperty("hitInvulnerability") then
       local damageHealthPercentage = healthLost / status.resourceMax("health")
       if damageHealthPercentage > status.statusProperty("hitInvulnerabilityThreshold") then
@@ -154,4 +152,27 @@ function update(dt)
   if mcontroller.atWorldLimit(true) then
     status.setResourcePercentage("health", 0)
   end
+
+  -- drawDebugResources()
+end
+
+function drawDebugResources()
+  local position = mcontroller.position()
+
+  local y = 2
+  local resourceName = "energy"
+  --Border
+  world.debugLine(vec2.add(position, {-2, y+0.125}), vec2.add(position, {-2, y + 0.75}), "black")
+  world.debugLine(vec2.add(position, {-2, y + 0.75}), vec2.add(position, {2, y + 0.75}), "black")
+  world.debugLine(vec2.add(position, {2, y + 0.75}), vec2.add(position, {2, y+0.125}), "black")
+  world.debugLine(vec2.add(position, {2, y+0.125}), vec2.add(position, {-2, y+0.125}), "black")
+
+  local width = 3.75 * status.resource(resourceName) / status.resourceMax(resourceName)
+  world.debugLine(vec2.add(position, {-1.875, y + 0.25}), vec2.add(position, {-1.875 + width, y + 0.25}), "green")
+  world.debugLine(vec2.add(position, {-1.875, y + 0.375}), vec2.add(position, {-1.875 + width, y + 0.375}), "green")
+  world.debugLine(vec2.add(position, {-1.875, y + 0.5}), vec2.add(position, {-1.875 + width, y + 0.5}), "green")
+  world.debugLine(vec2.add(position, {-1.875, y + 0.625}), vec2.add(position, {-1.875 + width, y + 0.625}), "green")
+
+  world.debugText(resourceName, vec2.add(position, {2.25, y - 0.125}), "blue")
+  y = y + 1
 end

@@ -1,0 +1,63 @@
+{
+  "objectName" : "arcana_wired_darkwallbutton",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Who knows what it might activate... just press it!",
+  "shortdescription" : "Dark Wall Button",
+  "race" : "generic",
+
+  "apexDescription" : "A button. Its function is unknown. Only one way to find out.",
+  "avianDescription" : "Why am I always compelled to push buttons?",
+  "floranDescription" : "Floran push buttonsss!",
+  "glitchDescription" : "Tempted. A button, begging to be pressed.",
+  "humanDescription" : "There's a button! I can't not press it!",
+  "hylotlDescription" : "Buttons are infuriating. Still, I must push it.",
+  "novakidDescription" : "Why is it always so darn temptin' to push buttons.",
+
+  "category" : "wire",
+  "price" : 20,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/momentaryswitch/momentaryswitch.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallbutton.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "switch" : "body.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "outputNodes" : [ [0, -1] ],
+
+  "interval" : 15,
+
+  "npcToy": {
+    "ownerOnly": true,
+    "influence" : [
+      "wallbutton"
+    ],
+    "defaultReactions" : {},
+    "preciseStandPositionLeft" : [-1.0, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "maxNpcs" : 1
+  }
+}

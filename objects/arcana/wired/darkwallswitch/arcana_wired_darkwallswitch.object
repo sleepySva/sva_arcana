@@ -1,0 +1,64 @@
+{
+  "objectName" : "arcana_wired_darkwallswitch",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Flippin' awesome.",
+  "shortdescription" : "Dark Wall Switch",
+  "race" : "generic",
+
+  "apexDescription" : "A switch. It activates something.",
+  "avianDescription" : "This switch must activate something.",
+  "floranDescription" : "Ssswitch!",
+  "glitchDescription" : "Surprised. This small switch doesn't look that powerful.",
+  "humanDescription" : "How many times can I flip this switch on and off I wonder.",
+  "hylotlDescription" : "A basic switch. It can be used to activate something.",
+  "novakidDescription" : "I can flip this here switch!",
+
+  "category" : "wire",
+  "price" : 20,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switchwithinput.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle2.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/apexconsole2switch.ogg" ],
+      "off" : [ "/sfx/objects/apexconsole2switch.ogg" ]
+    }
+  },
+
+  "animationParts" : {
+    "switch" : "body.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "inputNodes" : [ [-1, 0] ],
+  "outputNodes" : [ [0, -1] ],
+
+  "npcToy": {
+    "ownerOnly" : true,
+    "influence" : [
+      "wallswitch"
+    ],
+    "defaultReactions" : {},
+    "preciseStandPositionLeft" : [-1.0, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "maxNpcs" : 1
+  }
+}
