@@ -1,0 +1,52 @@
+{
+  "objectName" : "arcana_runic_door_1",
+  "colonyTags" : ["runic","door"],
+  "printable" : false,
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 70,
+  "description" : "A runic sandstone door.",
+  "shortdescription" : "Runic Sandstone Door",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+
+  "tooltipKind" : "door",
+  "largeImage" : "body.png:right",
+  
+  "orientations" : [
+    {
+      "dualImage" : "body.png:default",
+      "imagePosition" : [-16, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/wooddoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/wooddoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "body.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "inputNodes" : [ [0, 4] ],
+  "outputNodes" : [ [0, 0] ]
+}
