@@ -1,0 +1,25 @@
+{
+  "objectName" : "arcana_runic_table_6",
+  "colonyTags" : ["runic"],
+  "rarity" : "Common",
+  "description" : "A large sandstone table with colored fabric draped over it.",
+  "shortdescription" : "Runic Large Counter",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 140,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}
