@@ -1,0 +1,20 @@
+{
+  "materialId" : 16857,
+  "materialName" : "arcana_platform_runicPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_runicPlatform",
+  "description" : "A polished sandstone platform.",
+  "shortdescription" : "Runic Sandstone Platform",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_runicPlatform.png",
+    "variants" : 3,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}
