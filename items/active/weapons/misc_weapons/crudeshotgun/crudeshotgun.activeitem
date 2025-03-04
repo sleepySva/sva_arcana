@@ -1,0 +1,119 @@
+{
+  "itemName" : "arcana_crudeshotgun",
+  "price" : 900,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A makeshift shotgun made from scrap parts, not very durable.",
+  "shortdescription" : "Crude Shotgun",
+  "tooltipKind" : "arcana_gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle","scavengers"],
+  "level" : 5,
+
+  "inventoryIcon" : "body.png",
+  
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "body.png",
+	"fullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [5.45, 0.15, 5.45, 0.15],
+        "particles" : [
+          { "particle" : "discardedbullet" }
+        ]
+      },
+     "altMuzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [5.45, 0.15, 5.45, 0.15],
+        "particles" : [
+          { "particle" : "discardedbullet" }
+        ]
+      }
+    },
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [1.0, 0.2]
+		  }
+		},
+        "muzzleFlash" : {
+          "properties" : {
+            "offset" : [0.3, -0.1]
+		  }
+        }
+	  }
+	},
+    "sounds" : {
+      "fire" : ["/sfx/gun/shotgun4.ogg"]
+    }
+  },
+
+  "baseOffset" : [1.0, 0.2],
+  "muzzleOffset" : [2.6, 0.22],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.1,
+    "baseDps" : 11.4,
+    "energyUsage" : 46.0,
+    "inaccuracy" : 0.14,
+
+    "projectileCount" : 5,
+    "fireType" : "auto",
+
+    "projectileType" : "workshop_pistol_1_projectile_1",
+    "projectileParameters" : {
+	  "speed" : 140,
+      "knockback" : 4
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "weaponOffset" : [-0.2, 0.1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "piercingshot",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

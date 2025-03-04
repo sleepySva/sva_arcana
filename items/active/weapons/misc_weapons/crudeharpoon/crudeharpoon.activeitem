@@ -1,0 +1,47 @@
+{
+  "itemName" : "arcana_crudeharpoon",
+  "price" : 900,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A harpoon spear made from scrap parts, not very durable. ^green;Tidal: +20% Damage while underwater.^reset;",
+  "shortdescription" : "Crude Harpoon",
+  "tooltipKind" : "arcana_sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","scavengers"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+  "itemStatus" : "arcana_status_tidal",
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.9,
+    "baseDps" : 10.0,
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "knockbackMode" : "aim",
+      "knockback" : 18,
+      "timeoutGroup" : "primary"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

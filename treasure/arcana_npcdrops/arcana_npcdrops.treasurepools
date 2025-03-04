@@ -1,6 +1,24 @@
 
 {
 
+  "arcana_npcdrops_scavdiver" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.025, "item" : ["arcana_armor_scrapdiver_head", 1]},
+		{"weight" : 0.025, "item" : ["arcana_armor_scrapdiver_chest", 1]},
+		{"weight" : 0.025, "item" : ["arcana_armor_scrapdiver_legs", 1]},
+		{"weight" : 0.025, "item" : ["arcana_crudeharpoon", 1]},
+		{"weight" : 0.025, "item" : ["arcana_crudeshotgun", 1]},
+		{"weight" : 0.4, "item" : ["salvagearm", 1]},
+		{"weight" : 0.4, "item" : ["salvagebody", 1]},
+		{"weight" : 0.075, "item" : ["money", 60]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+
   "arcana_npcdrops_graverotten" : [
     [0, {
       "pool" : [

@@ -2,7 +2,7 @@
   "type" : "arcana_scavenger_diver",
   "baseType" : "hostile",
   
-  "dropPools" : [ "banditTreasure" ],
+  "dropPools" : [ "arcana_npcdrops_scavdiver" ],
 
   "scriptConfig" : {
   
@@ -46,17 +46,8 @@
               { "name" : "coldprotectionback", "parameters" : { "colorIndex" : 0 } }
             ],
             "primary" : [
-              "npcdagger",
-              "npcaxe",
-              "npcshortsword",
-              "npcbroadsword",
-              "npchammer",
-              "npcspear",
-              "npcassaultrifle",
-              "npcpistol",
-              "npcmachinepistol",
-              "npcshotgun",
-              "npcsniperrifle"
+              "arcana_crudeharpoon",
+              "arcana_crudeshotgun"
             ]
           }
         ]
@@ -67,10 +58,10 @@
   "statusControllerSettings" : {    
     "stats" : {
       "maxHealth" : {
-        "baseValue" : 180.0
+        "baseValue" : 190.0
       },
       "powerMultiplier" : {
-        "baseValue" : 1.2
+        "baseValue" : 1.3
       },
       "protection" : {
         "baseValue" : 1.0

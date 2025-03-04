@@ -178,6 +178,14 @@
 						}
 					  },
                       {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": true}
+                        }
+                      },
+                      {
                         "title": "setDamageBar",
                         "type": "action",
                         "name": "setDamageBar",
@@ -746,6 +754,14 @@
 					}
 				  },
 				  {
+					"title": "battleMusic",
+					"type": "action",
+					"name": "battleMusic",
+					"parameters": {
+					  "enable": {"value": false}
+					}
+				  },
+				  {
 					"title": "setParticleEmitterActive",
 					"type": "action",
 					"name": "setParticleEmitterActive",
@@ -1002,6 +1018,14 @@
                         "name": "faceDirection",
                         "parameters": {
                           "direction": {"value": -1}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": false}
                         }
                       },
                       {
