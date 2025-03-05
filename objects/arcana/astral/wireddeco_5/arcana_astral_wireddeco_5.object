@@ -7,7 +7,7 @@
   "race" : "generic",
 
   "category" : "light",
-  "price" : 130,
+  "price" : 165,
   "lightColor" : [10, 10, 20],
   "flickerDistance" : 0.2,
   "flickerStrength" : 0.05,
@@ -16,7 +16,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "image" : "arcana_astral_wireddeco_5.png:<color>.on",
+      "image" : "body.png:<color>.on",
       "imagePosition" : [0, 0],
 	  "lightPosition" : [0, 0],
 
@@ -27,7 +27,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "image" : "arcana_astral_wireddeco_5.png:<color>.on",
+      "image" : "body.png:<color>.on",
       "imagePosition" : [0, 0],
 	  "lightPosition" : [0, 0],
 
@@ -48,8 +48,8 @@
         "switchState" : {
           "states" : {
             "on" : {
-              "frames" : 8,
-              "cycle" : 0.8,
+              "frames" : 4,
+              "cycle" : 0.4,
 			  "mode" : "loop"
             }
           }
@@ -62,7 +62,7 @@
     }
   },
   "animationParts" : {
-    "bg" : "arcana_astral_wireddeco_5.png",
+    "bg" : "body.png",
     "fg" : "fullbright.png"
   },
   "animationPosition" : [0, 0],
