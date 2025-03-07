@@ -1,5 +1,101 @@
 {
 
+  "arcana_dungeonloots_arcanecitybasic" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["astral_tile11", 10]},
+		{"weight" : 1.0, "item" : ["astral_tile12", 10]},
+		{"weight" : 1.0, "item" : ["astral_tile13", 10]},
+		{"weight" : 1.0, "item" : ["astral_tile14", 10]},
+		{"weight" : 1.0, "item" : ["astral_tile15", 10]},
+		{"weight" : 1.0, "item" : ["arcana_runic_deco_1", 1]},
+		{"weight" : 1.0, "item" : ["arcana_runic_deco_2", 1]},
+		{"weight" : 1.0, "item" : ["arcana_runic_deco_3", 1]},
+		{"weight" : 1.0, "item" : ["arcana_runic_deco_4", 1]},
+		{"weight" : 1.0, "item" : ["arcana_runic_deco_5", 1]},
+		{"weight" : 1.0, "item" : ["arcana_runic_light_1", 1]},
+		{"weight" : 1.0, "item" : ["arcana_runic_light_2", 1]},
+		{"weight" : 1.0, "item" : ["arcana_runic_light_3", 1]},
+		{"weight" : 1.0, "item" : ["arcana_ore_arcaniumOre", 2]}
+      ],
+      "poolRounds" : [
+        [0.2, 1],
+		[0.2, 2],
+		[0.2, 3],
+		[0.2, 4],
+        [0.2, 5]
+      ]
+    }]
+  ],  
+  
+  "arcana_dungeonloots_arcanecitycodex" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_astral_3-codex", 1]},
+		{"weight" : 1.0, "item" : ["arcana_astral_4-codex", 1]},
+		{"weight" : 1.0, "item" : ["arcana_astral_5-codex", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    }]
+  ],
+  
+  "arcana_dungeonloots_arcanecitybooks" : [
+    [0, {
+	  "fill" : [
+        {"pool" : "arcana_dungeonloots_arcanecitycodex"}
+      ],
+      "pool" : [
+		{"weight" : 0.8, "item" : ["bookpiles", 1]},
+		{"weight" : 0.2, "item" : ["paper", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 3],
+		[0.2, 4],
+		[0.2, 5],
+		[0.2, 6],
+        [0.2, 7]
+      ]
+    }]
+  ], 
+
+  "arcana_dungeonloots_arcanecityfood" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_food_atlantisRipple", 1]},
+		{"weight" : 1.0, "item" : ["tropicalpunch", 1]},
+		{"weight" : 1.0, "item" : ["bananacon", 1]},
+		{"weight" : 1.0, "item" : ["bananacreampie", 1]},
+		{"weight" : 1.0, "item" : ["coconuticecream", 1]},
+		{"weight" : 1.0, "item" : ["desertsalsa", 1]},
+		{"weight" : 1.0, "item" : ["pineapplejuice", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 2],
+		[0.2, 2],
+		[0.2, 3],
+		[0.2, 4],
+        [0.2, 4]
+      ]
+    }]
+  ],  
+  
+  "arcana_dungeonloots_arcanecityrare" : [
+    [0, {
+	  "fill" : [
+        {"pool" : "basicChestTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "pool" : "arcana_dungeonloots_arcanecitybasic"}
+      ],
+      "poolRounds" : [
+        [0.5, 2],
+		[0.5, 3]
+      ]
+    }]
+  ],
+
   "arcana_dungeonloots_sealedarkbooks" : [
     [0, {
       "pool" : [

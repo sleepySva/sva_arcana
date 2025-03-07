@@ -33,6 +33,24 @@
 	  "chance" : 1000
     },
     {
+      "name" : "3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "3.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "4.json" ],
+	  "chance" : 1000
+    },
+    {
       "name" : "left",
       "rules" : [
         [ "maxSpawnCount", [1] ],
