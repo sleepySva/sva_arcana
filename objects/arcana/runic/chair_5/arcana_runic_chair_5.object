@@ -1,0 +1,47 @@
+{
+  "objectName" : "arcana_runic_chair_5",
+  "colonyTags" : ["runic"],
+  "rarity" : "Common",
+  "description" : "A sandstone couch with a blue cusion.",
+  "shortdescription" : "Runic Blue Couch",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 130,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitCoverImage" : "/objects/arcana/runic/chair_5/cover.png",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPositions" : [
+        [-6, 23], // Right
+        [6, 23] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "direction" : "right",
+      "sitPositions" : [
+        [-6, 23], // Right
+        [6, 23] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

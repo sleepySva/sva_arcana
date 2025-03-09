@@ -51,6 +51,15 @@
 	  "chance" : 1000
     },
     {
+      "name" : "5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "5.json" ],
+	  "chance" : 1000
+    },
+    {
       "name" : "left",
       "rules" : [
         [ "maxSpawnCount", [1] ],

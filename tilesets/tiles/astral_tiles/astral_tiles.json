@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":15,
+ "tilecount":17,
  "tileheight":8,
  "tileproperties":
     {
@@ -113,6 +113,22 @@
          "\/\/name":"astral_tile15",
          "\/\/shortdescription":"",
          "material":"astral_tile15"
+        },
+     "15":
+        {
+         "\/\/description":"",
+         "\/\/name":"astral_tile14_blue",
+         "\/\/shortdescription":"",
+         "material":"astral_tile14",
+		 "colorVariant":"2"
+        },
+     "16":
+        {
+         "\/\/description":"",
+         "\/\/name":"astral_tile14_green",
+         "\/\/shortdescription":"",
+         "material":"astral_tile14",
+		 "colorVariant":"3"
         }
     },
  "tiles":
@@ -176,6 +192,14 @@
      "14":
         {
          "image":"astral_tile15.png"
+        },
+     "15":
+        {
+         "image":"astral_tile14_blue.png"
+        },
+     "16":
+        {
+         "image":"astral_tile14_green.png"
         }
     },
  "tilewidth":8
