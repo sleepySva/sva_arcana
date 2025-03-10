@@ -1,0 +1,21 @@
+{
+  "materialId" : 16397,
+  "materialName" : "astral_tile16",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "astral_tile16",
+  "description" : "A solid metallic block used for end-points.",
+  "shortdescription" : "Astral Metal Block",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "astral_tile16.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1071
+  }
+}
