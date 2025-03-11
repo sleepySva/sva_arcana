@@ -1,0 +1,56 @@
+{
+  "name" : "arcana_stationtram_3",
+  "boundBox" : [-3.5, -0.25, 3.5, 3.75],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : false,
+
+  "persistent" : true,
+
+  "script" : "/vehicles/railtram/railtram.lua",
+  "animation" : "/vehicles/railtram/stationtram.animation",
+
+  "animationPartTags" : {
+    "gate" : {
+      "partImage" : "/vehicles/railtram/arcana_stationtram_3_gate.png"
+    },
+    "tram" : {
+      "partImage" : "/vehicles/railtram/arcana_stationtram_3.png"
+    },
+    "tramfullbright" : {
+      "partImage" : "/vehicles/railtram/arcana_stationtram_3_fullbright.png"
+    }
+    ,
+    "tramControls" : {
+      "partImage" : "/vehicles/railtram/arcana_stationtram_1_arrows.png"
+    }
+  },
+
+  "movementSettings" : {
+    "collisionPoly" : [ [-3.5, 3.75], [3.5, 3.75], [3.5, 0.5], [2.5, -0.25], [-2.5, -0.25], [-3.5, 0.5] ],
+    "mass" : 2.0,
+    "ignorePlatformCollision" : true,
+    "physicsEffectCategories" : []
+  },
+
+  "loungePositions" : {
+    "seat" : {
+      "part" : "gate",
+      "partAnchor" : "standPosition",
+      "orientation" : "stand"
+    }
+  },
+
+  "physicsCollisions" : {
+    "platform" : {
+      "collision" : [ [-3.5, 0.5], [3.5, 0.5] ],
+      "collisionKind" : "platform"
+    }
+  },
+
+  "railConfig" : {
+    "speed" : 10
+  },
+
+  "popItem" : "arcana_stationtram_3"
+}

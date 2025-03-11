@@ -51,13 +51,13 @@
 	  "chance" : 1000
     },
     {
-      "name" : "5",
+      "name" : "top_1",
       "rules" : [
         [ "maxSpawnCount", [1] ],
         [ "ignorePartMaximumRule" ]
       ],
-      "def" : [ "tmx", "5.json" ],
-	  "chance" : 1000
+      "def" : [ "tmx", "top_1.json" ],
+	  "chance" : 5000
     },
     {
       "name" : "left",
