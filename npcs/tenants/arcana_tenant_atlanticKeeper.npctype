@@ -1,0 +1,41 @@
+{
+  "type" : "arcana_tenant_atlanticKeeper",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"],
+      "graduation" : {
+        "nextNpcType" : [
+          [0.25, "crewmemberchemistblue"],
+          [0.25, "crewmemberchemistgreen"],
+          [0.25, "crewmemberchemistyellow"],
+          [0.25, "crewmemberchemistorange"]
+        ]
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_corekeeper_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_corekeeper_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+			  { "name" : "arcana_armor_corekeeper_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "bleuark_spear_1",
+			  "bleuark_assaultRifle_1"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

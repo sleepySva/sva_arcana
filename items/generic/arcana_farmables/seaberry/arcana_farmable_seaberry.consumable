@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_farmable_seaberry",
+  "rarity" : "Common",
+  "price" : 160,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "A watery fruit with the scent of the ocean tides.",
+  "shortdescription" : "Seaberry",
+  "foodValue" : 2.00,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 3.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
