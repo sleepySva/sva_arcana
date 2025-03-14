@@ -5,7 +5,7 @@
     "rules" : [
     ],
 
-    "anchor" : [ "left" ],
+    "anchor" : [ "left", "right" ],
 
     "gravity" : 80,
     "maxRadius" : 1000000,
@@ -57,7 +57,7 @@
         [ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "top_1.json" ],
-	  "chance" : 5000
+	  "chance" : 1000
     },
     {
       "name" : "left",
@@ -66,6 +66,15 @@
         [ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "left.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "right",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "right.json" ],
 	  "chance" : 0
     }
   ]

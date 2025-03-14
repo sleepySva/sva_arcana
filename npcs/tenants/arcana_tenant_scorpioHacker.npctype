@@ -1,0 +1,67 @@
+{
+  "type" : "arcana_tenant_scorpioHacker",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"],
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberengineer"],
+          [1, "crewmembermechanic"]
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Need a hand with debug? My rates are decently cheap, you know.",
+            "Sure, my job is to exploit vulnerabilities in systems and all that, but that also means I'm pretty good at securing em.",
+            "I hope you're not using outdated software... those are prone to a lot of security exploits."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_parasitic_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_parasitic_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_parasitic_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "scorpio_assaultrifle_rare"
+            ],
+            "sheathedprimary" : [
+              "scorpio_katana_rare"
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_parasitic_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_parasitic_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "scorpio_assaultrifle_rare"
+            ],
+            "sheathedprimary" : [
+              "scorpio_katana_rare"
+            ]
+          }
+        ] ]
+    ]
+  }
+}
