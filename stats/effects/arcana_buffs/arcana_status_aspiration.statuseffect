@@ -1,0 +1,16 @@
+{
+  "name" : "arcana_status_aspiration",
+  "blockingStat" : "arcana_status_aspiration_immunity",
+  "effectConfig" : {
+    "perMissingHealth" : 0.1,
+	"powerMult" : 0.05
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_status_aspiration.lua"
+  ],
+  
+  "label" : "Aspiration: ^green;+5% Damage^reset; per 10% missing health.",
+  "icon" : "/interface/statuses/rage.png"
+}

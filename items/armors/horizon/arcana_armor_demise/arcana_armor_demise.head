@@ -5,13 +5,21 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "headarmour",
-  "description" : "A dark helm, crafted from necroium. ^green;+10% Abyss res.^reset; ^red;-10% Lumen res.^reset;",
+  "description" : "A dark helm, crafted from necroium. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Horizon Weapon damage^reset;, ^green;+10% Abyss RES^reset;.",
   "shortdescription" : "Demise Helmet",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+  
+  "statusEffects" : [
+    "arcana_demiseset",
+    {
+      "stat" : "arcana_demise",
+      "amount" : 1
+    }
+  ],    
 
   "level" : 7,
   "leveledStatusEffects" : [
@@ -34,16 +42,6 @@
       "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 18
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_abyss",
-      "amount" : 0.1
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_lumen",
-      "amount" : -0.1
     }
   ],
   

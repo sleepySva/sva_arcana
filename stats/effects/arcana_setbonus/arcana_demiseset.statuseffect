@@ -1,14 +1,14 @@
 {
-  "name" : "arcana_gearshiftset",
+  "name" : "arcana_demiseset",
   "effectConfig" : {
   
-    "set" : "arcana_gearshift",
+    "set" : "arcana_demise",
 	"minParts" : 3,
     "statModifiers" : [
+	  { "stat" : "arcana_resistance_abyss", "amount" : 0.10 }
     ],
-    "status" : [ "arcana_gearshift" ],
 	"weaponBuff" : {
-      "tags" : ["titancorp"],
+      "tags" : ["horizon"],
       "modifiers" : [
 	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
       ]

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
-  "description" : "An ancient armor forged with red aspirite. ^green;Grants minor health regeneration.^reset;",
+  "description" : "An ancient armor forged with red aspirite. \n\n^orange;Set Bonus:^reset; \nGrants ^green;minor health regeneration^reset;, ^green;+5% Damage^reset; per 10% of missing health.",
   "shortdescription" : "Heartseeker's Aspiration",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_heartseekerset",
+    {
+      "stat" : "arcana_heartseeker",
+      "amount" : 1
+    }
+  ],    
   
   "level" : 9,
   "leveledStatusEffects" : [
@@ -43,10 +51,6 @@
       "stat" : "maxHealth",
       "amount" : 33
     }
-  ],
-  
-  "statusEffects" : [
-    "regenerationaugment1"
   ],
 
   "colorOptions" : [

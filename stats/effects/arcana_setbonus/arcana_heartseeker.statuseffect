@@ -1,16 +1,15 @@
 {
-  "name" : "arcana_gearshiftset",
+  "name" : "arcana_heartseekerset",
   "effectConfig" : {
   
-    "set" : "arcana_gearshift",
+    "set" : "arcana_heartseeker",
 	"minParts" : 3,
     "statModifiers" : [
     ],
-    "status" : [ "arcana_gearshift" ],
+    "status" : [ "regenerationaugment1", "arcana_status_aspiration" ],
 	"weaponBuff" : {
-      "tags" : ["titancorp"],
+      "tags" : ["none"],
       "modifiers" : [
-	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
       ]
 	}
   },

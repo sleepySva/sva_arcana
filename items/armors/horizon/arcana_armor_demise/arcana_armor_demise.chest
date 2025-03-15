@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "chestwear",
-  "description" : "A dark jacket with a few purple glowing bits, crafted from necroium. ^green;+10% Abyss res.^reset; ^red;-10% Lumen res.^reset;",
+  "description" : "A dark jacket with a few purple glowing bits, crafted from necroium. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Horizon Weapon damage^reset;, ^green;+10% Abyss RES^reset;.",
   "shortdescription" : "Demise Jacket",
   "tooltipKind" : "arcana_armorbig",
 
@@ -20,6 +20,14 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+    "arcana_demiseset",
+    {
+      "stat" : "arcana_demise",
+      "amount" : 1
+    }
+  ],    
   
   "level" : 7,
   "leveledStatusEffects" : [
@@ -42,16 +50,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 24
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_abyss",
-      "amount" : 0.1
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_lumen",
-      "amount" : -0.1
     }
   ],
 

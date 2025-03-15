@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legwear",
-  "description" : "An ancient armor forged with red aspirite. ^green;Grants minor health regeneration.^reset;",
+  "description" : "An ancient armor forged with red aspirite. \n\n^orange;Set Bonus:^reset; \nGrants ^green;minor health regeneration^reset;, ^green;+5% Damage^reset; per 10% of missing health.",
   "shortdescription" : "Heartseeker's Lust",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_heartseekerset",
+    {
+      "stat" : "arcana_heartseeker",
+      "amount" : 1
+    }
+  ],    
   
   "level" : 9,
   "leveledStatusEffects" : [
@@ -34,10 +42,6 @@
       "stat" : "maxHealth",
       "amount" : 31
     }
-  ],
-  
-  "statusEffects" : [
-    "regenerationaugment1"
   ],
 
   "colorOptions" : [

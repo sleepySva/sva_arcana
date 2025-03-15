@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "A piece of dark leg armor, crafted from necroium. ^green;+10% Abyss res.^reset; ^red;-10% Lumen res.^reset;",
+  "description" : "A piece of dark leg armor, crafted from necroium. \n\n^orange;Set Bonus:^reset; \nGrants ^green;+10% Horizon Weapon damage^reset;, ^green;+10% Abyss RES^reset;.",
   "shortdescription" : "Demise Leggings",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_demiseset",
+    {
+      "stat" : "arcana_demise",
+      "amount" : 1
+    }
+  ],    
   
   "level" : 7,
   "leveledStatusEffects" : [
@@ -33,16 +41,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 22
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_abyss",
-      "amount" : 0.1
-    },
-    {
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "arcana_resistance_lumen",
-      "amount" : -0.1
     }
   ],
 
