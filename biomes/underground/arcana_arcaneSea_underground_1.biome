@@ -199,6 +199,15 @@
       },
       {
         "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "arcana_arcaneSea_underground_1" ]
+      },
+      {
+        "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:undergroundBiomeEncounterDungeon",

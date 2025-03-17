@@ -1,0 +1,51 @@
+{
+  "type" : "arcana_crewmember_vanguard",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Vanguard",
+        "field" : "Vanguard",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_vanguard",
+            "duration" : 300
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "pathfinderchest",
+        "legs" : "pathfinderlegs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "pathfinderhead" } ],
+            "chest" : [ { "name" : "pathfinderchest" } ],
+            "legs" : [ { "name" : "pathfinderlegs" } ],
+            "primary" : [
+			  "npcpistol",
+			  "npcmachinepistol",
+              "npcaxe",
+			  "npcshortsword"
+			],
+			"alt" : [ "commonlargeshield" ]
+          }
+		]
+	  ]
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type" : "arcana_crewmember_navigator",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "engineer",
+        "name" : "Navigator",
+        "field" : "Navigation",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "shipSpeed",
+            "value" : 3.75
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_oceanite_chest",
+        "legs" : "arcana_armor_oceanite_legs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_oceanite_head" } ],
+            "chest" : [ { "name" : "arcana_armor_oceanite_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_oceanite_legs" } ],
+            "primary" : [
+			  "azure_machinePistol_1"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

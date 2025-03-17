@@ -5,7 +5,7 @@
   "description" : "An ancient storage crate of sorts. I wonder what's inside..",
   "shortdescription" : "Ancient Crate",
   "race" : "generic",
-  "price" : 200,
+  "price" : 600,
   
   "category" : "storage",
   "objectType" : "container",
@@ -27,7 +27,7 @@
 
   "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
   "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
-  "slotCount" : 1,
+  "slotCount" : 16,
   "uiConfig" : "/interface/chests/chest<slots>.config",
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600

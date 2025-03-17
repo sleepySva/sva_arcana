@@ -1,0 +1,46 @@
+{
+  "type" : "arcana_crewmember_fieldmedic",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Field Medic",
+        "field" : "Medical",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_fieldmedic",
+            "duration" : 600
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "medicchest",
+        "legs" : "mediclegs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "medichead" } ],
+            "chest" : [ { "name" : "medicchest" } ],
+            "legs" : [ { "name" : "mediclegs" } ],
+			"back" : [ { "name" : "medicback" } ],
+            "primary" : [ "npcpistol" ]
+          }
+		]
+	  ]
+    ]
+  }
+}

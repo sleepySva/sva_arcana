@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_crewcontract_gamer",
+  "price" : 3000,
+  "level" : 1,
+  "maxStack" : 99,
+  "rarity" : "Uncommon",
+  "category" : "mysteriousReward",
+  "description" : "A crew contract. Use it to summon someone to join your crew!",
+  "shortdescription" : "Gamer Crew Contract",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "contract.png",
+  "animation" : "default.animation",
+  "scripts" : ["crewcontract.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "crewSpecies" : ["human", "hylotl", "glitch", "floran", "apex", "avian", "novakid"],
+  "crewType" : "arcana_crewmember_gamer",
+  "crewLevel" : 3
+}

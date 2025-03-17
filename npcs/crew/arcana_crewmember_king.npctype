@@ -1,0 +1,48 @@
+{
+  "type" : "arcana_crewmember_king",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "King",
+        "field" : "Royal",
+        "uniformColorIndex" : 6,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_king",
+            "duration" : 600
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "glitchtier4chest",
+        "legs" : "glitchtier4pants"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "glitchroyalhead" } ],
+            "chest" : [ { "name" : "glitchtier4chest" } ],
+            "legs" : [ { "name" : "glitchtier4pants" } ],
+            "back" : [ { "name" : "simplecapeback" } ],
+            "primary" : [
+			  "npcbroadsword"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

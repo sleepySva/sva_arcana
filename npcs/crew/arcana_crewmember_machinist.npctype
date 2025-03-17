@@ -1,0 +1,50 @@
+{
+  "type" : "arcana_crewmember_machinist",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "mechanic",
+        "name" : "Machinist",
+        "field" : "Machining",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "fuelEfficiency",
+            "value" : 0.05
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_gearsS8_chest",
+        "legs" : "arcana_armor_gearsS8_legs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_gearsS8_head" } ],
+            "chest" : [ { "name" : "arcana_armor_gearsS8_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_gearsS8_legs" } ],
+            "primary" : [
+			  "workshop_axe_4"
+			],
+            "sheathedprimary" : [
+			  "workshop_assaultRifle_1"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

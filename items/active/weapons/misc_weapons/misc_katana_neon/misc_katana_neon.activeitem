@@ -4,13 +4,13 @@
   "level" : 8,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A blade that cuts even the night sky.",
-  "shortdescription" : "Neon",
+  "description" : "An alien blade that is said to be able to rip through dimensions.",
+  "shortdescription" : "Dusk",
   "tooltipKind" : "arcana_sword",
   "category" : "broadsword",
   "tooltipFields" : {"subtitle" : "Katana"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","katana"],
+  "itemTags" : ["weapon","melee","katana","upgradeableWeapon"],
 
   "inventoryIcon" : "icon.png",
 
@@ -40,5 +40,13 @@
 
   "altAbilityType" : "parry",
 
-  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "blade" : "upgraded.png",
+	  "handle" : "upgraded_fullbright.png"
+    },
+    "shortdescription" : "Dusk ^yellow;^reset;"
+  }
 }

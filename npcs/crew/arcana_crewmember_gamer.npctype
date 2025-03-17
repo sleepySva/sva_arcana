@@ -1,0 +1,45 @@
+{
+  "type" : "arcana_crewmember_gamer",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Gamer",
+        "field" : "Pro Gaming",
+        "uniformColorIndex" : 1,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_gamer",
+            "duration" : 600
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "hoodiechest",
+        "legs" : "jeans1legs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_head_vanillavrheadset" }, { "name" : "arcana_head_lowbudgetvrheadset" }, { "name" : "arcana_head_exousiavrheadset" } ],
+            "chest" : [ { "name" : "hoodiechest" } ],
+            "legs" : [ { "name" : "jeans1legs" } ],
+            "primary" : [ "syntek_assaultrifle_rare" ]
+          }
+		]
+	  ]
+    ]
+  }
+}

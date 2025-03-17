@@ -634,6 +634,9 @@
 
   "arcana_dungeonloots_corridor" : [
     [0, {
+	  "fill" : [
+	    {"item" : ["arcana_upgradeanvil", 1]}
+      ],
       "pool" : [
 		{"weight" : 1.0, "item" : ["arcana_terraformer_animus", 1]},
 		{"weight" : 1.0, "item" : ["arcana_terraformer_arcaneDesert", 1]},

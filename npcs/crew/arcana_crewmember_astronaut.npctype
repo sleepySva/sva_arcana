@@ -1,0 +1,53 @@
+{
+  "type" : "arcana_crewmember_astronaut",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Astronaut",
+        "field" : "Astronaut",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "lowgrav",
+            "duration" : 300
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "spacesuitchest",
+        "legs" : "spacesuitlegs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "spacesuithead" } ],
+            "chest" : [ { "name" : "spacesuitchest" } ],
+            "legs" : [ { "name" : "spacesuitlegs" } ],
+            "back" : [ { "name" : "spacesuitback" } ],
+            "primary" : [
+			  "npcbroadsword",
+			  "npchammer",
+			  "npcspear",
+			  "npcassaultrifle",
+			  "npcsniperrifle",
+			  "npcshotgun"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

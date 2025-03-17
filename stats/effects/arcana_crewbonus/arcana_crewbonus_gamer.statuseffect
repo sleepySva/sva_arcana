@@ -1,0 +1,18 @@
+{
+  "name" : "arcana_crewbonus_gamer",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "maxEnergy", "amount" : 50 }
+    ]
+	
+  },
+  "defaultDuration" : 600.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;+50 Max Energy^reset;.",
+  "icon" : "/interface/statuses/maxenergy.png"
+}

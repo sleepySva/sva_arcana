@@ -1,0 +1,16 @@
+{
+  "name" : "arcana_crewbonus_fieldmedic",
+  "blockingStat" : "healingStatusImmunity",
+
+  "effectConfig" : {
+    "healTime" : 180
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "regenerationaugment.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;Minor Health Regeneration^reset;.",
+  "icon" : "/interface/statuses/heal.png"
+}

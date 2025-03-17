@@ -1,14 +1,14 @@
 {
   "objectName" : "arcana_upgradeanvil",
   "colonyTags" : ["crafting"],
-  "rarity" : "Legendary",
+  "rarity" : "Essential",
   "description" : "An Ancient anvil for upgrading weapons, up to ^orange;Tier 10^reset;.",
   "shortdescription" : "^#ffffff;^orange;¤^reset; Upgrade Anvil^reset;",
   "race" : "generic",
   "category" : "crafting",
-  "price" : 2000,
+  "price" : 0,
   
-  "lightColor" : [100, 100, 30],
+  "lightColor" : [100, 90, 40],
 
   "soundEffect" : "/sfx/objects/scififurnace.ogg",
   "soundEffectRangeMultiplier" : 1.0,
@@ -22,9 +22,9 @@
 	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-16, 0],
-      "frames" : 4,
-      "animationCycle" : 0.4,
+      "imagePosition" : [-24, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
@@ -33,9 +33,9 @@
 	{
 	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "right",
-      "imagePosition" : [-16, 0],
-      "frames" : 4,
-      "animationCycle" : 0.4,
+      "imagePosition" : [-24, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

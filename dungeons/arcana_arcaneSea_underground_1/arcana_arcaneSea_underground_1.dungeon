@@ -1,0 +1,37 @@
+{
+  "metadata" : {
+    "name" : "arcana_arcaneSea_underground_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "1", "2", "3" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "1.json" ]
+    },
+    {
+      "name" : "2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "2.json" ]
+    },
+    {
+      "name" : "3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "3.json" ]
+    }
+  ]
+}

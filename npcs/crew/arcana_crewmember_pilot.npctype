@@ -1,0 +1,50 @@
+{
+  "type" : "arcana_crewmember_pilot",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Pilot",
+        "field" : "Pilot",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "nofalldamage",
+            "duration" : 300
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "pilotchest",
+        "legs" : "pilotlegs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "pilothead" } ],
+            "chest" : [ { "name" : "pilotchest" } ],
+            "legs" : [ { "name" : "pilotlegs" } ],
+            "back" : [ { "name" : "pilotback" } ],
+            "primary" : [
+			  "npcassaultrifle",
+			  "npcsniperrifle",
+			  "npcshotgun"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}
