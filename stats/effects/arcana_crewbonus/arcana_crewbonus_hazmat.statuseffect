@@ -1,0 +1,21 @@
+{
+  "name" : "arcana_crewbonus_hazmat",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "electricResistance", "amount" : 0.03 },
+	  { "stat" : "fireResistance", "amount" : 0.03 },
+	  { "stat" : "iceResistance", "amount" : 0.03 },
+	  { "stat" : "poisonResistance", "amount" : 0.03 }
+    ]
+	
+  },
+  "defaultDuration" : 300.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;+3% Electric, Fire, Ice, Poison Res^reset;.",
+  "icon" : "/interface/statuses/arcana_hazmatres.png"
+}

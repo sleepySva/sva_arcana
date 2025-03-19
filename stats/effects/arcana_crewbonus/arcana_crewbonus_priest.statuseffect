@@ -1,0 +1,18 @@
+{
+  "name" : "arcana_crewbonus_priest",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "arcana_resistance_abyss", "amount" : 0.1 }
+    ]
+	
+  },
+  "defaultDuration" : 600.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;+10% Abyss Res^reset;.",
+  "icon" : "/interface/statuses/arcana_abyssres.png"
+}

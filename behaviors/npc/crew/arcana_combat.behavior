@@ -1,0 +1,217 @@
+{
+  "name": "arcana_crewmember-combat",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/actions/crew.lua",
+    "/scripts/behavior/bgroup.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/dialog.lua"
+  ],
+  "parameters": {
+    "combatBenefitCooldown": 60,
+    "combatBenefitRange": 3,
+    "targetDangerRange": 8,
+    "teleportRange": 50
+  },
+  "root": {
+    "title": "parallel",
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": 1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "friendlyTargeting",
+        "type": "action",
+        "name": "friendlyTargeting",
+        "parameters": {
+          "attackOnSight": {"key": "attackOnSight"},
+          "broadcastInterval": {"value": 2},
+          "hostileDamageTeam": {"value": {"type": "friendly", "team": 1}},
+          "losTime": {"value": 8},
+          "queryRange": {"value": 50},
+          "trackingRange": {"value": 100}
+        },
+        "output": {
+          "target": "target"
+        }
+      },
+      {
+        "title": "entityInRange",
+        "type": "action",
+        "name": "entityInRange",
+        "parameters": {
+          "entity": {"key": "target"},
+          "position": {"key": "self"},
+          "range": {"key": "<teleportRange>"}
+        }
+      },
+      {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "dynamic",
+          "type": "composite",
+          "name": "dynamic",
+          "parameters": {},
+          "children": [
+            {
+              "title": "failer",
+              "type": "decorator",
+              "name": "failer",
+              "parameters": {},
+              "child": {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "resourcePercentage",
+                    "type": "action",
+                    "name": "resourcePercentage",
+                    "parameters": {
+                      "percentage": {"value": 0.1},
+                      "resource": {"value": "health"}
+                    }
+                  },
+                  {
+                    "title": "cooldown",
+                    "type": "decorator",
+                    "name": "cooldown",
+                    "parameters": {
+                      "cooldown": {"key": "<combatBenefitCooldown>"},
+                      "onFail": {"value": false},
+                      "onSuccess": {"value": true}
+                    },
+                    "child": {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "hasCombatBenefit",
+                          "type": "action",
+                          "name": "hasCombatBenefit",
+                          "parameters": {}
+                        },
+                        {
+                          "title": "recruiterEntity",
+                          "type": "action",
+                          "name": "recruiterEntity",
+                          "parameters": {},
+                          "output": {
+                            "entity": "player"
+                          }
+                        },
+                        {
+                          "title": "entityPosition",
+                          "type": "action",
+                          "name": "entityPosition",
+                          "parameters": {
+                            "entity": {"key": "target"}
+                          },
+                          "output": {
+                            "position": "targetPosition"
+                          }
+                        },
+                        {
+                          "title": "entityInRange",
+                          "type": "action",
+                          "name": "entityInRange",
+                          "parameters": {
+                            "entity": {"key": "player"},
+                            "position": {"key": "targetPosition"},
+                            "range": {"key": "<targetDangerRange>"}
+                          }
+                        },
+                        {
+                          "title": "parallel",
+                          "type": "composite",
+                          "name": "parallel",
+                          "parameters": {
+                            "fail": {"value": 1},
+                            "success": {"value": -1}
+                          },
+                          "children": [
+                            {
+                              "title": "group",
+                              "type": "action",
+                              "name": "group",
+                              "parameters": {
+                                "goal": {"value": "player"},
+                                "goalType": {"value": "entity"},
+                                "groupId": {"value": "combatBenefits"},
+                                "maxMembers": {"value": 5},
+                                "minMembers": {"value": 1},
+                                "position": {"key": "self"}
+                              }
+                            },
+                            {
+                              "title": "task",
+                              "type": "action",
+                              "name": "task",
+                              "parameters": {
+                                "groupId": {"value": "combatBenefits"},
+                                "maxMembers": {"value": 1},
+                                "minMembers": {"value": 1},
+                                "taskId": {"value": "benefitGiver"}
+                              }
+                            },
+                            {
+                              "title": "sequence",
+                              "type": "composite",
+                              "name": "sequence",
+                              "parameters": {},
+                              "children": [
+                                {
+                                  "title": "sayToEntity",
+                                  "type": "action",
+                                  "name": "sayToEntity",
+                                  "parameters": {
+                                    "dialogType": {"value": "dialog.crewmember.combatBenefit"},
+                                    "entity": {"key": "player"},
+                                    "tags": {"value": {}}
+                                  }
+                                },
+                                {
+                                  "title": "triggerCombatBenefit",
+                                  "type": "action",
+                                  "name": "triggerCombatBenefit",
+                                  "parameters": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "title": "NPC Combat",
+              "type": "module",
+              "name": "npccombat",
+              "parameters": {}
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

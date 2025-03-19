@@ -1,0 +1,18 @@
+{
+  "type" : "arcana_crewmember_soldier",
+  "baseType" : "arcana_crewmember",
+
+  "scriptConfig" : {
+    "behavior" : "arcana_crewmember_soldier"
+  },
+  "statusControllerSettings": {
+	"stats": {
+	  "maxHealth": {
+		"baseValue": 350
+	  },
+	  "powerMultiplier": {
+		"baseValue": 0.35
+	  }
+	}
+  }
+}

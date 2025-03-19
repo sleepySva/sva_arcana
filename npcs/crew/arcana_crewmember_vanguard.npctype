@@ -1,6 +1,6 @@
 {
   "type" : "arcana_crewmember_vanguard",
-  "baseType" : "crewmember",
+  "baseType" : "arcana_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -47,5 +47,15 @@
 		]
 	  ]
     ]
+  },
+  "statusControllerSettings": {
+	"stats": {
+	  "maxHealth": {
+		"baseValue": 400
+	  },
+	  "powerMultiplier": {
+		"baseValue": 2.0
+	  }
+	}
   }
 }

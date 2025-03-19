@@ -1,0 +1,18 @@
+{
+  "name" : "arcana_crewbonus_roboticist",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "electricResistance", "amount" : 0.1 }
+    ]
+	
+  },
+  "defaultDuration" : 600.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;+10% Electric Res^reset;.",
+  "icon" : "/interface/statuses/arcana_electricres.png"
+}

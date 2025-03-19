@@ -8,7 +8,7 @@
   "tooltipKind" : "arcana_gun",
   "category" : "assaultRifle",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "itemTags" : ["weapon","ranged","assaultrifle","upgradeableWeapon"],
   "level" : 7,
 
   "inventoryIcon" : "body.png:default.1",
@@ -106,5 +106,13 @@
 	"name" : "Storm of The End"
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png:default.1",
+    "animationParts" : {
+      "middle" : "upgraded.png",
+	  "fullbright" : "upgraded_fullbright.png"
+    },
+    "shortdescription" : "Terminator ^yellow;^reset;"
+  }
 }

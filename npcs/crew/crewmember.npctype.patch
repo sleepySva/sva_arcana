@@ -1,0 +1,44 @@
+[
+  {
+	"op": "test",
+	"path": "/scriptConfig/dialog/crewmember/combatBenefit",
+	"inverse": true
+  },
+  {
+    "op": "add",
+    "path":"/scriptConfig/dialog/crewmember/combatBenefit",
+    "value":{
+	  "default" : {
+		"default" : [
+		  "Let me give you a boost real quick!",
+		  "Let me help you out!",
+		  "Looks like you could use my assistance!",
+		  "I can help!"
+		]
+	  },
+	  "floran" : {
+		"default" : [
+		  "Floran hasss things to help you out!",
+		  "Floran can help out!",
+		  "Floran hasss things to help!"
+		]
+	  },
+	  "glitch" : {
+		"default" : [
+		  "Eager. I can help you out!",
+		  "Excited. Perhaps you could do with a power-up!",
+		  "Intrigued. I wonder if this will help you?",
+		  "Helpful. Take this, it will help!"
+		]
+	  },
+	  "novakid" : {
+		"default" : [
+		  "Looks like you could use a hand, partner!",
+		  "Yer lookin' like you could use a helpin' hand!",
+		  "Looks like yer fixin' for a helpin' hand!",
+		  "Hold on partner, I can help you out!"
+		]
+	  }
+	}
+  }
+]

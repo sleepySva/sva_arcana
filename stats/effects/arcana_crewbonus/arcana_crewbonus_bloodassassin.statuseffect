@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_crewbonus_bloodassassin",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 },
+	  { "stat" : "maxHealth", "effectiveMultiplier" : 0.85 }
+    ]
+	
+  },
+  "defaultDuration" : 300.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;+10% Damage^reset;, ^red;-15% Health^reset;.",
+  "icon" : "/interface/statuses/arcana_attackup.png"
+}

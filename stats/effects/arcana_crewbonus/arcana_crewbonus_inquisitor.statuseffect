@@ -1,0 +1,18 @@
+{
+  "name" : "arcana_crewbonus_inquisitor",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "arcana_resistance_abyss", "amount" : 0.05 }
+    ]
+	
+  },
+  "defaultDuration" : 300.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;+5% Abyss Res^reset;.",
+  "icon" : "/interface/statuses/arcana_abyssres.png"
+}
