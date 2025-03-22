@@ -13,27 +13,36 @@
   "arcana_contractbook" : [
     [0, {
       "pool" : [
-		{"weight" : 1.0, "item" : ["arcana_contractbook", 1, {"treasure":{"pool":"arcana_crewcontract","level":1}}]}
-      ]
-    }],
-    [5, {
-      "pool" : [
-		{"weight" : 1.0, "item" : ["arcana_contractbook", 1, {"treasure":{"pool":"arcana_crewcontract","level":6}}]}
+		{"weight" : 0.75, "pool" : "arcana_crewcontractcommon"},
+		{"weight" : 0.2, "pool" : "arcana_crewcontractuncommon"},
+		{"weight" : 0.05, "pool" : "arcana_crewcontractrare"}
       ]
     }]
   ],
   
-  "arcana_crewcontract" : [
+  "arcana_crewcontractcommon" : [
     [0, {
       "pool" : [
-		{"weight" : 1.0, "item" : ["arcana_crewcontract_gamer", 1, {"crewLevel":3}]},
-		{"weight" : 1.0, "item" : ["arcana_crewcontract_king", 1, {"crewLevel":3}]}
+		{"weight" : 1.0, "item" : ["arcana_crewcontract", 1, {"configName":"gamer"}]},
+		{"weight" : 1.0, "item" : ["arcana_crewcontract", 1, {"configName":"king"}]}
       ]
-    }],
-    [5, {
+    }]
+  ],
+  
+  "arcana_crewcontractuncommon" : [
+    [0, {
       "pool" : [
-		{"weight" : 1.0, "item" : ["arcana_crewcontract_gamer", 1, {"crewLevel":6}]},
-		{"weight" : 1.0, "item" : ["arcana_crewcontract_king", 1, {"crewLevel":6}]}
+		{"weight" : 1.0, "item" : ["arcana_crewcontract", 1, {"configName":"gamer"}]},
+		{"weight" : 1.0, "item" : ["arcana_crewcontract", 1, {"configName":"king"}]}
+      ]
+    }]
+  ],
+  
+  "arcana_crewcontractrare" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_crewcontract", 1, {"configName":"gamer"}]},
+		{"weight" : 1.0, "item" : ["arcana_crewcontract", 1, {"configName":"king"}]}
       ]
     }]
   ],

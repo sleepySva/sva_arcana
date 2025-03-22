@@ -2,7 +2,7 @@
   "itemName" : "arcana_contractbook",
   "price" : 500,
   "level" : 1,
-  "maxStack" : 1,
+  "maxStack" : 99,
   "rarity" : "Legendary",
   "category" : "mysteriousReward",
   "description" : "A contract book! ^orange;Open to obtain a random common to rare crew contract.^reset;",
@@ -21,7 +21,7 @@
   "fireOffset" : [1.0, 0.0],
 
   "treasure" : {
-    "pool" : "arcana_crewcontract",
+    "pool" : "arcana_contractbook",
     "level" : 1
   }
 }
