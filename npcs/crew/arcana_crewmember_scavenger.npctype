@@ -1,0 +1,74 @@
+{
+  "type" : "arcana_crewmember_scavenger",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Scavenger",
+        "field" : "Scavenging",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_scavenger",
+            "duration" : 180
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_scrapsewn_chest",
+        "legs" : "arcana_armor_scrapsewn_legs"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Fresh gear... and loot...",
+              "I will cook you into a delicious meal!",
+              "I will tear you apart!"
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Rapacious. Fresh gear... and loot...",
+              "Hungry. I will cook you into a delicious meal!",
+              "Forceful. I will tear you apart!"
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Fresssh gear... and loot...",
+              "Floran will cook you into a deliciousss meal!",
+              "Floran will tear you apart!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "florantier2head" } ],
+            "chest" : [ { "name" : "arcana_armor_scrapsewn_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_scrapsewn_legs" } ],
+            "primary" : [
+			  "arcana_crudeshotgun"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

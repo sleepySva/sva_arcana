@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_crewbonus_riftwalker",
+  "effectConfig" : {
+	"weaponBuff" : {
+      "tags" : ["katana", "dagger"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.10 }
+      ]
+	}
+  },
+  "defaultDuration" : 180.0,
+
+  "scripts" : [ "/stats/effects/arcana/scripts/tagbuff.lua" ],
+  
+  "label" : "Crew Bonus: ^green;+10% Katana and Dagger damage^reset;.",
+  "icon" : "/interface/statuses/arcana_attackupalt.png"
+}

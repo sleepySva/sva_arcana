@@ -1,0 +1,11 @@
+{
+  "name" : "arcana_distributor",  // named without _aug prefix, so distributor distributing doesn't distribute the distributor!
+
+  "effectConfig" : {
+    "allowListFile": "/stats/effects/arcana/scripts/distributor_statlist.config",
+    "radius": 15
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [ "arcana_distributor.lua" ]
+}

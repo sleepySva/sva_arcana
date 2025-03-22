@@ -1,0 +1,44 @@
+{
+  "type" : "arcana_crewmember_omenkyrie",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "soldier",
+        "name" : "Omenkyrie",
+        "field" : "Omen",
+        "uniformColorIndex" : 0
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_omenkyrie_chest",
+        "legs" : "arcana_armor_omenkyrie_legs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_omenkyrie_head" } ],
+            "chest" : [ { "name" : "arcana_armor_omenkyrie_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_omenkyrie_legs" } ],
+			"back" : [ { "name" : "arcana_back_horizonOmenkyrieCape" } ],
+            "primary" : [
+			  "horizon_katana_1_npc"
+			],
+			"sheathedprimary" : [ 
+              "horizon_assaultRifle_2"
+            ]
+          }
+		]
+	  ]
+    ]
+  }
+}

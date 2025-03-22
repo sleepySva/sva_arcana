@@ -1,0 +1,18 @@
+{
+  "name" : "arcana_crewbonus_sunscalewarrior",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "fireResistance", "amount" : 0.08 }
+    ]
+	
+  },
+  "defaultDuration" : 300.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;+8% Fire Res^reset;.",
+  "icon" : "/interface/statuses/arcana_fireres.png"
+}

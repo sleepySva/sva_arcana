@@ -1,7 +1,7 @@
 {
   "itemName" : "solar_axe_1",
   "level" : 8,
-  "price" : 1000,
+  "price" : 1600,
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A burning one-handed axe, forged from solar crystals.",
@@ -9,7 +9,7 @@
   "tooltipKind" : "arcana_sword",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe"],
+  "itemTags" : ["weapon","melee","axe","upgradeableWeapon"],
 
   "inventoryIcon" : "icon.png",
 
@@ -50,5 +50,13 @@
 	
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "blade" : "upgraded.png",
+	  "handle" : "upgraded_fullbright.png"
+    },
+    "shortdescription" : "Fiery Crescent ^yellow;^reset;"
+  }
 }

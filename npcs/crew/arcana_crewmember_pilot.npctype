@@ -20,10 +20,21 @@
           }
         ]
       },
-	  
+	  "uniformSlots" : [
+	    "head",
+		"headCosmetic",
+	    "chest",
+		"chestCosmetic",
+		"legs",
+		"legsCosmetic",
+		"back",
+		"backCosmetic"
+	  ],
       "defaultUniform" : {
+	    "head" : "pilothead",
         "chest" : "pilotchest",
-        "legs" : "pilotlegs"
+        "legs" : "pilotlegs",
+		"back" : "pilotback"
       }
     }
   },

@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_crewbonus_miner",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "fireResistance", "amount" : 0.03 },
+	  { "stat" : "maxHealth", "effectiveMultiplier" : 1.03 }
+    ]
+	
+  },
+  "defaultDuration" : 600.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "Crew Bonus: ^green;+3% Fire Res^reset;, ^green;+3% Max Health^reset;.",
+  "icon" : "/interface/statuses/arcana_minerres.png"
+}

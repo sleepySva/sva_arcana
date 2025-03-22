@@ -1,0 +1,167 @@
+{
+  "itemName" : "misc_katana_neon_npc",
+  "price" : 2900,
+  "level" : 8,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An alien blade that is said to be able to rip through dimensions.",
+  "shortdescription" : "Dusk",
+  "tooltipKind" : "arcana_sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Katana"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","katana","upgradeableWeapon"],
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "/items/active/weapons/melee/katana/arcana_katana_combo_neon.animation",
+  "animationParts" : {
+    "handle" : "misc_katana_neon_fullbright.png",
+    "blade" : "misc_katana_neon.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+	  "fire4" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "arcana_katana_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 10.7,
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : -200,
+        "allowRotate" : true,
+        "allowFlip" : true,
+		"twoHanded" : false
+      },
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire2" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "wait2" : {
+        "duration" : 0.3,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup3" : {
+        "duration" : 0.1,
+        "armRotation" : -130,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.2,
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.2,
+        "armRotation" : 10,
+        "weaponRotation" : -55,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup4" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire4" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "parry",
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded.png",
+    "animationParts" : {
+      "blade" : "upgraded.png",
+	  "handle" : "upgraded_fullbright.png"
+    },
+    "shortdescription" : "Dusk ^yellow;^reset;"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "type" : "arcana_crewmember_chemlord",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Chemlord",
+        "field" : "Chemistry",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_chemlord",
+            "duration" : 600
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_chemhyde_chest",
+        "legs" : "arcana_armor_chemhyde_legs"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Gruhaha. Let's teach them a lesson.",
+              "I'll crush them to a pulp.",
+              "Gruhaha. I will destroy these patheic rats."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Scoffing. Let's teach them a lesson.",
+              "Annoyed. I'll crush them to a pulp.",
+              "Superior. I will destroy these patheic rats."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Gruhaha. Let's teach them a lesssson.",
+              "I'll crusssh them to a pulp.",
+              "Gruhaha. I will dessstroy thessse patheic ratsss."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_chemhyde_head" } ],
+            "chest" : [ { "name" : "arcana_armor_chemhyde_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_chemhyde_legs" } ],
+            "primary" : [
+			  "misc_axe_wastecutter"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

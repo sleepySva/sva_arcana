@@ -1,0 +1,70 @@
+{
+  "type" : "arcana_crewmember_mage",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Mage",
+        "field" : "Magical",
+        "uniformColorIndex" : 1,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_mage",
+            "duration" : 180
+          }
+        ]
+      },
+	  "uniformSlots" : [
+	    "chest",
+		"chestCosmetic",
+		"legs",
+		"legsCosmetic",
+		"back",
+		"backCosmetic"
+	  ],
+      "defaultUniform" : {
+	    "head" : "arcana_head_sorcerershood",
+        "chest" : "aviantier6mchest",
+        "legs" : "aviantier6mpants",
+		"back" : "simplecapeback"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Hoh, let me lend you some of my knowledge and wizardry.",
+              "Behold!",
+              "Let the arcane guide you forth."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+            "chest" : [ { "name" : "aviantier6mchest" } ],
+            "legs" : [ { "name" : "aviantier6mpants" } ],
+			"back" : [ { "name" : "simplecapeback" } ],
+            "primary" : [
+			  "arcana_firesparkstaff_npc",
+			  "arcana_icesparkstaff_npc"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

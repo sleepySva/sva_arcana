@@ -1,0 +1,74 @@
+{
+  "type" : "arcana_crewmember_snowinfantry",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Snow Infantry",
+        "field" : "Veteran",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_snowinfantry",
+            "duration" : 300
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "snowinfantrychest",
+        "legs" : "snowinfantrypants"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Ha! This is nothing compared to the blizzards in Reinova. Go on, soldier.",
+              "Watch out now, soldier. Let me give you a hand.",
+              "They're no match for you, soldier."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Reminiscent. This is nothing compared to the blizzards in Reinova. Go on, soldier.",
+              "Cautious. Watch out now, soldier. Let me give you a hand.",
+              "Confident. They're no match for you, soldier."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Ha! This is nothing compared to the blizzardsss in Reinova. Go on, sssoldier.",
+              "Watch out now, sssoldier. Let me give you a hand.",
+              "They're no match for you, sssoldier."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "snowinfantryhead" } ],
+            "chest" : [ { "name" : "snowinfantrychest" } ],
+            "legs" : [ { "name" : "snowinfantrypants" } ],
+            "primary" : [
+			  "hunterrifle"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

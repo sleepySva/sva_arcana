@@ -1,0 +1,50 @@
+{
+  "type" : "arcana_crewmember_sensor",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Sensor",
+        "field" : "Survey",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_sensor",
+            "duration" : 300
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_offworld_chest",
+        "legs" : "arcana_armor_offworld_legs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_offworld_head" } ],
+            "chest" : [ { "name" : "arcana_armor_offworld_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_offworld_legs" } ],
+            "primary" : [
+			  "orion_pistol_1"
+            ],
+            "alt" : [
+              "arcana_shield_voltaicShield"
+            ]
+          }
+		]
+	  ]
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_crewcontract_king",
+  "price" : 2000,
+  "level" : 1,
+  "maxStack" : 99,
+  "rarity" : "Uncommon",
+  "category" : "mysteriousReward",
+  "description" : "A crew contract. Use it to summon someone to join your crew!",
+  "shortdescription" : "King Crew Contract",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "contract.png",
+  "animation" : "default.animation",
+  "scripts" : ["crewcontract.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "crewSpecies" : ["glitch"],
+  "crewType" : "arcana_crewmember_king",
+  "crewLevel" : 1
+}

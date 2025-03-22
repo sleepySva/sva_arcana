@@ -1,0 +1,87 @@
+{
+  "type" : "arcana_crewmember_berserker",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Berserker",
+        "field" : "Wild",
+        "uniformColorIndex" : 1,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_berserker",
+            "duration" : 180
+          }
+        ]
+      },
+	  "uniformSlots" : [
+	    "head",
+		"headCosmetic",
+	    "chest",
+		"chestCosmetic",
+		"legs",
+		"legsCosmetic",
+		"back",
+		"backCosmetic"
+	  ],
+      "defaultUniform" : {
+	    "head" : "florantier6ahead",
+        "chest" : "glitchtier6schest",
+        "legs" : "glitchtier3pants",
+		"back" : "simplecapeback"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "To battle!",
+              "Let me handle this!",
+              "Nothing gets through me!"
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Heroic. To battle!",
+              "Brave. Let me handle this!",
+              "Tough. Nothing gets through me!"
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Floran will cut them all to piecesss!",
+              "Let floran handle thisss!",
+              "Nothing getsss through floran!!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "florantier6ahead" } ],
+            "chest" : [ { "name" : "glitchtier6schest" } ],
+            "legs" : [ { "name" : "glitchtier3pants" } ],
+			"back" : [ { "name" : "simplecapeback" } ],
+            "primary" : [
+			  "npcbroadsword",
+			  "npchammer"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

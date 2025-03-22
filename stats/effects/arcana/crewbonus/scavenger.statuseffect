@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_crewbonus_scavenger",
+  "effectConfig" : {
+	"weaponBuff" : {
+      "tags" : ["shotgun", "blastrifle"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.10 }
+      ]
+	}
+  },
+  "defaultDuration" : 180.0,
+
+  "scripts" : [ "/stats/effects/arcana/scripts/tagbuff.lua" ],
+  
+  "label" : "Crew Bonus: ^green;+10% Blast Rifle and Shotgun damage^reset;.",
+  "icon" : "/interface/statuses/arcana_attackupranged.png"
+}

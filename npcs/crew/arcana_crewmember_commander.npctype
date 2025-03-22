@@ -1,0 +1,66 @@
+{
+  "type" : "arcana_crewmember_commander",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Commander",
+        "field" : "Command",
+        "uniformColorIndex" : 1,
+        "benefits" : [
+        ]
+      },
+	  "uniformSlots" : [
+	    "head",
+		"headCosmetic",
+	    "chest",
+		"chestCosmetic",
+		"legs",
+		"legsCosmetic",
+		"back",
+		"backCosmetic"
+	  ],
+      "defaultUniform" : {
+	    "head" : "captainshead",
+        "chest" : "apexcommanderjacket",
+        "legs" : "apexcommanderpants",
+		"back" : "simplecapeback"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "captainshead", "parameters" : { "colorIndex" : 1 } } ],
+            "chest" : [ {
+			  "name" : "apexcommanderjacket",
+			  "parameters" : { 
+				"colorIndex" : 0,
+				"currentAugment": {
+				  "effects": [
+				    "arcana_crewbonus_commander_aura",
+					"arcana_crewbonus_commander",
+					"glow"
+				  ]
+			    }
+			  }
+			} ],
+            "legs" : [ { "name" : "apexcommanderpants" } ],
+			"back" : [ { "name" : "simplecapeback", "parameters" : { "colorIndex" : 1 } } ],
+            "primary" : [
+			  "npcmachinepistol"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

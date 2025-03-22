@@ -1,6 +1,6 @@
 {
   "type" : "arcana_crewmember_king",
-  "baseType" : "arcana_crewmember",
+  "baseType" : "arcana_crewmember_soldier",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -25,6 +25,28 @@
         "chest" : "glitchtier4chest",
         "legs" : "glitchtier4pants"
       }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Behold! I shall lend you my unparalled strength!",
+              "Show me your courage and fight with me!",
+              "Forward! I will lead you to victory.",
+              "Do not fear. Our foes are no match for us."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Regal. I shall lend you my unparalled strength!",
+              "Fearless. Show me your courage and fight with me!",
+              "Decisive. I will lead you to victory.",
+              "Undaunted. Our foes are no match for us."
+            ]
+          }
+        }
+      }
     }
   },
 
@@ -39,6 +61,19 @@
             "back" : [ { "name" : "simplecapeback" } ],
             "primary" : [
 			  "legendblade"
+			]
+          }
+		]
+	  ],
+      [5, 
+	    [
+	      {
+		    "head" : [ { "name" : "glitchroyalhead" } ],
+            "chest" : [ { "name" : "glitchtier4chest" } ],
+            "legs" : [ { "name" : "glitchtier4pants" } ],
+            "back" : [ { "name" : "simplecapeback" } ],
+            "primary" : [
+			  "arcana_shinycalibur"
 			]
           }
 		]

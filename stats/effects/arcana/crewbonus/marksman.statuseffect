@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_crewbonus_marksman",
+  "effectConfig" : {
+	"weaponBuff" : {
+      "tags" : ["ranged"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.08 }
+      ]
+	}
+  },
+  "defaultDuration" : 180.0,
+
+  "scripts" : [ "/stats/effects/arcana/scripts/tagbuff.lua" ],
+  
+  "label" : "Crew Bonus: ^green;+8% Ranged damage^reset;.",
+  "icon" : "/interface/statuses/arcana_attackupranged.png"
+}

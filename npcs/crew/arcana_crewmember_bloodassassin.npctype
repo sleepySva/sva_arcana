@@ -1,0 +1,50 @@
+{
+  "type" : "arcana_crewmember_bloodassassin",
+  "baseType" : "arcana_crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Blood Assassin",
+        "field" : "Carnival",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_bloodassassin",
+            "duration" : 60
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_bloodAssassin_chest",
+        "legs" : "arcana_armor_bloodAssassin_legs"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_bloodAssassin_head" } ],
+            "chest" : [ { "name" : "arcana_armor_bloodAssassin_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_bloodAssassin_legs" } ],
+            "primary" : [
+			  "arcana_blooddagger"
+			],
+            "alt" : [
+			  "arcana_blooddagger"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

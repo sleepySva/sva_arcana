@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_crewbonus_commander",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.05 },
+	  { "stat" : "maxHealth", "effectiveMultiplier" : 1.05 }
+    ]
+	
+  },
+  "defaultDuration" : 3.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+
+  "label" : "Commanded: ^green;+5% Max Health and Attack^reset; when nearby the Commander.",
+  "icon" : "/interface/statuses/maxhealth.png"
+}

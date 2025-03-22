@@ -1,49 +1,37 @@
 {
-  //do not use, debug only
   "type" : "arcana_crewmember_debugger",
-  "baseType" : "arcana_crewmember_soldier",
-
-  "scriptConfig" : {
-    "behaviorConfig" : {
-      "emptyHands" : false
-    },
-    "crew" : {
-      "role" : {
-        "type" : "chemist",
-        "name" : "King",
-        "field" : "Royal",
-        "uniformColorIndex" : 6,
-        "benefits" : [
-          {
-            "type" : "EphemeralEffect",
-            "effect" : "arcana_crewbonus_king",
-            "duration" : 600
-          }
-        ]
-      },
-	  
-      "defaultUniform" : {
-        "chest" : "glitchtier4chest",
-        "legs" : "glitchtier4pants"
-      }
-    }
-  },
+  "baseType" : "villageguard",
 
   "items" : {
-    "default" : [
+    "override" : [
       [0, 
 	    [
 	      {
-		    "head" : [ { "name" : "glitchroyalhead" } ],
-            "chest" : [ { "name" : "glitchtier4chest" } ],
-            "legs" : [ { "name" : "glitchtier4pants" } ],
-            "back" : [ { "name" : "simplecapeback" } ],
+		    "head" : [ { "name" : "berethead", "parameters" : { "colorIndex" : 1 } } ],
+            "chest" : [ {
+			  "name" : "apexcommanderjacket",
+			  "parameters" : { 
+				"colorIndex" : 0,
+				"currentAugment": {
+				  "effects": [
+				    "arcana_crewbonus_commander_aura",
+					"arcana_crewbonus_commander"
+				  ]
+			    }
+			  }
+			} ],
+            "legs" : [ { "name" : "apexcommanderpants" } ],
             "primary" : [
-			  "legendblade"
-			]
+			  "npcmachinepistol"
+			],
+			"alt" : [ "npcmachinepistol" ]
           }
 		]
 	  ]
     ]
-  }
+  },
+  
+  "innateStatusEffects" : [
+	"arcana_crewbonus_commander_aura"
+  ]
 }

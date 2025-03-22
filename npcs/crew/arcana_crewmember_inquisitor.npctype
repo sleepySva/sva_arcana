@@ -1,0 +1,77 @@
+{
+  "type" : "arcana_crewmember_inquisitor",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Inquisitor",
+        "field" : "Inquisition",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_inquisitor",
+            "duration" : 180
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_inquisitor_chest",
+        "legs" : "arcana_armor_inquisitor_legs"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Leave no mercy upon these wretched fools.",
+              "We will vanquish this foe. They know not who they're dealing with.",
+              "Witness the sacred Light and be stricken down, evil."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Unpitying. Leave no mercy upon these wretched fools.",
+              "Confident. We will vanquish this foe. They know not who they're dealing with.",
+              "Resolute. Witness the sacred Light and be stricken down, evil."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Leave no mercy upon thessse wretched foolsss.",
+              "We will vanquisssh thisss foe. They know not who they're dealing with.",
+              "Witnessss the sssacred Light and be ssstricken down, evil."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_inquisitor_head" } ],
+            "chest" : [ { "name" : "arcana_armor_inquisitor_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_inquisitor_legs" } ],
+            "primary" : [
+			  "aurea_glaive_1"
+			],
+			"sheathedprimary" : [ 
+              "aurea_sniperrifle_1"
+            ]
+          }
+		]
+	  ]
+    ]
+  }
+}

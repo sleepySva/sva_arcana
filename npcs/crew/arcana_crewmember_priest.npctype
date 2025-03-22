@@ -1,0 +1,77 @@
+{
+  "type" : "arcana_crewmember_priest",
+  "baseType" : "arcana_crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Priest",
+        "field" : "Priestly",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_priest",
+            "duration" : 600
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_beholder_chest",
+        "legs" : "arcana_armor_beholder_legs"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "May the Light guide your path.",
+              "May the holy Light cleanse you of suffering.",
+              "Let the sound of heavenly light echo through your every being."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Sanctified. May the Light guide your path.",
+              "Devout. May the holy Light cleanse you of suffering.",
+              "Hallowed. Let the sound of heavenly light echo through your every being."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "May the Light guide your path.",
+              "May the holy Light cleanssse you of sssuffering.",
+              "Let the sssound of heavenly light echo through your every being."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_beholder_head" } ],
+            "chest" : [ { "name" : "arcana_armor_beholder_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_beholder_legs" } ],
+            "primary" : [
+			  "aurea_greatspear_1"
+			],
+			"sheathedprimary" : [ 
+              "aurea_orb_1"
+            ]
+          }
+		]
+	  ]
+    ]
+  }
+}

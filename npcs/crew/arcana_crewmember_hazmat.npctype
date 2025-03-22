@@ -1,0 +1,59 @@
+{
+  "type" : "arcana_crewmember_hazmat",
+  "baseType" : "arcana_crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Hazmat",
+        "field" : "Hazmat",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_hazmat",
+            "duration" : 300
+          }
+        ]
+      },
+	  "uniformSlots" : [
+	    "head",
+		"headCosmetic",
+	    "chest",
+		"chestCosmetic",
+		"legs",
+		"legsCosmetic",
+		"back",
+		"backCosmetic"
+	  ],
+      "defaultUniform" : {
+	    "head" : "hazmathead",
+        "chest" : "hazmatchest",
+        "legs" : "hazmatlegs",
+		"back" : "hazmatback"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "hazmathead" } ],
+            "chest" : [ { "name" : "hazmatchest" } ],
+            "legs" : [ { "name" : "hazmatlegs" } ],
+			"back" : [ { "name" : "hazmatback" } ],
+            "primary" : [
+			  "flamethrower"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

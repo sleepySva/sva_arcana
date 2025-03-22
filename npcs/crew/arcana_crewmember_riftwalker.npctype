@@ -1,0 +1,74 @@
+{
+  "type" : "arcana_crewmember_riftwalker",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Riftwalker",
+        "field" : "Breaching",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_riftwalker",
+            "duration" : 180
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_sleepwalker_chest",
+        "legs" : "arcana_armor_sleepwalker_legs"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Embrace your final moments.",
+              "Do not worry. I will grant you a swift departure.",
+              "...Farewell."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Impassive. Embrace your final moments.",
+              "Reassuring. Do not worry. I will grant you a swift departure.",
+              "Lamenting. Farewell."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Embrace your final momentsss.",
+              "Do not worry. Floran will grant you a ssswift departure.",
+              "...Farewell."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_sleepwalker_head" } ],
+            "chest" : [ { "name" : "arcana_armor_sleepwalker_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_sleepwalker_legs" } ],
+            "primary" : [
+			  "misc_katana_neon_npc"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

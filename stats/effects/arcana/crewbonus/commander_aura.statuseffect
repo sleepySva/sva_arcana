@@ -1,0 +1,11 @@
+{
+  "name" : "arcana_crewbonus_commander_aura",  // named without _aug prefix, so distributor distributing doesn't distribute the distributor!
+
+  "effectConfig" : {
+    "allowListFile": "/stats/effects/arcana/crewbonus/commander_statlist.config",
+    "radius": 20
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [ "/stats/effects/arcana/scripts/distributor.lua" ]
+}

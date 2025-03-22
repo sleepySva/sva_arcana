@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_crewbonus_shaman",
+  "effectConfig" : {
+	"weaponBuff" : {
+      "tags" : ["spear"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.05 }
+      ]
+	}
+  },
+  "defaultDuration" : 300.0,
+
+  "scripts" : [ "/stats/effects/arcana/scripts/tagbuff.lua" ],
+  
+  "label" : "Crew Bonus: ^green;+5% Spear damage^reset;.",
+  "icon" : "/interface/statuses/arcana_attackupspear.png"
+}

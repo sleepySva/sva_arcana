@@ -1,0 +1,27 @@
+{
+  "itemName" : "arcana_contractbook",
+  "price" : 500,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "mysteriousReward",
+  "description" : "A contract book! ^orange;Open to obtain a random common to rare crew contract.^reset;",
+  "shortdescription" : "Contract Book",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "contractbook.png",
+  "animation" : "lootbox.animation",
+  "animationParts" : {
+	"gun" : "contractbook.png"
+  },
+  "animationCustom" : {},
+  "scripts" : ["lootbox.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "arcana_crewcontract",
+    "level" : 1
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "type" : "arcana_crewmember_shaman",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Shaman",
+        "field" : "Shaman",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_shaman",
+            "duration" : 300
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "florantier6mchest",
+        "legs" : "florantier6mpants"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "floran" : {
+            "default" : [
+              "Let floran pierce through this one'sss heart...",
+              "Ssstab! Floran will do lots of ssstabs!",
+              "Floran knowsss just the right place to ssstab..."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "florantier6mhead" } ],
+            "chest" : [ { "name" : "florantier6mchest" } ],
+            "legs" : [ { "name" : "florantier6mpants" } ],
+            "primary" : [
+			  "npcspear"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

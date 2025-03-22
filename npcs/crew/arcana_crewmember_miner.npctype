@@ -1,0 +1,50 @@
+{
+  "type" : "arcana_crewmember_miner",
+  "baseType" : "arcana_crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Miner",
+        "field" : "Mining",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_miner",
+            "duration" : 600
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "minerchest",
+        "legs" : "humantier1pants"
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "minerhead" } ],
+            "chest" : [ { "name" : "minerchest" } ],
+            "legs" : [ { "name" : "humantier1pants" } ],
+            "primary" : [
+              "npcpistol"
+            ],
+            "sheathedprimary" : [
+              "npchammer"
+            ]
+          }
+		]
+	  ]
+    ]
+  }
+}

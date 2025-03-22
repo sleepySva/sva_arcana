@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_crewbonus_mage",
+  "effectConfig" : {
+	"weaponBuff" : {
+      "tags" : ["staff", "wand"],
+      "modifiers" : [
+	    { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.08 }
+      ]
+	}
+  },
+  "defaultDuration" : 180.0,
+
+  "scripts" : [ "/stats/effects/arcana/scripts/tagbuff.lua" ],
+  
+  "label" : "Crew Bonus: ^green;+8% Magic damage^reset;.",
+  "icon" : "/interface/statuses/arcana_attackupmagic.png"
+}

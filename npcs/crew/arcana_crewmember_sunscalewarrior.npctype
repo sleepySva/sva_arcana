@@ -1,0 +1,74 @@
+{
+  "type" : "arcana_crewmember_sunscalewarrior",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Sunscale Warrior",
+        "field" : "Hot",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_sunscalewarrior",
+            "duration" : 300
+          }
+        ]
+      },
+	  
+      "defaultUniform" : {
+        "chest" : "arcana_armor_fusang_chest",
+        "legs" : "arcana_armor_fusang_legs"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Let the sun's favor be bestowed upon you.",
+              "Allow the scorching sun to swallow you whole.",
+              "Let the raging flames consume you."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Zealous. Let the sun's favor be bestowed upon you.",
+              "Ardent. Allow the scorching sun to swallow you whole.",
+              "Fervent. Let the raging flames consume you."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Let the sssun's favor be bessstowed upon you.",
+              "Allow the ssscorching sssun to ssswallow you whole.",
+              "Let the raging flamesss consume you."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "arcana_armor_fusang_head" } ],
+            "chest" : [ { "name" : "arcana_armor_fusang_chest" } ],
+            "legs" : [ { "name" : "arcana_armor_fusang_legs" } ],
+            "primary" : [
+			  "solar_axe_1"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

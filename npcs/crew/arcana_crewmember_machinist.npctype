@@ -1,6 +1,6 @@
 {
   "type" : "arcana_crewmember_machinist",
-  "baseType" : "arcana_crewmember",
+  "baseType" : "arcana_crewmember_soldier",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -46,15 +46,5 @@
 		]
 	  ]
     ]
-  },
-  "statusControllerSettings": {
-	"stats": {
-	  "maxHealth": {
-		"baseValue": 400
-	  },
-	  "powerMultiplier": {
-		"baseValue": 2.0
-	  }
-	}
   }
 }

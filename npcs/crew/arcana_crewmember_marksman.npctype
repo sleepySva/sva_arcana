@@ -1,0 +1,85 @@
+{
+  "type" : "arcana_crewmember_marksman",
+  "baseType" : "arcana_crewmember_soldier",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+    "crew" : {
+      "role" : {
+        "type" : "chemist",
+        "name" : "Marksman",
+        "field" : "Dart Throwing",
+        "uniformColorIndex" : 0,
+        "benefits" : [
+          {
+            "type" : "EphemeralEffect",
+            "effect" : "arcana_crewbonus_marksman",
+            "duration" : 180
+          }
+        ]
+      },
+	  "uniformSlots" : [
+	    "head",
+		"headCosmetic",
+	    "chest",
+		"chestCosmetic",
+		"legs",
+		"legsCosmetic",
+		"back",
+		"backCosmetic"
+	  ],
+      "defaultUniform" : {
+	    "head" : "humantier1head",
+        "chest" : "humantier2chest",
+        "legs" : "humantier2pants"
+      }
+    },
+    "dialog" : {
+      "crewmember" : {
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Target marked.",
+              "Target in sight! Support fire ready.",
+              "Beginning ranged support."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Target marked.",
+              "Target in sight! Support fire ready.",
+              "Beginning ranged support."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Floran isss ready to fire!",
+              "Target in sssight!",
+              "Beginning ranged sssupport!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, 
+	    [
+	      {
+		    "head" : [ { "name" : "humantier1head" } ],
+            "chest" : [ { "name" : "humantier2chest" } ],
+            "legs" : [ { "name" : "humantier2pants" } ],
+            "primary" : [
+			  "npcsniperrifle",
+			  "npcassaultrifle"
+			]
+          }
+		]
+	  ]
+    ]
+  }
+}

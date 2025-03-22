@@ -10,7 +10,7 @@
       "role" : {
         "type" : "chemist",
         "name" : "Astronaut",
-        "field" : "Astronaut",
+        "field" : "Floating",
         "uniformColorIndex" : 0,
         "benefits" : [
           {
@@ -20,10 +20,21 @@
           }
         ]
       },
-	  
+	  "uniformSlots" : [
+	    "head",
+		"headCosmetic",
+	    "chest",
+		"chestCosmetic",
+		"legs",
+		"legsCosmetic",
+		"back",
+		"backCosmetic"
+	  ],
       "defaultUniform" : {
+	    "head" : "spacesuithead",
         "chest" : "spacesuitchest",
-        "legs" : "spacesuitlegs"
+        "legs" : "spacesuitlegs",
+		"back" : "spacesuitback"
       }
     }
   },
