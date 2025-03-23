@@ -30,7 +30,7 @@
 		  },
           "charge" : {
             "frames" : 13,
-            "cycle" : 0.4,
+            "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "spark"
           },
@@ -60,7 +60,7 @@
         "properties" : {
           "zLevel" : 0,
           "centered" : true,
-          "offset" : [0.0, 1.0],
+          "offset" : [0.0, 1.2],
           "transformationGroups" : ["weapon"]
         },
 		
@@ -79,7 +79,7 @@
           "zLevel" : 1,
           "centered" : true,
           "fullbright" : true,
-          "offset" : [0.0, 1.0], // Same as staff
+          "offset" : [0.0, 1.2], // Same as staff
           "focalPoint" : [0.0, 2.5],
           "transformationGroups" : ["weapon"]
         },
@@ -98,7 +98,7 @@
           "zLevel" : 2,
           "fullbright" : true,
           "centered" : true,
-          "offset" : [0, 3.4],
+          "offset" : [0, 1.8],
           "transformationGroups" : ["weapon"]
         },
 
@@ -137,31 +137,47 @@
   "lights" : {
     "glow" : {
       "active" : true,
-      "position" : [0, 5.0],
+      "position" : [0, 3.0],
       "color" : [0, 0, 0],
       "transformationGroups" : ["weapon"]
     }
   },
 
   "particleEmitters" : {
+    "poisoncharge" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "emissionRate" : 10,
+      "offsetRegion" : [-1.25, 2.0, 1.25, 3.0],
+      "particles" : [
+        {"particle" : "poisonswoosh1"},
+        {"particle" : "poisonswoosh2"}
+      ]
+    },
     "physicalcharge" : {
       "active" : false,
       "transformationGroups" : ["weapon"],
       "emissionRate" : 10,
-      "offsetRegion" : [-1.0, 3.25, 1.0, 3.75],
+      "offsetRegion" : [-1.25, 2.0, 1.25, 3.0],
       "particles" : [
-        {"particle" : "arcana_particle_ember_cyan_1"},
-        {"particle" : "arcana_particle_ember_cyan_2"}
+        {"particle" : "soluskatana1"},
+        {"particle" : "soluskatana2"}
       ]
     }
   },
 
   "sounds" : {
-    "physicalcharge" : ["/sfx/melee/staff_charge1.ogg"],
+    "poisoncharge" : ["/sfx/melee/staff_charge3_electric.ogg"],
+    "poisonfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
+    "poisonchargedloop" : ["/sfx/melee/staff_charged_ice2.ogg"],
+    "poisondischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
+    "poisonactivate" : ["/sfx/melee/elemental_aura_activate.ogg"],
+	
+    "physicalcharge" : ["/sfx/melee/staff_charge3_electric.ogg"],
     "physicalfullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
-    "physicalchargedloop" : ["/sfx/melee/charge_full_hold1.ogg"],
+    "physicalchargedloop" : ["/sfx/melee/staff_charged_ice2.ogg"],
     "physicaldischarge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
-    "physicalactivate" : ["/sfx/projectiles/plasma3.ogg"],
+    "physicalactivate" : ["/sfx/melee/elemental_aura_activate.ogg"],
 	
     "zoneactivate" : ["/sfx/melee/staff_aura_activate.ogg"]
   }

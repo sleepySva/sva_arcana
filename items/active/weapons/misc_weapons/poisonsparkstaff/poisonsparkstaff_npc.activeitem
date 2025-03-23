@@ -1,14 +1,14 @@
 {
-  "itemName" : "arcana_guidance",
-  "price" : 1400,
+  "itemName" : "arcana_poisonsparkstaff_npc",
+  "price" : 600,
   "maxStack" : 1,
-  "level" : 6,
-  "rarity" : "Rare",
-  "description" : "An ancient staff formerly wielded by the Starstriders, still fully functional to this day.",
-  "shortdescription" : "Guidance",
-  "category" : "staff",
+  "level" : 3,
+  "rarity" : "Uncommon",
+  "description" : "A simple staff that can cast out poison bubbles.",
+  "shortdescription" : "Poisonbubble Staff",
+  "category" : "wand",
   "twoHanded" : true,
-  "itemTags" : ["weapon","staff"],
+  "itemTags" : ["weapon", "staff", "ranged"],
   "tooltipKind" : "arcana_staff",
 
   "animation" : "animation.animation",
@@ -20,18 +20,18 @@
   "animationCustom" : {
     "lights" : {
       "glow" : {
-        "color" : [33, 86, 150]
+        "color" : [0, 0, 0]
       }
     }
   },
 
-  "inventoryIcon" : "body.png:idle.1",
+  "inventoryIcon" : "body.png",
 
   "scripts" : ["/items/active/weapons/staff/staff.lua"],
 
   "stances" : {
     "idle" : {
-      "armRotation" : -90,
+      "armRotation" : -50,
       "weaponRotation" : 0,
       "twoHanded" : false,
 
@@ -39,7 +39,7 @@
       "allowFlip" : true
     },
     "charge" : {
-      "duration" : 0.4,
+      "duration" : 0.2,
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : true,
@@ -56,7 +56,7 @@
       "allowFlip" : true
     },
     "discharge" : {
-      "duration" : 0.5,
+      "duration" : 0.2,
       "armRotation" : -10,
       "weaponRotation" : -50,
       "twoHanded" : true,
@@ -65,7 +65,7 @@
       "allowFlip" : true
     },
     "cooldown" : {
-      "duration" : 0.5,
+      "duration" : 0.2,
       "armRotation" : -45,
       "weaponRotation" : 0,
       "twoHanded" : true,
@@ -75,15 +75,15 @@
     }
   },
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
 
   "primaryAbilityType" : "arcana_staff_ability_spellBurst",
   "primaryAbility" : {
 
-    "name" : "Triblades",
-	"energyCost" : 20,
+    "name" : "Poison Bubbles",
+	"energyCost" : 15,
 	
-	"projectileType" : "arcana_bluetriangle_1",
+	"projectileType" : "poisonbubble",
 	
 	"scripts" : ["/items/active/weapons/staff/abilities/arcana_staff_ability_spellBurst/arcana_staff_ability_spellBurst.lua"],
     "class" : "ControlProjectile",
@@ -95,7 +95,8 @@
     "projectileDelayEach" : 0.06,
 
     "projectileParameters" : {
-      "baseDamage" : 18
+      "baseDamage" : 6,
+      "statusEffects" : [ "weakpoison" ]
     },
 
     "stances" : {
@@ -116,8 +117,5 @@
       }
     }
   },
-
-  "altAbilityType" : "healingzone",
-
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

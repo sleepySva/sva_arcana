@@ -1,0 +1,92 @@
+{
+  "objectName" : "arcana_aurea_store_1",
+  "colonyTags" : ["outpost","commerce"],
+  "rarity" : "Common",
+  "category" : "other",
+  "description" : "A poster board with a bunch of recruitment contacts.",
+  "shortdescription" : "Recruitment Board",
+  "race" : "generic",
+  "printable" : false,
+
+  "lightColor" : [30, 20, 10],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-40, 0],
+      "frames" : 38,
+      "animationCycle" : 3.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [-40, 0],
+      "frames" : 38,
+      "animationCycle" : 3.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ],
+
+  "scripts" : [ "store.lua" ],
+  "scriptDelta" : 0,
+
+  "interactData" : {
+    "config" : "/interface/windowconfig/arcana_contractstore.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Recruitment Board",
+        "subtitle" : "Find new crew to recruit! ^orange;Contracts are refreshed every hour.^reset;",
+        "icon" : {
+          "file" : "/interface/crafting/arcana_contractstore.png"
+        }
+      }
+    },
+    "filter" : []
+  },
+
+  "rotationTime" : 3600, // time of feature set availability in seconds
+  "storeInventory" : {
+    "featured" : [
+      [
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"gamer"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"miner"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"shaman"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"bloodassassin"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"navigator"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"astronaut"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"pilot"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"fieldmedic"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"hazmat"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"scavenger"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"marksman"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"mage"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"berserker"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"machinist"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"vanguard"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"sensor"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"omenkyrie"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"inquisitor"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"king"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"deathbringer"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"priest"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"roboticist"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"chemlord"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"snowinfantry"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"sunscalewarrior"}},
+		{"name":"arcana_crewcontract", "count":1, "parameters":{"configName":"riftwalker"}}
+	  ]
+    ]
+  },
+  
+  "buyFactor" : 10.0
+}
