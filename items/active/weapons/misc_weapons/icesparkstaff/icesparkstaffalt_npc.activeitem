@@ -1,0 +1,121 @@
+{
+  "itemName" : "arcana_icesparkstaffalt_npc",
+  "price" : 600,
+  "maxStack" : 1,
+  "level" : 3,
+  "rarity" : "Uncommon",
+  "description" : "A simple staff with a cold crystal.",
+  "shortdescription" : "Icespark Staff",
+  "category" : "wand",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "staff", "ranged"],
+  "tooltipKind" : "arcana_staff",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "staff" : "alt.png",
+    "stone" : "alt_fullbright.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [0, 0, 0]
+      }
+    }
+  },
+
+  "inventoryIcon" : "alt.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -50,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.2,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.2,
+      "armRotation" : -10,
+      "weaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.2,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "ice",
+
+  "primaryAbilityType" : "arcana_staff_ability_spellBurst",
+  "primaryAbility" : {
+
+    "name" : "Icespark Shot",
+	"energyCost" : 15,
+	
+	"projectileType" : "arcana_spell_ice_shiveringShot_projectile_1",
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/arcana_staff_ability_spellBurst/arcana_staff_ability_spellBurst.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 1,
+    "projectileDistance" : 1,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+
+    "projectileParameters" : {
+      "baseDamage" : 8,
+      "statusEffects" : [ "arcana_status_shivery" ]
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

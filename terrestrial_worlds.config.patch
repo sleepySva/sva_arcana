@@ -1087,11 +1087,11 @@
         "surface": {
           "primaryRegion" : ["arcana_animus"],
           "secondaryRegions" : ["arcana_sanguine"],
+		  "dungeonCountRange" : [3, 4],
           "dungeons": [
 			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
-              [1.0, "arcana_dungeon_misc_1"],
-			  [1.0, "arcana_dungeon_misc_2"]
+			  [1.0, "aviantemple"], [1.0, "aviantomb"],
+			  [8.0, "arcana_animusaltar"]
           ]
         },
 		
@@ -1149,11 +1149,11 @@
         "surface": {
           "primaryRegion" : ["arcana_evoaquatic"],
           "secondaryRegions" : [],
+		  "dungeonCountRange" : [3, 5],
           "dungeons": [
-			  [1.0, "arcana_verdant_dungeon_2"],
-			  [4.0, "arcana_dungeon_evoSanctum"],
-			  [1.0, "arcana_arcaneForest_dungeon_2"],
-		      [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [8.0, "arcana_evoaquaticaltar"],
+			  [8.0, "arcana_dungeon_evoSanctum"],
+		      [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"],
               [1.0, "arcana_dungeon_misc_1"],
 			  [1.0, "arcana_dungeon_misc_2"]
           ]

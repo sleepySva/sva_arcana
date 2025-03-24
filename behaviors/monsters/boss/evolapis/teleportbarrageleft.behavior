@@ -17,7 +17,7 @@
     "stopForce": 500,
     "stopTime": 0,
     "projectileAngleStep": 0.2,
-    "projectileCount": 4,
+    "projectileCount": 3,
     "projectileInterval": 0.01,
     "startAngle": -0.5
   },
@@ -315,7 +315,7 @@
                             "aimVector": {"key": "nemesisAimVector"},
                             "angle": {"value": 0},
                             "position": {"key": "orbPosition"},
-                            "projectileConfig": {"value": {"power" : 45.0}},
+                            "projectileConfig": {"value": {"power" : 42.0}},
                             "projectileType": {"value": "evolapisspikeghostly"},
                             "scalePower": {"value": true},
                             "sourceEntity": {"key": "self"},
@@ -358,7 +358,7 @@
             "type": "action",
             "name": "timer",
             "parameters": {
-              "time": {"value": 0.2}
+              "time": {"value": 0.6}
             }
           }
         ]

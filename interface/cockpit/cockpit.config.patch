@@ -194,6 +194,24 @@
   },
   {
     "op": "add",
+    "path": "/displayDungeons/arcana_evoaquaticaltar",
+	"value": {
+		"description" : "A large opening with ancient structures. ^red;Caution is advised.^reset;",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png",
+		"name" : "???"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_animusaltar",
+	"value": {
+		"description" : "A large opening with ancient structures. ^red;Caution is advised.^reset;",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png",
+		"name" : "???"
+	}
+  },
+  {
+    "op": "add",
     "path": "/displayDungeons/arcana_ice_dungeon_1",
 	"value": {
 		"description" : "An icy castle. Signs of Glitch-like lifeforms are detected.",
@@ -242,7 +260,7 @@
     "path": "/displayDungeons/arcana_windswept_dungeon_2",
 	"value": {
 		"description" : "A tall tower that could almost reach into the heavens.",
-		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png",
+		"icon" : "/interface/cockpit/dungeons/arcana_windswept_dungeon_2.png",
 		"name" : "Windswept Sanctum"
 	}
   },
