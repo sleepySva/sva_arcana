@@ -1,6 +1,6 @@
 {
-  "type" : "arcana_runicmage",
-  "baseType" : "villageguard",
+  "type" : "arcana_runicvillager",
+  "baseType" : "villager",
 
   "dropPools" : [ "money" ],
   
@@ -31,55 +31,28 @@
 	
   },
   
-  "matchColorIndices" : true,
+  "matchColorIndices" : false,
   "items" : {
     "override" : [
       [0, [
           {
 			"head" : [
               { "name" : "arcana_armor_goldenheadpiece_head", "parameters" : { "colorIndex" : 0 } },
-			  { "name" : "arcana_armor_scholar_head", "parameters" : { "colorIndex" : 5 } }
+			  { "name" : "arcana_armor_starwalker_head", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
             ],
             "chest" : [
-              { "name" : "arcana_armor_scholar_chest", "parameters" : { "colorIndex" : 5 } }
+              { "name" : "arcana_armor_starwalker_chest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
             ],
             "legs" : [
-              { "name" : "arcana_armor_scholar_legs", "parameters" : { "colorIndex" : 5 } }
-            ],
-            "primary" : [
-              "arcana_firesparkstaff_npc",
-			  "arcana_firesparkstaffalt_npc"
+              { "name" : "arcana_armor_starwalker_legs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
             ]
           },
           {
-			"head" : [
-              { "name" : "arcana_armor_goldenheadpiece_head", "parameters" : { "colorIndex" : 0 } },
-			  { "name" : "arcana_armor_scholar_head", "parameters" : { "colorIndex" : 0 } }
-            ],
             "chest" : [
-              { "name" : "arcana_armor_scholar_chest", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "arcana_armor_starwalker_chest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
             ],
             "legs" : [
-              { "name" : "arcana_armor_scholar_legs", "parameters" : { "colorIndex" : 0 } }
-            ],
-            "primary" : [
-              "arcana_icesparkstaff_npc",
-			  "arcana_icesparkstaffalt_npc"
-            ]
-          },
-          {
-			"head" : [
-              { "name" : "arcana_armor_goldenheadpiece_head", "parameters" : { "colorIndex" : 0 } },
-			  { "name" : "arcana_armor_scholar_head", "parameters" : { "colorIndex" : 7 } }
-            ],
-            "chest" : [
-              { "name" : "arcana_armor_scholar_chest", "parameters" : { "colorIndex" : 7 } }
-            ],
-            "legs" : [
-              { "name" : "arcana_armor_scholar_legs", "parameters" : { "colorIndex" : 7 } }
-            ],
-            "primary" : [
-              "arcana_poisonsparkstaff_npc"
+              { "name" : "arcana_armor_starwalker_legs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
             ]
           }
         ] ]
