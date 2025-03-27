@@ -25,5 +25,48 @@
 		}
 	  ] ]
 	]
-  }
+  },
+  { "op" : "add", "path" : "/items/arcanian",
+	"value" : [
+	  [0, [
+		{
+		  "chest" : [
+			{ "name" : "arcana_armor_starwalker_chest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
+		  ],
+		  "legs" : [
+			{ "name" : "arcana_armor_starwalker_legs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
+		  ],
+		  "head" : [
+			{ "name" : "arcana_armor_starwalker_head", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
+		  ]
+		}
+	  ] ]
+	]
+  },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_astronaut"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_berserker"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_bloodassassin"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_chemlord"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_deathbringer"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_fieldmedic"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_gamer"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_hazmat"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_inquisitor"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_king"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_machinist"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_mage"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_marksman"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_miner"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_navigator"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_omenkyrie"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_pilot"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_priest"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_riftwalker"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_roboticist"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_scavenger"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_sensor"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_shaman"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_snowinfantry"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_sunscalewarrior"] },
+  { "op": "add", "path": "/scriptConfig/questGenerator/graduation/nextNpcType/-", "value": [1, "arcana_crewmember_vanguard"] }
 ]

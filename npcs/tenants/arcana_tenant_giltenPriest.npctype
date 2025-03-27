@@ -5,7 +5,13 @@
 
   "scriptConfig" : {
     "questGenerator" : {
-      "pools" : ["common", "tenant"]
+      "pools" : ["common", "tenant"],
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "arcana_crewmember_priest"],
+          [1, "arcana_crewmember_inquisitor"]
+        ]
+      }
     },
 
     "dialog" : {

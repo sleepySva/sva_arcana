@@ -8,10 +8,9 @@
       "pools" : ["common", "tenant"],
       "graduation" : {
         "nextNpcType" : [
-          [0.25, "crewmemberchemistblue"],
-          [0.25, "crewmemberchemistgreen"],
-          [0.25, "crewmemberchemistyellow"],
-          [0.25, "crewmemberchemistorange"]
+          [1, "arcana_crewmember_mage"],
+          [1, "arcana_crewmember_marksman"],
+		  [1, "arcana_crewmember_berserker"]
         ]
       }
     }
