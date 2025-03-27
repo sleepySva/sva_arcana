@@ -453,13 +453,22 @@
 		"name" : "Arcane Treetop Village"
 	}
   },
-   {
+  {
     "op": "add",
     "path": "/displayDungeons/arcana_verdant_dungeon_2",
 	"value": {
 		"description" : "An old temple covered with vegetation can be seen within this planet.",
 		"icon" : "/interface/cockpit/dungeons/arcana_verdant_dungeon_2.png",
 		"name" : "Verdant Sanctum"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_arcanecity",
+	"value": {
+		"description" : "A bustling Arcanian city, with many mages residing here.",
+		"icon" : "/interface/cockpit/dungeons/arcana_azureDesert_dungeon_1.png",
+		"name" : "Arcane City"
 	}
   }
   

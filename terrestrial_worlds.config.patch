@@ -1,6 +1,8 @@
 [
   { "op":"add", "path": "/planetTypes/tundra/layers/surface/dungeons/-", "value": [ 7.0, "arcana_ice_dungeon_1" ] },
   { "op":"add", "path": "/planetTypes/volcanic/layers/surface/dungeons/-", "value": [ 7.0, "arcana_volcanic_dungeon_1" ] },
+  { "op":"add", "path": "/planetTypes/desert/layers/surface/dungeons/-", "value": [ 1.0, "arcana_arcanecity" ] },
+  { "op":"add", "path": "/planetTypes/savannah/layers/surface/dungeons/-", "value": [ 1.0, "arcana_arcanecity" ] },
   { "op":"add","path": "/regionTypes/midnight/subRegion/-", "value": "arcana_cemetery" },
   {
     "op": "add",
@@ -267,12 +269,13 @@
         "surface": {
           "primaryRegion" : ["arcana_arcaneForest"],
           "secondaryRegions" : ["arcana_arcaneDesert","arcana_arcaneTundra"],
-		  "dungeonCountRange" : [3, 3],
+		  "dungeonCountRange" : [3, 4],
           "dungeons": [
-		  	  [1.0, "arcana_arcaneDesert_dungeon_2"],
+		  	  [3.0, "arcana_arcanecity"],
+			  [3.0, "arcana_arcaneDesert_dungeon_2"],
 			  [3.0, "arcana_arcaneForest_dungeon_2"],
-			  [3.0, "arcana_dungeon_misc_1"],
-			  [3.0, "arcana_dungeon_misc_2"]
+			  [1.0, "arcana_dungeon_misc_1"],
+			  [1.0, "arcana_dungeon_misc_2"]
           ]
         },
 		
@@ -1842,9 +1845,8 @@
           "primaryRegion" : [ "arcana_azureDesert" ],
           "secondaryRegions" : [],
           "dungeons": [
-		      [4.0, "arcana_azureDesert_dungeon_1"],
-			  [1.0, "novakidvillage"],
-			  [1.0, "humancamp"],
+		      [6.0, "arcana_arcanecity"],
+			  [6.0, "arcana_azureDesert_dungeon_1"],
 			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "aviannativevillage"],  [1.0, "avianairship"]
           ]
         },

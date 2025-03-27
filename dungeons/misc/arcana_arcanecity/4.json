@@ -906,7 +906,95 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":1525,
+                 "name":"Runic Villager",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicvillager"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1344,
+                 "y":416
+                }, 
+                {
+                 "height":8,
+                 "id":1526,
+                 "name":"Runic Villager",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicvillager"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1240,
+                 "y":288
+                }, 
+                {
+                 "height":8,
+                 "id":1527,
+                 "name":"Runic Villager",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicvillager"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":344,
+                 "y":560
+                }, 
+                {
+                 "height":8,
+                 "id":1531,
+                 "name":"Runic Mage",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicmage"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":960,
+                 "y":432
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -964,6 +1052,57 @@
                  "width":8,
                  "x":1552,
                  "y":456
+                }, 
+                {
+                 "height":248,
+                 "id":1528,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"objecttracker"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":432,
+                 "x":16,
+                 "y":360
+                }, 
+                {
+                 "height":248,
+                 "id":1529,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"objecttracker"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":280,
+                 "x":664,
+                 "y":360
+                }, 
+                {
+                 "height":432,
+                 "id":1530,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"objecttracker"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":608,
+                 "x":944,
+                 "y":176
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -983,7 +1122,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1525,
+ "nextobjectid":1532,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

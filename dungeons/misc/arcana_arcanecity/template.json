@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt0DsKw0AQRMEN\/Et9BQVzSgU6oQOfyGwgJlzMBIOgCjpv3hgAAPC\/zxjHue4vV6RfjX50ukduekaONf1q9KPTI3LTK3Ks6VejH51ukZvekWNNvxr96LRvuem75VjTr0Y\/AAAAAAAAAAAAAAAAAAAAAK7oBwqZI4w=",
+         "data":"eJzt0DsKw0AQRME9gH+5MwVzSgU6oQOfyGwgJlzMBIOgCjpv3hgAAPC\/zxjHue4vV6RfjX50ukduekaONf1q9KPTI3LTK3Ks6VejH51ukZvekWNNvxr96LRvuem75VjTr0Y\/AAAAAAAAAAAAAAAAAAAAAK7oB5HoJU4=",
          "encoding":"base64",
          "height":80,
          "id":2,
@@ -852,7 +852,73 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":1216,
+                 "name":"Runic Villager",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicvillager"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":264,
+                 "y":72
+                }, 
+                {
+                 "height":8,
+                 "id":1217,
+                 "name":"Runic Mage",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicmage"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":264,
+                 "y":104
+                }, 
+                {
+                 "height":8,
+                 "id":1218,
+                 "name":"Runic Protector",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicprotector"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":264,
+                 "y":136
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -922,7 +988,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1216,
+ "nextobjectid":1219,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -1133,11 +1199,11 @@
          "source":"..\/..\/..\/tilesets\/objects\/runic_objects\/runic_objects.json"
         }, 
         {
-         "firstgid":9722,
+         "firstgid":9730,
          "source":"..\/..\/..\/tilesets\/tiles\/astral_tiles\/astral_tiles.json"
         }, 
         {
-         "firstgid":9737,
+         "firstgid":9747,
          "source":"..\/..\/..\/tilesets\/tiles\/bleuark_tiles\/bleuark_tiles.json"
         }],
  "tilewidth":8,

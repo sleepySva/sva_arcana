@@ -916,7 +916,95 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":1367,
+                 "name":"Runic Protector",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicprotector"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1104,
+                 "y":464
+                }, 
+                {
+                 "height":8,
+                 "id":1368,
+                 "name":"Runic Protector",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicprotector"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1056,
+                 "y":464
+                }, 
+                {
+                 "height":8,
+                 "id":1369,
+                 "name":"Runic Protector",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicprotector"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":120,
+                 "y":440
+                }, 
+                {
+                 "height":8,
+                 "id":1371,
+                 "name":"Runic Villager",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicvillager"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":648,
+                 "y":440
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -1154,6 +1242,23 @@
                  "width":8,
                  "x":8,
                  "y":456
+                }, 
+                {
+                 "height":248,
+                 "id":1372,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"objecttracker"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1744,
+                 "x":16,
+                 "y":272
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1173,7 +1278,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1367,
+ "nextobjectid":1373,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
