@@ -1,10 +1,10 @@
 {
   "itemName" : "azure_sniperRifle_basic",
-  "price" : 200,
+  "price" : 0,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A prototype sniper rifle used by Arcanian ship crew.",
-  "shortdescription" : "^#4b92a9;Furud Prototype^reset;",
+  "description" : "A rusty sniper rifle used by Arcanian ship crew.",
+  "shortdescription" : "Rusty Rifle",
   "tooltipKind" : "arcana_gun",
   "category" : "sniperRifle",
   "twoHanded" : true,
@@ -31,7 +31,7 @@
 		},
 	    "muzzleFlash" : {
 		  "properties" : {
-		    "offset" : [-0.4, -0.6]
+		    "offset" : [-0.2, -0.6]
 		  }
 		}
 	  }
@@ -42,7 +42,7 @@
   },
 
   "baseOffset" : [0.9, 0.3],
-  "muzzleOffset" : [3.6, 0.2],
+  "muzzleOffset" : [3.4, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -53,8 +53,8 @@
     "class" : "GunFire",
 
     "fireTime" : 2.0,
-    "baseDps" : 6.4,
-    "energyUsage" : 30.0,
+    "baseDps" : 5.0,
+    "energyUsage" : 25.0,
     "inaccuracy" : 0.0,
 
     "projectileCount" : 1,

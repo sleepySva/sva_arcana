@@ -7,7 +7,16 @@
   "scriptConfig" : {
 
     "dialog" : {
-	
+      "greeting" : {
+        "default" : {
+          "default" : [
+            "The city of the arcane welcomes you, traveller.",
+            "Stay at ease, traveller. As the city's protector, I will defend it with all my might.",
+			"You are not from around here, are you?",
+			"Don't worry about the monsters, traveller. The city has all sorts of magic against them!"
+          ]
+        }
+      },
       "converse" : {
         "default" : {
           "default" : [

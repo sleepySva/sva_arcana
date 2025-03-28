@@ -138,30 +138,6 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":9717,
-                 "height":48,
-                 "id":1367,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":80,
-                 "x":272,
-                 "y":536
-                }, 
-                {
-                 "gid":2147493364,
-                 "height":48,
-                 "id":1368,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":64,
-                 "x":672,
-                 "y":536
-                }, 
-                {
                  "gid":2147493336,
                  "height":48,
                  "id":1369,
@@ -1018,6 +994,42 @@
                  "width":8,
                  "x":352,
                  "y":536
+                }, 
+                {
+                 "gid":9688,
+                 "height":48,
+                 "id":1466,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":48,
+                 "x":296,
+                 "y":536
+                }, 
+                {
+                 "gid":2147493364,
+                 "height":48,
+                 "id":1467,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":64,
+                 "x":672,
+                 "y":536
+                }, 
+                {
+                 "gid":9703,
+                 "height":16,
+                 "id":1471,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":264,
+                 "y":536
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1067,28 +1079,6 @@
                 }, 
                 {
                  "height":8,
-                 "id":1458,
-                 "name":"Runic Villager",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"arcanian"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"arcana_runicvillager"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":896,
-                 "y":400
-                }, 
-                {
-                 "height":8,
                  "id":1459,
                  "name":"Runic Villager",
                  "properties":[
@@ -1108,6 +1098,72 @@
                  "width":8,
                  "x":328,
                  "y":440
+                }, 
+                {
+                 "height":8,
+                 "id":1463,
+                 "name":"Runic Merchant",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicmerchant"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":280,
+                 "y":440
+                }, 
+                {
+                 "height":8,
+                 "id":1468,
+                 "name":"Runic Potion Merchant",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicmerchantpotion"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":280,
+                 "y":520
+                }, 
+                {
+                 "height":8,
+                 "id":1469,
+                 "name":"Runic Potion Merchant",
+                 "properties":[
+                        {
+                         "name":"npc",
+                         "type":"string",
+                         "value":"arcanian"
+                        }, 
+                        {
+                         "name":"typeName",
+                         "type":"string",
+                         "value":"arcana_runicmerchantpotion"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":752,
+                 "y":520
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1186,7 +1242,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -1202,7 +1258,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1462,
+ "nextobjectid":1472,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

@@ -29,6 +29,35 @@
 			] ]
 		]
 	},
+	
+	// Runic Fabric Merchant
+	{ "op" : "add", "path" : "/arcana_merchantpool_runicmerchant",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "fabric" } },
+			  { "item": { "name": "bluedye" }, "rarity": 0.6 },
+			  { "item": { "name": "orangedye" }, "rarity": 0.6 },
+			  { "item": { "name": "greendye" }, "rarity": 0.6 },
+			  { "item": { "name": "arcana_armor_starwalker_head" }, "rarity": 0.5 },
+			  { "item": { "name": "arcana_armor_starwalker_chest" }, "rarity": 0.5 },
+			  { "item": { "name": "arcana_armor_starwalker_legs" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	// Runic Potion Merchant
+	{ "op" : "add", "path" : "/arcana_merchantpool_runicmerchantpotion",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "grassremedy" }, "rarity": 1.0 },
+			  { "item": { "name": "bandage" }, "rarity": 1.0 },
+			  { "item": { "name": "arcana_magiksensePotion" }, "rarity": 1.0 },
+			  { "item": { "name": "antidote" }, "rarity": 1.0 },
+			  { "item": { "name": "bottledwater" }, "rarity": 1.0 },
+			  { "item": { "name": "bottledhealingwater" }, "rarity": 1.0 }
+			] ]
+		]
+	},
 
 	// Astral Fabric Merchant
 	{ "op" : "add", "path" : "/arcana_merchantpool_astralMerchantFabric",

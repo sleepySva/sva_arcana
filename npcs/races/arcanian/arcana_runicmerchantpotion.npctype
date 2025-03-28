@@ -1,0 +1,51 @@
+{
+  "type" : "arcana_runicmerchantpotion",
+  "baseType" : "merchant",
+
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 10,
+      "categories" : {
+        "default" : [
+		  "arcana_merchantpool_runicmerchantpotion"
+		]
+      },
+      "buyFactorRange" : [ 3.0, 4.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 6,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Potion Merchant",
+          "subtitle" : "  Sells Alchemy goods"
+        }
+      }
+    }
+	
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+			  { "name" : "arcana_armor_runicalt_head", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_runic_chest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_runic_legs", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "back" : [
+              { "name" : "survivalgearback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
