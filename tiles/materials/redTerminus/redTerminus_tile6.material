@@ -1,0 +1,22 @@
+{
+  "materialId" : 16398,
+  "materialName" : "redTerminus_tile6",
+  "particleColor" : [0, 0, 255, 255],
+  "itemDrop" : "redTerminus_tile6",
+  "description" : "A block of nothingness.",
+  "shortdescription" : "Blue Void Block",
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "redTerminus_tile6.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 2000,
+    "radiantLight" : [0, 0, 160]
+  }
+}
