@@ -6,20 +6,23 @@
     ],
 
     "anchor" : [
-	"arcana_dungeon_general_lush_horizon_1",
-	"arcana_dungeon_general_lush_horizon_2",
-	"arcana_dungeon_general_lush_horizon_3",
-	"arcana_dungeon_general_lush_horizon_4",
-	"arcana_dungeon_general_lush_wooden_1",
-	"arcana_dungeon_general_lush_wooden_2",
-	"arcana_dungeon_general_lush_wooden_3",
-	"arcana_dungeon_general_lush_wooden_4",
-	"arcana_dungeon_general_lush_wooden_5",
-	"arcana_dungeon_general_lush_wooden_6",
-	"arcana_dungeon_general_lush_wooden_7",
-	"arcana_dungeon_general_lush_concrete_1",
-	"arcana_dungeon_general_lush_concrete_2",
-	"arcana_dungeon_general_lush_concrete_3"
+	  "horizon_1",
+	  "horizon_2",
+	  "horizon_3",
+	  "horizon_4",
+	  "wooden_1",
+	  "wooden_2",
+	  "wooden_3",
+	  "wooden_4",
+	  "wooden_5",
+	  "wooden_6",
+	  "wooden_7",
+	  "wooden_8",
+	  "wooden_9",
+	  "concrete_1",
+	  "concrete_2",
+	  "concrete_3",
+	  "concrete_4"
 	],
 
     "gravity" : 80,
@@ -30,102 +33,123 @@
 
   "parts" : [
     {
-      "name" : "arcana_dungeon_general_lush_horizon_1",
+      "name" : "horizon_1",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_horizon_1.json" ]
+      "def" : [ "tmx", "horizon_1.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_horizon_2",
+      "name" : "horizon_2",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_horizon_2.json" ]
+      "def" : [ "tmx", "horizon_2.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_horizon_3",
+      "name" : "horizon_3",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_horizon_3.json" ]
+      "def" : [ "tmx", "horizon_3.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_horizon_4",
+      "name" : "horizon_4",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_horizon_4.json" ]
+      "def" : [ "tmx", "horizon_4.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_wooden_1",
+      "name" : "wooden_1",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_wooden_1.json" ]
+      "def" : [ "tmx", "wooden_1.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_wooden_2",
+      "name" : "wooden_2",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_wooden_2.json" ]
+      "def" : [ "tmx", "wooden_2.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_wooden_3",
+      "name" : "wooden_3",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_wooden_3.json" ]
+      "def" : [ "tmx", "wooden_3.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_wooden_4",
+      "name" : "wooden_4",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_wooden_4.json" ]
+      "def" : [ "tmx", "wooden_4.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_wooden_5",
+      "name" : "wooden_5",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_wooden_5.json" ]
+      "def" : [ "tmx", "wooden_5.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_wooden_6",
+      "name" : "wooden_6",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_wooden_6.json" ]
+      "def" : [ "tmx", "wooden_6.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_wooden_7",
+      "name" : "wooden_7",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_wooden_7.json" ]
+      "def" : [ "tmx", "wooden_7.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_concrete_1",
+      "name" : "wooden_8",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_concrete_1.json" ]
+      "def" : [ "tmx", "wooden_8.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_concrete_2",
+      "name" : "wooden_9",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_concrete_2.json" ]
+      "def" : [ "tmx", "wooden_9.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_concrete_3",
+      "name" : "concrete_1",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_concrete_3.json" ]
+      "def" : [ "tmx", "concrete_1.json" ]
+    },
+    {
+      "name" : "concrete_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "concrete_2.json" ]
+    },
+    {
+      "name" : "concrete_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "concrete_3.json" ]
+    },
+    {
+      "name" : "concrete_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "concrete_4.json" ]
     }
   ]
 }

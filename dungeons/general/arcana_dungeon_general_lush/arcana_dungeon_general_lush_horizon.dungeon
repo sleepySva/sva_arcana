@@ -6,10 +6,10 @@
     ],
 
     "anchor" : [
-	"arcana_dungeon_general_lush_horizon_1",
-	"arcana_dungeon_general_lush_horizon_2",
-	"arcana_dungeon_general_lush_horizon_3",
-	"arcana_dungeon_general_lush_horizon_4"
+	  "horizon_1",
+	  "horizon_2",
+	  "horizon_3",
+	  "horizon_4"
 	],
 
     "gravity" : 80,
@@ -20,32 +20,32 @@
 
   "parts" : [
     {
-      "name" : "arcana_dungeon_general_lush_horizon_1",
+      "name" : "horizon_1",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_horizon_1.json" ]
+      "def" : [ "tmx", "horizon_1.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_horizon_2",
+      "name" : "horizon_2",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_horizon_2.json" ]
+      "def" : [ "tmx", "horizon_2.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_horizon_3",
+      "name" : "horizon_3",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_horizon_3.json" ]
+      "def" : [ "tmx", "horizon_3.json" ]
     },
     {
-      "name" : "arcana_dungeon_general_lush_horizon_4",
+      "name" : "horizon_4",
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "arcana_dungeon_general_lush_horizon_4.json" ]
+      "def" : [ "tmx", "horizon_4.json" ]
     }
   ]
 }
