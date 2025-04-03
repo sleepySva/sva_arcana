@@ -358,31 +358,13 @@
                 {
                  "gid":7280,
                  "height":16,
-                 "id":1592,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"gleap\"], \"monsterLevel\" : [6, 6], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 600 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":896,
-                 "y":272
-                }, 
-                {
-                 "gid":7280,
-                 "height":16,
                  "id":1593,
                  "name":"",
                  "properties":[
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"gleap\"], \"monsterLevel\" : [6, 6], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 600 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"nutmidge\"], \"monsterLevel\" : [6, 6], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 140 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -498,6 +480,42 @@
                  "width":16,
                  "x":776,
                  "y":888
+                }, 
+                {
+                 "gid":7280,
+                 "height":16,
+                 "id":1639,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"nutmidge\"], \"monsterLevel\" : [6, 6], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 140 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":896,
+                 "y":272
+                }, 
+                {
+                 "gid":7280,
+                 "height":16,
+                 "id":1640,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"bobot\"], \"monsterLevel\" : [6, 6], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 300 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":896,
+                 "y":920
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -966,31 +984,13 @@
                 {
                  "gid":7280,
                  "height":16,
-                 "id":1569,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"bobot\"], \"monsterLevel\" : [6, 6], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 400 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":896,
-                 "y":920
-                }, 
-                {
-                 "gid":7280,
-                 "height":16,
                  "id":1570,
                  "name":"",
                  "properties":[
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"bobot\"], \"monsterLevel\" : [6, 6], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 400 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"bobot\"], \"monsterLevel\" : [6, 6], \"monsterParams\" : { \"aggressive\" : true, \"statusSettings\":{\"stats\":{\"maxHealth\":{\"baseValue\" : 300 }}} }, \"position\" : [-1, 1], \"positionVariance\" : [0, 0], \"frequency\" : [10, 10], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -1187,7 +1187,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1639,
+ "nextobjectid":1641,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
