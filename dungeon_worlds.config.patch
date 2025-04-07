@@ -242,6 +242,25 @@
   
   {
     "op" : "add",
+    "path" : "/arcana_mission_desertstart",
+    "value" : {
+      "primaryDungeon" : "arcana_mission_desertstart",
+	  "weatherPool" : [
+		[1.000, "clear"]
+	  ],
+      "threatLevel" : 2,
+      "gravity" : 80,
+      "worldSize" : [2390, 2000],
+      "dungeonBaseHeight" : 1240,
+	  "dungeonSurfaceHeight" : 1000,
+      "ambientLightLevel" : [128, 128, 128],
+      "biome" : "desert",
+      "musicTrack" : "/music/eridanus-supervoid.ogg"
+    }
+  },  
+  
+  {
+    "op" : "add",
     "path" : "/arcana_dungeon_khnemnnIsland",
     "value" : {
       "primaryDungeon" : "arcana_dungeon_khnemnnIsland",

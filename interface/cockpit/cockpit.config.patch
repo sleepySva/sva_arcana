@@ -86,14 +86,14 @@
     "op": "add",
     "path": "/weatherThreatValues",
 	"value": {
-		"arcana_weather_redRain" : 3.0
+		"arcana_weather_redRain" : 2.0
 	}
   },
   {
     "op": "add",
     "path": "/weatherThreatValues",
 	"value": {
-		"arcana_weather_ruinousRain" : 3.0
+		"arcana_weather_ruinousRain" : 2.0
 	}
   },
   {
@@ -109,6 +109,21 @@
     "path": "/weatherThreatValues",
 	"value": {
 		"arcana_weather_ruinousStorm" : 3.0
+	}
+  },
+  {
+    "op": "add",
+    "path": "/weatherThreatValues",
+	"value": {
+		"arcana_weather_electricStorm" : 2.0
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayWeathers/arcana_weather_electricStorm",
+	"value": {
+		"displayName" : "Electric Storm",
+		"icon" : "/interface/cockpit/weather/arcana_weather_electricStorm.png"
 	}
   },
   {
@@ -395,7 +410,7 @@
     "path": "/displayDungeons/arcana_anarkyon_dungeon_1",
 	"value": {
 		"description" : "An abandoned factory. A number of lifeforms are detected within.",
-		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png",
+		"icon" : "/interface/cockpit/dungeons/arcana_anarkyons.png",
 		"name" : "Abandoned Factory"
 	}
   },

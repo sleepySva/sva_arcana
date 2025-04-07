@@ -1,0 +1,68 @@
+{
+  "projectileName" : "arcana_boss_navigator_7",
+  "physics" : "laser",
+  
+  "timeToLive" : 8,
+  "bounces" : 0,
+  "speed" : 20,
+  "knockback" : 20,
+  "piercing" : false,
+  
+  "power" : 24.0,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 62, 140],
+  "emitters" : [ "arcana_particle_ember_cyan_2" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+	  "action" : "config",
+	  "file" : "/projectiles/explosions/arcana_explosion_plasma_1_azure/arcana_azurealt.config"
+	},
+	{
+	  "action" : "config",
+	  "file" : "/projectiles/explosions/arcana_muzzlecyan/arcana_muzzlecyan.config"
+	}
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_navigator/7/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.7,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"variance" : {
+		  "initialVelocity" : [2, 2],
+		  "size" : 0.4,
+		  "rotation" : 180,
+		  "angularVelocity" : 180
+		}
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-7, 0], [0, 7], [7, 0], [0, -7] ],
+  
+  "delayTime" : 0.4,
+  "controlForce" : 20,
+  "triggerSpeed" : 60,
+  
+  "scripts" : [ "/projectiles/scripts/arcana_hoverprojectile.lua" ]
+ 
+}

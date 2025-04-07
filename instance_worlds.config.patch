@@ -408,6 +408,46 @@
 	}
   },
   
+  // Seeker Desert Mission
+  {
+	"op" : "add",
+	"path" : "/arcana_mission_desertstart",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "arcana_mission_desertstart",
+	  "seed" : 1111,
+	  "spawningEnabled" : false,
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "worldProperties" : {
+		"nonCombat" : false
+	  },
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+	  
+		"skyType" : "atmospheric",
+		"skyColoring" : {
+		  "mainColor" : [255, 255, 255],
+
+		  "morningColors" : [ [3, 90, 92], [250, 138, 77] ],
+		  "dayColors" : [ [255, 186, 116], [255, 255, 255] ],
+		  "eveningColors" : [ [3, 90, 92], [250, 138, 77] ],
+		  "nightColors" : [ [24, 38, 73, 80], [58, 42, 90, 160] ],
+
+		  "morningLightColor" : [180, 120, 120],
+		  "dayLightColor" : [200, 200, 200],
+		  "eveningLightColor" : [180, 120, 120],
+		  "nightLightColor" : [40, 50, 90]
+        }
+      }
+	}
+  },
+  
   // Khnemnn Island
   {
 	"op" : "add",

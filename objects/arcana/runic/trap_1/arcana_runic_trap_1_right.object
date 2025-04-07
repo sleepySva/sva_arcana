@@ -1,0 +1,79 @@
+{
+  "objectName" : "arcana_runic_trap_1_right",
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "breakable",
+
+  "description" : "A dangerous runic device.",
+  "shortdescription" : "Runic Astral Trap",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "right.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "right.png",
+        "fg" : "right.png"
+      },
+
+      "projectileDirection" : [1, 0],
+      "projectilePosition" : [0.5, 1.0],
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+    },
+    {
+      "image" : "right.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "right.png",
+        "fg" : "right.png"
+      },
+
+      "projectileDirection" : [1, 0],
+      "projectilePosition" : [0.5, 1.0],
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scriptDelta" : 2,
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "shoot" : [],
+      "on" : [],
+      "off" : []
+    }
+  },
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0], // light color to emit when the object is 'off'
+  "activeLightColor" : [20, 20, 40], // light color to emit when the object is 'on'
+
+  "fireTime" : 1.0,
+  "fireTimeVariance" : 0.0,
+  "projectile" : "arcana_boss_navigator_7",
+  "projectileConfig" : {
+    "power" : 40,
+	"speed" : 10,
+	"damageTeam" : { "type" : "environment" }
+  },
+
+  "smashOnBreak" : true,
+
+  "biomePlaced" : true
+}

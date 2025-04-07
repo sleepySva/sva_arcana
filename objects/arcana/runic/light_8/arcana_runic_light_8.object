@@ -1,0 +1,62 @@
+{
+  "objectName" : "arcana_runic_light_8",
+  "colonyTags" : ["runic", "light"],
+  "rarity" : "Common",
+  "description" : "A bright wall light found in temples.",
+  "shortdescription" : "Runic Wall Light",
+  "race" : "generic",
+  
+  "category" : "light",
+  "price" : 90,
+  "lightColor" : [194, 174, 133],
+  "pointLight" : false,
+  "pointBeam" : 2,
+  "beamAmbience" : 0.10,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 0],
+
+      "direction" : "left",
+      "beamAngle" : 270,
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 0],
+
+      "direction" : "right",
+      "beamAngle" : 270,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}
