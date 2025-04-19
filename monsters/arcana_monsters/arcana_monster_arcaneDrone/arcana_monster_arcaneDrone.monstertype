@@ -1,0 +1,204 @@
+{
+  "type" : "arcana_monster_arcaneDrone",
+  "shortdescription" : "Arcane Drone",
+  "description" : "A flying drone powered by arcane magic.",
+
+  "categories" : [ "arcana_monster_arcaneDrone" ],
+  "parts" : [ "body" ],
+
+  "animation" : "animation.animation",
+
+  "dropPools" : [],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+	
+    "facingMode" : "transformation",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 40,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 60,
+      "targetOutOfSightTime" : 8.0,
+
+      "foundTargetActions" : [],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+        {
+          "name" : "action-fire",
+          "cooldown" : 1.6,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 40,
+            "minimumRange" : 2,
+            "windupState" : "firewindup",
+            "windupTime" : 0.6,
+
+            "projectileType" : "arcana_boss_navigator_7",
+			"projectileParameters" : { "speed" : 20, "triggerSpeed" : 40 },
+			"inaccuracy" : 0.1,
+            "fireOffset" : [0.0, 0.0],
+            "projectileCount" : 1,
+            "projectileInterval" : 0.05,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireSound" : "fire",
+            "fireState" : "fire",
+			"fireDelay" : 0.4,
+
+            "winddownState" : "",
+            "winddownTime" : 0.6
+          }
+        }
+      ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 4,
+            "maxRange" : 8
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly"
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,4],
+            "groundDistance" : 8,
+            "ceilingDistance" : 8,
+            "xVelocity" : 4,
+            "yVelocity" : 10
+          }
+        }
+      ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.5, 1.0], [1, 0.5],  [1, -1.0], [0.5, -1.5],  [-0.5, -1.5], [-1, -1.0],  [-1, 0.5], [-0.5, 1.0] ],
+      "damage" : 10,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 4,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.5, 1.0], [1, 0.5],  [1, -1.0], [0.5, -1.5],  [-0.5, -1.5], [-1, -1.0],  [-1, 0.5], [-0.5, 1.0] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 8,
+      "gravityEnabled" : false,
+
+      "airFriction" : 1,
+      "airForce" : 20,
+      "flySpeed" : 8
+    },
+
+    "bodyMaterialKind" : "stone",
+
+    "knockoutTime" : 0.0,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.20
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 10
+        },
+        "maxHealth" : {
+          "baseValue" : 40
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : 0.0
+        },
+        "arcana_resistance_light" : {
+          "baseValue" : 0.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, 0],
+    "capturable" : true,
+
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255]
+  }
+}

@@ -283,7 +283,10 @@
           "primaryRegion" : [ "arcana_arcaneForest_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ]
+          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
@@ -366,7 +369,10 @@
           "primaryRegion" : [ "arcana_arcaneDesert_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_arcaneDesert_underground_2" ]
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneDesert_underground_3" ]
@@ -553,7 +559,10 @@
           "primaryRegion" : [ "arcana_cinderedCavern" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_cinderedCeiling" ]
+          "primaryRegion" : [ "arcana_cinderedCeiling" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_cinderedCavern" ]
@@ -730,7 +739,10 @@
           "primaryRegion" : [ "arcana_arcaneSea_floor" ]
         },
         "underground2" : {
-          "primaryRegion" : [ "arcana_arcaneSea_underground_1" ]
+          "primaryRegion" : [ "arcana_arcaneSea_underground_1" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"]
+          ]
         },
         "underground3" : {
           "primaryRegion" : [ "arcana_arcaneSea_underground_1" ]
@@ -1855,7 +1867,10 @@
           "primaryRegion" : [ "arcana_aspiriteCave" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_noxionCave" ]
+          "primaryRegion" : [ "arcana_noxionCave" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_immoriteCave" ]

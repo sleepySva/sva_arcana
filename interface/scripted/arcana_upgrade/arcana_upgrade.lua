@@ -45,7 +45,7 @@ function dump(o)
 end
 
 function populateItemList(forceRepop)
-  local upgradeableWeaponItems = player.itemsWithTag("upgradeableWeapon")
+  local upgradeableWeaponItems = player.itemsWithTag("weapon")
   for i = 1, #upgradeableWeaponItems do
     upgradeableWeaponItems[i].count = 1
   end

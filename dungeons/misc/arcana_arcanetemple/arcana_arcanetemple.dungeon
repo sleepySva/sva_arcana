@@ -1,0 +1,133 @@
+{
+  "metadata" : {
+    "name" : "arcana_arcanetemple",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [ "entrance" ],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "1.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "2.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "3.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "4.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "5.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "6.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "7.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "8.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "9.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "10",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "10.json" ],
+	  "chance" : 100
+    },
+    {
+      "name" : "entrance",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "entrance.json" ],
+	  "chance" : 5000
+    },
+    {
+      "name" : "left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "left.json" ],
+	  "chance" : 0
+    },
+    {
+      "name" : "right",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "right.json" ],
+	  "chance" : 0
+    }
+  ]
+}
