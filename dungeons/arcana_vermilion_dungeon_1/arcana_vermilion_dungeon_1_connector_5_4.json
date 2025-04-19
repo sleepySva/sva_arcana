@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDQcHwUUw0zDEKA7sZGFQaGGiSMzicGg\/RgAxNUIJhUMXQ3tgLlupAwiF9FIm4dADfWIuF+HBhZzUC7kRgM0lMNxYPZjXVQTCs3IgMQv4RETA83IudREL+URIzsRhCbhwGByeFjK3vakTA6nxjciJQeQWzkvEUOn9ZlOMgO5HKJHP5QrGdGMWUYANN3nWQ=",
+         "data":"eJzt1UsKgCAYBOD\/AB2jg3ah2vQCFxG0qG5VQ0KDGKg9LEj4wKmkWaSNItn4u4y8cJgdVSpSEzO7wBrbmNON7zWzY7feGwhy6amL0LEh0wF+JnZHF1hTaW\/u2Gp3deSBnHt6oiPvUeTCE3fEPJFdSLadPT0xswtF3yPmvLdC8t1nON7B51JI\/uJ\/5nfOAoZYz7Y=",
          "encoding":"base64",
          "height":15,
          "id":1,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgF1ARVKtTBzVBMiV5ag3YVCB7MoFEFggczqFaB4FEwCkbBwANYuUYppmU5rD0I8SigLgAAfo4tKA==",
+         "data":"eJxjYBgF1ASbVaiD90AxJXppDQ6oQPBgBrtUIHgwgy0qEDwKRsEoGHgAK9coxbQsh7UHIR4F1AUAspg6vQ==",
          "encoding":"base64",
          "height":15,
          "id":2,
@@ -50,7 +50,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":2147493038,
+                 "gid":2147493100,
                  "height":40,
                  "id":2355,
                  "name":"",
@@ -62,19 +62,7 @@
                  "y":88
                 }, 
                 {
-                 "gid":9372,
-                 "height":8,
-                 "id":2356,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":16,
-                 "y":32
-                }, 
-                {
-                 "gid":9372,
+                 "gid":9434,
                  "height":8,
                  "id":2357,
                  "name":"",
@@ -98,7 +86,7 @@
                  "y":96
                 }, 
                 {
-                 "gid":9372,
+                 "gid":9434,
                  "height":8,
                  "id":2468,
                  "name":"",
@@ -110,7 +98,7 @@
                  "y":32
                 }, 
                 {
-                 "gid":9393,
+                 "gid":9455,
                  "height":64,
                  "id":2469,
                  "name":"",
@@ -122,7 +110,7 @@
                  "y":96
                 }, 
                 {
-                 "gid":2147493083,
+                 "gid":2147493145,
                  "height":32,
                  "id":2471,
                  "name":"",
@@ -134,7 +122,7 @@
                  "y":88
                 }, 
                 {
-                 "gid":9386,
+                 "gid":9448,
                  "height":40,
                  "id":2472,
                  "name":"",
@@ -146,7 +134,7 @@
                  "y":88
                 }, 
                 {
-                 "gid":2147493034,
+                 "gid":2147493096,
                  "height":40,
                  "id":2473,
                  "name":"",
@@ -158,7 +146,7 @@
                  "y":88
                 }, 
                 {
-                 "gid":9506,
+                 "gid":9568,
                  "height":32,
                  "id":2487,
                  "name":"",
@@ -170,7 +158,7 @@
                  "y":96
                 }, 
                 {
-                 "gid":9493,
+                 "gid":9555,
                  "height":8,
                  "id":2488,
                  "name":"",
@@ -182,7 +170,7 @@
                  "y":64
                 }, 
                 {
-                 "gid":9365,
+                 "gid":9427,
                  "height":24,
                  "id":2489,
                  "name":"",
@@ -300,7 +288,7 @@
  "nextobjectid":2490,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -444,91 +432,92 @@
          "source":"..\/..\/tilesets\/tiles\/bleuark_tiles\/bleuark_tiles.json"
         }, 
         {
-         "firstgid":8809,
+         "firstgid":8814,
          "source":"..\/..\/tilesets\/tiles\/arcana_platforms\/arcana_platforms.json"
         }, 
         {
-         "firstgid":8816,
+         "firstgid":8832,
          "source":"..\/..\/tilesets\/objects\/bleuark_objects\/bleuark_objects.json"
         }, 
         {
-         "firstgid":8832,
+         "firstgid":8880,
          "source":"..\/..\/tilesets\/objects\/astral_objects\/astral_objects.json"
         }, 
         {
-         "firstgid":8892,
+         "firstgid":8940,
          "source":"..\/..\/tilesets\/tiles\/astral_tiles\/astral_tiles.json"
         }, 
         {
-         "firstgid":8902,
+         "firstgid":8958,
          "source":"..\/..\/tilesets\/tiles\/steelblades_tiles\/steelblades_tiles.json"
         }, 
         {
-         "firstgid":8910,
+         "firstgid":8966,
          "source":"..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-colonytag\/station.json"
-        }, 
+        },
+    
         {
-         "firstgid":8940,
+         "firstgid":8996,
          "source":"..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/breakable.json"
         }, 
         {
-         "firstgid":9250,
+         "firstgid":9306,
          "source":"..\/..\/tilesets\/tiles\/lunar_tiles\/lunar_tiles.json"
         }, 
         {
-         "firstgid":9267,
+         "firstgid":9323,
          "source":"..\/..\/tilesets\/objects\/lunar_objects\/lunar_objects.json"
         }, 
         {
-         "firstgid":9324,
+         "firstgid":9381,
          "source":"..\/..\/tilesets\/tiles\/aeon_tiles\/aeon_tiles.json"
         }, 
         {
-         "firstgid":9329,
+         "firstgid":9386,
          "source":"..\/..\/tilesets\/tiles\/timeless_tiles\/timeless_tiles.json"
         }, 
         {
-         "firstgid":9331,
+         "firstgid":9388,
          "source":"..\/..\/tilesets\/tiles\/exousia_tiles\/exousia_tiles.json"
         }, 
         {
-         "firstgid":9362,
+         "firstgid":9424,
          "source":"..\/..\/tilesets\/objects\/exousia_ship_objects\/exousia_ship_objects.json"
         }, 
         {
-         "firstgid":9379,
+         "firstgid":9441,
          "source":"..\/..\/tilesets\/objects\/exousia_modern_objects\/exousia_modern_objects.json"
         }, 
         {
-         "firstgid":9411,
+         "firstgid":9473,
          "source":"..\/..\/tilesets\/objects\/exousia_props_objects\/exousia_props_objects.json"
         }, 
         {
-         "firstgid":9441,
+         "firstgid":9503,
          "source":"..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/railpoint.json"
         }, 
         {
-         "firstgid":9446,
+         "firstgid":9508,
          "source":"..\/..\/tilesets\/objects\/exousia_general_objects\/exousia_general_objects.json"
         }, 
         {
-         "firstgid":9461,
+         "firstgid":9523,
          "source":"..\/..\/tilesets\/objects\/exousia_science_objects\/exousia_science_objects.json"
         }, 
         {
-         "firstgid":9478,
+         "firstgid":9540,
          "source":"..\/..\/tilesets\/objects\/exousia_tech_objects\/exousia_tech_objects.json"
         }, 
         {
-         "firstgid":9494,
+         "firstgid":9556,
          "source":"..\/..\/tilesets\/objects\/exousia_engineering_objects\/exousia_engineering_objects.json"
         }, 
         {
-         "firstgid":9505,
+         "firstgid":9567,
          "source":"..\/..\/tilesets\/objects\/exousia_vehicles_objects\/exousia_vehicles_objects.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":"1.10",
  "width":41
 }
