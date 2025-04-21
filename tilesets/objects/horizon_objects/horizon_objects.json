@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":28,
+ "tilecount":31,
  "tileheight":256,
  "tileproperties":
     {
@@ -232,6 +232,30 @@
          "imagePositionY":"0",
          "object":"horizon_table_4",
          "tilesetDirection":"right"
+        },
+     "28":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"horizon_monitor_1",
+         "tilesetDirection":"right"
+        },
+     "29":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"horizon_monitor_2",
+         "tilesetDirection":"right"
+        },
+     "30":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"horizon_switch_1",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -347,6 +371,18 @@
      "27":
         {
          "image":"horizon_table_4.png"
+        },
+     "28":
+        {
+         "image":"horizon_monitor_1.png"
+        },
+     "29":
+        {
+         "image":"horizon_monitor_2.png"
+        },
+     "30":
+        {
+         "image":"horizon_switch_1.png"
         }
     },
  "tilewidth":188

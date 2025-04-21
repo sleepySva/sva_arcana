@@ -3,14 +3,14 @@
   
   "layers" : [
     {
-      "kind" : "divider/blackrock",
-      "offset" : [0, 250],
+      "kind" : "divider/arcana_neondivider",
+      "offset" : [0, 350],
       "nohueshift" : true,
       "lightMapped" : true,
       "parallax" : 1.199
     },
     {
-      "kind" : "tile/magmarock",
+      "kind" : "tile/arcana_neontile",
       "nohueshift" : true,
       "lightMapped" : true,
       "repeatY" : true,
@@ -18,36 +18,34 @@
       "parallax" : 1.2
     },
     {
-      "kind" : "midnight1",
-      "offset" : [0, 350],
+      "kind" : "arcana_superstormExpanse_pinklight",
+      "offset" : [0, 360],
+      "parallax" : 2.9,
+	  "unlit" : true,
+      "fadePercent" : 0.0
+    },
+    {
+      "kind" : "arcana_neoncityfloor",
+      "offset" : [0, 360],
       "noRandomOffset" : true,
       "parallax" : [3, 3.001],
-      "directives" : "?saturation=-60?brightness=-10",
       "nohueshift" : true
     },
     {
-      "kind" : "midnight1",
-      "offset" : [100, 400],
+      "kind" : "arcana_neoncityfloor_fb",
+      "offset" : [0, 360],
       "noRandomOffset" : true,
-      "parallax" : [3, 3.003],
-      "directives" : "?saturation=-65?brightness=-10",
-      "nohueshift" : true
-    },
-    {
-      "kind" : "midnight2",
-      "offset" : [0, 245],
-      "noRandomOffset" : true,
-      "parallax" : [4, 4.001],
-      "directives" : "?saturation=-60?brightness=-10",
+      "parallax" : [3, 3.001],
       "nohueshift" : true,
-      "fadePercent" : 0.02
+	  "unlit" : true
     },
     {
-      "kind" : "midnight3",
-      "offset" : [0, 160],
-      "parallax" : [5, 5],
-      "directives" : "?saturation=-65?brightness=-10",
-      "nohueshift" : true
+      "kind" : "arcana_neoncityfloor2",
+      "offset" : [0, 360],
+      "noRandomOffset" : true,
+      "parallax" : 4.0,
+      "nohueshift" : true,
+      "fadePercent" : 0.2
     },
     {
       "kind" : "arcana_superstormExpanse_darkclouds",
@@ -67,25 +65,8 @@
       "fadePercent" : 0.05
     },
     {
-      "kind" : "arcana_superstormExpanse_fogclouds",
-      "offset" : [0, 360],
-      "parallax" : 5.8,
-      "minSpeed" : 1000,
-      "maxSpeed" : 3000,
-      "fadePercent" : 0.0
-    },
-    {
-      "kind" : "arcana_superstormExpanse_fogclouds",
-      "offset" : [0, 300],
-      "parallax" : 8.8,
-      "minSpeed" : 500,
-      "maxSpeed" : 1000,
-      "directives" : "?brightness=-5",
-      "fadePercent" : 0.05
-    },
-    {
       "kind" : "arcana_superstormExpanse_clouds",
-      "offset" : [0, 370],
+      "offset" : [0, 470],
       "parallax" : 5.8,
       "minSpeed" : 3000,
       "maxSpeed" : 5000,
@@ -211,6 +192,13 @@
       "fadePercent" : 0.05,
 	  "noRandomOffset" : true,
 	  "unlit" : true
+    },
+    {
+      "kind" : "arcana_neoncityfloor2",
+      "offset" : [0, 300],
+      "noRandomOffset" : true,
+      "parallax" : 8.1,
+      "nohueshift" : true
     },
     {
       "kind" : "arcana_superstormExpanse_darkcity",
