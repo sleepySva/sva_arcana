@@ -32,6 +32,7 @@
 		"arcana_toxicMoon" : { "word" : "arcana_toxicMoon", "friendlyWord" : " Toxic Moon" },
 		
 		"arcana_arcaneForest" : { "word" : "arcana_arcaneForest", "friendlyWord" : " Arcane" },
+		"arcana_runicDesert" : { "word" : "arcana_runicDesert", "friendlyWord" : " Runic Desert" },
 		"arcana_arcaneDesert" : { "word" : "arcana_arcaneDesert", "friendlyWord" : " Arcane Desert" },
 		"arcana_arcaneTundra" : { "word" : "arcana_arcaneTundra", "friendlyWord" : " Arcane Tundra" },
 		"arcana_arcaneSea" : { "word" : "arcana_arcaneSea", "friendlyWord" : " Shining Sea" },
@@ -768,9 +769,7 @@
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneForest",
     "value": [
-      "^#49a193;The Arcane ^white;glows with ancient magic.",
-      "^#49a193;The Arcane ^white;glows with ancient magic.",
-      "^#49a193;The Arcane ^white;glows with ancient magic."
+      "A magical aura fills the ^#49a193;Arcane^white;, its surface pulsing with a faint blue glow. ^orange;Arcane EPP recommended.^orange;"
     ]
   },
   {
@@ -796,13 +795,34 @@
     ]
   },
   
+  // Runic Desert
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/arcana_runicDesert",
+    "value": [
+      "Inscribed temple ruins are embedded within the sands of the ^#d6642e;Runic Desert^white;. ^orange;Arcane EPP recommended.^orange;"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeNames/arcana_runicDesert",
+    "value": "Runic Desert"
+  },
+  {
+    "op": "add",
+    "path": "/planetTypeColors/arcana_runicDesert",
+    "value": [
+      214,
+      100,
+      46
+    ]
+  },
+  
   // Arcane Desert
   {
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneDesert",
     "value": [
-      "^#e09a7a;The Arcane Desert ^white;glows with ancient magic.",
-      "^#e09a7a;The Arcane Desert ^white;glows with ancient magic.",
       "^#e09a7a;The Arcane Desert ^white;glows with ancient magic."
     ]
   },
@@ -834,8 +854,6 @@
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneTundra",
     "value": [
-      "^#bcb7ec;The Arcane Tundra ^white;glows with ancient magic.",
-      "^#bcb7ec;The Arcane Tundra ^white;glows with ancient magic.",
       "^#bcb7ec;The Arcane Tundra ^white;glows with ancient magic."
     ]
   },

@@ -667,7 +667,7 @@
 					"description" : "Arcane Planet",
 					"smallImage" : "/celestial/system/planet_small.png",
 
-					"terrestrialType" : [ "arcana_arcaneForest", "arcana_arcaneSea", "arcana_blistering", "arcana_turbulent", "arcana_verdant", "arcana_windswept" ]
+					"terrestrialType" : [ "arcana_arcaneForest", "arcana_runicDesert", "arcana_arcaneSea", "arcana_blistering", "arcana_turbulent", "arcana_verdant", "arcana_windswept" ]
 				  },
 
 				  "variationParameters" : [
@@ -704,6 +704,31 @@
 			"value" :
 			{
 				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_arcaneForest/maskie<num>.png",
+				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+				"liquidImages" : "/celestial/system/terrestrial/liquids/arcana_healingliquid.png",
+				"dynamicsRange" : [1, 30]
+			}
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/terrestrialHorizonGraphics/arcana_runicDesert",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/horizon/textures/arcana_runicDesert_<selector>.png",
+				"maskTextures" : "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+				"liquidTextures" : "/celestial/system/terrestrial/horizon/liquids/arcana_healingliquid_<selector>.png",
+				"maskRange" : [1, 25],
+				"maskPerPlanetRange" : [3, 3]
+			}
+		},
+
+		{
+			"op" : "add",
+			"path" : "/terrestrialGraphics/arcana_runicDesert",
+			"value" :
+			{
+				"baseImages" : "/celestial/system/terrestrial/biomes/arcana_runicDesert/maskie<num>.png",
 				"dynamicsImages" : "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
 				"liquidImages" : "/celestial/system/terrestrial/liquids/arcana_healingliquid.png",
 				"dynamicsRange" : [1, 30]
@@ -1613,6 +1638,30 @@
 		  "op": "add",
 		  "path": "/satelliteTypes/CoolNSat/baseParameters/terrestrialType/-",
 		  "value": "arcana_arcaneForest"
+		},
+		
+		// Planets
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/MildPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_runicDesert"
+		},
+		{
+		  "op": "add",
+		  "path": "/planetaryTypes/WarmPlanet/baseParameters/terrestrialType/-",
+		  "value": "arcana_runicDesert"
+		},
+		
+		// Sats
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/MildNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_runicDesert"
+		},
+		{
+		  "op": "add",
+		  "path": "/satelliteTypes/WarmNSat/baseParameters/terrestrialType/-",
+		  "value": "arcana_runicDesert"
 		},
 		
 		// Planets

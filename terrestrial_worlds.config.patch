@@ -345,7 +345,51 @@
       "subRegion": []
     }
   },
-  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_runicDesert",
+    "value": {
+      "threatRange" : [6, 6],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_runicDesert"],
+          "secondaryRegions" : [],
+          "dungeons": [
+		  	  [4.0, "arcana_arcanecity"],
+		  	  [1.0, "avianvillage"],[1.0, "aviantomb"],[1.0, "aviantemple"],[1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_runicUnderground" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_runicUnderground" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"]
+          ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_runicUnderground" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_runicDesert",
+    "value": {
+      "caveLiquid": ["arcana_liquid_arcaneWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_runicDesert"]]],
+      "subRegion": ["colourful"]
+    }
+  },
   {
     "op": "add",
     "path": "/planetTypes/arcana_arcaneDesert",
@@ -395,6 +439,16 @@
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_arcaneDesert"]]],
       "subRegion": ["oasis","colourful"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_runicUnderground",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_arcaneWater" ],
+	  "blockSelector" : [ "denseCaves" ],
+      "biome": [[0,["arcana_runicUnderground"]]],
+      "subRegion": []
     }
   },
   {
@@ -1890,7 +1944,7 @@
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_azureDesert"]]],
-      "subRegion": ["oasis"]
+      "subRegion": []
     }
   },
   

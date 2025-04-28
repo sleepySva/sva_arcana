@@ -1,18 +1,11 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":40,
  "infinite":false,
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJztlMEKwyAQRP2Y\/Gd6KqY0t\/5TbukvNYILMtHVuqXmMAOD2UUmz5Vkc+620Wa7i4l8NpHPJvLZRD6byGcT+Wwin03ks4l8NpHPJuR7TOc9I3vIdz96L\/DIXo5vBo\/sId9+zHU\/j\/rvEo4S30jGlEHje8Y5h9VP5XpO+nhHuT1aVlhb+d7xPGkG1kt0TbJPy8LZ1fiEMZxrhTlIvcR8nBvax71aFr67hU+8wpml9vG5xTKnUlYvX+1OvpGW9Qu+HG8vXy6bfNfi0\/7jPVm93+8oIx\/d5w84n5eT",
+         "data":"eJztlM0KgzAQhPMwPmjfyVuJpZ7syb5SDexCGPPXbGk8zMAQdwnjlw26OXfbaLPdxUQ+m8hnE\/lsIp9N5LOJfDaRzyby2UQ+m8hnE\/I9pvOekT3kux+9F3hkL8U3g0f2kG8\/5rqfR\/13KUeObyRjzFDie8qcw+qnfD1Hfbyj1J5SVlhb+d5ynjgD60Vck+4rZeHsanzKGM61why0XiQf54b2sreUhe9u4VOvcGatvTy3WOeUy+rlq93JNypl\/YIvxdvLl8om37X4Sv\/xnqze73eUkY\/u8wexQsdP",
          "encoding":"base64",
          "height":40,
          "id":1,
@@ -26,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztkjEOwyAMRTlL1a2HyxG6ZujZ8JUS1KK6yMbftEOH\/6Q\/EMB+QEohhBBCCCGEEEIIwbj9WUbqmcf1mbuKN95f6d\/2Id66qHZLdfy6oyYaZ0Bqdw\/PT85sl3fa2WfjTKJatWB+kriTVndlzuovEz9R86gj0h9ZI+Wz\/8xvjLUW7YustdwyfpZnxs3ao9\/IckP99D\/p3SPK2D+KtX92Hm\/fitdKn3Fv9nxZr8gRqferoE7fvBOxOQAOlr+U",
+         "data":"eJztkjEOwyAMRTlL1a3Xy826ZugJ8JUS1KK6yMbftEOH\/6Q\/EMB+QEohhBBCCCGEEEIIwbj9WUbqmcf1mbuKN95f6d\/2Id66qHZLdfy6oyYaZ0Bqdw\/PT85sl3fa2WfjTKJatWB+kriTVndlzuovEz9R86gj0h9ZI+Wz\/8xvjLUW7YustdwyfpZnxs3ao9\/IckP99D\/p3SPK2D+KtX92Hm\/fitdKn3Fv9nxZr8gRqferoE7fvBOxOQBPIsku",
          "encoding":"base64",
          "height":40,
          "id":2,
@@ -81,7 +74,7 @@
                  "y":224
                 }, 
                 {
-                 "gid":9399,
+                 "gid":9455,
                  "height":64,
                  "id":2871,
                  "name":"",
@@ -93,7 +86,7 @@
                  "y":208
                 }, 
                 {
-                 "gid":2147493047,
+                 "gid":9455,
                  "height":64,
                  "id":2872,
                  "name":"",
@@ -277,7 +270,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -296,7 +289,7 @@
  "nextobjectid":2874,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.10.2",
  "tileheight":8,
  "tilesets":[
         {
@@ -440,103 +433,104 @@
          "source":"..\/..\/tilesets\/tiles\/bleuark_tiles\/bleuark_tiles.json"
         }, 
         {
-         "firstgid":8809,
+         "firstgid":8814,
          "source":"..\/..\/tilesets\/tiles\/arcana_platforms\/arcana_platforms.json"
         }, 
         {
-         "firstgid":8820,
+         "firstgid":8832,
          "source":"..\/..\/tilesets\/objects\/bleuark_objects\/bleuark_objects.json"
         }, 
         {
-         "firstgid":8836,
+         "firstgid":8880,
          "source":"..\/..\/tilesets\/objects\/astral_objects\/astral_objects.json"
         }, 
         {
-         "firstgid":8896,
+         "firstgid":8940,
          "source":"..\/..\/tilesets\/tiles\/astral_tiles\/astral_tiles.json"
         }, 
         {
-         "firstgid":8906,
+         "firstgid":8958,
          "source":"..\/..\/tilesets\/tiles\/steelblades_tiles\/steelblades_tiles.json"
-        }, 
+        },
+    
         {
-         "firstgid":8914,
+         "firstgid":8966,
          "source":"..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-colonytag\/station.json"
         }, 
         {
-         "firstgid":8944,
+         "firstgid":8996,
          "source":"..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/breakable.json"
         }, 
         {
-         "firstgid":9254,
+         "firstgid":9306,
          "source":"..\/..\/tilesets\/tiles\/lunar_tiles\/lunar_tiles.json"
         }, 
         {
-         "firstgid":9271,
+         "firstgid":9323,
          "source":"..\/..\/tilesets\/objects\/lunar_objects\/lunar_objects.json"
         }, 
         {
-         "firstgid":9329,
+         "firstgid":9381,
          "source":"..\/..\/tilesets\/tiles\/aeon_tiles\/aeon_tiles.json"
         }, 
         {
-         "firstgid":9334,
+         "firstgid":9386,
          "source":"..\/..\/tilesets\/tiles\/timeless_tiles\/timeless_tiles.json"
         }, 
         {
-         "firstgid":9336,
+         "firstgid":9388,
          "source":"..\/..\/tilesets\/tiles\/exousia_tiles\/exousia_tiles.json"
         }, 
         {
-         "firstgid":9368,
+         "firstgid":9424,
          "source":"..\/..\/tilesets\/objects\/exousia_ship_objects\/exousia_ship_objects.json"
         }, 
         {
-         "firstgid":9385,
+         "firstgid":9441,
          "source":"..\/..\/tilesets\/objects\/exousia_modern_objects\/exousia_modern_objects.json"
         }, 
         {
-         "firstgid":9417,
+         "firstgid":9473,
          "source":"..\/..\/tilesets\/objects\/exousia_props_objects\/exousia_props_objects.json"
         }, 
         {
-         "firstgid":9447,
+         "firstgid":9503,
          "source":"..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/railpoint.json"
         }, 
         {
-         "firstgid":9452,
+         "firstgid":9508,
          "source":"..\/..\/tilesets\/objects\/exousia_tech_objects\/exousia_tech_objects.json"
         }, 
         {
-         "firstgid":9468,
+         "firstgid":9524,
          "source":"..\/..\/tilesets\/objects\/exousia_vehicles_objects\/exousia_vehicles_objects.json"
         }, 
         {
-         "firstgid":9477,
+         "firstgid":9533,
          "source":"..\/..\/tilesets\/objects\/exousia_medical_objects\/exousia_medical_objects.json"
         }, 
         {
-         "firstgid":9482,
+         "firstgid":9538,
          "source":"..\/..\/tilesets\/objects\/exousia_engineering_objects\/exousia_engineering_objects.json"
         }, 
         {
-         "firstgid":9493,
+         "firstgid":9549,
          "source":"..\/..\/tilesets\/objects\/exousia_science_objects\/exousia_science_objects.json"
         }, 
         {
-         "firstgid":9510,
+         "firstgid":9566,
          "source":"..\/..\/tilesets\/objects\/luye_objects\/luye_objects.json"
         }, 
         {
-         "firstgid":9553,
+         "firstgid":9610,
          "source":"..\/..\/tilesets\/objects\/exousia_general_objects\/exousia_general_objects.json"
         }, 
         {
-         "firstgid":9568,
+         "firstgid":9625,
          "source":"..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-colonytag\/outpost.json"
         }],
  "tilewidth":8,
  "type":"map",
- "version":1.4,
+ "version":"1.10",
  "width":40
 }

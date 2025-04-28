@@ -21,7 +21,7 @@ local BulletSubCountStackSwitch = 1
 local BulletSubDelay = 0.0
 local BulletSubDelayDef = 0.10
 
-local BaseDamage = 10
+local BaseDamage = 14
 
 local EnergyUse = 2
 	

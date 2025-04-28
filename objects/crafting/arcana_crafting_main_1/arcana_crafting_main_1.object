@@ -39,7 +39,7 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_1.config",
-		"filter" : ["arcana_crafting_main_1"],
+		"filter" : ["arcana_crafting_main_1", "inventorstable"],
         "upgradeMaterials" : [
 			{ "item" : "arcana_ore_arcaniumOre", "count" : 10 },
 			{ "item" : "battery", "count" : 1 },
@@ -69,7 +69,7 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_2.config",
-		"filter" : ["arcana_crafting_main_1", "arcana_crafting_main_2"],
+		"filter" : ["arcana_crafting_main_1", "arcana_crafting_main_2", "inventorstable", "inventorstable2"],
         "upgradeMaterials" : [
 			{ "item" : "arcana_bar_thoriumBar", "count" : 10 },
 			{ "item" : "orion_crafting_enhancedBattery", "count" : 1 },
@@ -97,7 +97,7 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_crafting_main/arcana_crafting_main_3.config",
-		"filter" : ["arcana_crafting_main_1", "arcana_crafting_main_2", "arcana_crafting_main_3"],
+		"filter" : ["arcana_crafting_main_1", "arcana_crafting_main_2", "arcana_crafting_main_3", "inventorstable", "inventorstable2", "inventorstable3"],
         "upgradeMaterials" : [
 			{ "item" : "arcana_bar_aureolaBar", "count" : 1 },
 			{ "item" : "inventorstable", "count" : 1 },

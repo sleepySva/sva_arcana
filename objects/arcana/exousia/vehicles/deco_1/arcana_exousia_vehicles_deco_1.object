@@ -3,10 +3,15 @@
   "colonyTags" : ["exousia", "vehicle"],
   "rarity" : "Rare",
   "description" : "A reinforced modern car designed for extra endurance.",
-  "shortdescription" : "Schreiten Taurus W",
+  "shortdescription" : "Schreiten Taurus Red",
   "race" : "generic",
   "category" : "decorative",
-  "price" : 560,
+  "price" : 720,
+  
+  "lightColor" : [245, 245, 245],
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.10,
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
@@ -14,9 +19,12 @@
 	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
       "direction" : "left",
 	  "flipImages" : true,
-      "imagePosition" : [-40, 0],
+      "imagePosition" : [-56, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
+	  
+	  "lightPosition" : [-4, 2],
+	  "beamAngle" : 180,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
@@ -25,9 +33,12 @@
 	{
 	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
       "direction" : "right",
-      "imagePosition" : [-40, 0],
+      "imagePosition" : [-56, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
+	 
+	  "lightPosition" : [4, 2],
+	  "beamAngle" : 0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

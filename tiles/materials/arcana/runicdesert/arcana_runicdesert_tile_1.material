@@ -1,0 +1,21 @@
+{
+  "materialId" : 16399,
+  "materialName" : "arcana_runicdesert_tile_1",
+  "particleColor" : [190, 79, 27, 255],
+  "itemDrop" : "arcana_runicdesert_tile_1",
+  "description" : "A block of sand. A faint blue rune glows through its form.",
+  "shortdescription" : "Runic Orange Sand",
+  "footstepSound" : "/sfx/blocks/footstep_sand2.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_runicdesert_tile_1.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1400
+  }
+}

@@ -152,19 +152,19 @@
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:uncommon",
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingLower",
 
         "type" : "microdungeon",
-        "microdungeons" : [ "steamspringmicrodungeons" ]
+        "microdungeons" : [ "arcana_azureDesert_dungeon_2" ]
       },
       {
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingLower",
+        "distribution" : "/biomes/distributions.config:common",
 
         "type" : "microdungeon",
-        "microdungeons" : [ "arcana_azureDesert_dungeon_2" ]
+        "microdungeons" : [ "arcana_runicdesertsurface" ]
       },
       {
         "mode" : "floor",
