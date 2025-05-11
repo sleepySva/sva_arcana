@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "arcana_currency_credit", "count" : 10 }
+  ],
+  "output" : { "item" : "arcana_workshop_decorativeorenode", "count" : 1, "parameters" :
+    {
+      "shortdescription" : "Decorative Galvasteel Node",
+	  "placementImage" : "/objects/workshop/workshop_auto_node/dustrium.png?replace;ffa93d=7892a6;c86718=6e646e;864918=343257;41424d=2b2b2b",
+	  "placementImagePosition" : [-40, 0],
+	  "color" : "?replace;ffa93d=7892a6;c86718=6e646e;864918=343257;41424d=2b2b2b"
+    }
+  },
+  "duration" : 0.4,
+  "groups"  : [ "arcana_titancorp_crafting_1", "arcana_titancorp_crafting_1_decorations" ]
+}

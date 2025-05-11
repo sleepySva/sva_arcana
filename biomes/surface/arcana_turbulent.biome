@@ -71,15 +71,15 @@
       // sunny pink day, pink/peach sunrise and blue/pink sunset
       "mainColor" : [255, 255, 255],
 
-      "morningColors" : [ [157, 8, 134], [213, 121, 56] ],
-      "dayColors" : [ [32, 39, 67], [87, 126, 177] ],
+      "morningColors" : [ [157, 8, 134], [183, 121, 56] ],
+      "dayColors" : [ [32, 39, 67], [87, 106, 147] ],
       "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
       "nightColors" : [ [24, 38, 53, 80], [15, 16, 23, 160] ],
 
-      "morningLightColor" : [120, 40, 20],
-      "dayLightColor" : [87, 103, 177],
-      "eveningLightColor" : [140, 100, 120],
-      "nightLightColor" : [40, 20, 50]
+      "morningLightColor" : [57, 33, 57],
+      "dayLightColor" : [47, 60, 72],
+      "eveningLightColor" : [57, 33, 57],
+      "nightLightColor" : [30, 20, 40]
     }
   ],
 
@@ -108,7 +108,7 @@
   },
 
   "surfacePlaceables" : {
-    "grassMod" : [ "grass" ],
+    "grassMod" : [ "blackash" ],
     "grassModDensity" : 0.3,
 
     "items" : [

@@ -7,27 +7,28 @@
       "nohueshift" : true,
       "lightMapped" : true,
       "repeatY" : true,
-      "tileLimitTop" : 125,
-      "parallax" : 2.06
+      "tileLimitTop" : 115,
+      "parallax" : 1.6
     },
     {
       "kind" : "divider/dirt",
-      "offset" : [0, 200],
+      "offset" : [0, 210],
       "nohueshift" : true,
       "lightMapped" : true,
-      "parallax" : 2.07
+      "parallax" : 1.6
     },
     {
       "kind" : "arcana_bambooForest_front_2",
-      "offset" : [0, 360],
-      "parallax" : 2.08,
+      "offset" : [0, 390],
+      "parallax" : 2.0,
       "lightMapped" : true
     },
     {
       "kind" : "arcana_bambooForest_front_1",
-      "offset" : [0, 360],
-      "parallax" : 2.10,
-      "lightMapped" : true
+      "offset" : [0, 380],
+      "parallax" : 2.1,
+      "lightMapped" : true,
+      "fadePercent" : 0.05
     },
     {
       "kind" : "arcana_bambooForest_canopy",

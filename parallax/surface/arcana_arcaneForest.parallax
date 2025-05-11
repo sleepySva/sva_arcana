@@ -3,10 +3,7 @@
   "layers": [
     {
       "kind": "divider/dirt",
-      "offset": [
-        0,
-        200
-      ],
+      "offset": [0, 240],
       "nohueshift": true,
       "lightMapped": true,
       "parallax": 1.07
@@ -16,107 +13,71 @@
       "nohueshift": true,
       "lightMapped": true,
       "repeatY": true,
-      "tileLimitTop": 125,
+      "tileLimitTop": 165,
       "parallax": 1.08
     },
     {
       "kind": "arcana_arcaneForest_front",
-      "offset": [
-        0,
-        460
-      ],
+      "offset": [0, 460],
       "parallax": 1.09,
       "lightMapped": true
     },
     {
       "kind": "arcana_arcaneForest_canopy",
-      "offset": [
-        0,
-        -285
-      ],
+      "offset": [0, -285],
       "parallax": 1.1,
       "lightMapped": true
     },
     {
       "kind": "arcana_arcaneForest_largetree",
-      "offset": [
-        0,
-        90
-      ],
+      "offset": [0, 90],
       "parallax": 1.11,
       "lightMapped": true
     },
     {
       "kind": "arcana_arcaneForest_canopy",
-      "offset": [
-        0,
-        -290
-      ],
+      "offset": [0, -290],
       "parallax": 1.21,
       "directives": "?saturation=-0?brightness=-10"
     },
     {
       "kind": "godrays",
-      "offset": [
-        0,
-        70
-      ],
+      "offset": [0, 70],
       "parallax": 1.211,
       "timeOfDayCorrelation": "dayVisible",
       "unlit": true
     },
     {
-      "kind": "arcana_arcaneForest_largetree",
-      "offset": [
-        0,
-        90
-      ],
+      "kind": "arcana_arcaneForest_largetreealt",
+      "offset": [100, 90],
       "parallax": 1.2,
-      "directives": "?saturation=-0?brightness=-10"
+      "directives": "?saturation=-5?brightness=-5",
+      "fadePercent": 0.02
     },
     {
       "kind": "arcana_arcaneForest_canopy",
-      "offset": [
-        0,
-        -295
-      ],
+      "offset": [0, -295],
       "parallax": 1.31,
       "directives": "?saturation=-5?brightness=-30"
     },
     {
       "kind": "arcana_arcaneForest_smalltree",
-      "offset": [
-        0,
-        90
-      ],
+      "offset": [0, 90],
       "parallax": 1.3,
-      "directives": "?saturation=-0?brightness=-20"
-    },
-    {
-      "kind": "arcana_arcaneForest_smalltree",
-      "offset": [
-        0,
-        90
-      ],
-      "parallax": 1.4,
-      "directives": "?saturation=-5?brightness=-30"
+      "directives": "?saturation=-0?brightness=-20",
+      "fadePercent": 0.02
     },
     {
       "kind": "arcana_arcaneForest_treeback",
-      "offset": [
-        0,
-        400
-      ],
-      "parallax": 1.5
+      "offset": [0, 400],
+      "parallax": 1.5,
+      "fadePercent": 0.02
     },
     {
       "kind": "arcana_arcaneForest_back",
-      "offset": [
-        0,
-        394
-      ],
-      "parallax": 4,
-      "fadePercent": 0.1
+      "offset": [0, 360],
+      "parallax": 3,
+      "fadePercent": 0.02
     },
 
 // Day Clouds

@@ -1,0 +1,98 @@
+{
+  "globalTagDefaults" : {
+    "directives" : "",
+	"charge" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "switchState" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+	
+      "bg" : {
+        "properties" : {
+          "centered" : false
+        },
+        "partStates" : {
+          "switchState" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off<directives>",
+				"fullbright" : true
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:on.<frame><directives>",
+                "fullbright" : true
+              }
+            }
+          }
+        }
+      },
+	  
+      "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "switchState" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off<directives>"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:on.<frame><directives>"
+              }
+            }
+          }
+        }
+      },
+	  
+      "meter" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 2
+        },
+        "partStates" : {
+          "switchState" : {
+            "on" : {
+              "properties" : {
+                "image" : "<partImage><charge>",
+				"fullbright" : true
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "<partImage><charge>",
+				"fullbright" : true
+              }
+            }
+          }
+        }
+      }
+	  
+    }
+  },
+  "sounds" : {
+    "on" : [],
+    "off" : []
+  }
+}

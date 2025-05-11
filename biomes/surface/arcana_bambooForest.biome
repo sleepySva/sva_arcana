@@ -192,6 +192,20 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
+        "distribution" : "/biomes/distributions.config:potsRare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "arcana_patchy" ] ],
+            "parameters" : { "originBiome": "surface/arcana_bambooForest" }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
         "distribution" : "/biomes/distributions.config:surfaceCapsules",
 
         "type" : "object",

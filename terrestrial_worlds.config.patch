@@ -271,9 +271,9 @@
           "secondaryRegions" : ["arcana_arcaneDesert","arcana_arcaneTundra"],
 		  "dungeonCountRange" : [3, 4],
           "dungeons": [
-		  	  [3.0, "arcana_arcanecity"],
-			  [3.0, "arcana_arcaneDesert_dungeon_2"],
-			  [3.0, "arcana_arcaneForest_dungeon_2"],
+		  	  [1.0, "arcana_arcanecity"],
+			  [4.0, "arcana_arcaneDesert_dungeon_2"],
+			  [4.0, "arcana_arcaneForest_dungeon_2"],
 			  [1.0, "arcana_dungeon_misc_1"],
 			  [1.0, "arcana_dungeon_misc_2"]
           ]
@@ -324,7 +324,7 @@
     "value": {
       "caveLiquid": [ "arcana_liquid_arcaneWater" ],
       "biome": [[0,["arcana_arcaneForest_underground_2"]]],
-      "subRegion": []
+      "subRegion": ["arcana_arcaneovergrowth"]
     }
   },
   {
@@ -333,7 +333,7 @@
     "value": {
       "caveLiquid": [ "arcana_liquid_arcaneWater" ],
       "biome": [[0,["arcana_arcaneForest_underground_3"]]],
-      "subRegion": []
+      "subRegion": ["arcana_arcaneovergrowth"]
     }
   },
   {
@@ -342,6 +342,15 @@
     "value": {
       "caveLiquid": [ "lava" ],
       "biome": [[0,["arcana_arcaneForest_underground_4"]]],
+      "subRegion": ["arcana_arcaneovergrowth"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneovergrowth",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_arcaneWater" ],
+      "biome": [[0,["arcana_arcaneovergrowth"]]],
       "subRegion": []
     }
   },
@@ -752,7 +761,7 @@
     "path": "/regionTypes/arcana_turbulent",
     "value": {
       "oceanLiquid" : [ "water" ],
-      "blockSelector" : [ "remixedIslandsSurface" ],
+      "blockSelector" : [ "arcana_turbulent" ],
       "fgCaveSelector" : [ "surfaceCaves" ],
       "bgCaveSelector" : [ "empty" ],
       "biome": [[0,["arcana_turbulent"]]]

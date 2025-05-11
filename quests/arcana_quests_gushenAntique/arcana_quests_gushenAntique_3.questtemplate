@@ -2,13 +2,13 @@
   "id" : "arcana_quests_gushenAntique_3",
   "prerequisites" : [ "arcana_quests_gushenAntique_2" ],
   "title" : "^green;Past Relics III",
-  "text" : "I'm looking for some ^orange;Avian murals^white; this time. Bring me back an ^green;Kluex Gift Mural^white; and an ^green;Kluex World Mural^white;, if possible.",
+  "text" : "I'm looking for some ^orange;Avian relics^white; this time. Bring me back an ^green;Avian Prayer Altar^white; and an ^green;Avian Moon Emblem^white;, you should be able to locate them in Avian Temples.",
   "completionText" : "Ah, those are just what I needed. Here's your reward.",
   "moneyRange" : [50, 50],
   "rewards" : [
     [
 	  [ "rewardbag", 1 ],
-	  [ "money", 2000 ]
+	  [ "money", 4000 ]
 	]
   ],
 
@@ -33,13 +33,13 @@
     "conditions" : [
       {
         "type" : "gatherItem",
-        "itemName" : "kluexmural2",
+        "itemName" : "birdaltar2",
         "count" : 1,
         "consume" : true
       },
 	  {
         "type" : "gatherItem",
-        "itemName" : "kluexmural1",
+        "itemName" : "moonemblem",
         "count" : 1,
         "consume" : true
       }

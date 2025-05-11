@@ -50,6 +50,11 @@ function power.get()
   return storage.power
 end
 
+-- Returns max power amount.
+function power.max()
+  return storage.max
+end
+
 -- Returns current state for button use
 function power.getState()
   return storage.state

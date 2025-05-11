@@ -1,6 +1,6 @@
 {
   "name" : "arcana_arcaneForest",
-  "friendlyName" : "Arcane Forest",
+  "friendlyName" : "Arcane Weald",
   
   "statusEffects" : [ "arcana_status_energyDrain" ],
 
@@ -64,13 +64,13 @@
       "mainColor" : [255, 255, 255],
 
       "morningColors" : [ [120, 120, 40], [160, 200, 200] ],
-      "dayColors" : [ [100, 204, 245], [200, 215, 245] ],
+      "dayColors" : [ [90, 194, 245], [30, 60, 200] ],
       "eveningColors" : [ [125, 17, 158], [200, 52, 100] ],
       "nightColors" : [ [24, 38, 80, 80], [58, 42, 90, 160] ],
 
       "morningLightColor" : [80, 60, 80],
-      "dayLightColor" : [160, 160, 200],
-      "eveningLightColor" : [140, 100, 180],
+      "dayLightColor" : [146, 150, 200],
+      "eveningLightColor" : [130, 100, 160],
       "nightLightColor" : [40, 20, 80]
     }
   ],
@@ -120,8 +120,8 @@
   },
 
   "surfacePlaceables" : {
-    "grassMod" : [ "grass" ],
-    "grassModDensity" : 0.9,
+    "grassMod" : [ "arcana_mod_cerueonGrass" ],
+    "grassModDensity" : 0.4,
 	
 	"ceilingGrassMod" : [ "undergrowth" ],
     "ceilingGrassModDensity" : 0.5,
@@ -263,34 +263,10 @@
         "distribution" : "/biomes/distributions.config:denseLarge",
 
         "type" : "tree",
-        "treeFoliageHueShiftMax" : 180,
-        "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "birch", "cocoa", "fleshy", "grumpy", "pine", "roottree", "slimey", "something", "spikey", "twisted", "wood", "slobby", "pineytree" ],
-        "treeFoliageList" : [ "rose", "bubbles", "cloudy", "frumpy", "greenleaves", "hanging", "leafy", "lotus", "lushgreen", "orangeflower", "pinefoliage", "redleaves", "scraggy", "spikeyfoliage" ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 2.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:scatteredLarge",
-
-        "type" : "tree",
-        "treeFoliageHueShiftMax" : 180,
-        "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "twisty", "woody", "oldwood", "crackly", "palmlike" ],
-        "treeFoliageList" : [ "lushy", "junglepalm", "jungly", "jungleleaf" ]
-      },
-      {
-        "mode" : "floor",
-        "priority" : 2.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:scatteredLarge",
-
-        "type" : "tree",
-        "treeFoliageHueShiftMax" : 180,
-        "treeStemHueShiftMax" : 15,
-        "treeStemList" : [ "birch", "cocoa", "fleshy", "grumpy", "pine", "roottree", "slimey", "something", "spikey", "twisted", "wood", "slobby", "pineytree" ],
-        "treeFoliageList" : [ "rose", "bubbles", "cloudy", "frumpy", "greenleaves", "hanging", "leafy", "lotus", "lushgreen", "orangeflower", "pinefoliage", "redleaves", "scraggy", "spikeyfoliage" ]
+        "treeFoliageHueShiftMax" : 10,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "arcana_magitree" ],
+        "treeFoliageList" : [ "arcana_magitree" ]
       },
       {
         "mode" : "floor",

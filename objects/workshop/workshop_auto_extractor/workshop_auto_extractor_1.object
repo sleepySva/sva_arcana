@@ -90,16 +90,14 @@
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
   
-  "resources" : {
-    "iron" : { "name" : "ironore", "count" : 1 },
-    "dustrium" : { "name" : "workshop_crafting_rawDustrium", "count" : 1 },
-    "galvasteel" : { "name" : "arcana_ore_galvasteelOre", "count" : 1 }
-  },
-  "maxPower" : 20,
-  "powerUseAmount" : 10,
+  "resources" : [],
+  "miningArea" : [[0, -2], [6, -1]],
+  "maxPower" : 30,
+  "powerUseAmount" : 15,
   "voltage" : 30,
   "craftingTime" : 1.0,
   "outputRate" : 4,
-  "directives" : ""
-
+  "directives" : "",
+  
+  "retainObjectParametersInItem" : true
 }

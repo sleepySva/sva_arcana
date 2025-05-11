@@ -1,0 +1,23 @@
+{
+  "materialId" : 16858,
+  "materialName" : "arcana_platform_magiwoodPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_magiwoodPlatform",
+  "shortdescription" : "Magiwood Platform",
+  "description" : "A polished platform, made from magiwood found in Arcane Wealds.",
+  "glitchDescription" : "Delighted. These wooden platforms have been finely sanded and finished.",
+  "floranDescription" : "Platformss made from wood.",
+  "novakidDescription" : "Some simple lookin' wooden platforms.",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_magiwoodPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

@@ -47,27 +47,20 @@ end
 function populateList()
   widget.clearListItems(self.inputwidget)
   local itemName = ""
-  local str = ""
   local pos = {0,0}
   local i = 1
   for _, v in pairs(self.recipes) do
     i = i + 1
 	local newwidget = widget.addListItem(self.inputwidget)
 	local newwidgetinput = string.format("%s.%s.input", self.inputwidget, newwidget)
-	local outputImage = util.absolutePath(root.itemConfig(v.output).directory, root.itemConfig(v.output).config.inventoryIcon)
 	itemName = root.itemConfig(v.output).config.shortdescription
-	str = string.format("^white;%s %s^reset;", v.output.count, itemName)
-	widget.setText(string.format("%s.%s.text", self.inputwidget, newwidget), str)
-	widget.setImage(string.format("%s.%s.item", self.inputwidget, newwidget), outputImage)
+	widget.setText(string.format("%s.%s.text", self.inputwidget, newwidget), itemName)
+	widget.setItemSlotItem(string.format("%s.%s.outitem", self.inputwidget, newwidget), v.output)
+	
     for j=1, tablelength(v.input) do
-	  local newwidgettext = widget.addListItem(newwidgetinput)
-	  itemName = root.itemConfig(v.input[j]).config.shortdescription
-	  local itemImage = util.absolutePath(root.itemConfig(v.input[j]).directory, root.itemConfig(v.input[j]).config.inventoryIcon)
-	  local wtext = string.format("%s.%s.input.%s.text", self.inputwidget, newwidget, newwidgettext)
-	  local witem = string.format("%s.%s.input.%s.item", self.inputwidget, newwidget, newwidgettext)
-      str = string.format("^white;%s %s^reset;", v.input[j].count, itemName)
-	  widget.setText(wtext, str)
-	  widget.setImage(witem, itemImage)
+	  local inputlist = widget.addListItem(newwidgetinput)
+	  --itemName = root.itemConfig(v.input[j]).config.shortdescription
+	  widget.setItemSlotItem(string.format("%s.%s.input.%s.initem", self.inputwidget, newwidget, inputlist), v.input[j])
 	end
 	
   end

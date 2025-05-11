@@ -82,6 +82,7 @@ function populateList()
 end
 
 function slotUpdate()
+  if player.swapSlotItem() == nil then return end
   if tablelength(self.blacklist) >= self.capacity then return end
   local item = player.swapSlotItem().name
   if not contains(self.blacklist, item) then
@@ -101,4 +102,10 @@ function frequency()
   local str = "Trash every ^orange;" .. tostring(value) .. "^reset;s"
   widget.setText(self.sliderLbl, str)
   player.setProperty("ibsettings", {enabled = player.getProperty("ibsettings").enabled, delta = value})
+end
+
+function reset()
+  player.setProperty("itemblacklist", {})
+  self.blacklist = {}
+  populateList()
 end
