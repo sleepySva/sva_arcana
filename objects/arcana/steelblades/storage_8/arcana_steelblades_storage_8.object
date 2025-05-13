@@ -1,11 +1,11 @@
 {
   "objectName" : "arcana_steelblades_storage_8",
   "colonyTags" : ["steelblades","storage"],
-  "rarity" : "Rare",
+  "rarity" : "Common",
   "description" : "A large metal fuel canister.",
-  "shortdescription" : "Steelblades Canister L",
+  "shortdescription" : "Large Metal Canister",
   "race" : "generic",
-  "price" : 100,
+  "price" : 120,
   
   "category" : "storage",
   "objectType" : "container",
@@ -14,14 +14,25 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_steelblades_storage_8.png:<color>",
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
       "imagePosition" : [-8, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
 
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
     }
   ],
 

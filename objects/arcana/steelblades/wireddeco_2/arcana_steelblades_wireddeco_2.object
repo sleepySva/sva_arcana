@@ -1,14 +1,14 @@
 {
   "objectName" : "arcana_steelblades_wireddeco_2",
   "colonyTags" : ["steelblades", "wired"],
-  "rarity" : "Rare",
+  "rarity" : "Common",
   "description" : "A small wall screen.",
-  "shortdescription" : "Steelblades Screen S",
+  "shortdescription" : "Small Scrap Screen",
   "race" : "generic",
   "category" : "decorative",
-  "price" : 100,
+  "price" : 60,
   
-  "lightColor" : [140, 130, 20],
+  "lightColor" : [130, 120, 10],
   "flickerDistance" : 0.2,
   "flickerStrength" : 0.05,
   "flickerTiming" : 4,
@@ -16,7 +16,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_steelblades_wireddeco_2.png:<color>.on",
+      "dualImage" : "body.png:<color>.on",
       "imagePosition" : [0, 0],
 
       "spaceScan" : 0.1,
@@ -24,10 +24,29 @@
     }
   ],
   
-  "animation" : "arcana_steelblades_wireddeco_2.animation",
+  "animation" : "/objects/arcana_light_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "light" : {
+          "states" : {
+            "on" : {
+              "frames" : 4,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
   "animationParts" : {
-    "bg" : "fullbright.png",
-    "fg" : "arcana_steelblades_wireddeco_2.png"
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
   },
   "animationPosition" : [0, 0],
 
