@@ -28,9 +28,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.10,
+  "critDamage" : 1.4,
 
   "primaryAbilityType" : "arcana_katana_combo",
   "primaryAbility" : {

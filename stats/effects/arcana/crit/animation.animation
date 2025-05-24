@@ -1,0 +1,16 @@
+{
+  "particleEmitters" : {
+    "name" : {
+      "enabled" : false,
+	  "burstCount" : 1,
+      "particles" : [
+        {
+          "particle" : "arcana_crit"
+        }
+      ]
+    }
+  },
+  "sounds" : {
+    "crit" : [ "/sfx/melee/sword_parry.ogg" ]
+  }
+}

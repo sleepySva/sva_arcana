@@ -1,0 +1,24 @@
+{
+  "name" : "arcana_shuyingset",
+  "effectConfig" : {
+  
+    "set" : "arcana_shuying",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "fireResistance", "amount" : -0.05 },
+	  { "stat" : "poisonStatusImmunity", "amount" : 1.0 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["ranged"],
+      "modifiers" : [
+        { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

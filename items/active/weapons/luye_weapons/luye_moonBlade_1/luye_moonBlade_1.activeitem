@@ -33,14 +33,16 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "poison",
+  "critRate" : 0.15,
+  "critDamage" : 1.2,
 
   "primaryAbilityType" : "arcana_glaive_combo",
   "primaryAbility" : {
     "fireTime" : 0.8,
-    "baseDps" : 12.2
+    "baseDps" : 12.0
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"

@@ -1,0 +1,67 @@
+{
+  "type" : "arcana_scavenger_demolisher",
+  "baseType" : "hostile",
+  
+  "dropPools" : [ "banditTreasure" ],
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  
+      "attack" : {
+        "default" : {
+          "default" : [
+		  
+            "I'll blow you apart!",
+            "I will cook you into a delicious meal!",
+			"I will tear you apart!",
+			"You look like fresh meat!",
+			"You're mine!",
+			"Come closer... I'll make you useful...",
+			"Prey...",
+            "Don't think you're getting out of this one easily!",
+            "I bet you'll drop lots of pixels!"
+			
+          ]
+        }
+      }
+	  
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "mechpilothead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_scrapsewn_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_scrapsewn_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "arcana_scraplauncher"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.8
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

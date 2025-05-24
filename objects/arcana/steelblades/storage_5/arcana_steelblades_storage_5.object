@@ -1,11 +1,11 @@
 {
   "objectName" : "arcana_steelblades_storage_5",
   "colonyTags" : ["steelblades","storage"],
-  "rarity" : "Rare",
+  "rarity" : "Common",
   "description" : "A metal shelf. Can store a large amount of items.",
-  "shortdescription" : "Steelblades Shelf M",
+  "shortdescription" : "Tall Scrap Shelf",
   "race" : "generic",
-  "price" : 100,
+  "price" : 140,
   
   "category" : "storage",
   "objectType" : "container",
@@ -14,14 +14,14 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "dualImage" : "arcana_steelblades_storage_5.png:<color>",
+      "dualImage" : "body.png:<color>",
       "imagePosition" : [-24, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
-
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
     }
   ],
 

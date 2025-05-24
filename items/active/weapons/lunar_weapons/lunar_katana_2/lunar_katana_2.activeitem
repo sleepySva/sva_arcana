@@ -28,9 +28,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "arcana_lunar",
+  "critRate" : 0.06,
+  "critDamage" : 1.6,
 
   "primaryAbilityType" : "arcana_tachi_combo",
   "primaryAbility" : {

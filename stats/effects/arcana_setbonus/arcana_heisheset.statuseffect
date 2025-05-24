@@ -1,0 +1,25 @@
+{
+  "name" : "arcana_heisheset",
+  "effectConfig" : {
+  
+    "set" : "arcana_heishe",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "poisonResistance", "amount" : 0.05 },
+	  { "stat" : "poisonStatusImmunity", "amount" : 1.0 },
+	  { "stat" : "arcana_status_acidicBurning_immunity", "amount" : 1.0 }
+    ],
+	"weaponBuff" : {
+      "tags" : ["melee"],
+      "modifiers" : [
+        { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

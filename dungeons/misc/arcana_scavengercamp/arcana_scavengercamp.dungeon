@@ -1,0 +1,72 @@
+{
+  "metadata" : {
+    "name" : "arcana_scavengercamp",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [ "1","2","3","4","5","6" ],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "1.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "2.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "3.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "4.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "5.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "6.json" ],
+	  "chance" : 1000
+    }
+  ]
+}

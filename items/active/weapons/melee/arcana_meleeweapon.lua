@@ -1,10 +1,12 @@
 require "/scripts/util.lua"
 require "/scripts/vec2.lua"
-require "/items/active/weapons/weapon.lua"
+require "/items/active/weapons/arcana_weapon.lua"
 
 function init()
-  effect = config.getParameter("itemStatus")
-  addEphemeralEffect = status.addEphemeralEffect
+  effect = config.getParameter("itemStatus", false)
+  if effect then
+    addEphemeralEffect = status.addEphemeralEffect
+  end
   
   animator.setGlobalTag("paletteSwaps", config.getParameter("paletteSwaps", ""))
   animator.setGlobalTag("directives", "")
@@ -27,7 +29,9 @@ function init()
 end
 
 function update(dt, fireMode, shiftHeld)
-  addEphemeralEffect(effect,0.1)
+  if effect then
+    addEphemeralEffect(effect,0.1)
+  end
   self.weapon:update(dt, fireMode, shiftHeld)
 end
 

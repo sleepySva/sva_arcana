@@ -30,7 +30,7 @@ function build(directory, config, parameters, level, seed)
     util.mergeTable(config.altAbility, config.altAbility.elementalConfig[elementalType])
   end
 
-  -- calculate damage level multiplier
+  -- calculate multipliers
   config.damageLevelMultiplier = root.evalFunction("weaponDamageLevelMultiplier", configParameter("level", 1))
 
   -- palette swaps
@@ -62,6 +62,8 @@ function build(directory, config, parameters, level, seed)
   -- populate tooltip fields
   if config.tooltipKind ~= "base" then
     config.tooltipFields = config.tooltipFields or {}
+	config.tooltipFields.critRateLabel = "^shadow;^orange;"..math.floor(configParameter("critRate", 0)*100).."%^reset;"
+	config.tooltipFields.critDamageLabel = "^shadow;^orange;+"..math.max(math.floor(configParameter("critDamage", 0)*100 - 100), 0).."%^reset;"
     config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
     config.tooltipFields.dpsLabel = util.round((config.primaryAbility.baseDps or 0) * config.damageLevelMultiplier, 1)
     config.tooltipFields.speedLabel = util.round(1 / (config.primaryAbility.fireTime or 1.0), 1)

@@ -5,17 +5,50 @@
     "fileBody" : "/interface/tooltips/arcana_sword_body.png",
     "fileFooter" : "/interface/tooltips/arcana_sword_footer.png"
   },
-  "levelTitleLabel" : {
+  "critboxImage" : {
+    "type" : "image",
+    "position" : [5, 167],
+    "file" : "/interface/tooltips/arcana_critbox.png"
+  },
+  "critRateTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 6.0,
+    "position" : [11, 200],
+    "hAnchor" : "left",
+    "value" : "^shadow;Crit Rate^reset;"
+  },
+  "critRateLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
+    "position" : [44, 190],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "critDamageTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 6.0,
+    "position" : [11, 179],
+    "hAnchor" : "left",
+    "value" : "^shadow;Crit Dmg.^reset;"
+  },
+  "critDamageLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+    "position" : [44, 169],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "levelTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 6.8,
     "position" : [11, 218],
     "hAnchor" : "left",
     "value" : "Tier:"
   },
   "levelLabel" : {
     "type" : "label",
-	"fontSize" : 7.2,
-    "position" : [38, 218],
+	"fontSize" : 6.8,
+    "position" : [36, 218],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
