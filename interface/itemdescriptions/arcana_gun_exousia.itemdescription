@@ -1,69 +1,113 @@
 {
-  "moneyIcon" : {
+  "critboxImage" : {
     "type" : "image",
-    "position" : [102, 30],
-    "file" : "/interface/money.png"
+    "position" : [8, 121],
+    "file" : "/interface/tooltips/arcana_critbox.png"
   },
-  "priceLabel" : {
+  "critRateTitleLabel" : {
     "type" : "label",
-    "position" : [115, 30],
+	"fontSize" : 6.0,
+    "position" : [14, 154],
     "hAnchor" : "left",
-    "value" : "tree"
+    "value" : "^shadow;Crit Rate^reset;"
   },
-  "speedTitleLabel" : {
+  "critRateLabel" : {
     "type" : "label",
-    "position" : [16, 74],
+	"fontSize" : 6,
+    "position" : [47, 144],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "critDamageTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 6.0,
+    "position" : [14, 133],
     "hAnchor" : "left",
-    "value" : "Rate of Fire:"
+    "value" : "^shadow;Crit Dmg.^reset;"
   },
-  "speedLabel" : {
+  "critDamageLabel" : {
     "type" : "label",
-    "position" : [133, 74],
+	"fontSize" : 6,
+    "position" : [47, 123],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "damagePerShotTitleLabel" : {
     "type" : "label",
-    "position" : [16, 83],
+	"fontSize" : 6,
+    "position" : [16, 86],
     "hAnchor" : "left",
-    "value" : "Damage Per Hit:"
+    "value" : "Damage:"
   },
   "damagePerShotLabel" : {
     "type" : "label",
-    "position" : [133, 83],
+	"fontSize" : 6,
+    "position" : [141, 86],
     "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "speedTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 6,
+	"color" : [140, 140, 140],
+    "position" : [16, 75],
+    "hAnchor" : "left",
+    "value" : "Speed:"
+  },
+  "speedLabel" : {
+    "type" : "label",
+	"fontSize" : 6,
+	"color" : [140, 140, 140],
+    "position" : [141, 75],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerShotTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 6,
+	"color" : [140, 140, 140],
+    "position" : [16, 64],
+    "hAnchor" : "left",
+    "value" : "Energy Cost:"
+  },
+  "energyPerShotLabel" : {
+    "type" : "label",
+	"fontSize" : 6,
+	"color" : [140, 140, 140],
+    "position" : [141, 64],
+    "hAnchor" : "right",
+    "centered" : true,
     "wrapWidth" : 126
   },
   "altAbilityTitleLabel" : {
     "type" : "label",
-    "position" : [16, 65],
+	"fontSize" : 6,
+	"color" : [140, 140, 140],
+    "position" : [16, 53],
     "hAnchor" : "left",
     "value" : ""
   },
   "altAbilityLabel" : {
     "type" : "label",
-    "position" : [133, 65],
+	"fontSize" : 6,
+	"color" : [140, 140, 140],
+    "position" : [141, 53],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
   "handednessLabel" : {
     "type" : "label",
-    "position" : [75, 150],
-    "hAnchor" : "mid",
+    "position" : [141, 154],
+	"color" : [140, 140, 140],
+    "hAnchor" : "right",
     "centered" : true,
+	"fontSize" : 4.0,
     "wrapWidth" : 122
-  },
-  "rarityLabel" : {
-    "type" : "label",
-    "position" : [12, 30],
-    "hAnchor" : "left",
-    "centered" : true,
-    "wrapWidth" : 126
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 105],
+    "position" : [20, 109],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -71,11 +115,24 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [70, 120],
+    "position" : [100, 130],
     "file" : "",
     "centered" : true,
-    "maxSize" : [75, 45],
-    "minSize" : [65, 35]
+    "maxSize" : [80, 60],
+    "minSize" : [65, 45]
+  },
+  "descriptionBack" : {
+    "type" : "image",
+    "position" : [8, 0],
+    "file" : "/interface/tooltips/arcana_sworddesc.png"
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [16, 44],
+    "wrapWidth" : 122,
+	"fontSize" : 7.2,
+    "hAnchor" : "left",
+    "vAnchor" : "top"
   },
   "title" : {
     "type" : "label",

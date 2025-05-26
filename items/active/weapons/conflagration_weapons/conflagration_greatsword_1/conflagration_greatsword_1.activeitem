@@ -21,9 +21,11 @@
   },
   "animationCustom" : { },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "fire",
+  "critRate" : 0.06,
+  "critDamage" : 1.22,
 
   "primaryAbilityType" : "arcana_greatsword_combo",
   "primaryAbility" : {

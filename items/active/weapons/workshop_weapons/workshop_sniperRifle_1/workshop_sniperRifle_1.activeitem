@@ -3,7 +3,7 @@
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A dark rifle made from Dustrium.",
+  "description" : "A rifle made from Dustrium for striking long range targets.",
   "shortdescription" : "^#ffa93d;TC^reset; Kerose M60",
   "tooltipKind" : "arcana_gun",
   "category" : "sniperRifle",
@@ -39,12 +39,14 @@
   "baseOffset" : [1.0, 0.2],
   "muzzleOffset" : [3.8, 0.4],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.1,
+  "critDamage" : 1.60,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 1.8,
@@ -92,5 +94,5 @@
 
   "altAbilityType" : "piercingshot",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

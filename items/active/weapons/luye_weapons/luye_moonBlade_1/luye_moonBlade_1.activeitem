@@ -1,6 +1,6 @@
 {
   "itemName" : "luye_moonBlade_1",
-  "price" : 1000,
+  "price" : 1600,
   "level" : 8,
   "maxStack" : 1,
   "rarity" : "Legendary",
@@ -9,7 +9,7 @@
   "tooltipKind" : "arcana_sword",
   "category" : "broadsword",
   "tooltipFields" : {
-	"subtitle" : "Moon Blade",
+	"subtitle" : "Twinblade",
 	"rarityLabel" : "Luye"
   },
   "twoHanded" : true,
@@ -17,12 +17,40 @@
 
   "inventoryIcon" : "icon.png",
 
-  "animation" : "/items/active/weapons/melee/moonBlade/arcana_moonBlade_combo.animation",
+  "animation" : "animation.animation",
   "animationParts" : {
     "handle" : "fullbright.png",
     "blade" : "luye_moonBlade_1.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "spinSwoosh" : {
+          "properties" : {
+            "zLevel" : 1,
+            "centered" : true,
+            "transformationGroups" : ["swoosh"],
+            "offset" : [0, 0],
+            "fullbright" : true,
+            "damageArea" : [ [-5.75, 1.75], [-1.75, 5.75], [1.75, 5.75], [5.75, 1.75], [5.75, -1.75], [1.75, -5.75], [-1.75, -5.75], [-5.75, -1.75] ]
+          },
+          "partStates" : {
+            "spinSwoosh" : {
+              "idle" : {
+                "properties" : {
+                  "image" : ""
+                }
+              },
+              "spin" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/luye_weapons/luye_moonBlade_1/spinswoosh.png:<frame>"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "sounds" : {
       "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
       "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
@@ -36,13 +64,41 @@
   "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "poison",
-  "critRate" : 0.15,
+  "critRate" : 0.13,
   "critDamage" : 1.2,
 
-  "primaryAbilityType" : "arcana_glaive_combo",
+  "primaryAbilityType" : "arcana_magiblade_combo",
   "primaryAbility" : {
     "fireTime" : 0.8,
-    "baseDps" : 12.0
+    "baseDps" : 11.4,
+	
+    "stepDamageConfig" : [
+      {
+		"damageSourceKind" : "poisonbroadsword"
+      },
+      {
+		"damageSourceKind" : "poisonbroadsword"
+      },
+      {
+		"damageSourceKind" : "poisonbroadsword"
+      },
+      {
+		"damageSourceKind" : "poisonbroadsword"
+      }
+    ]
+  },
+  "altAbilityType" : "spearspin",
+  "altAbility" : {
+    "spinRate" : -1750,
+    "damageConfig" : {
+      "damageSourceKind" : "poisonbroadsword",
+      "statusEffects" : [ ],
+    	"baseDamage" : 5,
+    	"knockbackMode" : "none",
+    	"knockback" : 8,
+    	"timeout" : 0.1,
+    	"timeoutGroup" : "alt"
+    }
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"

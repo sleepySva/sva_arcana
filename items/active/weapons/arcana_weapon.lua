@@ -10,7 +10,7 @@ function Weapon:new(weaponConfig)
   newWeapon.critDamage = config.getParameter("critDamage")
   newWeapon.elementalType = config.getParameter("elementalType")
   newWeapon.muzzleOffset = config.getParameter("muzzleOffset") or {0,0}
-  newWeapon.aimOffset = config.getParameter("aimOffset") or (newWeapon.muzzleOffset[2] - 0.25) -- why is it off by 0.25? nobody knows!
+  newWeapon.aimOffset = config.getParameter("aimOffset") or (newWeapon.muzzleOffset[2] - 0.25)
   newWeapon.abilities = {}
   newWeapon.transformationGroups = {}
   newWeapon.handGrip = config.getParameter("handGrip", "inside")
@@ -203,6 +203,9 @@ function Weapon:damageSource(damageConfig, damageArea, damageTimeout)
     end
     local damage = damageConfig.baseDamage * self.damageLevelMultiplier * activeItem.ownerPowerMultiplier()
 	
+	-- Crits
+	local critDamageMultiplier = status.stat("arcana_critDamageMultiplier") or 0
+	
 	local effects = jarray()
 	for key, value in ipairs(damageConfig.statusEffects or jarray()) do
 	  effects[key] = value
@@ -210,9 +213,10 @@ function Weapon:damageSource(damageConfig, damageArea, damageTimeout)
 
 	local critRate = (damageConfig.critRate or self.critRate or 0)
 	if critRate > 0 and math.random() <= critRate then
-	  damage = damage * (damageConfig.critDamage or self.critDamage or 1)
+	  damage = damage * ((damageConfig.critDamage or self.critDamage or 1) + critDamageMultiplier)
 	  table.insert(effects, damageConfig.critVisualStatus or "arcana_crit")
 	end
+	--
 
     local damageLine, damagePoly
     if #damageArea == 2 then

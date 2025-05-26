@@ -1,50 +1,21 @@
 {
-  "title" : {
-    "type" : "label",
-    "position" : [80, 202],
-    "hAnchor" : "mid",
-	"fontSize" : 7.2,
-    "value" : ""
-  },
-  "subTitle" : {
-    "type" : "label",
-    "position" : [80, 194],
-    "hAnchor" : "mid",
-	"fontSize" : 7.2,
-    "color" : [185, 181, 178],
-    "value" : ""
-  },
-  "titleIcon" : {
-    "type" : "itemslot",
-    "position" : [168, 188],
-    "callback" : "null",
-    "iconMode" : true,
-    "backingImage" : "/interface/inventory/portrait.png",
-    "showRarity" : false,
-    "showBackingImageWhenFull" : true
-  },
   "background" : {
     "type" : "background",
-    "fileHeader" : "/interface/tooltips/arcana_gun_exousia_header.png",
+    "fileHeader" : "/interface/tooltips/arcana_sword_header.png",
     "fileBody" : "/interface/tooltips/arcana_gun_exousia_body.png",
-    "fileFooter" : "/interface/tooltips/arcana_gun_exousia_footer.png"
-  },
-  "header" : {
-    "type" : "image",
-    "position" : [0, 193],
-    "file" : "/interface/tooltips/arcana_gun_exousia_header.png"
+    "fileFooter" : "/interface/tooltips/arcana_sword_footer.png"
   },
   "levelTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [19, 176],
+    "position" : [11, 218],
     "hAnchor" : "left",
     "value" : "Tier:"
   },
   "levelLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [46, 176],
+    "position" : [38, 218],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
@@ -52,14 +23,22 @@
     "type" : "label",
 	"fontSize" : 6.8,
 	"color" : [160, 160, 160],
-    "position" : [98, 176],
+    "position" : [102, 218],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
+  "factionImage" : {
+    "type" : "image",
+    "position" : [145, 179],
+    "file" : "/interface/cockpit/dungeons/arcana_vermilion_dungeon_1.png",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
+  },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [179, 177],
+    "position" : [145, 162],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -67,96 +46,95 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [80, 151],
+    "position" : [85, 183],
     "file" : "",
     "centered" : true,
-    "maxSize" : [50, 40],
-    "minSize" : [50, 40]
+    "maxSize" : [80, 70],
+    "minSize" : [60, 60]
   },
   "descriptionLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
 	"color" : [160, 160, 160],
-    "position" : [19, 127],
-    "wrapWidth" : 122,
+    "position" : [11, 147],
+    "wrapWidth" : 150,
     "hAnchor" : "left",
     "vAnchor" : "top"
   },
   "damagePerShotTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [19, 78],
+    "position" : [11, 76],
     "hAnchor" : "left",
     "value" : "Damage:"
   },
   "damagePerShotLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [140, 78],
+    "position" : [158, 76],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "speedTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [19, 69],
+    "position" : [11, 67],
     "hAnchor" : "left",
     "value" : "Firing Rate:"
   },
   "speedLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [140, 69],
+    "position" : [158, 67],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "energyPerShotTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [19, 60],
+    "position" : [11, 58],
     "hAnchor" : "left",
-    "value" : "Energy Per Hit:"
+    "value" : "Energy Per Shot:"
   },
   "energyPerShotLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [140, 60],
+    "position" : [158, 58],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "altAbilityTitleLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [19, 51],
+    "position" : [11, 49],
     "hAnchor" : "left",
     "value" : ""
   },
   "altAbilityLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [140, 51],
+    "position" : [158, 49],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
-  "exousiaLabel" : {
+  "rarityLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-	"color" : [160, 160, 160],
-    "position" : [11, 14],
+    "position" : [11, 23],
     "hAnchor" : "left",
     "centered" : true,
-    "value" : "Exousian Empire"
+    "wrapWidth" : 126
   },
   "moneyIcon" : {
     "type" : "image",
-    "position" : [115, 14],
+    "position" : [125, 23],
     "file" : "/interface/money.png"
   },
   "priceLabel" : {
     "type" : "label",
 	"fontSize" : 7.2,
-    "position" : [128, 14],
+    "position" : [138, 23],
     "hAnchor" : "left",
     "value" : "tree"
   }

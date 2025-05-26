@@ -24,9 +24,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.16,
+  "critDamage" : 1.18,
   
   "aimOffset" : -1.0,
 
@@ -38,7 +40,7 @@
 
   "altAbilityType" : "spearspin",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua",
   "upgradeParameters" : {
     "inventoryIcon" : "upgraded.png",
     "animationParts" : {

@@ -1,9 +1,9 @@
 {
   "itemName" : "arcana_boss_cosmoNemesis_assaultRifle_1",
-  "price" : 1000,
+  "price" : 1600,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A wand that shoots out cosmic flames.",
+  "description" : "A rifle that shoots out cosmic flames.",
   "shortdescription" : "^#ff8b5b;Asobibi^reset;",
   "tooltipKind" : "arcana_gun",
   "category" : "assaultRifle",
@@ -18,8 +18,7 @@
     "butt" : "",
     "middle" : "body.png",
 	"fullbright" : "fullbright.png",
-    "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "barrel" : ""
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -32,19 +31,21 @@
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/ar4.ogg"]
+      "fire" : ["/sfx/gun/plasma_ar4.ogg"]
     }
   },
 
   "baseOffset" : [0.2, 0.25],
   "muzzleOffset" : [2.4, 0.4],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "fire",
+  "critRate" : 0.04,
+  "critDamage" : 1.1,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.046,
@@ -59,7 +60,7 @@
     "projectileParameters" : {
       "damageKind" : "fire",
 	  "bounces" : 0,
-	  "speed" : 52,
+	  "speed" : 82,
       "knockback" : 8,
 	  "physics" : "laser"
     },
@@ -74,8 +75,8 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -83,8 +84,8 @@
       },
       "cooldown" : {
         "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -93,5 +94,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

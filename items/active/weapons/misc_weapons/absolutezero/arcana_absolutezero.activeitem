@@ -29,9 +29,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "ice",
+  "critRate" : 0.08,
+  "critDamage" : 1.28,
 
   "primaryAbilityType" : "arcana_greatspear_projcombo",
   "primaryAbility" : {

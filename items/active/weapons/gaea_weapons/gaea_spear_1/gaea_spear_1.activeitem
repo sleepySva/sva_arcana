@@ -25,9 +25,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "poison",
+  "critRate" : 0.16,
+  "critDamage" : 1.18,
 
   "aimOffset" : -1.0,
 
@@ -37,7 +39,7 @@
     "baseDps" : 8.6
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua",
   "upgradeParameters" : {
     "inventoryIcon" : "upgraded.png",
     "animationParts" : {

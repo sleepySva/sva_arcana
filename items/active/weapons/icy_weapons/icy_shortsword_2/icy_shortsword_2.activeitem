@@ -26,9 +26,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "ice",
+  "critRate" : 0.06,
+  "critDamage" : 1.36,
 
   "primaryAbilityType" : "shortswordcombo",
   "primaryAbility" : {
@@ -39,5 +41,5 @@
 	}
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

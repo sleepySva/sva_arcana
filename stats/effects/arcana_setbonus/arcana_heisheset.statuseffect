@@ -7,12 +7,12 @@
     "statModifiers" : [
 	  { "stat" : "poisonResistance", "amount" : 0.05 },
 	  { "stat" : "poisonStatusImmunity", "amount" : 1.0 },
-	  { "stat" : "arcana_status_acidicBurning_immunity", "amount" : 1.0 }
+	  { "stat" : "arcana_status_acidicBurning_immunity", "amount" : 1.0 },
+	  { "stat" : "arcana_critDamageMultiplier", "amount" : 0.1 }
     ],
 	"weaponBuff" : {
-      "tags" : ["melee"],
+      "tags" : [],
       "modifiers" : [
-        { "stat" : "powerMultiplier", "effectiveMultiplier" : 1.1 }
       ]
 	}
   },

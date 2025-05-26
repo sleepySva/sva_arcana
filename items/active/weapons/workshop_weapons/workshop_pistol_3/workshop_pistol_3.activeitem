@@ -39,12 +39,14 @@
   "baseOffset" : [0.6, 0.2],
   "muzzleOffset" : [1.8, 0.2],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.08,
+  "critDamage" : 1.40,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 1.4,
@@ -90,5 +92,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

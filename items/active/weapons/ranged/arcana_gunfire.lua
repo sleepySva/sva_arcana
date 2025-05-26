@@ -112,6 +112,20 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
   if type(projectileType) == "table" then
     projectileType = projectileType[math.random(#projectileType)]
   end
+  
+  -- Crits
+  local effects = jarray()
+  for key, value in ipairs(params.statusEffects or jarray()) do
+    effects[key] = value
+  end
+
+  local critRate = (self.weapon.critRate or self.critRate or 0)
+  if critRate > 0 and math.random() <= critRate then
+    params.powerMultiplier = params.powerMultiplier * (self.weapon.critDamage or self.critDamage or 1)
+    table.insert(effects, self.weapon.critVisualStatus or "arcana_crit")
+	params.statusEffects = effects
+  end
+  --
 
   local projectileId = 0
   for i = 1, (projectileCount or self.projectileCount) do

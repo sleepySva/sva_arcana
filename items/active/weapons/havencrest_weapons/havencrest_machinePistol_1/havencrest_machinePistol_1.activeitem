@@ -1,6 +1,6 @@
 {
   "itemName" : "havencrest_machinePistol_1",
-  "price" : 1000,
+  "price" : 1100,
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "An arcanium based machine pistol.",
@@ -13,28 +13,45 @@
 
   "inventoryIcon" : "havencrest_machinePistol_1.png",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "havencrest_machinePistol_1.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_blue.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.8, 0.2]
+		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.8, -0.6]
+		  }
+		}
+	  }
+	},
     "sounds" : {
-      "fire" : ["/sfx/melee/laser_weapon_swing2.ogg"]
+      "fire" : ["/sfx/gun/plasma_mp1.ogg"]
     }
   },
 
-  "baseOffset" : [1.2, 0.25],
-  "muzzleOffset" : [1.4, 0.5],
+  "baseOffset" : [0.8, 0.2],
+  "muzzleOffset" : [1.2, 0.3],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.03,
+  "critDamage" : 1.41,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.2,
@@ -50,7 +67,7 @@
     "projectileType" : "havencrest_assaultRifle_1_projectile_1",
     "projectileParameters" : {
       "damageKind" : "shotgunbullet",
-      "knockback" : 22
+      "knockback" : 10
     },
     "stances" : {
       "idle" : {
@@ -82,5 +99,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

@@ -1,47 +1,63 @@
 {
-  "moneyIcon" : {
+  "critboxImage" : {
     "type" : "image",
-    "position" : [102, 0],
-    "file" : "/interface/money.png"
+    "position" : [8, 121],
+    "file" : "/interface/tooltips/arcana_critbox.png"
   },
-  "priceLabel" : {
+  "critRateTitleLabel" : {
     "type" : "label",
-    "position" : [142, 0],
+	"fontSize" : 6.0,
+    "position" : [14, 154],
+    "hAnchor" : "left",
+    "value" : "^shadow;Crit Rate^reset;"
+  },
+  "critRateLabel" : {
+    "type" : "label",
+	"fontSize" : 6,
+    "position" : [47, 144],
     "hAnchor" : "right",
-    "value" : "tree"
+    "wrapWidth" : 126
+  },
+  "critDamageTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 6.0,
+    "position" : [14, 133],
+    "hAnchor" : "left",
+    "value" : "^shadow;Crit Dmg.^reset;"
+  },
+  "critDamageLabel" : {
+    "type" : "label",
+	"fontSize" : 6,
+    "position" : [47, 123],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
   },
   "damagePerShotTitleLabel" : {
     "type" : "label",
-	"fontSize" : 7.2,
-    "position" : [16, 87],
+	"fontSize" : 6,
+    "position" : [16, 86],
     "hAnchor" : "left",
     "value" : "Max Damage:"
   },
   "damagePerShotLabel" : {
     "type" : "label",
-	"fontSize" : 7.2,
-    "position" : [133, 87],
+	"fontSize" : 6,
+    "position" : [141, 86],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "handednessLabel" : {
     "type" : "label",
-    "position" : [133, 154],
+    "position" : [141, 154],
+	"color" : [140, 140, 140],
     "hAnchor" : "right",
     "centered" : true,
-	"fontSize" : 6.0,
+	"fontSize" : 4.0,
     "wrapWidth" : 122
-  },
-  "rarityLabel" : {
-    "type" : "label",
-    "position" : [12, 0],
-    "hAnchor" : "left",
-    "centered" : true,
-    "wrapWidth" : 126
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [126, 111],
+    "position" : [20, 109],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -49,7 +65,7 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [76, 130],
+    "position" : [100, 130],
     "file" : "",
     "centered" : true,
     "maxSize" : [80, 60],
@@ -57,12 +73,12 @@
   },
   "descriptionBack" : {
     "type" : "image",
-    "position" : [8, 12],
+    "position" : [8, 0],
     "file" : "/interface/tooltips/arcana_sworddesc.png"
   },
   "descriptionLabel" : {
     "type" : "label",
-    "position" : [16, 58],
+    "position" : [16, 44],
     "wrapWidth" : 122,
 	"fontSize" : 7.2,
     "hAnchor" : "left",

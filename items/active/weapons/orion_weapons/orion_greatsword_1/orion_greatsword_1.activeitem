@@ -20,9 +20,11 @@
     "blade" : "body.png"
   },
   
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "electric",
+  "critRate" : 0.04,
+  "critDamage" : 1.1,
 
   "primaryAbilityType" : "arcana_greatsword_combo",
   "primaryAbility" : {

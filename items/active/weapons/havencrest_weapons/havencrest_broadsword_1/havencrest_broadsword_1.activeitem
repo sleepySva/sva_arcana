@@ -6,7 +6,7 @@
   "rarity": "Rare",
   "description": "A true scholar is knowledged in all things, combat included.",
   "shortdescription": "Arcanium Broadsword",
-  "tooltipKind": "sword",
+  "tooltipKind": "arcana_sword",
   "category": "broadsword",
   "twoHanded": true,
   "itemTags": ["weapon", "melee", "broadsword"],
@@ -92,14 +92,18 @@
       "fire4": ["/sfx/melee/swing_hammer.ogg"]
     }
   },
-  "scripts": ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts": ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+  
   "elementalType": "physical",
+  "critRate" : 0.04,
+  "critDamage" : 1.42,
+  
   "primaryAbilityType": "broadswordcombo",
   "primaryAbility": {
     "fireTime": 1.4,
     "baseDps": 11.2,
     "damageConfig": {
-      "knockback": 22,
+      "knockback": 20,
       "damageSourceKind": "broadsword"
     },
     "comboSteps": 4,
@@ -266,5 +270,5 @@
     }
   },
   "altAbilityType": "heavy_risingslash",
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

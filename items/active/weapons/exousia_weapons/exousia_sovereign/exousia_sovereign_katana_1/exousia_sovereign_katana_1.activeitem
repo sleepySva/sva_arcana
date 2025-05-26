@@ -30,9 +30,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.05,
+  "critDamage" : 1.15,
 
   "primaryAbilityType" : "arcana_nodachi_combo",
   "primaryAbility" : {

@@ -26,7 +26,9 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+  "critRate" : 0.05,
+  "critDamage" : 1.14,
 
   "elementalType" : "ice",
 
@@ -50,5 +52,5 @@
     "name" : "Frostburst"
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

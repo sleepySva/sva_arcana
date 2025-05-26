@@ -1,6 +1,6 @@
 {
   "itemName" : "havencrest_assaultRifle_1",
-  "price" : 1400,
+  "price" : 1300,
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "An arcanium forged rifle.",
@@ -44,12 +44,14 @@
   "baseOffset" : [0.8, 0.2],
   "muzzleOffset" : [1.5, 0.3],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.03,
+  "critDamage" : 1.44,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.3,
@@ -94,5 +96,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

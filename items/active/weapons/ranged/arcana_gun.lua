@@ -1,6 +1,6 @@
 require "/scripts/util.lua"
 require "/scripts/vec2.lua"
-require "/items/active/weapons/weapon.lua"
+require "/items/active/weapons/arcana_weapon.lua"
 
 function init()
   self.cursor = config.getParameter("cursor")

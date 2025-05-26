@@ -1,13 +1,12 @@
 {
-  "name" : "arcana_shuyingset",
+  "name" : "arcana_catalyticset",
   "effectConfig" : {
   
-    "set" : "arcana_shuying",
+    "set" : "arcana_catalytic",
 	"minParts" : 3,
     "statModifiers" : [
-	  { "stat" : "fireResistance", "amount" : -0.05 },
-	  { "stat" : "poisonStatusImmunity", "amount" : 1.0 },
-	  { "stat" : "arcana_critDamageMultiplier", "amount" : 0.15 }
+	  { "stat" : "fireResistance", "amount" : 0.12 },
+	  { "stat" : "arcana_critDamageMultiplier", "amount" : 0.08 }
     ],
 	"weaponBuff" : {
       "tags" : [],
