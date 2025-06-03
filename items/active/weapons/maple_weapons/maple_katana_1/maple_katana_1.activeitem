@@ -14,7 +14,7 @@
 
   "inventoryIcon" : "body.png:idle.1",
 
-  "animation" : "animation.animation",
+  "animation" : "/items/active/weapons/melee/katana/arcana_katana_combo.animation",
   "animationParts" : {
     "handle" : "fullbright.png",
     "blade" : "body.png"
@@ -22,9 +22,11 @@
   "animationCustom" : {
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.04,
+  "critDamage" : 1.30,
 
   "primaryAbilityType" : "arcana_tachi_combo",
   "primaryAbility" : {

@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_skullbearerset",
+  "effectConfig" : {
+  
+    "set" : "arcana_skullbearer",
+	"minParts" : 3,
+    "statModifiers" : [
+    ],
+    "status" : [ "thornsaugment", "arcana_status_acrimony" ],
+	"weaponBuff" : {
+      "tags" : ["none"],
+      "modifiers" : [
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

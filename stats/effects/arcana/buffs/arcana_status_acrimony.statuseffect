@@ -1,0 +1,15 @@
+{
+  "name" : "arcana_status_acrimony",
+  "effectConfig" : {
+    "powerPerEnemy" : 0.05,
+	"critDamagePerEnemy" : 0.02
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_status_acrimony.lua"
+  ],
+  
+  "label" : "Acrimony: ^green;+5% Damage and +2% Crit damage^reset; per enemy nearby.",
+  "icon" : "/interface/statuses/rage.png"
+}

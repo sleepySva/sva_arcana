@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt2luOgzAMBVDWwi7nb1Y3oInEmkb5iMaieRjiayeYK1mVgJacOgpUZVuW7+0td7VMHi\/OczxZUzxZUzx7rceildf77LzeZwft\/V1Rn3wvGv0tmS2+C635nLPFbdpmCe+2\/lcpNa+mWaq\/X5ltyRIKprDqm6294YHeuC8U5nOofB+IIL0xyVtKrf+IoL2tfa8XG+v7yZwXaR\/BS9dn9FpteX\/V2o+wW3vp9kCuT7X39ETDW1qPaP+olZqlY+mNaXlnm8+t6w3HK2lGeun9c+2Y9IqeyzEoL73OcL0aQXjPVi\/eljWsn\/N4m3B95v7Oy3n3ib2cOVrrL8I9mnefyHseZ68XEcn\/CDW8P6SuBvX\/7535nI7dFe41ZvNK9VfKrNHfq17k8yoj9hf5jA7Se2e9Qj+DpdFfbrjPnPW4R1ifrzo59kNmaOwcjXNKGFMd5HzazlrO44olbZ2hPFm9eT3M5zROyTVrZLu0c2Qz0jqaW8tqbdZ29pi578sdZ+m86ucebz3+HrP1ON7yV38plbjU",
+         "data":"eJzt2l2qwjAQBeCupT65he7MN91aBQULXZMOGgi1bSbJnPx0cmCQK43OR+J4L7fPrrs+W6mrrvJocS6jyWqiyWqi2Zu7l1Rp3mOneY+d5j12pL13R+WOhPf2WU\/lsu55af34eRxjGmFE0nuLeJ3mxUTCSz2eT+tlDK6qyUu5bDxve\/bWD9a1yDRvWLR5t8L11vb53Qp3XtmFTMr9dZVW79SjuinzPJMXZS5xXjWvXBDetc+k73lGBeGl35tf\/bc0zGet3qn3P8tUw6\/odaSD8k4Lr8+8qtW7PM97a7R76efSveYMmwr1mvmF9EqYU3gfVvkG9f\/f2POM2t9avVL7K2WW8Lrms68Xeb8K2huyv8h7dJDfvyHzCn0PVor95YZ7z1mMu4T57Ovk2Ofwdv7C+ftodrynhNHUbL2fpDM2y76opK01lCarNq+G82z6lJxZJdulnSWbkdbS3Kmsuc2pnTFm7rq163I6ff3c63P3H2PO3UcrffUGY1H7nA==",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztmAEKwyAMRXsW73+OFSrdmYZsgcym2qrVJOZBGMN2y9uvolsWwzAMwzAMwzCM\/ng3uoO+BF\/Nzqs7VvDdFTsDm\/sWoN059g3M4Byj3ZnCnOdAqjM1T6+MBbBz7loObJk9hSfWaXxvYHfH9Zxa3zlQ6wtjsBfzhDs3cr4pqN9L8x7UE\/nCe84Z3wWe2ZyvNueUr1YkzN9X48+L8+XGC1Up++9sTJ2bYYwLV31391\/xfwHcc71DLh9NvqXPIvbn+mzH1PQmJe+VyAVnc1arED+Ks76vzmNNcJ5\/T2HOcyDNucXeWZJzq7OCFOfacwJGgjO4vlFRZ5xQqbHUPXH1hPp+rjWTa63z6L7N9zlXSc4Lem3JaK+nMk0x2q2nK2a0Z09XYBZPTGmvJddx5G4mnLIrRXLvhmw+Y+vheQ==",
+         "data":"eJztmEEKwjAQRXOWuhJv4M3ctYcRF+57AAVdiJ7JDs1ALG3TxDTJT+fBp9BEmUckyaiUIAiCIAiCIAhCWg47t6BTiu9dp1GqvnVPnyD5EvuuvrPqnV1y7D5DQfINsb7XkeTMyXMMFfFdNobKlnx5z\/EdR4P25Vc1PU5jNCdaQStDZ5HN9x6tmjjYfOfg85vuLBx+VyKNztkIvyuR4Zqaa10i\/HunPfyisO7SvrBzzr6PwN9Hzrn7cv7h1vdVte6v6pJ9h\/0wYm\/owpgvIq2OC4i+7UiWguZLtfK9yPyv5l3NZzgfial74Ntyh0b1ncPmzHtWlGIiYXMuEXHOnxB3ZyTnUL0CinOIPoFBcGZX89x8Vr9p9Dse57N5OG9qPuejE5MPULbk+q9z6rrFdz1XJGdlPEOS2mutNZ0jtVtMV5PUnjFdma14mvjW6jMvR1zXJKe18wW5dgGbL39N7Gs=",
          "encoding":"base64",
          "height":60,
          "id":2,
@@ -150,6 +150,23 @@
                  "width":48,
                  "x":128,
                  "y":360
+                }, 
+                {
+                 "height":8,
+                 "id":831,
+                 "name":"Scrap Turret",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"arcana_monster_scrapTurret"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":280,
+                 "y":184
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -240,50 +257,6 @@
                  "width":8,
                  "x":216,
                  "y":232
-                }, 
-                {
-                 "height":8,
-                 "id":828,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"human"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"arcana_npc_stahlernBadlands_scavenger"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":136,
-                 "y":336
-                }, 
-                {
-                 "height":8,
-                 "id":829,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"human"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"arcana_npc_stahlernBadlands_scavenger"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":152,
-                 "y":264
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -529,7 +502,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":831,
+ "nextobjectid":832,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -706,6 +679,10 @@
         {
          "firstgid":8928,
          "source":"..\/..\/tilesets\/objects\/steelblades_objects\/steelblades_objects.json"
+        }, 
+        {
+         "firstgid":8955,
+         "source":"..\/..\/tilesets\/tiles\/painted_tiles\/painted_tiles.json"
         }],
  "tilewidth":8,
  "type":"map",

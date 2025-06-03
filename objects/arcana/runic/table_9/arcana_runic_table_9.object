@@ -1,0 +1,25 @@
+{
+  "objectName" : "arcana_runic_table_9",
+  "colonyTags" : ["runic"],
+  "rarity" : "Common",
+  "description" : "A tall purple pillar for display or supporting structures.",
+  "shortdescription" : "Runic Purple Pillar",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 90,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

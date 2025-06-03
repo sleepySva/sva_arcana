@@ -8,6 +8,7 @@ function Weapon:new(weaponConfig)
   newWeapon.damageLevelMultiplier = config.getParameter("damageLevelMultiplier", root.evalFunction("weaponDamageLevelMultiplier", config.getParameter("level", 1)))
   newWeapon.critRate = config.getParameter("critRate")
   newWeapon.critDamage = config.getParameter("critDamage")
+  newWeapon.critStatusEffect = config.getParameter("critStatusEffect")
   newWeapon.elementalType = config.getParameter("elementalType")
   newWeapon.muzzleOffset = config.getParameter("muzzleOffset") or {0,0}
   newWeapon.aimOffset = config.getParameter("aimOffset") or (newWeapon.muzzleOffset[2] - 0.25)
@@ -215,6 +216,10 @@ function Weapon:damageSource(damageConfig, damageArea, damageTimeout)
 	if critRate > 0 and math.random() <= critRate then
 	  damage = damage * ((damageConfig.critDamage or self.critDamage or 1) + critDamageMultiplier)
 	  table.insert(effects, damageConfig.critVisualStatus or "arcana_crit")
+	  local critStatusEffect = damageConfig.critStatusEffect or self.critStatusEffect or false
+	  if critStatusEffect then
+	    table.insert(effects, critStatusEffect)
+	  end
 	end
 	--
 

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "headarmour",
-  "description" : "An ancient armor forged with green noxion. ^green;Grants Thorns and +5% Poison Res.^reset;",
+  "description" : "An ancient armor forged with green noxion. ^green;+5% Poison RES.^reset; \n\n^orange;Set Bonus:^reset; \n^green;Grants Thorns^reset;. ^green;+5% Damage and +2% Crit damage^reset; per enemy within 40 tiles, up to 10 enemies.",
   "shortdescription" : "Skullbearer's Acrimony",
   "tooltipKind" : "arcana_armorbig",
 
@@ -43,7 +43,11 @@
   ],
   
   "statusEffects" : [
-    "thornsaugment"
+    "arcana_skullbearerset",
+    {
+      "stat" : "arcana_skullbearer",
+      "amount" : 1
+    }
   ],
   
   "colorOptions" : [

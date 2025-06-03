@@ -212,18 +212,41 @@
                           "name": "sequence",
                           "parameters": {},
                           "children": [
+						    {
+							  "title": "arcana_sandvatar_teleport",
+							  "type": "module",
+							  "name": "arcana_sandvatar_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_sandvatarrand"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
+							  }
+						    },
                             {
-                              "title": "arcana_sandvatar_triangle",
+                              "title": "arcana_sandvatar_row",
                               "type": "module",
-                              "name": "arcana_sandvatar_triangle",
+                              "name": "arcana_sandvatar_row",
                               "parameters": {}
                             },
-						    {
-							  "title": "timer",
-							  "type": "action",
-							  "name": "timer",
+                            {
+                              "title": "arcana_sandvatar_row",
+                              "type": "module",
+                              "name": "arcana_sandvatar_row",
 							  "parameters": {
-							    "time": {"value": 1.0}
+							    "jumpVelocityX": {"value": 20},
+							    "jumpVelocityY": {"value": 20}
+							  }
+                            },
+						    {
+							  "title": "arcana_sandvatar_teleport",
+							  "type": "module",
+							  "name": "arcana_sandvatar_teleport",
+							  "parameters": {
+							    "positionType": {"value": "arcana_sandvatarrand"},
+							    "shufflePositions": {"value": true},
+							    "reverseOrder": {"value": false},
+							    "positionIndex": {"value": 1}
 							  }
 						    },
 						    {
@@ -237,13 +260,13 @@
 							  "type": "action",
 							  "name": "timer",
 							  "parameters": {
-							    "time": {"value": 2.0}
+							    "time": {"value": 1.0}
 							  }
 						    },
                             {
-                              "title": "arcana_sandvatar_triangle",
+                              "title": "arcana_sandvatar_cannon",
                               "type": "module",
-                              "name": "arcana_sandvatar_triangle",
+                              "name": "arcana_sandvatar_cannon",
                               "parameters": {}
                             },
 						    {
@@ -251,7 +274,52 @@
 							  "type": "action",
 							  "name": "timer",
 							  "parameters": {
-							    "time": {"value": 0.4}
+							    "time": {"value": 1.0}
+							  }
+						    },
+						    {
+							  "title": "setParticleEmitterActive",
+							  "type": "action",
+							  "name": "setParticleEmitterActive",
+							  "parameters": {
+							    "active": {"value": true},
+							    "emitter": {"value": "energy"}
+							  }
+						    },
+                            {
+                              "title": "arcana_sandvatar_charge",
+                              "type": "module",
+                              "name": "arcana_sandvatar_charge",
+							  "parameters": {
+							    "windupTime": {"value": 0.8},
+								"winddownTime": {"value": 0.8},
+								"windupState": {"value": "chargewindup"},
+								"winddownState": {"value": "chargewinddown"},
+								"chargeState": {"value": "special"},
+								"chargeSpeed": {"value": 220},
+								"chargeControlForce": {"value": 540},
+								"chargeTime": {"value": 2.0},
+								"wallCollide": {"value": true},
+								"wallCrashSound": {"value": "crash"},
+								"wallCrashEmitter": {"value": ""},
+								"aimAtTarget": {"value": false},
+								"wallCrashVelocity": {"value": [-10, 20]},
+								"wallKnockback": {"value": true}
+							  }
+                            },
+                            {
+                              "title": "arcana_sandvatar_electric",
+                              "type": "module",
+                              "name": "arcana_sandvatar_electric",
+                              "parameters": {}
+                            },
+						    {
+							  "title": "setParticleEmitterActive",
+							  "type": "action",
+							  "name": "setParticleEmitterActive",
+							  "parameters": {
+							    "active": {"value": false},
+							    "emitter": {"value": "energy"}
 							  }
 						    },
 						    {
@@ -259,7 +327,24 @@
 							  "type": "action",
 							  "name": "timer",
 							  "parameters": {
-							    "time": {"value": 0.2}
+							    "time": {"value": 1.0}
+							  }
+						    },
+						    {
+							  "title": "setAnimationState",
+							  "type": "action",
+							  "name": "setAnimationState",
+							  "parameters": {
+							    "state": {"key": "chargewinddown"},
+							    "type": {"value": "body"}
+							  }
+						    },
+						    {
+							  "title": "timer",
+							  "type": "action",
+							  "name": "timer",
+							  "parameters": {
+							    "time": {"value": 1.0}
 							  }
 						    }
                           ]

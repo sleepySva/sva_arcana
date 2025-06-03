@@ -5,12 +5,20 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legwear",
-  "description" : "An ancient armor forged with green noxion. ^green;Grants +5% Poison Res.^reset;",
+  "description" : "An ancient armor forged with green noxion. \n\n^orange;Set Bonus:^reset; \n^green;Grants Thorns^reset;. ^green;+5% Damage and +2% Crit damage^reset; per enemy within 40 tiles, up to 10 enemies.",
   "shortdescription" : "Skullbearer's Spite",
   "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+    "arcana_skullbearerset",
+    {
+      "stat" : "arcana_skullbearer",
+      "amount" : 1
+    }
+  ],
   
   "level" : 9,
   "leveledStatusEffects" : [
@@ -33,11 +41,6 @@
       "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
       "stat" : "maxHealth",
       "amount" : 28
-    },
-	{
-      "levelFunction" : "arcana_multiplier_static",
-      "stat" : "poisonResistance",
-      "amount" : 0.05
     }
   ],
 

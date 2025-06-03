@@ -24,9 +24,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.07,
+  "critDamage" : 1.62,
 
   "primaryAbilityType" : "hammersmash",
   "primaryAbility" : {
@@ -34,5 +36,5 @@
     "baseDps" : 9.2
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

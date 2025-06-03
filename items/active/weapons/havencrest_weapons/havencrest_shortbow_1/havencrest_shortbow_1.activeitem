@@ -1,82 +1,100 @@
 {
   "itemName" : "havencrest_shortbow_1",
-  "level" : 6,
-  "price" : 1000,
+  "price" : 900,
+  "inventoryIcon" : "icon.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A shortbow made from arcanium, can instantly fire arrows.",
-  "shortdescription" : "Arcanium Shortbow",
-  "tooltipKind" : "base",
+  "tooltipKind" : "arcana_bow",
   "category" : "bow",
-  "tooltipFields" : {"subtitle" : "Shortbow"},
+  "description" : "A sturdy bow forged from arcanium.",
+  "shortdescription" : "Arcanium Bow",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged"],
-  "collectablesOnPickup" : { "arcana_collection_weapon_arcane" : "havencrest_shortbow_1" },
+  "itemTags" : ["weapon", "ranged", "bow", "arcanium", "upgradeableWeapon"],
 
-  "inventoryIcon" : "icon.png",
+  "radioMessagesOnPickup" : [ "pickupbow" ],
 
-  "animation" : "/items/active/weapons/ranged/aeolus_shortbow_1.animation",
+  "level" : 6,
+
+  "animation" : "animation.animation",
   "animationParts" : {
-    "butt" : "",
-    "middle" : "havencrest_shortbow_1.png",
-    "barrel" : "",
-    "muzzleFlash" : ""
+    "bow" : "body.png",
+    "bowFullbright" : "fullbright.png"
   },
   "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0, 0]
+      }}
+    }},
     "sounds" : {
-      "fire" : ["/sfx/gun/bow_loose.ogg"]
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
     }
   },
-  "baseOffset" : [0.50, 0.2],
-  "muzzleOffset" : [0.75, 0.05],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
 
-  "elementalType" : "physical",
-
+  "primaryAbilityType" : "bowshot",
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
-
-    "fireTime" : 0.6,
-    "baseDps" : 9.0,
-    "energyUsage" : 12,
-    "projectileCount" : 1,
-    "inaccuracy" : 0.01,
-    "fireType" : "auto",
-
-    "projectileType" : "havencrest_shortbow_1_projectile_1",
-    "projectileParameters" : {},
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : true
-      },
-      "cooldown" : {
-        "duration" : 0.1,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : true
-      }
+    "energyPerShot" : 18,
+    "cooldownTime" : 0.1,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_azure_3",
+    "powerProjectileType" : "arcana_boss_navigator_7",
+    "projectileParameters" : {
+      "power" : 14,
+      "speed" : 110
     }
   },
 
-  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "name" : "Split Shot",
+    "energyPerShot" : 60,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "arcana_azure_3",
+    "powerProjectileType" : "arcana_azure_3",
+    "projectileParameters" : {
+      "power" : 12,
+      "speed" : 110,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "arcana_azure_3",
+          "angleAdjust" : -3,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "arcana_boss_navigator_7",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "arcana_azure_3",
+          "angleAdjust" : 3,
+          "inheritDamageFactor" : 0.7,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua",
+  "upgradeParameters" : {
+    "inventoryIcon" : "upgraded_icon.png",
+    "animationParts" : {
+      "bow" : "upgraded.png",
+      "bowFullbright" : "upgraded_fullbright.png"
+    },
+    "shortdescription" : "Arcanium Bow ^yellow;^reset;"
+  }
 }

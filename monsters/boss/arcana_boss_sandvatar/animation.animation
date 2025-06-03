@@ -3,40 +3,26 @@
     "stateTypes" : {
       "body" : {
         "priority" : 1,
-        "default" : "base",
+        "default" : "invisible",
         "states" : {
-          "base" : {
-            "frames" : 6,
-            "cycle" : 0.6,
-            "mode" : "loop"
-          },
-          "intro" : {
-            "frames" : 13,
-            "cycle" : 1.3,
-            "mode" : "transition",
-            "transition" : "idle",
-            "properties" : {
-              "immediateSound" : "/sfx/melee/charge_up3.ogg"
-            }
-          },
           "idle" : {
-            "frames" : 6,
-            "cycle" : 0.6,
+            "frames" : 8,
+            "cycle" : 0.8,
             "mode" : "loop"
           },
           "jump" : {
-            "frames" : 6,
-            "cycle" : 0.6,
+            "frames" : 8,
+            "cycle" : 0.8,
             "mode" : "loop"
           },
           "fall" : {
-            "frames" : 6,
-            "cycle" : 0.6,
+            "frames" : 8,
+            "cycle" : 0.8,
             "mode" : "loop"
           },
           "beamout" : {
-            "frames" : 2,
-            "cycle" : 0.2,
+            "frames" : 8,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "invisible",
             "frameProperties" : {
@@ -47,33 +33,48 @@
             "frames" : 1
           },
           "beamin" : {
-            "frames" : 2,
-            "cycle" : 0.2,
+            "frames" : 8,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle",
             "properties" : {
               "immediateSound" : "/sfx/npc/boss/cultistboss_blink.ogg"
             }
           },
-          "slash" : {
-            "frames" : 6,
-            "cycle" : 0.6,
+          "special" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "firewindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fire"
+          },
+          "firewinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
             "mode" : "transition",
             "transition" : "idle"
           },
-          "firewindup" : {
-            "frames" : 6,
-            "cycle" : 0.6,
+          "chargewindup" : {
+            "frames" : 4,
+            "cycle" : 0.4,
             "mode" : "transition",
-            "transition" : "fireloop"
+            "transition" : "special"
           },
-          "fireloop" : {
-            "frames" : 6,
-            "cycle" : 0.6,
-            "mode" : "loop"
+          "chargewinddown" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
           },
-          "special" : {
-            "frames" : 1
+          "fire" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "firewinddown"
           }
         }
       },
@@ -100,16 +101,6 @@
 
         "partStates" : {
           "body" : {
-            "base" : {
-              "properties" : {
-                "image" : "<partImage>:base.<frame>"
-              }
-            },
-            "intro" : {
-              "properties" : {
-                "image" : "<partImage>:intro.<frame>"
-              }
-            },
             "idle" : {
               "properties" : {
                 "image" : "<partImage>:idle.<frame>"
@@ -140,29 +131,34 @@
                 "image" : "<partImage>:beamin.<frame>"
               }
             },
-            "beam" : {
+            "fire" : {
               "properties" : {
-                "image" : "<partImage>:beamin.<frame>"
-              }
-            },
-            "slash" : {
-              "properties" : {
-                "image" : "<partImage>:idle.<frame>"
-              }
-            },
-            "fireloop" : {
-              "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:fire.<frame>"
               }
             },
             "firewindup" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:firewindup.<frame>"
+              }
+            },
+            "firewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:firewinddown.<frame>"
               }
             },
             "special" : {
               "properties" : {
-                "image" : "<partImage>:special.<frame>"
+                "image" : "<partImage>:alt.<frame>"
+              }
+            },
+            "chargewindup" : {
+              "properties" : {
+                "image" : "<partImage>:chargewindup.<frame>"
+              }
+            },
+            "chargewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:chargewinddown.<frame>"
               }
             }
           }
@@ -177,16 +173,6 @@
 
         "partStates" : {
           "body" : {
-            "base" : {
-              "properties" : {
-                "image" : "<partImage>:base.<frame>"
-              }
-            },
-            "intro" : {
-              "properties" : {
-                "image" : "<partImage>:intro.<frame>"
-              }
-            },
             "idle" : {
               "properties" : {
                 "image" : "<partImage>:idle.<frame>"
@@ -217,29 +203,34 @@
                 "image" : "<partImage>:beamin.<frame>"
               }
             },
-            "beam" : {
+            "fire" : {
               "properties" : {
-                "image" : "<partImage>:beamin.<frame>"
-              }
-            },
-            "slash" : {
-              "properties" : {
-                "image" : "<partImage>:idle.<frame>"
-              }
-            },
-            "fireloop" : {
-              "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:fire.<frame>"
               }
             },
             "firewindup" : {
               "properties" : {
-                "image" : "<partImage>:idle.<frame>"
+                "image" : "<partImage>:firewindup.<frame>"
+              }
+            },
+            "firewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:firewinddown.<frame>"
               }
             },
             "special" : {
               "properties" : {
-                "image" : "<partImage>:special.<frame>"
+                "image" : "<partImage>:alt.<frame>"
+              }
+            },
+            "chargewindup" : {
+              "properties" : {
+                "image" : "<partImage>:chargewindup.<frame>"
+              }
+            },
+            "chargewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:chargewinddown.<frame>"
               }
             }
           }
@@ -278,9 +269,7 @@
     "energy" : {
       "emissionRate" : 10,
       "particles" : [
-        { "particle" : "arcana_energy_azure", "offset" : [0, 0] },
-		{ "particle" : "arcana_particle_ember_cyan_1", "offset" : [0, 0] },
-		{ "particle" : "arcana_navigatorimage", "offset" : [0, 0] }
+		{ "particle" : "arcana_sandvatarimage", "offset" : [0, 0] }
       ]
     },
     "outOfEnergy" : {
@@ -335,7 +324,7 @@
 
   "sounds" : {
     "fire" : [ "/sfx/interface/sniper_mark_start2.ogg" ],
-	"fire2" : [ "/sfx/projectiles/fire_barrier_kill.ogg" ],
+	"cannon" : [ "/sfx/gun/omnicannon_shot2.ogg" ],
 	"deathsound" : [ "/sfx/tech/mech_explosion.ogg" ],
 	"electric" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg" ],
 	"chain" : [ "/sfx/projectiles/ice_barrier_break7.ogg", "/sfx/projectiles/ice_barrier_break8.ogg", "/sfx/projectiles/ice_barrier_break9.ogg" ],
@@ -343,10 +332,9 @@
     "deathPuff" : [  ],
     "outOfEnergy" : [ "/sfx/interface/energy_out1.ogg" ],
     "energyRecharge" : [ ],
-    "slash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ],
-    "flyingSlash" : [ "/sfx/melee/swing_broadsword_fire1.ogg", "/sfx/melee/swing_broadsword_fire2.ogg", "/sfx/melee/swing_broadsword_fire3.ogg" ],
     "deathFade" : [ "/sfx/npc/boss/guardian_death_fade.ogg" ],
-    "deathShrink" : [ "/sfx/npc/boss/guardian_death_shrink.ogg" ]
+    "deathShrink" : [ "/sfx/npc/boss/guardian_death_shrink.ogg" ],
+    "crash" : [ "/sfx/npc/monsters/peblit_drop1.ogg" ]
   },
 
   "effects" : {

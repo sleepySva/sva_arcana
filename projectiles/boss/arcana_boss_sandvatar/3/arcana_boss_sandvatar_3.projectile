@@ -1,0 +1,99 @@
+{
+  "projectileName" : "arcana_boss_sandvatar_3",
+  "physics" : "laser",
+  "timeToLive" : 4,
+  "image" : "balllightning.png",
+  "animationCycle" : 0.6,
+  "lightColor" : [60, 30, 100],
+  "frameNumber" : 8,
+  "periodicActions" : [
+    {
+      "time" : 0.3,
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/lightningsparks/lightningsparks.animation",
+            "position" : [0, 0],
+            "finalVelocity" : [0, 0],
+            "approach" : [1.5, 1.5],
+            "destructionAction" : "fade",
+            "destructionTime" : 0.85,
+            "fade" : 1,
+            "size" : 0.3,
+            "layer" : "middle",
+            "timeToLive" : 0.35,
+            "variance" : {
+              "size" : 0.2,
+              "position" : [1.2, 1.0],
+              "initialVelocity" : [2.0, 2.0]
+            }
+          }
+        },
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/sparkles/sparkle6.animation",
+            "initialVelocity" : [0.0, 7.0],
+            "finalVelocity" : [0.0, 4.0],
+            "approach" : [0.3, 60],
+            "timeToLive" : 0.8,
+            "layer" : "back",
+            "size" : 0.3,
+            "collidesForeground" : true,
+            "variance" : {
+            "position" : [0.5, 0.5],
+            "size" : 0.2,
+            "initialVelocity" : [5, 3],
+            "finalVelocity" : [0, 0],
+            "rotation" : 170,
+            "angularVelocity" : 180
+            }
+          }
+        },
+        {
+          "action" : "particle",
+          "specification" : {
+            "type" : "animated",
+            "animation" : "/animations/sparkles/sparkle6.animation",
+            "position" : [0, 0],
+            "initialVelocity" : [0.2, -10],
+            "finalVelocity" : [0.1, -50],
+            "approach" : [0, 10],
+            "fade" : 0.5,
+            "destructionAction" : "shrink",
+            "destructionTime" : 2,
+            "layer" : "middle",
+            "size" : 0.3,
+            "timeToLive" : 1,
+            "variance" : {
+            "position" : [1, 1],
+            "size" : 0.2,
+            "initialVelocity" : [0, 4]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "actionOnReap" : [],
+  "speed" : 30,
+  "power" : 30,
+  "damageKind" : "electric",
+  "damagePoly" : [ [-10, 0], [-7, -7], [0, -10], [7, -7], [10, 0], [7, 7], [0, 10], [-7, 7] ],
+  "statusEffects" : [ "electrified" ],
+  "damageRepeatTimeout" : 0.25,
+  
+  "renderLayer": "ForegroundEntity+1",
+
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "emitters" : [ "electricplasma" ],
+
+  "piercing" : false,
+  "bounces" : 0
+}

@@ -1,0 +1,55 @@
+{
+  "projectileName" : "arcana_boss_sandvatar_1",
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "fallSpeed" : 0,
+  "lightColor" : [10, 10, 30],
+  "pointLight" : true,
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_enoch_1/arcana_explosion_enoch_2.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.001,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_sandvatar/1/trail.png",
+		
+        "position" : [0, 0],
+        "finalVelocity" : [0, 0],
+		
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		
+        "variance" : {
+          "initialVelocity" : [8.0, 8.0],
+          "position" : [0.1, 0.1]
+        }
+      }
+    }
+  ],
+  
+  "renderLayer": "ForegroundEntity+1",
+  
+  "statusEffects" : [ ],
+  "emitters" : [ "rocketsmoke", "rockettrail", "rocketsmoke", "rockettrail" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 100.0,
+  "acceleration" : 20,
+  "physics" : "laser",
+  "damageType" : "NoDamage",
+  "damageKind" : "electricplasma"
+}
