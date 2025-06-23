@@ -12,7 +12,19 @@
           },
           "fire" : {
             "frames" : 3,
-            "cycle" : 0.08,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 3,
+            "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -104,7 +116,7 @@
       "swoosh" : {
         "properties" : {
           "zLevel" : -1,
-		  "fullbright" : false,
+		  "fullbright" : true,
           "centered" : true,
           "transformationGroups" : ["swoosh"],
           "rotationCenter" : [0, 0]
@@ -122,6 +134,20 @@
                 "image" : "swoosh_1.png:<frame>",
                 "offset" : [0.5, 0.75],
                 "damageArea" : [[0.25, 1.125], [0.75, 1.125], [2.0, 0.25], [2.0, -0.5], [0.5, -1.5], [-1.0, -1.5], [-2.0, -0.75]]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [-1.25, 0.0],
+                "damageArea" : [[-3, 1], [3, 1], [3, -1], [-3, -1]]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "swoosh_2.png:<frame>",
+                "offset" : [-1.25, 0.0],
+                "damageArea" : [[-3, 1], [3, 1], [3, -1], [-3, -1]]
               }
             }
           }
@@ -142,13 +168,21 @@
       "emissionRate" : 10,
       "burstCount" : 2,
       "particles" : [
-        { "particle" : "arcana_particle_ember_orange_1"},
-        { "particle" : "arcana_particle_ember_orange_2"}
+      ]
+    },
+    "blade" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.4, 0.0, 0.4, 1.0],
+      "emissionRate" : 4,
+      "particles" : [
       ]
     }
   },
 
   "sounds" : {
-    "fire" : [ ]
+    "fire" : [ "/sfx/melee/swing_shortsword.ogg" ],
+    "fire2" : [ "/sfx/melee/swing_spear.ogg" ],
+	"fire3" : [ "/sfx/melee/swing_spear.ogg" ]
   }
 }

@@ -35,25 +35,28 @@ function ControlProjectile:update(dt, fireMode, shiftHeld)
 end
 
 function ControlProjectile:charge()
-  self.weapon:setStance(self.stances.charge)
+  local stance = self.stances.charge
+  self.weapon:setStance(stance)
 
   animator.playSound(self.elementalType.."charge")
   animator.setAnimationState("charge", "charge")
   animator.setParticleEmitterActive(self.elementalType .. "charge", true)
   activeItem.setCursor("/cursors/charge2.cursor")
 
-  local chargeTimer = self.stances.charge.duration
-  while chargeTimer > 0 and self.fireMode == (self.activatingFireMode or self.abilitySlot) do
-    chargeTimer = chargeTimer - self.dt
-
+  local chargeTimer = 0
+  local chargeTime = stance.duration or 0.2
+  while chargeTimer < chargeTime and self.fireMode == (self.activatingFireMode or self.abilitySlot) do
+    chargeTimer = math.min(chargeTime, chargeTimer + self.dt)
     mcontroller.controlModifiers({runningSuppressed=true})
-
+	local chargeRatio = math.sin(chargeTimer / chargeTime * 1.57)
+    self.weapon.relativeArmRotation = util.toRadians(util.lerp(chargeRatio, {stance.armRotation, stance.endArmRotation or stance.armRotation}))
+    self.weapon.relativeWeaponRotation = util.toRadians(util.lerp(chargeRatio, {stance.weaponRotation, stance.endWeaponRotation or stance.weaponRotation}))
     coroutine.yield()
   end
 
   animator.stopAllSounds(self.elementalType.."charge")
 
-  if chargeTimer <= 0 then
+  if chargeTimer >= chargeTime then
     self:setState(self.charged)
   else
     animator.playSound(self.elementalType.."discharge")
@@ -72,17 +75,24 @@ function ControlProjectile:charged()
 end
 
 function ControlProjectile:discharge()
-  self.weapon:setStance(self.stances.discharge)
-
+  local stance = self.stances.discharge
+  self.weapon:setStance(stance)
   activeItem.setCursor("/cursors/reticle0.cursor")
 
   if status.overConsumeResource("energy", self.energyCost * self.baseDamageFactor) then
     animator.playSound(self.elementalType.."activate")
     self:createProjectiles()
   end
+  
+  local chargeTimer = 0
+  local chargeTime = stance.duration or 0.2
 
-  util.wait(self.stances.discharge.duration, function(dt)
+  util.wait(stance.duration, function(dt)
     status.setResourcePercentage("energyRegenBlock", 1.0)
+	chargeTimer = math.min(chargeTime, chargeTimer + self.dt)
+	local chargeRatio = math.sin(chargeTimer / chargeTime * 1.57)
+    self.weapon.relativeArmRotation = util.toRadians(util.lerp(chargeRatio, {stance.armRotation, stance.endArmRotation or stance.armRotation}))
+    self.weapon.relativeWeaponRotation = util.toRadians(util.lerp(chargeRatio, {stance.weaponRotation, stance.endWeaponRotation or stance.weaponRotation}))
   end)
 
   while #storage.projectiles > 0 do

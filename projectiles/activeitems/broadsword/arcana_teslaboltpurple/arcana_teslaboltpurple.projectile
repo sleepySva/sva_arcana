@@ -1,0 +1,20 @@
+{
+  "projectileName" : "arcana_teslaboltpurple",
+  "image" : "teslabolt.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 6,
+  "speed" : 40,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "electric",
+  "lightColor" : [28, 181, 238],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_teslapurple/arcana_explosion_teslapurple.config"
+    }
+  ]
+}

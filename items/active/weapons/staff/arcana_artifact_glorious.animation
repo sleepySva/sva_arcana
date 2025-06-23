@@ -6,8 +6,8 @@
 		"default" : "idle",
         "states" : {
           "idle" : {
-			"frames" : 12,
-            "cycle" : 1.2,
+			"frames" : 1,
+            "cycle" : 1.0,
             "mode" : "loop"
 		  }
 		}
@@ -130,7 +130,7 @@
       "active" : false,
       "transformationGroups" : ["weapon"],
       "emissionRate" : 10,
-      "offsetRegion" : [-3.75, 2.25, -2.75, 2.75],
+      "offsetRegion" : [-0.5, 2.5, 0.5, 3.0],
       "particles" : [
         {"particle" : "fireswoosh1"},
         {"particle" : "fireswoosh2"},

@@ -1,0 +1,24 @@
+{
+  "kind" : "arcana_energy_redvoid",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/arcana_animation_energy_redvoid/arcana_animation_energy_redvoid.animation",
+    "initialVelocity" : [0.0, 2.0],
+    "finalVelocity" : [0.0, 0.0],
+    "approach" : [6, 6],
+    "timeToLive" : 1.0,
+    "layer" : "back",
+    "collidesForeground" : true,
+    "fullbright" : true,
+    "light" : [80, 30, 30, 255],
+    "size" : 0.5,
+    "variance" : {
+      "position" : [0, 0],
+      "initialVelocity" : [10, 10],
+      "finalVelocity" : [10, 10],
+      "rotation" : 180,
+      "angularVelocity" : 180,
+	  "size" : 0.5
+    }
+  }
+}

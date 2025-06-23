@@ -4,8 +4,8 @@
   "level" : 3,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A sharp, glowing dagger.",
-  "shortdescription" : "^#be92cb;Aquamarine Dagger^reset;",
+  "description" : "A sharp glowing dagger with the sea's scent.",
+  "shortdescription" : "^#be92cb;Seaglint^reset;",
   "tooltipKind" : "arcana_sword",
   "category" : "dagger",
   "twoHanded" : false,
@@ -13,64 +13,27 @@
 
   "inventoryIcon" : "body.png:idle.1",
 
-  "animation" : "animation.animation",
+  "animation" : "/items/active/weapons/melee/dagger/arcana_dagger.animation",
   "animationParts" : {
     "blade" : "body.png",
     "handle" : "fullbright.png"
   },
-  "animationCustom" : {
-    "sounds" : {
-      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
-    }
-  },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "ice",
+  "critRate" : 0.18,
+  "critDamage" : 1.38,
 
+  "primaryAbilityType" : "arcana_daggercombo",
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
-    "class" : "MeleeSlash",
-	
     "fireTime" : 0.3,
     "baseDps" : 10.6,
     "damageConfig" : {
-      "damageSourceKind" : "dagger",
-      "statusEffects" : [ ],
-      "knockbackMode" : "aim",
-      "knockback" : 10,
-      "timeoutGroup" : "primary"
-    },
-    "stances" : {
-      "idle" : {
-        "armRotation" : -90,
-        "weaponRotation" : -10,
-        "weaponOffset" : [0, 2.25],
-
-        "allowFlip" : true,
-        "allowRotate" : true
-      },
-      "windup" : {
-        "duration" : 0.05,
-        "armRotation" : -20,
-        "weaponRotation" : -20,
-        "weaponOffset" : [0, 2.25],
-
-        "allowFlip" : true,
-        "allowRotate" : false
-      },
-      "fire" : {
-        "duration" : 0.2,
-        "armRotation" : -135,
-        "weaponRotation" : 40,
-        "weaponOffset" : [0, 2.5],
-
-        "allowFlip" : true,
-        "allowRotate" : false
-      }
+      "damageSourceKind" : "icedagger",
+      "statusEffects" : [ ]
     }
   },
-  "fireSounds" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

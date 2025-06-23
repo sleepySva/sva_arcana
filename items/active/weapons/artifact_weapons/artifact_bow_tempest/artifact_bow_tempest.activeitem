@@ -1,9 +1,9 @@
 {
   "itemName" : "artifact_bow_tempest",
-  "price" : 8000,
+  "price" : 2400,
   "inventoryIcon" : "icon.png",
   "maxStack" : 1,
-  "rarity" : "Essential",
+  "rarity" : "Legendary",
   "tooltipKind" : "bow",
   "category" : "bow",
   "description" : "The cyclone of the raging storm.",
@@ -13,7 +13,7 @@
 
   "radioMessagesOnPickup" : [ "pickupbow" ],
 
-  "level" : 9,
+  "level" : 7,
 
   "animation" : "/items/active/weapons/bow/energybow.animation",
   "animationParts" : {
@@ -56,28 +56,28 @@
     "projectileType" : "artifact_bow_tempest_projectile_1",
     "powerProjectileType" : "artifact_bow_tempest_projectile_2",
     "projectileParameters" : {
-      "power" : 12,
-      "speed" : 100,
+      "power" : 10,
+      "speed" : 90,
       "actionOnReap" : [
         {
           "action" : "projectile",
-          "type" : "electricportal",
+          "type" : "arcana_tempest_3",
           "angleAdjust" : -50,
-          "inheritDamageFactor" : 0.2,
+          "inheritDamageFactor" : 0.3,
           "inheritSpeedFactor" : 1
         },
         {
           "action" : "projectile",
-          "type" : "electricportal",
+          "type" : "arcana_tempest_3",
           "angleAdjust" : 0,
-          "inheritDamageFactor" : 0.2,
+          "inheritDamageFactor" : 0.3,
           "inheritSpeedFactor" : 1
         },
         {
           "action" : "projectile",
-          "type" : "electricportal",
+          "type" : "arcana_tempest_3",
           "angleAdjust" : 50,
-          "inheritDamageFactor" : 0.2,
+          "inheritDamageFactor" : 0.3,
           "inheritSpeedFactor" : 1
         }
       ]

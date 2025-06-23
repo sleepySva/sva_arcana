@@ -1,10 +1,10 @@
 {
   "itemName" : "artifact_wand_glorious",
-  "price" : 8000,
+  "price" : 2400,
   "maxStack" : 1,
-  "level" : 9,
-  "rarity" : "Essential",
-  "description" : "The burning goblet of the hottest flame.",
+  "level" : 7,
+  "rarity" : "Legendary",
+  "description" : "A burning goblet made to hold an eternal flame.",
   "shortdescription" : "Glorious",
   "category" : "wand",
   "twoHanded" : false,
@@ -20,7 +20,7 @@
   "animationCustom" : {
     "lights" : {
       "glow" : {
-        "color" : [220, 180, 120]
+        "color" : [200, 75, 41]
       }
     }
   },
@@ -31,6 +31,7 @@
 
   "stances" : {
     "idle" : {
+      "weaponOffset" : [-0.125, -0.5],
       "armRotation" : 0,
       "weaponRotation" : 0,
       "twoHanded" : false,
@@ -81,8 +82,8 @@
   "primaryAbility" : {
 
     "name" : "Pillars of Fire",
-	"energyCost" : 120,
-    "maxCastRange" : 40,
+	"energyCost" : 90,
+    "maxCastRange" : 30,
 	
 	"projectileType" : ["artifact_wand_glorious_projectile_1"],
 	
@@ -90,7 +91,7 @@
     "class" : "ControlProjectile",
 	
 	"projectileCount" : 2,
-    "projectileDistance" : 2,
+    "projectileDistance" : 1,
 	
     "projectileDelayFirst" : 1.0,
     "projectileDelayEach" : 0.06,

@@ -1,27 +1,28 @@
 {
   "itemName" : "artifact_orb_grandCross",
-  "price" : 8000,
+  "price" : 0,
   "maxStack" : 1,
-  "level" : 9,
-  "rarity" : "Essential",
-  "description" : "A strange device embed with a cross.",
-  "shortdescription" : "Grand Cross",
+  "level" : 1,
+  "rarity" : "Common",
+  "description" : "A strange device, a low vibrating sound can be heard emitting from its core.",
+  "shortdescription" : "Fata Morgana",
   "category" : "wand",
-  "tooltipFields" : {"subtitle" : "Orb"},
+  "tooltipFields" : {"subtitle" : "Theorem Armament"},
   "twoHanded" : false,
   "itemTags" : ["weapon","staff"],
-  "tooltipKind" : "staff",
+  "tooltipKind" : "arcana_staff",
 
-  "animation" : "/items/active/weapons/staff/arcana_artifact_orb_grandCross.animation",
+  "animation" : "animation.animation",
   "animationParts" : {
-    "staff" : "artifact_orb_grandCross.png",
-    "stone" : "stone.png",
+    "staff" : "body.png",
+    "stone" : "fullbright.png",
+	"decoration" : "red.png",
     "chargeEffect" : "staffglow.png"
   },
   "animationCustom" : {
     "lights" : {
       "glow" : {
-        "color" : [160, 160, 160]
+        "color" : [60, 0, 0]
       }
     }
   },
@@ -40,7 +41,7 @@
       "allowFlip" : true
     },
     "charge" : {
-      "duration" : 0.8,
+      "duration" : 0.4,
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : false,
@@ -57,7 +58,7 @@
       "allowFlip" : true
     },
     "discharge" : {
-      "duration" : 0.5,
+      "duration" : 0.3,
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : false,
@@ -81,23 +82,23 @@
   "primaryAbilityType" : "elementswarm",
   "primaryAbility" : {
 
-    "name" : "Twin Towers",
+    "name" : "Terminus Gates",
 	"energyCost" : 120,
     "maxCastRange" : 40,
 	
-	"projectileType" : ["artifact_orb_grandCross_projectile_1","artifact_orb_grandCross_projectile_2","artifact_orb_grandCross_projectile_4","artifact_orb_grandCross_projectile_5"],
+	"projectileType" : ["artifact_orb_grandCross_projectile_5"],
 	
 	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile.lua"],
     "class" : "ControlProjectile",
 	
-	"projectileCount" : 2,
+	"projectileCount" : 3,
     "projectileDistance" : 1,
 	
     "projectileDelayFirst" : 1.0,
     "projectileDelayEach" : 0.06,
 
     "projectileParameters" : {
-      "baseDamage" : 12
+      "baseDamage" : 10
     },
 
     "stances" : {

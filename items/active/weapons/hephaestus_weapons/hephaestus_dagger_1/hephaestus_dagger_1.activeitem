@@ -13,64 +13,27 @@
 
   "inventoryIcon" : "body.png:idle.1",
 
-  "animation" : "animation.animation",
+  "animation" : "/items/active/weapons/melee/dagger/arcana_dagger.animation",
   "animationParts" : {
     "blade" : "body.png",
     "handle" : "fullbright.png"
   },
-  "animationCustom" : {
-    "sounds" : {
-      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
-    }
-  },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "fire",
+  "critRate" : 0.2,
+  "critDamage" : 1.34,
 
+  "primaryAbilityType" : "arcana_daggercombo",
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
-    "class" : "MeleeSlash",
-	
     "fireTime" : 0.5,
     "baseDps" : 9.2,
     "damageConfig" : {
       "damageSourceKind" : "firedagger",
-      "statusEffects" : [ ],
-      "knockbackMode" : "aim",
-      "knockback" : 10,
-      "timeoutGroup" : "primary"
-    },
-    "stances" : {
-      "idle" : {
-        "armRotation" : -90,
-        "weaponRotation" : -10,
-        "weaponOffset" : [0, 2.25],
-
-        "allowFlip" : true,
-        "allowRotate" : true
-      },
-      "windup" : {
-        "duration" : 0.05,
-        "armRotation" : -20,
-        "weaponRotation" : -20,
-        "weaponOffset" : [0, 2.25],
-
-        "allowFlip" : true,
-        "allowRotate" : false
-      },
-      "fire" : {
-        "duration" : 0.2,
-        "armRotation" : -135,
-        "weaponRotation" : 40,
-        "weaponOffset" : [0, 2.5],
-
-        "allowFlip" : true,
-        "allowRotate" : false
-      }
+      "statusEffects" : [ ]
     }
   },
-  "fireSounds" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

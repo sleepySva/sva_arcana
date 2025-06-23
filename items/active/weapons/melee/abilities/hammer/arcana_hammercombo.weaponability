@@ -1,0 +1,170 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/arcana_hammerswing.ogg" ],
+      "fire2" : [ "/sfx/melee/arcana_hammerswing.ogg" ],
+	  "fire3" : [ "/sfx/melee/arcana_hammerswing.ogg" ],
+	  "groundImpact" : [ "/sfx/melee/hammer_hit_ground3.ogg", "/sfx/melee/hammer_hit_ground4.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Combo Slash",
+    "type" : "arcana_hammercombo",
+    "scripts" : ["/items/active/weapons/melee/abilities/hammer/arcana_hammercombo.lua"],
+    "class" : "MeleeCombo",
+
+    "comboSteps" : 3,
+
+    "flashTime" : 0.15,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+	"impactProjectile" : "electricplasmaexplosion",
+    "impactOffset" : [2, 1],
+	"impactDamage" : 4,
+	"impact" : true,
+
+    "swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, 5.0]
+    ],
+
+    // cooldown time multiplier for steps after the first, compounded per combo step
+    "comboSpeedFactor" : 0.9,
+
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 0.625,
+    "baseDps" : 7.5,
+
+    "damageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 28
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 30
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 50
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -65,
+        "weaponRotation" : -195,
+        "twoHanded" : false,
+        "weaponOffset" : [0, -0.4],
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup1" : {
+        "duration" : 0.3,
+        "armRotation" : -65,
+        "weaponRotation" : -195,
+        "endArmRotation" : -55,
+        "endWeaponRotation" : -195,
+        "twoHanded" : true,
+		"flip" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire1" : {
+        "duration" : 0.2,
+        "armRotation" : 25,
+        "weaponRotation" : 65,
+        "endArmRotation" : 35,
+        "endWeaponRotation" : 65,
+        "twoHanded" : true,
+		"flip" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "after1" : {
+        "duration" : 0.2,
+        "armRotation" : 35,
+        "weaponRotation" : 65,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+		"flip" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : 35,
+        "weaponRotation" : 65,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+		"flip" : false
+      },
+      "windup2" : {
+        "duration" : 0.3,
+        "armRotation" : 35,
+        "weaponRotation" : 65,
+        "endArmRotation" : 15,
+        "endWeaponRotation" : 50,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire2" : {
+        "duration" : 0.4,
+        "armRotation" : -55,
+        "weaponRotation" : -195,
+        "endArmRotation" : -65,
+        "endWeaponRotation" : -195,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false,
+		"flip" : true
+      },
+      "wait2" : {
+        "duration" : 0.05,
+        "armRotation" : -65,
+        "weaponRotation" : -195,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+		"flip" : true
+      },
+      "windup3" : {
+        "duration" : 0.6,
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "endArmRotation" : 90,
+        "endWeaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.7,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "endArmRotation" : -50,
+        "endWeaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "itemName" : "lunar_katana_1",
-  "price" : 1600,
+  "price" : 3200,
   "level" : 8,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A katana forged from luminarium, can perform swift strikes in mere moments.",
+  "description" : "A katana forged from luminarium with a cold blade, can perform swift strikes in mere moments. ^green;Inflicts Frost on crit.^reset;",
   "shortdescription" : "^#8f82e9;Gekko Tachi^reset;",
   "tooltipKind" : "arcana_sword",
   "category" : "broadsword",
@@ -32,8 +32,9 @@
   "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "arcana_lunar",
-  "critRate" : 0.1,
+  "critRate" : 0.14,
   "critDamage" : 1.2,
+  "critStatusEffect" : "frostslow",
 
   "primaryAbilityType" : "arcana_tachi_combo",
   "primaryAbility" : {

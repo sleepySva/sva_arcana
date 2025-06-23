@@ -1,0 +1,126 @@
+{
+  "itemName" : "arcana_caspar",
+  "price" : 500,
+  "maxStack" : 1,
+  "level" : 2,
+  "rarity" : "Common",
+  "description" : "A simple staff with an electric-infused crystal.",
+  "shortdescription" : "Caspar",
+  "category" : "wand",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "staff", "ranged"],
+  "tooltipKind" : "arcana_staff",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "staff" : "body.png",
+    "stone" : "fullbright.png",
+    "chargeEffect" : "staffglow.png"
+  },
+  "animationCustom" : {
+    "lights" : {
+      "glow" : {
+        "color" : [0, 0, 0]
+      }
+    }
+  },
+
+  "inventoryIcon" : "body.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.2,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "endArmRotation" : 30,
+      "endWeaponRotation" : -10,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.2,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "endArmRotation" : -30,
+      "endWeaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.2,
+      "armRotation" : -30,
+      "weaponRotation" : -50,
+      "twoHanded" : true,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    }
+  },
+
+  "elementalType" : "electric",
+
+  "primaryAbilityType" : "arcana_staff_ability_spellBurst",
+  "primaryAbility" : {
+
+    "name" : "Electric Shot",
+	"energyCost" : 15,
+	
+	"projectileType" : "arcana_terminator_2",
+	
+	"scripts" : ["/items/active/weapons/staff/abilities/arcana_staff_ability_spellBurst/arcana_staff_ability_spellBurst.lua"],
+    "class" : "ControlProjectile",
+	
+	"projectileCount" : 1,
+    "projectileDistance" : 0,
+	
+    "projectileDelayFirst" : 1.0,
+    "projectileDelayEach" : 0.06,
+	
+	"projectileOffset" : [0, 1.6],
+
+    "projectileParameters" : {
+      "baseDamage" : 5
+    },
+
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [-0.125, -0.5]
+      },
+      "charge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "charged" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "discharge" : {
+        "weaponOffset" : [0.125, 0.75]
+      },
+      "cooldown" : {
+        "weaponOffset" : [0, -0.25]
+      }
+    }
+  },
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

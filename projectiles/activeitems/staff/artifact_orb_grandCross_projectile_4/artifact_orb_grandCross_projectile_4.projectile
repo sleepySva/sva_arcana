@@ -1,68 +1,61 @@
 {
   "projectileName" : "artifact_orb_grandCross_projectile_4",
-  "physics" : "hover",
-  "timeToLive" : 6,
-  "image" : "artifact_orb_grandCross_projectile_4.png",
-  "animationCycle" : 0.35,
-  "lightColor" : [110, 80, 30],
-  "frameNumber" : 4,
-  "windupFrames" : 3,
-  "winddownFrames" : 3,
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 3,
+  "image" : "body.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 30,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "power" : 6,
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  "piercing" : false,
+  
+  "emitters" : [ "arcana_particle_ember_red" ],
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+  "collisionEnabled" : true
+  },
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/boss/arcana_boss_terminusReaper/arcana_boss_terminusReaper_4_explosion/config2.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_monster_redPyromantle_projectile_2",
+        "angleAdjust" : 0,
+		"fuzzAngle" : 360,
+        "inheritDamageFactor" : 0.2
+    }
+  ],
   "periodicActions" : [
     {
-      "time" : 0,
-      "repeat" : false,
-      "action" : "sound",
-      "options" : [ "/sfx/melee/astraltear2.ogg" ]
-    },
-    {
-      "time" : 5.65,
-      "repeat" : false,
-      "action" : "sound",
-      "options" : [ "/sfx/projectiles/astraltear_stop3.ogg" ]
-    },
-    {
-      "time" : 0.02,
+      "time" : 0.01,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
       "specification" : {
         "type" : "textured",
-        "image" : "/projectiles/activeitems/staff/artifact_orb_grandCross_projectile_4/artifact_orb_grandCross_projectile_4_trail.png",
+        "image" : "/projectiles/boss/arcana_boss_terminusReaper/arcana_boss_terminusReaper_2/trail.png",
         "position" : [0, 0],
-        "layer" : "back",
+        "layer" : "front",
         "timeToLive" : 0.0,
-        "destructionTime" : 0.2,
-        "destructionAction" : "fade",
+        "destructionTime" : 1.0,
+        "destructionAction" : "shrink",
         "fullbright" : true
       }
     }
   ],
-  "actionOnReap" : [
-    {
-      "action" : "config",
-      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_black/arcana_explosion_plasma_1_black.config"
-    }
-  ],
-  "speed" : 8,
-  "power" : 0,
-  "damagePoly" : [],
 
-  "fullbright" : true,
-  "emitters" : [],
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
 
-  "renderLayer" : "Projectile-1",
-  "orientationLocked" : true,
-
-  "bounces" : -1,
-  "onlyHitTerrain" : true,
-
-  "scripts" : [ "/projectiles/activeitems/staff/elementportal/elementportal.lua" ],
-
-  "projectileType" : "artifact_projectile_duality_4",
-  "projectileParameters" : {},
-  "spawnRate" : 0.6,
-
-  "persistentAudio" : "/sfx/projectiles/fireball_loop.ogg"
- 
+  "controlMovement" : {
+    "maxSpeed" : 70,
+    "controlForce" : 80
+  }
 }

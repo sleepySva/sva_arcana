@@ -12,19 +12,25 @@
           },
           "fire" : {
             "frames" : 3,
-            "cycle" : 0.1,
+            "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "idle"
           },
           "fire2" : {
             "frames" : 3,
-            "cycle" : 0.1,
+            "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "idle"
           },
           "fire3" : {
             "frames" : 3,
-            "cycle" : 0.1,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire4" : {
+            "frames" : 3,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -59,6 +65,7 @@
         "properties" : {
           "zLevel" : -1,
           "centered" : true,
+		  "fullbright" : true,
           "transformationGroups" : ["swoosh"],
           "rotationCenter" : [0, 0]
         },
@@ -72,21 +79,28 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/broadsword/swoosh/arcana_broadsword_swoosh_horizon.png:<frame>",
+                "image" : "/items/active/weapons/melee/broadsword/swoosh/arcana_purpleplasma.png:<frame>",
                 "offset" : [1.2, 2.5],
                 "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
               }
             },
             "fire2" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/broadsword/swoosh2/arcana_broadsword_swoosh_horizon.png:<frame>",
-                "offset" : [6.2, 1.0],
-                "damageArea" : [[-4, 1], [2.5, 1], [2.5, -2], [-4, -2]]
+                "image" : "/items/active/weapons/melee/broadsword/swoosh/arcana_purpleplasma.png:<frame>?flipy",
+                "offset" : [1.2, -2.5],
+                "damageArea" : [[-5, -2], [-2.5, -3], [1, -3], [4, -1.75], [5, 0.25], [5, 2.25], [4, 3.25], [0, 2.5]]
               }
             },
             "fire3" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/broadsword/swoosh3/arcana_broadsword_swoosh_horizon.png:<frame>",
+                "image" : "/items/active/weapons/melee/broadsword/swoosh2/arcana_purpleplasma.png:<frame>",
+                "offset" : [6.2, 1.0],
+                "damageArea" : [[-4, 1], [2.5, 1], [2.5, -2], [-4, -2]]
+              }
+            },
+            "fire4" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/broadsword/swoosh3/arcana_purpleplasma.png:<frame>",
                 "offset" : [4.7, 0],
                 "damageArea" : [[-4.75, 1.5], [3, 1], [3, -1], [-4.75, -1.5]]
               }
@@ -161,8 +175,9 @@
   },
 
   "sounds" : {
-    "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-    "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
-    "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+    "fire" : [ "/sfx/melee/swing_broadsword_electric1.ogg", "/sfx/melee/swing_broadsword_electric2.ogg", "/sfx/melee/swing_broadsword_electric3.ogg" ],
+	"fire2" : [ "/sfx/melee/swing_broadsword_electric1.ogg", "/sfx/melee/swing_broadsword_electric2.ogg", "/sfx/melee/swing_broadsword_electric3.ogg" ],
+    "fire3" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ],
+    "fire4" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ]
   }
 }

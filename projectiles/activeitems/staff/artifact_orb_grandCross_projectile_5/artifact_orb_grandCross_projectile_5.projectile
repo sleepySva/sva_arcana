@@ -1,10 +1,10 @@
 {
   "projectileName" : "artifact_orb_grandCross_projectile_5",
   "physics" : "hover",
-  "timeToLive" : 6,
-  "image" : "artifact_orb_grandCross_projectile_5.png",
+  "timeToLive" : 5,
+  "image" : "electricportal.png",
   "animationCycle" : 0.35,
-  "lightColor" : [110, 80, 30],
+  "lightColor" : [90, 60, 110],
   "frameNumber" : 4,
   "windupFrames" : 3,
   "winddownFrames" : 3,
@@ -20,31 +20,15 @@
       "repeat" : false,
       "action" : "sound",
       "options" : [ "/sfx/projectiles/astraltear_stop3.ogg" ]
-    },
-    {
-      "time" : 0.02,
-      "repeat" : true,
-      "action" : "particle",
-      "rotate" : true,
-      "specification" : {
-        "type" : "textured",
-        "image" : "/projectiles/activeitems/staff/artifact_orb_grandCross_projectile_5/artifact_orb_grandCross_projectile_5_trail.png",
-        "position" : [0, 0],
-        "layer" : "back",
-        "timeToLive" : 0.0,
-        "destructionTime" : 0.2,
-        "destructionAction" : "fade",
-        "fullbright" : true
-      }
     }
   ],
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_black/arcana_explosion_plasma_1_black.config"
+      "file" : "/projectiles/explosions/elementimpact/electricimpactmute.config"
     }
   ],
-  "speed" : 8,
+  "speed" : 20,
   "power" : 0,
   "damagePoly" : [],
 
@@ -59,10 +43,9 @@
 
   "scripts" : [ "/projectiles/activeitems/staff/elementportal/elementportal.lua" ],
 
-  "projectileType" : "artifact_projectile_duality_3",
+  "projectileType" : "artifact_orb_grandCross_projectile_4",
   "projectileParameters" : {},
-  "spawnRate" : 0.6,
+  "spawnRate" : 0.3,
 
-  "persistentAudio" : "/sfx/projectiles/fireball_loop.ogg"
- 
+  "persistentAudio" : "/sfx/melee/barrier_create_electric.ogg"
 }

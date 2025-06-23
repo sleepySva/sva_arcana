@@ -20,9 +20,11 @@
   },
   "animationCustom" : { },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "fire",
+  "critRate" : 0.12,
+  "critDamage" : 1.30,
 
   "primaryAbilityType" : "shortswordcombo",
   "primaryAbility" : {
@@ -33,5 +35,5 @@
 	}
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

@@ -1,11 +1,11 @@
 {
   "itemName" : "maple_dagger_1",
-  "price" : 160,
+  "price" : 320,
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A simple maple colored tanto made with copper, iron and orange dye.",
-  "shortdescription" : "^#cb6249;Maple Tanto^reset;",
+  "description" : "An ornate maple knife made with simple metals.",
+  "shortdescription" : "^#cb6249;Heartroot Claw^reset;",
   "tooltipKind" : "arcana_sword",
   "category" : "dagger",
   "twoHanded" : false,
@@ -18,61 +18,22 @@
     "blade" : "body.png",
     "handle" : "fullbright.png"
   },
-  "animationCustom" : {
-    "sounds" : {
-      "fire" : [ "/sfx/melee/swing_dagger.ogg" ]
-    }
-  },
 
   "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
-  "critRate" : 0.03,
-  "critDamage" : 1.52,
-
-  "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
-    "class" : "MeleeSlash",
-	
-    "fireTime" : 0.42,
-    "baseDps" : 9.2,
+  "critRate" : 0.16,
+  "critDamage" : 1.42,
+  
+  "primaryAbilityType" : "arcana_daggercombo",
+  "primaryAbility" : {	
+    "fireTime" : 0.4,
+    "baseDps" : 10.0,
     "damageConfig" : {
       "damageSourceKind" : "dagger",
-      "statusEffects" : [ ],
-      "knockbackMode" : "aim",
-      "knockback" : 10,
-      "timeoutGroup" : "primary"
-    },
-    "stances" : {
-      "idle" : {
-        "armRotation" : -90,
-        "weaponRotation" : -10,
-        "weaponOffset" : [0, 2.25],
-
-        "allowFlip" : true,
-        "allowRotate" : true
-      },
-      "windup" : {
-        "duration" : 0.05,
-        "armRotation" : -20,
-        "weaponRotation" : -20,
-        "weaponOffset" : [0, 2.25],
-
-        "allowFlip" : true,
-        "allowRotate" : false
-      },
-      "fire" : {
-        "duration" : 0.2,
-        "armRotation" : -135,
-        "weaponRotation" : 40,
-        "weaponOffset" : [0, 2.5],
-
-        "allowFlip" : true,
-        "allowRotate" : false
-      }
+      "statusEffects" : [ ]
     }
   },
-  "fireSounds" : [ "/sfx/melee/swing_dagger.ogg" ],
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

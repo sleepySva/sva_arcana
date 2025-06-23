@@ -1,0 +1,48 @@
+{
+  "projectileName" : "arcana_terminator_2",
+  "image" : "body.png",
+  "physics" : "laser",
+  "animationCycle" : 1.0,
+  "frameNumber" : 11,
+  "power" : 5,
+  "speed" : 80,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "timeToLive" : 1.0,
+  "bounces" : 0,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "piercing" : false,
+  "lightColor" : [95, 186, 236],
+  "emitters" : [ "electricswoosh", "rocketsmoke" ],
+  "damageKind" : "electric",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/burstexplosion/electricburstexplosion.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "mechteslabolt",
+		"inheritDamageFactor" : 0.2,
+		"inheritSpeedFactor" : 0.9,
+        "angle" : 90,
+        "fuzzAngle" : 360
+    },
+	{
+        "action" : "projectile",
+        "type" : "mechteslabolt",
+		"inheritDamageFactor" : 0.2,
+		"inheritSpeedFactor" : 0.9,
+        "angle" : 90,
+        "fuzzAngle" : 360
+    },
+	{
+        "action" : "projectile",
+        "type" : "mechteslabolt",
+		"inheritDamageFactor" : 0.2,
+		"inheritSpeedFactor" : 0.9,
+        "angle" : 90,
+        "fuzzAngle" : 360
+    }
+  ]
+}

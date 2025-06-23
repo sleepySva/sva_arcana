@@ -14,12 +14,12 @@ function ControlProjectile:createProjectiles()
 
   for i = 1, pCount do
     pParams.delayTime = self.projectileDelayFirst + (i - 1) * self.projectileDelayEach
-
+    local origin = vec2.add(aimPosition, pOffset)
     local projectileId = world.spawnProjectile(
         self.projectileType,
-        vec2.add(aimPosition, pOffset),
+        origin,
         activeItem.ownerEntityId(),
-        self:firePosition(),
+        self:firePosition(origin),
         false,
         pParams
       )
@@ -33,8 +33,8 @@ function ControlProjectile:createProjectiles()
   end
 end
 
-function ControlProjectile:firePosition()
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(0, 0))
-  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+function ControlProjectile:firePosition(origin)
+  local target = activeItem.ownerAimPosition()
+  local aimVector = vec2.norm(vec2.sub(target, origin))
   return aimVector
 end

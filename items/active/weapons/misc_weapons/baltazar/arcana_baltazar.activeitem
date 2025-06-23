@@ -1,0 +1,77 @@
+{
+  "itemName" : "arcana_baltazar",
+  "price" : 500,
+  "level" : 2,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "An electric blade made for the arcanian Technomancers.",
+  "shortdescription" : "Baltazar",
+  "tooltipKind" : "arcana_sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/arcana_broadsword.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [0, 1.4]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [0, 1.4]
+          }
+        }
+	  }
+	},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword_electric1.ogg", "/sfx/melee/swing_broadsword_electric2.ogg", "/sfx/melee/swing_broadsword_electric3.ogg" ],
+	  "fire2" : [ "/sfx/melee/swing_broadsword_electric1.ogg", "/sfx/melee/swing_broadsword_electric2.ogg", "/sfx/melee/swing_broadsword_electric3.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ],
+	  "fireKunai" : [ "/sfx/melee/swing_dagger_electric1.ogg", "/sfx/melee/swing_dagger_electric2.ogg", "/sfx/melee/swing_dagger_electric3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "electric",
+  "critRate" : 0.04,
+  "critDamage" : 1.16,
+
+  "primaryAbilityType" : "arcana_broadswordfast",
+  "primaryAbility" : {
+    "fireTime" : 0.6,
+    "baseDps" : 9.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "electricbroadsword"
+	}
+  },
+
+  "altAbilityType" : "kunaiblast",
+  "altAbility" : {
+    "name" : "Electric Burst",
+    "projectileTimesAndAngles" : [
+      [0.02, -20],
+      [0.10, -35],
+      [0.18, -50]
+    ],
+    "projectileOffset" : [1.75, -2.0],
+    "projectileType" : "arcana_teslaboltpurple",
+    "projectileParameters" : {
+      "baseDamage" : 4,
+	  "speed" : 40
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

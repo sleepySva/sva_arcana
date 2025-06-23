@@ -1,0 +1,64 @@
+{
+  "itemName" : "arcana_melchior",
+  "price" : 500,
+  "level" : 2,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A special electric hammer made by the Technomancers.",
+  "shortdescription" : "Melchior",
+  "tooltipKind" : "arcana_sword",
+  "category" : "hammer",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","hammer"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "/items/active/weapons/melee/hammer/arcana_hammer.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [0, 0]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [0, 0]
+          }
+        },
+        "swoosh" : {
+          "properties" : {
+            "fullbright" : true,
+            "offset" : [-0.3, 1.5]
+          }
+        }
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_hammer.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "electric",
+  "critRate" : 0.08,
+  "critDamage" : 1.60,
+
+  "primaryAbilityType" : "hammersmash",
+  "primaryAbility" : {
+    "fireTime" : 1.2,
+    "baseDps" : 9.6
+  },
+  "altAbilityType" : "elementalpillar",
+  "altAbility" : {
+    "name" : "Electric Pillar"
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}
