@@ -11,9 +11,18 @@
 	  },
 	  {
 		"op": "add",
+		"path": "/items/arcana_quickbar_arcanaRelics",
+		"value": {
+		  "label": "^orange;Relics^reset;",
+		  "icon": "/quickbar/arcana_relics.png",
+		  "action": [ "pane", "/interface/scripted/arcana_relics/arcana_relics.config" ]
+		}
+	  },
+	  {
+		"op": "add",
 		"path": "/items/arcana_quickbar_galacticAtlas",
 		"value": {
-		  "label": "^orange;Galactic Atlas^reset;",
+		  "label": "^orange;Galactic Map^reset;",
 		  "icon": "/quickbar/arcana_quickbar_galacticAtlas.png",
 		  "action": [ "pane", "/interface/scripted/arcana_galacticAtlas/arcana_galacticAtlas.config" ]
 		}
