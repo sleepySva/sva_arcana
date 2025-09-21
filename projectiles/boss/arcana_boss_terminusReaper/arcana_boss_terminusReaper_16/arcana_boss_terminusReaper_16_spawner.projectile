@@ -1,0 +1,89 @@
+{
+  "projectileName" : "arcana_boss_terminusReaper_16_spawner",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 0.0,
+  "image" : "body.png",
+  "speed" : 0,
+  "animationCycle" : 0.4,
+  "frameNumber" : 6,
+  "power" : 6,
+  "fullbright" : true,
+  "damageKind" : "arcana_terminus",
+  "piercing" : true,
+  
+  "emitters" : [ "arcana_particle_ember_red" ],
+  "supportsProcessing" : true,
+  
+  "movementSettings" : { "collisionEnabled" : false },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_16",
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_16_dmg",
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 1.0
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.2
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : 15,
+      "inheritDamageFactor" : 0.2
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : 30,
+      "inheritDamageFactor" : 0.2
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : 45,
+      "inheritDamageFactor" : 0.2
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : 60,
+      "inheritDamageFactor" : 0.2
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : -15,
+      "inheritDamageFactor" : 0.2
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : -30,
+      "inheritDamageFactor" : 0.2
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : -45,
+      "inheritDamageFactor" : 0.2
+    },
+    {
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_12_alt",
+      "angleAdjust" : -60,
+      "inheritDamageFactor" : 0.2
+    }
+  ]
+}

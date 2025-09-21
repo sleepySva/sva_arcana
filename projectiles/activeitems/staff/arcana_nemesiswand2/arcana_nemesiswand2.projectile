@@ -1,0 +1,36 @@
+{
+  "projectileName" : "arcana_nemesiswand1",
+  "physics" : "rain",
+  "timeToLive" : 4,
+  "bounces" : 1,
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_yellow"],
+  "frameNumber" : 1,
+  "speed" : 20,
+  "knockback" : 2,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+	{
+        "action" : "projectile",
+        "type" : "nemesisflame",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 1.0,
+        "inheritSpeedFactor" : 1,
+		"config" : {
+			"timeToLive" : 1
+		}
+    }
+  ],
+
+  "lightColor" : [80, 60, 10],
+  "damageKind" : "fire",
+  
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  
+  "controlMovement" : {
+    "maxSpeed" : 60,
+    "controlForce" : 10
+  }
+}

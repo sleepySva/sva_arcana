@@ -1,0 +1,59 @@
+{
+  "objectName" : "arcana_gilded_chest_1",
+  "colonyTags" : ["gilded"],
+  "rarity" : "Common",
+  "description" : "...",
+  "shortdescription" : "Key Holder",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 0,
+  "health" : 4.0,
+  
+  "lightColor" : [144, 120, 30],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  "lightPosition" : [6, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  "lightPosition" : [6, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ],
+  
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/objects/capsule_break1.ogg", "/sfx/objects/capsule_break2.ogg", "/sfx/objects/capsule_break3.ogg" ],
+  "smashParticles" : [],
+
+  "animation" : "animation.animation",
+  "animationPosition" : [-32, 0],
+
+  "scripts" : ["/objects/scripts/arcana_treasureburst.lua"],
+  "scriptDelta" : 5,
+
+  "burstTreasurePool" : "arcana_aionickey",
+  "burstItemVelocityRange" : [15, 30],
+  "burstAngleVariance" : 0.5,
+  "burstOffset" : [0, 2.0],
+  "burstDelay" : 0.3,
+  "burstIntangibleTimeRange" : [0.25, 0.5]
+}

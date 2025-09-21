@@ -1,0 +1,34 @@
+{
+  "projectileName" : "arcana_aionickey2delay",
+  "physics" : "laser",
+  
+  "timeToLive" : 0.1,
+  "bounces" : 0,
+  "speed" : 1,
+  "piercing" : false,
+  "knockback" : 0,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  
+  "image" : "empty.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+        "action" : "projectile",
+        "type" : "arcana_aionickey1",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 1.0
+    }
+  ],
+  
+  "damageKind" : "arcana_light"
+}

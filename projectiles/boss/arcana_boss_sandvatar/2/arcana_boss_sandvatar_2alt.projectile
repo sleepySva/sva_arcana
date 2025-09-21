@@ -1,0 +1,52 @@
+{
+  "projectileName" : "arcana_boss_sandvatar_2alt",
+  "physics" : "laser",
+  
+  "timeToLive" : 0,
+  "bounces" : 0,
+  "speed" : 1,
+  "piercing" : true,
+  
+  "power" : 10.0,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.1,
+  "frameNumber" : 1,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 62, 140],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+        "action" : "projectile",
+        "type" : "arcana_terminator_3",
+		"fuzzAngle" : 4,
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.8
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_terminator_2",
+		"fuzzAngle" : 4,
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.4
+    }
+  ],
+  
+  "renderLayer": "ForegroundEntity+1",
+  
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-1, -1], [-1, 1], [1, 1], [1, -1] ],
+  
+  "delayTime" : 1.4,
+  "controlForce" : 4,
+  "triggerSpeed" : 80,
+  
+  "scripts" : [ "/projectiles/scripts/arcana_hoverprojectile.lua" ]
+ 
+}

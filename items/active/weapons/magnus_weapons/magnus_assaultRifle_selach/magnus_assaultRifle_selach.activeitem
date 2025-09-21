@@ -13,20 +13,35 @@
 
   "inventoryIcon" : "icon.png",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/ranged/arcana_gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "magnus_assaultRifle_selach.png",
+	"fullbright" : "fullbright.png",
     "barrel" : "",
-	"muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_purple.png"
   },
   "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "fullbright" : {
+		  "properties" : {
+		    "offset" : [0.9, 0.25]
+		  }
+		},
+        "muzzleFlash" : {
+          "properties" : {
+            "offset" : [0.3, -0.6]
+		  }
+        }
+	  }
+	},
     "sounds" : {
-      "fire" : ["/sfx/melee/laser_weapon_swing1.ogg"]
+      "fire" : ["/sfx/gun/plasma_ar4.ogg"]
     }
   },
 
-  "baseOffset" : [1.2, 0.25],
+  "baseOffset" : [0.9, 0.25],
   "muzzleOffset" : [2.4, 0.4],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
@@ -47,10 +62,10 @@
 
     "projectileType" : "magnus_assaultRifle_selach_projectile_1",
     "projectileParameters" : {
-	  "speed" : 116,
+	  "speed" : 146,
       "damageKind" : "shotgunbullet",
 	  "physics" : "laser",
-      "knockback" : 24
+      "knockback" : 16
     },
     "stances" : {
       "idle" : {
@@ -63,8 +78,8 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -72,8 +87,8 @@
       },
       "cooldown" : {
         "duration" : 0.15,
-        "armRotation" : 8,
-        "weaponRotation" : 8,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
         "twoHanded" : true,
 
         "allowRotate" : false,

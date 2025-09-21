@@ -1,0 +1,39 @@
+{
+  "objectName" : "arcana_teleporter_exitarcanian",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "price" : 3000,
+  "rarity" : "Common",
+  "description" : "This teleporter will get you back to the ship when you're ready to leave.",
+  "shortdescription" : "Exit Teleporter",
+
+  "apexDescription" : "This will let me get back to my ship easily.",
+  "avianDescription" : "I can get back to my ship by using this!",
+  "floranDescription" : "Teleporter letss Floran get back to ship.",
+  "glitchDescription" : "Relieved. This teleporter will allow me to return to my ship.",
+  "humanDescription" : "I can use this once I'm ready to return to my ship.",
+  "hylotlDescription" : "A useful way to quickly return to my ship.",
+  "novakidDescription" : "A handy way to get back to my ship and on to the next adventure!",
+
+  "category" : "teleporter",
+  "lightColor" : [99, 132, 153],
+
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/exitteleporter.config",
+
+  "inventoryIcon" : "exitteleportericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "exitteleporter.png:<color>", "fullbright" : true }, { "image" : "exitteleporterlit.png:<color>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-1, 0], [0, 0], [1, 0], [2, 0] ]
+    }
+  ]
+}

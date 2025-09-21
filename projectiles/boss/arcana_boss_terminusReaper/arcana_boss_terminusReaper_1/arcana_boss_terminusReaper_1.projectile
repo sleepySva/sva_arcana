@@ -11,7 +11,7 @@
   "piercing" : true,
   "bounces" : 0,
   "flippable" : true,
-  "damageKind" : "plasma",
+  "damageKind" : "arcana_terminus",
   "emitters" : [ "arcana_particle_ember_red", "arcana_particle_electric_red"],
   "lightColor" : [100, 30, 120],
   "fullbright" : true,
@@ -23,31 +23,27 @@
     },
 	{
         "action" : "projectile",
-        "type" : "arcana_boss_terminusReaper_2",
+        "type" : "arcana_boss_terminusReaper_12",
         "angleAdjust" : -45,
-        "inheritDamageFactor" : 0.6,
-        "inheritSpeedFactor" : 0.6
+        "inheritDamageFactor" : 0.6
     },
 	{
         "action" : "projectile",
-        "type" : "arcana_boss_terminusReaper_2",
+        "type" : "arcana_boss_terminusReaper_12",
         "angleAdjust" : 45,
-        "inheritDamageFactor" : 0.6,
-        "inheritSpeedFactor" : 0.6
+        "inheritDamageFactor" : 0.6
     },
 	{
         "action" : "projectile",
-        "type" : "arcana_boss_terminusReaper_2",
+        "type" : "arcana_boss_terminusReaper_12",
         "angleAdjust" : 135,
-        "inheritDamageFactor" : 0.6,
-        "inheritSpeedFactor" : 0.6
+        "inheritDamageFactor" : 0.6
     },
 	{
         "action" : "projectile",
-        "type" : "arcana_boss_terminusReaper_2",
+        "type" : "arcana_boss_terminusReaper_12",
         "angleAdjust" : 225,
-        "inheritDamageFactor" : 0.6,
-        "inheritSpeedFactor" : 0.6
+        "inheritDamageFactor" : 0.6
     }
   ],
   
@@ -63,7 +59,7 @@
         "position" : [0, 0],
         "layer" : "back",
         "timeToLive" : 0.0,
-        "destructionTime" : 0.4,
+        "destructionTime" : 0.2,
         "destructionAction" : "shrink",
         "fullbright" : false
       }

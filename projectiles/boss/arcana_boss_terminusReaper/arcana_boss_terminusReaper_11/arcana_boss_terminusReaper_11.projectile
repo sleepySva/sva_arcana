@@ -1,0 +1,58 @@
+{
+  "projectileName" : "arcana_boss_terminusReaper_11",
+  "physics" : "hover",
+  "timeToLive" : 3,
+  "image" : "electricportal.png",
+  "animationCycle" : 0.35,
+  "lightColor" : [90, 60, 110],
+  "frameNumber" : 4,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/melee/astraltear2.ogg" ]
+    },
+    {
+      "time" : 5.65,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/astraltear_stop3.ogg" ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/elementimpact/electricimpactmute.config"
+    }
+  ],
+  "speed" : 20,
+  "power" : 0,
+  "damagePoly" : [],
+
+  "fullbright" : true,
+  "emitters" : [],
+
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "orientationLocked" : true,
+
+  "bounces" : -1,
+  "onlyHitTerrain" : true,
+
+  "scripts" : [ "/projectiles/activeitems/staff/elementportal/elementportal.lua" ],
+
+  "projectileType" : "arcana_boss_terminusReaper_12",
+  "projectileParameters" : {
+    "damageKind" : "arcana_terminus"
+  },
+  "spawnRate" : 0.2,
+
+  "persistentAudio" : "/sfx/melee/barrier_create_electric.ogg"
+}

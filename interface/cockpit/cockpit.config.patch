@@ -52,7 +52,7 @@
 		
 		"arcana_superstormExpanse" : { "word" : "superstormExpanse", "friendlyWord" : " Superstorm Expanse" },
 		"arcana_neonSea" : { "word" : "arcana_neonSea", "friendlyWord" : " Neon Sea" },
-		"arcana_stahlernBadlands" : { "word" : "arcana_stahlernBadlands", "friendlyWord" : " Stahlern Badlands" },
+		"arcana_stahlernBadlands" : { "word" : "arcana_stahlernBadlands", "friendlyWord" : " Badlands" },
 		"arcana_timeless" : { "word" : "arcana_timeless", "friendlyWord" : " Timeless" },
 		"arcana_automated" : { "word" : "arcana_automated", "friendlyWord" : " Automated" },
 		"arcana_viridescent" : { "word" : "arcana_viridescent", "friendlyWord" : " Viridescent" },
@@ -161,6 +161,15 @@
 		"description" : "An apex compound of sorts. Signs of the Miniknog are detected.",
 		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png",
 		"name" : "Miniknog Offworld Facility"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_scavengercamp",
+	"value": {
+		"description" : "A camp occupied by scavengers.",
+		"icon" : "/interface/cockpit/dungeons/arcana_scavengers.png",
+		"name" : "Scavengers Camp"
 	}
   },
   {
@@ -1001,9 +1010,9 @@
     "op": "add",
     "path": "/visitableTypeDescription/arcana_arcaneSea",
     "value": [
-      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;.",
-      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;.",
-      "Atla gold deposites and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;."
+      "Atla gold deposits and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;.",
+      "Atla gold deposits and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;.",
+      "Atla gold deposits and underwater structures are detected in the ^#3e9ce6;Shining Sea^white;."
     ]
   },
   {
@@ -1315,9 +1324,9 @@
     "op": "add",
     "path": "/visitableTypeDescription/arcana_stahlernBadlands",
     "value": [
-      "The ^#b97027;stahlern badlands^white; is a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands.",
-      "The ^#b97027;stahlern badlands^white; is a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands.",
-      "The ^#b97027;stahlern badlands^white; is a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands."
+      "The ^#b97027;badlands^white; are a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands.",
+      "The ^#b97027;badlands^white; are a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands.",
+      "The ^#b97027;badlands^white; are a verrostin-rich planet occupied by the Steelblades. Combat preparations are recommended before venturing into the badlands."
     ]
   },
   {
@@ -1331,7 +1340,7 @@
   {
     "op": "add",
     "path": "/planetTypeNames/arcana_stahlernBadlands",
-    "value": "Stahlern Badlands"
+    "value": "Badlands"
   },
   {
     "op": "add",

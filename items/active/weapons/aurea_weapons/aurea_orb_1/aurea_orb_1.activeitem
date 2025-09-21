@@ -9,7 +9,7 @@
   "category" : "wand",
   "tooltipFields" : {"subtitle" : "Orb"},
   "twoHanded" : false,
-  "itemTags" : ["weapon","wand"],
+  "itemTags" : ["weapon", "wand", "ranged"],
   "tooltipKind" : "staff",
 
   "animation" : "animation.animation",
@@ -78,16 +78,16 @@
 
   "elementalType" : "physical",
 
-  "primaryAbilityType" : "elementswarm",
+  "primaryAbilityType" : "arcana_staff_ability_spellBurst",
   "primaryAbility" : {
 
     "name" : "Light Chasers",
 	"energyCost" : 80,
-    "maxCastRange" : 38,
+    "maxCastRange" : 30,
 	
-	"projectileType" : ["aurea_orb_1_projectile_1"],
+	"projectileType" : "aurea_orb_1_projectile_1",
 	
-	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/arcana_controlprojectile.lua"],
+	"scripts" : ["/items/active/weapons/staff/abilities/arcana_staff_ability_spellBurst/arcana_staff_ability_spellBurst.lua"],
     "class" : "ControlProjectile",
 	
 	"projectileCount" : 7,
@@ -95,9 +95,12 @@
 	
     "projectileDelayFirst" : 1.0,
     "projectileDelayEach" : 0.06,
+	
+	"projectileOffset" : [2.0, 1.4],
+	"projectileAiming" : false,
 
     "projectileParameters" : {
-      "baseDamage" : 17.8,
+      "baseDamage" : 17.0,
 	  "speed" : 2
     },
 

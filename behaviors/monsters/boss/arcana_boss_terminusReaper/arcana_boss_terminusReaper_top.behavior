@@ -204,7 +204,7 @@
                     "type": "action",
                     "name": "offsetPosition",
                     "parameters": {
-                      "offset": {"value": [-30, 20]},
+                      "offset": {"value": [-30, 25]},
                       "position": {"key": "targetPosition"}
                     },
                     "output": {
@@ -255,30 +255,6 @@
 						  },
 						  "output": {
 						    "vector": "aimVector"
-						  }
-					    },
-                        {
-                          "title": "spawnProjectile",
-                          "type": "action",
-                          "name": "spawnProjectile",
-                          "parameters": {
-                            "aimVector": {"value": [0, 1]},
-                            "angle": {"value": 0},
-                            "offset": {"value": [0, 0]},
-                            "position": {"key": "offsetPosition"},
-                            "projectileConfig": {"value": {"timeToLive" : 0.3}},
-                            "projectileType": {"value": "arcana_bossmarker_2"},
-                            "scalePower": {"value": false},
-                            "sourceEntity": {"key": "self"},
-                            "trackSource": {"value": false}
-                          }
-                        },
-					    {
-						  "title": "timer",
-						  "type": "action",
-						  "name": "timer",
-						  "parameters": {
-						    "time": {"value": 0.3}
 						  }
 					    },
                         {

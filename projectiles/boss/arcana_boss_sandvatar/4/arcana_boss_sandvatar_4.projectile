@@ -1,0 +1,78 @@
+{
+  "projectileName" : "arcana_boss_sandvatar_4",
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "timeToLive" : 1.4,
+  "fallSpeed" : 0,
+  "lightColor" : [10, 10, 30],
+  "pointLight" : true,
+  "fullbright" : true,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "arcana_boss_sandvatar_5",
+      "angleAdjust" : 0,
+	  "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_sandvatar_6",
+		"fuzzAngle" : 360,
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.6
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_sandvatar_6",
+		"fuzzAngle" : 360,
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.6
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_sandvatar_6",
+		"fuzzAngle" : 360,
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.6
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.001,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_sandvatar/1/trail.png",
+		
+        "position" : [0, 0],
+        "finalVelocity" : [0, 0],
+		
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		
+        "variance" : {
+          "initialVelocity" : [8.0, 8.0],
+          "position" : [0.1, 0.1]
+        }
+      }
+    }
+  ],
+  
+  "renderLayer": "ForegroundEntity+1",
+  
+  "statusEffects" : [ ],
+  "emitters" : [ "rocketsmoke", "rockettrail", "rocketsmoke", "rockettrail" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 50.0,
+  "physics" : "arrow",
+  "damageKind" : "electricplasma"
+}

@@ -6,11 +6,11 @@ function init()
 
   self.tickTime = 1.0
   self.tickTimer = self.tickTime
-  self.damage = 50
+  self.damage = 30
 
   status.applySelfDamageRequest({
       damageType = "IgnoresDef",
-      damage = 50,
+      damage = 30,
       damageSourceKind = "default",
       sourceEntityId = entity.id()
     })

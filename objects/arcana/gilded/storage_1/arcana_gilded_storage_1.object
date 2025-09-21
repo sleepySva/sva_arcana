@@ -1,0 +1,40 @@
+{
+  "objectName" : "arcana_gilded_storage_1",
+  "colonyTags" : ["gilded","storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "category" : "storage",
+  "price" : 70,
+  "description" : "An ancient chest, for storing valuables.",
+  "shortdescription" : "Gilded Chest",
+  "race" : "generic",
+  "health" : 1.5,
+
+  "apexDescription" : "An old chest. It looks strong.",
+  "avianDescription" : "A hard wooden lockbox. What could be inside?",
+  "floranDescription" : "Floran sssearch sstrong chesst.",
+  "glitchDescription" : "Excited. The Glitch often store weapons in chests like these. Is there one in here?",
+  "humanDescription" : "This chest is straight out of a fairytale.",
+  "hylotlDescription" : "A strong chest. Good for storing sharp items.",
+  "novakidDescription" : "The kinda chest you'd expect to find in a castle.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "body.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

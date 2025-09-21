@@ -15,7 +15,7 @@
   
   "fullbright" : true,
   "lightColor" : [20, 62, 145],
-  "emitters" : ["electricplasmapurple","electricplasma","defaultmagenta"],
+  "emitters" : [],
   
   "supportsProcessing" : true,
   
@@ -28,7 +28,7 @@
   
   "periodicActions" : [
     {
-      "time" : 0.066,
+      "time" : 0.02,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
@@ -39,7 +39,7 @@
         "layer" : "back",
         "timeToLive" : 0.0,
         "destructionTime" : 0.2,
-        "destructionAction" : "fade",
+        "destructionAction" : "shrink",
         "fullbright" : true
       }
     }

@@ -1,0 +1,243 @@
+{
+  "name": "arcana_ramses",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/notification.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/query.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/dialog.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/math.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+		  {
+			"title": "dance",
+			"type": "action",
+			"name": "dance",
+			"parameters": {
+			  "dance": {"value": "arcana_ramses_idle"}
+			}
+		  },
+		  {
+			"title": "sequence",
+			"type": "composite",
+			"name": "sequence",
+			"parameters": {},
+			"children": [
+			  {
+				"title": "dynamic",
+				"type": "composite",
+				"name": "dynamic",
+				"parameters": {},
+				"children": [
+				  {
+					"title": "receivedNotification",
+					"type": "action",
+					"name": "receivedNotification",
+					"parameters": {
+					  "type": {"value": "playerArrived"}
+					}
+				  },
+				  {
+					"title": "runner",
+					"type": "action",
+					"name": "runner",
+					"parameters": {}
+				  }
+				]
+			  },
+			  {
+				"title": "succeeder",
+				"type": "decorator",
+				"name": "succeeder",
+				"parameters": {},
+				"child": {
+				  "title": "sequence",
+				  "type": "composite",
+				  "name": "sequence",
+				  "parameters": {},
+				  "children": [
+					{
+					  "title": "findObject",
+					  "type": "action",
+					  "name": "findObject",
+					  "parameters": {
+						"name": {"value": "arcana_runic_door_2"},
+						"orderBy": {"value": "nearest"},
+						"position": {"key": "self"},
+						"range": {"value": 40}
+					  },
+					  "output": {
+						"entity": "door"
+					  }
+					},
+					{
+					  "title": "succeeder",
+					  "type": "decorator",
+					  "name": "succeeder",
+					  "parameters": {},
+					  "child": {
+						"title": "callScriptedEntity",
+						"type": "action",
+						"name": "callScriptedEntity",
+						"parameters": {
+						  "entity": {"key": "door"},
+						  "func": {"value": "lockDoor"}
+						}
+					  }
+					}
+				  ]
+				}
+			  },
+			  {
+				"title": "faceDirection",
+				"type": "action",
+				"name": "faceDirection",
+				"parameters": {
+				  "direction": {"value": -1}
+				}
+			  },
+			  {
+				"title": "sequentialdialog",
+				"type": "module",
+				"name": "sequentialdialog",
+				"parameters": {
+				  "dialogWaitTime": {"value": 6},
+				  "dialogEndWait": {"value": 6},
+				  "dialogKey": {"value": "dialog.ramses.start"},
+				  "dialogTarget": {"key": "player"}
+				}
+			  },
+				{
+				  "title": "entityPosition",
+				  "type": "action",
+				  "name": "entityPosition",
+				  "parameters": {
+					"entity": {"key": "self"}
+				  },
+				  "output": {
+					"position": "selfPosition"
+				  }
+				},
+			  {
+				"title": "offsetPosition",
+				"type": "action",
+				"name": "offsetPosition",
+				"parameters": {
+				  "offset": {"value": [3, 3]},
+				  "position": {"key": "selfPosition"}
+				},
+				"output": {
+				  "position": "offsetPosition"
+				}
+			  },
+			  {
+                "title": "spawnMonster",
+                "type": "action",
+                "name": "spawnMonster",
+                "parameters": {
+                  "replacement": {"value": false},
+                  "type": {"value": "arcana_boss_sandvatar"},
+				  "damageTeam": {"value": 2},
+				  "damageTeamType": {"value": "enemy"},
+				  "position": {"key": "offsetPosition"},
+				  "parameters": {"value": {"musicStagehands" : [ "bossmusic" ], "uniqueId" : "arcana_boss_sandvatar", "aggressive" : true}}
+                }
+              },
+			  {
+				"title": "timer",
+				"type": "action",
+				"name": "timer",
+				"parameters": {
+				  "time": {"value": 3}
+				}
+			  },
+			  {
+				"title": "succeeder",
+				"type": "decorator",
+				"name": "succeeder",
+				"parameters": {},
+				"child": {
+				  "title": "sequence",
+				  "type": "composite",
+				  "name": "sequence",
+				  "parameters": {},
+				  "children": [
+					{
+					  "title": "findObject",
+					  "type": "action",
+					  "name": "findObject",
+					  "parameters": {
+						"name": {"value": "arcana_runic_door_2"},
+						"orderBy": {"value": "nearest"},
+						"position": {"key": "self"},
+						"range": {"value": 40}
+					  },
+					  "output": {
+						"entity": "door"
+					  }
+					},
+					{
+					  "title": "succeeder",
+					  "type": "decorator",
+					  "name": "succeeder",
+					  "parameters": {},
+					  "child": {
+						"title": "callScriptedEntity",
+						"type": "action",
+						"name": "callScriptedEntity",
+						"parameters": {
+						  "entity": {"key": "door"},
+						  "func": {"value": "openDoor"}
+						}
+					  }
+					}
+				  ]
+				}
+			  },
+			  {
+				"title": "setDeathParticleBurst",
+				"type": "action",
+				"name": "setDeathParticleBurst",
+				"parameters": {}
+			  },
+			  {
+				"title": "addEphemeralEffect",
+				"type": "action",
+				"name": "addEphemeralEffect",
+				"parameters": {
+				  "name": {"value": "arcana_beamoutdiepurple"}
+				}
+			  },
+			  {
+				"title": "runner",
+				"type": "action",
+				"name": "runner",
+				"parameters": {}
+			  }
+			]
+		  }
+        ]
+      }
+    ]
+  }
+}

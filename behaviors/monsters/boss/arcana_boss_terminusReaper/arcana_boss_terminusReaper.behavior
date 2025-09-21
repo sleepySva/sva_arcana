@@ -160,7 +160,21 @@
 						"type": "action",
 						"name": "timer",
 						"parameters": {
-						  "time": {"value": 4.0}
+						  "time": {"value": 2.0}
+						}
+					  },
+					  {
+					    "title": "arcana_boss_terminusReaper_rain",
+					    "type": "module",
+					    "name": "arcana_boss_terminusReaper_rain",
+					    "parameters": {}
+					  },
+					  {
+						"title": "timer",
+						"type": "action",
+						"name": "timer",
+						"parameters": {
+						  "time": {"value": 6.0}
 						}
 					  },
                       {
@@ -196,12 +210,6 @@
                               "parameters": {}
                             },
 							{
-                              "title": "arcana_boss_terminusReaper_alt",
-                              "type": "module",
-                              "name": "arcana_boss_terminusReaper_alt",
-                              "parameters": {}
-                            },
-							{
                               "title": "arcana_boss_terminusReaper_teleport",
                               "type": "module",
                               "name": "arcana_boss_terminusReaper_teleport",
@@ -238,6 +246,12 @@
                               "parameters": {}
                             },
                             {
+                              "title": "arcana_boss_terminusReaper_basic",
+                              "type": "module",
+                              "name": "arcana_boss_terminusReaper_basic",
+                              "parameters": {}
+                            },
+							{
                               "title": "arcana_boss_terminusReaper_basic",
                               "type": "module",
                               "name": "arcana_boss_terminusReaper_basic",
@@ -250,27 +264,9 @@
                               "parameters": {}
                             },
 							{
-                              "title": "arcana_boss_terminusReaper_basic",
-                              "type": "module",
-                              "name": "arcana_boss_terminusReaper_basic",
-                              "parameters": {}
-                            },
-							{
-                              "title": "arcana_boss_terminusReaper_alt",
-                              "type": "module",
-                              "name": "arcana_boss_terminusReaper_alt",
-                              "parameters": {}
-                            },
-							{
                               "title": "arcana_boss_terminusReaper_teleport",
                               "type": "module",
                               "name": "arcana_boss_terminusReaper_teleport",
-                              "parameters": {}
-                            },
-							{
-                              "title": "arcana_boss_terminusReaper_shield",
-                              "type": "module",
-                              "name": "arcana_boss_terminusReaper_shield",
                               "parameters": {}
                             },
 							{
@@ -279,10 +275,22 @@
                               "name": "arcana_boss_terminusReaper_summon",
                               "parameters": {}
                             },
-							{
-                              "title": "arcana_boss_terminusReaper_forkalt",
+                            {
+                              "title": "arcana_boss_terminusReaper_slash",
                               "type": "module",
-                              "name": "arcana_boss_terminusReaper_forkalt",
+                              "name": "arcana_boss_terminusReaper_slash",
+                              "parameters": {}
+                            },
+							{
+                              "title": "arcana_boss_terminusReaper_summon",
+                              "type": "module",
+                              "name": "arcana_boss_terminusReaper_summon",
+                              "parameters": {}
+                            },
+                            {
+                              "title": "arcana_boss_terminusReaper_slash",
+                              "type": "module",
+                              "name": "arcana_boss_terminusReaper_slash",
                               "parameters": {}
                             },
 							{
@@ -302,7 +310,30 @@
                               "type": "module",
                               "name": "arcana_boss_terminusReaper_teleport",
                               "parameters": {}
-                            }
+                            },
+						    {
+							  "title": "addEphemeralEffect",
+							  "type": "action",
+							  "name": "addEphemeralEffect",
+							  "parameters": {
+							    "duration": {"value": 6},
+							    "name": {"value": "cultistshield"}
+							  }
+						    },
+						    {
+							  "title": "arcana_boss_terminusReaper_rain",
+							  "type": "module",
+							  "name": "arcana_boss_terminusReaper_rain",
+							  "parameters": {}
+						    },
+						    {
+							  "title": "timer",
+							  "type": "action",
+							  "name": "timer",
+							  "parameters": {
+							    "time": {"value": 6.0}
+							  }
+						    }
                           ]
                         }
                       }

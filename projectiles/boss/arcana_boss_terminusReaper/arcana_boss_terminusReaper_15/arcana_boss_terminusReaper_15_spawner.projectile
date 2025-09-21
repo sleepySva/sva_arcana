@@ -1,0 +1,51 @@
+{
+  "projectileName" : "arcana_boss_terminusReaper_15_spawner",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 4.0,
+  "image" : "spawner.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 10,
+  "animationCycle" : 0.4,
+  "animationLoops" : false,
+  "frameNumber" : 4,
+  "power" : 6,
+  "fullbright" : true,
+  "damageKind" : "arcana_terminus",
+  "piercing" : false,
+  
+  "emitters" : [],
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-19, 0], [0, 2], [19, 0], [0, -2] ],
+  
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_red_energy/arcana_explosion_bullet_red_energy.config"
+    }
+  ],
+  
+  "periodicActions" : [
+	{
+      "time" : 0.2,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "arcana_boss_terminusReaper_15",
+      "angleAdjust" : 0,
+	  "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.5
+    }
+  ],
+  
+  "delayTime" : 10.0,
+  "controlForce" : 10,
+  "triggerSpeed" : 160,
+  "aimAtTarget" : false,
+  "scripts" : [ "/projectiles/scripts/arcana_staticprojectile.lua" ]
+ 
+}

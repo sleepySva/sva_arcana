@@ -1,0 +1,26 @@
+{
+  "projectileName" : "arcana_terminusexplosion",
+  "image" : "body.png",
+  "timeToLive" : 0.33,
+  "animationCycle" : 0.33,
+  "frameNumber" : 6,
+  "fullbright" : true,
+  "speed" : 0,
+  "damagePoly" : [ [-40, 0], [-25, -25], [0, -40], [25, -25], [40, 0], [25, 25], [0, 40], [-25, 25] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "renderLayer" : "Projectile+200",
+  "statusEffects" : [ "l6doomed" ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/gun/plasma_shotgun1.ogg" ]
+    }
+  ],
+  "power" : 25,
+  "damageKind" : "arcana_terminus"
+}

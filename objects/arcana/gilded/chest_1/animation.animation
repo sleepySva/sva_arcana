@@ -1,0 +1,96 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "burstState" : {
+        "default" : "closed",
+        "states" : {
+          "closed" : {
+            "frames" : 1
+          },
+          "burst" : {
+            "frames" : 7,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "open"
+          },
+          "open" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chestFullbright" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "burstState" : {
+            "closed" : {
+              "properties" : {
+                "image" : "body.png:closed"
+              }
+            },
+
+            "burst" : {
+              "properties" : {
+                "image" : "body.png:burst.<frame>"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "body.png:open"
+              }
+            }
+          }
+        }
+      },
+      "chest" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false
+        },
+
+        "partStates" : {
+          "burstState" : {
+            "closed" : {
+              "properties" : {
+                "image" : "fullbright.png:closed"
+              }
+            },
+
+            "burst" : {
+              "properties" : {
+                "image" : "fullbright.png:burst.<frame>"
+              }
+            },
+
+            "open" : {
+              "properties" : {
+                "image" : "fullbright.png:open"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "burst" : {
+      "active" : false,
+      "offsetRegion" : [4.5, 3.0, 4.5, 3.0],
+      "particles" : [
+	    {"particle" : "arcana_keylight", "count" : 20}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "burst" : ["/sfx/objects/essencechest_open2.ogg"]
+  }
+}

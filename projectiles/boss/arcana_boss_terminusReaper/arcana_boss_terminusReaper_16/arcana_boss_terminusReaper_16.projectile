@@ -1,0 +1,20 @@
+{
+  "projectileName" : "arcana_boss_terminusReaper_16",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 0.4,
+  "image" : "body.png",
+  "speed" : 0,
+  "animationCycle" : 0.4,
+  "frameNumber" : 6,
+  "power" : 6,
+  "fullbright" : true,
+  "damageKind" : "arcana_terminus",
+  "piercing" : true,
+  
+  "emitters" : [ "arcana_particle_ember_red" ],
+  "supportsProcessing" : true,
+  
+  "movementSettings" : { "collisionEnabled" : false },
+  "renderLayer" : "foregroundEntity"
+}

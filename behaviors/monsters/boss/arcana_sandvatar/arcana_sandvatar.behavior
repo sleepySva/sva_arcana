@@ -158,6 +158,14 @@
 						}
 					  },
                       {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": true}
+                        }
+                      },
+                      {
                         "title": "setDamageBar",
                         "type": "action",
                         "name": "setDamageBar",
@@ -229,6 +237,38 @@
                               "name": "arcana_sandvatar_row",
                               "parameters": {}
                             },
+						    {
+							  "title": "setParticleEmitterActive",
+							  "type": "action",
+							  "name": "setParticleEmitterActive",
+							  "parameters": {
+							    "active": {"value": true},
+							    "emitter": {"value": "energy"}
+							  }
+						    },
+                            {
+                              "title": "arcana_sandvatar_electric2",
+                              "type": "module",
+                              "name": "arcana_sandvatar_electric2",
+                              "parameters": {}
+                            },
+						    {
+							  "title": "timer",
+							  "type": "action",
+							  "name": "timer",
+							  "parameters": {
+							    "time": {"value": 0.6}
+							  }
+						    },
+						    {
+							  "title": "setParticleEmitterActive",
+							  "type": "action",
+							  "name": "setParticleEmitterActive",
+							  "parameters": {
+							    "active": {"value": false},
+							    "emitter": {"value": "energy"}
+							  }
+						    },
                             {
                               "title": "arcana_sandvatar_row",
                               "type": "module",
@@ -260,13 +300,13 @@
 							  "type": "action",
 							  "name": "timer",
 							  "parameters": {
-							    "time": {"value": 1.0}
+							    "time": {"value": 0.4}
 							  }
 						    },
                             {
-                              "title": "arcana_sandvatar_cannon",
+                              "title": "arcana_sandvatar_boxes",
                               "type": "module",
-                              "name": "arcana_sandvatar_cannon",
+                              "name": "arcana_sandvatar_boxes",
                               "parameters": {}
                             },
 						    {
@@ -274,7 +314,7 @@
 							  "type": "action",
 							  "name": "timer",
 							  "parameters": {
-							    "time": {"value": 1.0}
+							    "time": {"value": 2.0}
 							  }
 						    },
 						    {
@@ -394,6 +434,14 @@
 					}
 				  },
 				  {
+					"title": "battleMusic",
+					"type": "action",
+					"name": "battleMusic",
+					"parameters": {
+					  "enable": {"value": false}
+					}
+				  },
+				  {
 					"title": "setParticleEmitterActive",
 					"type": "action",
 					"name": "setParticleEmitterActive",
@@ -411,166 +459,89 @@
 				    }
 				  },
 				  {
-					"title": "addEphemeralEffect",
-					"type": "action",
-					"name": "addEphemeralEffect",
-					"parameters": {
-					  "name": {"value": "guardiandeath"}
-					}
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [0, 0]},
+                      "offset": {"value": [0.0, 0.0]},
+                      "position": {"key": "self"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "electricplasmaexplosion"},
+                      "scalePower": {"value": true},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+				    "title": "timer",
+				    "type": "action",
+				    "name": "timer",
+				    "parameters": {
+					  "time": {"value": 0.1}
+				    }
 				  },
 				  {
-					"title": "parallel",
-					"type": "composite",
-					"name": "parallel",
-					"parameters": {
-					  "fail": {"value": 1},
-					  "success": {"value": -1}
-					},
-					"children": [
-					  {
-						"title": "timer",
-						"type": "action",
-						"name": "timer",
-						"parameters": {
-						  "time": {"value": 6}
-						},
-						"output": {
-						  "ratio": "ratio"
-						}
-					  },
-					  {
-						"title": "sequence",
-						"type": "composite",
-						"name": "sequence",
-						"parameters": {},
-						"children": [
-						  {
-							"title": "lerp",
-							"type": "action",
-							"name": "lerp",
-							"parameters": {
-							  "max": {"value": 0.25},
-							  "min": {"value": 0},
-							  "ratio": {"key": "ratio"}
-							},
-							"output": {
-							  "number": "shake"
-							}
-						  },
-						  {
-							"title": "random",
-							"type": "action",
-							"name": "random",
-							"parameters": {
-							  "max": {"key": "shake"},
-							  "min": {"value": 0}
-							},
-							"output": {
-							  "number": "x"
-							}
-						  },
-						  {
-							"title": "random",
-							"type": "action",
-							"name": "random",
-							"parameters": {
-							  "max": {"key": "shake"},
-							  "min": {"value": 0}
-							},
-							"output": {
-							  "number": "y"
-							}
-						  },
-						  {
-							"title": "resetTransformationGroup",
-							"type": "action",
-							"name": "resetTransformationGroup",
-							"parameters": {
-							  "transformationGroup": {"value": "all"}
-							}
-						  },
-						  {
-							"title": "translateTransformationGroup",
-							"type": "action",
-							"name": "translateTransformationGroup",
-							"parameters": {
-							  "offset": {"value": ["x", "y"]},
-							  "transformationGroup": {"value": "all"}
-							}
-						  }
-						]
-					  }
-					]
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [0, 0]},
+                      "offset": {"value": [0.0, 0.5]},
+                      "position": {"key": "self"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "electricplasmaexplosion"},
+                      "scalePower": {"value": true},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+				    "title": "timer",
+				    "type": "action",
+				    "name": "timer",
+				    "parameters": {
+					  "time": {"value": 0.1}
+				    }
 				  },
 				  {
-					"title": "playSound",
-					"type": "action",
-					"name": "playSound",
-					"parameters": {
-					  "loops": {"value": 0},
-					  "sound": {"value": "deathShrink"}
-					}
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [0, 0]},
+                      "offset": {"value": [-0.5, -0.5]},
+                      "position": {"key": "self"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "electricplasmaexplosion"},
+                      "scalePower": {"value": true},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
+				  {
+				    "title": "timer",
+				    "type": "action",
+				    "name": "timer",
+				    "parameters": {
+					  "time": {"value": 0.1}
+				    }
 				  },
 				  {
-					"title": "parallel",
-					"type": "composite",
-					"name": "parallel",
-					"parameters": {
-					  "fail": {"value": 1},
-					  "success": {"value": -1}
-					},
-					"children": [
-					  {
-						"title": "timer",
-						"type": "action",
-						"name": "timer",
-						"parameters": {
-						  "time": {"value": 0.1}
-						},
-						"output": {
-						  "ratio": "ratio"
-						}
-					  },
-					  {
-						"title": "sequence",
-						"type": "composite",
-						"name": "sequence",
-						"parameters": {},
-						"children": [
-						  {
-							"title": "lerp",
-							"type": "action",
-							"name": "lerp",
-							"parameters": {
-							  "max": {"value": 0.05},
-							  "min": {"value": 1},
-							  "ratio": {"key": "ratio"}
-							},
-							"output": {
-							  "number": "scale"
-							}
-						  },
-						  {
-							"title": "resetTransformationGroup",
-							"type": "action",
-							"name": "resetTransformationGroup",
-							"parameters": {
-							  "transformationGroup": {"value": "all"}
-							}
-						  },
-						  {
-							"title": "scaleTransformationGroup",
-							"type": "action",
-							"name": "scaleTransformationGroup",
-							"parameters": {
-							  "scale": {"value": ["scale", "scale"]},
-							  "transformationGroup": {"value": "all"}
-							}
-						  }
-						]
-					  }
-					]
-				  },
+                    "title": "spawnProjectile",
+                    "type": "action",
+                    "name": "spawnProjectile",
+                    "parameters": {
+                      "aimVector": {"value": [0, 0]},
+                      "offset": {"value": [0.5, -0.5]},
+                      "position": {"key": "self"},
+                      "projectileConfig": {"value": {"power" : 0.0}},
+                      "projectileType": {"value": "electricplasmaexplosion"},
+                      "scalePower": {"value": true},
+                      "sourceEntity": {"key": "self"},
+                      "trackSource": {"value": false}
+                    }
+                  },
                   {
                     "title": "setDying",
                     "type": "action",
@@ -650,6 +621,14 @@
                         "name": "faceDirection",
                         "parameters": {
                           "direction": {"value": -1}
+                        }
+                      },
+                      {
+                        "title": "battleMusic",
+                        "type": "action",
+                        "name": "battleMusic",
+                        "parameters": {
+                          "enable": {"value": false}
                         }
                       },
                       {

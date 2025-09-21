@@ -1,0 +1,76 @@
+{
+  "objectName" : "arcana_generator_gilded",
+  "colonyTags" : ["electronic"],
+  "rarity" : "Legendary",
+  "description" : "A strange statue... it appears to be projecting a shielding effect in its proximity.",
+  "shortdescription" : "Shield Generator",
+  "race" : "generic",
+  "price" : 1000,
+  "lightColor" : [120, 108, 30],
+  "category" : "wire",
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "flipImages" : true,
+      "direction" : "left",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "lightPosition" : [-2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "lightPosition" : [1, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "animation.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/apexconsole2switch.ogg" ],
+      "off" : [ "/sfx/objects/apexconsole2switch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+
+  "animationPosition" : [-24, 0],
+
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/melee/kill_robotic1.ogg" ],
+  "health" : 250,
+  "interactive" : false,
+
+  "smashParticles" : [ { "count" : 50, "particle" : "arcana_keylight" } ],
+  "smashDropPool" : "empty",
+  "breakDropPool" : "empty",
+
+  "scripts" : [ "/objects/wired/shieldgenerator/shieldgenerator.lua" ],
+  "scriptDelta" : 5,
+
+  "outputNodes" : [ [0, 0] ],
+  "inputNodes" : [ [0, 2] ],
+
+  "explodeOnSmash" : true,
+  "explosionProjectile" : "arcana_explosion_impact_chryso",
+  "explosionOffset" : [1, 2]
+}

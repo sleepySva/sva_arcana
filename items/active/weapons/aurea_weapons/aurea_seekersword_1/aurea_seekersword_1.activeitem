@@ -1,0 +1,66 @@
+{
+  "itemName" : "aurea_seekersword_1",
+  "price" : 0,
+  "level" : 2,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A standard sword issued to new Seekers.",
+  "shortdescription" : "Seeker Sword",
+  "tooltipKind" : "arcana_sword",
+  "category" : "broadsword",
+  "tooltipFields" : {
+	"subtitle" : "Rank D"
+  },
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/arcana_broadsword.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [0, 1.4]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [0, 1.4]
+          }
+        }
+	  }
+	},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+	  "fire2" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+
+  "elementalType" : "physical",
+  "critRate" : 0.05,
+  "critDamage" : 1.20,
+
+  "primaryAbilityType" : "arcana_broadswordfast",
+  "primaryAbility" : {
+    "fireTime" : 0.5,
+    "baseDps" : 9.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "broadsword"
+	}
+  },
+  
+  "altAbilityType" : "parry",
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

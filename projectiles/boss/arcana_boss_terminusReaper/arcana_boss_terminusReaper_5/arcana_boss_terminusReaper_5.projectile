@@ -1,13 +1,13 @@
 {
   "projectileName" : "arcana_boss_terminusReaper_5",
-  "physics" : "laser",
-  "timeToLive" : 2.4,
+  "physics" : "sticky",
+  "timeToLive" : 2.0,
   
   "image" : "body.png",
-  "animationCycle" : 0.4,
-  "animationLoops" : true,
-  "frameNumber" : 4,
-  "speed" : 12,
+  "animationCycle" : 0.5,
+  "animationLoops" : false,
+  "frameNumber" : 5,
+  "speed" : 10,
   "piercing" : true,
   "bounces" : 0,
   "flippable" : true,
@@ -55,10 +55,16 @@
   },
   "renderLayer" : "foregroundEntity",
   
-  "damageKind" : "plasma",
-  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "arcana_terminus",
+  "damagePoly" : [ [-14, 0], [0, 8], [14, 0], [0, -8] ],
   "damageRepeatTimeout" : 0.5,
   "statusEffects" : [],
   "knockback" : 16,
-  "knockbackDirectional" : true
+  "knockbackDirectional" : true,
+  
+  "delayTime" : 0.5,
+  "controlForce" : 20,
+  "triggerSpeed" : 40,
+  
+  "scripts" : [ "/projectiles/scripts/arcana_hoverprojectile.lua" ]
 }

@@ -1,0 +1,288 @@
+{
+  "muteSfx" : true,
+  "muteMusic" : false,
+  "skippable" : true,
+  "letterbox" : false,
+  "backgroundColor" : [0, 0, 0, 240],
+  "backgroundFadeTime" : 0.5,
+
+  "panels" : [
+
+// ------------------ radio message popup background
+    {
+      "startTime" : 1.5,
+      "endTime" : 33,
+      "drawables" : [
+        {
+          "image" : "/cinematics/radiomessagebg.png:<frame>"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [480, 100],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 32,
+          "frame" : 6
+        },
+        {
+          "timecode" : 33,
+          "frame" : 12
+        }
+      ]
+    },
+
+
+
+// ----------------- first radio message
+    {
+      "startTime" : 2.0,
+      "endTime" : 8.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/flint.png:<frame>"
+        }
+      ],
+      "animationFrames" : 2,
+      "text" : "Ah! You must be the Seeker sent for the retrival. I'm ^orange;Flint^reset;, your guide for the trip ahead.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3.0,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+
+      ]
+    },
+
+// -------------------- second radio message
+    {
+      "startTime" : 8.0,
+      "endTime" : 15.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/flint.png:<frame>"
+        }
+      ],
+      "animationFrames" : 2,
+      "text" : "Our... erm, most of our Guildmasters have agreed to transfer the artifact to the Seekers for safekeeping, after consideration for foreign threats.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3.5,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+//------------------------------- third radio message
+    {
+      "startTime" : 15.0,
+      "endTime" : 24.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/flint.png:<frame>"
+        }
+      ],
+      "animationFrames" : 2,
+      "text" : "You'll have to travel to the ^orange;Lodestar Temple^reset;, situated nearby one of our warp points.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3.0,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+// --------------- fourth radio message
+    {
+      "startTime" : 24.0,
+      "endTime" : 33.0,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/flint.png:<frame>"
+        }
+      ],
+      "animationFrames" : 2,
+      "text" : "I'm afraid you won't have much help, since we had to keep things private. However, I'll do my best to guide you to your destination!",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 214
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 1.0,
+          "zoom" : 1.0,
+          "position" : [366.5, 100],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 3,
+          "frame" : 12,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+
+// --------------------- Map
+    {
+      "startTime" : 10,
+      "endTime" : 33,
+      "drawables" : [
+        {
+          "image" : "/cinematics/arcana/arcana_seeker_desertstart/map1.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 0.0,
+          "zoom" : 1.5,
+          "position" : [479, 280],
+          "frame" : 0
+        },
+        {
+          "timecode" : 2.0,
+          "alpha" : 1.0,
+		  "position" : [479, 290]
+        },
+        {
+          "timecode" : 32,
+          "alpha" : 1.0
+        },
+        {
+          "timecode" : 33,
+          "frame" : 300,
+          "alpha" : 0
+        }
+      ]
+    },
+    {
+      "startTime" : 16,
+      "endTime" : 33,
+      "drawables" : [
+        {
+          "image" : "/cinematics/arcana/arcana_seeker_desertstart/cross.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0.0,
+          "alpha" : 0.0,
+          "zoom" : 1.5,
+          "position" : [476, 360],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "alpha" : 1.0,
+		  "position" : [476, 370]
+        },
+        {
+          "timecode" : 32,
+          "alpha" : 1.0
+        },
+        {
+          "timecode" : 33,
+          "frame" : 300,
+          "alpha" : 0
+        }
+      ]
+    }
+  ],
+
+  "audio" : [
+    {
+      "timecode" : 2.25,
+      "endTimecode" : 4.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 8.25,
+      "endTimecode" : 11.7,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 15.25,
+      "endTimecode" : 17.7,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 24.25,
+      "endTimecode" : 26.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    }
+  ]
+}

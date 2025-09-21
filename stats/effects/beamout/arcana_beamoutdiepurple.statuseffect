@@ -1,0 +1,17 @@
+{
+  "name" : "arcana_beamoutdiepurple",
+  "effectConfig" : {
+    "speciesTags" : {
+      "penguin" : "penguin"
+    },
+    "die": true,
+    "triggerTime" : 0.75
+  },
+  "defaultDuration" : 2.0,
+
+  "scripts" : [
+    "beamout.lua"
+  ],
+
+  "animationConfig" : "arcana_beamoutpurple.animation"
+}

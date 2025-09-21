@@ -1,0 +1,39 @@
+{
+  "objectName" : "arcana_gilded_deco_5",
+  "colonyTags" : ["gilded","light"],
+  "rarity" : "Common",
+  "description" : "A couple dim golden hanging lights that were crudely made to lit up dark areas.",
+  "shortdescription" : "Gilded Cornerlights",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 40,
+  
+  "lightColor" : [78, 70, 0],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name" : "arcana_ramses_idle",
+  "states" : [ "idle" ],
+  "cycle" : 1.0,
+  "cyclic" : true,
+  "duration" : 1.0,
+  "steps" : [
+    // body, frontArm, backArm, headOffset, frontArmOffset, backArmOffset
+    [ "idle.1", null, null, [0, 0], [0, 0], [0, 0] ],
+    [ "idle.2", null, null, [0, 0], [0, 0], [0, 0] ],
+    [ "idle.3", null, null, [0, 0], [0, 0], [0, 0] ],
+    [ "idle.4", null, null, [0, 0], [0, 0], [0, 0] ],
+    [ "idle.5", null, null, [0, 0], [0, 0], [0, 0] ],
+    [ "sit.1", null, null, [0, 0], [0, 0], [0, 0] ]
+  ]
+}

@@ -15,11 +15,13 @@ function ControlProjectile:createProjectiles()
   for i = 1, pCount do
     pParams.delayTime = self.projectileDelayFirst + (i - 1) * self.projectileDelayEach
     local origin = vec2.add(aimPosition, pOffset)
+	local aim = self:firePosition(origin)
+	if self.projectileAiming == false then aim = pOffset end
     local projectileId = world.spawnProjectile(
         self.projectileType,
         origin,
         activeItem.ownerEntityId(),
-        self:firePosition(origin),
+        aim,
         false,
         pParams
       )

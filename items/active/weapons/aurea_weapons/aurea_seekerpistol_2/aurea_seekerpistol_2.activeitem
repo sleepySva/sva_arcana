@@ -1,0 +1,98 @@
+{
+  "itemName" : "aurea_seekerpistol_2",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A modified pistol produced by the Collective, equipped with better precision handling. \n^orange;Hold to fire a powered shot.^reset;",
+  "shortdescription" : "Seeker Pistol",
+  "tooltipKind" : "arcana_gun",
+  "tooltipFields" : {"subtitle" : "Rank D"},
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 2,
+
+  "inventoryIcon" : "icon.png",
+  "cursor" : "/cursors/arcana_cursor_neonGenesis.cursor",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "gun" : "body.png",
+    "gunfullbright" : "fullbright.png",
+	"charge" : "charge.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_suppressed.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.2]
+		  }
+		}
+	  }
+	}
+  },
+  
+  "muzzleOffset" : [1.1, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
+
+  "elementalType" : "physical",
+  "critRate" : 0.05,
+  "critDamage" : 1.20,
+
+  "primaryAbilityArchetype" : "chargefire",
+  "primaryAbilityType" : "arcana_chargefire",
+  "primaryAbility" : {
+    "chargeLevels" : [
+      {
+        "time" : 0,
+        "energyCost" : 6,
+        "cooldown" : 0.1,
+		"muzzleProjectile" : "arcana_placeholder",
+		"muzzleParameters" : { "actionOnReap" : [{ "action" : "config", "file" : "/projectiles/explosions/arcana_muzzleyellow/arcana_muzzleyellow.config" }] },
+        "projectileType" : "arcana_seekerpistol_1",
+        "projectileCount" : 1,
+        "inaccuracy" : 0,
+        "baseDamage" : 8,
+        "fireSound" : "fire",
+		"projectileParameters" : {
+		  "speed" : 80
+		}
+      },
+      {
+        "time" : 0.3,
+        "energyCost" : 8,
+        "cooldown" : 0.1,
+		"muzzleProjectile" : "arcana_placeholder",
+		"muzzleParameters" : { "actionOnReap" : [{ "action" : "config", "file" : "/projectiles/explosions/arcana_muzzleyellow/arcana_muzzleyellow.config" }] },
+        "projectileType" : "arcana_seekerpistol_1",
+        "projectileCount" : 1,
+        "inaccuracy" : 0,
+        "baseDamage" : 12,
+        "fireSound" : "fire",
+		"projectileParameters" : {
+		  "speed" : 80
+		}
+      },
+      {
+        "time" : 0.8,
+        "energyCost" : 12,
+        "cooldown" : 0.2,
+		"muzzleProjectile" : "arcana_placeholder",
+		"muzzleParameters" : { "actionOnReap" : [{ "action" : "config", "file" : "/projectiles/explosions/arcana_muzzleyellow/arcana_muzzleyellow.config" }] },
+        "projectileType" : "arcana_seekerpistol_3",
+        "projectileCount" : 1,
+        "inaccuracy" : 0,
+        "baseDamage" : 24,
+        "fireSound" : "fire2",
+		"projectileParameters" : {
+		  "speed" : 80
+		}
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

@@ -1,0 +1,57 @@
+{
+  "projectileName" : "arcana_boss_terminusReaper_15",
+  "physics" : "rain",
+  "bounces" : 0,
+  "timeToLive" : 5.0,
+  "image" : "body.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 40,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "power" : 6,
+  "fullbright" : true,
+  "damageKind" : "arcana_terminus",
+  "piercing" : false,
+  "lightColor" : [255, 50, 50],
+  
+  "emitters" : [],
+  "supportsProcessing" : true,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  "damagePoly" : [ [-19, 0], [0, 2], [19, 0], [0, -2] ],
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_terminusexplosion/arcana_terminusexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_terminusReaper/arcana_boss_terminusReaper_15/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 2.0,
+        "destructionAction" : "shrink",
+        "fullbright" : false
+      }
+    }
+  ],
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 400,
+  "rotationRate" : 1.0,
+  "trackingLimit" : 400
+}

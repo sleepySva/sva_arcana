@@ -1,0 +1,45 @@
+{
+  "projectileName" : "arcana_boss_terminusReaper_10",
+  "physics" : "sticky",
+  "timeToLive" : 0.9,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.4,
+  "animationLoops" : true,
+  "frameNumber" : 4,
+  "speed" : 40,
+  "piercing" : true,
+  "bounces" : 0,
+  "flippable" : true,
+  "emitters" : [ "arcana_particle_ember_red", "arcana_particle_electric_red"],
+  "lightColor" : [120, 20, 20],
+  "fullbright" : true,
+  
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_red_energy/arcana_explosion_bullet_red_energy.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_boss_terminusReaper_11",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 1.0,
+        "inheritSpeedFactor" : 0.0
+    }
+  ],
+  
+  "damageKind" : "arcana_terminus",
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageRepeatTimeout" : 0.5,
+  "statusEffects" : [],
+  "knockback" : 16,
+  "knockbackDirectional" : true
+}

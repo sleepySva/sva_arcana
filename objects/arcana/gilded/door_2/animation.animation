@@ -1,0 +1,137 @@
+{
+  "globalTagDefaults" : {
+    "doorDirection" : "Right"
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "doorState" : {
+        "default" : "closed",
+        "states" : {
+          "open" : {
+            "frames" : 7,
+            "cycle" : 0.7
+          },
+          "closing" : {
+            "frames" : 7,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "closed"
+          },
+          "closed" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+			"mode" : "loop"
+		  },
+          "locking" : {
+            "frames" : 7,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "locked"
+          },
+          "locked" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+			"mode" : "loop"
+		  }
+        }
+      }
+    },
+
+    "parts" : {
+      "door" : {
+        "properties" : {
+          "centered" : false,
+		  "fullbright" : true,
+		  "zLevel" : 0,
+		  "transformationGroups" : ["door"]
+        },
+
+        "partStates" : {
+          "doorState" : {
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open<doorDirection>.<frame>"
+              }
+            },
+
+            "closing" : {
+              "properties" : {
+                "image" : "<partImage>:close<doorDirection>.<frame>"
+              }
+            },
+
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+
+            "locking" : {
+              "properties" : {
+                "image" : "<partImage>:close<doorDirection>.<frame>"
+              }
+            },
+
+            "locked" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "fullbright" : {
+        "properties" : {
+          "centered" : false,
+		  "zLevel" : 1,
+		  "transformationGroups" : ["door"]
+        },
+
+        "partStates" : {
+          "doorState" : {
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open<doorDirection>.<frame>"
+              }
+            },
+
+            "closing" : {
+              "properties" : {
+                "image" : "<partImage>:close<doorDirection>.<frame>"
+              }
+            },
+
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            },
+
+            "locking" : {
+              "properties" : {
+                "image" : "<partImage>:close<doorDirection>.<frame>"
+              }
+            },
+
+            "locked" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "transformationGroups" : {
+    "door" : {}
+  },
+
+  "sounds" : {
+    "open" : [],
+    "close" : [],
+    "locked" : [ "/sfx/interface/clickon_error.ogg" ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "objectName" : "arcana_gilded_door_2",
+  "colonyTags" : ["gilded", "door"],
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 200,
+  "description" : "A rune sealed door, requiring a special key to open.",
+  "shortdescription" : "Gilded Locked Door",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
+      "direction" : "right",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+
+    }
+  ],
+
+  "scripts" : [ "/objects/arcana_lua_lockedDoor.lua" ],
+  "scriptDelta" : 5,
+
+  "inactiveInteractAction" : "ScriptPane",
+  "inactiveInteractData" : {
+	"baseConfig" : "/interface/scripted/arcana_lockedDoor/arcana_lockedDoor.config",
+	"paneLayoutOverride" : {},
+	"itemImagePath" : "/items/generic/arcana_keys/arcana_key_keyRune.png",
+	"activateItem" : "arcana_key_keyRune",
+	"requiredCount" : 1
+  },
+
+  "animation" : "animation.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/tech/vehicle_disappear2.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/tech/tech_sphere_transform.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "body.png",
+	"fullbright" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [0, 4] ],
+  "outputNodes" : [ [1, 0] ]
+}

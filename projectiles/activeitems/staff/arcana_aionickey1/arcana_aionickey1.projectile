@@ -1,0 +1,59 @@
+{
+  "projectileName" : "arcana_aionickey1",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 102,
+  "piercing" : false,
+  "knockback" : 6,
+  "movementSettings" : {
+    "collisionEnabled" : true
+  },
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_yellow_plasma/arcana_explosion_bullet_yellow_plasma.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/staff/arcana_aionickey1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "arcana_light",
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 400,
+  "rotationRate" : 3.0,
+  "trackingLimit" : 400
+ 
+}

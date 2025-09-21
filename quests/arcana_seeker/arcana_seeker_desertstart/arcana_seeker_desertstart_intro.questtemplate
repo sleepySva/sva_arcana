@@ -1,0 +1,37 @@
+{
+  "id" : "arcana_seeker_desertstart_intro",
+  "mainQuest" : true,
+  "canBeAbandoned" : true,
+  "prerequisites" : ["arcana_seeker_1_missionafter"],
+  "title" : "^orange;Sandfaring Journey^reset;",
+  "text" : "You've arrived just in time! Our search for the Miracles have gotten new leads: it seems one of them is being kept by the Arcanian Guildmasters. You'll first have to head to the ^orange;Astral Observatory^reset;, to meet with a guide named ^orange;Flint^reset;.\n\nOh, be sure to visit ^orange;Galleon^reset; at the training room if you haven't already, you'd do well with better equipment before heading to foreign territories.",
+  "completionText" : "Let me know when you're ready!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/arcana_maincinema.lua",
+  "scriptConfig" : {
+    "completeCinema" : "/cinematics/arcana/arcana_seeker_desertstart/arcana_seeker_desertstart.cinematic",
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_desertstart/flint.png"} ],
+        "title" : "Flint"
+      },
+      "questFailed" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_1_mission/portrait.png"} ],
+        "title" : "Carmine"
+      }
+    },
+    "requireTurnIn" : true,
+	"turnInDescription" : "Meet with ^orange;Flint^reset; at the ^orange;Astral Obvervatory^reset;",
+    "turnInEntityUid" : "arcana_runic_npc_1alt"
+  }
+}

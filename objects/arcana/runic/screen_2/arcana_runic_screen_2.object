@@ -1,0 +1,62 @@
+{
+  "objectName" : "arcana_runic_screen_2",
+  "colonyTags" : ["runic", "light"],
+  "rarity" : "Common",
+  "description" : "A screen displaying an alert sign.",
+  "shortdescription" : "Runic Alert Screen",
+  "race" : "generic",
+  
+  "category" : "light",
+  "price" : 120,
+  "lightColor" : [155, 130, 205],
+  "pointLight" : false,
+  "pointBeam" : 2,
+  "beamAmbience" : 0.10,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 1],
+
+      "direction" : "left",
+      "beamAngle" : 270,
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : []
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 1],
+
+      "direction" : "right",
+      "beamAngle" : 270,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

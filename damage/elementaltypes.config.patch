@@ -103,6 +103,21 @@
 				"kill" : "arcana_solardamagenumber"
 			}
 		}
+	},
+	
+	{
+		"op": "add",
+		"path": "/arcana_terminus",
+		"value": {
+			"resistanceStat" : "arcana_resistance_terminus",
+			"damageNumberParticles" : {
+				"hit" : "arcana_terminusdamagenumber",
+				"stronghit" : "arcana_terminusdamagenumber",
+				"weakhit" : "arcana_terminusdamagenumber",
+				"shieldhit" : "arcana_terminusdamagenumber",
+				"kill" : "arcana_terminusdamagenumber"
+			}
+		}
 	}
 
 ]

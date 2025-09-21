@@ -254,7 +254,26 @@
       "dungeonBaseHeight" : 1240,
 	  "dungeonSurfaceHeight" : 1000,
       "ambientLightLevel" : [128, 128, 128],
-      "biome" : "desert",
+      "biome" : "arcana_runicDesert",
+      "musicTrack" : ""
+    }
+  },  
+  
+  {
+    "op" : "add",
+    "path" : "/arcana_mission_desertmid",
+    "value" : {
+      "primaryDungeon" : "arcana_mission_desertmid",
+	  "weatherPool" : [
+		[1.000, "clear"]
+	  ],
+      "threatLevel" : 2,
+      "gravity" : 80,
+      "worldSize" : [2390, 2000],
+      "dungeonBaseHeight" : 740,
+	  "dungeonSurfaceHeight" : 1000,
+      "ambientLightLevel" : [0, 0, 0],
+      "biome" : "arcana_runicUnderground",
       "musicTrack" : "/music/eridanus-supervoid.ogg"
     }
   },  

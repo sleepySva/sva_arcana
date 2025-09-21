@@ -1,0 +1,50 @@
+{
+  "projectileName" : "arcana_boss_terminusReaper_12",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 3.4,
+  "image" : "body.png",
+  "damageKindImage" : "icon.png",
+  "speed" : 10,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "power" : 6,
+  "fullbright" : true,
+  "damageKind" : "arcana_terminus",
+  "piercing" : false,
+  
+  "emitters" : [ "arcana_particle_ember_red" ],
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-19, 0], [0, 5], [19, 0], [0, -5] ],
+  
+  "movementSettings" : {
+  "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_terminusReaper/arcana_boss_terminusReaper_12/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "delayTime" : 1.0,
+  "controlForce" : 10,
+  "triggerSpeed" : 70,
+  
+  "scripts" : [ "/projectiles/scripts/arcana_hoverprojectile.lua" ]
+ 
+}

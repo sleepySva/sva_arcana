@@ -1,0 +1,43 @@
+{
+  "itemName" : "arcana_relic",
+  "shortdescription" : "Relic",
+  "description" : "Description",
+  "price" : 1000,
+  "tooltipKind" : "arcana_relic",
+  "rarity" : "essential",
+  "category" : "arcana_relic",
+  "itemTags" : ["arcana_relic"],
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "body" : "icon.png"
+  },
+  "scripts" : ["relic.lua"],
+  
+  "builder" : "/items/buildscripts/arcana_buildrelic.lua",
+  "builderConfig" : [
+    {
+      "nameGenerator" : "names.config",
+	  "nameFormats" : "nameFormats.config",
+	  "loreGenerator" : "lore.config",
+	  "loreFormat" : {
+	    "abstract" : "The %s %s ^orange;%s^reset;, %s. %s %s %s %s %s %s %s %s %s.",
+		"read" : ["itemName", "creation", "name", "entity", "detail", "thing", "detailEnd", "depiction", "moment", "entity", "verb", "preposition", "location"]
+	  },
+      "animationParts" : {
+        "body" : {
+          "path" : "images/<variant>.png",
+          "variants" : 8,
+          "paletteSwap" : true
+        }
+      },
+      "palettes" : [
+	    "/items/active/arcana_relics/colors/primary.config",
+		"/items/active/arcana_relics/colors/secondary.config"
+	  ],
+      "iconDrawables" : [ "body" ],
+	  "rarityConfig" : "/items/active/arcana_relics/rarities.config"
+    }
+  ]
+}

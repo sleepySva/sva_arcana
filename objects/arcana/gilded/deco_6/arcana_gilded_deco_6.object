@@ -1,0 +1,66 @@
+{
+  "objectName" : "arcana_gilded_deco_6",
+  "colonyTags" : ["gilded","light"],
+  "rarity" : "Common",
+  "description" : "A shining plant-like object hanging from above, illuminating golden light.",
+  "shortdescription" : "Hanging Keysprout",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 60,
+  
+  "lightColor" : [88, 80, 0],
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>", "fullbright" : true }, { "image" : "fullbright.png:<color>"} ],
+      "direction" : "right",
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+
+    }
+  ],
+  
+  "particleEmitter" : {
+    "emissionRate" : 1.0,
+    "emissionVariance" : 0.5,
+
+    "particle" : {
+      "type" : "animated",
+      "looping" : true,
+      "animation" : "/animations/arcana/staryellow/animation.animation",
+      "position" : [0.5, 1.0],
+      "finalVelocity" : [0, -2.0],
+      "approach" : [50, 50],
+      "destructionAction" : "shrink",
+      "destructionTime" : 2.8,
+      "fade" : 1,
+      "size" : 0.8,
+      "layer" : "middle",
+      "timeToLive" : 0.4
+    },
+
+    "particleVariance" : {
+      "initialVelocity" : [4.0, 0.0],
+      "finalVelocity" : [1.0, 0.0],
+      "position" : [0.0, 0.5],
+	  "angularVelocity" : 20
+    }
+  }
+}

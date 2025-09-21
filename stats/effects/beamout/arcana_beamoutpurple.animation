@@ -1,0 +1,63 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "teleport" : {
+        "default" : "none",
+        "states" : {
+          "none" : { },
+          "beamOut" : {
+            "frames" : 12,
+            "cycle" : 0.75,
+            "mode" : "transition",
+            "transition" : "none",
+            "properties" : {
+              "immediateSound" : "/sfx/tools/teleport_up.ogg"
+            },
+            "frameProperties" : {
+              "multiply" : [ "ffffffff", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "base" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : true
+        },
+        "partStates" : {
+          "teleport" : {
+            "none" : { },
+            "beamOut" : {
+              "properties" : {
+                "image" : "/animations/teleport/<species>playerwarpout.png:<frame><effectDirectives>?hueshift=225"
+              }
+            }
+          }
+        }
+      },
+      "beam" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [0, 30]
+        },
+        "partStates" : {
+          "teleport" : {
+            "beamOut" : {
+              "properties" : {
+                "image" : "/animations/teleport/playerwarpoutbeam.png:<frame>?scalenearest=1;60;<effectDirectives>?hueshift=225"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "globalTagDefaults" : {
+    "effectDirectives" : "",
+    "species" : ""
+  }
+}

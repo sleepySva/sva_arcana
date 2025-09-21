@@ -1,0 +1,50 @@
+{
+  "id" : "arcana_seeker_desertstart_mission",
+  "mainQuest" : true,
+  "canBeAbandoned" : true,
+  "prerequisites" : ["arcana_seeker_desertstart_intro"],
+  "title" : "^orange;The Lodestar Temple^reset;",
+  "text" : "The trek to Lodestar Temple won't be short, and there's no telling what's inside the Temple as well. Make sure you have proper equipment, and ready yourself for any potential combat on the way to the artifact.",
+  "completionText" : "I can't believe he took the artifact... This is... troubling, I'll have to relay what happened to the other Guildmasters. Please rest for now, Seeker, until I'm able to sort things out. \n^orange;[To be continued!]^reset;",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [
+	  [ "rewardbag", 1 ]
+	]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+  
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_desertstart/flint.png"} ],
+        "title" : "Flint"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/quests/arcana_seeker/arcana_seeker_desertstart/flint.png"} ],
+        "title" : "Flint"
+      }
+    },
+	
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Flint^reset; to begin the journey to ^orange;Lodestar Temple^reset;",
+      "findGoal" : "Retrieve the ^orange;Miracle^reset;.",
+      "turnIn" : "Return to ^orange;Flint^reset; at the ^orange;Astral Observatory^reset;"
+    },
+	
+    "warpEntityUid" : "arcana_runic_npc_1alt",
+    "warpAction" : "instanceworld:arcana_mission_desertstart",
+    "warpDialog" : "/interface/confirmation/arcana_confirmation_teleport.config:desertstart",
+	
+    "goalTrigger" : "proximity",
+    "proximityRange" : 15,
+	
+    "goalEntityUid" : "arcana_goal_desertstart",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+	
+    "turnInEntityUid" : "arcana_runic_npc_1alt"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "type" : "arcana_ramses",
+  "baseType" : "base",
+
+  "npcname" : "Ramses",
+  "identity" : {
+    "imagePath" : "arcana_ramses",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/arcana_ramses.config",
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "innateStatusEffects" : [ "invulnerable" ],
+
+  "persistent" : true,
+  "keepAlive" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "behavior" : "arcana_ramses",
+
+    "chatPortrait" : "/interface/chatbubbles/arcana/ramses.png:<frame>",
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_male3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/human_chatter_male3.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "ramses" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Oh? How timely you are, arriving just as I'm about to wrap up.",
+			  "There's nothing left for you here but the dusts, Seeker.",
+			  "I'll be claiming the Codex... I won't let an outsider take what is rightfully mine.",
+			  "But since you're here... why don't you test out my latest creation?"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      }
+    }
+  }
+}

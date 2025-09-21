@@ -243,31 +243,7 @@
                             "offset": {"value": [0, 0]},
                             "position": {"key": "offsetPosition"},
                             "projectileConfig": {"value": {}},
-                            "projectileType": {"value": "arcana_bossmarker_1"},
-                            "scalePower": {"value": false},
-                            "sourceEntity": {"key": "self"},
-                            "trackSource": {"value": false}
-                          }
-                        },
-					    {
-						  "title": "timer",
-						  "type": "action",
-						  "name": "timer",
-						  "parameters": {
-						    "time": {"value": 0.4}
-						  }
-					    },
-                        {
-                          "title": "spawnProjectile",
-                          "type": "action",
-                          "name": "spawnProjectile",
-                          "parameters": {
-                            "aimVector": {"key": "aimVector"},
-                            "angle": {"value": 0},
-                            "offset": {"value": [0, 0]},
-                            "position": {"key": "offsetPosition"},
-                            "projectileConfig": {"value": {}},
-                            "projectileType": {"value": "arcana_boss_terminusReaper_3"},
+                            "projectileType": {"value": "arcana_boss_terminusReaper_10"},
                             "scalePower": {"value": true},
                             "sourceEntity": {"key": "self"},
                             "trackSource": {"value": false}

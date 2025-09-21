@@ -1,5 +1,47 @@
 {
 
+  "arcana_dungeonloots_grapple" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["grapplinghook", 1]}
+      ]
+    }]
+  ],  
+
+  "arcana_key_keyRune" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_key_keyRune", 1]}
+      ]
+    }]
+  ],  
+
+  "arcana_aionickey" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_aionickey", 1]}
+      ]
+    }]
+  ],  
+
+  "arcana_relicchest" : [
+    [0, {
+	  "fill" : [
+        {"pool" : "arcana_relic"},
+		{"pool" : "basicChestTreasure"}
+      ]
+    }]
+  ],  
+  
+
+  "arcana_relic" : [
+    [0, {
+	  "fill" : [
+        {"item" : ["arcana_relic", 1]}
+      ]
+    }]
+  ],  
+
   "arcana_dungeonloots_arcanecitybasic" : [
     [0, {
       "pool" : [

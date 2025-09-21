@@ -173,7 +173,7 @@
                 "type": "action",
                 "name": "setAnimationState",
                 "parameters": {
-                  "state": {"value": "slash"},
+                  "state": {"value": "slash2"},
                   "type": {"value": "body"}
                 }
               },
@@ -190,7 +190,7 @@
                 "type": "action",
                 "name": "timer",
                 "parameters": {
-                  "time": {"value": 0.3}
+                  "time": {"value": 0.5}
                 }
               },
               {
@@ -243,31 +243,7 @@
                             "offset": {"value": [0, 0]},
                             "position": {"key": "offsetPosition"},
                             "projectileConfig": {"value": {}},
-                            "projectileType": {"value": "arcana_bossmarker_1"},
-                            "scalePower": {"value": false},
-                            "sourceEntity": {"key": "self"},
-                            "trackSource": {"value": false}
-                          }
-                        },
-					    {
-						  "title": "timer",
-						  "type": "action",
-						  "name": "timer",
-						  "parameters": {
-						    "time": {"value": 0.4}
-						  }
-					    },
-                        {
-                          "title": "spawnProjectile",
-                          "type": "action",
-                          "name": "spawnProjectile",
-                          "parameters": {
-                            "aimVector": {"key": "aimVector"},
-                            "angle": {"value": 0},
-                            "offset": {"value": [0, 0]},
-                            "position": {"key": "offsetPosition"},
-                            "projectileConfig": {"value": {}},
-                            "projectileType": {"value": "arcana_boss_terminusReaper_7"},
+                            "projectileType": {"value": "arcana_boss_terminusReaper_16_spawner"},
                             "scalePower": {"value": true},
                             "sourceEntity": {"key": "self"},
                             "trackSource": {"value": false}
@@ -291,7 +267,7 @@
                 "type": "action",
                 "name": "timer",
                 "parameters": {
-                  "time": {"value": 0.8}
+                  "time": {"value": 1.2}
                 }
               }
             ]
@@ -305,24 +281,6 @@
         "parameters": {
           "x": {"value": 0},
           "y": {"value": 0}
-        }
-      },
-      {
-        "title": "setAnimationState",
-        "type": "action",
-        "name": "setAnimationState",
-        "parameters": {
-          "state": {"value": "fall"},
-          "type": {"value": "body"}
-        }
-      },
-      {
-        "title": "setAnimationState",
-        "type": "action",
-        "name": "setAnimationState",
-        "parameters": {
-          "state": {"value": "idle"},
-          "type": {"value": "body"}
         }
       }
     ]

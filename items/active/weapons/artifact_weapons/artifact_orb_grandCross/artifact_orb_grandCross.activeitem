@@ -2,8 +2,8 @@
   "itemName" : "artifact_orb_grandCross",
   "price" : 0,
   "maxStack" : 1,
-  "level" : 1,
-  "rarity" : "Common",
+  "level" : 8,
+  "rarity" : "Legendary",
   "description" : "A strange device, a low vibrating sound can be heard emitting from its core.",
   "shortdescription" : "Fata Morgana",
   "category" : "wand",
@@ -83,7 +83,7 @@
   "primaryAbility" : {
 
     "name" : "Terminus Gates",
-	"energyCost" : 120,
+	"energyCost" : 180,
     "maxCastRange" : 40,
 	
 	"projectileType" : ["artifact_orb_grandCross_projectile_5"],
@@ -98,7 +98,7 @@
     "projectileDelayEach" : 0.06,
 
     "projectileParameters" : {
-      "baseDamage" : 10
+      "baseDamage" : 12
     },
 
     "stances" : {

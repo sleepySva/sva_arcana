@@ -9,10 +9,9 @@
   "damagePoly" : [ [-27, 0], [-19, -19], [0, -27], [19, -19], [27, 0], [19, 19], [0, 27], [-19, 19] ],
   "animationLoops" : true,
   "flippable" : true,
-  "damageKind" : "electric",
+  "damageKind" : "arcana_terminus",
   
   "statusEffects" : [
-    "electrified"
   ],
   
   "renderLayer" : "foregroundEntity",
@@ -25,21 +24,14 @@
   
   "knockback" : 40,
   "bounces" : 0,
-  "speed" : 10,
+  "speed" : 14,
   "piercing" : true,
-  "timeToLive" : 5.0,
+  "timeToLive" : 3.8,
   "persistentAudio" : "/sfx/melee/barrier_create_electric.ogg",
   "actionOnReap" : [
     {
       "action" : "config",
       "file" : "/projectiles/boss/arcana_boss_terminusReaper/arcana_boss_terminusReaper_4_explosion/config.config"
-    },
-	{
-        "action" : "projectile",
-        "type" : "arcana_monster_redPyromantle_projectile_1",
-        "angleAdjust" : 0,
-		"fuzzAngle" : 360,
-        "inheritDamageFactor" : 0.6
     },
 	{
         "action" : "projectile",

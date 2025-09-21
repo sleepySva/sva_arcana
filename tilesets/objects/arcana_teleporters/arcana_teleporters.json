@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":2,
+ "tilecount":3,
  "tileheight":256,
  "tileproperties":
     {
@@ -24,6 +24,14 @@
          "imagePositionY":"0",
          "object":"arcana_teleporter_bleuark",
          "tilesetDirection":"right"
+        },
+     "2":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"arcana_teleporter_exitarcanian",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -35,6 +43,10 @@
      "1":
         {
          "image":"arcana_teleporter_bleuark.png"
+        },
+     "2":
+        {
+         "image":"arcana_teleporter_exitarcanian.png"
         }
     },
  "tilewidth":188

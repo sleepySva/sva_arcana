@@ -1,0 +1,24 @@
+{
+  "kind" : "arcana_keylight",
+  "definition" : {
+    "type" : "animated",
+    "looping" : true,
+    "animation" : "/animations/arcana_animation_particle_yellow/arcana_animation_particle_yellow.animation",
+    "position" : [0, 0],
+	"initialVelocity" : [0.0, 0.0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 2.0,
+    "fade" : 1,
+    "size" : 0.5,
+    "layer" : "middle",
+	"fullbright" : true,
+    "timeToLive" : 0.4,
+    "variance" : {
+      "finalVelocity" : [10.0, 10.0],
+      "position" : [0.2, 0.2],
+      "destructionTime" : 1.0
+    }
+  }
+}

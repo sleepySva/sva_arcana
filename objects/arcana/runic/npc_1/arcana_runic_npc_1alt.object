@@ -1,0 +1,58 @@
+{
+  "objectName" : "arcana_runic_npc_1alt",
+  "colonyTags" : ["runic"],
+  "rarity" : "Legendary",
+  "description" : "Flint, a local travel guide.",
+  "shortdescription" : "Observatory Guide Flint",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 0,
+
+  "offeredQuests" : [
+    "arcana_seeker_desertstart_mission"
+  ],
+  "turnInQuests" : [
+    "arcana_seeker_desertstart_intro",
+	"arcana_seeker_desertstart_mission"
+  ],
+  
+  "uniqueId" : "arcana_runic_npc_1alt",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 24,
+      "animationCycle" : 2.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>" } ],
+	  "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 24,
+      "animationCycle" : 2.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [ "/objects/arcana_lua_object_interactChat.lua" ],
+  "scriptDelta" : 10,
+  "mouthPosition" : [0.0, -0.2],
+  "detectArea" : [ [-6, -2], [6, 2] ],
+ 
+  "chatOptions" : [
+    "Welcome! If this is your first time visiting, I recommend heading to the ^orange;Atlantis Bar^reset; to get some refreshing drinks for your journey.",
+	"The Observatory is one of the many rest spots for our starfarers, managed by ^orange;Archivist Ankhu^reset;, a former Starstrider.",
+    "Oh! If you wait till nighttime, you'll be able to see lots of beautiful stars in the night sky!"
+  ]
+}

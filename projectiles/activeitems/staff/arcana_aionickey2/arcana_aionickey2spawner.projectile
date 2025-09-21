@@ -1,0 +1,46 @@
+{
+  "projectileName" : "arcana_aionickey2spawner",
+  "physics" : "laser",
+  
+  "timeToLive" : 0.1,
+  "bounces" : 0,
+  "speed" : 20,
+  "piercing" : false,
+  "knockback" : 0,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  
+  "image" : "empty.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [188, 162, 80],
+  "emitters" : [],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+	{
+        "action" : "projectile",
+        "type" : "arcana_aionickey2",
+        "angleAdjust" : 0,
+        "inheritDamageFactor" : 0.6
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_aionickey2delay",
+        "angleAdjust" : -10,
+        "inheritDamageFactor" : 0.2
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_aionickey2delay",
+        "angleAdjust" : 10,
+        "inheritDamageFactor" : 0.2
+    }
+  ],
+  
+  "damageKind" : "arcana_light"
+}

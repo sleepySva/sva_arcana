@@ -1,0 +1,21 @@
+{
+  "projectileName" : "arcana_terminator_3",
+  "image" : "body.png",
+  "physics" : "laser",
+  "animationCycle" : 1.0,
+  "frameNumber" : 11,
+  "power" : 5,
+  "size" : 0.5,
+  "speed" : 90,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "timeToLive" : 1.0,
+  "bounces" : 1,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "piercing" : false,
+  "lightColor" : [95, 186, 236],
+  "emitters" : [ "electricswoosh", "rocketsmoke" ],
+  "damageKind" : "electric",
+  "actionOnReap" : [
+  ]
+}
