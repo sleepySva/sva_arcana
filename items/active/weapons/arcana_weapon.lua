@@ -206,13 +206,14 @@ function Weapon:damageSource(damageConfig, damageArea, damageTimeout)
 	
 	-- Crits
 	local critDamageMultiplier = status.stat("arcana_critDamageMultiplier") or 0
-	
+	local critRateStat = status.stat("arcana_critRate") or 0
+
 	local effects = jarray()
 	for key, value in ipairs(damageConfig.statusEffects or jarray()) do
 	  effects[key] = value
     end
 
-	local critRate = (damageConfig.critRate or self.critRate or 0)
+	local critRate = ((damageConfig.critRate or self.critRate or 0) + critRateStat)
 	if critRate > 0 and math.random() <= critRate then
 	  damage = damage * ((damageConfig.critDamage or self.critDamage or 1) + critDamageMultiplier)
 	  table.insert(effects, damageConfig.critVisualStatus or "arcana_crit")

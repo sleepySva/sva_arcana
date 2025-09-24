@@ -99,15 +99,18 @@ function ChargeFire:fireProjectile()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   
   -- Crits
+  local critDamageMultiplier = status.stat("arcana_critDamageMultiplier") or 0
+	local critRateStat = status.stat("arcana_critRate") or 0
+
   local effects = jarray()
   for key, value in ipairs(params.statusEffects or jarray()) do
     effects[key] = value
   end
 
-  local critRate = (self.weapon.critRate or self.critRate or 0)
+  local critRate = (self.weapon.critRate or self.critRate or 0) + critRateStat
   --sb.logInfo("crit rate: "..critRate)
   if critRate > 0 and math.random() <= critRate then
-    params.powerMultiplier = params.powerMultiplier * (self.weapon.critDamage or self.critDamage or 1)
+    params.powerMultiplier = params.powerMultiplier * ((self.weapon.critDamage or self.critDamage or 1) + critDamageMultiplier)
     table.insert(effects, self.weapon.critVisualStatus or "arcana_crit")
 	params.statusEffects = effects
   end
