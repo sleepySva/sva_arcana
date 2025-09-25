@@ -1,7 +1,7 @@
 {
   "projectileName" : "conflagration_shortbow_1_projectile_1",
   "physics" : "arrownosticky",
-  "image" : "conflagration_shortbow_1_projectile_1.png",
+  "image" : "body.png",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
   "damageKindImage" : "icon.png",
@@ -11,17 +11,27 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/arrowexplosion/arrowexplosion.config"
+      "file" : "/projectiles/explosions/elementimpact/fireimpact.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "nemesisflame",
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.2,
+      "inheritSpeedFactor" : 1,
+	  "config" : {
+	    "timeToLive" : 1
+	  }
     }
   ],
   
-  "lightColor" : [60, 20, 10],
+  "lightColor" : [90, 60, 10],
   "fullbright" : true,
-  "emitters" : ["arcana_particle_yellow","fireswoosh"],
+  "emitters" : ["arcana_arrowflame"],
   
   "power" : 20,
-  "knockback" : 40,
+  "knockback" : 20,
   "knockbackDirectional" : true,
   "damageKind" : "fire",
-  "speed" : 66
+  "speed" : 70
 }

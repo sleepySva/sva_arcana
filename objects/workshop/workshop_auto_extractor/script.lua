@@ -78,10 +78,15 @@ function automation()
 		break
 	  end
 	elseif resource.type == "mod" then
-      result = modQuery(object.position(), self.miningArea[1], self.miningArea[2], resource.name)
-	  if result then
-	    self.craftingTime = math.max(2.3 + ((8 - result) / 10), 2.3)
-	    result = resource.item
+	  local modList = modQueryList(object.position(), self.miningArea[1], self.miningArea[2])
+	  if modList == false then break end
+	  if next(modList) then
+	    local max = {name = nil, count = 0}
+	    for item, itemCount in pairs(modList) do
+		  if itemCount > max.count then max.name = item max.count = itemCount end
+		end
+	    self.craftingTime = math.max(2.3 + ((8 - max.count) / 10), 2.3)
+	    result = {name = max.name, count = 1}
 	    break
 	  end
 	end
@@ -132,18 +137,33 @@ function update(dt)
   end
 end
 
-function modQuery(position, p1, p2, mod)
+--Improved code by The Punslinger!
+function modQueryList(position, p1, p2)
   --sb.logInfo(string.format("Origin at (%s, %s)", position[1], position[2]))
-  local count = 0
+  local resourcesList = {}
+  
   local min_x, max_x = math.min(p1[1], p2[1]), math.max(p1[1], p2[1])
   local min_y, max_y = math.min(p1[2], p2[2]), math.max(p1[2], p2[2])
   for x = min_x, max_x do
     for y = min_y, max_y do
-	  local offsetPosition = vec2.add(position, {x, y})
-	  local result = world.mod(offsetPosition, "foreground") == mod
-	  --sb.logInfo(string.format("Mod at (%s, %s): %s", offsetPosition[1], offsetPosition[2], world.mod(offsetPosition, "foreground") or "none"))
-	  if result then count = count + 1 end
-	end
+      local offsetPosition = vec2.add(position, {x, y})
+      local result = world.mod(offsetPosition, "foreground")
+      if result then
+        local blockMod = root.modConfig(result)
+        if blockMod then
+            local resourceInBlock = sb.jsonQuery(blockMod.config, "itemDrop", nil)
+            if resourceInBlock then
+                if resourcesList[resourceInBlock] then
+                    resourcesList[resourceInBlock] = resourcesList[resourceInBlock] + 1
+                else
+                    resourcesList[resourceInBlock] = 1
+                end
+            end
+        end
+      end
+
+    end
   end
-  if count > 0 then return count else return false end
+  
+  if next(resourcesList) then return resourcesList else return false end
 end

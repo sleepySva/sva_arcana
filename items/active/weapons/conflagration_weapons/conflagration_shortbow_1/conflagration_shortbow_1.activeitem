@@ -1,81 +1,83 @@
 {
   "itemName" : "conflagration_shortbow_1",
   "level" : 4,
-  "price" : 1000,
+  "price" : 900,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A molten shortbow.",
+  "description" : "A fiery shortbow that shoots molten arrows from its center.",
   "shortdescription" : "Firestorm",
-  "tooltipKind" : "base",
+  "tooltipKind" : "arcana_bow",
   "category" : "bow",
-  "tooltipFields" : {"subtitle" : "Shortbow"},
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged"],
+  "itemTags" : ["weapon", "ranged", "bow"],
 
   "inventoryIcon" : "icon.png",
 
-  "animation" : "/items/active/weapons/ranged/aeolus_shortbow_1.animation",
+  "animation" : "animation.animation",
   "animationParts" : {
-    "butt" : "",
-    "middle" : "conflagration_shortbow_1.png",
-    "barrel" : "",
-    "muzzleFlash" : ""
+    "bow" : "body.png",
+    "bowFullbright" : "fullbright.png"
   },
   "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0, 0]
+      }}
+    }},
     "sounds" : {
-      "fire" : ["/sfx/gun/bow_loose.ogg"]
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
     }
   },
-  "baseOffset" : [0.50, 0.2],
-  "muzzleOffset" : [0.75, 0.05],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
 
-  "elementalType" : "fire",
-
+  "primaryAbilityType" : "bowshot",
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
-
-    "fireTime" : 0.8,
-    "baseDps" : 7.4,
-    "energyUsage" : 16,
-    "projectileCount" : 1,
-    "inaccuracy" : 0.01,
-    "fireType" : "auto",
-
+    "energyPerShot" : 18,
+    "cooldownTime" : 0.1,
+    "drawSpeedMultiplier" : "constant",
     "projectileType" : "conflagration_shortbow_1_projectile_1",
-    "projectileParameters" : {},
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : true
-      },
-      "cooldown" : {
-        "duration" : 0.1,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : true
-      }
+    "powerProjectileType" : "conflagration_shortbow_1_projectile_1",
+    "projectileParameters" : {
+      "power" : 11,
+      "speed" : 90
     }
   },
 
-  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "name" : "Split Shot",
+    "energyPerShot" : 60,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "conflagration_shortbow_1_projectile_1",
+    "powerProjectileType" : "conflagration_shortbow_1_projectile_1",
+    "projectileParameters" : {
+      "power" : 11,
+      "speed" : 90,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "conflagration_shortbow_1_projectile_1",
+          "angleAdjust" : -2,
+          "inheritDamageFactor" : 0.5,
+          "inheritSpeedFactor" : 1
+        },
+        {
+          "action" : "projectile",
+          "type" : "conflagration_shortbow_1_projectile_1",
+          "angleAdjust" : 2,
+          "inheritDamageFactor" : 0.5,
+          "inheritSpeedFactor" : 1
+        }
+      ]
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildbow.lua"
 }
