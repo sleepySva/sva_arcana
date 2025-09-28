@@ -120,13 +120,13 @@ function build(directory, config, parameters, level, seed)
   return config, parameters
 end
 
--- https://gist.github.com/Uradamus/10323382
-function shuffle(tbl, seed)
-  for i = #tbl, 2, -1 do
-    local j = randomIntInRange({1, i}, seed, 1)
-    tbl[i], tbl[j] = tbl[j], tbl[i]
+function shuffle(list, seed)
+  math.randomseed(seed)
+  for i = 1, #list do
+    local swapIndex = math.random(1, #list)
+    list[i], list[swapIndex] = list[swapIndex], list[i]
   end
-  return tbl
+  return list
 end
 
 function loreGen(loreConfig, format, seed, config, parameters)
