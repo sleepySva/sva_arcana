@@ -1,92 +1,31 @@
 {
-  "critRateTitleLabel" : {
-    "type" : "label",
-	"fontSize" : 6.0,
-    "position" : [16, 86],
-    "hAnchor" : "left",
-    "value" : "^shadow;Crit Rate^reset;"
-  },
-  "critRateLabel" : {
-    "type" : "label",
-	"fontSize" : 6,
-    "position" : [75, 86],
-    "hAnchor" : "right",
-    "wrapWidth" : 126
-  },
-  "critDamageTitleLabel" : {
-    "type" : "label",
-	"fontSize" : 6.0,
-    "position" : [86, 86],
-    "hAnchor" : "left",
-    "value" : "^shadow;Crit Dmg.^reset;"
-  },
-  "critDamageLabel" : {
-    "type" : "label",
-	"fontSize" : 6,
-    "position" : [145, 86],
-    "hAnchor" : "right",
-    "wrapWidth" : 126
-  },
-  "damagePerShotTitleLabel" : {
+  "healthTitleLabel" : {
     "type" : "label",
 	"fontSize" : 6,
     "position" : [16, 74],
     "hAnchor" : "left",
-    "value" : "Damage:"
+    "value" : "Health:"
   },
-  "damagePerShotLabel" : {
+  "healthLabel" : {
     "type" : "label",
 	"fontSize" : 6,
     "position" : [141, 74],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
-  "speedTitleLabel" : {
+  "cooldownTitleLabel" : {
     "type" : "label",
 	"fontSize" : 6,
 	"color" : [140, 140, 140],
     "position" : [16, 63],
     "hAnchor" : "left",
-    "value" : "Speed:"
+    "value" : "Cooldown:"
   },
-  "speedLabel" : {
+  "cooldownLabel" : {
     "type" : "label",
 	"fontSize" : 6,
 	"color" : [140, 140, 140],
     "position" : [141, 63],
-    "hAnchor" : "right",
-    "wrapWidth" : 126
-  },
-  "energyPerShotTitleLabel" : {
-    "type" : "label",
-	"fontSize" : 6,
-	"color" : [140, 140, 140],
-    "position" : [16, 52],
-    "hAnchor" : "left",
-    "value" : "Energy Cost:"
-  },
-  "energyPerShotLabel" : {
-    "type" : "label",
-	"fontSize" : 6,
-	"color" : [140, 140, 140],
-    "position" : [141, 52],
-    "hAnchor" : "right",
-    "centered" : true,
-    "wrapWidth" : 126
-  },
-  "altAbilityTitleLabel" : {
-    "type" : "label",
-	"fontSize" : 6,
-	"color" : [140, 140, 140],
-    "position" : [16, 41],
-    "hAnchor" : "left",
-    "value" : ""
-  },
-  "altAbilityLabel" : {
-    "type" : "label",
-	"fontSize" : 6,
-	"color" : [140, 140, 140],
-    "position" : [141, 41],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126

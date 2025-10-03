@@ -1,48 +1,43 @@
 {
-  "critboxImage" : {
-    "type" : "image",
-    "position" : [8, 121],
-    "file" : "/interface/tooltips/arcana_critbox.png"
-  },
   "critRateTitleLabel" : {
     "type" : "label",
 	"fontSize" : 6.0,
-    "position" : [14, 154],
+    "position" : [16, 86],
     "hAnchor" : "left",
     "value" : "^shadow;Crit Rate^reset;"
   },
   "critRateLabel" : {
     "type" : "label",
 	"fontSize" : 6,
-    "position" : [47, 144],
+    "position" : [75, 86],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "critDamageTitleLabel" : {
     "type" : "label",
 	"fontSize" : 6.0,
-    "position" : [14, 133],
+    "position" : [86, 86],
     "hAnchor" : "left",
     "value" : "^shadow;Crit Dmg.^reset;"
   },
   "critDamageLabel" : {
     "type" : "label",
 	"fontSize" : 6,
-    "position" : [47, 123],
+    "position" : [145, 86],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "damagePerShotTitleLabel" : {
     "type" : "label",
 	"fontSize" : 6,
-    "position" : [16, 86],
+    "position" : [16, 74],
     "hAnchor" : "left",
-    "value" : "Max Damage:"
+    "value" : "Damage:"
   },
   "damagePerShotLabel" : {
     "type" : "label",
 	"fontSize" : 6,
-    "position" : [141, 86],
+    "position" : [141, 74],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
@@ -66,7 +61,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [20, 109],
+    "position" : [135, 109],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -74,7 +69,7 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [100, 130],
+    "position" : [78, 130],
     "file" : "",
     "centered" : true,
     "maxSize" : [80, 60],
@@ -87,9 +82,9 @@
   },
   "descriptionLabel" : {
     "type" : "label",
-    "position" : [16, 44],
+    "position" : [16, 32],
     "wrapWidth" : 122,
-	"fontSize" : 7.2,
+	"fontSize" : 6.0,
     "hAnchor" : "left",
     "vAnchor" : "top"
   },
