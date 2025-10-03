@@ -29,9 +29,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.18,
+  "critDamage" : 1.15,
 
   "aimOffset" : -1.0,
 

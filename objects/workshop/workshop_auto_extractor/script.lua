@@ -70,7 +70,7 @@ function automation()
   local result = false
   for _, resource in pairs(self.resources) do
     if resource.type == "object" then
-	  result = world.objectQuery(object.position(), 3, { name = resource.item.name })
+	  result = world.objectQuery(object.position(), 3, { name = resource.name })
 	  if #result < 1 then result = false end
 	  if result then
 	    result = resource.item

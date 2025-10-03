@@ -1,0 +1,114 @@
+{
+  "projectileName" : "arcana_nemesiswand4",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 0,
+  "speed" : 100,
+  "piercing" : false,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [148, 62, 145],
+  "emitters" : ["sparks","smoke"],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_plasma_1_yellow/arcana_explosion_plasma_1_yellow.config"
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_nemesiswand2",
+        "angleAdjust" : -120,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 1
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_nemesiswand2",
+        "angleAdjust" : -155,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 1
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_nemesiswand2",
+        "angleAdjust" : 120,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 1
+    },
+	{
+        "action" : "projectile",
+        "type" : "arcana_nemesiswand2",
+        "angleAdjust" : 155,
+        "inheritDamageFactor" : 0.2,
+        "inheritSpeedFactor" : 1
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/arcana_nemesiswand4/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    },
+    {
+      "time" : 0.005,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/arcana_scavengers_1/trail2.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.1,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"variance" : {
+		  "initialVelocity" : [40.0, 0.0]
+		}
+      }
+    },
+    {
+      "time" : 0.005,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/arcana_scavengers_1/trail3.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.1,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"variance" : {
+		  "initialVelocity" : [60.0, 1.0]
+		}
+      }
+    }
+  ],
+  
+  "damageKind" : "plasma"
+ 
+}

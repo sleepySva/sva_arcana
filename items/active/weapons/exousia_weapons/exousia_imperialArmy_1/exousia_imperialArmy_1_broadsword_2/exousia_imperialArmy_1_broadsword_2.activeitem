@@ -37,10 +37,12 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_energymeleeweapon.lua"],
   "activeTime" : 4.0,
 
   "elementalType" : "physical",
+  "critRate" : 0.08,
+  "critDamage" : 1.16,
 
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
@@ -51,5 +53,5 @@
 	}
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

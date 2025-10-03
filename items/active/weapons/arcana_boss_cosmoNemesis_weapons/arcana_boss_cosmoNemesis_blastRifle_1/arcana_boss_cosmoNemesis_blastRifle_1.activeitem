@@ -18,7 +18,7 @@
 
   "animation" : "arcana_boss_cosmoNemesis_blastRifle_1.animation",
   "animationParts" : {
-    "gun" : "arcana_boss_cosmoNemesis_blastRifle_1.png",
+    "gun" : "body.png",
     "gunfullbright" : "fullbright.png"
   },
   "animationCustom" : {},
@@ -37,7 +37,7 @@
         "time" : 0,
         "energyCost" : 100,
         "cooldown" : 0.6,
-        "projectileType" : "arcana_boss_cosmoNemesis_wand_1_projectile_4",
+        "projectileType" : "arcana_nemesiswand4",
         "projectileCount" : 1,
         "projectileParameters" : {
 			"speed" : 80
@@ -50,7 +50,7 @@
         "time" : 0.4,
         "energyCost" : 160,
         "cooldown" : 0.8,
-        "projectileType" : "arcana_boss_cosmoNemesis_wand_1_projectile_4",
+        "projectileType" : "arcana_nemesiswand4",
         "projectileCount" : 1,
         "projectileParameters" : {
 			"speed" : 110

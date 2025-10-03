@@ -6,7 +6,7 @@
   "rarity" : "Legendary",
   "description" : "A standard battleaxe used by Exousian Nashorns.",
   "shortdescription" : "^#c63422;EIA2^reset; Stalbrecher",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "arcana_sword",
   "category" : "axe",
   "tooltipFields" : {"subtitle" : "Battleaxe"},
   "twoHanded" : true,
@@ -27,9 +27,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.06,
+  "critDamage" : 1.21,
 
   "primaryAbilityType" : "arcana_battleaxe_combo",
   "primaryAbility" : {

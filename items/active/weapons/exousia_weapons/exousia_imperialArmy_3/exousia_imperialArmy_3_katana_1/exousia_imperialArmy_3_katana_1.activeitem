@@ -29,9 +29,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.14,
+  "critDamage" : 1.16,
 
   "primaryAbilityType" : "arcana_tachi_combo",
   "primaryAbility" : {

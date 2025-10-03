@@ -45,6 +45,8 @@
   "activeTime" : 4.0,
 
   "elementalType" : "fire",
+  "critRate" : 0.06,
+  "critDamage" : 1.20,
 
   "primaryAbilityType" : "arcana_sanguine_combo",
   "primaryAbility" : {
@@ -153,5 +155,5 @@
   },
   
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }
