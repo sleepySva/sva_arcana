@@ -27,7 +27,7 @@
 	  "parts" : {
 	    "fullbright" : {
 		  "properties" : {
-		    "offset" : [1.1, 0.25]
+		    "offset" : [1.1, 0.35]
 		  }
 		},
 	    "muzzleFlash" : {
@@ -45,12 +45,14 @@
   "baseOffset" : [1.1, 0.35],
   "muzzleOffset" : [2.5, 0.1],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "arcana_abyss",
+  "critRate" : 0.03,
+  "critDamage" : 1.27,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.09,
@@ -98,5 +100,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

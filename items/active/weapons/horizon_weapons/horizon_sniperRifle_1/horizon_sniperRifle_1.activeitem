@@ -4,7 +4,7 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A dark rifle made from necroium.",
-  "shortdescription" : "^#847d8b;Remorse MKII^reset;",
+  "shortdescription" : "^#847d8b;Remorsalis^reset;",
   "tooltipKind" : "arcana_gun",
   "category" : "sniperRifle",
   "twoHanded" : true,
@@ -19,7 +19,7 @@
     "middle" : "horizon_sniperRifle_1.png",
 	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_purple.png"
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -28,34 +28,41 @@
 		  "properties" : {
 		    "offset" : [1.2, 0.25]
 		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.0, -0.3]
+		  }
 		}
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/ar4.ogg"]
+      "fire" : ["/sfx/gun/plasma_sniper1.ogg"]
     }
   },
 
   "baseOffset" : [1.2, 0.25],
-  "muzzleOffset" : [2.6, 0.4],
+  "muzzleOffset" : [2.3, 0.4],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "arcana_abyss",
+  "critRate" : 0.07,
+  "critDamage" : 1.31,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 1.4,
-    "baseDps" : 10.1,
-    "energyUsage" : 50.0,
+    "baseDps" : 10.2,
+    "energyUsage" : 51.0,
     "inaccuracy" : 0.01,
 
-    "projectileCount" : 2,
+    "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "horizon_assaultRifle_3_projectile_1",
+    "projectileType" : "horizon_assaultRifle_3_projectile_1alt",
     "projectileParameters" : {
       "damageKind" : "arcana_abyss",
 	  "speed" : 190,
@@ -91,5 +98,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

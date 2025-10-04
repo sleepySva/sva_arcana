@@ -1,0 +1,53 @@
+{
+  "projectileName" : "horizon_assaultRifle_3_projectile_1alt",
+  "physics" : "laser",
+  
+  "timeToLive" : 3,
+  "bounces" : 0,
+  "speed" : 138,
+  
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [230, 70, 240],
+  "emitters" : [ "arcana_particle_ember_purple" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_bullet_purple/arcana_explosion_bullet_purple.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.001,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/horizon_assaultRifle_3_projectile_1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    },
+    {
+      "time" : 0.01,
+      "repeat" : true,
+	  "action" : "config",
+	  "file" : "/projectiles/explosions/arcana_muzzleursa/arcana_muzzleursa.config"
+    }
+  ],
+  
+  "damageKind" : "arcana_abyss"
+ 
+}

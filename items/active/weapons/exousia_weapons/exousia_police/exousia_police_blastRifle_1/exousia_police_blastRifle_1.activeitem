@@ -3,7 +3,7 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A plasma charge rifle used by Exousian policing units. Consumes more energy.",
+  "description" : "A plasma charge rifle used by Exousian policing units. Can be charged for more firepower.",
   "shortdescription" : "^#c63422;EPF^reset; Roteline Charge Rifle",
   "tooltipKind" : "arcana_gun_exousia",
   "category" : "assaultRifle",
@@ -26,7 +26,7 @@
 	  "parts" : {
 	    "fullbright" : {
 		  "properties" : {
-		    "offset" : [0.9, 0.3] //Same as baseOffset
+		    "offset" : [1.1, 0.3] //Same as baseOffset
 		  }
 		},
 	    "muzzleFlash" : {
@@ -42,21 +42,21 @@
     }
   },
 
-  "baseOffset" : [0.9, 0.3],
-  "muzzleOffset" : [3.0, 0.3],
+  "baseOffset" : [1.1, 0.3],
+  "muzzleOffset" : [2.8, 0.3],
 
   "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "physical",
   "critRate" : 0.05,
-  "critDamage" : 1.14,
+  "critDamage" : 1.23,
 
   "primaryAbilityType" : "arcana_ranged_ability_chargedShot",
   "primaryAbility" : {
 	"name" : "Plasmic Blast",
 	
     "fireTime" : 0.6,
-    "baseDps" : 8.0,
+    "baseDps" : 8.8,
     "energyUsage" : 40.0,
 	
     "chargeLevels" : [
@@ -64,24 +64,24 @@
         "time" : 0.0,
         "energyCost" : 20,
         "cooldown" : 0.10,
-        "projectileType" : "exousia_police_assaultRifle_1_projectile_1",
+        "projectileType" : "exousia_police_assaultRifle_1_projectile_2",
         "projectileCount" : 1,
         "spreadAngle" : 10,
         "projectileParameters" : {},
         "inaccuracy" : 0,
-        "baseDamage" : 2,
+        "baseDamage" : 4,
         "fireSound" : "fire"
       },
       {
         "time" : 0.4,
         "energyCost" : 40,
-        "cooldown" : 0.20,
+        "cooldown" : 0.30,
         "projectileType" : "exousia_police_assaultRifle_1_projectile_2",
-        "projectileCount" : 1,
-        "spreadAngle" : 8,
+        "projectileCount" : 3,
+        "spreadAngle" : 3,
         "projectileParameters" : {},
         "inaccuracy" : 0,
-        "baseDamage" : 8,
+        "baseDamage" : 10,
         "fireSound" : "fire_charged"
       }
     ],
