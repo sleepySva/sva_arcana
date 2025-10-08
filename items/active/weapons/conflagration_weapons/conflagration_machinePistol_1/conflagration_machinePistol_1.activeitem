@@ -19,7 +19,7 @@
     "middle" : "conflagration_machinePistol_1.png",
 	"fullbright" : "fullbright.png",
     "barrel" : "",
-    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_empty.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/arcana_muzzleflash_yellow.png"
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -28,28 +28,35 @@
 		  "properties" : {
 		    "offset" : [0.6, 0.3]
 		  }
+		},
+	    "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [0.2, -0.3]
+		  }
 		}
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/uzi1.ogg"]
+      "fire" : ["/sfx/gun/plasma_ar3.ogg"]
     }
   },
 
   "baseOffset" : [0.6, 0.3],
-  "muzzleOffset" : [1.6, 0.4],
+  "muzzleOffset" : [1.5, 0.4],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "fire",
+  "critRate" : 0.09,
+  "critDamage" : 1.31,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.18,
+    "fireTime" : 0.15,
     "baseDps" : 12.0,
-    "energyUsage" : 24.0,
+    "energyUsage" : 23.0,
     "inaccuracy" : 0.008,
 
     "projectileCount" : 1,
@@ -70,17 +77,17 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
         "twoHanded" : false,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.25,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "duration" : 0.20,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
         "twoHanded" : false,
 
         "allowRotate" : false,
@@ -89,5 +96,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

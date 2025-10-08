@@ -32,19 +32,21 @@
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/uzi1.ogg"]
+      "fire" : ["/sfx/gun/plasma_mp3.ogg"]
     }
   },
 
   "baseOffset" : [0.6, 0.3],
   "muzzleOffset" : [1.6, 0.4],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "fire",
+  "critRate" : 0.09,
+  "critDamage" : 1.31,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.4,
@@ -90,5 +92,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

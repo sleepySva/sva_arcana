@@ -6,13 +6,13 @@
   "bounces" : 0,
   "speed" : 90,
   
-  "image" : "conflagration_machinePistol_1_projectile_1.png",
+  "image" : "body.png",
   "animationCycle" : 0.2,
   "frameNumber" : 1,
   
   "fullbright" : true,
   "lightColor" : [190, 140, 40],
-  "emitters" : ["rocketsmoke","fireswoosh" ],
+  "emitters" : [],
   
   "supportsProcessing" : true,
   
@@ -25,20 +25,27 @@
   
   "periodicActions" : [
     {
-      "time" : 0.02,
+      "time" : 0.01,
       "repeat" : true,
-      "action" : "particle",
-      "rotate" : true,
-      "specification" : {
-        "type" : "textured",
-        "image" : "/projectiles/activeitems/guns/bullets/conflagration_machinePistol_1_projectile_1/trail.png",
-        "position" : [0, 0],
-        "layer" : "back",
-        "timeToLive" : 0.0,
-        "destructionTime" : 0.3,
-        "destructionAction" : "shrink",
-        "fullbright" : true
-      }
+	  "action" : "particle",
+	  "specification" : {
+		"type" : "animated",
+		"looping" : true,
+		"animation" : "/animations/statuseffects/burning/burning.animation",
+		"position" : [0, 0],
+		"finalVelocity" : [0, 0],
+		"approach" : [50, 50],
+		"destructionAction" : "shrink",
+		"destructionTime" : 0.2,
+		"fade" : 1,
+		"light" : [191, 103, 2],
+		"size" : 0.5,
+		"layer" : "middle",
+		"timeToLive" : 0.2,
+		"variance" : {
+		  "finalVelocity" : [2, 2]
+		}
+	  }
     }
   ],
   

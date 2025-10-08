@@ -31,7 +31,11 @@ end
 
 -- Adds power up to the max power amount.
 function power.add(power)
-  if storage.power + power > storage.max then storage.power = storage.max return storage.power + power - storage.max end
+  if storage.power + power > storage.max then
+    local overflow = storage.power + power - storage.max
+    storage.power = storage.max
+	return overflow
+  end
   storage.power = math.max(math.min(storage.max, storage.power + power), 0)
 end
 

@@ -1,21 +1,21 @@
 {
-  "itemName" : "arcana_shield_ampliftShield",
-  "price" : 800,
+  "itemName" : "arcana_shield_magmaShield",
+  "price" : 300,
   "maxStack" : 1,
-  "rarity" : "Legendary",
+  "rarity" : "Common",
   "category" : "shield",
-  "description" : "A standard Orion security shield for elite guards.",
-  "shortdescription" : "Amplift Shield",
+  "description" : "A fiery shield forged from core fragments. \n^green;+36% Fire Resistance^reset; when held.",
+  "shortdescription" : "Magma Shield",
   "tooltipKind" : "arcana_shield",
   "twoHanded" : false,
   "itemTags" : ["shield"],
 
-  "inventoryIcon" : "arcana_shield_ampliftShield.png:nearidle",
+  "inventoryIcon" : "arcana_shield_magmaShield.png:nearidle",
 
   "animation" : "shield_fb.animation",
   "animationParts" : {
-    "shield" : "arcana_shield_ampliftShield.png",
-	"fullbright" : "arcana_shield_ampliftShield_fb.png"
+    "shield" : "arcana_shield_magmaShield.png",
+	"fullbright" : "arcana_shield_magmaShield_fb.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -26,18 +26,22 @@
     }
   },
 
-  "scripts" : ["/items/active/shields/shield.lua"],
+  "scripts" : ["/items/active/shields/neb_arcana-shield.lua"],
 
   "minActiveTime" : 0.2,
 
   "forceWalk" : true,
-  "baseShieldHealth" : 90,
-  "cooldownTime" : 0.7,
+  "baseShieldHealth" : 20,
+  "cooldownTime" : 0.2,
+  
+  "shieldStats" : {
+    "fireResistance" : 0.36
+  },
 
   "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
   "perfectBlockTime" : 0.2,
 
-  "knockback" : 16,
+  "knockback" : 18,
   
   "stances" : {
     "idle" : {

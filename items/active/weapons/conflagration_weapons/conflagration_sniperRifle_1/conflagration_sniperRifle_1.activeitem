@@ -3,7 +3,7 @@
   "price" : 800,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A molten rifle.",
+  "description" : "A burning rifle charged by molten flames.",
   "shortdescription" : "Gelbvieh Rifle",
   "tooltipKind" : "arcana_gun",
   "category" : "sniperRifle",
@@ -32,19 +32,21 @@
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/rifle1.ogg"]
+      "fire" : ["/sfx/gun/plasma_sniper3.ogg"]
     }
   },
 
   "baseOffset" : [0.6, 0.3],
   "muzzleOffset" : [2.6, 0.4],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "fire",
+  "critRate" : 0.17,
+  "critDamage" : 1.29,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 1.0,
@@ -57,7 +59,21 @@
 
     "projectileType" : "conflagration_sniperRifle_1_projectile_1",
     "projectileParameters" : {
-      "knockback" : 20
+      "knockback" : 20,
+      "speed" : 10,
+	  "timeToLive" : 0,
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "conflagration_sniperRifle_1_projectile_1",
+          "angleAdjust" : 0,
+          "inheritDamageFactor" : 1.0
+        },
+        {
+		  "action" : "config",
+		  "file" : "/projectiles/explosions/arcana_muzzlefire/arcana_muzzlefire.config"
+        }
+      ]
     },
     "stances" : {
       "idle" : {
@@ -89,7 +105,7 @@
     }
   },
 
-  "altAbilityType" : "piercingshot",
+  "altAbilityType" : "flamethrower",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

@@ -1,31 +1,47 @@
 [
 	[
-		{"op" : "add", "path" : "/genericScriptContexts/arcanaBlockHandler", "value" : "/scripts/arcana_blockStatusEffect.lua"},
-		{ "op" : "add",
-		  "path" : "/deploymentConfig/scripts/-",
-		  "value" : "/scripts/arcana_playereffects.lua"
+		{
+		    "op" : "add",
+			"path" : "/genericScriptContexts/arcanaBlockHandler",
+			"value" : "/scripts/arcana_blockStatusEffect.lua"
 		},
-		{ "op" : "add",
+	    {
+			"op": "add",
+			"path": "/statusControllerSettings/primaryScriptSources/-",
+			"value": "/stats/neb-arcana_player_primary.lua"
+		},
+		{
+		    "op" : "add",
+		    "path" : "/deploymentConfig/scripts/-",
+		    "value" : "/scripts/arcana_playereffects.lua"
+		},
+		{
+		    "op" : "add",
 			"path" : "/species/-",
 			"value" : "arcanian"
 		},
-		{ "op" : "add",
+		{
+		    "op" : "add",
 			"path" : "/species/-",
 			"value" : "gilten"
 		},
-		{ "op" : "add",
+		{
+		    "op" : "add",
 			"path" : "/defaultCodexes/arcanian",
 			"value" : [ "protectorate1", "protectorate2" ]
 		},
-		{ "op" : "add",
+		{
+		    "op" : "add",
 			"path" : "/deploymentConfig/speciesStarterMechBody/arcanian",
 			"value" : "mechbodyhumanproto"
 		},
-		{ "op" : "add",
+		{
+		    "op" : "add",
 			"path" : "/defaultCodexes/gilten",
 			"value" : [ "protectorate1", "protectorate2" ]
 		},
-		{ "op" : "add",
+		{
+		    "op" : "add",
 			"path" : "/deploymentConfig/speciesStarterMechBody/gilten",
 			"value" : "mechbodyhumanproto"
 		},

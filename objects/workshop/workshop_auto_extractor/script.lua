@@ -92,6 +92,7 @@ function automation()
 	end
   end
 	
+  -- Produces item
   if result and self.isPowered then
 	if not lastItem or lastItem.name == result.name then
 	  world.containerPutItemsAt(entity.id(), result, world.containerSize(entity.id()) - 1)
@@ -110,8 +111,8 @@ end
 
 function powerCheck()
   if power.get() >= self.powerUseAmount then 
-    power.remove(self.powerUseAmount)
     self.isPowered = true
+	power.remove(self.powerUseAmount)
   else
     animator.setAnimationState("switchState", "off")
     self.isPowered = false

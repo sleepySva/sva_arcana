@@ -4,7 +4,7 @@
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "shield",
-  "description" : "A crude shield covered in plant matter.",
+  "description" : "A crude shield covered in plant matter. \n^green;+32% Poison Resistance^reset; when held.",
   "shortdescription" : "Floral Shield",
   "tooltipKind" : "arcana_shield",
   "twoHanded" : false,
@@ -26,13 +26,17 @@
     }
   },
 
-  "scripts" : ["/items/active/shields/shield.lua"],
+  "scripts" : ["/items/active/shields/neb_arcana-shield.lua"],
 
   "minActiveTime" : 0.2,
 
   "forceWalk" : true,
   "baseShieldHealth" : 28,
   "cooldownTime" : 0.6,
+  
+  "shieldStats" : {
+    "poisonResistance" : 0.32
+  },
 
   "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
   "perfectBlockTime" : 0.2,
