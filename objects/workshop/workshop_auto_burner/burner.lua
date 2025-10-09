@@ -11,13 +11,13 @@ function init()
   self.productionTime = 1
   self.consumptionTimer = self.consumptionTime
   self.productionTimer = self.productionTime
-  self.isPowered = false
+  self.isPowered, self.isWorking = false
   self.isPlayingSound = false
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
   
   message.setHandler("getProgress", function()
     local progress = power.round((1 - (1 - self.consumptionTimer / self.consumptionTime)), 1)
-    if self.isPowered == true then return progress else return 0 end
+    if self.isWorking == true then return progress else return 0 end
   end)
 end
 
@@ -48,14 +48,17 @@ end
 -- Only for single slot machines
 function consumeInputSingle()
   for _, item in pairs(self.input) do
-    --if world.containerAvailable(entity.id(), item) then
 	if world.containerItemAt(entity.id(), 0) ~= nil and world.containerItemAt(entity.id(), 0).name == item.name then
 	  self.isPowered = true
+	  self.isWorking = true
+	  power.set(power.max())
       world.containerTakeNumItemsAt(entity.id(), 0, item.count)
 	  return
 	end
   end
   self.isPowered = false
+  self.isWorking = false
+  setAnimation(false)
 end
 
 function update(dt)
@@ -63,23 +66,28 @@ function update(dt)
     if self.consumptionTimer > 0 then
       self.consumptionTimer = math.max(0, self.consumptionTimer - dt)
       if self.consumptionTimer == 0 then
-	    consumeInputSingle()
-	    self.consumptionTimer = self.consumptionTime
+	    --if power.get() < power.max() then
+	      --consumeInputSingle()
+		--else
+		  --self.isWorking = false
+		  --setAnimation(false)
+		--end
+		consumeInputSingle()
+		self.consumptionTimer = self.consumptionTime
       end
     end
     if self.productionTimer > 0 then
       self.productionTimer = math.max(0, self.productionTimer - dt)
 	  if self.productionTimer == 0 then
 	    if self.isPowered == true then
+		  power.set(power.max())
 	      object.setOutputNodeLevel(0, true)
 		  setAnimation(true)
-	      power.set(self.maxPower)
 	    else
 	      object.setOutputNodeLevel(0, false)
 		  setAnimation(false)
-		  power.set(0)
 	    end 
-      power.send(0, power.get())
+        power.send(0, power.get())
 	    self.productionTimer = self.productionTime
 	  end
     end

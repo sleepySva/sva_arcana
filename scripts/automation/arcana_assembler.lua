@@ -14,7 +14,7 @@ function init()
   power.set(0)
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
   
-  self.isPowered = false
+  self.isPowered, self.isWorking = false
   message.setHandler("getProgress", function()
     local progress = power.round((1 - (self.cooldownTimer / self.craftingTime)), 1)
     if self.isPowered == true and animator.animationState("switchState") ~= "off" then return progress else return 0 end
@@ -68,8 +68,10 @@ function automation()
 	if craftable then
 	  if not lastItem or lastItem.name == recipe.output.name then
 	    world.containerPutItemsAt(entity.id(), recipe.output, world.containerSize(entity.id()) - 1)
+		self.isWorking = true
 	  else
 	    animator.setAnimationState("switchState", "off")
+		self.isWorking = false
 	    return
 	  end
 	  
@@ -87,7 +89,9 @@ end
 
 function powerCheck()
   if power.get() >= self.powerUseAmount then 
-    power.remove(self.powerUseAmount)
+	if self.isWorking then
+	  power.remove(self.powerUseAmount)
+	end
     self.isPowered = true
   else
     animator.setAnimationState("switchState", "off")

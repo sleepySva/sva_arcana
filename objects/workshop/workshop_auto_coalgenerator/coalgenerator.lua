@@ -10,7 +10,7 @@ function init()
   self.productionTime = 1
   self.consumptionTimer = self.consumptionTime
   self.productionTimer = self.productionTime
-  self.isPowered = false
+  self.isPowered, self.isWorking = false
   self.isPlayingSound = false
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
   

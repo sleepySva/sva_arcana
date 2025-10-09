@@ -112,7 +112,9 @@ end
 function powerCheck()
   if power.get() >= self.powerUseAmount then 
     self.isPowered = true
-	power.remove(self.powerUseAmount)
+	if self.isWorking then
+	  power.remove(self.powerUseAmount)
+	end
   else
     animator.setAnimationState("switchState", "off")
     self.isPowered = false
