@@ -2,6 +2,7 @@ function init()
   script.setUpdateDelta(60)
   self.powerPerEnemy = config.getParameter("powerPerEnemy", nil)
   self.critDamagePerEnemy = config.getParameter("critDamagePerEnemy", nil)
+  self.stackMax = config.getParameter("stackMax", 10)
   self.lastEnemyCount = 0
   self.statusGroup = nil
 end
@@ -38,5 +39,5 @@ function queryEnemies(radius)
   for _, monster in pairs(monsters) do 
     if world.entityDamageTeam(monster).type == "enemy" then count = count + 1 end
   end
-  return count
+  return math.min(count, self.stackMax)
 end
