@@ -1,0 +1,22 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : ["teleport", "planetTravel", "systemTravel"],
+      "maxFuel" : 1000,
+      "crewSize" : 6
+    }
+  },
+  "backgroundOverlays" : [
+    {
+      "image" : "spectwingT5.png",
+      "position" : [30, 28],
+      "fullbright" : true
+    },
+    {
+      "image" : "spectwingT5lit.png",
+      "position" : [30, 28]
+    }
+  ],
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "spectwingT5blocks.png"
+}

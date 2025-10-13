@@ -1,0 +1,22 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : ["teleport", "planetTravel"],
+      "maxFuel" : 1000,
+      "crewSize" : 2
+    }
+  },
+  "backgroundOverlays" : [
+    {
+      "image" : "spectwingT2.png",
+      "position" : [30, 28],
+      "fullbright" : true
+    },
+    {
+      "image" : "spectwingT2lit.png",
+      "position" : [30, 28]
+    }
+  ],
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "spectwingT2blocks.png"
+}

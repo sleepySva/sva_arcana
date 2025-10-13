@@ -1,0 +1,22 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : [],
+      "maxFuel" : 1000,
+      "crewSize" : 2
+    }
+  },
+  "backgroundOverlays" : [
+    {
+      "image" : "spectwingT1.png",
+      "position" : [30, 28],
+      "fullbright" : true
+    },
+    {
+      "image" : "spectwingT1lit.png",
+      "position" : [30, 28]
+    }
+  ],
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "spectwingT0blocks.png"
+}
