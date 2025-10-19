@@ -27,6 +27,11 @@
 		},
 		{
 		    "op" : "add",
+			"path" : "/species/-",
+			"value" : "spectwing"
+		},
+		{
+		    "op" : "add",
 			"path" : "/defaultCodexes/arcanian",
 			"value" : [ "protectorate1", "protectorate2" ]
 		},
@@ -43,6 +48,16 @@
 		{
 		    "op" : "add",
 			"path" : "/deploymentConfig/speciesStarterMechBody/gilten",
+			"value" : "mechbodyhumanproto"
+		},
+		{
+		    "op" : "add",
+			"path" : "/defaultCodexes/spectwing",
+			"value" : [ "protectorate1", "protectorate2" ]
+		},
+		{
+		    "op" : "add",
+			"path" : "/deploymentConfig/speciesStarterMechBody/spectwing",
 			"value" : "mechbodyhumanproto"
 		},
 		{

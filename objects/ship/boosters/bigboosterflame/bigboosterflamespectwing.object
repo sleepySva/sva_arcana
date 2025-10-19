@@ -13,7 +13,7 @@
   "humanDescription" : "This thing eats through fuel.",
   "hylotlDescription" : "Propulsion.",
   "category" : "light",
-  "lightColor" : [59, 183, 255],
+  "lightColor" : [180, 100, 255],
   "pointLight" : true,
   "flickerDistance" : 0.2,
   "flickerStrength" : 0.05,
@@ -21,7 +21,7 @@
   "inventoryIcon" : "torchicon.png",
   "orientations" : [
     {
-      "image" : "bigboosterflameskest.png:on.1",
+      "image" : "bigboosterflamespectwing.png:on.1",
       "imagePosition" : [-37, -42],
       "fullbright" : true,
       "collision" : "solid",
@@ -32,7 +32,7 @@
   ],
   "animation" : "/objects/ship/boosters/boosterflame.animation",
   "animationParts" : {
-    "booster" : "bigboosterflame.png"
+    "booster" : "bigboosterflamespectwing.png"
   },
   "animationPosition" : [-37, -42],
   "soundEffect" : "/sfx/objects/boosterflame.ogg",
