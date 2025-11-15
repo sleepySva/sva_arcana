@@ -1,0 +1,21 @@
+{
+  "materialId" : 16695,
+  "materialName" : "arcana_tile36",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "arcana_tile36",
+  "description" : "A twisted wood block.",
+  "shortdescription" : "Twisted Wood",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_tile36.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 1000
+  }
+}

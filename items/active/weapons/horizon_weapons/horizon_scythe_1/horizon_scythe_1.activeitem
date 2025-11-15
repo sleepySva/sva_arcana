@@ -1,0 +1,59 @@
+{
+  "itemName" : "horizon_scythe_1",
+  "price" : 500,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "...",
+  "shortdescription" : "Test Scythe",
+  "tooltipKind" : "arcana_sword",
+  "category" : "arcana_scythe",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","scythe"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "/items/active/weapons/melee/scythe/arcana_scythe.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [1.1, 0.8]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [1.1, 0.8]
+          }
+        },
+        "swoosh" : {
+          "properties" : {
+            "fullbright" : true
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "arcana_abyss",
+  "critRate" : 0.04,
+  "critDamage" : 1.45,
+
+  "primaryAbilityType" : "arcana_scythecombo",
+  "primaryAbility" : {
+    "fireTime" : 1.0,
+    "baseDps" : 9.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "arcana_abyss_slash"
+	}
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}
