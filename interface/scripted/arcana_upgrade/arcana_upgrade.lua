@@ -77,7 +77,7 @@ function populateItemList(forceRepop)
           {
             index = i,
             price = price,
-			cost = self.levels[math.min(self.maxLevel,(itemLevel + 1))]
+			cost = self.levels[round(math.min(self.maxLevel,(itemLevel + 1)))]
           })
 		  
         widget.setVisible(string.format("%s.unavailableoverlay", listItem), price > playerEssence)
@@ -170,4 +170,8 @@ function doUpgrade()
     end
     populateItemList(true)
   end
+end
+
+function round(num)
+  return num >= 0 and math.floor(num + 0.5) or math.ceil(num - 0.5)
 end
