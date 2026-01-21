@@ -1,4 +1,5 @@
 require "/scripts/util.lua"
+require "/scripts/status.lua"
 
 -- handles weapon stances, animations, and abilities
 Weapon = {}
@@ -9,6 +10,7 @@ function Weapon:new(weaponConfig)
   newWeapon.critRate = config.getParameter("critRate")
   newWeapon.critDamage = config.getParameter("critDamage")
   newWeapon.critStatusEffect = config.getParameter("critStatusEffect")
+  newWeapon.lifesteal = config.getParameter("lifesteal")
   newWeapon.elementalType = config.getParameter("elementalType")
   newWeapon.muzzleOffset = config.getParameter("muzzleOffset") or {0,0}
   newWeapon.aimOffset = config.getParameter("aimOffset") or (newWeapon.muzzleOffset[2] - 0.25)
@@ -29,6 +31,36 @@ function Weapon:init()
   for _,ability in pairs(self.abilities) do
     ability:init()
   end
+  
+  if self.lifesteal then
+    if self.lifesteal.type == "onkill" then
+      message.setHandler("arcana_onkill", function()
+	    status.giveResource("health", getLifesteal(self.lifesteal))
+      end)
+	elseif self.lifesteal.type == "onhit" then
+	  self.damageListener = damageListener("inflictedDamage", function(notifications)
+		for _, n in pairs(notifications) do
+		  if n.hitType ~= "ShieldHit" and n.healthLost > 0 then
+			local result = getLifesteal(self.lifesteal)
+			status.giveResource("health", result)
+			sb.logInfo("lifesteal: "..result)
+		  end
+		  sb.logInfo("damage taken: "..n.hitType.." health lost: "..n.healthLost)
+		end
+	  end)
+	end
+  end
+  
+end
+
+function getLifesteal(config)
+  local bonus = status.stat("arcana_lifestealBonus") or 0
+  if config.rate == "percent" then
+    return status.resourceMax("health") * config.value + bonus
+  elseif config.rate == "amount" then
+    return config.value + bonus
+  end
+  return 0
 end
 
 function Weapon:update(dt, fireMode, shiftHeld)
@@ -67,6 +99,10 @@ function Weapon:update(dt, fireMode, shiftHeld)
     activeItem.setOutsideOfHand(true)
   elseif self.handGrip == "inside" then
     activeItem.setOutsideOfHand(false)
+  end
+  
+  if self.damageListener then
+    self.damageListener:update()
   end
 
   self:clearDamageSources()
@@ -222,7 +258,11 @@ function Weapon:damageSource(damageConfig, damageArea, damageTimeout)
 	    table.insert(effects, critStatusEffect)
 	  end
 	end
-	--
+	-- Lifesteal
+	local lifesteal = damageConfig.lifesteal or self.lifesteal
+	if lifesteal then
+	  table.insert(effects,{effect="arcana_onkillreturn",duration=entity.id()})
+	end
 
     local damageLine, damagePoly
     if #damageArea == 2 then

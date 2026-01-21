@@ -1,0 +1,46 @@
+{
+  "projectileName" : "arcana_spectwing_chakram_4",
+  "image" : "body.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 8,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [100, 90, 160],
+  "pointLight" : true,
+  "flippable" : false,
+  "orientationLocked" : true,
+  "emitters" : [],
+  "actionOnReap" : [],
+  "statusEffects" : [],
+  "damagePoly" : [[-11, 11], [11, 11], [11, -11], [-11, -11]],
+  "power" : 5.0,
+  "speed" : 74,
+  "damageKind" : "shortsword",
+  "physics" : "laser",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 5,
+  "fullbright" : true,
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/chakram/arcana_spectwing_chakram_4/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.4,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "persistentAudio" : "/sfx/melee/spear_twirl_loop.ogg",
+
+  "scripts" : [ "/projectiles/activeitems/chakram/hoverchakramprojectile.lua" ]
+}

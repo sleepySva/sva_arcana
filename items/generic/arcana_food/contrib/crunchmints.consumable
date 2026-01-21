@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_crunchmints",
+  "rarity" : "Uncommon",
+  "price" : 90,
+  "category" : "preparedFood",
+  "inventoryIcon" : "crunchmints.png",
+  "description" : "Popped wintercorn mixed with cold and crunchy ingredients. Basically minty popcorn. ^orange;[Silver]^reset;\n\n^green;cold,ice resistance^reset;",
+  "shortdescription" : "Crunchmints",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

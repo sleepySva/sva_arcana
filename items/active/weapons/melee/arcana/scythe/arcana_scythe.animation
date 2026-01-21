@@ -1,0 +1,204 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : "",
+	"flipDirectives" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 6,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 6,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 6,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire4" : {
+            "frames" : 6,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire5" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>?<flipDirectives>",
+          "offset" : [0, 1.4],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "damageArea" : [ [-0.7, -1.0], [-0.7, 2.5], [0.5, 2.5], [0.5, -1.0] ]
+        }
+      },
+      "handle" : {
+        "properties" : {
+          "zLevel" : 1,
+		  "fullbright" : true,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>?<flipDirectives>",
+          "offset" : [0, 1.4],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+		  "fullbright" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/arcana/scythe/swoosh/<elementalType>swoosh.png:<frame>?flipy",
+                "offset" : [-1.5, -0.5],
+                "damageArea" : [[0, 6], [-6, 4], [-8, 0], [-6, -4], [0, -6], [-1, 0]]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/arcana/scythe/swoosh/<elementalType>swoosh.png:<frame>",
+                "offset" : [-1.5, 0.5],
+                "damageArea" : [[0, 6], [-6, 4], [-8, 0], [-6, -4], [0, -6], [4, -4], [-1, 0]]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/arcana/scythe/swoosh2/<elementalType>swoosh.png:<frame>?flipy",
+                "offset" : [-1.5, -0.5],
+                "damageArea" : [[0, 3], [-6, 2], [-8, 0], [-6, -2], [0, -3], [-1, 0]]
+              }
+            },
+            "fire4" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/arcana/scythe/swoosh/<elementalType>swoosh.png:<frame>?flipy",
+                "offset" : [-1.5, -0.5],
+                "damageArea" : [[0, 6], [-6, 4], [-8, 0], [-6, -4], [0, -6], [-1, 0]]
+              }
+            },
+            "fire5" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/arcana/scythe/swoosh/<elementalType>swoosh.png:<frame>?flipx",
+                "offset" : [-1.5, -0.5],
+                "damageArea" : [[0, 6], [-6, 4], [-8, 0], [-6, -4], [0, -6], [-1, 0]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "physicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 40,
+      "burstCount" : 3,
+      "particles" : [
+      ]
+    },
+    "arcana_abyssswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 40,
+      "burstCount" : 3,
+      "particles" : [
+      ]
+    },
+    "fireswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 4,
+      "particles" : [
+        { "particle" : "fireswoosh1"},
+        { "particle" : "fireswoosh2"},
+        { "particle" : "fireswoosh3"}
+      ]
+    },
+    "electricswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "electricswoosh1"},
+        { "particle" : "electricswoosh2"},
+        { "particle" : "electricswoosh2"}
+      ]
+    },
+    "poisonswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "poisonswoosh1"},
+        { "particle" : "poisonswoosh2"},
+        { "particle" : "fireswoosh2"}
+      ]
+    },
+    "iceswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 50,
+      "burstCount" : 3,
+      "particles" : [
+        { "particle" : "iceswoosh1"},
+        { "particle" : "iceswoosh2"},
+        { "particle" : "iceswoosh3"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ "/sfx/melee/arcana_swordslash1.ogg" ],
+	"fire2" : [ "/sfx/melee/arcana_swordslash1.ogg" ],
+    "fire3" : [ "/sfx/melee/arcana_swordslash1.ogg" ],
+    "fire4" : [ "/sfx/melee/arcana_swordslash1.ogg" ],
+	"fire5" : [ "/sfx/melee/arcana_swordslash1.ogg" ],
+	"groundImpact" : [ "/sfx/melee/hammer_hit_ground3.ogg", "/sfx/melee/hammer_hit_ground4.ogg" ]
+  }
+}

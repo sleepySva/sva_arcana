@@ -129,6 +129,24 @@
     } ]
   ],
   
+  "arcana_farmable_fluxroot" : [
+    [0, {
+	  "fill" : [
+        {"item" : "arcana_farmable_fluxrootSeed"},
+		{"item" : "arcana_flowers_orangeFluxroot"}
+      ],
+      "pool" : [
+        {"weight" : 0.2, "item" : ["arcana_farmable_fluxrootSeed", 1]},
+		{"weight" : 0.2, "item" : ["glowfibre", 2]},
+		{"weight" : 0.6, "item" : ["glowfibre", 1]}
+      ],
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ]
+    } ]
+  ],
+  
   "arcana_farmable_ardenreef" : [
     [0, {
 	  "fill" : [

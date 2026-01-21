@@ -1,0 +1,94 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "stage_1",
+        "states" : {
+          "stage_1" : {
+            "frames" : 1,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          },
+          "stage_2" : {
+            "frames" : 12,
+            "cycle" : 1.2,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chassis" : {
+        "properties" : {
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "stage_1" : {
+              "properties" : {
+                "image" : "1_fullbright.png:<color>.<frame>"
+              }
+            },
+
+            "stage_2" : {
+              "properties" : {
+                "image" : "2_fullbright.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "light" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "stage_1" : {
+              "properties" : {
+                "image" : "1.png:<color>.<frame>"
+              }
+            },
+
+            "stage_2" : {
+              "properties" : {
+                "image" : "2.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "lights" : {
+    "scifiglow" : {
+      "active" : true,
+      "position" : [0, 2],
+      "color" : [130, 80, 220]
+    }
+  },
+  
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

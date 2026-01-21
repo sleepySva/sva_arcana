@@ -1,0 +1,101 @@
+{
+  "objectName" : "arcana_abyssal_crafting_1",
+  "colonyTags" : ["crafting", "abyssal"],
+  "rarity" : "Legendary",
+  "description" : "A partially grown Soulstone for creating basic Spectwing equipment.",
+  "shortdescription" : "Budding Soulstone",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 200,
+  
+  "breakDropOptions" : [],
+  "printable" : false,
+  
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
+
+  "interactAction" : "OpenCraftingInterface",
+
+  "animation" : "animation.animation",
+  "animationPosition" : [0, 19],
+  "placementImage" : "1.png:default.default",
+  "placementImagePosition" : [-16, -0],    
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 2,
+  "inventoryIcon" : "1_icon.png",
+  
+  "upgradeStages" : [
+    {
+      "animationState" : "stage_1",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "1_icon.png",
+        "placementImage" : "1.png:default.default",
+        "placementImagePosition" : [-16, -0],    
+
+        "description" : "A partially grown Soulstone for creating basic Spectwing equipment.",
+        "shortdescription" : "Soulstone"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_spectwing/arcana_spectwing_1.config",
+		"filter" : ["arcana_spectwing_1"],
+        "upgradeMaterials" : [
+			{ "item" : "titaniumbar", "count" : 10 },
+			{ "item" : "solidfuel", "count" : 5 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "stage_2",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "2_icon.png",
+        "placementImage" : "2.png:default.default",
+        "placementImagePosition" : [-16, -0],    
+
+        "description" : "A fully grown Soulstone for creating advanced Spectwing equipment.",
+        "shortdescription" : "Soulstone"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_spectwing/arcana_spectwing_2.config",
+		"filter" : ["arcana_spectwing_1", "arcana_spectwing_2"]
+	  },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+  
+  "orientations" : [
+    {
+	  "image" : "1.png:<color>.<frame>",
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "image" : "1.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

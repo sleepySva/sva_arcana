@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_sweetfeastmedley",
+  "rarity" : "Uncommon",
+  "price" : 320,
+  "category" : "preparedFood",
+  "inventoryIcon" : "sweetfeastmedley.png",
+  "description" : "An overly sweet and scrumptious assortment of sweet and savoury, roasted to perfection. ^orange;[Hyou]^reset;\n\n^green;Movement Speed + Jump boost + Energy regeneration, for a long time.^reset;",
+  "shortdescription" : "Sweet Feast Medley",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 70,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

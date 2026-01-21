@@ -3,11 +3,11 @@
 	"charCreationTooltip" : {
 	"title" : "spectwing",
 	"subTitle" : "Abyssborn",
-	"description" : "The Spectwings are a race of winged insectoids, brought to form by cosmic rifts known as the Abyss. As natural abyssborn predators, they bear sharp claws, sturdy carapaces and fin-like tendrils for swimming."
+	"description" : "The Spectwings are a race of winged insectoids, brought to form by cosmic rifts known as the Abyss. As natural abyssborn predators, they bear sharp claws, as well as dazzling wings to attract prey."
   },
   "nameGen" : [ "/species/spectwingnamegen.config:names", "/species/spectwingnamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/hylotlhurt_male1.ogg", "/sfx/humanoid/hylotlhurt_female1.ogg" ],
-  "charGenTextLabels" : [ "Skin colour", "Hair style", "Shirt", "Legwear", "Underwear", "Hair colour", "Shirt colour", "Legwear colour", "SPECTWING", "Personality" ],
+  "charGenTextLabels" : [ "Skin colour", "Hair style", "Shirt", "Legwear", "Antennae colour", "Hair colour", "Shirt colour", "Legwear colour", "SPECTWING", "Personality" ],
   "skull" : "/humanoid/spectwing/dead.png",
   "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffea63FF?replace=31a6ffFF=f5bc00FF",
   "defaultBlueprints" : {
@@ -15,6 +15,7 @@
 	
   // Empty Hands
       { "item" : "flagspectwing" },
+	  { "item" : "arcana_abyssal_crafting_1" },
 	    
 // Anvil
       { "item" : "humantier1head" },
@@ -79,9 +80,9 @@
        "name" : "male",
       "image" : "/interface/title/spectwingmaleico.png",
       "characterImage" : "/interface/title/spectwingmale.png",
-      "hair" : [ "male1", "male2", "male3", "male4", "male5", "male6", "male7", "male8", "male9", "male10", "male11", "male12", "male13", "male14", "male15", "male16", "male17", "male18", "male19", "male21", "male22", "male23", "male24", "male25", "male26", "male27", "male28", "male29", "male30", "male31", "male32", "male33", "male34", "male35", "male36", "male37", "male38", "male39", "male40", "male41", "male42", "male43", "male44", "male45", "male46", "male47", "male48", "male49", "male50", "male51", "male52", "male53", "male54", "male55", "male56", "male57", "male58", "male59", "male60", "male61", "male62", "male63", "male64" ],
-      "shirt" : [ "avianfancyshirt" ],
-      "pants" : [ "avianfancyskirt" ],
+      "hair" : [ "male0", "male1", "male2", "male3", "male4", "male5", "male6", "male7", "male8", "male9", "male10", "male11" ],
+      "shirt" : [ "arcana_cradling_chest", "arcana_duskkin_chest" ],
+      "pants" : [ "arcana_cradling_legs" ],
       "facialHairGroup" : "",
       "facialHair" : [ ],
       "facialMaskGroup" : "",
@@ -91,9 +92,9 @@
       "name" : "female",
       "image" : "/interface/title/spectwingfemico.png",
       "characterImage" : "/interface/title/spectwingfemale.png",
-      "hair" : [ "fem1", "fem2", "fem3", "fem4", "fem5", "fem6", "fem7", "fem8", "fem9", "fem10", "fem11", "fem12", "fem13", "fem14", "fem15", "fem16", "fem17", "fem18", "fem19", "fem20", "fem21", "fem22", "fem23", "fem24", "fem25", "fem26", "fem27", "fem28", "fem29", "fem30", "fem31", "fem32", "fem33", "fem34", "fem35", "fem36", "fem37", "fem38", "fem39", "fem40", "fem41", "fem42", "fem43", "fem44", "fem45", "fem46", "fem47", "fem48", "fem49", "fem50", "fem51", "fem52", "fem53", "fem54", "fem55", "fem56", "fem57", "fem58", "fem59", "fem60", "fem61", "fem62", "fem63", "fem64" ],
-      "shirt" : [ "avianfancyshirt" ],
-      "pants" : [ "avianfancyskirt" ],
+      "hair" : [ "fem0", "fem1", "fem2", "fem3", "fem4", "fem5", "fem6", "fem7", "fem8", "fem9", "fem10", "fem11", "fem12", "fem13" ],
+      "shirt" : [ "arcana_cradling_chest", "arcana_duskkin_chest" ],
+      "pants" : [ "arcana_cradling_legs", "arcana_duskkin_legs" ],
       "facialHairGroup" : "",
       "facialHair" : [ ],
       "facialMaskGroup" : "",
@@ -101,91 +102,70 @@
     }
   ],
   "bodyColor" : [
-    { "ffe2c5" : "ab8c77", "ffc181" : "86644a", "d39c6c" : "684431", "c7815b" : "40271d" },
-    { "ffe2c5" : "c5ad98", "ffc181" : "a47a59", "d39c6c" : "865d40", "c7815b" : "66412e" },
-    { "ffe2c5" : "e1b98d", "ffc181" : "c88959", "d39c6c" : "9e6a4d", "c7815b" : "784930" },
-    { "ffe2c5" : "c9b181", "ffc181" : "ac8348", "d39c6c" : "87633f", "c7815b" : "694c31" },
-    { "ffe2c5" : "e8cebc", "ffc181" : "cfa97d", "d39c6c" : "ae774b", "c7815b" : "804e34" },
-    { "ffe2c5" : "f4e0ba", "ffc181" : "e9b768", "d39c6c" : "c18f54", "c7815b" : "a2683d" },
-    { "ffe2c5" : "ffe9d3", "ffc181" : "ffc181", "d39c6c" : "d39c6c", "c7815b" : "b97551" },
-    { "ffe2c5" : "fbe1d4", "ffc181" : "f6baa2", "d39c6c" : "cc9582", "c7815b" : "ac7261" },
-    { "ffe2c5" : "fff7ec", "ffc181" : "f9d3a9", "d39c6c" : "d3a57c", "c7815b" : "b37c5d" },
-    { "ffe2c5" : "fff6f6", "ffc181" : "f7d5d3", "d39c6c" : "d1aaa1", "c7815b" : "a27f70" }
+    { "a8a7be" : "a8a7be", "807f9e" : "807f9e", "535374" : "535374", "292947" : "292947" },
+	{ "a8a7be" : "b8bee2", "807f9e" : "8f87d2", "535374" : "594cc2", "292947" : "2c227b" },
+	{ "a8a7be" : "e2b8e0", "807f9e" : "a880a6", "535374" : "7b5178", "292947" : "542c51" },
+	{ "a8a7be" : "d8789e", "807f9e" : "b2567a", "535374" : "7b3848", "292947" : "511c28" },
+	{ "a8a7be" : "cba79b", "807f9e" : "b27c6b", "535374" : "81584b", "292947" : "41322d" },
+	{ "a8a7be" : "d8c2a8", "807f9e" : "cfa580", "535374" : "9b6f62", "292947" : "774642" },
+	{ "a8a7be" : "cfbca6", "807f9e" : "a8947e", "535374" : "6a7284", "292947" : "40445e" },
+	{ "a8a7be" : "cbe6f9", "807f9e" : "99b6e8", "535374" : "5c78db", "292947" : "344198" },
+	{ "a8a7be" : "7ca5ec", "807f9e" : "5163db", "535374" : "4c3dc2", "292947" : "39227b" },
+	{ "a8a7be" : "796cdf", "807f9e" : "5c4dd8", "535374" : "443d81", "292947" : "2e2a51" },
+	{ "a8a7be" : "767391", "807f9e" : "5b5871", "535374" : "424054", "292947" : "282634" },
+	{ "a8a7be" : "faf8ff", "807f9e" : "d4d0e5", "535374" : "8479b5", "292947" : "565581" }
   ],
   "undyColor" : [
-    { "dc1f00" : "4d76ad", "be1b00" : "395187", "951500" : "20325b" },
-    { "dc1f00" : "7c41b8", "be1b00" : "6c2f90", "951500" : "471962" },
-    { "dc1f00" : "c63442", "be1b00" : "9b2724", "951500" : "6a1210" },
-    { "dc1f00" : "eaa245", "be1b00" : "b47020", "951500" : "834a0c" },
-    { "dc1f00" : "e3e13a", "be1b00" : "a8a614", "951500" : "848008" },
-    { "dc1f00" : "6ab841", "be1b00" : "45902f", "951500" : "296219" },
-    { "dc1f00" : "535353", "be1b00" : "363636", "951500" : "111111" },
-    { "dc1f00" : "e6e6e6", "be1b00" : "979797", "951500" : "6f6f6f" },
-    { "dc1f00" : "9e9e9e", "be1b00" : "6e6e6e", "951500" : "434343" },
-    { "dc1f00" : "f794f8", "be1b00" : "d355c1", "951500" : "b72c95" }
+    { "b34df4" : "b34df4", "6a4bef" : "6a4bef", "5524d8" : "5524d8" },
+    { "b34df4" : "de5dfc", "6a4bef" : "5c59e2", "5524d8" : "882fc8" },
+    { "b34df4" : "6e6be8", "6a4bef" : "4b498b", "5524d8" : "41334a" },
+    { "b34df4" : "4c9bfc", "6a4bef" : "2458d5", "5524d8" : "1921bb" },
+    { "b34df4" : "27bb98", "6a4bef" : "0d8e8e", "5524d8" : "0f4954" },
+    { "b34df4" : "aab3ef", "6a4bef" : "9b86f9", "5524d8" : "455cef" },
+    { "b34df4" : "fcc37e", "6a4bef" : "d59240", "5524d8" : "b25b23" },
+    { "b34df4" : "f95f5f", "6a4bef" : "e54e4e", "5524d8" : "a53030" },
+    { "b34df4" : "f260d3", "6a4bef" : "d5468a", "5524d8" : "982c93" },
+    { "b34df4" : "8e4ee5", "6a4bef" : "4425bb", "5524d8" : "35304a" },
+    { "b34df4" : "7ba0fc", "6a4bef" : "778ab8", "5524d8" : "35304a" }
   ],
   "hairColor" : [
-    //LIGHT RED
-    { "d9c189" : "E86D46", "a38d59" : "D1422E", "735e3a" : "96201B" },
-    //RED
-    { "d9c189" : "CD1C38", "a38d59" : "982441", "735e3a" : "69243F" },
-    //DARK RED
-    { "d9c189" : "ad2716", "a38d59" : "8f1f1b", "735e3a" : "731a1a" },
-    //RUSTY RED
-    { "d9c189" : "BE471B", "a38d59" : "9B2F0C", "735e3a" : "702710" },
-    //BROWN
-    { "d9c189" : "7d3c1c", "a38d59" : "4d240b", "735e3a" : "2d1606" },
-    //LIGHT BROWN
-    { "d9c189" : "7f5a39", "a38d59" : "5b3523", "735e3a" : "3b1f15" },
-    //DIRTY ORANGE
-    { "d9c189" : "a6671d", "a38d59" : "915622", "735e3a" : "743e1d" },
-    //ORANGE
-    { "d9c189" : "efa838", "a38d59" : "be6d1d", "735e3a" : "834012" },
-    //DIRTY BLONDE
-    { "d9c189" : "eaa758", "a38d59" : "cd8b3d", "735e3a" : "93682c" },
-    //YELLOW
-    { "d9c189" : "e6e756", "a38d59" : "c7ac3f", "735e3a" : "a9882f" },
-    //BLONDE
-    { "d9c189" : "f1d992", "a38d59" : "daba5e", "735e3a" : "b59a4d" },
-    //LIGHT YELLOW
-    { "d9c189" : "f2eba3", "a38d59" : "dcd28c", "735e3a" : "c2b677" },
-    //LIGHT GREEN
-    { "d9c189" : "A7D13D", "a38d59" : "83AD22", "735e3a" : "6B880B" },
-    //GREEN
-    { "d9c189" : "4ece61", "a38d59" : "34ae47", "735e3a" : "228a38" },
-    //DARK GREEN
-    { "d9c189" : "3b7f44", "a38d59" : "2e6a38", "735e3a" : "1d4b28" },
-    //TORQUOISE
-    { "d9c189" : "5BD5B6", "a38d59" : "4AA9AD", "735e3a" : "237082" },
-    //LIGHT TURQUOISE
-    { "d9c189" : "49E193", "a38d59" : "3BA380", "735e3a" : "197C81" },
-    //LIGHT BLUE
-    { "d9c189" : "61BCDE", "a38d59" : "5381CC", "735e3a" : "2C489E" },
-    //BLUE
-    { "d9c189" : "5d8bc7", "a38d59" : "4d55b0", "735e3a" : "2e2a73" },
-    //DARK BLUE
-    { "d9c189" : "425879", "a38d59" : "343965", "735e3a" : "242247" },
-    //DARK PURPLE
-    { "d9c189" : "7f3b6d", "a38d59" : "6a2e53", "735e3a" : "4b1d30" },
-    //PURPLE
-    { "d9c189" : "653b7f", "a38d59" : "562e6a", "735e3a" : "3f1d4b" },
-    //HOT PINK
-    { "d9c189" : "cd72d9", "a38d59" : "ac4da6", "735e3a" : "913b86" },
-    //PINK
-    { "d9c189" : "D26BA4", "a38d59" : "A54669", "735e3a" : "89334D" },
-    //LIGHT PURPLE
-    { "d9c189" : "ad68e2", "a38d59" : "8d41b0", "735e3a" : "6a2980" },
-    //BROWN GREY
-    { "d9c189" : "50422f", "a38d59" : "36261e", "735e3a" : "170f0d" },
-    // DARK GREY
-    { "d9c189" : "525252", "a38d59" : "363636", "735e3a" : "161616" },
-    // GREY
-    { "d9c189" : "74726f", "a38d59" : "53504d", "735e3a" : "2a251e" },
-    // GREY BLUE
-    { "d9c189" : "6f6d85", "a38d59" : "525269", "735e3a" : "3e4352" },
-    // LIGHT GREY
-    { "d9c189" : "b8b8b8", "a38d59" : "828282", "735e3a" : "555555" },
-    // WHITE
-    { "d9c189" : "eaeaea", "a38d59" : "b8b8b8", "735e3a" : "828282" }
+	// Pastel Blue
+	{ "fce6b3" : "bad2fc", "d9c189" : "91b0e5", "a38d59" : "7176db", "735e3a" : "6a54c8" },
+	// Blue
+	{ "fce6b3" : "a4b7ff", "d9c189" : "6c88f2", "a38d59" : "595fe8", "735e3a" : "4e32c8" },
+	// Pastel Purple
+	{ "fce6b3" : "fcfcff", "d9c189" : "d6cdff", "a38d59" : "9693f1", "735e3a" : "6043df" },
+	// Purple
+	{ "fce6b3" : "cfb5ff", "d9c189" : "ae85fc", "a38d59" : "755bea", "735e3a" : "4f32d2" },
+	// Faded Purple
+	{ "fce6b3" : "a293cb", "d9c189" : "796aa1", "a38d59" : "56477e", "735e3a" : "393371" },
+	// Pastel Pink
+	{ "fce6b3" : "ffc3e8", "d9c189" : "f296cf", "a38d59" : "df52d7", "735e3a" : "9037c8" },
+	// Bright Maple
+	{ "fce6b3" : "ffefc9", "d9c189" : "e5ca88", "a38d59" : "eca15d", "735e3a" : "e57845" },
+	// Maple
+	{ "fce6b3" : "f9d18d", "d9c189" : "e8a25f", "a38d59" : "d87a3c", "735e3a" : "d25f29" },
+	// Bright Red
+	{ "fce6b3" : "ffcdc9", "d9c189" : "fc9d95", "a38d59" : "f2685c", "735e3a" : "df3e3e" },
+	// Pastel Pastel
+	{ "fce6b3" : "fefcff", "d9c189" : "f7d3ff", "a38d59" : "ea8dff", "735e3a" : "908dff" },
+	// Cyan
+	{ "fce6b3" : "8bdbdb", "d9c189" : "5db2b2", "a38d59" : "407b8e", "735e3a" : "245c8e" },
+	// Faded Cyan
+	{ "fce6b3" : "97afa7", "d9c189" : "6f8880", "a38d59" : "446677", "735e3a" : "2b445a" },
+	// Light Brown
+	{ "fce6b3" : "e5af97", "d9c189" : "c58a6f", "a38d59" : "a1674c", "735e3a" : "774832" },
+	// Black
+	{ "fce6b3" : "616464", "d9c189" : "3d4141", "a38d59" : "292a2a", "735e3a" : "1f2020" },
+	// DARK GREY
+	{ "fce6b3" : "656667", "d9c189" : "424447", "a38d59" : "2f3034", "735e3a" : "24262a" },
+	// GREY
+	{ "fce6b3" : "888888", "d9c189" : "68696b", "a38d59" : "51545a", "735e3a" : "333641" },
+	// GREY BLUE
+	{ "fce6b3" : "7e92b8", "d9c189" : "5a6f98", "a38d59" : "464c57", "735e3a" : "323844" },
+	// LIGHT GREY
+	{ "fce6b3" : "c5c5c5", "d9c189" : "9b9b9b", "a38d59" : "777373", "735e3a" : "514a4a" },
+	// WHITE
+	{ "fce6b3" : "ffffff", "d9c189" : "e5e5e5", "a38d59" : "a9adc8", "735e3a" : "767b9b" }
   ]
 }

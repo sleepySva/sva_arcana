@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_farmable_tatalot",
+  "rarity" : "Common",
+  "price" : 90,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "A fruit that tastes like a juicy meat snack, and has bones that become cripsy when cooked.",
+  "shortdescription" : "Tatalot",
+  "foodValue" : 5,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "itemName" : "arcana_spectwing_dagger_1",
+  "price" : 320,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "An ornate maple knife made with simple metals.",
+  "shortdescription" : "^Heartroot Claw",
+  "tooltipKind" : "arcana_sword",
+  "category" : "dagger",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","dagger"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "physical",
+  "critRate" : 0.16,
+  "critDamage" : 1.42,
+  
+  "primaryAbilityType" : "arcana_daggercombo",
+  "primaryAbility" : {	
+    "fireTime" : 0.4,
+    "baseDps" : 10.0,
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "statusEffects" : [ ]
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

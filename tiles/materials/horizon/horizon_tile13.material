@@ -1,0 +1,21 @@
+{
+  "materialId" : 16936,
+  "materialName" : "horizon_tile13",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "horizon_tile13",
+  "description" : "A piece of metal pipe.",
+  "shortdescription" : "Horizon Pipes",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "horizon_tile13.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1800
+  }
+}

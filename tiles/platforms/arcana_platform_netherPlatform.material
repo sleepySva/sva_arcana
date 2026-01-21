@@ -1,0 +1,20 @@
+{
+  "materialId" : 16859,
+  "materialName" : "arcana_platform_netherPlatform",
+  "collisionKind" : "platform",
+  "itemDrop" : "arcana_platform_netherPlatform",
+  "shortdescription" : "Crystal Platform",
+  "description" : "A gleaming platform, made from crystals.",
+  "footstepSound" : "/sfx/blocks/footstep_crystal.ogg",
+  "category" : "Supports",
+
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_platform_netherPlatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0
+  }
+}

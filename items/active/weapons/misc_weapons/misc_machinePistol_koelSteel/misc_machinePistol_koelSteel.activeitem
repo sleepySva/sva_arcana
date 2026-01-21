@@ -1,9 +1,9 @@
 {
   "itemName" : "misc_machinePistol_koelSteel",
-  "price" : 1000,
+  "price" : 600,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A special rapid firing machine pistol used by Koel Industries's outpost guards.",
+  "description" : "A special machine pistol used by Koel Industries's outpost guards that shoots rapid reflecting bullets.",
   "shortdescription" : "Koel Steel",
   "tooltipKind" : "arcana_gun",
   "category" : "machinePistol",
@@ -31,7 +31,7 @@
 		},
 	    "muzzleFlash" : {
 		  "properties" : {
-		    "offset" : [0.0, -0.4]
+		    "offset" : [0.0, -0.15]
 		  }
 		}
 	  }
@@ -44,23 +44,27 @@
   "baseOffset" : [0.4, 0.2],
   "muzzleOffset" : [2.0, 0.4],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/arcana_gun.lua"],
 
   "elementalType" : "ice",
+  "critRate" : 0.06,
+  "critDamage" : 1.38,
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/arcana_gunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.14,
-    "baseDps" : 7.4,
+    "baseDps" : 7.5,
     "energyUsage" : 48.0,
     "inaccuracy" : 0.004,
 
     "projectileCount" : 1,
-    "fireType" : "auto",
+    "fireType" : "burst",
+	"burstCount" : 4,
+    "burstTime" : 0.06,
 
-    "projectileType" : "misc_machinePistol_koelSteel_projectile_1",
+    "projectileType" : "arcana_koelsteel1",
     "projectileParameters" : {
       "knockback" : 4
     },
@@ -75,8 +79,8 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : false,
 
         "allowRotate" : false,
@@ -84,8 +88,8 @@
       },
       "cooldown" : {
         "duration" : 0.05,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : false,
 
         "allowRotate" : false,
@@ -94,5 +98,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
 }

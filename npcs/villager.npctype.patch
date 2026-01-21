@@ -26,6 +26,31 @@
 	  ] ]
 	]
   },
+  { "op" : "add", "path" : "/items/spectwing",
+	"value" : [
+	  [0, [
+		{
+		  "chest" : [
+			{ "name" : "arcana_cradling_chest", "data" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } },
+			{ "name" : "arcana_duskkin_chest", "data" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
+		  ],
+		  "legs" : [
+			{ "name" : "arcana_cradling_legs", "data" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } },
+			{ "name" : "arcana_duskkin_legs", "data" : { "colorIndex" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } }
+		  ],
+		  "head" : [
+			{ "name" : "arcana_armor_invisible_head", "data" : { "colorIndex" : 1 } }
+		  ],
+		  "back" : [
+			{ "name" : "arcana_back_chaserWings", "data" : { "colorIndex" : [0, 1, 4, 5, 6, 7, 8, 9, 10, 11] } },
+			{ "name" : "arcana_back_lucidWings", "data" : { "colorIndex" : [0, 1, 4, 5, 6, 7, 8, 9, 10, 11] } },
+			{ "name" : "arcana_back_monarchWings", "data" : { "colorIndex" : [0, 1, 4, 5, 6, 7, 8, 9, 10, 11] } },
+			{ "name" : "arcana_back_foliageWings", "data" : { "colorIndex" : [0, 1, 4, 5, 6, 7, 8, 9, 10, 11] } }
+		  ]
+		}
+	  ] ]
+	]
+  },
   { "op" : "add", "path" : "/items/arcanian",
 	"value" : [
 	  [0, [

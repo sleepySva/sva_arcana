@@ -1,0 +1,21 @@
+{
+  "materialId" : 16930,
+  "materialName" : "arcana_spectwing_tile10",
+  "particleColor" : [58, 62, 86, 255],
+  "itemDrop" : "arcana_spectwing_tile10",
+  "description" : "A sloped wooden beam for building support.",
+  "shortdescription" : "Nether Sloped Wood",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/arcana_railtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile10.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 1609
+  }
+}

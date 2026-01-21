@@ -1,0 +1,69 @@
+{
+  "objectName" : "arcana_nether_light_2",
+  "colonyTags" : ["nether", "spectwing", "light"],
+  "rarity" : "Common",
+  "description" : "A standing lamp made from nether wood, emitting purple light.",
+  "shortdescription" : "Nether Street Lamp",
+  "race" : "generic",
+  "printable" : false,
+  
+  "category" : "light",
+  "price" : 90,
+  "lightColor" : [120, 110, 220],
+  "pointLight" : false,
+  "pointBeam" : 2,
+  "beamAmbience" : 0.10,
+  
+  "flickerPeriod" : 1.0,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 7],
+
+      "direction" : "left",
+      "beamAngle" : 270,
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [0, 7],
+
+      "direction" : "right",
+      "beamAngle" : 270,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

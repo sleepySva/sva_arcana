@@ -1,0 +1,22 @@
+{
+  "name" : "arcana_revenantset",
+  "effectConfig" : {
+  
+    "set" : "arcana_revenant",
+	"minParts" : 3,
+    "statModifiers" : [
+	  { "stat" : "arcana_lifestealBonus", "amount" : 4 }
+    ],
+	"weaponBuff" : {
+      "tags" : [],
+      "modifiers" : [
+      ]
+	}
+  },
+  "defaultDuration" : 120.0,
+
+  "scripts" : [
+    "arcana_setbonus.lua"
+  ],
+  "scriptDelta" : 30
+}

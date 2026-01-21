@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_fluxel",
+  "rarity" : "Legendary",
+  "price" : 80,
+  "category" : "preparedFood",
+  "inventoryIcon" : "fluxel.png",
+  "description" : "An energizing bake that will make you rush back for more! ^orange;[Hyou]^reset;\n\n^green;Consumption triggers a single explosion.^reset;",
+  "shortdescription" : "Fluxel",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

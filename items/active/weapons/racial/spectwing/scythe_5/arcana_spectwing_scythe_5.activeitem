@@ -1,0 +1,60 @@
+{
+  "itemName" : "arcana_spectwing_scythe_5",
+  "price" : 1000,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "...",
+  "shortdescription" : "Evernight",
+  "tooltipKind" : "arcana_sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Scythe"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","scythe"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "/items/active/weapons/melee/arcana/scythe/evernight.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [0, 1.8]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [0, 1.8]
+          }
+        },
+        "swoosh" : {
+          "properties" : {
+            "fullbright" : true
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "arcana_abyss",
+  "critRate" : 0.04,
+  "critDamage" : 1.60,
+
+  "primaryAbilityType" : "arcana_scythe_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.5,
+    "baseDps" : 13.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "arcana_abyss_slash"
+	}
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

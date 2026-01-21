@@ -1,0 +1,82 @@
+{
+  "objectName" : "arcana_nether_light_4",
+  "colonyTags" : ["nether", "spectwing", "light"],
+  "rarity" : "Common",
+  "description" : "A chandelier made from nether wood, emitting purple light.",
+  "shortdescription" : "Nether Chandelier",
+  "race" : "generic",
+  "printable" : false,
+  
+  "category" : "light",
+  "price" : 70,
+  "lightColor" : [120, 110, 230],
+  "pointLight" : false,
+  "pointBeam" : 2,
+  "beamAmbience" : 0.10,
+  
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 0],
+
+      "direction" : "left",
+      "beamAngle" : 270,
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "body.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [1, 0],
+
+      "direction" : "right",
+      "beamAngle" : 270,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+  
+  "animation" : "/objects/arcana_light_fullbright_animated.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "light" : {
+          "states" : {
+            "on" : {
+              "frames" : 4,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/torch_on1.ogg", "/sfx/objects/torch_on2.ogg" ],
+      "off" : [ "/sfx/objects/torch_off1.ogg", "/sfx/objects/torch_off2.ogg", "/sfx/objects/torch_off3.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "body.png",
+    "fg" : "fullbright.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

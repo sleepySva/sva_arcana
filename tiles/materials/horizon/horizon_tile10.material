@@ -1,0 +1,21 @@
+{
+  "materialId" : 16933,
+  "materialName" : "horizon_tile10",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "horizon_tile10",
+  "description" : "A durable black smooth panel tile, made from a smelted compound.",
+  "shortdescription" : "Sloped Panel (IMP)",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 18,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "horizon_tile10.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4829
+  }
+}

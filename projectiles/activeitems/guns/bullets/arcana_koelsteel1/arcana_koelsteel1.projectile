@@ -1,0 +1,47 @@
+{
+  "projectileName" : "arcana_koelsteel1",
+  "physics" : "laser",
+  
+  "timeToLive" : 4,
+  "bounces" : 1,
+  "speed" : 106,
+  
+  "image" : "arcana_koelsteel1.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  
+  "fullbright" : true,
+  "lightColor" : [10, 60, 90],
+  "emitters" : [ "arcana_particle_ember_cyan" ],
+  
+  "supportsProcessing" : true,
+  
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/guns/bullets/arcana_koelsteel1/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  
+  "damageKind" : "iceplasmabullet"
+ 
+}

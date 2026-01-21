@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":100,
+ "tilecount":101,
  "tileheight":256,
  "tileproperties":
     {
@@ -808,6 +808,14 @@
          "imagePositionY":"0",
          "object":"orion_bed_1",
          "tilesetDirection":"right"
+        },
+     "100":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"orion_door_3",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -1211,6 +1219,10 @@
      "99":
         {
          "image":"orion_bed_1.png"
+        },
+     "100":
+        {
+         "image":"orion_door_3.png"
         }
     },
  "tilewidth":188

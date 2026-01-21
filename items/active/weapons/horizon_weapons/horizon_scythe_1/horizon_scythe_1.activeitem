@@ -13,7 +13,7 @@
 
   "inventoryIcon" : "body.png:idle.1",
 
-  "animation" : "/items/active/weapons/melee/scythe/arcana_scythe.animation",
+  "animation" : "/items/active/weapons/melee/arcana/scythe/arcana_scythe.animation",
   "animationParts" : {
     "blade" : "body.png",
     "handle" : "fullbright.png"
@@ -23,12 +23,12 @@
       "parts" : {
         "blade" : {
           "properties" : {
-            "offset" : [1.1, 0.8]
+            "offset" : [0, 1.8]
           }
         },
         "handle" : {
           "properties" : {
-            "offset" : [1.1, 0.8]
+            "offset" : [0, 1.8]
           }
         },
         "swoosh" : {
@@ -46,10 +46,10 @@
   "critRate" : 0.04,
   "critDamage" : 1.45,
 
-  "primaryAbilityType" : "arcana_scythecombo",
+  "primaryAbilityType" : "arcana_scythe_combo",
   "primaryAbility" : {
-    "fireTime" : 1.0,
-    "baseDps" : 9.0,
+    "fireTime" : 0.5,
+    "baseDps" : 8.0,
 	"damageConfig" : {
 	  "damageSourceKind" : "arcana_abyss_slash"
 	}

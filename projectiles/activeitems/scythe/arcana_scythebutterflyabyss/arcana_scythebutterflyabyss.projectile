@@ -1,0 +1,55 @@
+{
+  "projectileName" : "arcana_scythebutterflyabyss",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 1.2,
+  "image" : "body.png",
+  "speed" : 10,
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 6,
+  "fullbright" : true,
+  "damageKind" : "arcana_abyss",
+  "piercing" : false,
+  
+  "emitters" : [],
+  "supportsProcessing" : true,
+  
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/scythe/arcana_scythebutterflyabyss/trail.png",
+        "position" : [0, 0],
+        "layer" : "front",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true,
+		"variance" : {
+		  "initialVelocity" : [4, 4],
+		  "finalVelocity" : [2, 2]
+		}
+      }
+    }
+  ],
+  
+  "actionOnReap" : [
+  ],
+  
+  "scripts" : ["/scripts/projectiles/homingprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "homingDistance" : 400,
+  "rotationRate" : 4.0,
+  "trackingLimit" : 400
+}

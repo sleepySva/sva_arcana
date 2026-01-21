@@ -1,0 +1,21 @@
+{
+  "materialId" : 16931,
+  "materialName" : "arcana_spectwing_tile11",
+  "particleColor" : [58, 62, 86, 255],
+  "itemDrop" : "arcana_spectwing_tile11",
+  "description" : "A smooth set of planks in dark, nether colors.",
+  "shortdescription" : "Nether Smooth Planks",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile11.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1604
+  }
+}

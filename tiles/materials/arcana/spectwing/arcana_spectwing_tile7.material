@@ -1,0 +1,21 @@
+{
+  "materialId" : 16927,
+  "materialName" : "arcana_spectwing_tile7",
+  "particleColor" : [58, 62, 86, 255],
+  "itemDrop" : "arcana_spectwing_tile7",
+  "description" : "A fence for separating different areas.",
+  "shortdescription" : "Nether Fence",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/columntemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile7.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 1599
+  }
+}

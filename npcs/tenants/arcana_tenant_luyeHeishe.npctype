@@ -1,0 +1,60 @@
+{
+  "type" : "arcana_tenant_luyeHeishe",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"],
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "arcana_crewmember_vanguard"],
+          [1, "arcana_crewmember_chemlord"],
+          [1, "arcana_crewmember_riftwalker"]
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Us Luye officers are stationed to protect the company, but we're also trained in... disposal skills, for some of our wide businesses.",
+            "Heh, you won't believe how many trained assassins are working with us, even though we're supposed to be a tea company.",
+            "Our products are top quality! Best in the galaxy! One taste of our tea, and you'll understand..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "arcana_armor_heishe_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_heishe_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_heishe_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "luye_glaive_1",
+			  "luye_moonBlade_1"
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "arcana_armor_heishe_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_heishe_legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

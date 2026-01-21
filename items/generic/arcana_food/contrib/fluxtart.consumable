@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_fluxtart",
+  "rarity" : "Uncommon",
+  "price" : 120,
+  "category" : "preparedFood",
+  "inventoryIcon" : "fluxtart.png",
+  "description" : "A luminous tart with a suspicious extremely sweet flavor. ^orange;[Kumochan]^reset;\n\n^green;Glow 120s, +20% Max Health 200s^reset;",
+  "shortdescription" : "Fluxtart",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 200
+    }
+  ] ],
+  "foodValue" : 30,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16928,
+  "materialName" : "arcana_spectwing_tile8",
+  "particleColor" : [58, 62, 86, 255],
+  "itemDrop" : "arcana_spectwing_tile8",
+  "description" : "A ridge tile for use as flooring or roofing.",
+  "shortdescription" : "Nether Stone Ridge",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile8.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1613
+  }
+}

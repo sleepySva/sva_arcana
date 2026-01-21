@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_richhospitality",
+  "rarity" : "Rare",
+  "price" : 120,
+  "category" : "preparedFood",
+  "inventoryIcon" : "sharpplatter.png",
+  "description" : "A classic dish from the Empire, showing the genuine kindness of Exousians. ^orange;[MWH]^reset;\n\n^green;Grants +20% Max Health for 20 minutes.^reset;",
+  "shortdescription" : "Rich Hospitality",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 1200
+    }
+  ] ],
+  "foodValue" : 40,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

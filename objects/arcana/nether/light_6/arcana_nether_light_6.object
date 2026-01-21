@@ -1,0 +1,115 @@
+{
+  "objectName" : "arcana_nether_light_6",
+  "colonyTags" : ["nether", "spectwing", "light"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 5,
+
+  "description" : "This torch flickers softly.",
+  "shortdescription" : "Torch",
+  "race" : "generic",
+
+  "apexDescription" : "An excellent survival tool.",
+  "avianDescription" : "Torches are essential.",
+  "floranDescription" : "Torch ssscare Floran, but Floran musst masster torch.",
+  "glitchDescription" : "Sentimental. Torches are indispensable.",
+  "humanDescription" : "A torch to light the way.",
+  "hylotlDescription" : "The humble torch, invaluable out in the wild.",
+  "novakidDescription" : "A torch. Can't live without 'em!",
+
+  "lightColor" : [120, 110, 220],
+
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "torchicon.png",
+  "orientations" : [
+    {
+      "image" : "torch.png:<color>.<frame>",
+      "imagePosition" : [1, 0],
+
+      "animationParts" : {
+        "bg" : "torch.png",
+        "fg" : "torchlit.png"
+      },
+      "animationPosition" : [1, 0],
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "fgAnchors" : [ [0, -1] ],
+
+      "direction" : "right"
+    },
+
+    {
+      "image" : "torchleft.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "animationParts" : {
+        "bg" : "torchleft.png",
+        "fg" : "torchleftlit.png"
+      },
+      "animationPosition" : [0, 0],
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "fgAnchors" : [ [-1, 0] ],
+
+      "direction" : "right"
+    },
+
+    {
+      "image" : "torchright.png:<color>.<frame>",
+      "imagePosition" : [2, 0],
+
+      "animationParts" : {
+        "bg" : "torchright.png",
+        "fg" : "torchrightlit.png"
+      },
+      "animationPosition" : [2, 0],
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "fgAnchors" : [ [1, 0] ],
+
+      "direction" : "right"
+    },
+
+    {
+      "image" : "torch.png:<color>.<frame>",
+      "imagePosition" : [1, 0],
+
+      "animationParts" : {
+        "bg" : "torch.png",
+        "fg" : "torchlit.png"
+      },
+      "animationPosition" : [1, 0],
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "bgAnchors" : [ [0, 0] ],
+
+      "direction" : "right"
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/torch.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "animation" : "torch.animation",
+  "animationParts" : {
+    "bg" : "torch.png",
+    "fg" : "torchlit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/torch_on1.ogg", "/sfx/objects/torch_on2.ogg" ],
+      "off" : [ "/sfx/objects/torch_off1.ogg", "/sfx/objects/torch_off2.ogg", "/sfx/objects/torch_off3.ogg" ]
+    }
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

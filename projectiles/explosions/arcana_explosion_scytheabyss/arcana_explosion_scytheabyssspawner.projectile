@@ -1,0 +1,21 @@
+{
+  "projectileName" : "arcana_explosion_scytheabyssspawner",
+  "image" : "empty.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "timeToLive" : 0,
+  "speed" : 0,
+  "damagePoly" : [ [-36, 0], [-24, -24], [0, -36], [24, -24], [36, 0], [24, 24], [0, 36], [-24, 24] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "arcana_abyss",
+  "damageSourceKind" : "NoDamage",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/arcana_explosion_scytheabyss/arcana_explosion_scytheabyss.config"
+    }
+  ]
+}

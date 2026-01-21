@@ -1,0 +1,21 @@
+{
+  "materialId" : 16932,
+  "materialName" : "arcana_spectwing_tile12",
+  "particleColor" : [58, 62, 86, 255],
+  "itemDrop" : "arcana_spectwing_tile12",
+  "description" : "A smooth flooring made from durable wood.",
+  "shortdescription" : "Dark Wood Flooring",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile12.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1603
+  }
+}

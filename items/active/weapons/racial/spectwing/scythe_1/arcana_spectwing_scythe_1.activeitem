@@ -1,0 +1,61 @@
+{
+  "itemName" : "arcana_spectwing_scythe_1",
+  "price" : 10,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A makeshift scythe, crafted from bones.",
+  "shortdescription" : "Bone Scythe",
+  "tooltipKind" : "arcana_sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Scythe"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","scythe"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "/items/active/weapons/melee/arcana/scythe/arcana_scythe.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [0, 1.8]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [0, 1.8]
+          }
+        },
+        "swoosh" : {
+          "properties" : {
+            "fullbright" : true
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "physical",
+  "critRate" : 0.04,
+  "critDamage" : 1.45,
+
+  "primaryAbilityType" : "arcana_scythe_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.5,
+    "baseDps" : 9.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "broadsword"
+	},
+	"impact" : false
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

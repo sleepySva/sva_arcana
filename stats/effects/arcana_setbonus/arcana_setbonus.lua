@@ -13,7 +13,6 @@ function init()
   self.weaponBuff = config.getParameter("weaponBuff")
   self.effectGroup = nil
   self.weaponGroup = nil
-  updateBonus(nil)
 end
 
 function updateBonus(id)

@@ -1,0 +1,21 @@
+{
+  "materialId" : 16935,
+  "materialName" : "horizon_tile12",
+  "particleColor" : [110, 110, 110, 255],
+  "itemDrop" : "horizon_tile12",
+  "description" : "A panel of ship wall.",
+  "shortdescription" : "Horizon Ship Wall",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 10,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "horizon_tile12.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 599
+  }
+}

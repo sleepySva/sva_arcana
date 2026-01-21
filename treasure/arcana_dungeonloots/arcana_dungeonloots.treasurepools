@@ -1,5 +1,70 @@
 {
 
+  "arcana_dungeonloots_spectwingbasic" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_spectwing_tile3", 10]},
+		{"weight" : 1.0, "item" : ["arcana_spectwing_tile4", 10]},
+		{"weight" : 1.0, "item" : ["arcana_spectwing_tile6", 10]},
+		{"weight" : 1.0, "item" : ["arcana_spectwing_tile10", 10]},
+		{"weight" : 1.0, "item" : ["astral_tile15", 10]},
+		{"weight" : 1.0, "item" : ["arcana_nether_light_1", 1]},
+		{"weight" : 1.0, "item" : ["arcana_nether_light_3", 1]},
+		{"weight" : 1.0, "item" : ["arcana_nether_light_4", 1]},
+		{"weight" : 1.0, "item" : ["arcana_nether_light_5", 1]},
+		{"weight" : 1.0, "item" : ["arcana_nether_light_6", 1]},
+		{"weight" : 1.0, "item" : ["arcana_ore_necroiumFragment", 2]},
+		{"weight" : 0.1, "item" : ["arcana_farmable_tatalot", 1]},
+		{"weight" : 0.1, "item" : ["arcana_vitalityPotion", 1]},
+		{"weight" : 0.1, "item" : ["arcana_mistbanePotion", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 2],
+		[0.2, 3],
+		[0.2, 3],
+		[0.2, 4],
+        [0.2, 5]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "arcana_dungeonloots_spectwingbones" : [
+    [0, {
+      "pool" : [
+		{"weight" : 2.0, "item" : ["bone", 2]},
+		{"weight" : 1.0, "item" : ["bonematerial", 5]},
+		{"weight" : 0.1, "item" : ["bonebooseed", 1]},
+		{"weight" : 0.1, "item" : ["boneboo", 1]},
+		{"weight" : 0.1, "item" : ["arcana_farmable_tatalot", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 3],
+		[0.2, 4],
+		[0.2, 4],
+		[0.2, 5],
+        [0.2, 6]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "arcana_dungeonloots_spectwingrare" : [
+    [0, {
+	  "fill" : [
+        {"pool" : "basicChestTreasure"}
+      ],
+      "pool" : [
+		{"weight" : 1.0, "pool" : "arcana_dungeonloots_spectwingbasic"}
+      ],
+      "poolRounds" : [
+        [0.5, 2],
+		[0.5, 3]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+
   "arcana_dungeonloots_grapple" : [
     [0, {
 	  "fill" : [
@@ -639,7 +704,7 @@
 		{"item" : ["orion_rocketLauncher_1", 1]},
 		{"item" : ["orion_pistol_2", 1]},
 		{"item" : ["arcana_bar_thoriumBar", 10]},
-		{"item" : ["orion_crafting_regulusCell", 1]}
+		{"item" : ["orion_crafting_jupiterCell", 1]}
       ]
     }]
   ],

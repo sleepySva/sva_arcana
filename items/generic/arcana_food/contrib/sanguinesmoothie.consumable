@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_food_sanguinesmoothie",
+  "rarity" : "Uncommon",
+  "price" : 120,
+  "category" : "preparedFood",
+  "inventoryIcon" : "sanguinesmoothie.png",
+  "description" : "A fine blend of a crushed bloody gem, a jungle mango and one or two tea leaves. ^orange;[Ewok]^reset;\n\n^green;Swim boost, energy boost, regeneration^reset;",
+  "shortdescription" : "Sanguine Smoothie",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}

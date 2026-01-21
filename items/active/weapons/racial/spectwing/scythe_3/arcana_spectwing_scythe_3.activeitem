@@ -1,0 +1,63 @@
+{
+  "itemName" : "arcana_spectwing_scythe_3",
+  "price" : 500,
+  "level" : 3,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A scythe built to harness the strongest storms.",
+  "shortdescription" : "Stormtear Scythe",
+  "tooltipKind" : "arcana_sword",
+  "category" : "broadsword",
+  "tooltipFields" : {"subtitle" : "Scythe"},
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","scythe"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "/items/active/weapons/melee/arcana/scythe/stormtear.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [0, 1.8]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [0, 1.8]
+          }
+        },
+        "swoosh" : {
+          "properties" : {
+            "fullbright" : true
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "electric",
+  "critRate" : 0.06,
+  "critDamage" : 1.40,
+
+  "primaryAbilityType" : "arcana_scythe_combo",
+  "primaryAbility" : {
+    "fireTime" : 0.5,
+    "baseDps" : 11.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "electricbroadsword"
+	},
+	"impactProjectile" : "teslabolt",
+	"impactDamage" : 5,
+	"impact" : true
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

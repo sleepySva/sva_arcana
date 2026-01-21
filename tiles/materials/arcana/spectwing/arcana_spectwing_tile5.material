@@ -1,0 +1,21 @@
+{
+  "materialId" : 16925,
+  "materialName" : "arcana_spectwing_tile5",
+  "particleColor" : [58, 62, 86, 255],
+  "itemDrop" : "arcana_spectwing_tile5",
+  "description" : "A reinforced plating for building, in nether colors.",
+  "shortdescription" : "Nether Wall Plate",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/rowtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile5.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1600
+  }
+}

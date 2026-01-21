@@ -1,0 +1,26 @@
+{
+  "itemName" : "arcana_vitalityPotion",
+  "rarity" : "Uncommon",
+  "price" : 80,
+  "category" : "medicine",
+  "tooltipKind" : "arcana_base_generic",
+  "inventoryIcon" : "arcana_vitalityPotion.png",
+  
+  "description" : "A red potion for boosting one's vitality. \nGrants ^green;minor health regeneration and increases maximum health by 20% for 60s^reset;.^reset;",
+  "shortdescription" : "Vitality Potion",
+  "effects" : [ [
+      {
+        "effect" : "maxhealthscalingboost20",
+        "duration" : 60
+      },
+      {
+        "effect" : "salveheal"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "maxhealthscalingboost20",
+	"salveheal"
+  ]
+}

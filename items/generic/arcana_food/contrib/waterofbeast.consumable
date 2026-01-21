@@ -1,0 +1,22 @@
+{
+  "itemName" : "arcana_food_waterofbeast",
+  "rarity" : "Uncommon",
+  "price" : 160,
+  "category" : "preparedFood",
+  "inventoryIcon" : "waterofbeast.png",
+  "description" : "A can of sports drink that looks very dangerous...and powerful. ^orange;[Kumochan]^reset;\n\n^green;+30% Max Energy 200s^reset;",
+  "shortdescription" : "Water of Beast",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 5,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "emitters" : [ "drinking" ]
+}

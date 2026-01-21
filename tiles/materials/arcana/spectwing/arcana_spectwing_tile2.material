@@ -1,0 +1,21 @@
+{
+  "materialId" : 16922,
+  "materialName" : "arcana_spectwing_tile2",
+  "particleColor" : [85, 55, 116, 255],
+  "itemDrop" : "arcana_spectwing_tile2",
+  "description" : "A brightly colored inset panel.",
+  "shortdescription" : "Plum Nether Panel",
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 4600
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "itemName" : "arcana_spectwing_chakram_2",
+  "price" : 400,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "category" : "chakram",
+  "description" : "A sharp chakram for hunting prey.",
+  "shortdescription" : "Umbral Chakram",
+  "tooltipKind" : "base",
+  "twoHanded" : false,
+  "itemTags" : ["weapon"],
+
+  "inventoryIcon" : "body.png",
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "chakram" : "body.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "throw" : [ "/sfx/melee/swing_dagger.ogg" ]
+    }
+  },
+  "scripts" : ["/items/active/weapons/boomerang/boomerang.lua"],
+  "fireOffset" : [1.25, 0.5],
+
+  "cooldownTime" : 0.4,
+
+  "projectileType" : "arcana_spectwing_chakram_2",
+  "projectileParameters" : {
+    "knockback" : 6,
+    "power" : 4,
+    "damageRepeatTimeout" : 0.2,
+
+    "returnOnHit" : false,
+    "pickupDistance" : 1.0,
+
+    "hoverMaxDistance" : 14,
+    "hoverTime" : 0
+  },
+  "level" : 2,
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -20,
+      "animationState" : {
+        "weapon" : "visible"
+      },
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "windup" : {
+      "duration" : 0.1,
+      "transition" : "throw",
+      "transitionFunction" : "fire",
+      "armRotation" : 70,
+      "animationState" : {
+        "weapon" : "visible"
+      },
+      "allowRotate" : false,
+      "allowFlip" : false
+    },
+    "throw" : {
+      "armRotation" : 0,
+      "animationState" : {
+        "weapon" : "hidden"
+      },
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "catch" : {
+      "duration" : 0.2,
+      "transition" : "idle",
+      "armRotation" : 60,
+      "animationState" : {
+        "weapon" : "visible"
+      },
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  }
+}

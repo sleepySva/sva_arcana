@@ -25,10 +25,7 @@
         {"item" : ["arcana_essence_lunarEssence", 10]}
       ],
       "pool" : [
-		{"weight" : 0.1, "item" : ["arcana_misc_lunarInsignia", 3]},
-		{"weight" : 0.2, "item" : ["arcana_misc_lunarInsignia", 4]},
-        {"weight" : 0.3, "item" : ["arcana_misc_lunarInsignia", 4]},
-		{"weight" : 0.4, "item" : ["arcana_misc_lunarInsignia", 3]}
+		{"weight" : 1.0, "item" : ["arcana_misc_lunarInsignia", 4]}
       ],
       "poolRounds" : [
         [1.0, 1]
@@ -41,10 +38,9 @@
 	  "fill" : [
 	    {"item" : ["money", 24000]},
 		{"item" : ["arcana_codex_aeonTimepiece-codex", 1]},
-        {"item" : ["arcana_misc_aeonLeaf", 10]},
+        {"item" : ["arcana_misc_aeonLeaf", 12]},
         {"item" : ["arcana_misc_aeonCore", 1]},
-		{"item" : ["arcana_misc_eternalPage", 20]},
-        {"item" : ["arcana_essence_aeonEssence", 20]},
+		{"item" : ["arcana_misc_eternalPage", 28]},
 		{"item" : ["arcana_aeon_deco_2", 1]}
       ],
       "pool" : [
@@ -65,10 +61,7 @@
         {"item" : ["arcana_nanopack", 2]}
       ],
       "pool" : [
-		{"weight" : 0.1, "item" : ["arcana_misc_morphosisEgg", 22]},
-		{"weight" : 0.2, "item" : ["arcana_misc_morphosisEgg", 20]},
-        {"weight" : 0.3, "item" : ["arcana_misc_morphosisEgg", 18]},
-		{"weight" : 0.4, "item" : ["arcana_misc_morphosisEgg", 16]}
+		{"weight" : 1.0, "item" : ["arcana_misc_morphosisEgg", 24]}
       ],
       "poolRounds" : [
         [1.0, 1]
@@ -162,10 +155,7 @@
         {"item" : ["arcana_nanopack", 2]}
       ],
       "pool" : [
-		{"weight" : 0.1, "item" : ["arcana_misc_cosmoTendrils", 22]},
-		{"weight" : 0.2, "item" : ["arcana_misc_cosmoTendrils", 20]},
-        {"weight" : 0.3, "item" : ["arcana_misc_cosmoTendrils", 18]},
-		{"weight" : 0.4, "item" : ["arcana_misc_cosmoTendrils", 16]}
+		{"weight" : 1.0, "item" : ["arcana_misc_cosmoTendrils", 24]}
       ],
       "poolRounds" : [
         [1.0, 1]
@@ -177,13 +167,10 @@
     [0, {
 	  "fill" : [
 	    {"item" : ["arcana_codex_solarGuardian-codex", 1]},
-        {"item" : ["arcana_essence_solarEssence", 10]}
+        {"item" : ["arcana_essence_solarEssence", 24]}
       ],
       "pool" : [
-		{"weight" : 0.1, "item" : ["arcana_misc_solarMedallion", 5]},
-		{"weight" : 0.2, "item" : ["arcana_misc_solarMedallion", 4]},
-        {"weight" : 0.3, "item" : ["arcana_misc_solarMedallion", 4]},
-		{"weight" : 0.4, "item" : ["arcana_misc_solarMedallion", 5]}
+		{"weight" : 1.0, "item" : ["arcana_misc_solarMedallion", 4]}
       ],
       "poolRounds" : [
         [1.0, 1]

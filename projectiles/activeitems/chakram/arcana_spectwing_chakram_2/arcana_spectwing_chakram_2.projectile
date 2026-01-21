@@ -1,0 +1,46 @@
+{
+  "projectileName" : "arcana_spectwing_chakram_2",
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 8,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [52, 140, 120],
+  "pointLight" : true,
+  "flippable" : false,
+  "orientationLocked" : true,
+  "emitters" : [],
+  "actionOnReap" : [],
+  "statusEffects" : [],
+  "damagePoly" : [[-11, 11], [11, 11], [11, -11], [-11, -11]],
+  "power" : 5.0,
+  "speed" : 60,
+  "damageKind" : "poisonshortsword",
+  "physics" : "laser",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 5,
+  "fullbright" : true,
+  
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/chakram/arcana_spectwing_chakram_2/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "shrink",
+        "fullbright" : false
+      }
+    }
+  ],
+
+  "persistentAudio" : "/sfx/melee/spear_twirl_loop.ogg",
+
+  "scripts" : [ "/projectiles/activeitems/chakram/hoverchakramprojectile.lua" ]
+}

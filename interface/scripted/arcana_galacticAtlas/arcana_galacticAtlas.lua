@@ -3,6 +3,13 @@ require "/scripts/vec2.lua"
 require "/scripts/rect.lua"
 
 function init()
+  local configPath = "/interface/scripted/arcana_galacticAtlas/locations.config"
+  self.locationList = "locationArea.locationList"
+  self.locations = root.assetJson(configPath).locations
+  self.locationSelected = nil
+  self.buttons = {}
+  populateLocationList()
+  widget.setButtonEnabled("activateButton", false)
 end
 
 function update(dt)
@@ -11,9 +18,9 @@ function update(dt)
 end
 
 function teleport()
-  self.destinationName = widget.getSelectedData("destinationTabs")
-  if (self.destinationName) then
-	player.warp(string.format("instanceWorld:%s", self.destinationName), "beam")
+  local location = self.locationSelected
+  if location then
+	player.warp(string.format("instanceWorld:%s", location), "beam")
 	pane.dismiss()
   end
 end
@@ -25,11 +32,56 @@ function teleportToShip()
   end
 end
 
-function setDestinationImage()
-  self.destinationName = widget.getSelectedData("destinationTabs")
-  if (self.destinationName) then
-   widget.setImage("destinationImage", string.format("/interface/scripted/arcana_galacticAtlas/%s.png", self.destinationName))
+function populateLocationList()
+  widget.clearListItems(self.locationList)
+  self.buttons = {}
+  
+  table.sort(self.locations, function(a,b)
+    return (a.order or 0) < (b.order or 0)
+  end)
+
+  for _, location in pairs(self.locations) do
+    if not (location.requiredQuest ~= "none" and not player.hasCompletedQuest(location.requiredQuest) and location.requiredHidden) then
+      local item = widget.addListItem(self.locationList)
+	  table.insert(self.buttons, item)
+	
+	  if location.requiredQuest ~= "none" and not player.hasCompletedQuest(location.requiredQuest) then
+	    -- Locked
+	    widget.setText(string.format("%s.%s.questName", self.locationList, item), "^shadow;"..location.requiredQuestName.."^reset;")
+		widget.setVisible(string.format("%s.%s.lock", self.locationList, item), true)
+		widget.setFontColor(string.format("%s.%s.name", self.locationList, item), {60, 60, 60})
+		widget.setImage(string.format("%s.%s.icon", self.locationList, item), location.icon.."?brightness=-50?saturation=-100")
+		widget.setText(string.format("%s.%s.name", self.locationList, item), "^shadow;???^reset;")
+	  else
+	    -- Normal
+	    widget.setVisible(string.format("%s.%s.lock", self.locationList, item), false)
+		widget.setImage(string.format("%s.%s.icon", self.locationList, item), location.icon)
+		widget.setText(string.format("%s.%s.name", self.locationList, item), "^shadow;"..location.name.."^reset;")
+	  end
+	  
+	  widget.setImage(string.format("%s.%s.preview", self.locationList, item), location.background.."?brightness=-50?saturation=-50")
+	  widget.setData(string.format("%s.%s", self.locationList, item), location)
+	end
   end
+end
+
+function selectLocation()
+  local selected = widget.getListSelected(self.locationList)
+  local data = widget.getData(string.format("%s.%s", self.locationList, selected))
+  
+  if data.requiredQuest ~= "none" and not player.hasCompletedQuest(data.requiredQuest) then return end
+  
+  for _, button in pairs(self.buttons) do
+    local item = string.format("%s.%s", self.locationList, button)
+	local itemData = widget.getData(item)
+    widget.setImage(item..".preview", itemData.background.."?brightness=-50?saturation=-50")
+	widget.setImage(item..".top", "/interface/scripted/arcana_galacticAtlas/backgrounds/top.png")
+  end
+  
+  self.locationSelected = data.warp
+  widget.setImage(string.format("%s.%s.preview", self.locationList, selected), data.background)
+  widget.setImage(string.format("%s.%s.top", self.locationList, selected), "/interface/scripted/arcana_galacticAtlas/backgrounds/topselected.png")
+  widget.setButtonEnabled("activateButton", true)
 end
 
 function teleportLegalCheck()
@@ -50,6 +102,7 @@ function teleportLegalCheck()
 end
 
 function teleportButtonCheck(button)
+  if self.locationSelected == nil and button == "activateButton" then return end
   widget.setButtonEnabled(button, teleportLegalCheck())
 end
 

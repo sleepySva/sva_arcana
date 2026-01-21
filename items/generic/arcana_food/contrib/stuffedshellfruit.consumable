@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_stuffedshellfruit",
+  "rarity" : "Uncommon",
+  "price" : 120,
+  "category" : "preparedFood",
+  "inventoryIcon" : "stuffedshellfruit.png",
+  "description" : "A Shellfruit stuffed with a mix of meat and fish. It looks like a turtle and even tastes like one! ^orange;[Malevolent VoidHeart]^reset;\n\n^green;Gives you Bonus Health (20%) effect for 420 sec.^reset;",
+  "shortdescription" : "Stuffed Shellfruit",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 420
+    }
+  ] ],
+  "foodValue" : 40,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

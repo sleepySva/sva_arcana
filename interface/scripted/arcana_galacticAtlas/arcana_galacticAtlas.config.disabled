@@ -1,0 +1,199 @@
+{
+  "gui" : {
+    "panefeature" : {
+      "type" : "panefeature"
+    },
+    "background" : {
+      "type" : "background",
+      "fileHeader" : "/interface/scripted/arcana_galacticAtlas/head.png",
+      "fileBody" : "/interface/scripted/arcana_galacticAtlas/body.png",
+      "fileFooter" : "/interface/scripted/arcana_galacticAtlas/foot.png"
+    },
+    "close" : {
+      "type" : "button",
+      "base" : "/interface/x.png",
+      "hover" : "/interface/xhover.png",
+      "pressed" : "/interface/xpress.png",
+      "pressedOffset" : [0, 0],
+      "position" : [394, 196],
+	  "zlevel" : 5
+    },
+    "lblTitle" : {
+      "type" : "label",
+      "position" : [269, 276],
+	  "hAnchor" : "mid",
+      "value" : " "
+    },
+    "lblDescription" : {
+      "type" : "label",
+      "position" : [269, 251],
+	  "hAnchor" : "mid",
+	  "wrapWidth" : 168,
+	  "fontSize" : 7.2,
+      "value" : " "
+    },
+	"tabLabel_1" : {
+      "type" : "label",
+      "position" : [41, 195],
+      "hAnchor" : "left",
+	  "vAnchor" : "top",
+	  "wrapWidth" : 196,
+	  "fontSize" : 6,
+      "value" : "Lighthaven",
+	  "zlevel" : 3
+    },
+	"tabLabel_2" : {
+      "type" : "label",
+      "position" : [41, 163],
+      "hAnchor" : "left",
+	  "vAnchor" : "top",
+	  "wrapWidth" : 196,
+	  "fontSize" : 6,
+      "value" : "Nova Station",
+	  "zlevel" : 3
+    },
+	"tabLabel_3" : {
+      "type" : "label",
+      "position" : [41, 131],
+      "hAnchor" : "left",
+	  "vAnchor" : "top",
+	  "wrapWidth" : 196,
+	  "fontSize" : 6,
+      "value" : "Zhushi Pond",
+	  "zlevel" : 3
+    },
+	"tabLabel_4" : {
+      "type" : "label",
+      "position" : [41, 99],
+      "hAnchor" : "left",
+	  "vAnchor" : "top",
+	  "wrapWidth" : 196,
+	  "fontSize" : 6,
+      "value" : "Astral Observatory",
+	  "zlevel" : 4
+    },
+	"destinationImage" : {
+      "type" : "image",
+	  "file" : "/interface/scripted/arcana_galacticAtlas/placeholder.png",
+      "position" : [227, 11],
+	  "zlevel" : 4
+    },
+    "emptyLabel" : {
+      "type" : "label",
+      "position" : [138, 230],
+      "hAnchor" : "mid",
+      "color" : "gray",
+      "value" : ""
+    },
+	
+	"destinationTabs" : {
+		"type" : "radioGroup",
+		"callback" : "setDestinationImage",
+		"zlevel" : 2,
+		"toggleMode" : false,
+		"buttons" : [
+			{
+				"selected" : false,
+				"position" : [12, 178],
+				"baseImage" : "/interface/scripted/arcana_galacticAtlas/tab_1_unselected.png",
+				"baseImageChecked" : "/interface/scripted/arcana_galacticAtlas/tab_1_selected.png",
+				"pressedOffset" : [0, 0],
+				"data" : "arcana_dungeon_lighthaven"
+			},
+			{
+				"selected" : false,
+				"position" : [12, 146],
+				"baseImage" : "/interface/scripted/arcana_galacticAtlas/tab_2_unselected.png",
+				"baseImageChecked" : "/interface/scripted/arcana_galacticAtlas/tab_2_selected.png",
+				"pressedOffset" : [0, 0],
+				"data" : "arcana_dungeon_novaStation_1"
+			},
+			{
+				"selected" : false,
+				"position" : [12, 114],
+				"baseImage" : "/interface/scripted/arcana_galacticAtlas/tab_3_unselected.png",
+				"baseImageChecked" : "/interface/scripted/arcana_galacticAtlas/tab_3_selected.png",
+				"pressedOffset" : [0, 0],
+				"data" : "arcana_dungeon_zhushiPond"
+			},
+			{
+				"selected" : false,
+				"position" : [12, 82],
+				"baseImage" : "/interface/scripted/arcana_galacticAtlas/tab_4_unselected.png",
+				"baseImageChecked" : "/interface/scripted/arcana_galacticAtlas/tab_4_selected.png",
+				"pressedOffset" : [0, 0],
+				"data" : "arcana_dungeon_astralObservatory"
+			}
+		]
+	},
+  "activateButton" : {
+    "type" : "button",
+    "position" : [320, 34],
+    "base" : "/interface/scripted/arcana_galacticAtlas/button.png",
+    "hover" : "/interface/scripted/arcana_galacticAtlas/buttonhover.png",
+	"pressed" : "/interface/scripted/arcana_galacticAtlas/buttonhover.png",
+	"disabledImage" : "/interface/scripted/arcana_galacticAtlas/buttondisabled.png",
+    "caption" : "Teleport",
+    "pressedOffset" : [0, 0],
+    "callback" : "teleport",
+    "zlevel" : 6
+  },
+
+  "beamToShipButton" : {
+    "type" : "button",
+    "position" : [320, 14],
+    "base" : "/interface/scripted/arcana_galacticAtlas/button.png",
+    "hover" : "/interface/scripted/arcana_galacticAtlas/buttonhover.png",
+	"pressed" : "/interface/scripted/arcana_galacticAtlas/buttonhover.png",
+	"disabledImage" : "/interface/scripted/arcana_galacticAtlas/buttondisabled.png",
+    "caption" : "Beam To Ship",
+    "pressedOffset" : [0, 0],
+    "callback" : "teleportToShip",
+    "zlevel" : 6
+  },
+	
+	"tabLabel_teleport" : {
+    "type" : "label",
+    "position" : [269, 26],
+    "hAnchor" : "mid",
+	  "vAnchor" : "bottom",
+	  "fontSize" : 7.2,
+    "value" : " ",
+	  "zlevel" : 5
+    }
+	
+  },
+  
+  "scriptWidgetCallbacks" : [
+    "setDestinationImage",
+    "teleport",
+    "teleportToShip"
+  ],
+  
+  "tooltipLayout" : {
+    "background" : {
+      "type" : "background",
+      "fileHeader" : "",
+      "fileBody" : "/interface/tooltips/racebody.png",
+      "fileFooter" : ""
+    },
+    "title" : {
+      "type" : "label",
+      "position" : [11, 54],
+      "hAnchor" : "left",
+      "vAnchor" : "top",
+      "wrapWidth" : 220,
+      "fontSize" : 12
+    },
+    "description" : {
+      "type" : "label",
+      "position" : [11, 38],
+      "hAnchor" : "left",
+      "vAnchor" : "top",
+      "wrapWidth" : 220
+    }
+  },
+  
+  "scripts" : [ "/interface/scripted/arcana_galacticAtlas/arcana_galacticAtlas.lua" ],
+  "scriptDelta" : 30
+}

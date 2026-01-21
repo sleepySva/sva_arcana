@@ -32,7 +32,10 @@
 	  }
 	},
     "sounds" : {
-      "fire" : ["/sfx/gun/plasma_sniper3.ogg"]
+      "fire" : ["/sfx/gun/plasma_sniper3.ogg"],
+	  "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ]
     }
   },
 

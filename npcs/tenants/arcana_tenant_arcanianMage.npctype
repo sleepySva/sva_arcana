@@ -1,0 +1,86 @@
+{
+  "type" : "arcana_tenant_arcanianMage",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"],
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "arcana_crewmember_mage"]
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+		    "I'll be one of the best spellcasters in the academy in no time!",
+		    "W-woah! You've startled me! I was just studying for my spell exam...",
+            "Oh stars... the exam is coming up soon and I've not studied at all...",
+			"...Hmm? If you're interested in magic, feel free to visit our guild's academies.",
+			"Ah. If you're interested in our weapons, you can always employ the Forge Guild's blacksmiths.",
+			"You best stay clear from the Technomancers, stranger. Last I've heard, they've caused quite a trouble for the other guilds.",
+			"It's thanks to the Harvest Guild's efforts that we have all sorts of delicious food! Their growth arts are really quite useful."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			"head" : [
+              { "name" : "arcana_armor_goldheadpiece_head", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "arcana_armor_scholar_head", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_scholar_chest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_scholar_legs", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "primary" : [
+              "arcana_firesparkstaff_npc",
+			  "arcana_firesparkstaffalt_npc"
+            ]
+          },
+          {
+			"head" : [
+              { "name" : "arcana_armor_goldheadpiece_head", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "arcana_armor_scholar_head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_scholar_chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_scholar_legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "arcana_icesparkstaff_npc",
+			  "arcana_icesparkstaffalt_npc"
+            ]
+          },
+          {
+			"head" : [
+              { "name" : "arcana_armor_goldheadpiece_head", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "arcana_armor_scholar_head", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "chest" : [
+              { "name" : "arcana_armor_scholar_chest", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "legs" : [
+              { "name" : "arcana_armor_scholar_legs", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "primary" : [
+              "arcana_poisonsparkstaff_npc"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

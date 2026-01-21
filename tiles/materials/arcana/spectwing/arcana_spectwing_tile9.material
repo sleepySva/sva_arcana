@@ -1,0 +1,21 @@
+{
+  "materialId" : 16929,
+  "materialName" : "arcana_spectwing_tile9",
+  "particleColor" : [58, 62, 86, 255],
+  "itemDrop" : "arcana_spectwing_tile9",
+  "description" : "A light roofing tile.",
+  "shortdescription" : "Nether Roofing",
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile9.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 2600
+  }
+}

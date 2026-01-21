@@ -1,0 +1,21 @@
+{
+  "materialId" : 16924,
+  "materialName" : "arcana_spectwing_tile4",
+  "particleColor" : [58, 62, 86, 255],
+  "itemDrop" : "arcana_spectwing_tile4",
+  "description" : "A strudy wooden beam, adorned with patterns.",
+  "shortdescription" : "Nether Adorned Beam",
+  "footstepSound" : "/sfx/blocks/footstep_lightwood.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/rowtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile4.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1610
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "itemName" : "arcana_food_verdantsnap",
+  "rarity" : "Uncommon",
+  "price" : 30,
+  "category" : "preparedFood",
+  "inventoryIcon" : "verdantsnap.png",
+  "description" : "A fine jungle mango sorbet with a thin coating of chocolate. ^orange;[Ewok]^reset;\n\n^green;Swim boost, energy boost, regeneration^reset;",
+  "shortdescription" : "Verdant Snap",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 120
+    }
+  ] ],
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
