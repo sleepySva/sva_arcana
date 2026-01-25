@@ -11,8 +11,8 @@
     "/scripts/actions/projectiles.lua"
   ],
   "parameters": {
-    "windupTime": 0.6,
-	"attackTime": 0.4
+    "windupTime": 0.5,
+	"attackTime": 0.2
   },
   "root": {
     "title": "sequence",
@@ -33,7 +33,7 @@
         "type": "action",
         "name": "timer",
         "parameters": {
-          "time": {"value": 2}
+          "time": {"value": 0.4}
         }
       },
       {
@@ -49,42 +49,6 @@
             "parameters": {},
             "output": {
               "list": "plasmaoffsets"
-            }
-          },
-          {
-            "title": "listPush",
-            "type": "action",
-            "name": "listPush",
-            "parameters": {
-              "list": {"key": "plasmaoffsets"},
-              "vec2": {"value": [0, 0]}
-            },
-            "output" : {
-              "list" : "plasmaoffsets"
-            }
-          },
-          {
-            "title": "listPush",
-            "type": "action",
-            "name": "listPush",
-            "parameters": {
-              "list": {"key": "plasmaoffsets"},
-              "vec2": {"value": [0, 0]}
-            },
-            "output" : {
-              "list" : "plasmaoffsets"
-            }
-          },
-          {
-            "title": "listPush",
-            "type": "action",
-            "name": "listPush",
-            "parameters": {
-              "list": {"key": "plasmaoffsets"},
-              "vec2": {"value": [0, 0]}
-            },
-            "output" : {
-              "list" : "plasmaoffsets"
             }
           },
           {
@@ -213,7 +177,7 @@
                   "position": {"key": "plasmaPosition"},
                   "projectileType": {"value": "arcana_boss_dheral_projectile_1"},
                   "target": {"key": "target"},
-                  "trackSource": {"value": true}
+                  "trackSource": {"value": false}
                 }
               },
               {
@@ -276,7 +240,7 @@
         "type": "action",
         "name": "timer",
         "parameters": {
-          "time": {"value": 2}
+          "time": {"value": 0.4}
         }
       }
     ]

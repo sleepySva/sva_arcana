@@ -147,6 +147,24 @@
   // Dungeons
   {
     "op": "add",
+    "path": "/displayDungeons/arcana_keyforgeshrine",
+	"value": {
+		"description" : "A remanant of ancient civilization, buried underground.",
+		"icon" : "/interface/cockpit/dungeons/arcana_underground.png",
+		"name" : "Gilded Keyforge"
+	}
+  },
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_wildshrine",
+	"value": {
+		"description" : "An underground ruin overran by plantlife.",
+		"icon" : "/interface/cockpit/dungeons/arcana_underground.png",
+		"name" : "Wild Ruins"
+	}
+  },
+  {
+    "op": "add",
     "path": "/displayDungeons/arcana_dungeon_misc_1",
 	"value": {
 		"description" : "An outpost owned by Koel Industries.",

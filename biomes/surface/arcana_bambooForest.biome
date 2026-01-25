@@ -390,6 +390,22 @@
             }
           }
         ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "arcana_farmable_shellfruitSeed_wild" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
       }
     ]
   },
@@ -489,6 +505,22 @@
 
         "type" : "grass",
         "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "arcana_farmable_shellfruitSeed_wild" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
       }
     ]
   }

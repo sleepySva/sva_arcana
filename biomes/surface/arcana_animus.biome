@@ -261,12 +261,12 @@
         "mode" : "floor",
         "priority" : 0.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:denseSurfaceCrops",
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
 
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildriceseed" ] ],
+            "pool" : [ [1, "arcana_farmable_bloodyGemSeed_wild" ] ],
             "parameters" : {
               "startingStage" : 3
             }

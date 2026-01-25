@@ -1,0 +1,109 @@
+{
+  "projectileName" : "arcana_boss_dheral_6alt",
+  "physics" : "sticky",
+  "timeToLive" : 0.1,
+  "bounces" : 0,
+  "image" : "body.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : [],
+  "frameNumber" : 1,
+  "speed" : 1,
+  "knockback" : 20,
+  "supportsProcessing" : true,
+  
+  "power" : 30,  
+
+  "actionOnReap" : [
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_6delay",
+          "angleAdjust" : 0
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_6final",
+          "angleAdjust" : 0
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_9",
+          "angleAdjust" : 0
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_9",
+          "angleAdjust" : 72
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_9",
+          "angleAdjust" : 144
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_9",
+          "angleAdjust" : -72
+        }
+      ]
+    },
+    {
+      "action" : "loop",
+      "count" : 1,
+      "body" : [
+        {
+          "action" : "projectile",
+          "inheritDamageFactor" : 1,
+          "type" : "arcana_boss_dheral_9",
+          "angleAdjust" : -144
+        }
+      ]
+    }
+  ],
+  "periodicActions" : [
+  ],
+
+  "lightColor" : [150, 120, 222],
+  "damageKind" : "arcana_lunar"
+  
+}

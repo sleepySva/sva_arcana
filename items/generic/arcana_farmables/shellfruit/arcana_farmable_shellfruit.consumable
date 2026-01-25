@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_farmable_shellfruit",
+  "rarity" : "Common",
+  "price" : 140,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "A fruit that is often found in caverns, with a hardened shell. The inside however, is soft and creamy.",
+  "shortdescription" : "Shellfruit",
+  "foodValue" : 3.00,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

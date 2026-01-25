@@ -9,7 +9,7 @@
           },
           "on" : {
             "properties" : {
-              "persistentSound" : "/music/event-horizon.ogg",
+              "persistentSound" : "/music/impact-event.ogg",
 			  "persistentSoundRangeMultiplier" : 100.0
             }
           }
@@ -20,71 +20,37 @@
         "default" : "idle",
         "states" : {
           "teleport_out" : {
-            "frames" : 8,
-            "cycle" : 0.6,
+            "frames" : 6,
+            "cycle" : 0.5,
             "mode" : "transition",
             "transition" : "invisible"
           },
           "teleport_in" : {
-            "frames" : 8,
-            "cycle" : 0.6,
+            "frames" : 6,
+            "cycle" : 0.5,
             "mode" : "transition",
             "transition" : "idle"
           },
           "invisible" : {
-            "frames" : 2,
+            "frames" : 1,
             "cycle" : 0.4,
             "mode" : "loop"
           },
           "idle" : {
-            "frames" : 8,
-            "cycle" : 0.8,
+            "frames" : 7,
+            "cycle" : 0.7,
             "mode" : "loop"
           },
           "windup" : {
-            "frames" : 11,
-            "cycle" : 0.6,
+            "frames" : 5,
+            "cycle" : 0.5,
             "properties" : {
               "immediateSound" : "/sfx/npc/boss/kluexboss_phase1.ogg"
             }
           },
           "attack" : {
-            "frames" : 7,
-            "cycle" : 0.4,
-            "mode" : "transition",
-            "transition" : "idle"
-          }
-        }
-      },
-      "arm" : {
-        "priority" : 1,
-        "default" : "inactive",
-        "states" : {
-          "inactive" : {
-            "frames" : 1,
-            "cycle" : 1.0,
-            "mode" : "loop"
-          },
-          "startup" : {
-            "frames" : 7,
-            "cycle" : 0.7,
-            "mode" : "transition",
-            "transition" : "idle"
-          },
-          "idle" : {
-            "frames" : 1,
-            "cycle" : 1.0,
-            "mode" : "loop"
-          },
-          "windup" : {
-            "frames" : 1,
-            "cycle" : 1.0,
-            "properties" : {
-            }
-          },
-          "attack" : {
-            "frames" : 1,
-            "cycle" : 1.0,
+            "frames" : 2,
+            "cycle" : 0.2,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -110,41 +76,41 @@
         "properties" : {
           "zLevel" : 2,
           "centered" : true,
-          "offset" : [-1.0, 0.0],
+          "offset" : [0.0, 0.0],
           "transformationGroups" : [ "all", "body" ]
         },
         "partStates" : {
           "body" : {
             "teleport_out" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.teleport_out.<frame>"
+                "image" : "<partImage>:teleport_out.<frame>"
               }
             },
             "teleport_in" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.teleport_in.<frame>"
+                "image" : "<partImage>:teleport_in.<frame>"
               }
             },
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
+                "image" : "<partImage>:idle.<frame>"
               }
             },
             "windup" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.windup.<frame>"
+                "image" : "<partImage>:windup.<frame>"
               }
             },
             "attack" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.fire.<frame>"
+                "image" : "<partImage>:fire.<frame>"
               }
             }
           },
           "damage" : {
             "stunned" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
+                "image" : "<partImage>:idle.<frame>"
               }
             }
           }
@@ -154,7 +120,7 @@
         "properties" : {
           "zLevel" : 4,
           "centered" : true,
-          "offset" : [-1.0, 0.0],
+          "offset" : [0.0, 0.0],
           "transformationGroups" : [ "all", "body" ],
           "fullbright" : true
         },
@@ -162,123 +128,34 @@
           "body" : {
             "teleport_out" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.teleport_out.<frame>"
+                "image" : "<partImage>:teleport_out.<frame>"
               }
             },
             "teleport_in" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.teleport_in.<frame>"
+                "image" : "<partImage>:teleport_in.<frame>"
               }
             },
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
+                "image" : "<partImage>:idle.<frame>"
               }
             },
             "windup" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.windup.<frame>"
+                "image" : "<partImage>:windup.<frame>"
               }
             },
             "attack" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.fire.<frame>"
+                "image" : "<partImage>:fire.<frame>"
               }
             }
           },
           "damage" : {
             "stunned" : {
               "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
-              }
-            }
-          }
-        }
-      },
-      "arm" : {
-        "properties" : {
-          "zLevel" : 5,
-          "centered" : true,
-          "offset" : [5.0, 0.0],
-          "transformationGroups" : [ "all", "arm" ]
-        },
-        "partStates" : {
-          "arm" : {
-            "inactive" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.startup.<frame>"
-              }
-            },
-            "startup" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.startup.<frame>"
-              }
-            },		  
-            "idle" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
-              }
-            },
-            "windup" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
-              }
-            },
-            "attack" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
-              }
-            }
-          },
-          "damage" : {
-            "stunned" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
-              }
-            }
-          }
-        }
-      },
-      "arm_fullbright" : {
-        "properties" : {
-          "zLevel" : 6,
-          "centered" : true,
-          "offset" : [5.0, 0.0],
-          "transformationGroups" : [ "all", "arm" ],
-          "fullbright" : true
-        },
-        "partStates" : {
-          "arm" : {
-            "inactive" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.startup.<frame>"
-              }
-            },
-            "startup" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.startup.<frame>"
-              }
-            },	
-            "idle" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
-              }
-            },
-            "windup" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
-              }
-            },
-            "attack" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
-              }
-            }
-          },
-          "damage" : {
-            "stunned" : {
-              "properties" : {
-                "image" : "<partImage>:<colorState>.idle.<frame>"
+                "image" : "<partImage>:idle.<frame>"
               }
             }
           }
@@ -292,8 +169,7 @@
 
   "transformationGroups" : {
     "all" : {"interpolated" : true},
-    "body" : {"interpolated" : true},
-	"arm" : {"interpolated" : true}
+    "body" : {"interpolated" : true}
   },
 
   "particleEmitters" : {
@@ -322,6 +198,12 @@
         { "particle" : "arcana_particle_boss_dheral_crystal" },
         { "particle" : "arcana_particle_boss_dheral_shard" }
       ]
+    },
+    "energy" : {
+      "emissionRate" : 10,
+      "particles" : [
+		{ "particle" : "arcana_dheralimage", "offset" : [0, 0] }
+      ]
     }
   },
 
@@ -329,7 +211,8 @@
     "turnHostile" : [  ],
     "deathPuff" : [ "/sfx/npc/boss/kluexboss_death.ogg" ],
     "lunarShot_windup" : [ "/sfx/melee/charge_up5.ogg" ],
-    "lunarShot" : [ "/sfx/melee/giantsword_charge_full.ogg" ]
+    "lunarShot" : [ "/sfx/melee/giantsword_charge_full.ogg" ],
+	"beep" : [ "/sfx/interface/playerstatuscritical.ogg" ]
   },
 
   "effects" : {

@@ -1,8 +1,8 @@
 {
   "type" : "arcana_boss_dheral",
-  "shortdescription" : "Dheral",
+  "shortdescription" : "Erchius Herald",
   "categories" : [ "arcana_boss_dheral" ],
-  "parts" : [ "body", "arm" ],
+  "parts" : [ "body" ],
 
   "animation" : "arcana_boss_dheral.animation",
   "dropPools" : [
@@ -43,7 +43,7 @@
 
     "movementSettings" : {
       "gravityEnabled" : false,
-      "collisionPoly" : [ [1.5, 3.25],  [2.25, 2.5], [2.25, -1.0], [1.5, -1.75], [-1.5, -1.75], [-2.25, -1.0], [-2.25, 2.5], [-1.5, 3.25] ],
+      "collisionPoly" : [ [1.5, 3.0],  [2.25, 2.25], [2.25, -3.0], [1.5, -3.75], [-1.5, -3.75], [-2.25, -3.0], [-2.25, 2.25], [-1.5, 3.0] ],
 
       "mass" : 4.0,
       "walkSpeed" : 5,
@@ -60,7 +60,7 @@
 
     "touchDamage" : {
       "poly" : [ [-2, -2], [2, -2], [-2, 2], [2, 2] ],
-      "damage" : 40,
+      "damage" : 0,
 
       "teamType" : "enemy",
       "statusEffects" : [ ]
@@ -82,13 +82,13 @@
 
       "stats" : {
         "knockbackStunTime" : {
-          "baseValue" : 0.25
+          "baseValue" : 0.0
         },
         "grit" : {
           "baseValue" : 1.0
         },
         "maxHealth" : {
-          "baseValue" : 1300
+          "baseValue" : 1600
         },
         "protection" : {
           "baseValue" : 0

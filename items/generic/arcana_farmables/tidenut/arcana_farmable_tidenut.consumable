@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_farmable_tidenut",
+  "rarity" : "Common",
+  "price" : 60,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "An ocean-scented nut that is often eaten as snacks, or processed into butter.",
+  "shortdescription" : "Tidenut",
+  "foodValue" : 2.00,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

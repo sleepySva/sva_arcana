@@ -24,7 +24,7 @@
         "type": "decorator",
         "name": "repeater",
         "parameters": {
-          "maxLoops": {"value": 6},
+          "maxLoops": {"value": 5},
           "untilSuccess": {"value": false}
         },
 		"child": {
@@ -88,9 +88,9 @@
                 "aimVector": {"key": "aimVector"},
                 "parameters": {"value": {}},
                 "position": {"key": "self"},
-                "projectileType": {"value": "arcana_boss_dheral_projectile_4"},
+                "projectileType": {"value": "arcana_boss_dheral_projectile_4alt"},
                 "target": {"key": "target"},
-                "trackSource": {"value": true}
+                "trackSource": {"value": false}
               }
             },
             {

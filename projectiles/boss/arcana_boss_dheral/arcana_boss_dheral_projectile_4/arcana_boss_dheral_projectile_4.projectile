@@ -1,7 +1,7 @@
 {
   "projectileName" : "arcana_boss_dheral_projectile_4",
   "physics" : "laser",
-  "timeToLive" : 7,
+  "timeToLive" : 4,
   "bounces" : 0,
   "image" : "arcana_boss_dheral_projectile_4.png",
   "animationCycle" : 0.2,
@@ -12,7 +12,7 @@
   "knockback" : 20,
   "supportsProcessing" : true,
   
-  "power" : 30,  
+  "power" : 26,  
   
   "movementSettings" : {
 	"collisionEnabled" : false
@@ -23,7 +23,7 @@
   ],
   "periodicActions" : [
     {
-      "time" : 0.066,
+      "time" : 0.01,
       "repeat" : true,
       "action" : "particle",
       "rotate" : true,
@@ -32,9 +32,9 @@
         "image" : "/projectiles/boss/arcana_boss_dheral/arcana_boss_dheral_projectile_4/trail.png",
         "position" : [0, 0],
         "layer" : "back",
-        "timeToLive" : 0.4,
-        "destructionTime" : 1.0,
-        "destructionAction" : "fade",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "shrink",
         "fullbright" : true
       }
     }
@@ -47,6 +47,6 @@
   "scriptDelta" : 1,
   
   "homingDistance" : "60",
-  "rotationRate" : 1.0,
+  "rotationRate" : 0.5,
   "trackingLimit" : 40
 }

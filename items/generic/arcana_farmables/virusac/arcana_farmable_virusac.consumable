@@ -1,0 +1,19 @@
+{
+  "itemName" : "arcana_farmable_virusac",
+  "rarity" : "Common",
+  "price" : 60,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "icon.png",
+  "description" : "A common ingredient for certain medications and drugs, akin to psychedelics, able to improve the mood of its consumers.",
+  "shortdescription" : "Virusac",
+  "foodValue" : 1.00,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 99,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

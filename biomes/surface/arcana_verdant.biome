@@ -306,16 +306,16 @@
       },
       {
         "mode" : "floor",
-        "priority" : 0,
+        "priority" : 1.0,
         "variants" : 1,
         "distribution" : "/biomes/distributions.config:surfaceCrops",
 
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [1, "wildautomatoseed" ] ],
+            "pool" : [ [1, "arcana_farmable_jungleMangoSeed_wild" ] ],
             "parameters" : {
-              "startingStage" : 4
+              "startingStage" : 3
             }
           }
         ]

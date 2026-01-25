@@ -32,6 +32,15 @@
           "success": {"value": -1}
         },
         "children": [
+		  {
+			"title": "setParticleEmitterActive",
+			"type": "action",
+			"name": "setParticleEmitterActive",
+			"parameters": {
+			  "active": {"value": false},
+			  "emitter": {"value": "energy"}
+			}
+		  },
           {
             "title": "controlApproachVelocity",
             "type": "action",
@@ -80,8 +89,25 @@
                 "type": "action",
                 "name": "timer",
                 "parameters": {
-                  "time": {"value": 0.85}
+                  "time": {"value": 0.5}
                 }
+              },
+              {
+                "title": "selector",
+                "type": "composite",
+                "name": "selector",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "invisible"},
+                      "type": {"value": "body"}
+                    }
+                  }
+                ]
               },
               {
                 "title": "setPosition",
@@ -112,31 +138,6 @@
                 }
               },
               {
-                "title": "distance",
-                "type": "action",
-                "name": "distance",
-                "parameters": {
-                  "from": {"key": "self"},
-                  "to": {"key": "targetPosition"}
-                },
-                "output": {
-                  "vector": "aimVector"
-                }
-              },
-              {
-                "title": "spawnTargetedProjectile",
-                "type": "action",
-                "name": "spawnTargetedProjectile",
-                "parameters": {
-                  "aimVector": {"key": "aimVector"},
-                  "parameters": {"value": {}},
-                  "position": {"key": "self"},
-                  "projectileType": {"value": "arcana_boss_dheral_projectile_5"},
-                  "target": {"key": "target"},
-                  "trackSource": {"value": true}
-                }
-              },
-              {
                 "title": "setAnimationState",
                 "type": "action",
                 "name": "setAnimationState",
@@ -150,9 +151,18 @@
                 "type": "action",
                 "name": "timer",
                 "parameters": {
-                  "time": {"value": 0.6}
+                  "time": {"value": 0.5}
                 }
-              }
+              },
+			  {
+				"title": "setParticleEmitterActive",
+				"type": "action",
+				"name": "setParticleEmitterActive",
+				"parameters": {
+				  "active": {"value": true},
+				  "emitter": {"value": "energy"}
+				}
+			  }
             ]
           }
         ]

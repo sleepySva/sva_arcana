@@ -211,6 +211,22 @@
 
         "type" : "microdungeon",
         "microdungeons" : [ "undergroundencounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "arcana_farmable_shellfruitSeed_wild" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
       }
     ]
   },

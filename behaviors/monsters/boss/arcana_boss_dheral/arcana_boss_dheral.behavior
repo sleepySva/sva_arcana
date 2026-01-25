@@ -23,6 +23,15 @@
     "name": "sequence",
     "parameters": {},
     "children": [
+	  {
+		"title": "setParticleEmitterActive",
+		"type": "action",
+		"name": "setParticleEmitterActive",
+		"parameters": {
+		  "active": {"value": false},
+		  "emitter": {"value": "energy"}
+		}
+	  },
       {
         "title": "setDying",
         "type": "action",
@@ -47,7 +56,7 @@
         "type": "action",
         "name": "offsetPosition",
         "parameters": {
-          "offset": {"value": [0, 8]},
+          "offset": {"value": [0, 4]},
           "position": {"key": "spawn"}
         },
         "output": {
@@ -140,6 +149,15 @@
                     "name": "sequence",
                     "parameters": {},
                     "children": [
+					  {
+						"title": "setParticleEmitterActive",
+						"type": "action",
+						"name": "setParticleEmitterActive",
+						"parameters": {
+						  "active": {"value": true},
+						  "emitter": {"value": "energy"}
+						}
+					  },
                       {
                         "title": "setDamageBar",
                         "type": "action",
@@ -164,15 +182,6 @@
                           "aggressive": {"value": true}
                         }
                       },
-					  {
-					    "title": "setAnimationState",
-					    "type": "action",
-					    "name": "setAnimationState",
-					    "parameters": {
-						  "state": {"value": "startup"},
-						  "type": {"value": "arm"}
-					    }
-					  },
                       {
                         "title": "repeater",
                         "type": "decorator",
@@ -215,9 +224,27 @@
                                   "parameters": {}
                                 },
                                 {
-                                  "title": "arcana_boss_dheral_lunarSummonStatic",
+                                  "title": "arcana_boss_dheral_movement",
                                   "type": "module",
-                                  "name": "arcana_boss_dheral_lunarSummonStatic",
+                                  "name": "arcana_boss_dheral_movement",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lines",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lines",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lines",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lines",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lines",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lines",
                                   "parameters": {}
                                 },
                                 {
@@ -227,16 +254,40 @@
                                   "parameters": {}
                                 },
                                 {
-                                  "title": "arcana_boss_dheral_lunarTeleport",
+                                  "title": "arcana_boss_dheral_flower",
                                   "type": "module",
-                                  "name": "arcana_boss_dheral_lunarTeleport",
+                                  "name": "arcana_boss_dheral_flower",
                                   "parameters": {}
                                 },
                                 {
-                                  "title": "arcana_boss_dheral_lunarSummonStatic",
+                                  "title": "arcana_boss_dheral_movement",
                                   "type": "module",
-                                  "name": "arcana_boss_dheral_lunarSummonStatic",
+                                  "name": "arcana_boss_dheral_movement",
                                   "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_lunarQuickShot",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_lunarQuickShot",
+                                  "parameters": {}
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_movement",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_movement",
+								  "parameters": {
+									"jumpVelocityX": {"value": -40},
+									"jumpVelocityY": {"value": 10}
+								  }
+                                },
+                                {
+                                  "title": "arcana_boss_dheral_movement",
+                                  "type": "module",
+                                  "name": "arcana_boss_dheral_movement",
+								  "parameters": {
+									"jumpVelocityX": {"value": 20},
+									"jumpVelocityY": {"value": 10}
+								  }
                                 }
                               ]
 							},
@@ -265,15 +316,6 @@
 								  "parameters": {
 									"entity": {"key": "target"},
 									"headingDirection": {"key": "headingDirection"}
-								  }
-								},
-								{
-								  "title": "rotateTransformationGroup",
-								  "type": "action",
-								  "name": "rotateTransformationGroup",
-								  "parameters": {
-									"angle": {"value": 0.01},
-									"transformationGroup": {"value": "arm"}
 								  }
 								}
 							  ]

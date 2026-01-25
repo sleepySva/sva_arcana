@@ -1,0 +1,45 @@
+{
+  "projectileName" : "arcana_boss_dheral_projectile_4alt",
+  "physics" : "sticky",
+  "timeToLive" : 5,
+  "bounces" : 0,
+  "image" : "alt.png",
+  "animationCycle" : 0.2,
+  "fullbright" : true,
+  "emitters" : ["arcana_particle_ember_indigo"],
+  "frameNumber" : 1,
+  "speed" : 40,
+  "knockback" : 20,
+  "supportsProcessing" : true,
+  
+  "power" : 26,  
+  
+  "movementSettings" : {
+	"collisionEnabled" : false
+  },
+  "renderLayer" : "foregroundEntity",
+  
+  "actionOnReap" : [
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/boss/arcana_boss_dheral/arcana_boss_dheral_projectile_4/trail.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.6,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+
+  "lightColor" : [150, 120, 172],
+  "damageKind" : "arcana_lunar"
+}

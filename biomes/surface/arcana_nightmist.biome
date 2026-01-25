@@ -326,6 +326,22 @@
             }
           }
         ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "arcana_farmable_tatalotSeed_wild" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
       }
     ]
   },

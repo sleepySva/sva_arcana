@@ -3,6 +3,103 @@
   // ==============================================================================================
 {
 
+  "arcana_farmable_tatalot" : [
+    [0, {
+	  "fill" : [
+		{"item" : "arcana_farmable_tatalot"}
+      ],
+      "pool" : [
+	    {"weight" : 0.8, "item" : ["bone", 1]},
+        {"weight" : 0.1, "item" : ["arcana_farmable_tatalot", 1]},
+		{"weight" : 0.1, "item" : ["arcana_farmable_tatalotSeed", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    } ]
+  ],
+
+  "arcana_farmable_jungleMango" : [
+    [0, {
+	  "fill" : [
+		{"item" : "arcana_farmable_jungleMango"}
+      ],
+      "pool" : [
+	    {"weight" : 0.7, "item" : ["plantfibre", 1]},
+        {"weight" : 0.2, "item" : ["arcana_farmable_jungleMango", 1]},
+		{"weight" : 0.1, "item" : ["arcana_farmable_jungleMangoSeed", 1]}
+      ],
+      "poolRounds" : [
+        [0.5, 1],
+		[0.5, 2]
+      ]
+    } ]
+  ],
+
+  "arcana_farmable_tidenut" : [
+    [0, {
+	  "fill" : [
+		{"item" : "arcana_farmable_tidenut"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "item" : ["arcana_farmable_tidenut", 1]},
+		{"weight" : 0.4, "item" : ["plantfibre", 1]},
+		{"weight" : 0.1, "item" : ["arcana_farmable_tidenutSeed", 1]}
+      ],
+      "poolRounds" : [
+        [0.8, 1],
+		[0.2, 2]
+      ]
+    } ]
+  ],
+
+  "arcana_farmable_virusac" : [
+    [0, {
+	  "fill" : [
+        {"item" : "arcana_farmable_virusacSeed"}
+      ],
+      "pool" : [
+        {"weight" : 1.0, "item" : ["arcana_farmable_virusac", 2]},
+		{"weight" : 1.0, "item" : ["arcana_farmable_virusac", 3]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    } ]
+  ],
+
+  "arcana_farmable_shellfruit" : [
+    [0, {
+	  "fill" : [
+        {"item" : "arcana_farmable_shellfruitSeed"},
+		{"item" : "arcana_farmable_shellfruit"}
+      ],
+      "pool" : [
+        {"weight" : 0.9, "item" : ["plantfibre", 1]},
+		{"weight" : 0.1, "item" : ["arcana_farmable_shellfruitSeed", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    } ]
+  ],
+
+  "arcana_farmable_bloodyGem" : [
+    [0, {
+	  "fill" : [
+        {"item" : "arcana_farmable_bloodyGemSeed"},
+		{"item" : "arcana_farmable_bloodyGem"}
+      ],
+      "pool" : [
+        {"weight" : 0.9, "item" : ["plantfibre", 1]},
+		{"weight" : 0.1, "item" : ["arcana_farmable_bloodyGemSeed", 1]}
+      ],
+      "poolRounds" : [
+        [1.0, 1]
+      ]
+    } ]
+  ],
+
   "arcana_farmable_windflower" : [
     [0, {
       "pool" : [

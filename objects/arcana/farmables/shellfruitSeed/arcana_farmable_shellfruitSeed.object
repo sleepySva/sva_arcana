@@ -1,0 +1,68 @@
+{
+  "objectName" : "arcana_farmable_shellfruitSeed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A fruit that is often found in caverns, with a hardened shell. The inside however, is soft and creamy.",
+  "shortdescription" : "Shellfruit Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 18,
+
+  "inventoryIcon" : "icon.png",
+
+  "tooltipKind" : "seed",
+  "largeImage" : "body.png:default.3.0",
+  
+  "lightColor" : [0, 0, 0],
+
+
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<stage>.<alt>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<stage>.<alt>"} ],
+      "direction" : "left",
+	  "flipImages" : true,
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1] ],
+	  "requireTilledAnchors" : true,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<stage>.<alt>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<stage>.<alt>"} ],
+      "direction" : "right",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1] ],
+	  "requireTilledAnchors" : true,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [400, 480]
+    },
+    {
+      "duration" : [500, 580]
+    },
+    {
+      "alts" : 5,
+      "duration" : [1700, 1780]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "arcana_farmable_shellfruit"
+    }
+  ],
+
+  "maxImmersion" : 0.17
+}
