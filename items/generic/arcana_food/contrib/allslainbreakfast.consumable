@@ -4,20 +4,28 @@
   "price" : 1200,
   "category" : "preparedFood",
   "inventoryIcon" : "allslainbreakfast.png",
-  "description" : "A special breakfast platter made with exotic ingredients. Makes for a good show-off meal for experienced arcane explorers. ^orange;[The Punslinger]^reset;\n\n^green;Swim boost, energy boost, regeneration^reset;",
+  "description" : "A special breakfast platter made with exotic ingredients. Makes for a good show-off meal for experienced arcane explorers. ^orange;[The Punslinger]^reset;\n\n^white;^green;+Swim boost^reset; 20 min.\n^green;+20% Max Energy^reset; 20 min.\n^green;+20% Max Health^reset; 20 min.^reset;",
   "shortdescription" : "All Slain Breakfast",
   "effects" : [ [
     {
         "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "duration" : 1200
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 1200
+    },
+    {
+        "effect" : "swimboost",
+        "duration" : 1200
     }
   ] ],
-  "foodValue" : 200,
+  "foodValue" : 100,
   "tooltipKind" : "arcana_food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 99,
   "itemAgingScripts" : ["/scripts/items/rotting.lua"],
-  "rottingMultiplier" : 1.0,
+  "rottingMultiplier" : 5.0,
   "blockingEffects" : [
     "wellfed"
   ]

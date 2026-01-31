@@ -1,0 +1,16 @@
+{
+  "name" : "arcana_status_acidicBurningPlayer",
+  "blockingStat" : "arcana_status_acidicBurning_immunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 6,
+
+  "scripts" : [
+    "acidplayer.lua"
+  ],
+
+  "animationConfig" : "arcana_status_acidicBurning.animation",
+
+  "label" : "Acidic Burning",
+  "icon" : "/interface/statuses/fire.png"
+}

@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_acidblock",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "arcana_status_acidicMelting_immunity", "amount" : 1.0 },
+	  { "stat" : "arcana_status_acidicBurning_immunity", "amount" : 1.0 }
+    ]
+	
+  },
+  "defaultDuration" : 300.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "^green;+Acidic Melting, Acidic Burning Immunity^reset;.",
+  "icon" : "/interface/statuses/arcana_hazmatres.png"
+}

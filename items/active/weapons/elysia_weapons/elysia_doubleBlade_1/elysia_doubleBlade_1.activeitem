@@ -1,34 +1,103 @@
 {
   "itemName" : "elysia_doubleBlade_1",
-  "price" : 1000,
-  "level" : 1,
+  "price" : 800,
+  "level" : 3,
   "maxStack" : 1,
-  "rarity" : "Common",
+  "rarity" : "Uncommon",
   "description" : "A bladed weapon created from some sort of a durable glass material.",
-  "shortdescription" : "Elysian Double Blade",
-  "tooltipKind" : "sword",
+  "shortdescription" : "Prototype Elysian Blades ð",
+  "tooltipKind" : "arcana_sword",
   "category" : "broadsword",
-  "tooltipFields" : {"subtitle" : "Double Blade"},
+  "tooltipFields" : {
+	"subtitle" : "Twinblade"
+  },
   "twoHanded" : true,
   "itemTags" : ["weapon","melee"],
 
   "inventoryIcon" : "icon.png",
 
-  "animation" : "/items/active/weapons/melee/doubleBlade/arcana_doubleBlade_combo.animation",
+  "animation" : "animation.animation",
   "animationParts" : {
-    "handle" : "",
-    "blade" : "elysia_doubleBlade_1.png"
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
   },
-  "animationCustom" : { },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "spinSwoosh" : {
+          "properties" : {
+            "zLevel" : 1,
+            "centered" : true,
+            "transformationGroups" : ["swoosh"],
+            "offset" : [0, 0],
+            "fullbright" : true,
+            "damageArea" : [ [-5.75, 1.75], [-1.75, 5.75], [1.75, 5.75], [5.75, 1.75], [5.75, -1.75], [1.75, -5.75], [-1.75, -5.75], [-5.75, -1.75] ]
+          },
+          "partStates" : {
+            "spinSwoosh" : {
+              "idle" : {
+                "properties" : {
+                  "image" : ""
+                }
+              },
+              "spin" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/elysia_weapons/elysia_doubleBlade_1/spinswoosh.png:<frame>"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword_water1.ogg", "/sfx/melee/swing_broadsword_water2.ogg", "/sfx/melee/swing_broadsword_water3.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_broadsword_water1.ogg", "/sfx/melee/swing_broadsword_water2.ogg", "/sfx/melee/swing_broadsword_water3.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_broadsword_water1.ogg", "/sfx/melee/swing_broadsword_water2.ogg", "/sfx/melee/swing_broadsword_water3.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_broadsword_water1.ogg", "/sfx/melee/swing_broadsword_water2.ogg", "/sfx/melee/swing_broadsword_water3.ogg" ],
+      "fire5" : [ "/sfx/melee/swing_broadsword_water1.ogg", "/sfx/melee/swing_broadsword_water2.ogg", "/sfx/melee/swing_broadsword_water3.ogg" ],
+      "fire6" : [ "/sfx/melee/swing_broadsword_water1.ogg", "/sfx/melee/swing_broadsword_water2.ogg", "/sfx/melee/swing_broadsword_water3.ogg" ]
+    }
+  },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
+  "critRate" : 0.12,
+  "critDamage" : 1.3,
 
-  "primaryAbilityType" : "arcana_doubleBlade_combo",
+  "primaryAbilityType" : "arcana_magiblade_combo",
   "primaryAbility" : {
-    "fireTime" : 1.0,
-    "baseDps" : 4.6
+    "fireTime" : 0.9,
+    "baseDps" : 7.8,
+	
+    "stepDamageConfig" : [
+      {
+		"damageSourceKind" : "poisonbroadsword"
+      },
+      {
+		"damageSourceKind" : "poisonbroadsword"
+      },
+      {
+		"damageSourceKind" : "poisonbroadsword"
+      },
+      {
+		"damageSourceKind" : "poisonbroadsword"
+      }
+    ]
+  },
+  "altAbilityType" : "spearspin",
+  "altAbility" : {
+    "spinRate" : -1750,
+    "damageConfig" : {
+      "damageSourceKind" : "poisonbroadsword",
+      "statusEffects" : [ ],
+    	"baseDamage" : 5,
+    	"knockbackMode" : "none",
+    	"knockback" : 8,
+    	"timeout" : 0.1,
+    	"timeoutGroup" : "alt"
+    }
   },
 
   "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"

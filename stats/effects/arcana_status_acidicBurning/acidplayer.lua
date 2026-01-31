@@ -1,0 +1,35 @@
+function init()
+  animator.burstParticleEmitter("name")
+  animator.setParticleEmitterOffsetRegion("flames", mcontroller.boundBox())
+  animator.setParticleEmitterActive("flames", true)
+  effect.setParentDirectives("fade=BF3300=0.25")
+  animator.playSound("burn", -1)
+  
+  script.setUpdateDelta(5)
+
+  self.tickDamagePercentage = 0.05
+  self.tickDamageMin = 30
+  self.tickDamageMax = 200
+  self.tickTime = 1.0
+  self.tickTimer = self.tickTime
+end
+
+function update(dt)
+  if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then
+    effect.expire()
+  end
+
+  self.tickTimer = self.tickTimer - dt
+  if self.tickTimer <= 0 then
+    self.tickTimer = self.tickTime
+    status.applySelfDamageRequest({
+        damage = math.max(math.min(math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1, self.tickDamageMax), self.tickDamageMin),
+        damageSourceKind = "poison",
+        sourceEntityId = entity.id()
+      })
+  end
+end
+
+function uninit()
+  
+end

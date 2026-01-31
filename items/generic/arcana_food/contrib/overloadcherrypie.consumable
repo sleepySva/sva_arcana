@@ -4,21 +4,21 @@
   "price" : 240,
   "category" : "preparedFood",
   "inventoryIcon" : "overloadcherrypie.png",
-  "description" : "Crafted from cherries that may detonate under high pressure- it is said their inventor met his end in this very manner. ^orange;[YLin Kis]^reset;\n\n^green;Consumption triggers a single explosion.^reset;",
+  "description" : "Crafted from cherries that may detonate under high pressure- it is said their inventor met his end in this very manner. ^orange;[YLin Kis]^reset;\n\n^green;+Restores 40 Health.\n^green;+Triggers explosions, dealing indiscriminate damage per hit.^reset;",
   "shortdescription" : "Overload Cherry Pie",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "arcana_instantheal40",
+        "duration" : 1
+    },
+    {
+        "effect" : "arcana_pieexplosion",
+        "duration" : 1
     }
   ] ],
-  "foodValue" : 50,
   "tooltipKind" : "arcana_food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 99,
   "itemAgingScripts" : ["/scripts/items/rotting.lua"],
-  "rottingMultiplier" : 1.0,
-  "blockingEffects" : [
-    "wellfed"
-  ]
+  "rottingMultiplier" : 1.0
 }

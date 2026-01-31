@@ -4,12 +4,12 @@
   "price" : 90,
   "category" : "preparedFood",
   "inventoryIcon" : "crunchmints.png",
-  "description" : "Popped wintercorn mixed with cold and crunchy ingredients. Basically minty popcorn. ^orange;[Silver]^reset;\n\n^green;cold,ice resistance^reset;",
+  "description" : "Popped wintercorn mixed with cold and crunchy ingredients. Basically minty popcorn. ^orange;[Silver]^reset;\n\n^white;^green;+Frost Immunity^reset; 5 min.\n^green;+10% Ice Resistance^reset; 5 min.^reset;",
   "shortdescription" : "Crunchmints",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "arcana_iceblock10",
+        "duration" : 300
     }
   ] ],
   "foodValue" : 20,

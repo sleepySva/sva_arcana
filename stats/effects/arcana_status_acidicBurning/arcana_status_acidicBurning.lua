@@ -1,4 +1,5 @@
 function init()
+  animator.burstParticleEmitter("name")
   animator.setParticleEmitterOffsetRegion("flames", mcontroller.boundBox())
   animator.setParticleEmitterActive("flames", true)
   effect.setParentDirectives("fade=BF3300=0.25")

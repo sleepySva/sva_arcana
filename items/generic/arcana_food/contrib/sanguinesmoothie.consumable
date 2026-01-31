@@ -1,15 +1,31 @@
 {
   "itemName" : "arcana_food_sanguinesmoothie",
   "rarity" : "Uncommon",
-  "price" : 120,
+  "price" : 210,
   "category" : "preparedFood",
   "inventoryIcon" : "sanguinesmoothie.png",
-  "description" : "A fine blend of a crushed bloody gem, a jungle mango and one or two tea leaves. ^orange;[Ewok]^reset;\n\n^green;Swim boost, energy boost, regeneration^reset;",
+  "description" : "A fine blend of a crushed bloody gem, a jungle mango and one or two tea leaves. ^orange;[Ewok]^reset;\n\n^green;+20% Max Energy^reset; 2 min.\n^green;+20% Max Health^reset; 4 min.\n^green;+20% Damage^reset; 4 min.\n^green;+Nova^reset; 4 min.\n^red;+Burning^reset; 5 sec.^reset;",
   "shortdescription" : "Sanguine Smoothie",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
+        "effect" : "maxenergyscalingboostfood",
         "duration" : 120
+    },
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 240
+    },
+    {
+        "effect" : "rageaugment2",
+        "duration" : 240
+    },
+    {
+        "effect" : "nova",
+        "duration" : 240
+    },
+    {
+        "effect" : "burning",
+        "duration" : 5
     }
   ] ],
   "foodValue" : 10,

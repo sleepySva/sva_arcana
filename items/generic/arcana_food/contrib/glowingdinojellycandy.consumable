@@ -1,15 +1,15 @@
 {
   "itemName" : "arcana_food_glowingdinojellycandy",
   "rarity" : "Uncommon",
-  "price" : 80,
+  "price" : 70,
   "category" : "preparedFood",
   "inventoryIcon" : "glowingdinojellycandy.png",
-  "description" : "A jelly candy shaped like a old kid's toy. It glows in the dark, and you can glow with it too! ^orange;[Malevolent VoidHeart]^reset;\n\n^green;Gives you Glow effect for 180 sec.^reset;",
+  "description" : "A jelly candy shaped like a old kid's toy. It glows in the dark, and you can glow with it too! ^orange;[Malevolent VoidHeart]^reset;\n\n^green;+Glow^reset; 4 min.^reset;",
   "shortdescription" : "Glowing Dino Jelly Candy",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "glow",
+        "duration" : 240
     }
   ] ],
   "foodValue" : 10,

@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_iceblock10",
+  "effectConfig" : {
+  
+    "statModifiers" : [
+	  { "stat" : "iceResistance", "amount" : 0.1 },
+	  { "stat" : "iceStatusImmunity", "amount" : 1.0 }
+    ]
+	
+  },
+  "defaultDuration" : 300.0,
+
+  "scripts" : [
+    "stats.lua"
+  ],
+  
+  "label" : "^green;+10% Ice Res, +Frost Immunity^reset;.",
+  "icon" : "/interface/statuses/arcana_iceres.png"
+}

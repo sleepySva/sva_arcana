@@ -4,15 +4,26 @@
   "price" : 160,
   "category" : "preparedFood",
   "inventoryIcon" : "waterofbeast.png",
-  "description" : "A can of sports drink that looks very dangerous...and powerful. ^orange;[Kumochan]^reset;\n\n^green;+30% Max Energy 200s^reset;",
+  "description" : "A can of sports drink that looks very dangerous...and powerful. ^orange;[Kumochan]^reset;\n\n^green;+20% Max Energy^reset; 3 min.\n^green;+Run Boost^reset; 3 min.\n^green;+Jump Boost^reset; 3 min.\n^reset;+Each additional drink grants ^green;+20% Damage,^reset; but ^red;reduces 20% Max Health.^reset;",
   "shortdescription" : "Water of Beast",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "runboostfood",
+        "duration" : 180
+    },
+    {
+        "effect" : "jumpboostfood",
+        "duration" : 180
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 180
+    },
+    {
+        "effect" : "arcana_waterofbeaststacks",
+        "duration" : 0.1
     }
   ] ],
-  "foodValue" : 5,
   "tooltipKind" : "arcana_food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 99,

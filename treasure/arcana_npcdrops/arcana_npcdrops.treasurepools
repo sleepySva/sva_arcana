@@ -167,7 +167,8 @@
 		{"weight" : 1.0, "item" : ["money", 80]},
 		{"weight" : 1.0, "item" : ["money", 110]},
         {"weight" : 1.0, "item" : ["money", 140]},
-		{"weight" : 1.0, "item" : ["money", 170]}
+		{"weight" : 1.0, "item" : ["money", 170]},
+		{"weight" : 0.5, "item" : ["arcana_misc_slipstreamComposite", 1]}
       ],
       "poolRounds" : [
         [1.0, 1]
@@ -181,10 +182,7 @@
         {"item" : ["arcana_misc_horizonSpecialistBadge", 1]}
       ],
       "pool" : [
-		{"weight" : 1.0, "item" : ["money", 200]},
-		{"weight" : 1.0, "item" : ["money", 250]},
-        {"weight" : 1.0, "item" : ["money", 300]},
-		{"weight" : 1.0, "item" : ["money", 350]}
+		{"weight" : 1.0, "item" : ["money", 400]}
       ],
       "poolRounds" : [
         [1.0, 1]
@@ -236,9 +234,8 @@
       "pool" : [
 		{"weight" : 0.2, "item" : ["workshop_pistol_3", 1]},
 		{"weight" : 0.2, "item" : ["workshop_axe_3", 1]},
-        {"weight" : 0.2, "item" : ["money", 200]},
-        {"weight" : 0.2, "item" : ["money", 200]},
-		{"weight" : 0.2, "item" : ["money", 200]}
+        {"weight" : 0.4, "item" : ["money", 200]},
+		{"weight" : 0.2, "item" : ["arcana_misc_slipstreamComposite", 1]}
       ],
       "poolRounds" : [
         [1.0, 1]
@@ -254,10 +251,8 @@
       ],
       "pool" : [
 		{"weight" : 0.2, "item" : ["workshop_pistol_2", 1]},
-		{"weight" : 0.2, "item" : ["workshop_crafting_GS8TechChip", 1]},
-        {"weight" : 0.2, "item" : ["workshop_crafting_GS8TechChip", 1]},
-        {"weight" : 0.2, "item" : ["money", 100]},
-		{"weight" : 0.2, "item" : ["money", 100]}
+		{"weight" : 0.4, "item" : ["workshop_crafting_GS8TechChip", 1]},
+        {"weight" : 0.4, "item" : ["money", 100]}
       ],
       "poolRounds" : [
         [1.0, 1]

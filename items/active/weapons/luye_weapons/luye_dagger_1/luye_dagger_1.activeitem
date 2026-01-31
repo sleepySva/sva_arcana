@@ -1,0 +1,39 @@
+{
+  "itemName" : "luye_dagger_1",
+  "price" : 1600,
+  "level" : 8,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A small dagger for experienced assassins, crafted from aegistalt and corrodium. ^green;Inflicts Acidic Burning.^reset;",
+  "shortdescription" : "Corrodium Dagger",
+  "tooltipKind" : "arcana_sword",
+  "category" : "dagger",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","dagger","corrodium"],
+
+  "inventoryIcon" : "body.png:idle.1",
+
+  "animation" : "animation.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "poison",
+  "critRate" : 0.12,
+  "critDamage" : 1.4,
+
+  "primaryAbilityType" : "arcana_daggercombo",
+  "primaryAbility" : {
+    "fireTime" : 0.4,
+    "baseDps" : 17.0,
+    "damageConfig" : {
+      "damageSourceKind" : "poisondagger",
+      "statusEffects" : ["arcana_status_acidicBurningPlayer"]
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

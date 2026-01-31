@@ -1,18 +1,26 @@
 {
   "itemName" : "arcana_food_seatea",
   "rarity" : "Rare",
-  "price" : 80,
+  "price" : 120,
   "category" : "preparedFood",
   "inventoryIcon" : "seatea.png",
-  "description" : "Refreshing tea made out of seaberries and tidenuts. ^orange;[Astrycion]^reset;\n\n^green;Swim boost, energy boost, regeneration^reset;",
+  "description" : "Refreshing tea made out of seaberries and tidenuts. ^orange;[Astrycion]^reset;\n\n^green;+Swim Boost^reset; 5 min.\n^green;+Health Regen.^reset; 3 min.\n^green;+10% Max Energy^reset; 5 min.^reset;",
   "shortdescription" : "Sea Tea",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "swimboost",
+        "duration" : 300
+    },
+    {
+        "effect" : "regeneration1",
+        "duration" : 180
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 300
     }
   ] ],
-  "foodValue" : 10,
+  "foodValue" : 5,
   "tooltipKind" : "arcana_food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 99,

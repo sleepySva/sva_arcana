@@ -1,0 +1,19 @@
+{
+  "name" : "arcana_instantheal40",
+  "effectConfig" : {
+    "healImmediate" : 40,
+    "healAmount" : 0,
+	"healDuration" : 1,
+    "emissionRate" : 10
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "arcana_healconstant.lua"
+  ],
+
+  "animationConfig" : "heal.animation",
+
+  "label" : "Healing",
+  "icon" : "/interface/statuses/heal.png"
+}

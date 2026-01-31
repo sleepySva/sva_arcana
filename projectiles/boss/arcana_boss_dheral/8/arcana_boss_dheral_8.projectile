@@ -2,7 +2,7 @@
   "projectileName" : "arcana_boss_dheral_8",
   "physics" : "laser",
   
-  "timeToLive" : 8,
+  "timeToLive" : 5,
   "bounces" : 0,
   "speed" : 50,
   "piercing" : true,
@@ -53,6 +53,13 @@
 		  "angularVelocity" : 180
 		}
       }
+    },
+    {
+      "time" : 0.2,
+      "repeat" : true,
+      "action" : "projectile",
+      "inheritDamageFactor" : 1,
+      "type" : "arcana_erchiusdoom"
     }
   ],
   

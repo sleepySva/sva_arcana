@@ -4,15 +4,19 @@
   "price" : 120,
   "category" : "preparedFood",
   "inventoryIcon" : "sharpplatter.png",
-  "description" : "A surprisingly tasty dish, despite its forbidding appearance with all those shards and thorns. ^orange;[Malevolent VoidHeart]^reset;\n\n^green;Gives you Regeneration I for 5 sec. and Thorns effect for 180 sec.^reset;",
+  "description" : "A surprisingly tasty dish, despite its forbidding appearance with all those shards and thorns. ^orange;[Malevolent VoidHeart]^reset;\n\n^green;+Health Regen^reset; 1 min.\n^green;+Thorns^reset; 3 min.^reset;",
   "shortdescription" : "Sharp Platter",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 420
+        "effect" : "regeneration1",
+        "duration" : 60
+    },
+    {
+        "effect" : "thorns",
+        "duration" : 180
     }
   ] ],
-  "foodValue" : 40,
+  "foodValue" : 30,
   "tooltipKind" : "arcana_food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 99,

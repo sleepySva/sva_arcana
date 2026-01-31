@@ -4,12 +4,16 @@
   "price" : 120,
   "category" : "preparedFood",
   "inventoryIcon" : "fluxtart.png",
-  "description" : "A luminous tart with a suspicious extremely sweet flavor. ^orange;[Kumochan]^reset;\n\n^green;Glow 120s, +20% Max Health 200s^reset;",
+  "description" : "A luminous tart with a suspicious extremely sweet flavor. ^orange;[Kumochan]^reset;\n\n^green;+Glow^reset; 2 min.\n^green;+20% Max Health^reset; 4 min.^reset;",
   "shortdescription" : "Fluxtart",
   "effects" : [ [
     {
+        "effect" : "glow",
+        "duration" : 120
+    },
+    {
         "effect" : "maxhealthscalingboostfood",
-        "duration" : 200
+        "duration" : 240
     }
   ] ],
   "foodValue" : 30,

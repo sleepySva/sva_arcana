@@ -1,18 +1,26 @@
 {
   "itemName" : "arcana_food_tripledelightsalad",
   "rarity" : "Uncommon",
-  "price" : 240,
+  "price" : 210,
   "category" : "preparedFood",
   "inventoryIcon" : "tripledelightsalad.png",
-  "description" : "A healthy mix of tropical, arctic and maritime ingredients. ^orange;[Astrycion]^reset;\n\n^green;regen, energy max boost, ice resistance^reset;",
+  "description" : "A healthy mix of tropical, arctic and maritime ingredients. ^orange;[Astrycion]^reset;\n\n^green;+Restores 10 Health per second,^reset; 8 sec.\n^green;+20% Max Energy^reset; 5 min.\n^green;+10% Ice Resistance^reset; 5 min.^reset;",
   "shortdescription" : "Triple Delight Salad",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "arcana_heal10",
+        "duration" : 8
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 300
+    },
+    {
+        "effect" : "arcana_iceblockbasic10",
+        "duration" : 300
     }
   ] ],
-  "foodValue" : 50,
+  "foodValue" : 30,
   "tooltipKind" : "arcana_food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 99,

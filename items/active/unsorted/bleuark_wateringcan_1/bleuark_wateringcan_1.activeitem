@@ -8,15 +8,15 @@
   "tooltipKind" : "base",
   "twoHanded" : false,
 
-  "inventoryIcon" : "bleuark_wateringcan_1.png",
+  "inventoryIcon" : "body.png",
 
   "animation" : "bleuark_wateringcan_1.animation",
   "animationParts" : {
-    "wateringcan" : "bleuark_wateringcan_1.png"
+    "wateringcan" : "body.png"
   },
   "animationCustom" : { },
 
-  "scripts" : ["bleuark_wateringcan_1.lua"],
+  "scripts" : ["wateringcan.lua"],
 
   "waterTime" : 1.0,
   "waterAngle" : 30,

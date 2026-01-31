@@ -1,0 +1,17 @@
+{
+  "kind" : "arcana_sakura",
+  "definition" : {
+	  "type" : "animated",
+	  "animation" : "/animations/arcana_sakura/arcana_sakura.animation",
+	  "position" : [0, 0],
+	  "size" : 0.8,
+	  "light" : [40, 20, 20],
+	  "destructionTime" : 0.3,
+	  "destructionAction" : "shrink",
+	  "initialVelocity" : [0.4, -1.0],
+	  "finalVelocity" : [0.0, -2.0],
+	  "approach" : [0, 2],
+	  "timeToLive" : 1.3,
+	  "layer" : "front"
+  }
+}

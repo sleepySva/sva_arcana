@@ -1,15 +1,19 @@
 {
   "itemName" : "arcana_food_fluxel",
   "rarity" : "Legendary",
-  "price" : 80,
+  "price" : 90,
   "category" : "preparedFood",
   "inventoryIcon" : "fluxel.png",
-  "description" : "An energizing bake that will make you rush back for more! ^orange;[Hyou]^reset;\n\n^green;Consumption triggers a single explosion.^reset;",
+  "description" : "An energizing bake that will make you rush back for more! ^orange;[Hyou]^reset;\n\n^green;+Run Speed^reset; 5 min.\n^green;+Jump Boost^reset; 5 min.^reset;",
   "shortdescription" : "Fluxel",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "runboostfood",
+        "duration" : 300
+    },
+    {
+        "effect" : "jumpboostfood",
+        "duration" : 300
     }
   ] ],
   "foodValue" : 20,

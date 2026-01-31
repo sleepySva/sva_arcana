@@ -1,18 +1,26 @@
 {
   "itemName" : "arcana_food_marrowsteep",
   "rarity" : "Uncommon",
-  "price" : 90,
+  "price" : 110,
   "category" : "preparedFood",
   "inventoryIcon" : "marrowsteep.png",
-  "description" : "Looks disgusting, might taste disgusting, but enhances the consumer with Thorns and Regeneration. ^orange;[Ewok]^reset;\n\n^green;Thorns 248s, 20% Max Energy 248s, Healing 10HP 10s^reset;",
+  "description" : "Looks disgusting, might taste disgusting, but enhances the consumer with Thorns and Regeneration. ^orange;[Ewok]^reset;\n\n^green;+Thorns^reset; 4 min.\n^green;+20% Max Energy^reset; 4 min.\n^green;+Restores 10 Health per second,^reset; 15 sec.^reset;",
   "shortdescription" : "Tatalot Marrow-Steep",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "thorns",
+        "duration" : 240
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 240
+    },
+    {
+        "effect" : "arcana_heal10",
+        "duration" : 15
     }
   ] ],
-  "foodValue" : 25,
+  "foodValue" : 15,
   "tooltipKind" : "arcana_food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 99,

@@ -1,18 +1,26 @@
 {
   "itemName" : "arcana_food_pestilenttoast",
   "rarity" : "Uncommon",
-  "price" : 240,
+  "price" : 210,
   "category" : "preparedFood",
   "inventoryIcon" : "pestilenttoast.png",
-  "description" : "Why in the Cultivators name would you put this in your mouth? ^orange;[Shroomie]^reset;\n\n^green;Verdant acid resistance, max energy, poison^reset;",
+  "description" : "Why in the Cultivators name would you put this in your mouth? ^orange;[Shroomie]^reset;\n\n^green;+Acidic Burn Immunity^reset; 5 min.\n^green;+Acidic Melting Immunity^reset; 5 min.\n^green;+20% Max Energy^reset; 10 min.\n^red;+Poisoned^reset; 10 sec.^reset;",
   "shortdescription" : "Pestilent Toast",
   "effects" : [ [
     {
-        "effect" : "maxhealthscalingboostfood",
-        "duration" : 120
+        "effect" : "arcana_acidblock",
+        "duration" : 300
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 300
+    },
+    {
+        "effect" : "weakpoison",
+        "duration" : 10
     }
   ] ],
-  "foodValue" : 40,
+  "foodValue" : 30,
   "tooltipKind" : "arcana_food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 99,
