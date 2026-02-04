@@ -1,3 +1,5 @@
+require "/scripts/automation/arcana_transfer.lua"
+
 function init()
   local configPath = config.getParameter("configPath", "/objects/workshop/workshop_auto_essenceextractor/config.config")
   self.craftingTime = root.assetJson(configPath).craftingTime or 1
@@ -7,24 +9,6 @@ function init()
   self.outputRate = root.assetJson(configPath).outputRate or 1
   self.recipes = root.assetJson(configPath).recipes or nil
   animator.setGlobalTag("directives", config.getParameter("directives", ""))
-end
-
-
-function uninit()
-
-end
-
-function dump(o)
-   if type(o) == 'table' then
-      local s = '{ '
-      for k,v in pairs(o) do
-         if type(k) ~= 'number' then k = '"'..k..'"' end
-         s = s .. '['..k..'] = ' .. dump(v) .. ','
-      end
-      return s .. '} '
-   else
-      return tostring(o) or "NIL"
-   end
 end
 
 function tablelength(table)
@@ -38,27 +22,8 @@ function output(state)
   for i=1, world.containerSize(entity.id()) do
     -- Export first avaliable item found
 	if world.containerItemAt(entity.id(), i-1) ~= nil and i >= 2 then
-	  --sb.logInfo(dump(world.containerItemAt(entity.id(), i-1)))
-	  outputFromSlot(i-1)
+	  transfer.output(entity.id(), self.outputRate, i-1)
 	  return
-	end
-  end
-end
-
-function outputFromSlot(slot)
-  local entityTable = object.getOutputNodeIds(0)
-  local item = world.containerItemAt(entity.id(), slot)
-  local adjustedRate = 0
-  if object.isOutputNodeConnected(0) and tablelength(entityTable) >= 1 and item then
-    adjustedRate = math.ceil(self.outputRate / tablelength(entityTable))
-	for key, value in pairs(entityTable) do
-	  if world.containerSize(key) == nil then return end
-	  if world.containerItemsFitWhere(key, item)["leftover"] ~= 0 then return end
-	  local isAssembler = (world.containerSize(key) < 9)
-
-	  if isAssembler and world.containerItemsFitWhere(key, item)["slots"][1] == world.containerSize(key) - 1 then return end
-	  item = world.containerTakeNumItemsAt(entity.id(), slot, adjustedRate)
-	  world.containerAddItems(key, item)
 	end
   end
 end

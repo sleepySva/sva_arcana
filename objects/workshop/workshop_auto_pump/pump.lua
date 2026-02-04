@@ -1,4 +1,5 @@
 require "/scripts/automation/arcana_power.lua"
+require "/scripts/automation/arcana_transfer.lua"
 require "/scripts/util.lua"
 require "/scripts/vec2.lua"
 
@@ -33,24 +34,6 @@ function tablelength(table)
   local count = 0
   for _ in pairs(table) do count = count + 1 end
   return count
-end
-
-function output(state)
-  local entityTable = object.getOutputNodeIds(0)
-  local item = world.containerItemAt(entity.id(), world.containerSize(entity.id()) - 1)
-  local adjustedRate = 0
-  if object.isOutputNodeConnected(0) and tablelength(entityTable) >= 1 and item then
-    adjustedRate = math.ceil(self.outputRate / tablelength(entityTable))
-	for key, value in pairs(entityTable) do
-	  if world.containerSize(key) == nil then return end
-	  if world.containerItemsFitWhere(key, item)["leftover"] ~= 0 then return end
-	  local isAssembler = (world.containerSize(key) < 9)
-
-	  if isAssembler and world.containerItemsFitWhere(key, item)["slots"][1] == world.containerSize(key) - 1 then return end
-	  item = world.containerTakeNumItemsAt(entity.id(), world.containerSize(entity.id()) - 1, adjustedRate)
-	  world.containerAddItems(key, item)
-	end
-  end
 end
 
 function automation()
@@ -96,7 +79,7 @@ function update(dt)
     self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
     if self.cooldownTimer == 0 then
       automation()
-	  output(true)
+	  transfer.output(entity.id(), self.outputRate)
 	  self.cooldownTimer = self.pumpTime
     end
   end

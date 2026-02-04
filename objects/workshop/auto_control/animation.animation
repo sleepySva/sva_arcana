@@ -1,0 +1,87 @@
+{
+  "globalTagDefaults" : {
+    "directives" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "switchState" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "empty" : {},
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "bg" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "switchState" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off<directives>",
+				"fullbright" : true
+              }
+            },
+			
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:empty<directives>"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:on.<frame><directives>",
+                "fullbright" : true
+              }
+            }
+          }
+        }
+      },
+      "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "switchState" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off<directives>"
+              }
+            },
+			
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:empty<directives>"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:on.<frame><directives>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "sounds" : {
+    "on" : [],
+    "off" : []
+  }
+}

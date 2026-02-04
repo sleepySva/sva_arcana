@@ -1,4 +1,5 @@
 require "/scripts/automation/arcana_power.lua"
+require "/scripts/automation/arcana_transfer.lua"
 require "/scripts/vec2.lua"
 
 pInit = init
@@ -32,10 +33,6 @@ function init()
 	end
     return data
   end)
-end
-
-function uninit()
-
 end
 
 function tablelength(table)
@@ -134,7 +131,7 @@ function update(dt)
     self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
     if self.cooldownTimer == 0 then
       automation()
-	  output(true)
+	  transfer.output(entity.id(), self.outputRate)
 	  self.cooldownTimer = self.craftingTime
     end
   end

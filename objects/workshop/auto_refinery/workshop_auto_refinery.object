@@ -2,12 +2,13 @@
   "objectName" : "workshop_auto_refinery",
   "colonyTags" : ["factorypaint", "industrial"],
   "rarity" : "Legendary",
-  "description" : "^white;An industrial machine for turning substances into refined materials and compounds. ^orange;Can be wired to other machines.^reset;",
+  "description" : "^white;An industrial machine for turning substances into refined materials and compounds, useful for producing fuel cells.^reset;",
   "shortdescription" : "Refinery",
   "subtitle" : "Turn ores into pixels",
   "race" : "generic",
   "category" : "crafting",
   "price" : 3200,
+  "tooltipKind" : "arcana_base_item",
   "objectType" : "container",
   "printable" : false,
   "health" : 1.5,
@@ -91,12 +92,17 @@
   "autoCloseCooldown" : 3600,
   
   "configPath" : "/objects/workshop/auto_refinery/config.config",
-  "maxPower" : 30,
-  "powerUseAmount" : 20,
+  "maxPower" : 60,
+  "powerUseAmount" : 30,
   "voltage" : 45,
   "craftingTime" : 5.0,
   "outputRate" : 4,
   "directives" : "",
+  
+  "containerSettings" : {
+    "allowed" : true,
+	"allowedInputSlots" : [1, 2]
+  },
   
   "retainObjectParametersInItem" : true
 }

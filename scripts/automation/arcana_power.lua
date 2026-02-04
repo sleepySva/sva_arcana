@@ -59,6 +59,11 @@ function power.max()
   return storage.max
 end
 
+-- Sets max power.
+function power.setMax(value)
+  storage.max = value
+end
+
 -- Returns current state for button use
 function power.getState()
   return storage.state

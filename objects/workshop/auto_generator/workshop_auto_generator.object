@@ -1,0 +1,107 @@
+{
+  "objectName" : "workshop_auto_generator",
+  "colonyTags" : ["factorypaint", "industrial"],
+  "rarity" : "Rare",
+  "description" : "^white;A standard generator, useful for powering a large quantity of factory machines. Requires refined ^orange;fuel cells^reset; to run.^reset;",
+  "shortdescription" : "^green;[Power]^reset; Fuel Generator",
+  "subtitle" : "Turn ores into pixels",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 3200,
+  "tooltipKind" : "arcana_base_item",
+  "objectType" : "container",
+  "printable" : false,
+  "health" : 1.5,
+
+  "lightColor" : [179, 149, 107],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+  
+  "scripts" : [ "/scripts/automation/arcana_generator.lua" ],
+  "scriptDelta" : 5,
+  
+  "inputNodes" : [ [0, 0] ],
+  "outputNodes" : [ [1, 0] ],
+  
+  "animation" : "animation.animation",
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "switchState" : {
+          "states" : {
+            "on" : {
+              "frames" : 4,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ],
+	  "onloop" : [ "/sfx/objects/flametrap_loop.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "1.png",
+    "fg" : "1_fb.png"
+  },
+
+  "inventoryIcon" : "1_icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "1.png:<color>.<frame>", "fullbright" : true }, { "image" : "1_fb.png:<color>.<frame>" } ],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "1.png:<color>.<frame>", "fullbright" : true }, { "image" : "1_fb.png:<color>.<frame>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "placementImage" : "1.png:default.0",
+  "placementImagePosition" : [0, 0],
+
+  "soundEffect" : "/sfx/objects/campfire.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
+  "slotCount" : 1,
+  "uiConfig" : "/interface/arcana/arcana_auto/generator.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+  
+  "configPath" : "/objects/workshop/auto_generator/config.config",
+  "consumptionTime" : 10.0,
+  "maxPower" : 240,
+  "voltage" : 240,
+  "directives" : "",
+  
+  "containerSettings" : {
+    "allowed" : true,
+	"allowedInputSlots" : [1]
+  },
+  
+  "retainObjectParametersInItem" : true
+}

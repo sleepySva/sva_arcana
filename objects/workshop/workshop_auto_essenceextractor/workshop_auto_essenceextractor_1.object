@@ -89,8 +89,12 @@
   "uiConfig" : "/interface/arcana/arcana_auto/essenceextractor.config",
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
-  
   "directives" : "",
+  
+  "containerSettings" : {
+    "allowed" : true,
+	"allowedInputSlots" : [1]
+  },
   
   "retainObjectParametersInItem" : true
 }
