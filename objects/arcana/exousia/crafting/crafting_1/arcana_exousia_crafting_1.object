@@ -2,13 +2,13 @@
   "objectName" : "arcana_exousia_crafting_1",
   "colonyTags" : ["crafting", "exousia"],
   "rarity" : "Legendary",
-  "description" : "A special workstation for crafting Exousia furniture and misc objects.",
-  "shortdescription" : "^#c63422;Exousia Workstation P^reset;",
+  "description" : "A special workstation for crafting Exousia furniture and misc objects, in its kiosk version.",
+  "shortdescription" : "^#ffffff;Exousia Workstation Mini^reset;",
   "race" : "generic",
   "category" : "crafting",
   "price" : 1200,
   
-  "lightColor" : [80, 120, 120],
+  "lightColor" : [120, 90, 90],
   
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
@@ -21,10 +21,10 @@
     {
 	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "left",
-	  "flipImages" : true,
+	  "flipImages" : false,
       "imagePosition" : [-16, 0],
-      "frames" : 10,
-      "animationCycle" : 1.0,
+      "frames" : 6,
+      "animationCycle" : 0.6,
 
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
@@ -34,8 +34,8 @@
 	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "right",
       "imagePosition" : [-16, 0],
-      "frames" : 10,
-      "animationCycle" : 1.0,
+      "frames" : 6,
+      "animationCycle" : 0.6,
 
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]

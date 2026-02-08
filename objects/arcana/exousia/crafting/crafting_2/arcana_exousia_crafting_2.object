@@ -3,7 +3,7 @@
   "colonyTags" : ["crafting", "exousia"],
   "rarity" : "Legendary",
   "description" : "A special workstation for crafting Exousia furniture and misc objects.",
-  "shortdescription" : "Exousia Workstation",
+  "shortdescription" : "^ffffff;Exousia Workstation^reset;",
   "race" : "generic",
   "category" : "crafting",
   "price" : 1200,
@@ -23,8 +23,8 @@
       "direction" : "left",
 	  "flipImages" : true,
       "imagePosition" : [-24, 0],
-      "frames" : 10,
-      "animationCycle" : 1.0,
+      "frames" : 8,
+      "animationCycle" : 0.8,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
@@ -34,8 +34,8 @@
 	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>"} ],
       "direction" : "right",
       "imagePosition" : [-24, 0],
-      "frames" : 10,
-      "animationCycle" : 1.0,
+      "frames" : 8,
+      "animationCycle" : 0.8,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
