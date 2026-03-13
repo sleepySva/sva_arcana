@@ -1,0 +1,56 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "blink" : {
+        "default" : "none",
+        "states" : {
+          "none" : { },
+          "blinkout" : {
+            "frames" : 5,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "none"
+          },
+          "blinkin" : {
+            "frames" : 5,
+            "cycle" : 0.1,
+            "mode" : "end"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "effect" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [0, -0.5]
+        },
+        "partStates" : {
+          "blink" : {
+            "none" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "blinkout" : {
+              "properties" : {
+                "image" : "blinkout.png:<frame>"
+              }
+            },
+            "blinkin" : {
+              "properties" : {
+                "image" : "blinkin.png:<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "activate" : [ "/sfx/tech/tech_blink1.ogg" ]
+  }
+}

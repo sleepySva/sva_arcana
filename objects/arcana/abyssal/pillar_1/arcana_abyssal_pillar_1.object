@@ -1,0 +1,52 @@
+{
+  "objectName" : "arcana_abyssal_pillar_1",
+  "colonyTags" : ["abyssal", "spectwing"],
+  "rarity" : "Legendary",
+  "description" : "A Void Monolith taken rocky form, said to be connected to the Abyss, where The Watcher beholds all.",
+  "shortdescription" : "Voidstone Monolith",
+  "race" : "gilten",
+  "category" : "decorative",
+  "price" : 3000,
+  
+  "health" : 250,
+  "unbreakable" : false,
+  "rooting" : true,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>", "fullbright" : false } ],
+      "direction" : "left",
+	  "flipImages" : false,
+      "imagePosition" : [-112, 0],
+      "frames" : 12,
+      "animationCycle" : 1.2,
+	  
+      "spaces" :  [
+		  [4, 7],
+		  [5, 7]
+	  ],
+	  "collision" : "platform",
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    },
+	{
+	  "imageLayers" : [ { "image" : "body.png:<color>.<frame>", "fullbright" : true }, { "image" : "fullbright.png:<color>.<frame>", "fullbright" : false } ],
+      "direction" : "right",
+      "imagePosition" : [-112, 0],
+      "frames" : 12,
+      "animationCycle" : 1.2,
+	  
+      "spaces" :  [
+		  [4, 7],
+		  [5, 7]
+	  ],
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+
+    }
+  ]
+}

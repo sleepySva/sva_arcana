@@ -1,0 +1,14 @@
+{
+  "name" : "arcana_status_electricfollow40",
+  "blockingStat" : "electricStatusImmunity",
+  "effectConfig" : {
+    "status" : "electrified",
+    "damage" : {"amount" : 40, "type" : "electric"},
+	"bonus" : "arcana_status_deathspreadelectricfied"
+  },
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "damageifstatus.lua"
+  ]
+}

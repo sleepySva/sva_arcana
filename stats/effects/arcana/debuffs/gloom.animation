@@ -1,0 +1,48 @@
+{
+  "particleEmitters" : {
+    "debuff" : {
+      "enabled" : true,
+	  "emissionRate" : 4.0,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "animated",
+			"looping" : false,
+            "animation" : "/animations/arcana_debuff/arcana_debuff.animation",
+            "position" : [0, 0],
+            "finalVelocity" : [0, -1],
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.5,
+            "size" : 1,
+            "layer" : "front",
+            "timeToLive" : 0.3
+          }
+        },
+        {
+          "particle" : {
+            "type" : "animated",
+			"looping" : false,
+            "animation" : "/animations/arcana_debuff/arcana_debuffdelayed.animation",
+            "position" : [0, 0],
+            "finalVelocity" : [0, -1],
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.5,
+            "size" : 1,
+            "layer" : "front",
+            "timeToLive" : 0.6
+          }
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [0, 30, 130]
+    }
+  },
+  "sounds" : {
+    "burn" : [ "/sfx/projectiles/flame_burning.ogg" ]
+  }
+}

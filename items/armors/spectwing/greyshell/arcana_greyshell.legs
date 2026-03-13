@@ -1,16 +1,40 @@
 {
   "itemName" : "arcana_greyshell_legs",
-  "price" : 35,
+  "price" : 750,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "legwear",
   "description" : "A basic protective legwear.",
   "shortdescription" : "Greyshell Leg Armor",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "level" : 2,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.1
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.2
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 2
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 2
+    }
+  ],
 
   "colorOptions" : [
     // BROWN

@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A makeshift scythe, crafted from bones.",
+  "description" : "A makeshift scythe, crafted from bones. ^orange;Drops bones when killing enemies.^reset;",
   "shortdescription" : "Bone Scythe",
   "tooltipKind" : "arcana_sword",
   "category" : "broadsword",
@@ -52,7 +52,8 @@
     "fireTime" : 0.5,
     "baseDps" : 9.0,
 	"damageConfig" : {
-	  "damageSourceKind" : "broadsword"
+	  "damageSourceKind" : "broadsword",
+	  "statusEffects" : [ "arcana_onkill_bone" ]
 	},
 	"impact" : false
   },

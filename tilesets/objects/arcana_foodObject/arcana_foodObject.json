@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":3,
+ "tilecount":5,
  "tileheight":256,
  "tileproperties":
     {
@@ -32,8 +32,23 @@
          "imagePositionY":"0",
          "object":"arcana_foodObject_zhushiPlatter",
          "tilesetDirection":"right"
+        },
+     "3":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"arcana_foodObject_tomato",
+         "tilesetDirection":"right"
+        },
+     "4":
+        {
+         "\/\/shortdescription":"",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"arcana_foodObject_tatalot",
+         "tilesetDirection":"right"
         }
-
     },
  "tiles":
     {
@@ -48,6 +63,14 @@
      "2":
         {
          "image":"arcana_foodObject_zhushiPlatter.png"
+        },
+     "3":
+        {
+         "image":"arcana_foodObject_tomato.png"
+        },
+     "4":
+        {
+         "image":"arcana_foodObject_tatalot.png"
         }
     },
  "tilewidth":188

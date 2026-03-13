@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":20,
+ "tilecount":21,
  "tileheight":8,
  "tileproperties":
     {
@@ -149,6 +149,14 @@
          "\/\/name":"arcana_platform_netherPlatform",
          "\/\/shortdescription":"",
          "material":"arcana_platform_netherPlatform"
+        },
+     "20":
+        {
+         "\/\/description":"",
+         "\/\/name":"arcana_platform_netherPlatform",
+         "\/\/shortdescription":"",
+         "material":"arcana_platform_netherPlatform",
+		 "colorVariant":"6"
         }
     },
  "tiles":
@@ -232,6 +240,10 @@
      "19":
         {
          "image":"arcana_platform_netherPlatform.png"
+        },
+     "20":
+        {
+         "image":"arcana_platform_netherPlatform_purple.png"
         }
     },
  "tilewidth":8

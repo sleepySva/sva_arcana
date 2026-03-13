@@ -1,0 +1,107 @@
+{
+  "metadata" : {
+    "name" : "arcana_dungeon_general_nonhostile",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	  "wooden_1",
+	  "wooden_2",
+	  "wooden_3",
+	  "wooden_4",
+	  "wooden_6",
+	  "wooden_7",
+	  "wooden_8",
+	  "wooden_9",
+	  "concrete_2",
+	  "concrete_3",
+	  "concrete_4"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "wooden_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wooden_1.json" ]
+    },
+    {
+      "name" : "wooden_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wooden_2.json" ]
+    },
+    {
+      "name" : "wooden_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wooden_3.json" ]
+    },
+    {
+      "name" : "wooden_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wooden_4.json" ]
+    },
+    {
+      "name" : "wooden_6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wooden_6.json" ]
+    },
+    {
+      "name" : "wooden_7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wooden_7.json" ]
+    },
+    {
+      "name" : "wooden_8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wooden_8.json" ]
+    },
+    {
+      "name" : "wooden_9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wooden_9.json" ]
+    },
+    {
+      "name" : "concrete_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "concrete_2.json" ]
+    },
+    {
+      "name" : "concrete_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "concrete_3.json" ]
+    },
+    {
+      "name" : "concrete_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "concrete_4.json" ]
+    }
+  ]
+}

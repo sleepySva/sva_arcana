@@ -1,0 +1,14 @@
+{
+  "name" : "arcana_blinkfast",
+  "effectConfig" : {
+    "blinkOut" : true,
+    "blinkIn" : true
+  },
+  "defaultDuration" : 0.2,
+
+  "scripts" : [
+    "blink.lua"
+  ],
+
+  "animationConfig" : "blink.animation"
+}

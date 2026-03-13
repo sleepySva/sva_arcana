@@ -29,6 +29,35 @@
     }]
   ],
   
+  "arcana_dungeonloots_spectwingclothes" : [
+    [0, {
+      "pool" : [
+		{"weight" : 1.0, "item" : ["arcana_cradling_chest", 1, { "colorIndex" : 0 }]},
+		{"weight" : 1.0, "item" : ["arcana_cradling_chest", 1, { "colorIndex" : 8 }]},
+		{"weight" : 1.0, "item" : ["arcana_cradling_chest", 1, { "colorIndex" : 9 }]},
+		{"weight" : 1.0, "item" : ["arcana_cradling_legs", 1, { "colorIndex" : 0 }]},
+		{"weight" : 1.0, "item" : ["arcana_cradling_legs", 1, { "colorIndex" : 8 }]},
+		{"weight" : 1.0, "item" : ["arcana_cradling_legs", 1, { "colorIndex" : 9 }]},
+		{"weight" : 1.0, "item" : ["arcana_spectwingcasual_chest", 1, { "colorIndex" : 0 }]},
+		{"weight" : 1.0, "item" : ["arcana_spectwingcasual_chest", 1, { "colorIndex" : 8 }]},
+		{"weight" : 1.0, "item" : ["arcana_spectwingcasual_chest", 1, { "colorIndex" : 9 }]},
+		{"weight" : 1.0, "item" : ["arcana_spectwingcasual_legs", 1, { "colorIndex" : 0 }]},
+		{"weight" : 1.0, "item" : ["arcana_spectwingcasual_legs", 1, { "colorIndex" : 8 }]},
+		{"weight" : 1.0, "item" : ["arcana_spectwingcasual_legs", 1, { "colorIndex" : 9 }]},
+		{"weight" : 1.0, "item" : ["arcana_florahusk_head", 1, { "colorIndex" : 0 }]},
+		{"weight" : 1.0, "item" : ["arcana_florahusk_chest", 1, { "colorIndex" : 0 }]},
+		{"weight" : 1.0, "item" : ["arcana_florahusk_legs", 1, { "colorIndex" : 0 }]}
+      ],
+      "poolRounds" : [
+        [0.25, 1],
+		[0.25, 2],
+        [0.25, 2],
+		[0.25, 3]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
   "arcana_dungeonloots_spectwingbones" : [
     [0, {
       "pool" : [
@@ -49,6 +78,25 @@
     }]
   ],
   
+  "arcana_dungeonloots_spectwingbooks" : [
+    [0, {
+      "pool" : [
+		{"weight" : 0.6, "item" : ["bookpiles", 1]},
+		{"weight" : 0.2, "item" : ["paper", 2]},
+		{"weight" : 0.1, "item" : ["paper", 1]},
+		{"weight" : 0.1, "item" : ["paper", 1]}
+      ],
+      "poolRounds" : [
+        [0.2, 4],
+		[0.2, 5],
+		[0.2, 6],
+		[0.2, 6],
+        [0.2, 7]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
   "arcana_dungeonloots_spectwingrare" : [
     [0, {
 	  "fill" : [
@@ -58,8 +106,8 @@
 		{"weight" : 1.0, "pool" : "arcana_dungeonloots_spectwingbasic"}
       ],
       "poolRounds" : [
-        [0.5, 2],
-		[0.5, 3]
+        [0.5, 3],
+		[0.5, 4]
       ],
       "allowDuplication" : true
     }]

@@ -1,6 +1,6 @@
 {
   "itemName" : "arcana_spectwing_chakram_4",
-  "price" : 400,
+  "price" : 900,
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "chakram",
@@ -20,7 +20,7 @@
       "throw" : [ "/sfx/melee/swing_dagger.ogg" ]
     }
   },
-  "scripts" : ["/items/active/weapons/boomerang/boomerang.lua"],
+  "scripts" : ["/items/active/weapons/boomerang/arcana_boomerang.lua"],
   "fireOffset" : [1.25, 0.5],
 
   "cooldownTime" : 0.4,
@@ -38,6 +38,9 @@
     "hoverTime" : 0.1
   },
   "level" : 4,
+  "critRate" : 0.2,
+  "critDamage" : 1.30,
+  "critStatusEffect" : "arcana_status_gloom",
 
   "stances" : {
     "idle" : {

@@ -7271,18 +7271,6 @@
                  "y":2016
                 }, 
                 {
-                 "gid":2147492773,
-                 "height":40,
-                 "id":1814,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":40,
-                 "x":3008,
-                 "y":2056
-                }, 
-                {
                  "gid":9136,
                  "height":48,
                  "id":1826,
@@ -8103,6 +8091,24 @@
                  "width":21,
                  "x":4728,
                  "y":1504
+                }, 
+                {
+                 "gid":9580,
+                 "height":64,
+                 "id":1962,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"interactData\" : \"\/interface\/warping\/arcana_lighthavendummy.config\", \"uniqueId\" : \"arcana_lighthaventeledummy\" }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":3008,
+                 "y":2056
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -9186,7 +9192,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1962,
+ "nextobjectid":1963,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

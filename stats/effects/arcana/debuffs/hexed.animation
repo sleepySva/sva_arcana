@@ -1,0 +1,47 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "main" : {
+        "default" : "loop",
+        "states" : {
+          "loop" : {
+            "frames" : 6,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "immediateSound" : "/sfx/projectiles/flame_burning.ogg"
+            }
+          }
+        }
+      }
+    },
+    "parts" : {
+      "base" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [0, 1.5]
+        },
+        "partStates" : {
+          "main" : {
+            "loop" : {
+              "properties" : {
+                "image" : "/animations/arcana_hexed/body.png:<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [0, 150, 50]
+    }
+  },
+  "sounds" : {
+    "burn" : [ "/sfx/projectiles/flame_burning.ogg" ]
+  }
+}

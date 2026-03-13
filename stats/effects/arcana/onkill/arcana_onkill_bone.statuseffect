@@ -1,0 +1,11 @@
+{
+  "name" : "arcana_onkill_bone",
+  "effectConfig" : {
+    "item" : { "name" : "bone", "count" : 2 }
+  },
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "onkilldropitem.lua"
+  ]
+}

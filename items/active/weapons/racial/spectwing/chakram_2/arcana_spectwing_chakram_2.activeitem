@@ -2,10 +2,10 @@
   "itemName" : "arcana_spectwing_chakram_2",
   "price" : 400,
   "maxStack" : 1,
-  "rarity" : "Uncommon",
+  "rarity" : "Common",
   "category" : "chakram",
   "description" : "A sharp chakram for hunting prey.",
-  "shortdescription" : "Umbral Chakram",
+  "shortdescription" : "Bewitching Chakram",
   "tooltipKind" : "base",
   "twoHanded" : false,
   "itemTags" : ["weapon"],
@@ -20,7 +20,7 @@
       "throw" : [ "/sfx/melee/swing_dagger.ogg" ]
     }
   },
-  "scripts" : ["/items/active/weapons/boomerang/boomerang.lua"],
+  "scripts" : ["/items/active/weapons/boomerang/arcana_boomerang.lua"],
   "fireOffset" : [1.25, 0.5],
 
   "cooldownTime" : 0.4,
@@ -37,7 +37,11 @@
     "hoverMaxDistance" : 14,
     "hoverTime" : 0
   },
+  
   "level" : 2,
+  "critRate" : 0.2,
+  "critDamage" : 1.20,
+  "critStatusEffect" : "arcana_status_hexed",
 
   "stances" : {
     "idle" : {

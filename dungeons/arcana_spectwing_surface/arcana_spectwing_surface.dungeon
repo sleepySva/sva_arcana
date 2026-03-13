@@ -1,0 +1,35 @@
+{
+  "metadata" : {
+    "name" : "arcana_spectwing_surface",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [
+	  "1",
+	  "2"
+	],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "1.json" ]
+    },
+    {
+      "name" : "2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "2.json" ]
+    }
+  ]
+}

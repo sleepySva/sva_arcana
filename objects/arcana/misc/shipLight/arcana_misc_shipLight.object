@@ -1,0 +1,57 @@
+{
+  "objectName" : "arcana_misc_shipLight",
+  "colonyTags" : ["light"],
+  "rarity" : "Common",
+  "description" : "A simple ceiling light for illuminating ships.",
+  "shortdescription" : "Ship Light",
+  "race" : "generic",
+  
+  "category" : "light",
+  "price" : 20,
+  "lightColor" : [150, 150, 150],
+
+  "inventoryIcon" : "1_icon.png",
+  "orientations" : [
+    {
+      "image" : "1.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+	  "lightPosition" : [1, 0],
+
+      "direction" : "left",
+
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "1.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+	  "lightPosition" : [1, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "1.png",
+    "fg" : "1_fb.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

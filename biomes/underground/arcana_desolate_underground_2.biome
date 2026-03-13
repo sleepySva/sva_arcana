@@ -7,11 +7,10 @@
       {
         "select" : 2,
         "pool" : [ 
-          [ 1.0, "scandroid" ],
           [ 1.0, "voltip" ],
           [ 1.0, "bobot" ],
           [ 1.0, "tintic" ],
-          [ 1.0, "lumoth" ]
+          [ 1.0, "spookit" ]
         ]
       },
       {
@@ -21,10 +20,10 @@
     ]
   },
 
-  "parallax" : "/parallax/underground/underground5b.parallax",
+  "parallax" : "/parallax/underground/arcana_ruinousCave.parallax",
 
   "mainBlock" : "rockbrick",
-  "subBlocks" : [ "desolate_tile2", "rock17" ],
+  "subBlocks" : [ "desolate_tile2", "rock17", "bonematerial" ],
   "ores" : "arcana_desolate_ores_surface",
 
   "ambientNoises" : {
@@ -47,8 +46,8 @@
 
   "undergroundPlaceables" : {
 
-    "grassMod" : [ "metal" ],
-    "grassModDensity" : 1.0,
+    "grassMod" : [ "arcana_mod_purpleGrass" ],
+    "grassModDensity" : 0.7,
 
     "items" : [
       {

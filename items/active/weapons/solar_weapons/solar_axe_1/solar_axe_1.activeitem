@@ -4,7 +4,7 @@
   "price" : 1600,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A burning one-handed axe, forged from solar crystals.",
+  "description" : "A burning one-handed axe, forged from solar crystals. Inflicts Burning on hit.",
   "shortdescription" : "Fiery Crescent",
   "tooltipKind" : "arcana_sword",
   "category" : "axe",
@@ -24,9 +24,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "arcana_solar",
+  "critRate" : 0.07,
+  "critDamage" : 1.44,
 
   "aimOffset" : -1.0,
   "muzzleOffset" : [0.3, 0],
@@ -45,12 +47,13 @@
     "baseDps" : 11.4,
     "damageConfig" : {
       "knockback" : 30,
-	  "damageSourceKind" : "arcana_solar"
+	  "damageSourceKind" : "arcana_solar",
+      "statusEffects" : [ "burning" ]
     }
 	
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua",
   "upgradeParameters" : {
     "inventoryIcon" : "upgraded.png",
     "animationParts" : {

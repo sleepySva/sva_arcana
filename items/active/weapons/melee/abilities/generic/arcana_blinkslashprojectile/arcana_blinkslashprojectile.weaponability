@@ -1,0 +1,121 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "blinkSwoosh" : {
+          "default" : "idle",
+          "states" : {
+            "idle" : {
+            },
+            "fire" : {
+              "frames" : 3,
+              "cycle" : 0.125,
+              "mode" : "transition",
+              "transition" : "idle"
+            }
+          }
+        }
+      },
+      "parts" : {
+        "blinkSwoosh" : {
+          "properties" : {
+            "zLevel" : -1,
+            "centered" : true,
+            "transformationGroups" : ["swoosh"],
+            "rotationCenter" : [0, 0]
+          },
+          "partStates" : {
+            "blinkSwoosh" : {
+              "idle" : {
+                "properties" : {
+                  "image" : ""
+                }
+              },
+              "fire" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/broadsword/swoosh2/<elementalType>swoosh.png:<frame>",
+                  "offset" : [5.4, 1.0],
+                  "damageArea" : [[-4, 1], [2.5, 1], [2.5, -2], [-4, -2]]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "ability" : {
+    "name" : "Blink Slash",
+    "type" : "arcana_blinkslashprojectile",
+    "scripts" : ["/items/active/weapons/melee/abilities/generic/arcana_blinkslashprojectile/blinkslash.lua"],
+    "class" : "BlinkSlash",
+
+    "baseDamage" : 4,
+    "energyUsage" : 100,
+    "cooldownTime" : 1.5,
+
+    "blinkDistance" : 15,
+    "blinkYTolerance" : 3.5,
+    "requireLineOfSight" : true,
+	
+    "projectileTimesAndAngles" : [
+      [0.0, 0]
+    ],
+    "projectileOffset" : [1.75, -2.0],
+    "projectileType" : "energyshardplayer",
+    "projectileParameters" : {
+      "baseDamage" : 4
+    },
+
+    "damageConfig" : {
+      "damageSourceKind" : "<elementalType>broadsword",
+      "baseDamage" : 20,
+      "knockback" : 20,
+      "knockbackMode" : "facing",
+      "timeout" : 0.5,
+      "timeoutGroup" : "alt"
+    },
+    "elementalConfig" : {
+      "fire" : {
+        "damageConfig" : { "statusEffects" : [ "burning" ] }
+      },
+      "ice" : {
+        "damageConfig" : { "statusEffects" : [ "frostslow" ] }
+      },
+      "poison" : {
+        "damageConfig" : { "statusEffects" : [ "weakpoison" ] }
+      },
+      "electric" : {
+        "damageConfig" : { "statusEffects" : [ "electrified" ] }
+      },
+      "arcana_abyss" : {
+        "damageConfig" : { "statusEffects" : [] }
+      }
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.25,
+        "armRotation" : -135,
+        "weaponRotation" : 75,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "slash" : {
+        "duration" : 0.125,
+        "armRotation" : -135,
+        "weaponRotation" : 45,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

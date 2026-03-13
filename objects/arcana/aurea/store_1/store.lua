@@ -10,7 +10,7 @@ function onInteraction(args)
   local interactData = config.getParameter("interactData")
 
   interactData.recipes = {}
-  local addRecipes = function(items, category)
+  local addRecipes = function(items, category, default)
     createSeed()
     local shuffled = shuffle(items)
 	local selector = {}
@@ -20,6 +20,9 @@ function onInteraction(args)
     for i, item in ipairs(selector) do
       interactData.recipes[#interactData.recipes + 1] = generateRecipe(item, category)
     end
+    for _, item in ipairs(default) do
+      interactData.recipes[#interactData.recipes + 1] = generateRecipe(item, category)
+    end
   end
   
   local storeInventory = config.getParameter("storeInventory")
@@ -27,7 +30,7 @@ function onInteraction(args)
   -- statically shuffle featured collections
   shuffle(storeInventory.featured)
   local currentFeature = math.floor(os.time() / config.getParameter("rotationTime")) % #storeInventory.featured + 1
-  addRecipes(storeInventory.featured[currentFeature], "featured")
+  addRecipes(storeInventory.featured[currentFeature], "featured", storeInventory.default)
 
   return { "OpenCraftingInterface", interactData }
 end

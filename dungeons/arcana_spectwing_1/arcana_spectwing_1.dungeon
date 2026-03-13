@@ -6,7 +6,7 @@
     ],
 
     "anchor" : [
-	  "1"
+	  "entrance"
 	],
 
     "gravity" : 80,
@@ -17,11 +17,46 @@
 
   "parts" : [
     {
-      "name" : "1",
+      "name" : "entrance",
       "rules" : [
+	    [ "ignorePartMaximumRule" ],
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "cave1.json" ]
+      "def" : [ "tmx", "entrance.json" ]
+    },
+    {
+      "name" : "crystal",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "crystal.json" ]
+    },
+    {
+      "name" : "sanctum",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "sanctum.json" ],
+	  "chance" : 1000
+    },
+    {
+      "name" : "chambers",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "chambers.json" ]
+    },
+    {
+      "name" : "grove",
+      "rules" : [
+	    [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "grove.json" ],
+	  "chance" : 0
     }
   ]
 }

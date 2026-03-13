@@ -1,0 +1,49 @@
+{
+  "name" : "arcana_twisted",
+
+  //jaggy ledges
+  "type" : "displacement",
+  "xType" : "perlin",
+  "xOctaves" : 1,
+  "xFreq" : 0.2,
+  "xAmp" : 6,
+  "xXInfluence" : 0.8,
+  "xYInfluence" : 0.8,
+  "yType" : "perlin",
+  "yOctaves" : 1,
+  "yFreq" : 0.1,
+  "yAmp" : 2,
+  "yYInfluence" : 0,
+
+  "source" : {
+    //roughish islands
+    "type" : "islandSurface",
+
+    "islandElevation" : -1,
+
+    "islandDecision" : {
+      "type" : "perlin",
+      "octaves" : 5,
+      "frequency" : 0.02,
+      "amplitude" : 10.0,
+      "bias" : -0.05
+    },
+    "islandTaperPoint" : 0.2,
+
+    "islandHeight" : {
+      "type" : "perlin",
+      "octaves" : 5,
+      "frequency" : 0.02,
+      "amplitude" : 28,
+      "bias" : 30
+    },
+
+    "islandDepth" : {
+      "type" : "perlin",
+      "octaves" : 6,
+      "frequency" : 0.1,
+      "amplitude" : 68,
+      "bias" : 40
+    }
+  }
+}

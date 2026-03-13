@@ -1,0 +1,24 @@
+{
+  "name" : "arcana_status_hexed",
+  "blockingStat" : "arcana_status_hexed_immunity",
+  "effectConfig" : {
+    "statModifiers" : [
+      {
+        "stat" : "powerMultiplier",
+        "effectiveMultiplier" : 0.9
+      }
+    ],
+	"effects" : [
+	  "weakpoison", "burning", "frostslow", "electrified"
+	]
+  },
+  "defaultDuration" : 5.0,
+  "animationConfig" : "hexed.animation",
+
+  "scripts" : [
+    "hexed.lua"
+  ],
+  
+  "label" : "Hexed",
+  "icon" : "/interface/statuses/oldpoison.png"
+}

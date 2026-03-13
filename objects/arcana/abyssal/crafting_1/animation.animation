@@ -19,6 +19,14 @@
             "properties" : {
               "lightsOn" : [ "scifiglow" ]
             }
+          },
+          "stage_3" : {
+            "frames" : 12,
+            "cycle" : 1.2,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
           }
         }
       }
@@ -41,6 +49,12 @@
               "properties" : {
                 "image" : "2_fullbright.png:<color>.<frame>"
               }
+            },
+			
+            "stage_3" : {
+              "properties" : {
+                "image" : "3_fullbright.png:<color>.<frame>"
+              }
             }
           }
         }
@@ -62,6 +76,12 @@
             "stage_2" : {
               "properties" : {
                 "image" : "2.png:<color>.<frame>"
+              }
+            },
+			
+            "stage_3" : {
+              "properties" : {
+                "image" : "3.png:<color>.<frame>"
               }
             }
           }

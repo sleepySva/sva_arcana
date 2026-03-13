@@ -938,11 +938,8 @@
           "primaryRegion" : ["arcana_illuminated"],
           "secondaryRegions" : [],
           "dungeons": [
-			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
-			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			  [4.0, "arcana_spectwing_1"],
 			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
 			  [1.0, "glitchsewer"], [1.0, "novakidvillage"],
               [1.0, "arcana_dungeon_misc_1"],
 			  [1.0, "arcana_dungeon_misc_2"]
@@ -999,7 +996,6 @@
       "subRegion": []
     }
   },
-  
   {
     "op": "add",
     "path": "/planetTypes/arcana_desolate",
@@ -1007,23 +1003,18 @@
       "threatRange" : [7, 7],
       "layers": {
         "surface": {
-          "primaryRegion" : ["arcana_desolate"],
-          "secondaryRegions" : [],
+          "primaryRegion" : ["arcana_twisted"],
+          "secondaryRegions" : ["arcana_desolate"],
           "dungeons": [
-			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
-			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
-			  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
-			  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
-			  [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
-			  [1.0, "glitchsewer"], [1.0, "novakidvillage"]
+			  [4.0, "arcana_spectwing_1"]
           ]
         },
 		
         "subsurface" : {
-          "primaryRegion" : [ "arcana_desolate_underground_1" ]
+          "primaryRegion" : [ "arcana_netherCave" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_desolate_underground_2" ],
+          "primaryRegion" : [ "arcana_netherCave" ],
           "dungeons": [
 			  [1.0, "arcana_arcanetemple"],
 			  [1.0, "arcana_wildshrine"],
@@ -1031,12 +1022,24 @@
           ]
         },
         "underground2" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
+          "primaryRegion" : [ "arcana_netherCave" ]
         },
         "underground3" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_4" ]
         }
       }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_twisted",
+    "value": {
+      "caveLiquid": ["arcana_liquid_ruinousWater"],
+      "blockSelector": ["arcana_twisted"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_twisted"]]],
+      "subRegion": []
     }
   },
   {
@@ -1066,6 +1069,15 @@
     "value": {
       "caveLiquid": [ "arcana_liquid_ruinousWater" ],
       "biome": [[0,["arcana_desolate_underground_2"]]],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_netherCave",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_ruinousWater" ],
+      "biome": [[0,["arcana_netherCave"]]],
       "subRegion": []
     }
   },

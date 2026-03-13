@@ -1,13 +1,13 @@
 {
   "itemName" : "arcana_greyshell_chest",
-  "price" : 75,
+  "price" : 750,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "chestwear",
   "description" : "A basic protective chestwear.",
   "shortdescription" : "Greyshell Carapace",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : {
     "body" : "chestm.png",
@@ -20,6 +20,30 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "level" : 2,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.25
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.5
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 5
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 5
+    }
+  ],
 
   "colorOptions" : [
     // BROWN

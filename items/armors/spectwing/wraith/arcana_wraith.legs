@@ -1,20 +1,44 @@
 {
   "itemName" : "arcana_wraith_legs",
-  "price" : 35,
+  "price" : 1600,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
-  "rarity" : "Common",
+  "rarity" : "Uncommon",
   "category" : "legwear",
-  "description" : "An intricately woven robe.",
+  "description" : "A more refined armor, built with good swiftness and toughness.",
   "shortdescription" : "Wraith Leg Armor",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "level" : 3,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.1
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.2
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 2
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 2
+    }
+  ],
 
   "colorOptions" : [
-    // BLUE
-    { "ffca8a" : "5f69ab", "e0975c" : "414c8e", "a85636" : "333171", "6f2919" : "262557", "e7dfbd" : "7a62e2", "baaa7c" : "373498", "85734f" : "240f81" },
+    // BROWN
+    { "ffca8a" : "b3759b", "e0975c" : "8d5276", "a85636" : "64205b", "6f2919" : "3b0e35" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515", "e7dfbd" : "7a62e2", "baaa7c" : "373498", "85734f" : "240f81" },
     // GREY

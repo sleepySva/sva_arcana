@@ -43,6 +43,7 @@
 		
 		"arcana_illuminated" : { "word" : "arcana_illuminated", "friendlyWord" : " Illuminated" },
 		"arcana_desolate" : { "word" : "arcana_desolate", "friendlyWord" : " Desolate" },
+		"arcana_twisted" : { "word" : "arcana_twisted", "friendlyWord" : " Abyssal Woods" },
 		"arcana_goldenForest" : { "word" : "arcana_goldenForest", "friendlyWord" : " Golden Forest" },
 		"arcana_sanguine" : { "word" : "arcana_sanguine", "friendlyWord" : " Sanguine" },
 		"arcana_ferocious" : { "word" : "arcana_ferocious", "friendlyWord" : " Ferocious" },
@@ -145,6 +146,15 @@
   },
   
   // Dungeons
+  {
+    "op": "add",
+    "path": "/displayDungeons/arcana_spectwing_1",
+	"value": {
+		"description" : "A cave system that seems to be populated with an alien species.",
+		"icon" : "/interface/cockpit/dungeons/arcana_unknown.png",
+		"name" : "Spectwing Nest"
+	}
+  },
   {
     "op": "add",
     "path": "/displayDungeons/arcana_keyforgeshrine",
@@ -1119,9 +1129,9 @@
     "op": "add",
     "path": "/visitableTypeDescription/arcana_desolate",
     "value": [
-      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;desolate^white; planet.",
-      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;desolate^white; planet.",
-      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;desolate^white; planet."
+      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;abyssal woods^white; planet.",
+      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;abyssal woods^white; planet.",
+      "Scorched barrens and Horizon outposts can be detected in this ^#973dc5;abyssal woods^white; planet."
     ]
   },
   {
@@ -1135,15 +1145,15 @@
   {
     "op": "add",
     "path": "/planetTypeNames/arcana_desolate",
-    "value": "Desolate"
+    "value": "Abyssal Woods"
   },
   {
     "op": "add",
     "path": "/planetTypeColors/arcana_desolate",
     "value": [
-      151,
-      61,
-      197
+      130,
+      127,
+      242
     ]
   },
 

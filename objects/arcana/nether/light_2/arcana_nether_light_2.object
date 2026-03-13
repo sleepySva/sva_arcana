@@ -14,7 +14,7 @@
   "pointBeam" : 2,
   "beamAmbience" : 0.10,
   
-  "flickerPeriod" : 1.0,
+  "flickerPeriod" : 0.3,
   "flickerMinIntensity" : 0.95,
   "flickerMaxIntensity" : 1,
   "flickerPeriodVariance" : 0.075,
@@ -47,11 +47,24 @@
     }
   ],
   
-  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animation" : "/objects/arcana_light_fullbright_animated.animation",
   "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "light" : {
+          "states" : {
+            "on" : {
+              "frames" : 4,
+              "cycle" : 0.4,
+			  "mode" : "loop"
+            }
+          }
+        }
+	  }
+    },
     "sounds" : {
-      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
-      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+      "on" : [ "/sfx/objects/torch_on1.ogg", "/sfx/objects/torch_on2.ogg" ],
+      "off" : [ "/sfx/objects/torch_off1.ogg", "/sfx/objects/torch_off2.ogg", "/sfx/objects/torch_off3.ogg" ]
     }
   },
   "animationParts" : {

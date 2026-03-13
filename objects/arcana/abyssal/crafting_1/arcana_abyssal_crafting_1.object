@@ -1,7 +1,7 @@
 {
   "objectName" : "arcana_abyssal_crafting_1",
   "colonyTags" : ["crafting", "abyssal"],
-  "rarity" : "Legendary",
+  "rarity" : "Uncommon",
   "description" : "A partially grown Soulstone for creating basic Spectwing equipment.",
   "shortdescription" : "Budding Soulstone",
   "race" : "generic",
@@ -21,7 +21,7 @@
   "placementImagePosition" : [-16, -0],    
 
   "startingUpgradeStage" : 1,
-  "maxUpgradeStage" : 2,
+  "maxUpgradeStage" : 3,
   "inventoryIcon" : "1_icon.png",
   
   "upgradeStages" : [
@@ -30,6 +30,7 @@
       
       "itemSpawnParameters" : {
         "inventoryIcon" : "1_icon.png",
+	  	"rarity" : "Uncommon",
         "placementImage" : "1.png:default.default",
         "placementImagePosition" : [-16, -0],    
 
@@ -57,7 +58,35 @@
       
       "itemSpawnParameters" : {
         "inventoryIcon" : "2_icon.png",
+		"rarity" : "Rare",
         "placementImage" : "2.png:default.default",
+        "placementImagePosition" : [-16, -0],    
+
+        "description" : "An almost fully grown Soulstone for creating standard Spectwing equipment.",
+        "shortdescription" : "Soulstone"
+      },
+
+	  "interactData" : {
+		"config" : "/interface/arcana/arcana_spectwing/arcana_spectwing_2.config",
+		"filter" : ["arcana_spectwing_1", "arcana_spectwing_2"],
+        "upgradeMaterials" : [
+			{ "item" : "refinedviolium", "count" : 5 }
+        ]
+	  },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+    {
+      "animationState" : "stage_3",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "3_icon.png",
+		"rarity" : "Legendary",
+        "placementImage" : "3.png:default.default",
         "placementImagePosition" : [-16, -0],    
 
         "description" : "A fully grown Soulstone for creating advanced Spectwing equipment.",
@@ -66,7 +95,7 @@
 
 	  "interactData" : {
 		"config" : "/interface/arcana/arcana_spectwing/arcana_spectwing_2.config",
-		"filter" : ["arcana_spectwing_1", "arcana_spectwing_2"]
+		"filter" : ["arcana_spectwing_1", "arcana_spectwing_2", "arcana_spectwing_3"]
 	  },
 
       "learnBlueprintsOnPickup" : []

@@ -1,0 +1,26 @@
+{
+  "name" : "arcana_status_gloom",
+  "blockingStat" : "arcana_resdown_immunity",
+  "effectConfig" : {
+    "statModifiers" : [
+	  { "stat" : "physicalResistance", "amount" : -0.1 },
+	  { "stat" : "arcana_resistance_abyss", "amount" : -0.1 }
+    ],
+    "statModifiersAlt" : [
+	  { "stat" : "physicalResistance", "amount" : -0.2 },
+	  { "stat" : "arcana_resistance_abyss", "amount" : -0.2 }
+    ],
+	"effects" : [
+	  "weakpoison", "burning", "frostslow", "electrified"
+	]
+  },
+  "defaultDuration" : 20.0,
+  "animationConfig" : "gloom.animation",
+
+  "scripts" : [
+    "gloom.lua"
+  ],
+  
+  "label" : "Gloom",
+  "icon" : "/interface/statuses/oldpoison.png"
+}

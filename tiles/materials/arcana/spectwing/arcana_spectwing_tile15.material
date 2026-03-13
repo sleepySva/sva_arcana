@@ -1,0 +1,22 @@
+{
+  "materialId" : 16939,
+  "materialName" : "arcana_spectwing_tile15",
+  "particleColor" : [120, 75, 220, 255],
+  "itemDrop" : "arcana_spectwing_tile15",
+  "description" : "A block of amethyst crystal formation.",
+  "shortdescription" : "Amethyst Crystals",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "arcana_spectwing_tile15.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4700,
+	"radiantLight" : [90, 40, 110]
+  }
+}

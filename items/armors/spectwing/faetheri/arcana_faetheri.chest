@@ -1,13 +1,13 @@
 {
   "itemName" : "arcana_faetheri_chest",
-  "price" : 75,
+  "price" : 2400,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
-  "rarity" : "Common",
+  "rarity" : "Uncommon",
   "category" : "chestwear",
-  "description" : "An intricately woven robe.",
+  "description" : "A stealth focused armor piece, good for hunting in the dark.",
   "shortdescription" : "Faetheri Carapace",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : {
     "body" : "chestm.png",
@@ -20,10 +20,34 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "level" : 4,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.25
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.5
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 5
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 5
+    }
+  ],
 
   "colorOptions" : [
-    // BLUE
-    { "ffca8a" : "5f69ab", "e0975c" : "414c8e", "a85636" : "333171", "6f2919" : "262557", "e7dfbd" : "7a62e2", "baaa7c" : "373498", "85734f" : "240f81" },
+    // BROWN
+    { "ffca8a" : "f96cba", "e0975c" : "e23896", "a85636" : "bb19be", "6f2919" : "7810ae" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515", "e7dfbd" : "7a62e2", "baaa7c" : "373498", "85734f" : "240f81" },
     // GREY

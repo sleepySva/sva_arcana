@@ -1,13 +1,13 @@
 {
   "itemName" : "arcana_wraith_chest",
-  "price" : 75,
+  "price" : 2000,
   "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
-  "rarity" : "Common",
+  "rarity" : "Uncommon",
   "category" : "chestwear",
-  "description" : "An intricately woven robe.",
+  "description" : "A more refined armor, built with good swiftness and toughness.",
   "shortdescription" : "Wraith Carapace",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : {
     "body" : "chestm.png",
@@ -20,10 +20,34 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "level" : 3,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.25
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.5
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 5
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 5
+    }
+  ],
 
   "colorOptions" : [
-    // BLUE
-    { "ffca8a" : "5f69ab", "e0975c" : "414c8e", "a85636" : "333171", "6f2919" : "262557", "e7dfbd" : "7a62e2", "baaa7c" : "373498", "85734f" : "240f81" },
+    // BROWN
+    { "ffca8a" : "b3759b", "e0975c" : "8d5276", "a85636" : "64205b", "6f2919" : "3b0e35" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515", "e7dfbd" : "7a62e2", "baaa7c" : "373498", "85734f" : "240f81" },
     // GREY

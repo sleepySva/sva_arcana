@@ -19,6 +19,19 @@
 	"baseDamageFactor" : 1.0,
 	
     "comboSteps" : 4,
+	
+    "blinkDistance" : 15,
+    "blinkYTolerance" : 3.5,
+    "requireLineOfSight" : true,
+	
+    "projectileTimesAndAngles" : [
+      [0.0, 0]
+    ],
+    "projectileOffset" : [1.75, -2.0],
+    "projectileType" : "energyshardplayer",
+    "projectileParameters" : {
+      "baseDamage" : 4
+    },
 
     "flashTime" : 0.15,
     "flashDirectives" : "fade=FFFFFFFF=0.15",

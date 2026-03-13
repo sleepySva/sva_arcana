@@ -1,20 +1,44 @@
 {
   "itemName" : "arcana_faetheri_legs",
-  "price" : 35,
+  "price" : 2200,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
-  "rarity" : "Common",
+  "rarity" : "Uncommon",
   "category" : "legwear",
-  "description" : "An intricately woven robe.",
+  "description" : "A stealth focused armor piece, good for hunting in the dark.",
   "shortdescription" : "Faetheri Leg Armor",
-  "tooltipKind" : "armor",
+  "tooltipKind" : "arcana_armorbig",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "level" : 4,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "standardArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.1
+    },
+    {
+      "levelFunction" : "standardArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.2
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 2
+    },
+    {
+      "levelFunction" : "standardArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 2
+    }
+  ],
 
   "colorOptions" : [
-    // BLUE
-    { "ffca8a" : "5f69ab", "e0975c" : "414c8e", "a85636" : "333171", "6f2919" : "262557", "e7dfbd" : "7a62e2", "baaa7c" : "373498", "85734f" : "240f81" },
+    // BROWN
+    { "ffca8a" : "cccbd5", "e0975c" : "b3b1c6", "a85636" : "736f98", "6f2919" : "3f3d4e" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515", "e7dfbd" : "7a62e2", "baaa7c" : "373498", "85734f" : "240f81" },
     // GREY

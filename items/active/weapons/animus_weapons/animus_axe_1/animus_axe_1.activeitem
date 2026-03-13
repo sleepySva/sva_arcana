@@ -64,9 +64,11 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "physical",
+  "critRate" : 0.07,
+  "critDamage" : 1.40,
 
   "primaryAbilityType" : "arcana_axe_ability_burstCleave",
   "primaryAbility" : {
@@ -92,7 +94,7 @@
 	
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua",
   "upgradeParameters" : {
     "inventoryIcon" : "upgraded.png",
     "animationParts" : {

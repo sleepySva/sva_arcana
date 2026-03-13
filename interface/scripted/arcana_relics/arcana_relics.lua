@@ -5,6 +5,10 @@ function init()
 end
 
 function update(dt)
+  if status.statusProperty("arcana_relicsUI_active") == true then
+    return
+  end
+  status.setStatusProperty("arcana_relicsUI_active", true)
 end
 
 -- Updates selected slot
@@ -41,6 +45,10 @@ end
 
 -- Inits all item slots
 function slotInit()
+  if status.statusProperty("arcana_relicsUI_active") == true then
+    pane.dismiss()
+    return
+  end
   if player.getProperty("arcana_relics") == nil then player.setProperty("arcana_relics", {}) end
   local relics = player.getProperty("arcana_relics")
   for k, v in pairs(relics) do
@@ -48,5 +56,6 @@ function slotInit()
   end
 end
 
-
-  
+function uninit()
+  status.setStatusProperty("arcana_relicsUI_active", false)
+end

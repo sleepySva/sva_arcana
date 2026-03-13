@@ -1,0 +1,21 @@
+{
+  "name" : "arcana_levitatefixed",
+  "effectConfig" : {
+    "maxHoverHeight" : 4,
+    "hoverVelocityX" : 20,
+    "bobInterval" : 2,
+    "bobAmount" : 0.3,
+    "fallSpeedLimit" : 0,
+    "protectionBonus" : 0
+  },
+  "defaultDuration" : 20,
+
+  "scripts" : [
+    "arcana_levitatefixed.lua"
+  ],
+
+  "animationConfig" : "arcana_status_floating.animation",
+
+  "label" : "Levitation: Jump to cancel this early.",
+  "icon" : "/interface/statuses/levitate.png"
+}

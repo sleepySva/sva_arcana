@@ -4,7 +4,7 @@
   "level" : 3,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A scythe built to harness the strongest storms.",
+  "description" : "A scythe built to harness storms. ^orange;On Crit:^reset; Inflict ^red;Electrified^reset;, and deal bonus damage and inflict ^red;Deathsprawl^reset; if they already have Electrified.",
   "shortdescription" : "Stormtear Scythe",
   "tooltipKind" : "arcana_sword",
   "category" : "broadsword",
@@ -44,8 +44,9 @@
   "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
 
   "elementalType" : "electric",
-  "critRate" : 0.06,
+  "critRate" : 0.16,
   "critDamage" : 1.40,
+  "critStatusEffect" : "arcana_status_electricfollow40",
 
   "primaryAbilityType" : "arcana_scythe_combo",
   "primaryAbility" : {

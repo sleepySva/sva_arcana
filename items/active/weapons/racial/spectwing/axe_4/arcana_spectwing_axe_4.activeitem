@@ -1,0 +1,102 @@
+{
+  "itemName" : "arcana_spectwing_axe_4",
+  "level" : 4,
+  "price" : 1400,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A sturdy axe of the night. ^orange;On Crit:^reset; Inflict ^red;Gloom^reset; (-10% Physical and Abyss Res, and an additional -10% if they have an elemental status).",
+  "shortdescription" : "Umbral Axe",
+  "tooltipKind" : "arcana_sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "/items/active/weapons/melee/axe/arcana_longaxe.animation",
+  "animationParts" : {
+    "blade" : "body.png",
+    "handle" : "fullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "swoosh" : {
+          "default" : "idle",
+          "states" : {
+            "idle" : {
+            },
+            "fire" : {
+              "frames" : 3,
+              "cycle" : 0.2,
+              "mode" : "transition",
+              "transition" : "idle"
+            }
+          }
+        }
+      },
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [-0.25, -1.0]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [-0.25, -1.0]
+          }
+        },
+        "swoosh" : {
+          "properties" : {
+            "offset" : [-1, 1.0]
+          },
+
+          "partStates" : {
+            "swoosh" : {
+              "idle" : {
+                "properties" : {
+                  "image" : ""
+                }
+              },
+              "fire" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/axe/swoosh/arcana_umbral.png:<frame>",
+                  "damageArea" : [[-2.25, 1.75], [-1, 2.25], [0.25, 2.25], [2, 1.5], [3.25, -0.125], [3.25, -1.25], [2.5, -2.5], [1.0, -2.5]]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "physical",
+  "critRate" : 0.08,
+  "critDamage" : 1.42,
+  "critStatusEffect" : "arcana_status_gloom",
+
+
+  "primaryAbilityType" : "axecleave",
+  "primaryAbility" : {
+	
+    "fireTime" : 0.9,
+	"windupTime" : 0.5,
+	
+	"baseDamage" : 10,
+	"baseDps" : 8.0,
+	
+    "damageConfig" : {
+      "knockback" : 14,
+	  "damageSourceKind" : "axe"
+    }
+	
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}

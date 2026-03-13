@@ -1,0 +1,77 @@
+{
+  "itemName" : "arcana_spectwing_broadsword_5",
+  "price" : 2400,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A sword reflecting the abyss realm. ^orange;On Crit:^reset; Inflict ^red;Deathsprawl: Ruinous^reset; (On death, deal 80 Abyss damage to nearby enemies).",
+  "shortdescription" : "Vorago",
+  "tooltipKind" : "arcana_sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "body.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/arcana_broadswordshort.animation",
+  "animationParts" : {
+    "handle" : "fullbright.png",
+    "blade" : "body.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "blade" : {
+          "properties" : {
+            "offset" : [0, 1.6]
+          }
+        },
+        "handle" : {
+          "properties" : {
+            "offset" : [0, 1.6]
+          }
+        }
+	  }
+	},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword_ice1.ogg", "/sfx/melee/swing_broadsword_ice2.ogg", "/sfx/melee/swing_broadsword_ice3.ogg" ],
+	  "fire2" : [ "/sfx/melee/swing_broadsword_ice1.ogg", "/sfx/melee/swing_broadsword_ice2.ogg", "/sfx/melee/swing_broadsword_ice3.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_shortsword_ice1.ogg", "/sfx/melee/swing_shortsword_ice2.ogg", "/sfx/melee/swing_shortsword_ice3.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_spear_ice1.ogg", "/sfx/melee/swing_spear_ice2.ogg", "/sfx/melee/swing_spear_ice3.ogg" ],
+	  "fireKunai" : [ "/sfx/melee/swing_dagger_ice1.ogg", "/sfx/melee/swing_dagger_ice2.ogg", "/sfx/melee/swing_dagger_ice3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/arcana_meleeweapon.lua"],
+
+  "elementalType" : "arcana_abyss",
+  "critRate" : 0.08,
+  "critDamage" : 1.40,
+  "critStatusEffect" : "arcana_status_deathspreadruinous",
+
+  "primaryAbilityType" : "arcana_broadswordfast",
+  "primaryAbility" : {
+    "fireTime" : 0.6,
+    "baseDps" : 12.0,
+	"damageConfig" : {
+	  "damageSourceKind" : "arcana_abyss_slash"
+	}
+  },
+
+  "altAbilityType" : "arcana_blinkslashprojectile",
+  "altAbility" : {
+    "name" : "Fissure Cut",
+	"baseDamage" : 8,
+    "projectileTimesAndAngles" : [
+      [0.0, 0]
+    ],
+    "projectileOffset" : [1.75, 0.0],
+    "projectileType" : "arcana_teslaboltvorago",
+    "projectileParameters" : {
+      "baseDamage" : 8,
+	  "speed" : 40
+    }
+  },
+
+  "builder" : "/items/buildscripts/arcana_buildunrandweapon.lua"
+}
