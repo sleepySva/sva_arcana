@@ -37,17 +37,17 @@ function getOutputs(entity, position, item, schema)
   local entityTable = object.getOutputNodeIds(0)
   if object.isOutputNodeConnected(0) and tablelength(entityTable) >= 1 and item then
 	for key, value in pairs(entityTable) do
-	  if world.containerSize(key) == nil then break end
-	  if world.containerItemsFitWhere(key, schema)["leftover"] ~= 0 then break end
+	  if world.containerSize(key) == nil then goto end_loop end
+	  if world.containerItemsFitWhere(key, schema)["leftover"] ~= 0 then goto end_loop end
 	  local settings = world.getObjectParameter(key, "containerSettings")
-	  if settings.allowed == false then break end
+	  if settings and settings.allowed == false then goto end_loop end
 	  --take from input container
 	  local attempt = world.containerTakeNumItemsAt(entity, position-1, schema.count)
-	  if settings.allowedInputSlots then
+	  if settings and settings.allowedInputSlots then
 	    --put into allowed slots
 	    for _, pos in pairs(settings.allowedInputSlots) do
 	      attempt = world.containerPutItemsAt(key, attempt, pos-1)
-		  if attempt == nil or attempt == {} then self.isRunning = true break end
+		  if attempt == nil or attempt == {} then self.isRunning = true goto end_loop end
 	    end
 		--refund leftovers to input container
 		if attempt ~= nil and attempt ~= {} then
@@ -57,6 +57,7 @@ function getOutputs(entity, position, item, schema)
 	    world.containerAddItems(key, attempt)
 	    self.isRunning = true
 	  end
+	  ::end_loop::
 	end
   end
   if self.isRunning then

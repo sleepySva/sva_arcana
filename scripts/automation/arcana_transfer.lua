@@ -10,21 +10,18 @@ function transfer.output(id, rate, slot)
   item = world.containerItemAt(id, s)
   if object.isOutputNodeConnected(0) and count >= 1 and item then
 	for key, _ in pairs(entityTable) do
-	  if world.containerSize(key) == nil then return end
-	  if world.containerItemsFitWhere(key, item)["leftover"] ~= 0 then return end
-	  
+	  if world.containerSize(key) == nil then goto end_loop end
+	  if world.containerItemsFitWhere(key, item)["leftover"] ~= 0 then goto end_loop end
 	  local settings = world.getObjectParameter(key, "containerSettings")
-	  local attempt = world.containerTakeNumItemsAt(id, s, item.count)
 	  
 	  -- transfers through settings
-	  if settings then
-	    if not settings.allowed then return end
+	  if settings and settings.allowed then
 		if settings.allowedInputSlots then
-		  
+		  local attempt = world.containerTakeNumItemsAt(id, s, item.count)
 	      --put into allowed slots
 	      for _, pos in pairs(settings.allowedInputSlots) do
 	        attempt = world.containerPutItemsAt(key, attempt, pos-1)
-		    if attempt == nil or attempt == {} then break end
+		    if attempt == nil or attempt == {} then goto end_loop end
 	      end
 		  --refund leftovers to input container
 		  if attempt ~= nil and attempt ~= {} then
@@ -32,10 +29,12 @@ function transfer.output(id, rate, slot)
 		  end
 		  
 		end
+	  elseif not (settings and not settings.allowed) then
+	    -- transfers freely by default
+	    local attempt = world.containerTakeNumItemsAt(id, s, item.count)
+		world.containerAddItems(key, attempt)
 	  end
-	  
-	  -- transfers freely by default
-	  world.containerAddItems(key, attempt)
 	end
+	::end_loop::
   end
 end

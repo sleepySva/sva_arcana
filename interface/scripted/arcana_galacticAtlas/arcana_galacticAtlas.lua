@@ -3,9 +3,8 @@ require "/scripts/vec2.lua"
 require "/scripts/rect.lua"
 
 function init()
-  local configPath = "/interface/scripted/arcana_galacticAtlas/locations.config"
+  rearrangeLocationsList()
   self.locationList = "locationArea.locationList"
-  self.locations = root.assetJson(configPath).locations
   self.locationSelected = nil
   self.buttons = {}
   populateLocationList()
@@ -32,15 +31,23 @@ function teleportToShip()
   end
 end
 
-function populateLocationList()
-  widget.clearListItems(self.locationList)
-  self.buttons = {}
-  
+function rearrangeLocationsList()
+  local loc = root.assetJson("/interface/scripted/arcana_galacticAtlas/locations.config")
+  self.locations = {}
+
+  for _, i in pairs(loc) do
+    table.insert(self.locations, i)
+  end
   table.sort(self.locations, function(a,b)
     return (a.order or 0) < (b.order or 0)
   end)
+end
 
-  for _, location in pairs(self.locations) do
+function populateLocationList()
+  widget.clearListItems(self.locationList)
+  self.buttons = {}
+
+  for _, location in ipairs(self.locations) do
     if not (location.requiredQuest ~= "none" and not player.hasCompletedQuest(location.requiredQuest) and location.requiredHidden) then
       local item = widget.addListItem(self.locationList)
 	  table.insert(self.buttons, item)
@@ -105,4 +112,3 @@ function teleportButtonCheck(button)
   if self.locationSelected == nil and button == "activateButton" then return end
   widget.setButtonEnabled(button, teleportLegalCheck())
 end
-

@@ -32,7 +32,7 @@ function Weapon:init()
     ability:init()
   end
   
-  if self.lifesteal then
+  if self.lifesteal and not status.statPositive("arcana_lifestealBlock") then
     if self.lifesteal.type == "onkill" then
       message.setHandler("arcana_onkill", function()
 	    status.giveResource("health", getLifesteal(self.lifesteal))
@@ -43,9 +43,9 @@ function Weapon:init()
 		  if n.hitType ~= "ShieldHit" and n.healthLost > 0 then
 			local result = getLifesteal(self.lifesteal)
 			status.giveResource("health", result)
-			sb.logInfo("lifesteal: "..result)
+			--sb.logInfo("lifesteal: "..result)
 		  end
-		  sb.logInfo("damage taken: "..n.hitType.." health lost: "..n.healthLost)
+		  --sb.logInfo("damage taken: "..n.hitType.." health lost: "..n.healthLost)
 		end
 	  end)
 	end
