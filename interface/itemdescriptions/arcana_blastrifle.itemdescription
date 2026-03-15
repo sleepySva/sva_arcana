@@ -1,49 +1,73 @@
 {
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [215, 84],
+    "hAnchor" : "right",
+    "value" : "0",
+	"fontSize" : 7.2
+  },
   "critRateTitleLabel" : {
     "type" : "label",
-	"fontSize" : 6.0,
-    "position" : [16, 86],
+	"fontSize" : 7.2,
+    "position" : [152, 128],
     "hAnchor" : "left",
     "value" : "^shadow;Crit Rate^reset;"
   },
   "critRateLabel" : {
     "type" : "label",
-	"fontSize" : 6,
-    "position" : [75, 86],
+	"fontSize" : 7.2,
+    "position" : [215, 128],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "critDamageTitleLabel" : {
     "type" : "label",
-	"fontSize" : 6.0,
-    "position" : [86, 86],
+	"fontSize" : 7.2,
+    "position" : [152, 117],
     "hAnchor" : "left",
     "value" : "^shadow;Crit Dmg.^reset;"
   },
   "critDamageLabel" : {
     "type" : "label",
-	"fontSize" : 6,
-    "position" : [145, 86],
+	"fontSize" : 7.2,
+    "position" : [215, 117],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "damagePerShotTitleLabel" : {
     "type" : "label",
-	"fontSize" : 6,
-    "position" : [16, 74],
+	"fontSize" : 7.2,
+    "position" : [152, 150],
     "hAnchor" : "left",
-    "value" : "Damage:"
+    "value" : "^shadow;Damage^reset;"
   },
   "damagePerShotLabel" : {
     "type" : "label",
-	"fontSize" : 6,
-    "position" : [141, 74],
+	"fontSize" : 7.2,
+    "position" : [215, 150],
     "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+	"color" : [140, 140, 140],
+    "position" : [16, 68],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+	"fontSize" : 7.2,
+	"color" : [140, 140, 140],
+    "position" : [211, 68],
+    "hAnchor" : "right",
+    "centered" : true,
     "wrapWidth" : 126
   },
   "handednessLabel" : {
     "type" : "label",
-    "position" : [141, 154],
+    "position" : [131, 150],
 	"color" : [140, 140, 140],
     "hAnchor" : "right",
     "centered" : true,
@@ -52,7 +76,7 @@
   },
   "rarityLabel" : {
     "type" : "label",
-    "position" : [141, 149],
+    "position" : [131, 145],
 	"color" : [140, 140, 140],
     "hAnchor" : "right",
     "centered" : true,
@@ -61,7 +85,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [135, 109],
+    "position" : [125, 94],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -69,10 +93,10 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [78, 130],
+    "position" : [73, 121],
     "file" : "",
     "centered" : true,
-    "maxSize" : [80, 60],
+    "maxSize" : [80, 65],
     "minSize" : [65, 45]
   },
   "descriptionBack" : {
@@ -82,11 +106,31 @@
   },
   "descriptionLabel" : {
     "type" : "label",
-    "position" : [16, 32],
-    "wrapWidth" : 122,
-	"fontSize" : 6.0,
+    "position" : [16, 59],
+    "wrapWidth" : 182,
+	"fontSize" : 7.2,
     "hAnchor" : "left",
     "vAnchor" : "top"
+  },
+  "icon_damage" : {
+    "type" : "image",
+    "position" : [138, 149],
+    "file" : "/interface/arcana/arcana_crafting_anvil/damage.png"
+  },
+  "icon_critrate" : {
+    "type" : "image",
+    "position" : [138, 127],
+    "file" : "/interface/arcana/arcana_crafting_anvil/critrate.png"
+  },
+  "icon_critdamage" : {
+    "type" : "image",
+    "position" : [138, 116],
+    "file" : "/interface/arcana/arcana_crafting_anvil/critdamage.png"
+  },
+  "icon_money" : {
+    "type" : "image",
+    "position" : [138, 83],
+    "file" : "/interface/arcana/arcana_crafting_anvil/pixel.png"
   },
   "title" : {
     "type" : "label",
