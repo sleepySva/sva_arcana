@@ -21,7 +21,7 @@ local BulletSubCountStackSwitch = 1
 local BulletSubDelay = 0.0
 local BulletSubDelayDef = 0.10
 
-local BaseDamage = 14
+local BaseDamage = 20
 
 local EnergyUse = 2
 	
@@ -49,7 +49,7 @@ end
 function InitExtendedCode()
 	local Versioning = root.assetJson("/versioning.config")
 	if Versioning["FutaraDragonRace"] ~= nil then
-		CodeExtended = prequire("/coopmod/items/active/weapons/gunblade/GrandCrossZana/GrandCrossZana_Extended.lua")
+		CodeExtended = prequire("/coopmod/gunblade/GrandCrossZana/GrandCrossZana_Extended.lua")
 	end
 end
 
