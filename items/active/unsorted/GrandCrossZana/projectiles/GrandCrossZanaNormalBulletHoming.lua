@@ -66,7 +66,7 @@ function uninit()
 			}
 		)
 		if world.entityExists(self.ownerId) == true then
-			world.sendEntityMessage(self.ownerId, "MagichanicalMysteryBriefcasePlaySound","Hit",world.distance(self.positionNow,world.entityPosition(self.ownerId)))
+			world.sendEntityMessage(self.ownerId, "GrandCrossPlaySound","HomingHit",world.distance(self.positionNow,world.entityPosition(self.ownerId)))
 		end
 	end
 end
